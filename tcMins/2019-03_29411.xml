@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/home/lou/Public/TEI/TEICSS/tei.css" type="text/css"
+ ?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:t="http://www.tei-c.org/ns/1.0" n="2019-03"><teiHeader><fileDesc><titleStmt><title>Minutes of the TEI Technical Council</title><meeting n="2019-03" when="2019-03-15">TEI Technical Council online
+     meeting : <date>15 March 2019</date></meeting></titleStmt><publicationStmt><distributor>TEI Website</distributor><idno>TCM112</idno></publicationStmt><sourceDesc><p>Retagged from a WordPress HTML file</p></sourceDesc></fileDesc><revisionDesc><change when="2023-04-25">Archival header confected</change><change>Extracted from Word Press article with id post-29411</change></revisionDesc></teiHeader><text><body><div><p><hi style="strong">Present</hi></p><list style="ul">
+<item>Syd Bauman (SB)</item>
+<item>Elisa Beshero-Bondar (EB)</item>
+<item>Hugh Cayless (HC)</item>
+<item>James Cummings (JC)</item>
+<item>Elli Mylonas (EM)</item>
+<item>Martina Scholger (MS)</item>
+<item>Peter Stadler (PS)</item>
+<item>Sarah Stanley (SS)</item>
+<item>Raff Viglianti (RV — departed 22:00Z)</item>
+</list><p><hi style="strong">Apologies/Not Present</hi></p><list style="ul">
+<item>Vanessa Bigot Juloux (VBJ)</item>
+<item>Magdalena Turska (MT)</item>
+</list><p>Started: 20:39Z; ended: 22:12Z</p><div type="h2"><head>F2F Washington</head><list style="ul">
+<item>Discuss rough outline of agenda
+<list style="ul">
+<item>RV summarizes current plans for the meeting and interaction with the Folger Library. Brown bag lunch on Monday, library Tour on Tuesday. If there are particular materials people wish to see, then let RV know.</item>
+<item>RV summarises the options for a public event:
+<list style="ul">
+<item>a) reception at Folger at a cost
+<list style="ul">
+<item>expensive room rental only 6pm to 8pm on Monday May 6 (only availability)</item>
+<item>catering extra and we have to use the one Folger has already contracted for this period</item>
+</list>
+</item>
+<item>b) restaurant in DC which could be hard to organize until we know number of guests; would TEI pay, or deal with splitting bills?</item>
+<item>c) no public event, reach out directly to a few local friends to join us at dinners or something</item>
+<item><hi style="b">Consensus seemed to be for (c). </hi></item>
+</list>
+</item>
+</list>
+</item>
+</list></div><div type="h2"><head>TEI Conference in Graz</head><list style="ul">
+<item>September Mon 16 – Fri 20; workshops on Mon 16 and Tue 17</item>
+<item>Schedule Council meeting (3 days)
+<list style="ul">
+<item>Fri-Sat-Sun (13–15)</item>
+<item>Sat-Sun-Mon (14–16)</item>
+<item>Fri-Sat-Mon (13,14,16)</item>
+</list>
+</item>
+<item>Pre-conference TEI summer school (Sep 9–12). Council member(s) available on Thursday? If you think you might be available and want to present add your name here:
+<list style="ul">
+<item>JC</item>
+<item>SB</item>
+</list>
+</item>
+<item>In choosing days for Council Meeting it is noted that some Council members might want to do workshops, and<hi style="b"> if possible these should be scheduled on the Tuesday</hi>. PS notes that it would be good for the TEI Infrastructure Group to meet.
+<list style="ul">
+<item>Potentially include infrastructure group meeting on Monday(?) as a breakout group style meeting. Select infrastructure folks meet with Luis and Martin while the rest of Council works on other topics. Report-backs by infrastructure group during Council meeting</item>
+</list>
+</item>
+<item><hi style="b">Consensus for the Council Meeting seems to be Sat-Sun-Mon (14–16)</hi></item>
+<item><hi style="b">Action on MS</hi>: write to MT about scheduling workshops and when Council meeting is; <hi style="strong">due 2019-03-22</hi>.</item>
+<item>Discussion of Open Council Meeting: do we want to reprise for Graz?
+<list style="ul">
+<item>Consensus that we <hi style="i">do not</hi> want to be on display (i.e. no audience)</item>
+<item>Possible informal session where we invite specific folks (active community members? people running?)</item>
+</list>
+</item>
+<item>Potential future topic of discussion: Council members presenting on thorny tickets? (i.e. paper-like format where they are actively seeking input). Submit these as papers to the conference, or make arrangements with program committee?</item>
+</list></div><div type="h2"><head>Stylesheets meeting — change time?</head><list style="ul">
+<item>
+<list style="ul">
+<item>Do we want to change time for the Stylesheets meeting this coming Mon, 18 March?</item>
+<item>To check times: <ref target="https://www.timeanddate.com/worldclock/meetingtime.html?iso=20190318&amp;p1=198&amp;p2=1327&amp;p3=318&amp;p4=734">https://www.timeanddate.com/worldclock/meetingtime.html?iso=20190318&amp;p1=198&amp;p2=1327&amp;p3=318&amp;p4=734</ref></item>
+<item><hi style="b">Action on SB</hi>: check with Martin Holmes, pending his approval we will switch to 09:00 ET, 14:00 CET, <hi style="strong">due 2019-03-16</hi>.</item>
+</list>
+</item>
+</list></div><div type="h2"><head>RomaJS</head><list style="ul">
+<item>Help with <ref target="https://docs.google.com/document/d/11X2pBQ7zTvy-xXWYlJfWB1O9STEY-vau3Bd1nydkgVY/edit">Current Roma Features document</ref>
+<list style="ul">
+<item><hi style="b">Action on MS</hi>: look at the document, due Mon 2019-03-18.</item>
+</list>
+</item>
+<item>RV will focus on RomaJS almost exclusively next week</item>
+<item>After that: another testing phase by the Council and (perhaps) others</item>
+<item>JC will be having students test it in the wild (option of that or old Roma) on 5 April.</item>
+</list></div><div type="h2"><head>Infrastructure group</head><list style="ul">
+<item>MS reports on meeting of the Infrastructure Group.</item>
+<item>Status ADHO server:
+<list style="ul">
+<item>control over DNS is still an issue</item>
+<item>TEI to move to its own space, but need to establish access to ADHO server first</item>
+<item>TEI homepage identifies backup locations</item>
+<item>Steps to take to affirm the infrastructure is holding:
+<list style="ul">
+<item>reporting regularly to the community (Kathryn issues a message with specifics at least once per week?)</item>
+<item>Council members/infrastructure committee could prepare templates with detailed information (seems to be missing from overly general memos)</item>
+<item>Advise on more sustainable decision making, e.g. vendor agreement</item>
+</list>
+</item>
+</list>
+</item>
+<item>Next meeting to be organized soon and Council gives them permission to flog more deceased equines.</item>
+</list></div><div type="h2"><head>News on build (PS)</head><list style="ul">
+<item>Stylesheets can now take an arbitrary remote source</item>
+<item>Update to https for several resources</item>
+</list></div><div type="h2"><head>Update on Japanese translations</head><list style="ul">
+<item>Update from Martin Holmes (MH): Last year he made a spreadsheet, worked with Kiyonori Nagasaki. MH has begun implementing and checking the translations. This is very time consuming. It would be helpful to implement the Japanese translations before our next release in July. Can’t incorporate the translations easily/automatically: problems with things like alignment of paragraph and content.</item>
+<item>Can anyone help? Or implement first and check later?</item>
+<item>It’s difficult to keep translations up to date, and the work is error-prone. MH worried it won’t be checked.</item>
+<item>EM suggests we may not be able to do this before July to test/proof, but that we incorporate a feature indicating that the translation is in draft.</item>
+<item>EBB asks what we can do to help implementation sometime before July.</item>
+<item>MH asks if Christian Wittern might be asked to help. Maybe Duncan Paterson?</item>
+</list></div><div type="h2"><head>Follow-up from uniHan call</head><list style="ul">
+<item>Subgroup decided to go with the proposed version with attributes instead of elements. <hi style="b">Action on MS</hi>: add proposal to GitHub issue on Mon 18</item>
+<item>We want to provide conversion scripts for that, which leads to the question where to store conversion scripts</item>
+</list><p>current encoding method:</p><p rend="pre"><gi>char</gi>
+   <gi>charProp</gi>
+      <gi>unicodeName</gi>character-decomposition-mapping&lt;/unicodeName&gt;
+      <gi>value</gi>circle&lt;/value&gt;
+   &lt;/charProp&gt;
+&lt;/char&gt;</p><p>new encoding method:</p><p rend="pre"><gi>char</gi>
+   &lt;unicodeProp name="Decomposition_Mapping" value="circle"/&gt;
+&lt;/char&gt;
+
+</p></div><div type="h2"><head>Tickets to discuss</head><list style="ul">
+<item>SB: To whom should issue <ref target="https://github.com/TEIC/TEI/issues/1860">Encoding RDF relationships in TEI (TEI+RDFa and alternatives)</ref> be assigned? It probably deserves someone who understands RDF better than I do. I may be wrong, here, but I think of RDF as a <hi style="i">framework</hi> and as an input format used by some tools to represent relationships. I.e., as the <hi style="i">output</hi> of a process over a TEI document. I think this whole ticket may boil down to loosening the definition of <gi>link</gi> so that it does not seem to be limited to pointing to XML elements.
+<list style="ul">
+<item>Assigned to MS. Maybe should be a working group.</item>
+</list>
+</item>
+</list></div><div type="h2"><head><hi style="b">Next Stylesheets Meeting</hi></head><list style="ul">
+<item>Mon 18 Mar at 14:00Z = 09:00 EST / 14:00 GMT / 15:00 CET</item>
+</list></div></div></body><!-- #post-## --></text></TEI>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/home/lou/Public/TEI/TEICSS/tei.css" type="text/css"
+ ?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:t="http://www.tei-c.org/ns/1.0" n="2016-08"><teiHeader><fileDesc><titleStmt><title>Minutes of the TEI Technical Council</title><meeting n="2016-08" when="2016-08-25">TEI Technical Council online
+     meeting : <date>25 August 2016</date></meeting></titleStmt><publicationStmt><distributor>TEI Website</distributor><idno>TCM083</idno></publicationStmt><sourceDesc><p>Retagged from a WordPress HTML file</p></sourceDesc></fileDesc><revisionDesc><change when="2023-04-25">Archival header confected</change><change>Extracted from Word Press article with id post-28091</change></revisionDesc></teiHeader><text><body><div>
+		
+		<div>
+<div>
+<p>Teleconference 2016-08-25 13:00 UTC</p>
+<p rend="head">Present</p>
+<list style="ul">
+<item>Hugh Cayless (HC)</item>
+<item>James Cummings (JC)</item>
+<item>Elli Mylonas (EM)</item>
+<item>Syd Bauman (SB)</item>
+<item>Elisa Beshero-Bondar (EB)</item>
+<item>Peter Stadler (PS)</item>
+<item>Stefan Majewski (SM)</item>
+<item>Martina Scholger (MS)</item>
+<item>Magdalena Turska (MT)</item>
+</list>
+<p rend="head">Apologies</p>
+<list style="ul">
+<item>Lou Burnard (LB)</item>
+</list>
+</div>
+<div>
+<p>Agenda and minutes</p>
+
+<list style="ul">
+<item>F2F Planning:</item>
+<item>Sunday, 09-25 09:00–17:30 (start time reasonable?)
+<list style="ul">
+<item>Lunch options.</item>
+</list>
+</item>
+<item>Monday, 09-26 09:00–17:30</item>
+<item>Tuesday, 09-27:
+<list style="ul">
+<item>Skype in to Sebastian’s memorial: 11:50 [JC has confirmed]</item>
+<item>Lunch/meet with Board: 12:30–13:30</item>
+<item>Meet: 14:00–17:30</item>
+</list>
+</item>
+<item>MT: Workshop Monday, Tuesday</item>
+<item>JC: Arriving noon-ish Sunday</item>
+<item>Arrivals, departures, and contact info <ref target="https://www.tei-c.org/Activities/Council/Meetings/gid=0">spreadsheet</ref>.</item>
+<item><ref target="https://docs.google.com/document/d/1E1SEMfxvhhm_I9fAwFzOMXOl6mLy02o10aJWQt7BfhM/edit">Whither TEI planning</ref></item>
+<item>Translatathon on Tuesday: Martina, Stefan and Peter busy</item>
+<item>Request for a talk on TEI oXygen framework.</item>
+<item>EM on oXygen Frameworks; JC(?) on TEI build thereof? Note that the SyncRO guys will be in Vienna for conference, if not our meeting.Ask them specific question if needed.</item>
+<item><hi style="b">Action on SB (due Sat 08-27): </hi>ask Martin Holmes if &amp; when he will be in Vienna</item>
+<item><hi style="b">Action on EB (due Sat 09-16)</hi>: review Council’s current documentation to see if we already have info on Frameworks (e.g., the instructions are in <ref target="http://teic.github.io/TCW/tcw22.html">TCW 22</ref> step 16).</item>
+<item>Simple/PM [Note: Can I propose having this discussion on Sunday as technically I have a workshop to run Mon and Tue? I’ve called in some reinforcements so hope to be going back and forth between the two, but still I’d like to be present and not running for the Simple discussion.] [Note: Well, maybe we can deal with it in the telecon :-). But, yes, if there’s more to talk about, let’s do it on the Sunday.]
+<list style="ul">
+<item>Finishing off Simple
+<list style="ul">
+<item>Stylesheet update now done.</item>
+<item>Thanks to Martina for reading/correcting draft ODD. A few issues still outstanding (see LB email to Council on 19/08 16:54)</item>
+<item>Martin M has noticed that Simple schema does not include elements such as <gi>gi</gi> which he likes to use in the header when documenting things under specialised children of <gi>encodingDesc</gi> (which are not included either). Verb. sap . <ref target="http://www.merriam-webster.com/dictionary/verbum%20sat%20sapienti%20est">http://www.merriam-webster.com/dictionary/verbum%20sat%20sapienti%20est</ref></item>
+<item>How do we make sure that the next oXygen release includes a built in template for Simple?</item>
+<item>Do we want to organise some kind of “launch event” for Simple at the conference? Ask MartinM?</item>
+</list>
+</item>
+</list>
+</item>
+<item>Processing Model Revisions?
+<list style="ul">
+<item>See <ref target="https://github.com/TEIC/TEI/issues/1494">#1494</ref>, <ref target="https://github.com/TEIC/TEI/issues/1495">#1495</ref>, <ref target="https://github.com/TEIC/TEI/issues/1496">#1496</ref>, <ref target="https://github.com/TEIC/TEI/issues/1497">#1497</ref>, and <ref target="https://github.com/TEIC/TEI/issues/1500">#1500</ref> Note that we have already released Procmod, so these are properly speaking bug fixes, nothing to do with Simple[Note: They might have something to do with Simple if those changes resulted in it defining its own Processing Model (as I think it should).].</item>
+<item><hi style="b">Action on all interested (by Sat 09-03)</hi>: read on comment on above tickets.</item>
+<item>List of behaviours are attribute values at: <ref target="https://github.com/TEIC/TEI/blob/dev/P5/Source/Specs/model.xml">https://github.com/TEIC/TEI/blob/dev/P5/Source/Specs/model.xml</ref></item>
+<item>behaviourSpec would need way to change number and names of params, description, etc.</item>
+</list>
+</item>
+<item>Planning for next release
+<list style="ul">
+<item>At or before conference?!</item>
+<item><ref target="https://github.com/TEIC/TEI/milestones">https://github.com/TEIC/TEI/milestones</ref></item>
+</list>
+</item>
+</list>
+</div>
+</div>
+<div/>
+	</div></body><!-- #post-## --></text></TEI>

@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI.2>
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>TEI Council Conference Call <date value="2006-11-22">22
+            Nov 06</date></title>
+        <author>Syd Bauman</author>
+      </titleStmt>
+      <publicationStmt>
+        <idno type="TEI">TC M 27</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <p>This electronic file is the source.</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <front>
+      <div>
+        <p>In these minutes times are UTC unless otherwise noted.</p>
+        <p>The conference call was delayed slightly by some confusion
+          over the correct number to call to access the conference
+          call. Nonetheless, the meeting started at 12:09 with CT, CW,
+          SB, TM, MD, JC, SR, DP, JW, LB, AK, DOD joining us at
+          12:10.</p>
+        <p>Note that both AC &amp; SS had sent their apologies
+          earlier.</p>
+        <p>SB volunteered to take notes during the call.</p>
+      </div>
+    </front>
+    <body>
+      <div n="1">
+        <head>Minutes from last meeting</head>
+        <list type="gloss">
+          <label>SB: change French filenames, too</label>
+          <item>With some help from Sebastian, this task was completed
+            well ahead of schedule</item>
+          <label>SB: summarize dating attributes issues
+            …</label>
+          <item>While the issues were summarized and posted, the
+            resulting discussion has moved the issue forward, so a new
+            summary with recommendations is in order. We are waiting
+            for the results of the <xref url="http://listserv.brown.edu/archives/cgi-bin/wa?A2=ind0611&amp;L=tei-l&amp;T=0&amp;F=&amp;S=&amp;P=10791"><q>does 
+                anyone use <gi>minute</gi></q> query on TEI-L</xref>.
+            It was suggested that due to the American Thanksgiving
+            holiday, we should not consider the query unanswered until
+            <date value="2006-12-01">Fri 01 Dec</date>. Thus the
+            action is repeated. <note type="action">
+              <label>SB</label>
+              summarize issues surrounding dating attributes for
+                Council, with firm recommendations where possible,
+                including whether or not to keep <gi>minute</gi> et
+                al.
+              <date>2006-12-06</date>
+            </note></item>
+          <label>all: consider list of limited phrase elements and
+            propose refinements if needed</label>
+          <item>SB incorrectly reported this had not been done because
+            he had not created the ODD yet.</item>
+          <label>SB: Implement ‘limited phrase’ system using the
+            elements in the refined version of the list.</label>
+          <item>SB reported that this has not been done (<note>see
+              <xptr url="http://lists.village.virginia.edu/pipermail/tei-council/2006/001986.html"/></note>). 
+          It was suggested that we need a statement of the problem <note type="action">
+            <label>LB</label>
+            statement of 'limited phrase' problem &amp; some
+              possible solutions
+            <date>2006-12-18</date>
+          </note>
+          </item>
+          <label>LR: post to Council … elements which contain
+            … should have only <gi>desc</gi></label>
+          <item>It was determined that this task was completed; see
+            <xptr url="http://lists.village.virginia.edu/pipermail/tei-council/2006/001756.html"/><note type="action">
+              <label>eds</label>
+              implement
+              <date>2006-12-10</date>
+            </note>
+          </item>
+          <label>JW: Write up: bibliographic elements, MODS &amp; TEI,
+            and opinions on <gi>extent</gi>.</label>
+          <item>JW reports that this item has just been completed,
+            results posted during call<note type="action">
+              <label>all</label>
+              read &amp; comment on <xref url="http://lists.village.virginia.edu/pipermail/tei-council/2006/001976.html">JW's 
+                  document</xref>
+              <date>2006-12-11</date>
+            </note>
+          </item>
+          <label>CW: ask MD if he is willing to take personography
+            forward into places/ontology</label>
+          <item>MD is willing to continue. He
+            is planning a meeting during the 2nd half of January,
+            on the assumption that financial resources will be available.</item>
+          <label>CW: ascertain level of funding available for the
+            meeting</label>
+          <item>CW has attempted to do so, and believes the short
+            answer is yes, we think we have the necessary
+            funding<note type="action">
+              <label>DOD</label>
+              inform MD how much money is available to
+                Council
+              <date>2006-11-23</date>
+            </note>
+          </item>
+          <label>LB w/ DB: revise DB's draft document as a working
+            paper for Council TC W 08</label>
+          <item>This item was completed, but the document is <xref url="http://www.tei-c.org/Council/tcw09.xml">TC 
+              W 09</xref> (not 08)</item>
+          <label>DP &amp; CT: revise document somewhat, with an eye
+            towards what parts are intended for Guidelines.</label>
+          <item>Council was informed that more work has been done on
+            the document, but the revision is not yet complete and
+            thus nothing has been posted yet. DP &amp; CT plan to post
+            something tomorrow<note type="action">
+              <label>DP &amp; CT</label>
+              post revised text &amp; image encoding document to
+                Council
+              <date>2006-11-27</date>
+            </note>
+            <note type="action">
+              <label>DP &amp; CT</label>
+              make ODD of it
+              <date>2006-12-11</date>
+            </note>
+          </item>
+          <label>all: contribute to conformance discussion</label>
+          <item>lively discussion underway, more to go …</item>
+        </list>
+      </div>
+      <div n="2">
+        <head>Impressions from MM2006</head>
+           <p>There was interesting discussion of <gi>event</gi> element
+       at the Ontology SIG in Victoria??. Recommendation that we
+          invite someone from Ontology SIG to <soCalled>extension of
+          personography</soCalled> meeting.</p>
+        <p>DOD reports plans to expand ASIG participation in programme
+	for MM2007; e.g. the
+          goal is to run a working paper session for which the papers
+          would be circulated beforehand, and then be presented at MM
+          or to ask SIGs to make a full presentation on a
+	topic.</p>
+      </div>
+      <div n="3">
+        <head>Workgroup etc. progress</head>
+        <div n="A">
+          <head>PB</head>
+          <p>MD still needs to rewrite the examples MM provides in the
+          PB document using a more generic mechanism (action from 2
+          calls ago, repeated here with invented due date: <note type="action">
+              <label>MD</label>
+              Rewrite the examples MM provides in the PB
+                document using a more generic mechanism
+              <date>2006-12-31</date>
+            </note>)</p>
+        </div>
+        <div n="B">
+          <head>PERS</head>
+          <p>Discussed above.</p>
+        </div>
+        <div n="C">
+          <head>I18N</head>
+          <p>SR reports he inadvertently sent report to CW instead of
+            group; this was corrected during the call, it has now been
+            sent <xref url="http://lists.village.virginia.edu/pipermail/tei-council/2006/001979.html">to 
+              the list</xref>, but note that the presentation the
+            report refers to is <xref url="http://tei.oucs.ox.ac.uk/Oxford/2006-10-victoria/i18n-0.xhtml">really 
+              here</xref>. Changes to Roma were reported at MM. The
+            question was raised as to whether or not there are
+            sufficient funds to permit a 2nd person to proofread
+            translations. SR informed council that the intention is
+            that monies will be spent by the translators as they see
+            fit … they might pay for a proofreader or not.</p>
+          <p>The issue of translations of examples was discussed.
+          Questions include which examples get put directly into the ODDs,
+            which ones are stand-off? Suggestion to have multiple
+            examples in various languages in the reference section
+            (not the prose). Need to develop infrastructure for
+            stating whether an example is a translation of another, or
+            an added new example, etc. <note type="action">
+              <label>LB</label>
+              ponder and post discussion of multilingual example
+                problem, particularly with an eye towards whether or
+                not the ODD encoding language defined by TD needs to
+                be updated
+              <date>2006-01-10</date>
+            </note>
+          </p>
+          <p>SR reports that there is also a lot of infrastructure
+            work to be done, e.g. formatting multilingual Guidelines
+            as PDF.</p>
+          <p>The timeline is to have the translations themselves
+            completed by Spring, and the entire multilingual project
+            including the infrastructure and tying the translations to
+            the whole Guidelines by MM2007.</p>
+        </div>
+      </div>
+      <div n="4">
+        <head>Document review and updates</head>
+        <div n="A">
+          <head>Text and Image encoding</head>
+          <p>Discussion of <xref url="http://www.rch.uky.edu/image_encoding.html">CT &amp;
+          DP's document</xref> deferred, as it's still being worked on.</p>
+        </div>
+      </div>
+      <div n="5">
+        <head>Road to P5</head>
+        <div>
+          <head>Conformance</head>
+          <p>The consensus was to ask JC to summarize discussion so
+            far and write a proposal that will eventually become
+            replacement for CF<note type="action">
+              <label>JC</label>
+              summarize discussion of conformance and write a proposal
+              <date>2006-01-15</date>
+            </note>
+          </p>
+          </div>
+          <div>
+            <head>Feature requests on SF</head>
+            <p>Status of SF requests document needs to be
+              updated. <note type="action">
+                <label>eds.</label>
+                update doc, report to group when done
+                <date>2006-12-15</date>
+              </note>
+            </p></div>
+        </div>
+      <div n="6">
+        <head>Meetings</head>
+        <div>
+          <head>Face-to-face</head>
+          <p>We're looking at Berlin in late April, perhaps at
+            26/27<note type="action">
+              <label>all</label>
+              let list know if you expect to be
+                available for a meeting in Berlin <date value="2007-04-26">Thu 26 &amp; Fri 27 Apr
+                  07</date>
+              <date>2006-12-06</date>
+            </note>
+          </p>
+        </div>
+        <div>
+          <head>next conference call</head>
+          <p>DOD reports that although Board discussed other meetings
+            at locations that submitted unsuccessful bids for
+            MM2007, he does not feel that Council meeting should be
+            tied to them.</p>
+          <p>CW will be in Taiwan in late Feb 2007.</p>
+          <p>Next conference call was scheduled for <date value="2007-01-23">Tue 23 Jan 07 at 12:00</date>.</p>
+          <p>SR &amp; DOD will be investigating other teleconferencing systems.
+            It was suggested that CW be included in any tests. Both
+            Oxford and Indiana have Adobe Breeze set up. JW has used
+            it, and reports that at least for a simple presentation it
+            is quite good. High-speed conferences.com seems plausible
+            — can accept calls from Skype or phone. <note type="action">
+              <label>SR</label>
+              report on high speed conferences .com system
+            </note>
+          </p>
+        </div>
+      </div>
+    </body>
+    <back>
+      <div>
+        <p>Call ended at 13:21.</p>
+      </div>
+    </back>
+  </text>
+</TEI.2>

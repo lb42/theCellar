@@ -1,0 +1,549 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/home/lou/Public/TEI/TEICSS/tei.css" type="text/css"
+ ?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:t="http://www.tei-c.org/ns/1.0" n="2009-04"><teiHeader><fileDesc><titleStmt><title>Minutes of the TEI Technical Council</title><meeting n="2009-04" from="2009-04-02" to="2009-04-03">TEI Technical
+     Council ftf meeting : <placeName>Lyon</placeName>, <date>2–3 April 2009</date></meeting></titleStmt><publicationStmt><distributor>TEI Website</distributor><idno>TCM041</idno></publicationStmt><sourceDesc><p>Retagged from a WordPress HTML file</p></sourceDesc></fileDesc><revisionDesc><change when="2023-04-25">Archival header confected</change><change>Extracted from Word Press article with id post-22688</change></revisionDesc></teiHeader><text><body>
+	
+		<head>TEI Council Meeting</head>		<milestone unit="unknown" rend="rule"/>
+	
+
+
+		
+		
+<div>
+<p>All times are local (Central European Summer Time, UTC +2) unless otherwise noted.</p>
+<p>In attendance, from TEI Council: Laurent Romary (LR; chair), Peter Boot (PB), Arianna
+          Ciula (AC), James Cummings (JC), Daniel O'Donnell (DO; Board Chair), Dot Porter (DP), Sebastian Rahtz (SR), Paul
+          Schaffner (PS), and David Sewell (DS; minutes). Representing Oxford editorial support
+          group: Lou Burnard (LB). Not present: Gabriel Bodard, Elena
+          Pierazzo, Manfred Thaller.</p>
+<p>The meetings were held at <ref target="http://www.ens-lsh.fr/">l'Ecole normale supérieure
+            Lettres et sciences humaines</ref>, Lyon, France. Most
+          Council members were also present for the <ref target="https://listes.cru.fr/wiki/tei-res/public/tei_council_2009_a_lyon">Public
+            Meeting</ref> held at ENS on April 1, the day prior to the Council meeting, and several
+          served as session chairs. The TEI Council wish to thank our hosts at ENS-LSH for their
+          hospitality, and acknowledge in particular Serge Heiden for going beyond the call of duty
+          in arranging back-up facilities during the Thursday <foreign>jour de grève</foreign> at
+          ENS.</p>
+<p>The meeting was called to order on Thursday at
+            approximately 09:10 and continued until approximately 18:30; it resumed on Friday at
+            approximately 09:00 and continued until approximately 16:00.</p>
+
+<div><head>
+          TEI Website</head>
+<p>Discussion under this heading focused on two topics: general organization and workflow
+            of the TEI website; and maintenance of the TEI “vault”, i.e. historical versions of the
+            Guidelines and archived versions of releases going forward. LR summarized the four main
+            issues:</p>
+<list>
+<item>updating our tools</item>
+<item>updating files</item>
+<item>keeping the vault in a stable place</item>
+<item>reorganizing the website</item>
+</list>
+<div><head>
+            Vault, archiving</head>
+<p>Council agreed that users of the TEI website should be able easily to find the
+              current version of the Guidelines along with clearly labeled archives (the <soCalled>vault</soCalled>).
+              At present, this material is too scattered. JC notes that “cool URIs do not change”;
+              ours too often do, which is not best practice. Council agreed that there must be an
+              addressable version of the Guidelines for each release. Going forward, this includes
+              our point releases (i.e., our sub-releases currently on a six-month cycle). So the
+              vault should contain full snapshots of each of these releases.</p>
+<p>LR asks whether it makes sense to release only the HTML pages of the Guidelines
+              without releasing the corresponding schemas or file environment necessary for
+              generating schemas. Consensus is that we should make available at least a <term>tei_all</term>
+              environment so that users would be able to validate documents against arbitrary
+              versions of the Guidelines.</p>
+<p>Consensus: Council should request for reorganization of the Vault on tei-c.org, and
+              should then take responsibility for ongoing maintenance of releases. Council should be
+              <q>licensed</q> (DO) to work on this as part of our day-to-day activity, with a workflow
+              that includes direct access to the technical staff at U of Virginia who can implement
+              changes on the server side. We agree that we start Vault versioning as of the June
+              2009 point release of the P5 Guidelines, and implement retroactive versioning as soon
+              as possible thereafter.</p>
+</div>
+<div><head>
+            General website organization and workflow</head>
+<p>LB and DO note that there are outstanding needs for TEI website reorganization and
+              enhancement that need to be addressed by the Web Committee. For example (LB), the new
+              project list needs to be brought up to date, and should be more dynamic, with RSS
+              feeds available. DO adds that in the near future we will be needing new Web
+              functionality, namely an e-commerce server (for membership, ordering publications,
+              etc.). [DS notes: this will need to be done so as to satisfy any U of Virginia
+              policies for e-commerce hosting on University servers.] In addition, with the
+              migration of the Vault to www.tei-c.org, which represents the major intellectual
+              property of the TEI, we need formal agreements from Virginia for the commitment of
+              resources to insure maintenance and preservation.</p>
+<p>            <note><rs style="bold">DO</rs> will convey to the TEI Board the consensus that
+              Council needs more formally defined access to tei-c.org, and will also propose adding
+              LR to the Web Committee</note>
+</p></div></div>
+<div><head>
+          Guideline Annotations</head>
+<p>Question: should there be a formal facility to allow user comments on the Guidelines
+            (primarily or only the element/attribute/class reference sections), along the lines of
+            the “user contributed notes” feature on www.php.net? The purpose would be to allow users
+            to provide examples of how they use TEI features, notes on best-practice usage, etc.
+            Council agrees that (unlike the case on php.net) this should not be done within
+            reference pages themselves, but rather via links to dedicated areas on the TEI Wiki.
+            This can easily be done by batch-creating template pages on the Wiki, and having the
+            Guidelines stylesheet generate links to them for each reference page. The only tricky
+            technical issue is whether we can easily differentiate links to Wiki pages that have
+            comments versus ones that are empty.</p>
+        <note><rs style="bold">SR and JC</rs> will investigate implementation and report
+            back to Council</note></div>
+<div><head>
+          TEI Tite</head>
+<p>This item was an update on the status of <ref target="https://wiki.tei-c.org/index.php/TEI_Tite">TEI Tite</ref>.</p>
+<p>There is some urgency over finalizing the recommended format of the TEI Tite
+            customization, as the TEI Consortium received Mellon funding with a deadline to put out
+            an RFP to conversion vendors interested in bidding on bulk conversion work using the
+            Tite specifications. However, there is some confusion over how final recommendations for
+            change have been gathered and implemented. The TEI in Libraries SIG has been working on
+            this and forwarding suggestions to Perry Trolard, but PT is not able to implement them
+            directly on Sourceforge.</p>
+<p>Council agreed that as Tite is a formally recommended TEI customization, Council has
+            technical authority over it. We need to vet and approve changes, then commit them to
+            SourceForge.</p>
+<p>There was some discussion and disagreement over whether Tite should be seen as a static
+            object or as a basis for customization. Consensus was that (1) Tite as formally
+            recommended by the TEI will be static within the context of a given contractual
+            agreement between content owners and conversion vendors (as in the main RFP), but (2)
+            individual projects may wish to customize Tite for their own purposes, and that is
+            something we encourage.</p>
+<p>          <note><rs style="bold">DO</rs> will issue a final call on TEI-L for comments on
+            Tite. Council formally asserts control over Tite, and DO will ask PT to collect proposed
+            changes to the existing Tite customization and forward them to Council for
+            approval.</note></p></div>
+<div><head>
+          Proposal for new SIG: scientific bibliographies</head>
+<p>LR presents this proposal, which is to approve a new Special Interest Group on
+            scientific bibliographies with the goal of providing recommendations for the use of
+              <gi>biblStruct</gi> for bibliographies in scientific/technical literature. LR notes
+            that people are already using TEI for scientific publishing, so we need to put forth
+            best practice recommendations and possibly schema modifications. The strategy is to
+            demonstrate the usefulness of <gi>biblStruct</gi> as a way of demonstrating the power of
+            TEI to other communities, as <emph>the</emph> XML format for these document structures. Council
+            agrees on the utility of doing this; AC notes that we'll want to provide a specific
+            tutorial on this use case.</p>
+<p>APPROVED. As LR is already part of the proposed SIG, LB volunteers to be the official
+            Council liaison.</p>
+</div>
+<div><head>
+          Report on activities of Manuscript SIG</head>
+<p>Elena Pierazzo (in absentia) presents a report on activities of the MS SIG. They have
+            proposed some tweaks to manuscript elements, and will have a <ref target="http://www.i-d-e.de/genetic-editions-in-a-digital-framework">workshop on
+              genetic editions</ref> in May 2009. </p>
+<p>No action item, just be aware SIG is active.</p>
+</div>
+<div><head>
+          Possible SIG on speech transcription</head>
+<p>LB notes that two different communities in France are interested in working on
+            improvements to Guidelines in this area. LR thinks that most people are quite happy w
+            the current state of the Guidelines chapter, but there is a need for more work on
+            marking synchronization with audio files. LB adds that a separate German group also
+            feels there is serious need for revision. [action item??]</p>
+</div>
+<div><head>
+          SIG grants</head>
+<p>DO reports on the grants approved this year to provide funding for SIGs to support
+            activities toward defined goals; Susan Schreibman issued a call for applications in
+            March 2009. Two Council members, JC and DS, are serving on the committee that will
+            evaluate and approve requests. This is an experimental program; if it works, the Board
+            hopes to expand it.</p>
+<p>Some discussion follows on other types of TEI funding. DO notes that funding is in
+            principal available for any chartered TEI group, e.g. working groups. However, as LR
+            points out, Council needs to have supervision over the funding of anything related to
+            the TEI technical mission. Any grant involving tools, software, or the Guidelines is
+            Council-related.</p>
+</div>
+<div><head>
+          Stylesheets and Roma/Vesta</head>
+<p>SR reported on his work with the new Vesta release, and the current transition to XSLT
+            2.0 stylesheets for schema generation. (In the aftermath of Council discussion in Lyon
+            and on tei-council, SR formally released to TEI-L the <ref target="https://listserv.brown.edu/archives/cgi-bin/wa?A2=ind0904&amp;L=TEI-L&amp;T=0&amp;O=D&amp;P=5859">roadmap / project plan for Roma and ODD processing</ref> based on Council agreement
+            about our goals. The following paragraph briefly summarizes the Lyon portion of that
+            discussion.)</p>
+<p>Basic issue: once work began on Vesta, it was necessary to fork the XSLT stylesheets to
+            XSLT, for use with Saxon in a Java environment. But Roma runs on libxslt, which supports
+            only XSLT 1.0 [and which may remain there indefinitely—DS]. So: do we want to
+            maintain the forked stylesheets, or are we willing to commit our ongoing resources to
+            Vesta's XSLT 2 environment, with the goal of an eventual rewrite of Roma?</p>
+<p>Council agrees it is undesirable to maintain more than one set of stylesheets. On the
+            other hand, we do want to retain OpenOffice transforms as a TEI deliverable. SR proposes
+            that we call WebRoma the <soCalled>ODD editor</soCalled>; Vesta has a different function. We should also
+            make a distinction between TEI <term>services</term> and <term>interface</term> [one service might be
+            instantiated in more than one interface]. DO suggests that the strategic direction as
+            seen from our users' perspective is: there should be single locus for all TEI-related
+            services; the technical backend should be opaque. LR: We implement it as an SOA
+            (service-oriented architecture), meaning that we identify the processors that are behind
+            the scene as services. DO: output services (in the non-technical sense) need to be
+            bundled together, but not necessarily input services. The set of people who actually
+            author and compile ODDs is much smaller than people who use TEI and generate output.</p>
+<p>          <note><rs style="bold">SR</rs> will come up with a roadmap for the Roma family,
+            propose it to Council, then disseminate it on TEI-L. [DONE as of 11 April].</note></p></div>
+<div><head>
+          Proposed Workshops on TEI</head>
+<p>Most of the discussion focused on submitting a proposal to the European Science
+            Foundation (ESF) for one of their <ref target="http://www.esf.org/activities/exploratory-workshops.html">Exploratory
+              Workshops</ref>.</p>
+<p>LB suggests that we could use a workshop as a way of beginning the planning for P6; we
+            could also focus on the role of TEI with respect to various communities of research. AC
+            says there is funding for science-driven research workshops (<term>science</term> in the sense of
+            Wissenschaft) with a maximum 30 participants (who must be specified in advance),
+            lasting 1-3 days. Deadline for proposals for the current grant cycle 30 April. The
+            location is flexible. Requirements include wide representation from across Europe, and
+            no more than five participants from the proposing country. Maximum funding available is
+            €15K. AC feels that participants should be people who will be involved in future TEI
+            development.</p>
+<p>Strasbourg would be a possible host site; LR has access to space in the Tour
+            Montparnasse, so Paris would be another. We might also investigate cosponsorship, e.g.
+            with Adonis. </p>
+<p>          <note><rs style="bold">LB and LR</rs> will draft a workshop proposal. AC will not
+            be involved in writing the proposal, to avoid conflict of interest.</note></p></div>
+<div><head>
+          SourceForge bug and feature requests</head>
+<p>(As secretary was participating in discussions on these items, notes are sketchy. See
+            also any comments on SourceForge.)</p>
+<list><label><ref target="https://sourceforge.net/tracker/?func=detail&amp;aid=2209933&amp;group_id=106328&amp;atid=644065">2209933</ref> content model of <gi>am</gi></label>
+<item>
+<p>Argument from use cases. Cannot put <gi>unclear</gi> etc. outside the <gi>am</gi>
+                if you're using diplomatic transcription. LB objects that <gi>am</gi> includes a
+                marker of abbreviation, seen on page but not used in transcription. Prototypical
+                abbreviation is ‘.'. But use case is: 3-letter abbreviation marker where one is
+                unclear. JC: let's modify documentation so people don't abuse this. We agree that
+                usefulness outweighs the possibility of abuse.</p>
+<p>APPROVED</p>
+</item>
+<label><ref target="https://sourceforge.net/tracker/?func=detail&amp;aid=2493417&amp;group_id=106328&amp;atid=644065">2493417</ref><gi>idno</gi> coverage.</label>
+<item>
+<p>We agree on the simple application + corresponding change in the prose. Change
+                definition of <gi>idno</gi> to say it can be used to identify <emph>any part</emph> of
+                a bibliographical description; 2nd, add it as a possible content model for author. LB/SR are
+                not happy about <gi>idno</gi> as a child of <gi>author</gi>. LR suggests that in the
+                scientific world we want to be able to create bibliographical entries that include
+                  <gi>idno</gi>‘s that connect to our data, e.g. standard number for publication or
+                author. LB: there are two solutions. Either we say <q>we've changed our mind about
+                  <gi>idno</gi></q> and don't restrict; or we restrict the places where it is allowed.
+                JC suggests: why can't we use <gi>ident</gi> for this purpose as it is already
+                allowed? … maybe we need a special bibliographical phrase class (in order to get
+                  <gi>ident</gi> inside <gi>author</gi>). There are various other elements inside a
+                bibliography that can take identifiers. Consensus: we will add a bibl.Phrase model
+                class, which will contain <gi>idno</gi>.</p>
+<p>APPROVED</p>
+</item>
+<label><ref target="https://sourceforge.net/tracker/?func=detail&amp;aid=2517629&amp;group_id=106328&amp;atid=644065">2517629</ref> Guidelines: <att>type</att> and <att>resp</att> in
+              <gi>note</gi></label>
+<item>
+<p>OK, accept as proposed.</p>
+<p>APPROVED</p>
+</item>
+<label><ref target="https://sourceforge.net/tracker/?func=detail&amp;aid=2607768&amp;group_id=106328&amp;atid=644062">2607768</ref><gi>figure</gi> should be global</label>
+<item>
+<p>Rationale: <gi>graphic</gi> when not inline should be wrapped in a <gi>figure</gi>
+                as best practice. Accept as proposed.</p>
+<p>APPROVED</p>
+</item>
+<label><ref target="https://sourceforge.net/tracker/?func=detail&amp;aid=2673045&amp;group_id=106328&amp;atid=644065">2673045</ref> new attribute <att>rational</att> on <gi>num</gi></label>
+<item>
+<p>This was discussed in detail on tei-council and SF. The majority voted for adding
+                  <att>valueType</att>. Consensus: we implement, with a closed value list:
+                “decimal”, “float”, “ratio”.</p>
+<p>APPROVED</p>
+</item>
+<label><ref target="https://sourceforge.net/tracker/?func=detail&amp;aid=2672530&amp;group_id=106328&amp;atid=644065">2672530</ref> Remove repository element requirement in msIdentifier</label>
+<item>
+<p>Fine; we will add to documentation of <gi>repository</gi> that it is not meant to
+                indicate just any geographical location.</p>
+<p>APPROVED</p>
+</item>
+<label><ref target="https://sourceforge.net/tracker/?func=detail&amp;aid=2242434&amp;group_id=106328&amp;atid=644065">2242434</ref> element for text suppressed by the editor</label>
+<item>
+<p>The proposal was for an element like <gi>suppressed</gi> with a function opposite
+                to that of <gi>supplied</gi>. After discussion, council comes around to point of
+                view that yes, <gi>supplied</gi> does perhaps require symmetry. But
+                  <gi>suppress</gi> is not the best name; how about <gi>omit</gi>. This is
+                semantically more neutral. Council does not totally agree that <gi>omit</gi> is
+                needed when <gi>sic</gi> exists, but in the interest of flexibility, we can add it.
+                We need actual use case examples.</p>
+<p>DEFERRED: we will ask the proposers for actual use cases (and in particular, cases
+                where typed <gi>sic</gi> would not be sufficient).</p>
+</item>
+<label><ref target="https://sourceforge.net/tracker/?func=detail&amp;aid=1954920&amp;group_id=106328&amp;atid=644065">1954920</ref> (<att>role</att> to be returned to att.naming)</label>
+<item>
+<p>Agreed, add <att>role</att> to att.naming. [As LB notes in SF ticket, <q>att.naming
+                needs reorganization</q>].</p>
+<p>APPROVED.</p>
+</item>
+<label><ref target="https://sourceforge.net/tracker/?func=detail&amp;aid=1925127&amp;group_id=106328&amp;atid=644065">1925127</ref>: Provide discussion of taxonomical names</label>
+<item>
+<p>Council sense is that it's too complex. LR: is it really role of TEI to figure this
+                out? Or solicit advice from specialists? We don't have a proper TEI tool to
+                represent full taxonomy. Suggest we leave open for now. No one has come up with a
+                strong proposal. We need stronger set of use cases.</p>
+<p>DENIED: close ticket</p>
+</item>
+<label><ref target="https://sourceforge.net/tracker/?func=detail&amp;aid=1933481&amp;group_id=106328&amp;atid=644065">1933481</ref>: ODD needs a way to indicate deprecation at next major
+              release</label>
+<item>
+<p>LR suggests that we simply add a <att>status</att> attribute in ODD to
+                  <gi>elementSpec</gi> or <gi>attributeSpec</gi>. Discussion was inconclusive; the
+                whole issue ties in with larger discussion about ODD format.</p>
+<p>DEFER: leave ticket open.</p>
+</item>
+<label><ref target="https://sourceforge.net/tracker/?func=detail&amp;aid=1962972&amp;group_id=106328&amp;atid=644065">1962972</ref>: new members for model.quoteLike</label>
+<item>
+<p>PB explains the context. LB thinks there's a good case to be made for using
+                classes. All agree.</p>
+<p>APPROVED</p>
+</item>
+<label><ref target="https://sourceforge.net/tracker/?func=detail&amp;aid=1999652&amp;group_id=106328&amp;atid=644065">1999652</ref>: Add <att>who</att> to <gi>quote</gi></label>
+<item>
+<p> LB thinks this is just a resurgence of basic problem that people mistakenly believe
+                  <gi>q</gi> and <gi>quote</gi> are the same. But when <gi>quote</gi> is rightly
+                understood as part of a bibliographic construct with <gi>cit</gi> available, a new
+                attribute isn't needed.</p>
+<p>DENIED</p>
+</item>
+<label><ref target="https://sourceforge.net/tracker/?func=detail&amp;aid=2055891&amp;group_id=106328&amp;atid=644065">2055891</ref>: Placement of Schematron rules </label>
+<item>
+<p>SR summarizes his proposal to add <gi>constraint</gi> as a child of
+                  <gi>schemaSpec</gi>, <gi>elementSpec</gi>, <gi>attDef</gi>. Consensus is that we
+                should implement; SR will come up with details before the next June release, in
+                conjunction with Council. [See also below, Friday discussion; and discussion on
+                tei-council, first week in April].</p>
+<p>APPROVED pending implementation</p>
+</item>
+<label><ref target="https://sourceforge.net/tracker/?func=detail&amp;aid=2525586&amp;group_id=106328&amp;atid=644065">2525586</ref>: <att>scope</att> attribute on <gi>rendition</gi> for CSS
+              pseudo-elements</label>
+<item>
+<p>Was discussed in some detail <ref target="http://lists.village.virginia.edu/pipermail/tei-council/2009/010618.html">via email</ref>. Accept. LB will incorporate DS's response in the SF ticket.</p>
+<p>APPROVED</p>
+</item>
+<label><ref target="https://sourceforge.net/tracker/?func=detail&amp;aid=2531384&amp;group_id=106328&amp;atid=644065">2531384</ref>: Rationalise application of <att>target</att></label>
+<item>
+<p>DP presents. She likes Lou's suggestions. After discussion, decide we have to keep
+                  <att>target</att> so as not to break things. Define a class to define
+                  <att>target</att> values as one or more tokens; in cases where there must be only
+                one, use Schematron. What about <att>cRef</att>? Leave it alone. Lou's ticket note:
+                <q>make <att>target</att> point to 1:n, and define as class; enforce in
+                Schematron</q>.</p>
+<p>ACCEPTED</p>
+</item>
+<label><ref target="https://sourceforge.net/tracker/?func=detail&amp;aid=2594174&amp;group_id=106328&amp;atid=644065">2594174</ref>: dimensions needs loosening up slightly</label>
+<item>
+<p>Per Lou's resolution on SF ticket: <q>Added new <gi>dim</gi> element, and class
+                model.dimLike. Redefined <gi>dimensions</gi> content as <code>( dim*,
+                model.dimLike_sequenceOptional)</code>. Updated discussion in MS accordingly. Updated at
+                rev 5985</q>.</p>
+<p>ACCEPTED</p>
+</item>
+</list>
+</div>
+<div><head>
+          Complex Sourceforge items</head>
+<div>
+          <p>  <ref target="https://sourceforge.net/tracker/?func=detail&amp;aid=2372570&amp;group_id=106328&amp;atid=644065">2372570</ref>: element for punctuation marks</p>
+<p>(In the course of long discussion of this request, we invited Alexey Lavrentev in to
+              answer some questions and expand on his published remarks.)</p>
+<p>We begin with discussion of what <gi>c</gi> represents. Is it a portion of a word, a
+              subset of the hierarchy of linguistic characters; or is it “any character”? We need to
+              discuss this to explain why we would have both <gi>c</gi> and <gi>punct</gi> if we add
+              the latter. PS observes that we already have <gi>am</gi> as a special kind of
+              character(s). Alexei is asking for things that mark syntactic boundaries. One problem
+              is that boundary between syntactic and intraword punctuation is fluid. LR suggests the
+              default solution is <gi>c</gi>, typed. People will have their own typology of
+              punctuation marks. Also, we don't want to impose a Western view of punctuation on all
+              texts. LR: we can identify a fringe of applications where <gi>c</gi> takes more than
+              one grapheme. </p>
+<p>(Here Alexei [AL] joined the meeting.) AL: you could say that all the tags
+                <gi>w</gi>, <gi>m</gi>, <gi>s</gi>, etc. are syntactic sugar for <gi>seg</gi>.
+                <gi>c</gi> is a building block for larger units. … One basic issue is two views:
+                <gi>c</gi> is subset of <gi>w</gi>; <gi>c</gi> is also a segment that can alternate
+              with <gi>w</gi>. … AL makes the case that <gi>c</gi> is a <soCalled>brick</soCalled> unit, whereas
+              punctuation is like <soCalled>mortar</soCalled>. </p>
+<p>Discussion of attributes on <gi>punct</gi>. <att>direction</att> is just intended as
+              a statement of position; it doesn't establish the correspondence between two marks
+              [which can be handled by existing mechanisms].</p>
+<p>LR notes that there are existing projects that use
+                <gi>w</gi><gi>c</gi><gi>w</gi><gi>c</gi>. So we must not break or deprecate that
+              structure. LB wants to be sure that if we introduce <gi>punct</gi> we should make very
+              clear what appropriate use cases. Avoid the <gi>q</gi>/<gi>quote</gi> confusion.</p>
+<p>LR: the proposal would cause no harm, and we should also clarify use of <gi>c</gi>
+              with some more examples. DS notes that the word “stop” in a telegram would be
+                <gi>punct</gi>. LR says <q>we want to identify specific sequences as characters seen
+              as symbols with a specific role</q>. In SMS language, etc. there are symbols that no
+              longer count as <gi>punct</gi>. Would it be good to avoid <gi>punct</gi> as ambiguous
+              with <gi>c</gi>, but instead add a more general-purpose <gi>symbol</gi> character?
+              Discussion ensues on whether we do need the specific punctuation marker or a more
+              general-purpose marker for symbolic language. LR would like a more general-purpose
+              symbol marker. PS: <gi>symbol</gi> scares me because within human
+              textuality, there are all sorts of uses for symbols. If we have <gi>symbol</gi> it
+              should be on level of <gi>g</gi> maybe, low-level rather than high-level. LR: whatever
+              our choice, we need to make our recommended usage clear to community in the
+              Guidelines. LR: the natural language processing community has complained about TEI as
+              not adequate for analysis. We should remember this community and make clear usage
+              recommendations. LB: yes, what we need to say is <q><gi>c</gi> has been used for this
+              purpose, but <gi>c</gi> is inherently ambiguous; <gi>punct</gi> is absolutely clear,
+              etc.</q>. We don't want to deprecate <tag>c type=”punct”</tag>, but strongly suggest that
+              the new element be used when people are doing natural language processing.</p>
+<p>We must allow <gi>punct</gi> to have text in it. We should comment that segmentation
+              for part-of-speech tagging is </p>
+<egXML xmlns="http://www.tei-c.org/ns/Examples"><div class="pre_eg cdata"><w><punct>]]&gt;</punct></w></div></egXML>
+<p>.</p>
+<p>CONDITIONAL APPROVAL. Adopt, but we need to refine the proposal and usage guidelines.
+              [LB has since proposed that the new element be called <gi>pc</gi>.]</p>
+</div>
+<div>
+        <p>    <ref target="https://sourceforge.net/tracker/?func=detail&amp;aid=2411994&amp;group_id=106328&amp;atid=644065">2411994</ref> Define canonical way of referencing TEI element definitions</p>
+<p>DS had previously <ref target="http://lister.ei.virginia.edu/~drs2n/DOI/">submitted a
+                note</ref> with a proposal for a possible implementation of DOIs for the Guidelines.
+              However, group discussion showed that we feel DOIs are (1) too expensive and (2)
+              probably overkill for our current needs. DS noted that a <soCalled>cool URI</soCalled> approach to
+              canonical references, for example the way the W3C handle versions of their
+              Recommendations, is in any case perhaps more in line with the needs of the Guidelines.
+              We could always add DOIs at a later stage to an implementation of stable URIs (or
+              adopt a different handle system altogether, if a promising candidate emerges).</p>
+<p>How would we implement cool URIs?. Would the URL for the current version always be a
+              redirect to an archived version? JC: <q>The moment SR makes a release, the version
+                gets added to the <soCalled>current</soCalled> place and also to a static location
+                in the vault.</q> (Thus the current version would always be addressable at two URLs;
+              referencing the vault version assures stability.) When displayed in HTML, every piece
+              of the Guidelines bearing an <att>xml:id</att> would come with a version number.</p>
+<p>DO suggests we look into the W3C semantic recommendations for cool URIs. PB: One of
+              the elements of the cool URI spec is that it shouldn't include something external. SR
+              suggests that the cool URIs should not include ‘.html'. AC suggests that identifiers
+              for subtopics should not be semantic, per recommendation in <ref target="http://nbn-resolving.de/urn:nbn:de:gbv:7-isbn-90-6984-508-3-8">“Report on
+                Persistent Identifiers”</ref> from CERL. [But DS tends to disagree: the W3C, for
+              example, use semantic fragment identifiers like
+              <code>http://www.w3.org/TR/xquery/#id-path-expressions</code>]</p>
+<p>            <note><rs style="bold">DS and JC</rs> will come up with recommendations for
+              implementation.</note></p></div>
+<div><p>
+            <ref target="https://sourceforge.net/tracker/?func=detail&amp;aid=1949503&amp;group_id=106328&amp;atid=644065">1949503</ref>: <gi>relatedItem</gi></p>
+<p>(proposal to allow <gi>biblScope</gi> as a child of <gi>relatedItem</gi>, LR)</p>
+<p>Long discussion on this [which your secretary didn't transcribe well, sorry]. The
+              consensus was to reject this proposal, but to make explicit that the correct usage is</p>
+<egXML xmlns="http://www.tei-c.org/ns/Examples"><div class="pre_eg cdata"><bibl>…</bibl>]]&gt;</div></egXML>
+<p> In addition, we
+              will open a feature request to add <att>target</att> to <gi>relatedItem</gi> (done:
+              see <ref target="https://sourceforge.net/tracker/?func=detail&amp;aid=2728061&amp;group_id=106328&amp;atid=644065">https://sourceforge.net/tracker/?func=detail&amp;aid=2728061&amp;group_id=106328&amp;atid=644065</ref>
+              and also <ref target="https://sourceforge.net/tracker/?func=detail&amp;aid=2728068&amp;group_id=106328&amp;atid=644065">https://sourceforge.net/tracker/?func=detail&amp;aid=2728068&amp;group_id=106328&amp;atid=644065</ref>).</p>
+<p>DENIED but provided for</p>
+</div>
+<div><p>
+            <ref target="https://sourceforge.net/tracker/?func=detail&amp;aid=2002418&amp;group_id=106328&amp;atid=644065">2002418</ref> New element = <gi>clarification</gi>?</p>
+<p>We don't feel it that the proposal is generalizable. We should expand discussion in
+              Guidelines to cover encoding of such cases using the current tagset. (We also don't
+              know how we could clearly explain usage of the proposed element.)</p>
+<p>DENIED</p>
+</div>
+<div><head>
+            2055891: Placement of Schematron rules (additional discussion, SR).</head>
+<p>SR has identified a problem with <gi>constraint</gi> as proposed. If a
+                <gi>constraint</gi> sits inside <gi>elementSpec</gi>, then redefining a constraint
+              will replace the default constraint(s). So we will need to have an add/change mode.
+              The <gi>constraint</gi> element should be able to contain various constraint
+              languages; we have only Schematron right now. LB: question: are P5 Schematron
+              constraints part of TEI Conformance? If so, then if someone redefines a constraint,
+              wouldn't documents using the resulting schema be non-conforming? Another question:
+              should the Guidelines prose duplicate the rules contained in the Schematron? Some
+              disagreement: LR points out that in the past we have removed duplication in prose of
+              rules provided by content model. BUT we can't expect people to understand Schematron
+              rules. LR: shouldn't we decouple the issue of conformance from technical
+              implementation? We should leave the possibility to delete constraints. JC: what about
+              multiple constraint lists? LB: sure, you could have constraints in more than one
+              language.</p>
+<p>LR summarizes the requirements: </p>
+<list>
+<item>constraint with <att>ident</att></item>
+<item>constraintList</item>
+<item><att>scheme</att> appears only at the level of constrainList</item>
+</list>
+<p>LB: what happens if you put a constraint list in an attribute list? SR: should we
+              allow <gi>constraint</gi> within an attribute class? (might have bad subeffects) A
+              good use case: in att.typed, <att>type</att> and <att>subtype</att> should not be
+              same. JC: we should certainly have <gi>constraint</gi> available on *Spec. </p>
+<p>LR: we should let SR go ahead and implement the basic aspects. We agree about
+                <gi>constraint</gi> at the <gi>elementSpec</gi> level; we can wait on
+                <gi>classSpec</gi> and <gi>schemaSpec</gi> until we're sure they are doable.</p>
+<p>AC: because we may allow other constraint languages, we should not permit abbreviated
+              fragments of schema languages (i.e. ones that would not parse by themselves).</p>
+<p>            <note><rs style="bold">SR</rs>: develop an initial implementation within the next
+              month.</note></p></div>
+<div><p>
+            <ref target="https://sourceforge.net/tracker/?func=detail&amp;aid=1933198&amp;group_id=106328&amp;atid=644065">1933198</ref>: ‘precision' element needed</p>
+<p>We have discussed this previously and there has been lengthy discussion on TEI-L. We
+              take no action now, but</p>
+<p>            <note><rs style="bold">all</rs>: Look again at the SourceForge proposal, get back
+              to Council with any objections; solicit input from Tim Finney. [See followup
+              discussion on tei-council, first week of April.]</note></p></div>
+
+<div><head>
+          Report on “Getting Started with TEI” (PB)</head>
+<p>The document has not progressed as far as we wanted; 7 of 13 sections are drafted and
+            ready for comments. PB proposes that if no one else volunteers, he will write the
+            remainder. DS asks whether we should go outside Council for authors; PB thinks not. LB:
+            do we want to internationalize the translation? JC/LR: we can think about it, don't want
+            to have anyone start on it.</p>
+</div>
+<div><head>
+          TEI and the “Standards World” (AC)</head>
+<p>There is room for TEI to become better known in standards communities. There are
+            various European agencies that have an interest in TEI; we should pursue our roles in
+            them. On a higher level, we could promote TEI by giving funders more info on TEI, TEI
+            best practices. (DO: this was mentioned by funders at the 2007 Members Meeting.) DO: we
+            should be doing this, and also identifying agencies that are not requiring TEI, and
+            explaining the benefits to them. But we are <emph>not</emph> in a position to do TEI certification.
+            We're not an agency, don't have paid staff that can do this. </p>
+<p>DO suggests that we prepare a package on digital resources and the TEI to share with
+            agencies, and offer to give workshops. <q>The TEI can profile itself as a meta-research
+            infrastructure. … We should be a research NGO</q>. [DS nominates this as the Quote of the
+            Meeting.]</p>
+<p>          <note><rs>AC, DO, LR [with JC and Julia Flanders]</rs>: talk further
+            about drafting communications to outside agencies (approval for these will have to come
+            from Board however)</note></p></div>
+<div><head>
+          Making TEI Examples more accessible</head>
+<p>JC: As a follow-up from our Galway meeting, we might want to come up with a framework
+            for indexing/retrieving TEI examples in the Guidelines (or even external ones). We want
+            to be able from a reference page to be able to point to uses of examples. All examples
+            in Guidelines should have <att>xml:id</att> and <att>xml:lang</att>. [SR feels the
+            latter is unneeded because <att>xml:lang</att> is inherited. But LR feels that we should
+            decouple the language of examples and the language of the enveloping Guidelines for
+            modularity. JC notes that there are some examples that incorrectly inherit
+            xml:lang=”en”]. LR suggestion we might move away from inherited examples in XML to a
+            library stored outside and pointed to, carrying <att>xml:lang</att>. JC proposes
+            decoupling examples from Guidelines and making them referenceable. </p>
+<p>Counterarguments: (SR) this is not our most important task right now; (LB)
+            decontextualized examples don't always make sense. (SR): The bigger problem is that
+            examples we have are too small. LR: so we need some kind of way to externalize examples.
+            DO: The first thing to do is to file a bug report on incorrect <att>xml:lang</att> on
+            examples; then add a feature request to add <att>xml:lang</att> to all egXMl
+            examples.</p>
+<p>Council agrees it would be good to have an index to examples in the HTML format as well
+            as in PDF. Also, a “click on show me other examples” link, to show all (?) available
+            examples. [Since implemented by SR.]</p>
+<p>SR points out that our HTML rendering of Guidelines is just one possible rendering; the
+            reason we make our source open is so people can build on it if they want. So let's
+            separate out HTML presentation from the collection of more examples.</p>
+<p>          <note><rs>DS</rs> will gather a list of examples with incorrect
+            (explicit or inherited) <att>xml:lang</att> values; JC, submit feature request to add
+              <att>xml:lang</att> to all egXML elements.</note></p></div>
+<div><head>
+          TEI-ISO Project Report (SR)</head>
+<p>The first stage of Oxford's work for the ISO was to show that TEI could describe an ISO
+            standard; the second stage was lossless bidirectional translation between TEI and MS
+            Word. This was achieved and demo'ed to standards bodies. The proposal then is to go on
+            to a pilot project to implement some of the standards. (LR asks if there wasn't a
+            standard prepared in XML recently; SR: yes, but not validated by ISO.) There were
+            objections in stage 1 about the TEI table model (probably CALS tables would need to be
+            used instead) and questions about math. LR notes that Vesta supports an ISO-looking
+            document (but not ISO-approved, as SR notes). SR isn't sure that this project will go
+            any further; Council should perhaps not spend more time on it right now. LR: can we say
+            that the experiment shows that a subset of TEI is an appropriate tool for the task? SR:
+            yes, because we understand the necessary structure and terminology, plus have the
+            ability to customize. And the MS Word stuff demonstrates that there is a stylesheet
+            framework available Word-TEI adequate for authoring.</p>
+</div>
+	</div>
+</div></body></text></TEI>

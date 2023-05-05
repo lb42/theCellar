@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/home/lou/Public/TEI/TEICSS/tei.css" type="text/css"
+ ?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:t="http://www.tei-c.org/ns/1.0" n="2017-09"><teiHeader><fileDesc><titleStmt><title>Minutes of the TEI Technical Council</title><meeting n="2017-09" when="2017-09-28">TEI Technical Council online
+     meeting : <date>28 September 2017</date></meeting></titleStmt><publicationStmt><distributor>TEI Website</distributor><idno>TCM094</idno></publicationStmt><sourceDesc><p>Retagged from a WordPress HTML file</p></sourceDesc></fileDesc><revisionDesc><change when="2023-04-25">Archival header confected</change><change>Extracted from Word Press article with id post-29038</change></revisionDesc></teiHeader><text><body><div>
+	
+<p>Hangout link: <ref target="https://hangouts.google.com/call/BksfbDIJVuvl4qTNEcnaAAEE">https://hangouts.google.com/call/BksfbDIJVuvl4qTNEcnaAAEE</ref></p>
+<p>Present</p>
+<p>Syd Bauman (SB)</p>
+<p>Hugh Cayless (HC, chair)</p>
+<p>James Cummings (JC)</p>
+<p>Martina Scholger (MS)</p>
+<p>Sarah Stanley (SS)</p>
+<p>Magdalena Turska (MT)</p>
+<p>Elisa Beshero-Bondar (EB)</p>
+<p>Raff Viglianti (RV)</p>
+<p>Peter Stadler (PS)</p>
+<p>Apologies</p>
+<p>Alejandro Bia</p>
+<div type="h2"><head>Agenda</head><p><hi style="b">F2F at UVic</hi></p><list style="ul">
+<item>Venue: Parkside Hotel, Executive Boardroom</item>
+<item>Times: subject to change, but the room will be available 09:00–17:30 Nov. 16–18
+<list style="ul">
+<item>Board meeting may use the room in the morning, in which case we’ll start after, but there’s talk of their doing it on the 15th at UVic, in which case we could start (and finish) earlier. I’d certainly prefer the latter! Raise on Board-Council list?</item>
+</list>
+</item>
+<item>Agenda: Please be thinking about items for discussion</item>
+</list><p><hi style="b">RomaJS checkin</hi></p><list style="ul">
+<item>Do we need to establish a dedicated working group on RomaJS to ensure that progress doesn’t stall? It’s not fair to leave it all on RV’s shoulders.
+<list style="ul">
+<item>PS: likes the idea of community calls. Open it up? RV thinks too early. Need an MVP first. MT: community calls vary widely depending on who’s participating; devote some F2F time to actual work sprints?</item>
+<item>EB: What should Council party line (if any) be about old Roma? JC: simple, low-hanging-fruit issues, we can address, but nothing big. PS: in general, Roma is within Council’s responsibility
+<list style="ul">
+<item>HC: Stylesheets: definitely our priority</item>
+<item>JC: Fix critical bugs (but e.g. sanity checker isn’t critical)</item>
+<item>Roma has not been “abandoned” but we’re “just maintaining” it.</item>
+<item>HC: Working on replacing it, not taking major feature requests, but we’ll commit to keeping it running, and we will honor small “low-hanging-fruit” requests.</item>
+<item>SB: Roma wasn’t our responsibility in the first place–it was Sebastian’s work.</item>
+<item>RV to set up a regular meeting eg every 2 weeks ; aim to have a basic prototype available for the annual meeting</item>
+</list>
+</item>
+</list>
+</item>
+</list><p><hi style="b">Fall/Winter Release?</hi></p><p>HC suggests before end of year, but we don’t know if before F2F meeting or not; consensus seems to be 2017-12.</p><p><hi style="b">Ticket Triage</hi></p><list style="ul">
+<item>Is new system working?
+<list style="ul">
+<item>What were the month assignments again? Sept. PS, Oct. JC, Nov. MS</item>
+</list>
+</item>
+<item>Does triage person handle Stylesheets, or just TEI? No, just TEI. However, we agreed to have a session (perhaps ½ day) devoted to triaging Stylesheets tickets at F2F in Victoria.</item>
+</list><p><hi style="b">F2F Spring 2018</hi></p><list style="ul">
+<item>Prague or Cologne ( <ref target="http://dhd2018.uni-koeln.de/">http://dhd2018.uni-koeln.de/ </ref>Feb. 26 to March 2) Somewhere else? (PS)</item>
+</list><p>Prague is more fun than Cologne: but XML Prague is pretty early in the year; but Prague is still more fun any time of the year than Cologne. XML Prague is terrific conference and an early in year F2F is helpful to newly elected Council members</p><p>PS could host a Cologne meeting: DH-meeting of German-speaking people: from 2018-02-26 to 03-02</p><p>JC could offer Newcastle</p><p>MT: can investigate U. of Warsaw</p><p><ref target="https://github.com/TEIC/TEI/issues"><hi style="bold">Tickets</hi></ref></p><p>Please nominate tickets you’d like to see discussed! Let’s make some of these green.</p><p>Also, let’s get some of the green ones done.</p><list style="ul">
+<item>Mentors should ensure their charges are subscribed to github notifications</item>
+<item>MT to open a new ticket on the relation / link issue (re TEI list message)</item>
+<item><ref target="https://github.com/TEIC/TEI/issues/1679">New attribute @towhom #1679</ref></item>
+</list><p>Didn’t get to talk about these next:</p><list style="ul">
+<item><ref target="https://github.com/TEIC/TEI/issues/1667">Add listRef to model.ptrLike (and expand its description slightly) #1667</ref></item>
+<item><ref target="https://github.com/TEIC/TEI/issues/1658"><gi>q</gi> should be allowed in <gi>span</gi> #1658</ref></item>
+<item><ref target="https://github.com/TEIC/TEI/issues/1655"><gi>seal</gi> element description should be expanded to other authentication mechanisms #1655</ref></item>
+<item><ref target="https://github.com/TEIC/TEI/issues/1654">Some mix ups expanding upon examples in specs #1654 </ref>(I’d just like to clarify best practices)</item>
+<item><ref target="https://github.com/TEIC/TEI/issues?q=is%3Aopen+is%3Aissue+label%3A%22Status%3A+Needs+Discussion%22">All amber tickets</ref></item>
+<item>MT proposes discussing recent exchange on TEI-L about allowing listRelation in person; after presenting it to the Council we deem it too complicated for 10 mins so MT is to open a ticket</item>
+</list></div>
+</div>
+     </body><!-- #post-## --></text></TEI>

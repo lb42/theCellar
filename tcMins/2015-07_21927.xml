@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/home/lou/Public/TEI/TEICSS/tei.css" type="text/css"
+ ?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:t="http://www.tei-c.org/ns/1.0" n="2015-07"><teiHeader><fileDesc><titleStmt><title>Minutes of the TEI Technical Council</title><meeting n="2015-07" when="2015-07-28">TEI Technical Council online
+     meeting : <date>28 July 2015</date></meeting></titleStmt><publicationStmt><distributor>TEI Website</distributor><idno>TCM071</idno></publicationStmt><sourceDesc><p>Retagged from a WordPress HTML file</p></sourceDesc></fileDesc><revisionDesc><change when="2023-04-27">Archival header confected</change><change>Extracted from Word Press article with id post-21927</change></revisionDesc></teiHeader><text><body><div>
+		
+		<!-- <div class="teiheader"><filedesc><titlestmt><title></title><author>TEI Technical Council</author></titlestmt><editionstmt><edition><date>2015-09-18</date></edition></editionstmt><publicationstmt>
+<p>unknown</p>
+</publicationstmt><sourcedesc><p>Converted from a Word document</p>
+<p>      </sourcedesc></filedesc><encodingdesc><appinfo><application id="docxtotei" ident="TEI_fromDOCX" version="2.15.0"><label>DOCX to TEI</label>
+        </application></appinfo></encodingdesc><revisiondesc><listchange><change><date>2015-09-18T15:41:35Z</date><name>Hugh Cayless</name></change></listchange></revisiondesc></div> -->
+<p>Teleconference 2015-07-28 14:00 UTC</p>
+	 <p>Present:</p><list style="ul">
+<item>Syd Bauman (SB)</item>
+<item>Fabio Ciotti (FC)</item>
+<item>Hugh Cayless (HC)</item>
+<item>Martin Holmes (MH)</item>
+<item>Peter Stadler (PWS)</item>
+<item>Raff Viglianti (RV)</item>
+<item>James Cummings @ 14:23 (JC)</item>
+<item>Paul Schaffner @ 14:07 (PS)</item>
+	 </list><p>Apologies:</p>
+<list style="ul">
+<item>Stefanie Gehrke (SG)</item>
+<item>Lou Burnard (LB)</item>
+</list>
+<div><head> id="h.h2bxnv8lgm1v"&gt;
+        Agenda
+        </head><p>What to do about Sourceforge</p>
+ <list style="ul">
+<item>Reasons for leaving: wobbly
+                infrastructure, shady practices, technology unlikely to improve. Are there good
+                reasons to stay?</item>
+<item>should we move to Git / GitHub? Are there alternatives
+                we want to explore?</item>
+</list>
+<table>
+<row>
+<cell><hi style="bold">pros</hi></cell>
+<cell><hi style="bold">cons</hi></cell>
+</row>
+<row>
+<cell>Better prospects for stability.</cell>
+<cell>Migration process.</cell>
+</row>
+<row>
+<cell>Stylesheets and Simple are already there.</cell>
+<cell>Possible loss of important history.</cell>
+</row>
+<row>
+<cell>Better forking/merging.</cell>
+<cell>Loss of sequential rev numbers.</cell>
+</row>
+<row>
+<cell>Slightly better integration of ticketing and commits.</cell>
+<cell>Slightly higher learning curve for new users.</cell>
+</row>
+<row>
+<cell>Pull requests / opportunity for better community engagement</cell>
+<cell>Need to rewrite/update a ton of documentation and links.</cell>
+</row>
+</table>
+<list style="ul">
+<item>what needs to be replicated:<list style="ul">
+<item>Keep presence on SF to
+                avoid malware take-over. Possibly keep automatic mirror from
+                GitHub</item>
+<item>repository / software</item>
+<item>issue tracking</item>
+<item>file
+                downloads (move to tei-c?)<list style="ul">
+<item>Files can be attached to
+                    GitHub releases (tags)</item>
+</list>
+</item>
+<item>migration of issues: could be a
+                tool: <ref target="https://github.com/cmungall/gosf2github"><hi style="underline color(1155CC) background(white)">https://github.com/cmungall/gosf2github</hi></ref><hi style="color(222222) background(white)"> appears to be feasible for the migration of issues</hi></item>
+</list>
+</item>
+<item>The difficult thing is that the creator might get lost and the user using the API will be the new “creator”.</item>
+</list>
+<list style="ul">
+<item>TravisCI in addition to / instead of Jenkins?</item>
+<item>Timeline if we do move</item>
+<item><hi style="bold">Action on SM</hi> to produce a spreadsheet with info from tc
+            documents that will need to be updated if we move to GH.</item>
+<item><hi style="bold">Action on MH</hi> to do an inventory of the SF site and produce a
+            report on what’s there.</item>
+<item><hi style="bold">Action on HC</hi> to put a self-updating copy of the SF repo in
+            github’s TEI-C account for safety’s sake and for testing.</item>
+<item><hi style="bold">Action on RV</hi> to look into the process of migrating issues from
+            SF to GH.</item>
+<item><hi style="bold">Action on JC</hi> to investigate users on SF account and find out if
+            they have GH accounts.</item>
+</list>
+ <p>Fall F2F (HC)</p>
+<list style="ul">
+<item>Sun 10-25 / Tue 10-27 in Lyon</item>
+<item>will be getting meeting room from U on Mon 26 and Tue 27</item>
+<item>need to find meeting room for Sun 25 — one not available, the other €900</item>
+<item>WiFi is a requirement, projection is a desirable</item>
+<item><hi style="bold">Action on HC</hi> to look for “work space” or “share space” in
+            addition to hotel meeting rooms</item>
+</list>
+<p><gi>s</gi> inside <gi>s</gi> <ref target="https://sourceforge.net/p/tei/bugs/578/"><hi style="underline color(1155CC)">bug</hi></ref> (MH)</p>
+<list style="ul"><item>MH proposes returning to the old content model and implementing the restriction in
+            Schematron.</item>
+<item>Council agrees: YES!</item>
+<item><hi style="bold">Action on MH</hi> to raise a separate “<gi>s</gi> as child of
+            <gi>s</gi>?” ticket</item>
+</list>
+<p><gi>xenoData</gi> (SB)</p>
+ <list style="ul"><item>how do we allow encoder to say “about the source” vs “about this TEI file”</item>
+<item>should content be<list style="ul">
+<item>well-formed XML-only,
+                or</item>
+<item>any well-balanced XML, or</item>
+<item>any (well-balanced) XML or
+                text() ? (The latter to allow “binary” formats like JSON)
+ </item></list></item>
+
+<item>JC: I think we should make no rules about this other than that the
+                    document needs to be well-formed. (e.g. it can have text, CDATA sections, xml
+                    etc.)</item>
+
+
+<item>The consensus is that anything (XML or text) should be allowed (of course it will
+            need to be correctly escaped or encoded.) Stating the obvious: the result must be a well
+            formed XML document.</item>
+<item>HC: The issue of whether there should be a way to characterize what is in
+            <gi>xenoData</gi> should be a separate ticket (@mimetype?).</item>
+<item>FC: in Council Mail List I suggested to adopt something like @MDTYPE in METS</item>
+                </list>
+<p>MEETING CLOSED AT THIS POINT.</p>
+<list style="ul">
+<item>SB, MH, JC, FC remained on the call and discussed the nature of @rend… because they
+            are gluttons for punishment. MH and JC agree that order isn’t significant (by default at
+            least), and SB thinks it should be, but is wrong. 😉 To clarify that a little — MH and
+            JC agree that the TEI should require that order not be significant, SB thinks that
+            whether order is significant or not is up to the encoder / project / ODD-writer.</item>
+</list>
+<p>Their extraordinary meeting ending at 16:09Z.</p>
+<list style="ul">
+<item>default values (SB)<list style="ul">
+<item>SB, LB, SR suggestion — make
+                semantic suggestion rather than syntactic requirement</item>
+<item>MH suggestion —
+                make part of att.deprecated and actually remove</item>
+</list>
+</item></list>
+</div>
+	</div></body><!-- #post-## --></text></TEI>

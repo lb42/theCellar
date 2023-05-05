@@ -1,0 +1,808 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/home/lou/Public/TEI/TEICSS/tei.css" type="text/css"
+ ?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:t="http://www.tei-c.org/ns/1.0" n="2010-04"><teiHeader><fileDesc><titleStmt><title>Minutes of the TEI Technical Council</title><meeting n="2010-04" from="2010-04-29" to="2010-04-30">TEI Technical
+     Council ftf meeting : <placeName>Dublin</placeName>, <date>29–30 April 2010</date></meeting></titleStmt><publicationStmt><distributor>TEI Website</distributor><idno>TCM045</idno></publicationStmt><sourceDesc><p>Retagged from a WordPress HTML file</p></sourceDesc></fileDesc><revisionDesc><change when="2023-04-25">Archival header confected</change><change>Extracted from Word Press article with id post-21901</change></revisionDesc></teiHeader><text>
+        <body>
+	
+		<head>Draft minutes of  Council meeting</head>		<milestone unit="unknown" rend="rule"/>
+	
+
+	<div>
+		
+		
+<p>Attendees: </p>
+<list>
+<item>Brett Barney (BB)</item>
+<item>Lou Burnard (LB)</item>
+<item>James Cummings (JC)</item>
+<item>Matthew Driscoll (MD)</item>
+<item>Kevin Hawkins (KH)</item>
+<item>Julianne Nyhan (JN)</item>
+<item>Daniel O’Donnell (DoD)</item>
+<item>Elena Pierazzo (EP)</item>
+<item>Dot Porter (DP)</item>
+<item>Sebastian Rahtz (SR) – minutes</item>
+<item>Laurent Romary (LR) – chair</item>
+<item>Susan Schreibman (SS)</item>
+</list>
+<div>
+                <head>morning of 2010-04-29</head>
+<div><head>
+                    Review of Symposium</head>
+<p><label>Meeting started at 9:30 WET.</label></p>
+<p>JN presented an overview of the public Googledocs document, in which she had
+                        recorded notes from the previous day’s <ref target="http://dho.ie/node/673">Symposium on TEI and Scholarly
+                        Publishing</ref>. From the various presentations and discussing, she has distilled
+                        points under two main headings: “Emerging themes” and “Specific issues with
+                        P5.” She briefly summarized these.</p>
+<p>LR asked the group to consider what implications these points have for the
+                        Council. DO clarified a point raised about open-source publication and
+                        anti-trust concerns, suggesting that US anti-trust laws present no real
+                        barrier for cooperation of the kind the Council wants to promote.</p>
+<p>LR noted that several projects are trying to create a TEI customization to
+                        fit their publication workflows and wondered whether we should we put effort
+                        into such a customization. SR asked whether, in doing so we would be, in
+                        effect, re-creating the tagset of the National Library of Medicine (NLM). LR
+                        noted that both Martin Holmes and LR have both worked with NLM mappings, so
+                        we could start there. SR suggested the alternative of re-expressing the NLM
+                        in a TEI ODD. KH noted that NLM is DTD only and therefore cannot use
+                        namespaces. SR said that mapping NLM to TEI would require the use of lots of
+                        attributes, which users don’t like to be forced to do. LR, however, said that
+                        because NLM is so closely modeled upon TEI the mapping is really easy.
+                        DO suggested that what we may need is a cooperation with NLM: We might get
+                        the user community together first to discuss needs and then build the
+                        customization, a la TEI TIte. LR argued that the features and needs for a
+                        customization are already well-identified because customizations have
+                        already been done in different places, so it might be the time to take what
+                        each group has done, work out a single customization for consideration, and
+                        present it for consideration. DO suggested that the real issue is to find
+                        Council members who have the energy to drive the work. KH said that it’s not
+                        a question of will but an uncertainty about what to do. He noted that in the
+                        US, academic publishers’ prime concern is to do something that lets them
+                        lose less money. JC asked why, in the last 20 years, the movement toward a
+                        standard hasn’t come from the presses themselves. DO said that he was struck by
+                        the fact that everyone in publishing has been/is focused on the page but
+                        that, even so, there are a lot of people working at the presses who
+                            <emph>are</emph> interested in the kinds of things we are interested in.
+                        The problem is that no one has the money to fly people around to
+                        collaborate. If we take the responsibility of guiding collaboration, things could
+                        happen. Our role would be getting tool-makers together to talk about how
+                        they’re doing what they’re doing. He sees Dot’s work on image markup as a
+                        model. LR thinks we could pretty easily put on the table a first draft of an
+                        ODD for publication. DO asked what it is they’re lacking, then, since in
+                        doing what LR is proposing we would essentially be looking at their problem
+                        and solving it for them. LR responded that what’s lacking are answers to
+                        questions such as <q>Where do you put the abstract? How do you structure author
+                        attribution/citation/bibligraphical notations? What should be used as
+                        standardized type attribute values for divs? etc.</q> DO suggested that the best
+                        way to address these issues would be to bring together energetic and
+                        interested Council members with some of the people at the symposium. LR
+                        disagreed, saying that there’s already a publishing SIG. Some discussion
+                        followed about the advisability of putting out a call that would allow
+                        people from both groups to volunteer. KH argued that we will only get buy-in
+                        from publishers if the customization we produce comes with good tools (e.g.,
+                        stylesheets for producing PDFs or Kindle-formatted texts), since the
+                        publishers don’t have the luxury to support long-term development of such
+                        tools. SR argued that TEI doesn’t have the resources to support tool
+                        development either. DO argued that that’s where the people we saw yesterday
+                        (i.e., those who are making workflows) come in. DO proposed that we convene
+                        a summit of people from NLM, TEI, etc. LR acknowledged that we don’t have
+                        the budget to implement tools, but noted that we have people who are working
+                        on these issues, so we wouldn’t have to promise tools; we could just make
+                        sure they’re on the agenda. SS suggested that an NEH startup grant might be
+                        a good opportunity to get the thing off the ground. EP noted that she has
+                        been involved in a project to convert CML (Cambridge) to TEI. There followed
+                        short discussion of procedural matters involved in coordinating work on this
+                        issue with the SIG and whether it would be best to structure the work
+                        through the existing SIG, some sub-group of the Council, folks from
+                        industry, or some combination of these. In general, DO favored asking
+                        publishers to provide input so that we can build something appropriate, and
+                        LR favored producing something to present to publishers. SR favored first
+                        defining a manifesto before attempting a customization. KH proposed that a
+                        sub-group of the Council (viz., JC, LB, SR, Martin Holmes, LR, and DO) write
+                        up a vision (using Googledocs), present it for feedback, and then maybe
+                        apply for grants. All agreed.</p>
+<p>–10 minute break–</p>
+</div>
+<div><head>
+                    Discussion of “green” feature requests</head>
+<list><label>
+                            <ref target="https://sourceforge.net/tracker/index.php?func=detail&amp;aid=2971316&amp;group_id=106328&amp;atid=644065">2971316</ref> – Add @svg:points to att.coordinated</label>
+<item>No objections; much rejoicing.</item>
+<label>
+                            <ref target="https://sourceforge.net/tracker/index.php?func=detail&amp;aid=2969870&amp;group_id=106328&amp;atid=644065">2969870</ref> – <gi>surrogates</gi> for digital &amp; its
+                            examples</label>
+<item>General agreement.</item>
+<label>
+                            <ref target="https://sourceforge.net/tracker/index.php?func=detail&amp;aid=2949985&amp;group_id=106328&amp;atid=644065">2949985</ref> – <gi>idno</gi> in more than just bibliographic
+                            elements</label>
+<item>Following a brief discussion in which LR et al. parsed the similarity
+                            of <gi>idno</gi>, <gi>num</gi>, and <gi>term</gi>; in which LB opined
+                            that a phrase-level <gi>idno</gi> would not be a good idea; and in which
+                            the classes <gi>idno</gi> might be added to were discussed, it was
+                            agreed that <gi>idno</gi> should be added to model.nameLike. </item>
+<label>
+                            <ref target="https://sourceforge.net/tracker/index.php?func=detail&amp;aid=2728061&amp;group_id=106328&amp;atid=644065">2728061</ref> – Add @target to relatedItem</label>
+<item>LB has restricted the scope of the original proposal, so the issue at
+                            hand is whether the Council agrees with the proposed restriction. After
+                            quite a lot of discussion, mostly about whether text and/or references
+                            should be allowed within relatedItem, LB noted that there seemed to be
+                            broad support for allowing for content within <gi>relatedItem</gi> and
+                            that we should generate examples. </item>
+</list>
+</div>
+<div><head>
+                    Discussion of “green” bugs</head>
+<list><label>
+                                <ref target="https://sourceforge.net/tracker/index.php?func=detail&amp;aid=2946056&amp;group_id=106328&amp;atid=644065">2946056</ref> – Order of children of <gi>profileDesc</gi></label>
+<item>After some debate such things as whether <gi>creation</gi> should
+                                be repeatable, Council agreed to add it to model.profileDescPart,
+                                perhaps also adding a Schematron rule to prevent its being repeated. </item>
+<label>
+                                <ref target="https://sourceforge.net/tracker/index.php?func=detail&amp;aid=2863331&amp;group_id=106328&amp;atid=644065">2863331</ref> – ‘Used by’ section empty in
+                                model.physDescPart</label>
+<item>Not controversial; SR knows has this on his to-do list to
+                                investigate and fix.</item>
+</list>
+</div>
+<div><head>
+                    Discussion of “amber” feature requests</head>
+<list><label>
+                                <ref target="https://sourceforge.net/tracker/index.php?func=detail&amp;aid=2976608&amp;group_id=106328&amp;atid=644062">2976608</ref> – Add <gi>ref</gi> as a child of
+                                    <gi>analytic</gi>, <gi>monogr</gi> and <gi>series</gi></label>
+<item>Numerous example use cases were put forth, and the Council agreed
+                                to the change as proposed. </item>
+<label>
+                                <ref target="https://sourceforge.net/tracker/index.php?func=detail&amp;aid=2973254&amp;group_id=106328&amp;atid=644062">2973254</ref> – Allow @target (or <gi>ptr</gi>) on
+                                    <gi>divGen</gi></label>
+<item>DO et al. argued that this request would amount to a hack for
+                                replicating the functionality of XInclude. JC pointed out that the
+                                TEI website uses OpenCMS, which doesn’t allow XInclude. Council
+                                members generally agreed that, while hacks could be countenanced in
+                                such situations, they shouldn’t be written into the spec. </item>
+<label>
+                                <ref target="https://sourceforge.net/tracker/index.php?func=detail&amp;aid=2940838&amp;group_id=106328&amp;atid=644062">2940838</ref> – CALS for TEI</label>
+<item>This request grows out of a discussion between LR and SR regarding
+                                Sebastian’s use of CALS in ISO. LR clarified that the request isn’t
+                                that we take up responsibility for CALS itself. In response to KH’s
+                                question whether the proposal is that we “make CALS available” just
+                                via a reference in the prose of the guidelines, LR responded that he
+                                would like to see, at minimum, something in Roma to allow CALS. SR
+                                opined that perhaps no action by the Council was needed. After
+                                further discussion of whether we should support CALS through the TEI
+                                Sourceforge site. It was decided that this request should be added
+                                to the roster for further discussion later in the meeting. </item>
+<label>
+                                <ref target="https://sourceforge.net/tracker/index.php?func=detail&amp;aid=2925145&amp;group_id=106328&amp;atid=644065">2925145</ref> – Generic dating class</label>
+<item>Following a summary of the request by LB, JC noted that it’s not
+                                the TEI that’s saying you have to use the Gregorian calendar, but
+                                ISO. DO pointed out that we’ve done this sort of things for
+                                    <gi>dimension</gi> (@unit). Observing that the request obviously
+                                warrants debate, LR moved the request to the roster for later
+                                discussion.</item>
+<label>
+                                <ref target="https://sourceforge.net/tracker/index.php?func=detail&amp;aid=2919640&amp;group_id=106328&amp;atid=644062">2919640</ref> – Global @facsKey</label>
+<item>It was agreed to close this ticket, as @facs currently permits any
+                                of the 3 options Sebastian outlined in his comment. The Council
+                                favored Sebastian’s choice “a” and agreed that the guidelines should
+                                be amended to include recommendations and/or examples regarding how
+                                to implement this suggestion. </item>
+<label>
+                                <ref target="https://sourceforge.net/tracker/index.php?func=detail&amp;aid=29097660&amp;group_id=106328&amp;atid=644065">2909766</ref> – Make <gi>del</gi> and <gi>add</gi> (etc)
+                                dateable</label>
+<item>On the advice of SR, the Council decided to defer further
+                                discussion of this request until they had an opportunity to consider
+                                the recommendations of the working group on genetic editions. </item>
+<label>
+                                <ref target="https://sourceforge.net/tracker/index.php?func=detail&amp;aid=2890254&amp;group_id=106328&amp;atid=644065">2890254</ref> – Ability to define new element with same name as
+                                an existing</label>
+<item>It was decided to defer further discussion of this request until
+                                after the discussion of ODD.</item>
+<label>
+                                <ref target="https://sourceforge.net/tracker/index.php?func=detail&amp;aid=859355&amp;group_id=106328&amp;atid=644065">859355</ref> – <gi>subst</gi> should permit textual
+                                data</label>
+<item>It was decided to defer further discussion of this request until
+                                after consideration of the recommendations of the working group on
+                                genetic editions.</item>
+<label>
+                                <ref target="https://sourceforge.net/tracker/index.php?func=detail&amp;aid=2859183&amp;group_id=106328&amp;atid=644065">2859183</ref> – Make all milestoneLike elements
+                                spanning</label>
+<item>It was decided to defer further discussion of this request until
+                                after consideration of the recommendations of the working group on
+                                genetic editions.</item>
+<label>
+                                <ref target="https://sourceforge.net/tracker/index.php?func=detail&amp;aid=2834511 2834511&amp;group_id=106328&amp;atid=644065">2834511 2834511</ref> – Add more elements to att.spanning with
+                                schematron constraint</label>
+<item>It was decided to defer further discussion of this request until
+                                after consideration of the recommendations of the working group on
+                                genetic editions. </item>
+<label>
+                                <ref target="https://sourceforge.net/tracker/index.php?func=detail&amp;aid=2834505 2834505&amp;group_id=106328&amp;atid=644065">2834505 2834505</ref> – @cert on choice and
+                                model.choicePart</label>
+<item>JC clarified the rationale and LB suggested that the desired
+                                facility already exists. As there was some disagreement, it was
+                                decided that this request should be added to the roster for further
+                                discussion later in the meeting. </item>
+<label>
+                                <ref target="https://sourceforge.net/tracker/index.php?func=detail&amp;aid=2812634 2812634&amp;group_id=106328&amp;atid=644065">2812634 2812634</ref> – @docStatus on <gi>edition</gi></label>
+<item>All that we need is for someone to write some prose for the
+                                documentation.</item>
+<label>
+                                <ref target="https://sourceforge.net/tracker/index.php?func=detail&amp;aid=2811239 2811239&amp;group_id=106328&amp;atid=644065">2811239 2811239</ref> – New element ‘object’</label>
+<item>There were quite a few different opinions expressed about what’s
+                                desired and/or proposed. Lou suggested making the request red. LA
+                                suggested, instead, that we ask Gabby to provide clarification,
+                                after which the Council will reconsider the request. </item>
+<label>
+                                <ref target="https://sourceforge.net/tracker/index.php?func=detail&amp;aid=2811239 2811234&amp;group_id=106328&amp;atid=644065">2811239 2811234</ref> – Add @ref to ‘material’</label>
+<item>No objections.</item>
+<label>
+                                <ref target="https://sourceforge.net/tracker/index.php?func=detail&amp;aid=2794512 2794512&amp;group_id=106328&amp;atid=644065">2794512 2794512</ref> – Move <gi>space</gi> to core
+                                module</label>
+<item>LB suggested a revised proposal: a new element (perhaps named
+                                “spacer”) be added to the core module. After some discussion of
+                                whether <gi>milestone</gi> is what’s wanted, it was agreed that the
+                                request warrants more discussion. </item>
+<label>
+                                <ref target="https://sourceforge.net/tracker/index.php?func=detail&amp;aid=2783323 2783323&amp;group_id=106328&amp;atid=644062">2783323 2783323</ref> – Add @from and @to to choice</label>
+<item>It was decided that this request should be added to the roster for
+                                further discussion later in the meeting.</item>
+<label>
+                                <ref target="https://sourceforge.net/tracker/index.php?func=detail&amp;aid=2531384 2531384&amp;group_id=106328&amp;atid=644065">2531384 2531384</ref> – Rationalise application of
+                                @target</label>
+<item>It was decided that this request should be added to the roster for
+                                further discussion later in the meeting.</item>
+<label>
+                                <ref target="https://sourceforge.net/tracker/index.php?func=detail&amp;aid=2493417 2493417&amp;group_id=106328&amp;atid=644065">2493417 2493417</ref> – <gi>idno</gi> coverage</label>
+<item>It was decided that this request should be added to the roster for
+                                further discussion later in the meeting.</item>
+<label>
+                                <ref target="https://sourceforge.net/tracker/index.php?func=detail&amp;aid=2298442 2298442&amp;group_id=106328&amp;atid=644065">2298442 2298442</ref> – ODD should customize ODD</label>
+<item>It was decided that further discussion of this request should be
+                                deferred until after discussion of ODD+.</item>
+</list>
+</div></div>
+<div>
+                    <head>afternoon of <date>2010-04-29</date></head>
+<p>Presentation of Genetic Workgroup Proposal (EP)</p>
+<p>3 parts to proposal:</p>
+<list>
+<item>Sections 1-5: Addition of documentary view of text to main TEI
+                            structure</item>
+<item>Sections 6-10: proposals for additions to transcription module</item>
+<item>Genetic encoding</item>
+</list>
+</div>
+<div><head>
+                    Discussion</head>
+<p>DP pointed out problem that @reason is almost exactly the same as @cause.</p>
+<p>Discussion of whether tei:subst should be able to contain cdata: general
+                        reluctance.</p>
+<p>Issue of @instant: this indicates immediate correction at given stage;
+                        values=true|fault</p>
+<p>DO notes relative rarity of attributes with true|false values in TEI;
+                        suggests that it might be better to have a more generic attr for which
+                        “instantaneous” is a value as this will allow for the inevitable request for
+                        additional values from the community.</p>
+<p>Proposals on Genetic Encoding per se (i.e. stages and the like). This will
+                        await the finishing of the collation and apparatus modules.</p>
+<p>Issue with naming of proposed stage elements noted: stageNote, for example,
+                        is a well-known type of text structure in theatre.</p>
+</div>
+<div><head>
+                    Action and Next Steps</head>
+<list>
+<item>The council accepts transcription group report in principle,
+                                recognising that significant changes may be still necessary.</item>
+<item>The council would like to publish the proposal for use by the
+                                community, on condition that it is recognised that changes may still
+                                be made that break initial material.</item>
+<item>The council will break the sections into SF tickets as proposed by
+                                Lou (broad terms) and James and Elena (specific items that could be
+                                broken off into non-controversial tickets).</item>
+</list>
+<div><head>
+                        Bibl Report (LR, KH, MH)</head>
+<p>Most of the council discussion focussed on reviewing the
+                                    principles proposed by the group.</p>
+<p>Council disagreed with proposal to use examples to suggest
+                                    good practice (by suppressing examples of alternate coding). It
+                                    felt it was important to be explicit in the text as well about
+                                    what was good and bad practice. </p>
+<p>To avoid breaking existing documents (and recognising that
+                                    bibliographic data can come in a variety of forms, some of which
+                                    make it necessary to accept less than optimal encodings), we
+                                    will recommend rather than require the practices suggested by
+                                    the sub-committee.</p>
+<p>The following are tied to the corresponding points in the
+                                    committee’s report:</p>
+<list>
+<item>1) The above meta principles apply</item>
+<item>2) DITTO</item>
+<item>3) Accepted with the exception of name-internal punctuation: e.g.
+                            O’Donnell, Smith-Marbles, E. B. White</item>
+<item>4) Same as 1: yes subject to meta-conditions.</item>
+<item>5) accept</item>
+<item>6) [Get Kevin’s summary]</item>
+<item>7) Leave as is but acknowledge that life is difficult: e.g. you might
+                            well have mixed blbstruct and bibls. Leave example.</item>
+<item>8) The failure to reflect the proposed values for @type as listed in the
+                            guidelines was a bug. But the larger issues about article scope vs.
+                            actual citation is more complicated and is to be reexamined by the
+                            sub-committee.</item>
+</list>
+<p>Lou and Kevin are to work and implement the easy issues in the odds;
+                            sub-committee is to clean up document in light of discussion and return
+                            to council with a clean version by June 15, with comments to follow by a
+                            deadline to be determined.</p>
+</div>
+</div>
+<div>
+                    <head>morning of 2010-04-30</head>
+<div><head>
+                        Reports of small-group discussions of feature requests</head>
+<p>Council members met in groups of two or three to discuss various tickets
+                            that were unresolved after yesterday’s discussions. Below are notes from
+                            reporting back.</p>
+<list><label>
+                                <ref target="https://sourceforge.net/tracker/index.php?func=detail&amp;aid=2940838&amp;group_id=106328&amp;atid=644065">CALS for TEI (2940838)</ref></label>
+<item>
+<p>Laurent reported that he, Dan, and Kevin decided on these
+                                    things to do: (1) add a reference to CALS in the Guidelines as
+                                    an alternative way to encode tables and (2) use Sebastian’s ODD
+                                    that he developed for CALS as part of his work with ISO [?] to
+                                    include in the TEI (much like MathML and SVG in the TEI). </p>
+<p>Sebastian noted that we actually have a private re-implementation
+                                    of MathML and SVG by incorporating these from the standard [at
+                                    the time of ODD generation?]. He also noted that “CALS” can mean
+                                    many things, not all of which are clearly defined, but most
+                                    people use it to refer to the CALS exchange model, which is
+                                    well-specified. He said we need to talk to Norm Walsh [who is
+                                    our best contact for CALS].</p>
+<p>Laurent said the third thing to do is to contact Norm Walsh.</p>
+<p>Dan asked Sebastian whether his ODD needs polishing before public
+                                    distribution. Sebastian replied that ____and said he just needs
+                                    a namespace to use for CALS elements.</p>
+<p>Lou asked to clarify that there was consensus not to include CALS
+                                    elements in the Guidelines. Everyone agreed that we would not do
+                                    so at this time.</p>
+</item>
+<label>
+                                <ref target="https://sourceforge.net/tracker/index.php?func=detail&amp;aid=2925145&amp;group_id=106328&amp;atid=644065">Generic dates (2925145)</ref></label>
+<item>
+<p>Dot reported that she, Elena, and James discussed a ticket
+                                    proposing to create att.datable.generic for normalizing dates
+                                    using non-Gregorian calendars and dating systems. She said they
+                                    like the idea but are unsure of implementation. James added that
+                                    the datatype would need to be so loose that it basically becomes
+                                    free text.</p>
+<p>Elena said that ____ would need a new date element.</p>
+<p>James said that the ticket proposes a new form of canonical
+                                    referencing, which Elena noted would need to be defined in the
+                                    header.</p>
+<p>Laurent asked whether we should attempt to rework the proposal or
+                                    send it back to the author to re-propose in a different form.
+                                    Dan replied that there’s a risk that a new proposal would be
+                                    less TEI-like.</p>
+<p>After a discussion, it was agreed that Elena would summarize the
+                                    possible ways forward [for the proposer of the ticket]. Lou
+                                    asked her to monitor the ticket for future discussion and
+                                    proposals.</p>
+</item>
+<label>
+                                <ref target="https://sourceforge.net/tracker/index.php?func=detail&amp;aid=2834505&amp;group_id=106328&amp;atid=644065">Allow @cert on choice and model.choicePart
+                                (2834505)</ref></label>
+<item>
+<p>Julianne reported that she and Brett discussed this ticket,
+                                    which included an alternative suggestion in the comment to allow
+                                    @cert on seg. She and Brett did not like the latter idea, but
+                                    they also didn’t like the original proposal since too many
+                                    attributes would be allowed on choice and model.choicePart.</p>
+<p>Instead, Julianne and Brett proposed to make all elements in
+                                    model.choicePart members of att.responsibility.</p>
+</item>
+<label>
+                                <ref target="https://sourceforge.net/tracker/index.php?func=detail&amp;aid=2783323&amp;group_id=106328&amp;atid=644065">Allow @to and @from on choice (2783323)</ref></label>
+<item>
+<p>Julianne reported that she and Brett also discussed this
+                                    ticket. She said the proposal is in the spirit of the TEI, but
+                                    she noted that some good alternative encodings were also
+                                    suggested on the ticket. She said they would like to know what
+                                    Christian Wittern (who proposed the ticket) thinks of the
+                                    alternative encodings. She noted that the Guidelines give no
+                                    examples of @to and @from on app, so it’s hard to compare the
+                                    alternatives.</p>
+<p>Dan said that @to and @from are on app because of the possibility
+                                    of there being a lemma, whereas choice doesn’t have these
+                                    because it doesn’t assume the existence of a lemma.</p>
+<p>Brett summarized the use case given in the ticket. Elena noted
+                                    that the proposal provides a simple mechanism for accomplishing
+                                    something like stand-off markup, but she said it’s not clear why
+                                    we wouldn’t allow these attributes on all elements. Laurent and
+                                    Lou agreed that we need a more generic standoff mechanism and
+                                    shouldn’t create a hack for use only on choice.</p>
+<p>Dan noted that, for the use proposed, that there are existing
+                                    mechanisms (@ref and @key) for pointing to controlled
+                                    vocabularies and an existing mechanism (app) for encoding a
+                                    lemma.</p>
+</item>
+<label>
+                                <ref target="https://sourceforge.net/tracker/index.php?func=detail&amp;aid=2493417&amp;group_id=106328&amp;atid=644065">Allowing non-numbers in <gi>idno</gi>s and allowing <gi>idno</gi> in <gi>author</gi>
+                                    (2493417)</ref></label>
+<item>
+<p>Sebastian reported that his group discussed a proposal to allow
+                                <gi>idno</gi> to contain non-numeric identifiers such as URIs and DOIs.
+                                His group agreed with this proposal to add <gi>idno</gi> to
+                                    model.nameLike.</p>
+<p>As for allowing <gi>idno</gi> in <gi>author</gi>, the group realized that <gi>author</gi>
+                                    already has a content model that appears more flexible than
+                                    desired (for example, allowing <gi>add</gi> and <gi>del</gi>), so they proposed to
+                                    correct this by changing the content model of <gi>author</gi> of
+                                    model.limitedPhrase. Kevin gave a use case for <gi>add</gi> and <gi>del</gi>
+                                    within <gi>author</gi>: encoding a typewriter manuscript of a draft of a
+                                    work with a bibliography, where the bibliographic citations are
+                                    encoded using <gi>bibl</gi> or <gi>biblStruct</gi>, in which the author made
+                                    corrections to author names.</p>
+<p>After discussion, consensus was reached to no longer change the
+                                    content model to model.limitedPhrase but still allow <gi>idno</gi> in <gi>author</gi>. Sebastian noted that this will have the side-effect of
+                                    allowing people to use <gi>idno</gi> anywhere they might use <gi>author</gi> (not
+                                    just within a <gi>bibl</gi> or <gi>biblStruct</gi>). He questioned whether we
+                                    really want to do this. There was discussion.</p>
+<p>Lou noted that having <gi>idno</gi> as a child of <gi>author</gi> goes against the
+                                    principle voiced yesterday that elements should describe their
+                                    parent. Kevin said there are many ways in which markup requires
+                                    human inference to fully understand it and that this surely is
+                                    not the only place where a TEI element does not describe the
+                                    parent.</p>
+<p>It was decided to create a separate feature request for ____.</p>
+</item>
+<label>
+                                <ref target="https://sourceforge.net/tracker/index.php?func=detail&amp;aid=2794512&amp;group_id=106328&amp;atid=644065">Space in core module (2794512)</ref></label>
+<item>
+<p>Dan said the issue is that the example is actually a
+                                    transcription: the space is important because it appears in the
+                                    layout not because it has a rhetorical or linguistic
+                                    meaning–e.g. the leading space in a indented paragraph. So if
+                                    it is important, you should invoke transcription. The confusion
+                                    is that <gi>gap</gi> has two meanings one appropriate to transcription
+                                    and one appropriate to non-transcription circumstances (such as
+                                    sampling). Gap was originally omit (sampling) but rename
+                                    expanded semantically to cover the transcription situation in
+                                    the move from P2-P3.</p>
+<p>We need to indicate in the Guidelines that <gi>gap</gi> has two distinct
+                                    meanings: one appropriate strictly to transcription
+                                    (illegible//missing) and the other (sampling) more generally
+                                    applicable. We might also want to consider resurrecting P2’s
+                                    omit for the sampling application and say that gap should be
+                                    used only for transcription (reversing the P3 decision).</p>
+<p>Dot said that we want to recommend to David Sewell (the ticket
+                                    submitter) that he use <gi>space</gi> (from the transcription
+                                    module).</p>
+</item>
+<label>
+                                <ref target="https://sourceforge.net/tracker/index.php?func=detail&amp;aid=2531384&amp;group_id=106328&amp;atid=644065">target/targets (perhaps
+                                    ticket number 2531384?)</ref></label>
+<item>
+<p> Lou reported that there are 8 cases in the Guidelines in which
+                                    @target takes a single value and 8 others in which it takes 2.
+                                    Only 4 of these instances have the attribute value defined by an
+                                    attribute class. His group proposed to introduce an attribute
+                                    class for all instances of this attribute which would allow 1 to
+                                    many values. However, the prose of the Guidelines will need to
+                                    explain that for some elements, it doesn’t make sense to have
+                                    multiple values for @target.</p>
+<p>Once this change is made, it will no longer make sense to use the
+                                    @targets attribute. We will leave this attribute in the
+                                    Guidelines but discourage its use. The three elements that have
+                                    the @targets attribute should be added to the new attribute
+                                    class.</p>
+<p>It was also agreed that the discussion of cRef on the ticket
+                                    should be “spun off” into a different ticket.</p>
+</item>
+</list>
+</div></div>
+<div><head>
+                    Hyphenation (and orthographical changes at line breaks)</head>
+<p>Lou summarized the debate on appropriate use of the soft hyphen character,
+                        which is closely related to the question of how to encode hyphenation when
+                        also encoding line breaks.</p>
+<p>As he explained, if you are transcribing early printed books with hyphens at
+                        the end of lines, there are a number of ways to do it. If your goal is to
+                        transcribe text, including hyphens, faithfully or to encode the text in a
+                        way that will allow you to process lexical items (generally speaking, words)
+                        without marking up these words with w elements, you will need to represent
+                        hyphenation in the source document.</p>
+<p>If your encoding will mark line breaks (using <gi>lb</gi>), this complicates the
+                        method for encoding hyphenation and requires any tokenization software to be
+                        capable of ignoring elements that can appear within words (like <gi>lb</gi>).
+                        Alternatively, a derived text with <gi>lb</gi> and other intraword elements removed
+                        could be produced for the concordance software from the master encoded
+                        text.</p>
+<p>In short, the Guidelines are currently not helpful in giving guidance on
+                        encoding hyphens that appear to be accidents of line breaks (where a hyphen
+                        would not appear in the word had there not been a line break). It has been
+                        suggested to use the Unicode soft hyphen character for these cases, and Lou
+                        initially thought this would be appropriate; however, Deborah Anderson asked
+                        senior Unicode people about this and they told us that use of the soft
+                        hyphen for such cases is inappropriate. (The soft hyphen is meant for cases
+                        where processing software might choose to break a word, not where it was
+                        previously broken.)</p>
+<p>If we instead used the <gi>lb</gi> element, how would you indicate whether the word
+                        was broken across lines? You might use the type attribute to indicate
+                        whether a lexical unit has been broken by the hyphen [as recommended in
+                        [http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-lb.html] the element
+                        definition for the <gi>lb</gi> element], use whitespace before the element, or use
+                        the rend attrbute to describe the hyphenation. Lou suggested using the type
+                        attribute to indicate whether the hyphen marks the boundary between lexical
+                        items and the rend attribute to describe how this boundary is indicated
+                        (using a hyphen, semicolon, etc.). With this method, no hyphen is left as
+                        character data in the XML document.</p>
+<p>Elena said this is exactly how the Austen project handled hyphenation.</p>
+<p>[Alternatively, the hyphen could be left in the text and no rend attribute
+                        used.]</p>
+<p>Lou continued that this leaves the problem of handling hyphenation of words
+                        across line breaks in languages like Dutch and German, where letters within
+                        the word are sometimes duplicated before and after the hyphen. Juliana noted
+                        that Old Irish did something similar.</p>
+<p>After discussion, it was decided to use the choice element to handle such
+                        cases.</p>
+<p>Lou said that it’s not clear where to put the lb element and said it would
+                        seem you would need to repeat it. Brett suggested a standoff choice element.
+                        Elena said that the Austen project used xml:id and corresp. Matthew said
+                        that [some project he was involved in] used sameAs with xml:id.</p>
+<p>Brett noted that we still haven’t given advice on how to handle ambiguous
+                        cases (where it’s not clear whether the source document’s author would have
+                        used a hyphen had there not been a line break).</p>
+<p>After discussion, it was decided that users could use any of the following
+                        values for the rend attribute for cases of ambiguity:</p>
+<list>
+<item>hyphen</item>
+<item>soft or hard hyphen</item>
+<item>ambiguous</item>
+<item>–</item>
+</list>
+<p>Lou asked whether the Council needs to give advice to ____ or to those
+                        revising the Best Practices for TEI in Libraries (both of which had
+                        questions about this issue). Kevin said those working on the Best Practices
+                        would use the Council decision in order to revise their work.</p>
+</div>
+<div><head>
+                    ODD (r)evolutions</head>
+<p>Sebastian said several tickets have been submitted for problems with and
+                        suggestions for the ODD architecture. A mailing list [“tei-meta”] was formed
+                        to discuss the future of the ODD system, but there was little discussion. He
+                        summarized the desired changes that were detailed in a message to the list
+                        on 2010-04-02.</p>
+<p>Laurent noted that the proposal for including and excluding elements
+                        individually assumes that there’s something behind ____ that is pointed
+                        to.</p>
+<p>There was discussion of the proposed changes.</p>
+<p>Dan noted that these changes work best for elements that are in classes but
+                        asked how it would affect elements not in classes. There was further
+                        discussion, during which Sebastian said that there would need to be a “magic
+                        module” — a TEI module that would automatically select ___.</p>
+<p>There was further discussion.</p>
+<p>Laurent asked whether we should provide an explicit mechanism to say which
+                        ___ [is/are] in the TEI [module?].</p>
+<p>There was much further discussion.</p>
+<p>Dan and Laurent said we need to have the source [of what?] specify itself to
+                        avoid ambiguity. Sebastian disagreed that there’s any ambiguity.</p>
+<p>Brett asked whether all elements would be included or excluded by default.
+                        Sebastian said that currently _____.</p>
+<p>There was a discussion on the merits of including or excluding elements as
+                        you go while constructing a project-specific schema.</p>
+<p>Council agreed to support the the further development of ODD.</p>
+<p>Sebastian noted that we will have a problem with combining elements with the
+                        same name from different namespaces. Currently, our classes are named after
+                        exemplary elements, but it wouldn’t be clear which namespace these exemplary
+                        elements belong to. He suggested three ways to fix this:</p>
+<list>
+<item>Change the way model classes are specified in the ODDs. This
+                            unfortunately breaks any ODDs currently in use.</item>
+<item>Use namespaces in the names of model classes. This would not be valid
+                            RelaxNG, but it’s perhaps such a feature could be suggested to the
+                            RelaxNG developers.</item>
+<item>Create fake namespaces within the names of model classes, perhaps
+                            using the raised dot Unicode character as a delimiter (since it’s one of
+                            the few characters allowed where needed).</item>
+</list>
+<p>Kevin suggested choosing the first option but adding a feature to Roma that
+                        will upgrade any existing ODDs when they are uploaded to use the new system
+                        of model classes.</p>
+<p>Dan asked whether the first solution still leaves the problem of the third
+                        solution. He suggested a fourth solution: adding an attribute (perhaps
+                        called “prefix”) to the element specification in the ODD language.</p>
+<p>After discussion, Council decided that Sebastian will choose the best way to
+                        handle homonymous elements from different namespaces. Dan added that he
+                        should strive to make ODD mechanisms generalizable beyond the TEI.</p>
+</div>
+<div><head>
+                    afternoon of 2010-04-30</head>
+<p><label>Reconvened at app. 1:15</label></p>
+<p>On LR’s suggestion, the council reviewed the amber bug reports and summarized
+                        each.</p>
+<list><label>
+                            <ref target="https://sourceforge.net/tracker/?func=detail&amp;aid=2964254&amp;group_id=106328&amp;atid=644062">2964254</ref></label>
+<item>KH summarized, saying that according to element definition of
+                                <gi>keywords</gi>, “term” is misused. Short discussion regarding the
+                            location of the problem in the guidelines followed.</item>
+<label>
+                            <ref target="https://sourceforge.net/tracker/?func=detail&amp;aid=2963461&amp;group_id=106328&amp;atid=644062">2963461</ref></label>
+<item>SR: This is an implementation problem.</item>
+<label>
+                            <ref target="https://sourceforge.net/tracker/?func=detail&amp;aid=2955059&amp;group_id=106328&amp;atid=644062">2955059</ref></label>
+<item>Discussion of history of use. Conclusion is for LB to clear up
+                            discussion of use cases in the guidelines.</item>
+<label>
+                            <ref target="https://sourceforge.net/tracker/?func=detail&amp;aid=2945206&amp;group_id=106328&amp;atid=644062">2945206</ref></label>
+<item>Problem with Vesta</item>
+<label>
+                            <ref target="https://sourceforge.net/tracker/?func=detail&amp;aid=2938882&amp;group_id=106328&amp;atid=644062">2938882</ref></label>
+<item>Problem with Vesta</item>
+<label>
+                            <ref target="https://sourceforge.net/tracker/?func=detail&amp;aid=2938735&amp;group_id=106328&amp;atid=644062">2938735</ref></label>
+<item>LB: For historical reasons, @hand of att.transcriptional is declared
+                            as data.pointer, but the @new <gi>handShift</gi> is declared as
+                            data.code. It was decided that this would be treated further in the
+                            break-out sessions</item>
+<label>
+                            <ref target="https://sourceforge.net/tracker/?func=detail&amp;aid=2932853&amp;group_id=106328&amp;atid=644062">2932853</ref></label>
+<item>Agreed to make consistent (see LB’s comment at SF)</item>
+<label>
+                            <ref target="https://sourceforge.net/tracker/?func=detail&amp;aid=2915506&amp;group_id=106328&amp;atid=644062">2915506</ref></label>
+<item>LB summarized J Walsh’s use case, which involved use of <gi>bibl</gi>
+                            in tabular data. LB opined that this was tag abuse. Council members were
+                            unable to imagine alternative scenarios in which label as described
+                            might need <gi>bibl</gi>. SR floated alternative suggestion of including
+                                <gi>bibl</gi> in macro.phraseSec. No need for changes of any kind at
+                            this time.</item>
+<label>
+                            <ref target="https://sourceforge.net/tracker/?func=detail&amp;aid=2900430&amp;group_id=106328&amp;atid=644062">2900430</ref></label>
+<item>EP and DO favor first proposal. LB noted that redefining will break
+                            backward compatibility. EP noted that the second proposal
+                                (<gi>scriptNotes</gi> with <gi>scriptNote</gi> children) wouldn’t
+                            break backward compatibility. LR proposed that for now we agree that a
+                            mechanism is needed but that we defer a decision about the specifics
+                            until the key/ref decisions have been made. Agreed.</item>
+<label>
+                            <ref target="https://sourceforge.net/tracker/?func=detail&amp;aid=2714682&amp;group_id=106328&amp;atid=644062">2714682</ref></label>
+<item>KH: Compassed by the proposals and actions put forth yesterday.</item>
+</list>
+<p><label>Breakout</label></p>
+<p/>
+<p><label>Reconvened at 2:05</label></p>
+</div>
+<div><head>
+                    First report (EP)</head>
+<list>
+<item>Propose using @hand and deprecate @new on <gi>handShift</gi></item>
+<item>Propose rejecting the request to make @hand global attribute. Reason:
+                            doesn’t solve the overlapping problem.</item>
+<item>Propose revising the guidelines to recommend using <gi>handShift</gi>
+                            at the beginning if you will use it later.</item>
+<item>Propose revising the guidelines to recommend similar use of all
+                            milestone elements.</item>
+</list>
+<p>LB brought up the use-case of the First Folio, but he agreed after discussion
+                        that it doesn’t present a problem.</p>
+<p>Propose a new element for quire-breaks. </p>
+<list>
+<item>[Some debate]</item>
+<item>LR Noted that this has already been added as a SF ticket</item>
+<item>EP also noted that the issue of uncertainty whether a hand is A or B
+                            was not addressed.</item>
+</list>
+</div>
+<div><head>
+                    Second report (KH)</head>
+<list><label>
+                            <ref target="https://sourceforge.net/tracker/?func=detail&amp;aid=2900430&amp;group_id=106328&amp;atid=644065">2900430</ref></label>
+<item>Decided they prefer having one or more <gi>term</gi> elements w/in
+                                <gi>keywords</gi>. Should you believe that there are nested terms in
+                            a compound subject term like “History — Russia”, such is already
+                            allowed by nesting term elements. Examples in guidelines will need to be
+                            changed.</item>
+</list>
+<p>LR: We have thus dealt with all of the amber bugs &amp; feature requests.</p>
+<p>2:20</p>
+<p>LR: Would like to treat @key / @ref and deprecation mechanisms.</p>
+<p><label>–small break–</label></p>
+<p>LR: We need a way to have a “soft” deprecation, a way of explaining to the
+                        community that they shouldn’t use a certain practice that was formerly
+                        allowed/recommended. We don’t want to enforce a strict mechanism (one that
+                        breaks compatibility). Proposes that in future (minutes, etc.) we use
+                        “deprecation” in this way.</p>
+<p>[Discussion of where the deprecation takes place. DO, e.g., floats idea of an
+                        appendix in which all things marked as deprecated are gathered.]</p>
+<p>General agreement that we need a formal way of marking the deprecation (e.g.,
+                            <tag>note type=”deprecated”</tag>).</p>
+<p>DO: proposes a small working group, but this proposal was not met w/
+                        enthusiasm.</p>
+<p>Discussion of creating some way to flag not only deprecated practice but also
+                        recommended practice. Reference to ISO and W3C uses of “required” etc.</p>
+<p>LB: We had two ways of noting the canonical home of an item: @key or @ref.
+                        John Walsh wanted a “magic token” pointer for @facsKey. Occurred to folks
+                        that URIs need not be URL. Proposal is to deprecate @key and make clear that
+                        @ref can be used.</p>
+<p>SB: If there are places where only @key is available, do we add @ref
+                        (moduleRef)? Do we recommend a way to compose the “magic token”?</p>
+<p>LB: There’s a syntax for URN’s, so that’s one option.</p>
+<p>LR: What are the opinions of folks outside the TEI?</p>
+<p>LB: Some geeks have said it’s OK. Objections incl. that we should use
+                        registered URNs.</p>
+<p>Discussion about – persistence assumption in URN scheme.</p>
+<p>LB: Proposal is to continue to allow @ref to use A URI, which can be a URN,
+                        but it doesn’t have to be.</p>
+<p>JC: Do people think that the TEI should be registering themselves as a proper
+                        URN?</p>
+<p>[Seems to be affirmation]</p>
+<p>SR: Original problem that John Walsh raises can be solved other ways, too.
+                        E.g., he can use a local web service that resolves an arbitrary
+                        identifier.</p>
+<p>KH: Or we could also recommend that users register a URN.</p>
+<p>[People seem to like this option]</p>
+<p>KH: Are we OK withLou’s recommendation that we prefer @ref?</p>
+<p>[Unanymous agreement]</p>
+<p>LR: Issue of synonyms (e.g., @lemmaRef vs. other elements that just use
+                        @ref).</p>
+<p>KH: We should probably also change examples in the guidelines that use (only)
+                        @key (to add also examples w/ @ref).</p>
+<p>LR: Summary: We have a set of guidelines for dealing w/ @key at large. This
+                        will allow us to deal with several outstanding issues: </p>
+<list>
+<item>If the semantics of the @ref are implied, you just call it @ref;
+                                otherwise, (e.g., scribeRef, @lemmaRef).</item>
+<item>We recommend anchoring URN mechanism when possible, but
+                                unregistered URNs are allowed (and allowed by W3C as well).</item>
+<item>We will change the guidelines.</item>
+</list>
+</div>
+<div><head>
+                    Wrap-up</head>
+<p>SR: Do board members have anything they want to the Council to consider?</p>
+<p>SS: Encouraging participation of Council members in the SIGs.</p>
+<p>DO: Proposes assigning new Council members to a SIG and expect a report.</p>
+<p>[Discussion of the problem that comes from people rotating off]</p>
+<p>DO: will put in a feature request to have a more formal system of rep. of
+                        Council members on the SIGs:</p>
+<list>
+<item>correspondence</item>
+<item>education</item>
+<item>libraries</item>
+<item>manuscripts</item>
+<item>music</item>
+<item>ontologies</item>
+<item>scholarly publishing</item>
+<item>text and graphics</item>
+<item>tools</item>
+</list>
+<p>JN: the journal’s publication of the “getting started” document.</p>
+<p>LR: It was a great idea, but probably too ambitious to take on as a Council
+                        project. But the existing TOC and what’s already there are good.</p>
+<p>JN: What about authorship attribution of the existing material?</p>
+<p>LB: No sense that there is a strong feeling on the Council that they want to
+                        retain ownership.</p>
+<p>JC: Does the council want to have a regular place in TEI-EJ to say, “This is
+                        what’s been happening”?</p>
+<p>LR &amp; JN: Probably not a good idea.</p>
+<p>[Discussion of the maintenance of the TEI website (stable URIs to bits of the
+                        guidelines; new newsServer; status of material in the vault)]</p>
+<p><note><rs>SR</rs> will contact David Sewell about putting search box in
+                            guidelines on the TEI site</note></p>
+<p>LR: We’ve made good progress. The publishing issue: Our wrap-up after the mtg.
+                        didn’t completely satisfy him. He will need to talk more with Ken.
+                        Hyphenation was a productive discussion.</p>
+<p>EP: Having the manuscripts proposals accepted in principle is satisfying.
+                        Thinks it is essential that the SIG has space to put things (put up
+                        different versions of the documents, acknowledge people who have
+                        contributed, etc.).</p>
+<p>DO: Action has already begun to have this happen.</p>
+<p>LR: Plan is to use the “feature request” system, right?</p>
+<p>ER: Yes, will do this with Lou. There are certain existing feature requests
+                        that should be closed because we’ve decided on other protocols for handling
+                        them.</p>
+<p><note><rs>LB</rs> will close these.</note></p>
+</div>
+
+	</div>
+
+	</body></text></TEI>

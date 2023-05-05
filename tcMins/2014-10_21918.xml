@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/home/lou/Public/TEI/TEICSS/tei.css" type="text/css"
+ ?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:t="http://www.tei-c.org/ns/1.0" n="2014-10"><teiHeader><fileDesc><titleStmt><title>Minutes of the TEI Technical Council</title><meeting n="2014-10" when="2014-10-03">TEI Technical Council online
+     meeting : <date>3 October 2014</date></meeting></titleStmt><publicationStmt><distributor>TEI Website</distributor><idno>TCM062</idno></publicationStmt><sourceDesc><p>Retagged from a WordPress HTML file</p></sourceDesc></fileDesc><revisionDesc><change when="2023-04-27">Archival header confected</change><change>Extracted from Word Press article with id post-21918</change></revisionDesc></teiHeader><text><body><div>
+		
+	
+	 <!-- 	<p><tei xmlns="http://www.tei-c.org/ns/1.0" id="tcm60"></p><div class="teiheader"><filedesc><titlestmt><title><date when="2014-10-03">3 October 2014 </date></title><author>TEI Technical Council</author><respstmt><resp>Initial Encoding</resp><name>James Cummings</name></respstmt></titlestmt><editionstmt><edition><date when="2014-10-03">3 October 2014 </date></edition></editionstmt><publicationstmt>
+<p>Freely available under a CC+By licence</p>
+</publicationstmt><sourcedesc><p>Converted from a Google Doc that all Council Members edited during the
+                    meeting.</p>
+<p>            </sourcedesc></filedesc></div> -->
+<p><hi style="bold">Present:</hi> James Cummings (JC – Chair), Syd Bauman (SB), Hugh
+                    Cayless (HC), Elli Mylonas (EM (13:12Z)), Sebastian Rahtz (SR),  Martin
+                    Holmes (MH), Paul Schaffner (PFS), Peter Stadler (PWS), Lou Burnard (LB), Fabio
+                    Ciotti (FC).</p>
+<p>Apologies: Stefanie Gehrke (SG)</p>
+<p>Started 13:06Z. Ended 14:20Z.</p>
+<div>
+<p>Amber FR: <ref target="http://tinyurl.com/teiCouncilAmberFR">http://tinyurl.com/teiCouncilAmberFR</ref></p>
+<p>Amber Bugs: <ref target="http://tinyurl.com/teiCouncilAmberBugs">http://tinyurl.com/teiCouncilAmberBugs</ref></p>
+<p>Green FR: <ref target="http://tinyurl.com/teiCouncilGreenFR">http://tinyurl.com/teiCouncilGreenFR</ref></p>
+</div>
+<div><head>
+                    Actions Arising</head>
+<list style="ul"><item><label>Action:</label> SR to post to
+                            Council a reminder of where to find it on GitHub. Duly done: <ref target="https://github.com/TEIC/TEI-Simple">https://github.com/TEIC/TEI-Simple</ref></item>
+<item><label>Action:</label> PWS to continue to act as liaison to Correspondence SIG, reporting back on correspDesc work.</item>
+<item><label>Action:</label> HC to continue to organise November Face2Face meeting</item>
+ <item><label>Action:</label> LB to set up Pure ODD mailing list</item>
+<item><label>Action:</label> ALL COUNCIL — look at Critical Apparatus Revision draft and send comments to HC.</item>
+<item><label>Action:</label> JC to remind board about translation/internationalisation efforts and our questions concerning them.</item>
+<item><label>Action:</label> EM to act as liaison for Greek translation work and report back to Council.</item>
+</list>
+</div>
+<div><head> id="Conf"&gt;
+                    TEI Conference, Members Meeting, and Elections (JC)
+                    </head><list style="ul">
+<item>JC requests Council members send him tidbits to announce
+                                    during Council Chair report</item>
+<item>If anyone has ideas that we should query the membership
+                                    about by querying the audience, please let JC know.</item>
+<item>Elections. The ballots have gone out to individual
+                                    members and institutional reps. Get out the vote. </item>
+</list>
+</div>
+<div><head> id="Simple"&gt;
+                TEI Simple (SR)
+                    </head><list style="ul">
+<item>Process started last month, will continue until next
+                                    summer. Work so far has concentrated on defining the customization. Expect no
+                                    surprises in the content model: by design, it will be based heavily on existing
+                                    usage of large TEI-based corpora (EEBO TCP, DTA etc), and will not be counted a
+                                    success unless those corpora can be validated against it without significant
+                                    loss.</item>
+<item>Expecting presentation of processing model in a TEI
+                                    SImple report at TEI MM Conference in Evanston. SR and JC gave some first ideas.
+                                    Imagine markup like:
+                            <egXML xmlns="http://www.tei-c.org/ns/Examples"><elementspec ident="speaker"><process name="makeInline(.)" mode="render"/></elementspec></egXML></item>
+<item><label>Action:</label> SR to post to
+                            Council a reminder of where to find it on GitHub. Duly done: <ref target="https://github.com/TEIC/TEI-Simple">https://github.com/TEIC/TEI-Simple</ref></item>
+</list>
+</div>
+<div><head> 
+                    Update on correspDesc (PWS)</head>
+<list style="ul">
+<item>Limited progress: task force has had conference call</item>
+<item>Several outstanding issues.</item>
+<item>PWS has made new ODD, available on GitHub at:
+                        <ref target="https://github.com/TEI-Correspondence-SIG/correspDesc">https://github.com/TEI-Correspondence-SIG/correspDesc</ref></item>
+<item>Hoping to have another conference call w/ some TEI Council
+                            members soon</item>
+<item><label>Action:</label> PWS should send JC
+                            a few paragraphs of summary of work to date.</item>
+<item>SIG will be the first SIG to have a Tweet chat 2014-10-10 14:00Z. Hash tag? #TEIChat #AskTEI</item>
+</list>
+<p>Action: PWS to continue to act as liaison to Correspondence SIG, reporting back on correspDesc work.</p>
+
+</div>
+<div><head>
+                    November Face to Face (HC)</head>
+<list style="ul">
+<item>Meeting is Mon 11-17 to Wed 11-19, inclusive; departure after
+                            lunch on Wed is acceptable, although we have the room all day.</item>
+<item>HC asks that we all finalize our entries on
+                            nights-accommodation-needed Doodle poll by Fri 2014-10-10. It is at [URL Removed]
+                    </item>
+<item>consensus is we’d prefer to eat lunch out, at least 2 of the 3, especially if we can bring
+                        back remnants to nibble. </item>
+<item><label>Action:</label> HC to continue to organise November Face2Face meeting</item>
+</list>
+</div>
+<div><head>
+Outstanding issues in Pure ODD (LB)</head>
+<list style="ul">
+<item>LB summarise issues posted to council list about pure odd and
+                            @allowText, etc.</item>
+<item>Consensus was that we had indeed agree to zap @allowText and
+                            simply support a new element <gi>mixedContent</gi>. SR pointed out that this would mean
+                            changing c. 122 XSL templates in the ODD processing code, but was unfairly laughed at. SB
+                            expressed mild sympathy for SR.</item>
+<item>Discussion of datatypes. Suggested that we leave this alone for
+                            now; SR said we should limit use of &lt;rng:data&gt; to <gi>macroRef</gi>, rather than
+                            allowing it directly in eg <gi>datatype</gi>. Investigation needed of the implications of
+                            this.</item>
+<item>Discussion of varying content models by xpath constraints, to
+                            allow (eg) different versions of <gi>p</gi> in <gi>text</gi> and <gi>teiHeader</gi>. Much
+                            thought and experimentation needed here. LB said he would set up a special mailling list to
+                            discuss this area, and get people in and out of Council to join in and define a
+                            notation</item>
+<item>SB noted that we need a mechanism for indicating experimental
+                            functionality</item>
+<item><label>Action:</label> LB to set up Pure ODD mailing list</item>
+</list>
+</div>
+<div><head>
+                    AOB</head>
+<list style="ul">
+<item>Process of changing SIG (Co-)Convener<list style="ul">
+<item>Nothing to do with Council — need to inform the TEI SIG
+                                    Coordinator which is the Council Chair, so currently JC</item>
+</list>
+</item>
+<item>Progress on Critical Apparatus revision (HC)<list style="ul">
+<item>request for those interested to take a look at <ref target="https://docs.google.com/document/d/10R5FfpvCh9v2c2zeG1hgYMcyuT8o-PfHiaWYVrLf56k/edit?usp=sharing">https://docs.google.com/document/d/10R5FfpvCh9v2c2zeG1hgYMcyuT8o-PfHiaWYVrLf56k/edit?usp=sharing</ref> — a second draft, following on from the initial one,
+                                    which engaged a lot of people. Lots of good discussion happening.</item>
+<item><label>Action:</label> ALL COUNCIL — look at Critical Apparatus Revision draft and send comments to HC.</item>
+</list>
+</item>
+<item>Greek Guidelines translation (EM)<list style="ul">
+<item>JC to remind board of our questions about
+                                    translation/internationalisation</item>
+<item>have made HTML doc sent to me into google spreadsheet and
+                                    shared with Anna Maria Sihani who had volunteered to work on this. Can remain as her
+                                    contact.</item>
+<item>More documentation needed on how to do the translation
+                                </item>
+<item>Discussion on opening up the translation spreadsheets
+                                    more widely; Perhaps should be done as particular projects</item>
+<item><label>Action:</label> JC to remind board about translation/internationalisation efforts and our questions concerning them.</item>
+<item><label>Action:</label> EM to act as liaison for Greek translation work and report back to Council.</item>
+</list>
+</item>
+</list>
+</div>
+<div>
+<p>JC thanked members of Council for participating and reminded them to get on with their tickets and actions.</p>
+</div>
+	</div></body><!-- #post-## --></text></TEI>

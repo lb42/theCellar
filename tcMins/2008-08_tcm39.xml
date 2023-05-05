@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/home/lou/Public/TEI/TEICSS/tei.css" type="text/css"
+ ?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:t="http://www.tei-c.org/ns/1.0" n="2008-08"><teiHeader><fileDesc><titleStmt><title>Minutes of the TEI Technical Council</title><meeting n="2008-08" when="2008-08-21">TEI Technical Council online
+     meeting : <date>21 August 2008</date></meeting><author>David Sewell</author></titleStmt><publicationStmt><distributor>TEI Website</distributor><idno>TCM039</idno></publicationStmt><sourceDesc><p>Re-tagged from a TEI Legacy format document which contained the following source note:</p><p>From edited notes transcribed as text</p></sourceDesc></fileDesc><revisionDesc><change when="2023-05-01">Archival header confected</change><change>Converted from the TEI archival document tcm39</change><change when="2008-08-26" who="#DRS">
+            <name n="DRS">David Sewell</name> created </change></revisionDesc></teiHeader><text>
+      <front>
+         <div>
+            <p>The TEI Council teleconference meeting took place on Thursday 21 August 2008 at 13:00
+               UTC.</p>
+            <p>
+               <hi>Participants:</hi> Gabriel Bodard (GB), Peter Boot (PB), Tone Merete Bruvik
+               (TMB), James Cummings (JC), Lou Burnard (LB; Oxford editorial support group), Dan
+               O'Donnell (DO), Elena Pierazzo (EP), Laurent Romary (LR; Chair), Paul Schaffner (PS),
+               David Sewell (DS; minutes), Manfred Thaller (MT), and John Walsh (JW). Susan
+               Schreibman (SS) also joined in briefly.</p>
+            <p>Council members unable to participate: Arianna Ciula. (JW entered the conference
+               after 1 hr.)</p>
+         </div>
+      </front>
+      <body>
+         <div>
+            <head>TEI P5 Bugs and Feature Requests from SourceForge</head>
+            <div>
+              <head>Overview</head>
+
+            <p>Lou Burnard led a discussion of outstanding items on our <ref target="http://sourceforge.net/projects/tei/">SourceForge project</ref> bug
+               tracker. Previously the Oxford editorial support team had prepared a three-way <ref target="http://www.tei-c.org/Activities/Council/Working/tcw15.html">triage</ref>
+               of the items: <soCalled>green</soCalled> items that have been agreed to by at least
+               one Council member, <soCalled>amber</soCalled> items that have not been fully
+               considered and which needed further discussion, and <soCalled>red</soCalled> items
+               that need substantial discussion or clarification before they can be acted upon.</p>
+            <p>Council members assented to the division and agreed with the proposal that approved
+               green items be incorporated into the next Guideline release; amber items be
+               considered for inclusion in the next release; and red items not be considered for
+               inclusion. </p>
+            </div>
+            <div>
+               <head>Green items</head>
+               <p>Except as noted in the following summary of discussion, all green items were
+                  okayed for implementation. <note type="action"><label>LB</label> will proceed to
+                     implement green items</note></p>
+               <list type="gloss">
+                  <label>1848442: Attributes missing</label>
+                  <item>EP noted that <att>extent</att> in <gi>gap</gi> is connected with one of the
+                     amber items (1925125) and suggested that we discuss it in connection with that
+                     item. </item><label>1852100: nameLink element should not have @ref or @key
+                     attribute</label><item>EP said that <gi>persName</gi> does need to retain
+                        <att>sort</att>. LB clarified why <gi>nameLink</gi> should not have
+                     <att>key</att>: that attribute in a naming element points to a person. A
+                        <gi>nameLink</gi> may have an onomastic referent, but that is what
+                        <att>nymRef</att> is for.</item><label>2055116: Add typeDesc, analogous to
+                     handDesc</label><item>LR notes that it will be important to document exactly
+                     how the new <gi>typeDesc</gi> element is to be used. The question arose whether
+                        <gi>handDesc</gi> and <gi>typeDesc</gi> should be mutually exclusive; as use
+                     cases were imagined for both, they should be treated as
+                     complementary.</item><label>2055122: Permit title page elements within msItem
+                     and msContents</label><item>EP objected that this proposal is essentially a
+                        <soCalled>patch</soCalled> to allow extra elements, when the real need is to
+                     revisit <gi>physDesc</gi> usage as a whole. There was some sentiment (JC) to go
+                     ahead and implement this patch now, with the understanding that further work is
+                     needed on description of manuscripts and early printed books, but when it was
+                     noted that at the next Members' Meeting there will be at least one paper on
+                     this topic (by Dot Porter), Council agreed to defer action on this item.
+                        <emph>Status changed to “amber”.</emph>
+                  </item><label>2055820: change content model of &lt;w&gt;</label><item>DO noted a
+                     possible objection to the proposal: the content model of <gi>w</gi> was
+                     initially intended to be purely linguistic, so that allowing it to contain
+                     typography would represent a philosophical change. LB noted that we have two
+                     communities of users for <gi>w</gi> now, those interested purely in linguistic
+                     phenomena and the community of manuscript editors who want to be able to
+                     identify word-like objects for their own purposes; we may as well permit the
+                     use of the tag for both purposes. LR agreed; the proposed of <gi>w</gi> will
+                     not break existing linguistic uses, simply enable new ones.</item></list>
+            </div>
+            <div>
+               <head>Amber Items</head>
+               <list type="gloss"><label>2033641: erroneous "Empty element" statement in
+                     documentation</label><item>This appears to be an artefact of a minor bug in the
+                     way the documentation is generated via our XSLT stylesheets. <note type="action"><label>Sebastian Rahtz</label> should tweak the stylesheet as
+                        needed.</note></item><label>1925125: Review usage and precision of
+                     @extent</label><item>Based on discussion between LB and JC, it is proposed that
+                        <att>extent</att> be reserved for values of arbitrary text that are not
+                     precisely quantifiable. In addition, the attributes <att>quantity</att> and
+                        <att>unit</att> should be allowed on elements qualified by a measurement,
+                     with <att>quantity</att> constrained to be a number. Documentation will explain
+                     how to decide which alternative to use. Council agreed that we should try to
+                     implement this for the next release.<note type="action"><label>LB</label> will
+                        come up with a detailed proposal. <hi rend="italic">Subsequently, JC and GB
+                           submitted a formal proposal regarding this ticket and ticket
+                     1933198</hi></note></item><label>2055864: Remove redundant iso-*
+                     attributes</label><item>LB noted that this item has a lengthy SourceForge
+                     discussion. DO raised the concern that we will create confusion if we remove
+                     several of the <hi rend="italic">iso-</hi> attributes but leave
+                     <att>iso-when</att>; as <att>when</att> would remain in
+                     <term>att.datable.w3c</term>, users might expect all the parallel
+                        <term>att.datable.iso</term> attributes to be available. So if we remove
+                     attributes as proposed, we should perhaps rename <att>iso-when</att> (which
+                     will in any case have an expanded functionality). (As an aside, DS noted that
+                        <att>period</att> should be an independent attribute, not classed under
+                        <term>att.datable.w3c</term>,) <note type="action"><label>DS</label> will
+                        confer with Syd Bauman on the ticket and return to Council with a
+                     proposal.</note></item><label>2055891: Placement of Schematron
+                     rules</label><item>LB explains that there are four alternate proposals for
+                     governing the placement of Schematron rules in ODD files:<list type="ordered">
+                        <item>Status quo (as children of <gi>content</gi>)</item>
+                        <item>as direct children of <gi>elementSpec</gi> (original Sebastian Rahtz
+                           proposal)</item>
+                        <item>as children of a new ODD element like <gi>constraint</gi></item>
+                        <item>allow them to occur anywhere.</item>
+                     </list> LB asked whether Schematron rules shouldn't be freed from the
+                     requirement to be attached to a single <gi>elementSpec</gi>. since they can
+                     refer to multiple elements or attributes. LR favors <gi>content</gi> as the
+                     container; PB noted that in Roma, users fill in <gi>content</gi> via a form
+                     field, so that if we add a new element like <gi>constraint</gi>, Roma will need
+                     to be extended. Council agreed that action on this item needs to be deferred
+                     pending discussion with Sebastian. <note type="action"><label>SR</label> will
+                        create a formal proposal on Schematron rule placement.</note></item></list>
+            </div>
+            <div>
+               <head>Red Items</head>
+               <p>The only red item we discussed individually was "2002418: New element =
+                     <gi>clarification</gi>?" TMB feels this is an important item and would like us
+                  to move on it. <note type="action"><label>TMB</label> will contact Ellen Nessheim
+                     Wiger for additional background and examples, and will report back to
+                  Council.</note></p>
+               <p>DO asked about the status of red items; LB said that action on them will not be
+                  taken before the next release, but Council members are encouraged to think about
+                  them and add comments on SourceForge.</p>
+            </div>
+         </div>
+         <div>
+            <head>Other Items</head>
+            <div>
+               <head><title>Getting Started</title> Document</head>
+               <p>PB has shared a document with proposed goals and strategy for a <title>Getting
+                     Started with TEI</title> document. Council members were requested to read over
+                  the document and to return comments to the Council list for incorporation into the
+                  minutes (see subsection below). Based on the feedback and offers of assistance, PB
+                  as editor-in-chief will convene a group of authors and editors who will begin
+                  dividing work and establishing timelines. We will aim to have a draft available by
+                  the time of the Members’ Meeting, and will distribute the draft via TEI-L for
+                  feedback from the community (with a request that they share the draft with new
+                  users of the TEI for response if possible).</p>
+               <p>
+                  <note type="action"><label>ALL</label> are asked to provide responses to PB’s
+                     outline on the tei-council list.</note>
+               </p>
+               <div>
+                  <head>Preliminary Feedback</head>
+                  <p>References: <ref target="http://lists.village.virginia.edu/pipermail/tei-council/2008/009919.html">http://lists.village.virginia.edu/pipermail/tei-council/2008/009919.html</ref>,
+                        <ref target="http://lists.village.virginia.edu/pipermail/tei-council/2008/009921.html">http://lists.village.virginia.edu/pipermail/tei-council/2008/009921.html</ref>.</p>
+                  <p>EP suggests a chapter on text analysis, and notes that if we refer to specific
+                     software platforms we will need to keep the document updated as software
+                     evolves.</p>
+                  <p>DS observes that the outline has a natural gradation from beginning to
+                     intermediate-advanced topics, and suggests that this be made explicit to
+                     readers (not all will need to work through the more advanced chapters). He
+                     agrees with EP that presenting software usage will be one of the trickier tasks
+                     in composing the document, and questions whether it is best to start with RELAX
+                     NG XML syntax as proposed by PB.</p>
+                  <p>In post-meeting discussion, consensus was that RELAX NG XML syntax does need to
+                     be the base (possibly with the option to toggle compact syntax, as in the
+                     online P5 Guidelines); and that we should use a single software platform
+                     (oXygen) for examples, while linking to discussions of how to use other
+                     software to accomplish the same tasks.</p>
+               </div>
+            </div>
+            <div>
+               <head>Formal Support for XML Schema Versions of Guidelines</head>
+               <p>DS explained that this item grew out of <ref target="http://listserv.brown.edu/archives/cgi-bin/wa?A2=ind0806&amp;L=TEI-L&amp;T=0&amp;F=&amp;S=&amp;P=59">an observation on TEI-L from Romain Roure</ref> that the tei_all.xsd schema in
+                  the Guidelines release software is invalid. Sebastian responded that the problem
+                  involves more than a missing file called via inclusion but didn’t complete a
+                  diagnosis of the problem. In addition, DS noted that the W3C schemas generated by
+                  Roma for certain customizations (ones with multiple namespaces) cannot be fully
+                  downloaded because they comprise two or more .xsd files, while Roma offers only
+                  the single main file for download. DS and SR have discussed whether the TEI should
+                  continue to maintain formal support for W3C XML Schema versions of the Guidelines;
+                  if so, our tools for generating them must be fixed. DS and SR thought we might
+                  want to survey membership on schema usage, but consensus from Council was that we
+                  should first determine whether the bugs are easily fixable.</p>
+               <p>
+                  <note type="action"><label>SR</label> will be asked to report back on the severity
+                     of the problems.</note>
+               </p>
+            </div>
+            <div>
+               <head>Physical Bibliographies</head>
+               <p>This item has to do with the <ref target="http://listserv.brown.edu/?A1=ind0805&amp;L=TEI-PB">series of comments
+                     on TEI-PB</ref> from Murray McGillivray <q>assessing the strengths and
+                     weaknesses of P5 for physical bibliography</q>. LR proposes that someone from
+                  Council should review the discussion thread and report back on anything we need to
+                  take into account. As Physical Bibliography is a licensed workgroup, it is
+                  appropriate for us to appoint a Council liaison to work with them on proposals. PS
+                  was proposed, and agreed to take this role.</p>
+               <p>
+                  <note type="action"><label>PS</label> will review the messages on TEI-PB, confer
+                     with Dot Porter, and report back to Council.</note>
+               </p>
+            </div>
+            <div>
+               <head>Next Council Face-to-Face Meeting</head>
+               <p>At our Galway meeting, sentiment was expressed for having two Consortium-funded
+                  face-to-face Council working meetings per year. Earlier this summer, LR had
+                  suggested an early October meeting in Paris as the most economical and feasible
+                  possibility. However, discussion on this topic began with a caveat from DO that
+                  existing TEI funds most likely make a second funded meeting impossible. Costs for
+                  the Galway meeting came in somewhat over budget, and we also have the expense of
+                  printing physical copies of the P5 Guidelines. Funding a second face-to-face would
+                  use up Consortium reserves. </p>
+               <p>DS noted that, cost aside, it would be difficult for some Council members (those
+                  in North America in particular) to schedule long-distance travel in both October
+                  and November (for the Members’ Meeting). Consensus was that a physical meeting
+                  this October is not feasible, but we should make a formal proposal to the Board to
+                  permit two face-to-face Council meetings in 2009, probably one in February/March
+                  and a second around September.</p>
+               <p>
+                  <note type="action"><label>LR and DO</label> will make a concrete proposal to the
+                     Board for the addition of a second FTF meeting in 2009.</note>
+               </p>
+            </div>
+            <div>
+               <head>Next Teleconference</head>
+               <p>We will aim for at least two more teleconferences before the Members’ Meeting, one
+                  to agree on our priorities for tasks to complete before the meeting, and another
+                  to report back on implementation of the tasks and Guidelines fixes, along with a
+                  progress report on the <title>Getting Started</title> guide.</p>
+            </div>
+         </div>
+      </body>
+   </text></TEI>

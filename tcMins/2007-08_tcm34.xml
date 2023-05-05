@@ -1,0 +1,482 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/home/lou/Public/TEI/TEICSS/tei.css" type="text/css"
+ ?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:t="http://www.tei-c.org/ns/1.0" n="2007-08"><teiHeader><fileDesc><titleStmt><title>Minutes of the TEI Technical Council</title><meeting n="2007-08" when="2007-08-02">TEI Technical Council online
+     meeting : <date>2 August 2007</date></meeting><author>James Cummings</author></titleStmt><publicationStmt><distributor>TEI Website</distributor><idno>TCM033</idno></publicationStmt><sourceDesc><p>Re-tagged from a TEI Legacy format document which contained the following source note:</p><p>Notes taken directly into TEI XML</p></sourceDesc></fileDesc><revisionDesc><change when="2023-05-01">Archival header confected</change><change>Converted from the TEI archival document tcm34</change><change when="2023">Temp header</change></revisionDesc></teiHeader><text>
+    <front>
+      <div>
+        <p>The TEI Council teleconference meeting took place on Friday
+          31 August at 12:00 UTC.</p>
+        <p><label>Participants:</label> Arianna Ciula (AC), Syd Bauman
+          (SB), Tone Merete Bruvik (TMB), Lou Burnard (LB), James
+          Cummings (Minutes;JC), Dan O'Donnell (DO), Sebastian Rahtz
+          (SR), Laurent Romary (LR), Conal Tuohy (CT), and Christian
+          Wittern (Chair;CW).</p>
+        <p>Council members unable to participate: David Birnbaum (DB),
+          Matthew Driscoll (MD), Dot Porter (DP), and John Walsh (JW).
+        </p>
+      </div>
+    </front>
+    <body>
+      <div>
+        <head>Open action items</head>
+        <p>CW reviewed the action items from the previous minutes.
+            <list type="gloss">
+            <label><hi>LB</hi> Implement Board decision with regard to
+              title page. 2007-08-15</label>
+            <item> LB reports that SB seems to have done this already</item>
+
+            <label><hi>LB</hi> Integrate list of workgroups and
+              members into Guidelines. 2007-09-01 </label>
+            <item> LB reports that he has not yet done this, that he
+              started but got distracted. <note type="action">
+                <label>LB</label> Integrate list of workgroups and
+                members into Guidelines. <date>2007-09-07</date>
+              </note>
+            </item>
+
+            <label><hi>SB</hi> Integrate &lt;postscript&gt;
+              ODD into Guidelines. 2007-08-04 </label>
+            <item>SB reported that this had been done.</item>
+
+
+            <label><hi>LB/JW</hi> Integrate revised rendition
+              recommendations into Guidelines. 2007-09-01 </label>
+            <item> Discussion of rendition was delayed in case JW
+              joined later. LB commented that the action had been
+	      approved at the previous meeting but had
+              not yet been completed. <note type="action">
+                <label>LB/JW</label> Integrate revised rendition
+                recommendations into Guidelines.
+                <date>2007-09-14</date>
+              </note>
+            </item>
+
+
+            <label><hi>CT</hi> Re-implement the earlier facsimile
+              examples in most recent proposal. 2007-08-15 </label>
+            <item> CT reported on the facsimile work, and that the
+              earlier example had been abandoned in favour of new ones
+              LB had produced. </item>
+
+
+            <label><hi>LB, CT, DP</hi> Produce P5 1.0 Draft of
+              facsimile markup based on Council discussion and
+              integrate with Guidelines. 2007-09-01 </label>
+            <item> This action had been completed and CT and LB
+              reported on new draft. SR's example was discussed, but
+              LB and CT disagree about the nature of what a
+              &lt;surface&gt; is and whether it should be
+              renamed. SB and AC summarised their understanding of the
+              relationship between physical object, and the
+              corresponding facsimile elements. There was some
+              discussion on the problems encountered if
+              &lt;surface&gt; refers to the physical object,
+              and CT was tasked with proposing changes with examples
+              to the council list by 2007-09-14. SR confirmed that
+              Council was satisfied with the rest of the proposal and
+              especially its indirection in linking. <note type="action">
+                <label>CT</label> Produce workable examples and
+                proposals for change to facsimile markup (with regard
+                to the meaning of surface and its children).
+                  <date>2007-09-14</date>
+              </note>
+              <note>DO arrived at this point.</note>
+            </item>
+
+              
+              <label><hi>DB, TMB, SB, LB</hi> Rewrite NH chapter as
+              needed. 2007-09-01 </label>
+            <item>SB and TMB reported that this action item was almost
+              completed, but needed a bit more work. <note type="action">
+                <label>DB, TMB, SB, LB</label> Revise NH chapter.
+                  <date>2007-09-07</date>
+              </note>
+            </item>
+
+
+            <label><hi>Eds</hi> Editors to integrate final Dictionary
+              revisions into Guidelines, checking language, etc.
+              2007-09-01 </label>
+            <item> LB and SB reported that they believed this has
+              already been done; SPQR was currently reviewing the chapter. </item>
+
+
+            <label><hi>LB</hi> Report back to council on any changes
+              to FSD/FS and if necessary rationalise the TEI version.
+              2007-09-01 </label>
+            <item>LB has not yet received minutes of the ISO meeting.
+              LR reported that they wanted to reintroduce 3 or 4
+              elements which had been in TEI P4 but which had since
+              been removed in TEI P5. LB is happy to make the changes
+              as soon as we are notified about them. Council agreed
+              that this is a special case which should change in order
+              to keep in step with the ISO work. <note type="action">
+                <label>LB </label> Report back to council on any
+                changes to FSD/FS and if necessary rationalise the TEI
+                version. <date>2007-09-14</date></note>
+            </item>
+
+
+            <label><hi>DO</hi> Produce revised proposal about what to
+              do with add/del/supplied/edInt/etc. issues 2007-08-21 </label>
+            <item> DO reported that this had been completed, but no
+              ODD produced. DO summarised some of the issues but
+              promised to produce an ODD by 2007-09-07. LB reminded DO
+              that work had been done on this chapter in the meantime
+              and to make sure that the latest version was used. <note type="action">
+                <label>DO </label> Produce an ODD for
+                add/del/supplied/etc. proposals with regard to latest
+                modifications of PH/CO chapters. Reporting to Council
+                list. <date>2007-09-07</date>
+              </note>
+            </item>
+
+
+            <label><hi>ALL</hi> Comment on revised add/del/supplied
+              draft on Council mailing list. 2007-08-25</label>
+            <item> This item is moved forward until after DO produces
+              his ODD. <note type="action">
+                <label>ALL</label> Comment on revised add/del/supplied
+                proposals on Council mailing list.
+                <date>2007-09-14</date>
+              </note>
+            </item>
+
+
+            <label><hi>LB</hi> Integrate add/del/supplied revisions
+              (after Council input) to the Guidelines 2007-09-01 </label>
+            <item> This item is moved forward until council comments
+              on DO's ODD. <note type="action">
+                <label>LB</label> Integrate any agreed
+                add/del/supplied revisions (after Council input) to
+                the Guidelines. <date>2007-09-20</date>
+              </note>
+            </item>
+
+
+            <label><hi>JC, DP</hi> Report back to council on progress
+              of formatting of the Guidelines so far and any
+              outstanding issues 2007-08-06 </label>
+            <item>JC reported that this action had been completed.</item>
+
+
+            <label><hi>JC, DP</hi> All issues should be resolved
+              and/or reported to Sebastian and/or Council 2007-09-07.</label>
+            <item>JC reported that this ongoing item was in hand and a
+              lot of work was being done behind the scenes. SR whetted
+              Council's appetite by mentioning that navigation had
+	      been completely revised in the last couple days.
+This item is not due yet and is in progress.
+                  <note type="action">
+                  <label>JC, DP</label>All issues should be resolved
+                  and/or reported to Sebastian and/or Council.
+                    <date>2007-09-07</date>
+                </note> Discussion at this point was diverted into
+                what to do about specGrpRef and similar elements and
+                their rendition in the Guidelines. Many opinions were
+                expressed, but JC volunteered to post an initial
+                summary of his perception of the problem to the
+                Council list to kick-start discussion. It was agreed
+                in any case that the Editors should remove the prose
+                leading up to such elements and that if this was to be
+                added it should be done in the processing. <note type="action">
+                  <label>JC</label> Post a message summarising his
+                  objections to the way &lt;specGrp&gt; and
+                  &lt;specGrpRef&gt; elements are handled to
+                  Council list. <date>2007-09-01</date>
+                </note>
+                <note type="action">
+                  <label>ALL</label> Discuss what should be done about
+                  &lt;specGrp&gt; and
+                  &lt;specGrpRef&gt; elements.
+                  <date>2007-09-07</date>
+                </note>
+                <note type="action">
+                  <label>EDs</label> Remove all leading prose before
+                  &lt;specGrp&gt; and
+                  &lt;specGrpRef&gt; elements.
+                  <date>2007-09-14</date>
+                </note>
+                <note type="action">
+                  <label>SR</label> Modify XSLT in response to Council
+                  decisions concerning &lt;specGrp&gt; and
+                  &lt;specGrpRef&gt; elements and/or Council. 
+                    <date>2007-09-14</date>
+                </note>
+              </item>
+              <label><hi>DO, SB</hi> Produce revised proposal about
+                what to do with app/rdg issues 2007-08-21 </label>
+              <item>DO summarised his work on this, but worried it
+                might significantly break things. He promises to
+                produce a revised proposal and ODD by 2007-09-14, and
+                post to Council list. <note type="action">
+                  <label>DO, SB</label> Produce revised proposal/ODD
+                  about what to do with app/rdg issues and post to
+                  Council list. <date>2007-09-14</date>
+                </note>
+              </item>
+              <label><hi>ALL</hi> Comment on revised app/rdg draft on
+                Council mailing list. 2007-08-25 </label>
+              <item> This item is moved forward. <note type="action">
+                  <label>ALL</label> Comment on revised app/rdg draft
+                  on Council mailing list. <date>2007-09-21</date>
+                </note>
+              </item>
+              <label><hi>SB</hi> Integrate revisions (after Council
+                input) to the Guidelines 2007-09-01</label>
+              <item>This item is moved forward. <note type="action">
+                  <label>SB</label> Integrate revisions to app/rdg
+                  (after Council input) to the Guidelines.
+                    <date>2007-09-28</date>
+                </note>
+              </item>
+              <label><hi>LB</hi> Integrate changes necessary for a
+                working implementation for modelling of manuscript
+                stemmata, as proposed on council list. 2007-09-01 </label>
+              <item> LB reports that this is not been done yet, but he
+                will do so soon and the changes are straightforward.
+                  <note type="action">
+                  <label>LB</label> Integrate changes necessary for a
+                  working implementation for modelling of manuscript
+                  stemmata, as proposed on council list.
+                    <date>2007-09-07</date></note>
+              </item>
+              <label><hi>LB</hi> Implement rationalisation of
+                handDesc/handList/hand, removing handNote 2007-08-08</label>
+              <item>LB reports that this has been done.</item>
+              <label><hi>ALL</hi> Review chapters and correct mistakes
+                as per http://tei.oucs.ox.ac.uk/trac/TEIP5/wiki/Review
+                from 2007-08-04 until 2007-09-07 </label>
+              <item> This action is ongoing and is discussed in more
+                detail in the following section.
+              <note type="action">
+                <label>ALL</label> Review chapters and correct
+                mistakes as per
+                http://tei.oucs.ox.ac.uk/trac/TEIP5/wiki/Review
+                  <date>2007-09-07</date>
+              </note>
+            </item>
+
+
+            <label><hi>All</hi> Any new significant technical
+              revisions not already under consideration by Council
+              should be added to trac for P5 1.1 to keep track of
+              these ideas as they occur to us in P5 1.0 revisions.
+              ongoing </label>
+            <item>This is an ongoing item. <note type="action">
+                <label>All</label> Add new significant technical
+                revisions to trac for P5 1.1 to keep track of
+                these ideas as they occur to Council during in P5 1.0
+                revisions.
+                http://tei.oucs.ox.ac.uk/trac/TEIP5/milestone/P5%201.1.
+              <date>Ongoing</date>
+              </note>
+            </item>
+          </list>
+        </p>
+      </div>
+      <div>
+        <head>Chapter Triage</head>
+        <p>CW asked each Council member present to report on how their
+          chapter reviews were going. In general these are well in
+          hand. Various Council members raised a number of issues.
+            <table rend="wiki">
+            <row>
+              <cell>
+                <hi>Who</hi>
+              </cell>
+              <cell> # </cell>
+              <cell>
+                <hi>Title</hi>
+              </cell>
+              <cell>
+                <hi>Comments</hi>
+              </cell>
+            </row>
+            <row>
+              <cell>AC</cell>
+              <cell>15</cell>
+              <cell>Critical Apparatus</cell>
+              <cell>Done </cell>
+            </row>
+            <row>
+              <cell>AC</cell>
+              <cell>9</cell>
+              <cell>Manuscript Description</cell>
+              <cell>Review ongoing </cell>
+            </row>
+            <row>
+              <cell>CW</cell>
+              <cell>2</cell>
+              <cell> The TEI Header </cell>
+              <cell>Done</cell>
+            </row>
+            <row>
+              <cell>CW</cell>
+              <cell>20</cell>
+              <cell> Representation of non-standard characters and
+                glyphs</cell>
+              <cell>Some revision needed; Review ongoing</cell>
+            </row>
+            <row>
+              <cell>CT</cell>
+              <cell>14</cell>
+              <cell> Transcription of Primary Sources</cell>
+              <cell> Review ongoing, will reread LB's new
+              changes</cell>
+            </row>
+            <row>
+              <cell>DO</cell>
+              <cell>1</cell>
+              <cell> The TEI infrastructure </cell>
+              <cell>Done</cell>
+            </row>
+            <row>
+              <cell>Dan</cell>
+              <cell>13</cell>
+              <cell> Certainty and Responsibility</cell>
+              <cell>Done, concerns included discussion on values for
+                @cert </cell>
+            </row>
+            <row>
+              <cell>DB</cell>
+              <cell>16</cell>
+              <cell> Names, Dates, People, and Places</cell>
+              <cell>Not present</cell>
+            </row>
+            <row>
+              <cell>DB</cell>
+              <cell>18</cell>
+              <cell> Tables, Formulae, and Graphics</cell>
+              <cell>Not present</cell>
+            </row>
+            <row>
+              <cell>DP</cell>
+              <cell>3</cell>
+              <cell> Elements Available in All TEI Documents</cell>
+              <cell>Not present</cell>
+            </row>
+            <row>
+              <cell>JC</cell>
+              <cell>4</cell>
+              <cell> Default Text Structure </cell>
+              <cell>Review ongoing</cell>
+            </row>
+            <row>
+              <cell>JC</cell>
+              <cell>7</cell>
+              <cell> Transcriptions of Speech </cell>
+              <cell>Done, only minor changes </cell>
+            </row>
+            <row>
+              <cell>JW</cell>
+              <cell>10</cell>
+              <cell> Linking, Segmentation, and Alignment</cell>
+              <cell>Not present</cell>
+            </row>
+            <row>
+              <cell>JW</cell>
+              <cell>11</cell>
+              <cell> Simple Analytic Mechanisms</cell>
+              <cell>Not present</cell>
+            </row>
+            <row>
+              <cell>LR</cell>
+              <cell>12</cell>
+              <cell> Feature Structures</cell>
+              <cell> Review ongoing</cell>
+            </row>
+            <row>
+              <cell>LR</cell>
+              <cell>21</cell>
+              <cell> Feature System Declaration</cell>
+              <cell> Review ongoing</cell>
+            </row>
+            <row>
+              <cell>LR</cell>
+              <cell>23</cell>
+              <cell> Using The TEI (IM, CF, MD, DT) </cell>
+              <cell> Done, message posted to Council list expressing
+                some concerns about what it means to be a 'clean'
+                modification</cell>
+            </row>
+            <row>
+              <cell>LR</cell>
+              <cell>22</cell>
+              <cell> Documentation Elements </cell>
+              <cell> Review ongoing</cell>
+            </row>
+            <row>
+              <cell>MD</cell>
+              <cell>17</cell>
+              <cell> Graphs, Networks, and Trees</cell>
+              <cell> Not present</cell>
+            </row>
+            <row>
+              <cell>MD</cell>
+              <cell>19</cell>
+              <cell> Language Corpora </cell>
+              <cell> Not present</cell>
+            </row>
+            <row>
+              <cell> SR </cell>
+              <cell>23</cell>
+              <cell> Using the TEI (NH)</cell>
+              <cell> Awaiting revised version</cell>
+            </row>
+            <row>
+              <cell> SR</cell>
+              <cell>8</cell>
+              <cell> Dictionaries</cell>
+              <cell> Review ongoing</cell>
+            </row>
+            <row>
+              <cell>TMB</cell>
+              <cell>5</cell>
+              <cell> Verse</cell>
+              <cell> Done </cell>
+            </row>
+            <row>
+              <cell>Tone</cell>
+              <cell>6</cell>
+              <cell> Performance Texts</cell>
+              <cell> Done </cell>
+            </row>
+          </table> Some actions arose during these discussions: <note type="action">
+            <label>SB</label> Check Guidelines prose and examples for
+            namespaces which are not TEI, a recognised schema, or
+            www.example.com (for example, www.hatstand.org).
+              <date>2007-09-14</date>
+          </note>
+          <note type="action">
+            <label>LB</label> Expand explanatory prose in USE
+            concerning which elements are mandatory and how a user can
+            know this. <date>2007-09-14</date>
+          </note>
+          <note type="action">
+            <label>Eds/SR/LR</label> Consider whether
+            <gi>classes</gi> should have a mode attribute.
+              <date>2007-09-14</date>
+          </note>
+          <note type="action">
+            <label>LB</label> Post to Council list a call for examples
+            meeting particular requirements. <date>2007-09-21</date>
+          </note>
+        </p>
+      </div>
+      <div>
+        <head>Next Meeting</head>
+        <p>The next teleconference was not scheduled. CW will put
+          up a meetomatic survey to determine the best date. It will,
+          however be at 12pm noon UTC. This will be:<lb/> 06:00 MDT in
+          Calgary,<lb/> 07:00 CDT in Chicago,<lb/> 08:00 EDT in New
+          York,<lb/> 13:00 BST in London,<lb/> 14:00 CEST in
+          Paris,<lb/> 21:00 JST in Kyoto, and<lb/> Wed 18 July, 00:00
+          NZST in Wellington.<lb/>
+          <note type="action">
+            <label>CW</label> CW to set date for next meeting using
+            meetomatic, and announce. <date>2007-09-07</date>
+          </note>
+        </p>
+      </div>
+    </body>
+  </text></TEI>

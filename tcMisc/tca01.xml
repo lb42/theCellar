@@ -1,0 +1,88 @@
+<!DOCTYPE TEI.2 SYSTEM "http://www.tei-c.org/Lite/DTD/teixlite.dtd" [
+    <!ATTLIST xptr url CDATA #IMPLIED>
+    <!ATTLIST xref url CDATA #IMPLIED>
+    ]>
+<TEI.2>
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title>Agenda for TEI Council Meeting, May 15-17, 2003</title>
+<respStmt>
+<name>John Unsworth</name>
+<resp>Chair, TEI Council</resp>
+</respStmt>
+</titleStmt>
+<publicationStmt>
+<distributor>TEI</distributor>
+</publicationStmt>
+<sourceDesc><p>Pre-meeting version of the agenda</p></sourceDesc>
+</fileDesc>
+<revisionDesc>
+<change>
+<date>May 11, 2003</date>
+<respStmt>
+<name>John Unsworth</name>
+<resp>TEI Tagger and Author</resp>
+</respStmt>
+<item>Posted May 11 to TEI-Council mailing list</item>
+</change>
+</revisionDesc>
+</teiHeader>
+<text>
+
+
+<body><div>
+    <p>Except as noted, the following are expected to attend.</p>
+    <p>Council Members: 
+        <list type="simple"><item>Alejandro Bia</item>
+        <item>David J. Birnbaum</item>
+        <item>Matthew Driscoll</item>
+        <item>David Durand</item>
+        <item>Toma? Erjavec</item>
+        <item>Merrilee Proffitt (arriving Friday mid-day)</item> 
+        <item>Sebastian Rahtz</item>
+        <item>Laurent Romary (not attending)</item>
+        <item>Susan Schreibman</item>
+        <item>John Unsworth, Chair</item>
+        <item>C. Perry Willett</item>
+        <item>Christian Wittern</item>
+    </list></p>
+    <p>Editors:
+        <list type="simple">
+            <item>Lou Burnard</item>
+            <item>Syd Bauman</item>
+        </list>
+    </p>
+    <p><hi rend="bold">Time and Place</hi>: The meeting is scheduled to start at 1 p.m. on Thursday, May 15th, at Rewley House, Wellington Square, Oxford, and concluding at 5:30 p.m.. Friday we'll meet again, starting at 9 a.m., at Rewley House, and concluding at 5:30 p.m.. If necessary, the meeting will continue on Saturday, either at the offices of Ingenta or at OUCS. A map showing Rewley House in relation to the Oxford Bus (coach) and train stations can be found at <xref url="http://www.kellogg.ox.ac.uk/images/newoxonmap2002.jpg">http://www.kellogg.ox.ac.uk/images/newoxonmap2002.jpg </xref></p>
+</div>
+<div>
+    <head>Thursday, May 15th</head>
+        <list type="simple">
+            <item>1-3:15 pm: Character Encoding Workgroup Reports and Recommendations<lb/>Christian Wittern: Workgroup Reports (Council members should review  CEW01 (this is intended as a replacement for P4 Chapter 4) and CEW06 (intended to replace P4 Chapter 25) at <xref url="http://www.tei-c.org/Activities/CE/">http://www.tei-c.org/Activities/CE/</xref>)<lb/>The Editors: Cdata Attributes (Council members should review <xref url="http://www.tei-c.org/Drafts/edw79.html">EDW79</xref>)<lb/>Christian Wittern: Recommendations</item>
+            <item>3:15-3:30 pm: Break</item>
+            <item>3:30-4:30 pm: David Durand: Standoff Markup Workgroup (Workgroup documents are at <xref url="http://www.tei-c.org/Activities/SO/">http://www.tei-c.org/Activities/SO/</xref>)</item>
+            <item>4:30-5:30 pm: Alex Bia and Susan Schreibman, Nominations Committee and SGML to XML migration workgroup updates (workgroup documents are at <xref url="http://www.tei-c.org/Activities/MI/">http://www.tei-c.org/Activities/MI/</xref>)</item>
+        </list>
+</div>
+<div><head>Friday, May 16th</head>
+<list>
+            <item>9 a.m.-noon: Sebastian Rahtz, MetaLanguage Task Force Report (Council members should review the Task Force's status report, at <xref url="http://www.tei-c.org/Activities/META/">http://www.tei-c.org/Activities/META/</xref>)</item>  
+            <item>noon-1:30 pm: Lunch</item>
+            <item>1:30-2:15 pm: Sebastian Rahtz, Licensing the TEI Guidelines and Derivative Products</item>
+            
+             <item>2:15-3:15 pm: Matthew Driscoll, Manuscript Description Task Force (Task Force documents are at <xref url="http://www.tei-c.org/Activities/MS/">http://www.tei-c.org/Activities/MS/</xref>)</item>
+             <item>3:15-3:30 pm: Break</item>
+             <item>3:30-4:00 pm: Lou Burnard, Feature Structures Task Force (Task Force Documents are at <xref url="http://www.tei-c.org/Activities/FS/">http://www.tei-c.org/Activities/FS/</xref>)</item>
+             <item>4:00-4:30 pm: Alex Bia, Translating TEI</item>
+            <item>4:30-5 pm: John Unsworth, Trees and Graphs Task Force (Task Force Documents are at <xref url="http://www.tei-c.org/Activities/GD/">http://www.tei-c.org/Activities/GD/</xref>)</item>
+            <item>5-5:30 pm: John Unsworth, Recommendations to the Board for Chair of the Council</item>
+</list></div>
+          <div>
+            <head>Saturday, May 17th</head>
+           <list>
+               <item>If other items are added to the agenda, or if we fall behind the schedule proposed above, we may meet from 9-noon on Saturday.</item>
+        </list>
+</div>
+    </body>
+</text>
+</TEI.2>

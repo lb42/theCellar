@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/home/lou/Public/TEI/TEICSS/tei.css" type="text/css"
+ ?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:t="http://www.tei-c.org/ns/1.0" n="2017-01"><teiHeader><fileDesc><titleStmt><title>Minutes of the TEI Technical Council</title><meeting n="2017-01" when="2017-01-26">TEI Technical Council online
+     meeting : <date>26 January 2017</date></meeting></titleStmt><publicationStmt><distributor>TEI Website</distributor><idno>TCM087</idno></publicationStmt><sourceDesc><p>Retagged from a WordPress HTML file</p></sourceDesc></fileDesc><revisionDesc><change when="2023-04-25">Archival header confected</change><change>Extracted from Word Press article with id post-29022</change></revisionDesc></teiHeader><text><body><div>
+		
+	<div type="h3"><head>Present</head><list style="ul">
+<item>Hugh Cayless (HC)</item>
+<item>James Cummings (JC)</item>
+<item>Peter Stadler (PS)</item>
+<item>Sarah Stanley (SS)</item>
+<item>Raff Viglianti (RV)</item>
+<item>Elisa Beshero-Bondar (EB)</item>
+<item>Magdalena Turska (MT)</item>
+<item>Martina Scholger (MS)</item>
+<item>Syd Bauman (SB), from 14:10 to 14:30 only</item>
+</list></div>
+<div type="h3"><head>Apologies</head><list style="ul">
+<item>Alejandro Bia</item>
+</list></div>
+<div type="h3"><head>Agenda</head><p>Welcome Sarah and Alex</p><list style="ul">
+<item>Mentoring for new members? Note: <ref target="https://wiki.tei-c.org/index.php/TEI-Council-FAQ">http://wiki.tei-c.org/index.php/TEI-Council-FAQ</ref>
+<list style="ul">
+<item>SB has volunteered. JC is willing. Any others? Sarah is fine with SB.</item>
+</list>
+</item>
+</list><p>Planning for F2F</p><list style="ul">
+<item><ref target="https://github.com/TEIC/TEI/issues">Tickets </ref>: HC will be assigning those that are not assigned. Try to do a triage on this before the meeting.</item>
+<item>@type (and others) fixing feedback
+<list style="ul">
+<item>Need to be grouped into attribute classes</item>
+<item>Action: EM and SB to share current spreadsheet. Council to provide feedback and decide</item>
+</list>
+</item>
+<item>Public Day: <ref target="http://www.ff.cuni.cz/methodologies-in-dh/">http://www.ff.cuni.cz/methodologies-in-dh/</ref></item>
+<item>Larger projects in 2017?
+<list style="ul">
+<item>Roma replacement (RV asks if we can find room in the agenda (1 hour or so) to go over some RomaJS wireframes (UI))
+<list style="ul">
+<item>JC notes that this should be one of our main priorities for 2017, with lots of documentation on maintenance, dependencies, etc.</item>
+<item>Talk about components, distributing work</item>
+<item>RV: Consider splitting off into an implementation subgroup</item>
+</list>
+</item>
+<item>SB: New ODD processor for the Guidelines? (also include Martin Holmes)</item>
+<item>RV: Researching Chapter 11 <ref target="https://www.tei-c.org/release/doc/tei-p5-doc/en/html/PH.html">http://www.tei-c.org/release/doc/tei-p5-doc/en/html/PH.html</ref></item>
+<item>Finally resolving Package Distribution</item>
+<item>Getting TEI into other XML Editors</item>
+<item>TEI2German (MS to report on translatathon)</item>
+<item>What else are we going to do with the Processing Model</item>
+<item>SB is still working on CH, not sure if Stefan M. is still contributing to that project or not. (we don’t know what this means)</item>
+<item>Others?</item>
+</list>
+</item>
+<item>(If Syd is available) ODD4ODDs schema (see <ref target="http://paramedic.wwp.neu.edu/~syd/temp/TOCTOC/odd4odds.html">http://paramedic.wwp.neu.edu/~syd/temp/TOCTOC/odd4odds.html</ref>)
+<list style="ul">
+<item>SB wasn’t here at this point, JC mentioned what the ODD does. And says we should ensure that it is all stuff we think is good practice if adopting it as an exemplar (if that is the right word in this case). There is a meta-question of whether it is better to have things like this adopted by the TEI-C or out in the community — which makes the TEI look stronger? [SB notes JC is correct, but that we already addressed this and decided it should go in Exemplars/. Although SB is not 100% sure that was the right decision :-)]</item>
+</list>
+</item>
+</list></div>
+	</div></body><!-- #post-## --></text></TEI>

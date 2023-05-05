@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/home/lou/Public/TEI/TEICSS/tei.css" type="text/css"
+ ?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:t="http://www.tei-c.org/ns/1.0" n="2017-06"><teiHeader><fileDesc><titleStmt><title>Minutes of the TEI Technical Council</title><meeting n="2017-06" when="2017-06-26">TEI Technical Council online
+     meeting : <date>26 June 2017</date></meeting></titleStmt><publicationStmt><distributor>TEI Website</distributor><idno>TCM092</idno></publicationStmt><sourceDesc><p>Retagged from a WordPress HTML file</p></sourceDesc></fileDesc><revisionDesc><change when="2023-04-25">Archival header confected</change><change>Extracted from Word Press article with id post-29034</change></revisionDesc></teiHeader><text><body><div>
+		
+		
+<div>
+<p>Present:</p>
+<list style="ul">
+<item>Hugh Cayless (HC)</item>
+<item>Elisa Beshero-Bondar (EB)</item>
+<item>James Cummings (JC)</item>
+<item>Sarah Stanley (SS)</item>
+<item>Peter Stadler (PS)</item>
+<item>Raff Viglianti (RV)</item>
+<item>Martina Scholger (MS)</item>
+<item>Magdalena Turska (MT)</item>
+<item>Elli Mylonas (EM)</item>
+<item>Alex Bia (AB)</item>
+<item>Syd Bauman (who needs to leave @ 13:40, anyway)</item>
+</list>
+<div type="h3"><head>Agenda / Notes</head><list style="ul">
+<item>Release 3.2.0
+<list style="ul">
+<item>
+<list style="ul">
+<item>SB &amp; SS are the release technicians
+<list style="ul">
+<item>
+<list style="ul">
+<item><ref target="https://wiki.tei-c.org/index.php/IRC">IRC Information</ref></item>
+</list>
+</item>
+</list>
+</item>
+<item>Possible issue with IRC—may not be available through your institution/ may need a web client.</item>
+<item>Should we switch to Slack? We could record history here (have to set a preference in order to record IRC history)</item>
+<item>HC Suggests Slack since that is cool and shiny.</item>
+</list>
+</item>
+</list>
+</item>
+<item>Timeline:
+<list style="ul">
+<item>Refrigeration starts: Mon 06-26 (typos, prose changes, small issues)</item>
+<item>Freeze starts: Mon 07-03</item>
+<item>Release day: Mon 07-10</item>
+</list>
+</item>
+<item>
+<list style="ul">
+<item>TEIC/TEI <ref target="https://github.com/TEIC/TEI/milestones/Guidelines%203.2.0">Milestone Issues</ref>
+<list style="ul">
+<item><ref target="https://github.com/TEIC/TEI/issues/1552">1552 </ref>: MS encouraged to make green an implement</item>
+<item><ref target="https://github.com/TEIC/TEI/issues/1651">1651 </ref>: JC notes that this one is done, just leaving open for related Stylesheets change that should be done as well. Council recommends closing, so he does.</item>
+<item><ref target="https://github.com/TEIC/TEI/issues/379">379 </ref>: EB notes that this one needs some careful writing; think we can do it for this release, want help. EM will draft wording for review.</item>
+<item>PS wants to finish <ref target="https://github.com/TEIC/TEI/issues/1441">1441 </ref>. Almost done …</item>
+</list>
+</item>
+<item>Release different outputs of exemplars</item>
+</list>
+</item>
+<item>Other business?
+<list style="ul">
+<item>EM discusses some of the problems w/ managing TEI-L
+<list style="ul">
+<item>bots asking permission to join is very common</item>
+<item>When we get a spam post (usually of the nature of “come read my blog”), it causes a small flurry of unsubscribes. These are probably list members who aren’t very involved anyway.</item>
+<item>So far EM doesn’t see a real problem in handling subscribe request</item>
+<item>Please notify EM or SB quickly if you notice spam on any of the TEI lists.</item>
+</list>
+</item>
+<item>JC Notes quick ticket solving: <ref target="https://github.com/TEIC/TEI/issues/1660">https://github.com/TEIC/TEI/issues/1660 </ref>Just over 30 minutes 😉</item>
+</list>
+</item>
+</list></div>
+</div>
+<div/>
+	</div></body><!-- #post-## --></text></TEI>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/home/lou/Public/TEI/TEICSS/tei.css" type="text/css"
+ ?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:t="http://www.tei-c.org/ns/1.0" n="2020-08"><teiHeader><fileDesc><titleStmt><title>Minutes of the TEI Technical Council</title><meeting n="2020-08" when="2020-08-04">TEI Technical Council online
+     meeting : <date>4 August 2020</date></meeting></titleStmt><publicationStmt><distributor>TEI Website</distributor><idno>TCM129</idno></publicationStmt><sourceDesc><p>Retagged from a WordPress HTML file</p></sourceDesc></fileDesc><revisionDesc><change when="2023-04-25">Archival header confected</change><change>Extracted from Word Press article with id post-30774</change></revisionDesc></teiHeader><text><body><div><p><hi style="strong">Meeting time:</hi></p><list style="ul">
+<item>EST 09:00–10:30, GMT 14:00–15:30, CEST 15:00–16:30</item>
+<item>Started:    13:08Z     Ended: 14:29Z</item>
+</list><p><hi style="strong">Present:</hi></p><list style="ul">
+<item>Syd Bauman (SB)</item>
+<item>Elisa Beshero-Bondar (EB)</item>
+<item>Meaghan Brown (MB)</item>
+<item>Hugh Cayless (HC)</item>
+<item>Nicholas Cole (NC)</item>
+<item>Jessica Lu (JL)</item>
+<item>Martina Scholger (MS)</item>
+<item>Peter Stadler (PS)</item>
+<item>Raff Viglianti (RV)</item>
+</list><p><hi style="strong">Apologies/Not Present:</hi></p><list style="ul">
+<item>Vanessa Bigot Juloux (VB)</item>
+<item>Magdalena Turska (MT)</item>
+</list><p><hi style="b">Note:</hi> ticket triage table is near the end of this document.</p><div type="h2"><head>Next release</head><list style="ul">
+<item>Release techs: NC (note taker), HC (lead tech), JL (support tech)</item>
+<item>Timeline: freeze on Sun 08-12, release branch: Mon 08-17, release: Wed 08-19</item>
+<item>Release version: 4.1.0 (Guidelines), 7.50.0 (Stylesheets)</item>
+<item>Guidelines issues to discuss/review for the upcoming release:
+<list style="ul">
+<item>Content model of <gi>standOff</gi>: <ref target="https://github.com/TEIC/TEI/issues/1977">https://github.com/TEIC/TEI/issues/1977</ref>
+<list style="ul">
+<item>PR <ref target="https://github.com/TEIC/TEI/pull/2018">https://github.com/TEIC/TEI/pull/2018</ref></item>
+<item>Sample suggested TEI encodings of WADM and preliminary notes from SB, HC, NC meeting. <ref target="https://docs.google.com/document/d/15lPVs89ehDNpQQ3Qf79kfRAECSN-MT_SpBlQpHUqyLI/edit">https://docs.google.com/document/d/15lPVs89ehDNpQQ3Qf79kfRAECSN-MT_SpBlQpHUqyLI/edit</ref></item>
+<item>HC, NC, RV, SB will work on the issue.</item>
+</list>
+</item>
+<item>Restructure chapter 11: <ref target="https://github.com/TEIC/TEI/issues/1427">https://github.com/TEIC/TEI/issues/1427</ref>
+<list style="ul">
+<item>pull request: <ref target="https://github.com/TEIC/TEI/pull/2014">https://github.com/TEIC/TEI/pull/2014</ref></item>
+<item>related issue: <ref target="https://github.com/TEIC/TEI/issues/1477">https://github.com/TEIC/TEI/issues/1477</ref></item>
+<item>RV is waiting for further feedback, <hi style="b">action on Council</hi> to review issue and supply feedback by 08-09.</item>
+<item><hi style="b">Action on MS</hi> to review related issue and make suggestions on how to implement.</item>
+</list>
+</item>
+<item>Add <gi>surplus</gi> to <gi>subst</gi>: <ref target="https://github.com/TEIC/TEI/issues/1661">https://github.com/TEIC/TEI/issues/1661</ref>
+<list style="ul">
+<item><ref target="https://github.com/TEIC/TEI/pull/2005">https://github.com/TEIC/TEI/pull/2005</ref></item>
+<item>PS says it’s good to go</item>
+<item>Action on SB to review and EB to merge branch into dev.</item>
+</list>
+</item>
+<item>Investigating changing the class membership of <gi>q</gi>: <ref target="https://github.com/TEIC/TEI/issues/1918">https://github.com/TEIC/TEI/issues/1918</ref>
+<list style="ul">
+<item>pull request: <ref target="https://github.com/TEIC/TEI/pull/2008">https://github.com/TEIC/TEI/pull/2008</ref></item>
+<item><hi style="b">Action on EB</hi> to push one more update to the wording (today) to respond to SB.</item>
+<item>We need reviewers on this to approve the language, and then add some translations for the new class.
+<list style="ul">
+<item><hi style="b">Action on MB</hi> and NC to review pull request with a particular eye to the wording of descriptions.</item>
+<item><hi style="b">Action on MS and RV</hi> to add translations.</item>
+</list>
+</item>
+</list>
+</item>
+<item>tei.datapointer equivalent to move/@where: <ref target="https://github.com/TEIC/TEI/issues/1769">https://github.com/TEIC/TEI/issues/1769</ref>
+<list style="ul">
+<item>pull request <ref target="https://github.com/TEIC/TEI/pull/1958">https://github.com/TEIC/TEI/pull/1958</ref> is a start of an implementation that EB thinks may be obsolete — <hi style="b">Action on EB</hi> to take a look and either close or propose this PR <hi style="b">by 2020-08-06.</hi></item>
+<item>pull request: <ref target="https://github.com/TEIC/TEI/pull/1974">https://github.com/TEIC/TEI/pull/1974</ref> is HC’s implementation using the (agreed to) datatype teidata.authority that can be either an enumeration or a URI.</item>
+<item>EB wonders if we want att.locatable? Will review both.</item>
+</list>
+</item>
+<item>New element for grouping notes <gi>noteGrp</gi>: <ref target="https://github.com/TEIC/TEI/issues/1833">https://github.com/TEIC/TEI/issues/1833</ref>
+<list style="ul">
+<item>PR <ref target="https://github.com/TEIC/TEI/pull/1920">https://github.com/TEIC/TEI/pull/1920</ref></item>
+<item><hi style="b">Action on SB</hi> to review if enough time after reviewing other issues for the release.</item>
+<item>HC is inclined to allow note+ (in content model of <gi>annotation</gi>)</item>
+<item>Clarification on <gi>noteGrp</gi>: a group of notes that is somehow similar, e.g. translations bundled together; different output media etc.</item>
+</list>
+</item>
+<item>Review placement of classes, macros, and datatypes in modules
+<list style="ul">
+<item><ref target="https://github.com/TEIC/TEI/issues/1710">https://github.com/TEIC/TEI/issues/1710</ref></item>
+<item>This should probably be a release of its own, <hi style="b">just</hi> addressing this issue. Probably in a few months time, as an interim release.</item>
+<item>We should consider numbering this a major release: 5.0.0 or whatever.</item>
+<item>Customization ODDs that explicitly pull classes from modules will break or have incorrect documentation (or both).</item>
+</list>
+</item>
+<item>Examples in ODD example page do not use ODD pure
+<list style="ul">
+<item><ref target="https://github.com/TEIC/TEI/issues/1813">https://github.com/TEIC/TEI/issues/1813</ref></item>
+<item>Should everything be copied to the WordPress or does the new version of the <ref target="https://github.com/TEIC/TEI/blob/dev/Documents/ODDintro/2020-version.xml">ODD Introduction</ref> from Lou Burnard belong in the Documentation repo, and we link to it from there. EB: Or set an iframe on the WordPress page to show the XML from the Documentation repo?</item>
+<item>RV: it should be possible to create a simple plugin to render a TEI doc with CETEIcean, but we’d need to write it. HC has been looking at this. General sadness over the “cruftiness” of TEI content in WordPress.</item>
+<item>Council agrees to update the content directly in wordpress as a temporary solution. But we need a workable solution to display XML content directly in WordPress including the header, navigation etc. of the TEI website.</item>
+</list>
+</item>
+<item>Stylesheets issues to discuss/review
+<list style="ul">
+<item>Release blocker: A jquery file with vulnerabilities <ref target="https://github.com/TEIC/Stylesheets/issues/433">https://github.com/TEIC/Stylesheets/issues/433</ref>
+<list style="ul">
+<item>HC and PS think we should just update jquery. <hi style="b">Action on PS </hi>to look at the jquery-related issues. Not sure we actually need the jquery library—if we need it we should update. PS will review the ticket to see if it can be closed. Note: The Guidelines do use jquery and it may be a security issue? Maybe we don’t need it—RV might be able to remove dependency on it, but not immediately.</item>
+</list>
+</item>
+</list>
+</item>
+</list>
+</item>
+</list></div><div type="h2"><head>Git branch renaming</head><list style="ul">
+<item>Consensus (from the last meeting) is to rename the “master” branch to “<hi style="b">released</hi>”, using “<hi style="b">rc-</hi>X.Y.0” for the branch the release techs are working on, and to keep each <hi style="b">rc-</hi> branch only until the next release.</item>
+<item>HC created “released” branch for Guidelines. Branch for Stylesheets repo is needed. For the other repos, use “main”. <hi style="b">Action on PS</hi> to do the renaming of all other repos (under https://github.com/TEIC) as well. Or wait to see if GitHub automates this process.</item>
+<item>Need to protect those new “released” branches so we can’t merge to these branches (as we’ve done for the old master branches).</item>
+</list></div><div type="h2"><head>Question on usage of @version</head><list style="ul">
+<item>MS sent an email to TEI-L on July 16 — no reply.</item>
+<item><ref target="http://tei-l.970651.n3.nabble.com/survey-on-version-usage-td4032787.html">http://tei-l.970651.n3.nabble.com/survey-on-version-usage-td4032787.html</ref></item>
+<item>Try raising it again in much simpler and more dire terms: We’re thinking about removing the @version on TEI, does anyone care?</item>
+<item>Repost short version in September (we deliberately defer this to the next release because the TEI list was too quiet in July).</item>
+</list></div><div type="h2"><head>Reminder — Action on</head><list style="ul">
+<item><hi style="b">SB, PS</hi>, and <hi style="b">JL</hi> to discuss issue <ref target="https://github.com/TEIC/TEI/issues/1955">https://github.com/TEIC/TEI/issues/1955</ref>.</item>
+</list><p> </p></div><div type="h2"><head>Ticket Triage (and minute review) assignment table</head><table>
+
+<row>
+<cell><hi style="b">Month</hi></cell>
+<cell><hi style="b">ticket triage</hi></cell>
+<cell><hi style="b">minute review/assist</hi></cell>
+</row>
+<row>
+<cell><hi style="b">August 2020</hi></cell>
+<cell>NC</cell>
+<cell>SB</cell>
+</row>
+<row>
+<cell><hi style="b">September 2020</hi></cell>
+<cell>JL</cell>
+<cell>NC</cell>
+</row>
+<row>
+<cell><hi style="b">October 2020</hi></cell>
+<cell>RV</cell>
+<cell>JL</cell>
+</row>
+<row>
+<cell><hi style="b">November 2020</hi></cell>
+<cell>NC</cell>
+<cell>SB</cell>
+</row>
+<row>
+<cell><hi style="b">December 2020</hi></cell>
+<cell>SB</cell>
+<cell>EB</cell>
+</row>
+
+</table></div></div></body><!-- #post-## --></text></TEI>

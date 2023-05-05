@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/home/lou/Public/TEI/TEICSS/tei.css" type="text/css"
+ ?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:t="http://www.tei-c.org/ns/1.0" n="2009-10"><teiHeader><fileDesc><titleStmt><title>Minutes of the TEI Technical Council</title><meeting n="2009-10" when="2009-10-13">TEI Technical Council online
+     meeting : <date>13 October 2009</date></meeting></titleStmt><publicationStmt><distributor>TEI Website</distributor><idno>TCM042</idno></publicationStmt><sourceDesc><p>Retagged from a WordPress HTML file</p></sourceDesc></fileDesc><revisionDesc><change when="2023-04-25">Archival header confected</change><change>Extracted from Word Press article with id post-21898</change></revisionDesc></teiHeader><text>
+    <body>
+	
+		<head>TEI Council Meeting</head>		<milestone unit="unknown" rend="rule"/>
+	
+
+	<div>
+		
+	
+
+
+<p>The TEI Council teleconference meeting took place on Tuesday 15 October 2009 from 14:00
+          to 15:45 UTC.</p>
+<p>
+          <hi>Participants:</hi> Gabriel Bodard (GB), Peter Boot (PB), Lou Burnard (LB), James
+          Cummings (JC), Elena Pierazzo (EP), Dot Porter (DP) Sebastian Rahtz (SR), Laurent Romary
+          (LR, Chair), Paul Schaffner (PS), David Sewell (DS, minutes).</p>
+<p>Council members unable to participate: Dan O’Donnell.</p>
+
+<div><head>
+        Change in Council terms?</head>
+<p>LR introduces a proposal from TEI Board to increase TEI Council terms from 2 to 3 years.
+          Board is concerned that there is too much turnover with the 2-year terms, and that a large
+          election slate is required at each election. Consensus of Council is that the status quo
+          is working; we just need to encourage good candidates to stand for election and to
+          continue in office so long as they are willing. </p>
+<p>        <note><rs>LR</rs> will report to Board that we recommend no change</note></p>
+</div>
+<div><head>
+        Member resignation</head>
+<p>LR reports that Arianna Ciula has recently tendered her resignation from Council, citing
+          the demands of her new position which remove her from active involvement with TEI. Council
+          accepts with sympathetic regrets, appreciation for Arianna’s past service, and best
+          wishes.</p>
+</div>
+<div><head>
+        Discussion of Sourceforge bugs and feature requests</head>
+<p>We discussed open <ref target="https://sourceforge.net/tracker/?group_id=106328">Sourceforge</ref> bugs and feature requests, in that order, categorized using our
+          color-code conventions (“green” for clear action, “amber” needing moderate discussion,
+          “red” complex or problematic issues).</p>
+<div><head>
+          Bugs</head>
+<p>Open items assigned to SR were not discussed as he is addressing them independently.
+            See also the comments for each item, linked from the item number.</p>
+<list><label><ref target="https://sourceforge.net/tracker/?func=detail&amp;aid=2812295&amp;group_id=106328&amp;atid=644062">2812295</ref>, <gi>graphic</gi> should allow <gi>desc</gi> child</label>
+<item>Accept LB’s proposal</item>
+<label><ref target="https://sourceforge.net/tracker/?func=detail&amp;aid=2714682&amp;group_id=106328&amp;atid=644062">2714682</ref>, <gi>biblScope</gi> in Imprint?</label>
+<item>LB wants to leave for more consideration. LR says essential for next release.
+              Agree to leave as amber; needs more work.</item>
+</list>
+<p>Open “green” bugs: LB is clear on how to implement fixes. <note><rs>LB</rs>: fix
+              and close green bugs.</note></p>
+</div>
+<div><head>
+          Feature Requests</head>
+<list><label><ref target="https://sourceforge.net/tracker/?func=detail&amp;aid=2830815&amp;group_id=106328&amp;atid=644065">2830815</ref>, vesta: convert multiple schemata</label>
+<item>SB: Vesta is still experimental, not a core deliverable. It doesn’t affect next
+              release, hold off on action.</item>
+<label><ref target="https://sourceforge.net/tracker/?func=detail&amp;aid=2859355&amp;group_id=106328&amp;atid=644065">2859355</ref>, <gi>subst</gi> should permit textual data</label>
+<item>EP explains rationale for the request. Should be classed as amber, needing more
+              discussion. <note><rs>EP</rs>: supply use case examples</note></item>
+<label><ref target="https://sourceforge.net/tracker/?func=detail&amp;aid=2859183&amp;group_id=106328&amp;atid=644065">2859183</ref>, Make all milestoneLike elements spanning</label>
+<item>Needs more discussion. Amber.</item>
+<label><ref target="https://sourceforge.net/tracker/?func=detail&amp;aid=2242434&amp;group_id=106328&amp;atid=644065">2242434</ref>, element for text suppressed by the editor</label>
+<item>LB wants specification w/examples of use and some text. <note><rs>SR +
+                EP</rs>: draft something for further discussion</note></item>
+<label><ref target="https://sourceforge.net/tracker/?func=detail&amp;aid=2728061&amp;group_id=106328&amp;atid=644065">2728061</ref>, Add <att>target</att> to <gi>relatedItem</gi></label>
+<item>PB says we did decide to implement this; we just need examples. Main question is
+              to decide whether <att>target</att> and element content are mutually exclusive. PB
+              feels that <att>target</att> is for simple cases, content used for complex elements.
+              LR has found precise use cases. LB agrees to greenlight, under mild protest.</item>
+<label><ref target="https://sourceforge.net/tracker/?func=detail&amp;aid=2728068&amp;group_id=106328&amp;atid=644065">2728068, suggested values for relatedItem/@type</ref></label>
+<item>We need examples. <note><rs>PS</rs>: supply examples</note></item>
+<label><ref target="https://sourceforge.net/tracker/?func=detail&amp;aid=2783323&amp;group_id=106328&amp;atid=644065">2783323</ref>, add <att>from</att> and <att>to</att> to <gi>choice</gi></label>
+<item>LB sees problems with the proposal, we agree to defer discussion.</item>
+<label><ref target="https://sourceforge.net/tracker/?func=detail&amp;aid=2794512&amp;group_id=106328&amp;atid=644065">2794512</ref>, move <gi>space</gi> to core module</label>
+<item>LB doesn’t think good idea; not convinced it’s common enough in texts to warrant
+              the change. JC: why not just include transcription module in customizations? LR: any
+              bad side effects of moving it? LB: core module is already bloated. LR: we need to
+              discuss the general nature of core modules. PS: we need more discussion of the
+              semantics of textual spaces. Keep this amber. <note><rs>DS + PS</rs> prepare a
+                short discussion of issue for our next FTF meeting.</note></item>
+<label><ref target="https://sourceforge.net/tracker/?func=detail&amp;aid=2798963&amp;group_id=106328&amp;atid=644065">2798963</ref>, add <att>role</att> to <gi>author</gi></label>
+<item>Previously, <att>role</att> was added to <gi>name</gi>, so there is some
+              precedent. If <gi>author</gi> were member of att.naming, it would get <att>role</att>.
+              LR: for scientific publishing, <gi>biblStruct</gi> is OK except for a few things, this
+              is one. It’s important to be able to identify corresponding author. We keep this
+              amber, will discuss further.</item>
+<label><ref target="https://sourceforge.net/tracker/?func=detail&amp;aid=2811234&amp;group_id=106328&amp;atid=644065">2811234</ref>, add <att>ref</att> to <gi>material</gi></label>
+<item>LB has noted that there’s nothing obvious to point to from <att>ref</att> her. GB:
+              it is useful to be able to point to a description of a material from individual
+                <gi>material</gi> elements. LB: we don’t have clear consensus, defer to FTF.
+              Agreed.</item>
+<label><ref target="https://sourceforge.net/tracker/?func=detail&amp;aid=2811239&amp;group_id=106328&amp;atid=644065">2811239</ref>, new element <gi>object</gi></label>
+<item>Merge with preceding and consider jointly.</item>
+<label><ref target="https://sourceforge.net/tracker/?func=detail&amp;aid=2812634&amp;group_id=106328&amp;atid=644065">2812634</ref>, <att>docStatus</att> on <gi>edition</gi></label>
+<item>Request for this arises mostly from born-digital documents, to indicate the state
+              of a document (edition). LR thinks we should use attributes the same way in
+              revisionDesc. Keep this amber, needs description and examples. <note><rs>SR</rs>
+                will work up a suggested implementation</note></item>
+<label><ref target="https://sourceforge.net/tracker/?func=detail&amp;aid=2834505&amp;group_id=106328&amp;atid=644065">2834505</ref>, <att>cert</att> on <gi>choice</gi> and model.choicePart</label>
+<item>JC: the point would be to allow nested <gi>choice</gi> elements, assigning
+              relatively probablities to each. LB has concerns and requests amber status. LB
+              suggests that this discussion incorporate <ref target="https://sourceforge.net/tracker/?func=detail&amp;aid=2862151&amp;group_id=106328&amp;atid=644065">2862161</ref> (Allow certainty etc. in “empty” elements)</item>
+</list>
+<p>In connection with the preceding ticket, we need to revisit the use of <att>match</att>
+            and related attributes to indicate certainty. <note><rs>GB</rs>: create a new
+              ticket.</note></p>
+<list><label><ref target="https://sourceforge.net/tracker/?func=detail&amp;aid=2411994&amp;group_id=106328&amp;atid=644065">2411994</ref>, Define canonical way of referencing TEI element definitions</label>
+<item>Awaiting implementation of proposed Vault archiving.</item>
+<label><ref target="https://sourceforge.net/tracker/?func=detail&amp;aid=2507305&amp;group_id=106328&amp;atid=644065">2507305</ref>, Alignment and documentation of sound files</label>
+<item>Presents some of same issues as <gi>facsimile</gi>. Needs further discussion.
+              Should be merged with <ref target="https://sourceforge.net/tracker/?func=detail&amp;aid=2724997&amp;group_id=106328&amp;atid=644065">2724997</ref>, “Cater for audio/video facsimile”</item>
+<label><ref target="https://sourceforge.net/tracker/?func=detail&amp;aid=1934586&amp;group_id=106328&amp;atid=644065">1934586</ref>, Chapter Revision: Critical Apparatus</label>
+<item>LB wonders why this is a Sourceforge ticket. Essentially, it’s a reminder of
+              needed work. EP: MS SIG wants to undertake a revision w/a working group. Need to
+              identify a chair. We agree to close the ticket and ask the MS SIG to submit specific
+              tickets as needed.</item>
+</list>
+<p/>
+<p>Of the Green items, per LB the only problem is <ref target="https://sourceforge.net/tracker/?func=detail&amp;aid=2531384&amp;group_id=106328&amp;atid=644065">2531384</ref>, “Rationalise application of <att>target</att>“. (The basic issue is
+            that <att>target</att> is defined in several different ways for different elements, and
+            differs in optionality and data type.) LR: it would be nice to have a single
+              <att>target</att> attribute with a defined syntax. It would clarify TEI to outside
+            world to have single mechanism for pointing with <att>target</att>. SR: we can still use
+            Schematron to constrain to a single token. Q: what do we do about the existing
+              <att>targets</att>, allowed on 3 elements? Consensus: we deprecate. Convert to
+            Amber.</p>
+</div>
+
+<div><head>
+        2009 Members Meeting: Council Report, etc.</head>
+<p>LR ask that all Council members report to him via email their 2008–9 activities within
+          the next two or three days, along with other items that should be added to the report. LR.
+          will compile and send to Council.</p>
+<p>        <note><rs>All</rs>: send notes to Laurent.</note></p>
+<p>LR will be giving a paper on the future of ODD. We should also monitor discussion of TEI
+          in publishing. LB raises the issue of the ACLS (North America) Humanities E-Book project,
+          which uses a non-TEI DTD; should we get involved?LR notes that this is causing issues for
+          e.g. European publishers like <ref target="http://revues.org/">revues.org</ref> who are
+          wondering why to use TEI if Americans are doing something different. One of our goals
+          should be to compose a single recommendation for academic publishing. (DS and others
+          pursued this on Council email following the telco.) We agree to mention this in our
+          Meeting report.</p>
+<p>        <note><rs>All</rs>: send LR examples of TEI in publishing (especially scholarly /
+          scientific).</note></p></div>
+<div><head>
+        Final Points; Next Face-to-Face Meeting</head>
+<list>
+<item>Status of <gi>valList</gi> content model? SR says the update has been implemented;
+              <gi>valList</gi> is a sibling of <gi>content</gi>. Any further changes will need more
+            discussion.</item>
+<item>HTML 5: any action we need to take? SR: it doesn’t affect TEI per se, rather it will
+            affect best practices for TEI-to-Web output; we may need to target HTML 5 in future.
+            This wouldn’t impact core markup, but would impact stylesheets if we decide to generate
+            HTML 5. HTML is not a fixed target.</item>
+<item>Next FTF. If funding comes through for the ESF workshop, it might be attached to
+            that. Otherwise, we plan for a spring meeting in Paris. (Finland was previously
+            discussed but the potential sponsors may not have received funding.)</item>
+</list>
+</div>
+	</div>
+	</div>
+	</body></text></TEI>

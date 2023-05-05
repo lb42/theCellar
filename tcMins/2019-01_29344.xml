@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/home/lou/Public/TEI/TEICSS/tei.css" type="text/css"
+ ?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:t="http://www.tei-c.org/ns/1.0" n="2019-01"><teiHeader><fileDesc><titleStmt><title>Minutes of the TEI Technical Council</title><meeting n="2019-01" when="2019-01-18">TEI Technical Council online
+     meeting : <date>18 January 2019</date></meeting></titleStmt><publicationStmt><distributor>TEI Website</distributor><idno>TCM110</idno></publicationStmt><sourceDesc><p>Retagged from a WordPress HTML file</p></sourceDesc></fileDesc><revisionDesc><change when="2023-04-25">Archival header confected</change><change>Extracted from Word Press article with id post-29344</change></revisionDesc></teiHeader><text><body><div><p><hi style="strong">Present:</hi></p><list style="ul">
+<item>Syd Bauman (SB)</item>
+<item>Elisa Beshero-Bondar (EB)</item>
+<item>Hugh Cayless (HC)</item>
+<item>James Cummings (JC) — arrived at 22:10Z</item>
+<item>Elli Mylonas (EM)</item>
+<item>Martina Scholger (MS)</item>
+<item>Peter Stadler (PS)</item>
+<item>Sarah Stanley (SS)</item>
+<item>Magdalena Turska (MT)</item>
+<item>Raff Viglianti (RV)</item>
+</list><p><hi style="strong">Apologies/Not Present:</hi></p><list style="ul">
+<item>Vanessa Bigot Juloux (VBJ)</item>
+</list><p>Started: 21:06Z Ended: 22:34Z</p><div type="h2"><head>Spring F2F, 6–8 May at the Folger Library, Washington DC</head><list style="ul">
+<item>For the second day (Tue 07 May) we plan an evening meet up with the local organizers and experts.</item>
+<item>Map and table for recording flights &amp; accommodations was circulated</item>
+<item><hi style="b">Action</hi> on EM &amp; EBB: investigate AirbB&amp;B options <hi style="b">due </hi>Fri 2019-02-08</item>
+</list></div><div type="h2"><head>Release planning</head><list style="ul">
+<item>Release technicians: HC &amp; EM</item>
+<item>Slightly modified release timeline
+<list style="ul">
+<item>Refridge: Jan 21</item>
+<item>Freeze: Jan 24</item>
+<item>Release Branch: Jan 25</item>
+<item>Release: Jan 29</item>
+</list>
+</item>
+<item>Stylesheets release
+<list style="ul">
+<item>Do we want to have release notes for the Stylesheets?
+<list style="ul">
+<item>Yes, the notes for the Guidelines release and the Stylesheets release should be in one document</item>
+</list>
+</item>
+<item>Stylesheets build is currently broken due to odd2json.xsl failure(s), see <ref target="https://jenkins.tei-c.org/view/TEI%20dev/job/Stylesheets-dev/">https://jenkins.tei-c.org/view/TEI%20dev/job/Stylesheets-dev/</ref></item>
+<item>This failure occurs when building the Stylesheets locally, too. Looks it might be just a “need to copy output to expected-results/” type of error. This will be fixed before we release.</item>
+</list>
+</item>
+<item>Tickets to discuss before we release?
+<list style="ul">
+<item>EB moved #1707 to new milestone for July 2019 release, tentatively named 3.6.0</item>
+</list>
+</item>
+<item>Readme (release notes for 3.5.0):
+<list style="ul">
+<item>Chair and Release technicians could be working on that starting now (this takes time)—maybe work on this before the release branch is created.</item>
+<item><hi style="b">Action</hi> on HC: update TCW 22 to indicate writing release notes starting a week or two ahead of release. (Note that TCW 22 is on the <ref target="https://github.com/TEIC/Documentation">Documentation repo</ref>.)<hi style="b"/></item>
+<item><hi style="b">Action</hi> on MS to start with the release notes and hand it on to the release techs</item>
+</list>
+</item>
+</list></div><div type="h2"><head>Adjust/rephrase modal verbs in the Guidelines (PS)</head><list style="ul">
+<item>It is quite an effort to go through the Guidelines and adjust all those verbs but it would be a significant improvement.</item>
+<item>This came up when Martin Holmes announced the implementation of the Japanese translations. This would make the translations more consistent.</item>
+<item>JC is already working on this — see issue <ref target="https://github.com/TEIC/TEI/issues/1175">https://github.com/TEIC/TEI/issues/1175</ref>
+<list style="ul">
+<item>JC reports he went through and did some of this prior to release 3.4.0 and will go through and do some more <hi style="i">after</hi> this release. For the record he was searching for case-insensitive use of (must|must not|should|should not|may|require|shall|shall not|recommend|optional)’, and got as far as end of chapter 3, CO-CoreElements.</item>
+<item>See <ref target="http://teic.github.io/TCW/tcw24.html">TCW 24</ref> (Styleguide for editing the TEI Guidelines) for recommendations on use of modal verbs.</item>
+<item>PS recommends we mark the modal verbs that are really important—for display, perhaps support self-reflection for TEI—for more formal specification of these verbs. Perhaps ODD and Schematron can help flag as we’re editing and using modal verbs.</item>
+</list>
+</item>
+<item>Decision: we will discuss this at the next F2F meeting, whether we should make a feature request on marking modal verbs. In preparation, we will take a look at other standards documents for modal verbs like <ref target="https://tools.ietf.org/html/bcp14">https://tools.ietf.org/html/bcp14</ref>.</item>
+<item>The Guidelines should be kept consistent.</item>
+</list></div><div type="h2"><head>Report on Skype meeting that addressed the uniHan element</head><list style="ul">
+<item>Issue <ref target="https://github.com/TEIC/TEI/issues/1805">https://github.com/TEIC/TEI/issues/1805</ref></item>
+<item>Last week (Mon 07 Jan)  RV, HC, SB, and MS met with Duncan Paterson and Martin Holmes. We agreed it was a good idea to introduce a new element. Suggestion to call it <gi>unihanProp</gi>. Furthermore, <gi>localProp</gi> and <gi>unicodeProp</gi> should be renamed to <gi>unicodeName</gi> and <gi>localName</gi> instead, deprecating the current names for a long time. These three elements should be added to a new att.gaijiProperties class.</item>
+<item>Proposal to the Council:
+<list style="ul">
+<item>Phase 0: Create att.gaijiProperties with @name and @value, to be used by <gi>unicodeProp</gi>, <gi>localProp</gi>, and <gi>unihanProp</gi>.</item>
+<item>Phase 1: add the new <gi>unicodeProp</gi>, <gi>unihanProp</gi>, and <gi>localProp</gi> elements with closed valList for unicodeProp/@name and unihanProp/@name, along with prose changes.
+<list style="ul">
+<item>NOTE: The entry for “charProp” in the content models of <gi>char</gi> and <gi>glyph</gi> becomes instead “( charProp* | ( unicodeProp | unihanProp | localProp )* )”, and a) <gi>charProp</gi> is deprecated (for some years), and b) the three new elements are members of a new class that has a required @name (which used to be the content) and a maybe required @value (which used to be the sibling <gi>value</gi>).</item>
+</list>
+</item>
+<item>Phase 2: Test the more aggressive validation of all @values based on @name and regexes from the Unihan database (see <ref target="https://www.unicode.org/reports/tr38/">technical report #38</ref>). If it’s not too onerous to run and to maintain, integrate it.</item>
+<item>Phase 3: Update prose and specs for <gi>unicodeName</gi> and <gi>localName</gi> to deprecate the old mechanisms and recommend the new attributes.</item>
+<item>Phase 4: Write scripts to pull values from Unicode documents as part of the TEI build process to validate @name and @value.</item>
+</list>
+</item>
+<item><hi style="b">Action</hi> on SB to write up issue (<hi style="b">due</hi> 2019-02-18), and on MS to ask Lou Burnard, Christian Wittern, and Espen Ore for examples (due 2019-02-25)</item>
+</list></div><div type="h2"><head>Report on rub-a-dub-dub (SB)</head><list style="ul">
+<item>Making good progress — on phase 2 of 4</item>
+<item>Interestingly, it fails Test/, although it is passing Test2/. (Thanks to PS and his Travis for finding this.)</item>
+<item>It will take at least a couple of weeks until it is finished</item>
+</list></div><div type="h2"><head>Report on object element (JC)</head><list style="ul">
+<item>JC summarised work on &lt;tei:object&gt; and related elements. Latest updates include renaming <gi>objIdentifier</gi> to <gi>objectIdentifier</gi>. It is ready to come out in next week’s release. More work to be done after this release, this is just getting us started. Language has been included to make that clear in Guidelines. JC to add to <gi>object</gi> tagdoc page.</item>
+<item><hi style="b">Action</hi> on JC to add clarification to the <gi>object</gi> tagdoc page.</item>
+<item><hi style="b">Action</hi> on MS and release techs: Caveat should be included in the release notes.</item>
+</list></div><div type="h2"><head>Availability of Google Calendar</head><list style="ul">
+<item>Council decided that the Google Calendar can be made public</item>
+</list></div><div type="h2"><head>AOB</head><list style="ul">
+<item><hi style="strong">Action</hi> on MS to be sure our Council minutes are being posted to website</item>
+<item>MS requests help with reviewing minutes</item>
+<item>Council decided that a council member would be assigned to assist the Chair with the minutes of each meeting on a rotating basis (based on the Ticket Triage rotation).</item>
+<item>Do minutes-review the month <hi style="i">after</hi> you do ticket triage
+<list style="ul">
+<item>e.g. July Ticket Triage person does the August minutes.</item>
+<item>EM added column to ticket triage</item>
+<item>Discussion: what belongs in public minutes. Actions/decisions. We opt to provide rationale but it’s not required. We don’t have to identify each speaker. “Council discussed this issue.”</item>
+</list>
+</item>
+</list></div><div type="h2"><head><hi style="b">Reminder Stylesheets Meeting</hi></head><list style="ul">
+<item>Mon 21 Jan 19 at 14:00Z = 09:00 EST / 14:00 GMT / 15:00 CET</item>
+</list><p> </p></div></div></body><!-- #post-## --></text></TEI>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/home/lou/Public/TEI/TEICSS/tei.css" type="text/css"
+ ?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:t="http://www.tei-c.org/ns/1.0" n="2021-07"><teiHeader><fileDesc><titleStmt><title>Minutes of the TEI Technical Council</title><meeting n="2021-07" when="2021-07-08">TEI Technical Council online
+     meeting : <date>8 July 2021</date></meeting></titleStmt><publicationStmt><distributor>TEI Website</distributor><idno>TCM142</idno></publicationStmt><sourceDesc><p>Retagged from a WordPress HTML file</p></sourceDesc></fileDesc><revisionDesc><change when="2023-04-25">Archival header confected</change><change>Extracted from Word Press article with id post-31157</change></revisionDesc></teiHeader><text><body><div><p><hi style="strong">Meeting times: </hi></p><list style="ul">
+<item>10:30am–12:00pm PDT, 1:30pm–3:00pm EDT, 6:30pm–8:00pm BST, 7:30pm–9:00pm CEST</item>
+<item>Started: 17:37Z    Ended: ~19:02Z</item>
+</list><p><hi style="strong">Present:</hi></p><list style="ul">
+<item>Syd Bauman (SB)</item>
+<item>Helena Bermúdez Sabel (HBS)</item>
+<item>Elisa Beshero-Bondar (EB)</item>
+<item>Meaghan Brown (MB)</item>
+<item>Hugh Cayless (HC, joined 18:05Z)</item>
+<item>Janelle Jenstad (JJ)</item>
+<item>Jessica Lu (JL)</item>
+<item>Martina Scholger (MS)</item>
+</list><p><hi style="strong">Apologies/Not Present:</hi></p><list style="ul">
+<item>Peter Stadler — family vacation</item>
+<item>Raff Viglianti (RV) — parental leave</item>
+<item>Magdalena Turska</item>
+</list><p> </p><div type="h2"><head>Next Release</head><list style="ul">
+<item>Techs: HBS, MS, PS</item>
+<item>refrigerate: Wed 11 Aug</item>
+<item>freeze: Sun 15 Aug</item>
+<item>release: Wed 18 Aug</item>
+</list></div><div type="h2"><head>Next VF2F meeting</head><list style="ul">
+<item>EBB would prefer to start at 16:00 ET on Fri, if possible.</item>
+<item>So far Fri 01 and Sat 02 Oct look like the best.</item>
+<item>Resolved! Date of SVF2F is <hi style="b">October 1–2. </hi></item>
+<item>Remember, a discussion of a <gi>gender</gi> (as opposed to <gi>sex</gi>) element should be on agenda — done</item>
+</list></div><div type="h2"><head>Hackathon</head><list style="ul">
+<item>Conceived of as small groups (2–4 people) getting together to address a particular ticket or other issue. Planned for July &amp; August
+<list style="ul">
+<item>JJ is interested. Still in learning mode!</item>
+<item>EBB &amp; JJ are planning to do P5subset update this month (thinking last week in July).</item>
+<item>Current thought is for folks to pick an issue (ticket or otherwise) and then ask a potential “buddy” via e-mail, or to find a “buddy” to join them via a posting to #general on Slack.</item>
+</list>
+</item>
+</list></div><div type="h2"><head>GitHub issues</head><list style="ul">
+<item>FR for new <gi>ellipsis</gi> element: <ref target="https://github.com/TEIC/TEI/issues/1877">https://github.com/TEIC/TEI/issues/1877</ref>
+<list style="ul">
+<item>Council considered the name again, and while some are worried the name “ellipsis” will lead to misunderstanding, we did not come up with a better name.</item>
+<item>It was suggested that the content of <gi>ellipsis</gi> require a minimum of 1 <gi>metamark</gi>.</item>
+<item>The prose should make clear that <gi>ellipsis</gi> is for a specific phenomena, not for general-purpose encoding of ellipses. E.g, “…” or “* * *” used to indicate  a speaker is pausing or trailing off. And not intended for interpretive stuff like filling in what’s missing in the ellipses points in Joyce’s Dubliners.</item>
+<item>Try it as deliberate omission of “content” rather than simply “text”.</item>
+</list>
+</item>
+<item>Add location information to the new <gi>conversion</gi> element: <ref target="https://github.com/TEIC/TEI/issues/1910">https://github.com/TEIC/TEI/issues/1910</ref>
+<list style="ul">
+<item>EBB wants to know if Council supports going forward with a new class (att.locatable or att.placeable) with 1 attribute, the @where that is currently of <gi>event</gi>, for use by both <gi>event</gi> and <gi>conversion</gi>.</item>
+<item>Yes, let’s make att.locatable for event/@where and conversion/@where.</item>
+</list>
+</item>
+<item>Clarify description of att.combinable’s “mode”: <ref target="https://github.com/TEIC/TEI/issues/1715">https://github.com/TEIC/TEI/issues/1715</ref>
+<list style="ul">
+<item>SB and EBB will meet and finish this one up.</item>
+</list>
+</item>
+<item>Guideline issues milestone 4.3.0 <ref target="https://github.com/TEIC/TEI/issues?page=1&amp;q=is%3Aopen+is%3Aissue+milestone%3A%22Guidelines+4.3.0%22">https://github.com/TEIC/TEI/issues?page=1&amp;q=is%3Aopen+is%3Aissue+milestone%3A%22Guidelines+4.3.0%22</ref>
+<list style="ul">
+<item>Discussion on which of those we can tackle before freeze.</item>
+<item><hi style="b">Action on MS</hi> to send a reminder to Council members to focus on milestone 4.3.0 issues, or to remove the milestone <hi style="b">by</hi> 2021-07-10.</item>
+</list>
+</item>
+<item>Stylesheet issues milestone 7.52.0 <ref target="https://github.com/TEIC/Stylesheets/issues?q=is%3Aopen+is%3Aissue+milestone%3A%22Release+7.52.0%22">https://github.com/TEIC/Stylesheets/issues?q=is%3Aopen+is%3Aissue+milestone%3A%22Release+7.52.0%22</ref></item>
+</list><p> </p></div></div></body><!-- #post-## --></text></TEI>

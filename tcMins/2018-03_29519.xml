@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/home/lou/Public/TEI/TEICSS/tei.css" type="text/css"
+ ?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:t="http://www.tei-c.org/ns/1.0" n="2018-03"><teiHeader><fileDesc><titleStmt><title>Minutes of the TEI Technical Council</title><meeting n="2018-03" when="2018-03-29">TEI Technical Council online
+     meeting : <date>29 March 2018</date></meeting></titleStmt><publicationStmt><distributor>TEI Website</distributor><idno>TCM099</idno></publicationStmt><sourceDesc><p>Retagged from a WordPress HTML file</p></sourceDesc></fileDesc><revisionDesc><change when="2023-04-25">Archival header confected</change><change>Extracted from Word Press article with id post-29519</change></revisionDesc></teiHeader><text><body><div><p><hi style="strong">Meeting Time:</hi></p><list style="ul">
+<item>08:00 EDT, 13:00 BST, 14:00 CEST</item>
+</list><p><hi style="strong">Present:</hi></p><list style="ul">
+<item>Syd Bauman (SB, late: ~14:50)</item>
+<item>Elisa Beshero-Bondar (EB)</item>
+<item>Alex Bia (AB, connected late)</item>
+<item>Hugh Cayless (HC)</item>
+<item>James Cummings (JC)</item>
+<item>Elli Mylonas (EM)</item>
+<item>Martina Scholger (MS)</item>
+<item>Peter Stadler (PS)</item>
+<item>Sarah Stanley (SS)</item>
+<item>Raff Viglianti (RV)</item>
+</list><p><hi style="strong">Apologies:</hi></p><list style="ul">
+<item>Magdalena Turska (MT)</item>
+</list><div type="h2"><head>TEI conference in Tokyo (September 9–13, Sun–Thu)</head><list style="ul">
+<item>Workshops are on Sept 9 and 10 the actual conference is Sept 10–13; Board meeting is currently scheduled for Sept 10. JADH is 9–11.</item>
+<item>Schedule F2F meeting</item>
+<item>Options:</item>
+</list><list style="ol">
+<item>Thu 6th–Sat 8th (EB, JC, MS)</item>
+<item>Fri 7th–Sun 9th (EB, RV/3, JC, SB, MS, AB)</item>
+<item>Thu 13th afternoon–Sat 15th (RV/1, MS)</item>
+<item>Fri 14th–Sun 16th (AB)</item>
+<item>to split our meeting (RV/2, HC, SB, MS, AB) (tentative choice for now)
+<list style="ul">
+<item>Fri/Sat: Council meeting</item>
+<item>Sun: Workshops</item>
+<item>Mon: Open Council Session</item>
+</list>
+</item>
+</list><list style="ul">
+<item>TEI Council workshop?
+<list style="ul">
+<item>Workshops (proposals due April 9):
+<list style="ul">
+<item>MT, HC, and EM</item>
+<item>TEI Introduction/Update (with JADH?) EBB, EM, and MS could reprise their workshop from Mexico City. Shop this to JADH.</item>
+</list>
+</item>
+<item>Should there a Short Paper or Paper submission on Roma JS?</item>
+<item>Poster on <ref target="https://github.com/TEIC/TEI/issues/1743">TEI infrastructure</ref></item>
+</list>
+</item>
+<item>Do we want to organize a joint Board-Council meeting?
+<list style="ul">
+<item>Council thinks good as both a meeting followed by a social event.</item>
+</list>
+</item>
+<item>Open Council meeting
+<list style="ul">
+<item>MS to plan with program chair and local organizers.</item>
+</list>
+</item>
+</list></div><div type="h2"><head>ROMA JS report</head><list style="ul">
+<item>New channel on slack.</item>
+<item>Discussion: interface should clarify that an attribute is *modified* on an element vs. *defined* there (which should only be the case when a custom attribute is added).</item>
+<item>Clarify what the X’s do: delete the attribute or delete the specification you’ve been defining?</item>
+<item>How to “undo” an action?</item>
+</list></div><div type="h2"><head>OxGarage report</head><list style="ul">
+<item>PS: Successfully set up new domain <ref target="https://oxgarage-paderborn.tei-c.org/">oxgarage-paderborn.tei-c.org</ref> (thanks to Ian Rifkin).</item>
+<item>It’s up and running with the <ref target="https://hub.docker.com/r/teic/oxgarage/">docker image</ref> from the <ref target="https://github.com/TEIC/oxgarage">oxgarage dev branch</ref>.</item>
+<item>There is still an <ref target="https://github.com/TEIC/oxgarage/issues/14">issue with the isoschematron conversion</ref> (and other minor bugs).</item>
+<item>PS would like to do an OxGarage release, though
+<list style="ul">
+<item>start version number at 1.0.0 (see minutes <ref target="https://tei-c.org/activities/council/meetings/tei-technical-council-teleconference-2018-01-25/">2018-01-25</ref>).</item>
+<item>JC: Go ahead! Do we have a release documentation for OxGarage release? If not, we should. PS agrees to make a documentation as he undertakes the release. The documentation should make it possible for other Council members to release OxGarage. Post documentation to TCW.</item>
+<item>Release on GitHub.  But don’t immediately release on tei-c.org site until meeting with Ian Rifkin (see below).</item>
+</list>
+</item>
+<item>Does anyone have experience with updating OxGarage on tei-c.org?
+<list style="ul">
+<item>JC: I just remember SPQR copying it into place and restarting tomcat / apache. (Not sure we have rights to do that in the new setting?), HC: it looks to me like we have right to (re)start tomcat on tei-c.org.</item>
+<item>We need a meeting with Ian Rifkin to determine if tomcat / jetty can be updated, server specs etc. Note: TEI and ADHO on same server.</item>
+</list>
+</item>
+</list></div><div type="h2"><head>Reminder / report on action items from F2F in Cologne</head><list style="ul">
+<item>MS: access to website to update minutes</item>
+<item>PS: LingSIG tickets</item>
+<item>EM: measurement proposal</item>
+<item>HC/SB/MH: move to new oXygen jar:
+<list style="ul">
+<item>In oxygen-tei/oxygen-tei/lib/ there is an oxygen.jar version 2015042116 (probably 16.1 or 16.2). We use that because using a newer version would mean that people with older oXygen versions could not update to the newest TEI framework.</item>
+<item>Currently both stable (oxygen-tei/oxygen-tei/tei-c.org/updateSite.oxygen) and bleeding edge (oxygen-tei/oxygen-tei/jenkins/updateSite.oxygen) plugins claim (probably correctly) that they are usable with oXygen 15.2+. This version number can be queried or reset using the updateSite.xsl in the same directory.</item>
+<item>We do not know how old a version one could use with a new oxygen.jar in this position.</item>
+<item>We do not know how many users are using the stable plugin, and with what versions of oXygen they are using it. (Could we ask SyncRO for this info?)</item>
+<item>There is also a copy of oxygen.jar needed in the build process, and thus lying around on Jenkins (except for Paderborn, as PS notes), which is used only for building the Stylesheets documentation files. I (Syd) do not know what version this is or whether upgrading is required, a good idea, or a bad idea.</item>
+</list>
+</item>
+<item>MT/HC/SB: Standoff-Proposal — have not met yet (and won’t until mid-April), so no progress to report</item>
+<item>tei_customization: how do we want to solve conflicting IDs?</item>
+<item><ref target="https://github.com/TEIC/TEI/issues/1743">Infrastructure documentation</ref> (MT, JC, PS, and HC)</item>
+</list></div><div type="h2"><head>Small group meetings outside teleconferences</head><list style="ul">
+<item>Have a look at pull requests</item>
+<item>Discuss / solve tickets</item>
+<item>Address stylesheets issues</item>
+<item>PS: we could upgrade the ticket triage system to 3 people per month; these guys would then do more than just assigning tickets?</item>
+</list></div><div type="h2"><head>Blue sky thinking</head></div><div type="h2"><head>Tickets</head><list style="ul">
+<item><ref target="https://github.com/TEIC/TEI/issues/1756">1756</ref> event should have ptr and idno in its content model
+<list style="ul">
+<item>Most people seem to be in favour. Should JC just go implement?</item>
+</list>
+</item>
+</list></div><div type="h2"><head>Ticket triage</head><table>
+
+<row>
+<cell><hi style="b">March 2018</hi></cell>
+<cell><hi style="b">RV</hi></cell>
+</row>
+<row>
+<cell><hi style="b">April 2018</hi></cell>
+<cell><hi style="b">SS</hi></cell>
+</row>
+<row>
+<cell><hi style="b">May 2018</hi></cell>
+<cell><hi style="b">MS</hi></cell>
+</row>
+<row>
+<cell><hi style="b">June 2018</hi></cell>
+<cell><hi style="b">HC</hi></cell>
+</row>
+<row>
+<cell><hi style="b">July 2018</hi></cell>
+<cell><hi style="b">EB</hi></cell>
+</row>
+<row>
+<cell><hi style="b">August 2018</hi></cell>
+<cell><hi style="b">JC</hi></cell>
+</row>
+<row>
+<cell><hi style="b">September 2018</hi></cell>
+<cell><hi style="b">EM</hi></cell>
+</row>
+<row>
+<cell><hi style="b">October 2018</hi></cell>
+<cell><hi style="b">MT</hi></cell>
+</row>
+<row>
+<cell><hi style="b">November 2018</hi></cell>
+<cell><hi style="b">SS</hi></cell>
+</row>
+<row>
+<cell><hi style="b">December 2018</hi></cell>
+<cell><hi style="b">AB</hi></cell>
+</row>
+
+</table><p> </p></div></div></body><!-- #post-## --></text></TEI>

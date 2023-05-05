@@ -1,0 +1,1693 @@
+<?xml version="1.0"?> 
+<!DOCTYPE TEI.2 SYSTEM "../DTDs/teiweb.dtd" []>
+<TEI.2>
+ <teiHeader>
+  <fileDesc>
+   <titleStmt>
+    <title>TCW02: Approaching the Son of ODD: source markup for P5</title>
+    <author>Sebastian Rahtz</author>
+    <author>Lou Burnard</author>
+   </titleStmt>
+   <editionStmt>
+      <edition>
+        <date>24 June 2002</date> 
+      </edition>
+   </editionStmt>
+   <publicationStmt>
+<p>unpublished document for the TEI council</p>
+   </publicationStmt>
+   <sourceDesc>
+<p>original work</p>
+   </sourceDesc>
+  </fileDesc>
+      <revisionDesc>
+         <change>
+            <date>$Date: 2003/02/01 $.</date>
+            <respStmt>
+               <name>$Author: lou $</name>
+            </respStmt>
+            <item>$Revision: #1 $</item>
+         </change>
+      </revisionDesc>
+ </teiHeader>
+ <text>
+  <body>
+<div>
+<head>Introduction</head>
+<p>This paper proposes a change of direction for the
+markup of the source of the TEI Guidelines;
+it is put forward as part of the TEI Council's internal
+workgroup on the P5 revision of the TEI. We propose that:
+<list type="ordered">
+<item>The ODD format should be revised to be entirely
+independent of the SGML/XML notation for DTDs</item>
+<item>The ODD format and the current TEI  DTD for tag documentation
+(TSD) should be combined into a single standard TEI tagset
+useable as a <soCalled>pizza topping</soCalled>.</item>
+<item>The new notation should be based on one of the XML schema
+languages.</item>
+<item>Additional processors should be created to make not
+only XML DTDs (and possibly SGML as well), but also at least
+one XML schema format.</item>
+<item>Where possible, data types should be converted to use the
+datatype library of the W3C.</item>
+<item>The Pizza Chef should be rewritten to allow user choice
+of DTD or schema output.</item>
+     </list>
+    </p>
+   </div>
+
+<div id="teilp"><head>Background</head>
+<p>[Most of this section is from a paper 
+scheduled for delivery at the XML Europe 2002 conference by
+Sebastian Rahtz].</p>
+
+<p>The original TEI project
+concentrated on abstract models of markup, which the editors used SGML
+to instantiate, that being the best method available to them at the
+time. However, they did their best to insulate themselves from future
+changes by formalizing the markup constraints in a small SGML-based
+markup language, rather than directly writing DTD code. In this
+respect, they followed the <soCalled>literate programming</soCalled>
+WEB model developed and popularized by Donald Knuth in which a single document
+is produced which contains both formal code and its
+documentation. This single source can then be processed to produce
+several outputs:
+<list type="ordered">
+
+<item>SGML or XML documentation for the SGML DTD modules, containing
+embedded DTD fragments (in the same way that Pascal code is
+intermingled with prose in the Web system); this corresponds to the
+output from Knuth's <term>Weave</term> processor.</item> 
+
+<item>SGML or XML documentation for the elements, attributes, and
+other items in the markup language constituting an alphabetic
+reference manual.  </item> 
+
+<item>the actual DTD modules defining the markup language; this
+corresponds to Knuth's <term>Tangle</term> processor.</item>
+
+</list>
+
+The TEI literate programming system (jocularly named ODD, for <q>One
+     Document Does it all</q>) as originally specified is documented
+     in an internal TEI working paper (<xptr
+     url="http://www.tei-c.org/Vault/ED/edw29.sgm"/>). This design
+     underwent several modifications during the process of
+     implementing and using it for production of the TEI Guidelines.
+C.M. Sperberg-McQueen proposed a more general system called
+<title>SWEB (SGML Web)</title>
+(see <xptr
+     url="http://www.tei-c.org/Vault/ED/edw55.tei"/>), but this was
+not completed or implemented in the TEI.
+Other XML/SGML-based literate programming
+     schemes are neatly summarized at <xptr
+     url="http://xml.coverpages.org/xmlLitProg.ht"/>. </p>
+
+<p>The ODD system consists of a small
+     suite of additional declarations for special purpose elements
+     which are embedded within a special subset of the same basic TEI
+     DTD designed for authoring of new documents. 
+    </p>
+
+<p>Amongst the basic building blocks of the ODD extension to TEI
+markup are the <gi>tagDoc</gi>, a special-purpose element for
+documentation of a single TEI element, and the <gi>classDoc</gi>, an
+element which documents a single TEI class.  Elements in the TEI
+scheme are assigned to one or more classes of three distinct kinds:
+<term>model classes</term>, which group elements that have similar
+structural properties, i.e. they can appear at the same point in the
+document hierarchy; <term>attribute classes</term>, i.e. they share
+common attributes; and <term>semantic classes</term>, i.e. they have
+similar semantic properties.  As a simple example, we present the
+tagdoc for the <gi>bibl</gi> element:
+    </p>
+
+<p rend="eg"><![CDATA[<tagDoc id="BIBL" usage="opt">
+  <gi>bibl</gi>
+  <name>bibliographic citation</name>
+    <desc>contains a loosely-structured bibliographic citation of which
+      the sub-components may or may not be explicitly tagged.
+     </desc>
+  <attList/>
+  <exemplum>
+    <p rend="eg">
+      <bibl>Blain, Clements and Grundy: Feminist Companion to Literature in
+        English (Yale, 1990)</bibl>
+     </p>
+  </exemplum>
+  <exemplum>
+   <p rend="eg">
+    <bibl>
+    <title level="a">The Interesting story of the Children in the Wood</title>.
+    In <author>Victor E Neuberg</author>, <title>The Penny Histories</title>.
+    <publisher>OUP</publisher> <date value="1968">1968</date>.
+    </bibl>
+   </p>
+  </exemplum>
+  <remarks/>
+  <part type="base" name="core"/>
+  <classes names="CLBIBL DECLABL"/>
+  <dataDesc>Contains phrase-level elements, together with
+  any combination of elements from the <term>biblPart</term>
+  class</dataDesc>
+  <elemDecl> %om.RO; (#PCDATA | %m.phrase; |
+    %m.biblPart; | %m.Incl;)*</elemDecl>
+  <ptr target="COBITY"/><ptr target="HD3"/><ptr target="TETA"/>
+  <ptr target="CCAS2"/>
+</tagDoc>
+]]></p>
+
+<p>The start of this is straightforward; a description of the element,
+a list of attributes (here empty), and some examples. The next part is
+more interesting, as it places <gi>bibl</gi> into the overall scheme
+of the TEI. Firstly, the <gi>part</gi> element says to which module of
+the TEI <gi>bibl</gi> belongs (it forms part of the core module), and
+secondly the <gi>classes</gi> element indicates of which
+<term>classes</term> <gi>bibl</gi> is a member. In this case, bibl is
+a member of the semantic class <ident>bibl</ident> and the attribute
+class <ident>declarable</ident>. The last part of the <gi>tagDoc</gi>
+supplies the intended content model in a heavily parameterized form,
+and some pointers to further relevant parts of the Guidelines. </p>
+
+<p>When run through the 
+DTD generator, the following  declaration is produced from this tagdoc element:
+    </p>
+
+<p rend="eg"><![CDATA[<!ELEMENT %n.bibl; %om.RO;  (#PCDATA | %m.phrase; |
+    %m.biblPart; | %m.Incl;)*> 
+<!ATTLIST %n.bibl;
+      %a.global;
+      %a.declarable;
+      TEIform CDATA 'bibl'  >]]></p>
+
+<p>Note here how the name of the element itself has been parameterized
+(<ident>%n.bibl;</ident>), thus permitting its renaming to another
+language. The attribute list has been generated from a variety of
+     sources: (TEIform) has been generated, the value of which preserves the canonical
+name. The attribute , using information from the <gi>classes</gi> element
+of the <gi>tagDoc</gi>. The  values <ident>CLBIBL</ident> and
+<ident>DECLABL</ident> serve as pointers to the appropriate
+     <gi>classDoc</gi> elements, on which these same values are used
+     as identifiers: <ident>CLBIBL</ident>, for example, links to the
+      following <gi>classDoc</gi> element:
+
+    </p>
+
+<p rend="eg"><![CDATA[<classDoc id="CLBIBL" type="model">
+   <class>bibl</class>
+   <desc>bibliographic elements. </desc>
+   <attList/>
+   <remarks/>
+   <part type="base" name="core"/>
+   <classes names="INTER COMMON"/>
+   <ptr target="COBI"/>
+</classDoc>]]></p>
+
+<p>Although this defines no attributes itself, it does declare itself
+     to be a member of the class <ident>COMMON</ident>, which is in
+     turn a member of the class <ident>GLOBAL</ident>, within which
+     the global attributes are actually declared; similarly, the class
+     <ident>DECLABL</ident> supplies another group of attributes.  The
+     same class mechanism also determines which DTD parameter entities
+     the current element will be in: the <gi>classDoc</gi> for
+     <ident>CLBIBL</ident> creates an entity <ident>%m.bibl;</ident>
+     which includes <ident>bibl</ident> (or, more precisely,
+     <ident>%n.bibl;</ident>).</p>
+
+<p>An example of an element which has `local' attributes is
+<gi>formula</gi>:
+    </p>
+
+<p rend="eg"><![CDATA[<tagDoc id="FORMULA" usage="rwa">
+ <gi>formula</gi>
+ <desc>contains a mathematical or other formula.</desc>
+ <attList>
+  <attDef usage="opt"><attident>notation</attident>
+   <desc>supplies the name of a previously defined notation used for the
+   content of the element.</desc>
+   <datatype>%formulaNotations;</datatype>
+   <valDesc>The name of a formal notation previously declared in the
+   document type declaration.</valDesc>
+   <default>#REQUIRED</default>
+   <remarks/>
+  </attDef>
+ </attList>
+ <part type="top" name="ft"/>
+ <classes names="PHRASE"/>
+ <dataDesc>The content model for this element is specified by the
+  parameter entity <term>formulaContent</term>, the default value of
+  which is <mentioned>CDATA</mentioned>.</dataDesc>
+  <elemDecl> %om.RR; %formulaContent;</elemDecl>
+  <ptr target="FTFOR" type="div1"/>
+</tagDoc>]]></p>
+
+<p>The result of this in the DTD is:    </p>
+
+<p rend="eg"><![CDATA[<!ELEMENT %n.formula; %om.RR; %formulaContent;>
+<!ATTLIST %n.formula;
+      %a.global;
+      notation %formulaNotations; #REQUIRED
+      TEIform CDATA 'formula'  >]]></p>
+
+<p>in which the <gi>attDef</gi> element is translated into DTD
+notation. </p>
+<p>The main body of the Guidelines is a conventional TEI
+document with chapters and sections which describe different
+parts of the TEI in great detail. Mixed in with informal prose
+are references to the <gi>tagDoc</gi> and <gi>classDoc</gi> elements,
+by means of <gi>dtdFrag</gi>, <gi>tagDecl</gi>, and <gi>claDecl</gi>
+elements; so the chapter describing formulae ends with:
+    </p>
+
+<p rend="eg"><![CDATA[<p>The formula element itself is defined as follows:
+<dtdFrag id="DFTFOR" n="Formulae">
+  <tagDecl tagDoc="FORMULA"/>
+</dtdFrag>
+</p>]]></p>
+
+<p>This inserts a summary description of the element at this point in the
+text; the DTD files themselves are created by a variant on the above,
+e.g.
+    </p>
+
+<p rend="eg"><![CDATA[<dtdFrag id="DVE" n="Base Tag Set for Verse" file="teivers2.dtd">
+ <commDecl>First, declare the default text structure, which
+ is the same for verse as it is for other kinds of text.  
+ (But declare it only if verse is the only base.)</commDecl>
+ <msection keywords="%TEI.singleBase;">
+  <entDecl entDoc="TEISTR"/>
+  <peRef n="TEI.structure.dtd"/>
+ </msection>
+ <commDecl>Finally, declare the elements specific to this base
+ tag set</commDecl>
+ <dtdRef dtdFrag="DVEST"/>
+ <dtdRef dtdFrag="DVESE"/>
+</dtdFrag>]]></p>
+
+<p>This determines in what order elements are placed in 
+separate files of the DTD suite, and in what marked sections
+(using <gi>msection</gi>) etc. There are many small extra features of
+ the system, but this covers the essential operations.</p>
+<p>It should be clear from this brief overview of TEI literate
+programming that the current model has three main characteristics:
+<list type="ordered">
+<item>A class system for classifying elements and attributes which is
+essentially independent of SGML or XML;</item>
+<item>Markup for describing attributes and DTD files which is 
+expressed in XML, but is quite closely tied to DTD notation (e.g.
+the datatype of <ident>%formulaNotations;</ident> in
+       <gi>formula</gi>)</item>
+<item>A bottom-level element, <gi>elemDecl</gi>, which contains
+ literal DTD code</item>
+    </list>
+The original aim of the TEI editors in trying to make the scheme
+independent of the current SGML/XML instantiation is not, 
+in our view, completely
+successful; nevertheless, it provides a plausible framework for
+     the generation of versions of the TEI Guidelines expressed using
+     other metalanguages.
+    </p>
+   </div>
+
+<div>
+<head>Problems</head>
+<p>The main difficulty with the current ODD scheme is 
+the <gi>elemDecl</gi> element, <gi>dataType</gi> and <gi>default</gi>
+elements, all of which contain pure DTD notation. 
+The <gi>string</gi> element is also used to build up
+element content models. Section <ptr target="cat"/> lists 
+the range of values used throughout P4 for all these elements.
+The problem is exacerbated by the fact that
+the <gi>elemDecl</gi> contents do <emph>not</emph> correspond
+to the published DTDs, since there we imply that all element names
+are indirect, using the %n..; notation. Thus the content model
+<eg>
+%om.RO; ((cell|table), (%m.Incl;)*)+
+     </eg>
+should actually be
+<eg>
+%om.RO; ((%n.cell;|%n.table;), (%m.Incl;)*)+
+</eg>
+if the DTD were to easily derived. In practice, the %n... is
+added by an <emph>ad hoc</emph> Perl script when the DTDs
+have been generated, which is embarassing and error-prone.</p>
+
+<p>If the TEI Guidelines were maintained  in <emph>complete</emph> DTD
+format, we would be in a better position, as we could use
+DTD-processing software to analyze the markup. As it stands, we have
+no effective into the element markup models, and no real tools by
+which we can check them for correctness in markup or references; if,
+for instance, someone changes %m.Incl; to %m.incl; by mistake,
+it will not get caught during early validation of the master document,
+only when a DTD is generated and some sample documents processed.</p>
+
+<p>The <gi>default</gi> and <gi>dataType</gi>
+lists in <ptr target="cat"/>, used for constructing attribute lists,
+show a combination of DTD markup (NMTOKEN) and literal
+values (<emph>unspecified</emph>), as well as a few occurences
+of abstract data types (ISO-date).</p>
+
+<p>Finally, we may note that the fact that the eventual TEI DTDs
+are constructed from different types of data makes it necessary
+for the TEI Pizza Chef to use an entirely new program
+(<eg>carthago</eg>) to e.g. remove unused elements  from 
+subset DTDs. Ideally, we would like to do this work from the TEI
+source itself, since this would allow us to construct <emph>ad
+      hoc</emph> subsets of the TEI Guidelines documentation to go
+     with the DTD subset.</p>
+   </div>
+
+<div>
+<head>Solutions</head>
+
+<p>We propose that the content of all
+<gi>elemDecl</gi> element, <gi>dataType</gi>, <gi>default</gi>
+and <gi>string</gi> should replaced by full XML markup. This would
+     have
+several immediate advantages:
+<list type="ordered">
+<item>We could perform deeper validation of the TEI Guidelines </item>
+<item>We could representations of the constraint model in forms
+other than DTD much more easily</item>
+<item>We could write a new Pizza Chef which extracted documention
+and constraint subsets at the same time</item>
+<item>We could experiment with using other XML vocabularies alongside
+ the TEI, by using XML namespaces; obvious examples are MathML
+ and SVG. Selective validation should be possible. </item>
+<item>We would have an opportunity to add more extensive datatyping
+and subtler constraints  than are currently possible, possibly allowing
+ us to re-express some of the descriptive text  as formal constraints.</item>
+     </list>
+The downsides are:
+<list type="ordered">
+<item>The replacement language will be unfamiliar,
+and is likely to be <emph>much</emph> more
+verbose (DTD is very succinct), which imposes a burden on the TEI
+editors, workgroup authors, and readers</item>
+<item>The process of getting back to where we are now (DTDs) becomes
+more complex and opaque (ie we can no longer directly compare
+the DTD with the Guidelines text)</item>
+     </list>
+We suggest that these are fairly short-term problems which should not
+stop us proceeding.    </p>
+<p>What markup should we use for the new work? We have three choices:
+<list type="ordered">
+<item>Use an existing notation for specifying constraints. UML
+is the obvious choice.</item>
+<item>Use fragments of an existing schema language, such as
+W3C schema, or RelaxNG.</item>
+<item>Invent a new language of our own</item>
+    </list>
+The first choice imposes the most problems, as we have no prior experience
+to show that we <emph>can</emph> model the TEI using eg UML (although
+a preliminary investigation by Leonor Barroca, of the Open University,
+shows that it should be possible). In addition, although UML has an
+XML-based interchange format, it is not <emph>per se</emph> XML, which
+imposes extra complexity on us.</p>
+
+<p>Our natural course is to invent a new language, but it seems
+an intolerable burden on the TEI to replicate the many man-years of
+labour recently devoted to the subject in the XML community. Therefore
+it seems sensible to adopt the notation, if not the full panoply, of
+an existing language.</p>
+
+<p>As a preparation for this paper, we undertook
+a complete conversion of the P4 sources to a form based on 
+RelaxNG. This demonstrates the feasibility of the idea,
+and points towards some of the work which will have to be done. It is
+discussed in the following sections.
+</p>
+   </div>
+
+<div>
+<head>Experiments with Relax NG</head>
+
+<p>The major job in the conversion is
+the extraction of <gi>elemDecl</gi> elements from the source,
+and converting each one to an equivalent fragment of Relax NG.
+This was done with a Perl script which converted, for example,
+a content model of
+    </p>
+
+<p rend="eg">%om.RO; (#PCDATA | %m.dictionaryParts; |
+%m.phrase; | %m.inter; | %m.Incl;)*</p>
+
+<p>to an intermediate XML form of     </p>
+
+<p rend="eg"><![CDATA[<schema>  
+<group>
+ <text/> 
+ <seqbar/> 
+ <element name="%m.dictionaryParts;"/> 
+ <seqbar/>
+ <element name="%m.phrase;"/> 
+ <seqbar/> 
+ <element name="%m.inter;"/> 
+ <seqbar/> 
+ <element name="%m.Incl;"/>
+</group>
+<repstar/> 
+</schema>]]></p>
+
+<p>This can be converted, using an XSLT program, to    </p>
+
+<p rend="eg"><![CDATA[<rng:zeroOrMore
+     xmlns:rng="http://relaxng.org/ns/structure/1.0"
+     xmlns:ext="http://www.tei-c.org/relaxng/1.0">
+    <rng:choice>
+      <rng:text/>
+      <rng:ref ext:rend="entity" name="m.dictionaryParts"/>
+      <rng:ref ext:rend="entity" name="m.phrase"/>
+      <rng:ref ext:rend="entity" name="m.inter"/>
+      <rng:ref ext:rend="entity" name="m.Incl"/>
+    </rng:choice>
+  </rng:zeroOrMore>]]></p>
+
+<p>An extra bit of data has been added here
+(in its own namespace), the `rend' attribute; 
+this is put in to allow us to recreate the DTD at a later stage. In
+our use of RelaxNG, <code><![CDATA[<rng:ref name="foo"/>]]></code> would turn
+simply into the name `foo' in a DTD, whereas
+<code><![CDATA[<rng:ref rend="entity" name="foo"/>]]></code>
+turns into `%foo;'. There are a number of small inelegancies like this
+in the system we have developed, dictated either by the need
+to allow for back-translation to DTD, or by the presence
+of partial content models like <code> | foo | bar</code>.</p>
+
+<p>When the fragments of content model have been put back into the
+     main text, we can constrast the old
+declaration of the <gi>bibl</gi> element:
+<eg><![CDATA[<tagDoc id="BIBL" usage="opt">
+  <gi>bibl</gi>
+  <name>bibliographic citation</name>
+    <desc>contains a loosely-structured bibliographic citation of which
+      the sub-components may or may not be explicitly tagged.
+     </desc>
+  <attList/>
+  <exemplum>
+    <eg>
+      <bibl>Blain, Clements and Grundy: Feminist Companion to Literature in
+        English (Yale, 1990)</bibl>
+     </p>
+  </exemplum>
+  <exemplum>
+   <eg>
+    <bibl>
+    <title level="a">The Interesting story of the Children in the Wood</title>.
+    In <author>Victor E Neuberg</author>, <title>The Penny Histories</title>.
+    <publisher>OUP</publisher> <date value="1968">1968</date>.
+    </bibl>
+   </p>
+  </exemplum>
+  <remarks/>
+  <part type="base" name="core"/>
+  <classes names="CLBIBL DECLABL"/>
+  <dataDesc>Contains phrase-level elements, together with
+  any combination of elements from the <term>biblPart</term>
+  class</dataDesc>
+  <elemDecl> %om.RO; (#PCDATA | %m.phrase; |
+    %m.biblPart; | %m.Incl;)*</elemDecl>
+  <ptr target="COBITY"/><ptr target="HD3"/><ptr target="TETA"/>
+  <ptr target="CCAS2"/>
+</tagDoc>
+]]></eg>
+with the new
+<eg><![CDATA[<elemDecl omit="RR">
+<rng:group xmlns:rng="http://relaxng.org/ns/structure/1.0">
+    <rng:optional>
+      <rng:ref name="head"/>
+    </rng:optional>
+    <rng:oneOrMore>
+      <rng:choice>
+        <rng:ref name="bibl"/>
+        <rng:ref name="biblStruct"/>
+        <rng:ref name="biblFull"/>
+      </rng:choice>
+    </rng:oneOrMore>
+    <rng:optional>
+      <rng:ref name="trailer"/>
+    </rng:optional>
+  </rng:group>
+</elemDecl>]]></eg>
+Note the `omit' attribute which is added to allow for recreating SGML DTDs.</p>
+
+<p>The remaining task was to rewrite the existing DTD generator to
+reconstruct content models from the Relax NG elements, and to write a
+new processor which extracts all the Relax fragments and creates a set
+of useable schema files. This was straightforward, but ugly, as we did
+nothing to change the datatypes, for instance, from their SGML
+notations. Similarly, the Guidelines use such SGML/XML literals as
+<code>#IMPLIED</code> or <code>#REQUIRED</code>, which need
+interpreting. Ideally, these would be re-expressed in some more
+neutral form. However, a relatively simple XSLT script suffices to
+produce schemas which are acceptable to the Relax NG processors.  This
+final stage was debugged by comparing the results with conversions of
+the TEI DTDs made by James Clark's <emph>rngconv</emph> program, which
+gave many useful hints. </p>
+   </div>
+
+
+<div>
+<head>What now?</head>
+<p>The TEI Consortium's Board and Council now need to
+decide:
+<list type="ordered">
+<item>Whether to change the markup language for P5 at all,
+but to continue with DTD language internally, and derive
+schemas from the DTDs.</item>
+<item>If we proceed, which schema or other language to use</item>
+<item>Whether the printed Guidelines should show DTD content models
+or schemas (or some other abstract notation)</item>
+<item>What timescale to use for the work</item>
+     </list>
+</p>
+   </div>
+
+
+</body>
+<back>
+<div id="cat">
+<head>Catalogue of values used for various elements</head>
+<div>
+  <head>Values for <gi>elemDecl</gi> element</head>
+  <list>
+    <item>%om.RO; ((%m.divtop; | %m.Incl;)*, (%component;, (%m.Incl;)*)+, ((%m.divbot;), (%m.Incl;)*)*)
+        (occurrences: 1)
+        </item>
+    <item>%om.RO; ((cell|table), (%m.Incl;)*)+
+        (occurrences: 1)
+        </item>
+    <item>%om.RO; (pubPlace | publisher | date | biblScope | %m.Incl;)*
+        (occurrences: 1)
+        </item>
+    <item>%om.RO; ((%m.terminologyMisc; | %m.Incl;)*, (otherForm, (gram | %m.Incl;)*), ((%m.terminologyMisc;), (%m.Incl;)*)*)
+        (occurrences: 1)
+        </item>
+    <item>%om.RO; ( ( p, (%m.Incl;)*)+ | ( (publisher | distributor | authority | pubPlace | address | idno | availability | date ), (%m.Incl;)*)+ )
+        (occurrences: 1)
+        </item>
+    <item>%om.RO; ( (%m.divtop; | %m.Incl;)*, ( ((div7 | divGen), (%m.Incl;)*)+ | ( (%component;, (%m.Incl;)*)+, ((div7 | divGen), (%m.Incl;)*)*)), ((%m.divbot;), (%m.Incl;)*)*)
+        (occurrences: 1)
+        </item>
+    <item>%om.RO; ( (%m.terminologyMisc; | otherForm | gram | %m.terminologyInclusions; | %m.Incl;)*, (term, (%m.terminologyMisc; | otherForm | gram | %m.terminologyInclusions; | %m.Incl;)* )+ )
+        (occurrences: 1)
+        </item>
+    <item>%om.RO; ((%m.Incl;)*, (head, (%m.Incl;)*)?,((l|lg2),(%m.Incl;)*)+)
+        (occurrences: 1)
+        </item>
+    <item>%om.RO; ((%m.Incl;)*, (head, (%m.Incl;)*)?,((l|lg3),(%m.Incl;)*)+)
+        (occurrences: 1)
+        </item>
+    <item>%om.RO; ((%m.terminologyMisc;| %m.terminologyInclusions; | %m.Incl;)*, (term, (gram | %m.terminologyInclusions; | %m.Incl;)*), ((%m.terminologyMisc;), (%m.terminologyInclusions; | %m.Incl;)*)*, (ofig, (%m.terminologyInclusions; | %m.Incl;)*)*)
+        (occurrences: 1)
+        </item>
+    <item>%om.RO; ( (%m.divtop; | %m.Incl;)*, ( ((div1 | divGen), (%m.Incl;)*)+ | ( (%component;, (%m.Incl;)*)+, ((div1 | divGen), (%m.Incl;)*)*)), ((%m.divbot;), (%m.Incl;)*)*)
+        (occurrences: 1)
+        </item>
+    <item>%om.RO; ( (%m.divtop; | %m.Incl;)*, ( ((div4 | divGen), (%m.Incl;)*)+ | ( (%component;, (%m.Incl;)*)+, ((div4 | divGen), (%m.Incl;)*)*)), ((%m.divbot;), (%m.Incl;)*)*)
+        (occurrences: 1)
+        </item>
+    <item>%om.RO; ( (%m.divtop; | %m.Incl;)*, ( ((div5 | divGen), (%m.Incl;)*)+ | ( (%component;, (%m.Incl;)*)+, ((div5 | divGen), (%m.Incl;)*)*)), ((%m.divbot;), (%m.Incl;)*)*)
+        (occurrences: 1)
+        </item>
+    <item>%om.RO; ((%m.terminologyMisc; | %m.terminologyInclusions; | %m.Incl;)*, (tig, (%m.Incl; | %m.terminologyInclusions;)*)+)
+        (occurrences: 1)
+        </item>
+    <item>%om.RO; ( (%m.divtop; | %m.Incl;)*, ( ((div2 | divGen), (%m.Incl;)*)+ | ( (%component;, (%m.Incl;)*)+, ((div2 | divGen), (%m.Incl;)*)*)), ((%m.divbot;), (%m.Incl;)*)*)
+        (occurrences: 1)
+        </item>
+    <item>%om.RO; ( (%m.divtop; | %m.Incl;)*, ( ((div3 | divGen), (%m.Incl;)*)+ | ( (%component;, (%m.Incl;)*)+, ((div3 | divGen), (%m.Incl;)*)*)), ((%m.divbot;), (%m.Incl;)*)*)
+        (occurrences: 1)
+        </item>
+    <item>%om.RO; %paraContent;
+        (occurrences: 43)
+        </item>
+    <item>%om.RO; %phrase.seq;
+        (occurrences: 47)
+        </item>
+    <item>%om.RO; %specialPara;
+        (occurrences: 4)
+        </item>
+    <item>%om.RO; ( #PCDATA | %m.phrase; | %m.inter; | %m.Incl; | %m.fragmentary; )*
+        (occurrences: 2)
+        </item>
+    <item>%om.RO; ( #PCDATA | %m.phrase; | %m.inter; | %m.dictionaryParts; | %m.Incl; )*
+        (occurrences: 1)
+        </item>
+    <item>%om.RO; ( #PCDATA | %m.phrase; | %m.inter; | usg | lbl | %m.Incl; )*
+        (occurrences: 1)
+        </item>
+    <item>%om.RO; ( #PCDATA | %m.phrase; | %m.inter; | usg | lbl | def | trans | tr | %m.morphInfo; | eg | xr | %m.Incl; )*
+        (occurrences: 1)
+        </item>
+    <item>%om.RO; ( #PCDATA | sense | %m.dictionaryTopLevel; | %m.phrase; | %m.Incl; )*
+        (occurrences: 1)
+        </item>
+    <item>%om.RO; ( (%m.Incl;)*, (lem, (%m.Incl;)*, (wit, (%m.Incl;)*)? )?, ( (rdg, (%m.Incl;)*, (wit, (%m.Incl;)*)? ) | (rdgGrp, (%m.Incl;)*, (wit, (%m.Incl;)*)? ) )+)
+        (occurrences: 1)
+        </item>
+    <item>%om.RO; ( (%m.divtop; | %m.Incl;)*, ( ((div6 | divGen), (%m.Incl;)*)+ | ( (%component;, (%m.Incl;)*)+, ((div6 | divGen), (%m.Incl;)*)*)), ((%m.divbot;), (%m.Incl;)*)*)
+        (occurrences: 1)
+        </item>
+    <item>%om.RO; ( channel, constitution, derivation, domain, factuality, interaction, preparedness, purpose+ )
+        (occurrences: 1)
+        </item>
+    <item>%om.RO; ( codedCharSet*, baseWsd*, entitySet*, exceptions? )
+        (occurrences: 1)
+        </item>
+    <item>%om.RO; ( q | quote | cit | %m.dictionaryParts; | %m.formPointers; )+
+        (occurrences: 1)
+        </item>
+    <item>%om.RO; (#PCDATA | line | col)*
+        (occurrences: 1)
+        </item>
+    <item>%om.RO; (#PCDATA | line)*
+        (occurrences: 1)
+        </item>
+    <item>%om.RO; (#PCDATA | title | editor | respStmt | biblScope | %m.Incl;)*
+        (occurrences: 1)
+        </item>
+    <item>%om.RO; (#PCDATA)
+        (occurrences: 19)
+        </item>
+    <item>%om.RO; (%m.featureVal;)
+        (occurrences: 1)
+        </item>
+    <item>%om.RO; (( (%m.Incl;)*, (( (author | editor | respStmt), (author | editor | respStmt | %m.Incl;)*, (title, (%m.Incl;)*)+, ( (editor | respStmt), (%m.Incl;)* )* ) |( (title, (%m.Incl;)*)+, ((author | editor | respStmt), (%m.Incl;)*)* )))?, ((note | meeting), (%m.Incl;)*)*, (edition, (editor | respStmt | %m.Incl;)*)*, imprint, (imprint | extent | biblScope | %m.Incl;)* )
+        (occurrences: 1)
+        </item>
+    <item>%om.RO; ((%component.seq;) | (symbol+))
+        (occurrences: 1)
+        </item>
+    <item>%om.RO; ((form?, entry+)| dictScrap)
+        (occurrences: 1)
+        </item>
+    <item>%om.RO; ((fs | f | fAlt), iff, (fs | f | fAlt))
+        (occurrences: 1)
+        </item>
+    <item>%om.RO; ((fs | f | fAlt), then, (fs | f | fAlt))
+        (occurrences: 1)
+        </item>
+    <item>%om.RO; ((tagDoc | entDoc | classDoc)+)
+        (occurrences: 1)
+        </item>
+    <item>%om.RO; (character*)
+        (occurrences: 1)
+        </item>
+    <item>%om.RO; (desc*, form+, note*)
+        (occurrences: 1)
+        </item>
+    <item>%om.RO; (desc+, (figure | extFigure)*, note*)
+        (occurrences: 1)
+        </item>
+    <item>%om.RO; (hand*)
+        (occurrences: 1)
+        </item>
+    <item>%om.RO; (teiHeader+)
+        (occurrences: 1)
+        </item>
+    <item>%om.RO; (teiHeader, TEI.2+)
+        (occurrences: 1)
+        </item>
+    <item>%om.RO; (teiHeader, text)
+        (occurrences: 1)
+        </item>
+    <item>%om.RO; EMPTY
+        (occurrences: 67)
+        </item>
+    <item>%om.RO; ( (%m.front; | %m.Incl;)*, ( ( (%m.divtop;), (%m.divtop; | titlePage | %m.Incl;)*) | ( div, (div | %m.front; | %m.Incl;)*) | ( div1, (div1 | %m.front; | %m.Incl;)*) )?, (trailer | closer)* )
+        (occurrences: 1)
+        </item>
+    <item>%om.RO; ( (%m.front; | %m.Incl;)*, (( (%m.fmchunk;), (%m.fmchunk; | titlePage | %m.Incl;)*) | ( div, (div | %m.front; | %m.Incl;)* ) | ( div1, (div1 | %m.front; | %m.Incl; )*))?)
+        (occurrences: 1)
+        </item>
+    <item>%om.RO; ( #PCDATA | %m.dictionaryParts; | %m.phrase; | %m.inter; | %m.Incl; )*
+        (occurrences: 2)
+        </item>
+    <item>%om.RO; ( #PCDATA | date | time | name | address | %m.Incl; )*
+        (occurrences: 1)
+        </item>
+    <item>%om.RO; ( (%m.Incl;)*, ( (addrLine, (%m.Incl;)*)+ | ((%m.addrPart;), (%m.Incl;)*)* ) )
+        (occurrences: 1)
+        </item>
+    <item>%om.RO; ( (%m.divtop; | %m.Incl; )*, (((div|divGen), (%m.Incl;)*)+ | ((%component;, (%m.Incl;)*)+, ((div|divGen), (%m.Incl;)*)*)), ((%m.divbot;),(%m.Incl;)*)*)
+        (occurrences: 1)
+        </item>
+    <item>%om.RO; ( (%m.divtop; | %m.Incl;)*, ( ( ((%component;), (%m.Incl;)*)+, ((divGen, (%m.Incl;)*)*, ( (div, (div|divGen|%m.Incl;)*) | (div0, (div0|divGen|%m.Incl;)*) | (div1, (div1|divGen|%m.Incl;)*) )? )) | ((divGen, (%m.Incl;)*)*, ((div, (div|divGen|%m.Incl;)*) | (div0, (div0|divGen|%m.Incl;)*) | (div1, (div1|divGen|%m.Incl;)*) ))), ((%m.divbot;), (%m.Incl;)*)* )
+        (occurrences: 1)
+        </item>
+    <item>%om.RO; ( (edition, respStmt*) | p+ )
+        (occurrences: 1)
+        </item>
+    <item>%om.RO; ( (title+, (idno | respStmt)*) | p+ )
+        (occurrences: 1)
+        </item>
+    <item>%om.RO; ( hom | sense | %m.dictionaryTopLevel; | %m.Incl; )+
+        (occurrences: 1)
+        </item>
+    <item>%om.RO; ( null | ( plus | minus | any | none | dft | uncertain | sym | nbr | msr | rate | str | vAlt | alt | fs )* )
+        (occurrences: 1)
+        </item>
+    <item>%om.RO; ( p+ | ( (person | personGrp)+, particLinks? ) )
+        (occurrences: 1)
+        </item>
+    <item>%om.RO; ( p+ | ((correction | normalization | quotation | hyphenation | interpretation | segmentation | stdVals)+, p*))
+        (occurrences: 1)
+        </item>
+    <item>%om.RO; ( sense | %m.dictionaryTopLevel; )*
+        (occurrences: 1)
+        </item>
+    <item>%om.RO; (#PCDATA | %m.phrase; | %m.biblPart; | %m.Incl;)*
+        (occurrences: 1)
+        </item>
+    <item>%om.RO; (#PCDATA | %m.phrase; | argument | byline | dateline | epigraph | salute | signed | %m.Incl;)*
+        (occurrences: 1)
+        </item>
+    <item>%om.RO; (#PCDATA | %m.phrase; | docAuthor | %m.Incl;)*
+        (occurrences: 1)
+        </item>
+    <item>%om.RO; (#PCDATA | %m.phrase; | pubPlace | docDate | publisher | %m.Incl;)*
+        (occurrences: 1)
+        </item>
+    <item>%om.RO; (#PCDATA | %m.phrase; | textDesc )*
+        (occurrences: 1)
+        </item>
+    <item>%om.RO; (#PCDATA | role | roleDesc | actor | %m.phrase; | %m.Incl; )*
+        (occurrences: 1)
+        </item>
+    <item>%om.RO; (#PCDATA | signed | dateline | salute | %m.phrase; | %m.Incl;)*
+        (occurrences: 1)
+        </item>
+    <item>%om.RO; (%component.seq;)
+        (occurrences: 1)
+        </item>
+    <item>%om.RO; ((%m.Incl;)*, ( (rdgGrp, (%m.Incl;)*) | (rdg, (%m.Incl;)*, (wit, (%m.Incl;)*)?) )+)
+        (occurrences: 1)
+        </item>
+    <item>%om.RO; ((%m.Incl;)*, (%m.tpParts;), (%m.tpParts; | %m.Incl;)*)
+        (occurrences: 1)
+        </item>
+    <item>%om.RO; ((%m.Incl;)*, (analytic, (%m.Incl;)*)?, ((monogr, (%m.Incl;)*), (series, (%m.Incl;)*)*)+, ((note, (%m.Incl;)*) | (idno, (%m.Incl;)*))*)
+        (occurrences: 1)
+        </item>
+    <item>%om.RO; ((%m.Incl;)*, (head, (%m.Incl;)*)?,((l|lg4),(%m.Incl;)*)+)
+        (occurrences: 1)
+        </item>
+    <item>%om.RO; ((%m.Incl;)*, (head, (%m.Incl;)*)?,((l|lg5),(%m.Incl;)*)+)
+        (occurrences: 1)
+        </item>
+    <item>%om.RO; ((%m.Incl;)*, (head, (%m.Incl;)*)?,(l,(%m.Incl;)*)+)
+        (occurrences: 1)
+        </item>
+    <item>%om.RO; ((%m.Incl;)*, (speaker, (%m.Incl;)*)?, ((p | l | lg | ab | seg | stage), (%m.Incl;)*)+)
+        (occurrences: 1)
+        </item>
+    <item>%om.RO; ((%m.Incl;)*, (titlePart, (%m.Incl;)*)+)
+        (occurrences: 1)
+        </item>
+    <item>%om.RO; ((%m.Incl;)*, (titleStmt, (%m.Incl;)*), (editionStmt, (%m.Incl;)*)?, (extent, (%m.Incl;)*)?, (publicationStmt, (%m.Incl;)*), (seriesStmt, (%m.Incl;)*)?, (notesStmt, (%m.Incl;)*)?, (sourceDesc, (%m.Incl;)*)*)
+        (occurrences: 1)
+        </item>
+    <item>%om.RO; ((%m.Incl;)*, (witness, (%m.Incl;)*)+)
+        (occurrences: 1)
+        </item>
+    <item>%om.RO; ((%m.divtop; | %m.Incl;)*, (l | lg), (l | lg | %m.Incl;)*, ((%m.divbot;), (%m.Incl;)*)*)
+        (occurrences: 1)
+        </item>
+    <item>%om.RO; ((%m.divtop; | %m.Incl;)*, ((text | group), (text|group|%m.Incl;)*), ((%m.divbot;), (%m.Incl;)*)*)
+        (occurrences: 1)
+        </item>
+    <item>%om.RO; ((title+, (author | editor | sponsor | funder | principal | respStmt)*))
+        (occurrences: 1)
+        </item>
+    <item>%om.RO; (attDef*)
+        (occurrences: 1)
+        </item>
+    <item>%om.RO; (attName, rs?, desc, (datatype, (valList | valDesc)?), default, eg?, remarks?, equiv*)
+        (occurrences: 1)
+        </item>
+    <item>%om.RO; (author | editor | respStmt | title | %m.Incl;)*
+        (occurrences: 1)
+        </item>
+    <item>%om.RO; (class, rs?, desc, attList?, remarks?, part?, classes?, files?, ptr*, equiv*)
+        (occurrences: 1)
+        </item>
+    <item>%om.RO; (date, respStmt+, item)
+        (occurrences: 1)
+        </item>
+    <item>%om.RO; (note+)
+        (occurrences: 1)
+        </item>
+    <item>%om.RO; (p | language)+
+        (occurrences: 1)
+        </item>
+    <item>%om.RO; (p+ | relation+)
+        (occurrences: 1)
+        </item>
+    <item>%om.RO; (p+ | (%m.demographic;)* )
+        (occurrences: 2)
+        </item>
+    <item>%om.RO; (p+ | setting+)
+        (occurrences: 1)
+        </item>
+    <item>%om.RO; (p+ | step+ | state+)
+        (occurrences: 1)
+        </item>
+    <item>%om.RO; (p+)
+        (occurrences: 11)
+        </item>
+    <item>%om.RO; (rendition*, tagUsage*)
+        (occurrences: 1)
+        </item>
+    <item>%om.RO; (resp | name | %m.Incl;)+
+        (occurrences: 1)
+        </item>
+    <item>%om.RO; (term+ | list)
+        (occurrences: 1)
+        </item>
+    <item>%om.RR; %paraContent;
+        (occurrences: 16)
+        </item>
+    <item>%om.RR; %phrase.seq;
+        (occurrences: 40)
+        </item>
+    <item>%om.RR; %specialPara;
+        (occurrences: 6)
+        </item>
+    <item>%om.RR; ( #PCDATA | %m.phrase; | %m.inter; | %m.formInfo; | %m.Incl; )*
+        (occurrences: 1)
+        </item>
+    <item>%om.RR; (#PCDATA | %m.temporalExpr; | %m.Incl;)*
+        (occurrences: 2)
+        </item>
+    <item>%om.RR; (#PCDATA | oRef)*
+        (occurrences: 1)
+        </item>
+    <item>%om.RR; (#PCDATA | pRef)*
+        (occurrences: 1)
+        </item>
+    <item>%om.RR; (#PCDATA | page | vol)*
+        (occurrences: 1)
+        </item>
+    <item>%om.RR; (#PCDATA | page)*
+        (occurrences: 1)
+        </item>
+    <item>%om.RR; (#PCDATA)
+        (occurrences: 17)
+        </item>
+    <item>%om.RR; ((fs | f | fAlt), then, (%m.featureVal;) )
+        (occurrences: 1)
+        </item>
+    <item>%om.RR; (cond | bicond)*
+        (occurrences: 1)
+        </item>
+    <item>%om.RR; (creation?, langUsage*, textDesc*,particDesc*, settingDesc*, handList*, textClass*)
+        (occurrences: 1)
+        </item>
+    <item>%om.RR; (fDescr?, vRange, vDefault?)
+        (occurrences: 1)
+        </item>
+    <item>%om.RR; (fsDescr?, fDecl+, fsConstraints?)
+        (occurrences: 1)
+        </item>
+    <item>%om.RR; (language, script, direction*, characters, note*)
+        (occurrences: 1)
+        </item>
+    <item>%om.RR; %formulaContent;
+        (occurrences: 1)
+        </item>
+    <item>%om.RR; ( (( node, (%m.Incl;)* )+, ( arc, (%m.Incl;)* )*) | (( arc, (%m.Incl;)* )+, ( node, (%m.Incl;)* )+))
+        (occurrences: 1)
+        </item>
+    <item>%om.RR; ( #PCDATA | %m.Incl; )*
+        (occurrences: 1)
+        </item>
+    <item>%om.RR; ( #PCDATA | %m.personPart; | %m.phrase; | %m.Incl; )*
+        (occurrences: 1)
+        </item>
+    <item>%om.RR; ( #PCDATA | %m.placePart; | %m.phrase; | %m.Incl; )*
+        (occurrences: 1)
+        </item>
+    <item>%om.RR; ( #PCDATA | orgTitle | orgType | orgDivn | %m.phrase; | %m.Incl; )*
+        (occurrences: 1)
+        </item>
+    <item>%om.RR; ( #PCDATA | sense | %m.dictionaryTopLevel; | %m.phrase; | %m.Incl; )*
+        (occurrences: 1)
+        </item>
+    <item>%om.RR; ( (q | quote | %m.bibl; | %m.loc; | %m.Incl; )+)
+        (occurrences: 1)
+        </item>
+    <item>%om.RR; (#PCDATA | %m.phrase; | %m.comp.spoken; | %m.Incl;)*
+        (occurrences: 1)
+        </item>
+    <item>%om.RR; (#PCDATA | %m.phrase; | %m.inter; | %m.gramInfo; | %m.Incl;)*
+        (occurrences: 1)
+        </item>
+    <item>%om.RR; (#PCDATA | geog | name | %m.Incl; )*
+        (occurrences: 1)
+        </item>
+    <item>%om.RR; (#PCDATA | seg | c | %m.Incl;)*
+        (occurrences: 1)
+        </item>
+    <item>%om.RR; (#PCDATA | seg | w | m | c | %m.Incl;)*
+        (occurrences: 1)
+        </item>
+    <item>%om.RR; (%component.seq;)
+        (occurrences: 1)
+        </item>
+    <item>%om.RR; ((%m.Incl;)*, (head, (%m.Incl;)*)?, (p, (%m.Incl;)*)*, (figDesc, (%m.Incl;)*)?, (text, (%m.Incl;)*)?)
+        (occurrences: 1)
+        </item>
+    <item>%om.RR; ((%m.Incl;)*, (front, (%m.Incl;)*)?, (body | group), (%m.Incl;)*, (back, (%m.Incl;)*)?)
+        (occurrences: 1)
+        </item>
+    <item>%om.RR; ((%m.Incl;)*, (head, (%m.Incl;)*)?, ((castItem | castGroup), (%m.Incl;)*)+, (trailer, (%m.Incl;)*)?)
+        (occurrences: 1)
+        </item>
+    <item>%om.RR; ((%m.Incl;)*, (head, (%m.Incl;)*)?, (bibl | biblStruct | biblFull), (bibl | biblStruct | biblFull | %m.Incl;)*, (trailer, (%m.Incl;)*)?)
+        (occurrences: 1)
+        </item>
+    <item>%om.RR; ((%m.Incl;)*, (head, (%m.Incl;)*)?, ( ( (item, (%m.Incl;)*)*) | ((headLabel, (%m.Incl;)*)?, (headItem, (%m.Incl;)*)?, (label, (%m.Incl;)*, item, (%m.Incl;)*)+)))
+        (occurrences: 1)
+        </item>
+    <item>%om.RR; ((%m.Incl;)*, (head?, %component.seq;))
+        (occurrences: 1)
+        </item>
+    <item>%om.RR; ((%m.Incl;)*, head?, %component.seq;)
+        (occurrences: 1)
+        </item>
+    <item>%om.RR; ((%m.divtop; | %m.Incl;)*, ((%component;), (%m.Incl;)*)*, ((castItem | castGroup), (%m.Incl;)*)+, ((%component;), (%m.Incl;)*)*)
+        (occurrences: 1)
+        </item>
+    <item>%om.RR; ((%m.divtop; | %m.Incl;)*, ((%component;), (%m.Incl;)*)+, ((%m.divbot;), (%m.Incl;)*)*)
+        (occurrences: 3)
+        </item>
+    <item>%om.RR; ((%m.featureVal;)+ | if+)
+        (occurrences: 1)
+        </item>
+    <item>%om.RR; ((alt | ptr | xptr)*)
+        (occurrences: 1)
+        </item>
+    <item>%om.RR; ((classCode | catRef | keywords)* )
+        (occurrences: 1)
+        </item>
+    <item>%om.RR; ((eTree | triangle | eLeaf )*)
+        (occurrences: 1)
+        </item>
+    <item>%om.RR; ((eTree | triangle | eLeaf)*)
+        (occurrences: 1)
+        </item>
+    <item>%om.RR; ((f | fAlt | alt)*)
+        (occurrences: 1)
+        </item>
+    <item>%om.RR; ((f | fAlt)*)
+        (occurrences: 1)
+        </item>
+    <item>%om.RR; ((f | fs | fAlt), (f | fs | fAlt)+)
+        (occurrences: 1)
+        </item>
+    <item>%om.RR; ((forest)+)
+        (occurrences: 1)
+        </item>
+    <item>%om.RR; ((fs | vAlt)*)
+        (occurrences: 1)
+        </item>
+    <item>%om.RR; ((head | %m.Incl;)*, (row, (%m.Incl;)*)+)
+        (occurrences: 1)
+        </item>
+    <item>%om.RR; ((interp)*)
+        (occurrences: 1)
+        </item>
+    <item>%om.RR; ((join | ptr | xptr)*)
+        (occurrences: 1)
+        </item>
+    <item>%om.RR; ((leaf | iNode)*, root, (leaf | iNode)*)
+        (occurrences: 1)
+        </item>
+    <item>%om.RR; ((plus | minus | any | none | dft | uncertain | null | sym | nbr | msr | rate | str | vAlt)*)
+        (occurrences: 1)
+        </item>
+    <item>%om.RR; ((plus | minus | any | none | dft | uncertain | null | sym | nbr | msr | rate | str | vAlt | fs), (plus | minus | any | none | dft | uncertain | null | sym | nbr | msr | rate | str | vAlt | fs)+)
+        (occurrences: 1)
+        </item>
+    <item>%om.RR; ((span)*)
+        (occurrences: 1)
+        </item>
+    <item>%om.RR; ((tree | eTree | triangle)+)
+        (occurrences: 1)
+        </item>
+    <item>%om.RR; ((val,desc)*)
+        (occurrences: 1)
+        </item>
+    <item>%om.RR; (catDesc, category*)
+        (occurrences: 1)
+        </item>
+    <item>%om.RR; (category+ | ((bibl | biblStruct | biblFull), category*))
+        (occurrences: 1)
+        </item>
+    <item>%om.RR; (entName, rs?, desc, remarks?, string, ptr*, equiv*)
+        (occurrences: 1)
+        </item>
+    <item>%om.RR; (fileDesc, encodingDesc*, profileDesc*, revisionDesc?)
+        (occurrences: 1)
+        </item>
+    <item>%om.RR; (gi, rs?, desc, attList?, exemplum*, remarks?, part?, classes?, files?, dataDesc?, parents?, children?, elemDecl, attlDecl?, ptr*, equiv*)
+        (occurrences: 1)
+        </item>
+    <item>%om.RR; (link | ptr | xptr)+
+        (occurrences: 1)
+        </item>
+    <item>%om.RR; (list | change+)
+        (occurrences: 1)
+        </item>
+    <item>%om.RR; (p | bibl | biblFull | biblStruct | listBibl | scriptStmt | recordingStmt )+
+        (occurrences: 1)
+        </item>
+    <item>%om.RR; (p*, eg, p*)
+        (occurrences: 1)
+        </item>
+    <item>%om.RR; (p+ | (name | time | date | locale | activity)* )
+        (occurrences: 1)
+        </item>
+    <item>%om.RR; (p+ | (respStmt | equipment | broadcast | date)*)
+        (occurrences: 1)
+        </item>
+    <item>%om.RR; (p+ | bibl | biblFull | biblStruct)
+        (occurrences: 1)
+        </item>
+    <item>%om.RR; (p+ | bibl | biblStruct | biblFull | recording)
+        (occurrences: 1)
+        </item>
+    <item>%om.RR; (p+ | recording+ )
+        (occurrences: 1)
+        </item>
+    <item>%om.RR; (projectDesc*, samplingDecl*, editorialDecl*, tagsDecl?, refsDecl*, classDecl*, metDecl*, fsdDecl*, variantEncoding*, p* )
+        (occurrences: 1)
+        </item>
+    <item>%om.RR; (taxonomy+)
+        (occurrences: 1)
+        </item>
+    <item>%om.RR; (teiHeader, fsDecl+)
+        (occurrences: 1)
+        </item>
+    <item>%om.RR; (titleStmt, editionStmt?, extent?, publicationStmt, seriesStmt?, notesStmt?, sourceDesc+ )
+        (occurrences: 1)
+        </item>
+    <item>%om.RR; (when)+
+        (occurrences: 1)
+        </item>
+  </list>
+</div><div>
+  <head>Values for <gi>datatype</gi> element</head>
+  <list>
+    <item>%ISO-date;
+        (occurrences: 6)
+        </item>
+    <item>%extPtr;
+        (occurrences: 4)
+        </item>
+    <item>%formulaNotations;
+        (occurrences: 1)
+        </item>
+    <item>( Y | N )
+        (occurrences: 1)
+        </item>
+    <item>( Y | N | U )
+        (occurrences: 1)
+        </item>
+    <item>( YES | NO )
+        (occurrences: 1)
+        </item>
+    <item>( all | one | none )
+        (occurrences: 1)
+        </item>
+    <item>( all | some | none )
+        (occurrences: 1)
+        </item>
+    <item>( free | unknown | restricted )
+        (occurrences: 1)
+        </item>
+    <item>( light | sound | prop | block )
+        (occurrences: 1)
+        </item>
+    <item>( m | f | u )
+        (occurrences: 1)
+        </item>
+    <item>( m | f | u | x )
+        (occurrences: 1)
+        </item>
+    <item>( none | some | all )
+        (occurrences: 1)
+        </item>
+    <item>( silent | tags )
+        (occurrences: 1)
+        </item>
+    <item>( y | n | u )
+        (occurrences: 5)
+        </item>
+    <item>( yes | no )
+        (occurrences: 1)
+        </item>
+    <item>(Y | N | I | M | F)
+        (occurrences: 4)
+        </item>
+    <item>(Y | N | U)
+        (occurrences: 1)
+        </item>
+    <item>(Y | N | partial)
+        (occurrences: 1)
+        </item>
+    <item>(Y | N)
+        (occurrences: 3)
+        </item>
+    <item>(Y|N)
+        (occurrences: 2)
+        </item>
+    <item>(a | m | j | s | u)
+        (occurrences: 1)
+        </item>
+    <item>(am | pm | 24hour | descriptive)
+        (occurrences: 1)
+        </item>
+    <item>(audio | video)
+        (occurrences: 1)
+        </item>
+    <item>(closed | semi | open)
+        (occurrences: 1)
+        </item>
+    <item>(composite | uniform)
+        (occurrences: 1)
+        </item>
+    <item>(data | rend | std | nonstd | unknown)
+        (occurrences: 1)
+        </item>
+    <item>(eq|ne)
+        (occurrences: 1)
+        </item>
+    <item>(eq|ne|gt|ge|lt|le)
+        (occurrences: 1)
+        </item>
+    <item>(eq|ne|lt|le|gt|ge)
+        (occurrences: 2)
+        </item>
+    <item>(eq|ne|sb|ns)
+        (occurrences: 2)
+        </item>
+    <item>(eq|ne|sb|ns|lt|le|gt|ge)
+        (occurrences: 1)
+        </item>
+    <item>(excl|incl)
+        (occurrences: 2)
+        </item>
+    <item>(fiction|fact|mixed|inapplicable)
+        (occurrences: 1)
+        </item>
+    <item>(high | medium | low | unknown)
+        (occurrences: 2)
+        </item>
+    <item>(horizontal | vertical)
+        (occurrences: 1)
+        </item>
+    <item>(initial | medial | final | unknown | complete)
+        (occurrences: 1)
+        </item>
+    <item>(internal | external)
+        (occurrences: 1)
+        </item>
+    <item>(int|real)
+        (occurrences: 3)
+        </item>
+    <item>(lexical | punc | lexpunc | digit | space | DL | LD | dia | joiner | other)
+        (occurrences: 1)
+        </item>
+    <item>(location-referenced | double-end-point | parallel-segmentation)
+        (occurrences: 1)
+        </item>
+    <item>(model | atts | both)
+        (occurrences: 1)
+        </item>
+    <item>(new | update)
+        (occurrences: 1)
+        </item>
+    <item>(none|partial|complete|inapplicable)
+        (occurrences: 1)
+        </item>
+    <item>(pe | ge)
+        (occurrences: 1)
+        </item>
+    <item>(perc|real)
+        (occurrences: 2)
+        </item>
+    <item>(req|mwa|rec|rwa|opt)
+        (occurrences: 2)
+        </item>
+    <item>(role | list)
+        (occurrences: 1)
+        </item>
+    <item>(root | branches)
+        (occurrences: 1)
+        </item>
+    <item>(s | w | ws | sw | m | x)
+        (occurrences: 1)
+        </item>
+    <item>(silent | tags)
+        (occurrences: 1)
+        </item>
+    <item>(single | composite | frags | unknown)
+        (occurrences: 1)
+        </item>
+    <item>(single|set|bag|list)
+        (occurrences: 1)
+        </item>
+    <item>(smooth | latching | overlap | pause)
+        (occurrences: 1)
+        </item>
+    <item>(tei | iso | national | private | none)
+        (occurrences: 1)
+        </item>
+    <item>(tempo | loud | pitch | tension | rhythm | voice)
+        (occurrences: 1)
+        </item>
+    <item>(to|from|both|none)
+        (occurrences: 2)
+        </item>
+    <item>(unit | set | bag | list)
+        (occurrences: 1)
+        </item>
+    <item>(y | n | unspecified)
+        (occurrences: 1)
+        </item>
+    <item>(y | n)
+        (occurrences: 1)
+        </item>
+    <item>(yes | abb | init)
+        (occurrences: 3)
+        </item>
+    <item>(yes | no)
+        (occurrences: 1)
+        </item>
+    <item>(yes|no)
+        (occurrences: 2)
+        </item>
+    <item>CDATA
+        (occurrences: 326)
+        </item>
+    <item>ENTITIES
+        (occurrences: 2)
+        </item>
+    <item>ENTITY
+        (occurrences: 4)
+        </item>
+    <item>ID
+        (occurrences: 2)
+        </item>
+    <item>IDREF
+        (occurrences: 73)
+        </item>
+    <item>IDREFS
+        (occurrences: 34)
+        </item>
+    <item>NAME
+        (occurrences: 1)
+        </item>
+    <item>NMTOKEN
+        (occurrences: 3)
+        </item>
+    <item>NMTOKENS
+        (occurrences: 1)
+        </item>
+  </list>
+</div><div>
+  <head>Values for <gi>default</gi> element</head>
+  <list>
+    <item>#IMPLIED
+        (occurrences: 364)
+        </item>
+    <item>#REQUIRED
+        (occurrences: 57)
+        </item>
+    <item>%INHERITED;
+        (occurrences: 43)
+        </item>
+    <item>'unspecified'
+        (occurrences: 1)
+        </item>
+    <item>1
+        (occurrences: 2)
+        </item>
+    <item>DITTO
+        (occurrences: 2)
+        </item>
+    <item>N
+        (occurrences: 4)
+        </item>
+    <item>NO
+        (occurrences: 1)
+        </item>
+    <item>ROOT
+        (occurrences: 1)
+        </item>
+    <item>TEI.2
+        (occurrences: 1)
+        </item>
+    <item>U
+        (occurrences: 2)
+        </item>
+    <item>Y
+        (occurrences: 3)
+        </item>
+    <item>all
+        (occurrences: 1)
+        </item>
+    <item>apparatus
+        (occurrences: 1)
+        </item>
+    <item>audio
+        (occurrences: 1)
+        </item>
+    <item>complete
+        (occurrences: 1)
+        </item>
+    <item>data
+        (occurrences: 2)
+        </item>
+    <item>editor
+        (occurrences: 1)
+        </item>
+    <item>eq
+        (occurrences: 6)
+        </item>
+    <item>excl
+        (occurrences: 1)
+        </item>
+    <item>full
+        (occurrences: 2)
+        </item>
+    <item>lexical
+        (occurrences: 1)
+        </item>
+    <item>main
+        (occurrences: 2)
+        </item>
+    <item>met real
+        (occurrences: 1)
+        </item>
+    <item>n
+        (occurrences: 4)
+        </item>
+    <item>new
+        (occurrences: 1)
+        </item>
+    <item>normal
+        (occurrences: 1)
+        </item>
+    <item>open
+        (occurrences: 1)
+        </item>
+    <item>opt
+        (occurrences: 2)
+        </item>
+    <item>perc
+        (occurrences: 1)
+        </item>
+    <item>personal
+        (occurrences: 1)
+        </item>
+    <item>role
+        (occurrences: 1)
+        </item>
+    <item>root
+        (occurrences: 1)
+        </item>
+    <item>sb
+        (occurrences: 1)
+        </item>
+    <item>silent
+        (occurrences: 2)
+        </item>
+    <item>simple
+        (occurrences: 1)
+        </item>
+    <item>single
+        (occurrences: 1)
+        </item>
+    <item>smooth
+        (occurrences: 1)
+        </item>
+    <item>some
+        (occurrences: 1)
+        </item>
+    <item>text
+        (occurrences: 1)
+        </item>
+    <item>u
+        (occurrences: 1)
+        </item>
+    <item>uniform
+        (occurrences: 1)
+        </item>
+    <item>unit
+        (occurrences: 1)
+        </item>
+    <item>unknown
+        (occurrences: 3)
+        </item>
+    <item>unremarkable
+        (occurrences: 2)
+        </item>
+    <item>unspecified
+        (occurrences: 1)
+        </item>
+    <item>x
+        (occurrences: 1)
+        </item>
+    <item>yes
+        (occurrences: 7)
+        </item>
+  </list>
+</div><div>
+  <head>Values for <gi>string</gi> element</head>
+  <list>
+    <item>%ISO-date;
+        (occurrences: 6)
+        </item>
+    <item>%extPtr;
+        (occurrences: 4)
+        </item>
+    <item>%formulaNotations;
+        (occurrences: 1)
+        </item>
+    <item>( Y | N )
+        (occurrences: 1)
+        </item>
+    <item>( Y | N | U )
+        (occurrences: 1)
+        </item>
+    <item>( YES | NO )
+        (occurrences: 1)
+        </item>
+    <item>( all | one | none )
+        (occurrences: 1)
+        </item>
+    <item>( all | some | none )
+        (occurrences: 1)
+        </item>
+    <item>( free | unknown | restricted )
+        (occurrences: 1)
+        </item>
+    <item>( light | sound | prop | block )
+        (occurrences: 1)
+        </item>
+    <item>( m | f | u )
+        (occurrences: 1)
+        </item>
+    <item>( m | f | u | x )
+        (occurrences: 1)
+        </item>
+    <item>( none | some | all )
+        (occurrences: 1)
+        </item>
+    <item>( silent | tags )
+        (occurrences: 1)
+        </item>
+    <item>( y | n | u )
+        (occurrences: 5)
+        </item>
+    <item>( yes | no )
+        (occurrences: 1)
+        </item>
+    <item>(Y | N | I | M | F)
+        (occurrences: 4)
+        </item>
+    <item>(Y | N | U)
+        (occurrences: 1)
+        </item>
+    <item>(Y | N | partial)
+        (occurrences: 1)
+        </item>
+    <item>(Y | N)
+        (occurrences: 3)
+        </item>
+    <item>(Y|N)
+        (occurrences: 2)
+        </item>
+    <item>(a | m | j | s | u)
+        (occurrences: 1)
+        </item>
+    <item>(am | pm | 24hour | descriptive)
+        (occurrences: 1)
+        </item>
+    <item>(audio | video)
+        (occurrences: 1)
+        </item>
+    <item>(closed | semi | open)
+        (occurrences: 1)
+        </item>
+    <item>(composite | uniform)
+        (occurrences: 1)
+        </item>
+    <item>(data | rend | std | nonstd | unknown)
+        (occurrences: 1)
+        </item>
+    <item>(eq|ne)
+        (occurrences: 1)
+        </item>
+    <item>(eq|ne|gt|ge|lt|le)
+        (occurrences: 1)
+        </item>
+    <item>(eq|ne|lt|le|gt|ge)
+        (occurrences: 2)
+        </item>
+    <item>(eq|ne|sb|ns)
+        (occurrences: 2)
+        </item>
+    <item>(eq|ne|sb|ns|lt|le|gt|ge)
+        (occurrences: 1)
+        </item>
+    <item>(excl|incl)
+        (occurrences: 2)
+        </item>
+    <item>(fiction|fact|mixed|inapplicable)
+        (occurrences: 1)
+        </item>
+    <item>(high | medium | low | unknown)
+        (occurrences: 2)
+        </item>
+    <item>(horizontal | vertical)
+        (occurrences: 1)
+        </item>
+    <item>(initial | medial | final | unknown | complete)
+        (occurrences: 1)
+        </item>
+    <item>(internal | external)
+        (occurrences: 1)
+        </item>
+    <item>(int|real)
+        (occurrences: 3)
+        </item>
+    <item>(lexical | punc | lexpunc | digit | space | DL | LD | dia | joiner | other)
+        (occurrences: 1)
+        </item>
+    <item>(location-referenced | double-end-point | parallel-segmentation)
+        (occurrences: 1)
+        </item>
+    <item>(model | atts | both)
+        (occurrences: 1)
+        </item>
+    <item>(new | update)
+        (occurrences: 1)
+        </item>
+    <item>(none|partial|complete|inapplicable)
+        (occurrences: 1)
+        </item>
+    <item>(pe | ge)
+        (occurrences: 1)
+        </item>
+    <item>(perc|real)
+        (occurrences: 2)
+        </item>
+    <item>(req|mwa|rec|rwa|opt)
+        (occurrences: 2)
+        </item>
+    <item>(role | list)
+        (occurrences: 1)
+        </item>
+    <item>(root | branches)
+        (occurrences: 1)
+        </item>
+    <item>(s | w | ws | sw | m | x)
+        (occurrences: 1)
+        </item>
+    <item>(silent | tags)
+        (occurrences: 1)
+        </item>
+    <item>(single | composite | frags | unknown)
+        (occurrences: 1)
+        </item>
+    <item>(single|set|bag|list)
+        (occurrences: 1)
+        </item>
+    <item>(smooth | latching | overlap | pause)
+        (occurrences: 1)
+        </item>
+    <item>(tei | iso | national | private | none)
+        (occurrences: 1)
+        </item>
+    <item>(tempo | loud | pitch | tension | rhythm | voice)
+        (occurrences: 1)
+        </item>
+    <item>(to|from|both|none)
+        (occurrences: 2)
+        </item>
+    <item>(unit | set | bag | list)
+        (occurrences: 1)
+        </item>
+    <item>(y | n | unspecified)
+        (occurrences: 1)
+        </item>
+    <item>(y | n)
+        (occurrences: 1)
+        </item>
+    <item>(yes | abb | init)
+        (occurrences: 3)
+        </item>
+    <item>(yes | no)
+        (occurrences: 1)
+        </item>
+    <item>(yes|no)
+        (occurrences: 2)
+        </item>
+    <item>CDATA
+        (occurrences: 326)
+        </item>
+    <item>ENTITIES
+        (occurrences: 2)
+        </item>
+    <item>ENTITY
+        (occurrences: 4)
+        </item>
+    <item>ID
+        (occurrences: 2)
+        </item>
+    <item>IDREF
+        (occurrences: 73)
+        </item>
+    <item>IDREFS
+        (occurrences: 34)
+        </item>
+    <item>NAME
+        (occurrences: 1)
+        </item>
+    <item>NMTOKEN
+        (occurrences: 3)
+        </item>
+    <item>NMTOKENS
+        (occurrences: 1)
+        </item>
+  </list>
+</div>
+   </div>
+  </back>
+ </text>
+</TEI.2>

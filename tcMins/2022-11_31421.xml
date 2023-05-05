@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/home/lou/Public/TEI/TEICSS/tei.css" type="text/css"
+ ?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:t="http://www.tei-c.org/ns/1.0" n="2022-11"><teiHeader><fileDesc><titleStmt><title>Minutes of the TEI Technical Council</title><meeting n="2022-11" when="2022-11-10">TEI Technical Council online
+     meeting : <date>10 November 2022</date></meeting></titleStmt><publicationStmt><distributor>TEI Website</distributor><idno>TCM160</idno></publicationStmt><sourceDesc><p>Retagged from a WordPress HTML file</p></sourceDesc></fileDesc><revisionDesc><change when="2023-04-25">Archival header confected</change><change>Extracted from Word Press article with id post-31421</change></revisionDesc></teiHeader><text><body><div><p><hi style="strong">Meeting times:</hi></p><list style="ul">
+<item>8am PST / 11am EST / 4pm GMT / 5pm CET</item>
+<item>Started:     16:02Z    Ended:    ~17:34Z</item>
+</list><p><hi style="strong">Present:</hi></p><list style="ul">
+<item>Syd Bauman (SB)</item>
+<item>Helena Bermúdez Sabel (HBS)</item>
+<item>Elisa Beshero-Bondar (EBB)</item>
+<item>Elli Bleeker (EB) (until ~16:30)</item>
+<item>Hugh Cayless (HC)</item>
+<item>Patricia O Connor (TOC)</item>
+<item>Martina Scholger (MS)</item>
+<item>Sabine Seifert (SS)</item>
+</list><p><hi style="strong">Apologies/Not Present:</hi></p><list style="ul">
+<item>Janelle Jenstad (JJ)</item>
+<item>Peter Stadler (PS)</item>
+<item>Raff Viglianti (RV)</item>
+<item>Magdalena Turska (MT)</item>
+</list><p>Meeting minutes previous month (<ref target="https://tei-c.org/activities/council/meetings/tei-technical-council-teleconference-2022-10-14/">October</ref>)</p><p> </p><div type="h2"><head>Leave of absence</head><list style="ul">
+<item>EB will be taking an extended ~1-year leave of absence.</item>
+<item>Council wishes her the best, and <hi style="i">really</hi> looks forward to her return.</item>
+<item>Using the “Council can invite” clause of the by-laws, we are planning to ask the next candidate from the election results, Joey Takeda (and if he declines, Nick Cole) to serve for 1 year (or perhaps more if needed).</item>
+</list></div><div type="h2"><head>Release report</head><list style="ul">
+<item>MS reports release went smoothly save the stress of merging in #<ref target="https://github.com/TEIC/TEI/pull/2359">2359</ref> at the last minute. (It took ~4 hours to debug a snippet of Makefile that was removing a namespace that was no longer there.)</item>
+</list></div><div type="h2"><head>Spring F2F meeting</head><list style="ul">
+<item>MS, JJ, EBB, TOC, and maybe RV have academic calendar restrictions, and thus (SB suggests) should put their heads together and propose dates.
+<list style="ul">
+<item>SS and MS plan to attend the DHd conference (2023-03-13/17).</item>
+<item>EBB may not be able to travel in early March. She expresses a strong preference for early May.</item>
+</list>
+</item>
+</list></div><div type="h2"><head>New chair for 2023</head><list style="ul">
+<item>EBB volunteers — No objections (nor other volunteers) from anyone present, and we know JJ approves as well. Thus EBB is appointed Chair for calendar 2023.</item>
+</list></div><div type="h2"><head>Possibility of new Jenkins at Penn State</head><list style="ul">
+<item>SB, MH, EBB to hold a meeting soon (<hi style="b">Action on EBB</hi> to schedule a meeting, due <hi style="b">2022-12-08</hi>).</item>
+</list></div><div type="h2"><head>Report on CMC</head><list style="ul">
+<item>SB reports slow progress being made; still hoping to have a full PR well before next release, but quite possible it would be the one after that.</item>
+</list></div><div type="h2"><head>Reminder Ling SIG — Council liaison</head><list style="ul">
+<item>Meeting scheduled for Thu 2022-11-17 at 16:00Z.</item>
+<item>Already added to the Google Calendar.</item>
+</list></div><div type="h2"><head>oXygen version 25</head><list style="ul">
+<item>MS reports that the Saxon version problem has been fixed by replacing the hard-coded version numbers with wildcards.</item>
+<item>SB reports (and MS details) that the plug-in from Syncro has diverged from the TEI-C plug-in, in particular the CSS files are in a different place.</item>
+<item>Multiple copies / multiple locations of CSS due to multiple referencing locations.</item>
+<item>MH does not want to continue with the oXygen plugin issues.</item>
+<item>We should arrange a special Council meeting inviting someone from Syncro Soft to join us, even for a short while. Note that backwards-compatibility is probably not Syncro Soft’s highest priority.</item>
+</list></div><div type="h2"><head>Mailing lists</head><list style="ul">
+<item>SB: Brown is likely to cease support in months, not years, because Brown lists need to be sponsored by someone working at Brown, and (at the moment) no one in TEI-C inner circles does.</item>
+<item>17 TEI-related listservs have been hosted at Brown. Most are dormant. We would want the archives for all of them.</item>
+<item>Transitioning TEI-L from Brown to a new venue is the most potentially disruptive for the community.</item>
+<item>TEI-L is transitioning to Sympa at Huma-Num. The question is how to manage the transition. Transitioning subscribers will be difficult.</item>
+<item>Duke uses Sympa—HC can ask around to see if anyone has experience moving from LISTSERV to Sympa. (There has to be a Perl script!)</item>
+<item>SB can provide info on the ~17 lists: List name, number of subscribers, last post, rough size of archive. (Note: Both SB &amp; Elli Mylonas are owners of each TEI list at Brown.)</item>
+<item>MS will contact the appropriate people (at Huma-Num via Laurent Romary)</item>
+<item><hi style="b">Action on HC, SB</hi>, and <hi style="b">MS</hi> by <hi style="b">2022-12-08</hi>.</item>
+</list></div><div type="h2"><head>Issue <ref target="https://github.com/TEIC/TEI/issues/2049">#2049</ref></head><list style="ul">
+<item>What do we do about <ref target="https://github.com/TEIC/TEI/issues/2049">#2049</ref> screw-up in 4.5.0 release? Possibilities include:
+<list style="ul">
+<item>1) Create a 4.5.1 release with the deprecation date (2022-07-14) bumped to sometime in the future.</item>
+<item>2a) Create a 4.5.1 release with the deprecation removed (after all, it is after 2022-07-14).</item>
+<item>2b) Create a 4.6.0 release with the deprecation removed (after all, it is after 2022-07-14).</item>
+<item>3) Nothing.</item>
+</list>
+</item>
+<item>Council likes option 3—we’ll deal with it in the next release.</item>
+<item><hi style="b">Action on SB</hi> to just remove the deprecation in the dev branch <hi style="b">by</hi> the next Council meeting, <hi style="b">2022-12-08.</hi></item>
+</list></div><div type="h2"><head>AOB</head><list style="ul">
+<item>November Stylesheets meeting: would it be possible to delay it one week?
+<list style="ul">
+<item><hi style="b">Action on HBS</hi>: send out Doodle poll (or equivalent) for scheduling it sometime other than Thu 24 Nov (which is also American Thanksgiving) <hi style="b">by 2022-11-15.</hi></item>
+</list>
+</item>
+</list><p> </p></div></div></body><!-- #post-## --></text></TEI>

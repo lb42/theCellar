@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="../Stylesheets/teixlite.css"?>
+<!DOCTYPE TEI.2 PUBLIC "-//TEI//DTD TEI Lite P4 XML 2004-07//EN"
+                       "../Lite/DTD/teixlite.dtd" [
+  <!ATTLIST xref url CDATA #IMPLIED>
+  <!ATTLIST xptr url CDATA #IMPLIED>
+  ]>
+<TEI.2>
+  <teiHeader type="text" status="new">
+    <fileDesc>
+      <titleStmt>
+        <title>TEI Council Conference Call of
+          <date value="2004-11-29">Mon, 29 Nov 04</date></title>
+      </titleStmt>
+      <publicationStmt>
+        <idno type="TEI">TC M 14</idno>
+        <publisher>Text Encoding Initiative Consortium</publisher>
+        <authority>TEI-C Council</authority>
+        <availability status="unknown">
+          <p>For distribution first to Council, then to world via TEI
+            website.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <p>This is the source.</p>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <langUsage>
+        <language id="EN" usage="100">English</language>
+      </langUsage>
+    </profileDesc>
+    <revisionDesc>
+<change><date value="2004-11-29">Mon, 29 Nov 04</date>
+        <respStmt><name>Syd Bauman</name>
+        <resp>editor</resp></respStmt>
+        <item>Fixed notes up to a proper XML document; 1st
+          draft.</item>
+        </change>
+<change><date value="2004-11-29">Mon, 29 Nov 04</date>
+        <respStmt><name>Syd Bauman</name>
+        <resp>editor</resp></respStmt>
+        <item>Started by taking notes during call.</item>
+        </change>
+    </revisionDesc>
+  </teiHeader>
+  <text lang="EN">
+    <front>
+      <div type="glossary" org="uniform" sample="complete" part="N">
+        <list type="simple">
+          <head>Initials Used for People</head>
+          <item> <term>SB</term> <gloss>Syd Bauman</gloss>        </item>
+          <item> <term>AB</term> <gloss>Alejandro Bia</gloss>     </item>
+          <item> <term>DB</term> <gloss>David Birnbaum</gloss>    </item>
+          <item> <term>LB</term> <gloss>Lou Burnard</gloss>       </item>
+          <item> <term>JC</term> <gloss>James Cummings</gloss>    </item>
+          <item> <term>MD</term> <gloss>Matthew Driscoll</gloss>  </item>
+          <item> <term>DD</term> <gloss>David Durand</gloss>      </item>
+          <item> <term>JF</term> <gloss>Julia Flanders</gloss>    </item>
+          <item> <term>SR</term> <gloss>Sebastian Rahtz</gloss>   </item>
+          <item> <term>LR</term> <gloss>Laurent Romary</gloss>    </item>
+          <item> <term>SS</term> <gloss>Susan Schreibman</gloss>  </item>
+          <item> <term>NS</term> <gloss>Natasha Smith</gloss>     </item>
+          <item> <term>PT</term> <gloss>Paul Tremblay</gloss>     </item>
+          <item> <term>EV</term> <gloss>Edward Vanhoutte</gloss>  </item>
+          <item> <term>JW</term> <gloss>John Walsh</gloss>        </item>
+          <item> <term>PW</term> <gloss>Perry Willett</gloss>     </item>
+          <item> <term>CW</term> <gloss>Christian Wittern</gloss> </item>
+        </list>
+      </div>
+      <div>
+        <p>All times are UTC unless otherwise noted.</p>
+        <p>Present were SB, DB, LB, JC, MD, DD, JF, SR, SS, NS, JW,
+          PW, and CW. Not present were AB, LR, and EV.</p>
+        <p>Call commendced at 13:00.</p>
+        <!-- p>Meeting started at 13:00 with JC, NS, JF, SB, LB, DD, DB,
+        JW; PW &amp; SR joined at 14:02; MD at 14:06. Not present
+        were AB, LR, EV.</p -->
+      </div>
+    </front>
+    <body>
+      <div>
+        <head>Review of the <xref url="./tcm13.html">minutes from the call</xref></head>
+        <list>
+          <item><label>Revision of content model for
+              <gi>choice</gi></label> LB reported that some progress has
+            been made, and he thinks the action completed.</item>
+          <item><label>Post updated version of SO W 09 to
+              Council</label> Done.</item>
+          <item><label>Check in updated version of SA</label> SB
+            reports that this action was deliberately deferred due to
+            <list>
+              <item>expressions of concern that TEI should not be
+                moving to URI References, and</item>
+              <item>the need to have the style-sheets updated
+                simultaneously or before changing P5 source</item>
+            </list>
+          </item>
+          <item><label>Finalize draft of MS</label> MD reports that
+            the draft has been completed, but has not been announced
+            anywhere. It was noted that there has already been some
+            feedback, as it was announced as part of the Members'
+            Meeting <xref
+              url="../Activities/SIG/Manuscript/mssigr02.html">MS SIG
+              report</xref>. Council agreed that once the draft was
+            publicized, comments on it should receive rapid attention
+            from the MS taskforce, and urged MD to announce draft far
+            and wide immediately.</item>
+          <item><label>propose a method of managing SF feature
+              requests so as to facilitate gathering of input from
+              Council members</label> SB reported that LB has gone
+            through artifacts and assigned priority. LB expressed
+            doubt as to whether this was actually a good idea or not;
+            suggesting that Council members should feel free to look
+            at and comment on any items in which they were personally
+            interested. It was suggested that all Council members
+            should sign up for Sourceforge user accounts, such that
+            they could receive notification of updates to feature
+            requests. SB thought that after signing up, Council
+            members may have to sign up for notifications on an
+            artifact-by-artifact basis.</item>
+        </list>
+      </div>
+      <div>
+        <head>MM Baltimore report</head>
+        <p>LB reported that a general SIGs report, some individual
+          SIGs, and some talks are now <xref
+            url="../Members/2004-Baltimore/">available on the
+            web</xref>; SS believes the other SIGs should be reporting
+          soon. LB said the meeting was well attended, and lots of
+          good discussions were had over lunches &amp; in hallways,
+          etc.</p>
+        <p>LB stated that prior to the Members' Meeting there had been
+          an expression of concern over the conversion of legacy data
+          to P5, and that in response to this he and SR had created a
+          <soCalled>P4 compatibility mode</soCalled> on the flight
+          over, which was presented to membership. The membership
+          present had expressed an overall feeling of <q>why would I
+            want one of those?</q>. There seemed to be general
+          agreement that we should keep <soCalled>P4 compatibility
+            mode</soCalled> in the background, and bring it out if and
+          when there is a call for it.</p>
+      </div>
+      <div>
+        <head>Sanskrit</head>
+        <p>LB thinks the Sanskritters have a desire to use TEI for
+          general interchange, but also want detailed validation.
+          After some discussion, there seemed to be agreement that
+          there are three ways to achieve this:
+          <list>
+            <item>Schematron (either included as part of P5 or used
+              separately)</item>
+            <item>raw schema (which would require significant changes
+              to ODD)</item>
+            <item>syntactic sugar</item>
+          </list> and that it is a very general problem (relating to
+          those who wish to constrain subsections to exist only inside
+          sections, e.g.) The current suggestion is to agree to their
+          recommendations that <gi>seg</gi> be used, with some
+          validation mechanism to follow. <note
+            type="action"><label>CW</label> draft a reply to
+            Sanskritters and post it to council</note> This problem,
+          with a Sanskrit example, can show up in the Guidelines as an
+          example of how to use <gi>seg</gi> in <gi>choice</gi>.</p>
+      </div>
+      <div>
+        <head>Meetings</head>
+        <p>We'd like to hold a face to face meeting in late April or
+          early May. The following expressed the possibility of
+          hosting:
+          <list>
+            <item>MD, Copenhagen</item>
+            <item>JC, Oxford</item>
+            <item>SS, Maryland</item>
+          </list> It was pointed out that cost will be a large concern
+          with this meeting.<note type="action"><label>MD, JC,
+              SS</label> each to post a brief summary to the council
+            list of the anticipated cost of hosting a meeting at his
+            her locale, in particular of lodging</note></p>
+        <p>With the upcoming departure of DD, the Council needs a new
+          host for conference calls. JW said he could host, using the
+          same mechanism PW has used in the past. This turns out to be
+          expensive for Europeans, but CW feels it is still probably
+          less expensive overall, and so graciously accepts JW's
+          offer.</p>
+      </div>
+      <div>
+        <head>Work-groups</head>
+        <p>A brief report from PB has been sent, but not in time for
+          the call. No change in FS</p>
+      </div>
+      <div>
+        <head>xml colon thing</head>
+        <p>Yes, Council agreed on use of <ident
+            type="attrName">xml:id</ident> (declared as W3C suggests,
+          we think <kw>ID</kw>) and <ident
+            type="attrName">xml:lang</ident> (declared where possible
+          as <ident type="datatype">xsd:language</ident>, 
+          using the
+          <soCalled>Ghent improved Nancy Hack</soCalled>, i.e. an
+          <ident type="attrName">ident</ident> on
+          <gi>language</gi>).</p>
+      </div>
+      <div>
+        <head>SO W 09</head>
+        <p>SR raised a concern over the inconsistency of the <ident
+            type="attrName">target</ident>
+          attribute. It was pointed out that this inconsistency is
+          just a duplication of what is currently in P4, where all
+          <ident type="attrName">targets</ident> attributes are
+          <kw>IDREFS</kw>, but not all <ident
+            type="attrName">target</ident> attributes are
+          <kw>IDREF</kw>, some are <kw>IDREFS</kw>. SB thought there
+          was a reason for some, if not all, of these apparent
+          discrepancies, but could not recall them. Council agreed
+          that this should be looked into with an eye to making names
+          consistent.</p>
+        <p>Council agreed on the substantive issues brought up by
+          <xref url="../Activities/SO/sow09.html">SO W 09</xref>, with
+          the exception of the details of the new xpointer schemes,
+          concerning which discussion was deferred.</p>
+      </div>
+      <div>
+        <head>style-sheets</head>
+        <p>Council raised a concern that SR's stylesheets are
+          mistakenly viewed by TEI community as intended to be
+          exemplary. JF suggested making the domain space of TEI
+          stylesheets larger, to provide more examples, perhaps
+          through a contest or call for submissions from the TEI
+          community. JW agrees. <note
+            type="action"><label>JF</label><date>2004-12-15</date>
+            send to council list a proposal for call or contest for
+            getting additional style-sheets for TEI</note> No one was
+          entirely sure, but SB thought it might be the case that the
+          current release of SR's style-sheets are on Sourceforge, and
+          that those on the TEI site are out of date. <note
+            type="action"><label>SR</label> Ensure that the version of
+            style-sheets available from the TEI site is the current
+            release (even if that means that what is on the TEI site
+            is no more than a pointer to the download from
+            Sourceforge)</note></p>
+      </div>
+      <div>
+        <head><gi>biblItem</gi></head>
+        <p>It was suggested that a small group look at the broader
+          view around this issue, and recommend the best approach in
+          general. Specifically to consider whether some other
+          standard is sufficient, and if not, to examine the current
+          proposal and perhaps recommend changes. <note
+            type="action"><label>PW</label> contact PT to research
+            broader problem of how P5 should encode
+            bibliographies</note>.</p>
+        <p>It was noted that we do not know who, other than PT,
+          participated in the creation of the current proposal.</p>
+      </div>
+    </body>
+    <back>
+      <div>
+        <p><note type="action"><label>all</label> read artifacts on
+            TEI Sourceforge <xref
+              url="http://sourceforge.net/tracker/?atid=644065&amp;group_id=106328&amp;func=browse">feature 
+              requests</xref> tracker and post comments, even if
+            comment is just <q>I agree</q>.</note></p>
+        <p>Next conference call scheduled for <date
+            value="2005-01-31T13:00Z">Mon 31 Jan at 13:00 UTC</date>.</p>
+        <p>Call ended at 14:37</p>
+      </div>
+    </back>
+  </text>
+</TEI.2>

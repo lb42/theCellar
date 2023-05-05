@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/home/lou/Public/TEI/TEICSS/tei.css" type="text/css"
+ ?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:t="http://www.tei-c.org/ns/1.0" n="2018-04"><teiHeader><fileDesc><titleStmt><title>Minutes of the TEI Technical Council</title><meeting n="2018-04" when="2018-04-26">TEI Technical Council online
+     meeting : <date>26 April 2018</date></meeting></titleStmt><publicationStmt><distributor>TEI Website</distributor><idno>TCM100</idno></publicationStmt><sourceDesc><p>Retagged from a WordPress HTML file</p></sourceDesc></fileDesc><revisionDesc><change when="2023-04-25">Archival header confected</change><change>Extracted from Word Press article with id post-29526</change></revisionDesc></teiHeader><text><body><div><p><hi style="strong">Meeting time: </hi></p><list style="ul">
+<item>08:00 EDT, 13:00 BST, 14:00 CEST</item>
+<item>Started @ ~12:03Z, ended @ ~13:29Z.</item>
+</list><p><hi style="strong">Present:</hi></p><list style="ul">
+<item>Syd Bauman (SB)</item>
+<item>Elisa Beshero-Bondar (EB)</item>
+<item>Hugh Cayless (HC)</item>
+<item>James Cummings (JC)</item>
+<item>Martina Scholger (MS)</item>
+<item>Peter Stadler (PS)</item>
+<item>Sarah Stanley (SS)</item>
+<item>Raff Vigilanti (RV) @ 12:15Z</item>
+</list><p><hi style="strong">Apologies:</hi></p><list style="ul">
+<item>Alex Bia (AB)</item>
+<item>Elli Mylonas (EM)</item>
+<item>Magdalena Turska (MT)</item>
+</list><div type="h2"><head>TEI conference Tokyo (Sun 09 – Thu 13 Sep 18)</head><list style="ul">
+<item>Council meeting: Fri 7th – Sat 8th</item>
+<item>Workshops: Sun 9th</item>
+<item>Council Open Session: Mon 10th, morning</item>
+<item>Board meeting Thu 13th, morning</item>
+</list></div><div type="h2"><head>Call for nominations</head><list style="ul">
+<item>Council, Board, TAPAS, Rahtz Prize</item>
+</list></div><div type="h2"><head>Deprecation policy &amp; release scheduling</head><list style="ul">
+<item>see <ref target="https://lists.tei-c.org/pipermail/tei-council/2018/025177.html">email from SB, 2018-04-22</ref></item>
+</list></div><div type="h2"><head>Minutes from previous face-to-face meetings</head><list style="ul">
+<item><ref target="https://tei-c.org/activities/council/meetings/tei-technical-council-fall-f2f-2017-11-16-18-parkside-hotel-victoria-bc/">Victoria</ref></item>
+<item><ref target="https://docs.google.com/document/d/1CgyTW1lRTy-_32TbVJVJpmg9399bgWnjteiExC2neZw/edit#">Cologne</ref></item>
+</list></div><div type="h2"><head>Next release</head><list style="ul">
+<item>Schedule
+<list style="ul">
+<item>After ADHO Mexico City?</item>
+<item>Spanish language hackathon at DH2018? Action on MS by 2018-05-03: Contact Gimena del Rio Riande and Antonio Rojas Castro; also ask if Alejandro Bia is going to Mexico.
+<list style="ul">
+<item>How much time is needed to implement translations? More than a night?</item>
+<item>Use a translation tool, speed up the work with a basic translation in place.</item>
+</list>
+</item>
+</list>
+</item>
+<item>Release technicians: RV and PS (With help from MS and everyone else), July 23–24.</item>
+</list></div><div type="h2"><head>LingSig conference call</head><list style="ul">
+<item>PS: Brief report on LingSIG conference call with Susanne Haaf and Piotr Banski.
+<list style="ul">
+<item>Most <ref target="https://github.com/TEIC/TEI/issues?q=is%3Aissue+is%3Aopen+label%3ASIG%3ALingSIG">LingSIG tickets</ref> are doable, except Standoff. My idea (PS) would be to try to get some money for a workshop and bring together interested parts of Council and other interested LingSIG parties.
+<list style="ul">
+<item>Should we organize a LingSIG meeting in Tokyo? But there are many issues on the table, one day will not be enough.</item>
+<item>Approach TEI Board for funding?
+<list style="ul">
+<item>Who needs to be involved? Laurent Romary, Piotr Banski, Susanne Haaf, and at least 3 Council members.</item>
+<item>Prepare a proposal to the Board to fund a task force to meet 2 or 3 days (linguistics SIG and 3 interested from Council).</item>
+<item>Next Board meeting = May 10.</item>
+</list>
+</item>
+</list>
+</item>
+</list>
+</item>
+</list></div><div type="h2"><head>TEI-Website (wordpress) account</head><list style="ul">
+<item>Do we want to have a shared Council account or separate individual accounts?</item>
+<item>Maybe an individual account for the Chair (for regular posting of minutes).</item>
+<item>Decision: MS and HC to have wordpress accounts to update site. Other Council members will ask Luis Meneses for an account if required.</item>
+</list></div><div type="h2"><head>Oxford TEI Website -&gt; Vault [JC]</head><list style="ul">
+<item>Talking about <ref target="http://tei.it.ox.ac.uk/">http://tei.it.ox.ac.uk/</ref>.</item>
+<item>Need to archive these deep historical resources (“information archaeology”) on the TEI (teaching materials/talks/experimental ideas/correspondence/legacy TEI development materials)
+<list style="ul">
+<item>Selection principle on what to archive?</item>
+<item>Much easier to just copy it all.</item>
+<item>Should/would TEI archive such things?</item>
+<item>How would TEI decide whether to archive?
+<list style="ul">
+<item>This is about making the TEI (not a specific project).</item>
+<item>Is our vault well curated enough for this?</item>
+<item>Vault needs some serious attention
+<list style="ul">
+<item>used to be in a Subversion repo at the University of Virginia (run by David Sewell), but that is no longer linked up.</item>
+</list>
+</item>
+<item>At least needs a snapshot before migrating to new website.</item>
+</list>
+</item>
+</list>
+</item>
+<item>Is is okay for JC to copy resources into the Vault? Objections: Vault requires house-cleaning, we’re just deferring a lot of work. Shouldn’t this stuff go into a GitHub repo? Which means it won’t get done.</item>
+<item>We should make some kind of announcement/call for “Curatorial Work” on Vault materials.</item>
+<item>Action on JC: Needs to estimate how much space is required–if there’s room, just copy it. HC: there’s probably enough disk space.</item>
+</list></div><div type="h2"><head>Blue sky thinking</head></div><div type="h2"><head>Tickets</head><list style="ul">
+<item><ref target="https://github.com/TEIC/TEI/issues/1756">1756</ref> event should have ptr and idno in its content model
+<list style="ul">
+<item>Most people seem to be in favour. Should JC just go implement?</item>
+<item>JC: I think yes.</item>
+</list>
+</item>
+<item><ref target="https://github.com/TEIC/TEI/issues/327">327</ref> an <gi>object</gi> element
+<list style="ul">
+<item>On JC’s todo list to produce initial straw man.</item>
+</list>
+</item>
+</list></div><div type="h2"><head>Ticket triage</head><table>
+
+<row>
+<cell><hi style="b">April 2018</hi></cell>
+<cell><hi style="b">SS</hi></cell>
+</row>
+<row>
+<cell><hi style="b">May 2018</hi></cell>
+<cell><hi style="b">MS</hi></cell>
+</row>
+<row>
+<cell><hi style="b">June 2018</hi></cell>
+<cell><hi style="b">HC</hi></cell>
+</row>
+<row>
+<cell><hi style="b">July 2018</hi></cell>
+<cell><hi style="b">EB</hi></cell>
+</row>
+<row>
+<cell><hi style="b">August 2018</hi></cell>
+<cell><hi style="b">JC</hi></cell>
+</row>
+<row>
+<cell><hi style="b">September 2018</hi></cell>
+<cell><hi style="b">EM</hi></cell>
+</row>
+<row>
+<cell><hi style="b">October 2018</hi></cell>
+<cell><hi style="b">MT</hi></cell>
+</row>
+<row>
+<cell><hi style="b">November 2018</hi></cell>
+<cell><hi style="b">SS</hi></cell>
+</row>
+<row>
+<cell><hi style="b">December 2018</hi></cell>
+<cell><hi style="b">AB</hi></cell>
+</row>
+
+</table><p> </p></div></div></body><!-- #post-## --></text></TEI>

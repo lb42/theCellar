@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/home/lou/Public/TEI/TEICSS/tei.css" type="text/css"
+ ?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:t="http://www.tei-c.org/ns/1.0" n="2015-04"><teiHeader><fileDesc><titleStmt><title>Minutes of the TEI Technical Council</title><meeting n="2015-04" when="2015-04-24">TEI Technical Council online
+     meeting : <date>24 April 2015</date></meeting></titleStmt><publicationStmt><distributor>TEI Website</distributor><idno>TCM068</idno></publicationStmt><sourceDesc><p>Retagged from a WordPress HTML file</p></sourceDesc></fileDesc><revisionDesc><change when="2023-04-27">Archival header confected</change><change>Extracted from Word Press article with id post-21924</change></revisionDesc></teiHeader><text><body><div>
+		
+		<!-- <div class="teiheader"><filedesc><titlestmt><title></title><author>TEI Council</author></titlestmt><editionstmt><edition><date>2015-04-24 13:00 UTC</date></edition></editionstmt><publicationstmt>
+<p>Council minutes</p>
+</publicationstmt><sourcedesc><p>Converted from a Word document</p>
+<p>            </sourcedesc></filedesc><encodingdesc><appinfo><application id="doxtotei" ident="TEI_fromDOCX" version="2.15.0"><label>DOCX to TEI</label>
+                </application></appinfo></encodingdesc><revisiondesc><listchange><change><date>2015-05-21T13:59:24Z</date><name>unknown author</name></change></listchange></revisiondesc></div> -->
+<!--<p><front><titlepage><doctitle><titlepart type="Title"><anchor id="h.qhdbzydohs2b"/>Teleconference
+                        2015-04-24 13:00 UTC</titlepart></doctitle></titlepage></p>
+<p><a href="https://plus.google.com/hangouts/_/g3tdpgo4o3drx6su6wude3gr2qa"><hi class="underline color(1155cc)">https://plus.google.com/hangouts/_/g3tdpgo4o3drx6su6wude3gr2qa</hi></a></p>
+<p>        </front></p>-->
+<div><head>
+                Present:</head>
+<p>Syd Bauman (SB)</p>
+<p>Hugh Cayless (HC)</p>
+<p>Martin Holmes (MH)</p>
+<p>Stefan Majewski (SM)</p>
+<p>Paul Schaffner (PFS)</p>
+<p>Stefanie Gehrke (SG) </p>
+<p>Peter Stadler (PWS)</p>
+<p>Fabio Ciotti (FC)</p>
+<p>Raff Viglianti (RV) (left at 13:39)</p>
+<p><hi style="underline">Apologies</hi></p>
+<p>James Cummings (JC)</p>
+<p>Lou Burnard (LB)</p>
+<p>Call started @ ~13:03 and ended @ ~13:54 UTC.</p>
+</div>
+<div><head> id="h.8mabg2cjk34i"&gt;
+                Agenda
+                </head><list style="ul">
+<item>Release 2.8.1? (MH) (See ticket <ref target="https://sourceforge.net/p/tei/bugs/749/">http://sourceforge.net/p/tei/bugs/749/</ref>) </item>
+<item>2015 Nominating Committee (need 2 volunteers from Council)</item>
+<item>Transcription of Spoken Language Draft followup (HC)</item>
+<item>standoff discussion (PWS) (see <ref target="https://github.com/laurentromary/stdfSpec">Laurent’s
+                        repo</ref>)</item>
+<item>Terminology (see <ref target="https://sourceforge.net/p/tei/feature-requests/482/">FR 482</ref>) (FC)</item>
+<item>Prep for May F2F</item>
+<item>Ticket review</item>
+<item>Other business?</item>
+</list>
+<div><head>
+                    Release 2.8.1?</head>
+<p>MH: Didn’t add predeclare attribute, so this is a legitimate bug, but nobody
+                        else has reported problems. The Oxygen 17 release is coming up and an update
+                        might mess up the TEI plugin for them. <hi style="bold">Action: SB to look at
+                            749 and evaluate. </hi>However, SB intends to get local build of P5
+                        working, first. </p>
+</div>
+<div><head>
+                    Nominating Committee</head>
+<p>Board would like two members of Council on the Nominating Committee.
+                        Preferably someone who is not up for election this year, or who has chosen
+                        not to run this year. </p>
+<p>Tentative volunteers: HC and SM.</p>
+</div>
+<div><head>
+                    Transcription of Spoken Language Draft followup (HC)</head>
+<p>ISO is working on a document that is not yet public; when it’s ready, Laurent
+                        Romary will share it with us for discussion.</p>
+</div>
+<div><head>
+                    Standoff discussion</head>
+<p>PWS has worked with Laurent on polishing the materials in his repo. There’s a
+                        need for more work, examples etc. There has also been some overlap between
+                        this and the spoken language work. Laurent is really just waiting for the
+                        go-ahead from Council to produce a full draft. SB proposes calling the
+                        element “ldb” (for Linked Data Block). SB also suggests adding listChange to
+                        the content model. Action on PWS to meet with Laurent and try to have
+                        standoff ready for review by the F2F.</p>
+</div>
+<div><head>
+                    Terminology</head>
+<p>FC suggests we skype Laurent in during the F2F
+                            if possible. Action on HC to arrange.</p>
+</div>
+<div><head>
+                    May F2F</head>
+<p>PFS has requested rooms from the hotel, waiting for confirmation. PFS to get
+                        back to us soon (by posting to tei-council list).</p>
+<p>SB asks if we will continue our tradition of technical presentations?
+                        Suggests MH present on Oxygen plugin. MH agrees.</p>
+<p>MH: Should we look at deprecating support for DTDs? They are more of a source
+                        for bugs than a useful part of TEI. If we can all agree that we would like
+                        to phase them out at some point, we could set a point X years in advance and
+                        announce it. This will go on the agenda for discussion.</p>
+</div>
+<div><head>
+                    Googlehangout for our meetings</head>
+<p>Pros: chat window, easy to set up, free, has video (nice turn-taking),
+                        screenshare </p>
+<p>Cons: we lost LB due to lack of bandwidth (but that might affect any VoIP?);
+                        lost RV due to bandwidth, too. Occasional loss of connectivity. Less taking
+                        of minutes due to video distraction 😉 GoogleDoc flags both “GoogleHangout”
+                        and “Googlehangout” as misspelled.</p>
+<p>SM points out GH has a call-in feature, too. We may try that, either directly
+                        or using conference call as a participant.</p>
+</div>
+<div><head>
+                    Tickets:</head>
+<p>briefly discussed <ref target="https://sourceforge.net/p/tei/feature-requests/546/">https://sourceforge.net/p/tei/feature-requests/546/</ref> , assigned to SB.</p>
+</div>
+</div>
+	</div></body><!-- #post-## --></text></TEI>

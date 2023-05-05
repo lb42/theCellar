@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/home/lou/Public/TEI/TEICSS/tei.css" type="text/css"
+ ?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:t="http://www.tei-c.org/ns/1.0" n="2019-10"><teiHeader><fileDesc><titleStmt><title>Minutes of the TEI Technical Council</title><meeting n="2019-10" when="2019-10-08">TEI Technical Council online
+     meeting : <date>8 October 2019</date></meeting></titleStmt><publicationStmt><distributor>TEI Website</distributor><idno>TCM119</idno></publicationStmt><sourceDesc><p>Retagged from a WordPress HTML file</p></sourceDesc></fileDesc><revisionDesc><change when="2023-04-25">Archival header confected</change><change>Extracted from Word Press article with id post-29707</change></revisionDesc></teiHeader><text><body><div><p><hi style="strong">Meeting time</hi></p><list style="ul">
+<item>EDT 9:00-10:30, GMT 14:00-15:30, CEST 15:00-16:30</item>
+<item>Started: 13:05Z; Ended: 14:32Z;</item>
+</list><p><hi style="strong">Present</hi></p><list style="ul">
+<item>Syd Bauman (SB)</item>
+<item>Elisa Beshero-Bondar (EB)</item>
+<item>Hugh Cayless (HC)</item>
+<item>Nicholas Cole (NC, had to leave @ 14:13Z)</item>
+<item>James Cummings (JC)</item>
+<item>Jessica Lu (JL)</item>
+<item>Elli Mylonas (EM)</item>
+<item>Martina Scholger (MS)</item>
+<item>Peter Stadler (PS, had to leave @ 14:19Z))</item>
+<item>Sarah Stanley (SS, had to leave @ 14:13Z)</item>
+<item>Magdalena Turska (MT)</item>
+<item>Raff Viglianti (RV)</item>
+</list><p><hi style="strong">Apologies/Not Present</hi></p><list style="ul">
+<item>Vanessa Bigot-Juloux (VB)</item>
+<item>Meaghan Brown (MB)</item>
+</list><p> </p><div type="h2"><head>Welcome to our new Council members</head><list style="ul">
+<item>Introductions</item>
+<item>Mentors for new Council members
+<list style="ul">
+<item>JL  and EB (she also has access to RV because he’s available at the same institution).</item>
+<item>MB and RV.</item>
+<item>NC and JC for the next 3 months, after that MS takes over.</item>
+<item>TEI Council FAQ: <ref target="https://wiki.tei-c.org/index.php/TEI-Council-FAQ">https://wiki.tei-c.org/index.php/TEI-Council-FAQ</ref></item>
+</list>
+</item>
+</list></div><div type="h2"><head>Meeting times (including Stylesheets group meeting)</head><list style="ul">
+<item>For the remainder of the calendar year, keep with current plan: 2nd Tuesday of each month @ 13:00Z; Stylesheets 1 week earlier at the same time.</item>
+</list></div><div type="h2"><head>Documentation</head><list style="ul">
+<item><hi style="b">Action on</hi> Council: Wiki pages, for example Council FAQ, are out of date. Need to assign people to update it.</item>
+<item>Perhaps also add release schedule (i.e., refrigeration, freezing) into FAQ as well, no harm having it in 2 places.</item>
+</list></div><div type="h2"><head>Next Release</head><list style="ul">
+<item>Need to include 2 big items in next release: standOff (https://github.com/TEIC/TEI/issues/374) and UniHan. (https://github.com/TEIC/TEI/issues/1805). Timing of the release should allow time for these to be completed.</item>
+<item>Refrigerate last week in January? Freeze early February for release.</item>
+<item>RV, EB (+ newcomers shadowing).</item>
+<item><hi style="b">Action on</hi> RV and EB to schedule release.</item>
+</list></div><div type="h2"><head>Council terms &amp; skill sets</head><list style="ul">
+<item>Come up with a proposal for Board concerning 3-year terms.</item>
+<item>Awareness of needed skill sets for Council: Nominating committee should be seeking candidates who are prepared to engage in discussions of both the technical and theoretical issues Council works on.</item>
+<item>Terms: Board was in favor of 3-year terms, with 1/3 of Council standing for election each year (instead of half of Council standing for election each year).
+<list style="ul">
+<item>This would require a change to the Bylaws.</item>
+<item>11 members of Council: 4, 4, and 3 rotation.</item>
+<item>How do we start it? We have 5 positions for election next year. 1, 2 and 3 year terms for some of the current Council members.</item>
+<item>Should Council have 12 members? We used to have 12 members. We went to 11 to have a tie-breaker. Adding an extra person is expensive — can we afford it? (~9% increase in budget).</item>
+<item>NC: tension between bringing new people on board and maintaining continuity in quality of Guidelines releases. MT: Nominating committee has pressure to ensure this works out.</item>
+<item>Discussion: JC, RV: Skill sets when first standing for election don’t necessarily matter as we all have had to learn on the post. 3-year terms assists in learning process. Understanding and willingness to engage are important.</item>
+<item>When someone is nominated, they need to be informed about the frequency of online and face-to-face meetings; our suggestion for the nominating committee is to include this in the invitation email.</item>
+<item>And candidates who stand for election need to be told that mentorship and funding are available. And that gets you funding to the annual membership meeting.</item>
+<item>Next Board Meeting on Thursday, October 10: <hi style="b">Action on</hi> MS to inform Board that Council is in favor of 3-year terms. And propose that a Board and a Council member get together to draft what needs to be changed (policy documents, etc). <hi style="b">JC, MS, EM</hi> will work on this drafting: <hi style="b">due Nov 14 </hi>(proposal shown to Council earlier? The Council meeting is after the board meeting, on Nov 19)</item>
+</list>
+</item>
+</list></div><div type="h2"><head>Review UniHan issue</head><list style="ul">
+<item>Original issue (<ref target="https://github.com/TEIC/TEI/issues/1805">https://github.com/TEIC/TEI/issues/1805</ref>),</item>
+<item>Pull request (<ref target="https://github.com/TEIC/TEI/pull/1901">https://github.com/TEIC/TEI/pull/1901</ref>) from Duncan Paterson
+<list style="ul">
+<item>Bug fixes for UnicodeName</item>
+<item>Phase 0:
+<list style="ul">
+<item>New attribute class: att.gaijiProp.xml (@name, @value).</item>
+<item>Open questions: @value mandatory (see Duncan on June 30); NCName for @value?</item>
+<item>New elements: <gi>unicodeProp</gi>, <gi>localProp</gi>, and <gi>unihanProp</gi>.</item>
+</list>
+</item>
+<item>Phase 1:
+<list style="ul">
+<item>Content models to allow new elements inside <gi>char</gi> or <gi>glyph</gi></item>
+</list>
+</item>
+<item>Phase 2:
+<list style="ul">
+<item>Deprecation of <gi>charProp</gi> and <gi>value</gi></item>
+</list>
+</item>
+<item>Inheritance of attributes might be an issue? <hi style="b">Action on SB</hi> to build the pull request locally and investigate.</item>
+</list>
+</item>
+</list><p> </p></div></div></body><!-- #post-## --></text></TEI>

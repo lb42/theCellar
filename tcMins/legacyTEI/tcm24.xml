@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="tcm24_files/teixlite.css" type="text/css"?>
+<!DOCTYPE TEI.2 PUBLIC "-//TEI//DTD TEI Lite XML ver. 1//EN" "../Lite/DTD/teixlite.dtd">
+<TEI.2>
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>TEI Council Meeting <date value="2006-05-18/19">18 and 19 May 2006</date></title>
+        <author>Matt Zimmerman</author>
+      </titleStmt>
+      <publicationStmt>
+        <idno type="TEI">TC M 24</idno>
+        <availability>
+          <p>For distribution first to Council, then to world via TEI
+            website.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <p>This electronic file is the source.</p>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc>
+      <change><date value="2006-06-15">Thu, 15 Jun 06</date>
+        <respStmt><name>Matt Zimmerman</name>
+          <resp>author</resp></respStmt>
+        <item>Changed typos from original posting</item>
+      </change>
+<change><date value="2006-06-11">Sun, 11 Jun 06</date>
+	<respStmt><name>Syd Bauman</name>
+	<resp>editor</resp></respStmt>
+	<item>Changed path to CSS stylesheet; added appendix per
+	request MZ; fixed date in title, above</item>
+</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <front>
+      <div>
+        <p>Times are UTC +9 unless otherwise noted.</p>
+        <p>The meetings were held on 18 and 19 May, 2006 at the Kyoto City International Community
+          House, Kyoto Japan. The meetings were held from 10:00 to 17:00. Present were CT, CW, SB, AK, DP, JC, JW, LB, MZ, MD, SS, DB, SR, LR</p>
+      </div>
+    </front>
+    <body>
+      <div>
+        <head>Approval of Agenda</head>
+        <p>CW's agenda for the meeting was unanimously approved with no additions or subtractions</p>
+      </div>
+      <div>
+        <head>Welcome Amit</head>
+        <p>The Council welcomes its newest member, Amit Kumar, who will serve out the rest of the
+          term of Alex Bia who resigned from the Council.
+        </p>
+      </div>
+      <div>
+        <head>Review of minutes from last conference call</head>
+        
+        <list>
+           <item>Resolve remaining unresolved issues about new file organization at Sourceforge asap, and report on status at Kyoto Council meeting.
+            <note type="action"><label>JC</label>Update HOWTO to reflect the new structure and check that the discussion of SVN procedures introduced in it are all correct</note>
+           </item>
+           <item>Discussed structure of internationalization file structure <label>LB</label> suggests testing ODD tools so that linking works as opposed to copying. <label>CW</label> says basic structure should include how to handle examples in different languages.
+            <label>SS</label> asks did we not once ask people for examples?
+            <label>CW</label> says someone will have to be in charge of handling the call and collecting examples.
+            <label>SS</label> suggest that if we collect samples we need metadata (form similar to
+             the TEI projects page)</item>
+          
+          <item>Should chapter file names change? (i.e. hd &gt; header). Consensus is "no".
+          <note type="action"><label>JC</label>suggest new file names.</note></item>
+          
+          <item><label>SB</label> updated his <xref url="http://www3.iath.virginia.edu/pipermail/tei-council/2005/001163.html">report on SO output documents</xref> to include recommended dispositionsas a working paper for discussion in Kyoto. Recommendation is SVG should be used instead of graphic and figure.
+          <label>CW</label> and <label>DP</label> suggest that graphic element stays and that SVG
+            exists in the module for figuers and tables.
+          Do we dicuss this in the guidelines and where do we discuss it?. Should part of the
+            guidelines be dedicated to other lanaguges? (markup and standards).
+          <label>CT</label> suggests a new pointing method that includes coordinate pointing.
+          <note type="action"><label>CT and DP</label>Come up with a proposed text of how to link
+            texts and images</note>
+          <note type="action"><label>SB</label>See if an similar xpointer has been provided in W3C</note></item>
+          <item><note type="action"><label>Council must read chapt 14.9.1 p5.</label></note></item>
+          <item><note type="action"><label>CW</label> follow-up on previous request to MM for more prose describing the desired goals, the meaning of elements, the intended usage, etc.; also perhaps suggest a conference call for PB group. (MM does not have anything prepared for us to review)</note></item>
+          <item><note type="action"><label>JW and MZ</label>Look at both dictionaries drama modules, post to list</note></item>
+          <item><note type="action"><label>DB</label> Look at TD (documentation elements, aka
+            ‘tagdocs’), post to list.</note></item>
+        </list>
+      </div>
+      
+      
+      
+      <div>
+        <head>Working Groups Progress</head>
+        <p>Physical Bibliogrpahy: has not been any changes in documents</p>
+        <p>Personograibphy: MD reports 8 new elements, 3 catagories and use of exisiting tei elements also.
+        <xref url="http://www.staff.hum.ku.dk/mjd/persPaper.html">See report</xref></p>
+        <p><label>CT</label> comments that type "casual" is not clear enough in the assert group (a to b? b to a?).
+        Assert and Assertgrp? is one redundant? 
+        <note type="action"><label>LB</label> motions that the Council identify within a week a
+          list of specific items in the current proposals that need to be addressed.</note> </p>
+      </div>
+      
+      <div>
+        <head>Class Struggle</head>
+        <list>
+        <item>Linking and Analysis: get rid of exemplumb, remarks and listRef? Why is attDef not attSpec?
+        <note type="action"><label>SB</label> fix listref from ptr* to ptr+</note></item>
+        
+        <item>dateStruct: necessary? can we have only date?
+        <note type="action"><label>SB</label>merge date and dateStruct.
+          Same with timestruct?</note></item>
+        
+        <item>Should day, geog, hour, minute, mont, second, week and hear be macro.phraseSeq instead of macro.xtext?
+          <note type="action"><label>LB</label>Solution: macro.xtext doesn't cut it. Needs to be
+            reviewed. What, if anything, should replace it?</note>
+        </item>
+        
+        <item>Should region, country, be macro.phraseSeq instead of marcro.paracontent (bloc and settlement are macrophrasesec)?
+          Yes. No objections
+          <note type="action"><label>SB</label>Change region, country to macro.phraseSeq instead of marcro.paracontent</note></item>
+        
+        <item>model.phrase (scaled down phrase set) posted to council list
+          <note type="action"><label>LB</label>Add model.phrase to TCW07</note>
+        </item>
+          </list>
+      </div>
+      
+      <div>
+        <head>Review TCW07</head>
+      <p>Corpus:
+      <note type="action"><label>Editoris</label>Improve wording. Where does the personagrapy stuff go?</note>
+        Should there be a disticnct module for the new elements in personagraphy? If yes, how does
+        it affect other modules? LB proposes persongraphy stays in limbo for the time being. make a new module, or put in another module.
+      Vote: 10-4 in favor of putting personography into names and dates. Editors will do it.
+          <note type="action"><label>Editors</label>Fix manuscript desc modules dependices on names and dates in current architecture</note>
+        <note type="action"><label>Editors</label>see if there are other interdependicies</note>
+           <note type="action"><label>SR</label>see if there is a way to implement moral dependencies.</note>
+            <note type="action"><label>SB</label>find out places were an element is place like and datalike.</note>
+        textDescPart will be defined as a new class
+        <note type="action"><label>Editors</label>Make a new class model.setting part contain
+          model.pLike ... -rs </note>
+      </p>
+        
+      <p> Gaji, Figures, tables, graphs, and nets: All approved.</p>
+      
+        <p>Spoken:
+        <list>
+          <item>Should event kinesic get att.typed? <label>Yes</label></item>
+          <item><note type="action"><label>Editors</label>make a new class whose only member is desc
+            that would replace some of thee occurences of  macro.glassSeq.</note></item>
+          <item>item 6.4 of TCW07 approved</item>
+        </list>
+        </p>
+        
+        
+        <p>Manuscript Desc:
+        <list>
+          <item>In response to 7.1 of TWC07: 'use the headphrase'</item>
+          <item>In reponse to 7.2 of TWC07: msidentifier and misidentifierPart -- Leave this as they are
+            a model class. Would be preferable if it would be non-repeatable.</item>
+          <item>In response to 7.3 of TWC07: Bullet 1: yes, Bullet 2: yes, Bullet 3: no.</item>
+        </list>
+          </p>
+        
+        
+        <p>Transcription:</p>
+        <p>
+          Syd's proposal: While I don't like how att.spanning works (mostly because it is not
+          "horse-like" enough), I agree completely that <gi>addSpan</gi> and <gi>delSpan</gi> belong
+          in that class. I like Dot and Susan's third suggestion: hand, type, status in new class
+          att.subEditStuff of which all 4 are members; place in new class att.placement of which
+          <gi>add</gi> and <gi>addSpan</gi> are members (and can <gi>note</gi>be a member of this
+          class, too?); and <gi>addSpan</gi> and <gi>delSpan</gi> get added to the already existing att.spanning.)</p>
+         <p>The council accepted Syd's proposal</p>
+        
+        <p>Linking: Done</p>
+        
+        <p>Linking and Analysis
+          <list><item>10.1 from TCW07: done</item>
+            <item>10.2 from TCW07: w and m solutions</item>
+            <item>defer discussion of last item before we have output from standoff</item>
+           <item><note type="action">DP to contact the overlap group and give them a report and get
+             feedback on span</note></item>
+          </list> 
+        </p>
+        
+        <p><label>Other</label>
+          
+          <note type="action"><label>JW</label> should discuss biblitem, biblstruc, and mods by end of
+            June</note>
+          <note type="action"><label>DB</label> to draft document of guiding principles for further
+            dev of p5.</note>
+        </p>
+      </div>
+      
+      <div>
+        <head>Roadmap</head>
+      <p> 1.0 by members meeting oct 27 and 28. <xref url="http://www.tei-c.org/Council/roadmap.xml">Roadmap</xref>
+	  Summary of brainstorm of items needed before release is
+      appended, below.
+        <note type="action"><label>LB</label>by end of June, report on Terminology Chapter</note>
+        <note type="action"><label>LB</label>Replace the current TEI core module with smaller cores</note>
+        Next call July 25 UTC 12:00
+      </p>
+        </div>
+    </body>
+    <back>
+      <div type="appendix">
+	<head>Possible Requirements for 1.0 Release</head>
+	<p><eg><![CDATA[essential = E
+desired = D
+nice = N
+foolish = F
+
+E	chapter review, including reivew of examples
+E	decision on module dependency architecture made, and if yes implemented
+E	remove instructions on how to invoke TEI DTD from each chapter
+E	New user needs to have an easy way to generate customization ODD and generate schemas
+E	text of prose matches specs
+E	*Specs frozen! :-)
+E	Dictionary rewrite completed
+*	Modification 
+*	Conformance
+D	resolve all feature requests
+D	inserting missing examples
+D	phys bib
+D	prosopography
+D	Text Critical rewrite completed
+N	cookbook
+N	desktop java-based Roma
+N	mechanism for an instance indicating the schema(s) to which it should conform
+N	P4 to P5 migration report
+N	P4 to P5 migration tool
+N	PDF version of Guidelines
+N	PDF version of reference doc (of customization)
+N	Terminology rewrite completed
+F
+
+Desirables for our future lives
+D	break up the core in a backward compatable kinda way]]></eg></p>
+      </div>
+    </back>
+  </text>
+</TEI.2>

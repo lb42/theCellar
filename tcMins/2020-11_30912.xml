@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/home/lou/Public/TEI/TEICSS/tei.css" type="text/css"
+ ?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:t="http://www.tei-c.org/ns/1.0" n="2020-11"><teiHeader><fileDesc><titleStmt><title>Minutes of the TEI Technical Council</title><meeting n="2020-11" when="2020-11-10">TEI Technical Council online
+     meeting : <date>10 November 2020</date></meeting></titleStmt><publicationStmt><distributor>TEI Website</distributor><idno>TCM133</idno></publicationStmt><sourceDesc><p>Retagged from a WordPress HTML file</p></sourceDesc></fileDesc><revisionDesc><change when="2023-04-25">Archival header confected</change><change>Extracted from Word Press article with id post-30912</change></revisionDesc></teiHeader><text><body><div><p><hi style="strong">Meeting time:</hi></p><list style="ul">
+<item>EST 09:00–10:30, GMT 14:00–15:30, CET 15:00–16:30</item>
+<item>Started: ~13:06 Ended: ~14:40Z</item>
+</list><p><hi style="strong">Present:</hi></p><list style="ul">
+<item>Syd Bauman (SB, arrived @ ~13:07Z)</item>
+<item>Elisa Beshero-Bondar (EB)</item>
+<item>Meaghan Brown (MB)</item>
+<item>Hugh Cayless (HC)</item>
+<item>Nicholas Cole (NC, arrived @ ~13:17Z)</item>
+<item>Jessica H. Lu (JL)</item>
+<item>Martina Scholger (MS)</item>
+<item>Peter Stadler (PS)</item>
+<item>Magdalena Turska (MT)</item>
+</list><p><hi style="strong">Apologies/Not Present:</hi></p><list style="ul">
+<item>Vanessa Bigot Juloux</item>
+<item>Raff Viglianti</item>
+</list><div type="h2"><head>Business Meeting</head><list style="ul">
+<item>Thursday, 19 November 2020, EST 11am, 4pm BST, 5pm CET</item>
+<item>Report from the TEI Council
+<list style="ul">
+<item>Statistics for Guidelines and Stylesheets issues</item>
+<item>Releases</item>
+<item>Meetings</item>
+</list>
+</item>
+</list></div><div type="h2"><head>Next release</head><list style="ul">
+<item>Next release on February, 25 (Thursday); Refridge: Friday 2021-02-12; Freeze: Friday 2021-02-19.</item>
+<item>Release techs (tentative): NC (lead technician), PS (assist), MB (note taker).
+<list style="ul">
+<item>JL: would be third release in a row; happy to volunteer as lead tech next summer.</item>
+<item>MB volunteers for documentation.</item>
+<item>NC agrees to be lead technician if he is re-elected to TEI Council.</item>
+<item>If NC is in Utah, we may want a North-American assist — SB volunteers.</item>
+<item>Revisit after elections.</item>
+</list>
+</item>
+</list></div><div type="h2"><head>Reviewer for VF2F meeting minutes</head><list style="ul">
+<item>Since he missed part of this meeting, SB volunteers to minute-assist the VF2F if someone else would minute-assist this meeting. EBB volunteers to handle this meeting. NC volunteers to handle December teleconference, as that had been EBB’s.</item>
+</list></div><div type="h2"><head>Council chair elections</head><list style="ul">
+<item><ref target="https://wiki.tei-c.org/index.php?title=TEI-Council-FAQ#TEI_Technical_Council_Chair">https://wiki.tei-c.org/index.php?title=TEI-Council-FAQ#TEI_Technical_Council_Chair</ref></item>
+<item>Up until around the last Friday in November those who are Council members for next year will consider whether they want to run to be Chair of the TEI Technical Council. The current Chair will facilitate this process by answering any questions about the post. Before that date those intending to stand should send a statement of some sort to the Council mailing list detailing why they think the council members should vote for them.</item>
+</list></div><div type="h2"><head>Stylesheets patch release — status</head><list style="ul">
+<item>SB reports that he repaired a bug (code that wasn’t properly fixing something) <ref target="https://github.com/TEIC/Stylesheets/releases/tag/v7.50.1">https://github.com/TEIC/Stylesheets/releases/tag/v7.50.1</ref></item>
+<item>Appears to be released in all the usual locations.</item>
+<item>Status of the oXygen plugin? SB: No need to update this.</item>
+<item>HC: We should add a note about the reason for the patch release on GitHub
+<list style="ul">
+<item>Should this be appended to the tag for the release, or a file in the repo (establish a place for it)? Maybe a pointer to the release notes would go in the README.md</item>
+<item>Look at Stylesheets changelog?</item>
+<item>We decided to investigate making a ReleaseNotes/ directory in the Stylesheets repo, roughly parallel to what we have in the Guidelines repo. The idea is to publish a combined set of release notes on TEI-L, etc., but to store them separately. We may want a pointer from the README.md file to the release notes; but perhaps not, since the release notes will be XML.</item>
+<item><hi style="b">Action on MS</hi> to investigate a) how the release notes get published, and b) the best place and means to set this up in the Stylesheets repo <hi style="b">by 2020-12-31.</hi></item>
+<item><hi style="b">Action on SB: </hi>Add a note of explanation to the latest <ref target="https://github.com/TEIC/Stylesheets/releases/edit/v7.50.1">Stylesheets release</ref> tag <hi style="b">by 2020-11-30. </hi></item>
+</list>
+</item>
+<item>Martin Holmes added updates to TCW 22 about login process for Infrastructure Group members.</item>
+<item>MS: Do we need new documentation for the Stylesheets release: How-to guide?
+<list style="ul">
+<item>We could use the information about how to release either Stylesheets or Guidelines individually (i.e., how to release one when you are not also releasing the other).</item>
+<item>Also need to document in TCW 22 the new workflow with when to update the P5 subset in the Stylesheets repo.</item>
+<item>PS: Still an open question how we update P5 subset: when that should happen in the timeline toward release.</item>
+<item>PS is working on a semi-automated process for this — we plan to wait until he has made more progress.</item>
+</list>
+</item>
+</list></div><div type="h2"><head>Update tests in Stylesheets repo</head><list style="ul">
+<item>PS working on semi-automating the update of p5subset in StyleSheets/ so that tests are run and (if no errors) issue a pull request. Issue for that at <ref target="https://github.com/TEIC/Stylesheets/issues/457">https://github.com/TEIC/Stylesheets/issues/457</ref>.</item>
+</list></div><div type="h2"><head><ref target="https://github.com/TEIC/TEI/issues/2049">altIdent</ref></head><list style="ul">
+<item>see <ref target="https://github.com/TEIC/TEI/issues/2049">#2049</ref></item>
+<item>#1: Decide on an alternate encoding of FPIs. SB’s current favorite is to use an &lt;idno type=”FPI”&gt; exactly where we currently use &lt;altIdent type=”FPI”&gt;.</item>
+<item>#2: Decide which elements should, and should not, have <gi>altIdent</gi> in their content model. It is allowed in too many places and needs to be reviewed: which should have and which should not.</item>
+<item>FPI is an “old-school” system of identifiers, primarily used in DTDs.</item>
+<item>Used in coding in multiple languages (e.g. Arabic and English), and in localized customizations.</item>
+<item>Modules use the FPI as identified in the <gi>altIdent</gi> and that is not a good use.
+<list style="ul">
+<item><gi>altIdent</gi> is in model.glossLike</item>
+<item>Discussion of using <gi>idno</gi> for the FPIs: need to change examples, explanation, Stylesheet change for processing of the modules.</item>
+<item>Other contenders: <gi>label</gi>, <gi>ident</gi> (= maybe not quite the same thing as <gi>idno</gi>?)</item>
+</list>
+</item>
+<item>We need to review the places allowing <gi>altIdent</gi>, and decide whether to remove, and whether deprecation is required.</item>
+<item><hi style="b">Action on SB: </hi>Make tables on ticket for subgroup to vote on <gi>altIdent</gi> alternative and places it goes <hi style="b">by</hi> <hi style="b">2020-11-17.</hi></item>
+<item>Action on Council to respond #1 and #2 on the ticket. <hi style="b">Subgroup volunteers: EB, NC</hi>. SB will ask Martin Holmes if he would like to join the subgroup.</item>
+</list></div><div type="h2"><head>Evaluation copious examples</head><list style="ul">
+<item>During the Stylesheets meeting we (SB) created a version of the specs containing all examples, independent of the chosen language.</item>
+<item><ref target="https://bauman.zapto.org/~syd/temp/4TEICouncil/html_GLs_all_eg_en/">https://bauman.zapto.org/~syd/temp/4TEICouncil/html_GLs_all_eg_en/</ref>
+<list style="ul">
+<item>EB reports that <gi>bibl</gi> examples are far more diverse; <gi>byline</gi> has improved; <gi>gap</gi> includes Asian examples, but duplicates French and English examples — (MS: same for <gi>abbr</gi>); <gi>ab</gi> has only one example and needs improvement.</item>
+</list>
+</item>
+<item>Open tickets for issues that we encounter (see email from Martin Holmes to Council list).</item>
+<item>Continue discussion at next Stylesheets / Council meetings.</item>
+</list></div><div type="h2"><head>Proposal on CMC</head><list style="ul">
+<item>Subgroup scheduled a meeting with CMC group—Friday, December 4 (and 11, if needed).</item>
+</list></div><div type="h2"><head>TEI “Vanilla” — Potential Next Steps</head><list style="ul">
+<item>Discussion during the VF2F meeting in October
+<list style="ul">
+<item>SB suggested to change the name</item>
+<item>TEI Council should review the current introductory material and try to curate and filter some of the older material to ensure that it is relevant to current Guidelines.</item>
+<item>Encourage creation of ‘Road Not Taken’ examples? Explanations of decisions and alternates not chosen.</item>
+<item>Can we encourage some material to be written on presenting TEI documents (as a technical matter).</item>
+</list>
+</item>
+<item>MT: meeting summary <ref target="https://e-editiones.org/tei-vanilla-meeting-summary/">https://e-editiones.org/tei-vanilla-meeting-summary/</ref></item>
+<item>Continue discussion next meeting</item>
+</list></div><div type="h2"><head>Outdated directory “genetic”</head><list style="ul">
+<item>get rid of outdated directory “genetic” from the TEI directory, see <ref target="https://github.com/TEIC/TEI/issues/2043">https://github.com/TEIC/TEI/issues/2043</ref></item>
+<item>postponed to next meeting</item>
+</list></div><div type="h2"><head>Reminder — Action on</head><list style="ul">
+<item>List of liaisons (please add your liaisons)
+<list style="ul">
+<item><ref target="https://docs.google.com/document/d/19BYJYSEzUhLXTQ4k4YHp_eAJmH3OD0OUNHcpD4adhT0/edit">https://docs.google.com/document/d/19BYJYSEzUhLXTQ4k4YHp_eAJmH3OD0OUNHcpD4adhT0/edit</ref></item>
+</list>
+</item>
+<item><hi style="b">Action on NC and HC</hi> to write-up Oxygen release process.</item>
+<item><hi style="b">Action on HC</hi> to update the release documentation from the release minutes.</item>
+<item><hi style="b">Action</hi> on <hi style="b">MS, HC, RV</hi>: Circulate (to TEI Council) a draft proposal to the TEI Board for funds for consulting help (particularly with accessibility) of the Guidelines <hi style="b">by Tue 01 Dec 20</hi>.</item>
+<item><hi style="b">Action on HC or EB</hi> to prod James Cummings about <ref target="https://github.com/TEIC/TEI/issues/1632">#1632</ref> if he wants to develop it. If not close <ref target="https://github.com/TEIC/TEI/issues/1632">#1632</ref>  and continue work in <ref target="https://github.com/TEIC/TEI/issues/1928">#1928</ref>.</item>
+<item><hi style="b">Action on EB, MS, and PS</hi> to review <ref target="https://github.com/TEIC/TEI/issues/1957">https://github.com/TEIC/TEI/issues/1957</ref>.</item>
+<item><hi style="b">Action on JL</hi> to close issue <ref target="https://github.com/TEIC/TEI/issues/2029">#2029</ref> if LB hasn’t responded / invite LB to respond in closing.</item>
+</list></div></div></body><!-- #post-## --></text></TEI>

@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/home/lou/Public/TEI/TEICSS/tei.css" type="text/css"
+ ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:t="http://www.tei-c.org/ns/1.0" n="2017-03">
+ <teiHeader>
+  <fileDesc>
+   <titleStmt>
+    <title>Minutes of the TEI Technical Council</title>
+    <meeting n="2017-03" when="2017-03-30">TEI Technical Council online meeting : <date>30 March
+     2017</date></meeting>
+   </titleStmt>
+   <publicationStmt>
+    <distributor>TEI Website</distributor>
+    <idno>TCM089</idno>
+   </publicationStmt>
+   <sourceDesc>
+    <p>Retagged from a WordPress HTML file</p>
+   </sourceDesc>
+  </fileDesc>
+  <revisionDesc>
+   <change when="2023-04-25">Archival header confected</change>
+   <change>Extracted from Word Press article with id post-29028</change>
+  </revisionDesc>
+ </teiHeader>
+ <text>
+  <body>
+   
+
+    <p><hi style="b">Present</hi></p>
+    <p>Syd Bauman (SB)</p>
+    <p>Sarah Stanley (SS)</p>
+    <p>Hugh Cayless, chair (HC)</p>
+    <p>Elli Mylonas (EM)</p>
+    <p>Martina Scholger (MS)</p>
+    <p>Elisa Beshero-Bondar (EB)</p>
+    <p>Peter Stadler (PS)</p>
+    <p>Raff Viglianti (RV)</p>
+    <p>Alex Bia (AB)</p>
+    <p><hi style="b">Apologies</hi></p>
+    <p>James Cummings (JC)</p>
+    <p>Magdalena Turska (MT)</p>
+    <p>Meeting began @ ~13:05Z, ended @ 14:29Z.</p>
+    <div type="h2">
+     <head>Agenda</head>
+     <p>The theme for this meeting is putting to bed long-term, difficult tickets. We will start
+      with <ref target="https://github.com/TEIC/TEI/issues/1431">#1431 </ref>, and progress to <ref
+      target="https://github.com/TEIC/TEI/issues/1453">#1453 </ref>if we don’t run out of time. We
+      should also briefly discuss whether to do an XSLT release and accompanying oXygen plugin
+      release soon, to get in front of the new oXygen release.</p>
+     <div type="h3">
+      <head>Brief reports</head>
+      <list style="ul">
+       <item>Proposal for a new “graph technologies” SIG <list style="ul">
+        <item>PS reports some folks approached him saying they want to make a Graph Technologies
+         SIG, the idea (perhaps) being to represent TEI information in a graph.</item>
+        <item>Wait for proposal to read and decide</item>
+        </list> </item>
+       <item>Any objections to Lou Burnard’s proposals for ch. 23: <ref
+        target="http://lists.lists.tei-c.org/pipermail/tei-council/2017/024202.html"
+        >http://lists.lists.tei-c.org/pipermail/tei-council/2017/024202.html </ref>? Lou wants to
+        proceed on the green tickets soon. <list style="ul">
+        <item>Council has until Thursday April 6 13:00Z to read over Lou’s green tickets and
+         comment. Then he should go ahead and make changes, taking comments into account.</item>
+        </list> </item>
+      </list>
+     </div>
+    </div>
+   
+   
+    <div type="h3">
+     <head>Clarify how to encode short-form citations #1431</head>
+     <p>Bibliography is hard.</p>
+     <p>The consensus from the ticket seems to favor using <gi>bibl</gi> with @id to encode your
+      long-form “back of the book” bibliographic entries, and then to use <gi>ref</gi> and @target
+      to wrap short citations in the text. This isn’t the only type of short-form citation that
+      occurs though. Short-form citations can occur in the absence of a fuller bibliographic
+      reference. Short citations might refer to abstract “works” rather than to specific edition
+      (e.g. <hi style="i">Hamlet</hi>, <hi style="i">Hom. Il.</hi>) or they might refer to a
+      specific edition using a conventional syntax (e.g. <hi style="i">IG I³ 40</hi>). All of these
+      might occur in a text without a ‘referent’ elsewhere in the text. The suggestion has been made
+      that these kinds of bibliographic references are akin to the kind of name—named entity
+      relationships that occur with <gi>persName</gi> and <gi>person</gi> or <gi>placeName</gi> and
+      <gi>place</gi>, and that therefore @ref might profitably be added to <gi>bibl</gi> to
+      accommodate this kind of relationship. Others argue that @corresp is a satisfactory way to do
+      this. But, perhaps crucially, the referenced entity might not be defined in TEI. &lt;bibl
+      ref=”<ref target="http://catalog.perseus.org/catalog/urn:cts:greekLit:tlg0012.tlg001"
+      >http://catalog.perseus.org/catalog/urn:cts:greekLit:tlg0012.tlg001</ref>“&gt;Hom.
+      Il.&lt;/bibl&gt; might be a reasonable thing to do, for example. Others argue that &lt;ref
+      target=”<ref target="http://catalog.perseus.org/catalog/urn:cts:greekLit:tlg0012.tlg001"
+      >http://catalog.perseus.org/catalog/urn:cts:greekLit:tlg0012.tlg001</ref>“&gt;<gi>bibl</gi>Hom.
+      Il.&lt;/bibl&gt;&lt;/ref&gt; is the right thing to do. The semantics of @target don’t seem to
+      me to work for this, but we ultimately define those semantics, so…</p>
+     <p>I’ve outlined my understanding of the semantics of the relevant attributes below:</p>
+     <p><hi style="strong">@ref encodes the relationship: <gi>name</gi> refers to &lt;named
+      entity&gt;</hi></p>
+     <p><hi style="strong">@target encodes the relationship: <gi>reference</gi> points to
+      <gi>target</gi></hi></p>
+     <p><hi style="strong">@corresp encodes the relationship: <gi>element</gi> is aligned with, or
+      defines something related to <gi>element</gi></hi></p>
+     <p>Council homework is to read this, and the discussion on the issue, and bring an opinion to
+      the discussion.</p>
+     <p><hi style="b">Discussion</hi></p>
+     <p>Should we put @ref on <gi>bibl</gi>?</p>
+     <p>Assume we have decided that a short form citation is a <gi>bibl</gi>, right? If you want a
+      <gi>citedRange</gi>, yes.</p>
+     <p>Case 1: standard bibliography in a journal article</p>
+     <p>Need to clarify use of <gi>ref</gi> or <gi>bibl</gi> + <gi>ref</gi> +
+      <gi>citedRange</gi></p>
+     <p>Case 2: want to link a short citation to a canonical identifier for the work</p>
+     <p>Bibliography, like health care, is hard</p>
+     <p>@ref vs @corresp: What is the difference?</p>
+     <p>@corresp: Is it like @like or @sameAs?</p>
+     <p>Recommend that short form citations that have a cited range, should be done as <gi>bibl</gi>
+      so <gi>citedRange</gi> be added. If the citation is a <gi>ref</gi> it can be wrapped in the
+      <gi>bibl</gi>.</p>
+     <p>Recommend adding @ref to <gi>bibl</gi> – this should be used to point to ??</p>
+     <p>Discuss adding @cRef / @target which may be parallel and often mutually exclusive. NOPE</p>
+     <p>Reluctance to add @cRef .</p>
+     <p>If short form citation is pointing to longer citation in same universe, what do we
+      recommend?</p>
+     <list style="ul">
+      <item>@ref seems to be useful to point to authority or more canonical object (linked data ish
+       link)</item>
+      <item>@corresp could be used to point to longer form of same citation, Case 1 above.</item>
+      <item>&lt;ref target&gt; or &lt;ptr target/&gt; inside the <gi>bibl</gi></item>
+     </list>
+     <p>Martina’s rdf ex. In the guidelines : @ref on <gi>bibl</gi> to point to RDF file</p>
+     <p>What if we want to point to RDF, AND to long-form bibliography entry:</p>
+     <p>@ref should be able to coexist with element <gi>ref</gi> Or handle with <gi>ref</gi> and
+      <gi>ptr</gi> </p>
+     <p>Syd: Demonstrate each example twice:</p>
+     <p>Once with attributes: @ref and @corresp A second with a <gi>ptr</gi> child using @type
+      attributes to explain what’s going on</p>
+    </div>
+   
+    <div type="h3">
+     <head><gi>path</gi> should exist alongside <gi>zone</gi> for non-closed areas in
+      facsimile #1453</head>
+     <p>Martin Holmes asked for a @path on <gi>zone</gi> to express things in images (especially
+      maps) that aren’t boxes (roads, river courses, etc.). We said <gi>zone</gi> has area, and
+      therefore @path wouldn’t make sense. Martin then asked for <gi>path</gi> (based on Council’s
+      feedback). We weren’t happy with that either. This hits right at the heart of where the
+      boundaries of TEI are. Should we add <gi>path</gi>? Should we back off from implementing our
+      own version of SVG, but allow @path on <gi>zone</gi>? [Note: I’m in favor of something like
+      this that allows @path or <gi>path</gi>, with this understanding: TEI isn’t doing the drawing
+      in the coordinate system, but it provides storage of needed descriptive information, which can
+      later be readily processed by transformation into SVG (or KML, etc).Apologies if this is a bad
+      analogy, but we store URLs in TEI that are not activated as “hyperlinks” until they are
+      transformed or translated into something readable by a web browser. The function of the TEI
+      here seems to be to hold text-encoded data that describes and can helpfully be processed and
+      translated into other formats.]Should we allow neither? Should we recommend using SVG and
+      specify how?</p>
+     <p>Zotero ticket brief discussion <ref target="https://github.com/TEIC/TEI/issues/377"
+      >377</ref></p>
+     <p>AOB: weigh in on Raff’s email about RomaJS</p>
+    </div>
+   <div type="h3">
+    <head>Use Cases and Examples</head>
+    <p>Elli: This is my Zotero approach:</p>
+    <p>&lt;bibl xml:id = “b1” &gt;</p>
+    <p>&lt;ptr type = “biblItem” target = “zotero:IIP-043.xml” /&gt; &lt;!– “iip-043.xml” is the
+     zotero “loc in archive” field value. — &gt;</p>
+    <p>&lt;biblScope unit = “page” &gt; <hi style="strong">92</hi> &lt;/biblScope&gt;</p>
+    <p>&lt;/bibl&gt;</p>
+    <p>Element <gi>ref</gi> or <gi>ptr</gi> isn’t<hi style="b"> necessarily</hi> good for short form
+     to point to long-form.</p>
+    <p>Elisa: my approach for pointing to a long-form listBibl in a project directory:</p>
+    <p>&lt;bibl corresp = “#IDElsewhereinProsopDoc” &gt;</p>
+    <p><gi>author</gi>Joe Writer&lt;/author&gt;</p>
+    <p>&lt;biblScope unit = “page” &gt; <hi style="strong">92</hi> &lt;/biblScope&gt;</p>
+    <p>&lt;/bibl&gt;</p>
+    <p>(Why NOT use @ref for the above?)</p>
+    <p>Martina (TBC):</p>
+    <p>&lt;bibl
+     ref=”sker:L10002″&gt;<gi>title</gi>Wake&lt;/title&gt;<gi>biblScope</gi>11&lt;/biblScope&gt;&lt;/bibl&gt;</p>
+    <p>&lt;rdf:Description rdf:about=”http://gams.uni-graz.at/sker/L10002″&gt;</p>
+    <p>&lt;owl:sameAs rdf:resource=”http://d-nb.info/900591765″ /&gt;</p>
+    <p>&lt;dc:title rdf:datatype=”http://www.w3.org/2001/XMLSchema#string”&gt;Finnegans
+     wake&lt;/dc:title&gt;</p>
+    <p>&lt;!– more information here –&gt;.</p>
+    <p>&lt;bibo:authorList&gt;</p>
+    <p>&lt;rdf:Description rdf:about=”http://d-nb.info/gnd/118558501″&gt;</p>
+    <p>&lt;foaf:name&gt;Joyce, James&lt;/foaf:name&gt;</p>
+    <p>&lt;/rdf:Description&gt;</p>
+    <p>&lt;/bibo:authorList&gt;</p>
+    <p>&lt;/rdf:Description&gt;</p>
+    <p>Hugh:</p>
+    <p><hi style="b">Use Case 1</hi>: I have a full bibliography at the end of my TEI document and I
+     have short citations in the text.</p>
+    <p>&lt;bibl xml:id=”tarrant2016″&gt;<gi>author</gi>Tarrant, R. J.&lt;/author&gt;
+     <gi>title</gi>Texts, Editors, and Readers: Methods and Problems in Latin Textual
+     Criticism&lt;/title&gt;. <gi>pubPlace</gi>Cambridge&lt;/pubPlace&gt;,
+     <gi>publisher</gi>Cambridge University Press&lt;/publisher&gt;,<gi>date</gi>
+     2016&lt;/date&gt;.&lt;/bibl&gt;</p>
+    <p>And in the text, current recommended practice would have:</p>
+    <p><gi>bibl</gi>&lt;ref target=”#tarrant2016″&gt;Tarrant (2016)&lt;/ref&gt;
+     <gi>citedRange</gi>ch. 7&lt;/citedRange&gt;&lt;/bibl&gt;</p>
+    <p>I think equally valid, and maybe superior, would be:</p>
+    <p>&lt;bibl corresp=”#tarrant2016″&gt;Tarrant (2016) <gi>citedRange</gi>ch.
+     7&lt;/citedRange&gt;&lt;/bibl&gt;</p>
+    <p>There is an open question whether @ref on <gi>bibl</gi>, if it were available, would be
+     better/equivalent.</p>
+    <p><hi style="b">Use Case 2</hi>: I have no bibliography as such, but a bunch of citations in my
+     text to canonical works.</p>
+    <p>&lt;bibl ref=”urn:cts:latinLit:phi0474.phi013″&gt;<gi>title</gi>in Cat.&lt;/title&gt;
+     <gi>citedRange</gi>3.16&lt;/citedRange&gt;&lt;/bibl&gt;</p>
+    <p>&lt;bibl ref=”urn:cts:greekLit:tlg0012.tlg002″&gt;Hom. α <gi>citedRange</gi>ll.
+     1–10&lt;/citedRange&gt;&lt;/bibl&gt;</p>
+    <p>The URIs in the form ‘urn:cts:etc.etc’ are identifiers for the works referenced here—not to a
+     specific edition. This is like Martina’s example.</p>
+    <p><hi style="b">Use Case 3</hi>: I might equally well have a full bibliography that lists
+     editions used, but want to tie the edition to a canonical identifier:</p>
+    <p>&lt;bibl ref=”urn:cts:latinLit:phi0474.phi013″&gt;<gi>author</gi>Cicero, M.
+     T.&lt;/author&gt;, &amp; <gi>author</gi>Dyck, A. R.&lt;/author&gt;
+     (<gi>date</gi>2008&lt;/date&gt;). <gi>title</gi>Catilinarians&lt;/title&gt;.
+     <gi>pubPlace</gi>Cambridge, UK&lt;/pubPlace&gt;: <gi>publisher</gi>Cambridge University
+     Press&lt;/publisher&gt;.&lt;/bibl&gt;</p>
+    <p>Syd argued during the meeting that I probably want to do this with a <gi>ptr</gi> inside the
+     <gi>bibl</gi> instead. My discomfort with that is that I don’t consider the reference URI to be
+     a part of the bibliographic entry, but instead a useful way of identifying it that ties it to
+     an authority system.</p>
+    <p><hi style="b">JC (after the meeting): Did people bring up why @ref on <gi>title</gi> isn’t
+     good for </hi><hi style="b">Use Case 2</hi> [Note: You’ll notice Use Case 2, part 2 has no
+     title, as such. Yes, Classicists are problem children. I think the answer is that since title
+     will not always work, we might be better off standardizing on bibl/@ref because it’s the
+     container of the citation.]<hi style="b"> &amp; 3? To me Use Case 1, I think @corresp is fine.
+     But </hi><hi style="b">another option</hi> [Note: Is that a less invasive change than allowing
+     @ref on bibl?] [Note: That seems less invasive a change, because <gi>ref</gi> is for
+     references, and the only reason <gi>citedRange</gi> wasn’t in it is that we created
+     <gi>citedRange</gi> later.]<hi style="b"> is allowing <gi>citedRange</gi> and friends inside
+     <gi>ref</gi>. I.e.</hi></p>
+    <p><hi style="b">&lt;ref type=”bibRef” target=”#tarrant2016″&gt;Tarrant (2016)
+     <gi>citedRange</gi>ch. 7&lt;/citedRange&gt;&lt;/ref&gt;</hi></p>
+    <p><hi style="b"><gi>ref</gi> is for references, short form bibliographic references are
+     references, QED: Use <gi>ref</gi> for short form bibliographic references. 😉 </hi>[Note:
+     That’s fine *if* your model for your text considers the short form citations to be pointers to
+     the long form. I think that’s valid, but I also think it’s valid to model citations as names of
+     Works. Sometimes they’re pointers, and sometimes they’re more like <gi>rs</gi>. I don’t think
+     there’s a single, simple answer to the problem. I think we need to enumerate the use cases and
+     exemplify them in the GLs] [Note: I think short-form citations are _always_ pointers to a long
+     form even if that long form is some imaginary never expressed concept. But even if it is a
+     reference for which the encoder is _not_ pointing to something then it is still a reference. If
+     I put <gi>ref</gi>Cummings, 2009&lt;/ref&gt; and no other bibliography or list of works cited
+     then it is still a reference. I just think people shouldn’t use <gi>bibl</gi> for things that
+     are full bibliographic entries and use <gi>ref</gi> when they refer to things. If I was arguing
+     for standardisation that is the direction I’d encourage. ;-)]</p>
+   </div>
+  </body>
+ </text>
+</TEI>

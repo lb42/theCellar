@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/home/lou/Public/TEI/TEICSS/tei.css" type="text/css"
+ ?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:t="http://www.tei-c.org/ns/1.0" n="2018-10"><teiHeader><fileDesc><titleStmt><title>Minutes of the TEI Technical Council</title><meeting n="2018-10" when="2018-10-22">TEI Technical Council online
+     meeting : <date>22 October 2018</date></meeting></titleStmt><publicationStmt><distributor>TEI Website</distributor><idno>TCM107</idno></publicationStmt><sourceDesc><p>Retagged from a WordPress HTML file</p></sourceDesc></fileDesc><revisionDesc><change when="2023-04-25">Archival header confected</change><change>Extracted from Word Press article with id post-29574</change></revisionDesc></teiHeader><text><body><div><p><hi style="strong">Meeting time:</hi></p><list style="ul">
+<item>09:00-10:30 EDT, 14-15:30 BST, 15:00-15:30 CEST</item>
+<item>Started @ ~13:06Z; ended @ 14:29Z</item>
+</list><p><hi style="strong">Present:</hi></p><list style="ul">
+<item>Syd Bauman (SB)</item>
+<item>Elisa Beshero-Bondar (EB)</item>
+<item>Vanessa Bigot Juloux (VBJ)</item>
+<item>Hugh Cayless (HC)</item>
+<item>James Cummings (JC)</item>
+<item>Elli Mylonas (EM) leaves @ 14:00Z</item>
+<item>Martina Scholger (MS)</item>
+<item>Peter Stadler (PS)</item>
+<item>Sarah Stanley (SS)</item>
+<item>Magdalena Turska (MT)</item>
+<item>Raff Viglianti (RV) joins 13:10Z</item>
+</list><p><hi style="strong">Apologies/Not Present:</hi></p><list style="ul">
+<item>Alex Bia</item>
+</list><div type="h2"><head>Spring F2F</head><list style="ul">
+<item>Dates: We’re liking May 2–13. (May 9 and 11 are bad for PS)</item>
+<item>EM: Brown University, Providence
+<list style="ul">
+<item>Long weekend Feb. 16–19</item>
+<item>Spring break Mar. 23–31 (German DHd conference Mar. 25–29, PS + MS probably unavailable)</item>
+<item>May is ok here as well.</item>
+</list>
+</item>
+<item>JC: Newcastle University
+<list style="ul">
+<item>TEI Workshop 01–05 April? (So week following that: 06–09ish April?) April is not good for VBJ. What about week before the workshop (end of March?) JC needs to check availability of buildings, etc. depending on dates. Could do May as well.</item>
+</list>
+</item>
+<item>RV: Folger Library, Washington
+<list style="ul">
+<item>April? or Late March. Would May work?</item>
+<item>Folger is a very cool place. Big TEI users. Joe Wicentowski is also in DC.</item>
+</list>
+</item>
+<item>MT: Warsaw: Two venues possible in the city center, University of Warsaw (Laboratory of Digital Humanities) or Polish Academy of Science (Centre of Digital Humanities at Literary Studies Institute).
+<list style="ul">
+<item>May</item>
+</list>
+</item>
+<item><hi style="b">Action on MS</hi>: set up a doodle for 02 May to 16 May.</item>
+</list></div><div type="h2"><head>F2F meeting Graz</head><list style="ul">
+<item>TEI Conference will be Mon 16 to Fri 20 Sep 2019, Workshops will be Mon &amp; Tue.</item>
+<item>Plan for either Fri.–Sun. or Sat.–Mon. before (overlapping with first day of workshops)
+<list style="ul">
+<item>Easier for EB and others teaching if Sat.–Mon for Council meetings.</item>
+</list>
+</item>
+<item>Do we need an official policy for having people on Council meetings? Consensus seems to be that ad hoc invitations are fine.</item>
+</list></div><div type="h2"><head>Monthly date for the teleconference</head><list style="ul">
+<item>Alternating e.g. 3rd Monday (December 17, 13:00Z) and 3rd Friday (November 16, 20Z) a month? VBJ (and RV) will not be available on Nov. 16th.</item>
+<item>Doodle every month? —no</item>
+</list></div><div type="h2"><head>Monthly schedule for Stylesheets group teleconferences</head><list style="ul">
+<item>Used to be one week after the Council meeting.</item>
+<item>We’ll shoot for opposite of Council meeting — those months when Council is on Mon 13Z, we’ll meet on Fri 20Z; when Council meets Fri 20Z, we’ll meet Mon 13Z.</item>
+</list></div><div type="h2"><head>TEI Council chair elections</head><list style="ul">
+<item>See bylaws: <ref target="https://wiki.tei-c.org/index.php/TEI-Council-FAQ#How_is_the_TEI_Technical_Council_Chair_elected.3F">https://wiki.tei-c.org/index.php/TEI-Council-FAQ#How_is_the_TEI_Technical_Council_Chair_elected.3F</ref></item>
+<item>“Up until around the last Friday in November those who are Council  members for next year will consider whether they want to run to be Chair of the TEI Technical Council. Before that date those intending to stand should send a statement of some sort to the Council mailing list detailing why they think the council members should vote for them.”</item>
+<item>For reference the bylaws say only:
+<list style="ul">
+<item>The Chair of the Technical Council shall be elected by the voting Members of the TEI-C Technical Council from its membership and shall serve as the chief technical officer of the Consortium. If no Technical Council Member is able or willing to assume the chair, the Technical Council may request the Board of Directors to second one of its elected members to the role, or it may nominate a non-elected individual.</item>
+<item>The Chair of the Technical Council shall be an ex-officio non-voting Director, responsible to the Consortium for its technical activities, notably the maintenance and development of the Guidelines.</item>
+<item>The Council Chair shall, if present, preside at all meetings of the Technical Council and report on its activities to the Board of Directors and at Meetings of the Members.</item>
+</list>
+</item>
+</list></div><div type="h2"><head>Restructuring Chapter 11</head><list style="ul">
+<item>MS: Meeting with Gerrit Brüning (new convener of MS SIG)</item>
+<item>Gerrit Brüning and Stephen McCormick are</item>
+<item>working on de-emphasizing the heavy genetic emphasis in that chapter, see <ref target="https://github.com/SteveWLU/TEI-MS-SIG/blob/master/ch-11-issues.md">https://github.com/SteveWLU/TEI-MS-SIG/blob/master/ch-11-issues.md</ref>.</item>
+<item>Workflow for restructuring
+<list style="ul">
+<item>Structuring of the chapter in TEI-MS-SIG repo.</item>
+<item>Report on ticket (link to ticket?).</item>
+<item>Work in a branch: How do we work together with non-Council members on a branch? Or just multiple people working together on a branch. Need protocols? Mandatory pull requests to dev. Pull requests should always be the way we merge branches to dev.</item>
+<item>They should try to preserve division xml:id’s even when moving material around.</item>
+<item>Request Jenkins build for the branch — because the chapter changes will be major.
+<list style="ul">
+<item>PS: Travis is building every branch automatically — and you can see if and where the tests fail, but you don’t get the build artifacts.</item>
+<item>If someone asks PS to check a dedicated branch on Paderborn Jenkins, that’s okay with him.
+<list style="ul">
+<item>Same for MITH Jenkins (RV)</item>
+</list>
+</item>
+</list>
+</item>
+<item>VBJ: Adding examples on ancient Near Eastern cuneiform tablets.</item>
+</list>
+</item>
+</list></div><div type="h2"><head>Tickets from Tokyo</head><list style="ul">
+<item><ref target="https://github.com/TEIC/TEI/issues/1795">https://github.com/TEIC/TEI/issues/1795</ref> – Language of Schematron messages where @role=”nonfatal” and @role=”warning”
+<list style="ul">
+<item>EB: Related: Issue with merging <ref target="https://github.com/TEIC/TEI/issues/1621">https://github.com/TEIC/TEI/issues/1621</ref> into dev branch — apparently something breaks the Jenkins build — investigating. EB: to resolve before next Council meeting.</item>
+</list>
+</item>
+<item><ref target="https://github.com/TEIC/TEI/issues/1707">https://github.com/TEIC/TEI/issues/1707</ref>: EB: quick update on measurement: Naoki Kokaze’s new sample code based on Tokyo decisions.
+<list style="ul">
+<item>Adding discussion to ticket: We need to make really clear that the @formula takes a value in @fromUnit and converts it to @toUnit (and not the other way around). And be really clear to disambiguate @from and @to (which are dates) from @fromUnit and @toUnit. We should present this is as a template for a function, rather than the function itself.</item>
+<item>Values should be pulled from @quantity on <gi>unit</gi> element.</item>
+</list>
+</item>
+<item><ref target="https://github.com/TEIC/TEI/issues/1805">https://github.com/TEIC/TEI/issues/1805</ref>: Suggestion for new <gi>uniHan</gi> element</item>
+<item><ref target="https://github.com/TEIC/TEI/issues/1756">https://github.com/TEIC/TEI/issues/1756</ref>: event should have <gi>ptr</gi> and <gi>idno</gi> in its content model
+<list style="ul">
+<item>JC will update this issue before next meeting.</item>
+<item>VBJ: want to check with my TEI preliminary hermeneutics of action since I shall be able to add further examples since I’m studying action (person/action/event/place).</item>
+</list>
+</item>
+</list></div><div type="h2"><head>AOB</head><list style="ul">
+<item>SB, HC, &amp; MT need 3 mins (after conference call is fine) to schedule a meeting to work on <gi>standoff</gi> proposal.</item>
+<item>TEI workshop for ancient Near Eastern (ANE) scholars during the international conference of Assyriologists in July (Paris) — <ref target="https://iaassyriology.com/past-rencontres/">https://iaassyriology.com/past-rencontres/ </ref>—scheduled for the next monthly meeting.</item>
+</list></div><div type="h2"><head>Ticket triage</head><list style="ul">
+<item>please add yourselves</item>
+</list><table>
+
+<row>
+<cell><hi style="b">October 2018</hi></cell>
+<cell><hi style="b">MT</hi></cell>
+</row>
+<row>
+<cell><hi style="b">November 2018</hi></cell>
+<cell><hi style="b">SS</hi></cell>
+</row>
+<row>
+<cell><hi style="b">December 2018</hi></cell>
+<cell><hi style="b">AB</hi></cell>
+</row>
+<row>
+<cell><hi style="b">January 2019</hi></cell>
+<cell><hi style="b">MS</hi></cell>
+</row>
+<row>
+<cell><hi style="b">February 2019</hi></cell>
+<cell><hi style="b">JC</hi></cell>
+</row>
+<row>
+<cell><hi style="b">March 2019</hi></cell>
+<cell><hi style="b">SB</hi></cell>
+</row>
+<row>
+<cell><hi style="b">April 2019</hi></cell>
+<cell><hi style="b">RV</hi></cell>
+</row>
+<row>
+<cell><hi style="b">May 2019</hi></cell>
+<cell><hi style="b">SS</hi></cell>
+</row>
+<row>
+<cell><hi style="b">June 2019</hi></cell>
+<cell><hi style="b">SB</hi></cell>
+</row>
+<row>
+<cell><hi style="b">July 2019</hi></cell>
+<cell><hi style="b">EB</hi></cell>
+</row>
+<row>
+<cell><hi style="b">August 2019</hi></cell>
+<cell><hi style="b">HC</hi></cell>
+</row>
+<row>
+<cell><hi style="b">September 2019</hi></cell>
+<cell><hi style="b">EM</hi></cell>
+</row>
+<row>
+<cell><hi style="b">October 2019</hi></cell>
+<cell><hi style="b">MT</hi></cell>
+</row>
+
+</table><p> </p></div></div></body><!-- #post-## --></text></TEI>

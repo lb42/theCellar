@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/home/lou/Public/TEI/TEICSS/tei.css" type="text/css"
+ ?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:t="http://www.tei-c.org/ns/1.0" n="2014-12"><teiHeader><fileDesc><titleStmt><title>Minutes of the TEI Technical Council</title><meeting n="2014-12" when="2014-12-05">TEI Technical Council online
+     meeting : <date>5 December 2014</date></meeting></titleStmt><publicationStmt><distributor>TEI Website</distributor><idno>TCM064</idno></publicationStmt><sourceDesc><p>Retagged from a WordPress HTML file</p></sourceDesc></fileDesc><revisionDesc><change when="2023-04-27">Archival header confected</change><change>Extracted from Word Press article with id post-21920</change></revisionDesc></teiHeader><text><body><div>
+		
+		<!-- <div class="teiheader"><filedesc><titlestmt><title><date when="2014-12-05">5 December 2014</date></title><author>TEI Technical Council</author><respstmt><resp>Initial Encoding</resp><name>James Cummings</name></respstmt></titlestmt><editionstmt><edition><date when="2014-12-05">5 December 2014 </date></edition></editionstmt><publicationstmt>
+<p>Freely available under a CC+By licence</p>
+</publicationstmt><sourcedesc><p>Converted from a Google Doc that all Council Members edited during the meeting.</p>
+<p>            </sourcedesc></filedesc></div> -->
+<p><hi style="bold">Participants: </hi>Syd Bauman (SB), Lou Burnard (LB), Hugh Cayless (HC), James Cummings (JC)
+                (Chair), Martin Holmes (MH), Elli Mylonas (EM, 14:10Z), Paul F Schaffner (PFS), Peter W Stadler (PWS), Stefanie
+                Gehrke (SG), Sebastian Rahtz (SR)</p>
+<p><hi style="bold">Apologies:</hi> Fabio Ciotti (FC)</p>
+<div><head>
+                Actions</head>
+<list style="ul">
+<item><hi style="bold"> Action: LB to draft prose for correspDesc addtions to header chapter and report back to
+                            Council </hi></item>
+<item><hi style="bold">PWS to report back on Standoff progress</hi></item>
+<item><hi style="bold">Action: All to read the msPart proposal and discuss them on the mailing list.
+                        </hi></item>
+<item><hi style="bold">Action on SG to badger everyone to do read msPart proposal.</hi></item>
+<item><hi style="bold">Action on Council to discuss global @resp on the mailing list before Tuesday;</hi></item>
+<item><hi style="bold"> then MH will go ahead with implementation.</hi><hi style="bold">Action on PWS to fix a date by which the <gi>correspDesc</gi> proposal should be
+                            implemented and report to the Council list.</hi></item>
+<item><hi style="bold">Action on MH to report to Council within a month or so about oxygen-tei framework building
+                            and next release</hi></item>
+<item><hi style="bold">Action on all mentors to document their experiences and what they learn on the wiki.
+                        </hi></item>
+<item><hi style="bold">Action on JC to officially introduce mentors to mentorees on Council. [DONE]
+                        </hi></item>
+<item><hi style="bold">Action on MH to post to Council list with a set of links to helpful documents. [DONE]
+                        </hi></item>
+<item><hi style="bold">Action: JC to prod Object working group again. [DONE]</hi></item>
+<item><hi style="bold">Action: JC to set up Council Chair elections, get a returning officer, etc. [DONE]</hi></item>
+<item><hi style="bold">Action on JC: to post a Doodle poll for the next conference within a week. [DONE]</hi></item>
+</list>
+</div>
+<div><head>
+                Minutes of Raleigh Face to Face Meeting</head>
+<p><ref target="/Activities/Council/Meetings/tcm63.xml">http://www.tei-c.org/Activities/Council/Meetings/tcm63.xml</ref></p>
+<list style="ul">
+<item>Review of Actions (See minutes at <ref target="/Activities/Council/Meetings/tcm63.xml">Minutes from F2F</ref>) <list style="ul">
+<item>JC reviews actions</item>
+<item>LB gave an update on TEI-ODDS and Pure ODD development</item>
+</list>
+</item>
+</list>
+</div>
+<div><head>
+                CorrespDesc</head>
+<p> PWS provided an update on <ref target="https://sourceforge.net/p/tei/feature-requests/510/">correspDesc
+                        ticket</ref><list style="ul">
+<item>Specification of ODD proposal updated <ref target="http://htmlpreview.github.io/?https://github.com/TEI-Correspondence-SIG/correspDesc/blob/master/doc/proposal.html">http://htmlpreview.github.io/?https://github.com/TEI-Correspondence-SIG/correspDesc/blob/master/doc/proposal.html</ref><ref target="https://github.com/TEI-Correspondence-SIG/correspDesc">https://github.com/TEI-Correspondence-SIG/correspDesc</ref> based on feedback from last Council
+                            meeting. Decided not to allow nesting. Example use-cases have been collected and are available on
+                            GitHub <ref target="https://github.com/TEI-Correspondence-SIG/correspDesc/tree/master/examples">https://github.com/TEI-Correspondence-SIG/correspDesc/tree/master/examples</ref>. Please all take
+                            a look at the examples and the specification and make sure they’re in line with what we discussed at
+                            Duke. <gi>correspDesc</gi> may be added to att.typed and <gi>correspAction</gi> to att.sortable. We
+                            agree with this. The chapter prose needs to be added to the Header chapter; this should probably be
+                            drafted by someone else, so that we can see if the result matches the intentions of the proposers.
+                            There is some text in the current ODD proposal, but it needs to be reworked. LB is willing to try this
+                            in the new year.</item>
+<item><hi style="bold">Action: LB to draft prose for correspDesc addtions to header chapter and report back
+                                to Council</hi></item>
+</list></p>
+</div>
+<div><head>
+                Standoff</head>
+<p>PWS provided an update on <ref target="https://sourceforge.net/p/tei/feature-requests/378/">standoff proposal
+                        ticket</ref><list style="ul">
+<item>Nothing has happened recently; PWS tried to push the group to move forward, and has arranged a
+                            conference call with Laurent Romary, who has some examples.</item>
+<item>LaurentR has created a GitHub project. It’s just a stub right now.</item>
+<item>This is very distinct from the <gi>xenoData</gi> proposal, and should not be confused with it.</item>
+<item>SB points out there has been some traffic on the Council list about it, which we should all read. MH
+                            comments this was very confusing.</item>
+<item><hi style="bold">PWS to report back on Standoff progress</hi></item>
+</list></p>
+</div>
+<div><head>
+                redefining msPart</head>
+<p> SG / PWS provided an update on <ref target="https://sourceforge.net/p/tei/feature-requests/505/">redefining
+                        msPart</ref> (SG / PWS)<list style="ul">
+<item>SG and PWS have created a document, checked the prose of the Guidelines, and have proposed some
+                            changes. A link to the proposal will be added to the ticket <ref target="https://docs.google.com/document/d/1bpBPughQp5sOoB13iTMHMeRd88Mjv12_eGZiQXY-na8/edit#heading=h.3tej6b6h331f">https://docs.google.com/document/d/1bpBPughQp5sOoB13iTMHMeRd88Mjv12_eGZiQXY-na8/edit#</ref></item>
+<item>SG has recently posted a ticket which arises out of this: <ref target="https://sourceforge.net/p/tei/feature-requests/538/">https://sourceforge.net/p/tei/feature-requests/538/</ref><lb/>This proposes fixing a bad example of a ‘composite’ MS.</item>
+<item><hi style="bold">Action: All to read the msPart proposal and discuss them on the mailing list.
+                            </hi></item>
+<item><hi style="bold">Action on SG to badger everyone to do read msPart proposal.</hi></item>
+</list></p>
+</div>
+<div><head>
+                Global @resp</head>
+<p>MH provided an update on <ref target="https://sourceforge.net/p/tei/feature-requests/443/">global @resp</ref>;
+                    detailed implementation plan is <ref target="https://wiki.tei-c.org/index.php/Global_@resp_attribute">on the
+                        wiki</ref> for everyone to check through before it’s done (MH). <hi style="bold">Action on Council to
+                        discuss it on the mailing list before Tuesday; then MH will go ahead with implementation.</hi> Minor bugs
+                    or typos can just be reported directly to MH. DONE 2014-12-10.</p>
+</div>
+<div><head>
+                Next Release</head>
+<p>Date of next release; release technician. <gi>correspDesc</gi> and global resp should be triggers for this. SR
+                    thinks the former will take quite a while. <hi style="bold">Action on PWS to fix a date by which the
+                        <gi>correspDesc</gi> proposal should be implemented and report to the Council list.</hi> Should be one of
+                    the new members, so we have new eyes on the documentation. SR asks about oxygen-tei framework building. MH
+                    will be looking at as part of the JTEI work. Will take at least as long as the addition of correspDesc. SB
+                    doesn’t think this should be release-blocking, but we must not lose track of it. <hi style="bold">Action on MH
+                        to report to Council within a month or so about oxygen-tei framework building and next release</hi></p>
+</div>
+<div><head>
+                Mentoring New Council Members</head>
+<p>Mentoring new members (MH) MH been working with SG; LB agreed to work with Stefan; SB to work with Raffaele; </p>
+<list style="ul">
+<item><hi style="bold">Action on all mentors to document their experiences and what they learn on the wiki.
+                            </hi></item>
+<item><hi style="bold">Action on JC to officially introduce mentors to mentorees on Council. </hi></item>
+<item><hi style="bold">Action on MH to post to Council list with a set of links to helpful documents. DONE
+                                2014-12-17.</hi></item>
+</list>
+</div>
+<div><head>
+                Object Working Group</head>
+<p>JC noted that he had prodded the Object working group<list style="ul">
+<item><hi style="bold">Action: JC to prod Object working group again. [JC has prodded OyvindE and TorstenS;
+                                no response yet]</hi></item>
+</list></p>
+</div>
+<div><head>
+                Election of Council Chair</head>
+<p>HC had declared and LB is also willing to serve and will post to the mailing list announcing his candidacy. <hi style="bold">Action: JC to set up Council Chair elections, get a returning officer, etc. [DONE]</hi></p>
+</div>
+<div><head>
+                AOB</head>
+<list style="ul">
+<item><hi style="bold">Action on JC: to post a Doodle poll for the next conference within a week. [DONE]</hi> We
+                        could attempt to schedule the whole of the year.</item>
+<item>Council thanked the departing members:<list style="ul">
+<item>EM, SR</item>
+</list></item>
+ <item>There was much weeping.</item> 
+</list>
+</div>
+	</div></body><!-- #post-## --></text></TEI>

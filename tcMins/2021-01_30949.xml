@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/home/lou/Public/TEI/TEICSS/tei.css" type="text/css"
+ ?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:t="http://www.tei-c.org/ns/1.0" n="2021-01"><teiHeader><fileDesc><titleStmt><title>Minutes of the TEI Technical Council</title><meeting n="2021-01" when="2021-01-14">TEI Technical Council online
+     meeting : <date>14 January 2021</date></meeting></titleStmt><publicationStmt><distributor>TEI Website</distributor><idno>TCM135</idno></publicationStmt><sourceDesc><p>Retagged from a WordPress HTML file</p></sourceDesc></fileDesc><revisionDesc><change when="2023-04-29">Archival header confected</change><change>Extracted from Word Press article with id post-30949</change></revisionDesc></teiHeader><text><body ><div><p><hi style="strong">Meeting Times</hi></p><table>
+
+<row>
+<cell><hi style="b">Friday, Jan 29</hi></cell>
+<cell>12:00–15:00 PST
+15:00–18:00 EST</cell>
+<cell>North American break-outs</cell>
+</row>
+<row>
+<cell><hi style="b">Saturday, Jan 30</hi></cell>
+<cell>10:00–13:00 CET</cell>
+<cell>European break-outs</cell>
+</row>
+<row>
+<cell><hi style="b">Saturday, Jan 30</hi></cell>
+<cell><p>06:00–10:00 PST</p>
+<p>09:00–13:00 EST</p>
+<p>15:00–19:00 CET</p></cell>
+<cell>Council meeting</cell>
+</row>
+
+</table><p><hi style="strong">Attendance</hi></p><table>
+
+<row>
+<cell>(all times UTC)</cell>
+<cell>Fri 29 Jan, 20:00–23:00</cell>
+<cell>Sat 30 Jan,
+10:00–13:00</cell>
+<cell>Sat 30 Jan,
+14:00–18:00</cell>
+</row>
+<row>
+<cell>Syd Bauman</cell>
+<cell>✓</cell>
+<cell>NA</cell>
+<cell>✓</cell>
+</row>
+<row>
+<cell>Helena Bermúdez Sabel</cell>
+<cell>NA</cell>
+<cell>✓</cell>
+<cell>✓</cell>
+</row>
+<row>
+<cell>Meaghan Brown</cell>
+<cell>excused</cell>
+<cell>NA</cell>
+<cell>✓</cell>
+</row>
+<row>
+<cell>Elisa Beshe­- ro-Bondar</cell>
+<cell>✓</cell>
+<cell>NA</cell>
+<cell>✓</cell>
+</row>
+<row>
+<cell>Hugh Cayless</cell>
+<cell>✓</cell>
+<cell>NA</cell>
+<cell>✓</cell>
+</row>
+<row>
+<cell>Nicholas Cole</cell>
+<cell>NA</cell>
+<cell>✓</cell>
+<cell>✓</cell>
+</row>
+<row>
+<cell>Janelle Jenstad</cell>
+<cell>✓</cell>
+<cell>NA</cell>
+<cell>✓</cell>
+</row>
+<row>
+<cell>Jessica H. Lu</cell>
+<cell>✓</cell>
+<cell>NA</cell>
+<cell>✓</cell>
+</row>
+<row>
+<cell>Martina Scholger</cell>
+<cell>NA</cell>
+<cell>✓</cell>
+<cell>✓</cell>
+</row>
+<row>
+<cell>Peter Stadler</cell>
+<cell>NA</cell>
+<cell>✓</cell>
+<cell>excused</cell>
+</row>
+<row>
+<cell>Magdalena Turska</cell>
+<cell>NA</cell>
+<cell>✓</cell>
+<cell>✓</cell>
+</row>
+<row>
+<cell>Raff Viglianti</cell>
+<cell>✓</cell>
+<cell>NA</cell>
+<cell>✓</cell>
+</row>
+
+</table><p> </p><div type="h2"><head>&gt; Friday, Jan 29 (North American break-outs)</head></div><div type="h2"><head>Review of <ref target="#pr">pull requests</ref></head></div><div type="h2"><head>Discussion of <ref target="#nd">issues with milestone “Guidelines 4.2.0” which need discussion</ref></head></div><div type="h2"><head>Milestones</head><list style="ul">
+<item>Milestone 4.2.0: <ref target="https://github.com/TEIC/TEI/issues?q=is%3Aopen+is%3Aissue+milestone%3A%22Guidelines+4.2.0%22">https://github.com/TEIC/TEI/issues?q=is%3Aopen+is%3Aissue+milestone%3A%22Guidelines+4.2.0%22</ref><hi style="b"> </hi></item>
+<item>Milestone Stylesheets: <ref target="https://github.com/TEIC/Stylesheets/milestone/9">https://github.com/TEIC/Stylesheets/milestone/9</ref></item>
+</list></div><div type="h2"><head>&gt; Saturday, Jan 30 (European break-outs)</head></div><div type="h2"><head>Continue with pull requests</head></div><div type="h2"><head>Continue with Guidelines issues 4.2.0</head></div><div type="h2"><head>&gt; Saturday, Jan 30 (Full Council)</head></div><div type="h2"><head>Ruby glosses</head><list style="ul">
+<item>Invited guests: Kiyonori Nagasaki, Satoru Nakamura, Kazuhiro Okada, and Martin Holmes</item>
+<item>Original issue: <ref target="https://github.com/TEIC/TEI/issues/2054">encoding of ruby glosses</ref></item>
+<item>Proposal from Martin Holmes: <ref target="https://hcmc.uvic.ca/~mholmes/rubyForTEI/ruby.html">https://hcmc.uvic.ca/~mholmes/rubyForTEI/ruby.html</ref>
+<list style="ul">
+<item>Seeking an easy, mechanically processible generic way to specify default values for place of <gi>rt</gi> (there’s a feature request for this: <ref target="https://github.com/TEIC/TEI/issues/2090">#2090</ref>)</item>
+</list>
+</item>
+<item>Current status of the implementation
+<list style="ul">
+<item>Specifications for <gi>ruby</gi>, <gi>rb</gi>, <gi>rt</gi> — done</item>
+<item>@place on <gi>ruby</gi> and <gi>rt</gi>, values ‘left’, ‘right’  — done for <gi>rt</gi></item>
+<item><gi>rt</gi>: @target OR @from and @to OR none — done</item>
+<item>nested <gi>ruby</gi> elements — done</item>
+<item><gi>ruby</gi> in <gi>w</gi> (add <gi>ruby</gi> to macro.phrase.seg) — open (this will be implemented with a later release).</item>
+<item>@hand on <gi>rt</gi> — done</item>
+<item><gi>rb</gi>, <gi>rt</gi> in att.typed — done, but no examples of usage yet</item>
+<item>Guidelines prose — decide where this should go. Options include:
+<list style="ul">
+<item>Core (around notes)</item>
+<item>Linking, Segmentation, and Alignment</item>
+<item>Simple Analytic Mechanisms (except this is usually analysis applied by the editing team, but <ref target="https://tei-c.org/release/doc/tei-p5-doc/en/html/AI.html#AIPC">see example</ref> of <gi>pc</gi> with manuscript image)</item>
+<item>Writing Modes</item>
+<item>Primary Sources</item>
+<item>A new chapter for East Asian texts? Or not, because this may be useful in many contexts</item>
+<item>MH suggests taking some time to identify areas. MB suggests we can have a poll on the ticket based on this to get everyone’s input: Indicate chapter and section range for each option (and whether just reference or full location). <hi style="b">Action on SB and MH</hi> to set this up. Responses to be due Tue 02-02.</item>
+<item>JL: call for more contextual introduction of ruby annotations from the East Asian community members involved. Ask Naoki Kokaze (via Kiyonori Nagasaki) for help.</item>
+<item>Stylesheets: try rendering ruby annotations as HTML 5.</item>
+</list>
+</item>
+</list>
+</item>
+<item>MH will build the Guidelines on UVic Jenkins; ask PS to build them on Paderborn Jenkins too.</item>
+</list></div><div type="h2"><head>February Release</head><list style="ul">
+<item> Ready to rock &amp; roll: we have release techs and dates.</item>
+<item><hi style="b">Action on MS</hi> (with NC): start release notes document <hi style="b">by </hi>2021-02-05.</item>
+</list></div><div type="h2"><head>Next VF2F meeting</head><list style="ul">
+<item>Short, in about two months. MS to set up a doodle poll.</item>
+<item>We will continue to have monthly meetings as scheduled.</item>
+</list></div><div type="h2"><head>General discussion on organization of Council meetings and Stylesheet meetings</head><list style="ul">
+<item>SB proposes to change the Stylesheets meeting to a “tactical technical work meeting” about working on tickets generally (including Stylesheets).</item>
+<item>Maybe we should still focus on Stylesheets?</item>
+<item>“Work shadowing” is helpful for new, less experienced Council members.</item>
+<item>Something that helps with less face-to-face work together.</item>
+<item>General agreement to defer further discussion and any changes until after our upcoming “short VF2F” in ~early February.</item>
+</list></div><div type="h2"><head>Elections</head><list style="ul">
+<item>Council should put forth a representative from the TEI Council to be on the committee.</item>
+<item>JJ volunteers</item>
+</list></div><div type="h2"><head>ODD processing and custom attributes (of existing names)</head><list style="ul">
+<item><ref target="https://github.com/TEIC/TEI/pull/2069">https://github.com/TEIC/TEI/pull/2069</ref>; <ref target="https://github.com/TEIC/Stylesheets/issues/237">https://github.com/TEIC/Stylesheets/issues/237</ref></item>
+<item>Does this need further discussion?
+<list style="ul">
+<item>Not at the moment, but there will be more discussion needed in future.</item>
+</list>
+</item>
+</list></div><div type="h2"><head>TEI Communications Officer</head><list style="ul">
+<item>Position has had several applications. Does anyone from the Council or Infrastructure group want to review the applications?</item>
+<item>Responsibilities of Communications officer (paid position): update wordpress, update Council and Board on website issues, send tweets, monitor twitter, and administer the mailing list.</item>
+</list></div><div type="h2"><head xml:id="pr">Pull requests (with Guidelines 4.2.0 milestone)</head><p>Group A: SB, EB, HC, JJ, JL, RV</p><p>Group B: MS, MT, HB, NC, PS</p><table>
+
+<row>
+<cell>No.</cell>
+<cell>Group</cell>
+<cell>Title</cell>
+<cell>Comment</cell>
+</row>
+<row>
+<cell>#2088</cell>
+<cell>A</cell>
+<cell><ref target="https://github.com/TEIC/TEI/pull/2088">Added reference to macro to en and fr descriptions of specDesc for #2061</ref></cell>
+<cell><p>RV is adding an Italian translation and will merge and close. — DONE</p>
+<p>JJ will add a French version of the remark, and then we can merge.</p>
+<p><hi style="b">Action on MS, SB, or HC to pull it in after the French translation comes in. — DONE</hi></p></cell>
+</row>
+<row>
+<cell>#2081</cell>
+<cell>A</cell>
+<cell><ref target="https://github.com/TEIC/TEI/pull/2081">not completley correct encoding declarations</ref></cell>
+<cell><p>Merged.</p>
+<p><hi style="b">STATUS? </hi>Both PR &amp; ticket closed. (We may want to revisit some of those that were not fixed, particularly those files that have non-ASCII characters.)</p></cell>
+</row>
+<row>
+<cell>#2079</cell>
+<cell>A</cell>
+<cell><ref target="https://github.com/TEIC/TEI/pull/2079">For Stylesheets 471:</ref></cell>
+<cell><p>Merged. Stylesheets change done also.</p>
+<p>Stylesheets <ref target="https://github.com/TEIC/TEI/pull/2079">#471</ref> merged too.</p></cell>
+</row>
+<row>
+<cell>#2065</cell>
+<cell>A</cell>
+<cell><ref target="https://github.com/TEIC/TEI/pull/2065">require English glosses per 2037</ref></cell>
+<cell><p>HC is cleaning up a conflicted bit of code, after which we’ll merge this. Merged.</p>
+<p>CLOSE?</p></cell>
+</row>
+<row>
+<cell>#2041</cell>
+<cell>A</cell>
+<cell><ref target="https://github.com/TEIC/TEI/pull/2041">deprecation of locations of schemaSpec</ref></cell>
+<cell><p>Pending approval from MS regarding change requested; group thinks this is ready to merge.</p>
+<p>Make ticket to update TCW 24; need to prescribe consistent wording (start with present-tense verb; period/no period) — DONE</p>
+<p><hi style="b">Requested review</hi></p></cell>
+</row>
+<row>
+<cell>#2032</cell>
+<cell>A</cell>
+<cell><ref target="https://github.com/TEIC/TEI/pull/2032">remove altIdent from some silly places</ref></cell>
+<cell>SB resolved conflicts. Awaiting build checks and will merge. Merged.</cell>
+</row>
+<row>
+<cell>#1996</cell>
+<cell>A</cell>
+<cell><ref target="https://github.com/TEIC/TEI/pull/1996">align `teidata.version` with Semantic Versioning Specification, closes #1993</ref></cell>
+<cell><p>VF2F subgroup thinks that it is appropriate to say that a TEI version number follows the Semantic Versioning Specification. Check with PS to address SB’s concerns.</p>
+<p><hi style="b">Action on PS</hi></p></cell>
+</row>
+<row>
+<cell>#1983</cell>
+<cell>A</cell>
+<cell><ref target="https://github.com/TEIC/TEI/pull/1983">Citation Structures</ref></cell>
+<cell><p>Adding SB as a reviewer with approval (hopefully) before 2/12 refrigeration. Other reviews are also outstanding. HC plans to get this into the February release.</p>
+<p><hi style="b">Action on SB, MS, PS to review, ask MS to pull in if this gets close to release.</hi></p></cell>
+</row>
+<row>
+<cell>#1958</cell>
+<cell>A</cell>
+<cell><ref target="https://github.com/TEIC/TEI/pull/1958">Adding where to new att.locatable to address #1769</ref></cell>
+<cell>Subgroup decides to close this PR, and start afresh on more expressive attributes to do with stage blocking and movement, possibly an att.blocking instead of att.locatable and *different* attributes than `@where.`<hi style="b">Closed </hi></cell>
+</row>
+<row>
+<cell>#1920</cell>
+<cell>A</cell>
+<cell><ref target="https://github.com/TEIC/TEI/pull/1920">WIP: draft implementation of noteGrp</ref></cell>
+<cell><p>Need to fix att.anchoring as well — DONE</p>
+<p>American group made a few small edits. If MT can change the @source from #UND (also HC has a comment asking about the example) then the European group can merge.</p>
+<p>MT: ready to go, changes made.</p>
+<p><hi style="b">Merged and closed</hi></p></cell>
+</row>
+<row>
+<cell/>
+<cell>B</cell>
+<cell><ref target="https://github.com/TEIC/TEI/pull/2092">allow object in a witness; close #1868</ref></cell>
+<cell><p>Merged</p>
+<p><hi style="b">and closed</hi></p></cell>
+</row>
+<row>
+<cell/>
+<cell>B</cell>
+<cell><ref target="https://github.com/TEIC/TEI/pull/2091">add certainty to att.typed; close #1934</ref></cell>
+<cell>merged and closed</cell>
+</row>
+<row>
+<cell/>
+<cell>B</cell>
+<cell><p><ref target="https://github.com/TEIC/TEI/pull/2094">allow name in place; close #1484</ref></p>
+<p><ref target="https://github.com/TEIC/TEI/pull/2096">https://github.com/TEIC/TEI/pull/2096</ref></p></cell>
+<cell><p>MT will add <gi>name</gi> to <gi>place</gi> (directly)</p>
+<p>MT: done, ready to go</p>
+<p><hi style="b">Merged and closed</hi></p></cell>
+</row>
+
+</table><p> </p></div><div type="h2"><head xml:id="nd">Needs discussion+Go or status pending (with Guidelines 4.2.0 milestone)</head><p>Group A: SB, EB, HC, JJ, JL, RV</p><p>Group B: MS, MT, HB, NC, PS</p><table>
+
+<row>
+<cell>No.</cell>
+<cell>Group</cell>
+<cell>Title</cell>
+<cell>Comment</cell>
+</row>
+<row>
+<cell>1823</cell>
+<cell>A, B</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/1823">teiCorpus: make guidelines and data model consistent</ref></cell>
+<cell><p>PS asked if we agree with last comment: <ref target="https://github.com/TEIC/TEI/issues/1823#issuecomment-667130393">https://github.com/TEIC/TEI/issues/1823#issue comment-667130393</ref></p>
+<p>Add to PS’s comments something more about <gi>text</gi>: For historical reasons, <gi>text</gi> and <gi>sourceDoc</gi> are preserved as valid children of <gi>teiCorpus</gi> but their use is discouraged.</p>
+<p><hi style="b">PS to change prose</hi></p></cell>
+</row>
+<row>
+<cell>1805</cell>
+<cell/>
+<cell><ref target="https://github.com/TEIC/TEI/issues/1805">Suggestion for new uniHan element</ref></cell>
+<cell>We have once again failed to prod Duncan in time to get this work into the next release. We should gently remind him after the February release.</cell>
+</row>
+<row>
+<cell>1966</cell>
+<cell>B</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/1966">Inconsistency in character representation</ref></cell>
+<cell>Prod NC</cell>
+</row>
+<row>
+<cell>1981</cell>
+<cell>B</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/1981">att.declaring and att.declarable need constraints and better explanation</ref></cell>
+<cell>RV in progress</cell>
+</row>
+<row>
+<cell>2036</cell>
+<cell>B</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/2036">versionDate attribute needs more constraint</ref></cell>
+<cell><p>Looks good but maybe we should also move the class att.translatable to the tagdocs module to avoid confusion.</p>
+<p><hi style="b">Needs discussion with full Council</hi></p></cell>
+</row>
+<row>
+<cell>2060</cell>
+<cell>B</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/2060">Prose in “Element and Attribute Descriptions” (TDphraseEA) refers to non-existent <gi>ptr</gi> in example</ref></cell>
+<cell>Expand the example to incorporate the <gi>ptr</gi> element, make GREEN.</cell>
+</row>
+<row>
+<cell>2061</cell>
+<cell>B</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/2061">specDesc does not only point to element or class specification elements</ref></cell>
+<cell>Resolved with the first PR discussion (re PR <ref target="https://github.com/TEIC/TEI/pull/2088">#2088</ref>). Will close this ticket after JJ adds French translation of new remarks.</cell>
+</row>
+<row>
+<cell>2062</cell>
+<cell>B</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/2062">specDesc/@key should be required</ref></cell>
+<cell>Agreed to proceed without deprecation, mark GREEN.</cell>
+</row>
+<row>
+<cell>2066</cell>
+<cell>B</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/2066">promote “Dates and Times”</ref></cell>
+<cell>Agreed, mark GREEN.</cell>
+</row>
+<row>
+<cell>2067</cell>
+<cell>B</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/2067">`@assertedValue` of `<gi>certainty</gi>` should also accept pointers</ref></cell>
+<cell>Removed milestone 4.2.0</cell>
+</row>
+<row>
+<cell>2070</cell>
+<cell>B</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/2070">Make file points at non-existent files</ref></cell>
+<cell>Removed milestone 4.2.0</cell>
+</row>
+<row>
+<cell>2078</cell>
+<cell>B</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/2078">problems with match= (part of att.scoping)</ref></cell>
+<cell><p>VF2F asks EB to come up with a pull request, but we think it is not high priority for the upcoming release.</p>
+<list style="ul">
+<item>EB will make small change for next release in new branch: issue-2078.</item>
+</list>
+</cell>
+</row>
+
+</table><p> </p></div></div></body><!-- #post-## --></text></TEI>

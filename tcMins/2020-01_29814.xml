@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/home/lou/Public/TEI/TEICSS/tei.css" type="text/css"
+ ?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:t="http://www.tei-c.org/ns/1.0" n="2020-01"><teiHeader><fileDesc><titleStmt><title>Minutes of the TEI Technical Council</title><meeting n="2020-01" when="2020-01-16">TEI Technical Council online
+     meeting : <date>16 January 2020</date></meeting></titleStmt><publicationStmt><distributor>TEI Website</distributor><idno>TCM122</idno></publicationStmt><sourceDesc><p>Retagged from a WordPress HTML file</p></sourceDesc></fileDesc><revisionDesc><change when="2023-04-25">Archival header confected</change><change>Extracted from Word Press article with id post-29814</change></revisionDesc></teiHeader><text><body><div><p><hi style="strong">Meeting time:</hi></p><list style="ul">
+<item>EDT 09:00–10:30, GMT 14:00–15:30, CEST 15:00–16:30</item>
+<item>Started: 14:02Z; ended: 15:37Z</item>
+</list><p><hi style="strong">Present:</hi></p><list style="ul">
+<item>Syd Bauman (SB)</item>
+<item>Elisa Beshero-Bondar (EB)</item>
+<item>Meaghan Brown (MB)</item>
+<item>Hugh Cayless (HC)</item>
+<item>Nicolas Cole (NC) arrived @ ~14:07Z, left ~15:00Z</item>
+<item>Jessica Lu (JL)</item>
+<item>Peter Stadler (PS)</item>
+<item>Martina Scholger (MS)</item>
+<item>Magdalena Turska (MT)</item>
+<item>Raff Viglianti (RV)</item>
+</list><p><hi style="strong">Apologies/Not Present:</hi></p><list style="ul">
+<item>Vanessa Bigot Juloux (VBJ)</item>
+</list><p> </p><div type="h2"><head>Next F2F meeting</head><list style="ul">
+<item>1–3 May 2020</item>
+<item>Where? Our options are:
+<list style="ul">
+<item>Paderborn – PS says it is easy to organize. Fly to FRA and then take ~3 hour train or fly into PAD.</item>
+<item>Oxford – NC says this is easy to organize for this group size.</item>
+<item>Warsaw – <hi style="b">Action on MT:</hi> check availability for May 1–3 <hi style="b">by </hi>2020-01-20</item>
+</list>
+</item>
+</list></div><div type="h2"><head>Next Release 3.7.0</head><list style="ul">
+<item>Release Thursday 02-13; Refrigeration: 01-30; Freeze starts on Monday 02-10</item>
+<item>Status <gi>uniHan</gi>
+<list style="ul">
+<item><ref target="https://github.com/TEIC/TEI/issues/1805">https://github.com/TEIC/TEI/issues/1805</ref></item>
+<item><hi style="b">Action on MS: </hi>organize conference call on or about 01-28 with at least RV, SB, MH, and Duncan Paterson<hi style="b"> by 2020-01-18</hi></item>
+</list>
+</item>
+<item>Status <gi>standOff</gi>
+<list style="ul">
+<item>SB reports significant progress made in late December, none since.</item>
+<item>Build had been failing (for lack of checking in a file), just fixed that this morning.</item>
+<item><hi style="b">Need eyes on this, big time.</hi></item>
+<item>SB plans to ask NC, MT, EB, and others to review this hopefully early next week.</item>
+<item>SB &amp; NC to meet beforehand — NC travelling this Saturday, but proposes a call on Sunday or Monday.</item>
+</list>
+</item>
+<item>Status documentation:
+<list style="ul">
+<item>EB: How are we going to publish new oXygen plugin guide? See <ref target="https://github.com/TEIC/Documentation/tree/master/exDoc">https://github.com/TEIC/Documentation/tree/master/exDoc</ref> and <ref target="https://github.com/TEIC/Documentation/issues/5">https://github.com/TEIC/Documentation/issues/5</ref>
+<list style="ul">
+<item>Move to <ref target="https://github.com/TEIC/oxygen-tei">oXygen-tei repo</ref>? – PS suggests to replace the framework discussion already there with this.</item>
+<item>Maybe split the documentation into several files and put those into a (new) docs directory in the repo root (because this can easily be deployed via github pages in the GitHub repo settings). And am I correct that GitHub pages are in HTML, so it would be easy to maintain source in TEI and generate HTML in same directory? — SB</item>
+</list>
+</item>
+<item>EB: Still working on revisions to TCW 20 regarding how to work with branches / pull requests: <ref target="https://github.com/TEIC/TEI/issues/1825">https://github.com/TEIC/TEI/issues/1825</ref></item>
+</list>
+</item>
+<item>Open issues for milestone 3.7.0 <ref target="https://github.com/TEIC/TEI/issues?q=is%3Aopen+is%3Aissue+milestone%3A%22Guidelines+3.7.0%22">https://github.com/TEIC/TEI/issues?q=is%3Aopen+is%3Aissue+milestone%3A%22Guidelines+3.7.0%22</ref>
+<list style="ul">
+<item>EB: Can we look at the new att.locatable in the pull request for <ref target="https://github.com/TEIC/TEI/issues/1769">#1769</ref>?
+<list style="ul">
+<item><hi style="b">Action on SB</hi>: check and make sure any teidata.word value is valid as a teidata.pointer <hi style="b">by</hi> 2020-01-22 [Done: no, there can be valid teidata.word values that are not valid teidata.pointer values. See comment on ticket.]</item>
+</list>
+</item>
+<item>EB: Can we please close <ref target="https://github.com/TEIC/TEI/issues/1708">#1708</ref> regarding SG (Gentle Introduction)? See <ref target="https://github.com/TEIC/TEI/commit/c1131e950220310955f8e557c19952f55a291609">https://github.com/TEIC/TEI/commit/c1131e950220310955f8e557c19952f55a291609</ref>. EB also <ref target="https://github.com/TEIC/TEI/commit/4f1f1f51fa6803b24a63999bb68823064f78b22e">added the gloss</ref> as SB recommended about the solidus.
+<list style="ul">
+<item><hi style="b">Action on MS: </hi>review these changes <hi style="b">by</hi> 2020-01-24</item>
+</list>
+</item>
+</list>
+</item>
+</list></div><div type="h2"><head>Report from IG Group</head><list style="ul">
+<item>Preparing the release process:
+<list style="ul">
+<item>tei user is created on machine3 (cchum-kvm-dockerteic.in2p3.fr)</item>
+<item>tei user is member of the Docker group (so has the permissions to restart OxGarage and Roma services).</item>
+<item>The old id_rsa keys are restored from the ADHO server for the tei user (needed for shell access to SourceForge, see section “What you will need before you start” of <ref target="http://teic.github.io/TCW/tcw22.html">TCW22</ref>)</item>
+<item>Permissions for the vault are adjusted so the tei user may add directories to /data2/vault/P5 and /data2/vault/Stylesheets and change the symlinks there.</item>
+<item>PS updated <ref target="http://teic.github.io/TCW/tcw22.html">TCW22</ref> and the install script to reflect the current settings on the HumaNum server.</item>
+<item>Everything should be settled for the release 🙂</item>
+</list>
+</item>
+</list></div><div type="h2"><head>jEdit TEI Plugin</head><list style="ul">
+<item><ref target="https://github.com/Conal-Tuohy/jEdit-TEIPlugin">https://github.com/Conal-Tuohy/jEdit-TEIPlugin</ref></item>
+<item>RV reports he tried it, but couldn’t figure out how to make it work</item>
+<item>MS reports Marjorie Burghart had gotten a mini-grant to create this plugin, and asked TEI-C to host this plugin.</item>
+<item>MS answered that in principle answer is “yes”, but we need more information on responsibilities and documentation of the plugin.</item>
+<item>RV and SB are interested in helping with this — open-source solution is especially important for teaching purposes.</item>
+<item><hi style="b">Action on RV</hi>: email Marjorie for more info.</item>
+</list></div><div type="h2"><head>Status broken oXygen plugin</head><list style="ul">
+<item><ref target="https://github.com/TEIC/oxygen-tei/issues/30">https://github.com/TEIC/oxygen-tei/issues/30</ref></item>
+<item><hi style="b">Action on MT: </hi>investigate the options and summarize/adjust documentation<hi style="b"> by 2020-01-25.</hi></item>
+</list></div><div type="h2"><head>New feature request for Computer-Mediated Communication (CMC)</head><list style="ul">
+<item><ref target="https://github.com/TEIC/TEI/issues/1955">https://github.com/TEIC/TEI/issues/1955</ref></item>
+<item>No rush with this, will be tackled only after this release.</item>
+<item>SB joined the group of assignees.</item>
+</list></div><div type="h2"><head>I18n Working Group (internationalization)</head><list style="ul">
+<item>HC reports he and MS not sure they had been given go-ahead to create a working group.</item>
+<item>Council should provide a charge: deliverables, time framing, contact person, that kind of thing.</item>
+<item>HC reports we will be applying for a Mellon grant to get funding for this initiative for the TEI.</item>
+</list></div></div></body><!-- #post-## --></text></TEI>

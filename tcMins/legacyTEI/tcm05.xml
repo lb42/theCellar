@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="teixlite.css"?>
+<!DOCTYPE TEI.2 PUBLIC "-//TEI//DTD TEI Lite XML ver. 1//EN"
+"../Lite/DTD/teixlite.dtd" [
+<!ATTLIST xref url CDATA #IMPLIED><!ATTLIST xptr url CDATA #IMPLIED>
+]>
+<TEI.2>
+ <teiHeader>
+  <fileDesc>
+   <titleStmt>
+    <title>TCM05: TEI Council Conference Call 18 Mar 03</title>
+    <author>Lou Burnard</author>
+   </titleStmt>
+   <publicationStmt>
+    <p>For distribution to TEI Council members for
+     corrections; corrected version to TEI website.</p>
+   </publicationStmt>
+   <sourceDesc>
+    <p>Made by editing <xref url="tcm05-sb.txt">SB's email of 18 March</xref>, using notes
+    taken by LB. SB notes that his text
+         <q>was created from the notes I took (in TEI
+          Lite, btw) during the conversation, with some additions
+          provided by the notes MP took and sent to me; with a few
+          afterthoughts as well, usually relegated to &lt;note>
+          elements.</q></p>
+   </sourceDesc>
+  </fileDesc>
+<revisionDesc>
+<list>
+<item><date>30 Mar 03</date> LB: first draft</item>
+   </list></revisionDesc> </teiHeader>
+<text>
+<body>
+
+<p>The following were present: Syd Bauman (SB), David
+     Birnbaum (DB) in part, Lou Burnard (LB), Matthew Driscoll (MD), David 
+Durand (DD),  Laurent Romary (LR), Chris Ruotolo
+     (CR) in part,
+Susan Schreibman (SS), John Unsworth (JU), Perry Willett (PW),
+     Christian Wittern (CW).
+    </p>
+<list type="ordered">
+<item n="1">Actions from <xref url="tcm04.html">previous
+      meeting</xref>:  all actions not deemed already complete are on today's
+      agenda. It was agreed to defer to  the    next meeting the
+      question of who should succeed     JU as chair.
+    </item>
+<item n="2">Council approved the procedure defined in <xref url="../Drafts/edw78.html">EDW78</xref>, and
+        actioned the editors to begin implementing them.</item>
+<item>CR reported progress from the <xref url="../Activities/MI/">Migration Work Group</xref>. The expert
+ group has finished its draft and repository representatives had begun
+        testing. There had been a useful joint meeting in College Park. The biggest
+        problem so far identified was what should replace SDATA
+        entities in XML DTDs. A structure has been defined for writing
+        up the final reports, which included  a template for
+        individual case studies. Plans for surveying existing TEI 
+        projects had been scaled back somewhat but would continue. It
+        was planned to hold a further meeting (of the whole group if
+        funds permit) June 16/17th in
+        Alicante, and the reports should be ready in time for TEI
+        AGM. Council thanked CR for her report and for the Group's
+        good progress.</item>
+<item><p>Reporting on  the <xref url="../Activities/CE/">Character Encoding workgroup</xref>, CW said that
+<list><item>he had drafted a working paper on SDATA entities which had
+        been discussed in some detail, but which the workgroup had not
+        been able to endorse; work on this had now been suspended.</item>
+<item>the group was instead making substantial progress towards
+        recommendations for a
+        markup scheme for character set extensions (see
+        <xref url="../Activities/CE/cew06.html">CE W06</xref>). Although only a preliminary draft, this was now
+        undergoing test implementation</item>
+<item>the group had requested the new ML workgroup to consider whether
+        or not it was realistic to disallow any kind of  CDATA content
+        in attribute values. Without such a prohibition,
+        representation of non-Unicode characters in TEI documents by
+        elements would be at best problematic.</item>
+     </list></p>
+<p>SR reported that the ML Workgroup has briefly considered this
+        question. It seemed advisable to get a sense of the scale of
+        the problem, and he suggested the editors should review all
+        existing TEI attributes, characterising each as tokenizable,
+        numeric, or textual. In DTD world, the textual ones should be
+        left unchanged; in schema world, however, equivalent child
+        elements could be generated. </p>
+<p>Council agreed that further work was needed to decide whether this
+        proposal was necessarily restricted to schemaland, how the
+         content models and attributes for generated elements should
+        be determined, and whether such a scheme might generate name
+        clashes. Proposals should be sent to the ML list for further
+        discussion. 
+<note type="action"><label>Editors</label><date>1 May</date> to produce categorised
+        list of attributes and investigate possible name clashes</note>
+<note type="action"><label>CW</label><date>1 May</date> to propose content models for generated sub-elements</note>
+        </p>
+    </item>
+<item n="3">DD reported that the <xref url="../Activities/SO">Standoff workgroup</xref> continued to make  slow
+          progress. Some papers were now available on the  web
+          site, (<xref url="../Activities/SO/sow01.html">SO W01</xref> discusses use of Xpointer and gives an overview of the groups
+          major concerns; <xref url="../Activities/SO/sow02.html">SO W02</xref> is a discussion of the
+          canonical reference scheme described in the Guidelines;
+          <xref url="../Activities/SO/sow03.html">SO W03</xref> is a working paper on graph description); several
+          others are in progress and should be available by end of
+          April in time for d1scussion at the Council's May meeting. 
+Council was requested to review SO W01 as soon
+          as possible.
+<note type="action"><label>SB</label><date>1 April</date>to update SO website with details of papers
+          as they become available</note>
+<note type="action"><label>DD</label><date>30 April</date>to make remaining work group drafts available to
+          Council</note> </item>
+<item>MP reported that Consuelo Dutschke had now delivered
+          extensive documentation of the original TEI MS Description Workgroup's proposals for mss
+          description, which were now available in MS Word format
+          from <xref url="http://www.merrilee.org/tei-mss/">MD's
+          website</xref>. In line with the Manuscript Taskforce's <xref
+          url="tcw04.html">charge</xref>, Council now
+          requested DB, MD, and MP to review these drafts and identify
+          an achievable programme of  work for harmonizing them and 
+          the <xref url="../../Master/Reference/">MASTER
+          scheme</xref>. This should fall somewhere
+          between simply producing a list of differences
+          between the two sets of proposals and merging them to a
+          single coherent scheme. LB agreed to set
+          up a web-site area for this Task force (Now done: <xptr
+          url="../Activities/MS/"/>) <note type="action"><label>MP, MD,
+          DB</label><date>asap</date> to review available drafts and
+          initiate task force activity</note></item>
+<item>SR reported that the Metalanguage Taskforce had been set up, as
+          per <xref url="tcw03.html">its charge</xref>,  with
+himself as chair, and membership of  CW, DD,
+          Norm Walsh and Michael Sperberg-McQueen and the
+          editors. In
+          discussion it has endorsed the existing <soCalled>literate
+          programming</soCalled> model of the Guidelines, and has 
+          produced a proof-of-concept protype for P5, in which   schema definitions using 
+          RelaxNG are generated from an extended version of the
+          current  ODD model. SR is currently working on a replacement
+          for the pizzachef (called Roma) which will deliver TEI
+          conformant schemas as DTDs or in RelaxNg. Council was
+          suitably impressed.  Taskforce working documents are
+          maintained at <xptr url="../Activities/META/"/>. </item>
+    <item>Council endorsed the <xref url="tcw01.html">charge</xref> to set up a  joint wg on
+          Feature Structures as a new work item for ISO TC37-SC4. LR's proposal
+has now been progressed within ISO: an official letter requesting
+          status of liaison was  to be sent. ISO member bodies have
+          three months to comment on the  new work item proposal;
+          there will be a short meeting on 6/7 July in Sapporo which
+          should compile the comments received and  instruct an
+          editorial workgroup to work on the proposed document. JU will
+          be in Japan and may be able to attend the meeting. SR noted
+          that producing a free-standing feature-structure validation
+          module would be an interesting exercise for the new
+          metalanguage taskforce.
+<note type="action"><label>LR</label><date>?</date> to send current draft documents to LB
+          for the website.</note>
+     <note type="action"><label>LB/JU</label><date>immediate</date> to progress letter requesting liaison
+          status</note>
+     <note type="action"><label>SR</label><date>?</date> to investigate feasibility of embedding
+          Feature Structures eg in Docbook</note>
+    </item>
+<item>Council discussed  <xref url="../Activities/GD/">documents submitted by Patrick Durusau</xref> (PD)
+        proposing to set up a work group to redraft current chapter
+        on graphs networks and trees. It was felt that the chapter was
+        more concerned with
+ graphs as an abstract formalism than with
+        graphs as lines, and that the basis on which graphic formats were
+        selected for discussion in PD's drafts was not clear. The immediate need for
+        the TEI was to decide whether or not a chapter on this topic
+        should be retained in the Guidelines.
+<note type="action"><label>JU and LR</label><date>immediate</date> to produce detailed feedback which JU would
+        pass to PD</note></item>
+<item>PW reported that the IMLS Grant application had been submitted on time, and
+        that a response should be expected before September. Some
+          <soCalled>pre-grant activity</soCalled> would be expected
+        before then. JU suggested setting up an e-mail discussion list
+        to include
+          Martha Crowley (the program officer). 
+<note type="action"><label>PW</label><date>1 May</date> to set up discussion list, to include  all council
+          members who did not explicitly opt out</note></item>
+    <item>LR  reported that there would be a European call for
+        proposals for "e-content creation" in December for which he was
+        working with Alois Pichler on a project called Lyric that
+        would involve use of FS and standoff. </item>
+    <item>LB reported that optimism about Marie Curie funding had
+        proved unfounded. The TEI was named in at least two competing
+        EU FP6 bids (ECHO and Hyper). Outcomes would be known in May.
+    </item>
+   </list>
+    </body>
+  </text>
+</TEI.2>
+

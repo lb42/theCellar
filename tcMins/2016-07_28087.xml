@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/home/lou/Public/TEI/TEICSS/tei.css" type="text/css"
+ ?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:t="http://www.tei-c.org/ns/1.0" n="2016-07"><teiHeader><fileDesc><titleStmt><title>Minutes of the TEI Technical Council</title><meeting n="2016-07" when="2016-07-29">TEI Technical Council online
+     meeting : <date>29 July 2016</date></meeting></titleStmt><publicationStmt><distributor>TEI Website</distributor><idno>TCM082</idno></publicationStmt><sourceDesc><p>Retagged from a WordPress HTML file</p></sourceDesc></fileDesc><revisionDesc><change when="2023-04-25">Archival header confected</change><change>Extracted from Word Press article with id post-28087</change></revisionDesc></teiHeader><text><body><div>
+		
+		<div>
+<p>Teleconference 2016-07-29 13:00 UTC</p>
+<p rend="head">Present</p>
+<list style="ul">
+<item>Hugh Cayless (HC)</item>
+<item>Syd Bauman (SB)</item>
+<item>James Cummings (JC)</item>
+<item>Martina Scholger (MS)</item>
+<item>Elisa Beshero-Bondar (EB)</item>
+<item>Stefan Majewski (SM)</item>
+<item>Elli Mylonas (EM)</item>
+<item>Raff Viglianti (RV)</item>
+<item>Lou Burnard (LB)</item>
+</list>
+<p rend="head">Apologies</p>
+<list style="ul">
+<item>Peter Stadler (PS)</item>
+<item>Magdalena Turska (MT)</item>
+</list>
+</div>
+<div>
+<p>Agenda and minutes</p>
+<list style="ul">
+<item>Putting TEI Simple to bed (LB)</item>
+<item>Waiting on stylesheets update</item>
+<item>Waiting on Council read-through and corrections</item>
+<item>
+<list style="ul">
+<item><hi style="b">Action on everyone</hi> to read and edit the document as needed by<hi style="b"> 2016-08-15</hi>
+<list style="ul">
+<item><ref target="https://github.com/TEIC/TEI/blob/d9f349185b6a7263990c3c6fccc93567eb675e8e/P5/Exemplars/tei_simple.odd">ODD</ref></item>
+<item><ref target="http://lb42.github.io/tei_simple.html">HTML</ref>, <ref target="http://lb42.github.io/tei_simple.odd.pdf">PDF</ref></item>
+</list>
+</item>
+</list>
+</item>
+</list>
+<list style="ul">
+<item>Logistics for F2F (SM)
+<list style="ul">
+<item>Scheduling of other activities alongside F2F, who will have to join workshops and when
+<list style="ul">
+<item>Schedule: <ref target="https://www.conftool.net/tei2016/sessions.php">https://www.conftool.net/tei2016/sessions.php</ref></item>
+<item>MT seems to have a workshop all day Monday</item>
+<item>Martina and Peter have a workshop Tuesday</item>
+<item>Airbnb group of 3: EM, EB, RV</item>
+<item>Meeting Schedule:
+<list style="ul">
+<item>Sunday 25 September — Meeting 09:00–17:00</item>
+<item>Monday 26 September — (MT @ workshop?) 09:00–17:00</item>
+<item>Tuesday 27 September — (MS &amp; PS @ Translatathon?) 14:00–17:00</item>
+</list>
+</item>
+</list>
+</item>
+<item>State of accommodation, who is arriving when?</item>
+</list>
+</item>
+<item>Sebastian’s Memorial Event
+<list style="ul">
+<item>Tuesday 27 September; Wolfson College, (TBC: 10:00–16:00: Time in Austria: 11:00–17:00)</item>
+<item>Council invited to skype in and deliver a short thing saying how much Sebastian meant to TEI etc.</item>
+<item>Dress Code: Bright/Loud Shirts</item>
+<item>Suggested Themes: Rome, Southampton, Tex/Latex, TEI, Claros, Archaeology, Running, Open Data, OSSWatch, India, Digital Humanities, Mischief</item>
+</list>
+</item>
+<item>“Whither TEI?” session at Members’ Meeting
+<list style="ul">
+<item>See Martin Mueller’s piece (posted to the Board/Council list a couple of weeks ago)</item>
+<item>Council will be running this session. We’d talked about using it as a forum to ask the community questions.
+<list style="ul">
+<item>Need to figure out the logistics: one hour (plus time in Business Meeting?!)</item>
+<item>SB proposes 3 quick presentations that raise questions, followed by discussion</item>
+<item>Need to figure out the questions:
+<list style="ul">
+<item>Big picture questions: Weak points in the TEI? / Road to P6?</item>
+<item>LB suggests we should address a lack of understanding in the community about writing ODDs (EB)</item>
+<item>What it takes to make a small change to the Guidelines? – disagree that showing all the technical details will be compelling (EM) – but maybe explain the infrastructure in general way.</item>
+<item>Goal: provide more insight into what Council does and how it works – less about software and more about schema? (EM)</item>
+</list>
+</item>
+<item>Roundtable format? But venue might be more like a lecture hall</item>
+<item>Chair? needs to be someone who can keep things rolling</item>
+</list>
+</item>
+</list>
+</item>
+<item>Do we want an attribute default value deprecation warning in Schematron? (SB)
+<list style="ul">
+<item>Aye: <hi style="b">silence</hi></item>
+<item>Nay: HC, JC, LB, SB, SM, EB, EM, MS</item>
+<item>They “nays” have it (unlike Lincoln)</item>
+</list>
+</item>
+<item>Our upcoming cooperative stylesheet educational series (heretofore known as “CSES”) (SB)
+<list style="ul">
+<item>Only Martin Holmes, EB, PS, Ron Van den Branden, MS, JC, and SB responded to the <ref target="http://doodle.com/poll/5wmatw4rc66isyab">poll</ref>. Thus we 6 get to decide when the meetings will be. E-mail will go out on that topic soon, probably later today. (So if you want input on when they will be, respond to poll within a couple of hours after our conference call.)</item>
+<item><hi style="b">Action on SB</hi> to schedule. At least one before the F2F</item>
+</list>
+</item>
+<item>Ticket triage (if there’s time. There wasn’t.)
+<list style="ul">
+<item>HC will start assigning issues on 2016-08-02</item>
+<item>Revisiting @when, @notBefore, and @notAfter on date: <ref target="https://github.com/TEIC/TEI/issues/1487">https://github.com/TEIC/TEI/issues/1487</ref> (EB)</item>
+<item>Council thinks leave well enough alone. If you want to use @when that way, then modify in your ODD and document (though you will probably then be non TEI conformant, so better use a different attribute name like @mh:when)</item>
+</list>
+</item>
+</list>
+</div>
+	</div></body><!-- #post-## --></text></TEI>

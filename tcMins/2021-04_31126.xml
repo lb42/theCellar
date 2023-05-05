@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/home/lou/Public/TEI/TEICSS/tei.css" type="text/css"
+ ?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:t="http://www.tei-c.org/ns/1.0" n="2021-04"><teiHeader><fileDesc><titleStmt><title>Minutes of the TEI Technical Council</title><meeting n="2021-04" when="2021-04-08">TEI Technical Council online
+     meeting : <date>8 April 2021</date></meeting></titleStmt><publicationStmt><distributor>TEI Website</distributor><idno>TCM139</idno></publicationStmt><sourceDesc><p>Retagged from a WordPress HTML file</p></sourceDesc></fileDesc><revisionDesc><change when="2023-04-25">Archival header confected</change><change>Extracted from Word Press article with id post-31126</change></revisionDesc></teiHeader><text><body><div><p><hi style="strong">Meeting times:</hi></p><list style="ul">
+<item>11am-12:30pm PDT/2pm-3:30pm EDT/7pm-8:30pm BST/8pm-9:30pm CEST</item>
+<item>Started:    18:03Z    Ended:    19:33Z</item>
+</list><p><hi style="strong">Present:</hi></p><list style="ul">
+<item>Syd Bauman (SB)</item>
+<item>Helena Bermúdez Sabel (HBS)</item>
+<item>Elisa Beshero-Bondar (EB)</item>
+<item>Meaghan Brown (MB)</item>
+<item>Hugh Cayless (HC)</item>
+<item>Janelle Jenstad (JJ)</item>
+<item>Martina Scholger (MS)</item>
+<item>Peter Stadler (PS)</item>
+<item>Magdalena Turska (MT)</item>
+<item>Raff Viglianti (RV)</item>
+</list><p><hi style="strong">Apologies/Not Present:</hi></p><list style="ul">
+<item>Jessica Lu (JL)</item>
+</list><p><hi style="b">Note:</hi> ticket triage table is near the end of this document.</p><div type="h2"><head>Short virtual F2F meeting</head><list style="ul">
+<item>May 7 and 8</item>
+<item>Invite Duncan Paterson to discuss the UniHan issue.</item>
+</list></div><div type="h2"><head>Point release 4.2.2</head><list style="ul">
+<item>JJ discovered an issue with overridden vallists: <ref target="https://github.com/TEIC/TEI/issues/2128">https://github.com/TEIC/TEI/issues/2128</ref></item>
+<item>Martin Holmes created a PR: <ref target="https://github.com/TEIC/TEI/pull/2129">https://github.com/TEIC/TEI/pull/2129</ref></item>
+<item>Cherry pick commit from dev</item>
+<item>Discussion about releasing the Stylesheets as well: it is decided to not release them if it is not necessary
+<list style="ul">
+<item>We should check and make sure the Stylesheets don’t need to be updated based on where they’re reading the p5subset.xml</item>
+<item>If you don’t specify a local source, it will pull the p5subset from the wrong place. HC recommends to update the Stylesheets as well.</item>
+<item>Action on SB to work with Martin Holmes and Nicholas Cole (on 09 Apr 15:00Z) to check dependencies and whether we need to do a Stylesheets release, and to do either TEI or both. (Seems, per HC research above, both are a good idea.)</item>
+<item>Point release planned for Friday, April 9</item>
+</list>
+</item>
+</list></div><div type="h2"><head>Stylesheets documentation &amp; release directory:</head><list style="ul">
+<item>Stylesheets have been missing in the Vault since at least the last release (also others).</item>
+<item>PS: release directory structure doesn’t make sense–seems to have been unclear to people during transition between servers from ADHO to HumaNum. Vault structure seems problematic. Seeking historical perspective from James Cummings or Lou Burnard?</item>
+<item>See <ref target="https://www.tei-c.org/Vault/P5/4.0.0/doc/">https://www.tei-c.org/Vault/P5/4.0.0/doc/</ref> and release directory: <ref target="https://tei-c.org/release/doc/">https://tei-c.org/release/doc/</ref>
+<list style="ul">
+<item>PS: tei-xsl directory is usually not part of the P5 release, it seems like we used to hard-copy it into the Vault under P5 for the releases <ref target="https://tei-c.org/Vault/P5/3.6.0/doc/">https://tei-c.org/Vault/P5/3.6.0/doc/</ref>,  <ref target="https://tei-c.org/Vault/P5/4.0.0/doc/">https://tei-c.org/Vault/P5/4.0.0/doc/</ref> and <ref target="https://tei-c.org/Vault/P5/4.2.0/doc/">https://tei-c.org/Vault/P5/4.2.0/doc/</ref>.</item>
+<item>Vault: stylesheets release is under Stylesheets/doc (release documentation). P5 release is under P5.</item>
+<item>Additionally, there is a release directory. Release/doc is missing documentation of the Stylesheets release. PS proposes to add a symlink to Vault/Stylesheets/doc.</item>
+<item>Our release process (as written in TCW 22) is doing the right thing–there is no need to put tei-xsl in the P5 release directory.</item>
+</list>
+</item>
+<item>We may wish to discuss directory structure at a future VF2F. (New structure could be maintained in parallel with the old structure via web server re-directs.)</item>
+</list></div><div type="h2"><head>CMC report</head><list style="ul">
+<item>Meeting postponed until late April / early May</item>
+</list></div><div type="h2"><head>Saxon upgrade</head><list style="ul">
+<item>Not quite finished. Installed in TEI repo. Not quite ready in Stylesheets repo. No problems located yet, but we need to review the various versions of Saxon and consider which we may need to keep. HBS is able to start her HTML 5 upgrade to Stylesheets.</item>
+</list></div><div type="h2"><head>New feature “Discussions”</head><list style="ul">
+<item><ref target="https://github.com/TEIC/TEI/discussions">https://github.com/TEIC/TEI/discussions</ref></item>
+<item>To be promoted in social media
+<list style="ul">
+<item>FB Group: <ref target="https://www.facebook.com/groups/TEIconsortium">https://www.facebook.com/groups/TEIconsortium</ref></item>
+<item>Twitter: <ref target="https://twitter.com/TEIconsortium">https://twitter.com/TEIconsortium</ref></item>
+</list>
+</item>
+</list></div><div type="h2"><head>Tickets</head><list style="ul">
+<item><ref target="https://github.com/TEIC/TEI/issues/2045">calendar= should not be in att.datable</ref>
+<list style="ul">
+<item>Skip over for now; JJ needs to evaluate the long discussion in the ticket.</item>
+</list>
+</item>
+<item><ref target="https://github.com/TEIC/TEI/issues/2046">reports in jTEI</ref><hi style="b"/>
+<list style="ul">
+<item><hi style="b">Action on SB</hi> to post “do you really want an XPath in the message?” on ticket <hi style="b">by</hi> 2021-04-13.</item>
+</list>
+</item>
+<item><ref target="https://github.com/TEIC/TEI/issues/2048">@who for <gi>span</gi></ref>
+<list style="ul">
+<item>SB recommends @predicate with an XPath value.</item>
+<item>We need something more generic so we aren’t restricted to @who kinds of queries.</item>
+<item><hi style="b">Action on SB</hi> to post various other possible solutions (e.g., @ana, xpointer() on target) on the ticket <hi style="b">by </hi>2021-04-14.</item>
+</list>
+</item>
+<item><ref target="https://github.com/TEIC/TEI/issues/2055">description of attRef not helpful</ref>
+<list style="ul">
+<item>Needs a more contextual example, and needs a better explanation, maybe even a remark.</item>
+</list>
+</item>
+<item><ref target="https://github.com/TEIC/TEI/issues/2063">Create script for listing assigned tickets by Council Member</ref><hi style="b"/>
+<list style="ul">
+<item><hi style="b">Action on JJ and SB</hi> to prod Nick about this.</item>
+</list>
+</item>
+</list></div></div></body><!-- #post-## --></text></TEI>

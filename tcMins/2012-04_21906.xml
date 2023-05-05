@@ -1,0 +1,1529 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/home/lou/Public/TEI/TEICSS/tei.css" type="text/css"
+ ?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:t="http://www.tei-c.org/ns/1.0" n="2012-04"><teiHeader><fileDesc><titleStmt><title>Minutes of the TEI Technical Council</title><meeting n="2012-04" from="2012-04-16" to="2012-04-18">TEI Technical
+     Council ftf meeting : <placeName>Ann Arbor</placeName>, <date>16–18 April 2012</date></meeting></titleStmt><publicationStmt><distributor>TEI Website</distributor><idno>TCM050</idno></publicationStmt><sourceDesc><p>Retagged from a WordPress HTML file</p></sourceDesc></fileDesc><revisionDesc><change when="2023-04-27">Archival header confected</change><change>Extracted from Word Press article with id post-21906</change></revisionDesc></teiHeader><text><body><div>
+		
+		<!-- <div class="teiheader"><filedesc><titlestmt><title><date notbefore="2012-04-16" notafter="2012-04-18">16–18 April 2012</date></title></titlestmt><publicationstmt><distributor>TEI Website</distributor><idno type="TEI">TC M 50</idno></publicationstmt><sourcedesc><p>Converted from google doc minutes taken during the meeting.</p>
+<p>      </sourcedesc></filedesc><revisiondesc><change who="KSH" when="2012-08-03">Added note about inclusion vs. exclusion version of Lite.</change><change who="KSH" when="2012-05-28">Cleanup</change><change who="RTK" when="2012-05-24">Fixed encoding errors reported by KSH on
+        2012-05-23</change></revisiondesc></div> -->
+<p>
+        <label>Present in person: </label> Piotr Banski (PB), Brett Barney (BB), Lou Burnard (LB),
+        James Cummings (JC, chair), Kevin Hawkins (KH), Martin Holmes (MH), Sebastian Rahtz (SR), Paul
+        Schaffner (PS), and Rebecca Welzenbach (RW) </p>
+<p>
+        <label>Present Remotely: </label> Gabriel Bodard (GB) (via Skype), Stuart Yeates (SY) (via
+        Skype) </p>
+<div><head>
+        Monday April 16th 2012</head>
+<div><head>
+          1.1 Morning</head>
+<div><head>
+            1.1.1 TEI – Google Books</head>
+<list style="ul">
+<item>KH and JC reported on progress with Google Books output of TEI.</item>
+<item>After the last meeting, KH emailed Ranjith (the Google contact) with some
+                questions, but hasn’t got responses yet. Ranjith also asked questions about TEI
+                which would help him to market the service internally to Google, and JC created a
+                Google doc to help answer those. All help with that appreciated – email JC for the
+                URL. JC and KH may also be able to add metadata from the original MARC files from
+                the public domain ECCO-TCP files which would make it easier for Google to process
+                those files.</item>
+<item>LB suggested developing some tutorial material showing how you can use Google
+                Books-generated TEI as the starting-point for an encoding project.</item>
+<item>There was some discussion about the level of error and accuracy, both in
+                encoding and in OCR, to be expected from Google. SR wondered Why should we care
+                whether Google gets TEI right or not? Just use whatever the best they can
+                produce.</item>
+</list>
+<p><label>Action (KH, LB, PS, and JC)</label>: Get more examples from Ranjith of the current state
+              of the output so that we can calculate some statistics on accuracy, and encourage
+              Google towards making this output format public.</p>
+</div>
+<div>
+            <head>1.1.2 TEI – EEBO / ECCO -TCP</head>
+            <sp><speaker>SR:</speaker>
+<p>There are three specific problems remaining in the conversion from EEBO-TCP to P5,
+                two of which are in the spreadsheet from MM:</p>
+
+<p>
+                  <gi>signed</gi> : Is this a phrase-level element for only a signature, or is this
+                  a block-level element that is really a signature block? If the latter, then more
+                  structure is required within it. If there are multiple signatures, EEBO-TCP
+                  encodes them as a list, which TEI doesn’t allow. The proposed action is to loosen
+                  up the content model of <gi>signed</gi>.</p></sp>
+ <sp><speaker>LB:</speaker>
+<p>Once we loosen it up, we open the door to it having a lot of extra
+                    structure.</p>
+</sp><sp><speaker>JC:</speaker>
+<p>The Guidelines are very inconsistent on this; they show examples of
+                      <gi>signed</gi> inside <gi>closer</gi> preceded by <gi>salute</gi>, as well as
+                      <gi>signed</gi> containing the salutation within it.</p>
+               </sp><sp><speaker>PS:</speaker>
+<p>In many examples, there is considerable overlap between the signature and the
+                    name.;</p>
+                </sp><sp><speaker>MH:</speaker>
+<p>There are two distinct issues: the Guidelines problem (<ref target="http://purl.org/tei/bug/3439980">bug 3439980</ref>), and the
+                    issue of converting the EEBO-TCP encoding to TEI.</p>
+               </sp><sp><speaker>JC:</speaker>
+<p>We should decide one way or the other, for example we could choose the
+                    block-level <gi>signed</gi> option.</p>
+                </sp><sp><speaker>LB:</speaker>
+<p> In the case of the “RICHARD CUFF” example, how would we tag it if
+                      <gi>signed</gi> were a block element?</p>
+               </sp><sp><speaker>JC:</speaker>
+<p>Just as a <gi>name</gi></p>
+               </sp><sp><speaker>LB:</speaker>
+<p>The purpose of <gi>salute</gi> is to mark a formulaic phrase which is some sort
+                    of expression of politeness, whereas <gi>signed</gi> (in this new view) is the
+                    whole block of stuff at the end of the document that attests that someone has
+                    appended their name to it.</p>
+               </sp><sp><speaker>RW:</speaker>
+<p>Is a name required for a signed?; LB: No: “Yours etc.”.</p>
+              </sp><sp><speaker>BB:</speaker>
+<p>This raises the issue of the difference between <gi>signed</gi> and
+                      <gi>closer</gi>.</p>
+               </sp><sp><speaker>SR:</speaker>
+<p>We could extend <gi>signed</gi> and not worry about anything else, so older
+                    documents won’t be broken, but “soft-deprecate” other usages by removing
+                    examples of it from the Guidelines.</p>
+              </sp><sp><speaker>MH and JC:</speaker>
+<p>We should look at the content model of all of these things.</p>
+               </sp>
+<p><label>Action</label>: Create a council working group to look at this issue, and come back
+                  with a clear recommendation before next council face2face.</p>
+<list style="ul">
+<item>Lists inside labels: <sp><speaker>SR:</speaker>
+<p>We can’t remember the context of that, so we’ll have to come back to it.</p>
+                </sp><sp><speaker>PS:</speaker>
+<p>It’s a minor issue that we can ignore it; it was an aberration in EEB-TCP</p>
+              </sp>
+<p><label>Action</label>: No action needed at this time.</p>
+</item>
+<item>
+<p><gi>byline</gi> inside <gi>figure</gi>: Illustrations are signed or attributed
+                  all the time, so we need a way to encode that; in EEBO-TCP this is done with
+                    <gi>byline</gi>.</p>
+               <sp><speaker>JC:</speaker>
+<p><gi>figure</gi> can contain <gi>signed</gi>.</p>
+             </sp><sp><speaker>PS:</speaker>
+<p><gi>signed</gi> is a performative claim of authorship, whereas <gi>byline</gi>
+                    is an attribution.</p>
+             </sp><sp><speaker>MH:</speaker>
+<p>Are we trying to solve the EEBO-TCP import issue, or address broader concerns
+                    about the content model of <gi>figure</gi>?</p>
+               </sp>
+<p><label>Action</label>: SR will convert the EEBO-TCP <gi>byline</gi> to <gi>signed</gi>,
+                  which solves the issue of the EEBO-TCP import; the broader issue of
+                    <gi>figure</gi> will be addressed in the discussion of <gi>floatingDiv</gi>
+                  later.</p>
+</item>
+<item>
+<p><gi>trailer</gi>/@type is used in EEBO-TCP, by analogy with <gi>head</gi>.</p>
+              <sp><speaker>JC:</speaker>
+<p>If something is repeatable, then it needs @type. All agree and the record
+                    should show this is a general principle when deciding whether something should
+                    get att.typed.</p>
+</sp>
+<p><label>Action</label>: SR will implement this.</p>
+</item>
+</list>
+</div>
+<div><head>
+            1.1.3 TEI Bugs and FR: (Green)</head>
+<list style="ul">
+<item><ref target="http://purl.org/tei/bug/3480609">3480609</ref>: <label>wrong license
+                  description on some documents</label>
+                <sp><speaker>JC:</speaker>
+<p>Someone needs to volunteer to check that every place where licensing is
+                    mentioned are correct.</p>
+</sp>
+<p><label>Action</label>: RW will do this, and will report back about any inconsistencies. JC
+                  will close the bug, and a new one will be opened for any issues which
+                  emerge.</p>
+</item>
+<item><ref target="http://purl.org/tei/bug/3472477">3472477</ref>: <label>AdBlock blocks
+                  ‘msad’ ID</label>
+                <sp><speaker>JC:</speaker>
+<p>We agreed on the telco to add a tei_ prefix to all ids.</p>
+</sp><sp><speaker>LB:</speaker>
+<p>We could change all the ids in the actual source.</p>
+</sp><sp><speaker>JC:</speaker>
+<p>This would be a major task, wouldn’t it?</p>
+</sp>
+<p><label>Action</label>: MH will undertake to change the stylesheets to implement
+                  this.</p>
+</item>
+<item><ref target="http://purl.org/tei/bug/3471119">3471119</ref>: <label>em and en dashes
+                  in the Guidelines</label>
+<p><label>Action</label>: MH will implement the consensus (no spaces around em dashes used
+                    parenthetically). RW will create the styleguide document with help from KH who
+                    knows the CMS system already. The text style guide will be deleted.</p>
+</item>
+<item><ref target="http://purl.org/tei/bug/3395448">3395448</ref>: 
+<p><label>Action</label>: JC
+                    will try to discover whether Virginia is technically still a partner or not.
+                    When it’s resolved, KH will implement any changes to the website.</p>
+</item>
+<item><ref target="http://purl.org/tei/fr/3511134">3511134</ref>: <label>html:@id on
+                  reference pages showing attributes</label>
+<p>General consensus that it would be a good idea.</p>
+              <sp><speaker>JC:</speaker>
+<p> Should we include something to distinguish atts from elements as in MH’s
+                    suggestion on the ticket?</p>
+</sp><sp><speaker>GB:</speaker>
+<p>We could use a prefix such as #tei_att_type or #tei_el_type.</p>
+</sp><sp><speaker>JC:</speaker>
+<p>Another obscure format for people not to understand? Maybe simpler
+                    solution?</p>
+</sp>
+<p><label>Action</label>: JC and MH will conspire to implement this or something like this in
+                  the stylesheets.</p>
+</item>
+<item><ref target="http://purl.org/tei/fr/3437509">3437509</ref>: <label>soft deprecation
+                  of @key</label>
+<p>The proposal has already been accepted to soft-deprecate @key, by suggesting that
+                  people switch to @ref. LB initially objected strongly to the deprecation of @key,
+                  but was reluctantly convinced that gentle encouragement to use @ref instead (with
+                  a private URI scheme) might be tolerable.</p>
+               <sp><speaker>KH:</speaker>
+<p> There is no clear consensus on exactly what format magic tokens should take in
+                    @ref, but we seem to be tending towards private URI schemes. General discussion
+                    reveals that uses of @key in the Guidelines and in examples reveal some of the
+                    disadvantages of it: it’s not clear in many contexts what @key values refer
+                    to.</p>
+</sp>
+<p><label>Action</label>: KH will review the whole thread and make a recommendation about the
+                  form of @ref, and make the soft deprecation changes to the Guidelines; these will
+                  be reviewed by LB.</p>
+</item>
+<item><ref target="http://purl.org/tei/fr/3432520">3432520</ref>: <label>Introduce
+                  standard attributes to refer to ISOCat</label>
+<p>SR and PB have almost finished implementing this.</p>
+<p><label>Action</label>: SR and PB to finish implementing this.</p>
+</item>
+<item><ref target="http://purl.org/tei/fr/3046288">3046288</ref>: <label>allow f to
+                  contain pcdata</label>
+                <sp><speaker>JC:</speaker>
+<p>This has been implemented, but is awaiting some further examples for the
+                    Guidelines.</p>
+</sp>
+<p><label>Action</label>: PB will contact LR and ask him to provide further examples.</p>
+</item>
+<item><ref target="http://purl.org/tei/fr/3041605">3041605</ref>: <label>update list of
+                  Council members</label>
+                <sp><speaker>KH:</speaker>
+<p>This is mostly done, but there are some historical details or old meetings
+                    which need to be added, and it’s not clear where this could be placed. There’s
+                    no place to mention the Kingston meeting, so it won’t be mentioned.</p>
+</sp>
+<p><label>Action</label>: KH will close the ticket.</p>
+</item>
+</list>
+</div>
+<div><head>
+            1.1.4 Amber Bugs/FRs:</head>
+<p>These were divided into topical groups as suggested by email to council list as of
+              2012-03-25</p>
+<list style="ul">
+<item>Group A: LB, JC, GB, MH. 
+<list style="ul">
+<item><ref target="http://purl.org/tei/bug/3497369">3497369</ref><label>(TEI Guidelines, p. 396 – XPath):</label>
+                    <sp><speaker>MH:</speaker>
+<p>The original typo is fixed, but the ticket is the only one relating to the
+                        larger discussion of TEI Pointers.</p>
+</sp>
+<p>LB and JC suggest dealing with the topic on this ticket right now.</p>
+<p>LB’s suggestion on the ticket is “I think the specific use of XPath in the
+                      context of the location-referenced method for critical apparatus needs to be
+                      considered and (if it’s applicable) exemplified in the Guidelines.” Expanding
+                      on this, what it really means is that the @from and @to attributes, which are
+                      xsd:anyUri, could take xpath(), and we should suggest and exemplify this in
+                      the Guidelines. Use of @from and @to is possibly better than @loc (which is
+                      data.word+).</p>
+<p><label>Action</label>: (JC) Strike the sentence that’s under discussion, because then
+                      the paragraph is less confusing. We should also add a new section (12.2.4),
+                      which explains that you don’t have to use ids in @from and @to; you can also
+                      use any URIs and XPointers with TEI XPointer schemes.</p>
+</item>
+<item><ref target="http://purl.org/tei/bug/3497356">3497356</ref><label>(5 TEI Guidelines, p. 394 – external apparatus):</label>
+<p>The suggestion is that <gi>app</gi> should be able to be organized into a
+                        <gi>listApp</gi> element. The group consensus was that there is no
+                      organizational principle by which different sets of <gi>app</gi> would likely
+                      be listed separately, so there’s no need for a special element.</p>
+<p><label>Action</label>: MH will ask the submitter (and the TEI-L, pointing to the ticket)
+                      for any examples of the use of <gi>div</gi> which suggest that
+                        <gi>listApp</gi> might be useful (for instance, organization of
+                      <gi>apps</gi> into multiple <gi>div</gi>s with @type).</p>
+</item>
+<item><ref target="http://purl.org/tei/bug/3496998">3496998</ref><label>(TEI Guidelines, p. 393 – <gi>lacunaEnd</gi>):</label>
+<p><label>Action</label>: LB will add an additional example of how to combine
+                      <gi>lacunaEnd</gi> inside a <gi>rdg</gi>. Ticket will be closed.</p>
+</item>
+</list>
+</item>
+<item>Group C: BB, KH, RW. 
+<list style="ul">
+<item><ref target="http://purl.org/tei/bug/3475748">3475748</ref><label>(inaccurate example in dictionary chapter):</label>
+<p>The group agreed that in this ticket, Laurent’s proposal is consistent with
+                      an example given in the reference page for <gi>usg</gi>, which explicitly
+                      suggests using <tag>usg type=”style”</tag> to indicate usage such as “literal”,
+                      so we recommend accepting this change. This should be implemented.</p>
+<p><label>Action</label>: KH will implement this change in the guidelines offers to do
+                      this.</p>
+</item>
+<item><ref target="http://purl.org/tei/bug/3440771">3440771</ref><label>(Multiple <gi>geo</gi> tags in <gi>location</gi> ):</label>
+<p>While the prose of the Guidelines says “All uses of geo within a document are
+                      required to use the same coordinate system,” prompting this ticket, which
+                      wants to be able to have more than one, we found it actually is already legal
+                      to have multiple <gi>geo</gi> tags in a <gi>location</gi>, as well as to have
+                      multiple <gi>geoDecl</gi> tags in the header.</p>
+                  <sp><speaker>KH:</speaker>
+<p>the discussion comes down to: can you have multiple <gi>geo</gi>s within
+                          <gi>location</gi>, or if you want to use multiple <gi>geo</gi>s, do you
+                        actually need to use more than one <gi>location</gi> element to contain
+                        them</p>
+</sp>
+<p>Council wants to better understand whether all geographic coordinate systems
+                      are really capable of being converted from one to another (i.e., From any one
+                      coordinate system can you truly derive the place’s value in another, making it
+                      truly redundant to encode a location according to more than one system?)</p>
+<p>PFS pointed out that in a single document you might need to use more than one
+                      system (e.g. American Grid and British Grid)</p>
+<p>Council agreed that it might be necessary to use more than one coordinate
+                      system within a document, and since <gi>geoDecl</gi> is repeatable, it is
+                      already possible to declare more than one coordinate system</p>
+<p>Council recommends one <gi>location</gi> containing more than one
+                        <gi>geo</gi> if the location is really the same place in the universe, but
+                      different systems are being used to refer to it. If there is really lack of
+                      consensus about the location (for example, Camelot), use more than one
+                        <gi>location</gi>, each with its own <gi>geo</gi></p>
+<p><label>Actions</label>: SR to coordinate, KH and GB to assist:</p>
+<list style="ul">
+<item>document how to point from a <gi>geo</gi> to the <gi>geoDecl</gi> in
+                        order to indicate which coordinate system is being used.</item>
+<item>Remove from the Guidelines the statement that “All uses of geo within a
+                        document are required to use the same coordinate system.” </item>
+<item>edit the definition of <gi>location</gi> to say something like “defines
+                        the location of a place as *one or more* sets of geographical
+                        coordinates…” to indicate that more than one system may be used at
+                        once</item>
+<item>clarify relationship between <gi>location</gi> and <gi>geo</gi> in the
+                        prose of the Guidelines</item>
+</list>
+</item>
+<item><ref target="http://purl.org/tei/bug/3458222">3458222</ref><label>(<gi>choice</gi> as child of <gi>pc</gi> )</label>
+<p>add <gi>pc</gi> to either pPart.edit or pPart.editorial (both were suggested
+                      in the Sourceforge comments), but we aren’t sure which one</p>
+<p>In sourceforge, Lou noted some text in the guidelines that would also need to
+                      be revised—the implementor should take this into account</p>
+<p><label>Action</label>: LB will add <gi>pc</gi> to pPart.edit and revise the prose
+                      accordingly</p>
+</item>
+<item><ref target="http://purl.org/tei/bug/3439980">3439980</ref><label>(content model of <gi>signed</gi>)</label>
+<p>There is inconsistency in how signed and salute are used.</p>
+<p>One proposal is that signed and salute are siblings, you decide what goes in
+                      each, and they are both contained by closer;</p>
+<p>There certainly needs to be more distinctive definition of <gi>signed</gi>
+                      and <gi>salute</gi>, which right now are nearly identical. In particular: if
+                      we agree that <gi>signed</gi> depends on the presence of a name or the
+                      stand-in for a name, this should be made clear in the definition of the
+                      element</p>
+<p>The “thine to command” example should be adjusted so that “thine to command”
+                      is within <gi>salute</gi>, rather than <gi>signed</gi>. The same for “thy
+                      repentant husband for his diloyaltie”</p>
+<p>It was agreed that there is ambiguity between <gi>signed</gi> and
+                        <gi>salute</gi>, but accept that there will probably always be ambiguity
+                      here. For example, “thy repentant husband” might arguably go in either
+                      place</p>
+<p>When it comes to block of signatures: either </p>
+<list style="ul">
+<item>expand closer to include list, and enclose each <gi>signed</gi> inside
+                          an <gi>item</gi> in the list or</item>
+<item>Expand <gi>signed</gi> to allow a list, in which each name would be an
+                          item</item>
+</list>
+<p>SR wants to know why we insist on sibling <gi>salute</gi> and
+                      <gi>signed</gi>, since we all acknowledge its ambiguous/subjective. “What does
+                      it buy us?”</p>
+<p>A new <gi>sigBlock</gi> element was proposed, which would be a child of
+                        <gi>closer</gi>.; A more general action would be to allow <gi>list</gi>
+                      within closer. If instead we create <gi>sigBlock</gi>, we don’t need it; We
+                      seem well-disposed to the idea of <gi>sigBlock</gi>, but BB asks us to
+                      consider the name (and implications of ‘block’) to make sure its rational
+                      across the other elements.; (MH and some others like the name)</p>
+<p><label>Action</label>: LB to chair an ad hoc council working group to report back on
+                      this, KH, LB, and PS to be members, others as necessary. (confirmed later in
+                      minutes)</p>
+</item>
+<item><ref target="http://purl.org/tei/bug/3500088">3500088</ref><label>(French example of <gi>metDecl</gi> seems wrong)</label>
+<p>Original ticket pointed out an error in an example, which has already been
+                      corrected</p>
+<p>In the comments, discussion turned to whether one might define more than one
+                      metrical syntax by including more than one <gi>metDecl</gi> in the header. </p>
+<p>Council agreed that this could be done (as with <gi>geoDecl</gi> above). In
+                      order to point from an instance of meter to the appropriate <gi>metDecl</gi>,
+                      use the @decls attribute. If this is not already stated in the Guidelines, it
+                      should be added. the guidelines if it’s not already there. Need to assign
+                      someone to do this.</p>
+<p>In the SourceForge comments, MH suggested that the <gi>metDecl</gi> should
+                      also specify what flavor of regex is being used, but KH pointed out that this
+                      is already defined sufficiently in the definition of @pattern, so nothing
+                      needs to be done here.</p>
+<p><label>Action</label>: MH to re-visit to determine what’s unclear and correct
+                      Guidelines.</p>
+</item>
+</list>
+</item>
+<item>Group E: PS, SR, PB. 
+<list style="ul">
+<item><ref target="http://purl.org/tei/fr/3423686">3423686</ref>
+<p><label>Action</label>: SR will nag the Ontology group as on the ticket.</p>
+</item>
+<item><ref target="http://purl.org/tei/fr/3288293">3288293</ref>
+<p><label>Action</label>: PB will add a new attribute to app.pointing, called
+                      @targetLang.</p>
+</item>
+<item><ref target="http://purl.org/tei/fr/2724997">2724997</ref> and <ref target="http://purl.org/tei/fr/2507305">2507305</ref>: <label>These relate to
+                      the linking of TEI texts to audio and video. The consensus is that there
+                      should be at least a simple way to do this, but it’s not clear how best to
+                      approach it.</label>
+                    <sp><speaker>PB:</speaker>
+<p>
+                        <gi>timeline</gi> works for audio, and <gi>facsimile</gi> works for static
+                        images; what’s required for video is some clever combination of the two.</p>
+</sp>
+<p>Consensus is that we need to create a working group to make
+                      recommendations.</p>
+                    <sp><speaker>KH:</speaker>
+<p>We should make an open call on the TEI list for people who could
+                        participate in the group.</p>
+</sp>
+<p><label>Action</label>: JC will write to TEI-L asking for people who are interested in
+                      this area to get in touch. He will run the message by Council first. These
+                      people will join a Council working group to come back with a consistent
+                      proposal to be discussed later at this meeting.</p>
+</item>
+</list>
+</item>
+</list>
+</div></div>
+<div><head>
+          1.2 Afternoon</head>
+<div><head>
+            1.2.1 TEI and Schematron Tests</head>
+<p>SR provided an ad-hoc lecture with slides in an effort to educate MH and others on
+              how Schematron fits into the TEI build process.</p>
+<list style="ul">
+<item><gi>elementSpec</gi>s have <gi>constraintSpecs</gi>. <gi>constraintSpec</gi> has
+                a scheme (normally isoschematron). Inside <gi>constraintSpec</gi>,
+                  <gi>constraints</gi>s have <gi>assert</gi> elements, which have @test attributes,
+                which are xpath; if the xpath tests false, the assertion will be fired, and its
+                contents will appear on the console when you build or validate. There is also a
+                  <gi>report</gi> element which is similar, but fires when true. In Roma, you will
+                also get a schematron schema which you can also use to test your document against.
+                This document is essentially a compilation in Schematron of all the TEI
+                constraints.</item>
+<item>P5 has a Test directory in which there are test instance documents for specific
+                features, and ODD files which can be used to generate schematron which will be run
+                against the test document. There are also “detest” documents which are designed to
+                fail. When these fail, the results are compared against a number of known error
+                messages, to confirm that the expected errors occur. The error messages expected are
+                stored in “detest.log”. They have to be in the correct order, so the recommended way
+                to do this is to run the process locally, and then copy the resulting log back into
+                the detest.log. These are not well documented, and scrappily implemented; we need to
+                be more methodical about how to do this, and in making sure that when we add or
+                change elements, classes and attributes, we make an effort to imagine possible
+                errors and write tests for them. There are also hand-crafted XSLT testing routines
+                in e.g. Utilities/validator.xsl. Also remember that you don’t need to create tests
+                for things which can be covered by your examples; the better and more extensive your
+                examples are, the more problems will be caught initially anyway, because the
+                examples themselves are validated at compile time.</item>
+</list>
+<p><label>Action</label>: MH will write a new section for “How to edit the Guidelines” which
+              explains all this in more detail; this will then be checked by SR and LB.</p>
+</div>
+<div>
+         <head>   1.2.2 TEI Exemplars (e.g. Tite)</head>
+            <sp><speaker>JC:</speaker>
+<p>Who owns the existing exemplars, and who should be keeping them up to date?</p>
+</sp><sp><speaker>KH:</speaker>
+<p>With a TEI example like Tite, there’s no mechanism by which a change in the TEI
+                which should precipitate a change in Tite will in fact do so. There probably should
+                be. If your define your customization by inclusion, you won’t get new elements, but
+                if by exclusion, you will inherit more changes. This makes no difference, though, to
+                the prose in the customizations, which ought also to be updated.</p>
+</sp><sp><speaker>JC:</speaker>
+<p>Only Lite and Tite have prose text associated with them. They are also the only
+                examples (at present) which are maintained by the TEI.</p>
+</sp><sp><speaker>JC and LB:</speaker>
+<p>We undertake to try not to break any of the other exemplars, and they are tested
+                during the build process.</p>
+</sp><sp><speaker>KH:</speaker>
+<p>The contradiction is: even if we think we’re not going to maintain the prose of
+                Tite and Lite, we are updating the ODDs themselves, so they can get out of sync.</p>
+</sp><sp><speaker>SR:</speaker>
+<p>We should also remember that e.g. Tite might add its own element.</p>
+</sp><sp><speaker>LB:</speaker>
+<p>Lite is definitely a document of its time. It could be orphaned.</p>
+</sp><sp><speaker>KH:</speaker>
+<p>Tite has some bugs and frs on it, but is not actively under development.</p>
+</sp><sp><speaker>MH:</speaker>
+<p>Can we make a decision about the future of Lite now?</p>
+</sp><sp><speaker>LB:</speaker>
+<p>We should mothball Lite, and add a note to the effect that it’s old and no longer
+                actively maintained, and that while he schemas will continue to change, the prose
+                will not keep up with them. There is a version of Lite which is defined by
+                inclusion, but the exclusion version is currently used to generate the schemas
+                <note>Actually, according to tei-council discussion in July 2012, we have been 
+                using the inclusion version for quite a while.</note>, so
+                the schemas will keep changing with the addition of new elements, taking it out of
+                sync with the prose (e.g. <gi>pc</gi> and <gi>postscript</gi>).</p>
+</sp><sp><speaker>MH:</speaker>
+<p>We should make sure the inclusion odd is up to date, regenerate the schemas, then
+                carefully update the prose to match. At that point, we can package it and archive
+                it, as a stable and unchanging resource for those who want to use it.</p>
+</sp>
+<p><label>Action</label>: LB and MH to make sure a new-style inclusion ODD is up to date,
+              regenerate schemas and update prose to match. The result should be packaged and
+              archived as a stable and unchanging resource.</p>
+         <sp><speaker>KH:</speaker>
+<p>We should do the same thing with Tite as above, because there’s no more funding for
+                its development. There were different versions of Tite—the vendor Apex made some
+                customizations—but the process of reconciling them is nearly complete. I would
+                like to revisit Tite in future, but it should be archived first.</p>
+</sp>
+<p><label>Action</label>: KH will collaborate with LB and MH to carry out the same process of
+              freezing with Tite.</p>
+</div>
+<div>
+           <head> 1.2.3 Best Practices for TEI in Libraries</head>
+            <sp><speaker>KH:</speaker>
+<p>The SIG on libraries produced this document to emphasize interoperability, make
+                more specific recommendations than the main Guidelines, and encourage TEI’s use in
+                libraries. Now the question is whether the Council should be involved, and if so,
+                how much; should we adopt the document and continue to maintain it, or should it be
+                the responsibility of the original community?</p>
+</sp><sp><speaker>SR:</speaker>
+<p>We could look for external funding to find ways of integrating the document into
+                existing TEI practices.</p>
+</sp><sp><speaker>LB:</speaker>
+<p>We could treat it as a case study, just as we did with the Genetic Editing group.
+                But there are aspects of the document (such as the concept of levels) which may not
+                have general application in the guidelines.</p>
+</sp><sp><speaker>SR:</speaker>
+<p>It wouldn’t be unusual to have material in the Guidelines which is specific to one
+                community. There are things in the customization that are more specific than could
+                ever go in the Guidelines.</p>
+</sp><sp><speaker>KH:</speaker>
+<p>Yes, the ODD is very restrictive. But that is useful in itself, as an exemplar. We
+                could make the best practices ODDs, which are very restrictive, available from the
+                TEI website list of community customizations, but not maintained by the TEI.
+                Meanwhile, the Best Practices document could be examined by Council and all use
+                possible made of it in moving forward with P5.</p>
+</sp><sp><speaker>GB:</speaker>
+<p>The case of EpiDoc is parallel, in that it’s (now) a conformant customization of
+                TEI which is highly prescriptive and restrictive.</p>
+</sp><sp><speaker>JC:</speaker>
+<p>EpiDoc has a community willing to keep supporting it, but the libraries document
+                seems to lack that community support.</p>
+</sp><sp><speaker>GB:</speaker>
+<p>There is a large community of people using EpiDoc, and I produce a new EpiDoc
+                schema every time there’s a new TEI schema.</p>
+</sp>
+<p><label>Action</label>: KH will make the customization available through the TEI website (we will
+              not incorporate it into our build process because it’s too restrictive); the document
+              itself will be mined for good ideas, and turned into a set of recommendations for
+              changes to the Guidelines.</p>
+<p><label>Action</label>: KH to submit tickets for items to be added to the main Guidelines, since
+              most of the items are likely to be independent and can be assessed separately.</p>
+</div>
+<div><head>
+            1.2.4 TEI Bugs and FR</head>
+<list style="ul">
+<item><ref target="http://purl.org/tei/bug/3496958">3496958</ref><label>(number of <gi>rdg</gi>s in <gi>app</gi>):</label>
+<p>GB added a note to the ticket saying that the availability of a single
+                    <gi>rdg</gi> is intentional and required.</p>
+<p><label>Action</label>: (MH) We leave the content model alone (it’s horrible), but we use
+                  this as an example for Council to collaborate on the creation of one or more
+                  Schematron constraints which will enforce the presence of at least one
+                    <gi>rdg</gi>, to everyone’s edification. </p>
+</item>
+<item><ref target="http://purl.org/tei/bug/3496954">3496954</ref><label>“or where no witness exists”:</label>
+<p><label>Action</label>: None required, ticket closed.</p>
+</item>
+<item><ref target="http://purl.org/tei/bug/3496951">3496951</ref><label>(@wit on <gi>rdgGrp</gi>):</label>
+<p>The only reason we can imagine for the use of @wit on <gi>rdgGrp</gi> is as a
+                  shorthand way to list all the witnesses who show up in a <gi>rdgGrp</gi> (although
+                  this information can easily be derived from parsing the content
+                  <gi>rdg</gi>s).</p>
+               <sp><speaker>LB:</speaker>
+<p>The availability of @wit on <gi>rdgGrp</gi> is an accidental byproduct of the
+                    class system. We should modify att.textcritical so that it no longer supplies
+                    @wit; then we add @wit explicitly to <gi>lem</gi> and <gi>rdg</gi>.</p>
+</sp><sp><speaker>JC:</speaker>
+<p>We should actually define a new class att.witnessed which has @wit, and add
+                      <gi>lem</gi> and <gi>rdg</gi> to it.</p>
+</sp><sp><speaker>MH:</speaker>
+<p>This breaks backward compatibility, so we should send a message to TEI-L first,
+                    to check that no-one is using it.</p>
+</sp>
+<p><label>Action</label>: LB will carry this out.</p>
+</item>
+<item><ref target="http://purl.org/tei/bug/3496949">3496949</ref><label>(“ &lt;wit&gt;[unattested] &lt;/wit&gt;“):</label>
+<p><label>Action</label>: GB will review the particular example mentioned on the ticket, and
+                  revise and expand it: firstly, use a straightforward witness; secondly add an
+                  example for the “unattested” case.</p>
+</item>
+</list>
+</div></div>
+</div>
+<div><head>
+        Tuesday April 17th 2012</head>
+<div><head>
+          2.1 Morning</head>
+<div><head>
+            2.1.1 Report from GB</head>
+<p>GB re-opened a ticket closed yesterday: he believes that an <gi>app</gi> with no
+                <gi>rdg</gi> at all is acceptable and deliberate. It might contain a <gi>ptr</gi> or
+                <gi>note</gi> or <gi>lem</gi>, and maybe also <gi>ref</gi>. He would like the
+              Schematron rule to not require a single <gi>rdg</gi></p>
+           <sp><speaker>MH:</speaker>
+<p>if GB can supply what the minimal requirements for <gi>app</gi> should be, then MH
+                can write the Shematron rule to test for *that*, instead of specifically for
+                  <gi>rdg</gi></p>
+</sp></div>
+<div>
+           <head> 2.1.2 TEI Namespaces and Conformance</head>
+            <sp><speaker>KH:</speaker>
+<p>found guidelines confusing: in what cases, when you customize, should you put an
+                element or attribute into a new namespace? Identified a few errors in text, at least
+                one of which has already been corrected. Is it true that *any* customization that is
+                *not* a pure P5 subset requires a new namespace? </p>
+</sp><sp><speaker>JC:</speaker>
+<p>Yes, because you’re modifying the elements that are there, which have been agreed
+                upon by the council. It’s no longer the TEI element; LB and SR agree with JC</p>
+</sp><sp><speaker>MH:</speaker>
+<p>Say you added an attribute (like type) to an attribute class that didn’t have it
+                already. Can you do this in a new namespace? SR says you can; JC agrees. </p>
+</sp><sp><speaker>JC:</speaker>
+<p>benefits of long-term clarity outweigh the annoyance of having to put namespaces
+                everywhere</p>
+</sp></div>
+<div><head>
+            2.1.3 Chapter/module fragmentation and consolidation (e.g. should things like
+              ‘dates’ become a chapter of its own)</head>
+<p>JC suggests Group E people report back if they discussed this.</p>
+<sp><speaker>SR:</speaker>
+<p>the group didn’t address this in break out because we planned to discuss as a
+                group</p>
+</sp><sp><speaker>JC:</speaker>
+<p>realized that “dates” is only a small piece of the Names/Places chapter. Instead,
+                should “dates” information throughout the guidlines be pulled into its own
+                chapter?</p>
+</sp><sp><speaker>PB:</speaker>
+<p>points there are other places where this this is an issue</p>
+</sp><sp><speaker>LB:</speaker>
+<p>Guidelines are full of cross references for this very reason</p>
+</sp><sp><speaker>JC:</speaker>
+<p>If separation this could de-couple the relationship between chapters and
+                modules</p>
+</sp><sp><speaker>MH:</speaker>
+<p>if it’s fine to de-couple the guidelines from the modular structure of the schemas,
+                we can instead think of them in terms of user-friendliness. Chapter 11
+                (Representation of Primary Sources), e.g., which was proofread by the council in
+                November is just too long</p>
+</sp><sp><speaker>LB:</speaker>
+<p>the Guidlines aren’t meant to be read through (though SR suggests that chapter
+                structure suggests reading is suggested). This would be a major job—not a
+                small/minor change; JC agrees.</p>
+</sp><sp><speaker>SR:</speaker>
+<p>we can’t just do this piecemeal, by splitting dates and times into its own chapter.
+                We would need to investigate the whole structure of the guidlines. Where would we
+                begin? </p>
+</sp><sp><speaker>JC:</speaker>
+<p>the original suggestion was indeed to create a module just for dates, which would
+                correspond to the new chapter. THis would break people’s ODDS/not backwards
+                compatible. Such reorganisation maybe should wait until major structural changes are
+                being suggested.</p>
+</sp>
+<p>GB and SY both recommend a more piecemeal approach. GB says we can go forward with
+              dates and places without re-assessing the whole thing</p>
+<p>SR, JC, LB recommend instead an overall analysis to establish
+              principles/approach.</p>
+           <sp><speaker>JC:</speaker>
+<p>main concern is for the html output of the guidelines to change—but from his point
+                of view this could then lead to a change in modules</p>
+</sp><sp><speaker>SY:</speaker>
+<p>If tags are used together, they should be explained together. If documents that use
+                date also use place, then it makes sense to document them in the same place.</p>
+</sp><sp><speaker>JC:</speaker>
+<p>Almost all combinations of elements could be used with each other, sometimes
+                semantic groupings make sense, other times element usage cuts across genres and
+                types of encoding.</p>
+</sp><sp><speaker>LB:</speaker>
+<p>the Guidelines are deliberately top-down, because each element/attribute can be
+                used in many different circumstances. The Guidelines explicitly are *not* meant to
+                be derived from specfic use cases.</p>
+</sp><sp><speaker>JC:</speaker>
+<p>statistical analysis of documents or schemas might be interesting, SR agrees it
+                should be part of the big picture</p>
+</sp><sp><speaker>LB:</speaker>
+<p>if you go along with the assertion that the Guidelines are organized in a top-down
+                matter, then a good reason to break off a section is that it doesn’t fit where it
+                is</p>
+</sp><sp><speaker>JC:</speaker>
+<p>This was exactly the motivation for the discussion of breaking off ‘dates’.</p>
+</sp><sp><speaker>MH:</speaker>
+<p>two models of organization: semantic areas, and levels of complexity. These
+                compete.</p>
+</sp><sp><speaker>LB:</speaker>
+<p>some usage of date and time is used in all documents—this should be in core (but
+                core chapter is too big). Could do a whole chapter on “common features” </p>
+</sp><sp><speaker>MH:</speaker>
+<p>break core into a group of smaller modules like names, dates. Core could then pull
+                these in</p>
+</sp><sp><speaker>LB:</speaker>
+<p>core should get you simple bibliography, dates and times, etc. (something like TEI
+                Lite). Then you could pull in more sophisticated/advanced modules as needed (for
+                dates only, for example)</p>
+</sp><sp><speaker>JC:</speaker>
+<p>if you have “basic dates” and “advanced dates” that’s even more confusing. Instead,
+                wouldn’t be good to go to one page and get everything about dates and time</p>
+</sp><sp><speaker>PB:</speaker>
+<p>LB’s suggestion (above) might be an interesting way of maintaining TEI Lite</p>
+</sp><sp><speaker>LB:</speaker>
+<p>dating information is very relevant to name and place issues (e.g. birth,
+                death…)</p>
+</sp><sp><speaker>SR:</speaker>
+<p>ODD dependency: if you’ve got places, you’ve also got dates (an old problem never
+                solved)</p>
+</sp><sp><speaker>LB:</speaker>
+<p>if you pull out dates, why wouldn’t you also separate names, persons, places?</p>
+</sp>
+<p><label>Action</label>: JC will close the ticket with “will not fix” for now, and keep this in
+              mind of P6</p>
+<p><label>Action</label>: JC will start a wiki page or ticket to discuss P6</p>
+<p><label>Action</label>: SY will send an email to tei-l to encourage people to add their docs to
+              the samples page to keep open the statistical approach in the long term.</p>
+</div>
+<div><head>
+            2.1.4 TEI Examples</head>
+            <sp><speaker>JC:</speaker>
+<p>this refers to our use of examples, and gaining more consistency in how we use
+                them, and doing a better job to really typify the element they are meant to
+                exemplify </p>
+</sp><sp><speaker>SR:</speaker>
+<p>want a way of filtering examples that truly exemplify the element you are
+                interested in, and those that just happen to have a particular element in them; We
+                want a way of indexing when an example is (or happens to be) a good example of a
+                particular element</p>
+</sp><sp><speaker>MH:</speaker>
+<p>examples could be sorted according to rank/usefulness</p>
+</sp><sp><speaker>JC:</speaker>
+<p>when people use the guidelines, the first thing they do is look at an example and
+                just try to find one that applies to their situation and copy it </p>
+</sp><sp><speaker>SR:</speaker>
+<p>is it a better use of time to assess/rank our existing examples, or come up with
+                new ones?</p>
+</sp><sp><speaker>JC:</speaker>
+<p>if each element had several examples, including some more complex ones, that would
+                be good—if they don’t get too long </p>
+</sp><sp><speaker>SR:</speaker>
+<p>should there be a way of pointing to longer examples? Consensus is that fully
+                worked examples would be beneficial.</p>
+</sp><sp><speaker>MH:</speaker>
+<p>examples are down at the bottom, so is length really an issue?</p>
+</sp><sp><speaker>KH:</speaker>
+<p>At some point do we decide that the Guidlines are not suitable for
+                print/typesetting in PDF format </p>
+</sp><sp><speaker>SR:</speaker>
+<p>there’s already a mismatch between web and PDF: the “see all examples,” available
+                on the web, no such thing in PDF</p>
+</sp>
+<p>Main conflict here seems to be that to do this well, need TEI experts to assess—but
+              this will be a long, monotonous task. Is it a good use of time?</p>
+      <sp><speaker>JC:</speaker>
+<p>There’s a disconnect between examples in chapters and examples in element spec</p>
+</sp><sp><speaker>KH:</speaker>
+<p>actually, the examples in the chapters tend to be complex edge cases, rather than
+                good examples for teaching </p>
+</sp><sp><speaker>LB:</speaker>
+<p> principle of beginning with a simple example, and either adding more complex
+                examples or adding complexity to the initial example</p>
+</sp><sp><speaker>JC:</speaker>
+<p>One possibility would be to keep all examples separate in a corpus, and then
+                include them into the guidelines or reference page </p>
+</sp><sp><speaker>LB:</speaker>
+<p>this doens’t work where the example is part of the exposition of the guidelines
+              </p>
+</sp><sp><speaker>JC:</speaker>
+<p>It could still work, just duplication of examples.</p>
+</sp><sp><speaker>MH:</speaker>
+<p>need a way of identifying and prioritizing the “canonical” examples—whether in the
+                element spec or prose </p>
+</sp><sp><speaker>SR:</speaker>
+<p>start with the ones in the spec, which are by definition canonical, and then add
+                ones from the text when appropriate</p>
+</sp><sp><speaker>SR:</speaker>
+<p>change the algorith that generates the “all examples” page to distinguish between
+                canonical examples and “incidental mentions”</p>
+</sp><sp><speaker>JC:</speaker>
+<p>But what about cases that might be “canonical” for more than one element</p>
+</sp><sp><speaker>LB:</speaker>
+<p>how are we defining canonical?</p>
+</sp><sp><speaker>MH:</speaker>
+<p>Maybe it’s canonical if it is complete—that is, the last stage of a tutorial
+                example, that has all of the complexity in it (not the stripped down version that
+                you might see at the very start)</p>
+</sp><sp><speaker>JC:</speaker>
+<p>spec is meant to exemplify one particular element, examples in guidelines are meant
+                to exemplify how you might encode a particular phenomenon. (so would involve good
+                examples of using several different needed elements and attributes)</p>
+</sp><sp><speaker>MH:</speaker>
+<p>danger of included examples falling out of sync with prose</p>
+</sp><sp><speaker>SR:</speaker>
+<p>when you look at the reference page for <gi>p</gi>, pull in the relevant examples
+                from chapter docs. This is what is done now, but we need a way to discriminate among
+                the examples</p>
+</sp><sp><speaker>LB:</speaker>
+<p>how to decide whether to put an example in the spec or the chapter? Examples might
+                appear in element spec, chapter text, and “list of all examples”</p>
+</sp>
+<p>JC, MH: we want the list of all examples to be more useful—prioritized or sorted in
+              some way</p>
+<sp><speaker>JC:</speaker>
+<p>for many people, the element reference is their only view/use of the Guidelines</p>
+</sp><sp><speaker>LB:</speaker>
+<p>we don’t currently exemplify attributes as opposed to elements—we could/should do
+                this</p>
+</sp><sp><speaker>MH:</speaker>
+<p>would this cause the attribute examples to show up in “list all examples” of
+                whatever element the attribute is on?</p>
+</sp><sp><speaker>SR:</speaker>
+<p>could we have a third set of larger, more complex examples. Instead of canonical,
+                think of significance: to look at all examples of <gi>p</gi>, is useless; </p>
+</sp><sp><speaker>PS:</speaker>
+<p>noisy examples can actually be useful in revealing what you can do if you need
+                to</p>
+</sp><sp><speaker>LB:</speaker>
+<p>if an example is bad, we should get rid of it, not rank it lower or try to hide it
+                in some way</p>
+</sp><sp><speaker>RW:</speaker>
+<p>is there some way to “reduce the noise” of examples by not displaying many examples
+                of exactly the same usage? Problem is: this would be very difficult to do</p>
+</sp><sp><speaker>MH:</speaker>
+<p>if there’s a single example that excellently exemplifies more than one element, we
+                only want to have to maintain this one in place, not repeat it in each element
+                spec</p>
+</sp><sp><speaker>MH:</speaker>
+<p>one complaint: “I hit show all examples and there’s too much there to make sense of
+                it”</p>
+</sp><sp><speaker>JC:</speaker>
+<p>people get here by just jumping right into the element reference, and scroll down
+                to the examples, where there’s either one, overly simple example, or they click show
+                all, there’s too much there to make sense of. </p>
+</sp><sp><speaker>MH:</speaker>
+<p>dense English prose is difficult for many people, so even if they click to the
+                chapter (which they may not), they won’t read it</p>
+</sp><sp><speaker>SR:</speaker>
+<p>put the examples from the chapter at the top of the “see all examples” list—this
+                might get us closer to relevant examples at the top. Consensus was this was worth
+                doing.</p>
+</sp><sp><speaker>JC:</speaker>
+<p>should we increase the number of examples in the element spec</p>
+</sp><sp><speaker>SR:</speaker>
+<p>as more and more people are writing element specs, much of the “intelligence” goes
+                into the element spec, and not into the text of the guidelines. </p>
+</sp><sp><speaker>MH:</speaker>
+<p>We don’t provide many examples for attribute classes. att.Ascribed has no examples,
+                and where would he go to look? <gi>said</gi> has examples, but none of them has a
+                @who on them.</p>
+</sp><sp><speaker>LB:</speaker>
+<p>every element that is a member of att.ascribed</p>
+</sp>
+<p><label>Action</label>: MH look at existing pages for attribute classes and see if there are
+                any examples, try adding an example to att.ascribed class spec to see if it
+                works</p>
+<p><label>Action</label>: Sebastian will tweak “show all example” so that at the top it lists
+                examples from the appropriate chapter, and links to that chapter.</p>
+<p><label>Action</label>: MH to create a wiki page to coordinate adding examples to attribute
+                classes. Since most attribute classes do not have examples, all of us should
+                generate examples to be added to attribute class pages. Someone should coordinate
+                this work? KH: create a wiki page where each class can be listed that is missing
+                examples (or that needs more) and people can sign up</p>
+<p><label>Action on SR</label>: change build process so that you can’t build without examples on
+                attribute classes (this would have to be implemented later)</p>
+</div>
+<div><head>
+            2.1.5 Group E: PS, SR, PB.</head>
+<p>Reporting on tickets from grouping H</p>
+<list style="ul">
+<item><ref target="http://purl.org/tei/fr/3434990">3434990</ref><label>Can <gi>lg</gi> contain only one <gi>l</gi></label>
+<p>JC/PB: suggested that we change the prose to read “a <gi>lg</gi> contains “one or
+                  more <gi>L</gi>” (LB has already changed)</p>
+<p>PS: it could be the case that in a damaged source, lines are missing even if
+                  there’s an <gi>lg</gi> there</p>
+<p><label>Action</label>: MH will write a Schematron rule requiring that <gi>lg</gi> contains
+                    <gi>l</gi>, <gi>lg</gi>, or <gi>gap</gi></p>
+</item>
+<item><ref target="http://purl.org/tei/fr/3305016">3305016</ref><label><gi>table</gi> containing <gi>graphic</gi></label>
+<p>can you have two <gi>graphic</gi>s?</p>
+<p>Kevin proposed a content model in Sourceforge, SR and group felt it was fine.</p>
+<p><label>Action</label>: SR will implement the content model proposed by KH.</p>
+</item>
+<item><ref target="http://purl.org/tei/fr/3416130">3416130</ref><label>allow for <gi>certainty</gi> within milestoneLike elements</label>
+<p>putting content inside empty elements might break processors? SR doesn’t think
+                  so</p>
+<sp><speaker>LB:</speaker>
+<p>not persuaded by argument to change content model of <gi>pb</gi>: concern that
+                    allowing any content will open up a can of worms</p>
+</sp><sp><speaker>GB:</speaker>
+<p>adding <gi>certainty</gi> allows for using @match to use relative XPaths to
+                    point to a parent element</p>
+</sp><sp><speaker>SR:</speaker>
+<p>this would bring milestoneLike elements in line with <gi>gap</gi>, which does
+                    allow <gi>certainty</gi></p>
+</sp>
+<p>What about allowing <gi>desc</gi>? GB sees this as different: a way of adding
+                  content to an empty element. SR says no, it’s a way of adding documentation to an
+                  empty element</p>
+<sp><speaker>BB:</speaker>
+<p>what does this mean for editing the guidelines? Onus on us to describe how this
+                    might be used. This would be in the attribute class.</p>
+</sp><sp><speaker>MH:</speaker>
+<p>Would have to find every instance of, e.g., “<gi>lb</gi> is an empty element’ and
+                    change in (and do this for every element in milestoneLike)</p>
+</sp><sp><speaker>SR:</speaker>
+<p><gi>certainty</gi> is an empty element—so even adding it to an empty element,
+                    the element remains “morally” empty: it has no human readable content</p>
+</sp>
+<p>PB it is an overgeneralization to say that something milestoneLike must be an
+                  empty element. Rather, it is a *point*—not a span, division, or section. PS adds
+                  that it contains metadata about the text or document (not anything from the text
+                  stream). Also distinctions to be made between human-readable meaning of “empty”
+                  and schema requirement that there are no child elements. That is, to a reader,
+                    <gi>pb</gi> remains an empty element, even though it may have a child.</p>
+<sp><speaker>GB:</speaker>
+<p>perceives adding an element like <gi>certainty</gi> as adding an “enhanced”
+                    attribute</p>
+</sp>
+<p><label>Action</label>: GB will survey the guidelines to see what kind of changes this would
+                  involve. He will report back via email, unless there is great disagreement the FR
+                  should be approved and implement. If there is disagreement, address at our next
+                  teleconference</p>
+<p><label>Action</label>: JC will update the ticket in sourceforge to assign to GB and add a
+                    note about our decided action</p>
+</item>
+<item> macro.paraContent out of place in <gi>gram</gi> etc [cf <gi>u</gi> discussion]
+<p>link to ticket is broken, so group E did not discuss;</p>
+<p><label>Action</label>: JC to find out what happened to this ticket.</p>
+</item>
+</list>
+</div>
+<div><head>
+            2.1.6 TEI Bugs and FR</head>
+<p>Group F: PS, KH, JC, GB</p>
+<list style="ul">
+<item><ref target="http://purl.org/tei/fr/3500566">3500566</ref><label>revise handling of ISBNs in <gi>idno</gi></label>
+<p>Didn’t like b because we can’t come up with a short definitive list of @type
+                  values.</p>
+<p><label>Action</label>: KH to implement proposal ‘a’ on the ticket: add new example to
+                    <gi>idno</gi> elementSpec</p>
+</item>
+<item><ref target="http://purl.org/tei/fr/3497079">3497079</ref><label>clarify and rationalize encoding of pagination in bibliography</label>
+<p>GB uncomfortable with not using <gi>biblScope</gi> in a bibliography (as opposed
+                  to in a footnote)</p>
+<p>Proposal seems not to deal with difference between part and whole of article
+                  (analytic item) and part and whole of thing that article is in (monographic
+                  item).</p>
+<p><label>Action</label>: GB to write a comment on the ticket giving examples of citations that
+                  would be problematic or confusing according to this proposal. Paul can also
+                  provide example citations from his U-M CV project. Kevin will discuss with Gabby
+                  and incorporate marked-up examples into proposal and revise proposal if
+                  appropriate. Leave ticket open for now</p>
+</item>
+<item><ref target="http://purl.org/tei/fr/3440977">3440977</ref><label>Add idno to person (maybe also place)</label>
+                <label>Action: Agreed: Suggest LR to implement. JC will contact him and report back
+                  to us if he will not implement.</label>
+              </item>
+<item><ref target="http://purl.org/tei/fr/2493417">2493417</ref><label><gi>idno</gi> coverage</label>
+<p><label>Action</label>: Agreed. Already agreed and implemented, KH to add more
+                  examples/prose</p>
+</item>
+<item><ref target="http://purl.org/tei/fr/3480057">3480057</ref><label>Allow <gi>idno</gi> inside <gi>monogr</gi> without restrictions</label>
+<p><label>Action</label>: KH to close.</p>
+</item>
+<item><ref target="http://purl.org/tei/bugs/3439587">3439587</ref><label>Problems introduced by content models of bibl and imprint.</label>
+                <label>Action: MH will revise definition of <gi>titleStmt</gi> to no longer imply
+                  responsibility for intellectual content only.</label>
+<p><label>Action</label>: MH will investigate adding <gi>distributor</gi> and
+                    <gi>publisher</gi> to model.respLike, noting that last time he tried to do
+                  something like this, it got messy.</p>
+</item>
+<item><ref target="http://purl.org/TEI/fr/3513147">3513147</ref>
+<p><label>biblStruct for Patent citations</label>: we found this recently opened and yet
+                  related ticket but didn’t have time to look at it</p>
+</item>
+</list>
+</div></div>
+<div><head>
+          2.2 Afternoon</head>
+<div><head>
+            2.2.1 TEI Bugs and FR</head>
+<p>Group G: LB, RW, PB</p>
+<list style="ul">
+<item><ref target="http://purl.org/tei/fr/3496494">3496494</ref><label>make attributes <att>from</att> and <att>to</att> (as pointers) part of a
+                  class</label>
+<p>Proposal is to create a class for <att>from</att> and <att>to</att> so that these
+                  are defined and used consistently in all cases where they are defined as
+                  data.pointer. Currently they are described inconsistently. <gi>arc</gi> should not
+                  be a member because the semantics are slightly different. <gi>biblScope</gi>
+                  should not be a member because @from and @to are used totally differently—not as
+                  pointers, but to express start and end points of a citation. The explanation of
+                  the usage of @from on <gi>span</gi> seems problematic (for example, there is
+                  reference to “the end of the passage,” without explaining what is meant by
+                  “passage”. However, the usage of @to and @from is slightly different for each of
+                  these elements. So ticket will be closed once language is tidied up by RW.</p>
+<p><label>Action</label>: RW will adapt defintion of <gi>span</gi> to take better wording from
+                  17.3</p>
+</item>
+<item><ref target="http://purl.org/tei/fr/3495987">3495987</ref><label>members of model.respLike should be members of att.declarable</label>
+<p>MH’s case for what we think is described here: You have an orgList and want to
+                  transclude the name of each <gi>org</gi> elsewhere in the document. You could do
+                  this using @decls. But JC said that you would instead do this using @ref or a
+                  similar from att.canonical.</p>
+<p><label>Action</label>: LB will ask Laurent for examples in case we are assuming incorrectly
+                  and will look at TEI-L archives.</p>
+</item>
+<item><ref target="http://purl.org/tei/fr/2834511">2834511</ref><label>Add more elements to att.spanning with schematron constraint</label>
+<p>If this was implemented, you would need both a way of rendering whatever the span
+                  wants to do only on the text/content, or also on the markup (e.g., if a paragraph
+                  ends and another begins within the span, is the rendering applied to </p>
+<p> as
+                  well as the content? Call for reassessment of this ticket. Nothing has happened to
+                  it for three years, and meanwhile there has been other development of genetic
+                  editing work.</p>
+<p><label>Action</label>: LB will add proposed Schematron rules but not add any other elements
+                  without clear use cases.</p>
+</item>
+<item><ref target="http://purl.org/tei/fr/3291540">3291540</ref><label>att.editLike should not bring att.dimensions and att.ranging</label>
+<p>According to ticket, because att.editLike gives you att.dimensions and
+                  att.ranging, lots of elements end up getting unneeded attributes. Ticket proposes
+                  removing certain attributes from certain elements.</p>
+<p>We all agree with the proposal.</p>
+<p><label>Action</label>: SR will take the ticket. We’ll leave it to SR to decide which of the
+                  second list of elements should be included as well. Sebastian will send a list to
+                  TEI-L so people could comment on any elements where it would be removed. If, in
+                  the future, we might decide we “got it wrong” for some of these, so we could
+                  change our mind if needed, but better if we don’t need to.</p>
+</item>
+<item><ref target="http://purl.org/tei/fr/3284816">3284816</ref><label>att.canonical for model.persTraitLike</label>
+<p>While some elements in the list already have the attributes requested, others
+                  don’t. We accepted. SR will do any that don’t have them already.</p>
+<p><label>Action</label>: SR to implement.</p>
+</item>
+</list>
+<p>Group J: MH, BB, SR</p>
+<list style="ul">
+<item><ref target="http://purl.org/tei/fr/3415801">3415801</ref><label>Allow modification of attributes belonging to a class</label>
+<p>This a valid thing to do, and we should implement it. We need to go through the
+                  Guidelines and find places where a) an attribute is defined locally simply because
+                  it has a valList or its own desc, and could go back to the att class, or b) the
+                  constraint is expressed only in prose.</p>
+<p><label>Action</label>: SR will implement.</p>
+</item>
+<item><ref target="http://purl.org/tei/fr/3118435">3118435</ref><label>classes in interleave mode and cardinality membership.</label>
+<p>We cannot do this now, because it would stop us using DTDs. It is desirable, but
+                  is a P6/ ODD3 feature. it should be recorded on P6 wiki page, and discussed at the
+                  ODD3 meeting in Hamburg. Noted that it would mean revisiting a lot of content
+                  models to see whether interleave was what was intended. Also not clear how
+                  interleave in XSD is supported.</p>
+<p><label>Action</label>: LB will close ticket.</p>
+</item>
+<item><ref target="http://purl.org/tei/fr/3426828">3426828</ref><label>more coherence on mode attribute on classes and attList</label>
+<p><label>Action</label>: SR to close this ticket noting that requestor hasn’t
+                  responded.</p>
+</item>
+<item><ref target="http://purl.org/tei/fr/1650195">1650195</ref><label>Need Header element to reference or embed schema/odd</label>
+<p>We can recommend use of <ref target="http://www.w3.org/TR/xml-model/">http://www.w3.org/TR/xml-model/</ref> in order to reference a
+                  schema. Separately, if you want to embed a schema, use the new <gi>schemaSpec</gi>
+                  (which will be added to model.encodingDescPart)</p>
+<p><label>Action</label>: MH to implement adding <gi>schemaSpec</gi> to
+                  model.encodingDescPart.</p>
+</item>
+</list>
+</div>
+<div><head>
+            2.2.2 TEI FR: Floating Div</head>
+<p>A wide ranging discussion took place concerning the floating div proposal which
+              council had reviewed. PS presented many examples of cases where it might be
+              useful.</p>
+<p>Do we want to:</p>
+<list style="ul">
+<item>Loosen definition <gi>floatingText</gi> to allow anything besides a full
+                text?</item>
+<item>Create new element for <gi>floatingDiv</gi> for anything besides a full
+                text?</item>
+<item>Tell them that what they think is a “floating div” is actually a
+                  <gi>floatingText</gi>, <gi>spGrp</gi>, or a <gi>div</gi> that hasn’t been properly
+                identified?</item>
+<item>Remove the word ‘whole’ from element description of <gi>body</gi>?</item>
+</list>
+<p>Consensus emerged that many of the PS proposed use cases were solved with
+                <gi>spGrp</gi>; and the rest with <gi>floatingText</gi> as more loosely defined. It
+              was difficult to categorise a way to distinguish <gi>floatingText</gi> from proposed
+                <gi>floatingDiv</gi>; more information and examples are needed.</p>
+<p><label>Action</label>: JC will reply to the message on TEI-L: In light of the current text and
+              examples in the Guidelines on <gi>floatingText</gi> and <gi>spGrp</gi>, we’d like
+              examples of proposed “floating divs” and how they would differ from
+                <gi>floatingText</gi>s.</p>
+</div>
+<div><head>
+            2.2.3 TEI ODD Meeting</head>
+<p>Will be a panel at DH2012 discussing problems with ODD and future of ODD. TEI-C is
+              funding a post-conference meeting (July 21-22) for room and some travel expenses to
+              continue the discussion (about how to develop ODD3, which might happen before or with
+              P6).</p>
+<p>JC invited a number of people to attend and encouraged them to suggest others to
+              invite. Approximately 15 attendees who will have expenses covered. JC will send
+              invitaiton to TEI-L to allow others to attend at their own expense.</p>
+<p>JC asked us what we would like the people at the meeting to address. Should they
+              theorize about what ODD3 would look like if starting from scratch? Or offer concrete
+              proposals for improvements to ODD?</p>
+<p>We’d like to avoid just a list of complaints about how things currently work.</p>
+<sp><speaker>SR:</speaker>
+<p>do we want only things that are backwards-compatible? Are we open to requests for
+                things like tools for processing ODDs that don’t require changing ODD itself?</p>
+</sp><sp><speaker>JC:</speaker>
+<p>anything that is backwards-compatible could become a feature request in SourceForge
+                now.</p>
+</sp><sp><speaker>PB:</speaker>
+<p>perhaps we can ask them to propose solutions to particular problems we’ve
+                identified?</p>
+</sp><sp><speaker>MH:</speaker>
+<p>solicit topics in advance?</p>
+</sp>
+<p>JC pointed us to a <ref target="https://wiki.tei-c.org/index.php/ODD-dev">list in the wiki</ref> which
+              lists problems in ODD.</p>
+<p>LB said he has started but not finished a proposal for resolving the Durand
+              Conundrum.</p>
+<sp><speaker>BB:</speaker>
+<p>we might be asked to produce training and support materials for ODDs.; What other
+                systems do people use for maintaining XML standards?</p>
+</sp><sp><speaker>KH:</speaker>
+<p>NLM/JATS maintains a homegrown system developed by Mulberry Technologies.</p>
+</sp>
+<p>A list of other people, not yet invited, was suggested by Council to make sure were
+              targetted with the public announcement. [JC has note of all individuals, but seems
+              sensible not to minute them here.]</p>
+<sp><speaker>SR:</speaker>
+<p>worries that everyone at the meeting will agree with each other. We need a skeptic
+                [SR suggested some].</p>
+</sp><sp><speaker>JC:</speaker>
+<p>We could ask others (Balisage folks, literate programming folks) after the meeting
+                to comment on any proposals.</p>
+</sp><sp><speaker>LB:</speaker>
+<p>Kevin Hawkins should invite Kevin Reiss.</p>
+</sp><sp><speaker>SR:</speaker>
+<p>what we’re really looking for is prose to put into a funding application for what
+                we want to develop. Need to list problems that need to be solved and the likely
+                direction for the solution.</p>
+</sp><sp><speaker>JC:</speaker>
+<p>please add additional suggestions to <ref target="https://wiki.tei-c.org/index.php/ODD-dev">http://wiki.tei-c.org/index.php/ODD-dev</ref> .</p>
+</sp></div>
+<div>
+        <head>    2.2.4 TEI Release Process</head>
+            <sp><speaker>JC:</speaker>
+<p>We need to make sure that all the steps are included and everything is explained
+                for GB who is next release technician.</p>
+</sp><sp><speaker>MH:</speaker>
+<p>There are problems in the stylesheets release process that depend on SR, but JC, MH
+                and SR are fixing that process.</p>
+</sp><sp><speaker>SR:</speaker>
+<p>GB doesn’t have access to a Linux machine, so that will be a problem/benefit in
+                testing.</p>
+</sp><sp><speaker>MH:</speaker>
+<p>Also need to make sure the process will work with Ubuntu Precise.</p>
+</sp><sp><speaker>SR:</speaker>
+<p>A lot of documentation needs to be written about the testing process. Are there
+                tests that we should be running but aren’t?</p>
+</sp>
+<p>Actually, our priority should be rewrite of Roma. If a pending Oxford JISC grant
+              doesn’t come through, we should shop our application around to other granting
+              agencies.</p>
+</div></div></div>
+<div><head>
+        Wednesday April 18th 2012</head>
+<div><head>
+          3.1 Morning</head>
+<div>
+           <head> 3.1.1 TEI Outreach and Education</head>
+            <sp><speaker>JC:</speaker>
+<p>It has been suggested that the Technical Council should do more education/outreach
+                activities, such as a newletter to go to sponsors reporting on technical and other
+                updates</p>
+</sp>
+<p>JC suggests that the job of the Council is primarily the development and maintenance
+              of the guidelines. Outreach is good, we’re all in favor, and while it is part of our
+              mission, it’s not the main focus/mission of the Technical Council.</p>
+<sp><speaker>SR:</speaker>
+<p>we have a “moral” responsibility to step up if asked to, say, write about the
+                current state of ODD; Consensus was that we would participating as individuals is a
+                good idea.</p>
+</sp><sp><speaker>LB:</speaker>
+<p>why did we fail to deliver on the tutorial last time we were asked? lack of
+                resources, etc.</p>
+</sp><sp><speaker>GB:</speaker>
+<p>the way to get the council to do something like this would be to make it a council
+                duty. The question is, do we think this is high enough on our priorities to make it
+                a duty? (The way to get it on the agenda is to put it on the agenda)</p>
+</sp><sp><speaker>SR:</speaker>
+<p>this would be at the expense of something else.</p>
+</sp><sp><speaker>BW and JC:</speaker>
+<p>this is a good thing to do, but many people can do it. The development work done by
+                the Council can’t be done by someone else.</p>
+</sp><sp><speaker>SR:</speaker>
+<p>points out that there is some gray area: Council *does* spend time trying to make
+                the examples and other reference materials more sensible and accessible</p>
+</sp><sp><speaker>MH:</speaker>
+<p>maybe Council should be focusing on developing the relationship with with the
+                intermediate user</p>
+</sp><sp><speaker>SR:</speaker>
+<p>we’re responsive to tickets, but not proactively reaching out</p>
+</sp><sp><speaker>JC:</speaker>
+<p>sees marketing and outreach as primarily board activity; the kind of
+                education/outreach that is being suggested seems closer to a Board activity. A
+                report from Council and report from the Board could be included in each issue of the
+                TEI Journal, but I wonder if that is really appropriate. KH thinks this is possible.
+                BB is interested participating in outreach activity</p>
+</sp><sp><speaker>SR:</speaker>
+<p>No one can make the guidelines better without the involvement of the Technical
+                Council, so there’s a level on which we must engage in some level of
+                outreach/engagement</p>
+</sp><sp><speaker>PS:</speaker>
+<p>suggests training is most useful in the context of a specific project, and that
+                abstract training is not so useful or desirable; MH and JC disagree</p>
+</sp><sp><speaker>JC:</speaker>
+<p>there’s a gap in knowledge/training at the intermediate level—that’s where it gets
+                hard because of the specificity of any given project. It’s straightforward to teach
+                intro level, and harder things like Schematron and ODD.</p>
+</sp>
+<p>KH reviewed bylaws: duties do include development of training materials and
+              tutorials, or to make recommendations to the board about such things. JC would be
+              happy to make recommendations Council developed.</p>
+<sp><speaker>SR:</speaker>
+<p>we develop and maintain educational tools like Roma which can be used as a training
+                tool.</p>
+</sp>
+<p>General consensus: The technical council is entirely open to some degree of
+              involvement in outreach and education activities but it generally views these as a
+              board-led activities. We believe such activities are worthwhile, but don’t have the
+              resources to drive any such effort and don’t feel it is or should be the core activity
+              of the council. We are more than happy to contribute to such activities to some
+              degree, especially on technical aspects. Individual members of the council may also,
+              of course, participate separately as members of the TEI community if they have time
+              available.</p>
+</div>
+<div><head>
+            3.1.2 Creating small working groups:</head>
+<list style="ul">
+<item>The dreaded signed/salute/closer/trailer/sigBlock ‘Div-Liminal’: 
+<p>JC proposes
+                  an ad-hoc council working group for this. LB suggests the remit be a “div-liminal
+                  working group” (covering divTop and divBottom). Lou will convene, Paul asked to
+                  participate, will work on email and produce a report for the Council before next
+                  FTF</p>
+<p>KH suggests working on this this afternoon to produce a new report; JC could the
+                  proposed group have an initial conversation about remit this afternoon;</p>
+<sp><speaker>LB:</speaker>
+<p>remit is to review all relevant elements and classes, determine whether they
+                    are defined properly and whether their placement in the content model is
+                    correct</p>
+</sp><sp><speaker>PS:</speaker>
+<p>has a sense of a proposal that will preserve much ambiguity where necessary</p>
+</sp>
+<p>Working group will be: PS, LB, BB, KH (with advice from rest of council where
+                  necessary).</p>
+<p><label>Action</label>: LB to chair working group will report back by next teleconference,
+                  concrete proposal by next face to face meeting with status reports at
+                  teleconferences.</p>
+</item>
+<item>Audio/Video Facsimiles: 
+<p>SR will head up the council’s contribution to the
+                  working group. LB and MH also interested</p>
+<sp><speaker>PS:</speaker>
+<p>Need to know more about existing practices and competing standards from outside
+                    experts/users</p>
+</sp><sp><speaker>LB:</speaker>
+<p>Thomas Schmidt has looked most at how to use TEI for encoding speech</p>
+</sp><sp><speaker>PB:</speaker>
+<p>suggests Andreas Witt and people from Edinburgh</p>
+</sp><sp><speaker>LB:</speaker>
+<p>Linguists tend to be interested in this problem. Sociologists, folklorists,
+                    local historians, may also may be good sources</p>
+</sp><sp><speaker>KH:</speaker>
+<p>Faith Lawrence also suggested by GB</p>
+</sp><sp><speaker>PB:</speaker>
+<p>start with a firmly known problem (e.g., what linguists need), and expand from
+                    there.</p>
+</sp>
+<p><label>Action</label>: Working group to be chaired by SR, with LB, MH, and possibly PB; to
+                  approach TEI-L and others doing work in this area to get outside expertise; an
+                  initial proposal or detailed report of progress at next FTF with status reports at
+                  teleconferences.</p>
+</item>
+<item>TEI and URIs @target/@cRef/@ref/@key: <sp><speaker>MH:</speaker>
+<p>Some way to declare what you mean by your private URI in the header. There
+                    should be a documented way to do this, that is machine-readable; Two separate
+                    issues here: deprecation of @key and documentation of private URI scheme. We
+                    might agree on the latter even though there is likely disagreement on the
+                    former. JC would like to see both handled together.</p>
+</sp><sp><speaker>MH:</speaker>
+<p>if we are suggesting that people use private URIs instead of magic tokens,
+                    because they can be validated, we ought to offer a place to explain the URI
+                    scheme; cRefPattern is the model of what MH would like to do here</p>
+</sp>
+<p>SR suggests that GB has knowledge of the classical world where this is
+                  particularly of interest; KH proposes that MH write up what he has in mind, then
+                  shop it around for reactions/suggestions</p>
+<p><label>Action</label>: MH will chair this going to be working group, bring in GB, SY, and
+                  outside people suggested by GB. They will develop concrete proposals for next FTF
+                  meeting with status reports at teleconferences.</p>
+</item>
+</list>
+</div>
+<div><head>
+            3.1.3 Any Other Technical Council Business</head>
+<list style="ul">
+<item>Autumn meeting will likely be in Oxford, perhaps before or after the EEBO-TCP
+                conference (September 17-18)</item>
+<item><sp><speaker>SR:</speaker>
+<p>what else is lurking that we need to prepare to address/work on for Autumn? Is
+                    there something we should be aware of that has work being done on it? </p>
+</sp><sp><speaker>GB:</speaker>
+<p>there was a working group to re-write critical apparatus chapter but no word on
+                    progress here; JC: a mailing list was set up with some conversation, but didn’t
+                    progress further; Particularly hard to fix—some suggestions are on a wiki
+                    page</p>
+</sp>
+<p>GB thinks the chapter may be OK as it is; LB: we could go through the proposals
+                  on the wiki page ourselves. LB: proposes asking Marjorie for a report on the
+                  status of this work</p>
+<p><label>Action</label>: James will prod the critical apparatus working group before next
+                  teleconference.</p>
+</item>
+<item><sp><speaker>BB:</speaker>
+<p>Has there ever been a TEI SIG for periodicals (capturing existing)? MH says
+                    there is a scholarly publishing SIG, but this is not the same as a working group
+                    for capturing newspapers, for example</p>
+</sp><sp><speaker>JC:</speaker>
+<p>if such a group produced a best practices document or similar, that would be
+                    welcome; MH is working on something with 19th century journals. MH and BB could
+                    start a SIG.</p>
+</sp></item>
+<item>Why does the stylesheet build keep breaking? <sp><speaker>MH:</speaker>
+<p>want it to be the case that the stylesheets are built first and checked, and
+                    then used in the rest of the build (this is not the case now—the reverse); want
+                    it to be the case that a change in the stylesheet build will trigger a build of
+                    everything</p>
+</sp><sp><speaker>SR:</speaker>
+<p>this is all part of the process making the build and release process more
+                    transparent and better documented. Aim is to get away from the fact that
+                    Sebastian is the only one who can make stylesheet changes take effect in the
+                    whole guidelines</p>
+</sp></item>
+<item>Council Meeting preparations: 
+<p>PB noted that in Paris, JC assigned an action
+                  to email SIG lists for a report before Council meetings, but this didn’t happen;
+                  JC apologised and will rectify this before next teleconference.</p>
+<p>PB suggests a checklist or similar for Council meetings preparations to make sure
+                  everything is done, including asking SIG conveners for report; JC agrees. </p>
+<p><label>Action</label>: JC to produce a Council meeting/telco checklist on TEI-C Wiki</p>
+</item>
+<item>Report from LingSIG (by PB): 
+<p>developing bibliography in Zotero (tei-lingsig).
+                  Meant to engage the linguistics community even outside of TEI. Currently 153
+                  items.</p>
+<p>Special issue of jTEI guest-edited by conveners (including article about the
+                  bibliography)</p>
+<p>PB will talk at ILIT (Eastern Michigan University) on TEI for Linguists; Opened a
+                  project on SourceForge (beta)—hopes to make it easy for people to move around and
+                  experiment in this space, create a space/sense of belonging for members, that is
+                  more cohesive than just being on mailing list</p>
+</item>
+<item>Report on TEI and linguistic data analysis tools (such as UIMA) (by SY)
+<p>SY wants to bridge the gap
+                    between the output of <ref target="http://uima.apache.org/">UIMA</ref> and <ref target="http://gate.ac.uk">GATE</ref> and TEI; UIMA throws out everything that isn’t a
+                  string of words in the document—metadata, comments, etc. They use XML, but rely
+                  on multiple levels of stand-off/byte-offset markup—good for applying multiple
+                  kinds of POS tagging and comparing differences; not so easy to roundtrip back to
+                  TEI; SY has plans to develop a way to do this and bring it back to council for
+                  review; LB: recommends existing literature on stand-off markup—how does this
+                  project fit in? PB recommends papers he wrote with a colleague, recommending
+                  almost purely TEI conformant approach for stand-off analysis of text, that handles
+                  precisely this issue of multiple kinds of linguistic tagging. e.g. See LingSig
+                  bibliography</p>
+<p><label>Action</label>: SY will follow up offline w/ LB, PB</p>
+<p><label>Action</label>: PB will put SY in touch with others working in UIMA and interested in
+                  converting to TEI</p>
+<p><label>Action</label>: PB and SYreport back to Council on progress by next FTF</p>
+</item>
+</list>
+</div>
+<div><head>
+            3.1.4 Bugs and FRs: any remaining</head>
+<list style="ul">
+<item><ref target="http://purl.org/tei/bugs/3454814">3454814</ref><label>Prune comments from TEI source</label>
+<p>There are huge numbers of comments sprinkled through the Guidelines, dating back
+                  to 1992 or before. While many of these are historically interesting, most are
+                  irrelevant. Cleaning them out would be beneficial, but this must be done
+                  carefully. In particular:</p>
+<list style="ul">
+<item>Comments inside <gi>egXML</gi> must be preserved (they are
+                    displayed).</item>
+<item>Commented biblio items can be removed after checking that there is a
+                      <gi>bibl</gi> or <gi>biblStruct</gi> for them.</item>
+<item>Informative/useful comments should be turned into notes.</item>
+<item>Some comments (e.g. “&lt;!– Better example needed –&gt;”) are useful and may
+                    remain.</item>
+</list>
+<p>When new comments are added (and especially when we commenting out blocks of
+                  existing code because we’re nervous about deleting them), they should be
+                  initialled and dated. Old code should be deleted after a week.</p>
+<p><label>Action</label>: LB will write up guidelines for purging comments and distribute to
+                  TEI-Council list, including describing first passes to deal with low-hanging fruit
+                  and suggested format for how we should comment going forward</p>
+<p><label>Action</label>: from there, work of reviewing and purging comments or turning them
+                  into notes will be divided among council members</p>
+<p><label>Action</label>: RW will incorporate language from LB’s guidelines into the style
+                  guide when appropriate</p>
+</item>
+<item><ref target="http://purl.org/tei/bugs/3454803">3454803</ref><label>Review of language, script and region code recommendations</label>
+<p><label>Action</label>: MH will compare Chapter CH against the latest version of BCP 47 for
+                  inconsistencies</p>
+</item>
+<item><ref target="http://purl.org/tei/bugs/3432216">3432216</ref><label>i18n revision due</label>
+<p>There should be a list of translators and contact information for them so we can
+                  reach them with translations need to be reviewed (KH reports that this does exist
+                  in FM1, but it’s not up to date) GB: as a practice, he has been going ahead and
+                  updating glosses in any language that he knows, as well as English. SR: if you
+                  make a confident revision in another language, update the date of the
+                  translation?</p>
+<sp><speaker>SR:</speaker>
+<p>the person who did the translation once, may not have ongoing responsibility
+                    for the translation </p>
+</sp><sp><speaker>LB:</speaker>
+<p>if the translator is credited, others should not edit the translation without
+                    that person’s involvement? Disagreement about whether our credit of translators
+                    constitutes acknowledgment of a one-time translation task our ongoing editorial
+                    responsibility for translations</p>
+</sp>
+<p>Agreed Policy: if you feel very comfortable about updating an element spec
+                  translation, proceed with caution. Do not change the date in <tag>gloss
+                    version=””</tag>. This way, the translator will see the change when they review
+                  again.</p>
+<p><label>Action</label>: SR: double check FM1 to see if list of translators is up to
+                  date</p>
+<p><label>Action</label>: KH will add this policy to the “how to edit the guidelines” working
+                  paper</p>
+</item>
+<item><ref target="http://purl.org/tei/bugs/3223636">3223636</ref><label>@xml:space vs. CDATA for blocks of code</label>
+                <sp><speaker>MH:</speaker>
+<p>when investigating how xml:space is supposed to work, it became clear that
+                    there are contradictory explanations in the spec</p>
+</sp><sp><speaker>MH:</speaker>
+<p>because processors handle xml:space differently, it is difficult to describe
+                    how this should be used;</p>
+</sp><sp><speaker>SR:</speaker>
+<p>Ask Oxygen and Saxon teams to make sure xml:space is being treated consistently
+                    with (their interpretation of) the W3C spec?</p>
+</sp><sp><speaker>MH:</speaker>
+<p>people keep losing white space where they need to keep it. xml:space should be
+                    a solution for this, but it isn’t.</p>
+</sp>
+<p><label>Action PFS and RW</label>: Expand our explanation of xml:space in the
+                  Guidelines:</p>
+<list style="ul">
+<item>in note: expand to acknowledge that many parsers may not handle xml:space
+                    properly</item>
+<item>clarify definition of xml:space’s “default” value to match the XML spec
+                    (that is, “whatever the processor would normally do)</item>
+<item>remove sentence in prose of guidelines in chapter 22 “the global @xml:space
+                    is available to indicate that white space should be preserved within the content
+                    of these elements”</item>
+</list>
+</item>
+<item><ref target="http://purl.org/tei/bugs/3393781">3393781</ref><label>@version in examples</label>
+                <sp><speaker>SR:</speaker>
+<p>@version was intended to link updates to translations to releases of the
+                    English guidelines. Indicates the date of the state of the English guidelines
+                    when this translation was updated.</p>
+</sp>
+<p>Leave @version as it is; change the attribute that we are using to indicate
+                  revisions to translations to @versionDate</p>
+<p>                <label>Action: on SR per LB’s comment on Sourceforge: Agreed to rename @version in
+                  att.translatable as @versionDate and give it a date datatype. We don’t want all
+                  the possibilities of att.datable.</label>
+             </p> </item>
+</list>
+<p><label>Action</label>: JC to add TEI Sourceforge site to the TEI category so all TEI sourceforge
+              projects can be located at once</p>
+</div>
+</div>
+<div><head>
+          3.2 Afternoon</head>
+<div><head>
+            3.2.1 Hacking for those working on things who don’t need to catch flights right
+              away.</head>
+<p>Div-liminal group (minus BB, plus SR) began brainstorming:</p>
+<list style="ul">
+<item>LB defined the scope of the group to include assessment of elements in
+                model.divWrapper, model.divTopPart, and model.divBottomPart (and their
+                children).</item>
+<item>In looking at the content models of <gi>opener</gi> and <gi>closer</gi>, he
+                suggested that new model classes be created for these: model.openerPart and
+                model.closerPart.</item>
+<item>PS said he had been pondering the problem and think it’s best solved by the
+                following: 
+<list style="ul">
+<item>Create a new <gi>signatory</gi> element for use of only designations of
+                    signatories (names and phrases like “the late sergeant” that go with names). It
+                    would have the content model that <gi>signed</gi> currently has.</item>
+<item>The current <gi>signed</gi> element would have an expanded content model
+                    including <gi>salute</gi> and <gi>list</gi>.</item>
+<item>The <gi>salute</gi> element would be left just for “polite phrases” that
+                    tend to occur before a signatory.</item>
+<item>For example, this example in the Guidelines: <egXML xmlns="http://www.tei-c.org/ns/Examples"><closer><salute>I have the honour to remain, dear sir, your obedient servant </salute><signed><name>RICHARD CUFF</name> (late sergeant in the Detective Force, Scotland
+      Yard, London).
+    </signed></closer></egXML> would become: <egXML xmlns="http://www.tei-c.org/ns/Examples"><signed><salute>I have the honour to remain, dear sir, your obedient servant </salute><signatory><name>RICHARD CUFF</name> (late sergeant in the Detective Force, Scotland
+    Yard, London).
+  </signatory></signed></egXML></item>
+<item>Another way to summarize his proposal is that he proposes to create a new
+                    “super signed” or “signed block” (the new <gi>signed</gi>) and turn the old
+                      <gi>signed</gi> into a <gi>signatory</gi>.</item>
+</list>
+</item>
+<item>Implications of PS’s proposal: 
+<list style="ul">
+<item>Everybody who has a <gi>signed</gi> containing only text or phrase-level
+                    elements could (but need not) change this <gi>signed</gi> to
+                    <gi>signatory</gi>.</item>
+<item>Optionally, they could (but need not) choose to wrap the new
+                      <gi>signatory</gi> and any <gi>salute</gi> in <gi>signed</gi>.</item>
+</list>
+</item>
+<item>KH proposed an addendum to add <gi>dateline</gi> to the new <gi>signed</gi> as
+                well. PS didn’t like this because then there would be essentially no difference
+                between <gi>signed</gi> and <gi>closer</gi>. KH said he thinks of <gi>signed</gi> as
+                being equivalent to <tag>closer type=”signed”</tag>.</item>
+<item>Lou noted that under KH’s addendum we would have to remove “as a kind of heading
+                or trailer” from the definition of <gi>dateline</gi> in order to turn this into a
+                purely semantic element.</item>
+<item>KH and SR debated whether <gi>dateline</gi> is structural or semantic. SR said
+                it’s easier to write stylesheets if it can be assumed to be structural and
+                block-level, but KH said he thought of it as semantic and phrase-level.</item>
+</list>
+<p>JC Thanked all those remaining Council members for participating.</p>
+</div>
+</div>
+</div>
+	</div></body><!-- #post-## --></text></TEI>

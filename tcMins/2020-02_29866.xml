@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/home/lou/Public/TEI/TEICSS/tei.css" type="text/css"
+ ?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:t="http://www.tei-c.org/ns/1.0" n="2020-02"><teiHeader><fileDesc><titleStmt><title>Minutes of the TEI Technical Council</title><meeting n="2020-02" when="2020-02-11">TEI Technical Council online
+     meeting : <date>11 February 2020</date></meeting></titleStmt><publicationStmt><distributor>TEI Website</distributor><idno>TCM123</idno></publicationStmt><sourceDesc><p>Retagged from a WordPress HTML file</p></sourceDesc></fileDesc><revisionDesc><change when="2023-04-25">Archival header confected</change><change>Extracted from Word Press article with id post-29866</change></revisionDesc></teiHeader><text><body><div><p><hi style="strong">Meeting time:</hi></p><list style="ul">
+<item>EST 09:00–10:30, GMT 14:00–15:30, CEST 15:00–16:30</item>
+<item>Started: 14:06Z; ended: 15:34Z</item>
+</list><p><hi style="strong">Present:</hi></p><list style="ul">
+<item>Syd Bauman (SB)</item>
+<item>Elisa Beshero-Bondar (EB)</item>
+<item>Meaghan Brown (MB, leaves at ~15:30Z)</item>
+<item>Hugh Cayless (HC)</item>
+<item>Nicholas Cole (NC, arrives at ~14:20Z, leaves at ~15:30Z)</item>
+<item>Jessica Lu (JL)</item>
+<item>Martina Scholger (MS, chair)</item>
+<item>Peter Stadler (PS, leaves at 15:05Z)</item>
+<item>Raff Viglianti (RV)</item>
+</list><p><hi style="strong">Apologies/Not Present:</hi></p><list style="ul">
+<item>Vanessa Bigot Juloux (VB)</item>
+<item>Magdalena Turska (MT)</item>
+</list><p> </p><div type="h2"><head>Next F2F meeting</head><list style="ul">
+<item>1–3 May 2020</item>
+<item>Location will be Paderborn!</item>
+<item><hi style="b">Action on PS</hi>: send out travel information (hotels, airports, etc.) by <hi style="b">2020-02-18</hi></item>
+<item><hi style="b">Action on HC</hi>: send pointer to travel reimbursement instructions (to the Council list) by <hi style="b">2020-02-18</hi></item>
+</list></div><div type="h2"><head>Meeting times</head><list style="ul">
+<item>Tuesday mornings (ET) / afternoons (CEST) affirmed as just fine.</item>
+</list></div><div type="h2"><head>Next Release 3.7.0</head><list style="ul">
+<item>What shall we name our release?
+<list style="ul">
+<item>EB suggests: “Galileo release”</item>
+</list>
+</item>
+<item>Issues that we want to close before the release:
+<list style="ul">
+<item>The deprecation messages for the new uniHan features are almost, but not completely consistent. See the <ref target="https://jenkins.tei-c.org/job/TEIP5-dev/lastStableBuild/artifact/P5/release/doc/tei-p5-doc/en/html/DEPRECATIONS.html">deprecation list</ref>.
+<list style="ul">
+<item><hi style="b">Action on SB by 2020-02-12</hi> to change date to 2022-02-15 and change all the wordings to use the same form as the last.</item>
+</list>
+</item>
+<item>standOff
+<list style="ul">
+<item><ref target="https://jenkins.tei-c.org/job/TEIP5-dev/lastSuccessfulBuild/artifact/P5/release/doc/tei-p5-doc/en/html/SA.html">https://jenkins.tei-c.org/job/TEIP5-dev/lastSuccessfulBuild/artifact/P5/release/doc/tei-p5-doc/en/html/SA.html</ref></item>
+<item>The last bullet point in SA says “to contain the elements above, along with those that provide stand-off annotation or contextual information (section [ID SALDB in TEI Guidelines].”</item>
+<item><hi style="b">Action on SB</hi> to revise wording an fix the link<hi style="b"> by 2020-02-12</hi></item>
+</list>
+</item>
+<item>Pull request has already been approved by MT and MS, should we merge it now?
+<list style="ul">
+<item><ref target="https://github.com/TEIC/TEI/pull/1924">https://github.com/TEIC/TEI/pull/1924</ref></item>
+<item>Yes! (Done.)</item>
+</list>
+</item>
+<item>EB: Documentation updates to TCW20 (review: can we close these tickets?)
+<list style="ul">
+<item>re <ref target="https://github.com/TEIC/TEI/issues/1654">#1654</ref> (how to refer to exempla)
+<list style="ul">
+<item>yes, issue closed</item>
+</list>
+</item>
+<item>re <ref target="https://github.com/TEIC/TEI/issues/1825">#1825</ref> (when to work in git branches, writing good git commits)
+<list style="ul">
+<item>Consensus is yes, it can be closed, but we should also add detailed instructions on how to create a branch sometime.</item>
+</list>
+</item>
+</list>
+</item>
+<item>EB: Can we close <ref target="https://github.com/TEIC/TEI/issues/1708">#1708</ref>?
+<list style="ul">
+<item>MS has two minor corrections for EB to implement, but otherwise yes, closed.</item>
+</list>
+</item>
+</list>
+</item>
+</list></div><div type="h2"><head>Internationalization Working Group Proposal</head><list style="ul">
+<item><ref target="https://docs.google.com/document/d/1EyAWLkKF5oBeueSoNaES3NGeA2f_AGLtn8Kx9hbx0VM/edit">https://docs.google.com/document/d/1EyAWLkKF5oBeueSoNaES3NGeA2f_AGLtn8Kx9hbx0VM/edit</ref></item>
+<item>Approved!</item>
+</list></div><div type="h2"><head>Stylesheets training session</head><list style="ul">
+<item>Agreed to Tuesday, 25 February 2020 @ 14:00Z.</item>
+<item><hi style="b">Action on MS by 2020-02-12</hi>: Add to our calendar (DONE — just added by PS)</item>
+<item><hi style="b">Action on SB on 2020-02-23</hi>: Send reminder to list</item>
+<item><hi style="b">Action on SB &amp; MH on 2020-02-14: Set up a curriculum</hi></item>
+</list></div><div type="h2"><head>Japanese translations</head><list style="ul">
+<item>Implementation—difficult because each translation requires checking.</item>
+<item>Add to Internationalization SIG tasks to meet with Martin Holmes and come up with a implementation plan.</item>
+</list></div><div type="h2"><head>Policy for inactive members to accompany change to 3-year terms</head><list style="ul">
+<item>SB: suggests a small group of 3 convenes to craft a proposal
+<list style="ul">
+<item>RV points out it would be a good idea to have a section in the introduction-to-new-council-members about proper procedure for resignation/recusal.</item>
+<item>Committee formed: SB, EB, JL will work on a draft proposal for replacement policy, and will prepare and circulate draft at least 1 week before May face-to-face.</item>
+<item>Existing proposal to the BOD is: “Each Technical Council Member shall be elected for a <hi style="b">three</hi>-year term, or in the case of an election <hi style="b">or appointment</hi> to fill a vacancy between regular elections, for the term remaining for the vacant position. Terms of office begin at the following January 1 and end on December 31.”
+<list style="ul">
+<item>Board has approved the above, but the Bylaws haven’t been changed yet. BOD is figuring out whether or not the change requires membership vote.</item>
+</list>
+</item>
+</list>
+</item>
+</list></div><div type="h2"><head>Other issues</head><list style="ul">
+<item>teidata.pointer equivalent to move/@where <ref target="https://github.com/TEIC/TEI/issues/1769">#1769</ref></item>
+<item>Proposal to resolve with a new datatype which is basically a union of enumeration and URI, akin to: <ref target="https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-teidata.namespaceOrName.html">https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-teidata.namespaceOrName.html</ref></item>
+<item>Perhaps this can point the way to removing the duality of @x and @xRef attributes in the long range.</item>
+</list><p> </p></div></div></body><!-- #post-## --></text></TEI>

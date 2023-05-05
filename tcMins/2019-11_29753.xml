@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/home/lou/Public/TEI/TEICSS/tei.css" type="text/css"
+ ?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:t="http://www.tei-c.org/ns/1.0" n="2019-11"><teiHeader><fileDesc><titleStmt><title>Minutes of the TEI Technical Council</title><meeting n="2019-11" when="2019-11-19">TEI Technical Council online
+     meeting : <date>19 November 2019</date></meeting></titleStmt><publicationStmt><distributor>TEI Website</distributor><idno>TCM120</idno></publicationStmt><sourceDesc><p>Retagged from a WordPress HTML file</p></sourceDesc></fileDesc><revisionDesc><change when="2023-04-25">Archival header confected</change><change>Extracted from Word Press article with id post-29753</change></revisionDesc></teiHeader><text><body><div><p><hi style="strong">Meeting time</hi></p><list style="ul">
+<item>EDT 9:00-10:30, GMT 14:00-15:30, CEST 15:00-16:30</item>
+<item>Started: 14:06Z; ended 15:34Z.</item>
+</list><p><hi style="strong">Present</hi></p><list style="ul">
+<item>Syd Bauman (SB) @ 14:06Z</item>
+<item>Elisa Beshero-Bondar (EB)</item>
+<item>Meaghan Brown (MB)</item>
+<item>Hugh Cayless (HC)</item>
+<item>Jessica Lu (JL)</item>
+<item>Elli Mylonas (EM)</item>
+<item>Martina Scholger (MS)</item>
+<item>Peter Stadler (PS) @ 14:18Z</item>
+<item>Raff Viglianti (RV)</item>
+</list><p><hi style="strong">Apologies/Not Present</hi></p><list style="ul">
+<item>Vanessa Bigot Juloux (VBJ)</item>
+<item>Nicholas Cole (NC)</item>
+<item>James Cummings (JC)</item>
+<item>Sarah Stanley (SS)</item>
+<item>Magdalena Turska (MT)</item>
+</list><p> </p><div type="h2"><head>Meeting times (including Stylesheets group)</head><list style="ul">
+<item>2nd Tuesday of each month @ 13:00Z;</item>
+<item>Stylesheets meeting is one week earlier.</item>
+</list></div><div type="h2"><head>Schedule: “TEI Local Build Processes: A Hands On Orientation”</head><list style="ul">
+<item>Wednesday, 2019-12-18, 19:00Z–21:00Z (i.e., 11:00–13:00 PST, 14:00–16:00 EST, 19:00–21:00 GMT, 20:00–22:00 CET)</item>
+<item>Preparation: We’ll need some preparation especially among HC, PS, RV. Explore the relationship between Jenkins servers and GitHub branches.</item>
+<item>Mentors walk through a small change and commit with their mentees in preparation for that meeting.</item>
+<item>Using Docker image should be no problem—except for people on Windows Home Edition. MB and JL are on Macs.</item>
+<item>We should test this (Docker image) on Windows anyway.</item>
+<item>This meeting should help us generate documentation.</item>
+</list></div><div type="h2"><head>Next F2F meeting(s)</head><list style="ul">
+<item>When? Where? Our options are:
+<list style="ul">
+<item>XML Prague, February 13–15</item>
+<item>Buenos Aires (End of April / 1st week of May):
+<list style="ul">
+<item>JL unavailable May 3ish–May 13</item>
+<item>MT needs to be back in Warsaw May 8th latest</item>
+</list>
+</item>
+<item>Paderborn (Beginning of March, after or before DHd 2020 <ref target="https://dhd2020.de">https://dhd2020.de</ref>) — March 2–6</item>
+<item>Newcastle</item>
+<item>Warsaw — late April, early May</item>
+<item>Good weeks for EB are March 7–14, and after April 29. (juggling classes)</item>
+<item><hi style="b">Action</hi> on MS to set up a doodle</item>
+</list>
+</item>
+<item>Annual Meeting: Lincoln October 27–30</item>
+</list></div><div type="h2"><head>Website accounts</head><list style="ul">
+<item>Do they work?
+<list style="ul">
+<item>EB got in; SB has not tried; JL is fine and has edit permissions; MB is fine and has permissions.</item>
+<item>Both MS and Luis said (via e-mail on 2019-10-29) “you should have received e-mail” to the e-mail address we use with Council. Per PS, that e-mail message was from wordpress@tei-c.org with the subject “[TEI: Text Encoding Initiative] Login Details” on 2019-10-21.</item>
+<item>SB cannot find any such mail (including spam boxes).</item>
+</list>
+</item>
+</list></div><div type="h2"><head>Next Release 3.7.0</head><list style="ul">
+<item>Release technicians: RV, EB (+ newcomers shadowing)</item>
+<item>When?
+<list style="ul">
+<item>Release Thursday 2020-02-13; Refrigeration: 2020-01-30; Freeze starts Monday 2020-02-10</item>
+</list>
+</item>
+<item>What should go into the release
+<list style="ul">
+<item><gi>standOff</gi>: SB will be working on this after US Thanksgiving</item>
+<item>uniHan
+<list style="ul">
+<item>Next Council Call on 2019-12-10, concentrates on <gi>standOff</gi> and uniHan. <hi style="b">Action</hi> on MS to invite Martin Holmes to the call.</item>
+</list>
+</item>
+<item>Documentation
+<list style="ul">
+<item>oXygen plugin documentation</item>
+<item>Revision of TCW-20 (work in branches on TEIC GitHub repositories)  <hi style="b">Action </hi>on MS and EB</item>
+</list>
+</item>
+</list>
+</item>
+<item>Announcement on TEI-L
+<list style="ul">
+<item><hi style="b">Action on</hi> MS</item>
+<item>About upcoming release</item>
+<item>About where to find Council minutes, and they are up to date to X date.</item>
+</list>
+</item>
+</list></div><div type="h2"><head>Broken oXygen plugin</head><list style="ul">
+<item>Email from Martin Holmes: <ref target="https://github.com/TEIC/oxygen-tei/issues/30">https://github.com/TEIC/oxygen-tei/issues/30</ref></item>
+<item>ANT transformation scenarios in the TEI-bleeding framework don’t work in Oxygen-21.0.</item>
+<item>PS: We need someone with the right technical background to look after the oXygen plugin. NC may be interested? Possibly Martin Holmes, possibly MT—who was going to find out from SyncRO whether oXygen can provide this as a service and for how much.</item>
+<item><hi style="b">Action</hi> on MS: ask NC and MT by 2019-11-27</item>
+</list></div><div type="h2"><head>Report on Triangle SCI (Hugh and Martina)</head><list style="ul">
+<item><hi style="b">Action</hi> on HC (&amp; MS): send e-mail summary to tei-council by 2019-11-30.</item>
+</list></div><div type="h2"><head>Proposal on Council terms</head><list style="ul">
+<item><hi style="b">Action</hi> on each Council member by 2019-12-09 — read and comment.</item>
+</list></div><div type="h2"><head>Council chair elections</head><list style="ul">
+<item>see <ref target="https://wiki.tei-c.org/index.php?title=TEI-Council-FAQ#TEI_Technical_Council_Chair">https://wiki.tei-c.org/index.php?title=TEI-Council-FAQ#TEI_Technical_Council_Chair</ref></item>
+<item>MS nominated and seconded.</item>
+<item><hi style="b">Action</hi> on SB to announce request for nominations on tei-council by end of week <hi style="i">[done, 2019-11-20 15:02Z — SB]</hi></item>
+</list></div><div type="h2"><head>Roma</head><list style="ul">
+<item>Tutorial / demo is online: <ref target="https://vimeo.com/373995865">https://vimeo.com/373995865</ref></item>
+<item>RV thanks EB and JC for comments.</item>
+<item>Has closed captions in ‘en’, hoping to add ‘it’ soon; other languages?</item>
+<item>RV asks for Councilors to “have a look at it, see what you think”.</item>
+<item>RV is planning on a blog post later this week, so earlier input is better than later.</item>
+<item>We need to update the Roma page on the TEI website with the new Roma—and perhaps include this video there.</item>
+</list></div><div type="h2"><head>Rub-a-dub</head><list style="ul">
+<item>SB reports no progress, none expected until mid-December at least (depending on how <gi>standOff</gi> goes)</item>
+</list><p> </p></div></div></body><!-- #post-## --></text></TEI>

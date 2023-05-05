@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/home/lou/Public/TEI/TEICSS/tei.css" type="text/css"
+ ?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:t="http://www.tei-c.org/ns/1.0" n="2018-07"><teiHeader><fileDesc><titleStmt><title>Minutes of the TEI Technical Council</title><meeting n="2018-07" when="2018-07-09">TEI Technical Council online
+     meeting : <date>9 July 2018</date></meeting></titleStmt><publicationStmt><distributor>TEI Website</distributor><idno>TCM102</idno></publicationStmt><sourceDesc><p>Retagged from a WordPress HTML file</p></sourceDesc></fileDesc><revisionDesc><change when="2023-04-25">Archival header confected</change><change>Extracted from Word Press article with id post-29548</change></revisionDesc></teiHeader><text><body><div><p><hi style="strong">Meeting time:</hi></p><list style="ul">
+<item>08:00 EDT, 13:00 BST, 14:00 CEST</item>
+</list><p><hi style="strong">Present:</hi></p><list style="ul">
+<item>Syd Bauman (SB)</item>
+<item>Elisa Beshero-Bondar (EB)</item>
+<item>Alex Bia (AB)</item>
+<item>Hugh Cayless (HC)</item>
+<item>James Cummings (JC)</item>
+<item>Elli Mylonas (EM)</item>
+<item>Martina Scholger (MS)</item>
+<item>Sarah Stanley (SS)</item>
+<item>Raff Viglianti (RV)</item>
+</list><p><hi style="strong">Apologies:</hi></p><list style="ul">
+<item>Peter Stadler</item>
+<item>Magdalena Turska</item>
+</list><div type="h2"><head>F2F in Tokyo</head><list style="ul">
+<item>Dates:
+<list style="ul">
+<item>September 7-8: F2F</item>
+<item>September 10: Open Council meeting
+<list style="ul">
+<item>Announcement — when?</item>
+</list>
+</item>
+</list>
+</item>
+<item>If we would like Martin Holmes to join us, when?
+<list style="ul">
+<item>When he’s available. Presumption is Friday &amp; Saturday mornings, but SB to ask — we can build agenda items involving him around his availability.</item>
+</list>
+</item>
+</list></div><div type="h2"><head>Timeline next release</head><list style="ul">
+<item>Freeze: Wed July 18</item>
+<item>Create release branch: Thu July 19</item>
+<item>Actual release: Mon July 23 &amp; Tue July 24</item>
+<item>Release technicians: RV &amp; PS</item>
+<item><hi style="b">Release Blocker</hi>: <ref target="https://github.com/TEIC/TEI/issues/1783">https://github.com/TEIC/TEI/issues/1783</ref> !
+<list style="ul">
+<item>Fix the original home page to make it valid XHTML5.</item>
+<item>Add more sets to the pre-processing till all the invalidities have been fixed.</item>
+<item>Use HTML Tidy to clean up the page before passing it to xmllint.</item>
+<item>OR is it really a problem, if we don’t use the scraped info anymore?</item>
+<item><hi style="b">Action on </hi>JC and HC: attempt to fix (or develop a work-around) by freeze (Jul 18); if not, RV &amp; PS will find a manual hack-around for the release itself.</item>
+</list>
+</item>
+</list></div><div type="h2"><head>Report on translation-meet-up at DH Mexico</head><list style="ul">
+<item>MS: Susanna Allés, Gimena del Rio Riande, Luis Meneses, Kiyonori Nagasaki, various Council members (e.g. MS, JC, EM) were present.</item>
+<item>General strategy is necessary:
+<list style="ul">
+<item>need for Guidelines or Working Paper for how to organize: “Method (or ‘Procedure’) for Submitting Translations”</item>
+<item><hi style="b">Action on </hi>MS — start with paper</item>
+<item>Ticket about submission of individual translations by users, with suggestions for a submission &amp; review process: <ref target="https://github.com/TEIC/TEI/issues/1780">https://github.com/TEIC/TEI/issues/1780</ref></item>
+<item>Kiyonori Nagasaki started with Japanese translations</item>
+</list>
+</item>
+</list></div><div type="h2"><head>Status report on RomaJS</head><list style="ul">
+<item>RV: working on distinguishing between editing elements and editing classes.</item>
+<item>On creating a new attribute: what behaviors?
+<list style="ul">
+<item>Suggest a new namespace?</item>
+<item>Invite to clone an existing attribute to customize (by actually cloning it, not with an hypothetical @mode=’clone’ — see <ref target="https://github.com/TEIC/TEI/issues/1697">https://github.com/TEIC/TEI/issues/1697</ref>)</item>
+<item>Dropping editing/creating new datatypes for September.</item>
+<item>RV will set up (soon) an August RomaJS meeting.</item>
+</list>
+</item>
+</list></div><div type="h2"><head>Report on Standoff task force meeting</head><list style="ul">
+<item>not yet</item>
+</list></div><div type="h2"><head>SIG on Libraries</head><list style="ul">
+<item>EM and SB met with Kevin Hawkins: SIG is going dormant.</item>
+<item>Proclaim this SIG “dormant” on the website
+<list style="ul">
+<item>under: “Currently Active SIGs”</item>
+<item>Conveners: [new appointments to be determined]</item>
+</list>
+</item>
+<item>Shop TEI SIG to the ADHO Libraries SIG? <hi style="b">Action on EM</hi> to do so by 07-13, report back by next conference call.</item>
+<item>Any news about the <gi>sourceDesc</gi> proposal <ref target="https://listserv.brown.edu/archives/cgi-bin/wa?A2=TEI-L;93f8cf13.1805">https://listserv.brown.edu/archives/cgi-bin/wa?A2=TEI-L;93f8cf13.1805</ref>.</item>
+</list></div><div type="h2"><head>Tickets</head><list style="ul">
+<item><hi style="b">Release Blocker:</hi> <ref target="https://github.com/TEIC/TEI/issues/1783">https://github.com/TEIC/TEI/issues/1783</ref> !</item>
+<item>Tickets that should go into release 3.4.0 / need (just a little) discussion
+<list style="ul">
+<item>[JC] copied from last minutes: JC notes that if we could finish ticket number #1707 <ref target="https://github.com/TEIC/TEI/issues/1707">https://github.com/TEIC/TEI/issues/1707</ref> on encoding measurements before next release that would be good. Especially since meeting will be in Japan, but also because it arose from a poster at previous conference.
+<list style="ul">
+<item>EM will do today: Do we need a call?</item>
+</list>
+</item>
+<item>[JC] We should also do <ref target="https://github.com/TEIC/TEI/issues/1679">https://github.com/TEIC/TEI/issues/1679</ref> (for new @toWhom attribute; Assignee SS). I talked with the submitter of this at the DH2018 conference. He had previously thought that TEI Guidelines were sacrosanct rules submitted down from on high that were unchangeable, and was overjoyed that we had agreed to an attribute he has suggested. In talking about why he hadn’t realised the TEI was a community-developed standard he agreed to write a blog post about his experience. We decided it would be better to wait until it was implemented and in a release so he can show the idea — ticket — agreement — implementation cycle as a post that the TEI can then point to. SS and SB to implement quickly.</item>
+<item>Pull requests: <ref target="https://github.com/TEIC/TEI/pulls">https://github.com/TEIC/TEI/pulls</ref> (esp.
+<list style="ul">
+<item><gi>path</gi> proposal from Martin Holmes:
+<list style="ul">
+<item><ref target="https://github.com/TEIC/TEI/pull/1764">https://github.com/TEIC/TEI/pull/1764</ref></item>
+<item><hi style="b">Action on SB &amp; RV </hi>to have a look by 07-15</item>
+</list>
+</item>
+<item>add <gi>figure</gi> to att.written
+<list style="ul">
+<item><ref target="https://github.com/TEIC/TEI/pull/1777">https://github.com/TEIC/TEI/pull/1777</ref></item>
+</list>
+</item>
+</list>
+</item>
+<item><ref target="https://github.com/TEIC/TEI/issues/1782">Ticket 1782:</ref> Do we want to actually research when the <gi>desc</gi>s and <gi>gloss</gi>es of various languages were added to <gi>moduleDef</gi>s, or just presume the English has not been changed?
+<list style="ul">
+<item>Decision: force these elements to come up for review. Set them all one day behind the English to force re-evaluation during translatathons?</item>
+</list>
+</item>
+<item>Any Stylesheet tickets?</item>
+</list>
+</item>
+</list><p>Next Council meeting: Thursday July 26</p></div><div type="h2"><head>Ticket triage</head><table>
+
+<row>
+<cell><hi style="b">July 2018</hi></cell>
+<cell><hi style="b">EB</hi></cell>
+</row>
+<row>
+<cell><hi style="b">August 2018</hi></cell>
+<cell><hi style="b">JC</hi></cell>
+</row>
+<row>
+<cell><hi style="b">September 2018</hi></cell>
+<cell><hi style="b">EM</hi></cell>
+</row>
+<row>
+<cell><hi style="b">October 2018</hi></cell>
+<cell><hi style="b">MT</hi></cell>
+</row>
+<row>
+<cell><hi style="b">November 2018</hi></cell>
+<cell><hi style="b">SS</hi></cell>
+</row>
+<row>
+<cell><hi style="b">December 2018</hi></cell>
+<cell><hi style="b">AB</hi></cell>
+</row>
+
+</table><p> </p></div></div></body><!-- #post-## --></text></TEI>

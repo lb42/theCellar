@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+
+<TEI.2>
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>TCW01: Proposed charter for Feature Structure Workgroup</title>
+        <author>Laurent Romary</author>
+      </titleStmt>
+      <editionStmt>
+        <edition>
+          <date>30 Jan 03</date>
+        </edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority>OUCS</authority>
+        <address>
+          <email>tei@oucs.ox.ac.uk</email>
+        </address>
+      </publicationStmt>
+      <sourceDesc>
+        <p>This is the master version of an original document,
+created by converting a Word document  TEI XML on 3 Jan 03.</p>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc>
+      <change>
+        <date>$Date: 2003/01/31 $</date>
+        <respStmt>
+          <name>$Author: lou $</name>
+        </respStmt>
+        <item>$Revision: #2 $</item>
+      </change>
+      <change>
+        <date>28 November 2002</date>
+        <respStmt>
+          <name>Laurent Romary</name>
+        </respStmt>
+        <item>Original draft</item>
+      </change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+
+<body>
+
+<head>Proposed Charter for Joint ISO-TEI activity on Feature Structures</head>
+<note place="foot">This document should be read in conjunction  with
+    the draft <xref url="tcw01-iso.htm">New Work Item for ISO TC37/SC4</xref> .</note>
+
+<div><head>Background</head>
+<p>The TEI Guidelines contain two complementary chapters on
+Feature Structure Representation (chapter 16) and Feature Structure
+Declaration Representation (chapter 26). Those two chapters,
+originally drafted by Terry Langendoen and Gary Simons, are now
+generally recognized as covering many needs in the field of
+linguistics.</p>
+<p>Moreover, some Natural Language Processing applications have 
+provided implementations based on the proposed representations,
+which has further increased interest on this specific aspect of the
+TEI in this community. It should also be noted that these chapters
+are closely integrated with the rest of the TEI scheme, thus
+opening up the application of NLP techniques to a very wide
+community of users, while at the same time offering the NLP
+community access to a real-world range of different text types and
+applications</p>
+   </div><div>
+<head>Proposal</head>
+<p>
+It is suggested that a revision of the two chapters be
+conducted under the auspices of TC37/SC4, and that the
+corresponding editorial group
+<note place="foot">In ISO terminology, the <soCalled>editor</soCalled> is the person responsible for
+moving along a standard proposal up to its final stage. He or she
+acts as the head of an editorial group.</note>
+be seen as a working group from the
+point of view of the TEI.</p>
+<p>
+The most practical way to do so is simply that the TEI should become an
+official liaison to TC37/SC4. As such, it  would  have access to all
+documents and debates of the group.</p>
+<p>The intention is to work in a more coordinated way than
+previously occurred with the terminology working group, where no continuous reporting to
+the TEI occurred.</p>
+   </div>
+<div><head>Constraints resulting from being a TEI working group</head>
+<p>
+Editing the FS and FSD documents in close connexion with the TEI
+consortium would imply that the editors pay careful attention to the
+     need to
+maintain compatibility with general TEI mechanisms. In revising the
+     current proposals, at least the following two 
+items should be considered:
+<list type="unordered">
+<item>Clarification of  alternative strategies. For example, there
+exist at present two ways of alternating between features
+and  values (the ad hoc vAlt and fAlc vs. the general alt
+mechanism): the work group should provide guidance on the
+circumstances in which either method might be
+preferable;</item>
+<item>Compatibility with the final proposals on the use of pointers and
+links from the stand-off markup TEI working group. It should be
+noted that, more generally, a close collaboration between TC37/SC4
+and the TEI must be established on this topic;</item></list>
+    </p>
+   </div>
+<div><head>Constraints resulting from becoming an ISO TC37/SC4 work
+item</head>
+<p>
+
+Making the revision of the two chapters a TC37/SC4 work
+item would have the following consequences:
+<list type="unordered">
+<item>
+It would be necessary to produce a distinct document,  independent of the
+general TEI document architecture. Feature structures would be the
+actual entry points and some global attributes may have to be
+dropped.</item>
+<item>
+It would oblige the document to be conformant to the general
+structure of an ISO standard (with scope, terms and definitions,
+etc.);</item>
+<item>
+It would give additional international visibility to the document,
+since it would  be widely distributed to TC37/SC4 members,
+thus providing additional sources of comments and suggestions for
+modification;</item></list>
+    </p>
+
+<p>
+
+The following items have been identified as requiring revision in
+the current draft:
+<list type="unordered">
+<item>
+Preliminary formal description of feature structures additional to
+what is already provided</item>
+<item>
+Provision of a simplified representation (FS lite) describing the
+basic subset of FS representation without libraries;</item>
+<item>
+Provision of a re-entrance mechanism;</item>
+<item>
+Description of typed feature structure</item>
+<item>
+Simplification of feature value content by replacing some elements
+(&lt;symb&gt;, &lt;num&gt; etc.) with references to types
+(cf. XML schemas)</item>
+<item>
+Provision of more NLP related examples (e.g. a syntactic analysis
+       using HPSG, a semantic analysis, etc.)
+</item></list>
+    </p>
+   </div>
+<div><head>Budget issues</head>
+<p>
+No specific budget will be requested from the TEI to support those
+activities, since  they will be incorporated into 
+normal ISO TC37/SC4 activities. Experts participate in ISO work groups on a national
+basis.</p>
+<p>
+As a liaison, the TEI will send specified representatives to all
+editorial group meetings (presumably, one of the two
+editors).</p>
+<p>
+
+Should  a proposal be made to an EU call to fund those
+activities, the TEI council would be informed.</p>
+   </div>
+
+<div><head>Timetable</head>
+<p>
+
+The following timetable is presented as an indication of how things
+could be managed within TC37/SC4:
+<list type="unordered">
+<item>
+February 2003: a New Work Item Proposal (NP) together with a first
+draft is sent to TC37/SC4 members for approval and comments. This is a good
+opportunity to check that the liaison mechanism works</item>
+<item>
+May 2003: result of voting and compilation of comments</item>
+<item>
+July 2003: SC4 meeting in conjunction with ACL conference in
+Sapporo. Study of comments and decision to proceed to Committee
+Draft (CD), or, (if things are going well) as a Draft of
+International Standard (DIS)</item>
+<item>
+November 2003: DIS document, incorporating Sapporo comments, is
+sent for vote to TC37 members</item>
+<item>Dec. 2004: Publication.</item></list>
+    </p>
+<p>
+
+A key factor in this timetable will be the speed of reaction to
+ comments and provision of updated drafts after plenary SC4
+meetings.</p>
+   </div>
+<div><head>Proposed participants</head>
+
+<p>Editor: Kiyong Lee klee@korea.ac.kr</p>
+<p>Members (to be confirmed):
+<list>
+<item>Syd Bauman Syd_Bauman@brown.edu</item>
+<item>
+Lou Burnard lou.burnard@oucs.ox.ac.uk</item>
+<item>Eric de la Clergerie Eric.De-La-Clergerie@inria.fr</item>
+<item>Tomaz Erjavec Tomaz.Erjavec@ijs.si</item>
+<item>Ulrich Heid Ulrich.Heid@IMS.Uni-Stuttgart.DE</item>
+<item>Terry Langendoen langendt@U.Arizona.EDU</item>
+<item>Laurent Romary Laurent.Romary@loria.fr</item>
+<item>Gary Simons Gary_Simons@sil.org</item>
+     </list></p></div></body>
+<!--
+This seems to me a little dangerous. It is not reasonable to make
+the chapters a standalone documents: the whole point is their
+integration with the rest of the Guidelines. I think you would have
+to produce the ISO document as a standalone document, following
+revision of the chapters. But that seems quite a sensible idea
+anyway. </p>
+<p>
+
+I don't know what this means.</p>
+<p>
+
+Or this. Features structures are already typed.</p>
+<p>
+
+This seems dangerous to me. The whole point of the FSD is that the
+type system is explicit in the tagging, not delegated to an
+external schema</p>
+-->
+
+</text>
+</TEI.2>
+

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/home/lou/Public/TEI/TEICSS/tei.css" type="text/css"
+ ?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:t="http://www.tei-c.org/ns/1.0" n="2022-08"><teiHeader><fileDesc><titleStmt><title>Minutes of the TEI Technical Council</title><meeting n="2022-08" when="2022-08-12">TEI Technical Council online
+     meeting : <date>12 August 2022</date></meeting></titleStmt><publicationStmt><distributor>TEI Website</distributor><idno>TCM157</idno></publicationStmt><sourceDesc><p>Retagged from a WordPress HTML file</p></sourceDesc></fileDesc><revisionDesc><change when="2023-04-25">Archival header confected</change><change>Extracted from Word Press article with id post-31366</change></revisionDesc></teiHeader><text><body><div><p><hi style="strong">Meeting times:</hi></p><list style="ul">
+<item>7am PDT / 10am EDT / 4pm CEST</item>
+<item>Started:     15:05Z    Ended:    16:39Z</item>
+</list><p><hi style="strong">Present:</hi></p><list style="ul">
+<item>Syd Bauman (SB)</item>
+<item>Elisa Beshero-Bondar (EBB)</item>
+<item>Hugh Cayless (HC)</item>
+<item>Janelle Jenstad (JJ)</item>
+<item>Martina Scholger (MS)</item>
+<item>Sabine Seifert (SS)</item>
+<item>Peter Stadler (PS)</item>
+<item>Raff Viglianti (RV)</item>
+</list><p><hi style="strong">Apologies/Not Present:</hi></p><list style="ul">
+<item>Helena Bermúdez Sabel (HBS)</item>
+<item>Elli Bleeker (EB)</item>
+<item>Magdalena Turska (MT)</item>
+</list><p>Meeting minutes previous month (<ref target="https://tei-c.org/activities/council/tei-technical-council-teleconference-2022-07-08/">July</ref>)</p><p> </p><div type="h2"><head>TEI Conference</head><list style="ul">
+<item>F2F meeting in Newcastle
+<list style="ul">
+<item>September 11–13 (Sun–Tue).</item>
+<item>Agenda F2F meeting</item>
+<item>Travel + Accommodation
+<list style="ul">
+<item>Discussion: We should be masking and testing during the meetings</item>
+</list>
+</item>
+</list>
+</item>
+<item>Joint Board/Council meeting
+<list style="ul">
+<item>Monday afternoon at 17:30, dinner afterwards</item>
+</list>
+</item>
+<item>Board meeting
+<list style="ul">
+<item>Thursday after the ABM (relevant for MS and HC)</item>
+<item>Topic that we should discuss with the TEI Board: concern over mailing list continuity
+<list style="ul">
+<item>Revisit infrastructure group discussions of this</item>
+<item>SB volunteers to assist with this</item>
+</list>
+</item>
+</list>
+</item>
+<item>JJ is willing to Zoom in for any issue but is particularly interested in being there for the <gi>ab</gi> and <gi>gender</gi> issues.</item>
+</list></div><div type="h2"><head>Next release</head><list style="ul">
+<item>Timeline
+<list style="ul">
+<item>Thurs. October 20: Hard freeze: (i.e. release branches are created and only to be touched by the release techs)</item>
+<item>Tues. October 11: “Heightened Awareness Period” aka “Refrigeration”: include special attention to PRs for the release – the yellow light at a traffic light.</item>
+<item>Tues. October 25: Release</item>
+</list>
+</item>
+<item>Decide on version number
+<list style="ul">
+<item>If CMC is included, major number needs to be incremented (from 4.y.z to 5.y.z, because it is a new chapter)</item>
+<item><gi>gender</gi> element and nested <gi>ab</gi> probably not enough to justify a major number increase</item>
+<item>Next release will be 4.5.0 unless CMC makes it in, in which case it has to be 5.0 because of the need to renumber chapters.</item>
+</list>
+</item>
+<item>Release techs will be SS, PS, &amp; MS. (Making this an all-European effort.)</item>
+</list></div><div type="h2"><head>New gender element</head><list style="ul">
+<item><hi style="b">Action on SB, HC, MS: </hi>Review PR <ref target="https://github.com/TEIC/TEI/pull/2299">2299</ref> <hi style="b">by</hi> 2022-09-11</item>
+<item>Ready to merge into dev?</item>
+<item>Not quite. EBB needs to make a series of prose updates. SB assigned to merge the PR when ready.</item>
+</list></div><div type="h2"><head>Discussion of nested ab elements</head><list style="ul">
+<item><hi style="b">Action</hi> on <hi style="b">HC</hi> and <hi style="b">EBB</hi> to update the prose.</item>
+<item><hi style="b">Action </hi>on <hi style="b">HC, SB, or EBB</hi> after prose updated: make PR for <ref target="https://github.com/TEIC/TEI/compare/ab_in_ab_issue-1856">the branch</ref>.
+<list style="ul">
+<item>First example in 3.1 should be revised. Find a better sense-making paragraph.</item>
+<item>Second example in 3.1 isn’t a correct use of head.</item>
+<item>Modify phrasing in paragraph: “Since paragraphs are usually explicitly marked in Western texts…”: this is too broad; doesn’t apply to pre-print documents.</item>
+<item>Discussion of parallels between the <gi>p</gi>:<gi>ab</gi> relationship and the <gi>s</gi>:<gi>seg</gi> relationship, except that <gi>s</gi> can take @type. We noted that <gi>p</gi> and <gi>s</gi> are formal semantic structures, while <gi>ab</gi> and <gi>seg</gi> capture informal passages.</item>
+<item>JJ notes that it would be useful to have @type on <gi>p</gi> for processing into HTML and using classes in stylesheets. We already talk about introductory, body, and concluding paragraphs in Western writing practice.</item>
+<item>Decision that <gi>ab</gi> is a chunk.</item>
+<item>HC and EBB will continue working on this and we’ll review revisions at F2F.</item>
+</list>
+</item>
+</list></div><div type="h2"><head>Report on CMC</head><list style="ul">
+<item>Content (SB)</item>
+<item>Jenkins build problem (PS): <ref target="https://github.com/TEIC/Stylesheets/issues/565">https://github.com/TEIC/Stylesheets/issues/565</ref></item>
+</list></div><div type="h2"><head>Report on ATOP (SB)</head><list style="ul">
+<item>Hoping to have some code to demonstrate in Newcastle</item>
+</list><p> </p></div></div></body><!-- #post-## --></text></TEI>

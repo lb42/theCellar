@@ -1,0 +1,12 @@
+
+<!-- Declare action element -->
+<!ELEMENT action (who,what)>
+<!ATTLIST action %a.global;>
+
+<!-- Declare who element -->
+<!ELEMENT who (#PCDATA)>
+<!ATTLIST who %a.global;>
+
+<!-- Declare what element -->
+<!ELEMENT what (#PCDATA)>
+<!ATTLIST what %a.global;>

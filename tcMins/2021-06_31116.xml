@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/home/lou/Public/TEI/TEICSS/tei.css" type="text/css"
+ ?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:t="http://www.tei-c.org/ns/1.0" n="2021-06"><teiHeader><fileDesc><titleStmt><title>Minutes of the TEI Technical Council</title><meeting n="2021-06" when="2021-06-10">TEI Technical Council online
+     meeting : <date>10 June 2021</date></meeting></titleStmt><publicationStmt><distributor>TEI Website</distributor><idno>TCM141</idno></publicationStmt><sourceDesc><p>Retagged from a WordPress HTML file</p></sourceDesc></fileDesc><revisionDesc><change when="2023-04-25">Archival header confected</change><change>Extracted from Word Press article with id post-31116</change></revisionDesc></teiHeader><text><body><div><p><hi style="strong">Meeting times: </hi></p><list style="ul">
+<item>10 am–11:30 pm PDT, 1 pm–2:30 pm EDT, 6 pm–7:30 pm BST, 7 pm–8:30 pm CEST</item>
+<item>Started: 17:07Z    Ended: ~18:32Z</item>
+</list><p><hi style="strong">Present:</hi></p><list style="ul">
+<item>Syd Bauman (SB)</item>
+<item>Helena Bermúdez Sabel (HBS)</item>
+<item>Elisa Beshero-Bondar (EBB)</item>
+<item>Meaghan Brown (MB)</item>
+<item>Hugh Cayless (HC)</item>
+<item>Janelle Jenstad (JJ)</item>
+<item>Martina Scholger (MS)</item>
+<item>Peter Stadler (PS)</item>
+<item>Magdalena Turska @ 17:25 (MT)</item>
+</list><p><hi style="strong">Apologies/Not Present:</hi></p><list style="ul">
+<item>Jessica Lu (JL)</item>
+<item>Raff Viglianti (RV)</item>
+</list><p> </p><div type="h2"><head>Next Release: August</head><list style="ul">
+<item>Techs: HBS, MS, PS</item>
+<item>Not during Balisage! (2–6 August)</item>
+<item>PS on holiday before August 9. HBS and MS on holiday in July.</item>
+<item>Wed 18 Aug (Freeze Sun 15 Aug; refrigerate Wed 11 Aug)</item>
+<item>Meeting times: <hi style="b">From July: Thursdays — 10:30 am PDT, 1:30 pm EDT, 7:30 pm CEST</hi>
+<list style="ul">
+<item>After-the-fact addition: MH says that time slot is OK.</item>
+</list>
+</item>
+</list></div><div type="h2"><head>Next VF2F meeting</head><list style="ul">
+<item>Discussion about meeting in person.
+<list style="ul">
+<item>Paderborn</item>
+<item>When? Spring 2022 (goal)</item>
+<item>Revisit after elections; watching pandemic.</item>
+</list>
+</item>
+<item>Full or short meeting for virtual?
+<list style="ul">
+<item>Short</item>
+<item>End of July? August? MS opened a doodle.</item>
+</list>
+</item>
+</list></div><div type="h2"><head>TEI-C 2021 elections</head><list style="ul">
+<item><ref target="http://bit.ly/TEICelections2021">http://bit.ly/TEICelections2021</ref></item>
+<item>Current members whose terms end at the end of 2021:
+EBB, MB, JL, MS, PS, MT</item>
+<item>Open positions for TEI-C Council
+<list style="ul">
+<item>4 members (for 3-year term)</item>
+<item>2 members (for 1-year term)</item>
+</list>
+</item>
+<item>Discussion about how to handle the two different types of terms.
+<list style="ul">
+<item>There doesn’t seem to be anything on the current form acknowledging that there’s two different term lengths.</item>
+<item>Possibly need a way for people to indicate preferences for 3 or 1 year?</item>
+<item>Top-ranked person gets the first pick of a 3-year or 1-year term.</item>
+</list>
+</item>
+<item>It’s a temporary issue. At the 2023 elections, we will already be in a three-year cycle.</item>
+<item>We need to announce the rules of the election and stick to them.</item>
+<item>But probably an issue for the Board and the Elections Committee.</item>
+<item>JJ will take a summary (written by SB) back to the Elections Committee to take back to the Board for a decision, with a note that clarity in advance is important.</item>
+<item>Watch for gender/age/race/academic status balance.</item>
+</list></div><div type="h2"><head>GitHub issues #2049</head><list style="ul">
+<item>Someone please explain to SB what happened to <gi>altIdent</gi> in the most silly places: Working on <ref target="https://github.com/TEIC/TEI/issues/2049">2049</ref> I (SB) find it is no longer allowed in <gi>category</gi>, <gi>joinGrp</gi>, or <gi>taxonomy</gi>. Did I change that? Did someone take <gi>altIdent</gi> out of model.glossLike?
+<list style="ul">
+<item>Answer: Yes, SB changed that. See <ref target="https://github.com/TEIC/TEI/pull/2032">https://github.com/TEIC/TEI/pull/2032</ref></item>
+</list>
+</item>
+<item>Multiple nested objects: <ref target="https://github.com/TEIC/TEI/issues/2152">https://github.com/TEIC/TEI/issues/2152</ref> — We agreed to make it so.</item>
+</list></div><div type="h2"><head>AOB</head><list style="ul">
+<item>OxGarage plans: PS: At Paderborn, we are currently in the lucky position to have a very skilled developer for working on the OxGarage (part-time, for several years!). While we want to enhance OxGarage for the MEI community, converting Music (notation) file formats, we want to keep a common code base with the TEI’s OxGarage for the benefit of both communities. Plans are to modularize, update and refactor the code base.</item>
+</list><p> </p></div></div></body><!-- #post-## --></text></TEI>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/home/lou/Public/TEI/TEICSS/tei.css" type="text/css"
+ ?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:t="http://www.tei-c.org/ns/1.0" n="2014-03"><teiHeader><fileDesc><titleStmt><title>Minutes of the TEI Technical Council</title><meeting n="2014-03" when="2014-03-07">TEI Technical Council online
+     meeting : <date>7 March 2014</date></meeting></titleStmt><publicationStmt><distributor>TEI Website</distributor><idno>TCM058</idno></publicationStmt><sourceDesc><p>Retagged from a WordPress HTML file</p></sourceDesc></fileDesc><revisionDesc><change when="2023-04-27">Archival header confected</change><change>Extracted from Word Press article with id post-21914</change></revisionDesc></teiHeader><text><body><div>
+		
+		<!-- <div class="teiheader"><filedesc><titlestmt><title><date when="2014-03-07">7 March 2014</date></title></titlestmt><publicationstmt><distributor>TEI Website</distributor><idno type="TEI">TC M 57</idno></publicationstmt><sourcedesc><p>Converted from google doc minutes taken during the meeting.</p>
+<p>      </sourcedesc></filedesc><revisiondesc><change who="MDH" when="2014-03-14">Initial conversion from Google doc and cleanup.</change></revisiondesc></div> -->
+<p>Present: Hugh Cayless (HC)
+        Fabio Ciotti (FC)
+        James Cummings (JC)
+        Elli Mylonas (EM)
+        Martin Holmes (MH) (Minutes)
+        Stefanie Gehrke (SG)
+        Sebastian Rahtz (SR)
+        Paul Schaffner (PFS)
+        Peter Stadler (PWS)</p>
+<p>Apologies: Syd Bauman (SB), Lou Burnard (LB)</p>
+<div><head>
+        Actions Arising</head>
+<list style="ul">
+<item><label>EVERYONE:</label> Book travel tickets for FTF in June/July.</item>
+<item><label>PFS, SB</label>: Complete the Doodle poll for the fall meeting at <ref target="http://doodle.com/46gbvkft7puiw5fc">http://doodle.com/46gbvkft7puiw5fc</ref>.</item>
+<item><label>SR</label>: Rewrite TEI Simple proposal as planned.</item>
+<item><label>EM</label>: Create a TEI Wiki page to field and organize proposals for the Hackathon (assuming the proposal is accepted).</item>
+<item><label>HC, FC(?)</label>: Add examples to the TEI XPointer draft (some from FC if he has time).</item>
+<item><label>PWS </label>: Circulate information on the <gi>correspDesc</gi> and <gi>standoff</gi> element proposal to the Council list.</item>
+<item><label>EVERYONE:</label> Comment on the <ref target="http://lists.village.virginia.edu/pipermail/tei-council/2014/019049.html">Object Working Group proposal from Torsten Schassen</ref>.</item>
+<item><label>EVERYONE:</label> Update status of tickets and tasks on <ref target="https://wiki.tei-c.org/index.php/Oxford2013-Actions2">http://wiki.tei-c.org/index.php/Oxford2013-Actions2</ref>.</item>
+<item><label>JC:</label> Assign new tickets and circulate a list.</item>
+<item><label>JC:</label> Assign RW’s tickets to PFS.</item>
+<item><label>JC:</label> Check with KH and BB regarding their tickets, and reassign as necessary.</item>
+</list>
+</div>
+<div><head>
+        Review of actions, SF tickets</head>
+<p>JC: There were several reports on the mailing list, but they came in too late to read, so we’ll summarize them when we come to them.</p>
+<p>JC: We’ve all been very bad (except SR) at staying on top of our tickets. I haven’t had a chance to categorize and assign new tickets either, but you don’t have to wait for me to do that before working on them. We can’t go through the complete list of actions now, so could everyone please update the status of their Oxford actions (<ref target="https://wiki.tei-c.org/index.php/Oxford2013-Actions2">http://wiki.tei-c.org/index.php/Oxford2013-Actions2</ref>) and in the next couple of days I’ll circulate a list.</p>
+<p>EM: I posted a query to the list recently, and either it didn’t get through or wasn’t responded to [it did get through]. In some slight defence, dealing with tickets does require feedback and help from others.</p>
+<p>JC: If you don’t get a response from Council, keep badgering, and feel free to say what action you will take in the event of no response, with a deadline.</p>
+<p>JC: If I assign a ticket to you, and you don’t think you’re the right person for it, please say so. You can trade tickets around as well.</p>
+<p>PFS: Tickets assigned to RW: I asked her about them but got no response, so those tickets should be assigned to me, and I’ll try to get her help with them if I can.</p>
+<p>JC: Will do. Also Kevin has some tickets which he wanted to carry on working on. I emailed him a day or so ago.</p>
+<p>PFS: Kevin is unlikely to do anything in the near term.</p>
+<p>JC: I’ll wait for a reply from him, and if he’s going to be too busy, I’ll reassign them. I might direct one of us to assist him.</p>
+<p>SR: What about BB’s tickets? He still has a couple, including Attributes Without Examples, which he shares with RW.</p>
+<p>JC: I’ll go through SF and reassign them if necessary. I’ll give everyone a week from today to complete the list of actions and then work through everything and reassign as necessary.</p>
+</div>
+<div><head>
+        Report on upcoming face-to-face (JC)</head>
+<p>JC: I’ve booked accommodation for everyone non-Oxford except HC, who can’t make it, Sunday night through Friday morning. Food will be in-office on day 1, dining-room on day 2, and is still open for day 3 (we might go out that day).</p>
+<p>JC: It’s the same building but different rooms. I’m still trading rooms with people to try and get us in the same room for all three days. All this has to be done early for bureaucratic reasons.</p>
+<p>FC: How shall we organize payment for plane tickets? Should we pay and then reclaim?</p>
+<p>SR: That’s how it’s usually done.</p>
+<p>FC: How do we deal with tickets in the meeting?</p>
+<p>JC: We tend to deal with them in breakout groups. [JC mishears about tickets]</p>
+<p>PFS: The question was about plane tickets.</p>
+<p>JC: Oops. Book the tickets yourself, and then you’ll claim back directly from the TEI afterwards.</p>
+<p>FC: I have no SF tickets assigned right now.</p>
+<p>JC: That will change in a couple of weeks!</p>
+</div>
+<div><head>
+        Report on autumn face-to-face (HC)</head>
+<p>HC: Please fill out the poll if you haven’t already, so we can pick dates.</p>
+<p>JC: Any preferred date at the moment?</p>
+<p>HC: Nine people have completed with most of the dates still looking good.</p>
+<p><ref target="http://doodle.com/46gbvkft7puiw5fc">http://doodle.com/46gbvkft7puiw5fc</ref></p>
+</div>
+<div><head>
+        Report on TEI Simple (SR)</head>
+<p>JC: Reports from MM that some funding issues have been solved. When we go to Mellon we can go with matching funds in hand. We also have an excellent dependable XSLT programmer.</p>
+<p>SR: So the next stage is that I rewrite the proposal to say where we need money and where we need time. MM is almost ready to go to Mellon. It’s all still dependent on getting the Mellon funding.</p>
+</div>
+<div><head>
+        Report on TEI Hackathon (EM/SR/etc)</head>
+<p>EM: We submitted a proposal to the DH conference committee for the hackathon. I think everyone saw the final draft. There were no comments — should I post it again?</p>
+<p>JC: Let’s see if they accept it.</p>
+<p>EM: We’re offering a one-day hackathon. If it’s accepted we’ll be sending out a call immediately, because we need to know who’s coming ahead of time, and we need to know from them what the projects will be, because it will be based on projects that the whole group will vote on ahead of time, because we will be forming people into groups to work on the proposals. We have SR and SB, and HC will be coming in remotely. We also invited Alexander Czmiel. We have an offer for food from the TEI, which will need some organization because they’re not offering catering at the conference. The Board is completely behind this. Thanks to those who helped with the proposal. People are really encouraged to apply and attend if you’re going to be there.</p>
+<p>JC: When do we find out about acceptance?</p>
+<p>EM: Mid-March — 17th or 20th. The workshops are on two days before the conference; we hope ours will be on the day before, but we can’t be sure.</p>
+<p>FC: I have an issue with XTF relating to management of lexical items with markup inside. Is this the sort of thing that might be addressed, or is it too complicated and dependent on an install of XTF?</p>
+<p>EM: You mean a possible extension to XTF, right? The goal of the hackathon is to get people who are somewhat technical and get them to do something interesting with TEI. That could be a good project, or people might decide it’s too esoteric. The thing to do is to propose it as soon as we get the proposal system in place and issue the call.</p>
+<p>JC: I’d suggest the TEI Wiki is the place to organise most of this in a nice open way.</p>
+</div>
+<div><head>
+        Report on Text Directionality (MH/LB)</head>
+<p>SR: If we have a ftf at the end of June, I can’t see us getting a release out before the end of July, and thats getting into summer school and DH2014 territory in a messy way</p>
+<p>JC: We could work hard on our tickets and do a release some time at the end of May.</p>
+<p>SR: It might be cleaner to do that, so that things get finished before the ftf.</p>
+<p>EM: The latest Oxygen, which handles rtl better than it did before, depends on a dir attribute of some kind. </p>
+<p>…</p>
+<p>JC: Let’s say that we’re aiming for a release in May, and if you have it ready for then, that would be great.</p>
+<p>SR: You should go back and look at ITS version 2, which came out last year: http://www.w3.org/TR/its20/</p>
+<p>MH: It doesn’t seem to have anything related to vertical directionality, which was why we rejected ITS in the first place.</p>
+</div>
+<div><head>
+        Report on TEI Conference (JC) </head>
+<p>JC: Elena Pierazzo, John Unsworth and I are a program committee and are assisting MM in organization. The date and venue has been set. MM has made lots of progress. He’s made room arrangements and a specific hotel has been chosen. A website will still go up, and its designer has been talking to the ConfTool team. Mike Witmore, the director of the Folger Library, has agreed to give a keynote; MM has been added to the TEI-SIGs mailing list to make it easier to negotiate with SIGs about the space they need. Julia Flanders plans to do a day-long rollout of TAPAS on the day following the conference, and various library institutions will be involved in the conference.</p>
+</div>
+<div><head>
+        Object Working Group</head>
+<p>JC: I re-circulated Torsten’s proposal which we circulated in January. At that time it got approval.</p>
+<p>FC: Why has a specific working group been convened when the Ontology SIG could also contribute to a discussion about text-bearing objects?</p>
+<p>JC: The MS SIG and the Ontology SIG have agreed to cooperate through this working group to create the proposal, and there is some funding available from the board for the working group. This WG has a much more specific charter to work on this particular problem, while the SIGs have a more general role.</p>
+<p>JC: We need to get back to Torsten with feedback on the proposal. Let’s comment either on the mailing list or on the wiki page in the next week, and I’ll take all the responses back to them after that. I think we’re generally in favour of the proposal; the actual details are not our concern at this stage.</p>
+<p>SR: The NeDiMah network has some money left over, and the group on linked open data requested some money (enough to hold a meeting and bring some people to it), which was agreed. This gives us immediate funds to hold a meeting, which will probably happen in Oxford.</p>
+<p>SG: I sent comments, and I’d like to know if they were helpful.</p>
+<p>JC: I passed them on to Torsten.</p>
+</div>
+<div><head>
+        TEI XPointer Proposal (HC)</head>
+<p>HC: I’ve had a response from FC, with some very useful corrections and requests for clarification, which I will implement. The main thing it still needs are examples. Once I’ve added examples, in the next couple of weeks, I’ll ask again for feedback, and if there’s no objection I’ll be ready to merge it.</p>
+<p>FC: I’ll provide some examples, if I find the time to work on them.</p>
+</div>
+<div><head>
+        Any Other Business</head>
+<p>PWS: We’re making good progress with our proposal for a <gi>correspDesc</gi> element and the <gi>standoff</gi> element (as yet unnamed). I will circulate information on the mailing list.</p>
+</div>
+<div>
+<p>JC: Thanks to everyone for attending. Please go through the minutes document before Tuesday morning Pacific Time, then we’ll TEI it and put it online. Go through the actions list and update the status of your tickets, and I will then go through it and reassign as appropriate in a couple of weeks.</p>
+</div>
+	</div></body><!-- #post-## --></text></TEI>

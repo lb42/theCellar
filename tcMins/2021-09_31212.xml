@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/home/lou/Public/TEI/TEICSS/tei.css" type="text/css"
+ ?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:t="http://www.tei-c.org/ns/1.0" n="2021-09"><teiHeader><fileDesc><titleStmt><title>Minutes of the TEI Technical Council</title><meeting n="2021-09" when="2021-09-09">TEI Technical Council online
+     meeting : <date>9 September 2021</date></meeting></titleStmt><publicationStmt><distributor>TEI Website</distributor><idno>TCM144</idno></publicationStmt><sourceDesc><p>Retagged from a WordPress HTML file</p></sourceDesc></fileDesc><revisionDesc><change when="2023-04-25">Archival header confected</change><change>Extracted from Word Press article with id post-31212</change></revisionDesc></teiHeader><text><body><div><p><hi style="strong">Meeting times: </hi></p><list style="ul">
+<item>10:30am–12:00pm PDT, 1:30pm–3:00pm EDT, 6:30pm–8:00pm BST, 7:30pm–9:00pm CEST</item>
+<item>Started: 17:35Z    Ended: 19:02Z</item>
+</list><p><hi style="strong">Present:</hi></p><list style="ul">
+<item>Syd Bauman (SB) — departed @ ~18:16Z)</item>
+<item>Helena Bermúdez Sabel (HBS)</item>
+<item>Elisa Beshero-Bondar (EBB)</item>
+<item>Meaghan Brown (MB)</item>
+<item>Hugh Cayless (HC)</item>
+<item>Janelle Jenstad (JJ)</item>
+<item>Jessica Lu (JL) arrived ~18:00Z</item>
+<item>Martina Scholger (MS)</item>
+<item>Peter Stadler (PS)</item>
+</list><p><hi style="strong">Apologies/Not Present:</hi></p><list style="ul">
+<item>Magdalena Turska (MT)</item>
+<item>Raff Viglianti (RV, parental leave)</item>
+</list><p> </p><div type="h2"><head>Next VF2F meeting</head><list style="ul">
+<item>Date of SVF2F is <hi style="b">Fri 01 Oct &amp; Sat 02 Oct. </hi>See agenda/collection of topics in a separate google document.</item>
+</list></div><div type="h2"><head>Release debriefing</head><list style="ul">
+<item>HBS did a great job thanks to the close supervision of MS and PS. Applause!</item>
+<item>The Oxygen plug-in was not an issue this time.</item>
+<item>There were some issues with the merge to dev: point releases had not been merged to dev, which caused some trouble.<hi style="b"> Files from point releases need to be merged back to dev.</hi>
+<list style="ul">
+<item>It was not clear what the problem was because git diffs didn’t make sense.</item>
+<item>Point releases had been done in the released (main) branch. It was folded into release but not dev.</item>
+<item>The second point release had been done from the previous released branch.</item>
+<item>Add to TCW22: After we tag a release in the released branch, we need to merge from there back to the dev branch.</item>
+<item><hi style="b">Action</hi> on <hi style="b">SB</hi> by 2021-09-16: To make it easier on others to run, perhaps add a “test2” target to Stylesheets/Makefile — DONE.</item>
+<item><hi style="b">Action</hi> on <hi style="b">Jenkins maintainers</hi> to add a Test2 job by 2021-09-23.</item>
+<item><hi style="b">Action</hi> on HBS, PS, and MS to update TCW22 with notes from the release. See separate document.
+<list style="ul">
+<item>add merge from released branch to dev as last bullet point.</item>
+</list>
+</item>
+<item><hi style="b">Action on HC:</hi> Code &amp; CSS isn’t consistent for <ref target="https://tei-c.org/Activities/Council/Working/tcw22/">teic.org publication</ref> vs. <ref target="http://teic.github.io/TCW/tcw22.html">teic.github.io publication</ref> (CETEIcean) of TCW22. Replace the code/ CSS for teic.org to apply the GitHub CSS because it numbers the steps. This seems to be more than CSS.
+<list style="ul">
+<item>We should also try to consolidate the documentation so it’s easy to find in one place (legacy papers, etc).</item>
+</list>
+</item>
+</list>
+</item>
+</list></div><div type="h2"><head>CMC</head><list style="ul">
+<item>Subgroup (<ref target="https://github.com/luengen">@luengen</ref>, <ref target="https://github.com/Beisswenger">@Beisswenger</ref>, <ref target="https://github.com/lujessica">@lujessica</ref>, <ref target="https://github.com/sydb">@sydb</ref>, and <ref target="https://github.com/peterstadler">@peterstadler</ref>) is working on the CMC module based on <ref target="https://github.com/TEI-CMC-SIG/cmc-core">https://github.com/TEI-CMC-SIG/cmc-core</ref>. Fork of the Guidelines is in the CMC-SIG repo: <ref target="https://github.com/TEI-CMC-SIG/TEI/tree/cmc-features">https://github.com/TEI-CMC-SIG/TEI/tree/cmc-features</ref> (branch ‘cmc-features’).</item>
+<item>The HTML version—for facilitating review—is built at the TEI’s Jenkins server: <ref target="https://jenkins.tei-c.org/job/TEIP5-CMC-features/lastSuccessfulBuild/artifact/P5/release/doc/tei-p5-doc/en/html/CMC.html">https://jenkins.tei-c.org/job/TEIP5-CMC-features/lastSuccessfulBuild/artifact/P5/release/doc/tei-p5-doc/en/html/CMC.html</ref>.</item>
+</list></div><div type="h2"><head>Output of examples (in Specs) for all languages</head><list style="ul">
+<item>Some examples are just translations in other languages, or copies of the English examples.</item>
+<item>We are missing examples distinct to specific languages.</item>
+<item>If there is one example from a specific language (say, German), you only see that language’s examples. And if reading a different language, you won’t see the German language examples.</item>
+<item>Our collective (perhaps flawed) recollection is that we have not decided yet how to proceed, but are seriously considering some sort of grouping element (current proposals are: nested <gi>exemplum</gi> elements? <gi>egXMLgrp</gi>? <gi>exemplumGrp</gi>?) to allow a group of examples to be grouped together with the idea that the processor picks the most appropriate of that set (by which is the output language, comparing to @xml:lang attributes).</item>
+<item>See original issue on GitHub: <ref target="https://github.com/TEIC/TEI/issues/1933">https://github.com/TEIC/TEI/issues/1933</ref></item>
+<item>SB’s idea: an exemplum group with only one example should always be displayed.</item>
+<item>HC: Put every exemplum in a group to make sure exempla are properly processed. But what does an exemplum group with only one example mean?</item>
+<item>What do multiple (mul) or undetermined (und) values mean? It picks English or “und” if other languages aren’t present. “mul” ends up being displayed everywhere and so does “und”.</item>
+<item>MB: Maybe we need a “pickMe” attribute to specify applicability, to mark which examples are most generalizable across languages? Maybe @type=”preferred”?</item>
+<item>PS: perhaps this is useful for people’s ODD customizations, too. Suggested value should be 0 or 1. Perhaps @select (the default checked version), except that takes a URI. We probably need a new attribute. Argument in favor of a new attribute includes limiting its effect to the parent element, rather than the document.</item>
+</list></div><div type="h2"><head>Checking Pointers document</head><list style="ul">
+<item>SB (see <ref target="https://github.com/TEIC/TEI/issues/1675#issuecomment-895225895">comment</ref> on issue, which points to <ref target="https://github.com/TEIC/Documentation/blob/master/TCW/tcw32.xml">TCW 32</ref>)</item>
+<item>Regarding Syd’s questions:
+<list style="ul">
+<item>EBB agrees, and suggests linking the document from GitHub to TEI Wiki on ODD.</item>
+</list>
+</item>
+<item><hi style="b">Action on MS</hi> to ask SB if we can close the issue by 2021-09-13.
+<list style="ul">
+<item>SB reply: Depends on whether we want to wait until the document is published to close the issue. I suspect it will take quite a bit more work before we are ready to publish. It needs proofreading, testing, editing, Stylesheet fixing (because it looks ugly) etc.</item>
+</list>
+</item>
+</list></div><div type="h2"><head>Compensation</head><list style="ul">
+<item>Travel coverage has been a sort of compensation for Council members, but has been absent during the pandemic. Not compensating people for their labor can be a gatekeeping mechanism and a barrier to entry to the TEI Council.</item>
+<item>JL: This should not be about what we, as current Councilmembers, need/prefer. Instead, our focus should be on who is unable to  join us because of this issue. *If* Council wishes to become a more inclusive organization, the conversation must focus on anticipating the needs and limitations of folks who have not yet been able to access this space, and the perspectives of people who are not yet in this “room”‚—or could not ever be under the current labor model. There should be a default policy to compensate people for their labor. People could privately decline it, but it should be expected. As it stands, the current model has serious implications for Council membership; JL is the only person of color on Council and is additionally a contingent worker, but is not seeking re-election at the end of term largely due to this issue.</item>
+<item>Issues: TEI can’t afford to pay Council members what they are worth. There will be conflict of interest issues for some, too. Some members of the community might want to ratchet up expectations on our time if we are being compensated financially for time/labor.</item>
+<item>TEI Board asked if the Council could write a proposal about this. The Board will cover travel costs for Conference for pandemic-era Council members even if they are not on Council any more.
+<list style="ul">
+<item>How much compensation would be sufficient? Modest stipend: the equivalent of an international trip?</item>
+<item>JL: It is important to start where we are. Need to review the budget and see what TEI could afford to pay the Council. Begin there. The act of instituting compensation as a default policy would already be an important move toward a different ethical orientation in Counci’s labor model, but removing an extra cost (reimbursing travel for TEI work) is not the same as compensating people for labor.</item>
+<item>Suggestion: remove the language about institutional support in the application form to stand for elections.</item>
+<item>Suggestion to add a stipend: $1,000 USD?</item>
+</list>
+</item>
+<item>MS: Asks JL to address Board during the next Board/Council meeting (during the conference in October) regarding this issue. JL consents to speaking to the Board.</item>
+</list><p> </p></div></div></body><!-- #post-## --></text></TEI>

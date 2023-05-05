@@ -1,0 +1,837 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/home/lou/Public/TEI/TEICSS/tei.css" type="text/css"
+ ?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:t="http://www.tei-c.org/ns/1.0" n="2019-05"><teiHeader><fileDesc><titleStmt><title>Minutes of the TEI Technical Council</title><meeting n="2019-05" from="2019-05-06" to="2019-05-08">TEI Technical
+     Council ftf meeting : <placeName>Washington</placeName>, <date>06–08 May 2019</date></meeting></titleStmt><publicationStmt><distributor>TEI Website</distributor><idno>TCM114</idno></publicationStmt><sourceDesc><p>Retagged from a WordPress HTML file</p></sourceDesc></fileDesc><revisionDesc><change when="2023-04-25">Archival header confected</change><change>Extracted from Word Press article with id post-29474</change></revisionDesc></teiHeader><text><body><div><p><hi style="strong">Present:</hi></p><list style="ul">
+<item>Syd Bauman (SB)</item>
+<item>Elisa Beshero-Bondar (EBB)</item>
+<item>Meaghan Brown (Folger Representative) (MB)</item>
+<item>Hugh Cayless (HC)</item>
+<item>James Cummings (JC)</item>
+<item>Elli Mylonas (EM)</item>
+<item>Martina Scholger (MS)</item>
+<item>Peter Stadler (PS)</item>
+<item>Sarah Stanley (SS)</item>
+<item>Magdalena Turska (MT)</item>
+<item>Raff Viglianti (RV)</item>
+</list><p><hi style="strong">Remote:</hi></p><list style="ul">
+<item>Vanessa Bigot Juloux (VBJ)</item>
+</list><div type="h1"><head>Organizational</head><div type="h2"><head>Timeline</head><table>
+
+<row>
+<cell>Monday May 06</cell>
+<cell>9:00–12:00</cell>
+<cell>Council meeting</cell>
+</row>
+<row>
+<cell/>
+<cell>12:00–13:00</cell>
+<cell>Open invite brown bag lunch with Folger staff and others—Foulke Conference Room (301 East Capitol St)</cell>
+</row>
+<row>
+<cell/>
+<cell>13:00–17:00</cell>
+<cell>Council meeting</cell>
+</row>
+<row>
+<cell/>
+<cell><hi style="i">Evening plans</hi></cell>
+<cell/>
+</row>
+<row>
+<cell>Tuesday May 07</cell>
+<cell>9:00–13:00</cell>
+<cell>Council meeting (continuing over lunch)</cell>
+</row>
+<row>
+<cell/>
+<cell>13:00–14:30</cell>
+<cell>Guided Folger book exhibit for Council members (optional)</cell>
+</row>
+<row>
+<cell/>
+<cell>14:30–17:00</cell>
+<cell>Council meeting (with Martin Holmes teleconferencing in)</cell>
+</row>
+<row>
+<cell/>
+<cell><hi style="i">Evening plans</hi></cell>
+<cell/>
+</row>
+<row>
+<cell>Wednesday May 08</cell>
+<cell>9:00–13:00</cell>
+<cell>Council meeting</cell>
+</row>
+<row>
+<cell/>
+<cell>13:00</cell>
+<cell>Lunch</cell>
+</row>
+<row>
+<cell/>
+<cell>14:00–17:00</cell>
+<cell>Council meeting</cell>
+</row>
+<row>
+<cell/>
+<cell><hi style="i">Evening plans, 19:00</hi></cell>
+<cell>Dinner at Raff’s</cell>
+</row>
+
+</table></div><div type="h2"><head>Folger Library, Washington D.C.</head><p>201 E Capitol St SE, Washington, DC 20003.
+Meeting Location: Foulke Conference Room, in 301 East Capitol St., SE. This building is across the street from the main Folger building, and is <hi style="b">swipe access only</hi>. Meaghan Brown (Folger staff) will be meeting us each day and monitoring the door.</p></div><div type="h2"><head>Monday 06</head><div type="h3"><head><hi style="b">Morning (09:00–12:00)</hi></head><list style="ul">
+<item><hi style="strong">Council thanks MB and RV for local organising.</hi></item>
+<item><hi style="strong">General issues</hi>
+<list style="ul">
+<item>F2F Graz, September 14<hi style="b">–</hi>16</item>
+<item>Elections
+<list style="ul">
+<item>MT raises issue of same people being re-elected repeatedly; JC and EM are not planning to run for Council so it will ensure we have at least 2 new members on the Council.</item>
+<item>EM raises the question of specific roles that are always needed for the Council to continue operation: infrastructure, stylesheets, Guidelines editing, teaching perspective. We could ask the nominating committee to work on the slate proactively so that we have candidates to fill these roles.</item>
+<item>EM also reminds us that there should be some capacity to recognize “invited member/expert” status like e.g. continued access to tei-council list.</item>
+</list>
+</item>
+<item>Release in July (EBB + VBJ)
+<list style="ul">
+<item>Timeframe: between July 14<hi style="b">–</hi>20; MT is hosting EBB in Warsaw
+<list style="ul">
+<item>July 16th is the tentative release date</item>
+<item>Codename: Rebel release</item>
+<item>Refrigeration on June 30</item>
+<item>Freeze starts on July 9</item>
+<item>Create release branch on July 14</item>
+</list>
+</item>
+<item>With move away from ADHO server, there will likely be issues.</item>
+<item>MS notes that someone from infrastructure team should be on the release.</item>
+<item>Important is to review if release managers have all the necessary credentials.</item>
+<item>PS suggests we revisit the infrastructure status in 2 months to check where we are.</item>
+<item>PS: release of (old) Roma and OxGarage? Wants to release in a week or two. Currently it only works on dev branch, so it would make sense to do a release; increment Oxgarage to v2.11.0. <hi style="b">Action on PS</hi></item>
+<item>Stylesheets release?
+<list style="ul">
+<item>SB: Wants to complete rub-a-dub first. Try to do the release in June.</item>
+</list>
+</item>
+</list>
+</item>
+</list>
+</item>
+<item><hi style="strong">ROMA JS (Report and Naming)</hi>
+<list style="ul">
+<item>RV gave a report on RomaJS for which Council is deeply indebted.</item>
+<item>RV: time to put this on tei-c.org domain and promote it!
+<list style="ul">
+<item>SB: As long as we add caveats.
+<list style="ul">
+<item>This is a “beta release”</item>
+<item>Use in a standard-compliant browser</item>
+<item>Add note in Safari: please don’t refresh the page</item>
+</list>
+</item>
+<item>JC used in teaching and had no major problems and students liked it better than old Roma</item>
+<item>Discussion of content blockly feature
+<list style="ul">
+<item>Some disagreement about benefits of drag-and-drop interfaces, although this seems to be commonly used</item>
+</list>
+</item>
+<item>PS: It would be good to have a footer or logo indicating where it’s being hosted. <hi style="b">Action on PS</hi></item>
+<item>RV accepting suggestions for content to put in the blank space on the main page
+<list style="ul">
+<item>JC volunteers to help write this (but happy to have someone else help)</item>
+<item>EBB: Think about mirroring, and announcing where is it mirrored? (Or auto load balancing / geographical mirroring?)</item>
+<item>EM: suggests subgroup address this later during our F2F</item>
+<item><hi style="b">Action on subgroup</hi>: JC, EBB, RV, EM</item>
+</list>
+</item>
+<item>RV points out problem with pointing to an element in an external RNG (e.g. SVG).
+<list style="ul">
+<item>SB: suggests possibility of a <gi>link</gi>-like solution of pointing to both things. (Though how we point to something in an RNG schema we don’t control will be something we need to overcome…)</item>
+</list>
+</item>
+<item>In discussing docLang translations, RV suggests using RomaJS as translation interface for changing descs
+<list style="ul">
+<item>Might be good to test to see if/how people use it</item>
+</list>
+</item>
+<item>RV is working on internationalizing the interface</item>
+<item>DNS update for the new name is necessary. HC may be able to switch over the DNS entries this week.
+<list style="ul">
+<item>RV can host on MITH server, with their new Jenkins server</item>
+<item>RV needs to pull TEI data from the Vault</item>
+<item>RV is using development version of oxgarage from Stylesheets (since it needs odd2json that is in dev). It might be necessary to make further changes to odd2json</item>
+<item>MS: old Roma should feature a banner link to direct people to try out the new beta RomaJS interface
+<list style="ul">
+<item>We need to release old Roma to host the new banner, and a status bar to announce (gradual stages of) aspects of old Roma no longer working or being updated: <hi style="b">Action on PS</hi></item>
+</list>
+</item>
+</list>
+</item>
+</list>
+</item>
+<item>Naming for new Roma:
+<list style="ul">
+<item>JC, as tasked, ran a shortlisting election which left us (in no particular order) with:
+<list style="ul">
+<item>Roma (Keep it the same)</item>
+<item>RomaJS (Keep the name we’ve been using)</item>
+<item>Okonomiyaki (along the same line as Pizza Chef)</item>
+<item>LuXor (with or without capital X)</item>
+<item>ODDly</item>
+</list>
+</item>
+<item>JC notes that maybe RV should just decide.</item>
+<item>Council discusses their favourite ones.</item>
+<item>RV prefers “Roma”. Calling the old one “Old Roma” or “Roma Classic” or “Retro Roma” or “Roma Antiqua”</item>
+<item>PS: We’re going to need a different subdomain to distinguish the two.
+<list style="ul">
+<item>RV: for now romabeta.tei-c.org</item>
+<item>When not beta anymore, switch over to roma.tei-c.org</item>
+<item>(and old roma becomes ‘roma-old.tei-c.org’ or similar)</item>
+</list>
+</item>
+</list>
+</item>
+</list>
+</item>
+<item><hi style="strong">Standoff proposal</hi>
+<list style="ul">
+<item><ref target="https://github.com/sydb/stdfSpec/tree/linkDataBlock/Specification">https://github.com/sydb/stdfSpec/tree/linkDataBlock/Specification</ref></item>
+<item><gi>teiCorpus</gi> → <gi>TEI</gi>
+<list style="ul">
+<item>Council agrees changing <gi>teiCorpus</gi> to <gi>TEI</gi> is a good idea, and feels that it would be beneficial if Laurent Romary should instigate discussion concerning it on TEI-L and other places as appropriate.</item>
+<item>Council also agrees that the messier interleaving content is fine given the clarity of underlying content model it provides.</item>
+</list>
+</item>
+</list>
+</item>
+</list></div><div type="h3"><head><hi style="b">12:00–13:00</hi> Open invite brown bag lunch</head><list style="ul">
+<item>Brown bag lunch with folger staff and others</item>
+<item>Some topics that have come up:
+<list style="ul">
+<item>Workshops and training resources</item>
+<item>Updating and fixing the “Projects that use the TEI” page</item>
+<item>Resources for transforming TEI</item>
+</list>
+</item>
+</list></div><div type="h3"><head><hi style="b">Afternoon (13:00–17:00)</hi></head><p><hi style="strong">Continuing standoff discussion</hi></p><list style="ul">
+<item>
+<list style="ul">
+<item>nonlinear textual features (was called “extratextual”):
+<list style="ul">
+<item>SB notes examples like acrostics, anagrams, solutions to crossword puzzles, ciphers, codes, etc.; JC and EBB: we don’t need specific elements for these use cases.</item>
+<item>EBB: Maybe a single generic element that indicates text that is not read in the expected sequence. Give a @type with suggested values.</item>
+<item>EM: need a standoff wrapper/holder, like <gi>nonlinear</gi></item>
+<item>EBB: ergodic (a text that is meant to be entered from multiple places and read in multiple directions, like George Herbert’s poem, “Angel Wings”.) RV: But does that confuse things with ergodic literature. EBB: it’s maybe one use case for this generic element, whatever it is.</item>
+<item>JC: An example is Wilfred Owen’s letters home to his mother, he has a code word ‘Mistletoe’ in the text which then signals that the second letter of the next lines on the page will spell out the location he is currently stationed at. The point being we need not only to point to the individual letters in the text, but the piece of text which signals this (similar to the ‘clue’ in the crossword). Also ways to signal that indicates text is to be read non-linearly after a certain point.</item>
+</list>
+</item>
+<item><gi>ldb</gi> vs. <gi>standoff</gi>: Is it really a “linked data block” in our current understanding of linked data (in the semantic web sense)? Also ldb is less clear than standoff.
+<list style="ul">
+<item>RV: <gi>standoff</gi> works as an overarching concept inclusive of linked data</item>
+<item>JC and SB voted for <gi>ldb</gi></item>
+</list>
+</item>
+<item>annotations
+<list style="ul">
+<item>MT: Following <ref target="https://www.w3.org/TR/annotation-model">Web Annotation</ref> standard with body and target. Annotation unit is a hinge connecting two ends. Indicate what is annotated, and what is said.</item>
+<item>Laurent Romary at first wanted to repurpose <gi>interp</gi> element. In the course of discussion, the group decided on a new element, called <gi>annotation</gi> with two attributes, maybe: @body?, @target? which could each accept multiple pointers.</item>
+<item>HC: there are two styles for web annotation: 1) body is property of annotation (string or markup), or 2) that it is a pointer to somewhere else. We would want versatility of either.</item>
+<item>RV: Consider that body is the body and it can be a pointer, why not express that as <gi>ptr</gi>, and have the possibility for multiple of these</item>
+</list>
+</item>
+</list>
+</item>
+</list><p rend="pre">             <gi>annotation</gi>
+                 &lt;ptr target="#ldb" type="body"/&gt;
+                 &lt;ptr target="#w1" type="target"/&gt;
+                 &lt;ptr target="#w17" type="target"/&gt;
+             &lt;/annotation&gt;</p><list style="ul">
+<item>
+<list style="ul">
+<item>
+<list style="ul">
+<item>Here the “body” is composed of the <gi>ptr</gi> elements.</item>
+<item>We should be able to include a <gi>p</gi> to explain this annotation.</item>
+<item>MT: We should keep this as flexible as possible.</item>
+<item>HC: You could have annotation that has just a target without a body. Perhaps not the other way around (not possible to have body without annotation). Maybe <gi>ptr</gi> isn’t semantically rich enough for the w3c model?</item>
+<item>RV: If this is TEI, it should include TEI features people are used to.</item>
+<item>Laurent Romary wants an annotation block—for specific linguistics use cases.</item>
+<item>Council looks at <gi>annotationBlock</gi> proposal, and its unusual (possibly abusive?) use of <gi>span</gi> for indicating the body portion of an annotation, only because of its use of pointing attributes (avoiding what the element is supposed to do). RV: perhaps we can expand the model of <gi>span</gi>?</item>
+<item>The discussion on <gi>annotationBlock</gi> and nontextual might take a while.</item>
+<item>But we can work with the simpler <gi>annotation</gi> as a working proposal.</item>
+<item>RV: asks about whether we’re implementing the “motivation” for making an <gi>annotation</gi> (a part of w3c annotation model). HC: also, who made the <gi>annotation</gi> (@resp). What are the TEI correspondences to these aspects of the w3c model?</item>
+</list>
+</item>
+<item>taxonomies
+<list style="ul">
+<item>JC: When do we put them here vs. inside of <gi>classDecl</gi>?</item>
+</list>
+</item>
+<item>examples for ancient near eastern scholars
+<list style="ul">
+<item>(Postpone until VBJ is available)</item>
+</list>
+</item>
+<item>Related issues:
+<list style="ul">
+<item>#374 <ref target="https://github.com/TEIC/TEI/issues/374">Encoding of Standoff annotations</ref></item>
+<item>#1745 <ref target="https://github.com/TEIC/TEI/issues/1745">Standoff: annotation microstructure</ref></item>
+</list>
+</item>
+</list>
+</item>
+<item><hi style="strong">Tickets / Git Issues
+</hi><hi style="b">Status: Needs Discussion / Go and Needs Discussion</hi></item>
+</list><list style="ul">
+<item>
+<list style="ul">
+<item>Group A: SB, HC, EM, MS</item>
+<item>Group B: MT, EBB, RV</item>
+<item>Group C: PS, SS, JC, MB</item>
+</list>
+</item>
+</list><table>
+
+<row>
+<cell><hi style="b">Ticket Number</hi></cell>
+<cell><hi style="b">Breakout Group</hi></cell>
+<cell><hi style="b">Title</hi></cell>
+<cell><hi style="b">Notes</hi></cell>
+</row>
+<row>
+<cell>#1740</cell>
+<cell>A</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/1740">regularize suggested values of unit= attribute</ref></cell>
+<cell>“line” and “char” should be singular. Mark green</cell>
+</row>
+<row>
+<cell>#1744</cell>
+<cell>B</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/1744">Add co-occurrence constraints to ODD</ref></cell>
+<cell><p>Subgroup likes the idea because it improves documentation. Wants to see JC or somebody develop a proposal to implement.</p>
+<p>Council: Greenlighted for JC to develop a proposal, with further discussion.</p></cell>
+</row>
+<row>
+<cell>#1747</cell>
+<cell>C</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/1747">Schema problem with (msPart | msFrag)</ref></cell>
+<cell><p><hi style="i">related item: #1832; #1835</hi></p>
+<p>JC argues that HC is correct and <gi>msFrag</gi> and <gi>msPart</gi> should not be interspersed; fragments bound in a manuscript should be considered <gi>msPart</gi>.</p>
+<p>Recommend to close the issue with no action unless a more compelling example is provided.</p>
+<p>Council adds: we should include a reason for closing the tickets.</p></cell>
+</row>
+<row>
+<cell>#1750</cell>
+<cell>A</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/1750">Make <gi>q</gi> a member of att.fragmentable</ref></cell>
+<cell>subgroup is inclined to suggest no change, that OP use @next and @prev.</cell>
+</row>
+<row>
+<cell>#1756</cell>
+<cell>B</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/1756">event should have ptr and idno in its content model</ref></cell>
+<cell><p>Implement solution f on the ticket.</p>
+<p>Council agrees to greenlight.</p></cell>
+</row>
+<row>
+<cell>#1766</cell>
+<cell>C</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/1766">examples of selector= attr of <gi>rendition</gi> wrong?</ref></cell>
+<cell>Yes, just add the commas. Change to green</cell>
+</row>
+<row>
+<cell>#1769</cell>
+<cell>A</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/1769">teidata.pointer equivalent to move/@where</ref></cell>
+<cell><p>EM to post on ticket her suggestion for a method to indicate location instead.</p>
+<p>Council: After much discussion, resolved:</p>
+<p>create 1 class for both @where (event, move), to take infinity data.pointer<hi style="b"> </hi></p></cell>
+</row>
+<row>
+<cell>#1770</cell>
+<cell>B</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/1770">GLs seem wrong about commonness of co-occurrence</ref></cell>
+<cell>Subgroup: Let’s scrap the sentence in question. We don’t need it. Greenlight.</cell>
+</row>
+<row>
+<cell>#1771</cell>
+<cell>C</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/1771"><gi>desc</gi> as child of model.listLike</ref></cell>
+<cell><p>We suggest other possibilities, such as <gi>note</gi>, but no particular objection to this feature request. If we add this, we should update the definition of <gi>desc</gi> to be more expansive than it currently is. Remove everything after “typically a documentation…”</p>
+<p>Council: <gi>desc</gi> at the top of a list could be useful in standoff applications.</p>
+<p>Greenlighted, add at the top of all model.listLike elements. Also rewrite <gi>desc</gi>’s <gi>desc</gi>.</p></cell>
+</row>
+<row>
+<cell>#1772</cell>
+<cell>A</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/1772">Allowing listBibl, listPlace and similar in <gi>particDesc</gi></ref></cell>
+<cell>This will be solved by the standoff proposal and will be closed at that point. Can add this info to ticket. PS will do and close ticket.</cell>
+</row>
+<row>
+<cell>#1776</cell>
+<cell>B</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/1776">add <gi>w</gi> to att.lexicographic</ref></cell>
+<cell><p>Subgroup agrees to this, and to add clarification that @norm and @orig are not the same as their element counterparts and have precise linguistics use.</p>
+<p>Council: Add a warning (for the teitext datatype attributes): The attributes in this class are meant to be lexicographic use not intended to be used for editorial interventions.</p></cell>
+</row>
+<row>
+<cell>#1784</cell>
+<cell>C</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/1784">`bibl` as loose model is not loose enough</ref></cell>
+<cell>subgroup agrees to (directly) add <gi>incipit</gi>, <gi>decoNote</gi> and <gi>explicit</gi> to the content model of <gi>bibl</gi>. Mark green</cell>
+</row>
+<row>
+<cell>#1787</cell>
+<cell>B</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/1787">Feature Request: `<gi>projectDesc</gi>` content model needs to be richer</ref></cell>
+<cell><p>Subgroup thinks that <gi>encodingDesc</gi> is NOT the place for naming a project and those involved in it. <gi>projectDesc</gi> inside <gi>encodingDesc</gi> is meant to describe encoding methods in the project. The information presented in the ticket belongs in <gi>fileDesc</gi>, which clearly is about describing those involved in the project.</p>
+<p>Council discussion: <gi>encodingDesc</gi> is not the right place for the info described on this ticket. EM and EBB will come up with some example headers to provide gentle guidance and close the ticket.</p></cell>
+</row>
+<row>
+<cell>#1786</cell>
+<cell>C</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/1786">improve module descriptions</ref></cell>
+<cell>Subgroup agrees with proposed changes. Mark green</cell>
+</row>
+<row>
+<cell>#1789</cell>
+<cell>B</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/1789">Clarify description of @points in att.coordinated</ref></cell>
+<cell><p>Subgroup thinks this should be greenlighted.</p>
+<p>Green</p></cell>
+</row>
+<row>
+<cell>#1791</cell>
+<cell>C</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/1791">Dictionary: an entry element in a sense element</ref></cell>
+<cell>Make green and add to model.entryPart.top</cell>
+</row>
+<row>
+<cell>#1800</cell>
+<cell>C</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/1800">more on dictionary: The element <gi>usg</gi> inside <gi>def</gi></ref></cell>
+<cell>Ask again for a clear example so that we can better understand the problem (possibly ask for other lexicographers to weigh in)</cell>
+</row>
+<row>
+<cell>#1807</cell>
+<cell>C</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/1807">How to make <gi>defaultVal</gi> deletable?</ref></cell>
+<cell>Greenlight</cell>
+</row>
+
+</table></div></div><div type="h2"><head>Tuesday 07</head><div type="h3"><head><hi style="b">Morning (09:00–12:00)</hi></head><list style="ul">
+<item>Continue with reviewing issues from break-out groups on Monday</item>
+<item>Tickets
+<list style="ul">
+<item>Group A: HC, EM, MS, RV</item>
+<item>Group B: MT, EBB, SB</item>
+<item>Group C: PS, SS, JC, MB</item>
+</list>
+</item>
+</list><table>
+
+<row>
+<cell><hi style="b">Ticket Number</hi></cell>
+<cell><hi style="b">Breakout Group</hi></cell>
+<cell><hi style="b">Title</hi></cell>
+<cell><hi style="b">Notes</hi></cell>
+</row>
+<row>
+<cell>#1785</cell>
+<cell>A</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/1785">Content model of rdgGrp</ref></cell>
+<cell>Council agrees to allow <gi>lem</gi> followed by a <gi>rdgGrp</gi>. Mark green.</cell>
+</row>
+<row>
+<cell>#1788</cell>
+<cell>A</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/1788">location of model.ptrLike elements within biblStruct</ref></cell>
+<cell><p>change wording to say “ref may also be used to refer to the item’s online location” make edits as noted in the ticket</p>
+<p>The <gi>ptr</gi> element may be used as a child element of <gi>biblStruct</gi> to refer to the online catalog record of this bibliographic item:</p>
+<p>Green</p></cell>
+</row>
+<row>
+<cell>#1795</cell>
+<cell>A</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/1795">Language of Schematron messages where @role=”nonfatal” and @role=”warning”</ref></cell>
+<cell>ask EBB, SB for very quick confirmation of our understanding. Using Syncro vocab seems good. Change non-fatal error messages  to Warning or Error as needed.</cell>
+</row>
+<row>
+<cell>#1798</cell>
+<cell>B</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/1798"><gi>egXML</gi> not allowed in <gi>egXML</gi>?</ref></cell>
+<cell>This is working as it should be. P5 itself isn’t valid against tei-all.rng, for the same reason that it’s not working in compiled ODDs. Note that it is valid with P5.nvdl (or P5.valid.nvdl?)</cell>
+</row>
+<row>
+<cell>#1803</cell>
+<cell>A</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/1803">make listRef member of att.typed</ref></cell>
+<cell><p>no objection on att.typed for <gi>listRef</gi>, but agree with  James that allowing <gi>ref</gi> as direct child of <gi>listBibl</gi> is preferable to abusing <gi>listRef</gi></p>
+<p>Green</p></cell>
+</row>
+<row>
+<cell>#1804</cell>
+<cell>B</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/1804">problems with content model and example of unicodeName</ref></cell>
+<cell>Subgroup discussion: This involves dependence on an external unicode schema, we’re in theory okay with this.</cell>
+</row>
+<row>
+<cell>#1809</cell>
+<cell>A</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/1809">create a model.sensePart class and change content model of <gi>sense</gi> accordingly</ref></cell>
+<cell>makes sense. Greenlight</cell>
+</row>
+<row>
+<cell>#1816</cell>
+<cell>C</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/1816">n=”added gathering” in XML examples</ref></cell>
+<cell>mark green: add underscore</cell>
+</row>
+<row>
+<cell>#1823</cell>
+<cell>A</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/1823">teiCorpus: make guidelines and data model consistent</ref></cell>
+<cell>mark it “blocked” until we have a final decision on <gi>teiCorpus</gi></cell>
+</row>
+<row>
+<cell>#1832</cell>
+<cell>C</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/1832">Clarifying the definition of <gi>msFrag</gi> in Guidelines</ref></cell>
+<cell><p>related issues: #1835; #1747</p>
+<p>Subgroup recommends rephrasing description of <gi>msFrag</gi> as:
+“msFrag contains information about a fragment described in relation to a prior context, typically as a description of a virtual reconstruction of a manuscript or other object of which fragments are now catalogued separately”</p></cell>
+</row>
+<row>
+<cell>#1833</cell>
+<cell>A</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/1833">New element for grouping notes: `<gi>noteGrp</gi>`</ref></cell>
+<cell><p>Subgroup: Agree with Magda that <gi>listNote</gi> is the right approach here (and would go in <gi>standoff</gi> as well)</p>
+<p>Discussion with full council: We are going to add a <gi>noteGrp</gi> element as a member of model.noteLike to close this ticket and open another to add <gi>listNote</gi></p></cell>
+</row>
+<row>
+<cell>#1835</cell>
+<cell>B</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/1835">clarify that msDesc can be used for all text bearing objects including (early) printed books</ref></cell>
+<cell><p>related issue: #1832; #1747;</p>
+<p>JC: (not in this subgroup) – Yes, wherever we can clarify that &lt;msDesc can be used for early printed books. Other objects we should recommend <gi>object</gi></p></cell>
+</row>
+<row>
+<cell>#1836</cell>
+<cell>C</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/1836">Content model of <gi>institution</gi>, <gi>repository</gi> and <gi>collection</gi></ref></cell>
+<cell>Greenlight. Add macro.phraseSeq.limited</cell>
+</row>
+<row>
+<cell>#1841</cell>
+<cell>C</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/1841">Request for `<gi>desc</gi>` in `<gi>listBibl</gi>`</ref></cell>
+<cell>Will be fixed by #1771</cell>
+</row>
+<row>
+<cell>#1844</cell>
+<cell>C</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/1844">Remove @type from att.interpLike and use att.typed</ref></cell>
+<cell>subgroup recommends: mark green and remove @type from att.interpLike. Instead add <gi>interp</gi>, <gi>interpGrp</gi>, <gi>span</gi> and <gi>spanGrp</gi> to att.typed.</cell>
+</row>
+<row>
+<cell>#1850</cell>
+<cell>C</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/1850">Height/Width/Depth: loosen descriptions</ref></cell>
+<cell>Greenlight, James <hi style="b"><hi style="i">is</hi></hi> a genius.</cell>
+</row>
+<row>
+<cell>#1851</cell>
+<cell>A</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/1851">msContents/msItem should be replaced in tei:object with something non-MS specific</ref></cell>
+<cell>James should try to get some community consensus by asking on TEI-L/TEI-MS-SIG</cell>
+</row>
+<row>
+<cell>#1854</cell>
+<cell>C</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/1854">Deprecations Appendix is seriously ugly</ref></cell>
+<cell>Agree. Make it into a list with sub-items not a table.</cell>
+</row>
+<row>
+<cell>#1856</cell>
+<cell>A</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/1856">`<gi>ab</gi>` should be able to nest</ref></cell>
+<cell>No, it shouldn’t.</cell>
+</row>
+<row>
+<cell>#1829</cell>
+<cell>B</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/1829">PM for list in tei_simplePrint.odd only lets item through</ref></cell>
+<cell>solved, including other similar cases where simplePrint too greedily constrained the content to be processed</cell>
+</row>
+<row>
+<cell>#311</cell>
+<cell/>
+<cell><ref target="https://github.com/TEIC/TEI/issues/311">Encoding RDF relationships in TEI</ref></cell>
+<cell>HC: I commented and closed this</cell>
+</row>
+
+</table><list style="ul">
+<item>Intensive discussion on #1769: <ref target="https://github.com/TEIC/TEI/issues/1769">teidata.pointer equivalent to move/@where</ref>
+<list style="ul">
+<item>Options:</item>
+</list>
+</item>
+</list><list style="ol">
+<item>
+<list style="ol">
+<item>
+         [keep data.enumerated create new @whereRef (4)] </item>
+<item><hi style="b">create class for both @where (event, move), 1 to infinity data.pointer (9) </hi></item>
+<item>
+         [@where data.enumerated or data.pointer (just on move) (2)] </item>
+<item>
+         [same as 2, but rename current @where to @whereStage (teidata.enumerated) (1)] </item>
+<item>
+         [do nothing, own ODD (7)] </item>
+</list>
+</item>
+</list></div><div type="h3"><head><hi style="b">Afternoon (14:30–17:00)
+</hi></head><p>With Martin Holmes on Skype at 14:30</p><list style="ul">
+<item><hi style="strong">Japanese translations</hi>
+<list style="ul">
+<item>Related ticket: Multiple sibling remarks in the same language cause translation issues: <ref target="https://github.com/TEIC/TEI/issues/1872">https://github.com/TEIC/TEI/issues/1872</ref></item>
+<item>#960: <ref target="https://github.com/TEIC/TEI/issues/960">i18n revision due</ref></item>
+<item>Hanna McGaughey has agreed to help by checking the translations, doing some work every Friday. If she moves quickly, we should be able to merge everything before July; if not, MH will come back to Council for a decision on whether we should merge translations without checking them or we should just continue reviewing them slowly.</item>
+</list>
+</item>
+<item><hi style="strong">Infrastructure group</hi>
+<list style="ul">
+<item>HC brief report: got control of domain hosting. Switch-over may entail down-time. Switch DNS provider first, and then list of hosts. HC and LM have control.</item>
+<item>Related ticket: Infrastructure documentation: <ref target="https://github.com/TEIC/TEI/issues/1743">https://github.com/TEIC/TEI/issues/1743</ref></item>
+<item>Currently hosted by a Canadian server LM has access to. This is a temporary solution.</item>
+<item>journal.tei-c.org is still down—can’t do editorial reviewing. Reading articles at <ref target="https://journals.openedition.org/jtei/">https://journals.openedition.org/jtei/</ref> is not affected.</item>
+<item>journal.tei-c.de has OJS installed, but no—it’s the editorial workflow that is affected (no one could submit new material or do reviews), not our ability to read the articles.
+<list style="ul">
+<item>Someone needs to make a decision about where the jtei home will be now. Ron Van den Branden’s server seems the best option, providing he can propagate his backups to wherever backups need to go.</item>
+<item>PS: we shouldn’t have to pay for a new service. Use ADHO server as hub for backups.</item>
+<item>Perhaps we should invite Ron Van den Branden to the Infrastructure Group to evaluate options.</item>
+</list>
+</item>
+<item>JC: What about mailing lists on tei-c.org? Are they back up?
+<list style="ul">
+<item>Only two SIG mailing lists are affected. Most other mailing lists are at Brown.</item>
+<item>MS: All the other ADHO listservs are running again; what’s wrong with TEI?
+<list style="ul">
+<item>HC: It’s probably a DNS issue</item>
+<item>Probable fix: changing MX record to point to correct domain name. <hi style="b">Action</hi> on <hi style="b">HC</hi> to try this by 2019-05-10, also alert people.</item>
+</list>
+</item>
+</list>
+</item>
+<item>tei-c.org website: Luis has set it up at HumaNum. Infrastructure group needs to be in regular communication with HumaNum. Is this sustainable in the long term? Are we going to see the same problems again? Laurent has said that much support is going into HumaNum—it’s probably sustainable?
+<list style="ul">
+<item>What about site backups and some redundancy? JC/HC: Perhaps best to pay for service-level agreements. The “free” service of HumaNum might come at a cost. HC favors PS’s docker containment solution for releases/vault. PS: HumaNum seems much better than previous ADHO server.</item>
+</list>
+</item>
+</list>
+</item>
+<item><hi style="strong">oXygen Framework</hi>
+<list style="ul">
+<item>Related ticket: <ref target="https://github.com/TEIC/TEI/issues/464">https://github.com/TEIC/TEI/issues/464</ref></item>
+<item>MH has changed our bleeding-edge plugin to use the library setup that only works with oXygen 18.0+.</item>
+<item><ref target="https://teijenkins.hcmc.uvic.ca/job/oxygen-tei-bleeding/lastSuccessfulBuild/artifact/oxygen-tei/updateSite.oxygen">https://teijenkins.hcmc.uvic.ca/job/oxygen-tei-bleeding/lastSuccessfulBuild/artifact/oxygen-tei/updateSite.oxygen</ref></item>
+<item><ref target="https://jenkins.tei-c.org/job/oxygen-tei-bleeding/lastSuccessfulBuild/artifact/oxygen-tei/updateSite.oxygen">https://jenkins.tei-c.org/job/oxygen-tei-bleeding/lastSuccessfulBuild/artifact/oxygen-tei/updateSite.oxygen</ref></item>
+<item>Council will test as they have a chance, and if there are problems they will raise issues on the oxygen-tei repo.</item>
+<item><ref target="https://github.com/TEIC/oxygen-tei/issues/">https://github.com/TEIC/oxygen-tei/issues/</ref></item>
+</list>
+</item>
+<item><hi style="strong">Rub-a-dub report</hi>
+<list style="ul">
+<item>SB asks whether we should use booleans internally: answer=yes; also asks if we should continue to allow users to express boolean params as strings; answer=yes.</item>
+</list>
+</item>
+<item><hi style="strong">Continued with ticket review</hi></item>
+</list></div></div><div type="h2"><head>Wednesday 08</head><div type="h3"><head><hi style="b">Morning (09:00–12:00)</hi></head><list style="ul">
+<item><hi style="strong">Stylesheets Tickets / Pull requests:</hi>
+<list style="ul">
+<item>Group A: SB, EM, JC, MS</item>
+<item>Group B: HC, PS, SS, MB</item>
+<item>Group C: EBB, MT, RV</item>
+</list>
+</item>
+</list><table>
+
+<row>
+<cell><hi style="b">Issue</hi></cell>
+<cell>Group</cell>
+<cell>Title</cell>
+<cell>Comment</cell>
+</row>
+<row>
+<cell><hi style="b">#369</hi></cell>
+<cell>A</cell>
+<cell><ref target="https://github.com/TEIC/Stylesheets/pull/369">Improve error handling for faulty moduleRef uri</ref></cell>
+<cell>Change to error message. PR <hi style="i">looks</hi> fine, as yet untested.</cell>
+</row>
+<row>
+<cell>#348</cell>
+<cell>B</cell>
+<cell><ref target="https://github.com/TEIC/Stylesheets/pull/348">Consider page ranges given as attributes in biblStruct//biblScope</ref></cell>
+<cell><p>Create a ticket for this one. This needs to be restructured to print the content as-is when content exists, and use @from and @to (as the pull requester outlines) in other cases. Possibly also address @from alone?</p>
+<p>Close pull request since this requires a decent amount of change.</p></cell>
+</row>
+<row>
+<cell>#343</cell>
+<cell>C</cell>
+<cell><ref target="https://github.com/TEIC/Stylesheets/pull/343">fix processing of multiple schema specs (in one TEI document)</ref></cell>
+<cell>We further fixed the issue to correctly merge *Spec* elements within the selected <gi>schemaSpec</gi>. Jenkins tests passed, we’re ready to merge! RV tested during Council session with <gi>specGrps</gi>, and all is well. Ready to merge.</cell>
+</row>
+<row>
+<cell>#336</cell>
+<cell>A</cell>
+<cell><ref target="https://github.com/TEIC/Stylesheets/pull/336">adding rendering of ref, gi and att inside desc</ref></cell>
+<cell>PR accepted. Needs to be tested</cell>
+</row>
+<row>
+<cell>#327</cell>
+<cell>B</cell>
+<cell><ref target="https://github.com/TEIC/Stylesheets/pull/327">use ODT ‘Author’ style to specify author</ref></cell>
+<cell><p>We agree with the original request. Slightly confusing due to GitHub issues (unrelated file changes included in pull request; hard to review)</p>
+<p>Peter will continue looking at this one.</p></cell>
+</row>
+<row>
+<cell>#301</cell>
+<cell>C</cell>
+<cell><ref target="https://github.com/TEIC/Stylesheets/pull/301">Reordered stylesheets and addressed #281</ref></cell>
+<cell>Hugh will have a look at it</cell>
+</row>
+<row>
+<cell>#240</cell>
+<cell>A</cell>
+<cell><ref target="https://github.com/TEIC/Stylesheets/pull/240">added a section on prerequisites and two links to documentation</ref></cell>
+<cell>SB fixed.</cell>
+</row>
+<row>
+<cell>#239</cell>
+<cell>B</cell>
+<cell><ref target="https://github.com/TEIC/Stylesheets/pull/239">added checks for trang, ant and xetex to `make check`</ref></cell>
+<cell>Can’t accept as-is. Need to make xetex a warning, add check for ant, and fix (remove?) jing</cell>
+</row>
+<row>
+<cell>#114</cell>
+<cell>C</cell>
+<cell><ref target="https://github.com/TEIC/Stylesheets/pull/114">regularise display of attribute values</ref></cell>
+<cell>PR from 2015. Seems to be already fixed.</cell>
+</row>
+<row>
+<cell>#109</cell>
+<cell>A</cell>
+<cell><ref target="https://github.com/TEIC/Stylesheets/pull/109">Fix missing first text node, a [, in certain references.</ref></cell>
+<cell><p>Needs comment to OP that we need test Word document again.</p>
+<p>The OP posted the needed document immediately, so let’s look at this! F2F Subgroup (RV, MT, EBB) looked at this together and found a better way to handle these refs that doesn’t drop the first square bracket and preserves <gi>hi</gi> as expected.</p></cell>
+</row>
+<row>
+<cell>#67</cell>
+<cell>B</cell>
+<cell><ref target="https://github.com/TEIC/Stylesheets/pull/67">template makeQuote disable-output-escaping</ref></cell>
+<cell>We think it’s convenient enough to just insert the character, rather than using the codepoint. Not enough justification to use @disable-output-escaping. Close, won’t fix.</cell>
+</row>
+<row>
+<cell>GL #1748</cell>
+<cell>SS, MS, JC</cell>
+<cell><ref target="https://github.com/TEIC/TEI/pull/1748">added <gi>fLib</gi> and <gi>fvLib</gi> to <gi>fsdDecl</gi> as per #1726</ref></cell>
+<cell>Merged pull request, leave #1726 open; asked Peter to test it. PS has tested and closed #1726.</cell>
+</row>
+<row>
+<cell>GL #1665</cell>
+<cell>SB, HC</cell>
+<cell><ref target="https://github.com/TEIC/TEI/pull/1665">att.referring for <gi>span</gi></ref></cell>
+<cell><p>Syd and HC both think @referringMode is problematic, so the pull request can’t be accepted as-is. There’s also a dependency on the new standoff stuff in the examples, so perhaps discussion of this should be rolled into the standoff working group discussions.</p>
+<p>Needs a proposal, not a pull request. Also discussion in a separate Council call, and fold it into the standoff proposal.</p></cell>
+</row>
+
+</table></div><div type="h3"><head><hi style="b">Afternoon (13:00–17:00)</hi></head><list style="ul">
+<item><hi style="strong">Free-standing attributes</hi>
+<list style="ul">
+<item>Issue: <ref target="https://github.com/TEIC/TEI/issues/386">https://github.com/TEIC/TEI/issues/386</ref></item>
+<item>Duplatts (duplicate attributes): <ref target="https://docs.google.com/spreadsheets/d/1k6rB7SSvWlZQKtOFDUJhpNVUDc">https://docs.google.com/spreadsheets/d/1k6rB7SSvWlZQKtOFDUJhpNVUDc</ref></item>
+<item>EM and SB will start changing the non-controversial attributes—adding them to classes with modifications to suggested values, for example. They will make tickets for more controversial cases to put them forward for discussion by Council. <hi style="b">Action on</hi> EM and SB</item>
+</list>
+</item>
+<item><hi style="strong">Improve testing</hi>
+<list style="ul">
+<item>Original discussion during February meeting: improve tests to prevent problems during release (see <ref target="https://tei-c.org/activities/council/meetings/tei-technical-council-teleconference-2019-02-18/">February minutes</ref>)</item>
+<item>Simple Print: We need better exemplar testing</item>
+<item>Maybe it will be easier to add tests when MH works on his test suite?</item>
+<item>JC: Can we do different levels of testing? Not just testing each checked-in change, but more rigorous testing before a release? Just testing by diffing expected results is … fragile to say the least.</item>
+<item>SB: Test2 directory in Stylesheets dev branch does speedier testing, but doesn’t do everything in Test1 yet.</item>
+<item>MS: What about co-dependency loop of Stylesheets — Guidelines. Build process for the one is missing something needed in the other. How do PS and MH make this work?
+<list style="ul">
+<item>JC: Should we have a folder in TEI that holds the latest stable Stylesheets version that we use for the release? This way we don’t rely on the current Stylesheets for a release.</item>
+<item>PS: We can run the build with different Stylesheets versions. master built with master, and dev with dev.</item>
+<item>SB: Why were the repos separated in the first place? JC: Perhaps because there are things in Stylesheets that aren’t directly TEI related.</item>
+<item>PS: Not clear what our dependencies are. We should sort that out very clearly; putting a directory of Stylesheets in TEI repo is making this more complicated.</item>
+<item>ODD processing is needed for other things than TEI, even though written in TEI ODD language.</item>
+<item>JC: We have saxon and ant, etc. in TEI-c repo lib. TEI Guidelines should be a consumer of the TEI Stylesheets in some similar way (using a stable version) … PS: We have several versions of jing floating around and it’s hard to know where to find the right ones. It would better to have a defined way to bring these in.</item>
+<item>PS: Run Guidelines build with Stylesheets master. Should be releasing Stylesheets more frequently</item>
+<item>HC/MS: Reason to release Stylesheets after Guidelines(!): you need to edit expected results of tests following the latest updates to the Guidelines. New Guidelines release can break the Stylesheets just because of breaking the tests.</item>
+<item>Stylesheets tests breaking is a guarantee.
+<list style="ul">
+<item>Add to release process—rewrite expected results files</item>
+<item>Would be helpful if we could see all the errors with expected results files at once</item>
+</list>
+</item>
+<item>Infrastructure issues for right now: No place for release techs to login to server and deploy the new release. Luis may need to do this for us manually. (Luis will be 9 hours behind EBB and MT).</item>
+<item>PS: Stylesheets build can pull results from last successful Guidelines build.</item>
+</list>
+</item>
+<item>Stylesheets work: best always to work in a branch and keep it updated; only check it into dev branch when it passes local tests. Make sure dev is always building without fail.
+<list style="ul">
+<item>MT suggests using git rebase instead of just git merge, based on experience with eXist.</item>
+<item><hi style="b">Action on PS:</hi> to set up Dev Stylesheets pulling from lastSuccessfulBuild of Dev Build of Guidelines.</item>
+</list>
+</item>
+</list>
+</item>
+<item><hi style="strong">Modal verbs in the Guidelines</hi> (<ref target="https://tei-c.org/activities/council/meetings/tei-technical-council-teleconference-2019-01-18/">see January minutes</ref>)
+<list style="ul">
+<item>Original discussion during January meeting: JC is already working on adjusting and rephrasing modal verbs in the Guidelines. A further improvement would be to mark them.</item>
+<item>JC will continue work on that. Second step is to mark modal verbs, but for that we should open a new ticket.</item>
+</list>
+</item>
+<item><hi style="strong">TEI release @ zenodo</hi>
+<list style="ul">
+<item>provides versionable DOIs.</item>
+<item>PS: put our old releases there as well.</item>
+<item>How to generate a DOI for a GitHub repository: <ref target="https://guides.github.com/activities/citable-code/">https://guides.github.com/activities/citable-code/</ref></item>
+<item>In general Council agrees to release Guidelines at zenodo. Action on <hi style="b">HC/MS/SS volunteers</hi> by June 2019 to have a closer look at the account management, etc. Or take a look at Open Science Framework (OSF) for DOI and release? See <ref target="http://help.osf.io/m/sharing/l/524208-create-dois">http://help.osf.io/m/sharing/l/524208-create-dois</ref>
+<list style="ul">
+<item>To investigate: versionable DOIs? Or a distinct DOI for each release?</item>
+</list>
+</item>
+</list>
+</item>
+<item><hi style="strong">Tickets to prioritize for the July release</hi>
+<list style="ul">
+<item><ref target="https://github.com/TEIC/TEI/issues/1707">#1707</ref>: How to encode measurement
+<list style="ul">
+<item>EBB: wants to work on this ticket for the July release</item>
+</list>
+</item>
+<item><ref target="https://github.com/TEIC/TEI/issues/1661">#1661</ref>: Need <gi>surplus</gi> in <gi>subst</gi>
+<list style="ul">
+<item>EM presented ticket to Council. Suggestion: raise following proposed solution on TEI-L:</item>
+<item>Change description of <gi>subst</gi> to say “groups one or more deletions (whether explicit, encoded with <gi>del</gi>, or implicit, encoded with <gi>surplus</gi>) with one or more additions when the combination is to be regarded as a single intervention in the text.”</item>
+<item>Change content model of <gi>subst</gi> to
+( add | del | surplus | model.milestoneLike )+
+and Schematron accordingly, OR
+( ( add+, ( del | surplus )+ ) | ( ( del | surplus )+, add+ ) ), ( add | del | surplus )*
+removing Schematron (with model.milestoneLike).</item>
+<item>Change Guidelines prose to match</item>
+<item>Create an example <gi>subst</gi> that uses <gi>surplus</gi></item>
+<item>EM – after the fact – do we still want to send this out to the list? or is it broad enough that no one will object?</item>
+</list>
+</item>
+</list>
+</item>
+</list><list style="ul">
+<item>
+<list style="ol">
+<item/>
+</list>
+</item>
+</list></div></div></div></div></body><!-- #post-## --></text></TEI>

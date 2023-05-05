@@ -1,0 +1,585 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/home/lou/Public/TEI/TEICSS/tei.css" type="text/css"
+ ?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:t="http://www.tei-c.org/ns/1.0" n="2018-09"><teiHeader><fileDesc><titleStmt><title>Minutes of the TEI Technical Council</title><meeting n="2018-09" from="2018-09-07" to="2018-09-08">TEI Technical
+     Council ftf meeting : <placeName>Tokyo</placeName>, <date>07–08 September 2018</date></meeting></titleStmt><publicationStmt><distributor>TEI Website</distributor><idno>TCM105</idno></publicationStmt><sourceDesc><p>Retagged from a WordPress HTML file</p></sourceDesc></fileDesc><revisionDesc><change when="2023-04-27">Archival header confected</change><change>Extracted from Word Press article with id post-29494</change></revisionDesc></teiHeader><text><body ><div><table>
+
+<row>
+<cell>Council Meeting</cell>
+<cell>Fri 09-07</cell>
+<cell>full day</cell>
+</row>
+<row>
+<cell>Council Meeting</cell>
+<cell>Sat 09-08</cell>
+<cell>full day</cell>
+</row>
+<row>
+<cell>Workshops</cell>
+<cell>Sun 09-09</cell>
+<cell>09:30–17:30</cell>
+</row>
+<row>
+<cell>Open Council Session</cell>
+<cell>Mon 09-10</cell>
+<cell>09:30–12:00</cell>
+</row>
+
+</table><p><hi style="strong">Venue</hi></p><p>Our meeting takes place at the conference venue, at <hi style="b">Hitotsubashi Hall</hi> (Room 201) <ref target="https://goo.gl/maps/RPS254Gz6Ek">https://goo.gl/maps/RPS254Gz6Ek</ref></p><p><hi style="strong">Present</hi></p><list style="ul">
+<item>Elisa Beshero-Bondar (EB)</item>
+<item>Syd Bauman (SB)</item>
+<item>James Cummings (JC)</item>
+<item>Martin Holmes (MH on Saturday)</item>
+<item>Elli Mylonas (EM)</item>
+<item>Martina Scholger (MS)</item>
+<item>Peter Stadler (PS)</item>
+<item>Sarah Stanley (SS)</item>
+<item>Magdalena Turska (MT)</item>
+<item>Raff Viglianti (RV)</item>
+</list><p><hi style="b">Meeting started 09-07 09:30 localtime</hi></p><div type="h2"><head><hi style="b">Friday </hi><hi style="b">Morning (9:00-13:00)</hi></head><list style="ul">
+<item><hi style="strong">Next release</hi>
+<list style="ul">
+<item>January 2019</item>
+<item>Discussion: twice a year is our usual pace, but we may have something significant to release by December.</item>
+<item>SB: suggests mid-to-late January, Mon 01-21 or Tue 01-22.
+<list style="ul">
+<item>Decide on release techs after the elections so new people could be involved.</item>
+</list>
+</item>
+<item>Pair with RomaJS release: Need a Stylesheets release ahead of time for RomaJS. Next release of TEI will have JSON output for RomaJS.</item>
+<item>PS: Stylesheets release maybe in the next week or two: OxGarage updates. Release techs for Stylesheets: SB and RV. Target: Fri 09-28.
+<list style="ul">
+<item>May need to consult Ian Rifkin during release, he is in charge of root access to the ADHO server infrastructure.</item>
+</list>
+</item>
+</list>
+</item>
+<item><hi style="strong">F2F meetings 2019</hi>
+<list style="ul">
+<item>Spring F2F:
+<list style="ul">
+<item>MT expresses interest from Warsaw University for hosting our next meeting, perhaps in April or May?</item>
+<item>XML Prague again?</item>
+<item>Providence?</item>
+<item>JC: Newcastle University?</item>
+<item>Discussion: should we continue having Council F2F at the same time as Member’s Meetings? PS: suggests we disconnect—shorter travel, more time for us to meet. EM and EB think we should continue with it: good for transparency of Council business, and also to be sure Council members are present at conference. Travel budgets are an issue for us.</item>
+<item>Action on MS to add Spring location and timing of F2F to agenda for 09-27 Council meeting.</item>
+</list>
+</item>
+<item>Graz, TEI conference 16(–20 September 2019
+<list style="ul">
+<item>Before would be better for Peter (start on Fri 2019-09-13 or Sat/Sun/Mon).</item>
+</list>
+</item>
+</list>
+</item>
+<item><hi style="strong">Should we still release on SourceForge</hi>
+<list style="ul">
+<item>JC: TEI project on SourceForge (<ref target="https://sourceforge.net/projects/tei/files/">https://sourceforge.net/projects/tei/files/</ref>)  lets you download TEI release. JC: This has been our “official release” location. RV: we should change that. Let’s switch to the links on the TEI website to GitHub (<ref target="https://github.com/TEIC/TEI/releases">https://github.com/TEIC/TEI/releases</ref>). We can then monitor whether people switch to GitHub or keep downloading from SourceForge. If few/no people use SourceForge then we can stop using it.</item>
+<item>PS: What’s the relationship with TEI Vault? Release binaries aren’t being stored there, but should be. Zip directories go there, so maybe this doesn’t matter. We need a stable linking mechanism to point to all available versions, and Vault is the place for that. JC: Checked file space on tei-c.org recently and there was a fair bit. Reason to store binaries there: Canonical URI should be TEI-C not third party service.</item>
+<item>Add instructions to put oXygen zip files in the Vault (Those are being released in a different TEI repo: <ref target="https://github.com/TEIC/oxygen-tei/releases">https://github.com/TEIC/oxygen-tei/releases</ref>).</item>
+</list>
+</item>
+<item><hi style="strong">Should we consider a migration to GitLab (see email LB on 2018-06-04)</hi>
+<list style="ul">
+<item>No reason to, unless GitHub changes significantly which it hasn’t.</item>
+<item>Transition to GitLab would be easier than last migration from Subversion.</item>
+<item>MT: GitLab is better at grouping subprojects within projects and can add estimated times for project tasks. Neither of these is really necessary for our operations.</item>
+<item>Our community of contributors (pull requests, tickets) is well ensconced in GitHub. Better to stay (for now).</item>
+</list>
+</item>
+<item><hi style="strong">Deprecation</hi><hi style="b"> policy:</hi>
+<list style="ul">
+<item>JC: The so-called Birnbaum Doctrine (<ref target="https://www.tei-c.org/activities/council/working/tcw09-backward-compatibility-and-the-maintenance-of-the-text-encoding-initiative-guidelines/">http://www.tei-c.org/activities/council/working/tcw09-backward-compatibility-and-the-maintenance-of-the-text-encoding-initiative-guidelines/</ref>) was created at the Kyoto meeting in 2006. We later superseded this with TCW27 <ref target="http://teic.github.io/TCW/tcw27.html">http://teic.github.io/TCW/tcw27.html</ref> (in which we invented @validUntil, for example). But as we are back in Japan perhaps that serves as a reminder that we should occasionally re-examine and possibly update our deprecation policy, where the holes are (what can’t we deprecate?), and our (necessary) license to break backwards compatibility when we judge it to be in interest of the TEI Community. I’m not proposing any major changes to the policy, merely that we re-examine it and consider any gaps (e.g. should the policy also cover software?). For example, should we be archiving GitHub repositories? (This makes them read-only.)</item>
+<item>JC: Some things can only be deprecated in the prose. TCW27 should contain a note that not all things can be deprecated through markup mechanisms (and some things may not yet have mechanism).</item>
+<item>EM: Worth considering that old projects that don’t use new versions of TEI aren’t affected. People running new projects or who want new features are most affected. We have to consider who is affected.</item>
+</list>
+</item>
+<item><hi style="strong">Archiving Github Repositories</hi>
+<list style="ul">
+<item>JC: Already done. No bad side effects that I’ve noticed.</item>
+</list>
+</item>
+<item><hi style="strong">Review other TCWs</hi>
+<list style="ul">
+<item>See <ref target="http://teic.github.io/TCW/">http://teic.github.io/TCW/</ref> and <ref target="https://www.tei-c.org/activities/council/working/">http://www.tei-c.org/activities/council/working/</ref></item>
+<item>We will need a new one for RomaJS.</item>
+<item>TCW 22 needs to be updated from last release in July: <hi style="b">action</hi> on <hi style="b">PS</hi> (check if updated) by <hi style="b">2018-09-26.</hi></item>
+<item>Should we divide the working papers page on tei-c.org to separate actively-edited papers from older papers?
+<list style="ul">
+<item><hi style="b">action</hi> on <hi style="b">MS &amp; JC</hi> by <hi style="b">2018-09-27</hi>: re-work TCW page (e.g. divide into “current” and “legacy” or some such).</item>
+</list>
+</item>
+</list>
+</item>
+<item><hi style="strong">Tickets if time left</hi>
+<list style="ul">
+<item>Current status (as of 2018-09-07, update just before):
+<list style="ul">
+<item>TEI: 145 open issues</item>
+<item>Stylesheets: 111 open issues</item>
+<item>Roma: 15 open issues</item>
+<item>RomaJS: 4 open issues</item>
+<item>OxGarage: 15 open issues</item>
+<item>CETEIcean: 2 open issues</item>
+<item>oxygen-tei: 8 open issues</item>
+<item>Jenkins: 1 open issue</item>
+</list>
+</item>
+</list>
+</item>
+</list><p><hi style="b">Groups:</hi></p><list style="ul">
+<item><hi style="b">A:</hi> JC, EM, MT</item>
+<item><hi style="b">B:</hi> EB, SS, PS</item>
+<item><hi style="b">C:</hi> MS, RV, SB</item>
+</list><p><hi style="b">Status: Needs Discussion / Go and Needs Discussion</hi></p><table>
+
+<row>
+<cell><hi style="b">Ticket Number</hi></cell>
+<cell><hi style="b">Breakout Group</hi></cell>
+<cell><hi style="b">Title</hi></cell>
+<cell><hi style="b">Notes</hi></cell>
+</row>
+<row>
+<cell>#327</cell>
+<cell>A</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/327">an <gi>object</gi> element</ref></cell>
+<cell><p>Choice is either to just add the <gi>object</gi> element to the Guidelines or more consultation by TEI-L.</p>
+<p><hi style="b">Action on JC: </hi>merge branch into dev, send an email to TEI-L.</p>
+<p>Could use examples of ”widely understood objects” and texts that reference them.</p></cell>
+</row>
+<row>
+<cell>#1431 (go/needs discussion)</cell>
+<cell>B</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/1431">clarify how to encode short-form citations</ref></cell>
+<cell>Greenlight JC and HC to act on this ticket. Action seems to be for providing examples in Guidelines for different uses of <gi>ref</gi> vs. <gi>bibl</gi>. What actions were taken already? (removing “needs discussion”—just “Go”.)</cell>
+</row>
+<row>
+<cell>#1531</cell>
+<cell>C</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/1531">rs should contain q and quote</ref></cell>
+<cell><p>Status: done—subgroup would like to see if JC can convince anyone that we should back it out.</p>
+<p>Close the issue because implemented with Syd’s commit.</p></cell>
+</row>
+<row>
+<cell>#1586</cell>
+<cell>A</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/1586">Domain of concept of cleanliness</ref></cell>
+<cell>On HC to schedule any discussion with Michael Sperberg-McQueen  and Lou Burnard if needed.</cell>
+</row>
+<row>
+<cell>#1596</cell>
+<cell>B</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/1596">Pure-ODD content model elements appear to be strictly weaker than regular languages — intended?</ref></cell>
+<cell>Unclear whether there’s any problem with the current implementation. Close the ticket, but SB will discuss with Michael Sperberg-McQueen.</cell>
+</row>
+<row>
+<cell>#1606</cell>
+<cell>C</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/1606">dataRef should not permit @restriction and @key</ref></cell>
+<cell>Need clarification from Lou Burnard, question posted on ticket.</cell>
+</row>
+<row>
+<cell>#1607 (go/needs discussion)</cell>
+<cell>A</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/1607">xsl:* (or other non-sch:*) not allowed within constraintSpec</ref></cell>
+<cell>Looks like it is done? Check with Martin Holmes and SB.</cell>
+</row>
+<row>
+<cell>#1617</cell>
+<cell>B</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/1617">dealing with multiple publication places</ref></cell>
+<cell><p>Distinguishing between <gi>place</gi> and <gi>placeName</gi> is significant here. A publication statement isn’t right for cataloging place data, but it is right for listing place names. Laurent Romary should respond to Lou Burnard and JC here about whether their proposals might work. We can’t currently put  <gi>list</gi> inside a <gi>publicationStmt</gi>: should we revise content model to include a generic list or a new listpubPlace?</p>
+<p>Decision: ACTION on PS, close.</p></cell>
+</row>
+<row>
+<cell>#1621 (go/needs discussion)</cell>
+<cell>C</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/1621">Status of Schematron rules in TEI</ref></cell>
+<cell><p>Looks good, unless EBB wants to clarify some aspects of her work.</p>
+<p>Discussed edits—will check into dev.)</p></cell>
+</row>
+<row>
+<cell>#1626</cell>
+<cell>A</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/1626">request: accept xmlns=”http://standoff.proposal” where appropriate</ref></cell>
+<cell>Is this still a problem? Can we close this?</cell>
+</row>
+<row>
+<cell>#1632</cell>
+<cell>B</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/1632">egXML needs a way to highlight rendtitional aspects in the example</ref></cell>
+<cell>This is still a great idea but low priority.</cell>
+</row>
+<row>
+<cell>#1641</cell>
+<cell>C</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/1641">Change structure of supportDesc</ref></cell>
+<cell><p>Subgroup suggests to ask  @schassan</p>
+<p>to provide an example soon, otherwise the issue will be closed.</p>
+<p>Also wondering: would multiple <gi>supportDesc</gi> solve the issue?</p></cell>
+</row>
+<row>
+<cell>#1645</cell>
+<cell>A</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/1645">Alter Guidelines re “phrase-level”</ref></cell>
+<cell>Don’t think EBB’s rephrasing actually fixes the problem.  And actually think current phrasing is clear enough.</cell>
+</row>
+<row>
+<cell>#1658 (go/needs discussion)</cell>
+<cell>B</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/1658"><gi>q</gi> should be allowed in <gi>span</gi></ref></cell>
+<cell>We suggest adding <gi>q</gi> directly to the content model of <gi>span</gi>.</cell>
+</row>
+<row>
+<cell>#1663</cell>
+<cell>C</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/1663">Things we’d like to do in ODD which haven’t been implemented yet</ref></cell>
+<cell>Just close it</cell>
+</row>
+<row>
+<cell>#1695</cell>
+<cell>A</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/1695">example of <gi>roleName</gi> other than in <gi>persName</gi>?</ref></cell>
+<cell>Encourage EBB to add more examples, such as Attorney General (not pointing to a specific person). And maybe add prose about when you would have rolename inside <gi>persName</gi> and instead outside.</cell>
+</row>
+<row>
+<cell>#1698</cell>
+<cell>B</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/1698">The namespace could be mentioned more prominently in the guidelines</ref></cell>
+<cell>Are the places listed in the ticket still the best places to add commentary on TEI namespace? Or is the documentation we already have enough? If we were to do what original poster suggested (add intro to Appendix B,C), what would we say?</cell>
+</row>
+<row>
+<cell>#1707</cell>
+<cell>C</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/1707">How to encode measurement</ref></cell>
+<cell>Issue for Monday</cell>
+</row>
+<row>
+<cell>#1710</cell>
+<cell>A</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/1710">Review placement of classes, macros, and datatypes in modules</ref></cell>
+<cell>Assigned people just need to get on with it (RV, MS, JC).</cell>
+</row>
+<row>
+<cell>#1715</cell>
+<cell>B</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/1715">Clarify description of att.combinable’s “mode”</ref></cell>
+<cell/>
+</row>
+<row>
+<cell>#1720</cell>
+<cell>C</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/1720">Improve description of att.lexicographic</ref></cell>
+<cell>Mark green, just do it</cell>
+</row>
+<row>
+<cell>#1746</cell>
+<cell>A</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/1746">jTEI schema should permit <gi>biblFull</gi> inside <gi>sourceDesc</gi></ref></cell>
+<cell>Decision should be up to jTEI?</cell>
+</row>
+<row>
+<cell>#1755</cell>
+<cell>B</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/1755">incipit should be able to contain quote (and/or q?) and probably also cit</ref></cell>
+<cell>make green—add qlike and quotelike</cell>
+</row>
+<row>
+<cell>#1756</cell>
+<cell>C</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/1756">event should have ptr and idno in its content model</ref></cell>
+<cell>Good example for open session.</cell>
+</row>
+<row>
+<cell>#1757</cell>
+<cell>A</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/1757">remove P5/ReleaseNotes/ChangeLog</ref></cell>
+<cell>Agreed. Changed to Green “Go”</cell>
+</row>
+<row>
+<cell>#1776</cell>
+<cell>A</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/1776">add <gi>w</gi> to att.lexicographic</ref></cell>
+<cell><p>JC: Use <gi>choice</gi> within <gi>w</gi> for this kind of thing? Otherwise why did we have the war on text-bearing attributes?</p>
+<p>Action on MT to write a clear response on the use of attributes.</p></cell>
+</row>
+<row>
+<cell>#1778</cell>
+<cell>B</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/1778">Make <gi>trailer</gi> a member of att.placement and att.written</ref></cell>
+<cell>Good example for open session.</cell>
+</row>
+
+</table><p> </p></div><div type="h2"><head><hi style="b">Friday Afternoon (14:30-18:00)</hi></head><list style="ul">
+<item>Planning of Open Council Session</item>
+<item>RomaJS (deferred to Monday)</item>
+<item>TEI Tickets / Pull requests
+<list style="ul">
+<item>Do lots of tickets</item>
+<item>Continue work on tickets (see table above)</item>
+</list>
+</item>
+</list></div><div type="h2"><head><hi style="b">Saturday Morning (9:00-13:00)</hi><hi style="b">
+</hi></head><p>Started @ 09:17. Chair thanks Martin Holmes for joining us.</p><list style="ul">
+<item><hi style="strong">Review ticket <ref target="https://github.com/TEIC/TEI/issues/1707">#1707</ref></hi>
+<list style="ul">
+<item>Should we have a Jenkins job for this branch? This raises issues of if we should do it for all branches.</item>
+<item>EB notes that we need to still do a lot of writing in the Guidelines to address this ticket (describe <gi>unitDecl</gi> and <gi>unitDef</gi>).</item>
+<item>RV: We could perform a discussion live like the one we’re doing today <ref target="https://github.com/TEIC/TEI/issues/1707#issuecomment-346844499">https://github.com/TEIC/TEI/issues/1707#issuecomment-346844499</ref>.</item>
+<item>EM: For Open Session focus on the proposed solutions rather than the various problems (and diversions) that were mentioned on the ticket. EBB will summarize on slides, and invite Naoki to add slides, too.</item>
+</list>
+</item>
+</list>
+ <p>Stylesheets tickets:
+  Possibly straightforward tickets:</p><list style="ul">
+
+<item><ref target="https://github.com/TEIC/Stylesheets/issues/326">#326</ref>, <ref target="https://github.com/TEIC/Stylesheets/issues/322">#322</ref>, <ref target="https://github.com/TEIC/Stylesheets/issues/321">#321</ref>: decision seems to be easy, implementation not so much</item>
+<item><ref target="https://github.com/TEIC/Stylesheets/issues/316">#316</ref>, <ref target="https://github.com/TEIC/Stylesheets/issues/308">#308</ref>+<ref target="https://github.com/TEIC/Stylesheets/issues/234">#234</ref>: same issue; fix simply requires deletion of code</item>
+<item><ref target="https://github.com/TEIC/Stylesheets/issues/287">#287</ref>: just needs to be closed</item>
+<item><ref target="https://github.com/TEIC/Stylesheets/issues/286">#286</ref>: good pull request exists, but discussion wandered away from the point</item>
+<item><ref target="https://github.com/TEIC/Stylesheets/issues/259">#259</ref> proceed-or-not decision is easy</item>
+<item><ref target="https://github.com/TEIC/Stylesheets/issues/201">#201</ref> simple decision, probably no</item>
+<item><ref target="https://github.com/TEIC/Stylesheets/issues/200">#200</ref> simple tweak to Jenkins job</item>
+</list>
+ <p><hi style="b">Groups </hi></p><list style="ul">
+<item><hi style="b">A: </hi>MH, SS, MS</item>
+<item><hi style="b">B: </hi>SB, MT, EB</item>
+<item><hi style="b">C: </hi>PS, RV, EM, JC</item>
+</list><table>
+
+<row>
+<cell><hi style="b">Ticket Number</hi></cell>
+<cell><hi style="b">Group</hi></cell>
+<cell><hi style="b">Title</hi></cell>
+<cell><hi style="b">Notes</hi></cell>
+</row>
+<row>
+<cell><ref target="https://github.com/TEIC/Stylesheets/issues/326">#326</ref></cell>
+<cell>A</cell>
+<cell><ref target="https://github.com/TEIC/Stylesheets/issues/326">Stylesheets do not pass xml:id of floatingText to HTML5</ref></cell>
+<cell>Assigned to MS</cell>
+</row>
+<row>
+<cell><ref target="https://github.com/TEIC/Stylesheets/issues/322">#322</ref></cell>
+<cell>B</cell>
+<cell><ref target="https://github.com/TEIC/Stylesheets/issues/322">Example doesn’t do what it says</ref></cell>
+<cell>Fix this by changing the datatype to teidata.count, and not with SB’s lovely regex. Fixed &amp; closed.</cell>
+</row>
+<row>
+<cell><ref target="https://github.com/TEIC/Stylesheets/issues/321">#321</ref></cell>
+<cell>C</cell>
+<cell><ref target="https://github.com/TEIC/Stylesheets/issues/321">All Guidelines Pages should have dropdown menu in footer to go to other versions in the Vault.</ref></cell>
+<cell>see ticket</cell>
+</row>
+<row>
+<cell><ref target="https://github.com/TEIC/Stylesheets/issues/316">#316</ref></cell>
+<cell>A</cell>
+<cell><ref target="https://github.com/TEIC/Stylesheets/issues/316">Stylesheet library includes some conversions which are not included in release</ref></cell>
+<cell>MH fixed and closed (still waiting to see if anything breaks)</cell>
+</row>
+<row>
+<cell><ref target="https://github.com/TEIC/Stylesheets/issues/308">#308</ref></cell>
+<cell>B</cell>
+<cell><ref target="https://github.com/TEIC/Stylesheets/issues/308">from docx problem</ref></cell>
+<cell>Assigned to MT to remove refs to saxon9ee on the files listed and run tests</cell>
+</row>
+<row>
+<cell><ref target="https://github.com/TEIC/Stylesheets/issues/234">#234</ref></cell>
+<cell>C</cell>
+<cell/>
+<cell>same as #308, didn’t handle</cell>
+</row>
+<row>
+<cell><ref target="https://github.com/TEIC/Stylesheets/issues/287">#287</ref></cell>
+<cell>A</cell>
+<cell><ref target="https://github.com/TEIC/Stylesheets/issues/287">Roma and bin directory of Stylesheets</ref></cell>
+<cell>Didn’t receive necessary feedback; we don’t maintain this, so we propose closing.</cell>
+</row>
+<row>
+<cell><ref target="https://github.com/TEIC/Stylesheets/issues/286">#286</ref></cell>
+<cell>B</cell>
+<cell><ref target="https://github.com/TEIC/Stylesheets/issues/286"><gi>ref</gi> inside <gi>listRef</gi></ref></cell>
+<cell>Should we just merge this <ref target="https://github.com/TEIC/Stylesheets/pull/292">pull request</ref>? Note: we may not be quite done with this issue: check to see if listRef/descendant::ref can work. Decision: ready to merge (EBB updated fork and pull request). Merged pull request. Opened a new ticket to deal with odd2lite.<hi style="b"> </hi></cell>
+</row>
+<row>
+<cell><ref target="https://github.com/TEIC/Stylesheets/issues/259">#259</ref></cell>
+<cell>C</cell>
+<cell><ref target="https://github.com/TEIC/Stylesheets/issues/259">What’s wrong with binaryObject?</ref></cell>
+<cell>Subgroup recommends closing; HTML and FO have been fixed, and we don’t see the point in fixing docx and ODT</cell>
+</row>
+<row>
+<cell><ref target="https://github.com/TEIC/Stylesheets/issues/201">#201</ref></cell>
+<cell>A</cell>
+<cell><ref target="https://github.com/TEIC/Stylesheets/issues/201">Output file naming from ODDs</ref></cell>
+<cell><p>Subgroup thinks that we should make the naming conventions the same as in oXygen (i.e. change to putting things in a directory called “out”).</p>
+<p>Decision:  Don’t change the “out” directory since we don’t all agree about it and it’ll cause fallout. Do change “.relaxng” to “.rng” and “.odd” to “.rng”.</p></cell>
+</row>
+<row>
+<cell><ref target="https://github.com/TEIC/Stylesheets/issues/200">#200</ref></cell>
+<cell>A</cell>
+<cell><ref target="https://github.com/TEIC/Stylesheets/issues/200">CSS file is mysteriously missing from build results</ref></cell>
+<cell>MH to investigate and check with PS to see if his Jenkins is doing the same thing.</cell>
+</row>
+
+</table></div><div type="h2"><head><hi style="b">Saturday Afternoon (13:50-18:00)</hi></head><list style="ul">
+<item><hi style="strong">Stylesheets</hi> testing [MH (&amp; SB)]
+<list style="ul">
+<item>PS: Issue of circularity when trying to set up a new Jenkins—can Stylesheets test have its own data?</item>
+<item>What triggers the circularity problem?</item>
+<item>Should P5 builds use the tei-c.org Stylesheets if there’s no local built copy?
+<list style="ul">
+<item>Yes, but use the appropriate GitHub raw URI for the branch being built—but(!) how do we know what release number to use? We need the version number for the most recent release branch.</item>
+</list>
+</item>
+<item>SB and MH are working on an additional test, it’s Test2. Input files, output files, and expected results. Modularized build files. Stylesheets &gt; Test2 in dev. This will replace Test. Rationalizing existing files, renaming them so that they express what they do. Should multiple files test tiny things or one big file test everything?</item>
+</list>
+</item>
+<item><hi style="strong">Docker</hi>
+<list style="ul">
+<item>PS: Containers (tech via Linux) depends on a kernel mechanism. Applications require libraries and binaries and VM. Docker engine connects Host OS with the container’s internal stuff. Container contains everything necessary to run an application. Host OS can be anything, a “sandbox system”.</item>
+<item>Link from PS: <ref target="https://medium.freecodecamp.org/a-beginner-friendly-introduction-to-containers-vms-and-docker-79a9e3e119b">https://medium.freecodecamp.org/a-beginner-friendly-introduction-to-containers-vms-and-docker-79a9e3e119b</ref></item>
+<item>One docker container for one thing: microcontainment. You can map almost anything from inside the container to the host. Host is like the ship. The container’s ports can be mapped to the host. Two containers can be working on their own port 80s, and they can speak to the outside world via being mapped to, say, port 80 and port 8080 on the Host OS. The host ports can be mapped to URLs—Host OS can be running its own Apache. You can run bash shells in the containers. And you can make data be stored outside in the Host OS.</item>
+<item>Docker client is connected to Docker Host, which has images that can run containers. (When you do “docker run” you map the ports.)</item>
+<item>Docker registry is a service via Docker Hub, a little like GitHub—a central provider and storer of community images. You can pull images from the common registry to your local host and run there.
+<list style="ul">
+<item>Discussion: could there be something nasty in the community registry? Not a problem so much because you can shut down a container without affecting host system.</item>
+<item>Integration of GitHub and DockerHub.</item>
+<item>PS also shows Rancher (<ref target="https://rancher.com/">https://rancher.com/</ref>)—which manages Docker or other container images.</item>
+<item>GitLab would work as well.</item>
+<item>Dockerfile: You write instructions here for what you need to build. It builds/installs/configures the docker container.</item>
+</list>
+</item>
+<item>Webhooks designed to pull updates from e.g. Debian or Apache, etc.</item>
+<item>If you have a docker account, write to PS and he will add you to the TEI dockerhub.</item>
+<item>PS proposes:
+<list style="ul">
+<item>reset the teic/jenkins image to an automated build -&gt; Council agrees.</item>
+<item>reset the teic/teidev-docker image to inherit from the TEI Jenkins image and turn it into an automated build.</item>
+</list>
+</item>
+</list>
+</item>
+</list><list style="ul">
+<item>
+<list style="ul">
+<item>
+<list style="ul">
+<item>optional: add the (dev version of the) Stylesheets to the  teic/teidev-docker image for simplifying the docker call.</item>
+</list>
+</item>
+<item>Explore options for paid cloud services:
+<list style="ul">
+<item>Talk to Ian Rifkin (ADHO): We want there to be multiple Jenkins for testing builds for redundancy. 3 Jenkins servers, 3 OxGarage, etc. in case one service goes down.</item>
+</list>
+</item>
+<item>Should Council members individually be testing the Guidelines? (Not really—we don’t want to be running tests on a laptop all night.) Workflow question—is it best to do locally, or in the cloud?</item>
+<item>Automatic Failover Redundancy and Geographic-based load balancing.</item>
+<item>University servers hosting? Low bus number if institutional memberships depend on services—too much dependency on single institutions.</item>
+</list>
+</item>
+<item><hi style="strong">Jenkins</hi>
+<list style="ul">
+<item>Posting notifications to Slack channel #builds</item>
+<item>Reset the Docker Hub image to an automated build (Yes, see above)</item>
+</list>
+</item>
+<item><hi style="strong">oxygen-tei plugin</hi>
+<list style="ul">
+<item>We have a fairly urgent decision to make on <ref target="https://github.com/TEIC/oxygen-tei/issues/27">Issue 27</ref>. I think we should go with the plan as worked out with Alex Jitianu, but the result will be considerable complexity with regard to distributing and maintaining the plugin. An alternative would be to stop supporting older versions and tell people they should update oXygen if they want to use the plugin. But perhaps that would make the plugin pointless?</item>
+<item>Should we pay someone to do this? Would it be possible for oXygen to do this work? Probably it would take a couple of days of Alex’s time at first, and maybe a few hours every time we update. Ask Alex Jitianu and George Bina and approach the Board. <hi style="b">Action on: MT (2018-09-14) to write the e-mail.</hi></item>
+</list>
+</item>
+<item><hi style="strong">Internationali(s|z)ation I18n</hi>
+<list style="ul">
+<item>Procedures/support needed from Council. Should we build spreadsheets of translation updates needed as part of Jenkins builds, so they’re always available and up-to-date?</item>
+<item>Meeting in Mexico City with Susanna Allés, Kiyonori, Luis Meneses, Gimena del Rio Riande and various Council members (MS, JC, SB, etc.). Noted that there was a lot done around 2007—see <ref target="https://www.tei-c.org/tools/i18n/">http://www.tei-c.org/tools/i18n/</ref>. Specs were translated then into Chinese, French, German, Italian, Japanese, Korean, and Spanish. Most of them are out of date and incomplete now.</item>
+<item>How do we give access to lots of people to help update translations? Workflow: web forms/JS to permit people to add an updated description—then goes for review to a designated person with TEI GitHub access, who can decide whether and how to implement.</item>
+<item>MS: Google Translate to help accelerate the process—turned out to be very helpful in last German translatathon.</item>
+<item>MH: Crowdsourcing invites inconsistency. MS: There are inconsistencies in English as well. We could raise new issues to clean up the English, but this takes time and hinders translation progress. JC: Perhaps appoint one person at translatathon as meta person to keep track of new tickets to raise.</item>
+<item>Discussion: This would really be managed (Gimena del Rio Riande and students, for example). Council’s role: define workflow for designated managers. MT: Maybe not—we expect XML in certain format, and managed spreadsheets are doomed to fail because of manual labour needed to convert/check. SB: Can we come up with something better than spreadsheets? MT: What we’d want would cost money and time. A graphic tool to highlight text content of an element and provide translation to submit for review. But such systems have communication issues.</item>
+<item>EM: Maybe this goes to a Workgroup (not a SIG)—tasked with finding good method. Still in purview of Council and have Council members, but doesn’t take Council time. MH: You need a leader for each language and support them as much as possible.</item>
+<item>MS: We cannot ignore a system we set up.</item>
+<item>RV: Can we use the new Roma for this? It will make it easy to add/supply new descriptions and deliver as ODD. Can we customize Roma to help with importing translations. Spreadsheet advantage is to eyeball changes.</item>
+<item>SB: What about web forms via XForms? We could consult Michael Sperberg-McQueen about this. What are the hangups with the current process—re German?</item>
+<item>MS: Working with spreadsheet was okay—the hangup was moving into the Specs—this had to be done by hand. MH: There’s a merge.xsl file that’s supposed to handle that—never used.</item>
+<item>EM: Quick turnaround is important—orm-based workflow which is easy to merge. RV: XForms could work if we hire someone. Re RomaJS it could be developed to do that kind of merging, too. It’s in scope for the application (eventually).</item>
+<item>MT: visual editor for TEI Publisher could work, too.</item>
+<item>XML / XML-aware solutions are preferable.</item>
+<item>Who will be chairing the Workgroup? MS is supposed to write a working paper, and is in contact with Gimena del Rio Riande and Susanna Allés. SB: Workgroup is about exploring/defining the technical workflow and software. Council typically appoints a chair and gives them a charter. EM: Let’s wait for next Council meeting when new Council is established.</item>
+<item>Susanna Allés wants to meet people interested in internationalization for dinner on Sunday.</item>
+<item>Related Issues:
+<list style="ul">
+<item>#1780: <ref target="https://github.com/TEIC/TEI/issues/1780">Inviting translation of descs, glosses, remarks: workflow</ref></item>
+<item>#960: <ref target="https://github.com/TEIC/TEI/issues/960">i18n revision due</ref></item>
+</list>
+</item>
+</list>
+</item>
+</list></div><div type="h2"><head><hi style="b">Monday Morning</hi><hi style="b"> (Open Session)</hi></head><list style="ul">
+<item><hi style="strong">Hello and Welcome [MS]</hi></item>
+<item><hi style="strong">Slide set “What TEI Council Does” [EB]</hi>
+<list style="ul">
+<item><ref target="http://bit.ly/teiCouncil">http://bit.ly/teiCouncil</ref>  (15 min) Note: Slides also sum up work so far on #1707</item>
+</list>
+</item>
+<item><hi style="strong">Work on <ref target="https://github.com/TEIC/TEI/issues/1707">#1707</ref> (max 45 min)</hi>
+<list style="ul">
+<item>Naoki Kokaze and EBB introduce the ticket, are giving a summary of the ticket and where we are.</item>
+<item>EBB minuting: SB: @factor attribute being teidata.numeric is problematic. It should be an XPath (function)…and if that’s not powerful enough (MH says), we raise a problem with the XPath specification.</item>
+<item>How do we handle conversions in <gi>unitDecl</gi>?
+<list style="ul">
+<item>Multiple <gi>unit</gi> elements inside <gi>unitDef</gi> (discussion). MT: This is analogous to multiple <gi>persName</gi> elements referring to the same <gi>person</gi> element.</item>
+<item>SB: We need to be careful about the semantics of multiple <gi>unit</gi> elements in the same <gi>unitDef</gi>. SS: What if we handle this with a listRelation, which we hold outside the person elements? SB: People of course will want to move it inside the thing being defined (<gi>unit</gi>, <gi>person</gi>).</item>
+<item>JC: Does <gi>unitDef</gi> nest? If it self-nests, that will solve problems. Schematron rule for nested <gi>unitDef</gi> elements.</item>
+<item>MH: What about creating <gi>unitDefGrp</gi>, instead of nesting?</item>
+<item>MH: <gi>unitDef</gi> is designed to be helpful for conversion, say a <gi>unitDef</gi> for 2016 dollars.</item>
+<item>At issue: Do conversions go inside the <gi>unitDef</gi>, or outside in the <gi>unitDecl</gi>? MT: What about two options?</item>
+<item>MH: What about a <gi>conversion</gi> element. It behaves differently if it’s positioned inside and outside the <gi>unit</gi>. @fromUnit=”unitDef”, @toUnit=”unitDef” @formula=”XPath”. If inside the <gi>unit</gi> element, you don’t need the @fromUnit.</item>
+<item>JC: why not @from and @to? SB: because this is for completely different things.</item>
+<item>Using XPath + regex is a) risky (XPath injection attack), b) never been done(!).</item>
+<item>4 attributes in TEI have a datatype of XPath…we need security warnings in the Guidelines…1 of these is seriously risky, the one on @param teidata.xpath should have a paragraph in the remarks describing the issue.</item>
+<item>RV: Can we provide a simpler method for those who don’t need an XPath?</item>
+<item>New actions on EBB: @factor should change to @formula. Add a <gi>conversion</gi> element, @fromUnit, @toUnit.</item>
+<item>@formula gets its own new attribute class because it might have wider use. Don’t put @fromUnit or @toUnit in a class.</item>
+</list>
+</item>
+</list>
+</item>
+<item><hi style="strong">Tools supported by the TEI (max 20 min) [PS and RV]</hi>
+<list style="ul">
+<item>RomaJS with Council reporting back on roadmap, etc. [RV]
+<list style="ul">
+<item>Tickets should go on TEI RomaJS repo (not Guidelines).</item>
+</list>
+</item>
+<item>Docker Report [PS]</item>
+</list>
+</item>
+<item><hi style="strong">Ticket reporting [All Council]</hi>
+<list style="ul">
+<item>Subgroups that examined tickets on Saturday reporting to full Council</item>
+<item><ref target="https://github.com/TEIC/TEI/issues/1756">#1756</ref> <ref target="https://github.com/TEIC/TEI/issues/1756">event should have ptr and idno in its content model</ref>
+<list style="ul">
+<item>We agree with JC’s recommendation on the ticket. Really we need something at 1st level for inline tagging of event (all we have is <gi>rs</gi>, <gi>name</gi>, etc. New ticket for that?</item>
+</list>
+</item>
+<item><ref target="https://github.com/TEIC/TEI/issues/1778">#1778</ref> <ref target="https://github.com/TEIC/TEI/issues/1778">Make <gi>trailer</gi> a member of att.placement and att.written</ref>
+<list style="ul">
+<item>Greenlight, and EM should implement.</item>
+</list>
+</item>
+<item><ref target="https://github.com/TEIC/TEI/issues/1805">#1805</ref> <ref target="https://github.com/TEIC/TEI/issues/1805">Suggestion for new uniHan element</ref>
+<list style="ul">
+<item>Duncan Paterson is giving a paper on this tomorrow…Discussion: should this be more general than UniHan? UniHan is different from unicode, though maintained by the unicode consortium. Unicode is “baked into” text processing. MH: It’s syntactic sugar (like <gi>persName</gi> and &lt;name type=”person&gt;), and <gi>uniHan</gi> would be like &lt;name type=”uniHan”&gt;.
+<list style="ul">
+<item>SB: Should there be a closed list of values for this element? MH: the analogy is @xml:lang, we could make an elaborate regex to cover all possible combinations (beyond just a closed <gi>valList</gi>) but new values could be proposed. MS: Add to agenda of next conference call after we hear Duncan’s and Martin’s papers tomorrow.</item>
+</list>
+</item>
+</list>
+</item>
+<item><ref target="https://github.com/TEIC/TEI/issues/1795">#1795</ref> <ref target="https://github.com/TEIC/TEI/issues/1795">Language of Schematron messages where @role=”nonfatal” and @role=”warning”</ref></item>
+<item>Stylesheets <ref target="https://github.com/TEIC/Stylesheets/issues/330">#330</ref> <ref target="https://github.com/TEIC/Stylesheets/issues/330">Adding schematron to xml:id results in bad id value in RNG</ref></item>
+</list>
+</item>
+</list><list style="ul">
+<item/>
+</list></div></div></body><!-- #post-## --></text></TEI>

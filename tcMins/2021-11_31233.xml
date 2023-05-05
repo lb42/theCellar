@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/home/lou/Public/TEI/TEICSS/tei.css" type="text/css"
+ ?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:t="http://www.tei-c.org/ns/1.0" n="2021-11"><teiHeader><fileDesc><titleStmt><title>Minutes of the TEI Technical Council</title><meeting n="2021-11" when="2021-11-11">TEI Technical Council online
+     meeting : <date>11 November 2021</date></meeting></titleStmt><publicationStmt><distributor>TEI Website</distributor><idno>TCM147</idno></publicationStmt><sourceDesc><p>Retagged from a WordPress HTML file</p></sourceDesc></fileDesc><revisionDesc><change when="2023-04-25">Archival header confected</change><change>Extracted from Word Press article with id post-31233</change></revisionDesc></teiHeader><text><body><div><p><hi style="strong">Meeting times: </hi></p><list style="ul">
+<item>10:30am–12:00pm PDT, 1:30pm–3:00pm EDT, 6:30pm–8:00pm BST, 7:30pm–9:00pm CEST</item>
+<item>Started:     18:37Z    Ended:    20:06Z</item>
+</list><p><hi style="strong">Present:</hi></p><list style="ul">
+<item>Syd Bauman (SB)</item>
+<item>Helena Bermudez Sabel (HBS)</item>
+<item>Elisa Beshero-Bondar (EBB)</item>
+<item>Hugh Cayless (HC)</item>
+<item>Janelle Jenstad (JJ)</item>
+<item>Martina Scholger (MS, chair)</item>
+<item>Sabine Seifert (SS)</item>
+<item>Peter Stadler (PS)</item>
+<item>Magdalena Turska (MT)</item>
+<item>Raff Viglianti (RV)</item>
+<item>with guests:
+<list style="ul">
+<item>James Cummings (JC)</item>
+<item>Anne Ferger (AF)</item>
+<item>Daniel Röwenstrunk (DR)</item>
+</list>
+</item>
+</list><p><hi style="strong">Apologies/Not Present:</hi></p><list style="ul">
+<item>Elli Bleeker (EB)</item>
+<item>Meaghan Brown (MB)</item>
+<item>Jessica Lu (JL)</item>
+</list><p> </p><div type="h2"><head>OxGarage/TEIGarage/MEIGarage</head><list style="ul">
+<item>Invited guests: Anne Ferger, Daniel Röwenstrunk, James Cummings</item>
+<item>Slides: <ref target="http://anneferger.github.io/OxTEIMEIGarage">anneferger.github.io/OxTEIMEIGarage</ref></item>
+<item>Interest from multiple communities on their own ‘garage’: MEI, art historians, EpiDoc?</item>
+<item>Retire OxGarage repo and replace it with TEIGarage</item>
+<item>~4 more years of funding for continued work on OxGarage in Paderborn.</item>
+<item><ref target="https://teigarage.tei-c.org/">https://teigarage.tei-c.org/</ref> redirect from <ref target="https://oxgarage.tei-c.org/">https://oxgarage.tei-c.org/</ref></item>
+<item>JC reminds us that the idea for ‘garage’ came from a discussion about the game Grand Theft Auto between Sebastian Rahtz and James where you could drive your car (Document) into it and it would come out ‘pimped’ with new coats of paint or features.</item>
+<item>PS suggests, and consensus seems to be, to send mail (after vetting by Council) to TEI-L announcing a cut-over from OxGarage to TEIGarage in roughly 7–8 weeks. JC suggests there should be a CSS change of some sort so people know which they are using, aside from the name change.</item>
+</list></div><div type="h2"><head>Welcome to our new Council members</head><list style="ul">
+<item>Three initials are now necessary to disambiguate some people and to honour others’ personal preference.</item>
+<item>SB acknowledges EBB’s early wisdom.</item>
+<item>We need mentors for our new members. Membership works out better when mentor/mentee are in the same time zone. Proposed mentorships: PS will mentor SS, SB and HBS will mentor EB.</item>
+<item>PS wants this to be his last year on Council. Would like to follow Martin Holmes’ path, work on TEI from outside, and make room for new people.</item>
+</list></div><div type="h2"><head>Council chair elections</head><list style="ul">
+<item>JJ will be interested “in a year or two” (esp. if MS is willing to mentor JJ this year), but otherwise no one present expresses interest in being Chair, except MS, who would graciously consider staying on for at most 1 more year.</item>
+<item>We need some role documentation — a Chair’s manual, or at least guide.</item>
+<item>And a collection of links for “getting started on Council.” We have <ref target="https://wiki.tei-c.org/index.php?title=TEI-Council-FAQ">https://wiki.tei-c.org/index.php?title=TEI-Council-FAQ</ref>, which is good for TEI Council practices, but it’s a bit outdated.</item>
+</list></div><div type="h2"><head>Reminder TCW32</head><list style="ul">
+<item>Checking pointers document: <ref target="https://docs.google.com/document/d/1nAi_6pB1ayTV3SYAsrf8InKL1T5n8DAdgdhf-o5RSM8/edit?pli=1">https://docs.google.com/document/d/1nAi_6pB1ayTV3SYAsrf8InKL1T5n8DAdgdhf-o5RSM8/edit?pli=1</ref>
+<list style="ul">
+<item>1 or 2 more examples to write (SB)</item>
+<item>testing examples #10 and #15 (EBB)</item>
+<item>testing examples #17, #18, #19</item>
+<item>proofreading prose (JJ)</item>
+<item>MS &amp; SB need to talk about errors example #09 (and #08) (SB &amp; MS)</item>
+<item>checking over the entire document
+<list style="ul">
+<item>JC apologises for being very distracted from TEI things and this is on his todo list.</item>
+</list>
+</item>
+<item>work on #11 and new, similar but more thorough, example, if necessary (SB and RV will evaluate this).</item>
+</list>
+</item>
+<item><hi style="b">Deadline for above work: Monday, 29 Nov 21.</hi></item>
+</list></div><div type="h2"><head><hi style="b">tei-to-markdown</hi></head><list style="ul">
+<item>Should we have a priority list which XSLTs we maintain? This came up during the last Stylesheets group meeting (<ref target="https://github.com/TEIC/Stylesheets/pull/432">https://github.com/TEIC/Stylesheets/pull/432</ref>). Is tei-to-markdown.xsl something that we can maintain?
+<list style="ul">
+<item>Discussion: probably not necessary since we can transform to HTML, and then have pandoc generate the markdown.</item>
+<item>And this can be something we simply set aside with the new reorganization of the Stylesheets group meeting.</item>
+</list>
+</item>
+</list></div><div type="h2"><head>SIGs</head><list style="ul">
+<item>MS reports there are currently no active conveners for the MS SIG. Gerrit Brüning thinks it should be dormant, but the Council does not agree.</item>
+<item>What’s the procedure for getting new convenors?</item>
+<item>There is also a slight discrepancy between the MSSers who are into cataloging or MSS description vs those who are interested in transcription.</item>
+<item>Reach out via mailing list.</item>
+</list></div><div type="h2"><head>Stylesheets re-work</head><list style="ul">
+<item>SB (on behalf of SB &amp; Martin Holmes) believes time is now to rewrite the Stylesheets entirely (see <ref target="https://wiki.tei-c.org/index.php?title=New_ODD_processing">https://wiki.tei-c.org/index.php?title=New_ODD_processing</ref> for notes on the burgeoning plan).
+<list style="ul">
+<item>JC fully supports the ideas in that document as of today.</item>
+<item>RV feels we should support Relax NG in ODD.</item>
+</list>
+</item>
+<item>Rewrite the XSLT that processes the subset of the TEI Guidelines into RNG, HTML, etc. ODD chaining is important, too.</item>
+<item>Eventually we archive the original Stylesheets repository.</item>
+<item>Charge a Task Force (with at least one member of Council),
+<list style="ul">
+<item>with an assigned Chair.</item>
+<item>Council charters this Task Force with deliverables to make, due dates, etc.</item>
+<item>SB proposes himself as Chair for this Task Force.</item>
+<item>SB, Martin Holmes, and David Maus, and perhaps others, would be the Task Force.</item>
+<item>In this case, SB would step down from chairing the Stylesheets group (probably in the next 2–6 months).</item>
+</list>
+</item>
+<item>MT would like to progress working with the ODD processing model for releasing the Guidelines without as much pre-processing.</item>
+<item>MT: ODD chaining support, ideally as a separate module or service will be critical.</item>
+</list><p> </p></div></div></body><!-- #post-## --></text></TEI>

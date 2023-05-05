@@ -1,0 +1,141 @@
+<?xml version="1.0"?> 
+<?xml-stylesheet type="text/css" href="teixlite.css"?>
+<!DOCTYPE TEI.2 PUBLIC "-//TEI//DTD TEI Lite XML ver. 1//EN"
+"http://www.tei-c.org.uk/Lite/DTD/teixlite.dtd" [
+<!ATTLIST xref url CDATA #IMPLIED>]
+>
+<TEI.2>
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title>Charge for the TEI Council's Metalanguage Taskforce</title>
+</titleStmt>
+<publicationStmt>
+<distributor>TEI</distributor>
+</publicationStmt>
+<sourceDesc>
+<p>Loosely based on AI1P01</p>
+</sourceDesc>
+</fileDesc>
+<revisionDesc>
+<change>
+<date>1 Feb 2003</date>
+<respStmt>
+<name>Lou</name>
+<resp>Draft</resp>
+</respStmt>
+<item>First draft</item>
+</change>
+</revisionDesc>
+</teiHeader>
+<text>
+<body>
+<div><head>Background</head>
+<p>The text of the TEI Guidelines (P4) is currently  maintained as an
+     XML expression of the original ODD format files used to produce
+     P2. This format is increasingly hard to maintain using current
+     tools, and is also in need of revision to support new
+     facilities, in particular the ability to generate expressions of
+     the Guidelines in schema languages other than SGML DTD fragments. </p>
+<p>There is a continued need for a simple and accessible
+     TEI-conformant means of documenting markup languages in
+     general. The TEI tag set for tag set documentation (<xref
+      url="../P4X/TD.html">TEI Guidelines, chapter 27</xref>), originally
+     proposed for this task, is in need of revision in the light of
+     developments in document markup technologies and techniques. It
+     also needs to be better integrated with the TEI core tagsets, to
+     facilitate use of the TEI as a document authoring environment.
+    </p>
+<p>The TEI Council has therefore resolved (see  the <xref
+      url="tcm04.html">Conference Call on 21 Jan 2003</xref>) to set
+      up a <title>Metalanguage task force</title>, charged with the
+      objectives and deliverables described in the remainder of this
+      document. The task force will be lead by Sebastian Rahtz, and
+      will conduct its business according to the Rules and Principles
+      for TEI work groups, as documented in <xref
+      url="../Drafts/edw54.html">TEI ED W54</xref>, as far as these
+      are applicable. </p>
+</div>
+<div><head>Objectives and deliverables</head>
+<list type="ordered">
+<item>The ODD format should be revised to be entirely
+independent of the XML notation for DTDs</item>
+<item>The ODD format and the current TEI  DTD for tag documentation
+(TSD) should be re-expressed as a TEI additional module.</item>
+<item>The new module should facilitate generation
+of  XML DTDs and also of at least one XML schema format. </item>
+<item>Tools (e.g. XSLT stylesheets) should be specified which are able
+      to
+<list><item>automatically convert the current P4 ODDs to 
+      the new format</item>
+<item>process the new format to produce outputs equivalent to at least
+	the current published forms of P4 (i.e. as XML, as HTML, as
+	PDF, as XML DTDs, and as Relax NG schema)
+       </item>
+<item>process the outputs from the previous step in the same way as
+	the current Pizza Chef, to allow user production of customized
+	TEI views, expressed  as DTDs or schemas, and with
+	user-selected documentation </item></list></item>
+     </list>
+<p>The task force should review the current methods of producing and
+     maintaining TEI P4 and make  specific proposals for enhancing
+     them in line with the above objectives. A suggested preliminary
+     work plan for production of TEI P5 is provided in <xref url="tcw02.html">TC W02</xref>
+     which also provides additional background. The work plan for the
+     task force will be determined
+by agreement of its members, and should be documented either by
+     revision of  document TCW02, or by production of a new document, to be maintained by the
+     task force chair.</p>
+   </div>
+<div>
+<head>Administrative</head>
+
+<p>The head of the task force is Sebastian Rahtz. Council members who
+     have volunteered to participate are Laurent Romary, David Durand,
+     and Christian Wittern. Invited experts who have also agreed to
+     participate are Norm Walsh and C.M. Sperberg-McQueen.  The Head
+     may also invite other appropriate experts to participate at his
+     discretion. The TEI Editors are ex officio members of the task
+     force, as of all TEI work groups. Other constraints and
+     procedures applicable to all TEI work groups are as described in
+     document TEI ED W54. </p> 
+
+<p>No budget has been allocated to the task force, but application may
+     be made to the Council for one face to face meeting in due
+     course. </p>
+
+<p>The task force is required to provide progress reports on its work
+regularly to the TEI Technical Council, which has authority for
+approving its technical output. </p>
+
+<p>Members of the task force will communicate using a mailing list and
+     (optionally) by conference call. Their proceedings should be made
+     accessible to any member of the  Council, and decisions
+     documented formally on an appropriate part of the TEI web site. </p>
+</div>
+<div>
+<head>Provisional timetable</head>
+<p><list>
+<item>Review TEI TCW02 and current ODD documentation (4 weeks) </item>
+<item>Produce ODD-conformant definition for Son of ODD (6 weeks; due mid May)</item>
+<item>Revise Son of ODD specification following Council review (2
+       weeks)</item>
+<item>Specify, test, and review tools (6 weeks; due July)</item>
+<item>Assist editors in production of first draft of P5 (i.e. P4 in
+	the new format) in time for Annual Members meeting at end October 2003 </item>
+<item>Draft documentation of new format as a TEI module for
+	public comment and discussion before submitting as formal
+	proposal by January 2004</item>
+     </list></p>
+<!--
+* a revised spec for ODD
+ * a conversion of TEI P4 into ODD2
+ * a demonstration that this can generate schemes for the TEI
+ * a rewrite of the TSD chapter to make that a normal
+   tagset, and reunite TSD and ODD
+ * some sort of viewpoint on namespaces
+-->
+   </div>
+</body>
+</text>
+</TEI.2>

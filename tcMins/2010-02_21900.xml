@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/home/lou/Public/TEI/TEICSS/tei.css" type="text/css"
+ ?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:t="http://www.tei-c.org/ns/1.0" n="2010-02"><teiHeader><fileDesc><titleStmt><title>Minutes of the TEI Technical Council</title><meeting n="2010-02" when="2010-02-08">TEI Technical Council online
+     meeting : <date>8 February 2010</date></meeting></titleStmt><publicationStmt><distributor>TEI Website</distributor><idno>TCM044</idno></publicationStmt><sourceDesc><p>Retagged from a WordPress HTML file</p></sourceDesc></fileDesc><revisionDesc><change when="2023-04-25">Archival header confected</change><change>Extracted from Word Press article with id post-21900</change></revisionDesc></teiHeader><text>
+        <body>
+	
+		<head>TEI Council Meeting</head>		<milestone unit="unknown" rend="rule"/>
+	
+
+	<div>
+		
+		
+<p>Attendees: </p>
+<list>
+<item>Brett Barney (BB)</item>
+<item>Gabriel Bodard (GB)</item>
+<item>Lou Burnard (LB)</item>
+<item>James Cummings (JC)</item>
+<item>Kevin Hawkins (KH)</item>
+<item>Martin Holmes (MH)</item>
+<item>Daniel O’Donnell (DoD)</item>
+<item>Elena Pierazzo (EP)</item>
+<item>Dot Porter (DP)</item>
+<item>Sebastian Rahtz (SR) – minutes</item>
+<item>Laurent Romary (LR) – chair</item>
+</list>
+
+<div><head>
+                Introduction</head>
+<p>Teleconference started at 1600 CET. </p>
+<p>LR began by saying that, although there had been some discussion of possibly
+                    having a face-to-face meeting in October, the budget won’t allow that. Therefore
+                    the April face-to-face meeting will be the only one this year. He encouraged
+                    Council members to economize when arranging travel to the meeting. </p>
+<p>LB noted that external funding for a second meeting might be available and hinted
+                    that he will pursue this possibility further.</p>
+<p>LR noted that planning is proceeding for the one-day symposium before the April
+                    meeting. The symposium will be an important event, during which he hopes that we
+                    can devise a strategic plan for the use of TEI in the process of scholarly
+                    publishing. He requested that in preparation for the meeting, each of the
+                    Council members give some thought to this issue and email discussion proposals
+                    to him.</p>
+<p>DoD informed the group that the Board has received back from Apex corrections to
+                    TEI Tite, which he plans to share with a subcommittee of people for review. Lou
+                    said he should just bring them to the whole Council instead. Dan said that would
+                    be fine.</p>
+</div>
+<div><head>
+                Discussion of outstanding feature requests</head>
+<p>LB noted that during the last teleconference the Council deferred until this
+                    teleconference three ticket items they required a lot of further discussion.
+                    Since no progress has been made on these, he suggested that they be put on the
+                    agenda for the face-to-face meeting. All agreed, and Laurent volunteered to
+                    solicit volunteers to work on these in the meantime. </p>
+<p>For full details of each request, see the relevant ticket.</p>
+<list><label>
+                            <ref target="https://sourceforge.net/tracker/index.php?func=detail&amp;aid=2714682&amp;group_id=106328&amp;atid=644062">2714682</ref></label>
+<item><label><gi>biblScope</gi> as sibling, child, or both of
+                                <gi>imprint</gi></label>: After discussion of how these elements are
+                            used, especially for journals, there was general agreement that
+                                <gi>biblScope</gi> should be allowed only as a sibling of
+                                <gi>imprint</gi>. It was further noted that the examples in the
+                            guidelines need to be vetted and that further examples might need to be
+                            generated. DoD suggested comparing with other encoding schemes to see
+                            how this is handled. <note>MH, KH and LR will follow
+                                up.</note></item>
+<label>
+                            <ref target="https://sourceforge.net/tracker/index.php?func=detail&amp;aid=2812634&amp;group_id=106328&amp;atid=644065">2812634</ref></label>
+<item><label>adding @docStatus to <gi>edition</gi></label>: After discussion
+                            of where the desired information would be best supplied and whether the
+                            current <gi>teiHeader</gi> already provides adequately for it in, say,
+                                <gi>revisionDesc</gi> (it doesn’t), we agreed that a new attribute
+                            on <gi>revisionDesc</gi> was warranted and that another new attribute
+                            could be added to <gi>change</gi>. Example uses will need to be
+                            generated. <note>LB will propose specifics.</note></item>
+<label>
+                            <ref target="https://sourceforge.net/tracker/index.php?func=detail&amp;aid=2909766&amp;group_id=106328&amp;atid=644065">2909766</ref></label>
+<item><label>adding <gi>add</gi> and <gi>del</gi> to att.datable</label>:
+                            There was lively discussion of this item and its implications for other
+                            elements about which one might foresee similar arguments. EP noted that
+                            the genetic editions working group is currently discussing the
+                            desirability of making various elements datable and plans to have a
+                            specific proposal for discussion at the April meeting. It was decided
+                            that discussion of this ticket be postponed until we have a chance to
+                            consider that proposal. </item>
+<label>
+                            <ref target="https://sourceforge.net/tracker/index.php?func=detail&amp;aid=2925031&amp;group_id=106328&amp;atid=644062">2925031</ref></label>
+<item><label>@ident data type problem with <gi>valItem</gi></label>: It was
+                            agreed that there needs to be a way to allow the values specified for an
+                            attribute to be something other than valid XML names; the best way to do
+                            this is less clear. Eventually, consensus was reached that this should
+                            be done by locally defining @ident for <gi>valItem</gi></item>
+<label>
+                            <ref target="https://sourceforge.net/tracker/index.php?func=detail&amp;aid=2940860&amp;group_id=106328&amp;atid=644065">2940860</ref></label>
+<item><label>adding @xml:space to att.global</label>: It was quickly agreed
+                            that it is reasonable to want to preserve spaces in some instances.
+                            Debate focused on whether this need is best met by reinstating
+                            @xml:space in att.global. It was agreed that, on balance, yes, it
+                            is.</item>
+<label>
+                            <ref target="https://sourceforge.net/tracker/index.php?func=detail&amp;aid=2919640&amp;group_id=106328&amp;atid=644065">2919640</ref></label>
+<item><label>adding global @facsKey</label>: Although the value of @facs is
+                            supposed to be “one or more URIs, separated by whitespace,” folks seem
+                            to typically give it a value equivalent to @key—a “magic
+                            token” that is to be resolved later by a processor into a full URI. It
+                            was agreed that the addition of @facsKey, though not without
+                            disadvantages, was advisable, since doing so will not to break existing
+                            documents that use @facs as described.</item>
+<label>
+                            <ref target="https://sourceforge.net/tracker/index.php?func=detail&amp;aid=2925145&amp;group_id=106328&amp;atid=644065">2925145</ref></label>
+<item><label>non-Gregorian dates</label>: TEI’s @when is currently defined as
+                            @when-w3c; some within the community, including LR, would like to define
+                            it instead as @when-iso. Since @when-iso is currently allowed,
+                            discussion centered on whether the “generic” option offered to TEI users
+                            should be the more permissive (ISO) or more restrictive (W3C subset). LB
+                            argued that switching to ISO would cause unnecessary headaches. No one
+                            disagreed strongly, so the status quo seems to have prevailed.</item>
+<label>
+                            <ref target="https://sourceforge.net/tracker/index.php?func=detail&amp;aid=2862151&amp;group_id=106328&amp;atid=644065">2862151</ref></label>
+<item><label>allowing elements from the certainty module on <gi>gap</gi> and
+                                    <gi>space</gi></label>: No objections.</item>
+</list>
+</div>
+	</div>
+
+	</body></text></TEI>

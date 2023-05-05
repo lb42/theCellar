@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/home/lou/Public/TEI/TEICSS/tei.css" type="text/css"
+ ?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:t="http://www.tei-c.org/ns/1.0" n="2020-03"><teiHeader><fileDesc><titleStmt><title>Minutes of the TEI Technical Council</title><meeting n="2020-03" when="2020-03-10">TEI Technical Council online
+     meeting : <date>10 March 2020</date></meeting></titleStmt><publicationStmt><distributor>TEI Website</distributor><idno>TCM124</idno></publicationStmt><sourceDesc><p>Retagged from a WordPress HTML file</p></sourceDesc></fileDesc><revisionDesc><change when="2023-04-25">Archival header confected</change><change>Extracted from Word Press article with id post-30643</change></revisionDesc></teiHeader><text><body><div><p><hi style="strong">Meeting time:</hi></p><list style="ul">
+<item>EST 09:00–10:30, GMT 13:00–14:30, CEST 14:00–15:30</item>
+<item>Started: 13:08Z; ended: 14:32Z</item>
+</list><p><hi style="strong">Present:</hi></p><list style="ul">
+<item>Syd Bauman (SB)</item>
+<item>Elisa Beshero-Bondar (EB)</item>
+<item>Meaghan Brown (MB)</item>
+<item>Hugh Cayless (HC; joined 13:32Z)</item>
+<item>Jessica Lu (JL)</item>
+<item>Martina Scholger (MS, chair)</item>
+<item>Peter Stadler (PS)</item>
+<item>Raff Viglianti (RV)</item>
+</list><p><hi style="strong">Apologies/Not Present:</hi></p><list style="ul">
+<item>Vanessa Bigot Juloux (VBJ)</item>
+<item>Nicholas Cole (NC)</item>
+<item>Magdalena Turska (MT, engaged in Publisher workshop)</item>
+</list><p> </p><div type="h2"><head>Next F2F meeting</head><list style="ul">
+<item>1–3 May 2020 in Paderborn</item>
+<item>Let’s wait for our next teleconference (14 April 2020) for most bookings and to re-evaluate the travel situation.</item>
+<item>Council agrees that it would be possible to do a remote version of the F2F if we can’t travel — probably a few hours per day, scheduled so that all can make it.</item>
+</list></div><div type="h2"><head>Follow-up Release 4.0.0</head><list style="ul">
+<item>Release process, 4.0.0:
+<list style="ul">
+<item>JL, EBB, and RV updated the documentation in <ref target="https://teic.github.io/TCW/tcw22.html">TCW22</ref>.</item>
+<item>Release process on the HumaNum VM (third machine): user ‘tei’ is very restricted, so we had to login with a personal account.</item>
+<item>We should set this up so the ‘tei’ user has sudo powers.</item>
+<item>Neither the ‘tei’ user’s nor RV’s home directory had enough disk space, so we had to work with a temp directory (which we can use as a fall-back). 3.4 GB available in the temp directory. This has been fixed by Luis Meneses.</item>
+</list>
+</item>
+<item>Release process, going forward:
+<list style="ul">
+<item>We need to decide on a stable approach.</item>
+<item>Suggestion to decide firmly on release name &amp; number during refridrigation, well before freezing. Also, revisit the language of the last step about predicting the next release number.</item>
+<item>Rename title of TCW 22 to “The TEI Release Process”.</item>
+<item><hi style="b">Action on EB and JL</hi> to update TCW22 accordingly <hi style="b">by</hi> 2020-04-14.</item>
+</list>
+</item>
+<item>Release process, review of our three VMs:
+<list style="ul">
+<item>machine 1: tei-c.org server (wordpress, wiki, etc) <ref target="https://www.tei-c.org/Vault/">www.tei-c.org/Vault/</ref> is also on this machine.</item>
+<item>machine 2: Subversion for jTEI only.</item>
+<item>machine 3: Dockerized OxGarage, Roma, Vault; also: <ref target="https://vault.tei-c.org/">vault.tei-c.org</ref>.</item>
+<item>Note that the data store for /Vault/ is mounted on both 1 and 3.</item>
+<item>Release work can all be done on machine 3; home directory of ‘tei’ user should now be big enough to hold release artifacts, etc.</item>
+</list>
+</item>
+<item>model.resourceLike ⮕ model.resource
+<list style="ul">
+<item>Issue: class name was changed from model.resourceLike to model.resource; customizations that explicitly reference that class are now in error and need to be updated. Should we deprecate class name changes in the future?</item>
+<item>PS: in future we should care more about classes for the sake of backwards compatibility.</item>
+<item>SB: We encourage users to tie customization to a specific version; we should be more aggressive about this: perhaps make schemaSpec/@source mandatory. <hi style="b">Action on SB</hi> to create an issue by<hi style="b"> 2020-03-15</hi>. — DONE, see comment in <ref target="https://github.com/TEIC/TEI/issues/1869#issuecomment-597137221">#1869</ref>, which is already about the name of this attribute.</item>
+<item>RV: What should Roma’s default behavior be? Should <gi>schemaSpec</gi> always be set to current? Suggestion, if not consensus: eventually have users select from a drop-down, semi-open, enumerated list (“4.0.0”, “current”, “3.9.0”, “2.6.0”, whatever).</item>
+<item>TCW22, <hi style="i">Building a TEI Release</hi> should be revised to urge Council members to report major changes (such as things that would break ODDs) to Council when we go to refrigeration. <hi style="b">Action on EB and JL </hi>to mention this in TCW22 <hi style="b">by </hi>2020-04-14.</item>
+</list>
+</item>
+<item>Finalize content model of <gi>annotation</gi> — discuss at the next F2F</item>
+<item>uniHan — discuss at the next F2F.</item>
+</list></div><div type="h2"><head>Stylesheets training session</head><list style="ul">
+<item>will be Tue 31 Mar unless major objection: <hi style="b">Action on SB</hi> to announce by<hi style="b"> 2020-03-12.</hi></item>
+</list></div><div type="h2"><head>Policy for inactive members?</head><list style="ul">
+<item>to accompany change to 3-year terms.</item>
+<item><hi style="b">Action on EB, SB, JL</hi> to have a proposal by F2F.</item>
+</list></div><div type="h2"><head>Stand-off, annotations, and the Web Annotation Model</head><list style="ul">
+<item>What should content model of <gi>listAnnotation</gi> be?
+<list style="ul">
+<item>see <ref target="#listAnnotation"><hi style="b">below</hi></ref> for some food for thought on this.</item>
+</list>
+</item>
+<item>What should content model of <gi>annotation</gi> be?</item>
+<item>Note: processing of @minOccurs and @maxOccurs may need to be fixed before this can be implemented.</item>
+<item>Council is favoring maximum flexibility among SBs options below. SB will check in with Laurent Romary about this. MS: Document this in an issue to help us with the release notes later! SB: <gi>extraTextual</gi> is going to involve lots of discussion, probably optimistic to think it’ll be ready for the next release, but we should have <gi>listAnnotation</gi> and probably <gi>annotation</gi>.</item>
+</list></div><div type="h2"><head>Tickets</head><list style="ul">
+<item>Documentation
+<list style="ul">
+<item><ref target="https://github.com/TEIC/TEI/issues/1978">https://github.com/TEIC/TEI/issues/1978</ref></item>
+<item>Council wonders how to begin cleaning up the mess.</item>
+<item><hi style="b">Action on HC</hi>: enumerate questions that need to be considered (on the ticket) by <hi style="b">2020-03-18</hi>:
+<list style="ul">
+<item>do we want to continue to author in TEI?</item>
+<item>where do we want to keep stuff?</item>
+<item>etc.</item>
+</list>
+</item>
+<item>MB suggests a dedicated section for new Council members.</item>
+</list>
+</item>
+</list><p> </p></div><div type="h2"><head xml:id="listAnnotation">Suggestions on content model for listAnnotation by SB</head><div type="h3"><head>very easy, very loose, but requires that nested lists follow other stuff</head><p rend="pre">model.annotationLike = ( note | annotation | annotationBlock )
+listAnnotation = model.headLike*, model.labelLike*, model.annotationLike*, listAnnotation*</p></div><div type="h3"><head>easy, very loose</head><p rend="pre">model.annotationLike = ( note | annotation | annotationBlock )
+listAnnotation = model.headLike*, model.labelLike*, ( model.annotationLike | listAnnotation )+</p><p>– OR –</p><p rend="pre">model.annotationLike = ( note | annotation | annotationBlock | listAnnotation )
+listAnnotation = model.headLike*, model.labelLike*, model.annotationLike*</p></div><div type="h3"><head>require grouping in particular order</head><p rend="pre">listAnnotation =
+   model.headLike*,
+   model.labelLike*,
+   annotation*,
+   annotationBlock*,
+   note*,
+   listAnnotation*</p></div><div type="h3"><head>require grouping in any order</head><p rend="pre">listAnnotation = model.headLike*,
+model.labelLike*,
+(
+( note+, ( ( annotation*, annotationBlock* ) | ( annotationBlock*, annotation* ) ) )
+|
+( annotation+, ( ( note*, annotationBlock* ) | ( annotationBlock*, note* ) ) )
+|
+( annotationBlock+, ( ( annotation*, note* ) | ( note*, annotation* ) ) )
+),
+listAnnotation*</p><p>(Note that ‘&amp;’ does not work here both because we cannot translate it to DTD or XSD, and</p><p>because it allows mixing the elements.)</p></div><div type="h3"><head>require separate <gi>listAnnotation</gi> for each kind</head><p rend="pre">listAnnotation = model.headLike*,
+model.labelLike*,
+( listAnnotation+ | note+ | annotation+ | annotationBlock+ )</p><p>(Note that we could have model.annotationLike_alternationRepeatable instead, but we don’t.)</p></div></div></div></body><!-- #post-## --></text></TEI>

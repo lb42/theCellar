@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/home/lou/Public/TEI/TEICSS/tei.css" type="text/css"
+ ?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:t="http://www.tei-c.org/ns/1.0" n="2008-10"><teiHeader><fileDesc><titleStmt><title>Minutes of the TEI Technical Council</title><meeting n="2008-10" when="2008-10-07">TEI Technical Council online
+     meeting : <date>7 October 2008</date></meeting><author>Peter Boot</author></titleStmt><publicationStmt><distributor>TEI Website</distributor><idno>TCM040</idno></publicationStmt><sourceDesc><p>Re-tagged from a TEI Legacy format document which contained the following source note:</p><p>From edited notes transcribed as text</p></sourceDesc></fileDesc><revisionDesc><change when="2023-05-01">Archival header confected</change><change>Converted from the TEI archival document tcm40</change><change when="2008-10-23" who="#PB">
+            Peter Boot minor changes</change><change when="2008-10-07" who="#PB">
+              <name n="PB">Peter Boot</name> draft </change></revisionDesc></teiHeader><text>
+      <front>
+         <div>
+            <p>The TEI Council teleconference meeting took place on Tuesday 7 October 2008 at 13:00
+               UTC.</p>
+            <p>
+               <hi>Participants:</hi> Gabriel Bodard (GB), Peter Boot (PB, minutes), Tone Merete Bruvik
+                (TMB, briefly), Lou Burnard (LB), Arianna Ciula (AC),  James Cummings (JC), Dan
+                O'Donnell (DO, briefly), Elena Pierazzo (EP), Sebastian Rahtz (SR), Laurent Romary (LR, Chair), Paul Schaffner (PS),
+               and John Walsh (JW).</p>
+            <p>Council members unable to participate: David Sewell.</p>
+         </div>
+      </front>
+      <body>
+          <div>
+              <head>Notes in wiki</head>
+              <p>LR asks whether there are problems with using the Council Wiki space to make notes for upcoming  
+              meetings. No-one has objections.</p>
+          </div>
+          <div>
+              <head>Minutes meeting 21 August 2008</head>
+              <p>Approved.</p>
+          </div>
+          <div>
+              <head>TEI P5 Bugs and Feature Requests from SourceForge</head>
+              <p>LB notes:</p>
+              <list>
+                  <item>there have been 4 new items since the previous meeting; they presented no special difficulties and the 
+                  team at Oxford has dealt with them;</item>
+                  <item>the 'green' items (see list at <ref target="http://www.tei-c.org/Activities/Council/Working/tcw15.html">TCW015</ref>) 
+                  have been dealt with according to the decisions taken at the last teleconference;</item>
+                  <item>of the 'amber' items, issue 2055864 (Remove redundant iso-* attributes) needs more work to determine 
+                      exactly which attributes are redundant;</item>
+                  <item>of the 'red' items:
+                      <list>
+                          <item>1891589 (sequenceOptional (etc.?) disrupt 'may contain' ref. info) and 2021933 (egXML content model) have 
+                          been dealt with;</item>
+                          <item>1925127 (Provide discussion of taxonomical names) needs more work, and as Council we 
+                          probably do not have the necessary expertise; <note type="action">LB will draw up a problem statement, 
+                              LR will ask for volunteers  on TEI-L</note></item>
+                          <item>1933198 (&lt;precision&gt; element needed): GB and JC did some work on this, but there is not as yet 
+                              a finished proposal. <note type="action">GB and LB will discuss this further</note></item>
+                          <item>2002418 (New element = &lt;clarification&gt;?): there is a proposal from the Ibsen project. 
+                              <note type="action">EP will take ownership of it</note></item>
+                      </list>
+                  </item>
+              </list>
+              <p>We will produce a new release before the members meeting. We shouldn't introduce further changes in the 
+              specifications, to avoid breaking things. Textual changes to the <title>Guidelines</title> can be made up to a week before the 
+              meeting.</p>
+              <p>A Korean translation will be added in the forthcoming release.</p>
+          </div>
+          <div>
+              <head>Council report at the London Meeting</head>
+              <p>LR's draft for the report is discussed. The draft looks good. A few remarks are made:</p>
+              <p>About the SIG's: not all SIG's are created equal. Some SIG's are mainly a support group for the community (EP); other SIG's 
+                  are expected to come up with proposals for changes to the <title>Guidelines</title>. LR: In the latter case, a Council liaison 
+                  person is necessary, but the liaison is not necessarily the SIG chair. Nevertheless all currently existing SIG's have a
+                  Council liaison: correspondence (DS), Manuscripts (EP), Physical bibliography (PS), Libraries (JW), Music (GB), 
+                  Text and Graphics (JW), Ontologies (AC) and (not yet official) Scientific Bibliography (LR).  
+              </p>
+              <p>About the plans for the future: PB suggests the term 'P6' is to be avoided. We shouldn't suggest another release that breaks 
+                  backward compatibility is in the works. AC mentions (and mails after the meeting) other possible lines of expansion: 
+                  recommendations on integrating with/mapping to other standards, collection of style sheet templates by 
+                  module and connection to other outreach projects. LR asks for more input on plans for the future. 
+                  <note type="action">ALL: provide input to LR.</note>
+              </p>
+              <p>There will be more time available for the Council report than before, as the voting and counting no longer takes place 
+                  during the business meeting. LR and DO will discuss the schedule.</p>
+          </div>
+          <div>
+              <head>TEI releases and versions</head>
+              <p>There were a couple of inconsistencies or limitations in the way we announce or identify new TEI versions. 
+                  The package names at SF were not very clear; SR fixed that. Schema's now also mention the TEI version that 
+                  they are based on. Remaining issues: Roma does not say which TEI version it is based on (after the meeting 
+                  PB added bug number 2152071 in SF) and we should decide whether we want to use the SF News mechanism. 
+                  Currently, the latest news item is the release of P5 last year; we should either bring news more often or not use the 
+                  mechanism at all. <note type="action">LR/DO: raise this with board and/or put on agenda for next f2f meeting.</note>
+              </p>
+              <p>The upcoming release will be P5 1.2.0, as there are changes in the ODD source, not just in the text. 
+                  <note type="action">Oxford team: prepare overview of changes for LR to announce on TEI-L</note> 
+              </p>
+          </div>
+          <div>
+              <head>Placement of schematron constraints in ODD</head>
+              <p>SR prepared a note that argues, reluctantly, for adding a new element, <gi>constraint</gi>, even though the 
+              existing <gi>content</gi> element also contains constraints. The existing element might be thought of as a 
+              specialisation of the new element. Another option would be to use a <att>type</att> attribute on 
+              <gi>content</gi>.</p>
+              <p>The Council agrees that adding a <gi>constraint</gi> element seems the best solution, even though there 
+                  may be limited issues of backwards compatibility. 
+                  <note type="action">SR will prepare a draft proposal, including examples (possibly drawn from the many places 
+                      in the <title>Guidelines</title> where we say: do this in such and such a way, even though 
+                      it cannot, as yet, be enforced).</note></p>
+          </div>
+          <div>
+              <head>Getting Started document</head>
+              <p>A number of council members (LR, AC, JC, DS, PB) are working on a section of the document. 
+                  There should be a draft text at the members meeting, 
+                  but it will not be not sufficiently vetted to create much furore about it. There is still room for people who want to join in.
+                  See <ref target="http://www.tei-c.org/wiki/index.php/Getting_Started"/>. 
+                  EP will contribute material about selecting an XML editor, that others may want to enhance.
+              </p>
+          </div>
+          <div>
+              <head>Subjects for next meetings</head>
+              <list>
+                  <item>Can we offer a validation or other processing service for TEI documents?</item>
+                  <item>Stable references to TEI objects</item>
+                  <item>Create something like a TEI badge that sites that are built on TEI can display</item>
+              </list>
+          </div>
+          <div>
+              <head>Practicalities for members meeting</head>
+              <p>It is important to register, as the wireless access will use individual passwords created for registrees only.</p>
+              <p>Council membership will be indicated on the meeting badge, so people will know whom to address with their 
+              questions, complaints and ideas.</p>
+              <p>Maybe we should have a Council working lunch.</p>
+              <p>AC: SIG's or other groups that need meeting room, please come forward.</p>
+          </div>
+      </body>
+   </text></TEI>

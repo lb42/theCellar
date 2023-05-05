@@ -1,0 +1,486 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/home/lou/Public/TEI/TEICSS/tei.css" type="text/css"
+ ?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:t="http://www.tei-c.org/ns/1.0" n="2022-04"><teiHeader><fileDesc><titleStmt><title>Minutes of the TEI Technical Council</title><meeting n="2022-04" from="2022-04-01" to="2022-04-02">TEI Technical
+     Council online meeting : <date>1–2 April 2022</date></meeting></titleStmt><publicationStmt><distributor>TEI Website</distributor><idno>TCM152</idno></publicationStmt><sourceDesc><p>Retagged from a WordPress HTML file</p></sourceDesc></fileDesc><revisionDesc><change when="2023-04-29">Archival header confected</change><change>Extracted from Word Press article with id post-31278</change></revisionDesc></teiHeader><text><body ><div><p><hi style="strong">Meeting Times</hi></p><table>
+
+<row>
+<cell><hi style="b">Friday, Apr 1</hi></cell>
+<cell>12:00–15:00 PDT
+15:00–18:00 EDT</cell>
+<cell>North American break-outs</cell>
+</row>
+<row>
+<cell><hi style="b">Saturday, Apr 2</hi></cell>
+<cell>10:00–13:00 CEST</cell>
+<cell>European break-outs</cell>
+</row>
+<row>
+<cell/>
+<cell>06:00–10:00 PDT
+09:00–13:00 EDT
+15:00–19:00 CEST</cell>
+<cell>Council meeting</cell>
+</row>
+
+</table><p><hi style="strong">Attendance</hi></p><table>
+
+<row>
+<cell/>
+<cell>Fri, North American-Group
+started @15:00
+ended @ 18:15</cell>
+<cell>Sat, European Group
+started @10:00
+ended @ 13:00</cell>
+<cell>Sat, Full Council
+started @14:06Z
+ended @17:29Z</cell>
+</row>
+<row>
+<cell>Syd Bauman</cell>
+<cell>present</cell>
+<cell/>
+<cell>present</cell>
+</row>
+<row>
+<cell>Helena Bermúdez Sabel</cell>
+<cell/>
+<cell>present</cell>
+<cell>present</cell>
+</row>
+<row>
+<cell>Elisa Beshe­ro-Bondar</cell>
+<cell>present</cell>
+<cell/>
+<cell>present</cell>
+</row>
+<row>
+<cell>Elli Bleeker</cell>
+<cell/>
+<cell>present</cell>
+<cell>present</cell>
+</row>
+<row>
+<cell>Hugh Cayless</cell>
+<cell>excused</cell>
+<cell/>
+<cell>present</cell>
+</row>
+<row>
+<cell>Janelle Jenstad</cell>
+<cell>present</cell>
+<cell/>
+<cell>present</cell>
+</row>
+<row>
+<cell>Martina Scholger</cell>
+<cell/>
+<cell>present</cell>
+<cell>present</cell>
+</row>
+<row>
+<cell>Sabine Seifert</cell>
+<cell/>
+<cell>present</cell>
+<cell>present</cell>
+</row>
+<row>
+<cell>Peter Stadler</cell>
+<cell/>
+<cell>present</cell>
+<cell>excused</cell>
+</row>
+<row>
+<cell>Magdalena Turska</cell>
+<cell/>
+<cell>present</cell>
+<cell>present</cell>
+</row>
+<row>
+<cell>Raff Viglianti</cell>
+<cell>present</cell>
+<cell/>
+<cell>present</cell>
+</row>
+
+</table><p> </p><p>Meeting minutes previous month (<ref target="https://tei-c.org/activities/council/meetings/tei-technical-council-teleconference-2022-03-11-1500z/">March</ref>)</p><div type="h2"><head>&gt; Friday, April 1 (North American break-outs)</head></div><div type="h2"><head>Started with <ref target="#pull-requests">pull request</ref>s from table below</head></div><div type="h2"><head>Notes/Questions:</head><list style="ul">
+<item>Lengthy discussion about <ref target="https://github.com/TEIC/TEI/issues/2209">#2209</ref> (at request of EB).</item>
+<item>Lengthy test of adding namespaced attributes in response to <ref target="https://github.com/TEIC/TEI/pull/2069">#2069</ref> and <ref target="https://github.com/TEIC/Stylesheets/issues/237#issuecomment-285476102">#237 comment</ref>. <hi style="b">Action </hi>on <hi style="b">SB </hi>by 2022-04-07: attach test ODD to ticket. We need to look at this with the full group.</item>
+</list></div><div type="h2"><head>&gt; Saturday, April 2 (European break-outs)</head></div><div type="h2"><head>Continue with <ref target="#pull-requests">pull requests</ref> and <ref target="#current-issues">issues from Guidelines’</ref> repo</head><list style="ul">
+<item>Confirm with SB that <ref target="https://github.com/TEIC/TEI/pull/2204">https://github.com/TEIC/TEI/pull/2204</ref> is ready to merge.</item>
+<item>Discuss issues arising from the request to offer citation buttons / bookmarks: tension between human readable and significant citation, e.g. TEI Guidelines, Reference for element ‘abbr’, Example 3 vs using a generated example id, direct bookmark link; latest vs fixed version (permalink)</item>
+</list></div><div type="h2"><head>&gt; Saturday, April 2 (Full Council)</head></div><div type="h2"><head>Next release</head><list style="ul">
+<item>Release technicians: JJ, HC, RV</item>
+<item>Refrigerate Sunday, April 10.</item>
+<item>Freeze on Saturday, April 17.</item>
+<item>Start release on Monday, April 19.</item>
+<item>What do we want to include in the next release?
+<list style="ul">
+<item>Guidelines milestone 4.4: <ref target="https://github.com/TEIC/TEI/issues?q=is%3Aopen+is%3Aissue+milestone%3A%22Guidelines+4.4.0%22">https://github.com/TEIC/TEI/issues?q=is%3Aopen+is%3Aissue+milestone%3A%22Guidelines+4.4.0%22</ref></item>
+<item>Stylesheets milestone 7.53.0: <ref target="https://github.com/TEIC/Stylesheets/issues?q=is%3Aopen+is%3Aissue+milestone%3A%22Release+7.53.0%22">https://github.com/TEIC/Stylesheets/issues?q=is%3Aopen+is%3Aissue+milestone%3A%22Release+7.53.0%22</ref></item>
+</list>
+</item>
+</list></div><div type="h2"><head>Issues</head><list style="ul">
+<item>Issue #<ref target="https://github.com/TEIC/TEI/issues/2189">2189</ref>: creating a <gi>gender</gi> element <ref target="https://github.com/TEIC/TEI/issues/2189">https://github.com/TEIC/TEI/issues/2189</ref>
+<list style="ul">
+<item>Is it possible to get this into the upcoming release? (probably no)</item>
+<item>Vanessa Hannesschläger’s and Peter Andorfer’s 2017 paper at TEI on “<ref target="https://hcmc.uvic.ca/tei2017/abstracts/t_100_hannesschlager_andorfer_gender.html">Sex in the TEI: The TEI 2016 gender check</ref>”:</item>
+<item>EBB, JJ, RV, HBS to schedule a calendar meeting to work on this and invite Council. <hi style="b">First week in May, mid-week. Action EBB </hi>to schedule.</item>
+<item>Call for example customizations that introduce <gi>gender</gi>, on TEI-L, call for discussion.</item>
+</list>
+</item>
+</list><list style="ul">
+<item>Issue #<ref target="https://github.com/TEIC/TEI/issues/2213">2213</ref>: att.datable.custom is under-documented
+<list style="ul">
+<item>Facts (pointed out on the ticket):
+<list style="ol">
+<item>There is nothing in the prose about @datingPoint;</item>
+<item>the only discussion, in the <ref target="https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-att.datable.custom.html">att.datable.custom</ref> tagdoc, is at least somewhat confusing (Does this attribute apply to <hi style="i">dates</hi> or to <hi style="i">datable items</hi>? If the latter, what is a datable item?);</item>
+<item>there are no examples.</item>
+</list>
+</item>
+<item>What we would like to put to the Council:</item>
+<item>We need an example or two to clarify the use of the @datingPoint attribute, which we believe would make its role more clear. Does the Council have any suggestions for examples?</item>
+<item>We would like to discuss the relationship to <gi>timeline</gi>?</item>
+<item>The @datingPoint is included in the att.datable.custom class and as a result the attribute is only mentioned in the context of the <gi>calendar</gi> element. However, we find that @datingPoint does not fit in the context of <gi>calendar</gi> and we’d like to discuss whether we should change the prose.</item>
+<item>Context: EB added @datingPoint to Guidelines chapter discussion of <gi>calendar</gi> in a local branch (issue-2213). But perhaps it should not be discussed with <gi>calendar</gi>. It needs a better context in the Guidelines.
+<list style="ul">
+<item>Discussion: @datingPoint belongs maybe with Guidelines prose/examples on <gi>event</gi> or <gi>timeline</gi>.</item>
+<item>HC: @when points to when you think it happened, and @datingPoint on the same element points to an event as reference point.</item>
+<item>SB’s example:
+<list style="ul">
+<item>After nine days I let the horse run free
+‘Cause the desert had turned to sea</item>
+</list>
+</item>
+<item>Should it be in the att.datable.custom spec? (Maybe not, because yes, too close to <gi>calendar</gi>.)</item>
+</list>
+</item>
+</list>
+</item>
+</list><list style="ul">
+<item>
+<list style="ul">
+<item/>
+</list>
+</item>
+<item>Issue <ref target="https://github.com/TEIC/TEI/issues/1856">#1856</ref> nested <gi>ab</gi>s
+<list style="ul">
+<item>Making model.abLike separate from model.pLike</item>
+<item><gi>p</gi> would be a special instance of <gi>ab</gi></item>
+<item>This will be a large enough change that we should treat it as a major release as in 5.0.0</item>
+<item>We are currently considering
+<list style="ul">
+<item><hi style="b">only</hi> to allow <gi>ab</gi> inside <gi>ab</gi>;</item>
+<item>not to allow <gi>ab</gi> inside <gi>p</gi>,</item>
+<item>not to allow <gi>p</gi> inside <gi>ab</gi>.</item>
+</list>
+</item>
+<item>Analogy: <gi>gi</gi> is to <gi>seg</gi> as <gi>p</gi> is to <gi>ab</gi></item>
+<item>EBB, HC, JJ, MS will schedule a separate meeting in late May. <hi style="b">Action</hi> on <hi style="b">MS </hi>by <hi style="b">2022-04-16</hi>: set up meeting.</item>
+</list>
+</item>
+<item>Issue <ref target="https://github.com/TEIC/TEI/issues/2244">2244</ref>: Correct listing of Council history
+<list style="ul">
+<item>The file also contains some of the workgroups, but many that we can remember are not listed here.</item>
+<item>Should the only work groups listed be those that influenced the Guidelines?</item>
+<item>Or does any work group that did significant work (even if not accepted by Council) belong here for credit?</item>
+<item>What about the SIGs? Historically, we have not included them in the Guidelines. Should we do that: do they belong in FM1-IntroductoryNote?</item>
+<item>Proposed criterion for inclusion in our acknowledgments: whether they have some influence on the <hi style="i">Guidelines</hi>.</item>
+</list>
+</item>
+<item>Issue <ref target="https://github.com/TEIC/TEI/issues/2106">#2106</ref>: Reorganization and homogenization of the bibliography
+<list style="ul">
+<item>Current bibliography in <ref target="https://www.tei-c.org/release/doc/tei-p5-doc/en/html/BIB.html">English</ref>, <ref target="https://www.tei-c.org/release/doc/tei-p5-doc/fr/html/BIB.html">French</ref>, and <ref target="https://www.tei-c.org/release/doc/tei-p5-doc/zh-TW/html/BIB.html">Taiwanese Mandarin</ref>.
+<list style="ul">
+<item>French and English are interleaved now.</item>
+</list>
+</item>
+<item>Entries for “no source” and “undetermined” would go at the bottom</item>
+<item>Merged version (work in progress): <ref target="https://github.com/TEIC/TEI/blob/issue-2106/P5/Source/Guidelines/en/BIB-Bibliography.xml">https://github.com/TEIC/TEI/blob/issue-2106/P5/Source/Guidelines/en/BIB-Bibliography.xml</ref></item>
+<item>Discussion/Suggestions
+<list style="ul">
+<item>Pick a different style guide for the languages in which we publish the Guidelines?</item>
+<item>Recommendation to interleave: Try Google Translate’s transliteration and interleave them all together (following Chicago, MLA, etc): universalizes the bibliography rather than changing it for every distinct language.
+<list style="ul">
+<item>What words we alphabetize on will maybe need some discussion.</item>
+</list>
+</item>
+<item>Ask Christian Wittern, Marcus Bingenhammer, or Charles Muller. Names and contact details in <ref target="https://github.com/TEIC/TEI/pull/2235#issuecomment-1058722535">Issue comment</ref>.</item>
+</list>
+</item>
+<item>Broken links are a far larger problem than the ordering of entries.</item>
+</list>
+</item>
+</list></div><div type="h2"><head>F2F meeting in Newcastle</head><list style="ul">
+<item>Conference September 12–16 (workshops Mon 12 &amp; Tue 13)</item>
+<item>Do we want to meet in person, and if so before or after the conference?
+<list style="ul">
+<item>RV, EBB, JJ prefer before (JJ <hi style="i">cannot</hi> attend after)</item>
+<item>MT: Weekend before is not great.</item>
+<item>SB thinks before is slightly better</item>
+<item><hi style="b">Action on MS by 2022-04-08</hi> to ask James if rooms for Council meetings are available before conference, after conference, or both.</item>
+<item>Considering full day meetings on Sat 10 Sep, Sun 11 Sep, ½-day Mon morning 12 Sep.</item>
+<item>Also considering meetings overlapping the workshops: Sun 11, Mon 12, Tue 13 (better for MT).</item>
+</list>
+</item>
+</list></div><div type="h2"><head>CMC revival</head><list style="ul">
+<item>Next meeting is scheduled for 2022-04-25. Jessica Lu has been invited, but says she probably will not have the time to attend.</item>
+</list></div><div type="h2"><head>TCW 32</head><list style="ul">
+<item>As a technical council working paper, intended for ourselves.</item>
+<item>SB proposes that we seem to be too busy to work on this now, but he is eager to get it published. Thus he suggests he can publish it somewhere on Northeastern DSG website; If Council wants to review and improve it later we can move it to a published TEI document later.</item>
+<item>Discussion: Why not just publish it from TEI space now?
+<list style="ul">
+<item>It still needs proofreading and improvement of examples. This can still be done at a later stage.</item>
+<item>Publish it for a general audience along with:
+<list style="ul">
+<item>Lou Burnard’s <ref target="https://teic.github.io/TCW/howtoChain.html">ODD-chaining tutorial</ref></item>
+<item>ODD customization info on the website (which needs to be updated)</item>
+<item>JJ: New section on TEI website:
+<list style="ul">
+<item>How should it be called?  “How Tos”, “Tutorials and Examples”?</item>
+<item>Community members should also be able to post workshop materials somewhere (this needs further discussion).</item>
+<item>Should we point to elsewhere, or archive them in our own space?</item>
+<item>Is there a linkchecker for the TEI website?</item>
+<item>Sections for internally developed resources as well as links to external resources.</item>
+<item>i18n group is also thinking of introductory materials which should be linked from internationalized landing pages.</item>
+</list>
+</item>
+<item>Where should we put TCW32 and Lou Burnard’s document on ODD chaining?
+<list style="ul">
+<item>Under Support/Learn the TEI: <ref target="https://tei-c.org/support/learn/">https://tei-c.org/support/learn/</ref></item>
+<item>Reorganize the drop-down submenu under support? Start the submenu with “Learn the TEI…”, possibly retitle it? Submenu and subpages.
+<list style="ul">
+<item>Learn the TEI (also deal with its duplicate linkage from Guidelines: remove it)</item>
+<item>Advance Your Skills</item>
+</list>
+</item>
+<item><hi style="b">Action on JJ by 2022-04-07: </hi>decide on this, share with Council at the next meeting on<hi style="b"> Friday April 8</hi>.</item>
+</list>
+</item>
+</list>
+</item>
+</list>
+</item>
+</list></div><div type="h2"><head>Languages in ODD chaining</head><list style="ul">
+<item>HBS, MH, and SB provided “three unresolved questions”: <ref target="https://wiki.tei-c.org/index.php?title=New_ODD_processing#unresolved_questions">https://wiki.tei-c.org/index.php?title=New_ODD_processing#unresolved_questions</ref></item>
+<item>Summary of the discussion:
+<list style="ul">
+<item>All transformations prior to the output of RNG or HTML at the end of the chain should preserve all language versions of <gi>gloss</gi>, <gi>desc</gi>, and <gi>remarks</gi>, even those which are technically obsolete per their @versionDate attributes.</item>
+<item>A final rendering process should use elements in the specified docLang, EVEN THOSE WHICH ARE OUTDATED, in preference to English, but should fall back to English where nothing is available in the target language.</item>
+<item>If the chain originates with P5, then English is special, because it’s the canonical language of the base schema. But I like PS’s suggestion that a language should be declared as canonical for a schema, and where no element exists in that language, an error could be raised.</item>
+<item>Council Discussion:
+<list style="ul">
+<item>@targetLang (not being useful, XSLT processing isn’t supporting what it’s supposed to be for: to output tags in another language. XSLT only works on glosses in @targtLang). What we use for that is <gi>altIdent</gi> usually. But should @targetLang be supported and worked on? Council discussion: the <hi style="i">Guidelines</hi> should not preclude the use of @targetLang, but we do not further process it.</item>
+</list>
+</item>
+</list>
+</item>
+</list></div><div type="h2"><head>Access to Slack</head><list style="ul">
+<item>David Maus agreed to join the Stylesheets Task Force.</item>
+<item>SB asked if it is okay to invite him to TEI areas of Slack.</item>
+<item>Not possible to restrict him to just the #atop channel; he’d need to be in #general first. Council thinks this is fine, no reason not to invite David and similar people to our Slack space. <hi style="b">Action on SB by 2022-04-03 </hi>to invite David Maus to Slack.</item>
+</list></div><div type="h2"><head>Oxygen issues</head><list style="ul">
+<item>Martin Holmes would like us to discuss: &lt;<ref target="https://github.com/TEIC/oxygen-tei/issues/54">https://github.com/TEIC/oxygen-tei/issues/54</ref>&gt; and&lt;<ref target="https://github.com/TEIC/TEI/issues/2251">https://github.com/TEIC/TEI/issues/2251</ref>&gt;
+<list style="ul">
+<item>We have been caught unawares by Oxygen updates. See <ref target="https://lists.tei-c.org/pipermail/tei-council/2022-April/027092.html">Martin’s email</ref> of 2022-04-01.</item>
+</list>
+</item>
+<item><ref target="https://github.com/TEIC/TEI/issues/464">https://github.com/TEIC/TEI/issues/464</ref>– Need for some way to test the oxygen-tei package before release</item>
+<item>EBB suggests that Council needs a tutorial from MH (or someone else — SB suggests perhaps Elli Mylonas would be reasonable)
+<list style="ul">
+<item>We have to think about this every time <hi style="i">we</hi> do a release.</item>
+<item>We have to pay attention every time <hi style="i">oXygen</hi> does a new release.</item>
+<item>So we need some knowledge transfer.</item>
+<item>Can we use the Stylesheets meeting time?</item>
+<item><hi style="b">Action on HBS by 2022-04-15</hi> to organize time with MH.</item>
+</list>
+</item>
+</list></div><div type="h2"><head><ref target="#issues-october">Review issues from October meeting</ref></head></div><div type="h2"><head xml:id="issues-october">Issues from the October meeting</head><p>Issues from the October meeting discussed by group B (European Group: MS, PS, MT, HBS) but on which no final decision was by the plenary.</p><table>
+
+<row>
+<cell>No.</cell>
+<cell>Group</cell>
+<cell>Title</cell>
+<cell>Comment</cell>
+</row>
+<row>
+<cell>#2110</cell>
+<cell>B</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/2110">Ruby: Multiple ruby streams in the same orientation</ref></cell>
+<cell><p>2021-10: subgroup proposes to add those examples to the Guidelines but refrains from adding “right-right” or similar to suggested values of @place. If one is interested into detailing topographic information, use @facs on <gi>rt</gi>. Or, when not wanting to rely on a document sequence, use @n in addition</p>
+<p>2022-04-02: Council discussion: Perhaps the representation of @place is very document-specific. As Guidelines Examples they could be misleading: encourage people to customize. But how do we respond to the original ticket, which asks how to handle two distinct ruby streams?</p>
+<list style="ul">
+<item>Should we provide both alternatives: nested and non-nested? Or recommend the nested solution only?</item>
+<item>If sequence is important, right-right conveys valuable information.</item>
+<item>Does the @place attribute refer only to the page, not to the sibling or parent? Answer: att.placement refers to place OR textual object.</item>
+<item>Comment added to ticket: favor the nested approach.</item>
+</list>
+</cell>
+</row>
+<row>
+<cell>#2111</cell>
+<cell>B</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/2111">Ruby Schematron rules result in warnings</ref></cell>
+<cell><p>2021-10: maybe leave the constraint at the attribute level but introduce a sch:rule with context to remedy these warnings, like &lt;sch:rule context=”tei:rt[@target]”&gt;</p>
+<p>&lt;sch:report test=”@from | @to”&gt;When target= is</p>
+<p>present, neither from= nor to= should be.&lt;/sch:report&gt;</p>
+<p>&lt;/sch:rule&gt;</p>
+<p>still, file a bug report to the STF project</p>
+<p>2022-04-02: Council agrees: Action on SB and HBS to file bug report.</p></cell>
+</row>
+<row>
+<cell>#2114</cell>
+<cell>B</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/2114">@lang attributes missing in HTML output</ref></cell>
+<cell><p>2021-10: mark yellow green and stick with the language issues (no further improvements to accessibility yet). This should be a different ticket.</p>
+<p>SB: Could someone from the European subgroup explain the above comment a bit further? What is yellow “needs discussion” about this, and what should be a different ticket?</p>
+<p>2022-04-02: Council discussion: @xml:lang should be output on HTML elements. It requires Stylesheets work, but link to that work on this ticket. Greenlight, no yellow.</p></cell>
+</row>
+
+</table></div><div type="h2"><head xml:id="current-issues">Guidelines issues</head><p>Group A: (HC), EBB, JJ, SB, RV
+Group B: PS, HBS, MS, SS, EB</p><table>
+
+<row>
+<cell>No.</cell>
+<cell>Group</cell>
+<cell>Title</cell>
+<cell>Comment</cell>
+</row>
+<row>
+<cell>#2137</cell>
+<cell>B</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/2137">bookmark links in examples pages have no mouse-over text</ref></cell>
+<cell>E subgroup proposes to 1) add @rel=”bookmark” and @aria-label on HTML output <gi>a</gi>. Consider opening a new issue for citation recommendation (issue with this is which link should be in the citation recommendation, the current release or stable link to the Vault).</cell>
+</row>
+<row>
+<cell>#2138</cell>
+<cell>B</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/2138">Bookmark links from non-English examples don’t link to bibliography</ref></cell>
+<cell><p>HBS thinks that this is actually the same problem as <ref target="https://github.com/TEIC/TEI/issues/2106">#2106</ref></p>
+<p>E subgroup closed as duplicate</p></cell>
+</row>
+<row>
+<cell>#2139</cell>
+<cell>A</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/2139">Another example for langKnown</ref></cell>
+<cell>see PR</cell>
+</row>
+<row>
+<cell>#2140</cell>
+<cell>B</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/2140">Example needed to model attList for delimiting alternative groupings of attributes</ref></cell>
+<cell>E subgroup thinks this is great and should be added to the Guidelines <hi style="b">after</hi> the Stylesheets have been prepared to support both the HTML output and the overriding of @type &amp; @subtype as mentioned on the ticket. For the HTML output there’s already a <ref target="https://github.com/TEIC/Stylesheets/issues/506">ticket</ref> but for the overriding we need one.</cell>
+</row>
+<row>
+<cell>#2144</cell>
+<cell>B</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/2144">wrong attribution for example</ref></cell>
+<cell>E subgroup proposes (1) to change the whitespace to a hyphen; and (2) to add the same example with @ref instead of @key plus URL as value.</cell>
+</row>
+<row>
+<cell>#2190</cell>
+<cell/>
+<cell><ref target="https://github.com/TEIC/TEI/issues/2190">Should we revise datatypes related to sex and gender?</ref></cell>
+<cell>This is related to issue #2189: <ref target="https://github.com/TEIC/TEI/issues/2189">Create a gender element</ref> which is yellow and green</cell>
+</row>
+<row>
+<cell>#2209</cell>
+<cell>A</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/2209">description of <gi>listRef</gi> mildly misleading</ref></cell>
+<cell>NA subgroup assigns EBB to re-word the <gi>remarks</gi> then make PR. (1st sentence to set the conditions, next sentence(s) to list the constraints.)</cell>
+</row>
+<row>
+<cell>#2213</cell>
+<cell/>
+<cell><ref target="https://github.com/TEIC/TEI/issues/2213">att.datable.custom is under-documented in the Guidelines</ref></cell>
+<cell>This issue will be discussed on Saturday in the full Council session</cell>
+</row>
+
+</table></div><div type="h2"><head xml:id="pull-requests">Guidelines Pull requests</head><table>
+
+<row>
+<cell>No.</cell>
+<cell>Group</cell>
+<cell>Title</cell>
+<cell>Comment</cell>
+</row>
+<row>
+<cell><ref target="https://github.com/TEIC/TEI/pull/1996">#1996</ref></cell>
+<cell>A</cell>
+<cell><ref target="https://github.com/TEIC/TEI/pull/1996">align teidata.version with Semantic Versioning Specification, closes #1993</ref></cell>
+<cell>NA subgroup: we (Council) need to poke PS. For the 2nd bullet point we think this should be a “soft” requirement: Just recommend that @version matches; don’t actually validate it.</cell>
+</row>
+<row>
+<cell><ref target="https://github.com/TEIC/TEI/pull/2069">#2069</ref></cell>
+<cell>A</cell>
+<cell><ref target="https://github.com/TEIC/TEI/pull/2069">Warn if an attDef with a non-colonized @ident has a @ns attribute</ref></cell>
+<cell>NA subgroup suggests a solution involving @ident and @altIdent when we specify the @ns, that solves the problem (we think) without changes required to TEI/Stylesheets. SB uploaded a sample ODD file.</cell>
+</row>
+<row>
+<cell><ref target="https://github.com/TEIC/TEI/pull/2143">#2143</ref></cell>
+<cell>A</cell>
+<cell><ref target="https://github.com/TEIC/TEI/pull/2143">new langKnown example + bib ref</ref></cell>
+<cell>NA subgroup: Connected to ticket <ref target="https://github.com/TEIC/TEI/issues/2139">#2139</ref> which needs discussion. Check on #2143 is running; it will take 6 hours. We should ask Stuart Yeates to update his branch with changes from our dev, and make the small change requested. If he doesn’t respond we should recheck this in from a new branch we make.</cell>
+</row>
+<row>
+<cell><ref target="https://github.com/TEIC/TEI/pull/2156">#2156</ref></cell>
+<cell>A</cell>
+<cell><ref target="https://github.com/TEIC/TEI/pull/2156">improve prose, constrain value of global source= attr</ref></cell>
+<cell>NA subgroup discovers that sch:let is not permitted as a child of <gi>constraint</gi>, and that is the reason tests are failing. We think this is very strange, especially because our schema says it’s allowed.</cell>
+</row>
+<row>
+<cell>#2188</cell>
+<cell>B</cell>
+<cell><ref target="https://github.com/TEIC/TEI/pull/2188">Fix #2187, I hope</ref></cell>
+<cell>E subgroup: Left message in the PR regarding the failing of the test.</cell>
+</row>
+<row>
+<cell>#2193</cell>
+<cell>B</cell>
+<cell><ref target="https://github.com/TEIC/TEI/pull/2193">deprecate <gi>altIdent</gi> in bizarre places</ref></cell>
+<cell>E subgroup: Merged</cell>
+</row>
+<row>
+<cell>#2185</cell>
+<cell>B</cell>
+<cell><ref target="https://github.com/TEIC/TEI/pull/2204">Address #2185 by restricting anyURI to not have spaces</ref></cell>
+<cell>E subgroup: address in the afternoon session</cell>
+</row>
+<row>
+<cell>#2233</cell>
+<cell>B</cell>
+<cell><ref target="https://github.com/TEIC/TEI/pull/2233">Translation from susannalles/TEI</ref></cell>
+<cell>E subgroup: added HBS as reviewer</cell>
+</row>
+<row>
+<cell>#2234</cell>
+<cell>B</cell>
+<cell><ref target="https://github.com/TEIC/TEI/pull/2234">Translation from Carmen-Grijalba/TEI</ref></cell>
+<cell>E subgroup: added HBS as reviewer</cell>
+</row>
+<row>
+<cell>#2237</cell>
+<cell>B</cell>
+<cell><ref target="https://github.com/TEIC/TEI/pull/2237">Translation from PRibas65/TEI</ref></cell>
+<cell>E subgroup: added HBS as reviewer</cell>
+</row>
+<row>
+<cell>#2240</cell>
+<cell>B</cell>
+<cell><ref target="https://github.com/TEIC/TEI/pull/2240">Translation from Patrymigallon/TEI</ref></cell>
+<cell>E subgroup: added HBS as reviewer</cell>
+</row>
+<row>
+<cell>#2243</cell>
+<cell/>
+<cell><ref target="https://github.com/TEIC/TEI/pull/2243">Update to #2206:</ref></cell>
+<cell>E subgroup: merged</cell>
+</row>
+<row>
+<cell>#2245</cell>
+<cell>B</cell>
+<cell><ref target="https://github.com/TEIC/TEI/pull/2245">Translation from CarmendeSantiago/TEI</ref></cell>
+<cell>E subgroup: added HBS as reviewer</cell>
+</row>
+
+</table><p> </p></div></div></body><!-- #post-## --></text></TEI>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/home/lou/Public/TEI/TEICSS/tei.css" type="text/css"
+ ?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:t="http://www.tei-c.org/ns/1.0" n="2022-01"><teiHeader><fileDesc><titleStmt><title>Minutes of the TEI Technical Council</title><meeting n="2022-01" when="2022-01-14">TEI Technical Council online
+     meeting : <date>14 January 2022</date></meeting></titleStmt><publicationStmt><distributor>TEI Website</distributor><idno>TCM149</idno></publicationStmt><sourceDesc><p>Retagged from a WordPress HTML file</p></sourceDesc></fileDesc><revisionDesc><change when="2023-04-25">Archival header confected</change><change>Extracted from Word Press article with id post-31239</change></revisionDesc></teiHeader><text><body><div><p><hi style="strong"> Meeting Times:</hi></p><list style="ul">
+<item>15:00Z / 7am PST / 10am EST / 3pm BST / 4pm CEST</item>
+<item>Started:     15:06Z    Ended:    16:31Z</item>
+</list><p><hi style="strong">Present:</hi></p><list style="ul">
+<item>Syd Bauman (SB)</item>
+<item>Helena Bermúdez Sabel (HBS)</item>
+<item>Elisa Beshero-Bondar (EBB)</item>
+<item>Elli Bleeker (EB)</item>
+<item>Hugh Cayless (HC)</item>
+<item>Janelle Jenstad (JJ)</item>
+<item>Martina Scholger (MS, Chair)</item>
+<item>Sabine Seifert (SS)</item>
+<item>Peter Stadler (PS)</item>
+<item>Magdalena Turska (MT, left @ ~16:00Z)</item>
+<item>Raff Viglianti (RV)</item>
+</list><p>Meeting minutes previous month (<ref target="https://tei-c.org/activities/council/meetings/tei-technical-council-teleconference-2021-12-09/">December</ref>)</p><p> </p><div type="h2"><head>Welcome to new members: SS &amp; EB</head></div><div type="h2"><head>New meeting times</head><list style="ul">
+<item>Every second Friday of the month, 15:00 UTC</item>
+</list></div><div type="h2"><head>Stylesheets meeting times</head><list style="ul">
+<item>Every 4th Friday of the month, also 15:00 UTC (Sorry, Martin Holmes)</item>
+</list></div><div type="h2"><head>(V)F2F meeting 2022</head><list style="ul">
+<item>Friday, April 1: North American group, 20:00–23:00 UTC</item>
+<item>Saturday, April 2: European group, 9:00–12:00 UTC</item>
+<item>Saturday, April 3: Full Council, 14:00–18:00 UTC</item>
+</list></div><div type="h2"><head>Stylesheets Task Force</head><list style="ul">
+<item>EBB, HBS, JJ, and SS have not yet written the charge for the task force.</item>
+<item>EBB will arrange a Zoom for charge-writing.</item>
+<item>Newly due on <hi style="b">Fri 28 Jan 22</hi></item>
+<item>Suggestion: add reference to Martin Holmes’ paper from the last TEI conference, if it is available; if not, perhaps include pointer to his slides or copy over some of his key points</item>
+<item>JJ has asked Martin Holmes for his paper and/or slides</item>
+</list></div><div type="h2"><head>Need new Chair for the Stylesheets Group</head><list style="ul">
+<item>PS is not available</item>
+<item>One possibility—ask NC</item>
+<item>HBS available, but dubious about performing the “which ticket” portion</item>
+<item>Suggestion to have SB assist HBS for next few months</item>
+</list></div><div type="h2"><head>Brown LISTSERV</head><list style="ul">
+<item>Elli Mylonas has retired from Brown U. We should think of migrating TEI-L from Brown.
+<list style="ul">
+<item>SB has checked in with Peter DiCamillo, the Brown University Listmaster: he’ll be there for 2 more years, and is a friend of the TEI. We can keep the list for another year or 2, but after that would either have to find someone at Brown to take it over or move it elsewhere.</item>
+<item>E.g., migrate to something controlled by TEI on the TEI HumaNum server (something we have always wanted to do).</item>
+<item>PS: our lists are scattered, and we should consolidate them. tei-council list is running from ADHO, for example. Infrastructure group should take this on. Migration is a big charge.</item>
+<item>SB &amp; Kevin Hawkins were involved in the last attempted migration ~10 years ago.</item>
+<item>Board should be involved.</item>
+<item>Consider the choice of server carefully—choosing a Listserv server will make the migration much easier.</item>
+<item>Conversion of Listserv to Mailman is a non-trivial migration challenge. Challenge is moving list of subscribers and archive (which is in a plain-text, but non-standard format).</item>
+<item><hi style="b">Action on MS</hi> to take this to the Infrastructure Group + Board next week, form a task force to investigate the options.</item>
+</list>
+</item>
+</list></div><div type="h2"><head>TCW32</head><list style="ul">
+<item>Checking pointers document: <ref target="https://docs.google.com/document/d/1nAi_6pB1ayTV3SYAsrf8InKL1T5n8DAdgdhf-o5RSM8/edit?pli=1">https://docs.google.com/document/d/1nAi_6pB1ayTV3SYAsrf8InKL1T5n8DAdgdhf-o5RSM8/edit?pli=1</ref>
+<list style="ul">
+<item>testing examples #10 and #15 (EBB completed #10, will complete #15 in Dec)</item>
+<item>testing examples #17, #18, #19 (now MS, HBS, and HBS, respectively)</item>
+<item>proofreading prose (JJ is still working on it)</item>
+<item>MS &amp; SB need to talk about errors example #09 (and #08) (SB &amp; MS)</item>
+<item>Checking over the entire document (JC)</item>
+<item>work on #11 and new, similar but more thorough, example (SB &amp; RV)</item>
+<item>SB is writing a special-purpose XSL driver &amp; CSS stylesheet, because it looks so awful out of the standard Stylesheets.</item>
+<item>Publish end of February</item>
+</list>
+</item>
+</list></div><div type="h2"><head>AOB</head><list style="ul">
+<item>HC agreed to present the translation tool at the next meeting.</item>
+</list></div><div type="h2"><head>Issues from SVF2F meeting</head><table>
+
+<row>
+<cell>No.</cell>
+<cell>Group</cell>
+<cell>Title</cell>
+<cell>Comment</cell>
+</row>
+<row>
+<cell>#2067</cell>
+<cell>A</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/2067">@assertedValue of <gi>certainty</gi> should also accept pointers</ref></cell>
+<cell><p>Subgroup prompts original poster to respond to SB comment of 2020-12-13</p>
+<p>Council → 2022-01-14: Original poster has responded and likes SB’s idea. How to implement? customization ODD or Branch? SB will figure this out, leaning to customization ODD.</p></cell>
+</row>
+<row>
+<cell>#2072</cell>
+<cell>A</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/2072">change the content model of exemplum</ref></cell>
+<cell><p>Subgroup suggestion: Let’s introduce exemplumGrp because we have a considerable number of exempla with accompanying prose. Also this is analogous to noteGrp, etc. But this might open up a can of worms for processing.</p>
+<p>Council → 2022-01-14: Closing ticket. Consolidating work on #1933 to implement exemplumGrp</p></cell>
+</row>
+<row>
+<cell>#2084</cell>
+<cell>A</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/2084">moderately problematic issues in SATS</ref></cell>
+<cell><p>Subgroup suggests additional Council members join HC in reviewing the checklist, especially RV (if available).</p>
+<p>Council → 2022-01-14: poke HC</p></cell>
+</row>
+<row>
+<cell>#2085</cell>
+<cell>A</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/2085">re-defining Node in SATS?</ref></cell>
+<cell><p>ditto</p>
+<p>Council → 2022-01-14: poke HC</p></cell>
+</row>
+<row>
+<cell>#2086</cell>
+<cell>A</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/2086">uber-ticket for SATS</ref></cell>
+<cell><p>ditto [here be dragons]</p>
+<p>Council → 2022-01-14: poke HC</p></cell>
+</row>
+<row>
+<cell>#2090</cell>
+<cell>B</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/2090">per-document defaults (of attribute values)</ref></cell>
+<cell><p>totally sensible workflow-wise but do we need it in the standard? This introduces some convenience but not something meaningful from a modelling perspective.</p>
+<p>Council → 2022-01-14: reconsider for P6</p></cell>
+</row>
+
+</table><p> </p></div></div></body><!-- #post-## --></text></TEI>

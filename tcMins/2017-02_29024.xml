@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/home/lou/Public/TEI/TEICSS/tei.css" type="text/css"
+ ?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:t="http://www.tei-c.org/ns/1.0" n="2017-02"><teiHeader><fileDesc><titleStmt><title>Minutes of the TEI Technical Council</title><meeting n="2017-02" from="2017-02-05" to="2017-02-07">TEI Technical
+     Council ftf meeting : <placeName>Prague</placeName>, <date>5–7 February 2017</date></meeting></titleStmt><publicationStmt><distributor>TEI Website</distributor><idno>TCM088</idno></publicationStmt><sourceDesc><p>Retagged from a WordPress HTML file</p></sourceDesc></fileDesc><revisionDesc><change when="2023-04-25">Archival header confected</change><change>Extracted from Word Press article with id post-29024</change></revisionDesc></teiHeader><text><body><div>
+		
+		<div type="h3"><head>Topics for Discussion</head><list style="ul">
+<item>Roma replacement (RV asks if we can find room in the agenda (1 hour or so) to go over some <ref target="https://docs.google.com/presentation/d/1sUESuY9pF3DkHoQMJJjrVMV2SPFQYE1YqmGrpA3wrMM/edit?usp=sharing">RomaJS wireframes</ref>(UI)) (Sunday AM)</item>
+<item>SB: New ODD processor for the Guidelines? (with Martin Holmes) (16:00 Monday)</item>
+<item>RV: Researching Chapter 11 <ref target="https://www.tei-c.org/release/doc/tei-p5-doc/en/html/PH.html">http://www.tei-c.org/release/doc/tei-p5-doc/en/html/PH.html </ref>(Sunday AM after Roma)</item>
+<item>Finally resolving Package Distribution (16:00)</item>
+<item>SB: Report on, and new partner for, work on <ref target="https://www.tei-c.org/release/doc/tei-p5-doc/en/html/CH.html">Chapter vi. Languages and Character Sets </ref>? (Monday after TEI2German)</item>
+<item>Getting TEI into other XML Editors (Tuesday 09:00)</item>
+<item>TEI2German (MS to report on translatathon) (Monday 09:00)</item>
+<item>What else are we going to do with the Processing Model besides TEI simplePrint? (Tuesday 09:–, after Other XML Editors)</item>
+<item>Tickets</item>
+</list></div>
+<div type="h3"><head>Sunday, 5 Feb</head><p>Meeting started @ ~09:20 local time</p><p><hi style="b">Attending:</hi></p><p>Alejandro Bia (AB)</p><p>Syd Bauman (SB)</p><p>Elisa Beshero-Bondar (EB)</p><p>Hugh Cayless (HC)</p><p>James Cummings (JC)</p><p>Elli Mylonas (EM)</p><p>Martina Scholger (MS)</p><p>Peter Stadler (PS)</p><p>Sarah Stanley (SS)</p><p>Magdalena Turska (MT)</p><p>Raffaele Viglianti (RV)</p><list style="ul">
+<item>Council takes this opportunity to acknowledge the absence of Lou Burnard — this is the first Council meeting which he has not attended since the founding of TEI Council, and he had worked for the TEI for at least 10 years before that. Thus we would like to publicly thank Lou for his tireless wisdom and leadership.</item>
+</list><p>09:00–09:30: Convene, set agenda</p><list style="ul">
+<item>Council convenes and sets agenda in draft</item>
+<item>Curating Council minutes:
+<list style="ol">
+<item>Minutes are still in Google Docs from Oct/Nov onward</item>
+<item>New TEI webmaster, Luis Meneses; can reach both Kevin and Luis on the <ref target="mailto:web@tei-c.org">webmaster e-mail </ref>.</item>
+</list>
+</item>
+<item>TICKETS!</item>
+</list><p>09:30–12:30:</p><list style="ul">
+<item>Roma replacement: <ref target="https://docs.google.com/presentation/d/1sUESuY9pF3DkHoQMJJjrVMV2SPFQYE1YqmGrpA3wrMM/edit?usp=sharing">RomaJS wireframes</ref>
+<list style="ol">
+<item>RV reports on development of RomaJS. Using technologies ‘react’ similar to what is behind facebook, etc. He has been sketching out the processes and actions needed without worrying too much about the front end. Now he needs to think about UI. He has created some wireframes.</item>
+<item>JC: Can we store decision tree separate from the ODD Editor implementation? RV: Not sure yet: Could be JSON or XML</item>
+<item>MT: I think we should aim to make it configurable. Every question positively answered should probably result in an element or module or set thereof to be included. Take some time to work out the questions for “Help me decide”. EM: Prior to decision tree, do some customizing of modules first.</item>
+<item>RV: We could divide up the work of the decision tree/ customization process. Questions should be Y/N and about the user’s project.</item>
+<item>Option to load any ODD that is accessible via a URL</item>
+<item>Application runs totally in browser, other than what OxGarage does, which is server side. -RV hasn’t tested validation yet (via ODD for ODDs). (JC and HC: This is not the same as the old “sanity check”, which walked the graph to look for orphan elements without modules). SB: What approaches can we take to validating the schema?</item>
+<item>RV: Related problem: Pure ODD vs RELAX NG. PS: Drop it and just support ODD. SB: Might be good if the system could tolerate RELAX NG output. HC: If it’s hard to implement, probably not worth the effort. Just make sure to retain a modular architecture, get a simple robust implementation to begin with and add other bits later. JC: Conformance can’t be tested fully. But we can note conformance errors. Statistics: also count modules/elements/classes/etc.</item>
+<item>AB: Roma: handling of language (for different purposes) was unclear in Roma’s interface. There are three different uses of language: language of Roma’s interface, language of the element glosses (generated documentation), and language of the generated schema (use TEI tags in LOTAs). The last may have never been implemented into Roma. SB: Descriptions should be in language of choice. The gloss description is what should be customizable (not element names). MS and AB: Clarify the distinction between the Language of element glosses (documentation) and language of the application interface (unclear in Roma). May not build ability to change interface language right away. Roma does this, but won’t be easy to use Roma’s tables for translations. Keep interface language choice separate from the customization forms (e.g. top right of the window). Allow choice for element documentation language. HC: A flag = standard icon for documentation now.</item>
+<item>SB: Support dependencies of elements (e.g. if user selects addrLine, automatically include address): for any element with only one parent, make sure that parent exists. Or check for any element, make sure that at least one of its possible parents exists. (This is what the old sanity check used to do—check for orphans.)</item>
+<item>EM: Should interface show you whether a parent exists? PS: Merge modules + elements. Also choice of working by inclusion vs. exclusion. SB: Capability of loading an ODD and changing it, module by module, from include to exclude. PS: Interface should prioritize the decisions that 80% of users will be making: just select modules and make closed valLists. Adding new elements is for advanced users. RV: The interface can make suggestions: (what next? Close your valList?) MS: Simplify the first interface page to be welcoming to new users: 2 choices, not 4 (Help me Decide | Everything Else).</item>
+<item>For modifying elements: SB: suggestion, just concentrate on elements and not modules. RV: Search boxes let you hunt for an element or attribute, and pull up info on classes. HC: Good to push people into the Guidelines as much as possible. SB: graphically represent hierarchy of classes.</item>
+<item>PS: how to point to documentation from other customizations? EB: Allow users to import? RV and JC: certain standard customizations could have some basic documentation worked in.</item>
+<item>Documentation will be live-updated as Guidelines change. User can customize Guidelines examples.</item>
+<item>Show the code you’re generating: “XML view” vs. “Edit view” so users can see/interact with code. “Groups”: Try drag ‘n drop to set up alternating elements or elements in sequence.</item>
+<item>Attribute definitions: Specifying datatypes: SB: we could provide closed list; PS and EB: new users need to learn what datatypes are—need linked documentation. SB: should be able to see/modify what elements hold an attribute. May need to break up element classes and model classes (users frequently don’t understand the distinction, and think of attributes as just sitting on particular elements)</item>
+<item>HC: Get TEI to hire a UX expert to help? EM: Need a UX designer who is accustomed to complex technical decisions for knowledgeable people (not one who builds a shopping interface).</item>
+<item>Organization: EB: Much of this may be reproducing and remixing the Guidelines. Discussion: this will be helpful for people to read in process of implementing). SB: need way to flag which “steps” are optional. EM: How to save midway? RV: Save implementation in browser memory, download ODD at any point.</item>
+<item>Modifying datatypes: need closed val list to conform to a pattern</item>
+<item>Visualizations provide overview by color bars of what/what proportion of modules/elements/classes/datatypes are added vs. changed. Suggestions: be careful of accessibility re colors (and connotations of green vs. red).</item>
+<item>PS: Can we save ODD in progress on server, to make it easy to reference when users needs help? RV: Might be too complicated…JC: Like GitHub and Gist, make a place where user can paste in code…SB: Maybe just upload your saved ODD. PS: Let’s make this as easy as possible: when user clicks “HELP!” a process runs that invites upload/mailing of ODD to Council list, etc. RV: best if it’s not a server-dependent thing. Google Analytics use? Privacy issues: On click, “Do you want to make your ODD public?”</item>
+</list>
+</item>
+<item>RV: Researching Chapter 11 <ref target="https://www.tei-c.org/release/doc/tei-p5-doc/en/html/PH.html">http://www.tei-c.org/release/doc/tei-p5-doc/en/html/PH.html</ref>
+<list style="ol">
+<item><ref target="https://github.com/TEIC/TEI/issues/1427">https://github.com/TEIC/TEI/issues/1427 </ref>: Can we keep the rewriting simple? Or defer so RV can concentrate on romajs?</item>
+<item>Issue of Guidelines’ handling of text-focused vs. document-focused approach. EM: Change name of chapter to deal with primary sources?</item>
+<item>Action on MS: write to Gerrit Bruening about helping with redrafting Ch. 11 for Council review by November 2017 F2F. Report on progress in March meeting.</item>
+</list>
+</item>
+<item>TICKETS!</item>
+</list><p>12:30–13:30: lunch</p><p>13:30–17:00:</p><list style="ul">
+<item>TICKETS.</item>
+<item>Finally resolving Package Distribution (17:00)
+<list style="ol">
+<item>Move to a new distribution point—on the tei-c site.</item>
+<item>Several package systems: which should maintain? Definitely debian. SB: Packages make life easier for wary users.</item>
+<item>PS volunteers to talk to new webmaster to migrate package distribution, and to figure out key situation, test. Need to review and update documentation.</item>
+<item>Currently documented <ref target="https://wiki.tei-c.org/index.php/TEIDebian">on TEI wiki</ref></item>
+<item>Debian package analysis, list of what’s in there <ref target="https://docs.google.com/spreadsheets/d/1w3ObgtqxpwYLrfaF-N0SPTt5X3ITmg2iLa5ZevAg3eE/edit?usp=sharing">https://docs.google.com/spreadsheets/d/1w3ObgtqxpwYLrfaF-N0SPTt5X3ITmg2iLa5ZevAg3eE/edit?usp=sharing</ref></item>
+</list>
+</item>
+</list><list style="ul">
+<item>Decision Tree brainstorming
+<list style="ul">
+<item><ref target="https://docs.google.com/document/d/1r33QbY7O0HqOHvTxZtOq_-MrYqtIE572YqPEY3JrQr0/edit?usp=sharing">Doc with questions</ref></item>
+<item><ref target="https://www.mindmeister.com/840952489?t=2pbfugeKDY">Mind map for graph</ref></item>
+</list>
+</item>
+</list></div>
+<div type="h3"><head>Monday, 6 Feb</head><p>09:00–12:30:</p><list style="ul">
+<item>TEI2German (MS to report on translatathon)</item>
+</list><p>Report: <ref target="https://docs.google.com/document/d/10KOHtX3GvZwN6qgtRhQPw3pIaBL9gyt02bkXbJMwvlg/edit">https://docs.google.com/document/d/10KOHtX3GvZwN6qgtRhQPw3pIaBL9gyt02bkXbJMwvlg/edit</ref></p><p><ref target="https://drive.google.com/open?id=0B1ww0LfaUAcvQXpwd25iVGxETG8">https://drive.google.com/open?id=0B1ww0LfaUAcvQXpwd25iVGxETG8</ref></p><p>Issue with @xml:lang set to “und” in arbitrary(?) ways due to processing.</p><p>Apply Google Translate to help populate international examples, as a stage 1 to prompt work in correction/revision? (Easier than starting from scratch in a new language.)</p><p>“Translate this page” button</p><p>SB: suggestion: make a special GitHub for TEI internationalization</p><p>PS: Make it more openly accessible (not burden on Council), crowd-sourcing TEI translation</p><p>AB: automatic updating of all language exemplars when one is updated—will require some programming to implement.
+</p><p>Where to begin: “Translate this page” to the reference pages first.</p><list style="ul">
+<item><ref target="https://translate.google.com/manager/website/">https://translate.google.com/manager/website/ </ref>may be an option for low-level basic translations for languages we don’t have</item>
+</list><p>===Google embed code for ‘Select Language’ plugin===</p><p><hi style="strong">&lt;div id=”google_translate_element”&gt;&lt;/div&gt;&lt;script type=”text/javascript”&gt;</hi></p><p><hi style="strong">function googleTranslateElementInit() {</hi></p><p><hi style="strong">new google.translate.TranslateElement({pageLanguage: ‘en’, layout: google.translate.TranslateElement.InlineLayout.SIMPLE, multilanguagePage: true, gaTrack: true, gaId: ‘UA-4372657-1’}, ‘google_translate_element’);</hi></p><p><hi style="strong">}</hi></p><p><hi style="strong">&lt;/script&gt;&lt;script type=”text/javascript” src=”//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit”&gt;&lt;/script&gt;</hi></p><p>===</p><p>MS will generate google translations for a few languages (Fr, DE, EL, SP, IT, HE, AR) for about 10 glosses, to look at the quality. The various speakers of these languages in Council will evaluate the translations. If they seem good, we can try to add a “translate with Google” button to the spec pages or parts of the spec pages.</p><list style="ul">
+<item>SB: Report on, and new partner for, work on <ref target="https://www.tei-c.org/release/doc/tei-p5-doc/en/html/CH.html">Chapter vi. Languages and Character Sets </ref>? (Monday after TEI2German)
+<list style="ol">
+<item>HC will work on updating this.</item>
+</list>
+</item>
+<item>TICKETS!</item>
+</list><p>12:30–13:30: lunch</p><p>13:30–16:00:TICKETS!</p><p>16:00–17:00:</p><list style="ul">
+<item>SB: New ODD processor for the Guidelines? (with Martin Holmes from Victoria) (16:00 Monday)
+<list style="ol">
+<item>Council acknowledges the difficulties in maintenance of current stylesheets, due to lack of specs and documentation</item>
+<item>Council in principle supports the idea of a new implementation with a defined specification</item>
+<item>Scope: processing ODD files to create schemas and documentation</item>
+<item>Prerequisites: coming up with specs what are desired outputs</item>
+</list>
+</item>
+</list><p>(all agreeing that using xslt is the best idea)</p><p>MT: how to start? ie the current XSLTs don’t easily give us a full overview because of their complexity</p><p>SB: we don’t want something that mimics what the current s/s do. ie don’t ask: how did sebastian do this, ask instead: what’s the correct implementation according to the guidelines?</p><p>SB: not every step needs to be in XSLT – depending on the task</p><p>MT: one approach would be to start with specs outline and proof of concept implementation, possibly investigating not only XSLT but also XQuery</p><p>as long as things are streamlines, e.g. managed via maven + ant</p><list style="ul">
+<item>TICKETS!</item>
+</list></div>
+<div type="h3"><head>Tuesday, 7 Feb</head><p>09:00–12:30:</p><list style="ul">
+<item><hi style="b">Action item: </hi>Discuss short-form bibliographies, cRef, and @ref on bibl (make sure council reads <ref target="https://github.com/TEIC/TEI/issues/1431">ticket #1431 </ref>before discussion)</item>
+</list><p><ref target="http://jenkins.tei-c.org/job/TEIP5-dev/lastSuccessfulBuild/artifact/P5/">http://jenkins.tei-c.org/job/TEIP5-dev/lastSuccessfulBuild/artifact/P5/ </ref>always has the last build</p><list style="ul">
+<item>ODD for ODD schema
+<list style="ol">
+<item>Schema to facilitate ODD writing (by hand) in a manner that prescribes certain practice; aimed primarily at workshop audience.
+<list style="ol">
+<item>Group thinks this is very impressive</item>
+<item>Suggestion that errors that are ODD for ODD constraints be indicated as non-fatal, or warnings.</item>
+<item>Name – pick one that makes it easier to understand what this is, especially if users encounter it in an Oxygen framework list.</item>
+</list>
+</item>
+</list>
+</item>
+</list><p><hi style="i">Discussion: </hi>JC: is this something that Council wants to adopt and support? It represents a particular view of ODD writing. It also implies continued maintenance. So we should actively decide to take it on or not. SB replies that the build process is very simple now, could be part of build process. PS will it have tests?</p><p>Need to resolve: naming, whether to put in in Exemplars and/or somewhere else, and testing. How to indicate what it’s for in oXygen: a template. <hi style="b">Action on SB:</hi> have in oXygen build and present on this at TEI Members’ Meeting.</p><p>URLs:</p><list style="ul">
+<item><ref target="http://www.wwp.neu.edu/outreach/seminars/_current/handouts/ODD_exercise_support/schemas/odd4odds.html">HTML documentation</ref></item>
+<item><ref target="http://www.wwp.neu.edu/outreach/seminars/_current/handouts/ODD_exercise_support/schemas/odd4odds.rnc">RELAX NG (compact syntax)</ref></item>
+<item><ref target="http://www.wwp.neu.edu/outreach/seminars/_current/handouts/ODD_exercise_support/schemas/odd4odds.isosch">Schematron</ref></item>
+<item><ref target="http://www.wwp.neu.edu/outreach/seminars/_current/handouts/ODD_exercise_support/toctoc_generation/TEI_to_odd4odds.xslt">XSLT that generates ODD file</ref></item>
+</list><list style="ul">
+<item>Getting TEI into other XML Editors (Tuesday morning) (skip?)
+<list style="ol">
+<item>XMLmind (<ref target="http://www.xmlmind.com/xmleditor/"> http://www.xmlmind.com/xmleditor/ </ref>), XML copy editor
+<list style="ol">
+<item><hi style="b">Action on AB:</hi> Alex tries to contact them</item>
+</list>
+</item>
+</list>
+</item>
+<item>What else are we going to do with the Processing Model besides TEI simplePrint? (Tuesday morning, after Other XML Editors)
+<list style="ol">
+<item>Models not directly tied to elementSpecs (<hi style="b">Action on MT</hi> to open a ticket)
+<list style="ol">
+<item>Specify a default model?</item>
+<item>Models for text nodes? Add model to schemaSpec…</item>
+</list>
+</item>
+<item>Planned extensions to models (report on work-in-progress ideas by MT)
+<list style="ol">
+<item>outputRendition to cover other media types/languages beyond CSS (eg document-level settings for XSL-FO)</item>
+<item>nested models or parametrized templated to accommodate more complex output structures</item>
+</list>
+</item>
+<item>JC noted that there were two large pieces of work based on processing model developments:
+<list style="ol">
+<item>Create much better XSLT output from it (e.g. with simplePrint) — high quality output was always one of the aims</item>
+<item>In rewriting/improving Stylesheets for Guidelines production: use processing model internally to the Guidelines build process to determine its output</item>
+</list>
+</item>
+<item>Marjorie Burghart suggests a funded task force for an exemplar ODD like simplePrint that includes critical apparatus (with medieval manuscripts as its first target area) called simpleCritApp or similar. This group (JC, MT, MB) – very fresh idea, it will develop. Proposal will appear following small group discussion.</item>
+</list>
+</item>
+</list><list style="ul">
+<item>Standoff element / Linked Data Block
+<list style="ol">
+<item>Seems to be general consensus that we want this.</item>
+<item>Previous standoff proposal? PS: haven’t been in contact with Laurent, so no progress at the moment: <ref target="https://github.com/laurentromary/stdfSpec">https://github.com/laurentromary/stdfSpec </ref>Is standoff enough?</item>
+<item>Do we need a separate initiative for <gi>ldb</gi>?
+</item>
+</list>
+</item>
+<item>SIG/workgroup/task force idea for Integrating other Vocabularies into TEI (MS and EB)
+<list style="ol">
+<item>JC: Isn’t there already a SIG on Text and Graphics? EB: SIG needs to be revived: emphasis from lone active member at the moment is on figural placement on page, not semantics of image. JC: Can’t you change the SIG focus? It has been fairly inactive.</item>
+<item>Need better examples to support other vocabularies (SVG, IIIF, GIS vocabs), taking into account what other vocabularies exist and how to integrate them with TEI</item>
+<item>Need to get in contact with reps of other vocabs. RV: Identify people who work with TEI and SVG/IIIF, etc. Martin Holmes, Jeff Witt, RV, MS, etc. Make presentation to Text and Graphics SIG? Or take it over?</item>
+<item><ref target="https://listserv.brown.edu/?A0=TEI-GRAPHICS-SIG">The SIG list </ref>has not had much activity, but <ref target="https://listserv.brown.edu/?A2=TEI-GRAPHICS-SIG;5fb3bb40.1610">the last msg</ref>refers to several tickets.</item>
+<item>RV: propose something for TEI Conference? Or speak to relevant SIGs (Manuscripts SIG, Text and Graphics) EM: Perhaps emphasis should be on integrating standards rather than IIIF in particular. RV: Perhaps a Council presentation to membership. (SB question: With or without program-committee/peer review endorsement?) HC: could be either, we have to make up our minds what we want</item>
+<item><hi style="b">Two actions for TEI Conference</hi>
+<list style="ol">
+<item>Get SIG (communicate with Martin de Iglesias) to sponsor workshop with open call for participants and</item>
+<item>Organize a Council-selected panel of authorities on vocabularies</item>
+</list>
+</item>
+</list>
+</item>
+</list><p><ref target="http://teic.github.io/TCW/testing_and_building.html">http://teic.github.io/TCW/testing_and_building.html </ref>has instructions for installing Docker and using it to build the Guidelines and Stylesheets.</p><list style="ul">
+<item>TICKETS!</item>
+</list><p>13:30–lunch</p><div type="h3"><head>Wednesday 8 February</head><p>The public day will take place on <hi style="bold">February 8th 2017</hi> at the Faculty of Arts, Charles University, <hi style="bold">room P104 (first floor), nám. Jana Palacha 2, Praha 1 </hi>( <ref target="https://goo.gl/maps/h9ej1k34ak42">map </ref>).</p><p><ref target="http://www.ff.cuni.cz/methodologies-in-dh/">http://www.ff.cuni.cz/methodologies-in-dh/</ref></p></div><div type="h3"><head>Discussion topics unresolved (from the whole week)</head><p>(Listing all the things we didn’t get around to here)</p><list style="ul">
+<item>Decision Tree brainstorming
+<list style="ul">
+<item><ref target="https://docs.google.com/document/d/1r33QbY7O0HqOHvTxZtOq_-MrYqtIE572YqPEY3JrQr0/edit?usp=sharing">Doc with questions</ref></item>
+<item><ref target="https://www.mindmeister.com/840952489?t=2pbfugeKDY">Mind map for graph</ref></item>
+</list>
+</item>
+<item>Discuss short-form bibliographies, @cRef, and @ref on bibl (make sure council reads <ref target="https://github.com/TEIC/TEI/issues/1431">ticket #1431 </ref>before discussion)</item>
+<item>Follow up for <ref target="https://github.com/TEIC/TEI/issues/1453">ticket #1453</ref></item>
+<item>“ODD for ODDS”
+<list style="ul">
+<item>Rename
+<list style="ul">
+<item>TOCTOC (TEI ODD customization for TEI ODD customization)</item>
+<item>tei_customization</item>
+</list>
+</item>
+<item>Tests?</item>
+<item>Decide where it goes (Exemplars/? elsewhere?).</item>
+<item>Do we adopt and support it? What are the plans for maintenance?</item>
+<item>How to frame/market so that it is clear what it is for.</item>
+</list>
+</item>
+<item>Getting TEI into other XML Editors (discuss during future call; AB to contact people at <ref target="http://www.xmlmind.com/xmleditor/">XMLMind </ref>)</item>
+<item>Standoff element (specifically, <ref target="https://github.com/laurentromary/stdfSpec">this </ref>) and the Linked Data Block</item>
+</list><div type="h4"><head>Bugs Needing Discussion</head><p>Groups:</p><p>A: MS, SS, EBB, SB</p><p>B: JC, HC, EM, AB</p><p>C: PS, RV, MT</p><p><!--<div/>-->“&gt;<gi>listRelation</gi> as child element of <gi>body</gi>Add listRelation to model.listLike;</p><p>JC suggests this is an example of the “<hi style="bold">Argumentum ad ‘In inferno ignem quidni?’</hi>” fallacy;</p><p>PUNTING THIS TICKET: suggestion of a new <gi>ldb</gi> element named after Lou, that although it stands for “linked data block” officially, only does so as a cover for Louis Derryck Burnard.</p><p><hi style="strong">C</hi>1542ND<ref target="https://github.com/TEIC/TEI/issues/1542">Extended Structure for <gi>additions</gi></ref>No change. We suggest to use list. If the additions are considered substantial and therefore need more specific encoding, we suggest to encode them directly with msItems within msContents<hi style="strong">A</hi>1534ND<ref target="https://github.com/TEIC/TEI/issues/1534">move sample values from description of gap/@reason to <gi>valList</gi></ref>Semi-open valList (add “deleted”), and type should be data.enumerated – Assign it to Syd<hi style="strong">B</hi>1531ND<ref target="https://github.com/TEIC/TEI/issues/1531">rs should contain q and quote</ref>Suggest giving rs membership in model.qLike. Syd will investigate and report back.<hi style="strong">C</hi>1530ND<ref target="https://github.com/TEIC/TEI/issues/1530">Add <gi>postscript</gi> to att.written, add &lt;handShift/&gt; to global</ref>Allow `@hand` on `postscript`. Agree with @peterstadler that there should be another ticket for moving `handshift` up a level.<hi style="strong">A</hi>1524ND<ref target="https://github.com/TEIC/TEI/issues/1524">Schematron inside ODD files should be more precisely specified</ref>Syd and group suggest to not worry about this for now until schematron processing becomes a problem. Don’t things work ok now?<hi style="strong">B</hi>1521ND<ref target="https://github.com/TEIC/TEI/issues/1521">actor should be member of att.canonical</ref>Subgroup agrees with LB. Go, Green!<hi style="strong">C</hi>1519ND<ref target="https://github.com/TEIC/TEI/issues/1519">Sort out TEI@version please</ref>Yes. See comment<hi style="strong">A</hi>1515ND<ref target="https://github.com/TEIC/TEI/issues/1515">placement of nested <gi>figure</gi>s: allow <gi>zone</gi> in <gi>figure</gi></ref>Should use zone, but outside of figure, sibling (within surface for ex.)<hi style="strong">B</hi>1514ND<ref target="https://github.com/TEIC/TEI/issues/1514">Expand att.notated to all elements commonly used in linguistic markup: <gi>quote</gi>, <gi>s</gi>, <gi>cl</gi>, <gi>phr</gi>, <gi>w</gi>, <gi>m</gi>, <gi>c</gi>, <gi>seg</gi></ref>Go Green!<hi style="strong">C</hi>1512ND<ref target="https://github.com/TEIC/TEI/issues/1512">Adapt <gi>etym</gi> to allow for encoding of typed and complex etymological processes: (i) add to att.typed class; (ii) allow recursion;</ref>Green: sounds good.<hi style="strong">A</hi>1510ND<ref target="https://github.com/TEIC/TEI/issues/1510">Make orth member of att.notated</ref>If the information being recorded is just the script, then it should be in the @xmlLang attribute. But there seems to be more information that may be recorded (accented, unaccented). @notation seems like a good suggestion. But first check that script is insufficient.<hi style="strong">B</hi>1474ND<ref target="https://github.com/TEIC/TEI/issues/1474">Need to improve GIS/gazetteer encoding support in TEI</ref>F2F subgroup sees no issues with adding @crs and @geoEncoding to the place and placeography elements, but suggests we need a working group with interest and practical experience to work on developing introductory documentation for the Guidelines.<hi style="strong">C</hi>1461ND<ref target="https://github.com/TEIC/TEI/issues/1461">Add new element <gi>unit</gi></ref>No. (see comment)<hi style="strong">A</hi>1453ND<ref target="https://github.com/TEIC/TEI/issues/1453">`<gi>path</gi>` should exist alongside `<gi>zone</gi>` for non-closed areas in facsimile</ref>Options in order of preference:</p><p>1. Not allow new element <gi>path</gi> and suggest that he use SVG which is an external standard that works perfectly well for that purpose.</p><p>1a. Suggest that IIIF as an alternate solution instead of SVG.</p><p>2. Look at SVG solution more carefully to make sure that it isn’t problematic to interact with TEI (global attributes?) for ex. HC points out that the SVG coordinate system may not translate into the zone/facsimile coordinate system.</p><p>3. Allow <gi>path</gi> (but the group does’t recommend this one)</p><p>4. We don’t like @path attribute on <gi>zone</gi> at all.</p><p>JC notes some ppl interested in IIIF might like<ref target="http://dmt.bodleian.ox.ac.uk/">http://dmt.bodleian.ox.ac.uk/</ref></p><p><hi style="strong">B</hi>1431ND<ref target="https://github.com/TEIC/TEI/issues/1431">clarify how to encode short-form citations</ref>Subgroup still agrees with last subgroup and that ppl should use <gi>ref</gi> for references. Add clarifying text and update existing examples.</p><p>See also <ref target="https://github.com/TEIC/TEI/issues/1579">#1579</ref></p><p><hi style="strong">C</hi>1415ND<ref target="https://github.com/TEIC/TEI/issues/1415">`<gi>taxonomy</gi>` should allow both description elements and categories</ref>All seems well to us- Done567ND<ref target="https://github.com/TEIC/TEI/issues/567">Allow <gi>relation</gi> to occur intermittently within parent elements</ref>1578ND<ref target="https://github.com/TEIC/TEI/issues/1578">floatingText being ignored inside p: abstract model violation #1578</ref></p><div type="h4"><head>Other Needs Discussions which aren’t bugs or feature requests</head><div>
+<table>
+
+<row>
+<cell><hi style="b">Group</hi></cell>
+<cell><hi style="b">Number</hi></cell>
+<cell><hi style="b">Title</hi></cell>
+<cell><hi style="b">Notes</hi></cell>
+</row>
+<row>
+<cell>A</cell>
+<cell>1574</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/1574">New Problem with Installing TEI Framework Plugin for oXygen</ref></cell>
+<cell/>
+</row>
+<row>
+<cell>B</cell>
+<cell>1577</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/1577">Appendix C: Element Spec Reference Pages could have navigation through all elements</ref></cell>
+<cell>Seems reasonable to subgroup. They think SB should implement.</cell>
+</row>
+<row>
+<cell>C</cell>
+<cell>1568</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/1568">typeNote is member of header module but only useable in typeDesc (msDescription module)</ref></cell>
+<cell>Yes, it should be moved to the right module</cell>
+</row>
+<row>
+<cell>A</cell>
+<cell>1561</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/1561">Mysterious maven stuff in the build</ref></cell>
+<cell>HC says he will kill it with fire and a big sharp stick..</cell>
+</row>
+<row>
+<cell>B</cell>
+<cell>1540</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/1540">Remove or rewrite TEI-Minimal</ref></cell>
+<cell>JC volunteers to rewrite, making it the absolute minimal possible TEI</cell>
+</row>
+<row>
+<cell>C</cell>
+<cell>1536</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/1536">Support for @context</ref></cell>
+<cell>We suggest to drop this unimplemented feature silently.</cell>
+</row>
+<row>
+<cell>A</cell>
+<cell>1508</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/1508">zone used with JSON, etc: need examples in Guidelines</ref></cell>
+<cell>EB should link with larger discussions re text/image and integration of vocabs, including #1453</cell>
+</row>
+<row>
+<cell>B</cell>
+<cell>1506</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/1506">remarks in specification of `<gi>att</gi>` have an ambiguous reference</ref></cell>
+<cell>Subgroup agrees it should be clarified. It has suggested some wording on the issue.</cell>
+</row>
+<row>
+<cell>C</cell>
+<cell>1463</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/1463">Relation of @style and @rendition needs clarifying</ref></cell>
+<cell>HC will clarify the prose.</cell>
+</row>
+<row>
+<cell>A</cell>
+<cell>1459</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/1459">Description of <gi>textNode</gi> is insufficient</ref></cell>
+<cell/>
+</row>
+
+</table>
+</div></div></div></div></div></div>
+	</body><!-- #post-## --></text></TEI>

@@ -1,0 +1,869 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0"  n="2018-02">
+ <teiHeader>
+  <fileDesc>
+   <titleStmt>
+    <title>Minutes of the TEI Technical Council</title>
+    <meeting n="2018-02" from="2018-02-24" to="2018-02-26">TEI Technical Council FTF meeting : Cologne
+     <date>24–26 February 2018</date></meeting>
+   </titleStmt>
+   <publicationStmt>
+    <distributor>TEI Website</distributor>
+    <idno>TCM098</idno>
+   </publicationStmt>
+   <sourceDesc>
+    <p>Retagged from a Google Doc draft</p>
+   </sourceDesc>
+  </fileDesc>
+  <revisionDesc>
+   <change when="2023-05-03">Archival header confected</change>
+   <change>Extracted from Google Doc archive</change>
+  </revisionDesc>
+ </teiHeader>
+ <text>
+  <body>
+   <p> TEI Technical Council<lb/>
+    Spring F2F Agenda, 2018-02-24/26 10:00 (local)</p>
+   <p> University of Cologne (Köln) 1658</p>
+   <p>Sat 02-24 / Sun 02-25 <ref
+    target="http://www.thomasinstitut.uni-koeln.de/kontaktlageplanundanreise0.html"> <hi
+    rend="color(#1155cc)underline">Thomas-Institut</hi> </ref>, Universität zu Köln,
+    Universitätsstraße 22</p>
+   <p>Mon 02-26 <ref target="http://dhd2018.uni-koeln.de/lageplan/"> <hi
+    rend="color(#1155cc)underline">Neues Seminargebäude, Room S23</hi> </ref>, Universität zu Köln,
+    Universitätsstraße</p>
+   <p>Present:</p>
+   <list type="unordered">
+    <item>Syd Bauman (SB)</item>
+    <item>Elisa Beshero-Bondar (EB)</item>
+    <item>Hugh Cayless (HC)</item>
+    <item>James Cummings (JC)</item>
+    <item>Elli Mylonas (EM)</item>
+    <item>Martina Scholger (MS) (Chair)</item>
+    <item>Peter Stadler (PS)</item>
+    <item>Sarah Stanley (SS)</item>
+    <item>Magdalena Turska (MT)</item>
+    <item>Raffaele Viglianti (RV)</item>
+   </list>
+   <p>Remote: </p>
+   <list type="unordered">
+    <item>Alejandro Bia (AB) (via Google Hangouts)</item>
+   </list>
+   <list type="unordered">
+    <item> <list type="unordered">
+     <item/>
+     </list> </item>
+   </list><div>
+   <head>Saturday Morning (10:30–13:30): </head>
+   <list type="unordered">
+    <item>Release report (HC &amp; MS)<list type="unordered">
+     <item>Problems with permissions on website.</item>
+     <item>New CMS?</item>
+     <item>Council needs to have access to update our minutes (and other parts that need to be
+      changed during releases)—we need this now. MS will push for completion on new website platform
+      (preview at <ref target="http://www-dev.tei-c.org/"/>).</item>
+     <item> <hi rend="bold">Action on MS</hi> to address the Board — due 2018-03-10.</item>
+     <item>Release documentation has been updated for clarity.</item>
+     <item>Slack worked well.</item>
+     <item>oXygen plugin release has problems. HC has patched?</item>
+     <item>More frequent releases (JC) if we have something new. But in that case, could do the
+      Guidelines, not Stylesheets because oXygen plugin likely has to be remade each time for
+      Stylesheets.</item>
+     </list> </item>
+    <item>Rub-a-dub report<list type="unordered">
+     <item>SB: No progress since phone teleconference</item>
+     </list> </item>
+    <item>Ticket assignment report<list type="unordered">
+     <item>SB: We should be putting ticket assignment information in a logical place + some
+      mechanism for reminding people.</item>
+     </list> </item>
+   </list>
+   <table rend="frame" xml:id="Table1">
+    <row>
+     <cell> <hi rend="bold">December 2017</hi> </cell>
+     <cell> <hi rend="color(#38761d)bold"> JC</hi> </cell>
+    </row>
+    <row>
+     <cell> <hi rend="bold">January 2018</hi> </cell>
+     <cell> <hi rend="bold">EM</hi> </cell>
+    </row>
+    <row>
+     <cell> <hi rend="bold">February 2018</hi> </cell>
+     <cell> <hi rend="bold">SB</hi> </cell>
+    </row>
+    <row>
+     <cell> <hi rend="bold">March 2018</hi> </cell>
+     <cell> <hi rend="color(#ff00ff)bold">RV</hi> </cell>
+    </row>
+    <row>
+     <cell> <hi rend="bold">April 2018</hi> </cell>
+     <cell> <hi rend="bold">SS</hi> </cell>
+    </row>
+    <row>
+     <cell> <hi rend="bold">May 2018</hi> </cell>
+     <cell> <hi rend="color(#9900ff)bold">MS</hi> </cell>
+    </row>
+    <row>
+     <cell> <hi rend="bold">June 2018</hi> </cell>
+     <cell> <hi rend="bold">HC</hi> </cell>
+    </row>
+    <row>
+     <cell> <hi rend="bold">July 2018</hi> </cell>
+     <cell> <hi rend="bold">EB</hi> </cell>
+    </row>
+    <row>
+     <cell> <hi rend="bold">August 2018</hi> </cell>
+     <cell> <hi rend="bold">JC</hi> </cell>
+    </row>
+    <row>
+     <cell> <hi rend="bold">September 2018</hi> </cell>
+     <cell> <hi rend="bold">EM</hi> </cell>
+    </row>
+    <row>
+     <cell> <hi rend="bold">October 2018</hi> </cell>
+     <cell> <hi rend="bold">MT</hi> </cell>
+    </row>
+    <row>
+     <cell> <hi rend="bold">November 2018</hi> </cell>
+     <cell> <hi rend="bold">SS</hi> </cell>
+    </row>
+    <row>
+     <cell> <hi rend="bold">December 2018</hi> </cell>
+     <cell> <hi rend="bold">AB</hi> </cell>
+    </row>
+   </table>
+   <list type="unordered">
+    <item>Periodicals SIG<list type="unordered">
+     <item>Abstract:<list type="unordered">
+      <item>Publications with any kind of regular publication cycle, from several times a day to
+       cycles of several years, arguably form the majority of (printed) texts nowadays. They span
+       from newspapers via almanacs to comics and many others.</item>
+      <item>While these different types all have their own needs, their periodicity means that there
+       are special questions to keep in mind when systematically encoding them.</item>
+      <item>The SIG Periodicals and Newspapers will focus on aspects that are common to all these
+       kinds of periodicals:<list type="unordered">
+       <item>How to encode this periodicity with its aspects in a concise and machine readable
+        way;</item>
+       <item>How to deal with parts of periodicals that have their own periodicity (e.g. weekly,
+        monthly etc. additions); AB: I see it more as a matter of date-stamping than
+        periodicity.</item>
+       <item>How to deal with texts continued over several issues of a periodical;</item>
+       <item>How to encode the title of e.g. a newspaper (which usually do not cover an entire
+        page).<list type="unordered">
+        <item>Additionally, the SIG will focus on methods and workflows for preparing full texts of
+         periodicals by means of OCR and related technologies.</item>
+        </list> </item>
+       </list> </item>
+      <item>MS responds to SIG in the affirmative, and suggests including some of the points above
+       in order to make the SIG more attractive to a broader audience.</item>
+      <item>Suggestions from Council to include in SIG description: questions re encoding of
+       advertising, page layouts, and negative space. </item>
+      <item>SS to send notes to MS with suggestions for expansion (based on <ref
+       target="https://docs.google.com/document/d/1i0ow7-rfjg2OLwuyzXlk-u7P0nWLN5MP9VWUed1EqIg/edit?usp=sharing"
+       > <hi rend="color(#1155cc)underline">Victoria meeting</hi> </ref>).</item>
+      <item>MS ask Luis Meneses for Wiki and mail address. </item>
+      </list> </item>
+     </list> </item>
+   </list>
+   <list type="unordered">
+    <item> <list type="unordered">
+     <item>Fall F2F in Tokyo <list type="unordered">
+      <item>Conference is 09-09 – 09-13: <ref target="https://tei2018.dhii.asia/"/> <hi
+       rend="color(#1155cc)underline">.</hi> </item>
+      <item>MT wants to have workshops, and for Council meeting not to coincide with
+       workshops.</item>
+      <item>Ask local organizers if before or after is better.</item>
+      <item>Our meeting cannot overlap with Board meeting (as both HC &amp; MS attend Board).</item>
+      <item>TEI2018 Program committee volunteers: RV, PS, MT, SS, AB, EB.</item>
+      </list> </item>
+     <item>Set up a shared calendar, shared Google Docs, minutes<list type="unordered">
+      <item> <hi rend="bold">Action on HC</hi> to set up calendar using TEIConstorium at gmail.com
+       account by 2018-03-10.</item>
+      <item/>
+      </list> </item>
+     <item>Open TEI Council meeting <list type="unordered">
+      <item>2018-02-26, 10:00–12:00, 7 guests</item>
+      <item>Introduce GitHub, issues, and the work of the Technical Council.</item>
+      </list> </item>
+     <item>TEI offices history <list type="unordered">
+      <item>History of demographics of TEI contributors, MT asks the treasurer (HC) for help
+       gathering the relevant data.</item>
+      </list> </item>
+     <item>TEI Web Services and Infrastructure<list type="unordered">
+      <item>Jenkins generally<list type="unordered">
+       <item>Continuous integration—which services are problematic?</item>
+       <item>PS: Releases help to demonstrate all the intersecting pieces. Need PHP instance, etc. </item>
+       <item>A single global infrastructure would help in a Docker image—to be run at Paderborn,
+        Oxford, etc. All the requirements in place in Docker.</item>
+       <item>Currently we’re creating Jenkins artifacts, but not the entire web service. Ideally, we
+        are publishing Docker images (from Dockerhub). tei-c.org should eventually point to one
+        machine.</item>
+       <item>Entire TEI website, or just the Guidelines and Tools?</item>
+       <item>We need better documentation of the various pieces (including eXist integration). </item>
+       <item>RV: Maybe we can exclude the Roma part, because Roma JS is coming—just to make this
+        easier. Instead of trying to figure out dependencies of old Roma.</item>
+       <item>MT: maybe a sub-group should make a Martina Scholger2019-07-09T21:19:06<note>what is
+        TR?</note>TR of all this—architecture diagram. <ref
+        target="https://github.com/TEIC/TEI/issues/1743"/> <list type="unordered">
+        <item>sub-group PS, HC, MT, JC.</item>
+        <item>reviewers: EB, SB, Martin Holmes, others? </item>
+        </list> </item>
+       </list> </item>
+      <item>Jenkins on Pittsburgh Supercomputing Center (PSC)—Jenkins report (EB): needs to use
+       singularity wrapper. Issues with supercomputing nodes communicating with the outside
+       world—need documentation on this (PS working on it.) </item>
+      <item>PS: How to boost efficiency in the Jenkins build process? We should be refactoring the
+       build process and implementing parallelization.</item>
+      <item>Travis CI—HC’s understanding is that our build process is too expensive for it to run,
+       so perhaps we should set up a lightweight test suite—but can set up for any GitHub site. </item>
+      <item>Docker Images</item>
+      <item>Fragility of having single individuals supporting this (will they continue after they
+       leave Council); need cloud hosted solutions not reliance on Paderborn, UVic, etc. (Oxford is
+       a case we should learn from.)<list type="unordered">
+       <item>HC: We can only rely on individuals. But perhaps PS’s work will make things easier to
+        transfer. EM and EB: Documentation will help! SB: Should we be hiring someone to do this? MT
+        (and others): We need a clear vision of how everything works. PS: OS interdependencies need
+        to be documented. </item>
+       <item>JC: “Meta-fragility” Someone needs to understand Docker (or Singularity). HC: Again,
+        this is the point of the documentation. JC agrees and encourages the documentation to be
+        explicit and not focussed just on a particular solution. </item>
+       <item>MT: People can run tests on their own machines.</item>
+       </list> </item>
+      <item>Website—as connected to services </item>
+      <item>OxGarage! Much of our stuff relies on OxGarage behind the scenes but we don’t really
+       support it well.<list type="unordered">
+       <item>Validation problems: <ref target="https://github.com/TEIC/oxgarage/issues/18"> <hi
+        rend="color(#1155cc)underline">Issue created to address it</hi> </ref> </item>
+       </list> </item>
+      <item>Roma</item>
+      <item>Debian Packages: SB loves them. PS: This is one of the services we provide. We need a
+       Docker image for this to be run universally. JC: A release would involve updating these
+       Docker images.<list type="unordered">
+       <item>The signature (including passphrase) will have to be passed into the Docker image
+        somehow.</item>
+       </list> </item>
+      <item>Github</item>
+      <item/>
+      <item>eXist-db that Roma and OxGarage relies on?</item>
+      <item>Jenkins build consolidation: SB reporting from Martin Holmes: <list type="unordered">
+       <item>Documentation build (builds the TEI Guidelines in English first).</item>
+       <item>Build epubs/PDF.</item>
+       <item>Then build in the 9 other languages.</item>
+       <item>HC: Where in the build flow is it most efficient to parallelize these tests? Some tests
+        depend on output of previous tests—some linearity is necessary. Need to study the whole
+        process to see where it can branch. Test in Japanese instead of English, maybe?</item>
+       <item>Martin’s proposal: Combine the three jobs: TEIP5-test, with TEIP5-Documentation, and
+        TEIP5. They’re currently chained in order—he says we make them one job on one of the
+        servers, then test it for speed against 3-job version. He thinks this will save disk space
+        re Jenkins processes. These are all changes to the Jenkins processes.</item>
+       <item>Discussion: This makes sense because it knocks out a lot of repetition. A successful
+        build should run a lot faster.</item>
+       <item>Question for Martin Holmes: Yes—we think this is a good idea, and Martin should do the
+        comparison on the same machine. Refactoring the build process needs to be studied as well.
+       </item>
+       </list> </item>
+      </list> </item>
+     </list> </item>
+   </list>
+   <list type="unordered">
+    <item> <list type="unordered">
+     <item>Tickets</item>
+     </list> </item>
+    <item>Saturday Afternoon (15:15 - )<list type="unordered">
+     <item>Former Council chair Hugh Cayless receives a thank you present from the other Council
+      members for his service.</item>
+     <item>Tickets</item>
+     </list> </item>
+    <item> <ref
+     target="https://www.lieferando.de/pinocchio-2?utm_campaign=foodorder&amp;utm_medium=organic&amp;utm_source=google"
+     /> </item>
+   </list></div><div>
+   <head>Sunday Morning</head>
+   <list type="unordered">
+    <item> <list type="unordered">
+     <item>RomaJS<list type="unordered">
+      <item>Quick report</item>
+      <item>A couple of UI questions to the group</item>
+      </list> </item>
+     <item>StandOff proposal: <ref target="https://github.com/laurentromary/stdfSpec"/> <list
+      type="unordered">
+      <item>Here’s a handy HTML preview from GitHub: <ref
+       target="http://htmlpreview.github.io/?https://github.com/laurentromary/stdfSpec/blob/AnnArbor/Scenarios/StandOffScenarios.html"
+       /> </item>
+      <item>Example of old standoff proposal: <ref
+       target="https://github.com/laurentromary/stdfSpec/blob/AnnArbor/Samples/NERD-Example-draft.xml"
+       /> </item>
+      <item>We’re not agreeing on the uses of <gi>teiHeader</gi> and macro structure. We do agree
+       that standoff section, listAnnotations and individual annotation levels require their
+       specific metadata but not necessarily as <gi>teiHeader</gi>. MT would like to see some
+       examples of metadata that makes sense for standoff and is concerned that allowing
+       fully-fledged <gi>teiHeader</gi> may result in very weird constructs.</item>
+      <item>Consensus on needing to study up on open annotation to apply to multiple cases—broader
+       applicability than we’re seeing in the proposal. Need to make sure we’re correctly
+       implementing Open Annotation model.</item>
+      <item>Action items: <list type="unordered">
+       <item>MT will prepare a short presentation on Web Annotation <ref
+        target="https://www.w3.org/TR/annotation-model/"/> and also results of it’s integration
+        attempts with TEI from the earlyPrint project.</item>
+       <item>Identify general domains for standoff use as well as more detailed use case scenarios
+        for standoff<list type="unordered">
+        <item>Different perspectives on the same material (e.g. linguistic, textual variants,
+         transcriptional features, commentary, translations... e.g. Digital Mishnah project <ref
+         target="http://www.digitalmishnah.org"/> <hi rend="color(#1155cc)underline">.</hi> </item>
+        <item>Crowdsourced corrections and annotations for large scale corpora e..g Shakespeare His
+         Contemporaries aka earlyPrint <ref
+         target="http://shakespearehiscontemporaries.northwestern.edu/shc/home.html"/> <hi
+         rend="color(#1155cc)underline">.</hi> </item>
+        <item>As solution for overlapping hierarchies problem / separation for different encoding
+         layers (e.g. to separate very verbose linguistic encoding.</item>
+        </list> </item>
+       </list> </item>
+      </list> </item>
+     <item>oXygen plug-in <list type="unordered">
+      <item>Nneeds a patch since oXygen release 19—required for Stylesheets releases.</item>
+      <item>Trying to figure out why this is on the agenda. There was a problem that HC fixed. It
+       still doesn’t contain SB’s TEI customization. PS points out that it needs (non-free) an older
+       Oxygen jar in order to compile—because the API changed, won’t build with newer versions of
+       Oxygen and why it’s not included in the standard Jenkin’s build.</item>
+      <item>PS will look at why paths in Stylesheets aren’t working in Oxygen when they are working
+       in OxGarage. Stylesheets group can look at it.</item>
+      <item> <hi rend="bold">Action:</hi> HC/SB/MH will look at moving to new oXygen jar and report
+       at next teleconference.</item>
+      </list> </item>
+     <item>SB &amp; EM attribute class triage report <ref
+      target="https://github.com/TEIC/TEI/issues/386"> <hi rend="color(#1155cc)underline">386:
+      free-standing attributes -&gt; class</hi> </ref> and <ref
+      target="https://docs.google.com/spreadsheets/d/1k6rB7SSvWlZQKtOFDUJhpNVUDcNM8xETlWWiH3JAYZw/edit?usp=sharing"
+      > <hi rend="color(#1155cc)underline">Duplatts spreadsheet</hi> </ref> <hi
+      rend="color(#1155cc)underline">.</hi> </item>
+     </list> </item>
+   </list>
+   <list type="unordered">
+    <item>Sunday Afternoon:<list type="unordered">
+     <item>Susanne Haaf will be arriving at ~15:00 to join us as “invited expert”, so we should
+      reserve this time for the <ref
+      target="https://github.com/TEIC/TEI/issues?q=is%3Aissue+is%3Aopen+label%3ASIG%3ALingSIG"> <hi
+      rend="color(#1155cc)underline">LingSG tickets</hi> </ref> <hi rend="color(#1155cc)underline"
+      >.</hi> Susanne could not make it in the end so we will use this time for tickets.</item>
+     <item>Blue sky thinking of TEI future?<list type="unordered">
+      <item>PS and HC want to rebuild the class system. In a new system, classes would have proper
+       inheritance. <list type="unordered">
+       <item>Why did we declare class membership instead of using inheritance?</item>
+       <item>Semantic classes—we might have lots of classes with only one member.</item>
+       </list> </item>
+      <item>Revamp the declaration system<list type="unordered">
+       <item>What would <gi>choice</gi> look like if it weren't drawing on the model from P4?</item>
+       <item>Rebuild <gi>msDesc</gi> from <gi>objectDesc</gi>.</item>
+       <item>Embed structured <gi>msDesc</gi> elsewhere than <gi>teiHeader</gi>, in prose, say in
+        frontmatter.</item>
+       </list> </item>
+      <item><gi>msDesc</gi> and Dictionaries—aren’t well integrated with the rest of the TEI. Why do
+       we recommend doing things one way in Dictionaries that we could do elsewise elsewhere? </item>
+      <item>Establishing conventions for common patterns: (how do we point, etc.) to try to reduce
+       different ways of doing the same things.</item>
+      <item>Reducing the excessive proliferation of choices for the encoder. E.g. all author
+       elements must contain either <gi>persName</gi> or <gi>orgName</gi>, but must contain one of
+       these. JC: This would break hundreds of thousands of documents.</item>
+      <item>Flexibility may be worth preserving, however!</item>
+      <item>P6: Requirements for moving to new P# version, e.g. P6, is described in the Birnbaum
+       Doctrine: <lb/>
+       “Council may break backward compatibility in a more substantial and comprehensive way (as
+       happened with the transition from P4 to P5) with the transition to a new major TEI proposal
+       version (e.g., P6 version 1.0.0, but not P5 99.99.0). Such transitions should only happen in
+       response to the emergence of new technologies (e.g., the transition from SGML to XML) or the
+       development of a new architecture that conveys substantial benefit (e.g., the development of
+       the new class system). Historically, new major versions have emerged approximately every five
+       years, but with P5 a new system of rolling major/minor versions has been adopted.” <ref
+       target="http://www.tei-c.org/Activities/Council/Working/tcw09.xml"/> </item>
+      <item>Should the Guidelines have more words? </item>
+      <item>More pictures? Diagrams, to show complex concepts.</item>
+      <item>JC: Examples that are in their own ecosystem: see the wider context. Examples in the
+       Guidelines point into whole files.</item>
+      <item>Integration with standards like IIIF; LOD; Awareness of hybrid contexts (text +
+       images).</item>
+      <item>Make TEI be more database-friendly, and avoid redundancy, make compiled manifest
+       versions of documents with everything necessary to understand it.</item>
+      <item>Registry of APIs and code-sharing.</item>
+      <item>AB: Get rid of overcomplexity, i.e. unnecessary complexity (referring both to the markup
+       scheme and to the ecosystem of tools and services), e.g. too many different ways to do the
+       same, different elements with similar semantics belonging to different tagsets.
+       Overcomplexity makes processing and maintenance more difficult/costly. The TEI cannot be
+       simple but can be simpler. </item>
+      </list> </item>
+     <item>Tickets</item>
+     </list> </item>
+    <item>Standoff-Proposal: <list type="unordered">
+     <item>MT: Laurent’s proposal has too many different ways of encoding web annotation
+      relationships, and some of it doesn’t seem consistent with the actual web annotation model. </item>
+     <item>We should draft specific requirements, as in we want a way to address an arbitrary block
+      of text, etc.</item>
+     <item>Annotation body and annotation target need to be discreet elements, clearly mappable to
+      the web annotation model.</item>
+     <item>RV: Do we need to replicate RDF / IIIF/ Open annotation structures in TEI? Or can we just
+      map to them? </item>
+     <item>SB: But maybe what we have in TEI should be expressible in this structure.</item>
+     <item>RV: And linguists might want more structure. But so much work has to be done to implement
+      this as TEI. </item>
+     <item>PS: We could point out what we don’t like in Laurent’s proposal: We want a container for
+      annotation markup. A place to put personography kinds of things, with joins and linkGrps. Can
+      Laurent’s proposal accommodate these things?</item>
+     <item>SB: How about <tag>note target="annotTarget" resp="whoCreated"</tag>annotation
+      body<tag>/note</tag> </item>
+     <item><gi>linkedDataBlock</gi></item>
+     <item>SB and RV: We need to rewrite this a better way. Fork the repo and rewrite it instead of
+      just pushing back against it. </item>
+     <item>We don’t like the structure, and a different way to write the annotations. </item>
+     <item> <hi rend="bold">Action on: MT, HC, and SB</hi> will work on this: study the proposal
+      closely, work on a counterproposal, have a phone call, and then respond to Laurent with a
+      phone call.</item>
+     </list> </item>
+   </list></div><div>
+   <head>Monday Morning (10:00–12:00)</head>
+   <list type="unordered">
+    <item> Seminargebäude—the little building behind the big one across the street from us now.<list
+     type="unordered">
+     <item>Open meeting for “Meet the Technical Council”</item>
+     <item>Participants:<list type="unordered">
+      <item>Andreas Galffy</item>
+      <item>Sree Ganesh Thotempudi</item>
+      <item>Redmer Kronemeijer</item>
+      <item>Gerrit Brüning</item>
+      <item>Michael Dahnke</item>
+      <item>Susanne Haaf</item>
+      <item>Peter Dängeli</item>
+      <item>Thomas Kollatz</item>
+      </list> </item>
+     <item>Possible issues to discuss: <list type="unordered">
+      <item> <ref target="https://github.com/TEIC/TEI/issues/1687"> <hi
+       rend="color(#1155cc)underline">1687</hi> </ref> </item>
+      <item> <ref target="https://github.com/TEIC/TEI/issues/1679#issuecomment-363432650"> <hi
+       rend="color(#1155cc)underline">1679</hi> </ref> </item>
+      <item> <ref target="https://github.com/TEIC/TEI/issues/1632"> <hi
+       rend="color(#1155cc)underline">1632</hi> </ref> </item>
+      <item> <ref target="https://github.com/TEIC/TEI/issues/1427"> <hi
+       rend="color(#1155cc)underline">1427</hi> </ref> </item>
+      </list> </item>
+     <item>Discussion with community: <list type="unordered">
+      <item>Andreas Kuczera: graph model of TEI (graph SIG).</item>
+      <item>Tiziana Mancinelli: Making a task force to address accessibility issues for TEI digital
+       projects. </item>
+      </list> </item>
+     </list> </item>
+    <item>Monday Afternoon:<list type="unordered">
+     <item>Ticket review. Pull requests should be reviewed regularly. </item>
+     <item>Summary of upcoming conference calls:<list type="unordered">
+      <item>LingSig (Action on PS)</item>
+      <item>Measurements proposal (Action on EM)</item>
+      </list> </item>
+     <item>Council commends MS on an awesome Job for her first F2F as Council Chair :-)</item>
+     </list> </item>
+   </list>
+   <p>------------------------------------</p>
+   <p>Status Needs Discussion:</p>
+   <p>Groups (Saturday)</p>
+   <p>Group A: RV, PS, HC </p>
+   <p>Group B: JC, SB, SS, MS</p>
+   <p>Group C: EB, MT, EM, AB</p>
+   <p>Groups (Sunday)</p>
+   <p>Group A: SS, EB, PS</p>
+   <p>Group B: RV, JC, SB</p>
+   <p>Group C: HC, MS, EM, AB</p>
+   <p>Group D: MT (Standoff)</p>
+   <p>Group A discussed getting the OxGarage validation service working with RomaJS. Upon
+    investigation, OxGarage only supports three obsolete, hard-coded schemas (two are DTDs!). We
+    gathered some requirements for HC to go and implement a new validation service that more-or-less
+    completely replaces the current one. The current supported validations would be removed. </p>
+   <p>Requirements:</p>
+   <list type="unordered">
+    <item>For validator, read (by default) http://www.tei-c.org/release/xml/tei/custom/schema/ and
+     list available schemas.</item>
+    <item>Input customization name and POSTed file to be validated. No uploading schema
+     files.</item>
+    <item>Schematron validation<list type="unordered">
+     <item>question whether do Relax NG / XSD validation with Schematron in a single pass or
+      separately.</item>
+     </list> </item>
+    <item>Roma needs fragment validation.</item>
+   </list>
+   <p>RomaJS could be bundled as a frontend for OxGarage in the OxGarage Docker distribution.</p>
+   <p>HC will also look at rate-limiting for OxGarage, since apparently it is abused for batch
+    conversion. </p>
+   <table rend="frame" xml:id="Table2">
+    <row>
+     <cell>Group</cell>
+     <cell>No.</cell>
+     <cell>Description</cell>
+     <cell>Suggestion</cell>
+    </row>
+    <row>
+     <cell>A</cell>
+     <cell> <ref target="https://github.com/TEIC/TEI/issues/1737"> <hi
+      rend="color(#1155cc)underline">1737</hi> </ref> </cell>
+     <cell> <ref target="https://github.com/TEIC/TEI/issues/1737"> <hi
+      rend="color(#1155cc)underline">Deprecate macroSpec/@type</hi> </ref> </cell>
+     <cell>YES!</cell>
+    </row>
+    <row>
+     <cell>B</cell>
+     <cell> <ref target="https://github.com/TEIC/TEI/issues/1735"> <hi
+      rend="color(#1155cc)underline">1735</hi> </ref> </cell>
+     <cell> <ref target="https://github.com/TEIC/TEI/issues/1735"> <hi
+      rend="color(#1155cc)underline">occurences of <gi>content</gi></hi> </ref> </cell>
+     <cell>Subgroup recommends adopting the constraints (likely as Schematron)</cell>
+    </row>
+    <row>
+     <cell>C </cell>
+     <cell> <ref target="https://github.com/TEIC/TEI/issues/1728"> <hi
+      rend="color(#1155cc)underline">1728</hi> </ref> </cell>
+     <cell> <ref target="https://github.com/TEIC/TEI/issues/1728"> <hi
+      rend="color(#1155cc)underline">Why no note in witness?</hi> </ref> </cell>
+     <cell>
+      <p>Status Go.</p>
+      <p>Subgroup wants to add model.notelike to the content model of witness. On ticket: “sounds as
+      if adding <gi>note</gi> inside <gi>witness</gi> is not a problem. But the question is where,
+      does it go? macro.limitedContent contains <gi>desc</gi>, <gi>fDescr</gi>, <gi>figDesc</gi>,
+      <gi>fsDescr</gi>, <gi>meeting</gi>, <gi>rendition</gi>, <gi>tagUsage</gi>, <gi>witness</gi>—so
+      adding there would add it to all these other elements where it may not make sense.</p>
+      <p>Another suggestion is adding model.noteLike to the content of <gi>witness</gi> because it
+      affects the fewest other elements. Discussion: No, we shouldn’t use noteLike because it would
+      permit <gi>witDetail</gi> which shouldn’t go in <gi>witness</gi>. So solution is add
+      <gi>note</gi> as an element to the content model of <gi>witness</gi>.</p> </cell>
+    </row>
+    <row>
+     <cell>A</cell>
+     <cell> <ref target="https://github.com/TEIC/TEI/issues/1727"> <hi
+      rend="color(#1155cc)underline">1727</hi> </ref> </cell>
+     <cell> <ref target="https://github.com/TEIC/TEI/issues/1727"> <hi
+      rend="color(#1155cc)underline">teidata.points could be more tightly constrained</hi> </ref> </cell>
+     <cell>
+      <p>No. Subgroup think this is probably overkill. Encoders should have options like including
+      white spaces after commas, etc. Is it possible to have a combined datatype, btw?</p> </cell>
+    </row>
+    <row>
+     <cell>B</cell>
+     <cell> <ref target="https://github.com/TEIC/TEI/issues/1726"> <hi
+      rend="color(#1155cc)underline">1726</hi> </ref> </cell>
+     <cell> <ref target="https://github.com/TEIC/TEI/issues/1726"> <hi
+      rend="color(#1155cc)underline">Feature request related to fsdDecl</hi> </ref> </cell>
+     <cell>Syd suggests we have PS check with Lou Burnard about ISO.</cell>
+    </row>
+    <row>
+     <cell>C</cell>
+     <cell> <ref target="https://github.com/TEIC/TEI/issues/1720"> <hi
+      rend="color(#1155cc)underline">1720</hi> </ref> </cell>
+     <cell> <ref target="https://github.com/TEIC/TEI/issues/1720"> <hi
+      rend="color(#1155cc)underline">Improve description of att.lexicographic</hi> </ref> </cell>
+     <cell>
+      <p>F2F subgroup suggests a rephrase, thus:</p>
+      <p>att.lexicographic “provides a set of attributes used for specifying standard values [AND
+      OTHER PURPOSES], and is common to all elements in the dictionary module as well as elsewhere”.
+      Discussion: no—really these attributes are for dictionaries. That may change with <ref
+      target="https://github.com/TEIC/TEI/issues/1707">#1707</ref>.</p> </cell>
+    </row>
+    <row>
+     <cell>B</cell>
+     <cell> <ref target="https://github.com/TEIC/TEI/issues/1715"> <hi
+      rend="color(#1155cc)underline">1715</hi> </ref> </cell>
+     <cell> <ref target="https://github.com/TEIC/TEI/issues/1715"> <hi
+      rend="color(#1155cc)underline">Clarify description of att.combinable's "mode"</hi> </ref> </cell>
+     <cell>F2F subgroup suggests moving away from using processing-focused language in the
+      descriptions (and towards language that describes the effects). We suggest utilizing language
+      like “is part of,” instead of “is added to”. Subgroup thinks notes/remarks look good.</cell>
+    </row>
+    <row>
+     <cell>C</cell>
+     <cell> <ref target="https://github.com/TEIC/TEI/issues/1713"> <hi
+      rend="color(#1155cc)underline">1713</hi> </ref> </cell>
+     <cell> <ref target="https://github.com/TEIC/TEI/issues/1713"> <hi
+      rend="color(#1155cc)underline">Add @ident to <gi>remarks</gi> and <gi>exemplum</gi></hi>
+      </ref> </cell>
+     <cell>
+      <p>We think this has to do with ODD modes of add, replace, change, and we want some
+      clarification on the usage of the desired attribute, and what’s wrong when processing the
+      modes with remarks and exemplum. In Issue <ref target="https://github.com/TEIC/TEI/issues/272"
+      > <hi rend="color(#1155cc)underline">272</hi> </ref>, it looks like the problem is that we’re
+      suppressing the output of remarks and exemplum when mode="change". @ident seems to be
+      problematic because it’s meant to be a unique identifier. Perhaps we need @type or something
+      like it—something categorical?</p>
+      <p>Discussion: Ticket is Go for SS to implement @mode and @ident, as it is done on
+      <gi>valItem</gi>.</p> </cell>
+    </row>
+    <row>
+     <cell>B</cell>
+     <cell> <ref target="https://github.com/TEIC/TEI/issues/1710"> <hi
+      rend="color(#1155cc)underline">1710</hi> </ref> </cell>
+     <cell> <ref target="https://github.com/TEIC/TEI/issues/1710"> <hi
+      rend="color(#1155cc)underline">Review placement of classes, macros, and datatypes in
+      modules</hi> </ref> </cell>
+     <cell>Definitely needs more work. At least a subgroup of two or three people to work out all
+      the movements.</cell>
+    </row>
+    <row>
+     <cell>C</cell>
+     <cell> <ref target="https://github.com/TEIC/TEI/issues/1707"> <hi
+      rend="color(#1155cc)underline">1707</hi> </ref> </cell>
+     <cell> <ref target="https://github.com/TEIC/TEI/issues/1707"> <hi
+      rend="color(#1155cc)underline">How to encode measurement</hi> </ref> </cell>
+     <cell>Subgroup recommends a small working group (with a Council member on it) to move this
+      along.</cell>
+    </row>
+    <row>
+     <cell>B</cell>
+     <cell> <ref target="https://github.com/TEIC/TEI/issues/1703"> <hi
+      rend="color(#1155cc)underline">1703</hi> </ref> </cell>
+     <cell> <ref target="https://github.com/TEIC/TEI/issues/1703"> <hi
+      rend="color(#1155cc)underline">adding (not replacing) ODD examples</hi> </ref> </cell>
+     <cell>Council agrees exemplums should be members of att.identified.</cell>
+    </row>
+    <row>
+     <cell>C</cell>
+     <cell> <ref target="https://github.com/TEIC/TEI/issues/1698"> <hi
+      rend="color(#1155cc)underline">1698</hi> </ref> </cell>
+     <cell> <ref target="https://github.com/TEIC/TEI/issues/1698"> <hi
+      rend="color(#1155cc)underline">The namespace could be mentioned more prominently in the
+      guidelines</hi> </ref> </cell>
+     <cell>Subgroup recommends Ch. 1 for introduction to namespaces and ref 23.4.4 and reference it
+      in Ch. 22 and 23. 23.4.4 describes use of TEI namespace—maybe not as prominently as the ticket
+      requests. Ch. 1 could introduce the TEI namespace, and link to Ch. 23.4.4. could indicate all
+      relevant namespaces in 23, but make appendix as for elements, attributes. </cell>
+    </row>
+    <row>
+     <cell>B</cell>
+     <cell> <ref target="https://github.com/TEIC/TEI/issues/1697"> <hi
+      rend="color(#1155cc)underline">1697</hi> </ref> </cell>
+     <cell> <ref target="https://github.com/TEIC/TEI/issues/1697"> <hi
+      rend="color(#1155cc)underline">mode="clone" on *Spec</hi> </ref> </cell>
+     <cell>
+      <p>Excellent! Subgroup comment: <ref
+      target="https://github.com/TEIC/TEI/issues/1697#issuecomment-368319805"/> </p>
+      <p>RV: mode="clone" only permitted on elements in att.identified. Greenlighted to work in
+      feature branch. Needs a Stylesheets ticket. And RV requests it to be implemented by June so
+      Roma JS can pick it up. But the other option is that RomaJS does not deal with it in first
+      release. That seems better.</p> </cell>
+    </row>
+    <row>
+     <cell/>
+     <cell/>
+     <cell/>
+     <cell/>
+    </row>
+    <row>
+     <cell>A Meet the Council Session</cell>
+     <cell> <ref target="https://github.com/TEIC/TEI/issues/1687"> <hi
+      rend="color(#1155cc)underline">1687</hi> </ref> </cell>
+     <cell>add @register to <gi>layout</gi></cell>
+     <cell>
+      <p>Needs comment from Council.</p> <list type="unordered">
+      <item>Subgroup has reviewed this...</item>
+      </list> </cell>
+    </row>
+    <row>
+     <cell>C</cell>
+     <cell> <ref target="https://github.com/TEIC/TEI/issues/1686"> <hi
+      rend="color(#1155cc)underline">1686</hi> </ref> </cell>
+     <cell> <ref target="https://github.com/TEIC/TEI/issues/1686"> <hi
+      rend="color(#1155cc)underline">the `<gi>affiliation</gi>` element appears somewhat abused;
+      `<gi>bio</gi>` would be better</hi> </ref> </cell>
+     <cell>This ticket refers to abuses of the use of <gi>affiliation</gi> for contents which are
+      not actually affiliation stuff. Suggests using <gi>bio</gi> for wide biographical data. Then
+      discussion becomes a snowball of suggestions: <gi>bio</gi>, <gi>shortBio</gi>,
+      <gi>biogNote</gi>, <tag>note type="bio"</tag>, etc., and a list of possible contained
+      elements.<list type="unordered">
+      <item><gi>placeName</gi> already added to <gi>affiliation</gi> <ref
+       target="https://github.com/TEIC/TEI/issues/1686"> <hi rend="color(#1155cc)underline"
+       >#1692</hi> </ref> </item>
+      <item>Answer this ticket saying in contexts like jTEI, use <tag>note type=”bio”</tag></item>
+      <item>Biography in personography is a new and bigger issue. If current elements are not enough
+       they can open a new ticket.</item>
+      </list> </cell>
+    </row>
+    <row>
+     <cell>B Meet the Council session</cell>
+     <cell> <ref target="https://github.com/TEIC/TEI/issues/1679"> <hi
+      rend="color(#1155cc)underline">1679</hi> </ref> </cell>
+     <cell> <ref target="https://github.com/TEIC/TEI/issues/1679"> <hi
+      rend="color(#1155cc)underline">New attribute @towhom</hi> </ref> </cell>
+     <cell>
+      <p>This ticket is go (from Open Council meeting). From the ticket:</p>
+      <p>New suggested subclass includes: <gi>kinesic</gi>, <gi>move</gi>, <gi>pause</gi>,
+      <gi>q</gi>, <gi>said</gi>, <gi>sp</gi>, <gi>spGrp</gi>, <gi>stage</gi>, <gi>u</gi>,
+      <gi>vocal</gi>, <gi>writing</gi></p>
+      <p>This would exclude <gi>annotationBlock</gi>, <gi>change</gi>, <gi>incident</gi>,
+      <gi>setting</gi>, <gi>shift</gi>. We can call it att.directed.</p> </cell>
+    </row>
+    <row>
+     <cell>A</cell>
+     <cell> <ref target="https://github.com/TEIC/TEI/issues/1663"> <hi
+      rend="color(#1155cc)underline">1663</hi> </ref> </cell>
+     <cell> <ref target="https://github.com/TEIC/TEI/issues/1663"> <hi
+      rend="color(#1155cc)underline">Things we'd like to do in ODD which haven't been implemented
+      yet</hi> </ref> </cell>
+     <cell>Nnothing to do?</cell>
+    </row>
+    <row>
+     <cell>B</cell>
+     <cell> <ref target="https://github.com/TEIC/TEI/issues/1658"> <hi
+      rend="color(#1155cc)underline">1658</hi> </ref> </cell>
+     <cell> <ref target="https://github.com/TEIC/TEI/issues/1658"> <hi
+      rend="color(#1155cc)underline"><gi>q</gi> should be allowed in <gi>span</gi></hi> </ref> </cell>
+     <cell>Subgroup thinks the choice is use <gi>mentioned</gi> or <gi>soCalled</gi> or we add
+      <gi>q</gi> to the content model of <gi>span</gi>. We don’t want to add the whole qLike
+      class.</cell>
+    </row>
+    <row>
+     <cell>C</cell>
+     <cell> <ref target="https://github.com/TEIC/TEI/issues/1655"> <hi
+      rend="color(#1155cc)underline">1655</hi> </ref> </cell>
+     <cell> <ref target="https://github.com/TEIC/TEI/issues/1655"> <hi
+      rend="color(#1155cc)underline"><gi>seal</gi> element description should be expanded to other
+      authentication mechanisms</hi> </ref> </cell>
+     <cell>Subgroup thinks James should do the proposed rewording. If Georg Vogeler wants to propose
+      an authentication section — he should submit a proposal. </cell>
+    </row>
+    <row>
+     <cell>A</cell>
+     <cell> <ref target="https://github.com/TEIC/TEI/issues/1650"> <hi
+      rend="color(#1155cc)underline">1650</hi> </ref> <hi rend="color(#1155cc)underline"> </hi> </cell>
+     <cell> <ref target="https://github.com/TEIC/TEI/issues/1650"> <hi
+      rend="color(#1155cc)underline">model.physDescPart is declared in the wrong module</hi> </ref>
+      <hi rend="color(#1155cc)underline"> </hi> </cell>
+     <cell>We recommend green-lighting this one.</cell>
+    </row>
+    <row>
+     <cell/>
+     <cell/>
+     <cell/>
+     <cell/>
+    </row>
+    <row>
+     <cell>C</cell>
+     <cell> <ref target="https://github.com/TEIC/TEI/issues/1641"> <hi
+      rend="color(#1155cc)underline">1641</hi> </ref> </cell>
+     <cell> <ref target="https://github.com/TEIC/TEI/issues/1641"> <hi
+      rend="color(#1155cc)underline">Change structure of supportDesc</hi> </ref> </cell>
+     <cell>Subgroup thinks the way to do this is with <gi>msPart</gi> or <gi>msFrag</gi>; we suggest
+      to close the ticket and reopen it when Torsten Schaßan is coming up with a good and convincing
+      example. </cell>
+    </row>
+    <row>
+     <cell>A</cell>
+     <cell> <ref target="https://github.com/TEIC/TEI/issues/1640"> <hi
+      rend="color(#1155cc)underline">1640</hi> </ref> </cell>
+     <cell> <ref target="https://github.com/TEIC/TEI/issues/1640"> <hi
+      rend="color(#1155cc)underline">description of classDecl needs revision, perhaps examples</hi>
+      </ref> </cell>
+     <cell>Go! Patch in those examples, please.</cell>
+    </row>
+    <row>
+     <cell>C Meet the Council Session</cell>
+     <cell> <ref target="https://github.com/TEIC/TEI/issues/1632"> <hi
+      rend="color(#1155cc)underline">1632</hi> </ref> </cell>
+     <cell> <ref target="https://github.com/TEIC/TEI/issues/1632"> <hi
+      rend="color(#1155cc)underline">egXML needs a way to highlight renditional aspects in the
+      example</hi> </ref> </cell>
+     <cell>This should not be discussed on Monday. We’ll sacrifice one of our other tickets instead.
+      JC should remove the commented out prose completely. Rest of ticket about @rend in
+      <gi>egXML</gi> should be revisited if someone wants it. JC: I do want it! (for encoding
+      existing egXMLs). And it would potentially be very useful for the Guidelines. How should one
+      highlight just the closing tag of a single element in an <gi>egXML</gi>? Or one element, or
+      the ‘changed’ element between two examples, etc. </cell>
+    </row>
+    <row>
+     <cell>B</cell>
+     <cell> <ref target="https://github.com/TEIC/TEI/issues/1621"> <hi
+      rend="color(#1155cc)underline">1621</hi> </ref> </cell>
+     <cell> <ref target="https://github.com/TEIC/TEI/issues/1621"> <hi
+      rend="color(#1155cc)underline">Status of Schematron rules in TEI</hi> </ref> </cell>
+     <cell>EB will make a proposal outside of the dev branch.</cell>
+    </row>
+    <row>
+     <cell>C</cell>
+     <cell> <ref target="https://github.com/TEIC/TEI/issues/1617"> <hi
+      rend="color(#1155cc)underline">1617</hi> </ref> </cell>
+     <cell> <ref target="https://github.com/TEIC/TEI/issues/1617"> <hi
+      rend="color(#1155cc)underline">dealing with multiple publication places</hi> </ref> </cell>
+     <cell>JC is right. Wait for Laurent or others to comment before closing.</cell>
+    </row>
+    <row>
+     <cell>A</cell>
+     <cell> <ref target="https://github.com/TEIC/TEI/issues/1607"> <hi
+      rend="color(#1155cc)underline">1607</hi> </ref> </cell>
+     <cell> <ref target="https://github.com/TEIC/TEI/issues/1607"> <hi
+      rend="color(#1155cc)underline">xsl:* (or other non-sch:*) not allowed within
+      constraintSpec</hi> </ref> </cell>
+     <cell>How far did <ref target="https://github.com/TEIC/TEI/pull/1742"/> go to resolve the issue
+      of processing XSL within Schematron and SQF in ODDs? Looks like this changed the @scheme from
+      isoschematron to schematron....(anything more?) Council resolves to test a simple change (as
+      now indicated on ticket).</cell>
+    </row>
+    <row>
+     <cell/>
+     <cell/>
+     <cell/>
+     <cell/>
+    </row>
+    <row>
+     <cell>C</cell>
+     <cell> <ref target="https://github.com/TEIC/TEI/issues/1596"> <hi
+      rend="color(#1155cc)underline">1596</hi> </ref> </cell>
+     <cell> <ref target="https://github.com/TEIC/TEI/issues/1596"> <hi
+      rend="color(#1155cc)underline">Pure-ODD content model elements appear to be strictly weaker
+      than regular languages -- intended?</hi> </ref> </cell>
+     <cell>Complete test suite for <gi>empty</gi> in stylesheets also, deprecate
+      <gi>content</gi>.</cell>
+    </row>
+    <row>
+     <cell>A</cell>
+     <cell>1586</cell>
+     <cell> <ref target="https://github.com/TEIC/TEI/issues/1586"> <hi
+      rend="color(#1155cc)underline">Domain of concept of cleanliness</hi> </ref> </cell>
+     <cell>Has anyone scheduled that follow-up meeting with Michael Sperberg-McQueen and Lou
+      Burnard? </cell>
+    </row>
+    <row>
+     <cell/>
+     <cell/>
+     <cell/>
+     <cell/>
+    </row>
+    <row>
+     <cell>C</cell>
+     <cell>1453</cell>
+     <cell> <ref target="https://github.com/TEIC/TEI/issues/1453"> <hi
+      rend="color(#1155cc)underline">`<gi>path</gi>` should exist alongside `<gi>zone</gi>` for
+      non-closed areas in facsimile</hi> </ref> </cell>
+     <cell>Tell MH to go ahead.</cell>
+    </row>
+    <row>
+     <cell>A</cell>
+     <cell>1431</cell>
+     <cell> <ref target="https://github.com/TEIC/TEI/issues/1431"> <hi
+      rend="color(#1155cc)underline">clarify how to encode short-form citations</hi> </ref> </cell>
+     <cell>
+      <p>Where are the examples called for in the ticket? Really, what we need now are examples.</p>
+      <p>Google Doc with a collection of examples for this ticket = Discussion from teleconference
+      (<ref
+      target="https://tei-c.org/activities/council/meetings/teleconference-2017-03-30-1300-utc/">
+      <hi rend="color(#1155cc)underline">March 2017</hi> </ref>).</p> </cell>
+    </row>
+    <row>
+     <cell>Discuss with Gerrit Brüning</cell>
+     <cell> <ref target="https://github.com/TEIC/TEI/issues/1427"> <hi
+      rend="color(#1155cc)underline">1427</hi> </ref> </cell>
+     <cell> <ref target="https://github.com/TEIC/TEI/issues/1427"> <hi
+      rend="color(#1155cc)underline">Restructure chapter 11</hi> </ref> </cell>
+     <cell>Discuss with Gerrit Brüning?</cell>
+    </row>
+   
+    <row>
+     <cell/>
+     <cell> <ref target="https://github.com/TEIC/TEI/pull/1665"> <hi rend="color(#1155cc)underline"
+      >1665</hi> </ref> </cell>
+     <cell> <ref target="https://github.com/TEIC/TEI/pull/1665"> <hi rend="color(#1155cc)underline"
+      >att.referring for <gi>span</gi></hi> </ref> <hi rend="color(#1155cc)underline"> </hi> </cell>
+     <cell>Pull request (for Ling Sig, so postponing until upcoming conference call).</cell>
+    </row>
+   </table></div>
+  </body>
+ </text>
+</TEI>

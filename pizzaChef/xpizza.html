@@ -1,0 +1,572 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "loose.dtd">
+<HTML> 
+  <HEAD> 
+	 <TITLE>TEI Pizza Chef</TITLE>
+	 <META NAME="author" CONTENT="Lou Burnard after MSM et al">
+	 <META NAME="title" CONTENT="TEI Tag Set Selector"> 
+  </HEAD> 
+  <BODY> <table>
+         <tr><td>
+	 <IMG SRC="Pix/welcome.jpg" WIDTH="90%"	  ALT="Build your own TEI XML DTD"/>         </td>
+
+				<!--IMG SRC="pizzaman.gif" ALT="a pizza chef" ALIGN="right" WIDTH="40%"-->
+	 <td><FONT SIZE="+2">New! improved! XML-compliant!!</FONT> These pages will help you design your own TEI-conformant document
+		type definition (DTD). 
+
+	 <P>The TEI Guidelines define several hundred  elements and associated
+		attributes, which can be combined to make many different DTDs, suitable for
+		many different purposes, either simple or complex. With the aid of the Pizza
+		Chef, you can build a DTD that contains just the elements you want, suitable
+		for use with any <!-- SGML or -->XML processing system. </P> 
+</td></tr></table>
+	 <H2>How does this work?</H2> 
+	 <P>We've tried to make this as easy as possible, but you do need to
+		understand a little about how the TEI DTD is organized. In particular, you need
+		to understand that the TEI scheme is organized into base and additional
+		<I>tagsets</I> (groups of elements), and that each element in a tagset can be
+		suppressed, or redefined. For the full description, see
+		<A HREF="P4X/ST.html">chapter three</A>
+		of the TEI Guidelines; if you want a quick reminder, see
+		<A HREF="Papers/J31/">an overview of the TEI
+		architecture</A>. </P> 
+	 <P>Here are the steps involved in using the PizzaChef: </P> 
+	 <OL> 
+		<LI>First, decide whether you need to use 
+		  <UL> 
+			 <LI><EM>one </EM> base tagset (recommended) or</LI> 
+			 <LI><EM>several</EM> base tagsets</LI> 
+		  </UL> (In the latter case, you must also decide whether to use the
+		  <EM>mixed</EM> or the<EM> general</EM> tagset). There are six base tagsets to
+		  choose from: for most purposes, you are recommended to choose Prose.</LI> 
+		<LI>Whichever base you use, you can add as many <EM>additional</EM>
+		  tagsets as you want. There are twelve to choose from. </LI> 		<LI>If you wish, your DTD can include declarations for one or more of the
+		  ISO public entity sets;</LI> 
+		<LI>If you want to discard or modify elements from the selected tagsets
+		  making up your DTD you can do this in two ways: 
+		  <UL> 
+			 <LI>You can scroll through a list of all the elements available for
+				use in your DTD, deciding for each one whether to include, ignore, or modify
+				it. The pizza chef will then send you a pair of draft <EM>TEI modification
+				files</EM> </LI> 
+			 <LI>You can prepare a pair of <EM>TEI modification files </EM>using
+				any other software to hand</LI>     
+		  </UL></li>
+<li>If you want to add new elements to your DTD, you should edit the
+		modification files</li>
+<li>Finally, you  pass the names of your modification files
+		  to the pizza chef, along with the tagsets you chose
+		originally, in order to build your personalized DTD. </LI> 
+<!--		<LI>Finally, you choose whether you want to receive the resulting DTD in
+		  SGML or in XML format. If you choose SGML, you can also choose whether to receive the
+		  DTD in parameterized or in &quot;compiled&quot; form</LI> 
+-->	 </OL> 
+	 <P><FONT COLOR="#FF0080" SIZE="+1">OK ... now let's get baking! </FONT></P>
+	 <!-- removed name=pizzaform-->
+	 <FORM
+	 ACTION="http://www.hcu.ox.ac.uk/cgi-bin/tei/xpizza/myPizza.dtd"
+	 METHOD="POST" 
+         ENCTYPE="multipart/form-data"
+         > <INPUT TYPE="hidden" NAME="action" VALUE="thin"> 
+		<H2>Step 1: choose your base</H2> 
+		<P>The links in this and the next section will take you to the
+		  appropriate section of the full TEI Guidelines, provided online for your
+		  reading pleasure. 
+Note that this text is that of the <i>P4 XML Edition</i> of the
+				Guidelines issued in March 2002. </P> 
+		<P>Select <EM>one</EM> of the following: </P> 
+		<TABLE> 
+		  <TR> 
+			 <TD VALIGN="top"><INPUT TYPE="radio" NAME="base" VALUE="prose"
+				CHECKED="checked"></TD> 
+			 <TD VALIGN="TOP">
+				<A HREF="P4X/DS.html">Prose</A> </TD>
+			 
+			 <TD VALIGN="TOP">This tagset is suitable for most documents most of
+				the time </TD> 
+		  </TR> 
+		  <TR> 
+			 <TD VALIGN="top"><INPUT TYPE="radio" NAME="base" VALUE="verse"></TD> 
+			 <TD VALIGN="TOP">
+				<A HREF="P4X/VE.html">Verse</A></TD> 
+			 <TD VALIGN="TOP"> This tagset adds specialist tagging for metrical
+				analysis, rhyme-scheme etc to the basic verse markup already included in the
+				core</TD> 
+		  </TR> 
+		  <TR> 
+			 <TD VALIGN="top"><INPUT TYPE="radio" NAME="base" VALUE="drama"></TD> 
+			 <TD VALIGN="TOP">
+				<A HREF="P4X/DR.html">Drama</A></TD> 
+			 <TD VALIGN="TOP"> This tagset adds specialist tagging for cast lists,
+				records of first performance, etc. to the basic drama markup already included
+				in the core</TD> 
+		  </TR> 
+		  <TR> 
+			 <TD VALIGN="top"><INPUT TYPE="radio" NAME="base" VALUE="spoken">
+				</TD> 
+			 <TD VALIGN="TOP"><A
+				HREF="P4X/TS.html"> Speech</A></TD> 
+			 <TD VALIGN="TOP"> This tagset replaces the basic structure by one
+				suitable for linguistic analysis of speech acts, etc.</TD> 
+		  </TR> 
+		  <TR> 
+			 <TD VALIGN="top"><INPUT TYPE="radio" NAME="base"
+				VALUE="dictionaries"></TD> 
+			 <TD VALIGN="TOP"><A
+				HREF="P4X/DI.html"> Dictionaries</A>
+				</TD> 
+			 <TD VALIGN="TOP"> This tagset replaces the basic structure with one
+				containing detailed lexicographic features</TD> 
+		  </TR> 
+		  <TR> 
+			 <TD VALIGN="TOP"><INPUT TYPE="radio" NAME="base"
+				VALUE="terminology"></TD> 
+			 <TD VALIGN="TOP"><A
+				HREF="P4X/TE.html">
+				Terminology</A></TD> 
+			 <TD VALIGN="TOP">This tagset replaces the basic structure with one
+				specific to terminological databases</TD> 
+		  </TR> 
+		  <TR> 
+			 <TD VALIGN="TOP"><INPUT TYPE="radio" NAME="base"
+				VALUE="general"></TD> 
+			 <TD VALIGN="TOP"><A
+				HREF="P4X/ST.html"> General
+				base</A></TD> 
+			 <TD VALIGN="TOP">This tagset allows you to combine tags from
+				different base tagsets, with the proviso that any single text division can
+				contain tags from only one of the base tagsets you choose. Check each tagset
+				you want to combine in this way from the following list: 
+				<CENTER> 
+				  <TABLE> 
+					 <TR> 
+						<TD><INPUT TYPE="checkbox" NAME="general" VALUE="prose">
+						  prose </TD> 
+						<TD> <INPUT TYPE="checkbox" NAME="general" VALUE="verse">
+						  verse </TD> 
+						<TD><INPUT TYPE="checkbox" NAME="general" VALUE="drama">
+						  drama </TD> 
+					 </TR> 
+					 <TR> 
+						<TD WIDTH="25%"><INPUT TYPE="checkbox" NAME="general"
+						  VALUE="spoken"> spoken texts</TD> 
+						<TD WIDTH="25%">
+						  <INPUT TYPE="checkbox" NAME="general" VALUE="dictionaries"> dictionaries</TD> 
+						<TD WIDTH="25%">
+						  <INPUT TYPE="checkbox" NAME="general" VALUE="terminology"> terminology</TD> 
+					 </TR> 
+				  </TABLE></CENTER> </TD> 
+		  </TR> 
+		  <TR> 
+			 <TD VALIGN="TOP"><INPUT TYPE="radio" NAME="base" VALUE="mixed"></TD> 
+			 <TD VALIGN="TOP">
+				<A HREF="P4X/ST.html">Mixed
+				base</A></TD> 
+			 <TD VALIGN="TOP">This tagset allows you to combine tags from
+				different base tagsets, with no restriction at all as to where tags from
+				different base tagsets can appear. Check each tagset you want to combine in
+				this way from the following list: Check each tagset you want to combine in this
+				way from the following list: 
+				<CENTER> 
+				  <TABLE> 
+					 <TR> 
+						<TD><INPUT TYPE="checkbox" NAME="mixed" VALUE="prose"> prose
+						  </TD> 
+						<TD> <INPUT TYPE="checkbox" NAME="mixed" VALUE="verse"> verse
+						  </TD> 
+						<TD><INPUT TYPE="checkbox" NAME="mixed" VALUE="drama"> drama
+						  </TD> 
+					 </TR> 
+					 <TR> 
+						<TD WIDTH="25%"><INPUT TYPE="checkbox" NAME="mixed"
+						  VALUE="spoken"> spoken texts</TD> 
+						<TD WIDTH="25%">
+						  <INPUT TYPE="checkbox" NAME="mixed" VALUE="dictionaries"> dictionaries</TD> 
+						<TD WIDTH="25%">
+						  <INPUT TYPE="checkbox" NAME="mixed" VALUE="terminology"> terminology</TD> 
+					 </TR> 
+				  </TABLE></CENTER> </TD> 
+		  </TR> 
+		</TABLE> 
+		<H2>Step 2: choose your toppings</H2> 
+		<P>Whichever tagset you chose above, you will always get the
+		  <A HREF="P4X/CO.html">core
+		  tagsets</A>, defining common core elements and the TEI Header. If those are not
+		  enough for you, you can also choose as many or as few as you want from the
+		  following additional tagsets. (The default selections are those included by the
+		  TEI Lite DTD)</P> 
+		<TABLE> 
+		  <TR> 
+			 <TD VALIGN="top"><INPUT TYPE="checkbox" NAME="added" VALUE="linking"
+				CHECKED="checked"> </TD> 
+			 <TD VALIGN="TOP">
+				<A
+				HREF="P4X/SA.html">Linking</A></TD> 
+			 <TD VALIGN="TOP">Adds elements for hypertext linking, segmentation,
+				and alignment </TD> 
+		  </TR> 
+		  <TR> 
+			 <TD VALIGN="top"><INPUT TYPE="checkbox" NAME="added" VALUE="figures"
+				CHECKED="checked"> </TD> 
+			 <TD VALIGN="TOP"><A
+				HREF="P4X/FT.html">figures</A></TD> 
+			 <TD VALIGN="TOP"> Adds elements for encoding tables, pictures, and
+				formulæ</TD> 
+		  </TR> 
+		  <TR> 
+			 <TD VALIGN="top"><INPUT TYPE="checkbox" NAME="added" VALUE="analysis"
+				CHECKED="checked"> </TD> 
+			 <TD VALIGN="TOP"><A
+				HREF="P4X/AI.html">Analysis</A></TD> 
+			 <TD VALIGN="TOP">Adds elements for interpretation and simple
+				linguistic analyses </TD> 
+		  </TR> 
+		  <TR> 
+			 <TD VALIGN="top"><INPUT TYPE="checkbox" NAME="added" VALUE="fs">
+				</TD> 
+			 <TD VALIGN="TOP"><A
+				HREF="P4X/FS.html">fs</A></TD> 
+			 <TD VALIGN="TOP">Adds elements for feature structure analysis </TD> 
+		  </TR> 
+		  <TR> 
+			 <TD VALIGN="top"><INPUT TYPE="checkbox" NAME="added"
+				VALUE="certainty"> </TD> 
+			 <TD VALIGN="TOP"><A
+				HREF="P4X/CE.html">certainty</A></TD>
+			 
+			 <TD VALIGN="TOP">Adds elements for recording uncertainty and
+				responsibility </TD> 
+		  </TR> 
+		  <TR> 
+			 <TD VALIGN="top"><INPUT TYPE="checkbox" NAME="added" VALUE="transcr">
+				</TD> 
+			 <TD VALIGN="TOP"><A
+				HREF="P4X/PH.html">transcr</A></TD> 
+			 <TD VALIGN="TOP">Adds elements for the transcription of primary
+				sources (e.g. manuscripts)</TD> 
+		  </TR> 
+		  <TR> 
+			 <TD VALIGN="top"><INPUT TYPE="checkbox" NAME="added"
+				VALUE="textcrit"></TD> 
+			 <TD VALIGN="TOP"><A
+				HREF="P4X/TC.html">textcrit</A> </TD>
+			 
+			 <TD VALIGN="TOP">Adds elements for text-critical apparatus </TD> 
+		  </TR> 
+		  <TR> 
+			 <TD VALIGN="top"><INPUT TYPE="checkbox" NAME="added"
+				VALUE="names.dates"> </TD> 
+			 <TD VALIGN="TOP"><A
+				HREF="P4X/ND.html">names.dates</A></TD>
+			 
+			 <TD VALIGN="TOP">Adds elements for the detailed tagging of names and
+				dates</TD> 
+		  </TR> 
+		  <TR> 
+			 <TD VALIGN="top"><INPUT TYPE="checkbox" NAME="added" VALUE="nets">
+				</TD> 
+			 <TD VALIGN="TOP"><A
+				HREF="P4X/GD.html">nets</A></TD> 
+			 <TD VALIGN="TOP"> Adds elements for recording the abstract structure
+				of mathematical graphs, networks, and trees</TD> 
+		  </TR> 
+		  <TR> 
+			 <TD VALIGN="top"><INPUT TYPE="checkbox" NAME="added" VALUE="corpus">
+				</TD> 
+			 <TD VALIGN="TOP"><A
+				HREF="P4X/CC.html">corpora</A></TD> 
+			 <TD VALIGN="TOP"> Adds specialised elements to the TEI-header for use
+				with language corpora</TD> 
+		  </TR> 
+		</TABLE> 
+		<H2>Step 3: Choose your Entity Sets</H2> 
+		<P>If you are using any named character entities you'll need to include
+		  definitions for them. We've provided a selection of commonly used entity sets, covering most of the languages of Western and
+                  Central Europe, including Latin characters with  diacritics, Greek, Cyrillic, mathematical symbols, etc.</P> 
+                <P>To see which characters each entity set defines, just click on its name. Of course, an XML document can also use character entity references such as <code>&amp;#xnnn;</code> where <i>nnn</i> is a hexadecimal character number in the Universal Character Set. (And if by some chance, you don't have the UCS definitions in your head, <a href="http://www.eki.ee/letter/">here's a look up facility</a>).
+                <P>Click on the checkbox for each entity set you intend to use. This will insert appropriate Unicode declarations for that entity set  
+               into your DTD
+</P>
+		<TABLE> 
+		  <TR> 
+			 <TD VALIGN="top"><INPUT TYPE="checkbox" NAME="entities"
+				VALUE="isolat1"></TD>
+			 <TD><A
+				HREF="XML_Entities/iso-lat1.ent">ISOlat1:</A></TD> 
+			 <TD VALIGN="TOP"> ISO Latin 1 (Western European languages)</TD> 
+		  </TR> 
+		  <TR> 
+			 <TD VALIGN="top"><INPUT TYPE="checkbox" NAME="entities"
+				VALUE="isolat2"></TD>
+			 <TD><A
+				HREF="XML_Entities/iso-lat2.ent">ISOlat2:</A></TD> 
+			 <TD VALIGN="TOP"> ISO Latin 2 (Eastern European languages and
+				miscellaneous)</TD> 
+		  </TR> 
+		  <TR> 
+			 <TD VALIGN="top"><INPUT TYPE="checkbox" NAME="entities"
+				VALUE="isogrk1"></TD>
+			 <TD><A
+				HREF="XML_Entities/iso-grk1.ent">ISOgrk1:</A></TD> 
+			 <TD VALIGN="TOP"> ISO Greek 1 (Greek alphabetic characters
+				<EM>without diacritics</EM>)</TD> 
+		  </TR> 
+		  <TR> 
+			 <TD VALIGN="top"><INPUT TYPE="checkbox" NAME="entities"
+				VALUE="isogrk2"></TD>
+			 <TD><A
+				HREF="XML_Entities/iso-grk2.ent">ISOgrk2:</A></TD> 
+			 <TD VALIGN="TOP"> ISO Greek 2 (Monotoniko Greek)</TD> 
+		  </TR> 
+		  <TR> 
+			 <TD VALIGN="top"><INPUT TYPE="checkbox" NAME="entities"
+				VALUE="isocyr1"></TD>
+			 <TD><A
+				HREF="XML_Entities/iso-cyr1.ent">ISOcyr1:</A></TD> 
+			 <TD VALIGN="TOP"> ISO Cyrillic 1 (Russian Cyrillic)</TD> 
+		  </TR> 
+		  <TR> 
+			 <TD VALIGN="top"><INPUT TYPE="checkbox" NAME="entities"
+				VALUE="isocyr2"></TD>
+			 <TD><A
+				HREF="XML_Entities/iso-cyr2.ent">ISOcyr2:</A></TD> 
+			 <TD VALIGN="TOP"> ISO Cyrillic 2 (Cyrillic for non-Russian
+				languages)</TD> 
+		  </TR> 
+		  <TR> 
+			 <TD VALIGN="top"><INPUT TYPE="checkbox" NAME="entities"
+				VALUE="isonum"></TD>
+			 <TD><A
+				HREF="XML_Entities/iso-num.ent">ISOnum:</A></TD> 
+			 <TD VALIGN="TOP"> ISO Numeric and Special Graphic Characters
+				(fractions, some superscript numerals, arithmetic operators, arrows, quotation
+				marks)</TD> 
+		  </TR> 
+		  <TR> 
+			 <TD VALIGN="top"><INPUT TYPE="checkbox" NAME="entities"
+				VALUE="isodia"></TD>
+			 <TD><A
+				HREF="XML_Entities/iso-dia.ent">ISOdia:</A></TD> 
+			 <TD VALIGN="TOP"> ISO Diacritics (acute, breve, caron, cedil, circ,
+				tilde, uml, etc.)</TD> 
+		  </TR> 
+		  <TR> 
+			 <TD VALIGN="top"><INPUT TYPE="checkbox" NAME="entities"
+				VALUE="isopub"></TD>
+			 <TD><A
+				HREF="XML_Entities/iso-pub.ent">ISOpub:</A></TD> 
+			 <TD VALIGN="TOP"> ISO Publishing Characters (dashes, fractions,
+				selected dingbats)</TD> 
+		  </TR> 
+		  <TR> 
+			 <TD VALIGN="top"><INPUT TYPE="checkbox" NAME="entities"
+				VALUE="isobox"></TD>
+			 <TD><A
+				HREF="XML_Entities/iso-box.ent">ISObox:</A></TD> 
+			 <TD VALIGN="TOP"> ISO Box and Line Drawing Characters</TD> 
+		  </TR> 
+		  <TR> 
+			 <TD VALIGN="top"><INPUT TYPE="checkbox" NAME="entities"
+				VALUE="isotech"></TD>
+			 <TD><A
+				HREF="XML_Entities/iso-tech.ent">ISOtech:</A></TD> 
+			 <TD VALIGN="TOP"> ISO General Technical Use Characters</TD> 
+		  </TR> 
+		  <TR> 
+			 <TD VALIGN="top"><INPUT TYPE="checkbox" NAME="entities"
+				VALUE="isogrk3"></TD>
+			 <TD><A
+				HREF="XML_Entities/iso-grk3.ent">ISOgrk3:</A></TD> 
+			 <TD VALIGN="TOP"> ISO Greek Characters for Technical Use</TD> 
+		  </TR> 
+		  <TR> 
+			 <TD VALIGN="top"><INPUT TYPE="checkbox" NAME="entities"
+				VALUE="isogrk4"></TD>
+			 <TD><A
+				HREF="XML_Entities/iso-grk4.ent">ISOgrk4:</A></TD> 
+			 <TD VALIGN="TOP"> ISO Alternative-form (bold) Greek Characters for
+				Technical Use</TD> 
+		  </TR> 
+		  <TR> 
+			 <TD VALIGN="top"><INPUT TYPE="checkbox" NAME="entities"
+				VALUE="isoamso"></TD>
+			 <TD><A
+				HREF="XML_Entities/iso-amso.ent">ISOamso:</A></TD> 
+			 <TD VALIGN="TOP"> ISO Additional Mathematical Symbols - Ordinary
+				Symbols</TD> 
+		  </TR> 
+		  <TR> 
+			 <TD VALIGN="top"><INPUT TYPE="checkbox" NAME="entities"
+				VALUE="isoamsb"></TD>
+			 <TD><A
+				HREF="XML_Entities/iso-amsb.ent">ISOamsb:</A></TD> 
+			 <TD VALIGN="TOP"> ISO Additional Mathematical Symbols - Binary and
+				Large Operators</TD> 
+		  </TR> 
+		  <TR> 
+			 <TD VALIGN="top"><INPUT TYPE="checkbox" NAME="entities"
+				VALUE="isoamsr"></TD>
+			 <TD><A
+				HREF="XML_Entities/iso-amsr.ent">ISOamsr:</A></TD> 
+			 <TD VALIGN="TOP"> ISO Additional Mathematical Symbols -
+				Relations</TD> 
+		  </TR> 
+		  <TR> 
+			 <TD VALIGN="top"><INPUT TYPE="checkbox" NAME="entities"
+				VALUE="isoamsn"></TD>
+			 <TD><A
+				HREF="XML_Entities/iso-amsn.ent">ISOamsn:</A></TD> 
+			 <TD VALIGN="TOP"> ISO Additional Mathematical Symbols - Negated
+				Relations</TD> 
+		  </TR> 
+		  <TR> 
+			 <TD VALIGN="top"><INPUT TYPE="checkbox" NAME="entities"
+				VALUE="isoamsa"></TD>
+			 <TD><A
+				HREF="XML_Entities/iso-amsa.ent">ISOamsa:</A></TD> 
+			 <TD VALIGN="TOP"> ISO Additional Mathematical Symbols - Arrow
+				Relations</TD> 
+		  </TR> 
+		  <TR> 
+			 <TD VALIGN="top"><INPUT TYPE="checkbox" NAME="entities"
+				VALUE="isoamsc"></TD>
+			 <TD><A
+				HREF="XML_Entities/iso-amsc.ent">ISOamsc:</A></TD> 
+			 <TD VALIGN="TOP"> ISO Additional Mathematical Symbols - Opening and
+				Closing Delimiters</TD> 
+		  </TR> 
+		</TABLE> 
+		<P><B>Warning</B>.Inclusion of any of these character entities in your document does not
+		  constitute a guarantee that all computer systems will be able to display and
+		  process the character correctly! But at least, if you have a decent Unicode font, you should be able to see them.</P>
+		
+		<H2>Step 4: Review selected elements</H2> 
+		<P>If you want to remove or redefine any of the elements contained in
+		  your selected tagsets, you need to supply a pair of TEI Modification Files. If
+		  you have already created such files, skip ahead to <A HREF="#step4">step 5.</A>
+		  If you don't want to make any further modification or selection, skip ahead to
+		  <A HREF="#step5">step 6.</A></P>
+		<P>If you would like the Pizza Chef to help you create your pair of local
+		  modification files click on one of the following buttons:</P> 
+		<TABLE> 
+		  <TR> 
+			 <TD><INPUT TYPE="submit" NAME="submit"
+				VALUE="Generate Local Modification Files (A)"></TD> 
+			 <TD><I>click here if you intend to <B>Include</B> all the elements in
+				your selected tagsets by default</I></TD> 
+		  </TR> 
+		  <TR> 
+			 <TD><INPUT TYPE="submit" NAME="submit"
+				VALUE="Generate Local Modification Files (B)"></TD> 
+			 <TD><I>click here if you intend to <B>Ignore</B> all the elements in
+				your selected tagsets by default</I></TD> 
+		  </TR> 
+		</TABLE>
+		<P><B>Warning: </B>The pizza chef cannot stop you removing elements you
+		  shouldn't!</P> 
+		<H2><A NAME="step4">Step 5: Supply your modification files</A></H2>
+		<P>Once you have finalised the content of your local modification files
+		  please tell the pizzaChef where to read them from
+. </P> 
+<center>		<TABLE> 
+		  <TR> 
+			 <TD VALIGN="TOP">Your TEI.extensions.ent file</TD> 
+			 <TD VALIGN="TOP"> <INPUT TYPE="FILE" NAME="entURL" SIZE="20"></TD> 
+		  </TR> 
+		  <TR> 
+			 <TD VALIGN="TOP">Your TEI.extensions.dtd file</TD> 
+			 <TD VALIGN="TOP"> <INPUT TYPE="file" NAME="dtdURL" SIZE="20"></TD> 
+		  </TR> 
+		</TABLE> </center>
+		<P><B>WARNING</B> If either of your local modification files includes
+		  references to external parameter entities not defined in the TEI dtd itself, then you will not be able
+		  to generate a DTD from them. Unfortunately, we cannot automatically
+detect such things. </P> 
+		<H2><A NAME="step5">Step 6: Bake that pizza!</A></H2> 
+
+<center><h2><INPUT TYPE="submit" NAME="submit"						VALUE="Generate full DTD">
+</h2></center>
+
+<!--
+		<P>Almost there! Just a few more questions... </p>
+	
+<P>What kind of DTD would you like?
+<table><tr><td>(a) <INPUT name=sxom type=radio 
+value=sgml></td> <td> Good old fashioned SGML</td></tr>
+<tr><td>(b) <INPUT CHECKED name=sxom type=radio value=none></td><td> XML, with no tag 
+omissibility information</td></tr><tr> <td>(c) <INPUT name=sxom type=radio value=xmlpe> </td><td>XML, 
+with parameterized tag omissibility information</td></tr></table>
+<i>If you want to use 
+SGML software, choose (a). If you want the DTD to look like the examples in XML 
+books, choose (b). If you want to use both SGML and XML software, choose (c). </i>
+<p>If you chose SGML, do you want to use (a)
+		  <INPUT TYPE="radio" NAME="extid" VALUE="fpi" CHECKED="checked"> public
+		  identifiers, (b) <INPUT TYPE="radio" NAME="extid" VALUE="sys"> system
+		  identifiers, or (c) <INPUT TYPE="radio" NAME="extid" VALUE="both"> both? (If you chose XML, you will always get both). </P>
+
+
+		
+				<TABLE> 
+				  <TR> 
+					 <TD WIDTH="20%"><INPUT TYPE="submit" NAME="submit"
+						VALUE="Generate Subset"></TD> 
+					 <TD>generates a document type declaration for the DTD you have
+						defined (not available for XML);</TD> 
+				  </TR> 
+				  <TR> 
+					 <TD WIDTH="20%"><INPUT TYPE="submit" NAME="submit"
+						VALUE="Generate full DTD"></TD> 
+					 <TD> generates a &quot;compiled&quot; version of the DTD you
+						have defined;</TD> 
+				  </TR> 
+	
+			  <TR> 
+					 <TD WIDTH="20%"><INPUT TYPE="submit" NAME="submit"
+						VALUE="Send SGML declaration"></TD> 
+					 <TD>sends you a copy of an SGML declaration for your DTD.</TD> 
+				  </TR> 
+				</TABLE>
+-->
+
+ </FORM> 
+
+	 <IMG SRC="Pix/pizza.gif" ALIGN="LEFT" 
+width="40%"
+	  ALT="hmmm, this is a tasty little sucker">
+<p><i>If you're interested in how this website was built and how it works,
+you might like to read the following fine Technical Reports</i> :</p>
+<ul>
+<li><a href="Papers/pizzanotes.html">Design and implementation of the Pizza Chef</a></li>
+<li><a href="Software/carthage/">Carthage</a>: a DTD pre-processor</li>
+<li><a href="Vault/ED/edw69.htm">EDW69</a>: Construction of an XML version of the TEI DTD</li>
+</ul>
+ <P><I>This version of the TEI Pizza Chef was developed by Lou
+		Burnard, but all the clever stuff backstage is still
+		done using Michael Sperberg-McQueen's <B>carthage</B>.
+An alternative version, developed by Sebastian Rahtz, is available
+under the name of <a href="Software/maketeidtd/">maketeidtd</a>. 
+		</I>. </P> 
+
+<HR> 
+<small>
+Thanks to the various fine web
+		sites which make TEI publications available freely
+		over the network.  Image of pepperoni, olive, and
+		mushroom pizza courtesy of the <A
+		HREF="http://www.ecst.csuchico.edu/~pizza/">Internet
+		Pizza Server</A>. All power to them in <A
+		HREF="http://www.ecst.csuchico.edu/~pizza/dow.html">their
+		continuing struggle.</A> <HR> Original version
+                13 September 1997,
+		updated July 1998; Version 2 released 8 Oct 1999.
+</small>
+<!-- Keep this comment at the end of the file
+Local variables:
+mode: sgml
+sgml-default-dtd-file:"~/sgml/html32.ced"
+sgml-omittag:t
+sgml-shorttag:t
+End:
+-->
+  </BODY>
+</HTML>
+

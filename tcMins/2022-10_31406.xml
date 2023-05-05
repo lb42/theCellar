@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/home/lou/Public/TEI/TEICSS/tei.css" type="text/css"
+ ?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:t="http://www.tei-c.org/ns/1.0" n="2022-10"><teiHeader><fileDesc><titleStmt><title>Minutes of the TEI Technical Council</title><meeting n="2022-10" when="2022-10-14">TEI Technical Council online
+     meeting : <date>14 October 2022</date></meeting></titleStmt><publicationStmt><distributor>TEI Website</distributor><idno>TCM159</idno></publicationStmt><sourceDesc><p>Retagged from a WordPress HTML file</p></sourceDesc></fileDesc><revisionDesc><change when="2023-04-25">Archival header confected</change><change>Extracted from Word Press article with id post-31406</change></revisionDesc></teiHeader><text><body><div><p><hi style="strong">Meeting times:</hi></p><list style="ul">
+<item>7am PDT / 10am EDT / 3pm BST / 4pm CEST</item>
+<item>Started:     15:05Z    Ended:    16:38Z</item>
+</list><p><hi style="strong">Present:</hi></p><list style="ul">
+<item>Syd Bauman (SB)</item>
+<item>Elisa Beshero-Bondar (EBB)</item>
+<item>Hugh Cayless (HC)</item>
+<item>Patricia O Connor (TOC)</item>
+<item>Martina Scholger (MS)</item>
+<item>Sabine Seifert (SS)</item>
+<item>Peter Stadler (PS)</item>
+<item>Magdalena Turska (MT, arrived 15:17Z)</item>
+<item>guest: Piotr Banski</item>
+</list><p><hi style="strong">Apologies/Not Present:</hi></p><list style="ul">
+<item>Helena Bermúdez Sabel (HBS)</item>
+<item>Elli Bleeker (EB)</item>
+<item>Janelle Jenstad (JJ)</item>
+<item>Raff Viglianti (RV)</item>
+</list><p> </p><div type="h2"><head>Welcome Patricia</head><list style="ul">
+<item>mentor
+<list style="ul">
+<item>Co-mentors to cover time zone issue and the installation process</item>
+<item>MS to help TOC to get Windows Subsystem for Linux installed.</item>
+<item>Action on MS to document the installation process and create documentation for new Council Members.</item>
+<item>SB grant/funding for a class/summer school for TEI enthusiasts wanting to join TEI Council – purpose of class/school to train XML researchers on what they’ll need to know for Council.</item>
+<item>MS suggested we also invite Technical Council candidates to a conference call or short VF2F prior to the annual conference; general agreement that this is worth trying.</item>
+</list>
+</item>
+</list></div><div type="h2"><head>Ling SIG – Council liaison</head><list style="ul">
+<item>Invited guest: Piotr Banski</item>
+<item>Request a liaison with the Council.</item>
+<item>Not obvious that (computational) linguists are doing TEI.
+<list style="ul">
+<item>computational linguists are typically aiming for simplicity and efficiency; mostly CSV or TSV representation, avoiding XML</item>
+</list>
+</item>
+<item>TEI can form a bridge to the linguistics community. Keeping the bridge open is important.</item>
+<item>Also distinguishes the TEI to be thinking of linguistics and finding efficient methods, even if it introduces some tension in both communities.</item>
+<item>Piotr Banski would like a liaison to remind to work on TEI issues, rather than concentrate on primarily linguistics community issues.
+<list style="ul">
+<item>Should be someone who works with linguistics formally</item>
+<item>Who can talk about the issues because it is not always easy to communicate the subject in GitHub Issues; helps if this person is on Council</item>
+<item>PS has been excellent at this, and has agreed to mentor a new Ling SIG liaison</item>
+<item>Regular set of meetings e.g. quarterly</item>
+<item>Piotr hopes to revive the Ling SIG mailing list and find a co-convenor</item>
+<item>HBS has volunteered to be liaison because her projects have grounding in linguistics; may be resuming work in validating feature structures. MT will help HBS</item>
+<item><hi style="b">Action on PS</hi><hi style="b"><hi style="i">,</hi></hi><hi style="b"> HBS, MT, and Piotr</hi> to meet and talk by November 18. PS to organize the meeting.</item>
+</list>
+</item>
+</list></div><div type="h2"><head>Meeting times Nov &amp; Dec</head><list style="ul">
+<item>Thursday, Nov 10 and Dec 8 (8am PDT / 11am EDT / 4pm BST / 5pm CEST)</item>
+</list></div><div type="h2"><head>Next release</head><list style="ul">
+<item>Timeline
+<list style="ul">
+<item>Release on Tues. October 25</item>
+<item>Freeze: Thurs. October 20</item>
+</list>
+</item>
+<item>Release techs: SS, PS, &amp; MS.</item>
+<item>Action on SS, PS &amp; MS to have a look at TCW 22,<hi style="i"> Building a TEI Release</hi> in advance: <ref target="https://tei-c.org/activities/council/working/tcw22/">https://tei-c.org/activities/council/working/tcw22/</ref></item>
+<item>Open issues and PRs
+<list style="ul">
+<item>Milestone “Guidelines 4.5.0”  <ref target="https://github.com/TEIC/TEI/issues?q=is%3Aopen+is%3Aissue+milestone%3A%22Guidelines+4.5.0%22">https://github.com/TEIC/TEI/issues?q=is%3Aopen+is%3Aissue+milestone%3A%22Guidelines+4.5.0%22</ref></item>
+<item>Milestone “Stylesheets 7.54.0”: <ref target="https://github.com/TEIC/Stylesheets/issues?q=is%3Aopen+is%3Aissue+milestone%3A%22Release+7.54.0%22">https://github.com/TEIC/Stylesheets/issues?q=is%3Aopen+is%3Aissue+milestone%3A%22Release+7.54.0%22</ref>
+<list style="ul">
+<item><ref target="https://github.com/TEIC/Stylesheets/issues/571">#571</ref>: In the Stylesheets meeting of 2022-09-29 we successfully added the language of the exemplum when it is different from the current one. This ticket was kept open so that in the next TEI Council meeting we could evaluate whether it looks good enough before the next release or if further enhancements are urgent. See <ref target="https://jenkins.tei-c.org/job/TEIP5-dev/lastSuccessfulBuild/artifact/P5/release/doc/tei-p5-doc/en/html/examples-teiHeader.html">https://jenkins.tei-c.org/job/TEIP5-dev/lastSuccessfulBuild/artifact/P5/release/doc/tei-p5-doc/en/html/examples-teiHeader.html</ref>
+<list style="ul">
+<item>Council notes this is an improvement and we don’t need to back it out.</item>
+<item>We can continue working on it on another ticket if further improvements are deemed appropriate</item>
+</list>
+</item>
+</list>
+</item>
+<item>Pull requests: TEI: <ref target="https://github.com/TEIC/TEI/pulls">https://github.com/TEIC/TEI/pulls</ref>, Stylesheets: <ref target="https://github.com/TEIC/Stylesheets/pulls?q=is%3Aopen+is%3Apr">https://github.com/TEIC/Stylesheets/pulls</ref>
+<list style="ul">
+<item>HBS &amp; SB both say <ref target="https://github.com/TEIC/Stylesheets/pull/532">#532</ref> is ready to merge; Council agrees to merge. DONE.</item>
+<item>SB has sent ping to MH &amp; Nick Cole to review #<ref target="https://github.com/TEIC/Stylesheets/pull/525">525</ref></item>
+</list>
+</item>
+<item>Nested <gi>ab</gi> element: issue <ref target="https://github.com/TEIC/TEI/issues/1856">#1856</ref>, PR #<ref target="https://github.com/TEIC/TEI/pull/2352">2352</ref>.
+<list style="ul">
+<item>Trying to get this merged in for upcoming release; thus <hi style="b">action on all</hi> by <hi style="b">Wed 10-19</hi> to read and post.</item>
+</list>
+</item>
+<item>ISO Cat references: <ref target="https://github.com/TEIC/TEI/issues/1866">https://github.com/TEIC/TEI/issues/1866</ref>, <ref target="https://github.com/TEIC/TEI/issues/2227">https://github.com/TEIC/TEI/issues/2227</ref>, <ref target="https://github.com/TEIC/TEI/issues/2340">https://github.com/TEIC/TEI/issues/2340</ref>
+<list style="ul">
+<item>Elimination of ISO Cat references. Standard does not really define the attributes any longer, but it is referenced in the Guidelines.</item>
+<item>With Piotr: discussion of work on datcat
+<list style="ul">
+<item>remove dcr: namespace to make them native TEI attributes</item>
+<item>`<gi>equiv</gi>` vs `@datcat`: `<gi>equiv</gi>` for tagdocs and taxonomies in the <gi>teiHeader</gi>. `@datcat` is for use anywhere else. This does not need to be a purely linguistic attribute. Could be used anywhere we need an external taxonomy.</item>
+<item>Piotr has added attributes: `@valueDatcat` and `@targetDatcat`, like `@targetLang`</item>
+<item>See <ref target="https://jenkins-paderborn.tei-c.org/view/LingSIG/job/TEIP5-LingSIG-deadISOCat/lastSuccessfulBuild/artifact/P5/release/doc/tei-p5-doc/en/html/ref-att.datcat.html">https://jenkins-paderborn.tei-c.org/view/LingSIG/job/TEIP5-LingSIG-deadISOCat/lastSuccessfulBuild/artifact/P5/release/doc/tei-p5-doc/en/html/ref-att.datcat.html</ref></item>
+<item>The branch is at <ref target="https://github.com/LingSIG/TEI/tree/deadISOCat">https://github.com/LingSIG/TEI/tree/deadISOCat</ref>.</item>
+<item>PR is <ref target="https://github.com/TEIC/TEI/pull/2359">#2359</ref>.</item>
+</list>
+</item>
+</list>
+</item>
+</list>
+</item>
+</list></div><div type="h2"><head>New chair for 2023</head><list style="ul">
+<item>EBB volunteers. <hi style="b">Action on MS</hi>: will send email as several council members are not present in this zoom, decision needed in December, one new chair or perhaps two co-chairs (and then changing of bylaws).</item>
+</list></div><div type="h2"><head>Report on CMC</head><list style="ul">
+<item>SB: Slow progress being made — not much to report except that the release of the chapter in Spring 2023 is looking a bit less likely.</item>
+</list></div><div type="h2"><head>Guidelines production via TEI Processing Model</head><list style="ul">
+<item>MT presents a <ref target="https://guidelines.teipublisher.com/">prototype</ref>, and requests testing and reporting of issues (i.e., discrepancies with existing Guidelines) and feature requests via <ref target="https://github.com/eeditiones/tei-guidelines">https://github.com/eeditiones/tei-guidelines</ref></item>
+<item>At which point shall we move this repo to TEI?</item>
+<item>Consider branding and design (involving touch-up of the TEI logo).</item>
+<item>MT suggests we get a new or updated logo.</item>
+<item>MT suggests we outsource design advice, if not work, on GLs (and website).</item>
+</list></div><div type="h2"><head>oXygen version 25</head><list style="ul">
+<item>See plugin functionality as discussed in e-mails by Martin Holmes.</item>
+</list></div><div type="h2"><head>AOB</head><list style="ul">
+<item>SB suggests we discuss (via Slack) the September issues (see table below) for which the subgroup suggested they be marked green.</item>
+<item><hi style="strong">Action on MS</hi> to initiate the discussion on Slack.</item>
+</list></div><div type="h2"><head>Issues from the F2F meeting (September 2022)</head><p>Group D: SB, HB, SS</p><p>Group E: MT, MH, EBB</p><p>Group F: HC, MS, PS</p><table>
+
+<row>
+<cell>#2300</cell>
+<cell>D</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/2300">restrict embedded transcription to sourceDoc / exclude text in zone and line as part of facsimile</ref></cell>
+<cell>We suggest marking it as green</cell>
+</row>
+<row>
+<cell>#2314</cell>
+<cell>D</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/2314">TEI example is old-formatted</ref></cell>
+<cell>We suggest marking it as green</cell>
+</row>
+<row>
+<cell>#2315</cell>
+<cell>E</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/2315">example example discusses a possible future feature</ref></cell>
+<cell>Subgroup agrees that changing the item is a good idea to encourage best practices.</cell>
+</row>
+<row>
+<cell>#2327</cell>
+<cell>F</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/2327">teidata.unboundedInt should be named teidata.unboundedCount</ref></cell>
+<cell>Seems sensible. Group thinks we should merge the PR and close.
+Do we need deprecation of teidata.unboundedInt before nuking it?!</cell>
+</row>
+<row>
+<cell>#2331</cell>
+<cell>E</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/2331">bad link → consistent referencing needed to ISO 24611</ref></cell>
+<cell>Subgroup suggests green for go to create a new bibliography entry and fix all references to point to it.</cell>
+</row>
+
+</table><p> </p></div></div></body><!-- #post-## --></text></TEI>

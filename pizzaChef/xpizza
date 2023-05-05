@@ -1,0 +1,557 @@
+#!/usr/bin/perl 
+# version 1.4
+# changes to make consistent on both sites
+# oct 03
+#  14 feb 2002 : really hacked to make it work with P4 XML only
+#  7 july 01: quick hack to make it work with P4 dtds
+#
+# version 1.3: 
+#   26 feb 00 : fix outstanding bugs in xmlpe handling 
+#               revise entfile logic so that it works even without one
+#               tidy up system dependencies
+#
+# version 1.2
+#  1 nov 99: added disgusting kludge to deal with two extn files getting
+#           passed as one
+# revised version with xml support and links to HCU web
+# uses p3data.dat file (condensed version of p3reftag) for 
+#
+# version 1.1
+# removed option to send sgml decln
+
+# CGI stuff is all done using CGI-Lite (available from CPAN)
+# LB October 99
+
+use CGI_Lite; $cgi = new CGI_Lite;
+
+$debug = "pizzalog"; # holds name of debug file; if this is non-zero
+                          # huge quantities of trace output are produced
+#$debug = 0;
+$tempDir = "/tmp";    # directory for temporary files: must be
+                          # writable by httpd and must exist
+
+( open(LOG, ">>$tempDir\/$debug") || die "Cannot open log $!" ) if ($debug);
+
+
+$cgi->set_directory ($tempDir) || die "Directory doesn't exist.\n";
+
+$unique = "pizza$$";      # use process ID to make filenames unique
+$version = "1.4";
+
+                          # URL for this script (used to re-enter)  
+$myURL = "./xpizza";
+
+                          #location of carthage executable
+$carthago = "./carthago";
+
+                         # stem of all links to  HTML version of the Guidelines
+$webHome = "/P4X";
+#$webHomeRef = "http://www.hcu.ox.ac.uk/TEI/Guidelines/ref/";
+#$webHomeRef = "/home/www/htdocs/TEI/P4X/";
+#path to DTD files (must be full path for carthago)
+#$dtdHome = "/home/www/htdocs/TEI/P4X/DTD/";
+#$entityHome = "/home/www/htdocs/TEI/Entity_Sets/Unicode/";
+$dtdHome = "../htdocs/release/xml/teip4/schema/dtd/";
+$entityHome = "../htdocs/Entity_Sets/Unicode/";
+
+      # filenames for vital data files: by default these are in the 
+      # CGIBIN directory
+      # If you put them somewhere else, remember to set permissions 
+      # for httpd to read them
+      # tagdata file is generated during dtd generation (but then needs
+      # hand editing)
+
+
+$tagDataFile = "pizza.list";  # read by loadtagtables (qv)                              
+
+      # various other constants
+
+$sysId =  " SYSTEM \"tei2\.dtd\""; 
+$today = (localtime)[3] . " " . (Jan,Feb,Mar,Apr,May,Jun,Jul,Aug,Sep,Oct,Nov,Dec)[(localtime)[4]] . " " . ((localtime)[5] + 1900);
+$htmlHeader = "Content-type: text/html\n\n";
+$textHeader = "Content-type: text/plain\n\n";
+$tail = "\n<\/body><\/html>\n";
+
+
+       # Initialize CGI stuff...
+
+# Set the buffer size to 1024 bytes (1K). This is the default.
+#$cgi->set_buffer_size (1024);
+# Remove any nasty characters from  uploaded filenames
+#$cgi->filter_filename (\&my_way);
+# Tell the module to return filehandles.
+$cgi->set_file_type ('handle');
+# We want CGI_Lite to perform EOL conversion for all files that have the
+# following MIME types:
+#
+#     application/mac-binhex40
+#     application/binhex-40
+#
+# so, we use the add_mime_type method. In addition, we don't want 
+# files of MIME type: text/html to be converted. I'm sure you wouldn't
+# want to do that in real life :-)
+
+$cgi->add_mime_type ('application/mac-binhex40');
+$cgi->add_mime_type ('application/binhex-40');
+$cgi->remove_mime_type ('text/html');
+
+# we return just a pointer to the formdata hash for efficiency
+
+$FORM_DATA = $cgi->parse_form_data;
+
+if ($cgi->is_error) {
+    $error_message = $cgi->get_error_message;
+    fall_over("FATAL", "The following unexpected error was reported when reading your form data",
+            $error_message);
+}
+
+# ----- here we go ------
+
+
+# action can be THIN (identify tags to be modified etc)
+#               MODS (write mod file)
+# submit can be Generate Local Modification Files (A)
+#               Generate Local Modification Files (B)
+#               Generate Subset
+#               Generate DTD
+#
+# sxom (I didnt choose the name) can be
+#               sgml  (include omission indicators)  
+#               none  (exclude omission indicators)  
+#               xmlpe (parameterize omission indicators)  
+# extid can be
+#              fpi
+#              sys
+#              both
+
+&load_tables;   # read in data needed for tag expansions
+
+
+if ($debug) {
+print LOG "---- Log started for process $$ ------ \nStated choices were... \n";
+   while (($key, $value) = each %$FORM_DATA) {
+    if (ref $value) {
+	@all_values = $cgi->get_multiple_values ($value);
+	print LOG "$key = @all_values\n";
+    } else {
+	print LOG "$key = $value\n";
+    }
+   }
+}
+
+# set globals
+
+$action = $FORM_DATA->{"action"};   
+
+print LOG "Action code is $action\n" if ($debug);
+
+$submit = $FORM_DATA->{"submit"};
+
+print LOG "Submit code is $submit\n" if ($debug);
+
+fall_over("?","$submit???", "Form data was not read!") unless ($action);
+
+$submit =~ s/Generate //;
+$sxom = $FORM_DATA->{"sxom"};
+if ($sxom =~ /sgml/i) {
+    $XMLmode = 0;                        #not XML; include ommission marks
+} elsif ($sxom =~ /none/i){
+    $XMLmode = 1;                        # XML; dont include ommission marks
+} elsif ($sxom =~ /xmlpe/i){
+    $XMLmode = 2;                        # XML; include parameterized marks
+} else {
+    $XMLmode = 3;                        #no idea whats happening; assume XML
+}
+
+$extid = $FORM_DATA->{"extid"};    # dont know what to do with this yet!
+
+# now decide what tagsets we're working with and build theTags array...
+
+$base = $FORM_DATA->{"base"};
+$entFile = $FORM_DATA->{"entURL"};
+$dtdFile = $FORM_DATA->{"dtdURL"};
+
+if($entFile) {
+    print LOG "Funny: found an ent file $entFile but no DTD file\n" unless ($dtdFile);
+    print LOG "Entity file is $entFile\n" if ($debug);
+}
+elsif($dtdFile){
+    print LOG "Funny: found a dtd file $dtdFile but no ENT file\n" unless ($entFile);
+    print LOG "DTD file is $dtdFile\n" if ($debug);
+
+}
+
+if ($base =~ /general/) {
+      @theTags = $cgi->get_multiple_values($FORM_DATA->{"general"});
+ } elsif ($base =~ /mixed/ ) {
+      @theTags = $cgi->get_multiple_values($FORM_DATA->{"mixed"});
+ }
+
+push(@theTags, $base);
+
+if ($FORM_DATA->{"added"}) 
+{ push(@theTags, $cgi->get_multiple_values($FORM_DATA->{"added"})); 
+}
+
+print LOG "Tagsets requested are @theTags\n" if ($debug);
+
+
+@theEnts = $cgi->get_multiple_values($FORM_DATA->{"entities"});
+
+print LOG "Entities requested are @theEnts\n" if ($debug);
+
+# now decide what we're doing...
+
+if ($action =~ /thin/) {
+  # we are generating the dtd
+    if ($submit =~ /Modification/)
+    {   if ($submit =~ /\(A\)/) { &choose_tags("INCLUDE");
+	} else { &choose_tags("IGNORE"); }
+    } elsif ($submit =~ /Subset/)
+         { if ($XMLmode) { 
+             fall_over("Sorry", "Incompatible requests", 
+                "We cannot generate a DTD subset for XML usage"    );
+         } else{  &report_subset ; }
+  
+   } elsif ($submit =~ /DTD/)
+   { 
+       &write_DTD;
+   } else   
+      {fall_over("?","$submit Unrecognized", "An unknown submit value ($submit) was used"); }
+
+} elsif ($action =~ /mods/) {  
+  # re-entry point : we are generating extension files
+     if ($submit =~ /\.ent/) {
+	 &send_ents;
+     }elsif ($submit =~ /\.dtd/) {
+	 &send_decs;
+     } else {fall_over($submit,"$submit Unrecognized", "An unknown submit value $submit  was used"); }
+} else {
+  # we are terminally confused
+      fall_over("?","$action Unrecognized", "An unknown action code was used");
+}
+
+#---------------------------------------------------------------------------------
+
+sub choose_tags {              # ------ choose tags -----
+
+   my $mode = $_[0];
+   my $verb = "excluded", $button = "IGNORE";
+   if ($mode =~ /IGN/) {
+       $verb = "included"; 
+       $button = "INCLUDE";
+   }
+      
+   print LOG "Printing choice form mode $mode ... \n" if ($debug);
+
+   print "$htmlHeader <html><head><title>PizzaChef: stage 2<\/title><\/head>\n<body>\n<h1>The following elements are available ...</h1>\n";
+
+   
+   print "<hr><form method=\"POST\" action=\"$myURL/myExtns\.ent\">\n<input type=\"hidden\" name=\"action\" value=\"mods\">\n";
+
+#print LOG "Tagsets requested are @theTags\n" if ($debug);
+
+push(@theTags, "core"); # add the core since this isnt in theTags array
+   
+foreach $tagset (@theTags) {
+        @gis = split(/ /,$tagMap{$tagset});
+#print LOG "Tags in the $tagset tagset are @gis\n" if ($debug);
+        next unless(@gis);
+        print "<h2>...from the $tagset tagset</h2>\n";
+
+        print "<p>Check <b>$button</b> for the ones you want <b>$verb<\/b> from your dtd or <b>MODIFY</b> to revise their definition!<br><table>\n";
+        print "<tr><td><i>Element<\/i></td><td><i>Description</i></td><td>INCLUDE</td><td>IGNORE</td><td>MODIFY</td><\/tr>\n";
+        foreach $gi (@gis) {
+	    next unless($gi);
+            $GI = $giIdMap{$gi} || "Unknown Tag!";
+            $giHelp = "<a href\=\"$webHome/ref-$GI\.html\"><tt>\&lt\;$gi\&gt\;<\/tt><\/a>";
+#  $gi = "<tt>\&lt\;$gi\&gt\;<\/tt>";
+            print "<tr><td valign='TOP'>$giHelp</td><td>$giDescMap{$gi}</td>";
+            if ($mode eq "INCLUDE") {
+	       print "<td><input type=\"radio\" name=\"$gi\" value=\"INC\" checked=\"CHECKED\"></td>";
+               print "<td><input type=\"radio\" name=\"$gi\" value=\"IGN\"></td>";
+	   } else {
+	       print "<td><input type=\"radio\" name=\"$gi\" value=\"INC\"></td>" ;
+	       print "<td><input type=\"radio\" name=\"$gi\" value=\"IGN\" checked=\"CHECKED\"></td>";
+           }
+           print "<td><input type=\"radio\" name=\"$gi\" value=\"MOD\"></td><\/tr>\n";
+        }
+print "<\/table><hr>\n";
+      }
+
+print "<center><input type=\"submit\" name=\"submit\" value=\"Send me the TEI.extensions.ent file!\"><br>";
+print "<input type=\"submit\" name=\"submit\" value=\"Send me the TEI.extensions.dtd file!\"><br>";
+   print "<h3>Caution! When you receive these two files, please remember to save them with DIFFERENT NAMES!!</h3><p>(your web browser will probably try to save them both with the same name)\n";
+
+print "<input type=\"reset\" value=\"hang on... let's start again\"></br></center><\/form>\n";
+
+pop(@theTags); # to remove core tagset from list (we hope)
+
+print "<p>Once you\'re happy with your extensions files, press the BACK button of your browser to return to the main pizzaChef page\n";
+
+print $tail;
+
+0;
+}                                            # end of choose_tags
+
+sub send_ents {                              #-------------- send_ents 
+    $ENV{'PATH_INFO'} = "myExtns.ent"; # shd set filename,but doesnt
+    print $textHeader;
+    print "<\!\-\-TEI.extensions.ent file generated by pizzaChef $version for pid $$ on $today \-\->\n";	 
+foreach $key (sort keys %$FORM_DATA) {
+    $stat = $FORM_DATA->{$key};
+    if ($stat =~ /IGN/) {
+       print "<!ENTITY \% $key \"IGNORE\">\n";
+     }
+    elsif ($stat =~ /MOD/) {
+       print "<!ENTITY \% $key \"IGNORE\">\n";
+     }
+}
+}
+
+ sub send_decs {                           #-------------- send_decs
+
+$ENV{'PATH_INFO'} = "myExtns.dtd"; # has no effect: shd change output filename
+
+     print $textHeader;
+     print "<!--TEI.extensions.dtd file generated by pizzaChef $version for pid $$ on $today -->\n"	 ;
+ foreach $gi (sort keys %$FORM_DATA) {
+     $stat = $FORM_DATA->{$gi};
+     if ($stat =~ /MOD/) {
+	 print  "<!-- Original TEI declarations for $gi -->\n$giDecMap{$gi}\n";
+     }
+}
+}
+
+sub createDoctype {
+  $result = "<!DOCTYPE TEI.2 $sysId  [\n";
+   
+    foreach $tagset (@theTags) {
+       $result.= "<!ENTITY \% TEI\.$tagset \"INCLUDE\">\n";
+     }
+$result.= "<!ENTITY \% TEI\.XML \"INCLUDE\">\n" if ($XMLmode);
+
+#winita
+    foreach $entity (@theEnts) {
+	last unless($entity);
+	$entity =~ s/iso/iso-/;        
+my $sysId = $entityHome . $entity . "\.ent";
+my $i = 0;
+	open(ENTS, $sysId) || fallover("","!!!!","$sysId not found");
+
+         while( <ENTS>) {
+          $i++;
+            $result.= $_;
+        }
+        close ENTS;
+print LOG "Read $i times from $sysId" if($debug);            
+#my $pubId = "ISO 8879:1986//ENTITIES $entity//EN";
+#	if (($extid =~ /both/) || ($XMLmode)) {
+#           $result.= "<!ENTITY \% $entity PUBLIC \"$pubId\"  \"$sysId\" > \%$entity;\n";
+#        } elsif ( $extid =~ /fpi/ ) {
+#           $result.= "<!ENTITY \% $entity PUBLIC \"$pubId\" > \%$entity;\n";
+#       } else {
+#           $result.= "<!ENTITY \% $entity SYSTEM  \"$sysId\" > \%$entity;\n";
+#       }
+
+
+}
+$result.= "]>\n";
+
+return $result;
+}
+
+
+sub report_subset {
+# return an appropriate DTD subset
+
+print LOG "Writing dtd subset....\n" if ($debug);
+
+   print $textHeader;
+
+   $entFile =~ s/^[\d\_]+//; # remove uniqueifying prefix  added by CGI_lite
+   $dtdFile =~ s/^[\d\_]+//; # remove uniqueifying prefix  added by CGI_lite
+
+print &createDoctype;
+}
+
+sub write_DTD {
+
+# write DTD declaration suitable for  carthage
+# (NB carthage cannot handle system identifiers which include paths:
+#     so we have to specify only terminal names as extension files)
+
+
+my $Result = 1;
+
+                             # open dtd driver file for carthage to compile
+
+
+print LOG "Process $$ is writing DTD for Carthage to $tempDir/$unique....\n" if ($debug);
+
+
+$declaration = &createDoctype;
+
+
+if ($dtdFile) { # we have user extension files to deal with
+
+$entSysid = "$unique.ent";
+$dtdSysid = "$unique.dtd";
+
+# copy the extension files locally
+
+open TMP2, ">$tempDir/$entSysid" 
+               || die "Couldnt open file $unique\.ent $!\n";
+$n_w =0;
+   while (<$entFile>) {print TMP2 $_; 
+                       $n_w ++;}
+close TMP2;
+print LOG "Wrote $n_w times to $tempDir/$entSysid\n" if ($debug);
+
+$n_w =0;
+open TMP2, ">$tempDir/$dtdSysid" 
+               || die "Couldnt open file $dtdSysid $!\n";
+   while (<$dtdFile>) {print TMP2 $_; 
+                       $n_w ++;}
+close TMP2;
+print LOG "Wrote $n_w times to $tempDir/$dtdSysid\n" if ($debug);
+   
+$addIn = "<!ENTITY % TEI.extensions.ent SYSTEM \"$entSysid\">\n<!ENTITY % TEI.extensions.dtd SYSTEM \"$dtdSysid\">\n";
+
+$declaration =~ s/]/$addIn]/;
+
+
+
+}
+open TMP, ">$tempDir/$unique" || die "Couldnt open file $unique $!\n";
+print TMP $declaration;
+close TMP;
+print LOG "Process $unique TMP file closed ....\n" if ($debug);
+
+                             # now initialize environment for carthage
+
+
+#$ENV{'SGML_PATH'} = "%S:/tmp/%S:/home/www/htdocs/TEI/P4X/DTD/%S";
+#$ENV{'DPP_PATH'} = ":.:/tmp/::/home/www/htdocs/TEI/P4X/DTD";
+
+$ENV{'SGML_PATH'} = "%S:" . $tempDir . "\/%S:" . $dtdHome . "%S";
+$ENV{'DPP_PATH'} = ":.:" . $tempDir . "/:" . $dtdHome;
+$ENV{'PATH_INFO'} = "myPizza.dtd";
+
+print LOG "SGML_PATH is %S:" . $tempDir . "\/%S:" . $dtdHome . "%S\n" if ($debug);
+
+$command1 = "$carthago  --output $tempDir/$unique.droplist <$tempDir/$unique >/dev/null " ;
+$command2 = "$carthago  --commdrop --delenda $tempDir/$unique.droplist <$tempDir/$unique >$tempDir/$unique.result";
+$command2x = "$carthago -x  --commdrop --delenda $tempDir/$unique.droplist <$tempDir/$unique >$tempDir/$unique.result";
+$command2xx = "$carthago --xmlpe  --commdrop --delenda $tempDir/$unique.droplist <$tempDir/$unique >$tempDir/$unique.result";
+
+$return = system($command1);
+print LOG "First carthage call returned $return\n" if ($debug);
+
+if ($XMLmode == 2) { 
+    system($command2xx);
+} elsif ($XMLmode) {
+    system($command2x); 
+} else {
+    system($command2); 
+}
+
+open(TMP, "$tempDir\/$unique.result") || 
+            fall_over("Fatal", "No carthage output file",
+		    "Something went wrong when writing your DTD. Did you perhaps reference an external parameter entity in your extension file?");
+
+
+print $textHeader;
+print "<!-- DTD  generated by PizzaChef $version for pid $unique on $today -->\n";
+$tmpLines=0;
+while (<TMP>) {print; $tmpLines++};
+
+close TMP;
+fall_over("Fatal", "No carthage output file",
+  "Something went wrong when writing your DTD. Please review your extension files. Did you perhaps reference an external parameter entity, or use XML syntax?") 
+unless($tmpLines);
+
+}                 #---------------- end of write DTD
+
+
+
+sub fall_over {
+        local ($status, $keyword, $message) = @_;
+        print "Content-type: text/html", "\n\n";
+
+        print <<EOE;
+
+	<html>
+	<head><title>Sorry Dave, I just can\'t do that</title></head>
+	<body bgcolor = "#eeeeee"><h1>$status\: $keyword</h1>
+	<hr><p>$message
+	<p>If you don't know what's going on, please report this error to tei\@oucs.ox.ac.uk, quoting the PID or approximate date and time of the failure.</body>
+	</html>
+EOE
+        exit(1);
+}
+
+
+sub load_tables {
+
+# loads the following lookup tables:
+#              key     value      
+#   tagMap     tagset   list of GIs contained in tagset
+#   giIdMap     GI       ID  (used as filename, since it's unique)
+#   giSetMap    GI       tagset in which GI appears
+#   giDescMap   GI       description of GI
+#   giDecMap    GI       declaration for GI
+#
+open(IN, $tagDataFile) || fall_over("Environmental catastrophe",
+                       "I cannot find the tag data file $tagDataFile",
+                                     "$!");
+# this file is now created during DTD generation
+#
+while(<IN>) {
+   my $desc = "Undocumented element";
+   my ($tagset, $id, $gi, $stuff) = split(/ /,$_,4);
+#   unless ($tagset =~ /[A-Z]/) {
+
+# NB. Auxiliary tagsets should be removed from this file
+# the tagset names are not currently normalized and should not
+# be used
+
+      $tagMap{$tagset} .= "$gi ";
+      $giIdMap{$gi}= $id ;
+      $giSetMap{$gi} = $tagset;
+
+     if ($stuff =~ s/(^[^<]+)//) {
+        $desc = $1;
+      } 
+     $giDescMap{$gi} = $desc;
+     $stuff =~ s/></>\n\t\t</;
+     $giDecMap{$gi} = $stuff;
+}
+
+close IN;
+print LOG "Tagmap tables loaded\n" if ($debug);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

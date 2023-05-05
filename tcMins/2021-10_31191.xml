@@ -1,0 +1,697 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/home/lou/Public/TEI/TEICSS/tei.css" type="text/css"
+ ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:t="http://www.tei-c.org/ns/1.0" n="2021-10">
+ <teiHeader>
+  <fileDesc>
+   <titleStmt>
+    <title>Minutes of the TEI Technical Council</title>
+    <meeting n="2021-10" from="2021-10-01" to="2021-10-02">TEI Technical Council online meeting :
+     <date>1–2 October 2021</date></meeting>
+   </titleStmt>
+   <publicationStmt>
+    <distributor>TEI Website</distributor>
+    <idno>TCM145</idno>
+   </publicationStmt>
+   <sourceDesc>
+    <p>Retagged from a WordPress HTML file</p>
+   </sourceDesc>
+  </fileDesc>
+  <revisionDesc>
+   <change when="2023-04-26">Archival header confected</change>
+   <change>Extracted from Word Press article with id post-31191</change>
+  </revisionDesc>
+ </teiHeader>
+ <text>
+  <body>
+   <div>
+    <p><hi style="strong">Meeting Times</hi></p>
+    <table>
+
+     <row>
+      <cell><hi style="b">Friday, Oct 1</hi></cell>
+      <cell>13:00–16:00 PST 16:00–19:00 EST</cell>
+      <cell>North American break-outs</cell>
+     </row>
+     <row>
+      <cell><hi style="b">Saturday, Oct 2</hi></cell>
+      <cell>09:00–12:00 BST 10:00–13:00 CET</cell>
+      <cell>European break-outs</cell>
+     </row>
+     <row>
+      <cell/>
+      <cell>
+       <p>06:00–10:00 PST</p>
+       <p>09:00–13:00 EST</p>
+       <p>14:00–18:00 BST</p>
+       <p>15:00–19:00 CET</p></cell>
+      <cell>Council meeting</cell>
+     </row>
+
+    </table>
+    <p><hi style="strong">Attendance</hi></p>
+    <table>
+
+     <row>
+      <cell/>
+      <cell>Fri, North American-Group</cell>
+      <cell>Sat, European Group</cell>
+      <cell>Sat, Full Council</cell>
+     </row>
+     <row>
+      <cell>Syd Bauman</cell>
+      <cell>X</cell>
+      <cell/>
+      <cell>x</cell>
+     </row>
+     <row>
+      <cell>Helena Bermúdez Sabel</cell>
+      <cell/>
+      <cell>X</cell>
+      <cell>x</cell>
+     </row>
+     <row>
+      <cell>Meaghan Brown</cell>
+      <cell>X</cell>
+      <cell/>
+      <cell>x</cell>
+     </row>
+     <row>
+      <cell>
+       <p>Elisa Beshe­ro-</p>
+       <p>Bondar</p></cell>
+      <cell>X</cell>
+      <cell/>
+      <cell>x</cell>
+     </row>
+     <row>
+      <cell>Hugh Cayless</cell>
+      <cell>X</cell>
+      <cell/>
+      <cell>x</cell>
+     </row>
+     <row>
+      <cell>Janelle Jenstad</cell>
+      <cell>excused</cell>
+      <cell/>
+      <cell>x</cell>
+     </row>
+     <row>
+      <cell>Jessica H. Lu</cell>
+      <cell>X</cell>
+      <cell/>
+      <cell>x</cell>
+     </row>
+     <row>
+      <cell>Martina Scholger</cell>
+      <cell/>
+      <cell>x</cell>
+      <cell>x</cell>
+     </row>
+     <row>
+      <cell>Peter Stadler</cell>
+      <cell/>
+      <cell>x</cell>
+      <cell>x</cell>
+     </row>
+     <row>
+      <cell>Magdalena Turska</cell>
+      <cell/>
+      <cell>x</cell>
+      <cell>x</cell>
+     </row>
+     <row>
+      <cell>Raff Viglianti</cell>
+      <cell>excused</cell>
+      <cell/>
+      <cell>excused</cell>
+     </row>
+
+    </table>
+    <p> </p>
+    <div type="h2">
+     <head>&gt; Friday, October 1 (North American break-outs)</head>
+    </div>
+    <div type="h2">
+     <head>Work on <ref target="#guidelinesIssues">Guideline issues</ref></head>
+    </div>
+    <div type="h2">
+     <head>&gt; Saturday, October 2 (European break-outs)</head>
+    </div>
+    <div type="h2">
+     <head>Continue with Guidelines issues</head>
+    </div>
+    <div type="h2">
+     <head>&gt; Saturday, October 2 (Full Council)</head>
+    </div>
+    <div type="h2">
+     <head>Report on OxGarage</head>
+     <list style="ul">
+      <item>PS reports that his colleague, Anne Ferger, is working on MEIGarage for a couple of
+       years and may end up doing a lot on TEIGarage.</item>
+      <item>The group in Paderborn has created several new repos — the set-up is much cleaner
+       now.</item>
+      <item>There are two main repos: <ref target="https://github.com/TEIC/oxgarage">OxGarage</ref>
+       and <ref target="https://github.com/TEIC/TEIGarage">TEIgarage</ref>. PS recommends archiving
+       OxGarage since there is no longer a connection to Oxford and since “TEIGarage” is more
+       parallel to other “garages” like MEIgarage. Some issues: <list style="ul">
+       <item>We would like to build a community around the garage.</item>
+       <item>Is the TEIGarage Council’s responsibility? PS: Council should organize the community
+        that maintains/develops it. Make it a sub-community. <list style="ul">
+        <item>Invite Anne Ferger and James Cummings to a Council meeting to discuss how to proceed
+         in the near future. Council agrees to invite them for the November meeting.</item>
+        </list> </item>
+       <item>How is the community building organized for MEI? — It is still too early, but the
+        community building is planned as soon as the project has further progressed.</item>
+       </list> </item>
+      <item>Council agreed on the new name “TEIGarage” for the former OxGarage.</item>
+     </list>
+    </div>
+    <div type="h2">
+     <head><ref target="https://github.com/TEI-CMC-SIG/TEI/tree/cmc-features">CMC</ref>:
+      computer-mediated communication</head>
+     <list style="ul">
+      <item>Should @generatedBy become a global attribute?</item>
+      <item>In the fork of the <hi style="i">Guidelines</hi> that the CMC group is creating (which
+       is a copy of P5 with the added CMC chapter) the new @generatedBy is not global, but rather is
+       on some 144 elements. (2nd most popular attribute, SB thinks — @type is on 230
+       elements.)</item>
+      <item>Posts from humans may be punctuated by text from the bot or system.</item>
+      <item>Differentiating the @generatedBy values of “system” versus “bot” can be difficult (but
+       that’s the encoder’s problem, not ours).</item>
+      <item>Discussion on @generatedBy vs @resp: @resp conveys intention (the person who decided to
+       encode it as having been generated).</item>
+      <item>Do machines have agency? What about the people behind the bot messages?</item>
+      <item>FWIW, MH is in favour of globality of @generatedBy.</item>
+      <item>PS suggests @method (but we already have an @method).</item>
+      <item>SB: suggests @generationMethod? EBB likes @generatedBy. What about @method? (We already
+       have correction/@method, normalization/@method, and variantEncoding/@method.)</item>
+     </list>
+    </div>
+    <div type="h2">
+     <head>Discussion on concepts of gender and sex or equivalent</head>
+     <list style="ul">
+      <item>SB brought the issue to table. Wondering if we should be proactive instead of waiting
+       for someone to ask us to change it.</item>
+      <item>JL: Our students are noticing that the <gi>sex</gi> element is weird and off-putting.
+       Students find the definition strange, esp. its insistent pointing to biology. Even if not
+       formally (via tickets), people are already asking.</item>
+      <item>What’s the solution? Should we have two elements? <list style="ul">
+       <item>Probably need <gi>gender</gi> in addition to <gi>sex</gi> instead of using <gi>sex</gi>
+        with a @type to capture gender.</item>
+       <item>Note that there is a @sex attribute but not a @gender attribute.</item>
+       <item>We think that we should add both a <gi>gender</gi> element and a @gender
+        attribute.</item>
+       <item>Would <gi>trait</gi> or <gi>state</gi> do? Some discussion about the fact that we
+        already have <gi>sex</gi> and @sex.</item>
+       <item>MT: Rather than expand, creating new elements for every feature of a person that comes
+        along that folks want to encode, perhaps we should lean towards collapsing to <gi>state</gi>
+        &amp; <gi>trait</gi>.</item>
+       <item>JJ: This is not the issue on which to stake a claim about TEI principles (more or fewer
+        elements).</item>
+       <item>JL: No one on Council is a gender and sexuality scholar (except some of us have worked
+        on history of sex and gender projects). We need some queer studies and trans studies and
+        bona fide gender studies people to weigh in. (Even if we end up with minimalist definitions,
+        as PS had suggested; i.e. something like “<gi>gender</gi> is used to record the person or
+        persona’s gender”.)</item>
+       <item>JL: This isn’t the start of a slippery slope of imagining endless elements for various
+        traits/characteristics; no one is suggesting <gi>fashionSense</gi>. Sex and gender are
+        essential to human experience and are therefore reflected meaningfully in text.</item>
+       <item>Ideas for simple definitions in guidelines: <gi>sex</gi> as distinct from
+        <gi>gender</gi>; <gi>gender</gi> as distinct from <gi>sex</gi> (and then a project can
+        mobilize its own definitions of sex and gender).</item>
+       <item>Discussion: Should we take a very minimal approach, or is that too reductive?</item>
+       <item>JL: We need to address the concerns of the community and invite discussion. Perhaps
+        solicit input from TEI-L and GitHub Discussions regarding definitions and examples.</item>
+       <item>PS: Keep element definition simple. It will be a bit thornier to describe elements <ref
+        target="https://tei-c.org/release/doc/tei-p5-doc/en/html/ND.html#NDPERSbp">in the
+        chapter</ref> (e.g., <ref
+        target="https://tei-c.org/release/doc/tei-p5-doc/en/html/ND.html#NDPERSEpc">¶13.3.2.1
+        Personal Characteristics</ref>)<hi style="b">.</hi></item>
+       <item>HC: Maybe we should draft a tagdoc to propose the element with a very minimal
+        description, and share it with the community for discussion and revision.</item>
+       <item>teidata.sex: Why is this necessary? Should it be used for gender? SB: it’s a “hook”
+        because people want this. HC: Why not make it teidata.enumerated (as a hint that you should
+        have a value list here). SB: The definition of the hook should be teidata.enumerated, but
+        still want the hook so customizers need change in only 1 place, not 4 (or, if we use same
+        datatype for gender, 8).</item>
+       <item>What to do? Start by opening an issue. Possibly 3 issues. <list style="ul">
+        <item><gi>gender</gi> element and @gender attribute</item>
+        <item>Alter the datatypes? (either 2 or 0)</item>
+        <item>Revising chapter language</item>
+        <item>[SB: Revising the chapter language goes hand-in-hand with creating the element and
+         attribute. Altering datatypes could probably be done separately or at the same
+         time.]</item>
+        </list> </item>
+       </list> </item>
+      <item>JJ’s note to self: “Furthermore, while some characteristics will obviously change over
+       time, hair colour for example, none, in principle—not even sex—is immutable.” → We need to
+       rephrase that sentence! (<ref
+       target="https://tei-c.org/release/doc/tei-p5-doc/en/html/ND.html#NDPERSbp"
+       >https://tei-c.org/release/doc/tei-p5-doc/en/html/ND.html#NDPERSbp</ref>)</item>
+      <item>JJ’s note to self: Rethink this claim: “An actor does not change their persona when
+       adopting a different role, but none of the personas associated with one person can properly
+       be associated with another.”
+       (https://tei-c.org/release/doc/tei-p5-doc/en/html/ND.html#NDPERSEpc)</item>
+      <item>EBB opened tickets and assigned JJ, EBB, and HBS.</item>
+     </list>
+    </div>
+    <div type="h2">
+     <head>Reminder: <ref
+      target="https://docs.google.com/document/u/0/d/1nAi_6pB1ayTV3SYAsrf8InKL1T5n8DAdgdhf-o5RSM8/edit"
+      >Checking pointers</ref></head>
+     <list style="ul">
+      <item>Set deadline, self-assign <list style="ul">
+       <item>While we did not explicitly set a deadline, SB would like to see this published by
+        2021-10-31.</item>
+       </list> </item>
+      <item>JJ will edit the prose of TCW32.</item>
+     </list>
+    </div>
+    <div type="h2">
+     <head>Exemplum and language issue</head>
+     <list style="ul">
+      <item><ref target="https://github.com/TEIC/TEI/issues/1933"
+       >https://github.com/TEIC/TEI/issues/1933</ref></item>
+      <item>@xml:lang refers to the language of the example.</item>
+      <item>In the processing it is used to decide to which translation of the Guidelines it
+       belongs.</item>
+      <item>If there is no example in the current language, the English examples appear in the
+       specifications.</item>
+      <item>If there is one example in the current language, only this example appears.</item>
+      <item>Proposals so far: <list style="ul">
+       <item>output all examples in all languages</item>
+       <item>Introduce new <gi>exemplumGrp</gi> for grouping examples that are identical
+        translations.</item>
+       <item>Introduce new attribute on <gi>exemplum</gi>, meaning that this example should appear
+        in all specs <list style="ul">
+        <item>@show=”true|false”</item>
+        <item>@priority=”xs:integer”</item>
+        <item>with <gi>exemplumGrp</gi>, apply @newTargetLang=”language-tag|ALL” (BCP 47 already
+         includes “mul” (multiple) so we could use that to mean “all”) <list style="ul">
+         <item>@newTargetLang with <gi>exemplumGrp</gi> can help indicate fallback languages when
+          the preferred is not available, or to group multiple preferred languages together.</item>
+         <item>Should we use the existing @targetLang attribute? As used on <gi>schemaSpec</gi>,
+          it’s similar but not exactly what we need here.</item>
+         <item>We need this attribute to allow multiple values which isnot currently the case for
+          @targetLang.</item>
+         </list> </item>
+        <item>Possible names for the new attributes: <list style="ul">
+         <item> [@outputLangs] </item>
+         <item>@targetLangs (Council’s decision)<hi style="b"> </hi></item>
+         <item> [@reqLangs] </item>
+         <item> [@inLangs] </item>
+         </list> </item>
+        </list> </item>
+       </list> </item>
+     </list>
+     <list style="ul">
+      <item> <list style="ul">
+       <item/>
+       </list> </item>
+     </list>
+     <list style="ul">
+      <item> <list style="ul">
+       <item>Proposal (to solve language problem): <gi>exemplumGrp</gi>, content model { exemplum+ }
+        to be used for sets of redundant examples; it has Schematron check that one and only one
+        child <gi>exemplum</gi> has @targetLangs of “mul”. Heuristics are that the processor chooses
+        one and only one child <gi>exemplum</gi> for the output, looking at @targetLangs and trying
+        to choose best. If it can’t find a match at all, it chooses the “mul”. (EBB added to
+        ticket).</item>
+       </list> </item>
+     </list>
+    </div>
+    <div type="h2">
+     <head>Schedule a blue-sky discussion</head>
+     <list style="ul">
+      <item>Capacity to express the TEI in other ways: XML + TAGML + HTML + JSON + ?</item>
+      <item>Issue of how difficult it is to “correct” content models for existing elements: MT: very
+       complicated and fragile: “like pulling a thread and causing the fabric to unravel”. Address
+       things that are valid and don’t make sense. How to make TEI more manageable for the
+       future?</item>
+      <item>SB: Make it so classes are properly inherited.</item>
+      <item>HC: If not inheritance, composability.</item>
+      <item>MT: We could be writing position papers proposing new/alternative ways of organizing the
+       TEI <list style="ul">
+       <item>Call for Proposals for 2022 or 2023 TEI Conference.</item>
+       <item>This will take multiple years.</item>
+       <item>Talk to James Cummings first regarding planning for the 2022 Conference. Or Council
+        could call for a panel.</item>
+       </list> </item>
+      <item>What is the “Durand conundrum”? Pure ODD vs. Relax NG. What if we used Relax NG as the
+       underlying schema language rather than PureODD? Compare it with DocBook, which runs this way.
+       Look at JATS for its documentation methodology (not its DTD schema).</item>
+      <item>Also consider Laruent Romary’s “crystals” proposal (of 2012).</item>
+      <item>SB: If we are going to move to a P6, maybe we should not <ref
+       target="https://wiki.tei-c.org/index.php?title=New_ODD_processing#goals">rewrite the
+       Stylesheets</ref>.</item>
+     </list>
+    </div>
+    <div type="h2">
+     <head>AOB</head>
+     <list style="ul">
+      <item>Restructure Council page on the TEI website: <ref
+       target="https://tei-c.org/activities/council/">https://tei-c.org/activities/council/</ref>
+       <list style="ul">
+       <item>Would it be nice to add pictures of us? Or graphics? Caricatures?</item>
+       <item>Council members should be able to opt out.</item>
+       <item>This would be a new expectation to communicate to Council members.</item>
+       <item>Idea to help us be approachable/recognizable to the TEI Community.</item>
+       <item>Photos make us vulnerable to judgements about race, ethnicity, gender. Can also
+        emphasize we are human beings and approachable.</item>
+       </list> </item>
+     </list>
+    </div>
+    <div type="h2">
+     <head/>
+     <div type="h3">
+      <head>Guidelines issues</head>
+      <p>Group A: HC, MB, EB, SB, JL</p>
+      <p>Group B: PS, HBS, MS</p>
+      <table>
+
+       <row>
+        <cell>No.</cell>
+        <cell>Group</cell>
+        <cell>Title</cell>
+        <cell>Comment</cell>
+       </row>
+       <row>
+        <cell>#1800</cell>
+        <cell/>
+        <cell><ref target="https://github.com/TEIC/TEI/issues/1800">more on dictionary: The element
+         <gi>usg</gi> inside <gi>def</gi></ref></cell>
+        <cell>
+         <p>Comment from last VF2F (May):</p>
+         <p>Subgroup suggests that RV should go with brute force approach (proposal 1). [usg is
+         already allowed in cit, so does not need to be taken care of anymore]</p>
+         <p>→ postponed until RV is back</p></cell>
+       </row>
+       <row>
+        <cell>#1879</cell>
+        <cell>A</cell>
+        <cell><ref target="https://github.com/TEIC/TEI/issues/1879">New element listNote as a
+         wrapper for note elements</ref></cell>
+        <cell>
+         <p>Comment from last VF2F (May): Remaining question is if we could use
+         <gi>listAnnotation</gi> instead of implementing <gi>listNote</gi> as agreed earlier.
+         Nevertheless, <gi>listAnnotation</gi> is only allowed in very specific contexts (related to
+         standoff uses) and is also likely to have its content extended. For that reason, the
+         subgroup thinks it’s better to keep things clearly separated and have <gi>listNote</gi> be
+         a member of model.listLike with a narrow content model of <gi>note</gi> and usual
+         <gi>desc</gi>, <gi>head</gi> etc.</p>
+         <p>Comment from VF2F (October): Subgroup: Argument in favor of <gi>listNote</gi> in
+         addition to the currently available <gi>noteGrp</gi> is that  <gi>listNote</gi> groups
+         together a list of different notes, whereas <gi>noteGroup</gi> groups together a set of
+         notes that are basically the same but are in alternate languages or are alternate versions
+         (e.g., for different audiences). So, do we need <gi>listNote</gi>?</p>
+         <p>Council: GREEN</p>
+         <p>Council 2019 decided in favor of both <gi>noteGrp</gi> and <gi>listNote</gi></p>
+         <p>Council discussion: <gi>listNote</gi> should include <gi>noteGrp</gi>.</p> <list
+         style="ul">
+         <item>Allow <gi>listNote</gi> as child of <gi>front</gi>, <gi>body</gi>, <gi>back</gi>, and
+          <gi>div</gi></item>
+         <item>also more generally available in the <gi>teiHeader</gi> (as alternative to
+          unstructured <gi>p</gi> content)?</item>
+         <item>Also, inside <gi>person</gi>, <gi>place</gi>, <gi>event</gi></item>
+         <item>membership in model.listlike?</item>
+         <item>probably it’s not a good idea to make <gi>listNote</gi> available globally just like
+          <gi>note</gi>.</item>
+         <item>Follow attributes used on other list elements.</item>
+         </list> </cell>
+       </row>
+       <row>
+        <cell>#1916</cell>
+        <cell>A</cell>
+        <cell><ref target="https://github.com/TEIC/TEI/issues/1916">Corpus Exemplar should more
+         explicitly state what it’s for</ref></cell>
+        <cell>
+         <p>Comment from last VF2F (May):</p>
+         <p>Subgroup is in favour of removing Corpus from Exemplars. If someone has a community
+         behind and wants to rework the example she/he should open a new issue.</p>
+         <p>Comment from VF2F (October):</p>
+         <p>SB suggests that everything labeled “template” on the table in this ticket should
+         probably be removed. We should review these to make sure we agree — is there anything
+         helpfully exemplary here? But we should consult Piotr Banski before deleting the corpus
+         one, as he intends to write a replacement.</p>
+         <p>Council discussion: is this just cleaning up a legacy mess? Maybe alert the TEI-listserv
+         and Piotr. Action on MS: Ask Piotr to develop his new file, and let him know we’re
+         intending to remove this along with other old files.</p>
+         <p>Should we remove some of these from oXygen and the Exemplars directory, but preserve
+         them as sample ODD files elsewhere (<ref
+         target="https://tei-c.org/guidelines/customization/"
+         >https://tei-c.org/guidelines/customization/</ref>).</p> <list style="ul">
+         <item>Move to another directory like ODD-Stubs</item>
+         <item>Find out whether oXygen is pulling directly from Exemplars/, and how.</item>
+         </list> </cell>
+       </row>
+       <row>
+        <cell>#1929</cell>
+        <cell/>
+        <cell><ref target="https://github.com/TEIC/TEI/issues/1929">What is a paragraph,
+         really?</ref></cell>
+        <cell>Sub-subgroup of HC and EB suggests we consider moving <gi>ab</gi> to core, and closing
+         this ticket if there are no other actionable items.</cell>
+       </row>
+       <row>
+        <cell>#1978</cell>
+        <cell>A</cell>
+        <cell><ref target="https://github.com/TEIC/TEI/issues/1978">Documentation</ref></cell>
+        <cell>Subgroup: We have some documentation in the Documents folder in the TEIC/TEI repo and
+         some in the TEIC/Documentation repo.Issues: Should all the documentation be in TEI
+         [encoding]? How should it be organized? Should some of the older documentation be
+         consolidated and made TCWs?Should TEIC/TEI/Documents be cleaned up and collapsed into
+         TEIC/Documentation?Some things can be moved to the Vault. But check on things that have
+         been kept hidden and should see the light of day.Subgroup proposes that we maybe form a
+         Council subcommittee to work on this next year.</cell>
+       </row>
+       <row>
+        <cell>#2053</cell>
+        <cell>A</cell>
+        <cell><ref target="https://github.com/TEIC/TEI/issues/2035">naming and description of TEI
+         Simple Print and TEI Lite</ref></cell>
+        <cell>Discussion on the ticket does not lead to a clear action item. Subgroup proposes we
+         check in with MT re: this ticket and last October’s Slack discussion of Vanilla and
+         resulting meetings. If Vanilla conversations have evolved into something more clearly
+         actionable, can we close the ticket? (Remember: texts are complex; data modelling is hard
+         work.)</cell>
+       </row>
+       <row>
+        <cell>#2045</cell>
+        <cell>A</cell>
+        <cell><ref target="https://github.com/TEIC/TEI/issues/2045">calendar= should not be in
+         att.datable</ref></cell>
+        <cell>Subgroup suggests Council review the <ref
+         target="https://github.com/TEIC/TEI/issues/2045#issuecomment-731271583">list</ref> of
+         elements where @calendar is appropriate, and decide whether Duncan’s objections are
+         reasonable, and whether if we proceed, there should be a deprecation period.</cell>
+       </row>
+       <row>
+        <cell>#2046</cell>
+        <cell>A</cell>
+        <cell><ref target="https://github.com/TEIC/TEI/issues/2046">reports in jTEI</ref></cell>
+        <cell>Action on EB to review if <ref target="https://github.com/TEIC/TEI/pull/2057">PR</ref>
+         appropriately addresses the issue and, if so, close ticket. EB: Yes, it does — <hi
+         style="b">closed</hi>.<hi style="b"> </hi></cell>
+       </row>
+       <row>
+        <cell>#2048</cell>
+        <cell>A</cell>
+        <cell><ref target="https://github.com/TEIC/TEI/issues/2048">@who for
+         <gi>span</gi></ref></cell>
+        <cell>SB suggests that @match might be a better resolution for the OP than @who. Value ought
+         to be an XPath rather than a pointer. Subgroup veers toward close/wontfix, and posting more
+         on the ticket to help OP.  SB suggests we consider adding span to att.scoping, though this
+         may be tricky because it is already a member of att.pointing which has an @target.</cell>
+       </row>
+       <row>
+        <cell>#2064</cell>
+        <cell>A</cell>
+        <cell><ref target="https://github.com/TEIC/TEI/issues/2064">Tickets should be Triaged for
+         Difficulty and Labelled.</ref></cell>
+        <cell>Recognizing (1) the increasing number of ticket labels already in use, and (2) the
+         subjectivity of “difficulty” for Councilmembers and users of varying expertise, subgroup
+         believes this change would require more effort than it’s worth. closed/wontfix.</cell>
+       </row>
+       <row>
+        <cell>#2067</cell>
+        <cell>A</cell>
+        <cell><ref target="https://github.com/TEIC/TEI/issues/2067">@assertedValue of
+         <gi>certainty</gi> should also accept pointers</ref></cell>
+        <cell>Subgroup prompts original poster to respond to SB comment of 2020-12-13.</cell>
+       </row>
+       <row>
+        <cell>#2070</cell>
+        <cell>A</cell>
+        <cell><ref target="https://github.com/TEIC/TEI/issues/2070">Make file points at non-existent
+         files</ref></cell>
+        <cell>SB locates the problem spot in to.xsl, and gets himself added to the ticket.</cell>
+       </row>
+       <row>
+        <cell>#2071</cell>
+        <cell>A</cell>
+        <cell><ref target="https://github.com/TEIC/TEI/issues/2071">description of “URI” in
+         idno/@type</ref></cell>
+        <cell>HC suggests just pointing to the RFC for URI.</cell>
+       </row>
+       <row>
+        <cell>#2072</cell>
+        <cell>A</cell>
+        <cell><ref target="https://github.com/TEIC/TEI/issues/2072">change the content model of
+         exemplum</ref></cell>
+        <cell>Subgroup suggestion: Let’s introduce <gi>exemplumGrp</gi> because we have a
+         considerable number of exempla with accompanying prose. Also this is analogous to
+         <gi>noteGrp</gi>, etc. But this might open up a can of worms for processing.</cell>
+       </row>
+       <row>
+        <cell>#2076</cell>
+        <cell>A</cell>
+        <cell><ref target="https://github.com/TEIC/TEI/issues/2076">improvements to SG-oth: order of
+         sub-sections, XML declaration, encoding</ref></cell>
+        <cell>Subgroup expresses profound skepticism that LB addressed all of SB’s points on this
+         ticket. Seriously, much of this language needs to be updated. Assign SB to pursue
+         revisions, with JJ for proofreading.</cell>
+       </row>
+       <row>
+        <cell>#2083</cell>
+        <cell>A</cell>
+        <cell><ref target="https://github.com/TEIC/TEI/issues/2083">typos, encoding corrections, and
+         word-smithing SATS</ref></cell>
+        <cell>Action on HC to continue with checklist (half already presumed finished).</cell>
+       </row>
+       <row>
+        <cell>#2084</cell>
+        <cell>A</cell>
+        <cell><ref target="https://github.com/TEIC/TEI/issues/2084">moderately problematic issues in
+         SATS</ref></cell>
+        <cell>Subgroup suggests additional Councilmembers join HC in reviewing the checklist,
+         especially RV (if available).</cell>
+       </row>
+       <row>
+        <cell>#2085</cell>
+        <cell>A</cell>
+        <cell><ref target="https://github.com/TEIC/TEI/issues/2085">re-defining Node in
+         SATS?</ref></cell>
+        <cell>ditto</cell>
+       </row>
+       <row>
+        <cell>#2086</cell>
+        <cell>A</cell>
+        <cell><ref target="https://github.com/TEIC/TEI/issues/2086">uber-ticket for
+         SATS</ref></cell>
+        <cell>ditto [here be dragons]</cell>
+       </row>
+       <row>
+        <cell>#2089</cell>
+        <cell>A</cell>
+        <cell><ref target="https://github.com/TEIC/TEI/issues/2089">Inconsistent prohibition of the
+         use of <gi>p</gi> directly under <gi>div1</gi></ref></cell>
+        <cell>Close won’t fix</cell>
+       </row>
+       <row>
+        <cell>#2090</cell>
+        <cell>B</cell>
+        <cell><ref target="https://github.com/TEIC/TEI/issues/2090">per-document defaults (of
+         attribute values)</ref></cell>
+        <cell>Totally sensible workflow-wise but do we need it in the standard? This introduces some
+         convenience but not something meaningful from a modelling perspective.</cell>
+       </row>
+       <row>
+        <cell>#2093</cell>
+        <cell>B</cell>
+        <cell><ref target="https://github.com/TEIC/TEI/issues/2093">Check consistency of tagdocs
+         desc elements</ref></cell>
+        <cell>status green, go ahead</cell>
+       </row>
+       <row>
+        <cell>#2095</cell>
+        <cell>B</cell>
+        <cell><ref target="https://github.com/TEIC/TEI/issues/2095">Update the prose for
+         <gi>witness</gi></ref></cell>
+        <cell>
+         <p>There is room for improvement but nothing really wrong. Get back to Nicolas Cole about
+         the original concern?</p>
+         <p>Perhaps add an example illustrating the use of <gi>witness</gi> with msDesc/bibl/object
+         children instead of just text description or mixed, unstructured content.</p></cell>
+       </row>
+       <row>
+        <cell>#2098</cell>
+        <cell>B</cell>
+        <cell><ref target="https://github.com/TEIC/TEI/issues/2098">Change title of
+         11.3.1</ref></cell>
+        <cell>Make yellow green to come up with a proposal.</cell>
+       </row>
+       <row>
+        <cell>#2106</cell>
+        <cell>B</cell>
+        <cell><ref target="https://github.com/TEIC/TEI/issues/2106">broken links to non-English
+         bibliography entries from examples-* pages</ref></cell>
+        <cell>Subgroup suggests to merge <gi>listBibl</gi> (with different @xml:lang) into one and
+         move those @xml:lang one level down to the <gi>bibl</gi> element. Keep @xml:lang for
+         historical reasons or nuke them?</cell>
+       </row>
+       <row>
+        <cell>#2110</cell>
+        <cell>B</cell>
+        <cell><ref target="https://github.com/TEIC/TEI/issues/2110">Ruby: Multiple ruby streams in
+         the same orientation</ref></cell>
+        <cell>Subgroup proposes to add those examples to the Guidelines but refrains from adding
+         “right-right” or similar to suggested values of @place. If one is interested in detailing
+         topographic information, use @facs on <gi>rt</gi>. Or, when not wanting to rely on a
+         document sequence, use @n in addition.</cell>
+       </row>
+       <row>
+        <cell>#2111</cell>
+        <cell>B</cell>
+        <cell><ref target="https://github.com/TEIC/TEI/issues/2111">Ruby Schematron rules result in
+         warnings</ref></cell>
+        <cell>
+         <p>Subgroup proposes to maybe leave the constraint at the attribute level but introduce a
+         sch:rule with context to remedy these warnings, like &lt;sch:rule
+         context=”tei:rt[@target]”&gt;</p>
+         <p>&lt;sch:report test=”@from | @to”&gt;When target= is</p>
+         <p>present, neither from= nor to= should be.&lt;/sch:report&gt;</p>
+         <p>&lt;/sch:rule&gt;</p>
+         <p>still, file a bug report to the STF project</p></cell>
+       </row>
+       <row>
+        <cell>#2114</cell>
+        <cell>B</cell>
+        <cell><ref target="https://github.com/TEIC/TEI/issues/2114">@lang attributes missing in HTML
+         output</ref></cell>
+        <cell>
+         <p>Mark yellow green and stick with the language issues (no further improvements to
+         accessibility yet). The accessibility issue should be a different ticket.</p>
+         <p>SB: Could someone from the European subgroup explain the above comment a bit further?
+         What is yellow “needs discussion” about this, and what should be a different
+         ticket?</p></cell>
+       </row>
+       <row>
+        <cell>#2132</cell>
+        <cell>B</cell>
+        <cell><ref target="https://github.com/TEIC/TEI/issues/2132">Additional version/date
+         attributes for gaiji description</ref></cell>
+        <cell>
+         <p>How about renaming the att.styleDef</p>
+         <p>into att.schemeDef with attributes @scheme and @schemeVersion, eg. CSS 2.1 and Unicode
+         12.0 and change the @schemeVersion datatype teidata.versionNumber to accommodate e.g semver
+         ranges like &gt;=1.2.7 &lt;1.3.0; alternatively @maxVersion @minVersion</p></cell>
+       </row>
+       <row>
+        <cell>#2136</cell>
+        <cell>B</cell>
+        <cell><ref target="https://github.com/TEIC/TEI/issues/2136">Use PureODD inside attribute
+         lists</ref></cell>
+        <cell>Subgroup recommends to deprecate @org on <gi>attList</gi> and use schematron rules
+         instead. A few elements use &lt;attList org=””&gt; at the moment, e.g. <gi>relation</gi>.
+         These would have to be re-written.</cell>
+       </row>
+
+      </table>
+      <p> </p>
+     </div>
+    </div>
+   </div>
+  </body>
+  <!-- #post-## -->
+ </text>
+</TEI>

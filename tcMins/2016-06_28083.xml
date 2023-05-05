@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/home/lou/Public/TEI/TEICSS/tei.css" type="text/css"
+ ?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:t="http://www.tei-c.org/ns/1.0" n="2016-06"><teiHeader><fileDesc><titleStmt><title>Minutes of the TEI Technical Council</title><meeting n="2016-06" when="2016-06-30">TEI Technical Council online
+     meeting : <date>30 June 2016</date></meeting></titleStmt><publicationStmt><distributor>TEI Website</distributor><idno>TCM081</idno></publicationStmt><sourceDesc><p>Retagged from a WordPress HTML file</p></sourceDesc></fileDesc><revisionDesc><change when="2023-04-25">Archival header confected</change><change>Extracted from Word Press article with id post-28083</change></revisionDesc></teiHeader><text><body><div>
+		
+		<p>Teleconference 2016-06-30 13:00 UTC</p>
+<p rend="head">Present</p>
+<list style="ul">
+<item>James Cummings (JC)</item>
+<item>Elli Mylonas (EM)</item>
+<item>Stefan Majewski (SM)</item>
+<item>Hugh Cayless (HC)</item>
+<item>Peter Stadler (PWS)</item>
+<item>Elisa Beshero-Bondar (EB)</item>
+<item>Syd Bauman (SB)</item>
+<item>Martina Scholger (MS)</item>
+<item>Lou Burnard (LB)</item>
+</list>
+<p rend="head">Apologies</p>
+<list style="ul">
+<item>Magdalena Turska (MT)</item>
+<item>Raffaele Viglianti (RV)</item>
+</list>
+<div type="h3"><head>Agenda</head><p> </p><list style="ul">
+<item>TEI Simple state of play
+<list style="ul">
+<item>New simpler draft ODD is in repo at <ref target="https://github.com/TEIC/TEI/blob/dev/P5/Exemplars/tei_simple.odd">https://github.com/TEIC/TEI/blob/dev/P5/Exemplars/tei_simple.odd</ref></item>
+<item>Stylesheet fix to include display of proc mod info is still needed</item>
+<item>HC: Thanks to LB for all his work on this; LB more work to do, but better. Told Martin Mueller end of month, but end of July probably more likely. Would like to finish draft then hand off to someone else (Paul Schaffner?)</item>
+<item>Should validate most of the EEBO texts, even though this isn’t the official target..</item>
+<item><hi style="b">Action on Council</hi>: Please read LB’s messages to Council List and comment.</item>
+<item>LB raises 1 more issue: <gi>particDesc</gi> — Some encodings have used it to record characters in a play. In Simple ODD there is 1 example that shows a take on this w/o <gi>particDesc</gi> <hi style="b">Action on JC</hi>: ASAP: come up with a list of candidate elements for descendants of <gi>person</gi>, <gi>place</gi>, and <gi>org</gi> that don’t use persName or placeName, etc.</item>
+</list>
+</item>
+<item>@defaultVal issues from SB:
+<list style="ul">
+<item>1. Any default attribute value of “unknown” (or similar) should be removed through deprecation. See <ref target="https://github.com/TEIC/TEI/issues/1456">https://github.com/TEIC/TEI/issues/1456</ref>
+<list style="ul">
+<item>LB: Don’t forget to alter the prose of the Guidelines when deprecating ex. Use of @render on <gi>rendition</gi> still used in examples in the Guidelines prose. <ref target="https://github.com/TEIC/TEI/issues/1475">https://github.com/TEIC/TEI/issues/1475</ref> Action on EB to work on amendments of Guidelines re @rend.</item>
+</list>
+</item>
+<item>2. Thus, <gi>defaultVal</gi> should be a member of att.deprecatable. See <ref target="https://github.com/TEIC/TEI/issues/1467">https://github.com/TEIC/TEI/issues/1467</ref></item>
+<item>3. In which case the stylesheets need to DTRT with defaultVal/@validUntil. See <ref target="https://github.com/TEIC/Stylesheets/issues/158">https://github.com/TEIC/Stylesheets/issues/158</ref></item>
+<item>4. While we’re at it, the default value of att.msExcerpt’s @defective (“false”) and of att.personal’s @full (“yes”) should also be deprecated and removed. See <ref target="https://github.com/TEIC/TEI/issues/1457">https://github.com/TEIC/TEI/issues/1457</ref></item>
+<item>Personally, I think the first three are completely uncontroversial, and we just need a pro-forma “OK” from Council. As for the fourth one, I agree that they should be deprecated and removed.[1] However, I don’t think these are completely uncontroversial, they probably require discussion.</item>
+<item>[1] BTW, I think the first is so brain-dead obvious, we need only keep it in deprecated state for, say, 9 months. No need to go the full two years for something that obvious. The fourth one I would deprecate for the usual 2 years.</item>
+<item>Council OKs 1st three; as for 4th, <hi style="b">action on EM</hi> : Ask on TEI-L and MS-SIG about whether people rely on the default value or not</item>
+<item>C raises issue of term of deprecation. <hi style="b">Action on all</hi>: discuss this issue on list.</item>
+</list>
+</item>
+<item>Stylesheets online meeting schedule</item>
+<item>Stylesheets meetup at DH2016 in Krakow?
+<list style="ul">
+<item>Who will be there: JC, MT, HC, EB …EM, MS (added later: RV)</item>
+<item>Who will not be there, interested in joining anyway: SB; LB (depending on date)</item>
+<item>EB arrives July 7 and will hunt for campus niches with network connections so people can Skype in.</item>
+</list>
+</item>
+<item>July telecon schedule
+<list style="ul">
+<item>Hugh will be unavailable on the 28th due to a conflicting meeting. Reschedule? Cancel? Carry on without him? <hi style="b">Action on HC</hi>: Put up Doodle poll</item>
+</list>
+</item>
+<item>Translatathon @ Vienna, MS, SM, PS
+<list style="ul">
+<item>Brief report on current activities</item>
+<item>SM: Tuesday before conference; all day; room reserved; target German only.</item>
+<item>Council suggested to offer lunch.</item>
+</list>
+</item>
+</list><list style="ul">
+<item>EM and SB: free-standing attribute list
+<list style="ul">
+<item>HC has put a copy <ref target="https://docs.google.com/document/d/1Punte188LwdqBko8m8-f9LzevP7EKoqhddUBlnXVSiA/edit?usp=sharing">here</ref> so comments can be collected</item>
+</list>
+</item>
+<item>SB: needed in oXygen:
+<list style="ul">
+<item>ISO Schematron generation</item>
+<item>odd4odds (i.e., needs to be in Exemplars/)</item>
+</list>
+</item>
+<item>F2f @Vienna:
+<list style="ul">
+<item>SM reserved rooms Sun–Wed</item>
+</list>
+</item>
+<item>Other business?
+<list style="ul">
+<item>Conference in memory of SPQR. (Sadly 27 September 2016)</item>
+<item>East Asian SIG
+<list style="ul">
+<item><ref target="https://www.tei-c.org/Activities/SIG/EastAsian/">http://www.tei-c.org/Activities/SIG/EastAsian/</ref>. The conveners felt it important at this stage to retain the “Japanese” part of the name in order to engage Japanese textual scholars, HC indicated the Council’s preference for a more inclusive naming, but deferred to their expert opinion.</item>
+</list>
+</item>
+</list>
+</item>
+</list></div>
+	</div></body><!-- #post-## --></text></TEI>

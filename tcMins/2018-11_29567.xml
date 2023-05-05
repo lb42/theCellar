@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/home/lou/Public/TEI/TEICSS/tei.css" type="text/css"
+ ?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:t="http://www.tei-c.org/ns/1.0" n="2018-11"><teiHeader><fileDesc><titleStmt><title>Minutes of the TEI Technical Council</title><meeting n="2018-11" when="2018-11-16">TEI Technical Council online
+     meeting : <date>16 November 2018</date></meeting></titleStmt><publicationStmt><distributor>TEI Website</distributor><idno>TCM108</idno></publicationStmt><sourceDesc><p>Retagged from a WordPress HTML file</p></sourceDesc></fileDesc><revisionDesc><change when="2023-04-25">Archival header confected</change><change>Extracted from Word Press article with id post-29567</change></revisionDesc></teiHeader><text><body><div><p><hi style="strong">Meeting time: </hi></p><list style="ul">
+<item>16:00–17:30 EST, 21:00–22:30 GMT, 22:00–23:30 CET</item>
+<item>Started @ 21:03Z.</item>
+</list><p><hi style="strong">Present:</hi></p><list style="ul">
+<item>Syd Bauman (SB)</item>
+<item>Elli Mylonas (EM)</item>
+<item>Martina Scholger (MS)</item>
+<item>Peter Stadler (PS)</item>
+<item>Sarah Stanley (SS)</item>
+<item>Magdalena Turska (MT)</item>
+<item>Raff Viglianti (RV)</item>
+</list><p><hi style="strong">Apologies/Not Present:</hi></p><list style="ul">
+<item>Elisa Beshero-Bondar (EB)</item>
+<item>Alex Bia (AB)</item>
+<item>Vanessa Bigot Juloux (VBJ)</item>
+<item>James Cummings (JC)</item>
+</list><div type="h2"><head>Info: Spring F2F</head><list style="ul">
+<item>6–8 May at the Folger Library, Washington DC.</item>
+<item>Meaghan Brown booked a room.</item>
+<item>Eastern Market is close to the venue, Chinatown has lots of hotel options but it’s a bus or metro ride away.</item>
+</list></div><div type="h2"><head>Report <gi>standoff</gi> proposal</head><list style="ul">
+<item>SB, HC, &amp; MT are working on a counter-proposal, and have questions for Laurent Romary.</item>
+<item>SB: HC &amp; MT — was I supposed to ask Laurent before bringing this to Council or after?</item>
+<item>Anyway, see <ref target="https://github.com/sydb/stdfSpec/tree/linkDataBlock">SB’s fork of Laurent’s repo</ref>, the “linkDataBlock” branch.</item>
+<item>Main changes (so far):
+<list style="ul">
+<item>Change in default text structure. See summary which is both in the ODD file (and thus can be read in the <ref target="https://github.com/sydb/stdfSpec/blob/linkDataBlock/Specification/standoff-proposal.html">HTML</ref> output thereof), and better (because GitHub won’t show you that file directly) in the README on the <ref target="https://github.com/sydb/stdfSpec/tree/linkDataBlock/Specification">specifications</ref> page — scroll down to the first sub-heading, “Default Text Structure”.</item>
+<item>Change in scope. We had originally thought this proposal and the <gi>ldb</gi> proposal would be entirely different things. But on looking at the proposed content model for <gi>standOff</gi>, it is almost exactly what we would want for <gi>ldb</gi>. Thus I (SB) have combined them. (I’m calling the element <gi>ldb</gi>, but we can discuss this later.)</item>
+<item>Annotations (which, as per Laurent’s proposal, are always wrapped inside <gi>listAnnotation</gi>) may be encoded either with <gi>annotationBlock</gi>s or <gi>note</gi>s.</item>
+<item>We think these changes are sufficient to address the needs which triggered Laurent’s proposal, thus that we can defer contemplation of a more profound model for annotations in general.</item>
+<item>As a first step towards broader annotation model we’d need use cases to determine what the content model for annotation should exactly be. However, we agree that whatever it is, it should be influenced by the <ref target="http://www.openannotation.org/">Open Annotation model</ref> (i.e., should be easy to map from our model to OA).
+<list style="ul">
+<item>Suggestion that it is not necessary to do this yet, better to wait until someone is coming up with a proposal..</item>
+</list>
+</item>
+<item>Laurent will be asked for more use cases that conform to the new model. Specific questions for Laurent. (SB to send with CC to HC, MT, &amp; PS.)</item>
+<item>The implications of this include deprecating <gi>teiCorpus</gi>. We’ll consider a longer deprecation period than usual.</item>
+</list>
+</item>
+</list></div><div type="h2"><head>TEI Workshop (ANE)</head><list style="ul">
+<item>VBJ: TEI workshop for ancient Near Eastern (ANE) scholars during the international conference of Assyriologists in July (Paris) — <ref target="https://iaassyriology.com/past-rencontres/">https://iaassyriology.com/past-rencontres/</ref></item>
+</list></div><div type="h2"><head>Future thinking</head><list style="ul">
+<item>SB &amp; MH are still planning to have the Stylesheets/Test2/ directory in good enough shape by 01 Jan for SB to do rub-a-dub on Stylesheets/odds/odd2odd.xsl during Jan 2019.</item>
+</list></div><div type="h2"><head>AOB</head><list style="ul">
+<item>Note from AB that he is unable to continue on Council. MS will contact VBJ about assuming duties now and not in January. Also contact Luis Meneses to manage mailing list memberships etc.</item>
+</list></div><div type="h2"><head>Tickets from Tokyo</head><list style="ul">
+<item><ref target="https://github.com/TEIC/TEI/issues/1805">https://github.com/TEIC/TEI/issues/1805</ref>: Suggestion for new uniHan element
+<list style="ul">
+<item>Action MS: schedule call with Duncan Paterson, Martin Holmes, RV, SB, HC, MS.</item>
+</list>
+</item>
+<item><ref target="https://github.com/TEIC/TEI/issues/1756">https://github.com/TEIC/TEI/issues/1756</ref>: event should have ptr and idno in its content model
+<list style="ul">
+<item>JC will update this issue before next meeting. JC will update Council by email soon.</item>
+<item>VBJ: want to check with my TEI preliminary hermeneutics of action since I shall be able to add further examples since I’m studying action (person/action/event/place).</item>
+</list>
+</item>
+</list></div><div type="h2"><head>Other tickets</head><list style="ul">
+<item><ref target="https://github.com/TEIC/TEI/issues/1769">https://github.com/TEIC/TEI/issues/1769</ref> – teidata.pointer equivalent to move/@where</item>
+<item>Council recommends to do a customization.</item>
+</list></div><div type="h2"><head>Ticket triage</head><table>
+
+<row>
+<cell><hi style="b">November 2018</hi></cell>
+<cell><hi style="b">SS</hi></cell>
+</row>
+<row>
+<cell><hi style="b">December 2018</hi></cell>
+<cell><hi style="b">SB</hi></cell>
+</row>
+<row>
+<cell><hi style="b">January 2019</hi></cell>
+<cell><hi style="b">MS</hi></cell>
+</row>
+<row>
+<cell><hi style="b">February 2019</hi></cell>
+<cell><hi style="b">JC</hi></cell>
+</row>
+<row>
+<cell><hi style="b">March 2019</hi></cell>
+<cell><hi style="b">SB</hi></cell>
+</row>
+<row>
+<cell><hi style="b">April 2019</hi></cell>
+<cell><hi style="b">RV</hi></cell>
+</row>
+<row>
+<cell><hi style="b">May 2019</hi></cell>
+<cell><hi style="b">SS</hi></cell>
+</row>
+<row>
+<cell><hi style="b">June 2019</hi></cell>
+<cell><hi style="b">SB</hi></cell>
+</row>
+<row>
+<cell><hi style="b">July 2019</hi></cell>
+<cell><hi style="b">EB</hi></cell>
+</row>
+<row>
+<cell><hi style="b">August 2019</hi></cell>
+<cell><hi style="b">HC</hi></cell>
+</row>
+<row>
+<cell><hi style="b">September 2019</hi></cell>
+<cell><hi style="b">EM</hi></cell>
+</row>
+<row>
+<cell><hi style="b">October 2019</hi></cell>
+<cell><hi style="b">MT</hi></cell>
+</row>
+
+</table><p> </p></div></div></body><!-- #post-## --></text></TEI>

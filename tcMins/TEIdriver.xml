@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+   xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>TCM : complete rescued wordpress and  docs</title>
+             </titleStmt>
+            <publicationStmt>
+                <p>Unpublished first draft </p>
+            </publicationStmt>
+            <sourceDesc>
+                <p></p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+<xi:include href="2002-01_tcm01.xml"/>
+ <xi:include href="2002-06_tcm02.xml"/>
+ <xi:include href="2002-11_tcm03.xml"/>
+ <xi:include href="2003-01_tcm04.xml"/>
+ <xi:include href="2003-03_tcm05.xml"/>
+ <xi:include href="2003-05_tcm07.xml"/>
+ <xi:include href="2003-09_tcm08.xml"/>
+ <xi:include href="2004-01_tcm09.xml"/>
+ <xi:include href="2004-03_tcm10.xml"/>
+ <xi:include href="2004-05_tcm11.xml"/>
+ <xi:include href="2004-07_tcm12.xml"/>
+ <xi:include href="2004-09_tcm13.xml"/>
+ <xi:include href="2004-11_tcm14.xml"/>
+ <xi:include href="2005-01_tcm15.xml"/>
+ <xi:include href="2005-03_tcm16.xml"/>
+ <xi:include href="2005-07_tcm18.xml"/>
+ <xi:include href="2005-09_tcm19.xml"/>
+ <xi:include href="2005-09_tcm20.xml"/>
+ <xi:include href="2005-12_tcm21.xml"/>
+ <xi:include href="2006-02_tcm22.xml"/>
+ <xi:include href="2006-04_tcm23.xml"/>
+ <xi:include href="2006-05_tcm24.xml"/>
+ <xi:include href="2006-07_tcm25.xml"/>
+ <xi:include href="2006-09_tcm26.xml"/>
+ <xi:include href="2006-11_tcm27.xml"/>
+ <xi:include href="2007-01_tcm28.xml"/>
+ <xi:include href="2007-03_tcm29.xml"/>
+ <xi:include href="2007-04_tcm30.xml"/>
+ <xi:include href="2007-06_tcm31.xml"/>
+ <xi:include href="2007-07_tcm32.xml"/>
+ <xi:include href="2007-08_tcm33.xml"/>
+ <xi:include href="2007-08_tcm34.xml"/>
+ <xi:include href="2007-09_tcm35.xml"/>
+ <xi:include href="2007-10_tcm36.xml"/>
+ <xi:include href="2008-02_tcm37.xml"/>
+ <xi:include href="2008-04_tcm38.xml"/>
+ <xi:include href="2008-08_tcm39.xml"/>
+ <xi:include href="2008-10_tcm40.xml"/>
+<xi:include href="2009-04_22688.xml"/>
+<xi:include href="2009-10_21898.xml"/>
+<xi:include href="2009-12_21899.xml"/>
+<xi:include href="2010-02_21900.xml"/>
+<xi:include href="2010-04_21901.xml"/>
+<xi:include href="2011-04_21902.xml"/>
+<xi:include href="2011-08_21903.xml"/>
+<xi:include href="2011-11_21904.xml"/>
+<xi:include href="2012-02_21905.xml"/>
+<xi:include href="2012-04_21906.xml"/>
+<xi:include href="2012-08_21907.xml"/>
+<xi:include href="2012-09_21908.xml"/>
+<xi:include href="2012-12_21909.xml"/>
+<xi:include href="2013-04_21910.xml"/>
+<xi:include href="2013-10_21911.xml"/>
+<xi:include href="2013-11_21912.xml"/>
+<xi:include href="2014-01_21913.xml"/>
+<xi:include href="2014-03_21914.xml"/>
+<xi:include href="2014-05_21915.xml"/>
+<xi:include href="2014-06_21916.xml"/>
+<xi:include href="2014-08_21917.xml"/>
+<xi:include href="2014-10_21918.xml"/>
+<xi:include href="2014-11_21919.xml"/>
+<xi:include href="2014-12_21920.xml"/>
+<xi:include href="2015-01_21921.xml"/>
+<xi:include href="2015-02_21922.xml"/>
+<xi:include href="2015-04_21924.xml"/>
+<xi:include href="2015-05_21925.xml"/>
+<xi:include href="2015-06_21926.xml"/>
+<xi:include href="2015-07_21927.xml"/>
+<xi:include href="2015-08_21928.xml"/>
+<xi:include href="2015-09_21929.xml"/>
+<xi:include href="2015-10_21930.xml"/>
+<xi:include href="2015-12_21931.xml"/>
+<xi:include href="2016-01_21932.xml"/>
+<xi:include href="2016-02_21933.xml"/>
+<xi:include href="2016-03_21934.xml"/>
+<xi:include href="2016-04_21935.xml"/>
+<xi:include href="2016-05_21936.xml"/>
+<xi:include href="2016-06_28083.xml"/>
+<xi:include href="2016-07_28087.xml"/>
+<xi:include href="2016-08_28091.xml"/>
+<xi:include href="2016-09_28097.xml"/>
+<xi:include href="2016-10_28101.xml"/>
+<xi:include href="2016-11_28104.xml"/>
+<xi:include href="2017-01_29022.xml"/>
+<xi:include href="2017-02_29024.xml"/>
+<xi:include href="2017-03_29028.xml"/>
+<xi:include href="2017-04_29030.xml"/>
+<xi:include href="2017-05_29032.xml"/>
+<xi:include href="2017-06_29034.xml"/>
+<xi:include href="2017-08_29036.xml"/>
+<xi:include href="2017-09_29038.xml"/>
+<xi:include href="2017-10_29040.xml"/>
+<xi:include href="2017-11_29042.xml"/>
+<xi:include href="2018-01_29512.xml"/>
+ <xi:include href="2018-02_gdoc.xml"/>
+<xi:include href="2018-03_29519.xml"/>
+<xi:include href="2018-04_29526.xml"/>
+<xi:include href="2018-05_29580.xml"/>
+<xi:include href="2018-07_29548.xml"/>
+<xi:include href="2018-07_29552.xml"/>
+<xi:include href="2018-08_29545.xml"/>
+<xi:include href="2018-09_29494.xml"/>
+<xi:include href="2018-09_29576.xml"/>
+<xi:include href="2018-10_29574.xml"/>
+<xi:include href="2018-11_29567.xml"/>
+<xi:include href="2018-12_29561.xml"/>
+<xi:include href="2019-01_29344.xml"/>
+<xi:include href="2019-02_29397.xml"/>
+<xi:include href="2019-03_29411.xml"/>
+<xi:include href="2019-04_29419.xml"/>
+<xi:include href="2019-05_29474.xml"/>
+<xi:include href="2019-06_29501.xml"/>
+<xi:include href="2019-07_29697.xml"/>
+<xi:include href="2019-08_29704.xml"/>
+<xi:include href="2019-09_29788.xml"/>
+<xi:include href="2019-10_29707.xml"/>
+<xi:include href="2019-11_29753.xml"/>
+<xi:include href="2019-12_29781.xml"/>
+<xi:include href="2020-01_29814.xml"/>
+<xi:include href="2020-02_29866.xml"/>
+<xi:include href="2020-03_30643.xml"/>
+<xi:include href="2020-04_30662.xml"/>
+<xi:include href="2020-05_30702.xml"/>
+<xi:include href="2020-06_30654.xml"/>
+<xi:include href="2020-07_30767.xml"/>
+<xi:include href="2020-08_30774.xml"/>
+<xi:include href="2020-09_30783.xml"/>
+<xi:include href="2020-10_30824.xml"/>
+<xi:include href="2020-10_30858.xml"/>
+<xi:include href="2020-11_30912.xml"/>
+<xi:include href="2020-12_30927.xml"/>
+<xi:include href="2021-01_30945.xml"/>
+<xi:include href="2021-01_30949.xml"/>
+<xi:include href="2021-02_30952.xml"/>
+<xi:include href="2021-03_30974.xml"/>
+<xi:include href="2021-04_31126.xml"/>
+<xi:include href="2021-05_31120.xml"/>
+<xi:include href="2021-06_31116.xml"/>
+<xi:include href="2021-07_31157.xml"/>
+<xi:include href="2021-08_31183.xml"/>
+<xi:include href="2021-09_31212.xml"/>
+<xi:include href="2021-10_31219.xml"/>
+<xi:include href="2021-11_31233.xml"/>
+<xi:include href="2021-12_31229.xml"/>
+<xi:include href="2022-01_31239.xml"/>
+<xi:include href="2022-02_31245.xml"/>
+<xi:include href="2022-03_31271.xml"/>
+<xi:include href="2022-04_31278.xml"/>
+<xi:include href="2022-04_31301.xml"/>
+<xi:include href="2022-05_31327.xml"/>
+<xi:include href="2022-06_31336.xml"/>
+<xi:include href="2022-07_31350.xml"/>
+<xi:include href="2022-08_31366.xml"/>
+<xi:include href="2022-09_31485.xml"/>
+<xi:include href="2022-10_31406.xml"/>
+<xi:include href="2022-11_31421.xml"/>
+<xi:include href="2022-12_31432.xml"/>
+<xi:include href="2023-01_31521.xml"/>
+<xi:include href="2023-02_31539.xml"/>
+ <xi:include href="2023-03_31562.xml"/>
+ <xi:include href="2023-04_31583.xml"/>
+ 
+
+
+</TEI>

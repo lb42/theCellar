@@ -1,0 +1,664 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/home/lou/Public/TEI/TEICSS/tei.css" type="text/css"
+ ?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:t="http://www.tei-c.org/ns/1.0" n="2020-10"><teiHeader><fileDesc><titleStmt><title>Minutes of the TEI Technical Council</title><meeting n="2020-10" when="2020-10-13">TEI Technical Council online
+     meeting : <date>13 October 2020</date></meeting></titleStmt><publicationStmt><distributor>TEI Website</distributor><idno>TCM131</idno></publicationStmt><sourceDesc><p>Retagged from a WordPress HTML file</p></sourceDesc></fileDesc><revisionDesc><change when="2023-04-27">Archival header confected</change><change>Extracted from Word Press article with id post-30858</change></revisionDesc></teiHeader><text><body><div><table>
+
+<row>
+<cell><hi style="b">Saturday, Oct 24</hi></cell>
+<cell><p>09:00–13:00 EDT</p>
+<p>14:00–18:00 BST
+15:00–19:00 CEST</p></cell>
+<cell>Council meeting</cell>
+</row>
+<row>
+<cell/>
+<cell/>
+<cell/>
+</row>
+<row>
+<cell><hi style="b">Sunday, Oct 25</hi></cell>
+<cell>09:00–12:00 GMT
+10:00–13:00 CET</cell>
+<cell>European break-outs</cell>
+</row>
+<row>
+<cell/>
+<cell>09:00–13:00 EDT
+13:00–17:00 GMT14:00–18:00 CET</cell>
+<cell>Council meeting</cell>
+</row>
+<row>
+<cell/>
+<cell>14:00–16:30 EDT</cell>
+<cell>American break-outs</cell>
+</row>
+<row>
+<cell/>
+<cell/>
+<cell/>
+</row>
+<row>
+<cell><hi style="b">Monday, Oct 26</hi></cell>
+<cell><p>09:00–13:00 EDT</p>
+<p>13:00–17:00 GMT
+14:00–18:00 CET</p></cell>
+<cell>Council meeting</cell>
+</row>
+<row>
+<cell/>
+<cell/>
+<cell/>
+</row>
+
+</table><p> </p><p><hi style="strong">Present:</hi></p><list style="ul">
+<item>Syd Bauman (SB)</item>
+<item>Meaghan Brown (MB)</item>
+<item>Elisa Beshero-Bondar (EB)</item>
+<item>Hugh Cayless (HC)</item>
+<item>Nicholas Cole (NC)</item>
+<item>Jessica H. Lu (JL; Monday)</item>
+<item>Martina Scholger (MS,Chair)</item>
+<item>Peter Stadler (PS)</item>
+<item>Magdalena Turska (MT)</item>
+<item>Raff Viglianti (RV)</item>
+</list><p><hi style="strong">Invited Guests:</hi></p><list style="ul">
+<item>Martin Holmes (MH; Sunday)</item>
+<item>Kiyonori Nagasaki (KN; Sunday)</item>
+<item>Satoru Nakamura (SN; Sunday)</item>
+<item>Kazuhiro Okada (KO; Sunday)</item>
+<item>Laurent Romary (LR; Monday)</item>
+</list><p><hi style="strong">Apologies/Not Present:</hi></p><list style="ul">
+<item>Vanessa Bigot Juloux</item>
+<item>Jessica H. Lu (Saturday and Sunday)</item>
+</list><div type="h2"><head>SATURDAY, 24 — full Council</head>
+ <div type="h2"><head>Proposal on Vanilla (codename) customization</head><list style="ul">
+<item>report from the online meetup hosted by e-editions on 2020-10-20 (MT)</item>
+<item>related issue #2035: <ref target="https://github.com/TEIC/TEI/issues/2035">naming and description of TEI Simple Print and TEI Lite</ref></item>
+<item>more introductory material is needed (much is outdated, examples and available tooling).</item>
+<item>no linear progression through the body of TEI materials. Reference material can be baffling for beginners.</item>
+<item>Examples should be complete documents (e.g. as provided by TEI Publisher community) because of the problem of relying on small code blocks and the need to see the bigger picture.
+<list style="ul">
+<item>Need for a curated repository of examples in different languages (as discussed in i18n group too).</item>
+<item>Spanish (TTHub) and Japanese training materials are very good: can these be brought together on the TEI website?</item>
+<item>Can the TEI website be a better resource for this? Invite community members to contribute to a series of WordPress posts.</item>
+<item>TEI website has a list of pointers to projects, but that is less than ideal for this purpose for a variety of reasons.</item>
+</list>
+</item>
+<item>Schema is a secondary matter</item>
+<item>SB, at least, strongly objects to the name “Vanilla”</item>
+<item>Potential Next Steps?
+<list style="ul">
+<item>TEI Council should review the current introductory material and try to curate and filter some of the older material to ensure that it is relevant to current Guidelines.</item>
+<item>Encourage creation of ‘Road Not Taken’ examples? Explanations of decisions and alternates not chosen.</item>
+<item>Can we encourage some material to be written on the whole process, from encoding TEI documents to publishing them?</item>
+</list>
+</item>
+</list></div><div type="h2"><head>Report: remove @version on <gi>TEI</gi> and <gi>teiCorpus</gi></head><list style="ul">
+<item><ref target="https://github.com/TEIC/TEI/issues/1993#issuecomment-715444736">Late-breaking objection</ref></item>
+<item>Council will proceed with standard 2-year deprecation for removing @version from <gi>TEI</gi> and <gi>teiCorpus</gi>.</item>
+<item>We should continue to develop datatypes for semantic, and maybe calendar, versioning.</item>
+</list></div><div type="h2"><head>Next release — milestones</head><list style="ul">
+<item>Next release on Thursday February 25; refridge: Friday 2021-02-12; freeze: Friday 2021-02-19.</item>
+<item>Release techs (tentative): lead tech JL?, NC (assist), note taker (wait for election results).</item>
+<item>Advise proposers of “Ruby glosses” (<ref target="https://github.com/TEIC/TEI/issues/2054">#2054</ref>) and “CMC” (<ref target="https://github.com/TEIC/TEI/issues/1955">#1955</ref>) that the publication of their proposals in the next release is a reasonable (although not guaranteed) goal.</item>
+</list></div><div type="h2"><head>Proposal on CMC</head><list style="ul">
+<item>CMC subcommittee report: <ref target="https://bauman.zapto.org/~syd/temp/TEItmp/cmc_conv_02.tei">source</ref> (or <ref target="https://bauman.zapto.org/~syd/temp/TEItmp/cmc_conv_02.xhtml">XHTML</ref>)</item>
+<item>SB thinks issue <ref target="https://github.com/TEIC/TEI/issues/2010">#2010</ref> proposing the new element <gi>persPronouns</gi> probably should be considered as part of CMC, if not sooner.</item>
+<item>discuss at the next Council meeting.</item>
+</list></div><div type="h2"><head>Redesign of Guidelines’ HTML representation</head><list style="ul">
+<item><ref target="https://github.com/TEIC/TEI/issues/2023">https://github.com/TEIC/TEI/issues/2023</ref></item>
+<item>old HTML styles, use of tables for formatting</item>
+<item>bring them up to date, mobile friendly, accessible for screen readers.</item>
+<item>new interface will require user testing; we would do well to get the advice or assistance of an external advisor with some expertise in this area.</item>
+<item>Do we want to do major redesign
+<list style="ul">
+<item>screen reader compatibility;</item>
+<item>compliance with EU, USA accessibility guidelines &amp; legislation;</item>
+<item>layout that is easier for people with limited vision or other issues with readability?</item>
+</list>
+</item>
+<item>Retain simplicity of production process: no JS library dependency.</item>
+<item>Accessibility — we may wish to contact Alexandra von Criegern for consulting on accessibility questions.</item>
+<item><hi style="b">Action</hi> on <hi style="b">MS, HC, RV</hi>: Circulate (to TEI Council) a draft proposal to the TEI Board for funds for consulting help (particularly with accessibility) <hi style="b">by Tue 01 Dec 20</hi>.</item>
+</list></div><div type="h2"><head>Status P6</head><list style="ul">
+<item>MS asks about Council’s position on P6.</item>
+<item>HC: discussion of P6 largely driven by technological stack issues, e.g. XML + JSON + HTML custom elements vs. only XML.</item>
+<item>PS: perhaps P6 would rewrite the class system so there is proper inheritance.</item>
+<item>NC: perhaps could P6 permit overlap.</item>
+<item>NC: What if we had a Blue Skies meeting once or twice a year?</item>
+</list></div><div type="h2"><head>Any Other Business</head><list style="ul">
+<item>SB suggests that, because our VF2F meetings are significantly shorter than real F2F meetings, we should increase the frequency of meetings.</item>
+<item>Consensus is to add a VSF2F (virtual short face-to-face) in late January or early February:
+<list style="ul">
+<item>Americans meet Friday afternoon / evening</item>
+<item>Europeans meet Saturday morning</item>
+<item>Council convenes as a whole on Saturday (morning for Americans, afternoon for Europeans)</item>
+<item>no meeting on Sunday</item>
+</list>
+</item>
+<item>brief ISO 8601 report (SB)
+<list style="ul">
+<item>date and times issue</item>
+<item>SB has an official searchable PDF copy thanks to the Northeastern University Libraries (cost ~450 USD).</item>
+</list>
+</item>
+</list></div></div>
+      <div type="h2"><head><ref target="#springF2F">Review Guidelines Issues from the spring VF2F</ref></head></div><div type="h2"><head>SUNDAY, 25 – European break-outs</head></div><div type="h2"><head><ref target="#newIssues">Review new Guidelines issues</ref></head></div><div type="h2"><head>SUNDAY, 25 – full Council</head></div><div type="h2"><head>Proposal on ruby glosses</head><list style="ul">
+<item>Invited guests: Martin Holmes, Kiyonori Nagasaki, Satoru Nakamura, and Kazuhiro Okada</item>
+<item>Proposal: <ref target="https://docs.google.com/document/d/1rRgBRYpxUlsnMEHbOPW-92u_AIMNwq9axGtpI1UGgz8/edit#heading=h.xjusjhhdlit2">https://docs.google.com/document/d/1rRgBRYpxUlsnMEHbOPW-92u_AIMNwq9axGtpI1UGgz8/edit#heading=h.xjusjhhdlit2</ref></item>
+<item>Use @place instead of @rend.</item>
+<item>Nagasaki: Adding suggested values ‘right’ and ‘left’ to @place in att.placement would be useful for this proposal, but also for vertical aligned text in general.</item>
+<item>Discussion of @type values ‘primary’ and ‘secondary’. SB thinks it may be not entirely accurate. MH suggests the values ‘default’ and ‘additional’. List of values should nonetheless be semi open.</item>
+<item>Discussion on fragmentation of the ruby text (e.g. kanji) to align the ruby reading to it (e.g. hiragana). The proposal with anchor as a divider is not favored.
+<list style="ul">
+<item>Our suggestion is to ask the East Asian/Japanese SIG to show the same example encoded in the various models being proposed.</item>
+</list>
+</item>
+<item>MH: there will likely be two forms, one with nesting structure and one relying on standoff in order to cover the most complex cases.</item>
+<item>MH asks where should ruby annotations be discussed in the Guidelines.</item>
+<item>SB: One possibility would be in the core module next to the note element.</item>
+<item><hi style="b">Action on MS</hi>: open an issue on GitHub, linking to the proposal from there <hi style="b">by </hi>2020-11-01. Work on different examples and the ODD should take place there.</item>
+<item><hi style="b">Action on SB</hi>: post first draft ODD and instance on GitHub ticket <hi style="b">by </hi>one week after MS has created it.</item>
+</list></div><div type="h2"><head><ref target="https://docs.google.com/document/d/1WexgoxquV2XNSN1y9oYraTIWMzHVG8t8A0HGm3btlZY/edit#heading=h.mzg3bjotb7mg">Review Guidelines issues from European break-outs</ref></head></div><div type="h2"><head>SUNDAY, 25 – American Break-outs</head></div><div type="h2"><head><ref target="#newIssues">Review Guidelines issues</ref></head></div><div type="h2"><head>Monday, 26 – full Council</head></div><div type="h2"><head>Invitation for TEI liaison from ISO TC37/SC3</head><list style="ul">
+<item>Invited guest: Laurent Romary</item>
+<item>TC37/SC3 does terminology management systems.</item>
+<item>TBX format for exchanging terminological information used in translation management systems.</item>
+<item>New chair of SC3 wants to establish better interfaces and liaisons with other groups.</item>
+<item>LB was liaison with SC4.</item>
+<item>Liaison could be appointed each year within Council. The responsibility is to read or at least skim proposals and messages, and keep Council updated.</item>
+<item>The Council as a group can provide feedback on ISO proposals.</item>
+<item>Some proposals are about defining TBX in ODD. TEI could bring in some ISO terminology for the Dictionary chapter for example.</item>
+<item>SB asks if SC3 is reviewing documents only within the group of representatives or whether they can consult with the TEI-C. LR: they would inform representatives. The designated contact person has responsibility to ask back in own organisation. Council: We have to appoint someone.</item>
+<item>General meetings are every 6 months. Working groups may meet more frequently depending on projects. There is a plenary every June on terminology and term extraction systems and methods.</item>
+<item>Other TEI connections: SC4 on feature structures where the TEI–represented by Lou Burnard–already has a liaison. Others, Lexical Markup Framework (for lexical databases) mention TEI.</item>
+<item>Request is for a liaison with SC3 working group, but probably our new liaison would be connected with SC4 too, as Lou Burnard has already agreed with the Board to step aside.</item>
+<item>Timeframe: when do they need a liaison? Maybe as soon as we have Council election results.</item>
+<item>NC is interested, pending re-election to Council.</item>
+<item>Council should check every January about the status of our ISO liaison, and make the liaison(s) public on the TEI website.</item>
+<item>Other liaisons to investigate: DocBook? JATS?</item>
+<item><hi style="b">Action on MS</hi> to write to Kathryn Tomasek to inform her that NC will be the representative of TEI-C.</item>
+</list></div><div type="h2"><head><ref target="https://docs.google.com/document/d/19BYJYSEzUhLXTQ4k4YHp_eAJmH3OD0OUNHcpD4adhT0/edit">List of liaisons</ref></head><list style="ul">
+<item>official</item>
+<item>unofficial (those Council need not appoint or update)</item>
+<item>strategic partnerships</item>
+</list></div><div type="h2"><head>Internationalization report</head><list style="ul">
+<item>RV put together an Airtable (cloud servi for the glossary of terms of the TEI from German and Japanese glossary + i18n.xml file. The working group discussed how to use the glossary. Start translation work on specs and if we encounter something to translate add it to the glossary.
+<list style="ul">
+<item>Glossary <ref target="https://airtable.com/tblzh2JnHxAy44ThO">https://airtable.com/tblzh2JnHxAy44ThO</ref></item>
+</list>
+</item>
+<item>Gimena del Rio Riande wants to start with first steps at a workshop in November.</item>
+<item>MT organisational question. Is there a plan for the translation work?
+<list style="ul">
+<item>Spanish, German, and Japanese groups were the first to get involved, starting with the Scholarly Communications Institute in 2019. Japanese group is very active with translation work. i18n group is very open, but hard to organize due to time zone differences.</item>
+<item>Need to work out how the TEI website can be a better hub for finding out ongoing translation efforts. And have multilingual landing pages.</item>
+<item>Should become an internationalization SIG instead of working group eventually.</item>
+<item>MT: TEI Publisher (with 17 languages involved) has a crowdsourcing translation workflow where atomized particles are translated for the interface. Bracket off untranslatable code like {{count}}. Make it easy for people to contribute: Need a lot of preparation for that including good access to open source tools like Crowdin, and lots of motivational work to find people!</item>
+<item>PS and HC: how to work on specs translations. Crowdin would not work so well for this. But we will need to work on interface translation, too. Is there GitHub integration for translation crowd-sourcing software?</item>
+</list>
+</item>
+</list></div><div type="h2"><head><ref target="https://docs.google.com/document/d/1WexgoxquV2XNSN1y9oYraTIWMzHVG8t8A0HGm3btlZY/edit#heading=h.mzg3bjotb7mg">Review Guidelines issues from the American break-outs</ref></head></div><div type="h2"><head>Outdated directory “genetic”</head><list style="ul">
+<item>get rid of outdated directory “genetic” from the TEI directory, see <ref target="https://github.com/TEIC/TEI/issues/2043">https://github.com/TEIC/TEI/issues/2043</ref></item>
+</list><p> </p></div><div type="h2"><head>Status: Needs discussion</head></div><div type="h2"><head>Guidelines Issues from the spring VF2F</head><list style="ul">
+<item>Group C: EB, HC, MB</item>
+<item>Group D: SB, JL, RV</item>
+</list><table>
+
+<row>
+<cell>No.</cell>
+<cell>Group</cell>
+<cell>Title</cell>
+<cell>Comment</cell>
+</row>
+<row>
+<cell>#1921</cell>
+<cell>C</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/1921">Remove <gi>schemaSpec</gi> from model.divPart and add to small set of elements</ref></cell>
+<cell><p>Subgroup totally agrees with JC. We really need to de-class-ify this.</p>
+<p>However, Council agreed to deprecation (with some dissent).</p>
+<p>MS (before VF2F): SB put <gi>schemSpec</gi> into model.frontPart instead of model.divPart, and in turn add it directly to content models of body and <gi>div</gi>.</p>
+<p>2020-10-24: green</p></cell>
+</row>
+<row>
+<cell>#1925</cell>
+<cell>D</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/1925"><gi>equiv</gi> should get the @predicate attribute</ref></cell>
+<cell><p>Subgroup suggests Status:Go, with @predicate put in a class.</p>
+<p>2020-10-24: green for PS</p></cell>
+</row>
+<row>
+<cell>#1928</cell>
+<cell>C</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/1928">Substring highlighting for egXML</ref></cell>
+<cell><p>Great idea (saith JC). We should close one of these tickets as superfluous.</p>
+<p>2020-10-24: Action on HC or EB to prod James Cummings about <ref target="https://github.com/TEIC/TEI/issues/1632">#1632</ref> if he wants to develop it. If not close it and continue work in <ref target="https://github.com/TEIC/TEI/issues/1928">#1928</ref>. (PS: Consider whether this issue could be assigned to one of our students who could undertake it under our supervision.</p></cell>
+</row>
+<row>
+<cell>#1929</cell>
+<cell>D</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/1929">What is a paragraph, really?</ref></cell>
+<cell><p>Subgroup greenlights EB to revisit definition/description of <gi>p</gi>, but any concrete change to the Guidelines would warrant further discussion.</p>
+<p>2020-10-24: Consider putting <gi>ab</gi> in core would resolve some issues: <gi>ab</gi> should be able to be encoded like <gi>p</gi>. <gi>p</gi> is an artefact of Western culture, and <gi>ab</gi> could really be primary, with <gi>p</gi> as a special instance.</p></cell>
+</row>
+<row>
+<cell>#1931</cell>
+<cell>C</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/1931">Examples min P5 are unnumbered</ref></cell>
+<cell><p>Subgroup recommends that we rethink how we deal with examples generally (connected with highlighting (<ref target="https://github.com/TEIC/TEI/issues/1632">#1632</ref> and <ref target="https://github.com/TEIC/TEI/issues/1928">#1928</ref>), too, and i18n group’s needs to prioritize examples in particular languages). For now, we should consider it low priority. JC notes he is writing an article for jTEI about some of the issues with examples.</p>
+<p>2020-10-24: Permalinks help, but would encourage people to link to old versions. So could be twinned with an alert if the user is looking at old versions to be displayed on old versions of the Guidelines.</p></cell>
+</row>
+<row>
+<cell>#1933</cell>
+<cell>D</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/1933">exemplum and language</ref></cell>
+<cell><p>Subgroup suggests this ticket for consideration by i18n SIG.</p>
+<p>2020-10-24: HC: examples are on the agenda for future discussion of i18n group. RV: What would we be asking i18n? Shouldn’t Council be doing the mechanism of this work on advice of i18n?</p>
+<list style="ul">
+<item>Maybe we need an attribute or an <gi>exemplumGroup</gi> element to say: include this exemplum in X language version of the Guidelines, even if it’s not in that group.</item>
+</list>
+<list style="ul">
+<item>@xml:lang can be set to “mul” (multiple) or “und” (undetermined); currently examples with these values are always output.</item>
+<item>PS: Perhaps best to output all, and on the interface make the examples collapsible. Burden of processing should be on the interface, not the output.</item>
+<item>MB/MS: Do some examples only have relevance within a specific language? Should we reserve @xml:lang for those special cases? (No, because we want a way to access all examples in a given language.) Maybe a different attribute.</item>
+<item>SB: We should generate an internal version of the <hi style="i">Guidelines</hi> that displays all the examples in all languages, just to see if it looks acceptable. (SB suspects it will not, others suspect it will.)</item>
+<item>Change the logic of how exemplum is output. This is a good Stylesheets Group meeting activity.</item>
+</list>
+</cell>
+</row>
+<row>
+<cell>#1934</cell>
+<cell>C</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/1934">Categories of uncertainty</ref></cell>
+<cell><p>Greenlight to add to att.typed</p>
+<p>2020-10-24: greenlight, add <gi>certainty</gi> to att.typed</p></cell>
+</row>
+<row>
+<cell>#1939</cell>
+<cell>C</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/1939">Content models for <gi>front</gi> and <gi>back</gi> identical?</ref></cell>
+<cell><p>Subgroup agrees that <gi>front</gi> and <gi>back</gi> should be identical, and that model.divBottom does indeed belong in <gi>front</gi> as well as <gi>back</gi>. We should greenlight to try to implement this.</p>
+<p>2020-10-24: We should greenlight to find a way to implement making <gi>front</gi> and <gi>back</gi> identical. There may be a few options for this, so Status:Needs discussion and Status:Go.</p></cell>
+</row>
+<row>
+<cell>#1942</cell>
+<cell>D</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/1942">Unused test files should be removed</ref></cell>
+<cell><p>Subgroup changed to Status:Go.</p>
+<p>2020-10-24: SB will go ahead</p></cell>
+</row>
+<row>
+<cell>#1943</cell>
+<cell>C</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/1943">Allow <gi>bibl</gi> in <gi>label</gi></ref></cell>
+<cell><p>HC will write to Scott to prod him for an example.</p>
+<p>MS (before VF2F): no reaction from Scott</p>
+<p>2020-10-24: closed</p></cell>
+</row>
+<row>
+<cell>#1945</cell>
+<cell>D</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/1945">lg element content model prevents accurate encoding</ref></cell>
+<cell><p>Subgroup thinks this ticket can be deferred in favor of #<ref target="https://github.com/TEIC/TEI/issues/1877">1877</ref>, which may solve the issue.</p>
+<p>2020-10-24: deferred</p></cell>
+</row>
+<row>
+<cell>#1946</cell>
+<cell>C</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/1946">No column- nor row-spanning examples?</ref></cell>
+<cell><p>Subgroup likes the example and thinks this needs to be greenlighted.</p>
+<p>2020-10-24: greenlighted</p></cell>
+</row>
+<row>
+<cell>#1953</cell>
+<cell>D</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/1953">improve example</ref></cell>
+<cell><p>Subgroup suggests change Status:Go. (Note: very American example)</p>
+<p>2020-10-24: greenlighted</p>
+<p><hi style="b">Action on SB by 2020-11-01: </hi>Generate a version of example that does not use (the very clever) empty naming elements, or refer to <gi>place</gi> entries not in evidence.</p><p>
+<hi style="b">DONE, 2020-10-24.</hi></p></cell>
+</row>
+<row>
+<cell>#1957</cell>
+<cell>C</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/1957">FR: Declarative Citation Structure</ref></cell>
+<cell><p>Subgroup likes this and observes we need to review HC’s PR. Assigned EB, MS, and PS to review.</p>
+<p>2020-10-24: MS pinged EB, MS, and PS to review PR.</p></cell>
+</row>
+<row>
+<cell>#1961</cell>
+<cell>D</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/1961">inconsistent indication of elided content in examples</ref></cell>
+<cell><p>Subgroup suggests greenlighting this ticket and assigning it to a new Council member (JL).</p>
+<p>2020-10-24: greenlighted, maybe assign a brand-new Council member to this in January? (good for a beginner with Council)</p></cell>
+</row>
+<row>
+<cell>#1962</cell>
+<cell>C</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/1962">Make Licensing explicit in repo</ref></cell>
+<cell><p>Subgroup totally agrees with this; it should be green. We need to add BSD-2 and CCBY to the TEI repo. Should it apply to other repos in TEI-C as well? There is one already on Stylesheets repo.</p>
+<p>Tite is under GPL2</p>
+<p>Guidelines is BSD-2 and CCBY.</p>
+<p>2020-10-24: need proper license on the <hi style="i">Guidelines</hi>. We should add the license files to the top level of the GitHub repo AND remove (or make more explicit) what the current licence at  <ref target="https://github.com/TEIC/TEI/tree/dev/P5/Legal">https://github.com/TEIC/TEI/tree/dev/P5/Legal</ref> is about.</p></cell>
+</row>
+<row>
+<cell>#1966</cell>
+<cell>C</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/1966">Inconsistency in character representation</ref></cell>
+<cell><p>Subgroup agrees with SB that this needs careful investigation to determine whether some of these inconsistencies are actually appropriate or deliberate.</p>
+<p>2020-10-25: NC will work on prose for explaining that U+hex will be interpreted as a character point, and any other text will be interpreted literally.</p></cell>
+</row>
+<row>
+<cell>#1986</cell>
+<cell>C</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/1986">add altIdentifier to att.datable</ref></cell>
+<cell><p>Subgroup agrees that <gi>altIdentifier</gi> should be added to att.datable, but NOT <gi>msIdentifier</gi> because that should always be the current one. No-one Asked For It (HC wants this to become a new doctrine).</p>
+<p>2020-10-25: SB notes that <gi>msIdentifier</gi> can’t be used more than once, but  <gi>altIdentifier</gi> should be used instead.</p></cell>
+</row>
+<row>
+<cell>#1988</cell>
+<cell>C</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/1988">Schematron constraint for ab is too crude</ref></cell>
+<cell><p>Subgroup agrees with the recommendation to amend the Schematron to recognize the special “floating-text-like” contexts for things like <gi>ab</gi> and <gi>p</gi>. Recommend greenlighting.</p>
+<p>2020-10-25: Greenlight to modify the Schematron rule as Martin Holmes suggests.</p></cell>
+</row>
+</table></div>
+      <div type="h2"><head>New Guidelines issues (since May)</head><p>Group A: PS, MS, MT, NC</p><p>Group B: EB, HC, MB, PS, RV</p>
+<table>
+<row>
+<cell>#1981</cell>
+<cell>A</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/1981">att.declaring and att.declarable need constraints and better explanation</ref></cell>
+<cell><p>Subgroup suggests that the ticket should be split: the typos and unclear explanations should be corrected now, but the several substantive issues should be split into new tickets.</p>
+<p>Council: Go for cleaning up the typos and unclear explanations first.</p></cell>
+</row>
+<row>
+<cell>#1987</cell>
+<cell>A</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/1987">Remove unnecessary comments from ODD customization exemplars</ref></cell>
+<cell><p>Subgroup agrees with SB’s proposal to turn comments into proper documentation.</p>
+<p>Council: mark as green, Status:Go</p></cell>
+</row>
+<row>
+<cell>#1989</cell>
+<cell>A</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/1989">idno: different desc for English and other languages</ref></cell>
+<cell><p>Subgroup assigned MS to prod native speakers for updating the descriptions.</p>
+<p>Council: Green. Raff should add the Italian translation.</p></cell>
+</row>
+<row>
+<cell>#1991</cell>
+<cell>A</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/1991">Requirements for New Sanity Checker</ref></cell>
+<cell><p>Subgroup agrees that this is a great ticket for collecting ideas for a useful utility, but not necessarily Council’s priority. If someone wants to build this, Council would be happy to give advice.</p>
+<p>Council: Listing out things that need to be checked, and offering it as a project for continued work seems a good idea. Where to post such a list? Raff could work on a ticket for romabeta sanity checking.</p>
+<p>EB opens <ref target="https://github.com/TEIC/Documentation/issues/8">a new ticket on the Documentation repo</ref> to deal with the horror that is <ref target="https://tei-c.org/guidelines/customization/getting-started-with-p5-odds/">https://tei-c.org/guidelines/customization/getting-started-with-p5-odds/</ref></p></cell>
+</row>
+<row>
+<cell>#1992</cell>
+<cell>A</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/1992">Some titleStmt children should be members of att.datable.</ref></cell>
+<cell><p>Subgroup discusses the issue for a long time over the datable ‘role’ of author (and editor). In general we agree. We also think that this is a theoretical issue, and of low priority.</p>
+<p>Council: Status:Go, green and low priority.</p></cell>
+</row>
+<row>
+<cell>#1994</cell>
+<cell>A</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/1994">Description of desc needs to be expanded</ref></cell>
+<cell><p>Subgroup thinks that an example outside the TD module should be added to the specs. Discuss if there should also be a subchapter in the prose (e.g. core module). Our proposal is to shorten the description to: “contains a brief description of its parent element.”</p>
+<p><ref target="https://tei-c.org/release/doc/tei-p5-doc/en/html/CO.html#COHQU">https://tei-c.org/release/doc/tei-p5-doc/en/html/CO.html#COHQU</ref></p>
+<p>Council greenlights for NC and EB to proceed.</p></cell>
+</row>
+<row>
+<cell>#1999</cell>
+<cell>A</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/1999">why is <gi>graphic</gi> not a member of att.typed?</ref></cell>
+<cell><p>Subgroup agrees to add att.typed, greenlight</p>
+<p>Council agrees, also to improve the example.</p></cell>
+</row>
+<row>
+<cell>#2000</cell>
+<cell>A</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/2000">Permit <gi>row</gi> and <gi>cell</gi> within <gi>rdg</gi> and <gi>lem</gi></ref></cell>
+<cell><p>Subgroup thinks that it’s a valid use case to encode the structural difference of tables (and lists!) between witnesses. Thus we propose to a) permit <gi>row</gi> and <gi>cell</gi> within <gi>app</gi>; b) permit <gi>app</gi> within <gi>row</gi>; c) add <gi>item</gi> to <gi>app</gi>; d) ask OP for a real world example</p>
+<p>Council: Green. Assigned to MT, also to supply examples. Work on both lists and tables. MT added discussion on</p></cell>
+</row>
+<row>
+<cell>#2001</cell>
+<cell>A</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/2001">listPrefixDef and prefixDef – problems with wording of prose and usage</ref></cell>
+<cell><p>Subgroup–improve prose and use “private URI scheme” instead of “prefixing scheme”, as OP requested. We are not aware of examples within the Guidelines of the second issue raised by this ticket.</p>
+<p>Council: Status:Go and Need discussion: Try reworking the language and discuss, add HC.</p></cell>
+</row>
+<row>
+<cell>#2002</cell>
+<cell>A</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/2002">FR: Allow @period to have Datatype of “1–∞ occurrences of teidata.pointer separated by whitespace”</ref></cell>
+<cell><p>Subgroup agrees to change teidata.pointer to 1–∞ occurrences (without the remark proposed by SB).</p>
+<p>Council: Green to proceed.</p></cell>
+</row>
+<row>
+<cell>#2003</cell>
+<cell>A</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/2003">FR: <gi>surfaceGrp</gi> should contain model.graphicLike</ref></cell>
+<cell><p>Subgroup tends to disagree. What is a group without its members? Additionally, the OP is not forced to use a group but might use <gi>facsimile</gi> or <gi>surface</gi> (with a <gi>graphic</gi>) to link to the PDF.</p>
+<p>Council: <gi>surfaceGrp</gi> is not intended to model this. Suggest to use <gi>facsimile</gi> instead and close the ticket.</p></cell>
+</row>
+<row>
+<cell>#2006</cell>
+<cell>A</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/2006">Guidelines wrongly document @wit as attribute for <gi>rdgGrp</gi></ref></cell>
+<cell><p>Subgroup tends to agree with HC and “ralessi” that the way forward is to fix the prose rather than reintroduce @wit on <gi>rdgGrp</gi>.</p>
+<p>Council consensus is to fix the prose.</p></cell>
+</row>
+<row>
+<cell>#2007</cell>
+<cell>A</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/2007">Expand translation spreadsheet and generate glossary</ref></cell>
+<cell>Subgroup: superceded by the installation of the i18n group; closed issue.</cell>
+</row>
+<row>
+<cell>#2010</cell>
+<cell>A</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/2010">Proposal: new element <gi>persPronouns</gi></ref></cell>
+<cell><p>Subgroup agrees this is a good proposal. We think that an open list of space separated values (for the @value attribute) is probably the right solution, and that the nominative case only is probably sufficient, so for a person who goes by two sets of pronouns: “she/her/hers they/them/theirs” can simply be: “she they”.</p>
+<p>SB: this is useful for the CMC group. What module is best for this?</p>
+<p>Council: Add SB to ticket to help MB; status:Go and Needs discussion.</p></cell>
+</row>
+<row>
+<cell>#2011</cell>
+<cell>B</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/2011"><gi>pubPlace</gi> vs <gi>place</gi></ref></cell>
+<cell><p>Subgroup thinks <gi>place</gi> should not go in <gi>bibl</gi>, and that “duncdrum”’s example should be encoded with <gi>pubPlace</gi>; or, if he is uncomfortable calling a performance a publication, then <gi>placeName</gi> (also allowed in <gi>bibl</gi>).</p>
+<p>Council: Closed with a comment.</p></cell>
+</row>
+<row>
+<cell>#2012</cell>
+<cell>B</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/2012">revamp att.interpLike</ref></cell>
+<cell><p>Subgroup thinks this should simply be green, go (for option #3)</p>
+<p>Council: Green for SB to proceed with option 3.</p></cell>
+</row>
+<row>
+<cell>#2013</cell>
+<cell>B</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/2013">Add more elements to att.docStatus</ref></cell>
+<cell><p>Subgroup thinks if we do this (as most of us think we should) it should be added to att.global.responsibility.</p>
+<p>Council: Maybe we need a better name than att.docStatus for a global (or larger set). @status is already specified for certain elements. Maybe @encStatus?</p>
+<p>Possibly we revisit @status on att.transcriptional, the attribute name is not appropriate to its intended use.</p>
+<p>Possibly: change att.docStatus, such that we redefine the @status attribute, and change <gi>correction</gi>. The @status defined on that element is a narrowed-down version of what we would want on a global scale.</p>
+<p>HC: Better to work towards it, and accomplish it fully after a deprecation period. Or just change att.docStatus as the ticket requests, for gradual solution.</p>
+<p>Work on describing what would need to happen to make att.docStatus global and revisit.</p></cell>
+</row>
+<row>
+<cell>#2015</cell>
+<cell>B</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/2015">indefinite articles</ref></cell>
+<cell>Subgroup notices this is already underway and makes it green.</cell>
+</row>
+<row>
+<cell>#2016</cell>
+<cell>B</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/2016"><gi>place</gi> should be allowed to contain <gi>address</gi> as a child.</ref></cell>
+<cell><p>Subgroup thinks <gi>location</gi> serves to signal <gi>address</gi> as a specific location just like a geo-coordinate reference, and does not think we should allow <gi>place</gi> to contain <gi>address</gi> as a direct child. Location info could be subject to change in reference to a place (volcanic eruption, geopolitical change of street names, etc.)</p>
+<p><ref target="https://tei-c.org/release/doc/tei-p5-doc/en/html/ND.html#NDGEOG">13.3.4 “Places”</ref> defines place as having a name and a location.  <gi>country</gi>, <gi>region</gi>, and <gi>settlement</gi> are all specializations of the generic <gi>placeName</gi> element and are therefore allowed as children of <gi>place</gi>. <gi>address</gi> is not semantic sugar for <gi>placeName</gi> so it should remain in <gi>location</gi>.</p>
+<p>However, HC notes that this section is unsophisticated and may need updating. Subgroup recommends we reject James’ idea for now, and also consider revisiting the language about place and location in 13.3.4.</p>
+<p>Council: Close with explanation. Open a new ticket for HC to to work on 13.3.4. DONE: <ref target="https://github.com/TEIC/TEI/issues/2042">#2042</ref>.</p></cell>
+</row>
+<row>
+<cell>#2019</cell>
+<cell>B</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/2019">ptr element should allow desc child</ref></cell>
+<cell><p>Subgroup agrees with LB’s comment and thinks this should be rejected.</p>
+<p>Council agrees, closed.</p></cell>
+</row>
+<row>
+<cell>#2023</cell>
+<cell>full Council</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/2023">Guidelines Redesign</ref></cell>
+<cell><hi style="i">Briefly discussed on Saturday: </hi><hi style="b"><hi style="i">Action</hi></hi><hi style="i"> on </hi><hi style="b"><hi style="i">MS, HC, RV</hi></hi><hi style="i">: Circulate (to TEI Council) a draft proposal to TEI Board for funds for consultant help (particularly with accessibility) </hi><hi style="b"><hi style="i">by Tue 01 Dec 20</hi></hi><hi style="i">.</hi></cell>
+</row>
+<row>
+<cell>#2026</cell>
+<cell>B</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/2026">Build process linkchecker needs replacing</ref></cell>
+<cell><p>Subgroup recommends greenlighting.</p>
+<p>Council agrees.</p></cell>
+</row>
+<row>
+<cell>#2027</cell>
+<cell>B</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/2027"><gi>eg</gi> element should have more explanation and at least one example in the chapter it comes from</ref></cell>
+<cell><p>Subgroup agrees that there need to be more examples of the examples.</p>
+<p>Council agrees.</p></cell>
+</row>
+<row>
+<cell>#2028</cell>
+<cell>B</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/2028">`@calendar` should allow multiple values</ref></cell>
+<cell><p>Subgroup does like the idea of multiple values on @calendar but we note a larger issue: We wonder if @calendar should be removed from att.datable because too many elements can take it. It should only be on <gi>date</gi> and dateTime elements. @calendar is explicitly for defining text coded in date form (it should not be used on <gi>placeName</gi>, <gi>persName</gi>, etc.). We added MB to the ticket because she has a good example from her work.</p>
+<p>Council: Green. Open a new ticket to address att.datable.calendar about the removal of @calendar from too many places. DONE: <ref target="https://github.com/TEIC/TEI/issues/2045">#2045</ref></p></cell>
+</row>
+<row>
+<cell>#2029</cell>
+<cell>B</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/2029">Permit <gi>licence</gi> within <gi>docImprint</gi></ref></cell>
+<cell><p>Subgroup asks if the <gi>imprimatur</gi> element would do what OP (Lou Burnard) wants?</p>
+<p>Council: JL will close the ticket in a few days if LB hasn’t responded / invite LB to respond in closing.</p></cell>
+</row>
+<row>
+<cell>#2033</cell>
+<cell>B</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/2033">various concerns with 13.3.7 Dates and Times</ref></cell>
+<cell><p>Subgroup thinks this is green for minor corrections, but if SB wants to restructure the whole chapter, that needs a new ticket.</p>
+<p>Council agrees.</p></cell>
+</row>
+<row>
+<cell>#2034</cell>
+<cell>B</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/2034">Nested vColl elements</ref></cell>
+<cell><p>Subgroup leans toward clarifying the Guidelines prose to match the content model, which permits indirect nesting of <gi>vColl</gi> within <gi>fs</gi>. Because TEI feature structures are associated with ISO standards, we should check with Laurent Romary or Lou Burnard before making changes here. Chapter 18 identifies ISO 24610-1:2006 standard as corresponding with our Guidelines.</p>
+<p>Council agrees that the schema should be adjusted to allow to nest.</p></cell>
+</row>
+<row>
+<cell>#2035</cell>
+<cell>full Council</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/2035">naming and description of TEI Simple Print and TEI Lite</ref></cell>
+<cell><hi style="i">discussed during plenary session on Saturday</hi></cell>
+</row>
+<row>
+<cell>#2036</cell>
+<cell>B</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/2036">versionDate attribute needs more constraint</ref></cell>
+<cell><p>Subgroup thinks this should be green to implement the Schematron solution to constrain @versionDate to a date after 2008 or at least a date using a 4-digit year, and before the day after tomorrow. We also need to change the description of @versionDate.</p>
+<p>Council agrees that the constraint is important for the schema that constraints P5 and its customizations (i.e., p5odds and tei_customization), but is split on whether it should be <hi style="i">a part </hi>of P5 or not.</p>
+<p>Might be good to have a more restrictive datatype, maybe like teidata.dateTime, for use in documentation. Require a full date or a dateTime, four-digit year. Post Unix start date: 1970-01-01?</p>
+<p>Status:Go and Needs discussion. Ask SB + MB to come up with a good plan for combining a datatype + Schematron check.</p></cell>
+</row>
+<row>
+<cell>#2037</cell>
+<cell>B</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/2037">Element/@ident without English glosses or descs</ref></cell>
+<cell><p>Subgroup thinks that everything about att.translatable is wrong and needs to be rewritten.</p>
+<p>Subgroup also is mildly in favor of requiring an English <gi>gloss</gi> for every specification element, whether it is “needed” or not by the current rules. That would
+a) give us a place to put the @versionDate for the translators,
+b) make it so that all languages are treated equally, and</p>
+<p>c) allow p5odds to require a <gi>gloss</gi> child of <gi>elementSpec</gi>, etc.</p>
+<p>It does mean someone would have to write XSLT to generate the needed &lt;gloss xml:lang=”en”&gt;, which is easy, but what would their @versionDate values be? (Suggestion: take the newest of all the other <gi>gloss</gi>es. Yes, there is a small chance it has been changed since, but how would we catch that?)</p>
+<p>d) Having an English gloss present where it wasn’t before will help the i18n translation process to have a ‘hook’ for translations.</p>
+<p>SB thinks that a blue sky conversation is needed about idents and namespaces in general (may be a P6 thing).</p>
+<p>PS: Maybe wait for i18n group to share their workflow for identifying what needs translation? Discussion: Adding glosses should help the i18n group.</p>
+<p>SB: What we really need is the date the @ident was last changed?</p>
+<p>PS suggests we change our styleguides for updating the <hi style="i">Guidelines</hi> to ensure English gloss is present.</p>
+<p>Council: Green for SB to require the English gloss.</p></cell>
+</row>
+<row>
+<cell>#2040</cell>
+<cell>B</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/2040">elementRef cannot reference a namespaced elementSpec</ref></cell>
+<cell><p>Subgroup thinks this may not be a problem because of prefixes. RV to investigate and respond.</p>
+<p>Council: Status:Go and Needs discussion for RV to investigate and respond.</p></cell>
+</row>
+<row>
+<cell>#1911</cell>
+<cell/>
+<cell><ref target="https://github.com/TEIC/TEI/issues/1911#">material element should be in att.typed</ref></cell>
+<cell>Council decides on adding @function to <gi>material</gi>.</cell>
+</row></table>
+</div><div type="h2">
+<head>not labeled (revisited and labeled during VF2F)</head>
+<table>
+<row>
+<cell>#1691</cell>
+<cell/>
+<cell><ref target="https://github.com/TEIC/TEI/issues/1691"><gi>said</gi>, <gi>q</gi>: att classes and behavior in context of Overlapping Hierarchies</ref></cell>
+<cell>Council: Status: Needs discussion; asked EB to revisit.</cell>
+</row>
+<row>
+<cell>#1717</cell>
+<cell/>
+<cell><ref target="https://github.com/TEIC/TEI/issues/1717">content complaints</ref></cell>
+<cell>Council: closed</cell>
+</row>
+<row>
+<cell>#1743</cell>
+<cell/>
+<cell><ref target="https://github.com/TEIC/TEI/issues/1743">Infrastructure documentation</ref></cell>
+<cell>Council: Status:Go for the Infrastructure group</cell>
+</row>
+<row>
+<cell>#1780</cell>
+<cell/>
+<cell><ref target="https://github.com/TEIC/TEI/issues/1780">Inviting translation of descs, glosses, remarks: workflow</ref></cell>
+<cell>Council: closed</cell>
+</row>
+<row>
+<cell>#1884</cell>
+<cell/>
+<cell><ref target="https://github.com/TEIC/TEI/issues/1884">xenodata</ref></cell>
+<cell>Council: Status:Go</cell>
+</row>
+<row>
+<cell>#1931</cell>
+<cell/>
+<cell><ref target="https://github.com/TEIC/TEI/issues/1931">Examples in P5 are unnumbered</ref></cell>
+<cell>Council agrees that this is a good idea. We will close the issue here and open a Stylesheets issue to 1) create a permalink and b) alert the user when looking at old versions. New issue in Stylesheets repo: <ref target="https://github.com/TEIC/Stylesheets/issues/471">#471</ref></cell>
+</row>
+<row>
+<cell>#1932</cell>
+<cell/>
+<cell><ref target="https://github.com/TEIC/TEI/issues/1932">Example error in 16.1.2 Using Pointers and Links (first example following Dunciad image)</ref></cell>
+<cell>Council: closed</cell>
+</row>
+<row>
+<cell>#1977</cell>
+<cell/>
+<cell><ref target="https://github.com/TEIC/TEI/issues/1977">Finalize the content model of standOff</ref></cell>
+<cell>Council believes this was done in release 4.1.0, and thus closed.</cell>
+</row>
+<row>
+<cell>#2042</cell>
+<cell/>
+<cell><ref target="https://github.com/TEIC/TEI/issues/2042">Revisit language about place and location in Ch. 13</ref></cell>
+<cell>Council: Status:Go and Needs discussion.</cell>
+</row>
+
+</table><p> </p></div></div></body><!-- #post-## --></text></TEI>

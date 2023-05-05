@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/home/lou/Public/TEI/TEICSS/tei.css" type="text/css"
+ ?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:t="http://www.tei-c.org/ns/1.0" n="2005-12"><teiHeader><fileDesc><titleStmt><title>Minutes of the TEI Technical Council</title><meeting n="2005-12" when="2005-12-16">TEI Technical Council online
+     meeting : <date>16 December 2005</date></meeting></titleStmt><publicationStmt><distributor>TEI Website</distributor><idno>TCM021</idno></publicationStmt><sourceDesc><p>Re-tagged from a TEI Legacy format document which contained the following source note:</p><p>This electronic file is the source.</p></sourceDesc></fileDesc><revisionDesc><change when="2023-05-01">Archival header confected</change><change>Converted from the TEI archival document tcm21</change></revisionDesc></teiHeader><text>
+    <front>
+      <div>
+        <p>Call began at 12:00 with SB, AB, LB, JC, DP, SR, NS, SS, CT, PW,
+	CW</p>
+<p>Apologies were relayed from MD; also received (subsequently) from MZ and LR</p>
+      </div>
+    </front>
+    <body>
+      <div n="1">
+        <head>Review of Actions</head>
+        <p>Action items from both the previous <ref target="./tcm19.xml">full meeting</ref> and the <ref target="./tcm20.xml">classes sub meeting</ref>
+          were reviewed
+        <list type="gloss">
+            <label>P5 "Howto"</label><item> Draft had been reviewed and
+	    updated and was now thought to be ready for
+	    prime time: it should be moved from the Drafts section of
+	    the website to a putative Notes section, or maybe
+	    published on the Wiki. <note type="action"> <label>JC</label>Review
+	    and then disseminate the P5 howto.<date>2005-12-31</date> </note>
+            </item>
+            <label>XPointer scheme registration</label><item>SB had
+	    succeeded in registering the TEI scheme, modulo some need
+	    to choose between <ident>xpath</ident> and
+	    <ident>xpath1</ident> as a name.</item>
+            <label>BIBL</label><item>[The minutes of the Sept meeting
+	    say this action on SB was  "deliberately deferred" but it
+	    seems to have vanished without trace!].</item>
+            <label>Datatypes</label><item>All actions
+	    completed.</item>
+<label>lbl vs label</label><item>LB reported no action, pending
+discussion with LR</item>
+<label>stylesheet problems</label><item>SR reported stylesheets had
+been fixed to make
+<att>xml:id</att> now visible and section numbering now more
+rational in HTML version of P5 Guidelines: this won't be visible to
+the world until next release however </item>
+<label><gi>g</gi> availability</label><item>Done</item>
+        </list>
+        </p>
+      </div>
+      <div n="2">
+        <head>Review of WG etc. progress</head>
+        <list type="gloss">
+<label>PB: Physical Bibliography</label>
+<item>CW had received an update from Murray McGilvray which he would
+circulate to Council: not much progress yet.</item>
+          <label>SO: segmentation &amp; alignment</label>
+          <item>The workgroup was now inactive and 
+	  the status of its deliverables seemed a little unclear. SB
+	  was asked to investigate and report. <note type="action"><label>SB</label><date>2005-12-31</date>
+Circulate summary report on SO workgroup outputs to date</note></item>
+<label>FS: feature structures</label>
+          <item>LB reported that the draft had now been ratified by
+	  ISO. The new work item on  feature system declaration had
+	  been accepted, and a meeting had been proposed to start the
+	  work in Korea on 16 Jan; LB was however unable to attend.</item>
+<label>General</label><item>CW noted that the list of activities on
+the web site was out of date; LB made the traditional comment that web
+site maintenance was not the editors' job.<note type="action"><label>LB</label>to update the Activities
+webpage <date>asap</date></note>. It was noted that no other work groups were still
+active. </item></list>
+      </div>
+      <div>
+        <head>New Work Item: personography</head>
+        <p>As informally discussed in Sofia, LB had recently completed some minor changes to the
+	available elements for recording data about persons and
+	introduced a new <gi>listPerson</gi> element. SR, Matthew
+	Driscoll, and he had discussed how best to take the work
+	forward, and come to the conclusion that it might be worth
+	paying a student to undertake some preliminary survey work
+	before convening a small meeting on the topic. </p>
+<p>SR noted that the board had allocated $24K to the Council for the
+current financial year; if half that was devoted to the May meeting, a
+budget of $6K for each of two workgroups would be feasible.</p>
+<p>Several Council members expressed interest in contributing to the
+work. After discussion, Council agreed to ask Matthew Driscoll to
+chair the activity with a fixed budget of $6K. <note type="action"><label>CW, LB</label>Draft charge for personography
+activity, including deadlines and workplan.<date>2005-12-31</date></note></p>
+      </div>
+      <div>
+        <head>New Work Item: PageImages</head>
+<p>Following recent discussion on the council list, it was agreed that
+there was a need to document TEI best practice with respect to the
+management of texts including or consisting of digitized page images,
+given the wide variety of current practice. Conall agreed to take on
+the task of producing a preliminary draft, and making it available for
+further discussion via the TEI wiki.<note type="action"><label>CT</label>Initiate and facilitate production of
+note on Page Image Management; report on progress to next Council
+meeting. <date>2006-02-24</date></note></p>
+      </div>
+      <div>
+        <head>P5 progress</head>
+        <p>LB had previously circulated the following brief note:
+        <list type="ordered">
+<item>During October there was extensive
+        work on attributes and datatypes, which was completed in time
+        for a release of P5 (0.2.1) to take place on the 21st.</item>
+<item> During November, the priority was to work on classes. A
+detailed programme of work was agreed following the Council meeting in
+Oxford, and is now complete. Full details of the changes made are
+available from http://www.tei-c.org/Drafts/edw92.xml</item>
+
+<item>Some outstanding issues remain on the class front, in particular  there is still need for a  review of many chapters not discussed at the  Oxford meeting.  Enough work has been done, however, to proceed to the revision of chapter ST, which is the next priority.</item>
+<item>In December, Matthew Driscoll visited Oxford, resulting in a number of minor corrections to the MS chapter.</item>
+<item>A new "listPerson" element has been introduced to facilitate encoding of "personographical" data: this was tested on some data supplied by Matthew which now forms a new component of the test suite.</item>
+<item>New material for inclusion in chapters SA and NH has been received but not yet reviewed by both editors.</item>
+	</list>
+	</p>
+
+<p>Discussing this, Council noted that the legend "done" in EDW92
+meant that the change had been applied in CVS. A new full release
+would include these changes; it was agreed that the next release
+should also include a less misleading version of chapter ST, much of
+which is currently plain wrong. <note type="action"><label>LB</label>
+Ensure that ST corrections are completed
+<date>2006-01-31</date></note></p>
+<p>Council discussed how best to take forward the outstanding work on
+revising class memberships, in particular how to repeat the Oxford
+process for chapters other than core, header, structure. Possibilities
+included another ftf meeting for the same group, a series of
+conference calls taking each module one at a time, email list etc. A
+specific proposal was requested. <note type="action"><label>SB</label>
+organize a proposal on  how best to prosecute the class struggle <date>2005-12-31</date></note></p>
+      </div>
+
+<div><head>Annual  FTF Meeting</head>
+          <p>Council agreed that a meeting mid-May in Kyoto would be
+	  its first preference. Travel costs could be reduced if this
+	  were held in conjunction with some kind of TEI Training
+	  event. <note type="action"><label>CW</label>Investigate
+	  options for holding council meeting/TEI training meeting in
+	  Kyoto, reporting back by next call. <date>2006-02-24</date></note></p>
+<p>SS offered facilities at MITH, in the Washington area, should this
+not be possible. Paris and Oxford were also available, as
+previously.</p></div>
+
+<div><head>AOB</head>
+<p>PW reported that the "TEI in Libraries" group was now working as
+part of the US Digital Library Foundation, and wouild be holding a
+meeting next month in Washington to update its now rather elderly
+Guidelines on best practice in using the TEI. These Guidelines will
+continue to be based on TEI P4. It was suggested that they could
+nevertheless be usefully enhanced with a section on <q>preparing for
+P5</q> or some such, which should highlight any potential problems in
+migration from P4 to P5 for the library community. SB (and other
+Council members) will be
+attending this meeting and was asked to report back from it. <note type="action"><label>SB/SS/NS</label>Report back from TEI Libraries
+meeting at next TEI Council call. <date>2006-02-24</date></note></p>
+</div>
+      <div>
+        <head>Next Call</head>
+        <p>The date of 24 Feb at the same time was proposed.</p>
+      </div>
+    </body>
+    <back>
+      <div>
+        <p>Call ended at 13:10 or thereabouts.</p>
+      </div>
+    </back>
+  </text></TEI>

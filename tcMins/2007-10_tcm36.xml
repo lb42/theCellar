@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/home/lou/Public/TEI/TEICSS/tei.css" type="text/css"
+ ?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:t="http://www.tei-c.org/ns/1.0" n="2007-10"><teiHeader><fileDesc><titleStmt><title>Minutes of the TEI Technical Council</title><meeting n="2007-10" when="2007-10-23">TEI Technical Council online
+     meeting : <date>23 October 2007</date></meeting><author>James Cummings</author></titleStmt><publicationStmt><distributor>TEI Website</distributor><idno>TCM036</idno></publicationStmt><sourceDesc><p>Re-tagged from a TEI Legacy format document which contained the following source note:</p><p>Notes transcribed from hand minutes</p></sourceDesc></fileDesc><revisionDesc><change when="2023-05-01">Archival header confected</change><change>Converted from the TEI archival document tcm36</change><change when="2007-10-27"><date>27 October 2007</date>
+            <label>Chris Ruotolo</label> Converted to P5
+         </change><change when="2007-10-23" who="author">
+            <p>
+               <name>James Cummings</name>creation</p>
+         </change></revisionDesc></teiHeader><text>
+    
+      <front>
+      
+         <div>
+        
+            <p>The TEI Council teleconference meeting took place on
+          Tuesday 23 October at 12:00 UTC.</p>
+        
+            <p>
+               <label>Participants:</label> Arianna Ciula (AC), Syd Bauman
+          (SB), Lou Burnard (LB), James Cummings (Minutes; JC), Matthew
+          Driscoll (MD), Dan O'Donnell (DO), Dot Porter (DP), 
+		Sebastian Rahtz (SR), Laurent Romary
+          (LR), Conal Tuohy (CT), John Walsh (JW), and Christian
+          Wittern (Chair;CW).</p>
+        
+            <p>Council members unable to participate: David Birnbaum (DB),
+          and Tone Merete Bruvik (TMB).</p>
+      
+         </div>
+    
+      </front>
+    
+      <body>
+      
+         <div>
+        
+            <head>Open action items</head>
+        
+            <p>CW reviewed the action items from the previous minutes.
+            <hi>All action items must be completed by 2007-10-26 12:00
+            UTC unless otherwise noted.</hi>
+          
+               <list type="gloss">
+            
+                  <head>Action items</head>
+            
+                  <label>
+              
+                     <emph>LB</emph> contact workgroup participants and
+              others who have helped on P5 to check spelling of names
+              and current affiliations. 2007-09-30 </label>
+            
+                  <item> LB reported on work done on AB and FM1 and that FM1
+              would change to become more of an acknowledgements
+              section. He would point Council at new drafts of this
+              material in the next few days. <note type="action" >
+                        <label>LB</label> Point Council to new drafts of
+                AB/FM1/etc. <date>2007-10-25</date>
+                     </note>
+            
+                  </item>
+            
+                  <label>
+              
+                     <emph>JW</emph> to provide additional e.g.s and read
+              through existing ones in rendition 2007-09-30 </label>
+            
+                  <item>JW reported that this had been completed.</item>
+            
+                  <label>
+              
+                     <emph>ALL</emph> read through the proposed list of
+              rendition attribute values and provide feedback to LB
+              2007-09-30 </label>
+            
+                  <item>LB reported that he had received no comments and
+              taken this as assent. CT mentioned that he felt the
+              suggested @scheme values were appropriate.</item>
+            
+                  <label>
+              
+                     <emph>SB</emph> to finish revisions of NH by end of
+              month 2007-09-30 </label>
+            
+                  <item>Discussion of NH postponed until later in the
+              agenda.</item>
+            
+                  <label>
+              
+                     <emph>All</emph> review NH, which has yet to be read in
+              its new form by anybody other than the authors
+              2007-09-30 </label>
+            
+                  <item>Discussion of NH postponed until later in the
+              agenda.</item>
+            
+                  <label>
+              
+                     <emph>ALL</emph> Report any last minute major
+              suggestions for changes to web design (if you absolutely
+              must) to JC and DP 2007-09-28 </label>
+            
+                  <item>Discussion of Guidelines Formatting postponed until
+              later in the agenda.</item>
+            
+                  <label>
+              
+                     <emph>JC, DP</emph> Begin integration process with main
+              site with Chris Ruotolo (ongoing) </label>
+            
+                  <item>Discussion of Guidelines Formatting postponed until
+              later in the agenda.</item>
+            
+                  <label>
+              
+                     <emph>DO </emph> Facilitate communication between the
+              two web teams 2007-09-25 </label>
+            
+                  <item>Discussion of Guidelines Formatting postponed until
+              later in the agenda.</item>
+            
+                  <label>
+              
+                     <emph>LB </emph> Expand explanatory prose in USE
+              concerning which elements are mandatory and how a user
+              can know this as Arianna described it in her email
+              today. 2007-09-30 </label>
+            
+                  <item>LB reported that he had still to do this and it
+              would be done today.<note type="action" >
+                        <label>LB</label> Expand explanatory prose in USE
+                concerning which elements are mandatory and how a user
+                can know this as Arianna described it in her email
+                today. <date>2007-10-23</date>
+                     </note>
+            
+                  </item>
+            
+                  <label>
+              
+                     <emph>SB </emph> read and comment if nec. on solution to
+              mode attribute on <gi>classes</gi>. 2007-10-10 </label>
+            
+                  <item> SB reported that this had been completed.</item>
+            
+                  <label>
+              
+                     <emph>LB</emph> deal with
+              <gi>hand</gi>/<gi>handDesc</gi> issue in MS 2007-09-30 </label>
+            
+                  <item>LB reported that he believed this had been done.</item>
+            
+                  <label>
+              
+                     <emph>CW</emph> contact CT and discover status of PH </label>
+            
+                  <item> CW reported that this had been done.</item>
+            
+                  <label>
+              
+                     <emph>CW</emph> contact DB and discover status of ND </label>
+            
+                  <item> CW reported that this had been done.</item>
+            
+                  <label>
+              
+                     <emph>DP</emph> finish review of CO 2007-09-30 </label>
+            
+                  <item> DP reported that she had not entirely finished
+              this, but that she would do so today.<note type="action" >
+                        <label>DP</label> Finish review of CO and submit
+                comments to editors <date>2007-10-24</date>
+                     </note>
+            
+                  </item>
+            
+                  <label>
+              
+                     <emph>CW</emph> contact JC and discover status of DS </label>
+            
+                  <item> CW reported that he had done this, and that JC had
+              already finished his review and submitted notes to the
+              editors.</item>
+            
+                  <label>
+              
+                     <emph>JW</emph> complete review of SA 2007-09-30 </label>
+            
+                  <item>JW reported that he had not completed this yet and
+              he would do so in the next day or two.<note type="action" >
+                        <label>JW</label> Complete review of SA
+                and submit comments to editors
+              <date>2007-10-25</date>
+                     </note>
+            
+                  </item>
+            
+                  <label>
+              
+                     <emph>JW</emph> complete review of AI 2007-09-30 </label>
+            
+                  <item> JW reported that he had not completed this yet and
+              he would do so in the next day or two.<note type="action" >
+                        <label>JW</label> Complete review of AI
+                and submit comments to editors
+              <date>2007-10-25</date>
+                     </note>
+            
+                  </item>
+            
+                  <label>
+              
+                     <emph>LR</emph> complete review of FD 2007-09-30 </label>
+            
+                  <item> LR reported that he had completed this.</item>
+            
+                  <label>
+              
+                     <emph>SR</emph> complete review of DI 2007-09-30 </label>
+            
+                  <item> SR reported that he had not only completed this but
+              had made the corrections in the source.</item>
+            
+                  <label>
+              
+                     <emph>DP</emph> Compare Reading List and Works Cited and
+              remove duplicates from the Reading List. 2007-10-15 </label>
+            
+                  <item>DP reported that she had delayed on this until the
+              bibliographic descriptions were reformatted. She will
+              now progress. LB offered to liaise with her concerning
+              the needed rationalization.<note type="action" >
+                        <label>DP
+                  (&amp; LB)</label> Rationalize Reading List and
+                Works Cited removing
+              duplicates<date>2007-10-26</date>
+                     </note>
+            
+                  </item>
+            
+                  <label>
+              
+                     <emph>LR</emph> Convert Reading List to StructBibl
+              2007-10-15 </label>
+            
+                  <item> LB reported that this had been done, though there
+              was some disagreement over handling of
+              <gi>relatedItem</gi>
+                  </item>
+            
+                  <label>
+              
+                     <emph>AC</emph> Finish extracting sources for list of
+              sources for examples 2007-10-15 </label>
+            
+                  <item> It was reported that this had been completed.</item>
+            
+                  <label>
+              
+                     <emph>SR</emph> Connect sources of examples bibliography
+              to examples in text 2007-10-15 </label>
+            
+                  <item> SR reported that this had been completed. </item>
+            
+                  <label>
+              
+                     <emph>SR/LB</emph> Convert <gi>bibl</gi> in the text of
+              the guidelines to <gi>ref</gi> pointing at the works
+              cited list 2007-10-15 </label>
+            
+                  <item>LB reported that had been completed, and in
+              summarizing other work on the Bibliography noted that
+              there several instances of examples which he believed
+              were not fabricated but for which he could not find a
+              source and that these should be investigated/changed at
+              some future date.</item>
+          
+               </list>
+        
+            </p>
+
+        
+            <div>
+          
+               <head>State of NH</head>
+          
+               <p>DO summarised the work done on NH and what he felt the
+            main issues were. This was followed by a far-ranging
+            discussion on the intricacies of overlap and especially
+            its relation to TEI Conformance. Although there was some
+            disagreement, Council sentiment was generally that the TEI
+            should not recommend non-Conformant methods of encoding
+            and thus the discussion of HORSE should be further
+            relegated to make it clear that there are these non-TEI
+            and even non-XML ways to deal with this, but that they do
+            not result in TEI Conformant documents. DO is to rewrite
+            some portions concentrating on their relation to
+            Conformance and avoiding pollution of the TEI namespace in
+            all examples. <note type="action" >
+                     <label>DO</label>
+              Rewrite some prose and examples of NH with TEI
+              Conformance and pollution of TEI Namespace in mind.
+                <date>2007-10-25</date>
+                  </note>
+          
+               </p>
+        
+            </div>
+      
+         </div>
+
+      
+         <div>
+        
+            <head>Reports</head>
+
+        
+            <div>
+          
+               <head>State of P5</head>
+          
+               <p>LB reported on the changes that have been done recently
+            to the source as well as some he wished to make
+            immediately but which would result in significant changes
+            to the schema. These included: <list type="ordered">
+              
+                     <item>The reinstating of the @generate attribute on
+                  <gi>schemaSpec</gi>: Council approved this.</item>
+              
+                     <item>The removal of @xml:space from att.global, and its
+                addition to a new class. @xml:space is contrary, in
+                some ways to the TEI way of doing things and perhaps
+                should be mentioned as deprecated in the TEI
+                Guidelines. Council approved the creation of the new
+                class and that at minimum <gi>eg</gi> and
+                <gi>egXML</gi> should be members. <note type="action" >
+                           <label>LB</label> Create a class for xml:space
+                  with <gi>eg</gi> and <gi>egXML</gi> as members, and
+                  note that it is not globally available in the TEI
+                  scheme. <date>2007-10-26</date>
+                        </note>
+                     </item>
+              
+                     <item>The removal of @xml:base from att.global and its
+              addition to att.global.linking, thus it only appears as
+              a global element when the linking module is
+              selected. Council did not approve this, observing that
+              it was useful for e.g. facsimiles even without the
+              linking module . <note type="action" >
+                           <label>LB</label>
+              Leave @xml:base as
+              is. <date>2007-10-26</date>
+                        </note>
+                     </item>
+              
+                     <item>The adding of a new element for boundary marking
+                to deal with the NH-related problems raised in earlier
+                discussion. Council did not approve this and suggested
+                that it be reconsidered for P5 1.1</item>
+              
+                     <item>That an @xsi:schemaLocation in the W3C xsi
+                namespace be added to <gi>TEI</gi> on the generation
+                of schemas by ODD processors. Although it was agreed
+                this was a bad mechanism chosen by the W3C, it was
+                felt that it should be supported and documented in IM.
+                  <note type="action" >
+                           <label>SR</label> Add
+                  @xsi:schemaLocation to all schemas generated by Roma
+                  and document that an ODD processor has the option of
+                  doing this in IM.
+              <date>2007-10-24</date>
+                        </note>
+                     </item>
+            
+                  </list> LB continued to report that he had dozens of egs
+            in MS for which he didn't have accurate bibliographic
+            information. <note type="action" >
+                     <label>MD</label> Furnish
+              LB with appropriate bibliographic references for 
+              examples in MS.
+                <date>2007-10-26</date>
+                  </note>
+          
+               </p>
+          
+               <p>LB noted the IPR problem with respect to the PH chapter.
+            That is, that he has illegally used scans of photographs
+            which we do not have copyright permission to use, and
+            especially not distribute under a GPL licence. LB noted
+            that he was sourcing some images from the Robert Graves'
+            Diary project, but others would be welcome. SB noted that
+            he might have some images that are suitable which we could
+            freely use and redistribute under GPL. <note type="action" >
+                     <label>SB</label> Furnish LB with appropriate image
+              for use as examples in PH.
+            <date>2007-10-25</date>
+                  </note>
+               </p>
+          
+               <p>LB continued to note that SA was getting long as a
+            chapter and was in need of a good spring clean, but that
+            this might have to wait for P5 1.1</p>
+        
+            </div>
+
+
+        
+            <div>
+          
+               <head>Guidelines Formatting and Web Design</head>
+          
+               <p>DO reported on the problems with regard to a slow server
+            (to be replaced) at Virginia as explanation why the full
+            TEI-C new website was not live. JC and SR reported on the
+            formatting of the Guidelines and that this had now been
+            merged as cleanly as possible with the TEI-C web design.
+            SR noted that, although a readable one is available now,
+            the proper PDF rendition will probably not be available
+            until January. Council agreed that print versions were not
+            the priority, but SR also reminded them that the HTML
+            version of the Guidelines had a CSS stylesheet for print
+            as well (which removes much of the navigation) which look
+            fairly good in print.</p>
+        
+            </div>
+      
+         </div>
+
+      
+         <div>
+        
+            <head>Other Business</head>
+        
+            <p>DO requested that anyone who considered they would be
+	unable to finish their assigned tasks should notify the Council
+          list by Friday. JC further suggested that all Council
+          members report on all action items by Friday at 12:00 UTC.
+            <note type="action" >
+                  <label>ALL</label> Report to council
+            list on progress of all of your action items by 2007-10-26
+            12:00 UTC, noting especially if you don't think you will
+            complete them.<date>2007-10-26</date>
+               </note>
+        
+            </p>
+        
+            <p>LB thanked all members of council, past and present, who
+          had worked so hard to bring TEI P5 to fruition; 
+          their hard work and dedication to the task of this major
+          revision of the Guidelines was much appreciated.</p>
+      
+         </div>
+
+
+      
+         <div>
+        
+            <head>Next Meeting</head>
+        
+            <p>The next teleconference was not scheduled, but many Council
+          members will be attending the TEI Members' Meeting in
+          Maryland.
+          <!--
+          CW will put up a
+          meetomatic survey to determine the best date. It will,
+          however be at 12:00 noon UTC. This will be:<lb/> 06:00 MDT
+          in Calgary,<lb/> 07:00 CDT in Chicago,<lb/> 08:00 EDT in New
+          York,<lb/> 13:00 BST in London,<lb/> 14:00 CEST in
+          Paris,<lb/> 21:00 JST in Kyoto, and<lb/> 00:00 NZST in Wellington.<lb/>
+          <note type="action">
+            <label>CW</label> CW to set date for next meeting using
+            meetomatic, and announce. <date>2007-09-30</date>
+          </note>
+          -->
+        </p>
+      
+         </div>
+
+    
+      </body>
+  
+   </text></TEI>

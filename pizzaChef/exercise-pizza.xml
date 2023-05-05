@@ -1,0 +1,365 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/css" href="handout-x.css"?>
+<!DOCTYPE TEI.2 PUBLIC "-//TEI//DTD TEI Lite 1.0//EN" 
+   "/TEI/Lite/DTD/teixlite.dtd" [
+<!ATTLIST xref url CDATA #IMPLIED>
+]>
+<TEI.2>
+  <teiHeader type="text" status="new">
+    <fileDesc>
+      <titleStmt>
+	<title>Baking your own pizza</title>
+    <author>Lou Burnard</author>
+      </titleStmt>
+      <publicationStmt>
+	<p>For TEI web site</p>
+      </publicationStmt>
+      <sourceDesc default="NO">
+	<p>No source: this the original</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <!-- one of (eg bibl biblFull l lg p sp cit q label list
+      listBibl note stage div div0 div1) -->
+
+<p>In this exercise, you will use the TEI pizza chef in
+order to make a special purpose XML DTD. You will need access to the
+internet and a browser such as IE5, Netscape, or Opera. Once you have
+     your DTD you will also need an XML-aware editor to use it.</p>
+
+<p>Our goal in this exercise is to make a very very simple DTD, which
+we can use to mark up a multimedia document. We don't need anything
+like the full complexity of TEI Lite, much less the full TEI. We just
+want to mark up headings, dates, lists, paragraphs, figures and
+... sound clips. Unfortunately, the TEI Guidelines don't seem to have
+an element specifically for marking up sound clips, so we need to
+invent it. While we are being imaginative, we will also add a
+<ident>scale</ident> attribute to the existing TEI <gi>figure</gi>
+element, which will be used to resize images for display, and an
+     attribute <ident>url</ident> to simplify the process of embedding images in webpages.
+</p>
+
+<div>
+      <head>Baking your own pizza</head>
+
+<list type="numbered">
+
+<item>Go to the URL
+<xref>http://www.tei-c.org.uk/pizza.html</xref> and read the
+general discussion of how the Pizza Chef works.</item>
+
+<item>Choose the modules you want: for this exercise, select the prose
+base and the figures topping. (This means you should uncheck two of
+the three toppings that the chef offers you -- linking and analysis)
+If you want to read about a module in detail, you can click on its
+name to browse the full text of the relevant part of the TEI
+Guidelines. </item>
+
+<item>The next section of the pizzachef web page concerns character
+entity sets; you can safely ignore these for the moment.</item>
+
+<item>The two modules chosen contain many more elements than we need,
+so we will create an extension file which ignores most of them. Click
+on the button which reads <code>Generate Local Modifications Files
+(B)</code> - by default we want to ignore all the elements.</item>
+
+<item>You will see a list of all the elements now available for inclusion
+in your DTD. Click on any element name to see full information about
+it. This will take you to the formal definition for that element
+      within the TEI Guidelines. Use the Back button of your browser
+      to return to the list of available tags. (If the page has
+      expired from the cache, you may need to reload it)
+     </item>
+
+<item>On the list of available elements, check the first of the three tick boxes to the right if you want
+to include that element in your dtd. For this exercise, we will need
+the following elements:
+<list type="gloss">
+<label>from the Figures module</label><item>:       <gi>figDesc</gi>
+	</item>
+<label>from the Core module</label><item><gi>body</gi>, <gi>date</gi>, <gi>div</gi>,
+<gi>head</gi>, <gi>item</gi>, <gi>list</gi>, <gi>name</gi>, <gi>note</gi>,
+      <gi>p</gi>, <gi>respStmt</gi>, <gi>TEI.2</gi>,
+<gi>text</gi>, and <gi>title</gi></item>
+      </list></item>
+
+
+
+<item>Click on the <ident>Send me the TEI.extensions.ent file</ident> button. The
+pizzaChef will now send you a TEI extension entity file. Depending on
+your browser, you may see this displayed, or the browser may
+ask if you want to save it. Take care you do NOT save it
+      as an HTML file. (If you do, you will have to edit the HTML
+      header and footer out of the file before you can use it). Save
+it on your
+local disk with the name <ident>exercise.ent</ident>. (With IE5, the
+       best way of doing this is to select "Source" from the "View"
+       menu; this will open the file in your default editor from which
+       you can save the file in the usual Windows dialog box. To avoid
+      Windows helpfully adding ".txt" to the filename, enter the
+      filename with quote marks round it). </item>
+
+<item>We want to use the  <gi>figure</gi> element in this
+exercise, but we want to simplify its content model and add an
+attribute. For that reason we have not yet included it in our DTD. Go
+       back to the list of available elements (you may need to reload
+       this page) and find the <gi>figure</gi> element;  click on the third of the
+three check boxes to indicate that you plan to modify it.</item>
+
+<item>Click on the <ident>Send me the TEI.extensions.dtd file</ident> button. The
+pizzaChef will now send you a TEI extension DTD file, which you should
+save on your local disk with the name <ident>exercise.dtd</ident>, in
+the same way as before. </item>
+
+<item>Open this file using Notepad, or the
+editor of your choice, i.e. emacs (the easiest way to do this is by
+       using the View Source option of your web browser). You will see that it contains the standard TEI
+definition for the <gi>figure</gi> element, which currently reads
+<eg><![CDATA[ 
+ <!ELEMENT figure %om.RR; ((%m.Incl;)*, (head,
+	(%m.Incl;)*)?, (p, (%m.Incl;)*)*, (figDesc, (%m.Incl;)*)?,
+	(text, (%m.Incl;)*)?)> 
+  <!ATTLIST figure %a.global; entity
+	ENTITY #IMPLIED TEIform CDATA 'figure' >
+]]></eg>
+Using the editor,
+change this declaration to read
+<eg><![CDATA[ 
+<!ELEMENT figure %om.RR; (head?, figDesc)>
+<!ATTLIST figure %a.global; entity ENTITY #IMPLIED
+                 url CDATA #IMPLIED
+                 scale CDATA "100">
+]]></eg>
+
+and save the file.</item>
+
+<item>Since we also want to add a new element to the DTD, not defined
+by the TEI, its definition must be added to this same extensions.dtd
+file. Type in the following declaration for the new element, and
+save the DTD file again
+<eg><![CDATA[ 
+<!ELEMENT soundClip %om.RR; (#PCDATA|date|name)* >
+<!ATTLIST soundClip %a.global; 
+                    entity ENTITY #IMPLIED
+                    url CDATA #IMPLIED
+                    duration CDATA #REQUIRED >
+]]></eg>
+</item>
+
+<item>We are not quite finished. Simply defining a new element does
+not include it in the content model of any other element: the easiest
+way of doing that is to include it in one of the TEI model classes,
+which involves modifying the corresponding parameter entity in the
+extensions.ent file. Open the  <ident>exercise.ent</ident> file with your
+editor.</item>
+
+<item>As you see, this file is mostly composed of "IGNORE"
+declarations for the elements we are not using from our chosen
+modules.  To add the <gi>soundClip</gi> element to the
+<ident>data</ident> class, simply type 
+<eg><![CDATA[
+<!ENTITY % x.data  "soundClip|">
+]]></eg>
+at the start of the file. (The space after the
+percent sign, and the vertical bar are both essential!). Save the
+file</item>
+
+<!--
+<item>We've prepared a little test program which you can use to check
+that you've made your edits correctly: look in your folder, and you
+will see a file called <ident>testmods.dtd</ident>.  Double-click on
+it, and you will open it up with emacs (we will show you emacs in more
+detail next week). For now, all you need to do is select VALIDATE from
+the SGML menu (or type CTRL-C CTRL-V). If all is well, you will see
+the following message: <code></code> If you get any other message,
+your extensions files are incorrect. The error message will at least
+tell you the line number where you went wrong, if you don't undertand
+anything else about it!</item>
+-->
+
+<item>Once you're happy with your modification files, it's time to send
+them to the pizzachef. Open the browser window again. Press the Back
+button twice to go back to the main pizzachef page, and scroll down to the
+point where you are invited to specify the names of your modification
+files. Use the browse button to locate first the TEI.extensions.ent
+file
+(<ident>exercise.ent</ident>)
+and next the TEI.extensions.dtd file (<ident>exercise.dtd</ident>).</item>
+
+<item><!-- Scroll down to Step 5, near the end of the page. 
+Select option b
+<code>XML with no tag omissibility information</code>. --> Now press the
+<code>Generate full DTD button</code>. The pizzachef will now send you
+another file, which contains your compiled XML dtd. Save it under the
+name <ident>myPizza.dtd</ident>. Congratulations! You have made
+a valid XML dtd! (If you saw Zombies, then you missed out some vital
+elements from your exercise.ent)</item>
+
+<!--
+<item>Experiment with your DTD in Xmetal. Create a new document. When asked,
+select "blank XML document", and when asked to specify a DTD file, 
+locate your newly created
+DTD. You can now define styles, enter data, etc. for your new TEI
+conformant DTD.</item>
+
+
+<item>Start emacs and open a new XML file. Type in the following two
+lines at the start:<eg><![CDATA[
+<?xml version="1.0"?>
+<!DOCTYPE TEI.2 SYSTEM "myPizza.dtd">
+]]></eg>
+Go to the DTD menu and select the first option <code>compile
+DTD</code>. You should now find that the <code>Markup</code> menu will
+offer you only elements from your new DTD. </item>
+-->
+
+<item>You may wonder why your DTD contains more elements than you
+specified above. The extra elements are needed for the TEI Header
+which is a mandatory component of
+every TEI document. The current version of the pizza chef does not
+allow you to modify the Header in any way. </item>
+</list>
+   </div>
+<div><head>Using your new DTD</head>
+<p>You can use your new DTD with any XML editor. In this tutorial 
+     you will create an XML file using 
+     xMetal, and then edit it with emacs (or the other way round if
+     you prefer!).</p>
+<list>
+<item>Locate the Xmetal icon on the desktop and click on it</item>
+<item>Depending on what was happening last time it was used, Xmetal
+      will open either some other file, or a brief tutorial file. In
+      either case, choose New from the File menu.</item>
+<item>Choose Create Blank XML document from the dialog box</item>
+<item>A dialogue box opens for you to select a Rules file or
+      DTD. Navigate to the desktop (or wherever you saved your DTD
+      file) and select it. If the DTD is opened successfully, you will
+      be asked about "Preserve Whitespace Options": press RETURN to
+      continue.</item>
+<item>From the Insert menu, select Element. A list of available
+      elements in your DTD appears in the righthand window. Choose
+      TEI.2 (this should be the default)</item>
+<item>Xmetal displays your document in one of four different formats:
+      Plain Text, Tags On, Normal, or Page Preview. You can choose
+      which format to use from the View menu, or by clicking on the icons
+     at the bottom left of the text panel. Select Tags On for now.
+     </item>
+<item>As you see, several of the tags for a TEI document have already
+      been inserted for you. Supply a title, a publication statement,
+      and a source description.</item>
+<item>Note how, as you move the cursor to different positions in the
+      document, different elements are available for insertion. Insert
+      enough elements for your document to be valid and complete.</item>
+<item>If you want to go on working with Xmetal, you may like to set
+      formatting properties for some of the elements, using the Quick
+      Styles option on the Format  menu. </item>
+<item>When you're ready, save the file as <ident>exercise.xml</ident>;
+      if you have introduced XML errors, Xmetal will tell you so. You
+      need to fix these before you can proceed.</item>
+    </list>
+<p>Alternatively, you can use emacs to edit your new file, using this
+     DTD. We don't give a full description of using emacs here; just
+     enough to get you started with the file you created.
+<list>
+<item>Locate the emacs icon on the desktop and double-click on
+       it</item>
+<item>Select Open from the File menu. Using the "Find file" dialog,
+       navigate to the location where you saved your
+       <ident>exercise.xml</ident>, and open it. </item>
+<item>When you saved the file from Xmetal, it specified the location
+       of the DTD in the <code>Doctype</code> statement at the start
+       of the file. For emacs to use this information however, you
+       need to parse the DTD. This is accomplished by selecting Parse
+       DTD from the DTD menu.</item>
+<item>Now, when you position the cursor at any point in your document
+       and select Insert Element from the Markup menu, you will see
+       only the elements  which are legal at that point, as with
+       Xmetal. </item>
+<item>To validate your file inside emacs, choose Validate from the
+       SGML/XML menu.</item>
+     </list>
+    </p>
+<p>There is a fuller description of how to use emacs in this way for
+     the Master DTD at <xref url="http://www.tei-c.org.uk/Master/Workshops/master-emacs.html">http://www.tei-c.org.uk/Master/Workshops/master-emacs.html</xref></p>
+   </div>
+<div><head>And now...</head>
+
+<p>Your final challenge is to make an XML document which includes a
+     picture and a soundclip, and then to transform it to HTML for
+     display on a website. </p>
+<!--<p>You will need to add entity declarations for the picture and the
+     sound file: -->
+<p>We have provided a couple of example entities for your use at the URLs
+     <xref>http://www.tei-c.org.uk/Talks/edison.jpg</xref> and
+     <xref>http://www.tei-c.org.uk/Talks/edison.mp3</xref>
+     respectively. One shows a photograph of Edison annotated by the
+     great man himself: the story goes that this was found only
+     slightly charred after a fire which destroyed Edison's original
+     factory in New Jersey. The sound clip is  the famous <title>Mary
+     had a little lamb</title> recording, as recounted by Edison in a
+     recording made in
+     1927. </p>
+<p>With your new DTD, you can now directly reference
+     these entities in your document, using a <gi>figure</gi> and a <gi>soundClip</gi>
+      element respectively:
+<eg><![CDATA[
+<p>...<figure 
+      url="http://www.tei-c.org.uk/Talks/edison.jpg">
+    <figDesc>Photograph of Edison
+     annotated by himself</figDesc></figure>
+...<soundClip
+     url="http://www.tei-c.org.uk/Talks/edison.mp3" duration="20">
+      Edison reminisces about his first
+      phonograph recording, <date>1887</date></soundClip>
+     </p>
+]]></eg></p>
+<p>To validate your document, you should modify the start of
+     it to read something like the following
+<eg><![CDATA[
+<?xml version="1.0"?>
+<!DOCTYPE TEI.2 SYSTEM "myPizza.dtd" [ 
+<!NOTATION JPG SYSTEM>
+<!NOTATION MP3 SYSTEM>
+<!ENTITY thePicture SYSTEM
+     "http://www.tei-c.org.uk/Talks/edison.jpg"
+      NDATA JPG>
+<!ENTITY theClip SYSTEM 
+     "http://www.tei-c.org.uk/Talks/edison.mp3"
+     NDATA MP3>
+]>
+]]></eg>
+    </p>
+<p>Once your document is valid, you can transform it into an
+     HTML web page by using an XSLT stylesheet. We have prepared a
+     suitable stylesheet for this purpose in the file
+     <ident>edison.xsl</ident>. You can invoke this by adding a
+a stylesheet reference like the following: 
+<code>&lt;?xml-stylesheet type="text/xsl" href="edison.xsl"?></code>
+at the start of your file, after the DOCTYPE
+     declaration. Some browsers (e.g. IE6) may render this XML
+     directly, but a more reliable method is to  run a free-standing 
+XSLT processor such as
+     saxon or xsltproc to generate a static HTML page from your
+     document. Try typing
+<eg>saxon -a edison.xml</eg>
+at the command prompt. This will generate an HTML file called
+     <ident>edison.html</ident> which any web browser should be able to display.
+What actually happens when the user clicks on the sound clip link will, of
+     course, depend on how their browser is configured ... but that is
+     another story.
+    </p>
+    </div>
+</body>
+  </text>
+</TEI.2>
+
+
+
+
+
+
+
+
+

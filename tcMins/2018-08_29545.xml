@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/home/lou/Public/TEI/TEICSS/tei.css" type="text/css"
+ ?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:t="http://www.tei-c.org/ns/1.0" n="2018-08"><teiHeader><fileDesc><titleStmt><title>Minutes of the TEI Technical Council</title><meeting n="2018-08" when="2018-08-30">TEI Technical Council online
+     meeting : <date>30 August 2018</date></meeting></titleStmt><publicationStmt><distributor>TEI Website</distributor><idno>TCM104</idno></publicationStmt><sourceDesc><p>Retagged from a WordPress HTML file</p></sourceDesc></fileDesc><revisionDesc><change when="2023-04-25">Archival header confected</change><change>Extracted from Word Press article with id post-29545</change></revisionDesc></teiHeader><text><body><div><p><hi style="strong">Meeting time:</hi></p><list style="ul">
+<item>08:00 EDT, 13:00 BST, 14:00 CEST</item>
+<item>Started @ ~12:10Z; ended @ ~13:32Z.</item>
+</list><p><hi style="strong">Present:</hi></p><list style="ul">
+<item>Syd Bauman (SB)</item>
+<item>Elisa Beshero-Bondar (EB)</item>
+<item>Hugh Cayless (HC)</item>
+<item>James Cummings (JC)</item>
+<item>Elli Mylonas (EM)</item>
+<item>Martina Scholger (MS)</item>
+<item>Peter Stadler (PS)</item>
+<item>Sarah Stanley (SS)</item>
+<item>Magdalena Turska (MT)</item>
+<item>Raff Viglianti (RV)</item>
+</list><p><hi style="strong">Apologies:</hi></p><list style="ul">
+<item>Alex Bia</item>
+</list><div type="h2"><head>F2F in Tokyo</head><list style="ul">
+<item>Schedule: <ref target="https://tei2018.dhii.asia/programme">https://tei2018.dhii.asia/programme</ref>
+<list style="ul">
+<item>Friday,  7 September: F2F</item>
+<item>Saturday, 9 September: F2F with Martin Holmes</item>
+<item>Sunday, 10 September: Workshops — help needed?
+<list style="ul">
+<item>possibly need help for the Epidoc workshop. Won’t know until later if that will be the case.</item>
+</list>
+</item>
+<item>Monday, 11 September: Open Council Session, 09:30–12:00</item>
+<item>Thursday, 14 September: Dinner Council &amp; Board</item>
+</list>
+</item>
+<item>Guests on Saturday: Martin Holmes (Internationalization, Stylesheets, Oxygen), Susanna Allés (Internationalization)</item>
+<item>Meeting with LingSIG?</item>
+<item>Open Council Session 09:30–12:00
+<list style="ul">
+<item>Slide set “What TEI Council Does”: (build/adapt from <ref target="http://bit.ly/TEICouncil">http://bit.ly/TEICouncil</ref> ) (15 min)</item>
+<item>Work on <ref target="https://github.com/TEIC/TEI/issues/1707">#1707</ref> (max 45 min) — introduce (summary of ticket and where we are) with slides.</item>
+<item>Brief intro to RomaJS with Council reporting back on roadmap, etc.</item>
+<item>Ticket reporting (i.e., sub-groups that examined tickets on Saturday reporting to full Council) e.g.:
+<list style="ul">
+<item><ref target="https://github.com/TEIC/TEI/issues/1756">#1756</ref></item>
+<item><ref target="https://github.com/TEIC/TEI/issues/327">#327</ref></item>
+</list>
+</item>
+</list>
+</item>
+</list></div><div type="h2"><head>RomaJS poster</head><list style="ul">
+<item>RV asks the Council to comment</item>
+</list></div><div type="h2"><head>RomaJS application</head><list style="ul">
+<item>Slow data import — how much of a dealbreaker?
+<list style="ul">
+<item>Suggestions:
+<list style="ul">
+<item>JC: Try a localized/dockerized version of OxGarage to speed up.</item>
+<item>PS: OxGarage can convert ODD to JSON in one run. ounded like you’re doing two requests for that? E.g. Conversions/ODD%3Atext%3Axml/ODDC%3Atext%3Axml/oddjson%3Aapplication%3Ajson/</item>
+</list>
+</item>
+<item>Messages to user reporting on phase of import process should be vertical and checked-off as it goes along.</item>
+</list>
+</item>
+<item>Move to github.com/TEIC? — Yes</item>
+<item>Demo on mith.us ok? We need to use HTTP because of Vault, so no GitHub pages — Yes</item>
+<item><hi style="b">Action on</hi> RV: Write to Ian Rifkin and ask to switch TEI Vault to handle https (not just http), and/or virtual host DNS to point to mith.us server.</item>
+</list></div><div type="h2"><head>Status Jenkins @ UVic</head><list style="ul">
+<item>PS: TEI Jenkins is pointing at Paderborn, but messages are coming from University of Victoria. Paderborn ant responds differently to zip files than UVic. RV: We may want to revisit how we’re testing changes.</item>
+</list></div><div type="h2"><head>Requested “Letter of Support”</head><list style="ul">
+<item>Proposal of “Letter of Support” for Marjorie Burghart on developing a TEI XML editor.</item>
+<item>MS asks Council to comment on the proposed letter of support</item>
+</list></div><div type="h2"><head>AOB</head><list style="ul">
+<item>On Tokyo agenda but we could decide now: Archiving legacy GitHub repos, e.g. <ref target="https://github.com/TEIC/Carthage">https://github.com/TEIC/Carthage</ref> is done.</item>
+<item>Report on Standoff task force meeting. Nothing to report.</item>
+<item>BPTL would benefit from Council’s feedback/decision on  <ref target="https://github.com/TEIC/TEI/issues/1788">TEIC/TEI#1788</ref>.</item>
+<item>Next Council meeting: Thursday September 27 (12:00-13:30Z, 08:00-9:30 EDT, 13:00-14:30 BST, 14:00-15:30 CEST)</item>
+</list></div><div type="h2"><head>Ticket triage</head><table>
+
+<row>
+<cell><hi style="b">August 2018</hi></cell>
+<cell><hi style="b">JC</hi></cell>
+</row>
+<row>
+<cell><hi style="b">September 2018</hi></cell>
+<cell><hi style="b">EM</hi></cell>
+</row>
+<row>
+<cell><hi style="b">October 2018</hi></cell>
+<cell><hi style="b">MT</hi></cell>
+</row>
+<row>
+<cell><hi style="b">November 2018</hi></cell>
+<cell><hi style="b">SS</hi></cell>
+</row>
+<row>
+<cell><hi style="b">December 2018</hi></cell>
+<cell><hi style="b">AB</hi></cell>
+</row>
+
+</table><p> </p></div></div></body><!-- #post-## --></text></TEI>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/home/lou/Public/TEI/TEICSS/tei.css" type="text/css"
+ ?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:t="http://www.tei-c.org/ns/1.0" n="2009-12"><teiHeader><fileDesc><titleStmt><title>Minutes of the TEI Technical Council</title><meeting n="2009-12" when="2009-12-07">TEI Technical Council online
+     meeting : <date>7 December 2009</date></meeting></titleStmt><publicationStmt><distributor>TEI Website</distributor><idno>TCM043</idno></publicationStmt><sourceDesc><p>Retagged from a WordPress HTML file</p></sourceDesc></fileDesc><revisionDesc><change when="2023-04-25">Archival header confected</change><change>Extracted from Word Press article with id post-21899</change></revisionDesc></teiHeader><text>
+    <body>
+	
+		<head>TEI Council Meeting</head>		<milestone unit="unknown" rend="rule"/>
+	
+
+	<div>
+		
+		
+<p>Attendees:</p>
+<list>
+<item>Brett Barney (BB)</item>
+<item>Gabriel Bodard (GB)</item>
+<item>Peter Boot (PB)</item>
+<item>Lou Burnard (LB)</item>
+<item>James Cummings (JC)</item>
+<item>Matthew Driscoll (MD)</item>
+<item>Kevin Hawkins (KH)</item>
+<item>Martin Holmes (MH)</item>
+<item>Julianne Nyhan (JN)</item>
+<item>Daniel O’Donnell (DoD)</item>
+<item>Elena Pierazzo (EP)</item>
+<item>Dot Porter (DP)</item>
+<item>Sebastian Rahtz (SR) – minutes</item>
+<item>Laurent Romary (LR) – chair</item>
+<item>Paul Schaffner (PS)</item>
+<item>David Sewell (DS)</item>
+</list>
+<div><head>
+	Introduction</head>
+<p>Teleconference started at 1600 CET after a fair amount of to-ing and
+      fro-ing with the Cisco Webex system being trialled at
+      Oxford. Not a universally-admired setup :-} </p>
+<p>LR welcomed new council members as well as ones staying and those
+      leaving.</p>
+<p>PB updated the meeting on the Getting Started
+      document; as he will leave the Council shortly, he suggested that he
+      do a final review the current draft and then hand it over to someone
+      else. LB suggested JN might like to merge this with work on the TEI
+      education journal. LR asked whether each topic in <hi style="italic">GS</hi> might be
+      suitable for separate articles in TEI-EJ; 
+      JN agreed that they might (pending the agreement of her co-Editor also).</p>
+<p>The meeting was suspended at 16.18 due to impossible amounts
+      of interference, with a request to
+      reconvene at 16.30.</p>
+<p>The meeting reconvened 16.32 via hispeed-conferencing as
+      in previous meetings. The vast howlings and noises as if of
+      Chesil Beach in a storm subsided, except for people who
+      appeared to amuse themselves during the boring bits by moving furniture or performing
+      motorcycle maintenance.</p>
+<p>It seemed to be generally accepted that using the
+      <hi style="italic">GS</hi> articles in TEI-EJ was probably the right way forward, but
+      needed discussion. <note><rs>PB</rs> will liaise with JN.</note></p>
+</div>
+<div><head>
+	Discussion of outstanding feature requests</head>
+<p>In the record, the initial in [XX] indicates the council member
+first speaking to the ticket. For full details of the request, see the
+relevant ticket.</p>
+<div><head>
+  Bibliography related</head>
+<list><label><ref target="https://sourceforge.net/tracker/?func=detail&amp;aid=2881416&amp;group_id=106328&amp;atid=644062">2881416</ref></label>
+<item><label>add meeting to model.respLike
+[DS]</label>: agreed to be non-controversial. Go GREEN</item>
+<label><ref target="https://sourceforge.net/tracker/?func=detail&amp;aid=2714682&amp;group_id=106328&amp;atid=644062">2714682</ref></label>
+<item><label>permit <gi>biblScope</gi> as child or as
+sibling of imprint [KH]</label>: more controversial. Eventually agreed
+that KH, LR and LB would clear this up. Go GREEN-ish.</item>
+<label><ref target="https://sourceforge.net/tracker/?func=detail&amp;aid=2798963&amp;group_id=106328&amp;atid=644062">2798963</ref></label>
+<item><label>add @role to author [MH]</label>: It was argued that the
+concept of author types does exist (eg composer or lyricist for a
+musical, coder or designer for a computer programmer).  LB
+counter-argued that <gi>author</gi> is deliberately specialist, and we
+have other ways of showing contributions; noted that <gi>respStmt</gi>
+is a general-purpose element for any intellectual contributions. In
+the end, no-one actually objected to @role on <gi>author</gi>, by
+making it a member of att.naming. Go GREEN.  For the longer-term,
+  <note><rs>KH</rs> agreed to create a feature request analyzing the
+relationship between <gi>author</gi>, <gi>editor</gi>, and
+<gi>respStmt</gi>.</note></item>
+<label><ref target="https://sourceforge.net/tracker/?func=detail&amp;aid=2812634&amp;group_id=106328&amp;atid=644062">2812634</ref></label>
+<item><label>@docStatus on <gi>edition</gi>
+[JC]</label>: why isn’t it in <gi>resptStmt</gi>, it was asked? DoD
+wondered whether @xxStatus might not be wanted all over the
+shop; and is @status the same as @type or not? Sufficient confusion to put
+this decision off. Stay AMBER.</item>
+<label><ref target="https://sourceforge.net/tracker/?func=detail&amp;aid=2728068&amp;group_id=106328&amp;atid=644062">2728068</ref></label>
+<item><label>suggested values for <gi>relatedItem</gi><att>type</att>
+[PS]</label>. OK. Go GREEN.</item>
+<label><ref target="https://sourceforge.net/tracker/?func=detail&amp;aid=2728061&amp;group_id=106328&amp;atid=644062">2728061</ref></label>
+<item><label>Add @target to relatedItem  [LB]</label>: are content and
+@target combining, or mutually exclusive?  Generally agreed that the
+latter is what we want — presence of @target means that the content must be
+empty. Go GREEN.</item>
+<label><ref target="https://sourceforge.net/tracker/?func=detail&amp;aid=2493417&amp;group_id=106328&amp;atid=644062">2493417</ref></label>
+<item><label><gi>idno</gi> coverage [JN]</label>: the issue not seem to
+have got any simpler since last discussed at the F2F in Lyon. It needs a larger
+discussion around identifying authors. <note><rs>LR and JN</rs> agreed to take
+this away and beat it around some more.</note></item>
+</list>
+</div>
+<div><head>
+  Certainty/target/match issue</head>
+<list><label>
+<ref target="https://sourceforge.net/tracker/?func=detail&amp;aid=2862151&amp;group_id=106328&amp;atid=644062">2862151</ref>;
+<ref target="https://sourceforge.net/tracker/?func=detail&amp;aid=2877940&amp;group_id=106328&amp;atid=644062">2877940</ref></label>
+<item><label>Revisit use of @target</label>;
+: the discussion was
+rehearsed again as to whether we needed both @match and @target (ie
+can we just use @target and XPointer), and whether @match should be
+anchored at the document root or the current context. No-one really
+seemed able to remember why we set the context to be the document
+root; possibly a misunderstanding of XPath (cf long discussion on
+TEI-L with Wendell Piez etc). LR asked whether
+anyone had tried to implement the current setup (no answers; JC
+admitted, however, he knew how to evaluate arbitrary XPath in XSLT 2.0
+using the saxon:evaluate() extension function; see <ref target="http://blogs.oucs.ox.ac.uk/jamesc/2009/06/05/evaluate-a-string-as-an-xpath/"/>). GB and
+SR pointed out that assuming the current context gives users a
+valuable new facility of pointing at <q>here</q>. Vague agreement.
+<note>LB to discuss with GB and SR, check that changing the default
+context of @match would definitely work.</note>  Go GREEN if agreed.
+</item>
+</list>
+</div>
+<div><head>
+  Manuscript/transcription-related</head>
+<list><label><ref target="https://sourceforge.net/tracker/?func=detail&amp;aid=2900430&amp;group_id=106328&amp;atid=644062">2900430</ref></label>
+<item><label>datatype of @scribe and @script  [EP]</label>: agreement
+that URI pointing to a script record would be useful; might need a
+<gi>scriptNote</gi> in the header (or the existing
+<gi>taxonomy</gi>). Suggested that new pointing attributes @scriptRef
+and @scribeRef should be added, to avoid breaking existing
+documents. No objections. <note>EP and MD to provide
+examples.</note> Go GREEN.</item>
+<label><ref target="https://sourceforge.net/tracker/?func=detail&amp;aid=2907038&amp;group_id=106328&amp;atid=644062">2907038</ref></label>
+<item><label>permit collections to nest/repeat within msIdentifier
+[EP]</label>: controversial, drawing in of breath by some. Others like
+the idea of nesting. Go GREEN-ish. LB needs examples.</item>
+</list>
+</div>
+
+</div>
+<div><head>
+  Next meeting</head>
+<p>The meeting ended at 18.05 CET. Agreed to reconvene in w/s
+  January 11th. LB requested people to be ready to discuss:</p>
+<list>
+<item>2811239:  new element ‘object’  [*DP]</item>
+<item>2811234:  add @ref to ‘material’ [*DP]</item>
+<item>2724997:  Cater for audio/video facsimile</item>
+</list>
+</div>
+	</div>
+
+	</body></text></TEI>

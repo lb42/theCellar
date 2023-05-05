@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/home/lou/Public/TEI/TEICSS/tei.css" type="text/css"
+ ?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:t="http://www.tei-c.org/ns/1.0" n="2015-01"><teiHeader><fileDesc><titleStmt><title>Minutes of the TEI Technical Council</title><meeting n="2015-01" when="2015-01-30">TEI Technical Council online
+     meeting : <date>30 January 2015</date></meeting></titleStmt><publicationStmt><distributor>TEI Website</distributor><idno>TCM065</idno></publicationStmt><sourceDesc><p>Retagged from a WordPress HTML file</p></sourceDesc></fileDesc><revisionDesc><change when="2023-04-27">Archival header confected</change><change>Extracted from Word Press article with id post-21921</change></revisionDesc></teiHeader><text><body><div>
+		
+		<!-- <div class="teiheader"><filedesc><titlestmt><title></title></titlestmt><editionstmt><edition><date/></edition></editionstmt><publicationstmt>
+<p>TEI Council</p>
+</publicationstmt><sourcedesc><p>Converted from a Word document.</p>
+<p>      </sourcedesc></filedesc><encodingdesc><appinfo><application id="doxtotei" ident="TEI_fromDOCX" version="2.15.0"><label>DOCX to TEI</label>
+        </application></appinfo></encodingdesc><revisiondesc><listchange><change><date>2015-02-22T03:59:04Z</date><name/></change></listchange></revisiondesc></div> -->
+<div>
+<p>TEI Teleconference 2015-01-30 14:00Z</p>
+<p>
+          <hi style="bold">Participants:</hi></p>
+<p>Syd Bauman (SB, arrived ~14:25Z) </p>
+<p>Lou Burnard (LB), </p>
+<p>Hugh Cayless (HC),</p>
+<p>James Cummings (JC), </p>
+<p>Martin Holmes (MH),</p>
+<p>Stefan Majewski (SM),</p>
+<p>Peter Stadler (PWS),</p>
+<p>Paul Schaffner (PFS),</p>
+<p>Raffaele Viglianti (RV),</p>
+<p>Fabio Ciotti (FC),</p>
+<p>Stefanie Gehrke (SG)</p>
+<p>
+          <hi style="bold">Regrets:</hi></p>
+</div>
+<div><head>
+        Agenda</head>
+<div><head> id="h.y6ldevtkstra"&gt;
+          Welcomes
+          </head><list style="ul">
+<item>JC opened the meeting by welcoming HC as new elected chair of the technical
+              council for 2015.</item>
+<item>HC thanked JC for chairing the technical council previously and hoped to live up
+              to his fine example of administrative brilliance. </item>
+<item>HC welcomed the new members RV and SM and welcomed back LB and SB.</item>
+</list>
+</div>
+<div><head> id="h.w8hzdy6xdeck"&gt;
+          Review of Actions from last F2F
+          </head><list style="ul">
+<item><label>Action:</label> All members of council interested in TEI Simple to join the mailing list
+                <ref target="https://web.maillist.ox.ac.uk/ox/subscribe/teisimple">https://web.maillist.ox.ac.uk/ox/subscribe/teisimple</ref></item>
+<item><hi style="strike">Action: on LB Set up a mailing list to discuss ODD/Pure ODD,
+                etc. (Done; see</hi><ref target="https://sourceforge.net/p/tei/mailman/?source=navbar">https://sourceforge.net/p/tei/mailman/?source=navbar</ref><hi style="strike">)</hi></item>
+<item><label>Action:</label> on ALL interested in ODD/Pure ODD, join tei-odds mailing list <ref target="https://sourceforge.net/p/tei/mailman/?source=navbar">https://sourceforge.net/p/tei/mailman/?source=navbar</ref></item>
+<item><label>Action:</label> LB to continue development/implementation of Pure ODD with SR and report
+              back to council on new developments</item>
+<item><label>Action:</label> JC to try to find a co-organiser for DH2015 TEI Hackathon.<list style="ul">
+<item><hi style="bold">Action on JC to continue DH2015 event
+                    organisation and report back to council mailing list, but suggestions from
+                    council appreciated. </hi></item>
+</list>
+</item>
+<item><hi style="strike">Action: PWS to revise the draft correspDesc proposal and draw
+                attention to council for final review before implementing as part of the TEI
+                Guidelines.</hi></item>
+<item><hi style="strike">Action: SB/MH/LB to offer themselves as TEI mentors to
+                members of Council and encourage new members to ask them (or council)
+                questions.</hi></item>
+<item><hi style="strike">Action: MH to post to council mailing list making suggestions
+                for mentorship programme</hi></item>
+<item><hi style="strike">Action: LB volunteers to mentor Stefan.</hi></item>
+<item><label>Action:</label> MH to act as JTEI liaison for now, reporting on any major changes to JTEI
+              Schema and authoring package. <hi style="bold">Ron Van den Branden has been working on
+                integrating the JTEI Schematron into the ODD file, and has found some bugs and
+                stumbling blocks which we have almost finished working out. </hi></item>
+<item><label>Action:</label> MH to separate out anything that shouldn’t be public in the JTEI Schema,
+              merge in schematron constraints, documentation, etc. and add to TEI Sourceforge
+              Repository. Add JTEI Authoring environment to the oxygen-tei framework. <hi style="bold">MH is working with Ian Rifkin to get an SVN repo set up on tei-c for
+                private materials (unedited documents etc.); that should be done soon.</hi><list style="ul">
+<item><hi style="bold">Action on MH to continue jTEI
+                    integration</hi></item>
+</list>
+</item>
+<item><hi style="strike">Action: on MH to implement @resp changes, and update prose
+                and examples in Guidelines to have @resp point to respStmt (etc.)</hi></item>
+<item><label>Action:</label> SB to inform council in future about developments of this draft (LOC date
+              attrs) e.g. if it might be adopted by ISO or W3C etc.</item>
+<item><label>Action:</label> LB to create tickets for the 2 new elements<list style="ul">
+<item>done; there is also a related git project owned by Laurent (see FR 539, FR
+                  378, <ref target="https://github.com/laurentromary/stdfSpec">https://github.com/laurentromary/stdfSpec</ref>)</item>
+</list>
+</item>
+<item><label>Action:</label> ALL to read the <hi style="italic">Transcription of Spoken Language</hi>
+              draft (<ref target="http://bit.ly/1jyZC37">http://bit.ly/1jyZC37</ref>) and be ready to comment on it at next conference call
+              (or soon thereafter) This is a stand-alone document not intended to lead to revisions
+              of the guidelines, except insofar as it proposes additions to the spec.<list style="ul">
+<item>Action on everyone to actually read this and we <hi style="bold">really will</hi> comment on it next time. LB to remind Council about
+                  this on the mailing list and nag us to comment.</item>
+</list>
+</item>
+<item><label>Action:</label> JC to create a proposal listing those parts which are required for
+              generation of the TEI products (Guidelines, schemas etc.)<list style="ul">
+<item>Not done yet. <hi style="bold">Action on JC: document those bits of
+                    Stylesheets required for TEI Ouputs.</hi></item>
+</list>
+</item>
+<item><hi style="strike">Action: JC to add each council member as a member of a team
+                with admin powers to the TEI-C github organization [DONE]</hi></item>
+<item><label>Action:</label> PWS/MH to update SVN Documentation and include information concerning
+                GitHub<list style="ul">
+<item>Not done yet. </item>
+</list>
+</item>
+<item><label>Action:</label> PWS to return to Council mailing list with call for testing or suggestions
+              on improvement for a TEI Checker web service in the next few weeks, and Council to
+              respond with suggested improvements.<list style="ul">
+<item>Not done
+                yet.</item>
+</list>
+</item>
+<item><label>Action:</label> HC to produce an updated Critical Apparatus ODD and redraft document for
+              Council discussion.<list style="ul">
+<item>Partially done. </item>
+</list>
+</item>
+<item><label>Action:</label> on JC, MH, HC, SB consider wherever possible writing additional
+              documentation, blog posts, or similar on the technical aspects presented, and notify
+              council or TEI-L. <list style="ul">
+<item><hi style="bold">JC: Not done, will do
+                    before 2015-03-01. MH: Not done yet. </hi><ref target="https://docs.google.com/document/d/1bpBPughQp5sOoB13iTMHMeRd88Mjv12_eGZiQXY-na8/edit">https://docs.google.com/document/d/1bpBPughQp5sOoB13iTMHMeRd88Mjv12_eGZiQXY-na8/edit</ref></item>
+</list>
+</item>
+<item><label>Action:</label> On ALL to look at tickets assigned to them and update them with latest
+              status, and implement where possible.</item>
+<item><label>Action:</label> FC to get in contact with Laurent Romary for TBX TEI integration<list style="ul">
+<item>FC discussed with LR over email</item>
+<item>LR receptive to
+                  ideas, but will have to think about it…</item>
+</list>
+</item>
+</list>
+<p>FC to poke LR</p>
+</div>
+<div>
+      <head>    Actions from <ref target="/Activities/Council/Meetings/tcm64.xml">lastTeleconference</ref>:
+      </head>    <list style="ul">
+<item><label>Action:</label> LB to draft prose for correspDesc additions to header chapter and report
+              back to Council<list style="ul">
+<item>Not done yet. LB will look at Peter’s new
+                  draft.</item>
+</list>
+</item>
+<item>PWS to report back on Standoff progress<list style="ul">
+<item>No progress.
+                    <ref target="https://github.com/laurentromary/stdfSpec">https://github.com/laurentromary/stdfSpec</ref></item>
+</list>
+</item>
+<item><label>Action:</label> All to read the msPart proposal and discuss them on the mailing list.<list style="ul">
+<item><hi style="bold">ticket:</hi><ref target="https://sourceforge.net/p/tei/feature-requests/505/">http://sourceforge.net/p/tei/feature-requests/505/</ref></item>
+<item><hi style="bold">document:</hi><ref target="https://docs.google.com/document/d/1bpBPughQp5sOoB13iTMHMeRd88Mjv12_eGZiQXY-na8/edit">https://docs.google.com/document/d/1bpBPughQp5sOoB13iTMHMeRd88Mjv12_eGZiQXY-na8/edit</ref></item>
+<item><hi style="bold">Action on SG to badger everyone to read msPart proposal
+                    and lead debate</hi></item>
+</list>
+</item>
+<item><hi style="strike">Action on Council to discuss global @resp on the mailing list
+                before Tuesday; then MH will go ahead with implementation. </hi></item>
+<item>Action on PWS to fix a date by which the <gi>correspDesc</gi> proposal should be
+              implemented and report to the Council list.</item>
+<item>Action on MH to report to Council within a month or so about oxygen-tei framework
+              building and next release<list style="ul">
+<item>successfully building on
+                  Jenkins</item>
+<item>MH wants regular test build for council to subscribe to in
+                  order to test oxygen-tei build. (Existing framework is built and maintained by
+                  Council, but not tested.)</item>
+<item>remove Brown ODD editing schema? —
+                  YES</item>
+<item>SB to co-ordinate w/ oXygen folks about putting new version
+                  (odd4odd, aka toctoc) into framework, if OKed by (tei-oxygen framework maintainers
+                  OR council)</item>
+</list>
+</item>
+<item><hi style="bold">Action on all mentors to document their experiences and what they
+                learn on the wiki.</hi></item>
+<item><hi style="strike">Action on JC to officially introduce mentors to mentorees on
+                Council. [DONE]</hi></item>
+<item><hi style="strike">Action on MH to post to Council list with a set of links to
+                helpful documents. [DONE]</hi></item>
+<item><hi style="strike">Action: JC to prod Object working group again. [DONE]</hi></item>
+<item><hi style="strike">Action: JC to set up Council Chair elections, get a returning
+                officer, etc. [DONE]</hi></item>
+<item><hi style="strike">Action on JC: to post a Doodle poll for the next conference
+                within a week. [DONE]</hi></item>
+</list>
+</div>
+<div><head> id="h.cwfaqna7e1f8"&gt;
+          Unassigned Bugs and Feature Requests
+          </head><list style="ul">
+<item><ref target="https://sourceforge.net/p/tei/bugs/?q={&#34;status&#34;%3A+{&#34;$nin&#34;%3A+%5B&#34;closed-wont-fix&#34;%2C+&#34;closed-rejected&#34;%2C+&#34;closed-out-of-date&#34;%2C+&#34;closed-accepted&#34;%2C+&#34;closed-works-for-me&#34;%2C+&#34;closed&#34;%2C+&#34;closed-duplicate&#34;%2C+&#34;closed-invalid&#34;%2C+&#34;closed-fixed&#34;%5D}}&amp;limit=25&amp;page=0&amp;sort=ticket_num desc&amp;filter={&#34;assigned_to&#34;%3A%5B&#34;&#34;%5D}&amp;columns-0.name=ticket_num&amp;columns-0.sort_name=ticket_num&amp;columns-0.label=Ticket Number&amp;columns-0.active=on&amp;columns-1.name=summary&amp;columns-1.sort_name=summary&amp;columns-1.label=Summary&amp;columns-1.active=on&amp;columns-2.name=_milestone&amp;columns-2.sort_name=custom_fields._milestone&amp;columns-2.label=Milestone&amp;columns-2.active=on&amp;columns-3.name=status&amp;columns-3.sort_name=status&amp;columns-3.label=Status&amp;columns-3.active=on&amp;columns-4.name=assigned_to&amp;columns-4.sort_name=assigned_to_username&amp;columns-4.label=Owner&amp;columns-4.active=on&amp;columns-5.name=reported_by&amp;columns-5.sort_name=reported_by&amp;columns-5.label=Creator&amp;columns-5.active=on&amp;columns-6.name=created_date&amp;columns-6.sort_name=created_date&amp;columns-6.label=Created&amp;columns-6.active=on&amp;columns-7.name=mod_date&amp;columns-7.sort_name=mod_date&amp;columns-7.label=Updated&amp;columns-7.active=on&amp;columns-8.name=labels&amp;columns-8.sort_name=labels&amp;columns-8.label=Labels&amp;columns-8.active=on&amp;columns-9.name=_priority&amp;columns-9.sort_name=_priority&amp;columns-9.label=Priority&amp;columns-9.active=on">Bugs</ref></item>
+<item><ref target="https://sourceforge.net/p/tei/feature-requests/?q={&#34;status&#34;%3A+{&#34;$nin&#34;%3A+%5B&#34;closed-wont-fix&#34;%2C+&#34;closed-later&#34;%2C+&#34;closed-rejected&#34;%2C+&#34;closed-out-of-date&#34;%2C+&#34;closed-accepted&#34;%2C+&#34;closed-remind&#34;%2C+&#34;closed&#34;%2C+&#34;closed-duplicate&#34;%2C+&#34;closed-invalid&#34;%2C+&#34;closed-fixed&#34;%5D}}&amp;limit=25&amp;page=0&amp;sort=ticket_num desc&amp;filter={&#34;assigned_to&#34;%3A%5B&#34;&#34;%5D}&amp;columns-0.name=ticket_num&amp;columns-0.sort_name=ticket_num&amp;columns-0.label=Ticket Number&amp;columns-0.active=on&amp;columns-1.name=summary&amp;columns-1.sort_name=summary&amp;columns-1.label=Summary&amp;columns-1.active=on&amp;columns-2.name=_milestone&amp;columns-2.sort_name=custom_fields._milestone&amp;columns-2.label=Milestone&amp;columns-2.active=on&amp;columns-3.name=status&amp;columns-3.sort_name=status&amp;columns-3.label=Status&amp;columns-3.active=on&amp;columns-4.name=assigned_to&amp;columns-4.sort_name=assigned_to_username&amp;columns-4.label=Owner&amp;columns-4.active=on&amp;columns-5.name=reported_by&amp;columns-5.sort_name=reported_by&amp;columns-5.label=Creator&amp;columns-5.active=on&amp;columns-6.name=created_date&amp;columns-6.sort_name=created_date&amp;columns-6.label=Created&amp;columns-6.active=on&amp;columns-7.name=mod_date&amp;columns-7.sort_name=mod_date&amp;columns-7.label=Updated&amp;columns-7.active=on&amp;columns-8.name=labels&amp;columns-8.sort_name=labels&amp;columns-8.label=Labels&amp;columns-8.active=on&amp;columns-9.name=_priority&amp;columns-9.sort_name=_priority&amp;columns-9.label=Priority&amp;columns-9.active=on">FeatureRequests</ref></item>
+<item><hi style="bold">Action on all: take tickets that they want to work on before
+                2015-02-07</hi></item>
+<item><hi style="bold">Action on HC: assign any tickets remaining at 2015-02-08 to distribute
+                fairly (but bearing in mind what he knows of our preferences and experience)</hi></item>
+</list>
+</div>
+<div>
+  <head>        Update on<ref target="https://sourceforge.net/p/tei/feature-requests/510/">correspDescproposal</ref> (PWS)
+  </head>        <list style="ul">
+<item><ref target="https://github.com/TEI-Correspondence-SIG/correspDesc">https://github.com/TEI-Correspondence-SIG/correspDesc</ref></item>
+<item>PWS believe this is ready to be added to trunk; if no-one objects, he proposes to
+              go ahead with this a week from now. There is one problem with proposed values for
+              @type, but he suspects this is due to namespaces and will disappear with integration
+              (although this suggests a bug in the Stylesheets that should be filed).</item>
+<item>LB warns that there may be problems with DTD generation if any significant changes
+              have been made in content models.</item>
+<item><hi style="bold">Action on PWS to try to incorporate correspDesc on 2015-02-13.</hi></item>
+<item><hi style="bold">Action on ALL: Feedback about correspDesc preferably before
+                2015-02-06.</hi></item>
+</list>
+</div>
+<div><head> id="h.an6cfq85jfic"&gt;
+          Update on TEI Simple (JC)
+          </head><list style="ul">
+<item>Report posted to TEI Council mailing list. <ref target="http://lists.tei-c.org/pipermail/tei-council/2015/020458.html">http://lists.tei-c.org/pipermail/tei-council/2015/020458.html</ref></item>
+<item>Council encouraged to join TEI Simple mailing list at: <ref target="https://web.maillist.ox.ac.uk/ox/subscribe/teisimple">https://web.maillist.ox.ac.uk/ox/subscribe/teisimple</ref></item>
+<item><hi style="bold">Action on all Council to read and comment by 2015-02-28.</hi></item>
+</list>
+</div>
+<div>
+    <head>      Update on<ref target="https://sourceforge.net/p/tei/feature-requests/505/">redefiningmsPart</ref> (SG / PWS)
+       </head>   <list style="ul">
+<item>SG wants feedback</item>
+<item><ref target="https://docs.google.com/document/d/1bpBPughQp5sOoB13iTMHMeRd88Mjv12_eGZiQXY-na8/edit">https://docs.google.com/document/d/1bpBPughQp5sOoB13iTMHMeRd88Mjv12_eGZiQXY-na8/edit</ref></item>
+<item>Discussed above.</item>
+<item><hi style="bold">Action on ALL: Comments about msPart proposal by end of
+                2015-02-28</hi></item>
+</list>
+</div>
+<div><head> id="h.p4ud1ml8h68i"&gt;
+          Update on Oxygen plugin test builds (MH)
+          </head><list style="ul">
+<item>Discussed above.</item>
+</list>
+</div>
+<div><head> id="h.hwlwiil0fxts"&gt;
+          Dates/times for teleconferences
+          </head><list style="ul">
+<item>Is this day &amp; time generally ok? Say, the last Friday of every month? 13:30
+              UTC</item>
+<item>SB suggests every month except when within 2 weeks of F2F</item>
+<item>Agreed to teleconferences 13:30Z last Fri of every month</item>
+<item><hi style="bold">Action on HC to post a list of all dates and times.</hi></item>
+<item>SB created a <ref target="http://doodle.com/xpeuxmm9qudu7avz">Doodlepoll</ref> that shows that Nov and Dec will be
+              problematic due to holidays</item>
+</list>
+</div>
+<div><head> id="h.3qcbltb20tuo"&gt;
+          Date of next release/release technician
+          </head><list style="ul">
+<item>SB suggests RV (RV: sounds good to me)</item>
+<item>CorrespDesc complete before</item>
+<item>Action on LB: attempt to implement @hand proposal.</item>
+<item><hi style="bold">Suggested release time-frame: </hi><list style="ul">
+<item><hi style="bold">Freeze: 2015-03-27.</hi></item>
+<item><hi style="bold">Proof: 2015-04-03</hi></item>
+<item><hi style="bold">Release: 2015-04-06 (easter monday) 😉</hi></item>
+</list>
+</item>
+</list>
+</div>
+<div><head> id="h.z1zne8e6wmu8"&gt;
+          Date/venue for next F2F
+          </head><list style="ul">
+<item>Estonia<hi style="bold">? Would need confirmation of strong local support, and
+                soon.</hi></item>
+<item>Poland?</item>
+<item>MITH? (willing; people don’t like College Park, but D.C. is great)</item>
+<item>John Unsworth at BrandeisU – Boston Area.</item>
+<item>We could ask Elli Mylonas if she would be willing to host at Brown again</item>
+<item>SB could ask if Northeastern DSG would be willing to host in Boston (Boston would
+              be a great location, but SB cannot play local host as he lives too far away.)</item>
+<item>Ann Arbor is willing. And has reasonably convenient transport via DTW.</item>
+<item>DATE? — Action on HC: post Doodle poll for when next F2F will occur.</item>
+<item><hi style="bold">Action on ALL: Email suggests of F2F locations to mailing list.</hi></item>
+</list>
+<p>
+            <hi style="bold">Action on ALL: Edit minutes document until 2015-02-04</hi></p>
+<p>
+            <hi style="bold">Action on HC: Convert to minutes to TEI and get Webmaster to upload to
+              TEI-C site by 2015-02-06 and mention to social-media coordinator.</hi></p>
+</div>
+</div>
+	</div></body><!-- #post-## --></text></TEI>

@@ -1,0 +1,140 @@
+<!DOCTYPE TEI.2 SYSTEM "http://www.tei-c.org/Lite/DTD/teixlite.dtd" [
+    <!ATTLIST xptr url CDATA #IMPLIED>
+    <!ATTLIST xref url CDATA #IMPLIED>
+    ]>
+<TEI.2>
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title>Agenda for TEI Council Meeting, May 13-15, 2004</title>
+</titleStmt>
+<publicationStmt>
+<distributor>TEI</distributor>
+</publicationStmt>
+<sourceDesc><p>Pre-meeting version of the agenda</p></sourceDesc>
+</fileDesc>
+<revisionDesc>
+<change>
+<date>May 9, 2004</date>
+<respStmt>
+<name>Lou</name>
+<resp>Draft</resp>
+</respStmt>
+<item>Updated URLs for PB workgroup documents</item>
+</change>
+<change>
+<date>May 6, 2004</date>
+<respStmt>
+<name>Lou</name>
+<resp>Draft</resp>
+</respStmt>
+<item>Posted May 6 to TEI-Council mailing list</item>
+</change>
+</revisionDesc>
+</teiHeader>
+<text>
+
+
+<body><div>
+    <p>The following have confirmed attendance:</p>
+    <p>Council Members: 
+        <list type="simple">
+        <item>Alejandro Bia</item>
+        <item>David J. Birnbaum</item>
+        <item>Matthew Driscoll</item>
+        <item>David Durand</item>
+        <item>Julia Flanders</item>
+        <item>Sebastian Rahtz</item>
+        <item>Laurent Romary</item>
+        <item>Susan Schreibman</item>
+        <item>Edward Vanhoutte</item>
+        <item>Natasha Smith</item>
+        <item>C. Perry Willett</item>
+        <item>Christian Wittern, Chair</item>
+    </list></p>
+    <p>Editors:
+        <list type="simple">
+            <item>Lou Burnard</item>
+            <item>Syd Bauman</item>
+        </list>
+    </p>
+
+    <p><hi rend="bold">Time and Place</hi>: The meeting is scheduled
+    to start at 1400 on Thursday May 13th, at the Royal Academy of
+    Dutch language and Literature, 18 Koningstraat, Gent, and concluding at 1800. Friday
+    we'll meet again, starting at 0900, at the same location, and
+    concluding at 1800. If necessary, the meeting will continue
+    on Saturday. Logistical information is available at the website
+ <xptr
+    url="http://www.kantl.be/ctb/event/2004/teicouncil.htm"/></p>
+<p>Timings below are highly provisional guesstimates...</p>
+</div>
+<div>
+    <head>Thursday May 13th</head>
+        <list>
+<item>Review of the agenda for the meeting, and any outstanding items
+from the council's last call (<xptr url="tcm10.html"/>) not covered
+elsewhere. (15 mins)</item>
+            <item>Migration Workgroup Report. (<xptr
+	    url="http://www.tei-c.org/Activities/MI/"/>). 
+Alex Bia and Susan Schreibman to  summarize recommendations and any
+outstanding issues for Council review. (30 mins)</item>
+<item>Proposed new Workgroup on Physical Bibliography. (See <xptr url="http://www.tei-c.org/Activities/PB/"/>). Julia Flanders to
+present charge and workplan for Council review. (30 mins) </item>
+            <item>Break</item>
+<item>Current state of P5. The editors will briefly summarize the
+current state of affairs: see <xptr url="http://www.tei-c.org/Drafts/edw81.html"/>  (15
+mins)</item>
+<item>Maintenance and development using Sourceforge; associated
+licensing issues. (Sebastian to outline technical issues. Council to
+review its earlier recommendation to Board) (30 mins) </item>
+<item>Report from "OpenSP for Windows" project (see <xptr url="http://www.tei-c.org/Activities/MI/Tools/osxReport.txt"/>. (5 mins)</item>
+<item>Report from Sanskrit word-end workgroup tabled by John Smith
+(<xptr url="http://www.tei-c.org/Activities/CE/cew10.pdf"/> (15 mins)</item>
+        </list>
+</div>
+<div><head>Friday, May 14th</head>
+<list>
+            <item>Outputs from the MetaLanguage Task Force Report
+(<xptr url="http://www.tei-c.org/Activities/META/FASC-td.pdf"/>. Sebastian Rahtz/Editors to present
+  content of new ODD system and any outstanding unresolved
+  issues. (90 mins)</item>
+<item>Internationalization and interoperability. 
+Sebastian Rahtz/Alejandro Bia to present work on I18N facilities in
+P5. (20 mins) </item>
+<item>Character Encoding Workgroup outputs. (<xptr
+url="http://www.tei-c.org/Activities/CE/FASC-ch.pdf"/> and <xptr
+url="http://www.tei-c.org/Activities/CE/FASC-wd.pdf"/>). Christian Wittern to present
+content of the new draft chapters, and summarize any outstanding
+issues. Council to discuss, and determine whether these are now ready
+for publication. (45 mins)</item>
+            <item>Lunch</item>            
+             <item>Draft from the joint ISO-TEI Activity on Feature
+	     Structures. (<xptr url="http://www.tei-c.org/Activities/FS/FASC-fs.pdf"/>).
+	     Laurent Romary to summarize formal status of draft within
+	     ISO, proposed changes to P4 recommendations, and any
+	     outstanding unresolved issues. Council to determine
+	     whether draft is ready for inclusion in P5. (30 mins) </item>
+             <item>Manuscript Description Taskforce outputs. (<xptr
+	    url="http://www.tei-c.org/Activities/MS/FASC-ms.pdf"/>). Matthew Driscoll to
+	present intended changes to
+content of the  draft chapter, and summarize any outstanding
+issues, for review by Council. (30 mins)</item>
+<item>Outputs from Standoff workgroup. (<xptr
+url="http://www.tei-c.org/Activities/SO/sow09.html"/>). David Durand
+to present proposed changes
+ to P4 recommendations on linking, and summarize any outstanding
+issues, for review by Council. (30 mins)</item>
+<item>Timetable for P5 publication. Council to assess current
+published plans at <xptr url="http://www.tei-c.org/P5/"/> and agree
+revisions. (60 mins)</item>
+</list></div>
+          <div>
+            <head>Saturday, May 15th</head>
+           <list>
+               <item>If other items are added to the agenda, or if we fall behind the schedule proposed above, we may meet from 9-noon on Saturday.</item>
+        </list>
+</div>
+    </body>
+</text>
+</TEI.2>

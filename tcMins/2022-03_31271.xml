@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/home/lou/Public/TEI/TEICSS/tei.css" type="text/css"
+ ?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:t="http://www.tei-c.org/ns/1.0" n="2022-03"><teiHeader><fileDesc><titleStmt><title>Minutes of the TEI Technical Council</title><meeting n="2022-03" when="2022-03-11">TEI Technical Council online
+     meeting : <date>11 March 2022</date></meeting></titleStmt><publicationStmt><distributor>TEI Website</distributor><idno>TCM151</idno></publicationStmt><sourceDesc><p>Retagged from a WordPress HTML file</p></sourceDesc></fileDesc><revisionDesc><change when="2023-04-25">Archival header confected</change><change>Extracted from Word Press article with id post-31271</change></revisionDesc></teiHeader><text><body><div><p><hi style="strong">Meeting Times:</hi></p><list style="ul">
+<item>7am PST / 10am EST / 3pm BST / 4pm CEST</item>
+<item>Started:     15:04Z    Ended:    17:12Z</item>
+</list><p><hi style="strong">Present:</hi></p><list style="ul">
+<item>Syd Bauman (SB)</item>
+<item>Helena Bermúdez Sabel (HBS)</item>
+<item>Elisa Beshero-Bondar (EBB)</item>
+<item>Elli Bleeker (EB)</item>
+<item>Hugh Cayless (HC)</item>
+<item>Janelle Jenstad (JJ)</item>
+<item>Martina Scholger (MS, Chair)</item>
+<item>Peter Stadler (PS)</item>
+<item>Magdalena Turska (MT)</item>
+<item>Raff Viglianti (RV)</item>
+</list><p><hi style="strong">Apologies/Not Present:</hi></p><list style="ul">
+<item>Sabine Seifert (SS)</item>
+</list><p>Meeting minutes previous month (<ref target="https://tei-c.org/activities/council/meetings/tei-technical-council-teleconference-2022-02-11/">February</ref>)</p><div type="h2"><head>Next release</head><list style="ul">
+<item>Release technicians: JJ, HC, RV</item>
+<item>Refrigeration on Sunday, April 10.</item>
+<item>Freeze on Saturday, April 17.</item>
+<item>Start release on Monday, April 19.</item>
+</list></div><div type="h2"><head>Stylesheets meeting times</head><list style="ul">
+<item>Friday March 25, 8am PST / 11am EST / 3pm BST / 4pm CET</item>
+<item>Daylight Saving Time switch in Europe</item>
+<item>Action on MS: add meeting times to Google calendar</item>
+</list></div><div type="h2"><head>SVF2F meeting 2022</head><list style="ul">
+<item><hi style="b">April 1 and 2</hi></item>
+</list></div><div type="h2"><head>Migration of mailing lists</head><list style="ul">
+<item>Migrate to something controlled by TEI on the TEI Huma-Num server (something we have always wanted to do).</item>
+<item>Huma-Num runs mailing lists on Sympa; ADHO on mailman, Brown on LISTSERV.</item>
+<item>Laurent Romary checked with Huma-Num and they actually lack competence/capacity on the subject at present (they have opened a position to hire someone on the mailing infrastructure and hope to get better in the future). If the TEI Board is ready to pay, we would need to find a freelancer on the issue.</item>
+<item>SB can provide the needed expertise for LISTSERV, but not for Sympa.</item>
+</list></div><div type="h2"><head>Council on TEI website</head><list style="ul">
+<item>There is incorrect information on the pages that list Council members.</item>
+<item>SB sent an email to the webmaster some time ago, but he got no response.</item>
+<item>MS asserts she last updated this page, so <hi style="b">Action </hi>on MS by 2022-03-18 to fix it <hi style="b">– Done</hi>.</item>
+<item>No one knows who, if anyone, receives the <ref target="mailto:webmaster@tei-c.org">webmaster@tei-c.org</ref> e-mail, but HC thinks it might be him.</item>
+<item>This page comes up in a Google search and can’t be found: <ref target="https://tei-c.org/tei-technical-council-2/">https://tei-c.org/tei-technical-council-2/</ref></item>
+<item>Search engines also find dev.tei-c.org (which they should not — boot to Infrastructure group), but its page on Council has correct dates.</item>
+<item>This page lists the Council terms correctly: <ref target="https://dev.tei-c.org/activities/Council/">https://dev.tei-c.org/activities/Council/</ref></item>
+<item><hi style="b">Action on MS: </hi>Check if this Guidelines page listing Council members is updated for next release: <ref target="https://tei-c.org/release/doc/tei-p5-doc/en/html/FM1.html">https://tei-c.org/release/doc/tei-p5-doc/en/html/FM1.html</ref> (EBB added ticket <ref target="https://github.com/TEIC/TEI/issues/2244">https://github.com/TEIC/TEI/issues/2244</ref>).</item>
+</list></div><div type="h2"><head>TCW32</head><list style="ul">
+<item><ref target="https://bauman.zapto.org/~syd/temp/4TEICouncil/tcw32.html">https://bauman.zapto.org/~syd/temp/4TEICouncil/tcw32.html</ref></item>
+<item>JJ has some minor things to correct.</item>
+<item><hi style="b">Action on SB</hi> by 2022-03-18 to poke James Cummings to review the document.</item>
+<item>Publish end of March (was February)</item>
+</list></div><div type="h2"><head>Stylesheets task force</head><list style="ul">
+<item>New Slack channel #atop</item>
+<item>Charge: <ref target="https://tei-c.org/activities/workgroups/tei-stylesheets-task-force-charge/">https://tei-c.org/activities/workgroups/tei-stylesheets-task-force-charge/</ref></item>
+<item>ODD Processor and documentation generation (see discussion on Slack channel #general). MT gives a <ref target="https://tei-c.slack.com/files/U60GTJME1/F036PV4E8RH/tei_guidelines.pdf">presentation</ref> on a version of the TEI Guidelines generated with TEI Publisher.</item>
+<item><hi style="b">Action on MS</hi> to create a poll for Council to approve the Task Force document. Changes possible to Task Force document through Friday, March 18. Voting begins March 18 to close on Monday March 21.</item>
+</list></div><div type="h2"><head>Issues</head><list style="ul">
+<item>Opening up the content model of <gi>listRef</gi> (EBB, EB)</item>
+<item><ref target="https://github.com/TEIC/TEI/issues/2209">#2209</ref> and <ref target="https://github.com/TEIC/TEI/issues/1667">#1667</ref></item>
+<item>SB recommends we finish Stylesheets <ref target="https://github.com/TEIC/Stylesheets/issues/333">#333</ref> (fully accommodate tagdocs use of <gi>ref</gi> in <gi>listref</gi>).</item>
+<item>After this is resolved, move on to add <gi>listRef</gi> to model.ptrLike (issue #<ref target="https://github.com/TEIC/TEI/issues/1667">1667</ref>)
+<list style="ul">
+<item>Beware: this will permit nesting of <gi>listRef</gi></item>
+<item>Nesting <gi>listRef</gi>s may pose problems for tagdocs processing, so Council decides to constrain the tagdocs use of <gi>listRef</gi> to prevent nesting.</item>
+<item>(Note: multiple sibling <gi>listRef</gi>s are permitted in tagdocs)</item>
+</list>
+</item>
+<item>Reorganization and homogenization of the bibliography (original issue: <ref target="https://github.com/TEIC/TEI/issues/2106">#2106</ref>)</item>
+<item>Current bibliography in <ref target="https://www.tei-c.org/release/doc/tei-p5-doc/en/html/BIB.html">English</ref>, <ref target="https://www.tei-c.org/release/doc/tei-p5-doc/fr/html/BIB.html">French</ref>, and <ref target="https://www.tei-c.org/release/doc/tei-p5-doc/zh-TW/html/BIB.html">Taiwanese Mandarin</ref>.</item>
+</list><p> </p></div></div></body><!-- #post-## --></text></TEI>

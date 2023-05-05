@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/home/lou/Public/TEI/TEICSS/tei.css" type="text/css"
+ ?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:t="http://www.tei-c.org/ns/1.0" n="2018-05"><teiHeader><fileDesc><titleStmt><title>Minutes of the TEI Technical Council</title><meeting n="2018-05" when="2018-05-31">TEI Technical Council online
+     meeting : <date>31 May 2018</date></meeting></titleStmt><publicationStmt><distributor>TEI Website</distributor><idno>TCM101</idno></publicationStmt><sourceDesc><p>Retagged from a WordPress HTML file</p></sourceDesc></fileDesc><revisionDesc><change when="2023-04-25">Archival header confected</change><change>Extracted from Word Press article with id post-29580</change></revisionDesc></teiHeader><text><body><div><p><hi style="strong">Meeting time:</hi></p><list style="ul">
+<item>08:00 EDT, 13:00 BST, 14:00 CEST</item>
+<item>Started 12:09Z.</item>
+</list><p><hi style="strong">Present:</hi></p><list style="ul">
+<item>Syd Bauman (SB)</item>
+<item>Elisa Beshero-Bondar (EB)</item>
+<item>Alex Bia (AB)</item>
+<item>Hugh Cayless (HC)</item>
+<item>James Cummings (JC)</item>
+<item>Elli Mylonas (EM)</item>
+<item>Martina Scholger (MS)</item>
+<item>Sarah Stanley (SS)</item>
+<item>Peter Stadler (PS)</item>
+<item>Magdalena Turska (MT)</item>
+<item>Raff Viglianti (RV)</item>
+</list><div type="h2"><head>TEI conference Tokyo: F2F dates</head><list style="ul">
+<item>September 7–8: F2F meeting</item>
+<item>September 10: Open Council Meeting</item>
+</list></div><div type="h2"><head>Status report on RomaJS (RV)</head><list style="ul">
+<item>RV has not done much lately, but expecting a push soon.</item>
+<item>HC has RNG validation working with Oxarage, but not Schematron yet.
+<list style="ul">
+<item>Possibly introducing endpoint for sending data in the POST body (now expects form data).</item>
+</list>
+</item>
+</list><p><hi style="strong">DH Mexico City</hi></p><list style="ul">
+<item>Spanish language translatathon at DH2018.</item>
+<item>AB will not be in Mexico City (may not be in Tokyo, will find out in July).</item>
+<item>Gimena del Rio Riande will be there, Antonio Rojas Castro not.</item>
+<item>We will organize a meet-up on Tuesday after the reception.</item>
+<item>Both (Gimena and Antonio) like the idea
+<list style="ul">
+<item>Antonio has 3 colleagues who will be at DH, maybe they can help.</item>
+<item>Suggested channels to announce the meeting: redHD (mailing list); Humanidades Digitales on Slack. Also <ref target="http://listserv.uleth.ca/mailman/listinfo/globaloutlookdh-l">http://listserv.uleth.ca/mailman/listinfo/globaloutlookdh-l</ref> (mailing list).</item>
+<item>We (Council) are concerned about lack of time for a full translateathon, but maybe get Spanish-language TEI people together for a dinner meet-up/planning session to enable local people to take the idea of improving Spanish translations forward. Invite Luis Meneses.</item>
+<item>Decision: Meet-up on Tuesday after the reception. MS to organise and get Spanish translation of an invite circulated.</item>
+<item><ref target="https://docs.google.com/document/d/12A3F26cQbHdsNSZ9Ekw_J7kVePqI657wx_6lJnyxbMo/edit#heading=h.kux6rjgh36c5">DH newcomers dinners</ref>.</item>
+</list>
+</item>
+</list><p><hi style="strong">Standoff task force meeting</hi></p><list style="ul">
+<item>Proposal to the Board to fund a task force to meet 2 or 3 days (linguistics SIG and 3 interested from Council).</item>
+<item><hi style="b">Action on MS: </hi>send a reminder to the subgroup</item>
+<item><hi style="b">Action on Subgroup:</hi> MT, SB, HC:
+<list style="ul">
+<item>From Cologne minutes: subgroup will work on this; study the proposal closely, work on a counterproposal, have a phone call, and then respond to Laurent Romary with a phone call.”</item>
+<item>Concerns: This should be a workshop (to give the LingSIG a chance to be involved).</item>
+<item>Standoff task force isn’t only for Linguists.</item>
+<item>EM: A 2-day workshop is exclusionary—the only people who get a voice are the ones who can go to the meeting. Instead—a series of hangouts/phone calls that have potentially wider reach.</item>
+<item>PS: A bootcamp? RV: Genetic Editing group is a good example—workshop-driven and successful.</item>
+<item>HC: Have the subgroup meet online, with PS—have a preliminary discussion.</item>
+<item>Council: The subgroup should meet (see action item above).</item>
+</list>
+</item>
+</list></div><div type="h2"><head>Balisage paper (SB)</head><list style="ul">
+<item>HC, RV, EB will be there.</item>
+<item>JC &amp; EM interested in helping, but won’t be there.</item>
+<item>Suggestion: look at EB &amp; RV’s talk from Vienna. EB will be there and willing to help.</item>
+</list></div><div type="h2"><head>Oxford TEI Website: Vault</head><list style="ul">
+<item>How much space is required?</item>
+<item>JC notes that without much pruning there is 6–9 GB of stuff at least. With some pruning this can be lowered. (Also SVN history could probably be removed.) Ian Rifkin confirms there is a couple hundred gigabytes available on the server and sees no problem in adding this amount to the Vault (if not a regular occurrence). JC will trim out some higher-sized and some obviously useless files and go ahead if there are not strong objections. Council agrees to this plan of action.</item>
+</list></div><div type="h2"><head>Brief report on Stylesheets rub-a-dub</head><list style="ul">
+<item>SB: some ODD-testing completed</item>
+</list></div><div type="h2"><head>Brief report on BPTL</head><list style="ul">
+<item>EM: OCR’d texts—commercially (ALTO format, OmniPage or others that offer coordinates for letters)—converting these to TEI (facsimile).</item>
+<item>SB is looking for volunteers who have (relatively) easy access to OCR software that generates either <ref target="https://www.loc.gov/standards/alto/">ALTO</ref>, <ref target="https://en.wikipedia.org/wiki/HOCR">hOCR</ref>, or PAGE format (even though he doesn’t know what that last one is) so he can generate examples and XSLT to convert to BPTL-L1.</item>
+<item>Plan is to announce it in Tokyo</item>
+</list></div><div type="h2"><head>SIG on Libraries</head><list style="ul">
+<item>(email from Kevin Hawkins)</item>
+<item>Stefanie Gehrke and KH need to step down from their roles as convener.</item>
+<item>No new candidate to take it over.</item>
+<item>KH suggests to retire the SIG for the moment.</item>
+<item>Related question 1: represent active and inactive SIGs separately on TEI website?</item>
+<item>Related question 2: <gi>sourceDesc</gi> proposal <ref target="https://listserv.brown.edu/archives/cgi-bin/wa?A2=TEI-L;93f8cf13.1805">https://listserv.brown.edu/archives/cgi-bin/wa?A2=TEI-L;93f8cf13.1805</ref></item>
+<item>Proclaim this SIG “dormant” on the website, but keep the teilib-l@list.indiana.edu e-mail list.
+<list style="ul">
+<item>Let Michelle Dalmau know that the SIG is now going to be “dormant”.</item>
+<item>EM talks to Kevin about a) contacting Michelle, b) crafting a response to Martin Mueller.</item>
+</list>
+</item>
+</list></div><div type="h2"><head>Tickets</head><list style="ul">
+<item>JC notes that if we could finish ticket number 1707 (<ref target="https://github.com/TEIC/TEI/issues/1707">https://github.com/TEIC/TEI/issues/1707</ref>) before next release that would be good. (Especially since meeting will be in Japan, but also because it arose from a poster at previous conference). This was on EM, she will act on it.</item>
+</list></div><div type="h2"><head>AOB</head><list style="ul">
+<item>Re-schedule next conference call, as it occurs during DH. Suggestion: Thu 05 Jul. <hi style="b">Action on MS: </hi>generate a Doodle poll (due this afternoon).</item>
+</list></div><div type="h2"><head>Ticket triage</head><table>
+
+<row>
+<cell><hi style="b">May 2018</hi></cell>
+<cell><hi style="b">MS</hi></cell>
+</row>
+<row>
+<cell><hi style="b">June 2018</hi></cell>
+<cell><hi style="b">HC</hi></cell>
+</row>
+<row>
+<cell><hi style="b">July 2018</hi></cell>
+<cell><hi style="b">EB</hi></cell>
+</row>
+<row>
+<cell><hi style="b">August 2018</hi></cell>
+<cell><hi style="b">JC</hi></cell>
+</row>
+<row>
+<cell><hi style="b">September 2018</hi></cell>
+<cell><hi style="b">EM</hi></cell>
+</row>
+<row>
+<cell><hi style="b">October 2018</hi></cell>
+<cell><hi style="b">MT</hi></cell>
+</row>
+<row>
+<cell><hi style="b">November 2018</hi></cell>
+<cell><hi style="b">SS</hi></cell>
+</row>
+<row>
+<cell><hi style="b">December 2018</hi></cell>
+<cell><hi style="b">AB</hi></cell>
+</row>
+
+</table><p> </p></div></div></body><!-- #post-## --></text></TEI>

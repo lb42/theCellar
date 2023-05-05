@@ -1,0 +1,1085 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/home/lou/Public/TEI/TEICSS/tei.css" type="text/css"
+ ?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:t="http://www.tei-c.org/ns/1.0" n="2012-09"><teiHeader><fileDesc><titleStmt><title>Minutes of the TEI Technical Council</title><meeting n="2012-09" from="2012-09-19" to="2012-09-21">TEI Technical
+     Council ftf meeting : <placeName>Oxford</placeName>, <date>19–21 September
+      2012</date></meeting></titleStmt><publicationStmt><distributor>TEI Website</distributor><idno>TCM052</idno></publicationStmt><sourceDesc><p>Retagged from a WordPress HTML file</p><p>Converted from google doc minutes taken during the meeting.</p></sourceDesc></fileDesc><revisionDesc><change when="2023-04-27">Archival header confected</change><change>Extracted from Word Press article with id post-21908</change><change who="KSH" when="2013-12-28">now links to archived version of notes from ODD discussion</change><change who="KSH" when="2013-06-20">Fixed error agreed to on tei-council on 2013-06-20.</change><change who="MDH" when="2012-10-01">Initial conversion from Google doc and cleanup.</change></revisionDesc></teiHeader><text><body>
+		
+	
+<div><head>
+        Wednesday 19 September 2012</head>
+<p>Present:</p>
+<list style="ul">
+<item>Piotr Banski (PB)</item>
+<item>Brett Barney (BB)</item>
+<item>Gabriel Bodard (GB)</item>
+<item>Lou Burnard (LB)</item>
+<item>James Cummings (JC)</item>
+<item>Kevin Hawkins (KH)</item>
+<item>Martin Holmes (MH)</item>
+<item>Paul Schaffner (PS)</item>
+<item>Sebastian Rahtz (SR)</item>
+<item>Rebecca Welzenbach (RW)</item>
+</list>
+<p>Location: IT Services, 13 Banbury Road, Oxford, OX2 8NP – Kennet Room</p>
+<div><head>&gt;
+        09:30 – 10:30
+        </head><list style="ul">
+<item>Review of action items from Ann Arbor FTF: <ref target="https://wiki.tei-c.org/index.php/AnnArbor2012-Actions">http://wiki.tei-c.org/index.php/AnnArbor2012-Actions </ref><list style="ul">
+<item>The majority are done.</item>
+<item>The official status or otherwise of the stylesheets: JC: should we start breaking
+              out some parts of the repository into separate repositories. LB: The Guidelines should
+              be in one repository and the rest somewhere else. MH: This would create some
+              complications because there are links between different parts of the tree.</item>
+<item>MH and JC have failed to implement the expanded unique <att>xml:i</att>d in
+              guidelines. <hi style="italic">Action on MH and JC: implement expanded unique
+              <att>xml:id</att> values in guidelines.</hi></item>
+<item>Next release: release technician will be PB, and it will happen some time in
+              October. Schedule to be decided later in consultation with PB. Probably near the end
+              of October, and must be done by members’ meeting. <hi style="italic">Action on JC:
+              Finalize release date with PB.</hi></item>
+<item>Is Virginia still a partner? KH: Still pending. <hi style="italic">Action on KH: keep
+              up the pressure for a decision on Virginia’s partnership.</hi></item>
+<item><ref target="http://purl.org/tei/bug/3440771">http://purl.org/tei/bug/3440771</ref> is not finished. <hi style="italic">Action on SR:
+                Ensure <ref target="http://purl.org/tei/bug/3440771">http://purl.org/tei/bug/3440771</ref> is completed.</hi></item>
+<item>Lite will be discussed later, along with Tite.</item>
+<item><ref target="http://purl.org/TEI/FR/2834511">http://purl.org/TEI/FR/2834511</ref>
+              is not done. <hi style="italic">Action on LB:  Ensure <ref target="http://purl.org/TEI/FR/2834511">http://purl.org/TEI/FR/2834511</ref>
+              is completed.</hi></item>
+<item><hi style="italic">Action on GB: submit a more detailed proposal for <ref target="http://purl.org/TEI/FR/3291540">http://purl.org/TEI/FR/3291540</ref>.</hi></item>
+<item><ref target="http://purl.org/tei/bug/3439980">http://purl.org/tei/bug/3439980</ref> (div liminal) is not done, but LB is heading up
+              the so-called div-liminal working group. One idea for it is to use a set of examples
+              put together by PS, and this should be turned into a web application enabling people
+              to tag examples live online, and we would then look at the results. This will be
+              discussed later on the agenda. RW and KH think having such a tool would be a good idea
+              for discussions on the TEI-L list etc.</item>
+<item>A/V facsimiles will be dealt with later.</item>
+<item><ref target="http://purl.org/tei/fr/3496494">http://purl.org/tei/fr/3496494</ref>
+              is not done. <hi style="italic">Action on KH and RW: Look at the definition of
+              <gi>span</gi> and the explanation in 17.3 to see what needs to be done there as part
+              of <ref target="http://purl.org/tei/fr/3496494">http://purl.org/tei/fr/3496494</ref></hi>.</item>
+</list>
+</item>
+<item>Review of Action Items from teleconference: <list style="ul">
+<item>KH: Investigate differences in TEI Tite documentation: Not much progress made yet.
+              Waiting for a response from Apex.</item>
+<item>JC: Suggest to TEI Board that SIG Coordinator post not be limited to members of
+              Council: JC did so, Board is discussing SIGs amongst other reforms.</item>
+<item>KH: Remind Council to look at Google TEI output. <hi style="italic">Action on ALL:
+              identify anything we disagree with in their output.</hi></item>
+<item><hi style="italic">Action on KH: continue to liaise with physical bibliography group in producing a proposal.</hi></item>
+<item>JC: Produce summary report of TEI-ODD DH2012 meeting. Done, will be discussed
+              later.</item>
+<item>GB: Remind Council to read XPointer scheme proposal, liaise with authors with any
+              feedback; to be discussed later.</item>
+<item>JC: Produce Face to Face meeting details for attendees. Done.</item>
+<item>JC: Ask Board to clarify process of what to do when a Council member resigns their
+              post. Done.</item>
+<item>MH: Summarize options to Council for archiving TEI Lite. Done.</item>
+<item>All Council: Finish off Ann Arbor Actions; <hi style="italic">Action on ALL:
+              continue to complete assigned actions.</hi></item>
+<item>LB: Report back on transcription of speech and video workshop; Do so after meeting
+              (still upcoming).</item>
+</list>
+</item>
+<item>Reports from SIGs (JC) JC has sent SIG reports out to Council list. See <ref target="http://lists.village.virginia.edu/pipermail/tei-council/2012/016257.html">http://lists.village.virginia.edu/pipermail/tei-council/2012/016257.html</ref><list style="ul">
+<item>LB: Board has suggested that should produce something like a newsletter or a
+              similar kind of outreach activity which should include all of this sort of thing.
+              Collecting these kinds of SIG reports would therefore be the Board’s work. JC: This is
+              actually in the Council’s mandate, as the SIG coordinator currently is meant to be a
+              member of Council, or more recently appointed by Council. LB: Many SIGs don’t actually
+              produce much work relevant for Council. PB: SIGs are all different; some do
+              Council-preparatory-style work, while others are less directly related to producing
+              e.g. feature requests. PB: It’s a good thing for the chair to have regular contact
+              with the SIGs to see if they have any concerns. RW: Perhaps SIGs currently respond
+              with only semi-relevant responses because they feel they need to respond somehow. JC:
+              Asking them for these reports is a fairly new thing, this may improve especially if
+              Council Chair only asks if they have any issues they specifically want Council to
+              consider.</item>
+</list>
+</item>
+<item>Deprecation policy: We need to figure out what we’re doing. See <ref target="https://wiki.tei-c.org/index.php/Deprecation">KH’s summary of current
+            practice</ref> and <ref target="https://wiki.tei-c.org/index.php/Talk:Deprecation">stalled discussion</ref><list style="ul">
+<item>KH’s summary of current practice has a breakdown into soft deprecation and hard
+              deprecation. MH: Could deprecation be done through the class system? Could we have a
+              deprecated class? JC: Could that work with attributes defined on elements? LB: In
+              addition to soft vs hard, there is also a distinction between situations in which an
+              existing element or attribute has been replaced by a different element or attribute,
+              and the case where a practice was previously sanctioned in the Guidelines, but we now
+              think it’s a bad idea. What’s missing from the taxonomy is the situation where we
+              don’t have a recommendation for a new way of handling it. MH: We should never
+              deprecate something unless we do have a recommendation for replacing it. KH: A TCW
+              should be created on deprecation. <hi style="italic">Action on LB and KH: work on that
+              document, and bring it back to Council at the next FTF.</hi></item>
+<item>Aside: discussion on trackers. LB says people don’t make the distinction between
+              bugs and feature requests. MH: we could merge them, if for no other reason that the
+              purl URLs would be shorter. JC: This would result in only 1 character different
+              /TEI/BUG/# to TEI/FR/# so not really a reason for doing this. MH: But it would
+              preclude the need to remember whether an item is BUG or FR; we’d only have to know the
+              id number.</item>
+</list>
+</item>
+<item><ref target="https://wiki.tei-c.org/index.php/Private_URI_Schemes">Private URI
+            Schemes Proposal</ref> (MH)<list style="ul">
+<item>MH summarized the proposal.</item>
+<item>LB and JC questioned the nomenclature because it’s too restrictive, and think that
+              an expansion mechanism based on regexps should be more generally available for other
+              purposes. MH: like generating XPath. <gi>listPrefixes</gi> (or
+              <gi>listPrefixDefs</gi>) and <gi>prefix</gi> (or <gi>prefixDef</gi>) should be the
+              element names, and <att>ident</att> should be used for the prefix attribute.
+              (Discussion over tea break asked if this should be prefixDecl or something else).It is
+              not an error if there is no <att>matchPattern</att> or <att>replacementPattern</att>.
+              <hi style="italic">Action on MH: rewrite the proposal accordingly and bring this back to
+              Council.</hi></item>
+</list>
+</item>
+</list>
+</div>
+<div><head>
+        10:30 – 12:30</head>
+<div><head>
+            Ticket Breakout Groups</head>
+<p><ref target="https://wiki.tei-c.org/index.php/Council-ticketTriage">http://wiki.tei-c.org/index.php/Council-ticketTriage</ref></p>
+<div><head>
+              Tickets not requiring discussion</head>
+<p>Initial plenary discussion of Green tickets. Four tickets at the top required no
+              discussion, they just need to be completed by those to whom they are assigned: </p>
+<list style="ul">
+<item><hi style="italic">Action on LB: implement <ref target="http://purl.org/TEI/Bug/3547934">http://purl.org/TEI/Bug/3547934</ref>.</hi></item>
+<item><hi style="italic">Action on JC: implement <ref target="http://purl.org/TEI/Bug/3540863">http://purl.org/TEI/Bug/3540863</ref>.</hi></item>
+<item><hi style="italic">Action on MH: implement <ref target="http://purl.org/TEI/Bug/3472477">http://purl.org/TEI/Bug/3472477</ref>.</hi></item>
+<item><hi style="italic">Action on MH: implement <ref target="http://purl.org/TEI/Bug/3432216">http://purl.org/TEI/Bug/3432216</ref>.</hi></item>
+</list>
+</div>
+<div><head>&gt;
+              Previously ungrouped green tickets
+              </head><list style="ul">
+<item><ref target="http://purl.org/TEI/FR/3555190">http://purl.org/TEI/FR/3555190</ref> (Improve guidance and restrict usage of
+                biblScope). <hi style="italic">Action on LB: implement <ref target="http://purl.org/TEI/FR/3555190">http://purl.org/TEI/FR/3555190</ref>.</hi>
+                (This should be straightforward.) </item>
+<item><ref target="http://purl.org/TEI/FR/3553304">http://purl.org/TEI/FR/3553304</ref> (<gi>idno</gi> is not available within
+                <gi>biblFull</gi>, while it is in <gi>bibl</gi> and <gi>biblStruct</gi>). This
+                ticket is assigned to KH. He no longer supports making any change to the Guidelines,
+                and any change would break backwards compatibility or would multiply encoding
+                options to no purpose. <gi>idno</gi> is allowed in <gi>publicationStmt</gi>, and
+                that’s where it belongs. <hi style="italic">Action on KH: close <ref target="http://purl.org/TEI/FR/3553304">http://purl.org/TEI/FR/3553304</ref>.</hi></item>
+<item><ref target="http://purl.org/TEI/BUGS/3520704">http://purl.org/TEI/BUGS/3520704</ref> (Attributes without examples). LB: this is
+                not really a ticket; it’s just ongoing work we need to do. KH: we should ask the
+                community for help with this. JC: we should have a good go at this ourselves first,
+                but then make a formal request to the at the members’ meeting for community help.
+                <hi style="italic">Action on All Council: <ref target="http://purl.org/TEI/BUGS/3520704">http://purl.org/TEI/BUGS/3520704:</ref>.</hi></item>
+<item><ref target="http://purl.org/TEI/BUGS/3565137">http://purl.org/TEI/BUGS/3565137</ref> (reconsider membership or use of
+                model.glossLike). Already assigned to LB, who will carry it out. <hi style="italic">Action on LB: implement <ref target="http://purl.org/TEI/BUGS/3565137">http://purl.org/TEI/BUGS/3565137</ref>.</hi></item>
+<item><ref target="http://purl.org/TEI/FR/3565152">http://purl.org/TEI/FR/3565152</ref> (reference application/tei+xml somewhere in
+                the Guidelines). On the ticket KH suggested a location for it. Assigned to MH. <hi style="italic">Action on MH: produce a draft for approval by Council based on <ref target="http://purl.org/TEI/FR/3565152">http://purl.org/TEI/FR/3565152</ref>.</hi></item>
+<item><ref target="http://purl.org/TEI/FR/3554294">http://purl.org/TEI/FR/3554294</ref> (<att>xml:space</att>). This is probably a
+                duplicate ticket. The previous one was done by RW. This is assigned to RW to check
+                there’s nothing new in this ticket. <hi style="italic">Action on RW: Check that all
+                action called for on <ref target="http://purl.org/TEI/FR/3554294">http://purl.org/TEI/FR/3554294</ref> has been carried out, and close the
+                ticket.</hi></item>
+<item><ref target="http://purl.org/TEI/FR/3547869">http://purl.org/TEI/FR/3547869</ref> (system entities vs. XInclude). JC: Some
+                people may look at the Guidelines as an example of best practice, so it’s a bit
+                silly to be using entities ourselves. KH: Is XInclude support widely-supported
+                enough? PB: At this level, there is no difference in the toolsets we use. MH: It
+                would be preferable to use XIncludes if we can. KH: This should be a low-priority
+                job, but it is desirable. Assigned to SR. <hi style="italic">Action on SR: switch
+                rendering system from use of entities to XInclude, if practical, per <ref target="http://purl.org/TEI/FR/3547869">http://purl.org/TEI/FR/3547869</ref>.</hi></item>
+<item><ref target="http://purl.org/TEI/BUGS/3539329">http://purl.org/TEI/BUGS/3539329</ref> (Inconsistency in data.name). (Related to
+                <ref target="http://purl.org/TEI/FR/3511398">http://purl.org/TEI/FR/3511398</ref>).
+                Both assigned to MH. On the first one, the definition just needs to be copied into
+                the four locations. <hi style="italic">Action on MH: for <ref target="http://purl.org/TEI/BUGS/3539329">http://purl.org/TEI/BUGS/3539329</ref>,
+                copy definition of data.name into all four locations. On <ref target="http://purl.org/TEI/FR/3511398">http://purl.org/TEI/FR/3511398</ref>,
+                produce a list of candidate attribute values which might be constrained with
+                Schematron.</hi></item>
+<item><ref target="http://purl.org/TEI/BUGS/3520414">http://purl.org/TEI/BUGS/3520414</ref> (Example does not conform with description
+                in Core chapter). LB: the original action is done, so this ticket should be closed
+                and a new one opened to deal with the TEI-L discussion. MH will do this, and assign
+                the new one to himself. <hi style="italic">Action on MH: close <ref target="http://purl.org/TEI/BUGS/3520414">http://purl.org/TEI/BUGS/3520414</ref>,
+                and open a new ticket to deal with linking of quotations and references.</hi></item>
+<item><ref target="http://purl.org/TEI/BUGS/3521714">http://purl.org/TEI/BUGS/3521714</ref> (revise valList and valItem, revise ch. 22
+                accordingly). This was assigned to SY, so it needs to be reassigned. Assigned to LB.
+                <hi style="italic">Action on LB: improve wording per <ref target="http://purl.org/TEI/BUGS/3521714">http://purl.org/TEI/BUGS/3521714</ref>.</hi></item>
+</list>
+</div>
+<div><head>&gt;
+              Amber tickets
+              </head><list style="ul">
+<item><ref target="http://purl.org/TEI/FR/3531957">http://purl.org/TEI/FR/3531957</ref> (allow a footer for a table). We are convinced
+                about this; there should be a reference to model.divBottomPart at the end of table.
+                Assigned to MH to carry out. <hi style="italic">Action on MH: implement <ref target="http://purl.org/TEI/FR/3531957">http://purl.org/TEI/FR/3531957</ref>.</hi></item>
+<item><ref target="http://purl.org/TEI/FR/3511398">http://purl.org/TEI/FR/3511398</ref> (Need to implement Schematron rules for
+                attribute values). LB: The best approach is to create a list of candidate attribute
+                values that are amenable to Schematron constraints. Assigned to MH. <hi style="italic">Action on MH: implement <ref target="http://purl.org/TEI/FR/3511398">http://purl.org/TEI/FR/3511398</ref>.</hi></item>
+<item><ref target="http://purl.org/TEI/FR/2834511">http://purl.org/TEI/FR/2834511</ref> (Add more elements to att.spanning with
+                schematron constraint). Assigned to LB. <hi style="italic">Action on LB: implement
+                Schematron rules per <ref target="http://purl.org/TEI/FR/2834511">http://purl.org/TEI/FR/2834511</ref>.</hi></item>
+<item><ref target="http://purl.org/TEI/Bug/3496949">http://purl.org/TEI/Bug/3496949</ref> (Guidelines, p. 388 –
+                “<gi>wit</gi>[unattested]&lt;/wit&gt;” ). Submitted by GB. The Guidelines simply need
+                an additional example. GB will carry out version A of his proposal. <hi style="italic">Action on GB: implement proposal a) in <ref target="http://purl.org/TEI/Bug/3496949">http://purl.org/TEI/Bug/3496949</ref></hi>. </item>
+<item><ref target="http://purl.org/TEI/Bug/3496958">http://purl.org/TEI/Bug/3496958</ref> (Guidelines, p. 384 – number of <gi>rdg</gi>
+                in <gi>app</gi>). MH previously carried out the Council’s intent to add a Schematron
+                restriction, but Council now accepts that this was a mistake. Now assigned to GB to
+                remove the constraint, and clarify the Guidelines text. <hi style="italic">Action on
+                GB: remove constraint and clarify Guidelines text per <ref target="http://purl.org/TEI/Bug/3496958">http://purl.org/TEI/Bug/3496958</ref>.</hi></item>
+<item><ref target="http://purl.org/TEI/FR/3496494">http://purl.org/TEI/FR/3496494</ref> (make attributes <att>from</att> and
+                <att>to</att> (as pointers) part of a class). LB is not convinced that any of the
+                uses of <att>from</att> and <att>to</att> could be put into a class. Assigned to LB
+                to clarify the wording in the Guidelines. <hi style="italic">Action on LB: Propose new
+                wording for Guidelines per <ref target="http://purl.org/TEI/FR/3496494">http://purl.org/TEI/FR/3496494</ref>.</hi></item>
+<item><ref target="http://purl.org/TEI/FR/3291540">http://purl.org/TEI/FR/3291540</ref> (att.editLike should not bring att.dimensions
+                &amp; att.ranging). Re-assigned to GB, who will produce a detailed proposal for a
+                fix, prior to implementation. <hi style="italic">Action on GB: create a proposal for
+                Council to consider based on <ref target="http://purl.org/TEI/FR/3291540">http://purl.org/TEI/FR/3291540</ref>.</hi></item>
+<item><ref target="http://purl.org/TEI/FR/3284816">http://purl.org/TEI/FR/3284816</ref> (att.canonical for model.persTraitLike). LB
+                thinks each individual attribute proposed should be examined individually. In the
+                process of discussing this ticket, we found and fixed a typo (<att>source</att>
+                instead of <att>scheme</att>) in a spec. Action on this ticket: JC will come up with
+                a slightly more detailed proposal. <hi style="italic">Action on JC: produce a detailed
+                proposal per <ref target="http://purl.org/TEI/FR/3284816">http://purl.org/TEI/FR/3284816</ref>.</hi></item>
+</list>
+</div></div>
+</div>
+<div>
+ <head>       12:30 – 13:30: Lunch
+  </head>      </div>
+<div><head>
+        13:30 – 15:00</head>
+<div><head>
+          Report on TEI ODD Workshop; ODD Proposals (JC/SR)</head>
+<p>The committee discussed all the
+            points in the summary report at  <ref target="/Activities/Council/Working/tcw26.xml">http://www.tei-c.org/Activities/Council/Working/tcw26.xml</ref>. The next action is for JC and Laurent Romary to coordinate
+            the production of one or more papers for the Proceedings of DH 2012 laying out all the
+            options discussed and proposing implementation plans for the high-priority items. The
+            original meeting notes and the summary will be converted into TEI by JC. <hi style="italic">Action on KH: KH will find a place to put ODD meeting notes and summary, probably in
+            TCW.</hi><hi style="italic">Action on JC: Convert TEI ODD meeting notes and summary to
+            TEI and put on website; Liaise with Laurent Romary and other participants about a
+            possible publication of a summary article for Proceedings of DH 2012.</hi></p>
+</div>
+<div><head>
+            Resolving Durand Conundrum: c.f. (LB)</head>
+<p>
+    LB explained his Foxglove hypothesis (<ref target="http://foxglove.hypotheses.org/368">http://foxglove.hypotheses.org/368</ref>),
+            and MH and JC are interested in helping to work on it. SR is concerned about the
+            redirection of resources into this effort when other priorities are more urgent. MH
+            wondered if this should constitute the beginning of P6 development, but LB and JC argued
+            that this is neither necessary nor perhaps justifiable according to the Birnbaum
+            doctrine which says <q>Such transitions [between major PX versions] should happen
+            only in response to the emergence of new technologies (e.g., the transition from SGML to
+            XML) or the development of a new architecture that conveys substantial benefit (e.g.,
+            the development of the new class system)</q> and that this wasn’t a new
+            architecture, just an extension of it. Council discussed the issue of whether this
+            should be a priority or not, and it does not seem to be the case that there is any
+            comparably long-term and large-scale project except for the proposed Roma rewrite. KH
+            raised the issue of any changes to existing schema languages — how would such changes
+            be reflected in our own language? JC, SR, MH and LB claim that any new, advantageous
+            additions to any of the existing schema languages could easily be adopted into our TEI
+            language. We could benefit greatly from being able to support more aspects of XML
+            Schema, which is widely used in the commercial sector — for example, the ability to
+            constrain content models differently in different contexts, which is possible in XML
+            Schema but not in RelaxNG. In theory, you can already put XML Schema into a content
+            model, and it would be valid, but it wouldn’t actually cause anything to happen because
+            our processors are only expecting RelaxNG. Council in principle approves this form of
+            resolution of the so-called Durand Conundrum, and awaits LB’s more detailed proposal or
+            ODD. <hi style="italic">Action on LB: develop his Durand Conundrum paper into a specific
+            set of proposals for a new <gi>content</gi> structure, so that we can then take that to
+            the larger ODD-implementing community for work and feedback.</hi></p>
+</div>
+<div><head>
+        XPointer Proposal (GB)</head>
+<p>Hugh Cayless’s proposal is available here: <ref target="https://docs.google.com/document/d/1JsMA-gOGrevyY-crzHGiC7eZ8XdV5H_wFTlUGzrf20w/edit">https://docs.google.com/document/d/1JsMA-gOGrevyY-crzHGiC7eZ8XdV5H_wFTlUGzrf20w/edit</ref>.
+            GB proposes that we postpone this conversation, because there were objections and
+            questions in the teleconference about it, and the working group has not had time to
+            respond to those. <hi style="italic">Action on All Council: Council members (e.g. PB, LB
+            and GB) will add comments directly to HC’s original proposal by the end of October, and
+            then we will be happy to receive any further drafts of it.</hi></p>
+</div>
+</div>
+<div><head>
+        15:00 – 17:30</head>
+<div><head>&gt;
+              Ticket Breakout Groups
+            </head><list style="ul">
+<item><ref target="http://purl.org/TEI/Bug/3440771">http://purl.org/TEI/Bug/3440771</ref> (Multiple <gi>geo</gi> tags in
+              <gi>location</gi>). Assigned to SR to implement what is summarized in KH’s post on the
+              ticket from April 16. <hi style="italic">Action on SR: Implement KH’s recommendations
+              from 2012-04-16 in <ref target="http://purl.org/TEI/Bug/3440771">http://purl.org/TEI/Bug/3440771</ref>.</hi></item>
+<item><ref target="http://purl.org/TEI/Bug/3439980">http://purl.org/TEI/Bug/3439980</ref> (content model of <gi>signed</gi>). Is a
+              <gi>signed</gi> a block of things which can consist of a list of names etc., or is it
+              the signature itself? Council concludes that this should be dealt with by moving
+              <gi>signed</gi> from macro.phraseSeq to macro.paraContent (though that should be
+              double-checked at time of implementation). BB makes the point that the examples have a
+              range of different and conflicting examples, and none of them contain <gi>list</gi>,
+              but LB holds that the examples should be left alone until the div.liminal working
+              group reports on usage of <gi>signed</gi> by PS and LB is complete. Assigned to SR.
+              <hi style="italic">Action on SR: change the content model of signed to macro.paraContent,
+              check for unexpected side-effects, and rationalize all current examples to a single
+              practice and add one with <gi>list</gi> inside <gi>signed</gi> (see <ref target="http://purl.org/TEI/Bug/3439980">http://purl.org/TEI/Bug/3439980</ref>).</hi></item>
+<item><ref target="http://purl.org/TEI/FR/3526114">http://purl.org/TEI/FR/3526114</ref>
+              (add <att>type</att> to <gi>msDesc</gi>). JC has argued that since <gi>msDesc</gi> can occur multiply in
+              the same e.g. <gi>listBibl</gi>, you should be able to distinguish them with
+              <att>type</att>. Council policy has been that when <ident type="class">att.typed</ident> is
+              requested on an element, this should be considered if it is repeatable and has clear
+              use-cases where it would be classified. Assigned to GB to implement. <hi style="italic">Action on GB: add <gi>msDesc</gi> to <ident type="class">att.typed</ident> per <ref target="http://purl.org/TEI/FR/3526114">http://purl.org/TEI/FR/3526114</ref>.</hi></item>
+<item><ref target="http://purl.org/TEI/FR/3060867">http://purl.org/TEI/FR/3060867</ref>
+              (Grouping traitlike, statelike, and eventlike elements). PB had started to implement
+              this but got stuck when conflicts emerged between the repeated declarations of
+              <gi>state</gi>. The solution may be to make all the statelike things available in
+              <gi>list</gi>, and make <gi>list</gi> available in <gi>person</gi> and friends. GB:
+              This would give rise to some oddities that we don’t currently have, such as
+              <gi>country</gi> in <gi>person</gi>. Another approach is to answer the use-case with
+              standoff markup, pointing to elements external to the <gi>person</gi> element or
+              inside it. Many people are uncomfortable with using the generic <gi>list</gi> for
+              this, because it would generalize the oddities to lots of other contexts. So the two
+              options are to create a generic <gi>listState</gi>, and use Schematron and Guidelines
+              recommendations to say that only the logical state- and trait-like elements can occur
+              within it when it’s <gi>person</gi> or <gi>place</gi> etc.; and to create separate
+              <gi>listPersonState</gi> and <gi>listPlaceState</gi> etc. elements, each of which has
+              a separate content model and can occur only in a specific context. None of the
+              proposed solutions seems to be universally popular. GB: leaving aside the name of the
+              element, events, traits and states can all occur within a person element, but there is
+              no useful way to group them; that’s really all we need. Are we talking about a list or
+              a group here? RW: These groupings don’t seem like lists or groups. PB: We may as well
+              just use <gi>list</gi>, because it would be less prescriptive. GB: We should go back
+              to the original proposal of <gi>listState</gi>, available in <gi>person</gi>,
+              <gi>place</gi> and <gi>org</gi>, and allow it to contain all the elements allowed
+              inside the parent element. GB: Since it may be important to group these elements in
+              ways which overlap, <gi>linkGrp</gi> and <gi>link</gi> may be more appropriate. This
+              is available inside <gi>person</gi>. JC: it’s not yet available in <gi>place</gi>,
+              <gi>org</gi> and <gi>event</gi>, so that should be remedied. Action: Respond with the
+              suggestion to use <gi>linkGrp</gi> and <gi>link</gi>, and add <gi>linkGrp</gi> and
+              <gi>link</gi> to <gi>place</gi>, <gi>org</gi> and <gi>event</gi>. We’ll discuss how to
+              do that in the next ticket. Assigned to PB. <hi style="italic">Action on PB: add
+              link/linkGrp to <gi>place</gi>, <gi>org</gi> and <gi>event</gi> per <ref target="http://purl.org/TEI/FR/3060867">http://purl.org/TEI/FR/3060867</ref>.</hi></item>
+<item><ref target="http://purl.org/TEI/FR/3536363">http://purl.org/TEI/FR/3536363</ref>
+              (rationalize content models of org and place). Discussion was diverted away from the
+              ticket to the larger issue raised by Peter Stadler: <ref target="http://sourceforge.net/mailarchive/message.php?msg_id=29144155">http://sourceforge.net/mailarchive/message.php?msg_id=29144155</ref>. GB: The
+              proposal there was to suggest that we look at those different content models,
+              rationalize them, create a model of the things shared between them, and create a
+              separate model for that. <hi style="italic">Action on JC: create a proposal for the
+              changes required per <ref target="http://purl.org/TEI/FR/3536363">http://purl.org/TEI/FR/3536363</ref>, and with reference to <ref target="http://sourceforge.net/mailarchive/message.php?msg_id=29144155">http://sourceforge.net/mailarchive/message.php?msg_id=29144155</ref>.</hi></item>
+<item><ref target="http://purl.org/TEI/FR/3504690">http://purl.org/TEI/FR/3504690</ref>
+              (floatingDiv proposal). Council had previously rejected the floatingDiv proposal as it
+              was, asking for new examples. PS provided three more examples: 
+<list style="ul">
+<item><ref target="http://www.umich.edu/~pfs/divlim/samples_2/floatdiv1.pdf">http://www.umich.edu/~pfs/divlim/samples_2/floatdiv1.pdf</ref></item>
+<item><ref target="http://www.umich.edu/~pfs/divlim/samples_2/floatdiv2.pdf">http://www.umich.edu/~pfs/divlim/samples_2/floatdiv2.pdf</ref></item>
+<item><ref target="http://www.umich.edu/~pfs/divlim/samples_2/floatdiv3.pdf">http://www.umich.edu/~pfs/divlim/samples_2/floatdiv3.pdf</ref></item>
+</list>
+but Council still did not find these more convincing than the earlier ones.
+              The Council generally agrees with the comment on the ticket to the effect that there
+              is not enough convincing evidence for the need for <gi>floatingDiv</gi>, and will
+              close the ticket pending any new concrete submissions. JC to close ticket. <hi style="italic">Action on JC: close <ref target="http://purl.org/TEI/FR/3504690">http://purl.org/TEI/FR/3504690</ref>.</hi></item>
+<item><ref target="http://purl.org/TEI/bug/3439587">http://purl.org/TEI/bug/3439587</ref> (Problems introduced by content models of
+              <gi>bibl</gi> and <gi>imprint</gi>). KH: if we agree with MH’s use case, we should add
+              <gi>sponsor</gi> and <gi>funder</gi> to <gi>editionStmt</gi> and to <gi>monogr</gi>.
+              No objections were raised. LB: if the content models had <gi>respStmt</gi> changed to
+              <ident type="class">model.respLike</ident> the desired outcome would happen. KH: This will work for
+              <gi>editionStmt</gi>, but this might give rise to a non-deterministic content model in
+              the case of <gi>monogr</gi>, so in that case we need to add <gi>sponsor</gi> and
+              <gi>funder</gi> manually. LB: There is a simpler way: rationalize the content model of
+              <gi>monogr</gi>. But this is not a simple task; <gi>monogr</gi> is a bit of a mess. We
+              could try replacing the parts of the content model that include <gi>respStmt</gi> with
+              <ident type="class">model.respLike</ident>. Assigned to KH to implement. <hi style="italic">Action on
+              KH: replace <gi>respStmt</gi> with <ident type="class">model.respLike</ident> in
+              <gi>editionStmt</gi>; then review <gi>monogr</gi> with the idea of simplifiying it and
+              including <ident type="class">model.respLike</ident> per <ref target="http://purl.org/TEI/bug/3439587">http://purl.org/TEI/bug/3439587</ref>.</hi></item>
+</list>
+</div></div>
+<div><head> 
+        19:30: Supper</head>
+<p>Supper: <ref target="http://www.al-shami.co.uk/">http://www.al-shami.co.uk/</ref>
+            (Middle Eastern</p>
+</div>
+</div>
+<div><head>
+        Thursday 20 September 2012</head>
+<p>Present:</p>
+<list style="ul">
+<item>Piotr Banski (PB)</item>
+<item>Brett Barney (BB)</item>
+<item>Gabriel Bodard (GB)</item>
+<item>Lou Burnard (LB)</item>
+<item>James Cummings (JC)</item>
+<item>Kevin Hawkins (KH)</item>
+<item>Martin Holmes (MH)</item>
+<item>Elena Pierazzo (EP) (Visiting as Chair of TEI Board)</item>
+<item>Paul Schaffner (PS)</item>
+<item>Sebastian Rahtz (SR)</item>
+<item>Rebecca Welzenbach (RW)</item>
+</list>
+<p>Location: Buttery, Wolfson College, Linton Road, Oxford, OX2 6UD</p>
+<p>(Joined by Elena Pierazzo, Chair of the TEI)</p>
+<div><head>
+        09:45 – 11:00</head>
+<p>JC welcomed EP to the Council meeting.</p>
+<div><head>&gt;
+            Roma Templates and Example Customizations
+          </head><list style="ul">
+<item>The purpose of this discussion is to align Roma and the TEI customization web
+              page, and clarify categorizations of customizations (e.g., What does
+              <q>experimental</q> or <q>restricted</q> mean?)</item>
+<item>Two things to do: fix the language on the TEI customization web page (<ref target="/Guidelines/Customization/">http://www.tei-c.org/Guidelines/Customization/index.xml</ref> ), and decide what will
+              be included in Roma as an available customization in the drop down list. In
+              particular, is there a distinction to be made between things like Bare, Lite, and the
+              MS or drama customizations?</item>
+<item>Those who teach workshops using Roma like the pre-existing templates </item>
+<item>MH: Roma should not appear to support things that TEI Council doesn’t support,
+              because it leads people to think Roma is broken (i.e., community customizations should
+              be clearly external)</item>
+<item><hi style="italic">Action on LB: In Roma, split the existing <q>create
+              customization from template</q> button into two options: <q>create
+              customization from template</q> and <q>create customization from community
+              customization,</q> which can be opened from a list in the wiki (<ref target="/wiki/index.php/Category:Customization">http://www.tei-c.org/wiki/index.php/Category:Customization</ref>) or the TEI-C
+              Website. also remove the label <q>experimental</q> from those items in the
+              drop down menu that have it.</hi></item>
+<item>Spelling of customiz/sation needs to be made consistent. <hi style="italic">Action on
+              MH: Normalize spelling of <q>customization</q> in Guidelines and
+              Roma.</hi></item>
+<item><hi style="italic">Action on KH: remove <q>experimental</q> and
+              <q>restricted</q> language from TEI Customization page. Use instead:
+              <q>the following are not available as DTD or XSD</q>.</hi></item>
+<item><hi style="italic">Action on SR: give admin access to JC and MH to Oxygen TEI
+              repository.</hi></item>
+<item>If we go forward with pointing from Roma to the wiki page, Council should contact
+              the owners of customizations and ask if they want to update/add to the
+              customization.</item>
+</list>
+</div>
+<div><head>&gt;
+            Div.Liminal (LB)
+            </head><list style="ul">
+<item>LB proposes that we create a web app for letting people do sample encodings,
+              gather examples via competition/community engagement.</item>
+<item>Discussion of whether to offer pre-determined multiple choice options (more work
+              upfront to create examples) or seek open ended answers (more work after to
+              collate).</item>
+<item>PS volunteers to collate results.</item>
+<item>KH: make clear that people may interpret the guidelines as written, or propose an
+              ideal/rational encoding not currently not currently allowed by the Guidelines. </item>
+<item>MH: Exide might be a useful tool to use (<ref target="http://exist-db.org/exist/eXide/index.html">http://exist-db.org/exist/eXide/index.html</ref>. </item>
+<item><hi style="italic">Action on MH: provide tech support to existing div.liminal
+              working group (LB, KH, PS) regarding setup of eXist and eXide.</hi></item>
+<item><hi style="italic">Action on LB / PS / KH: Div.Liminal Working group will report
+              back to council with rational proposals of how to deal with tops and bottoms of
+              <gi>div</gi>s.</hi></item>
+</list>
+</div>
+<div><head>&gt;
+              LingSIG issues (PB)
+              </head><list style="ul">
+<item>PB is introducing a LingSig experimental space on SourceForge. Wonders if TEI will
+              be moving to GitHub. <list style="ul">
+<item>Discussion of pros and cons of moving part of TEI repository on GitHub;
+                conclusion that in any case P5 will be on SourceForge for forseeable future until
+                clear benefits make a move inevitable.</item>
+</list>
+</item>
+<item><hi style="italic">Action on PB: <ref target="http://purl.org/TEI/FR/3561933">http://purl.org/TEI/FR/3561933</ref> is already assigned to PB.</hi></item>
+<item>In answers to questions from PB, EP noted various details about the TEI
+              Conference.</item>
+</list>
+</div></div>
+<div><head>
+        11:00 – 12:30</head>
+<div><head>&gt;
+            Ticket Processing
+            </head><list style="ul">
+<item><ref target="http://purl.org/TEI/Bug/3555602">http://purl.org/TEI/Bug/3555602</ref> (Odd by example). Is it the Council’s place to
+              maintain this, or should it be on the wiki? <list style="ul">
+<item>oddbyexample.xsl is a stylesheet by SR that takes in lots of TEI that you feed
+                in, and makes its best guess at generating an ODD from your encoding</item>
+<item>It produces the older version of ODD: inclusion rather than exclusion.</item>
+<item>Council agrees that the concept is great, but there is concern about feature
+                request creep.</item>
+<item>Discussion about whether Council should support freestanding TEI tools in the
+                core repository (this would be a new category of stylesheets, etc. to
+                support).</item>
+<item>MH: two different questions: 1) just let oddbyexample sit in the repository? 2)
+                Should Council actively seek to maintain freestanding tools?</item>
+<item>KH updated wiki to document oddbyexample</item>
+<item><hi style="italic">Action on MH: proof and expand wiki documentation for
+                oddbyexample by KH <ref target="https://wiki.tei-c.org/index.php/Oddbyexample">http://wiki.tei-c.org/index.php/Oddbyexample</ref>.</hi></item>
+<item><hi style="italic">Action on SR: review the tools, add ons, and other code
+                currently in the TEI repository that perhaps should be removed (because they are not
+                core to the functioning of the Guidelines).</hi></item>
+<item>Wider problem: we need clear, obvious explanation of tools, add on, stylesheets,
+                etc. because most users don’t know they exist/are available. <hi style="italic">Action
+                on LB / KH: to find the text SR drafted, edit it, and tell KH where to put it on the
+                website.</hi></item>
+<item>Council agrees that for now, oddbyexample should be a separate add-on tool
+                documented in the wiki, while a future Roma should consider supporting the
+                functionality of generating an odd from your provided encoded texts.</item>
+</list>
+</item>
+<item><ref target="http://purl.org/TEI/Bug/3376456">http://purl.org/TEI/Bug/3376456</ref> (deprecate use of <gi>gram</gi> except as a
+              child of <gi>gramGrp</gi>). Waiting on KH and LB to formulate deprecation procedure,
+              as assigned yesterday. <hi style="italic">Action on LB: When deprecation procedure is
+              formulated, deprecate use of <gi>gram</gi> except as a child of <gi>gramGrp</gi> per
+              <ref target="http://purl.org/TEI/Bug/3376456">http://purl.org/TEI/Bug/3376456</ref>.</hi></item>
+<item><ref target="http://purl.org/TEI/FR/3555191">http://purl.org/TEI/FR/3555191</ref>
+            (New element &lt; citedRange &gt; for bibliography). 
+            <list style="ul">
+<item>Discussion of possible ways of citing a range cited, as opposed to the range of an
+              entire work: <gi>biblScope</gi>, <gi>ref</gi>, or the proposed
+              <gi>citedRange</gi></item>
+<item>MH: if many examples of <gi>citedRange</gi> also include a <gi>bibleScope</gi>,
+              this will help clarify the difference for users.</item>
+<item><hi style="italic">Action on KH: create <gi>citedRange</gi>, allowing
+              <att>target</att> to point out to a source. The full description of the cited range
+              (e.g., volume, page, column, line) should simply be plain text inside
+              <gi>citedRange</gi>. The content model of <gi>citedRange</gi> will be
+              <ident type="macro">macro.phraseSeq</ident>. Change the gloss of <gi>biblScope</gi> from
+              <q>(scope of citation)</q> to <q>(scope of reference)</q>; Returning
+              to Council as needed for implementation advice (see <ref target="http://purl.org/TEI/FR/3555191">http://purl.org/TEI/FR/3555191</ref>). In
+              addition, implement new ticket (<ref target="http://purl.org/tei/fr/3570037">http://purl.org/tei/fr/3570037</ref>): add <att>unit</att> to <gi>biblScope</gi> and
+              deprecate the use of <att>type</att>.</hi></item>
+</list>
+</item>
+</list>
+</div></div>
+<div>
+<head>        12:30 – 13:30: Lunch</head>
+          </div>
+<div><head>
+        13:30 – 15:00</head>
+<div><head>&gt;
+                Board Proposals for Council Consideration (EP)
+                </head><list style="ul">
+<item>EP reports on shrinking budget, institutional membership issues. Board is
+                    assessing options for reducing costs, sustaining income, incentivizing membership.
+                    Council is invited to contribute proposals, ideas and suggestions, either as
+                    individuals or as a body.</item>
+<item>Some ideas resulting: <list style="ul">
+<item>Should one of the TEI Council Meetings be before DH Conference? (General
+                      consensus seems to be it might be a good idea, though almost no existing council
+                      members would directly benefit.)</item>
+<item>Should the size of board and/or council, and/or the number of people who attend
+                      each f2f meeting, be reduced? (Council agrees that even with a lower budget, we
+                      would want to keep the same number of members.)</item>
+<item>Should council have a limited amount of subsidy per meeting and more
+                      remotely-participating members? </item>
+<item>What is a sustainable/reasonable level of membership in the TEI consortium, both
+                      in terms of cost, and size/influence of the member (a person, an
+                      organization)?</item>
+<item>Translations: Discussed difficulties of keeping I18N of element descriptions up
+                      to date. LB mentioned translation memory systems, for example OmegaT <ref target="http://www.omegat.org/en/omegat.html">http://www.omegat.org/en/omegat.html</ref>.</item>
+<item>Translation of the guidelines, website is one way to seek buy-in from European
+                      communities.</item>
+<item>Institutional membership has only been considered from the POV of the North
+                      American university business model. In Europe, Asia, etc., institutional
+                      contribution to initiatives like TEI-C are managed differently.</item>
+</list>
+</item>
+</list>
+</div>
+<div><head>&gt;
+                Documentation on writing ODDs
+                </head><list style="ul">
+<item>We have very similar information on writing ODDs <ref target="/release/doc/tei-p5-doc/en/html/USE.html#MD">in the
+            Guidelines</ref> and <ref target="/Guidelines/Customization/odds.xml#body.1_div.2">on the
+            TEI-C website</ref>. These should be merged into one place. Where should the merged
+            documentation be? Can someone review each document to make sure it’s accurate before we
+            ask someone to merge the two? <list style="ul">
+<item><hi style="italic">Action on MH: review the ODD tutorial on the website and update
+              it as needed. New ticket created for this: <ref target="http://purl.org/tei/bug/3570106">http://purl.org/tei/bug/3570106</ref>.</hi></item>
+<item><hi style="italic">Action on KH: after Martin has finished updating the tutorial,
+              synchronize the tutorial and the Guidelines by adding any
+              <soCalled>essential</soCalled> bits from the tutorial to the guidelines (without
+              turning the prose of the Guidelines into a tutorial), and checking for consistency
+              between Guidelines and tutorial.</hi></item>
+</list>
+</item>
+<item>Questions for candidates (See David Sewell’s Email <ref target="http://lists.village.virginia.edu/pipermail/tei-council/2012/016259.html">http://lists.village.virginia.edu/pipermail/tei-council/2012/016259.html</ref>) <list style="ul">
+<item>Council would rather see a more detailed prompt for the candidate statement than a
+              list of questions to be answered.</item>
+<item>Council members who have further thoughts can send them directly to the
+              nominations committee, or to JC.</item>
+<item><hi style="italic">Action on JC: Council will discuss on list the precise wording of
+              the prompt for the candidate statement; JC to initiate, and report back to nominations
+              committee.</hi></item>
+</list>
+</item>
+</list>
+</div></div>
+<div><head>
+        15:00 – 16:30</head>
+<div><head>&gt;
+                Ticket Breakout Groups
+                </head><list style="ul">
+<item>Group A<list style="ul">
+<item><ref target="http://purl.org/TEI/FR/3565878">http://purl.org/TEI/FR/3565878</ref> (<gi>idno</gi> inside <gi>biblStruct</gi>)
+                <list style="ul">
+<item>LB has corrected the example in the Guidelines that illustrated <gi>idno</gi>
+                  as a child of <gi>biblStruct</gi>, moving the idno within <gi>monogr</gi></item>
+<item><hi style="italic">Action on LB: Add some prose to this chapter of the
+                  guidelines to put the <gi>idno</gi> within <gi>monogr</gi>, and/or
+                  <gi>analytic</gi>, and/or <gi>series</gi> (as it applies).</hi></item>
+<item>Council agrees to <emph>deprecate</emph><gi>idno</gi> as a child of
+                  <gi>biblStruct</gi>. We should not make the change now because TEI has modeled
+                  this (in example and its own practice) for too long.</item>
+<item><hi style="italic">Action on LB: fix the TEI Guidelines bibliography so that its
+                  <gi>idnos</gi> are inside <gi>monogr</gi>; see ticket <ref target="http://purl.org/TEI/FR/3565878">http://purl.org/TEI/FR/3565878</ref>.</hi></item>
+</list>
+</item>
+<item><ref target="http://purl.org/TEI/bug/3547289">http://purl.org/TEI/bug/3547289</ref> (model.gramPart and <gi>cit</gi>) <list style="ul">
+<item><hi style="italic">Action on KH: to carry out the work set out by KH and Laurent
+                  on the ticket (<ref target="http://purl.org/TEI/bug/3547289">http://purl.org/TEI/bug/3547289</ref>).</hi> This comprises: 
+<list style="ul">
+<item>Create a new model class (<ident type="class">model.structuredEntryPart</ident>) which
+                    contains as members all of the current members of <ident type="class">model.entryPart</ident>
+                    except for the grammatical features that can occur inside of <gi>gramGrp</gi>
+                    (<ident type="class">model.morphLike</ident>).</item>
+<item>Change <ident type="class">model.entryPart</ident> so that it includes as members
+                    <ident type="class">model.structuredEntryPart</ident> and
+                    <ident type="class">model.morphLike</ident>.</item>
+<item>Change <gi>cit</gi> and <gi>nym</gi> to use
+                    <ident type="class">model.structuredEntryPart</ident> instead of
+                    <ident type="class">model.entryPart</ident>.</item>
+</list>
+</item>
+<item>This will break backwards compatibility and it would also require changing
+                  examples that will be rendered invalid. We agreed to do these things
+                  neverthelesss.</item>
+</list>
+</item>
+</list>
+</item>
+<item>Group B<list style="ul">
+<item><ref target="http://purl.org/TEI/FR/3561933">http://purl.org/TEI/FR/3561933</ref> (Encoding of Standoff annotations). <list style="ul">
+<item>Council agrees with Group B who thinks that this will be a beneficial addition
+                  to the TEI and that an we should have a container element <gi>standOff</gi> as
+                  part of model.resouceLike which contains things like
+                  <gi>linkGrp</gi>/<gi>link</gi>, <gi>seg</gi>/<gi>ab</gi>/<gi>s</gi>/etc. and
+                  various other elements, including some new elements to be discussed by a later
+                  working party.</item>
+<item><hi style="italic">Action on LB / PB / MH / RW / JC: A working group including
+                  LB, PB, MH, RW, JC will come back with a formal proposal for a standoff markup
+                  container element. See <ref target="http://purl.org/TEI/FR/3561933">http://purl.org/TEI/FR/3561933</ref>.</hi></item>
+</list>
+</item>
+<item><ref target="http://purl.org/TEI/BUGS/3532022">http://purl.org/TEI/BUGS/3532022</ref> (<gi>lg</gi> should be allowed in
+                <gi>p</gi>). <list style="ul">
+<item>Group B agrees with this one and thinks it should be added to
+                  <ident type="class">model.inter</ident>, resolving any resulting ambiguous content models.
+                  After significant discussion Council accepted this decision. </item>
+<item><hi style="italic">Action on MH: implement <ref target="http://purl.org/TEI/BUGS/3532022">http://purl.org/TEI/BUGS/3532022</ref>.</hi></item>
+</list>
+</item>
+<item><ref target="http://purl.org/TEI/BUGS/3519806">http://purl.org/TEI/BUGS/3519806</ref> (<gi>name</gi> should be a member of
+                <ident type="class">att.datable</ident>). <list style="ul">
+<item>Group B agrees with this one as well, <gi>name</gi> should claim membership of
+                  <ident type="class">att.datable</ident>. Further rationalization of these should be
+                  examined.</item>
+<item>Council agrees that <gi>name</gi> should be a member of
+                  <ident type="class">att.datable</ident>; it should probably also be a member of
+                  <ident type="class">att.personal</ident> but this should be considered further by the
+                  implementor.</item>
+<item><hi style="italic">Action on JC: implement <ref target="http://purl.org/TEI/BUGS/3519806">http://purl.org/TEI/BUGS/3519806</ref>.</hi></item>
+</list>
+</item>
+</list>
+</item>
+<item>Group C <list style="ul">
+<item><ref target="http://purl.org/TEI/FR/3523791">http://purl.org/TEI/FR/3523791</ref> (an addition to <gi>timeline</gi> to record
+                stretches of time). <list style="ul">
+<item>EP proposes that Council revisit the way temporal linking is handled as a
+                  whole.</item>
+<item>LB expects that this will be addressed to some degree in the Berlin multimedia
+                  meeting in October, from which he will report back.</item>
+<item>Council agrees to close this ticket categorized as rejected. The Guidelines
+                  already supports a way to do what SR is asking for, but agree that temporal
+                  linking should be re-examined as a whole at some point in the future.</item>
+</list>
+</item>
+<item><ref target="http://purl.org/TEI/FR/3518932">http://purl.org/TEI/FR/3518932</ref> (Use <att>range</att> instead of abusing
+                <att>from</att> on <gi>span</gi>) <list style="ul">
+<item><hi style="italic">Action on GB: to submit a ticket requesting clarification in
+                  the prose of the Guidelines on the use of <att>from</att> on other elements such
+                  as <gi>locus</gi> and <gi>biblScope</gi>. Close the originating ticket <ref target="http://purl.org/TEI/FR/3518932">http://purl.org/TEI/FR/3518932</ref> as it
+                  stands as <q>won’t fix</q>.</hi></item>
+</list>
+</item>
+<item><ref target="http://purl.org/TEI/FR/3523225">http://purl.org/TEI/FR/3523225</ref> (New attribute <att>keepHyphen</att>) <list style="ul">
+<item>Council agrees not to fix this ticket because a better solution exists,
+                  involving <gi>glyph</gi> and <gi>g</gi> as suggested by LB on the ticket.</item>
+<item><hi style="italic">Action on EP: to find an example to incorporate into the
+                  Guidelines demonstrating LB’s encoding solution for the issue raised in <ref target="http://purl.org/TEI/FR/3523225">http://purl.org/TEI/FR/3523225</ref>.</hi></item>
+<item><hi style="italic">Action on LB: Add clarification of the issues raised in <ref target="http://purl.org/TEI/FR/3523225">http://purl.org/TEI/FR/3523225</ref> to
+                  the Guidelines (3.2.2) CO.html#COPU-2 existing discussion of
+                  hyphenation.</hi></item>
+<item><hi style="italic">Action on LB: to correct the definition of <gi>g</gi> in the
+                  Guidelines: <q>represents a glyph, or a non-standard character</q>
+                  following issues raised in <ref target="http://purl.org/TEI/FR/3523225">http://purl.org/TEI/FR/3523225</ref>.</hi></item>
+<item><hi style="italic">Action on LB: to close <ref target="http://purl.org/TEI/FR/3523225">http://purl.org/TEI/FR/3523225</ref> with
+                  explanation.</hi></item>
+</list>
+</item>
+</list>
+</item>
+</list>
+</div></div>
+<div><head>  16:30 – 17:30: Discussion and supper plans
+        </head><list style="ul">
+<item>Supper was at <ref target="http://www.victoriaarms.co.uk">http://www.victoriaarms.co.uk</ref>, a nearby pub run by the Oxford Preservation Trust
+            (British pub food).</item>
+<item>SR offered punting up the river for some lucky members of the Council to the
+            pub.</item>
+</list>
+</div></div>
+<div><head>
+        Friday 21 September 2012</head>
+<p>Present:</p>
+<list style="ul">
+<item>Piotr Banski (PB)</item>
+<item>Brett Barney (BB)</item>
+<item>Gabriel Bodard (GB)</item>
+<item>Lou Burnard (LB)</item>
+<item>James Cummings (JC)</item>
+<item>Kevin Hawkins (KH)</item>
+<item>Martin Holmes (MH)</item>
+<item>Paul Schaffner (PS)</item>
+<item>Sebastian Rahtz (SR)</item>
+<item>Rebecca Welzenbach (RW)</item>
+</list>
+<p>Location: Buttery, Wolfson College, Linton Road, Oxford, OX2 6UD</p>
+<div><head>
+        09:30 – 10:30</head>
+<div><head>
+            Financial issues</head>
+<p>How much does the Council have left in its
+              budget, and what should we do with it? Options are to save it for travel next year, when
+              budgets will shrink; donate it back to the main budget; or use it for a code bounty for
+              e.g. Roma rewrite (for which we might apply to the ALLC for matching funds). </p>
+</div>
+<div><head>
+            Code Bounties</head>
+<p>Code Bounties as possibility for money Council has saved through tight budgeting,
+            institutional contributions, and savings because of agglomeration of current Council
+            members:</p>
+<list style="ul">
+<item>The two main candidates for code bounties are the Roma front-end and a second ODD
+              processor. After some discussion, we came to the conclusion that in the case of an ODD
+              processor, we would be open to the use of any language/platform, but in the case of
+              the Roma ODD-editing interface, we would probably want to specify in advance a list of
+              tools/languages we would feel comfortable with taking on, since Roma will be owned and
+              operated by the TEI in the long term.</item>
+<item>Other possibilities are: tools for working with ODDs, such as an ODD-diffing tool,
+              or ODD visualization tools. Council agrees with JC that it would be a good thing if a
+              new Roma were written somewhere other than Oxford, and preferably in the larger
+              community rather than just by existing Council members. The exact specification for a
+              new ODD processor would be very difficult to write, in that there are lots of aspects
+              of ODD output which are currently undetermined. We could put out a general code bounty
+              with a list of things we are interested in, and choose among the proposals we receive.
+              KH: we have consensus that a new Roma is the sort of thing we know we need, and which
+              needs to be in place before the TEI starts to rebrand and re-advertise itself. JC: it
+              seems to be our view that the majority of a code bounty should go towards a rewrite of
+              the Roma interface. Should it be owned by us, or should it be in its own repo in SF or
+              GitHub? The consensus is that TEI-C should own a Roma rewrite. RW: it would be
+              desirable for a new Roma to be open-ended in such a way that subsequently-developed
+              ODD-processing tools could be plugged into it via some plug-in API. </item>
+<item><hi style="italic">Action on JC and LB: Resolved: JC and LB will produce a draft of
+              a code bounty for a loose specification for a Roma rewrite, which will come back to
+              Council for comments. This will include a list of preferred languages/tools, the need
+              for a plugin API etc. Council aims to release a public call in about two to three
+              months, with the idea that work will begin early in 2013.</hi></item>
+</list>
+</div>
+<div><head>
+            Options for freezing and/or archiving Lite</head>
+<p>LB has spent considerable time bringing Lite up to date, and now wants to publicize the up-to-date
+            version. Options for freezing Lite:</p>
+<list style="ul">
+<item>It is archived in the Vault and the link points permanently to that location, and
+              Lite is never changed;</item>
+<item>Every new release would include a new build of Lite, but we would not make any
+              changes at all;</item>
+<item>Or, we continue to maintain Lite (in the sense of fixing anything that gets
+              broken, but not in the sense of adding anything new to Lite).</item>
+</list>
+<p>SR: this (the last) is the way we’ve been doing it for years. JC: This is why it
+            got so out of date. We should freeze it and point at a static version. SR: That leaves
+            us in the situation that a Lite version available through Oxygen may have an element or
+            attribute that is at significant variance from the current version of TEI it’s
+            distributed with. LB: One of the features of the TEI that we advertise is the
+            possibility of building a schema against a previous version of the TEI. SR: That’s
+            great, but it’s different from distributing such a schema as an official TEI product.
+            MH: We could actually decide not to freeze it; it’s not very onerous to maintain it. KH:
+            The same arguments apply to TEI Tite. JC: So it seems that we’re reversing our decision
+            from Ann Arbor (2012-04) on Lite and Tite which was that we didn’t want to take on the
+            maintence burdern of Lite. KH: It seems odd that the TEI would give up on its
+            entry-level tutorial customization, which is one of its most popular ones. The big
+            advantage of the Lite prose is that it’s a manageable overview of the salient features
+            of TEI. SR: Perhaps <q>freezing</q> should mean freezing of the intellectual
+            effort that gave rise to the original subset. <hi style="bold">Conclusion</hi>: we
+            reverse our decision to freeze Lite, and will instead continue to build it with every
+            release, as well as making an effort to keep the documentation up to date. This applies
+            to Tite as well. In the release notes for the next version we will note that the prose
+            has been brought up to date, and that the naming convention has changed.</p>
+</div>
+<div><head>
+            Move TEI to GitHub?</head>
+<p>Already discussed: we might think about
+            separating out the Guidelines from other stuff, so individual scripts may end up on
+            GitHub under other people’s control. There is an ongoing action for SR to gradually
+            remove his non-Guidelines-related tools and utilities from the main repository, for the
+            sake of clarity. RW: We also discussed the issue of moving to Git within SF; this might
+            give us some advantages in terms of multiple repos or sub-repos. MH: Can someone be
+            tasked with investigating all the features of Git on SF and GitHub, as well as the
+            possibilities for granularity of permissions in SF’s Subversion, so we can answer these
+            questions definitively? KH: It would be a good goal that everything not essential to the
+            Guidelines should be in a separate repository, which lots of people could have access
+            to, without the possibility of breaking the Guidelines tools. SR: My current plan is to
+            cut back what is already there, and then fork it when it’s minimal Guidelines-only
+            material. GB: Once this is done, we probably do have a reason to be working with Git.
+            <hi style="italic">Action on SR: SR will continue his work to pare down the repository and
+            remove non-Guidelines-related material.</hi></p>
+</div>
+<div><head>
+            Deprecation of TEI P4</head>
+<p>JC: The community has been warned
+            previously that P4 is due to be deprecated, and now we need to take the steps necessary
+            to enact that, such as remove its prominence from the website from November 2012. LB: An
+            informal survey of well-known TEI projects shows that about 90% of them are still using
+            P4. PS: Is it possible to generate a P4 schema now, using available tools? MH: PizzaChef
+            still works, and is linked on the TEI website. JC: Existing P4 DTDs will continue to
+            work, and Guidelines will still be available (from the Vault). We might as well leave
+            PizzaChef available as long as it’s clear that it’s not supported. PB: P4 should
+            definitely be removed from the Oxygen package. LB: We need to have a small publicity
+            campaign and write to a small list of people who need to be reminded again (such as
+            oXygen). PB: Oxygen does take statistics of who is using what; we should contact George
+            and ask him how many people are still using P4 actively. LB: Note that other XML
+            languages don’t have more than one version available (e.g., DocBook) in
+            </p>
+<p><title>oXygen/</title>.JC: Who else apart from SyncRO Soft and the TEI-L list should be
+            contacted and warned? If anyone has other suggestions, let JC know. <hi style="italic">Action on JC: Contact stakeholders to remind them of upcoming TEI P4 deprecation;
+            notify TEI-L community; Liaise with KH and David Sewell (TEI-C Webmaster) on changes to
+            website.</hi>
+</p></div></div>
+<div><head>
+        10:30 – 12:30</head>
+<div><head>&gt;
+            Ticket Breakout Groups
+            </head><list style="ul">
+<item><ref target="http://purl.org/TEI/FR/3556778">http://purl.org/TEI/FR/3556778</ref>
+              (retaining punctuation marks in the text of a TEI document). PB, BB and RW: There are
+              four parts to this ticket, including issues with whether you should retain punctuation
+              such as quote marks within an encoding, and if so, whether they should be inside or
+              outside an element. Some members are reluctant to make clear recommendations one way
+              or the other, but we should recommend that people document their practice, whatever it
+              is. Chapter 3.2.1 doesn’t mention that you might use the <gi>quotation</gi> element in
+              the header to explain your encoding practice, and it should. The implication of the
+              Guidelines text is that you should include them, and this should be made explicit. A
+              new attribute might be created which would enable you to specify whether quotation
+              marks are inside or outside the element. This might apply to other punctuation marks,
+              such as brackets around stage directions. MH: there are already ways to do this,
+              including the use of <att>rendition</att>/<gi>rendition</gi>. BB: that’s not the same thing at all; this
+              starts from the assumption that you have captured the punctuation marks, and you want
+              to document where you put them. LB: The element <gi>quotation</gi> is too specific,
+              perhaps, and should be <gi>punctuation</gi>. RW agrees. One proposal would be to
+              introduce a new element <gi>punctuation</gi> in <gi>encodingDesc</gi>, and deprecate
+              <gi>quotation</gi>. PB and BB are reluctant to remove <gi>quotation</gi>. Aside:
+              <att>form</att> is deprecated, but the prose doesn’t say so. GB: Should we have a
+              <gi>punctuation</gi> element that contains <gi>quotation</gi>? PS &amp; GB: This
+              should be repeatable because different punctuation might be handled differently. LB:
+              this (like other sibling elements) need not be machine-processable; that would be
+              difficult to do. <hi style="italic">Action on RW and LB:define a new element called
+              <gi>punctuation</gi> which is a member of 
+         [<ident type="class">model.encodingDescPart</ident>] 
+                <ident type="class">model.editorialDeclPart</ident> and
+              <ident type="class">att.declarable</ident>, with prose content, and some attribute(s) defining the
+              handling of punctuation marks. It should be repeatable.</hi></item>
+<item><ref target="http://purl.org/TEI/BUGS/3515805">http://purl.org/TEI/BUGS/3515805</ref> (confusing semantics of <att>ns</att>). MH, SR
+              &amp; LB: There was a discussion in January about whether <att>ns</att> means the
+              input namespace or the target output namespace for the thing being created/described.
+              The <att>mode</att> attribute indicates whether or not you’re intending to change this
+              or just import it. On looking at the specific example concerned, it turns out there is
+              no situation in which you need <att>ns</att> to specify the input; instead, you can do
+              this by specifying a namespace prefix on the <att>ident</att>. <hi style="italic">Action on SR: Test Roma to see what it does with a namespace prefix on <att>ident</att>;
+              clarify the examples in Chapter 23; create an attribute class to hold <att>ns</att>
+              (instead of defining it separately on <gi>elementSpec</gi> and friends). </hi></item>
+<item><ref target="http://purl.org/TEI/FR/3548625">http://purl.org/TEI/FR/3548625</ref>
+              (Extend the enumerated values for <gi>list</gi>/<att>type</att>). KH, GB &amp; PS: The
+              values given for <gi>list</gi>/<att>type</att> are a strange mix of presentational and
+              semantic. However, making a change to this would be massively disruptive to existing
+              documents, so a change is not recommended, but the Guidelines should be expanded to
+              show more examples. Ideas for completely redesigning list should be added to the P6
+              Dev page. To answer the ticket itself, we should add examples which use
+              <att>rend</att> or the putative <att>style</att>. <hi style="italic">Action on PS: expand
+              the Guidelines with more examples of the use of <gi>list</gi>/<att>type</att>,
+              including some which use the putative <att>style</att> attribute; add a section to the
+              P6 Development page to initiate discussion of future values.</hi></item>
+</list>
+</div></div>
+<div>
+<head>        12:30 – 13:30: Lunch</head>
+        </div>
+<div><head>
+        13:30 – 17.30 </head>
+<div><head>
+            Experimental modules, lists of customizations, etc.</head>
+<p>This arises out of a discussion in early September on the tei-council list.</p>
+<list style="ul">
+<item>SR should explain the purpose of providing downloadable customizations.</item>
+<item>On <ref target="/Guidelines/Customization/">http://www.tei-c.org/Guidelines/Customization/</ref> and <ref target="/Guidelines/Customization/odds.xml">http://www.tei-c.org/Guidelines/Customization/odds.xml</ref>, are any modules
+              labeled as experimental that should not be, or any modules not labeled but should be?
+              (Note that currently the dictionaries module is documented differently on these two
+              pages.) SR said that none are experimental any more.</item>
+</list>
+</div>
+<div><head>&gt;
+            Roma interface, supported customizations and documentation
+              </head><list style="ul">
+<item>Do we agree with SR removing MS, dict, speech, drama, and corpus from the
+                <q>Create Customization from template</q> drop-down menu at <ref target="/Roma/">http://www.tei-c.org/Roma/</ref>? SR noted that
+                Bare, Lite, and Tite make sense since they are coherent and have a purpose, and
+                that SVG, MathML, XInclude, ITS, and ODD are also sensible since they involve
+                non-obvious techniques which you can’t recreate easily in Roma. But the
+                remaining five are are not meaningfully useful or documented, nor do they follow any known
+                recommendation. JC said they were supplied here as simple example customisations.
+                MH suggested separating out such options as “advanced”. </item>
+<item>Should we provide templates for community-created customisations in Roma that
+                are reasonably mature and well-supported, such as EpiDoc? What would be our
+                management process for this? </item>
+<item>Should we begin generating HTML and PDF documentation for any modules besides
+              Lite and Tite (and putting them in <ref target="/release/doc/tei-p5-exemplars/">http://www.tei-c.org/release/doc/tei-p5-exemplars/</ref>)? </item>
+<item>For the two sections of customizations at <ref target="/Guidelines/Customization/">http://www.tei-c.org/Guidelines/Customization/</ref>: 
+              <list style="ul">
+<item> Do we want to rename the first heading <q>Customizations provided by the TEI
+                Consortium</q> to <q>Customizations maintained by the TEI Consortium</q> or 
+                <q>Customizations supported by the TEI Consortium</q>? </item>
+<item>Can we clarify what <q>more restricted or experimental</q> means? These are not
+                the same thing, and it isn’t clear what either means. </item>
+<item>Do we want to set up a procedure for deciding what can be added to the <q>TEI
+                Community Customizations</q> or for periodically revisiting those listed there? Even
+                if not, should we just go ahead and remove MEP from the list since the links are
+                broken and it’s a P3 thing? </item>
+<item> Do we find the heading <q>TEI Community Customizations</q> clear enough, or do we
+                want to add a paragraph here explaining it? </item>
+</list>
+</item>
+</list>
+</div>
+<div><head>
+            Review of the changes to the Roma front page</head>
+<p>The Council
+            drafted and redrafted the wording of the options on the first page of Roma. Changes were
+            made in an effort to clarify the differences between working on a basic template and
+            working on an existing <soCalled>complete</soCalled> customization such as Lite. It was also decided that
+            the link to community customizations on the Roma front page should actually point to the
+            Guidelines/Customizations page on the TEI website, rather than to the community
+            customizations on the wiki page, which has some obsolete customizations, and is not
+            informative enough to be useful. <hi style="italic">Action on KH: Improve TEI-C Website
+            page on customizations.</hi></p>
+</div>
+<div><head>
+            Ticket Processing</head>
+<list style="ul">
+<item><ref target="http://purl.org/TEI/FR/3519866">http://purl.org/TEI/FR/3519866</ref>
+            (<att>rend</att> from <ident type="datatype">data.word</ident> to text). 
+            LB apologises profoundly for the typo on his ticket
+            comment. The three options under consideration are: 
+<list style="ul">
+<item>Status Quo: <att>rend</att> stays the same (multiple non-sequential, space-separated tokens similar to html’s <att>class</att> attribute), clarified in Guidelines. </item>
+<item>Allow space in <att>rend</att> (as per ticket request) and clarify Guidelines.</item>
+<item>Space is only for multiple non-sequential tokens in <att>rend</att> but create new <att>style</att>
+            attribute with a documented Formally Defined Language for it (and create <gi>styleDesc</gi>
+            element or similar solution for documenting the style language used). </item>
+</list>
+            JC argued for #1,
+            but in the end Council voted in favour of #3. Council then discussed at length the extra
+            suggestion by LB that <gi>rendition</gi> and <att>rendition</att> be renamed to <gi>styleDesc</gi>
+            and <att>styleRef</att>, to minimize confusion. Council voted 5 to 4, with one abstention, in
+            favour of this. Since this was indecisive, and would have such backwards compatibility
+            issues, this question should be spun off into a separate ticket and discussed over the
+            next few months. <hi style="italic">Action on LB: implement the <att>style</att> attribute per <ref target="http://purl.org/TEI/FR/3519866">http://purl.org/TEI/FR/3519866</ref>.</hi><list style="ul">
+<item><att>style</att> will be created as string (<ident type="datatype">data.text</ident>) in <ident type="class">att.global</ident>.</item>
+<item>It will be defined as containing a formal style language.</item>
+<item>All three attributes (<att>rend</att>, <att>rendition</att>, <att>style</att>) can be used in
+              combination.</item>
+<item>A new element, which will be declarable, to specify the style language will also
+              be created after discussion on council list.</item>
+<item><att>scheme</att> on <gi>rendition</gi> should be moved into its own class, so that the new
+              element can have it.</item>
+<item><hi style="italic">Action on JC: <att>rend</att> references throughout Guidelines will be
+              clarified to note it is a sequence-indeterminate bag of space-separated tokens.</hi></item>
+</list>
+</item>
+<item><ref target="http://purl.org/TEI/FR/3521288">http://purl.org/TEI/FR/3521288</ref>
+            (Dead Link for <ref target="http://www.ons.gov.uk/about-statistics/classif">http://www.ons.gov.uk/about-statistics/classif</ref>). The original ticket morphed into a discussion of the use of <att>scheme</att> and <att>code</att>;
+            since the latter normally points to a subsection of the former, there is no need for
+            both. <hi style="italic">Action on MH: The original issue of the broken link in <ref target="http://purl.org/TEI/FR/3521288">http://purl.org/TEI/FR/3521288</ref> must be fixed.</hi>
+            (assigned to MH). <hi style="italic">Action on JC and LB: The <att>scheme</att> attribute should be redefined so that it need
+            not point to a <gi>taxonomy</gi> element; it can point to an external scheme. Similarly,
+            <att>code</att> should be defined as a pointer to some kind of external category or to a
+            <gi>category</gi> element. A new ticket should be raised for this.</hi> SR: The use of these attributes duplicates the purpose of
+            <att>key</att> and <att>ref</att>. This problem exists elsewhere (e.g. <gi>socEcStatus</gi>), so someone
+            needs to look at the issue more generally. <hi style="italic">Action on JC: While working on 
+            <gi>person</gi>, <gi>name</gi> etc. in another ticket, examine the parallelism between <att>scheme</att>, <att>code</att>, <att>key</att> and <att>ref</att>. </hi></item>
+<item><ref target="http://purl.org/TEI/FR/3522043">http://purl.org/TEI/FR/3522043</ref>
+            (Version numbers link to page about versions?) KH: The page we could link to at that
+            point tells you about versions, but does not explain the numbering of versions; that
+            information (including a link back to the Guidelines — the P5 page mentioned in KH’s
+            last comment) should be included on the page to be linked to. <hi style="italic">Action on MH: Implement linking of the  “Version 2.1.0” at the
+              bottom of each HTML page to something, possibly to
+              http://www.tei-c.org/Guidelines/P5/#previous, or better, to something which explains
+            what version numbers mean and then links on to the above location.</hi></item>
+<item><ref target="http://purl.org/TEI/FR/3416130">http://purl.org/TEI/FR/3416130</ref>
+            (Allow certainty etc. inside milestoneLike elements). GB and LB have stated their
+            positions on the ticket, and GB has previously reported to the Council list on this. The
+            main objection is that hitherto empty elements would now have content. LB: A compromise
+            would be the introduction of a new class <ident type="class">model.metaMark</ident>, along with revision of the
+            content models for the proposed elements from <code>(EMPTY)</code> to <code>(model.metaMark*)</code>. SR: this
+            fails because <gi>certainty</gi> has <ident type="class">model.glossLike</ident> in its content model, so being able
+            to put <gi>certainty</gi> in <gi>gap</gi> will bring the possibility of textual content
+            in a <gi>desc</gi>. This makes many people uneasy because existing processors may
+            suddenly start displaying text from the <gi>desc</gi> where nothing was displayed
+            before. Following an inconclusive vote, this ticket was deferred pending further
+            discussion on council list. <hi style="italic">Action on ALL Council: Discuss <ref target="http://purl.org/TEI/FR/3416130">http://purl.org/TEI/FR/3416130</ref> further.</hi></item>
+<item><ref target="http://purl.org/TEI/FR/3064757">http://purl.org/TEI/FR/3064757</ref> (XML construct encoding within Schematron).
+            Council voted to reject the ticket, but undertake to look at consistency of encoding in
+            the existing Schematron rules. <hi style="italic">Action on SR: reject and close <ref target="http://purl.org/TEI/FR/3064757">http://purl.org/TEI/FR/3064757</ref>, but examine consistency of encoding in all current Schematron rules.</hi></item>
+<item><ref target="http://purl.org/TEI/FR/3475007">http://purl.org/TEI/FR/3475007</ref> (New section on encoding text directionality)
+            <hi style="italic">Action on MH: consult such people as D. Anderson, F. Sasaki and M. Bingenheimer, along with the TEI-L list, to put together a group to create a recommendation for a new 
+              Guidelines section on encoding text directionality.</hi></item>
+<item><ref target="http://purl.org/TEI/Bug/3480650">http://purl.org/TEI/Bug/3480650</ref> (<att>cRef</att> is a mess).LB and SR: Suggestion on ticket
+            accepted. <att>cRef</att> will be moved into a class, and given the datatype <ident type="datatype">data.text</ident> (it must be
+            so since canonical references can contain spaces). The bulk of the discussion on the ticket is
+            tangential. The last part of the original suggestion is not right, though; <ident type="datatype">data.pointer</ident>
+            is wrong for <att>cRef</att> because of the spaces. <hi style="italic">Action on LB: move <att>cRef</att> into a class, and give it the datatype <ident type="datatype">data.text</ident> per <ref target="http://purl.org/TEI/Bug/3480650">http://purl.org/TEI/Bug/3480650</ref>.</hi></item>
+<item><ref target="http://purl.org/TEI/Bug/3413346">http://purl.org/TEI/Bug/3413346</ref> (Deprecation of <ident type="datatype">data.key</ident> and <ident type="datatype">data.word</ident>
+            attributes). GB &amp; JC: The main conclusion was that most of the ticket needs more
+            discussion, so the ticket should remain open. Some of the proposals in the ticket (e.g.
+            that a handful of attributes such as <att>lemma</att> etc. would be better served by a pointer of
+            some kind) are wrong, however. Reassigned back to MH, who proposed it, to close this
+            ticket and open a cleaner one on the topic of deprecation of data.key. <hi style="italic">Action on MH: close <ref target="http://purl.org/TEI/Bug/3413346">http://purl.org/TEI/Bug/3413346</ref> and open a cleaner ticket on the topic of deprecation of <ident type="datatype">data.key</ident>.</hi></item>
+<item><ref target="http://purl.org/TEI/FR/3547558">http://purl.org/TEI/FR/3547558</ref> (*Spec elements could have <gi>keywords</gi> or
+            use <att>ana</att>). BB &amp; MH: We suggest that you could just create <gi>classSpec</gi>s for this
+            purpose, instead of using another mechanism.The <gi>classSpec</gi> might have only this purpose.
+            This would require the addition of an extra value for <gi>classSpec</gi>/<att>type</att>, something like
+            <code>adhoc</code>, since such a class would be neither an attribute class nor a model class, but
+            other than that, nothing disruptive would result, and a full description of what is
+            meant by the categorization could be supplied in the <gi>classSpec</gi>. If at some point you
+            wanted to do something with the class, you could make use of it in your <gi>schemaSpec</gi>, and
+            change its <att>type</att> from <code>adhoc</code> to something else. LB feels this proposal is too vague to be
+            useful because of the absence of use-cases. <hi style="italic">Action on JC: add more use-cases to <ref target="http://purl.org/TEI/FR/3547558">http://purl.org/TEI/FR/3547558</ref>.</hi></item>
+<item><ref target="http://purl.org/TEI/FR/3561938">http://purl.org/TEI/FR/3561938</ref> (New tag element for grouping elements). PS
+            &amp; RW: As described, the ticket is very broad, and would require a meta-element of
+            which all the existing elements would be children. As stated, it’s far too large and
+            vague; the use-cases are all met by existing mechanisms; and the stated reasons such as
+            improved processing speed are red herrings. Ticket to be rejected and closed. Assigned
+            to MH. <hi style="italic">Action on MH: Reject and close <ref target="http://purl.org/TEI/FR/3561938">http://purl.org/TEI/FR/3561938</ref> with an explanation.</hi></item>
+<item><ref target="http://purl.org/TEI/BUGS/3523082">http://purl.org/TEI/BUGS/3523082</ref> (XPointer schemes may not nest, but see ch.
+            16). <hi style="italic">Action on GB: incorporate <ref target="http://purl.org/TEI/BUGS/3523082">http://purl.org/TEI/BUGS/3523082</ref> into the SOM group discussion of TEI Pointers.</hi></item>
+<item>Final discussion on release date and plan: PB will be the release technician.
+            Release day will be determined by PB’s schedule, and all source changes must be
+            submitted three days before release day. Following that, all Council members must proof
+            and check for errors and inconsistencies. <hi style="italic">Action on JC: Organize Council
+            work for next release.</hi></item>
+<item>Council discussed the scheduling of meetings, specifically whether we should
+            piggy-back on e.g. the DH conference instead of having separate meetings. The consensus
+            was that there currently is no significant advantage to trying to do this, since there
+            is no conference where more than a few members are likely to go. </item>
+<item>JC thanked all Council members for their time and commitment and reminded them to
+            attend to tickets and actions assigned to them.</item>
+</list>
+</div></div>
+</div>
+</body><!-- #post-## --></text></TEI>

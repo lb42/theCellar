@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/home/lou/Public/TEI/TEICSS/tei.css" type="text/css"
+ ?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:t="http://www.tei-c.org/ns/1.0" n="2015-08"><teiHeader><fileDesc><titleStmt><title>Minutes of the TEI Technical Council</title><meeting n="2015-08" when="2015-08-31">TEI Technical Council online
+     meeting : <date>31 August 2015</date></meeting></titleStmt><publicationStmt><distributor>TEI Website</distributor><idno>TCM072</idno></publicationStmt><sourceDesc><p>Retagged from a WordPress HTML file</p></sourceDesc></fileDesc><revisionDesc><change when="2023-04-27">Archival header confected</change><change>Extracted from Word Press article with id post-21928</change></revisionDesc></teiHeader><text><body><div>
+		
+		<!-- <div class="teiheader"><filedesc><titlestmt><title></title><author>TEI Technical Council</author></titlestmt><editionstmt><edition><date>2015-09-18</date></edition></editionstmt><publicationstmt>
+<p>unknown</p>
+</publicationstmt><sourcedesc><p>Converted from a Word document</p>
+<p>      </sourcedesc></filedesc><encodingdesc><appinfo><application id="docxtotei" ident="TEI_fromDOCX" version="2.15.0"><label>DOCX to TEI</label>
+        </application></appinfo></encodingdesc><revisiondesc><listchange><change><date>2015-09-18T15:41:48Z</date><name/></change></listchange></revisiondesc></div> -->
+<p>Teleconference 2015-08-31 14:00 UTC</p>
+	 <p>Present</p><list style="ul">
+<item>Hugh Cayless (HC)</item>
+<item>Syd Bauman (SB)</item>
+<item>Peter Stadler (PWS)</item>
+<item>James Cummings (JC)</item>
+<item>Martin Holmes (MH)</item>
+<item>Lou Burnard (LB)</item>
+</list>
+	 <p>Apologies</p>
+<list style="ul">
+<item>Stefanie Gehrke (SG)</item>
+<item>Raff Viglianti (RV)</item>
+</list>
+<p>started 14:06; ended 15:51</p>
+<div><head>Agenda
+        </head><list style="ul">
+<item>Conference and F2F<list style="ul">
+<item>Sunday meeting is booked in same
+                place as business meeting in the Mama Shelter Hotel</item>
+<item>The meeting will be
+                there all day Sunday 25 October, then use the workshop venue room for Monday 26
+                October and first half of Tuesday 27 October</item>
+</list>
+</item>
+<item>Migration Status and Issues<list style="ul">
+<item>Remember, there is a pointer
+                to the Sourceforge repository and a TEI web page with instructions for using it on
+                the Guidelines’ index page (<ref target="https://sourceforge.net/p/tei/bugs/766/"><hi style="underline color(1155CC)">Bug #766</hi></ref>) There is also other
+                documentation here and there which points specifically to SF. And legacy URLs which
+                point there from many systems. We’ll have to track those down.</item>
+<item>JC and MH
+                would be reluctant to move if SF were more trustworthy. LB confirms that using
+                Subversion on GitHub “nearly works”. HC worries about branching. All agree that if
+                we’re moving to GitHub, we should move to git too. Those skilled with git should
+                help those who are new to it. Practice is required. MH suggests that the repo should
+                be called “P5” instead of “Guidelines”. PWS asks whether we’ve moved yet or not. HC:
+                The “Guidelines” (=P5) one can, if we agree, be the repo going forward. We should
+                use Guidelines-Test for playing around and migrating tickets. JC points out that
+                Guidelines = TEI as it has more than P5 in it. (Action on JC: Rename Guidelines
+                Repository on TEIC github organisation. DONE). Should we move now or wait until
+                after a release? Some disagreement. LB and SB feel it’s vital to keep the rhythm of
+                the releases going, and put off the migration; others fear that SF is now so
+                unreliable that it’s justifiable to defer a release. Consensus seems to be to move
+                to GitHub, and try to release from there, with a backup plan to push from
+                GitHub/master to SF, and build from there. I.e., HC &amp; MH will work on release
+                process from GitHub for 2 weeks, and then decide which we do.</item>
+</list>
+</item>
+<item>Pure ODD and DTDs<list style="ul">
+<item>Problem is that in <hi style="italic">impureODD</hi> there are some redundant &lt;rng:group&gt; elements inserted by
+                the wise men of long ago to ensure that DTD generation worked correctly (i.e. had
+                parens in right places). &lt;rng:group&gt; is mostly correctly translated as
+                <gi>sequence</gi> in pure odd. But we have a schematron rule which prohibits
+                <gi>sequence</gi>s of only one thing. </item>
+<item>Simply wrapping all %model.xxx; in
+                parens won’t work: it generates error for mixed content models</item>
+<item>Trying to
+                figure out what’s going on in odd2dtd.xsl is Hard. Very Hard. You may think
+                diamonds, granite, or tungsten are pretty hard. They are like yoghurt in comparison
+                to this.</item>
+<item>Cunning plan — post-tweak the p5subset.xml file to add spurious
+                <gi>sequence</gi> elements looks promising. LB has so far identified 92 cases which
+                need tweaking. SB volunteers to write the hack itself.</item>
+</list>
+</item>
+<item><gi>xenoData</gi> (SB):<list style="ul">
+<item>categorization: <gi>xenoData</gi>
+                currently has a derived @type with values “source” and “transcription”; this is
+                wrong, as <gi>xenoData</gi> is repeatable and categorizable, so @type is needed for
+                categorization; i.e., @type is where “this is hand-generated METS information” or
+                “this Dublin Core generated by program X” should go. But where then does “source” vs
+                “thisTEI” go? SB would prefer to create a new @about, @describes, or @scope for
+                “source” vs “thisTEI”.<lb/>General consensus in favour of @scope with suggested
+                values of source/transcription/other?. Would also be a member of att.typed to give
+                users the option to categorize as they need to.</item>
+<item>since we’re letting
+                non-XML data in, is an @encoding or similar necessary? (SB wonders if permitting
+                &lt;tei:binaryObject&gt; as a child of <gi>xenoData</gi> would do the trick?)
+                Consensus is that @encoding is not needed, at least initially.</item>
+</list>
+</item>
+<item>Abstract Model enforcement with Schematron<list style="ul">
+<item><ref target="https://github.com/TEIC/TEI/commit/fc6d0e79f12e90b09c37c89200f36d453e27c10c"><hi style="underline color(1155CC)">https://github.com/TEIC/TEI/commit/fc6d0e79f12e90b09c37c89200f36d453e27c10c</hi></ref></item>
+<item>Basic point is global checking that, e.g., nowhere is there a div inside
+                a p, and other similar things which should be true. Will support the proposed
+                changes to the appcrit model that JC still worries about, this will stop people
+                doing stupid stuff, hopefully, for those using schematron only</item>
+<item>Need to
+                worry about what <gi>p</gi>-inside-<gi>p</gi> situations are, in fact, aligned with
+                abstract model (e.g., p/note/p). HC will continue implementing, but will talk to SB
+                about how more automated Schematron generation based on the class system might be
+                achieved. JC thinks there must be a better way we can generate this even if it
+                involves revision of the class system. (He suggests pure ODD localisation of content
+                models but SB says this won’t help.)</item>
+</list>
+</item>
+<item>Updates needed to language identification (SB)<list style="ul">
+<item>SB
+                informs Council the language identification parts of Guidelines need some updating —
+                volunteers to do the work himself, but needs guidance on where (Sourceforge vs
+                GitHub) and (if using `git`) how to create ticket, make changes, and test
+                them.</item>
+</list>
+</item>
+<item>TEI Simple (JC)<list style="ul">
+<item>JC informs Council that the TEI Simple
+                project is working hard. He has made available draft Spec files for inclusion in the
+                Guidelines for the Processing Model at <ref target="https://github.com/TEIC/TEI-Simple/tree/master/guidelines-specs"><hi style="underline color(1155CC)">https://github.com/TEIC/TEI-Simple/tree/master/guidelines-specs</hi></ref> and
+                is drafting prose to go with these for the TD chapter. It would be nice to get this in
+                the next release. The TEI Simple customization can be added to a later release if
+                not ready. JC is now working on the “Performance Indicators” which is a
+                <gi>taxonomy</gi> with set of nested categories indicating what kinds of markup you
+                can expect a text to have. (e.g. are there names, do they have @ref, etc.)
+              </item>
+</list>
+</item>
+<item>Next Release? Who? When? Where? What? Why?<list style="ul">
+<item>Who = a panel
+                of experts</item>
+<item>When = early–mid October; 1 October Freeze</item>
+<item>Where
+                = internet</item>
+<item>What = include <gi>xenoData</gi>, pureODD improvements, maybe
+                <gi>p</gi>-inside-<gi>rdg</gi>, etc.</item>
+<item>Why = it’s our
+                job</item>
+<item>Release 2.9.0 Codename: <hi style="bold color(0B5394)">Stormageddon</hi></item>
+</list>
+</item>
+</list>
+</div>
+	</div></body><!-- #post-## --></text></TEI>

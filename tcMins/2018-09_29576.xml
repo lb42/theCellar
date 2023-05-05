@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/home/lou/Public/TEI/TEICSS/tei.css" type="text/css"
+ ?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:t="http://www.tei-c.org/ns/1.0" n="2018-09"><teiHeader><fileDesc><titleStmt><title>Minutes of the TEI Technical Council</title><meeting n="2018-09" from="2018-09-07" to="2018-09-08">TEI Technical
+     Council ftf meeting : <placeName>Tokyo</placeName>, <date>07–08 September 2018</date></meeting></titleStmt><publicationStmt><distributor>TEI Website</distributor><idno>TCM105</idno></publicationStmt><sourceDesc><p>Retagged from a WordPress HTML file</p></sourceDesc></fileDesc><revisionDesc><change when="2023-04-27">Archival header confected</change><change>Extracted from Word Press article with id post-29576</change></revisionDesc></teiHeader><text><body ><div><p><hi style="strong">Meeting time:</hi></p><list style="ul">
+<item>09:00 EDT, 14:00 BST, 15:00 CEST</item>
+<item>Started @ ~12:08Z, ended @ ~13:37Z.</item>
+</list><p><hi style="strong">Present:</hi></p><list style="ul">
+<item>Syd Bauman (SB)</item>
+<item>Elisa Beshero-Bondar (EB)</item>
+<item>Vanessa Bigot Juloux (VBJ)</item>
+<item>Hugh Cayless (HC)</item>
+<item>James Cummings (JC) [arrived 10 minutes late]</item>
+<item>Elli Mylonas (EM) [leaves @ 13:34Z]</item>
+<item>Martina Scholger (MS)</item>
+<item>Peter Stadler (PS) [leaves @ 13:05Z]</item>
+<item>Sarah Stanley (SS)</item>
+<item>Raff Viglianti (RV)</item>
+</list><p><hi style="strong">Apologies/Not Present:</hi></p><list style="ul">
+<item>Alex Bia (AB)</item>
+<item>Magdalena Turska (MT)</item>
+</list><div type="h2"><head>Congrats and welcome</head><list style="ul">
+<item>Council welcomes new member-to-be Vanessa Bigot Juloux.</item>
+<item>JC is VBJ mentor; EB volunteers to help, too.</item>
+</list></div><div type="h2"><head>Planning Spring F2F</head><list style="ul">
+<item>our options are:</item>
+<item>MT: interest from Warsaw University for hosting our next meeting,perhaps April or May?</item>
+<item>In conjunction with XML Prague (February 7–9)?</item>
+<item>EB offered to host the meeting at Brown University, Providence? March 25–29 would be good, it is Spring Break at Brown.</item>
+<item>RV: could approach Folger Library in DC (better later than February).</item>
+<item>JC: Newcastle University?
+<list style="ul">
+<item>JC: Happy to have the meeting in NCL (fairly easy to get to, good transport). But would be better to have very late spring.</item>
+</list>
+</item>
+<item>JC: Another option go somewhere that TEI promotion would be useful, and trade use of rooms for some of us giving papers at a TEI Day of some sort.</item>
+<item><hi style="b">Action on</hi> MS to remember each potential organizer — i.e. RV, EM, JC, and MT to see what’s feasible for Spring meeting location with due date of next Council meeting.</item>
+</list></div><div type="h2"><head>General discussion on F2F meetings</head><list style="ul">
+<item>General discussion on F2F meeting: should we continue having Council F2F at same time as Member’s Meetings?
+<list style="ul">
+<item>PS: suggests we disconnect — shorter travel, more time for us to meet.</item>
+<item>EM and EB think we should continue with it: good for transparency of Council business, and also to be sure Council members are present at conference, and less trips away.</item>
+<item>SB sees the logic in PSs suggestion, but points out that travel budgets are an issue for us. Should we do 3 <hi style="i">full</hi> days (or 4…) instead of 2.5? SB votes for 3 full days, possibly split as ½ day, 2 whole days, ½ day. JC agrees with SB. 3 full days minimum (even if split). +1 from PS.</item>
+<item>There seems to be consensus for a full 3 days.</item>
+</list>
+</item>
+</list></div><div type="h2"><head>Monthly date for the teleconference</head><list style="ul">
+<item>Is the last Thursday of the month still ok (08:00 EDT, 13:00 BST, 14:00 CEST)?
+<list style="ul">
+<item>JC: I’m usually teaching Thursdays 12:00–15:00 until December. Perhaps a doodle poll?</item>
+<item>SB: +1 for Doodle poll</item>
+<item>Action on MS to set up a new doodle with  hours from 12:00Z to 21:00Z, Monday–Friday.</item>
+</list>
+</item>
+</list></div><div type="h2"><head>Planning of next release</head><list style="ul">
+<item>January 2019: suggested dates are January 21–22.
+<list style="ul">
+<item>Release technicians: HC &amp; EM volunteer.</item>
+</list>
+</item>
+<item>Stylesheets to be released tomorrow(!) SB &amp; RV are release techs, planning on starting late morning (ET); MH will be on board to help starting ~11:30 ET.</item>
+<item>2019 summer release is planned for July or later: EB and VBJ volunteer as release techs.</item>
+</list></div><div type="h2"><head>Question from Board — how can the Board support the Council?</head><list style="ul">
+<item>This question came up during the Board meeting in Tokyo. Board sees that the Council has many different responsibilities to take care of and would like to support the Council.</item>
+<item>Would more Council members be helpful?
+<list style="ul">
+<item>One or two would be possible, but the odd number was chosen on purpose to avoid voting stalemates.</item>
+</list>
+</item>
+<item>Co-opted (appointed) members
+<list style="ul">
+<item>EM this sounds like a great idea — ad hoc and shorter term contributors.</item>
+<item>JC: We’ve always had the ability to co-opt any people we want.</item>
+<item>SB: And their travel is funded (on ad hoc basis) by Board.</item>
+<item>Or create workgrounds or task forces.</item>
+<item>We called them “invited experts”.</item>
+</list>
+</item>
+<item>More stability (longer terms): 3-year terms?
+<list style="ul">
+<item>JC: if so then with yearly question of whether you wish to continue.</item>
+<item>EM: 2-terms would mean 6 years, a lot to commit to. 4 year term?</item>
+<item>Term limits on re-election? Ability to take a hiatus?</item>
+<item>Is there really an issue? Perhaps having invited experts is enough to deal with the problem of it being difficult to elect new people to Council because repeaters have an advantage.</item>
+<item>EM: Council should set aside some time to think about long-range documentation so it’s easier for new Council members to contribute.</item>
+</list>
+</item>
+</list></div><div type="h2"><head>Infrastructure</head><list style="ul">
+<item>Who updates the website now? <hi style="b">Action on</hi> MS: Suggest a standard procedure (or find an existing established procedure) around election time to do this, communicate with Luis.</item>
+<item>RV has possibly temporary Supercomputer access, is setting up Docker there and having trouble with accessing Jenkins.</item>
+<item><ref target="https://wiki.tei-c.org/index.php/TEI-Council-FAQ">https://wiki.tei-c.org/index.php/TEI-Council-FAQ</ref></item>
+</list></div><div type="h2"><head>Tickets from Tokyo</head><list style="ul">
+<item>
+<list style="ul">
+<item>[SKIPPED FOR THIS MEETING – Take to mailing list]</item>
+<item><ref target="https://github.com/TEIC/TEI/issues/1795">https://github.com/TEIC/TEI/issues/1795</ref> – Language of Schematron messages where @role=”nonfatal” and @role=”warning”
+<list style="ul">
+<item>EB: Related: Issue with merging <ref target="https://github.com/TEIC/TEI/issues/1621">https://github.com/TEIC/TEI/issues/1621</ref> into dev branch–apparently something breaks the Jenkins build–investigating.</item>
+</list>
+</item>
+<item><ref target="https://github.com/TEIC/TEI/issues/1707">https://github.com/TEIC/TEI/issues/1707</ref> : EB: quick update on measurement: Naoki’s new sample code based on Tokyo decisions.</item>
+<item><ref target="https://github.com/TEIC/TEI/issues/1805">https://github.com/TEIC/TEI/issues/1805</ref> – Suggestion for new uniHan element</item>
+<item><ref target="https://github.com/TEIC/TEI/issues/1756">https://github.com/TEIC/TEI/issues/1756</ref> – event should have ptr and idno in its content model</item>
+</list>
+</item>
+</list></div><div type="h2"><head>Documentation</head><list style="ul">
+<item>MS: TCW at TEI website is now divided into “current” and “legacy” papers <ref target="https://www.tei-c.org/activities/council/working/">http://www.tei-c.org/activities/council/working/</ref>.</item>
+<item>TCW clean up (suggestion by Martin Holmes) in pertaining GitHub repositories
+<list style="ul">
+<item>Do we still need TEIC/TEI/Documents/Editing/tcw-editing.xml or the folder TEIC/TEI/Documents/TCW/ ? Action on HC to look into this.</item>
+</list>
+</item>
+</list></div><div type="h2"><head>Stylesheets group</head><list style="ul">
+<item>SB: Want to try to resume regular meetings; will wait until Council meeting schedule is set, then Doodle poll monthly meeting times for Stylesheets meeting.</item>
+</list></div><div type="h2"><head>Ticket triage</head><list style="ul">
+<item>please add yourselves</item>
+</list><table>
+
+<row>
+<cell><hi style="b">September 2018</hi></cell>
+<cell><hi style="b">EM</hi></cell>
+</row>
+<row>
+<cell><hi style="b">October 2018</hi></cell>
+<cell><hi style="b">MT</hi></cell>
+</row>
+<row>
+<cell><hi style="b">November 2018</hi></cell>
+<cell><hi style="b">SS</hi></cell>
+</row>
+<row>
+<cell><hi style="b">December 2018</hi></cell>
+<cell><hi style="b">AB</hi></cell>
+</row>
+<row>
+<cell><hi style="b">January 2019</hi></cell>
+<cell><hi style="b">MS</hi></cell>
+</row>
+<row>
+<cell><hi style="b">February 2019</hi></cell>
+<cell><hi style="b">JC</hi></cell>
+</row>
+<row>
+<cell><hi style="b">March 2019</hi></cell>
+<cell><hi style="b">SB</hi></cell>
+</row>
+<row>
+<cell><hi style="b">April 2019</hi></cell>
+<cell><hi style="b">RV</hi></cell>
+</row>
+<row>
+<cell><hi style="b">May 2019</hi></cell>
+<cell><hi style="b">SS</hi></cell>
+</row>
+<row>
+<cell><hi style="b">June 2019</hi></cell>
+<cell/>
+</row>
+<row>
+<cell><hi style="b">July 2019</hi></cell>
+<cell><hi style="b">EB</hi></cell>
+</row>
+
+</table><p> </p></div></div></body><!-- #post-## --></text></TEI>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/home/lou/Public/TEI/TEICSS/tei.css" type="text/css"
+ ?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:t="http://www.tei-c.org/ns/1.0" n="2016-02"><teiHeader><fileDesc><titleStmt><title>Minutes of the TEI Technical Council</title><meeting n="2016-02" when="2016-02-25">TEI Technical Council online
+     meeting : <date>25 February 2016</date></meeting></titleStmt><publicationStmt><distributor>TEI Website</distributor><idno>TCM077</idno></publicationStmt><sourceDesc><p>Retagged from a WordPress HTML file</p><p>Converted from a Word document</p></sourceDesc></fileDesc><revisionDesc><change when="2023-04-27">Archival header confected</change><change>Extracted from Word Press article with id post-21933</change><change><date>2016-03-31T14:41:58Z</date><name>unknown author</name></change></revisionDesc></teiHeader><text><body>
+	<div><head>
+         14:00 UTC</head>
+<p>Present</p><list style="ul">
+<item>Elisa Beshero-Bondar (EBB)</item>
+<item>Hugh Cayless (HC)</item>
+<item>James Cummings (JC)</item>
+<item>Magdalena Turska (MT)</item>
+<item>Elli Mylonas (EM)</item>
+<item>Peter Stadler (PWS)</item>
+<item>Lou Burnard (LB)</item>
+<item>Syd Bauman (SB, ~14:20)</item>
+<item>Martina Scholger (MS)</item>
+<item>Raff Viglianti (RV)</item>
+</list>
+<p>Apologies</p><list style="ul">
+<item>Stefan Majewski (SM)</item>
+</list>
+<div><head>
+          Agenda:</head>
+<div><head>
+            Processing Model and Simple
+            </head><list type="unordered">
+<item><ref target="http://teic.github.io/TEI/">http://teic.github.io/TEI/</ref> has
+                current state of procmod branch</item>
+<item>Does this go in 3.0.0 or wait?<list type="unordered">
+<item>go ahead for Processing Model elements</item>
+<item>Simple: wait until later release</item>
+<item>Pending meeting between MT, LB, and JC this weekend; they will report back
+                    and we will decide how to proceed<list type="unordered">
+<item>Raff will test and write a long feedback e-mail on Fri. prior to
+                        meeting</item>
+<item>there is some introductory material (leaning more towards eXist-db
+                        implementation, but may be helpful <ref target="http://showcases.exist-db.org/exist/apps/tei-simple/doc/documentation.xml?odd=documentation.odd">http://showcases.exist-db.org/exist/apps/tei-simple/doc/documentation.xml?odd=documentation.odd</ref>)</item>
+</list>
+</item>
+<item>review emails and outstanding questions on the subject</item>
+<item>TEI can be agnostic as to implementation of it, merely provide the elements
+                    to do so, trying not to limit things too much prematurely (eg being cautious
+                    with closed value lists and similar).</item>
+<item>Some are already using it in production, but limited scope of application
+                    (see <ref target="http://showcases.exist-db.org/exist/apps/Showcases/index.html">http://showcases.exist-db.org/exist/apps/Showcases/index.html</ref> and EEBO
+                    &amp; Shakespeare’s Plays app linked from there)</item>
+</list>
+</item>
+</list>
+</div>
+<div>
+          <head>  Release 3.0.0 (<ref target="https://github.com/TEIC/TEI/milestones/Guidelines-3.0.0">https://github.com/TEIC/TEI/milestones/Guidelines-3.0.0</ref>)</head>
+            <list type="unordered">
+<item>Blockers other than Jenkins building master (<ref target="https://github.com/TEIC/TEI/issues/1411">#1411</ref>)? Anything missing
+                from the milestone?<list type="unordered">
+<item>something about P5 now using pure ODD passim et seriatim would be nice </item>
+<item>What’s the state of the documentation? <list type="unordered">
+<item>integration of tutorial with description</item>
+<item>James writing up a new ODD documenting common things people do in
+                        customising which will also exemplify some of the new Pure ODD features.
+                        He’ll be making this into a blog post with links to ODD and generated
+                        documentation.</item>
+<item>Lou has teaching materials; as have Syd and Julia</item>
+<item>Everyone review the ODD chapter!</item>
+</list>
+</item>
+<item><ref target="https://github.com/TEIC/TEI/issues/539">https://github.com/TEIC/TEI/issues/539</ref> (annotatedU) and <ref target="https://github.com/TEIC/TEI/issues/511">https://github.com/TEIC/TEI/issues/511</ref> really need to be dealt with in
+                    3.0 (see <ref target="https://drive.google.com/file/d/0B0acbcG32rCuLWxVUFNoRjhnbTQ/view?usp=sharing">https://drive.google.com/file/d/0B0acbcG32rCuLWxVUFNoRjhnbTQ/view?usp=sharing</ref>
+                    — will go away) <list type="unordered">
+<item>Lou looks at the tickets 539 and 511 and document, decides if ticket
+                        should be green.</item>
+</list>
+</item>
+<item>Do we expect any Roma oddities when switching to PureODD?<list type="unordered">
+<item>HAC: I’d be surprised if there weren’t something! It should just work
+                        since uses underlying updated stylesheets. But uploading a Pure ODD might
+                        cause problems (at present, attribute datatypes don’t appear correctly
+                        because underlying stylesheet library needs updating)</item>
+<item>Roma would give old-style ODD: doesn’t know how to produce the content
+                        model</item>
+<item>Roma just lets you change classes; must use an existing content
+                        model</item>
+<item>need to replace current eXist db of P5</item>
+<item>List of debian packages: <ref target="https://docs.google.com/spreadsheets/d/1w3ObgtqxpwYLrfaF-N0SPTt5X3ITmg2iLa5ZevAg3eE/edit#gid=0">https://docs.google.com/spreadsheets/d/1w3ObgtqxpwYLrfaF-N0SPTt5X3ITmg2iLa5ZevAg3eE/edit#gid=0</ref></item>
+<item>What to do with Roma and oXgarage: big discussion for next
+                        face-to-face</item>
+<item>oXgarage stylesheets: are they updated on new release automagically?—JC
+                        isn’t sure but thinks they might use local ones. JC thinks the
+                        tei-install.sh script can install the release of guidelines in right place,
+                        but also be used to update Roma. While tei-database-rebuild.sh updates the
+                        eXist database used by Roma. JC thinks oXgarage has to be updated manually.
+                        But this needs to be checked. JC has added a fork of sebastian’s OxGarage
+                        repo to the TEIC organisation on github. Action on $releaseTechnicians:
+                        Check before release whether scripts are up to date and how each part gets
+                        updated with new stylesheets and guidelines.</item>
+<item>Can we continue to support debian packages? Action on SB by 2016-02-28:
+                        ask Stefan.</item>
+<item>SB asked about <ref target="https://github.com/TEIC/TEI/issues/1331">https://github.com/TEIC/TEI/issues/1331</ref><list type="unordered">
+<item>JC and others had commented on council list.</item>
+</list>
+</item>
+</list>
+</item>
+</list>
+</item>
+<item>Choose a date &amp; release technician<list type="unordered">
+<item>there are other roles involved such as ‘debian package maintainer’ who
+                    should be doing these things? It is noted that SM (not present) was last looking
+                    at debian package creation and management.</item>
+<item>Release technicians: Syd and Elisa on March 22nd with a freeze date of
+                    Tuesday March 8.</item>
+</list>
+</item>
+<item>Release documentation / procedures has had some updating and certainly needs
+                more <ref target="/Activities/Council/Working/tcw22.xml">http://www.tei-c.org/Activities/Council/Working/tcw22.xml</ref></item>
+<item>Should freeze be delayed a bit to see outcome of LB/MT/JC Processing Model
+                documentation discussion?<hi>  (Consensus: Yes)</hi></item>
+<item><hi>Builds:</hi> need a release X.X.X build and a master build for both TEI and
+                  Stylesheets.</item>
+<item><hi>Action on
+                HC:</hi> Make the release branches or help release technician to do so, etc.</item>
+<item><hi> Action on HC:</hi> after we have release branches: tell Martin what
+                  we’re planning re release and Jenkins</item>
+</list>
+</div></div>
+</div>
+	</body><!-- #post-## --></text></TEI>

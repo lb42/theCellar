@@ -1,0 +1,1376 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/home/lou/Public/TEI/TEICSS/tei.css" type="text/css"
+ ?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:t="http://www.tei-c.org/ns/1.0" n="2013-11"><teiHeader><fileDesc><titleStmt><title>Minutes of the TEI Technical Council</title><meeting n="2013-11" from="2013-11-11" to="2013-11-13">TEI Technical
+     Council ftf meeting : <placeName>Oxford</placeName>, <date>11–13 November 2013</date></meeting></titleStmt><publicationStmt><distributor>TEI Website</distributor><idno>TCM056</idno></publicationStmt><sourceDesc><p>Retagged from a WordPress HTML file</p></sourceDesc></fileDesc><revisionDesc><change when="2023-04-27">Archival header confected</change><change>Extracted from Word Press article with id post-21912</change></revisionDesc></teiHeader><text><body><div>
+		
+		<!-- <div class="teiheader"><filedesc><titlestmt><title><date notbefore="2013-11-11" notafter="2013-11-13">11-13 November 2013</date></title><author>TEI Technical Council</author></titlestmt><editionstmt><edition><date when="2013-11-20">20 November 2013</date></edition></editionstmt><publicationstmt>
+<p>Freely available under a CC+By licence</p>
+</publicationstmt><sourcedesc><p>Converted from a Google Doc that all Council Members edited during the meeting.</p>
+<p>         </sourcedesc></filedesc><revisiondesc><change><date when="2013-11-20">20 November 2013</date><name>Martin Holmes</name> encoded this file from the Google Doc source
+           at <a href="https://docs.google.com/document/d/1F0pOZ5PkWvIfnPgAKCONRdrDZhl4dkig_zqCiPvUG8A/edit#heading=h.qgfg9mz8v0c1">https://docs.google.com/document/d/1F0pOZ5PkWvIfnPgAKCONRdrDZhl4dkig_zqCiPvUG8A/edit#heading=h.qgfg9mz8v0c1</a>.
+         </change></revisiondesc></div> -->
+<p>Present:</p>
+<list style="ul">
+<item>Brett Barney (<hi>BB</hi>)</item>
+<item>Syd Bauman (<hi>SB</hi>)</item>
+<item>Lou Burnard (<hi>LB</hi>)</item>
+<item>Hugh Cayless (<hi>HC</hi>)</item>
+<item>James Cummings (<hi>JC</hi>)</item>
+<item>Kevin Hawkins (<hi>KH</hi>)</item>
+<item>Martin Holmes (<hi>MH</hi>)</item>
+<item>Elli Mylonas (<hi>EM</hi>)</item>
+<item>Sebastian Rahtz (<hi>SR</hi>)</item>
+<item>Paul Schaffner (<hi>PS</hi>)</item>
+<item>Rebecca Welzenbach (<hi>RW</hi>)</item>
+<item>and by skype on Wednesday morning: Stefanie Gehrke (<hi>SG</hi>) and Torsten Schassan (<hi>TS</hi>)</item>
+</list>
+<p>Minutes primarily by KH, MH and SB (but with input from all of the Technical Council).</p>
+<p>The initial agenda was posted at at <ref target="https://wiki.tei-c.org/index.php/Council_agenda_2013-1">
+                  http://wiki.tei-c.org/index.php/Council_agenda_2013-11</ref> but of course the
+               meeting diverged from that.</p>
+<div><head>Summary</head>
+<p>On Monday 11 November to Wednesday 13 November 2013 the TEI Technical Council met at Rewley
+        House at the University of Oxford. This face-to-face meeting alternated between general
+        issue discussion sessions and processing the feature request and bug tickets submitted by
+        the TEI-C community. There was a concerted effort in this meeting to clean up old tickets
+        and resolve them wherever possible. The general discussion sessions included such issues as:</p>
+<list style="ul">
+<item>reports on a variety of initiatives the Technical Council is
+                investigating; </item>
+<item>resolving EEBO-TCP to TEI P5 migration issues;
+                </item>
+<item>the migration of the underlying TEI ODD language to so-called ‘Pure
+                ODD’; </item>
+<item>changes to the release process (to formalise ‘alpha’ and ‘beta’
+                releases); </item>
+<item>plans for a TEI hackathon; </item>
+<item>further work on TEI
+                Internationalization; </item>
+<item>investigations into our examples of attribute
+                usage; </item>
+<item>work on new Guidelines material such as Text Directionality;
+                </item>
+<item>reports from SIGs including work cutting across the Ontologies and
+                Manuscripts SIGs concerning Object Description, the Linguistics SIG, and the
+                Correspondence SIG; </item>
+<item>Cheatsheets; </item>
+<item>processes for election of
+                the new TEI Technical Council chair; </item>
+<item>planning for face-to-face and
+                teleconference meetings in the new year; </item>
+<item>the continuation of a Board
+                representative at Technical Council Meetings.</item>
+</list>
+<p>Feature requests and bugs were all discussed in groups and by the whole Technical Council,
+        they were assigned, if possible agreed, and recategorised for implementation or further
+        work. Many tickets were resolved by the Technical Council during breaks in the meeting, most
+        were given due dates at which to have implemented or report back concerning the ticket. Some
+        highlights include agreement that: <gi>stage</gi> will have @place; the creation of
+            <gi>abstract</gi>; better version information on Guidelines HTML footers;
+            <gi>docDate</gi> allowed inside <gi>dateline</gi>; content model of <gi>salute</gi>
+        loosened to macro.paraContent; regex pattern of @matchPattern better specified; better
+        symmetry between head and trailer; members of model.respLike also become members of
+        att.canonical (and so get @ref); @name on <gi>relation</gi> no longer required; clarification
+        on headings and commentary as part of a figure; decisions on TEI Website bugs; and many
+        more.</p>
+<p>A full list of actions and their current status is available from: <ref target="https://wiki.tei-c.org/index.php/Oxford2013-Actions2">http://wiki.tei-c.org/index.php/Oxford2013-Actions2</ref></p>
+</div>
+<div><head>
+            Monday 11 November 2013</head>
+<div><head>
+              09:00 – 10:30 Morning Discussion Session</head>
+<p>JC welcomed Council members and thanked them for attending, noting that the agenda is his suggestion as to how to proceed and that we can re-arrange it as we progress. The agenda on the wiki is provided as reference, but the working version in the minutes will be kept up-to-date.</p>
+<list style="ul">
+<item>
+                  EEBO TCP: Reaching consensus with EEBO TCP [SR] (see <ref target="http://tei.oucs.ox.ac.uk/EEBO/">http://tei.oucs.ox.ac.uk/EEBO/</ref> for summary of problem, and links to tickets)
+                  <list style="ul">
+<item>SR: EEBO-TCP is a gigantic resource that claims to be TEI but isn’t quite. The first tranche goes public in about a year’s time, and we’d like to figure out a way for it to be wholly conformant. It requires that we resolve a few tickets.</item>
+<item>LB: But if the agenda is to make the Guidelines conform to EEBO-TCP practice I think that’s a dangerous thing.</item>
+<item>SR: Perhaps, though they’ve found things that the Guidelines don’t fully address. They have more data than any of us.</item>
+<item>LB: I’d like to approach the question with an open mind rather than assuming that the EEBO-TCP always has the superior practice.</item>
+<item>PS: Note that there are only four issues remaining.  Many more things have already been changed in EEBO-TCP to match the TEI Guidelines, and a few things already agreed to change in the Guidelines. What’s left are not so much issues based on attestations of certain phenomena as my desire to make the encoding symmetrical.</item>
+<item>JC: Yes, we are all duty-bound to object if we think a change is not proper for the Guidelines, but equally we’ve been working on resolving these for years and now is the time to finish them off.  The various feature requests will come up in discussion.</item>
+<item>BB: Have we abandoned the idea of asking the community for comments on these proposed changes?</item>
+<item>LB: I think that’s a separate issue. Last time we discussed this (for div.liminal elements), there was a sense that we should figure out what we think before we try to discuss what others suggest.</item>
+<item>SR: But note that the div.liminal work is likely to lead to non-backwards-compatible changes (or an incredibly loose content model). So maybe we need to resolve that before dealing with the related change needed for EEBO-TCP.</item>
+<item>JC: So do we try to solve these four tickets now or wait till we come across them in the groupings of open tickets?</item>
+<item>LB: Has anyone looked at more than two of the examples? (A few people raised their hands.)</item>
+<item>PS: The few I looked at were a mix of mistakes and genuine instances that don’t conform to the TEI content models. I’d like to sort through them before tomorrow to find only the latter to save you all time.</item>
+<item>JC suggested PS do that for the discussion of tickets, but JC also showed us an example of an attestation linked from FR 476. He said it appeared to him to be clearly a stage direction as note. LB said he felt that because it uses the past tense, it’s actually just a note. SR: But the second example (linked from http://tei.oucs.ox.ac.uk/EEBO/ ) is more clearly a stage direction. LB agrees.</item>
+<item>RW: So do we wait for someone else to request this change [instead of addressing it based on EEBO-TCP data]? SR: I don’t think we’re actually denying that these phenomena exist. The question is whether we are telling people to use @rend in all cases.</item>
+<item>(discussion of various types of notes and stage directions: does rendering signal a type?)</item>
+<item>KH: dangerous territory to claim that footnotes/endnotes are different types – depends on text. </item>
+<item>MH: Is the real problem that we’re uncomfortable with att.placement, and that extending it makes our problems worse? </item>
+<item>PS: That’s right, these notes seem to be behaving as if they need a placement recorded in the encoding. (?) Others said they like @place on <gi>note</gi>.</item>
+<item>LB: So are these things in fact notes? They are presented as if they are notes. MH: And you could deal with this by putting <gi>stage</gi> within <gi>note</gi>? LB: Yes. PS: I’d be happy to ignore its “note quality” in its encoding and just use &lt;stage type=”note”&gt;.</item>
+<item>MH: Would we reject use of @place on <gi>stage</gi>?</item>
+<item>LB: Does anyone strongly object to adding @place [to <gi>stage</gi>].  No one did.</item>
+<item>SR: So @place would end up as a special type of @rend. BB: To me placement doesn’t feel like “rendition”. LB: Imagine you’re a 16th century printer. Your source manuscript has a marginal note, but you decide to move it inline. Have you corrupted the text? Or imagine that within the same text, some stage directions are inline and some are in the margin. Is that significant distinction? BB: I think it is. So now we have a stronger argument for including @place is that it’s actually different from @rend.</item>
+<item>SB: One of these EEBO-TCP texts has an asterisk anchoring it, so it looks like a special type of <gi>note</gi>. If so, shouldn’t <gi>stage</gi> inherit everything from <gi>note</gi>? … Or should we just encode a <gi>stage</gi> within a <gi>note</gi>, as we suggested earlier but backed off from? That is, do we have instances of stage directions that happen to be inside notes, or are stage directions really a type of note?</item>
+<item>JC noted that <gi>stage</gi> and <gi>note</gi> are in some ways meta-textual, existing outside the textual stream.</item>
+<item>HC: While one particular case might be encoded as a <gi>stage</gi> within a <gi>note</gi>, it doesn’t preclude adding @place to <gi>stage</gi>.</item>
+<item>LB: Proposed adding @place to <gi>stage</gi>. All in favor. <hi style="bold">Action: SR will implement the schema change of adding @place to <gi>stage</gi> and will document and provide an example.</hi></item>
+<item>LB (consulting <ref target="http://tei.oucs.ox.ac.uk/EEBO/">http://tei.oucs.ox.ac.uk/EEBO/</ref>): Do we really want to put <gi>stage</gi> in model.phrase? SR: This might be a mistake. I will investigate further.</item>
+<item>SB reviewed uses of @place in the WWP corpus. LB: But you’re not obligated to use @place instead of @rend.</item>
+<item>MH: We need a clear example (of stage directions that don’t look at all like notes) for implementing the ticket (to add it the element spec). SR: We don’t need an example when adding an element to a class. SB: But it would be good to offer guidance to users. He offered an example from WWP and agreed to add it to the ticket for SR when he implements.</item>
+<item>(discussion of whether FR 478 has been previously agreed to by the Council) BB: It seems that the first half is done but not the second half (which may be all that is in this topic). I think it’s too much to discuss now.</item>
+<item>JC: In brief, why is it a bad idea? </item>
+<item>BB: Why do we have <gi>byline</gi>? PS offered one. BB: That feels like a bizarre distinction.</item>
+<item>SB: So have we really given up on the fact that many stage directions have note-like qualities? </item>
+<item>JC and MH: Yes, for now. It’s a separate question, and anyone is free to raise a ticket.</item>
+</list>
+</item>
+<item>Report on specification and estimated cost for XPointer resolver [HC/SB]
+                <list style="ul">
+<item>JC reviewed what we had decided to do regarding XPointer.</item>
+<item>HC: I think most reporting has been done. Drafts for the XPointer update have been circulated in various places. There’s a Javascript XPointer resolver that people can play with.  What still needs to be done is figure out what would be needed to get an XSLT implementation. It seems you can do it in the paid versions of saxon (but not in the free version). You will be able to do it in XSLT 3.0 as well, and you can do it in exslt (in “XSLT 1.0 land”). So basically you need an XPath resolver, which was taken out of the free saxon implementation. Do we want a “gap filling” external module (to XSLT) to allow for use of XPointer with the free saxon-HE?</item>
+<item>MH: Will XSLT 3.0 resolve the problem with saxon-HE lacking support? HC: It should because it will become part of the specification, so saxon-HE should support it.</item>
+<item>JC: So the question is whether to ask for money from the Board to support this development or simply implement it because it’s easy to do. HC: Yes. JC: So you’ll report at our next meeting? <hi style="bold">Action: HC to report on XPointer resolver and whether we should progress it.</hi></item>
+<item>EM: Should we impose deadlines for ourselves before six months from now?</item>
+<item>SB: Maybe one month from now, at the next conference call?</item>
+<item>HC: And we should have conference calls more often.</item>
+<item>JC: Agreed. Should we have another one before the end of the year? Council decided that was probably unnecessary and meeting every two months (whether in person or teleconferencing) would be sufficient.</item>
+</list>
+</item>
+<item>Report on specification and estimated cost for oXygen front end for ODD [SB/EM]
+                  <list style="ul">
+<item>EM: Syd and I discussed and came up with a few points. We decided to set the scope of this as offering help to novices, so we’re not interested in supporting every possible variation of TEI. That said, we’d still need a mechanism for generating a list of modules [such as what’s offered by Roma] within oXygen. Furthermore, we’d need to create oXygen forms (perhaps with JavaScript in the CSS).</item>
+<item>SR: The P5 build already creates various things, such as JSON representations, so you might be able to use these.</item>
+<item>EM: I think the work can be done by an unpaid TEI expert and a paid part-time student during one semester. The TEI expert would create the template and make sure the student is up to speed on XML technologies. The student would need to be good at CSS(?) and XML, and be prepared to get up to speed on TEI ODD. At the end, the code would need to be rolled into an oXygen framework. That should be easy because we’ve done that.</item>
+<item>SR: Note that DiXiT is paying for a researcher to go to Romania to work with the oXygen developers for two months. This work could be done by this person. I also wonder how this relates to the Roma replacement that we’ve been contemplating. LB and others: The Roma replacement would be entirely open-source whereas an oXygen framework requires that you use oXygen. The two tools should be able to talk to each others.</item>
+<item>JC: The oXygen framework wouldn’t be a full implementation.</item>
+<item>SB: Since oXygen can create CSS for you, the tool doesn’t need to do this.</item>
+<item>SR suggested revisiting this when we discuss the new Roma.</item>
+<item>EM: The new version of 15 oXygen author mode looks quite different and might have a different architecture that would influence how we do this.</item>
+</list>
+</item>
+</list>
+</div>
+<div>
+<head>              10:30 – 10:45 Break</head>
+            </div>
+<div><head>
+              10:45 – 12:30 SourceForge Tickets</head>
+<list style="ul">
+<item>Groups 1 &amp; 4 (SR, SB, RW, KH)
+                <list style="ul">
+<item><ref target="https://sourceforge.net/p/tei/feature-requests/384/">FR 384</ref>: In April RW made a spreadsheet showing which elements she recommends moving into att.typed. And in order to have varying lists of suggested values, we’ll use a new capability introduced about 18 months ago. “n/a” means it’s not applicable to move it into att.typed.  RW would like people to review her list before proceeding (to see if any need wider discussion). SB volunteered for this. ___: But we also need to figure out whether you can put something in att.typed but then override the @subtype.
+                    <list style="ul">
+<item>LB: What criteria are you using to decide whether it goes into att.typed? </item>
+<item>RW: I believe it was those cases where the @type seems to be a completely different element.</item>
+<item>LB: Then maybe it needs to be a different element.</item>
+<item>SR: Did you take into account the possibility that the text of the description could be overwritten?</item>
+<item>RW: I may have been inconsistent about that.</item>
+<item>LB: I would use a crude metric for whether to recommend including in att.typed: “do I want to lose the text of the <gi>desc</gi> from the class?”</item>
+<item>SB: If we can override a <gi>desc</gi> or attribute list, why couldn’t they all be part of att.typed? … I like Martin’s criteria: figure out whether it’s an “actual type”; if so, move into the class, possibly with overrides.</item>
+<item>MH: I’d be suspicious of any element with a closed list of values for @type. <hi style="bold">Action: SB and RW will review the list again.</hi></item>
+</list>
+</item>
+<item><ref target="https://sourceforge.net/p/tei/feature-requests/457/">FR 457</ref>:
+                    <list style="ul">
+<item>KH: In the ticket I want to clarify what you use tagUsage for and what to put in a project-specific ODD. SB noted that tagUsage is defined in section 2.3.4 as an all-or-nothing description (you have to use tagUsage for every element in a namespace), not selective description of your usage of elements.</item>
+<item>SR: No, that’s a narrow description.</item>
+<item>KH: We could raise a separate ticket asking to clarify this. For this ticket, we will recommend to Council that we figure out what we intend tagUsage to be used for (or commission a subgroup to figure that out).</item>
+<item>SB: Or maybe we change tagUsage so that it is only used for formal description, without any prose description. Then the question in the ticket becomes irrelevant.</item>
+<item>SR: Or maybe tagUsage is for use in a particular document, as opposed to the project as a whole. In that case Lou’s statement on TEI-L is misleading. <hi style="bold">Action: KH, LB, and JC will review and make a recommendation to Council before the next face-to-face.</hi></item>
+</list>
+</item>
+<item><ref target="https://sourceforge.net/p/tei/feature-requests/459/">FR 459</ref>: This is just waiting for implementation. <hi style="bold">Action: SB will implement by end of January 2014.</hi></item>
+<item><ref target="https://sourceforge.net/p/tei/feature-requests/465/">FR 465</ref>: Gabby and HC seem to agree on it, and the example looks sensible. LB’s comment could be raised as a separate ticket.
+                    <list style="ul">
+<item>HC: I think the answer to LB’s comment is that it’s unlikely because @resp and @source are orthogonal matters. The person referenced in @resp did the research consulting the thing named in @source.</item>
+<item>LB: But that isn’t what GB is suggesting. He’s just saying that @source is when an interpretation comes from a document whereas @resp is when it comes from a person. We all agreed on that. <hi style="bold">Action: HC will implement before end of January 2014.</hi></item>
+</list>
+</item>
+</list>
+</item>
+<item>
+                  Group 2 &amp; 5 (BB, HC, JC)
+                  <list style="ul">
+<item><ref target="https://sourceforge.net/p/tei/feature-requests/453/">FR 453</ref> a place for metadata that you can’t fit into existing header elements AMBER open   Discussion talks more about standoff than the original ticket; Request is too vague needs specific use cases; Council decides to leave AMBER after discussion.
+                  <list style="ul">
+<item>LB: I think the ticket is precise but the discussion went off on tangents.</item>
+<item>SB: I recall SIG on Libraries discussing in 2005 in Sweden and suggesting that it be called <gi>otherDesc</gi>. The group felt that since the element are from a non-TEI namespace, you could put them wherever you want. But others are argue that there should be a separate element for wrapping all of the non-TEI elements because it allows you to find them easily. It was a practical solution, but “lumpers”, who want to associate non-TEI metadata with related TEI elements, prefer to be able to put them anywhere. Maybe we should say that if you have an <gi>otherDesc</gi>, you only need to look there for non-TEI metadata; otherwise, it may be elsewhere in the document.</item>
+<item>JC: Is this analogous to <gi>notatedMusic</gi> where we fully expect people to put data in another namespace?</item>
+<item>LB: What if you have both <gi>tei:title</gi> and <gi>dc:title</gi> that don’t match? How do you know which is correct?</item>
+<item>KH: I think that’s out of scope.</item>
+<item>SB: …</item>
+<item>JC: But we want real examples.</item>
+<item>LB: This discussion in the Guidelines might go in the place where we once had a mapping to MARC fields.</item>
+<item>MH: I have examples of DC data.</item>
+<item>KH: Are we going to recommend putting non-TEI XML elements as siblings or children of the related TEI elements? And will we create a wrapper for non-TEI elements?  If so, what will we call it? <hi style="bold">Action: MH will offer DC examples and PS will offer MARC examples. LB will pull them together into some text to be inserted into the Guidelines. Given this, Council will reconsider  the feature request and whether to create the wrapper element.</hi> An advantage of <gi>otherDesc</gi> is that it makes validation via RELAX NG easier: anything here can be from any namespace. But SR &amp; SB note that if you’re validating using NVDL, you can “easily” (in as far as anything in NVDL is easy) ignore elements in other namespaces.</item>
+</list>
+</item>
+<item><ref target="https://sourceforge.net/p/tei/feature-requests/378/">FR 378</ref> Encoding of Standoff annotations (AMBER open). Council has agreed <gi>standoff</gi> in principle but awaiting LingSIG meeting results in Jan/Feb.; Council discusses this as a separate item later.
+                    </item>
+<item><ref target="https://sourceforge.net/p/tei/feature-requests/473/">FR 473</ref> add @type to desc (AMBER open).  Group decided this was GREEN; desc should claim membership of att.typed, with usual caveat that @type is for the type of description not its content.
+                    <list style="ul">
+<item>KH: Add a comment to <ref target="https://sourceforge.net/p/tei/feature-requests/384/">FR 384</ref> that once 384 is implemented, we’ll add a note on att.typed reminding people that this is meant for the type of element, not type of scope, function etc. <hi style="bold">Action: HC will implement [DONE]. KH will add a comment to <ref target="https://sourceforge.net/p/tei/feature-requests/384/">FR 384</ref> [DONE].</hi></item>
+</list>
+</item>
+</list>
+</item>
+</list>
+</div>
+<div>
+    <head>          12:30 – 13:30 Lunch Break (in Meeting Room)
+   </head>         </div>
+<div><head>&gt;
+              13:30 – 14:00 SourceForge Tickets continued
+              </head><list style="ul">
+<item>
+                  Group 2 &amp; 5 (BB, HC, JC) continued
+                  <list style="ul">
+<item><ref target="https://sourceforge.net/p/tei/feature-requests/479/">FR 479</ref> Adding the @place attribute to <gi>head</gi> and <gi>seg</gi> AMBER open  JC noted that head is not meta-textual or in different text stream like stage/note and thinks @rend should be used in this instance; More/better use-cases needed. The breakout group did not support this ticket; the fact that <gi>head</gi> is in the left margin is merely rendering information.
+                    <list style="ul">
+<item>RW: The distinction between two kinds of content makes sense.</item>
+<item>SR: @place really means something is removed from the normal reading sequence.</item>
+<item>PS: If something is part of the normal text stream (like <gi>head</gi>), it’s not appropriate for it to have @place.</item>
+<item>LB: You’re not actually addressing the ticket, which has reasonable use-cases: e.g. titles of recipes which are written in the margin.</item>
+<item>JC: But you could use &lt;head class=”margin”&gt; for this.</item>
+<item>LB: What about the <gi>seg</gi> examples?</item>
+<item>JC: We agreed <gi>seg</gi> is the right thing to mark it, but @rend can handle it.</item>
+<item>BB: I dissented, but I think we need better use-cases.</item>
+<item>HC: If he has real examples, we should see them.</item>
+<item>KH: Someone said this morning that the definition of a <gi>head</gi> was that it was in sequence, but I don’t believe that; there are examples of that.</item>
+<item>EM: He isn’t claiming that these things are irrevocably <gi>head</gi>s, since he proposes that <gi>label</gi> could be used.</item>
+<item>SB: He didn’t provide any code.</item>
+<item>JC: We think he should provide examples showing why @place is needed. </item>
+<item>SB: We should keep in mind that it’s possible to place elements on a page not in reading order.</item>
+<item>JC: Precisely, if I had a division where the <gi>head</gi> were at the bottom, I’d still encode it as <gi>head</gi> at the beginning with rend=”bottom”. Or just because my <gi>div</gi> elements are in a particular order in my encoding doesn’t necessarily mean they were that way in the source rendering (but sometimes I dispute the ‘O’ in OHCO).</item>
+<item>SR: Doesn’t this work against our previous arguments on <gi>stage</gi>?</item>
+<item>HC: No, because they’re outside the actual textual flow these are not.</item>
+<item>EM: He wants to say that there are titles or heads for these recipes which happen to be in the margin; that’s one thing he’s doing. We could just respond with help on how to mark those up.</item>
+<item>JC: To me, that’s a <gi>head</gi>. Council is unconvinced; we think he should be using @rend; but are open to him providing more convincing use-cases with encoding. <hi style="bold">Action: SR to take the ticket, and get more examples from the submitter [DONE].</hi></item>
+</list>
+</item>
+<item><ref target="https://sourceforge.net/p/tei/feature-requests/476/">FR 476</ref> use of <gi>stage</gi> inside poetry, and using placement attribute (AMBER open).  (Council agreed to @place; <gi>stage</gi> could occur almost anywhere should be allowed inside <gi>l</gi> either by being model.phrase or model.noteLike or whatever; GREEN).
+                      <list style="ul">
+<item>JC: This is the ticket we discussed before, but we discussed the other half of it. We think this should happen but we’re not quite sure how it should be done.</item>
+<item>LB: <gi>stage</gi> is already a member of model.inter, so the problem has now gone away.  HC has already implemented the first half. <hi style="bold">Action: JC to close ticket <ref target="https://sourceforge.net/p/tei/feature-requests/476/">FR 476</ref> noting it has been resolved.</hi></item>
+<item>SB: A metrical line has metre, scansion etc. If we stick a <gi>stage</gi> element in the middle of one of those, it will not be part of that. We don’t say that explicitly.</item>
+<item>LB: True, interesting, but not part of this issue.</item>
+</list>
+</item>
+<item><ref target="https://sourceforge.net/p/tei/feature-requests/481/">FR 481</ref> check that all sibling att.translatable elements have @versionDate (AMBER open). (Agreed that siblings of the same <gi>gi</gi> should have this; Syd to implement schematron; Make GREEN)
+                      <list style="ul">
+<item>JC: If you have <gi>desc</gi> with @versionDate, all sibling <gi>desc</gi>s must have @versionDate. <hi style="bold">Action: SB to check whether this is implemented, and if not, get it implemented then close the ticket.</hi></item>
+</list>
+</item>
+</list>
+</item>
+<item>Group 3 &amp; 6 (MH, EM, LB, PS)  
+<list style="ul">
+<item><ref target="https://sourceforge.net/p/tei/feature-requests/462/">FR 462</ref> idno@type=’uri’ for Linked Data AMBER open (We agreed. @type=”URI” alongside @type=”URL”)
+                    <list style="ul">
+<item>EM: The suggestion is to have “uri” as a suggested value for @type on <gi>idno</gi>, and we agree. We should modify the spec to add UTI (upper-case), and clarify the distinction between URL and URI, where the latter is to be recommended especially when a URI is used primarily as an identifier rather than a resolvable address (e.g. namespaces, ISOCat values). <hi style="bold">Action: HC to implement this and close the ticket <ref target="https://sourceforge.net/p/tei/feature-requests/462/">FR 462</ref>.</hi></item>
+</list>
+</item>
+<item><ref target="https://sourceforge.net/p/tei/feature-requests/471/">FR 471</ref> extend the possible usages of <gi>argument</gi> (AMBER open).  (If the intended use case is encoder-supplied abstract, not part of source document, which might belong rather to header than to front. Suggest new element abstract in profileDesc. )
+                    <list style="ul">
+<item>EM: We think that the suggested functionality is good, but the method for achieving it is not. The use-case is encoding independent articles where there is no abstract in the text itself, but you want to add one, but if it’s not part of the text you’re encoding, it probably belongs in profileDesc. The ticket says to use <gi>argument</gi>, but we don’t believe that’s appropriate. We discussed using <gi>summary</gi>, but that’s too simple a content-model. So we suggest a new element <gi>abstract</gi> as a member of model.profileDescPart.</item>
+<item>SR: Why profileDesc?</item>
+<item>MH: Because that’s where other stuff like keywords goes.</item>
+<item>JC: What about this restriction to one paragraph? [General agreement that this might be an issue.]</item>
+<item>SR: Lots of existing project which are modern projects would also use this.</item>
+<item>BB: So what’s the model?</item>
+<item>LB: I originally said <ident type="class">model.specialPara</ident>, but the need for multiple <gi>p</gi>s is a problem.</item>
+<item>SR: <ident type="class">model.inter</ident> will do it.</item>
+<item>LB: <ident type="class">model.pLike</ident> will give you <gi>p</gi>s and also <gi>ab</gi>s. <hi style="bold">Action on LB to create the new element; [DONE]; MH to provide examples.</hi></item>
+</list>
+</item>
+<item><ref target="https://sourceforge.net/p/tei/feature-requests/472/">FR 472</ref> docDate in dateline ?
+                  <list style="ul">
+<item>EM: <gi>dateline</gi> does not allow <gi>docDate</gi>, but <gi>byline</gi> allows <gi>docAuthor</gi>. This is inconsistent. We agree with that. But the use-case suggested by the submitter involves using this to encode metadata in the text. We believe this is wrong. However, there are good use-cases from e.g. TCP texts which have no <gi>titlePage</gi>.</item>
+<item>LB: It is odd in the first place that <gi>docAuthor</gi> can be both a child and a sibling of <gi>byline</gi>.</item>
+<item>EM: Do we make this change, and if so, do we recommend this functionality? Do we go for parallelism, but add strong wording to say that this is not the way to do metadata? The other option is to reject and leave things as they are, but respond to the submitter’s use-case.</item>
+<item>SR: Why was <gi>docAuthor</gi> in <gi>byline</gi>?</item>
+<item>MH: It’s been manually added to the content model of <gi>byline</gi>, presumably in response to a previous ticket.</item>
+<item>PS: Why do we have any of these elements in the first place?</item>
+<item>JC: Isn’t this the same kind of thing as <gi>origDate</gi> and <gi>origPlace</gi>? Because we’re saying this is a special case where the generic elements are not sufficiently distinct.</item>
+<item>HC: I think we should do away with them.</item>
+<item>SR: The excuse for them is that they do permit you to look at the front matter of a document and pull out the metadata that matters.</item>
+<item>EM: This is a document which has a header with all that info, and there are many divs, each of which has this extra information. We’re suggesting putting <gi>persName</gi> in <gi>byline</gi> instead of using <gi>docAuthor</gi>.</item>
+<item>SR: We could get rid of these elements, and for the generic elements provide a flag of some kind that identifies them.</item>
+<item>MH: The parallelism is a strong argument for me.</item>
+<item>BB: On the one hand I agree, but I don’t like the fact that we now have more ways of doing the same thing.</item>
+<item>EM: This is the other half of the response: put it in, but tell him not to use it for the purposes he describes. [An examination of the example in <gi>dateline</gi> did not bring consensus.]</item>
+<item>RW: The example makes it difficult to interpret.</item>
+<item>EM: The use-case is a series of components which have different dates. Can you imagine a case where you have a <gi>dateline</gi> and you have both a docDate and a regular date? If so, what’s the difference?</item>
+<item>JC: By MH’s reasoning, the docDate would be for the whole document, as it appears in the original document. <gi>date</gi> would be some other date (such as a corrected date, if <gi>docDate</gi> is wrong).</item>
+<item>SR (looking at SVN history): <gi>docAuthor</gi> has always been in the content model of <gi>byline</gi>.</item>
+<item>LB: We agreed that if we were to put <gi>docDate</gi> in there, it was because it applies to the whole document, so we must provide a usage note to this effect; and we should also make the same point re <gi>docAuthor</gi>, and explain how you would do what the submitter wants (a way to ascribe authorship of sections to authors). <hi style="bold">Action: MH to add <gi>docDate</gi> to <gi>dateline</gi>, and clarify with usage notes [Done].</hi></item>
+</list>
+</item>
+<item><ref target="https://sourceforge.net/p/tei/feature-requests/360/">FR 360</ref> New attribute @keepHyphen. Ticket open, ticket GREEN, it’s rejected throughout the comments. <hi style="bold">Action: PS to provide an example of the mechanism recommended to handle the use-case.</hi></item>
+</list>
+</item>
+</list>
+</div>
+<div><head>
+              14:00 – 15:30 Afternoon Discussion Session</head>
+<list style="ul">
+<item>Pure ODD
+                <list style="ul">
+<item>LB: Within the specification for every element is the <gi>content</gi> element, which is expressed using RelaxNG. The suggestion is that this content information should be expressed in pure TEI. Council has previously said this is a good idea. The question now is how we take it forward. We have not done much by way of making incompatible changes in content models. After re-expressing content models in pure TEI, we might find ourselves tempted to change content models in ways which are not backward-compatible.</item>
+<item>SR: We could deprecate the <gi>content</gi> element. I’ve added a new element for the new content model. There’s probably no need, though.</item>
+<item>SB: Could you review the difference in content model between the RelaxNG and the pure TEI? What can we express in pure ODD that we can’t express in RelaxNG?</item>
+<item>MH: If the new system does nothing different from the old, and we don’t dare make it do so because of backward-compatibility issues, are we then just preparing for P6?</item>
+<item>LB: We give two examples in the paper of things which we can do easily in pure ODD but can’t do in RelaxNG.</item>
+<item>JC: It’s fine for this pure ODD to express things that we can’t currently do, even if you can’t currently generate a schema that can enforce it.</item>
+<item>SB: Yes, and that’s also been a TEI position for a long time.</item>
+<item>JC: What’s the proposal?</item>
+<item>SR: To adopt the new system wholesale. The simplest thing would be to do that, and move our own content models over to the new system.</item>
+<item>JC: Have you encountered anything you can’t currently handle?</item>
+<item>SB: How about non-deterministic content models?</item>
+<item>SR: We could handle them, but we don’t.</item>
+<item>SB: I’m all in favour. How long do we want to leave the old stuff in place, and how fast do we want to move the TEI Guidelines over?</item>
+<item>JC: If it’s possible to automate a migration, we should do that.</item>
+<item>SB: It should be two releases: one which implements the new elements, and the next which moves the Guidelines over to using them.</item>
+<item>SR: Adding the new elements is trivial.</item>
+<item>SB: I don’t want us to be in the position of holding up pure ODD because there are a couple of content models in TEI that are giving trouble.</item>
+<item>SR: What’s difficult to know is whether we’ve slightly loosened or tightened content models without knowing it. Suppose I’ve written a conversion script; how do we know there are no bugs in it?</item>
+<item>BB: The testing doesn’t have to be automated?</item>
+<item>MH: We should have a tested conversion tool before we encourage the community to use it.</item>
+<item>SR: So SB is right: we should introduce the elements first, and only later convert to them ourselves, and encourage the community. <hi style="bold">Action:  LB to add the new elements and the documentation ahead of the next release; documentation need only be at the element level, along with some brief introduction in the Guidelines, to be expanded to a full section later.</hi></item>
+</list>
+</item>
+<item><ref target="https://docs.google.com/document/d/1766WTJV2xcfANh8HRZW5m520yrC1nCzQJzUgKpwiylI/edit">TEI Roma Replacement Specification</ref><list style="ul">
+<item>JC: The existing Roma is dated and flawed, as we all know. Many tickets have come up which we cannot answer until we develop a new Roma. We therefore want someone from the wider community to take on a rewrite and contribute to maintenance of Roma, and to do that we need a specification that we can take to the Board for them to finance in a code-bounty sort of way. The proposal for Council is: what do you think of the specification and how could it be improved?</item>
+<item>SR: Suppose I just write an XML editor or a plug-in for Oxygen? Have I met the specification?</item>
+<item>SB: It must be open-source and free, and Oxygen-dependent system would not be.</item>
+<item>SR: I’m unhappy with the idea that we can’t depend on a paid-for system.</item>
+<item>EM: We want it to be generally usable and low-cost by the widest variety of people. The fewer restrictions the better on what you must have in order to use it.</item>
+<item>SB: Yes, we want proposals to be as open as possible; if we end up with only one proposal and it’s not open, we’ll have to evaluate it.</item>
+<item>SR: So we need a clause which says “we will accept any proposal, but will prefer those that do not depend on proprietary software”.</item>
+<item>JC: At the moment, everybody can use Roma just by going to a website; we don’t want anything which is much more restricted than that.</item>
+<item>SR: What do people think about the requirement to be able to edit inside the <gi>schemaSpec</gi>?</item>
+<item>SB: i.e. should the proposal require that you’re able to edit not just the <gi>schemaSpec</gi>, but also the prose that goes with it (a general TEI editor)? If we get <gi>schemaSpec</gi> only, that’s still good.</item>
+<item>JC: As long as it doesn’t destroy anything else. If you can jump out to an XML editor to edit the prose, then that’s an added bonus.</item>
+<item>LB: The kind of document that this should operate on is a TEI-for-authoring document; it doesn’t have to cover the whole TEI.</item>
+<item>SR: This is not as simple as it looks; there’s a lot of the TEI that would still have to be covered.</item>
+<item>SB: It should be a requirement that it can read in a manually-created ODD without destroying any of it, even if it can’t provide editing capability for some of it.</item>
+<item>KH: It may not be a requirement that it handle anything except ODDs that it has created.</item>
+<item>SR: We don’t know how much money to ask for until we see the proposals that come in.</item>
+<item>JC: The TEI Board might be able to provide a few thousand towards this.</item>
+<item>SB: If I were a professional software company I’d request $250,000.</item>
+<item>EM: Why would a professional company quote on this? And CS people in a university won’t go for it. A DH centre might go for it.</item>
+<item>JC: Do people think this is a waste of time?</item>
+<item>HC: No; even if we can’t find someone, it might be the basis for a good grant proposal.</item>
+<item>JC: So we shouldn’t be rushing this out; we should make it as good as possible.</item>
+<item>KH: Someone will have to figure out what we expect them to deliver in terms of a bid.</item>
+<item>HC: We won’t get any realistic bids we can afford.</item>
+<item>JC: I fear you may be right.</item>
+<item>SR: What if somebody comes back and says “why don’t you fix the existing Roma?”</item>
+<item>MH: I thought there were some fundamental architectural problems with it?</item>
+<item>SR: If someone comes back and says they’d rather start from the existing Roma, then there’s no reason not to allow that approach.</item>
+<item>EM: This issue should be set next to the Oxygen proposal we discussed earlier.</item>
+<item>Council discussed this further. <hi style="bold">Action: ALL Council to go through the proposal again and discuss it, remembering to look at the comments, and further refine it. JC to make sure it’s tidied up. Deadline: next teleconference.</hi></item>
+</list>
+</item>
+</list>
+</div>
+<div><head>
+              Plenary ticket discussion</head>
+<p>(JC felt these could be handled better in plenary session rather than breakout groups reporting back and duplicating discussion.)</p>
+<list style="ul">
+<item><ref target="https://sourceforge.net/p/tei/feature-requests/445/">FR 445</ref> Conversion of ODD to HTML: Examples should be aware of element renaming closed-fixed, implemented by SR. However (per SB and LB): there may also be <gi>gi</gi> elements inline which should also be changed. <hi style="bold">Action: SR to add <gi>gi</gi> and <gi>att</gi> renaming to complete the ticket. [COMPLETED FOR <gi>gi</gi>. Not possible for <gi>att</gi>.]</hi></item>
+<item><ref target="https://sourceforge.net/p/tei/feature-requests/443/">FR 443</ref> @resp should be a member of att.global AMBER open. 
+                  <list style="ul">
+<item>JC and SR: Global attributes should really not be encouraged.</item>
+<item>JC: Council chair has a moral duty to set the bar high for the addition of any elements to att.global since every element gets them.</item>
+<item>MH: There’s a fundamental disagreement about what @resp is for. LB believes it’s just for the person who decided to apply the tag; I think it’s a more general statement of responsibility. (discussion of <ref target="https://sourceforge.net/p/tei/feature-requests/443/">FR 443</ref>: <ref target="https://www.google.com/url?q=https%3A%2F%2Fsourceforge.net%2Fp%2Ftei%2Ffeature-requests%2F443%2F%3Flimit%3D10%26page%3D3%23e578&amp;sa=D&amp;sntz=1&amp;usg=AFQjCNG-OfpZm-AYaAL-LbkaHfjicL8Wyg">Lou’s comment from July 10</ref> cites the part of the Guidelines supporting his position, whereas the other view is supported by specification for att.responsibility.)</item>
+<item>EM: This is related to (something about the source for evidence).</item>
+<item>LB: Paragraph in #PHHR beginning “The @resp attribute, by contrast” admits different meanings of @resp on different elements. We first need to decide whether we are comfortable with these various meanings (?) before we try to resolve this ticket. …</item>
+<item>LB: I’d like to formalize the rule that ____ unless ___ is specified in the document.</item>
+<item>SB: In other words, @resp means [responsibility for] the markup and content except when the element in question is a transcriptional element, in which case the content [of the element on which @resp is located] comes from source. Would we then need a list of transcriptional elements?</item>
+<item>LB: We have a class for that. <hi style="bold">Action: MH and LB to agree on clarification to Guidelines to say that @resp means different things: responsibility for markup and content except when the element in question is a transcriptional element, in which case the content of the element is marked as coming from the source.</hi></item>
+</list>
+</item>
+<item><ref target="https://sourceforge.net/p/tei/feature-requests/468/">FR 468</ref>:
+                  <list style="ul">
+<item>HC: <gi>precision</gi> expresses false precision that’s not real probability. It’s something more like certainty. Precision is a measure of how far off a measurement is.</item>
+<item>LB: The @degree attribute is defined as the probability that you’re correct.</item>
+<item>SB: Whoever defined this only used data.probability because they wanted 0 to 1.</item>
+<item>LB: Nevertheless it ought to mean the degree of probability that you’ve got it right.</item>
+<item>SR: Has anyone ever used this?</item>
+<item>EM: I found a set of editorial descriptions which used numbers everywhere, almost at random, as labels.</item>
+<item>LB: This attribute is out there.</item>
+<item>HC: Which is why it should be deprecated.</item>
+<item>JC: So the proposal is to deprecate @degree on the <gi>precision</gi> element.</item>
+<item>SB: Should we provide a conversion to att.ranging for people using @degree?</item>
+<item>HC: You can’t convert meaningless to meaningful. <hi style="bold">Action: KH to add to the deprecation document the requirement to announce to the community that we plan to deprecate something and to get in touch if you object.</hi><hi style="bold">Action: HC to email TEI-L.</hi><hi style="bold">Action on SB to add the @validUntil attribute.</hi></item>
+</list>
+</item>
+</list>
+</div>
+<div>
+      <head>        15:30 – 15:45 Break
+      </head>      </div>
+<div><head>
+              15:45 – 17:30 SourceForge Tickets</head>
+<list style="ul">
+<item>Group 7 (BB, JC, MH)
+                  <list style="ul">
+<item><ref target="https://sourceforge.net/p/tei/feature-requests/303/">FR 303</ref> check the apache logs for frequent 404s (AMBER open). 
+                     <list style="ul">
+<item><hi style="bold">Action: JC to ask DS to make the TEI-C webserver logs available somewhere we can see them; then action on MH to write script to generate lists of bad links of various types. JC also to check google analytics/Webmaster tools. Deadline to report back by next conference call.</hi></item>
+</list>
+</item>
+<item><ref target="https://sourceforge.net/p/tei/feature-requests/305/">FR 305</ref> Updating info on projects page (AMBER open).
+                      <list style="ul">
+<item>Project pages go out of date. There is a way to submit corrections, on the main Projects page, but that info should be on each individual project page. <hi style="bold">Action: JC to ask DS to make that correction info available on each project page, along with its last-updated date if possible (and the latter should also show up on the bullet-point list).</hi> Should we manually check them periodically? Should this be Council’s job, or the webmaster’s job? Logically the webmaster,  but would he have time? Should the TEI even be maintaining this list of projects? Should we push that decision up to the Board?</item>
+<item>EM: Is the project info any different on our site than it would be on the project’s own site?</item>
+<item>KH: In the submission form, we include some TEI-specific information that would not necessarily be on their site.</item>
+<item>SR: We could have project info expire after a certain period, and send them a reminder ahead of time. If we move it to the wiki, we still end up responsible for it.</item>
+<item>EM: Actually even obsolete projects are relevant; they just need to have a last-edited date.</item>
+<item>LB: How does this relate to the lists of TEI projects that other people produce?</item>
+<item>JC: Those are sample files or examples.</item>
+<item>HC: We’re maintaining a list of openly-available TEI project code that’s not available on github. They’re not lists of projects.</item>
+<item>LB: One of the objectives was to offer TEI projects a validation/labelling that wouldn’t come from a wiki.</item>
+<item>MH: That only makes sense if we’re offering peer review, which we’re not.</item>
+</list>
+</item>
+<item><ref target="https://sourceforge.net/p/tei/feature-requests/466/">FR 466</ref> Make it possible to add SIG labels to tickets (AMBER open).
+                      <list style="ul">
+<item><hi style="bold">Action: JC as SIG Coordinator to tell the SIGs that if they wish, we can make their SIG convener a developer on SF and make it possible to assign SIG labels to tickets. Deadline: next teleconference.</hi></item>
+</list>
+</item>
+<item><ref target="https://sourceforge.net/p/tei/feature-requests/470/">FR 470</ref> att.measurement and att.dimensions overlap (AMBER open).
+                      <list style="ul">
+<item>We are not really sure why all of these attributes don’t belong in one class. We recommend adding @commodity to att.dimensions, deleting att.measurement and add <gi>measure</gi> and <gi>measureGrp</gi> to att.dimensions, unless anyone knows of a reason not to.</item>
+<item>SR: We should define @commodity only on <gi>measure</gi><gi>measureGrp</gi>; there’s no reason for all these other elements in att.dimensions to get @commodity. <hi style="bold">Action: MH to move @commodity into its own class, and move <gi>measure</gi> and <gi>measureGrp</gi> to att.dimensions. Ticket to GREEN, assign to MH. [Subsequent study suggests to MH that this may be more complicated than it seems, and may have to wait on our having the ability to override valLists in attributes from attribute classes at the element level.]</hi></item>
+</list>
+</item>
+</list>
+</item>
+<item>
+                  Group 8 (PS, RW, LB, SR)
+                  <list style="ul">
+<item><ref target="https://sourceforge.net/p/tei/feature-requests/442/">FR 442</ref> Allow <gi>foreign</gi> to contain <gi>q</gi> (AMBER open).
+                      <list style="ul">
+<item>The group felt this should be rejected. <hi style="bold">Action:SR to close ticket because it’s rejected [DONE].</hi></item>
+</list>
+</item>
+<item><ref target="https://sourceforge.net/p/tei/feature-requests/433/">FR 433</ref> loosen content model of <gi>salute</gi> (AMBER open).
+                      <list style="ul">
+<item>SR: Underlying this was a desire for symmetry between several pairs of elements. We recommend normalizing <gi>salute</gi> so it’s like <gi>signed</gi>. This will, for example, allow lists of individuals. <hi style="bold">Action: SR will carry this out [DONE].</hi></item>
+</list>
+</item>
+<item><ref target="https://sourceforge.net/p/tei/feature-requests/477/">FR 477</ref> lines of poetry inside trailer (AMBER open).
+                      <list style="ul">
+<item>The request is for symmetry between <gi>head</gi> and <gi>trailer</gi>. The difficulty. <hi style="bold">Action: SR to find a good way to achieve this, since what was done before with <gi>head</gi> was rather strange. [DONE; HAVE COPIED WHAT WAS DONE WITH <gi>head</gi>.]</hi></item>
+<item>BB: None of the examples in the ticket were actually trailers.</item>
+<item>LB: <gi>trailer</gi>s are analogous to <gi>head</gi>s. We’ve previously decided to permit lines of verse in <gi>head</gi>, so we’re now committed to allowing it in <gi>trailer</gi>.</item>
+<item>EM: The Decameron has lots of examples of <gi>trailer</gi>s with songs in them.</item>
+<item>BB: These are not necessarily <gi>trailer</gi>s.</item>
+<item>PS: The history is that there are undoubted use-cases for <gi>head</gi>s, and when we allowed <gi>l</gi> in <gi>trailer</gi> lots of things in TCP got put into <gi>trailer</gi> because that capability was there.</item>
+<item>SR: There are other examples that do not involve <gi>l</gi>; there’s a <gi>q</gi> with a <gi>floatingText</gi> inside <gi>trailer</gi> (K112795.002.tei). Is it reasonable to have a <gi>q</gi> inside a <gi>trailer</gi>?</item>
+<item>SR: There’s one with a <gi>closer</gi> and a <gi>trailer</gi>, A49188.tei.</item>
+<item>PS: I think there are relatively few verse trailers, but one definite one is A87070. Many others are mistakes, but genuine ones exist.</item>
+<item>BB: I don’t think that’s a <gi>trailer</gi>; it says it is, but it’s actually a <gi>closer</gi>.</item>
+<item>LB: One of the frequent examples of a trailer is things that say “FINIS”; this one says “instead of “FINIS”. </item>
+</list>
+</item>
+</list>
+</item>
+</list>
+</div></div>
+<div><head>
+             Tuesday 12 November 2013</head>
+<div><head>
+               09:00 – 10:30 Tickets and Morning Discussion Session</head>
+<div><head>
+                 Finishing tickets from Monday</head>
+<div><head>
+                   Group 9 (KH, HC, EM, SB)</head>
+<list style="ul">
+<item><ref target="https://sourceforge.net/p/tei/feature-requests/383/">FR 383</ref> where to put <gi>idno</gi> within <gi>biblStruct</gi>? (AMBER open)
+                       <list style="ul">
+<item>This is one of three tickets where KH could not figure out how to carry out the schema deprecation.</item>
+<item>HC: Create a new ticket to figure out how to deprecate content models?</item>
+<item>KH: I’m not sure the other two tickets also involve deprecating content models.</item>
+<item>SB: Maybe the new (“pure”) ODD element will allow it? Until then, maybe add a <gi>remarks</gi> saying this.</item>
+<item>KH: Not sure who could be responsible for the implementation.</item>
+<item>SR: You’d have to have two content models, each with a start date or an end date. How often is this going to actually happen, though?</item>
+<item>LB: Returning to the subject of this ticket: All we need is a Schematron rule saying that <gi>idno</gi> is not valid in some locations in <gi>biblStruct</gi>.</item>
+<item>SR: You’re just recommending immediate invalidity rather than deprecation. Council wants to do deprecation here.</item>
+<item>SR: We could have the Schematron message.</item>
+<item>MH: Except that lots of people don’t use the Schematron.</item>
+<item>JC: And as Oxygen gets updated people will be using Schematron whether or not they know it.</item>
+<item>SR: But we need a convention that allows us to go back and actually make the change we’ve warned of in the Schematron.</item>
+<item>JC: We need a way to detect those things.</item>
+<item>SR: Perhaps we could have @validUntil on <gi>constraintSpec</gi> so that we pick this up later.</item>
+<item>KH: This all started because I couldn’t find the element on which I should put the @validUntil. <hi style="bold">Action: KH will create a new ticket pointing to this and the other two tickets with deprecation problems (as listed on the wiki) saying we need a way to deprecate members of content model and reassign to SB to solve the three tickets using a Schematron warning, and to add @validUntil on <gi>constraintSpec</gi>.</hi><hi style="bold">Action: SR to check how @validUntil makes the build fail when out of date, and if necessary update this mechanism so it can handle @validUntil on <gi>constraintSpec</gi> [DONE. It applies to tei:*[@validUntil], so should just work.] . (Ticket 383 will wait on all this, along with the two other tickets.)</hi></item>
+</list>
+</item>
+<item><ref target="https://sourceforge.net/p/tei/feature-requests/366/">FR 366</ref> rationalize content models of org and place (etc) (AMBER open).
+                       <list style="ul">
+<item>Group thinks a small group of people including JC should discuss this further.</item>
+<item>JC: <gi>place</gi>, <gi>org</gi> and other entity ref elements have messy content models because they’ve arisen by accretion. Gabby believes we should streamline these, which makes sense. They have overlapping content models which could be handled by model classes. I did create a very rough proposal which is probably now out of date. Recommendation: a group of people should discuss this and come up with a proposal for Council. <hi style="bold">Action: JC to make ticket red, should stay with JC, and he should initiate the process, working with LB and SB.</hi></item>
+</list>
+</item>
+<item><ref target="https://sourceforge.net/p/tei/feature-requests/458/">FR 458</ref> Make <gi>listBibl</gi> and <ident type="class">model.biblLike</ident> member of <ident type="class">model.personPart</ident> (AMBER open).
+                       <list style="ul">
+<item>Lou has already done items (a), (b), (c), and (d) at revision 12279 on 2013-06-18, and it appears that (e) has been done as well.  It appears that no one has addressed Martin’s concern on (c).  We see no obvious backwards-compatibility issues, so we are content for the ticket to be closed. </item>
+<item><hi style="bold">Action on LB: close the ticket.</hi></item>
+</list>
+</item>
+</list>
+</div>
+</div>
+<div><head>
+                   Discussion Topics</head>
+<list style="ul">
+<item>Release Process (see <ref target="https://wiki.tei-c.org/index.php/Council_agenda_2013-11#More_Details_on_Agenda_topics">bottom of wiki agenda page</ref>)
+                      <list style="ul">
+<item>SR: Why are we proposing using alpha and beta?</item>
+<item>MH: Because we were proposing asking the community to help us proof the release, so we want to be able to distinguish between a development version (immediately after a release) and a beta (on which we’re inviting feedback).</item>
+<item>JC: One drawback might be that we don’t know what version number we might be releasing until we get closer to it.</item>
+<item>MH: we can always miss out a number if necessary.</item>
+<item>SR: What if we move to a major version alpha, and later realize we have to go back and fix a few typos, we’d have to change the version number back for that release, then forward again.</item>
+<item>JC: At least two different people have now asked me: P5 keeps changing; could we have a stable version to target for their projects.</item>
+<item>MH: But P5 is the “long term support” version. We just bugfix, basically.</item>
+<item>JC: We do more than bugfix. I worked with some foreign linguists who needed to settle on a specific version in order to have a stable translated source, so they chose P5 1.0.0 and so are missing out on lots. If they knew 3.0.0 would be a good stable candidate they might choose that for their next version.</item>
+<item>LB: What evidence is there that our current practice needs to change?</item>
+<item>SR: If there was a concrete instance of our having dropped support for something…</item>
+<item>KH: I’m quite sympathetic to the idea, on the basis that people may want to cite Jenkins, and it would help people distinguish what is being cited.</item>
+<item>SB: I see this as more straightforward, not as a complication.</item>
+<item>JC: We still have the problem of when we might increment our number assuming a schema change, then have to roll back for a minor release.</item>
+<item>SR: We could (painfully) fork in Subversion if we wanted to, for the minor release . Resolved: we should add the alpha and beta to the build/release process.</item>
+<item>LB: Problem: our data.version will not allow the use of “a” and “b”.</item>
+<item>SR: The TEI release version number is actually just from a text file.</item>
+<item>MH: We never release an “a” or “b” version so that’s not an issue.</item>
+<item>KH: So we need a step in the release process notes to make sure the version number is correct before release. </item>
+<item>MH: There’s also the problem of the release date and/or build date.</item>
+<item>SR: The build date should be correct, and the “Last updated” date should be the date of the last change to the SVN source of the Guidelines. [Some discussion of moving to GitHub.]</item>
+<item>SR: The idea of building in the SVN date is complicated, especially if someone is building the Guidelines for themselves.</item>
+<item>JC: We don’t want to do anything that slows down our build process unless we get significant benefit from it. <hi style="bold">Action: Assign MH to update the release documentation re alpha and beta, and investigate how we might add the SVN last changed date and the rev number to the bottom of pages. [Latter bit done by SR 2013-11-14. Documentation in TCW22 updated by MH 2013-11-14.]</hi></item>
+</list>
+</item>
+<item>Ideas on how to run an experimental TEI Hackathon [SR]
+<list style="ul">
+<item>SR: The Board say we’re not doing enough to encourage people to build software around TEI, and it would be a good idea if we could organize hackathons for this purpose. DH 2014 might be a good venue for this, and we were asked to come up with a proposal for how this might work.</item>
+<item>HC: Perhaps this is not exactly Council’s job.</item>
+<item>LB: As Board rep, I’d say that they would say that if something like this were to happen, Council would be miffed if they had not been involved in it.</item>
+<item>JC: Yes, that makes sense.</item>
+<item>EM: Could we go back to them with a request for help with organization and PR, while we go forward with producing datasets and targets.</item>
+<item>LB: Yes, this is a very practical response. Actually putting something like this on does require a lot of organizational effort. Part of the Board’s view is that the Council could spend more time doing this kind of thing and less splitting hairs about version numbers.</item>
+<item>SR: And the Board doesn’t have any resources and has fewer people than we do.</item>
+<item>JC: True, just noting the cost-benefit analysis: if we have a choice of spending our effort organizing a hackathon as opposed to finishing off work to make a release, I’d rather do the release.</item>
+<item>RW: Perhaps there should be a separate group of people doing this, rather than either the Council or the Board; it could have representatives from both Board and Council․a task force.</item>
+<item>SR: Who would it report to?</item>
+<item>EM: We haven’t yet decided whether we think this is a good idea or not. If we do, we should figure out a way to get it done.</item>
+<item>JC: I do think overall this is a good idea and that Council should be involved in it, but Board should have an organizational role.</item>
+<item>SR: What would Council;’s role be?</item>
+<item>JC: Members would be at the event, with some prepared datasets, targets we’d like people to produce, etc.</item>
+<item>MH: I agree.</item>
+<item>EM: We also need to discuss what happens at DH 2014. Unless you have very good preparation, a hackathon is unlikely to produce anything. Doing things actually at DH 2014 would not be realistic; things have to be set up and start well beforehand.</item>
+<item>JC: And doing it badly would be worse than not doing it.</item>
+<item>PS: It appears people think this is primarily a good idea for PR purposes.</item>
+<item>SR: Not necessarily; TEI has been primarily theoretical in many ways; this sort of things provides real testing and feedback for us; we’ll learn that there are things we could be producing as part of our build process that would be helpful for developers.</item>
+<item>SB: I don’t yet have a position, but unless it’s previously defined what will be accomplished at a hackathon, you’d spend the whole day figuring out what to do.</item>
+<item>JC: As EM says, you’d have to have all that sorted out ahead of time and people would be bringing the results of their work.</item>
+<item>SR: John Unsworth’s idea was to concentrate on D3.js visualizations of texts, with everyone in the same room working on the same sort of thing, there’d be a lot of cross-fertilization.</item>
+<item>JC: Then you can target the PR more effectively. So people would be doing visualizations of ODDs and the Guidelines, as well as document instances?</item>
+<item>EM: We would also want to specify the outcome: the outcome can be a web page, or a method, or a mini-tool, or something widget-like.</item>
+<item>SR: A concrete example of this was my work in the summer to use D3.js to visualize TEI tree elements.</item>
+<item>JC: This would help to make it possible for people actually to use the tree elements in TEI, where currently they wouldn’t because of the rendering difficulties.</item>
+<item>SB: I think we should go forward with RW’s idea. Who should be involved? [SR, HC and EM volunteered.]</item>
+<item>SR: Is DH 2014 the right venue for this?</item>
+<item>JC: DH 2014 gets a much wider net of people than we’d get at (say) the TEI meeting.</item>
+<item>EM: D3.js is definitely a winner; it will be popular.</item>
+<item>SR: How would we do this․as a proposed workshop for DH 2014?</item>
+<item>JC: We should ask them whether we should go that way. <hi style="bold">Action: JC to approach the DH 2014 committee and find out how they would prefer us to do it, and whether it’s a good idea; and tell the Board that HC, SR and EM are prepared to be involved in organizing this along with one or more Board members.</hi><hi style="bold">Action: EM to make sure this happens.</hi> Deadline is December 12 to report back.</item>
+</list>
+</item>
+<item>i18n: take forward updating translations
+<list style="ul">
+<item>SR: I’ve done some of the infrastructure work to allow us to produce spreadsheets for each language which we could allow people to work on, to provide updated translations. Moving that data back may have to be done manually.</item>
+<item>LB: All this does is to give us the mechanism to identify the bits that need work.</item>
+<item>SR: We don’t have to commit ourselves to writing an automated method to move data back into the specs from the spreadsheet.</item>
+<item>EM: In a group of people working on translations, you might expect to have one person who could move the data back into the specs.</item>
+<item>SB: We have some issues with keeping the spreadsheets up to date, as specs change while translations are being done.</item>
+<item>LB:I have already been talking to Florence Clavaud about translations; I could go back to her and ask her if the spreadsheet would be easier; if not her, I might be able to find other people.</item>
+<item>SB: The process of using the spreadsheet needs to be thought out. Testing it out with a small group would be a good thing to do.</item>
+<item>SR: In the case of French, we have LB who will be able to keep the process going, but for the other languages, we’ll need to find someone in charge of each language to push it forward.</item>
+<item>JC: You don’t want just anyone doing this; we need some quality control.</item>
+<item>SB: That’s true. We can either use the vetted model where someone is in control, or we could use the wiki model where individuals are responsible for their own contributions.</item>
+<item>MH: I don’t mind being responsible for manually merging the translations.</item>
+<item>LB: We need to put out another call for action and provide oversight for the translation groups. [MH volunteers for this.]</item>
+<item>SB: Didn’t we have funds for this before?</item>
+<item>SR: We had a small amount. We could offer a bounty for someone willing to complete a particular partially-finished translation.</item>
+<item>MH: Are we only trying to update the translations we have already, or solicit new ones?</item>
+<item>SR: The Board is rightly concerned that we don’t get on with internationalization. We have to be more active.</item>
+<item>LB: We have to go out and find more people willing to do this work. Part of our problem is that the Council is dominated by English speakers.</item>
+<item>MH: We could target French (through LB), and Italian (when Fabio comes onto Council).</item>
+<item>EM: Do we have tools for making translation easier? Could we provide existing examples that people can work from?</item>
+<item>SR: That is already in the spreadsheets. See http://www.tei-c.org/Tools/I18N/index.xml for contact details of translators. <hi style="bold">Action: MH to get contact info on original groups and activate if possible, probably starting with French and Italian</hi><hi style="bold">Action: LB to testdrive the spreadsheet.</hi></item>
+</list>
+</item>
+</list>
+</div></div>
+<div><head>
+               10:30 – 10:45 Break</head></div>
+<div><head>
+               Discussion Topics continued: 10.45-11.00</head>
+<list style="ul">
+<item>Attributes without examples
+                 <list style="ul">
+<item>RW: For a long time we’ve been talking about the absence of examples for many attributes. About a year ago we generated a list on the wiki of attributes needing examples, but few were addressed. BB and RW were tasked with prioritizing the list, which is now done. The process revealed that half or more were very low priority because what you can put in the attribute is so constrained that examples don’t necessarily help. A few are classified as medium or high priority. Anyone on Council can now revisit those and do them. There are still more where we think that definitions could be improved, and BB and RW will turn those into tickets.</item>
+<item>LB: How many are there in that class?</item>
+<item>RW: 5 to 10.</item>
+<item>SB: Should we authorize BB and RW to assign those tickets to people?</item>
+<item>RW: Many of them we may just do ourselves, because they’re just ambiguous.</item>
+<item>BB: I noticed that there are five @hand attributes, which raises a red flag for me.</item>
+<item>JC: These are probably instances where we need local modification. Put in a bug report. <hi style="bold">Action: BB and RW to turn into bug reports those attributes that are without examples that are high priority or need new/updated definitions.</hi></item>
+<item>The list of attributes without examples is at <ref target="https://wiki.tei-c.org/index.php/AttsWithoutEgs">http://wiki.tei-c.org/index.php/AttsWithoutEgs</ref>.</item>
+</list>
+</item>
+</list>
+</div>
+<div><head>&gt;
+               11:00 – 12:30 SourceForge Tickets
+              </head><list style="ul">
+<item>Group 10
+                <list style="ul">
+<item><ref target="https://sourceforge.net/p/tei/feature-requests/326/">FR 326</ref> an <gi>object</gi> element (AMBER open).
+                    <list style="ul">
+<item>This has been waiting for a proposal from the Ontology SIG. They met in Rome and have sent minutes to SR, who is supposed to present a proposal to Council. This will be dealt with later on the agenda. Leave as Amber.</item>
+</list>
+</item>
+<item><ref target="https://sourceforge.net/p/tei/feature-requests/482/">FR 482</ref> The term strikes back – terminology chapter (AMBER open).
+                   <list style="ul">
+<item>The ISO is working on a standard for terminological databases, and would like TEI to collaborate. We agree this would be a good idea. LR submitted an ODD, which SB has tweaked a bit. The next stage would be to propose two members of Council to sit on a joint ISO/TEI workgroup. Any volunteers or suggestions? Once we’ve decided, we should respond to LR as soon as possible. LB is ISO representative and volunteers, but ISO groups always meet in remote places and funding would be required. We used to have a TBX chapter; we would be aiming to create a new one.</item>
+<item>KH: I looked at his proposed chapter, and would reorganize it a bit. He hasn’t explained why we aren’t fitting terminological dictionaries into our existing dictionary content.</item>
+<item>MH: Perhaps if it’s to be a joint standard with ISO, it would be better as a separate chapter.</item>
+<item>SR: Do we want to take on this level of work? Why would we do this if there’s already an existing external standard?</item>
+<item>SB: The existing ISO standard is not an ODD-based standard. LR wants to make it ODD-based, and for us to integrate it into the standard.</item>
+<item>JC: Under what circumstances do we want chapters in the TEI Guidelines to be also ISO standards?</item>
+<item>KH: If this standard is maintained by a separate standards group, then I’m inclined to say that this should remain in a separate namespace.</item>
+<item>JC: We should go back to him with this question — why should we incorporate this into the TEI namespace, as opposed to keeping it separate as we do with e.g. SVG?</item>
+<item>LB: If we had a chapter that was compatible with TBX, that would also be good for the TEI. What maintenance difficulties would there be? The feature structures have serious problems, specifically in fsd, where the ISO have been too slow in moving forward, but TBX has been stable for a long time now.</item>
+<item>JC: Have we ever made changes that have caused changes to feature structures which would put them out of sync with the original ISO standard?</item>
+<item>SR: If we adopt LR’s proposal, we might be constrained in how we could develop our own <gi>term</gi> element because we might take it out of sync with the ISO standard.</item>
+<item>LB: We would not want to adopt the whole text of the ISO standard into the existing Guidelines, because this would be an editorial problem.</item>
+<item>SR: and there would be naming convention issues (<gi>descrip</gi> instead of <gi>desc</gi>).</item>
+<item>LB: So we could instead propose a TEI equivalent of the TBX standard. If we’re going to do it, my vote would be to do it properly (i.e. our way — changing element names etc.). <hi style="bold">Action: LB, KH and SB to articulate a more generic policy for TEI on the integration of external standards and will generate a one-page proposal for this policy. This should be provided to Council ahead of the next teleconference. In addition, LB, KH, and SB will check with Laurent that he wants TBX incorporated into the Guidelines as is or kept in sync in the future and what he thinks about melding into the rest of the TEI Guidelines (in language, approach, element naming conventions) or keeping it self-contained.</hi></item>
+</list>
+</item>
+<item><ref target="https://sourceforge.net/p/tei/feature-requests/405/">FR 405</ref> Wrong schema generated (AMBER pending-accepted).
+                   <list style="ul">
+<item>This is due to a bug in the current version in Roma, which cannot handle attribute overrides very well. The specific problem raised might be avoided temporarily by re-adding @subtype to <gi>abbr</gi> and <gi>title</gi>. It looks like this might have been done already.</item>
+<item>SB: Do we have a general rule that we don’t make local modifications in the ODD source which add an element to a class and then remove attributes from that class.</item>
+<item>JC: I thought that was one of the benefits of this override feature.</item>
+<item>SR: I got told in a previous Council meeting that I should not have done that. All the more reason we need a new Roma. <hi style="bold">Action: MH  to see if it has been fixed, and if so, close the ticket [DONE].</hi></item>
+</list>
+</item>
+</list>
+</item>
+<item>Group 11
+                <list style="ul">
+<item><ref target="https://sourceforge.net/p/tei/feature-requests/294/">FR 294</ref><gi>altIdentifier</gi> is deprecated within <gi>msPart</gi> (AMBER open).
+                    <list style="ul">
+<item><hi style="bold">Action: KH to change to Green and add to the ticket about deprecation using Schematron along with 383, if not already done.</hi></item>
+</list>
+</item>
+<item><ref target="https://sourceforge.net/p/tei/feature-requests/264/">FR 264</ref><gi>altIdentifier</gi> in <gi>msPart</gi> (AMBER pending-accepted). 
+                  <list style="ul">
+<item><hi style="bold">Action:  JC to change to Green and assign to himself, then nudge Torsten for an example of an <gi>altIdentifier</gi> within an <gi>msPart</gi>.</hi></item>
+</list>
+</item>
+<item><ref target="https://sourceforge.net/p/tei/feature-requests/300/">FR 300</ref> Move <gi>witStart</gi> et al. to model.milestoneLike (AMBER pending). 
+                    <list style="ul">
+<item><hi style="bold">Action: EM to change to red and assigned to EM to chase up or otherwise close ticket.</hi></item>
+<item>SB: <ident type="class">model.milestoneLike</ident> may not be the class to add <gi>witStart</gi> to, assuming there are good use-cases.</item>
+</list>
+</item>
+</list>
+</item>
+<item>Group 12
+                <list style="ul">
+<item><ref target="https://sourceforge.net/p/tei/feature-requests/371/">FR 371</ref> Extend the enumerated values for list/​@type (AMBER open-rejected).
+                  <list style="ul">
+<item>Breakout group said we just need to close the ticket. DONE.</item>
+</list>
+</item>
+<item><ref target="https://sourceforge.net/p/tei/feature-requests/377/">FR 377</ref> retaining punctuation marks in the text of a TEI document (AMBER open-accepted).
+                    <list style="ul">
+<item>RW says she has added the element spec but that it isn’t yet being referenced. She needs to figure out what’s wrong and then add associated prose in the documentation. <hi style="bold">Action: RW to finish the work and ask for help if necessary.</hi> Ticket is now Green.</item>
+</list>
+</item>
+<item><ref target="https://sourceforge.net/p/tei/feature-requests/345/">FR 345</ref> members of <ident type="class">model.respLike</ident> should be members of <ident type='class'>att.declarable</ident> (AMBER open-later).
+                    <list style="ul">
+<item>Breakout group instead suggests adding <ident type='class'>att.canonical</ident> to all members of <ident type="class">model.respLike</ident> so that <gi>sponsor</gi> et al. behaves like <gi>editor</gi>. If Laurent still thinks <ident type='class'>att.declarable</ident> is needed for something, he can say so on the ticket. The group feels that the use-case would use @ref; nevertheless, we should go ahead with this anyway, because it makes sense.</item>
+<item>SB: It still strikes me that the better encoding is to put the @ref on a <gi>persName</gi>, <gi>orgName</gi> or whatever, not on <gi>author</gi> or <gi>editor</gi>.</item>
+<item>KH: But we’ve long sanctioned this approach, so we should be consistent. <hi style="bold">Action: SR to make the ticket Green and go ahead and implement it, including some documentation/examples. [DONE]</hi></item>
+</list>
+</item>
+</list>
+</item>
+<item>From Group 13  (since those doing Group 12 had time)
+                <list style="ul">
+<item><ref target="https://sourceforge.net/p/tei/feature-requests/480/">FR 480</ref> Adding the @hand attribute to all (or most) text-containing elements (AMBER open).
+                    <list style="ul">
+<item>Breakout group wants to ask Lou what he thinks since he has feelings about the true meaning of @hand.</item>
+<item>SR: We originally believed that <gi>handShift</gi> was the way to do this, but it can be very clumsy, and a more generally-available @hand might be much more elegant.</item>
+<item>SB: <gi>handShift</gi> may be clumsy, but it also runs into trouble when you don’t know for instance whether it applies to <gi>note</gi> or not.</item>
+<item>SR: It’s difficult to know what you wouldn’t want to add @hand to.</item>
+<item>KH: We talked about a large class of elements constituting all those which are descendants of <gi>text</gi>, which could get attributes like this.</item>
+<item>HC: How would the @hand attribute interact with <gi>handShift</gi>?</item>
+<item>JC: Perhaps if you can use @hand on an element, do that, but in the absence of an appropriate element, you can use <gi>handShift</gi>.</item>
+<item>LB: The reason for introducing <gi>handShift</gi> is that the logical structure of your text might not correspond with an XML hierarchy․in fact it most likely doesn’t. Thus the most natural way to do this is <gi>handShift</gi>, but there are circumstances in which @hand is needed. <hi style="bold">Action: LB to respond to the ticket <ref target="https://sourceforge.net/p/tei/feature-requests/480/">FR 480</ref>.</hi></item>
+</list>
+</item>
+</list>
+</item>
+<item>Group 14
+<list style="ul">
+<item><ref target="https://sourceforge.net/p/tei/bugs/276/">BUG 276</ref> internationalisation links (AMBER open).
+                    <list style="ul">
+<item>Language links at bottom of a page should take you to same page, but with examples in the target language. <hi style="bold">Action: JC to make Green and allocate to SB.</hi></item>
+</list>
+</item>
+<item><ref target="https://sourceforge.net/p/tei/bugs/594/">BUG 594</ref> TEI-C website menu points to wrong index page for Guidelines (AMBER open).
+                    <list style="ul">
+<item>
+                    Fixed, will appear in next release. [But note pulldown menu problem in Chrome] <hi style="bold">Action: EM to create a ticket on the Chrome problem.</hi></item>
+</list>
+</item>
+<item><ref target="https://sourceforge.net/p/tei/bugs/619/">BUG 619</ref> tei_allPlus.rng: conflicting ID-types for attribute “id” of element “partialdiff” from namespace “http://www.w3.org/​1998/Math/MathML” at 10862:191 (AMBER open).
+                    <list style="ul">
+<item>
+                    Not able to reproduce (probably due to using older TEI framework in Oxygen 10). Ticket closed. <hi style="bold">Action: SB to double-check whether able to reproduce and report back on ticket if able to.</hi></item>
+</list>
+</item>
+</list>
+</item>
+</list>
+</div>
+<div>
+    <head>           12:30 – 14:00 Lunch Break (in Dining Room)
+    </head>         </div>
+<div><head>
+               14:00 – 15:30 Afternoon Discussion Session</head>
+<list style="ul">
+<item>
+                   Text Directionality Workgroup: look at <ref target="https://wiki.tei-c.org/index.php/Text_Directionality_Draft">first draft of new Guidelines sections</ref> and <ref target="https://wiki.tei-c.org/index.php/Text_Directionality_Draft_Questions">questions</ref> [MH]
+                  <list style="ul">
+<item>MH summarized the genesis of this text from Providence. He noted that not only the working group but also Richard Ishida at the W3C and fantasai, one of the authors of the CSS specification, have offered feedback. I’d like us to confirm that we’re going in the right direction with this and figure out where it might be inserted in the Guidelines. Various other Council members said they thought it should go in section 10.6.6 and that as an author this was the place they would expect to find it there. JC thought it gave quite a lot of detail. MH noted that the specs that it refers to are quite confusing and unlikely to become clearer. LB is concerned that the writing style doesn’t match the other parts of chapter 10. He also notes that it gives more detail than other topics in that chapter. MH suggested that the rest needs more expansion or that the topics might be simple enough not to require such detail. BB says he’s found the Guidelines vary in the level of detail given. SB said that the lack of balance doesn’t bother him as much as it did when we printed.</item>
+<item>KH: It reads more like a tutorial than a typical Guidelines chapter, but I couldn’t figure out which part would become a cheatsheet. EM(?) pointed out that 10.6.6 is in a chapter on manuscript description. Once LB realized that, he felt that even this section needs to be moved out of chapter 10 since it’s not specific to manuscripts. He suggested that it go into “Languages and Character Sets”. We discussed whether this should remain a front matter section. In general, front matter sections don’t define any modules, but they also assume that you don’t know any specific TEI elements yet.</item>
+<item>RW: If we incorporated Martin’s text into this front matter section, could it be modified in a way that it referred to where these elements are defined in other chapters? LB proposed renaming chapter 5 (WD) to “Characters, Glyphs, and Writing Systems” and inserting Martin’s text there. KH added that we should try to fit section 10.6.6 into this chapter as well. Everyone agreed, but JC said that we should all read Martin’s draft before then. <hi style="bold">Action: Entire Council to (re)read MH’s draft before next face-to-face meeting. Once we’ve done that and agreed, someone will rewrite chapter 5 (WD) to include MH’s draft and the current section 10.6.6. LB volunteered.</hi></item>
+<item>RW: This is the first time I’ve seen a large chunk of prose being incorporated into the Guidelines. How do we attribute authorship?</item>
+<item>MH: I attributed one person who provided an example.</item>
+<item>LB: In the past, we’ve agreed not to credit individuals because the TEI Guidelines are a group effort.</item>
+<item>JC: But we can still thank people in the release notes for major contributions.</item>
+<item>PS: Would you be willing to accept suggestions for concision?</item>
+<item>MH: Absolutely.</item>
+</list>
+</item>
+<item>Into the blue yonder: is it time to have a TEI P6 discussion again? [SR]
+                   <list style="ul">
+<item>SB: The only point in moving to P6 is if we make the TEI more expressive. RDF doesn’t easily offer that, but LMNL does, for example.</item>
+<item>HC: We might turn the TEI into an abstract model that could be expressed in various syntaxes: XML, JSON, etc.</item>
+<item>JC: I point you to <ref target="/Activities/Council/Working/tcw09.xml">http://www.tei-c.org/Activities/Council/Working/tcw09.xml</ref> where we expressed the reasons we might move to P6: the emergence of new technologies or a new architecture: </item>
+<item><q>Council may break backward compatibility in a more substantial and comprehensive way (as happened with the transition to P4 to P5) only with the transition to a new major version (e.g., P6, but not P5.99999). Such transitions should happen only in response to the emergence of new technologies (e.g., the transition from SGML to XML) or the development of a new architecture that conveys substantial benefit (e.g., the development of the new class system).</q></item>
+<item>EM: Does “P5” include both the Guidelines prose, the specifications, and the infrastructure? </item>
+<item>JC: Yes, Guidelines, Specs, and ODD, but not software.</item>
+<item>LB: I would not include the stylesheets.</item>
+<item>JC: Is the development of a new ODD enough of a new architecture to warrant P6? I think not. If we wanted to express in RDF, that would be enough to move to P6?</item>
+<item>SB: Why is SR interested in P6?</item>
+<item>JC: Partly he is interested in locking down the TEI into a specific set of choices so that a processing model can be developed and thus software is easier to write. We can do all that with a P5 Customization.</item>
+<item>SB: It sounds like he wants P6 in order to be able to break backwards compatibility.</item>
+<item>MH: If we were to write P5 today, we’d eliminate some things we currently allow. That would be P6. (?)</item>
+<item>SB: Venturing to P6 just to break backwards compatibility feels like it would cause unwanted trouble for our users. We could, however, develop a customization that removes options for people.</item>
+<item>LB: All proper customizations do this.</item>
+<item>LB: Have a <title>Journal of the Text Encoding Initiative</title> special issue on how things would work differently if designed from scratch?</item>
+<item>KH: By <ref target="/Activities/Council/Working/tcw09.xml">tcw09</ref>, we might say that the emergency of JSON warrants the creation of P6 with TEI as a purely abstract model.</item>
+<item>HC: Right.  Even though a TEI-to-JSON converter exists, is such a JSON document really TEI?</item>
+<item>JC: If TEI were expressed solely as an abstract model, each example and declaration might be able to be expressed in XML or JSON with a toggle button (like the schema syntaxes in the specs).</item>
+<item>EM: It’s incredibly easy to find JavaScript developers but hard to find XSLT people. So an advantage to facilitating the use of JSON is that it would be easier to find developers.</item>
+<item>HC: And it would work better with TEI Boilerplate.</item>
+<item>MH: Would you ever actually edit in JSON, or would you just output to it?</item>
+<item>EM: You would edit if you used some front-end rather than a text editor.</item>
+<item>JC: I wouldn’t, JSON is an output format to me.</item>
+<item>HC: Still, even if we reworked P5 as an abstract model but the model itself didn’t really change, we need not call it P6.</item>
+<item>JC: Yes, we wouldn’t meet the requirements for that and so it wouldn’t really be P6.</item>
+<item>MH: Who has written TEI-to-HTML5 conversion already?</item>
+<item>JC: It’s part of the stylesheets package.</item>
+<item>HC: And TEI Boilerplate essentially does this.</item>
+<item>MH: But someone wrote a serialization that does not embed any TEI element or attribute names, and there’s even round-tripping. But I forget who. In any case, this all depends on a processing model.</item>
+<item>SB: But I think this is a separate matter.</item>
+<item>JC: I would be fine with separating the abstract model and XML syntax in order to allow multiple serializations.</item>
+<item>SB: This would make the Guidelines harder to comprehend (like taking out XML-specific terms like “element” and “attribute”).</item>
+<item>JC: Those aren’t necessarily specific to XML, they can be understood in a more general way.</item>
+<item>EM: What’s a productive way to continue thinking about this? Collecting examples?</item>
+<item>LB: Maybe a topic for the hackathon?</item>
+<item>MH: I can talk to the Journal of the Text Encoding Initiative editors about a special issue on envisioning P6.</item>
+<item>LB: Didn’t we once produce a proposal for a workshop to brainstorm on P6? Would be worth looking for it.</item>
+<item>JC: Yes, we asked for funding for it but didn’t get it. We also have the <ref target="https://wiki.tei-c.org/index.php/P6-dev">P6-dev wiki page</ref> to record things we think aren’t suitable in P5. Though note that our thinking about these does change as P5 evolves.</item>
+<item>MH: Now that we have a solid deprecation model, we could actually handle half of the things on the P6-dev wiki page!</item>
+<item>JC: Yes, we should periodically look at this page.</item>
+<item>SB: In fact, I think we’ve done a few of the things there already.</item>
+<item>HC: A lot of the resistance to TEI I’ve seen over the years has been to XML as a whole. It’s a barrier as long as we require use of XML.</item>
+<item>LB: We had this same conversation in the SGML years. Our response then was that if a better tool came along, we’d consider it.</item>
+<item>EM: Well, maybe that tool has arrived [i.e., JSON].</item>
+<item>HC: And if we moved to the abstract model, those people would not resist TEI any more.</item>
+<item>MH: I still don’t see how anyone would use JSON unless we offered an editor.</item>
+<item>EM: But we are spending effort creating a forms-based interface to constrain options within oXygen. We are already going down that road.</item>
+<item>HC: The TEI’s toolchain essentially depends on XSLT, which limits implementation options.</item>
+<item>LB: I agree that it would be great to find developers who know other tools besides XSLT. But that’s not the same as giving into people who refuse to work with XML.</item>
+<item>SR: How do people manipulate HTML?</item>
+<item>HC: Using JavaScript.</item>
+<item>SR: Then you could do this with TEI as well? HC. Yes, but it’s a problem of perception.</item>
+<item>LB: I actually always describe the TEI as an abstract model which we express in XML for convenience though could be expressed in other syntaxes.</item>
+<item>HC: I agree that it already is.</item>
+<item>SR: We don’t actually try very hard to express an abstract model independent of XML.</item>
+<item>LB: I think we need to blow the trumpet more loudly about SR’s existing TEI-to-JSON conversion.</item>
+</list>
+</item>
+</list>
+</div>
+<div><head>
+               15:30 – 15:45 Break</head></div>
+<div><head>
+               15:45 – 17:30 SourceForge Tickets</head>
+<list style="ul">
+<item>Group 15
+                 <list style="ul">
+<item><ref target="https://sourceforge.net/p/tei/bugs/288/">BUG 288</ref> deprecate use of <gi>gram</gi> except as a child of <gi>gramGrp</gi> (AMBER open-accepted).  
+                     <list style="ul">
+<item>[This is pending creation of new ticket on creating a mechanism for deprecating parts of a content model. Note that <gi>entryFree</gi> and <gi>dictScrap</gi> can contain either gram or gramGrp as at present. <hi style="bold">Action: SB to create the new ticket and write the Schematron for this particular deprecation.</hi>]</item>
+</list>
+</item>
+<item><ref target="https://sourceforge.net/p/tei/bugs/515/">BUG 515</ref> Bad example of feature/​@fVal (AMBER open).
+                     <list style="ul">
+<item>[Change this to RED as it’s not clear what needs changing for compatibility with LAF (Linguistic Annotation Framework)—e.g., in Guidelines it’s already changed.] <hi style="bold">Action: JC to check that’s been changed to RED [DONE].</hi></item>
+</list>
+</item>
+<item><ref target="https://sourceforge.net/p/tei/bugs/578/">BUG 578</ref> partial and recursive segmentation of s-units (AMBER open).
+                     <list style="ul">
+<item>[The Guidelines text is clear enough. The restriction of <gi>s</gi> self-nesting is implemented only by a schematron constraint; MH offers to revise content model to enforce it. Change to GREEN] <hi style="bold">Action: MH will revise content model to match the prose.</hi></item>
+<item>SB: But note that if we ever change the content model of <ident type="macro">macro.phraseSeq</ident>, we will need to remember to update this content model. After discussion, we agreed that we’ll just have to live with this.</item>
+</list>
+</item>
+<item><ref target="https://sourceforge.net/p/tei/feature-requests/298/">BUG 298</ref><ident type='class'>att.editLike</ident> should not bring <ident type='class'>att.dimensions</ident> &amp; <ident type='class'>att.ranging</ident> (AMBER open-accepted).
+                     <list style="ul">
+<item>[MH to ask Gabriel to implement; go GREEN]. <hi style="bold">Action: MH to ask Gabby to implement.</hi></item>
+</list>
+</item>
+</list>
+</item>
+<item>
+                   Group 16
+                   <list style="ul">
+<item><ref target="https://sourceforge.net/p/tei/bugs/302/">BUG 302</ref> version ignores @source (AMBER open).
+                       <list style="ul">
+<item>This is a Roma issue. Recommend marking as closed won’t fix because it’s beyond the scope of Council activities. <hi style="bold">Action: SR to try reproducing this and set as closed-won’t fix.</hi></item>
+</list>
+</item>
+<item><ref target="https://sourceforge.net/p/tei/bugs/583/">BUG 583</ref> Adding new attribute fails in Roma schema generation (AMBER open).
+                       <list style="ul">
+<item>Same as 302. <hi style="bold">Action: SR wil set as closed-won’t fix and check that it has the Roma tag.</hi></item>
+</list>
+</item>
+<item><ref target="https://sourceforge.net/p/tei/bugs/434/">BUG 434</ref> issues with ePub conversion (2/3) (AMBER open).
+                       <list style="ul">
+<item>Any issue not dealing with ODD processing should be reported on the GitHub issues page and not be discussed by Council. <hi style="bold">Action: SR will ask poster kindly to post there (explaining why) and close this issue.</hi></item>
+<item>HC: If stylesheets are the Council’s responsibility, how do you want people to contribute to them. Tell people to fork and do a pull requests? Or do we add people to GitHub’s TEIC project?</item>
+<item>SR: Maybe we do the former (the convention) and then invite them to the latter if they contribute a lot? KH agrees.</item>
+<item>HC: Someone currently on Council should always be an administrator on TEIC.</item>
+<item>JC: And the Coucnil Chair should always also be.</item>
+</list>
+</item>
+<item><ref target="https://sourceforge.net/p/tei/feature-requests/212/">FR 212</ref> Generic dating class (AMBER pending-accepted).
+                       <list style="ul">
+<item>Gabby claimed in 2011 that it’s done except needs some more prose documentation. <hi style="bold">Action: HC to investigate whether it’s actually been done.  MH offered examples if needed.</hi></item>
+</list>
+</item>
+</list>
+</item>
+<item>Group 19
+                 <list style="ul">
+<item><ref target="https://sourceforge.net/p/tei/bugs/528/">BUG 528</ref> consistency in “the Guidelines” vs. “these Guidelines” (AMBER open).
+                     <list style="ul">
+<item>This should be green. <hi style="bold">Action:  KH to do this.</hi></item>
+</list>
+</item>
+<item><ref target="https://sourceforge.net/p/tei/bugs/548/">BUG 548</ref> use of modal verbs in Guidelines (AMBER pending-later).
+                     <list style="ul">
+<item>Already assigned to KH. RW agreed to help. It might lead to a list of questionable cases, which should be put in a new ticket. <hi style="bold">Action: KH and RW to create a new, detailed ticket with all questionable cases. In the meantime, LB will fix the edits that KH made at r12525.</hi></item>
+</list>
+</item>
+<item><ref target="https://sourceforge.net/p/tei/bugs/568/">BUG 568</ref> “How to edit the Guidelines” and chapter organization (AMBER open).
+                     <list style="ul">
+<item>SR: What MH found looks distinctly weird to him. He can’t think of any special circumstances. Should check with LB and SB. But looking at the latest code, it seems that it’s already been fixed! <hi style="bold">Action: MH to replace references to entity references with explanation of XIncludes in “How to edit the Guidelines” [DONE].</hi></item>
+</list>
+</item>
+</list>
+</item>
+<item>Group 17
+                 <list style="ul">
+<item><ref target="https://sourceforge.net/p/tei/bugs/585/">BUG 585</ref> Precision element missing <ident type='class'>att.ranging</ident> class (AMBER open).
+                     <list style="ul">
+<item>Working group closed. <hi style="bold">Action: EB to ask Gabby to open a new one about clarifying this element and relevant parts of the chapter on dating, to explain and exemplify the use of these attributes.</hi></item>
+</list>
+</item>
+<item><ref target="https://sourceforge.net/p/tei/bugs/589/">BUG 589</ref> add <gi>respons</gi> and <gi>space</gi> to <ident type='class'>att.responsibility</ident> (AMBER open).
+                     <list style="ul">
+<item>Working group triage: Is it ok to add have @cert piggyback into these elements because of adding to <ident type='class'>att.responsibility</ident>? Is @resp significantly semantically different on <gi>space</gi>? It is, after all, described quite differently on this element.</item>
+<item>LB: It’s not semantically different. <hi style="bold">Action: EM will get rid of locally assigned @resp by adding to <ident type='class'>att.responsibility</ident> (thereby getting @cert as well). Will change to GREEN.</hi></item>
+</list>
+</item>
+<item><ref target="https://sourceforge.net/p/tei/bugs/506/">BUG 506</ref> Meaning of @corresp rather in dispute (AMBER open).
+                     <list style="ul">
+<item>Working group triage: needs to be discussed: Is @corresp strict or general purpose? If @corresp is the general case, then it can be applied ubiquitously. If it’s special case, then need to provide a general attribute to handle the other case.</item>
+<item>SB: If we can find a constituency for a more specific attribute, we should create that. </item>
+<item> ___: But is there such a community? </item>
+<item>JC (sarcastically): What if we change @corresp to “@relates”?</item>
+<item>LB: I feel that the definition in the Guidelines is quite vague and being used in a way not intended. I feel people should use in more strictly, but given that people are using loosely, we may need to continue allowing it.</item>
+<item>SB: _____</item>
+<item>JC: Or we instead tighten the definition and break backwards compatibility.</item>
+<item>EM: The problem is that the example is of one type of correspondence, whereas the prose implies that there are other types of correspondence, whereas Lou feels that it should be used more narrowly. So I don’t feel we can do what JC suggested.</item>
+<item>JC: Perhaps we add a note on @corresp to say that it is intentionally vague in its usage?</item>
+<item>MH: Better yet, add a second example showing how else it could be used. <hi style="bold">Action: MH to create an example and run it by tei-council before adding to the Guidelines.</hi></item>
+</list>
+</item>
+</list>
+</item>
+<item>Group 20
+                 <list style="ul">
+<item><ref target="https://sourceforge.net/p/tei/bugs/563/">BUG 563</ref> inconsistent encoding of citations to sources of examples (AMBER open).
+                     <list style="ul">
+<item>Working group recommends assigning ticket to SB who will enlist help to clean this up. (BB, EM, and PS have volunteered to help). <hi style="bold">Action: BB, EM, and PS to work on the ticket by mid-February 2014.</hi></item>
+</list>
+</item>
+<item><ref target="https://sourceforge.net/p/tei/bugs/582/">BUG 582</ref> Need for consistency in terminology relating to TEI conformance (AMBER open).
+                    <list style="ul">
+<item>Working group: Agreed – need to assign to someone.</item>
+<item>LB: I actually think “TEI-conformable” is a dangerous notion implying some sort of intermediate stage between TEI-conformant and non-TEI-conformant.</item>
+<item>MH: We should raise a separate ticket about possibly doing away with “TEI conformable”. [Some consensus on the idea that the three paras in USE dealing with TEI-Conformable are somewhat undesirable.]</item>
+<item>JC: I have a project in which all elements were renamed and put in another namespace, but all with <gi>equiv</gi>s that point back to TEI elements, and easy to convert to TEI algorithmically. It’s also helpful to be able to call “TEI-conformable” on a grant application.</item>
+<item>EM: But a lot of people use this terminology to claim conformability.</item>
+<item>LB: We have a clear definition of conformance, and nobody questions that; do we now need the conformable definition at all? <hi style="bold">Action: MH to deal with the ticket narrowly, using a hyphen and lowercase but leaving both “conformant” and “conformable” [DONE].</hi><hi style="bold">Action: JC will create a ticket to reconsider the discussion of “conformable” and “conformant” in the Guidelines.</hi></item>
+</list>
+</item>
+<item><ref target="https://sourceforge.net/p/tei/bugs/460/">BUG 460</ref> list/​@type=”unordered” is not recommended, but used often (AMBER open).<list style="ul">
+<item>Working group: This bug has had a lot of discussion and a lot of work has been done. Final comment suggests revisit to see if it’s still got work on it. <hi style="bold">Action: MH to follow the last comment on ticket to figure out our current situation.</hi></item>
+</list>
+</item>
+<item><ref target="https://sourceforge.net/p/tei/bugs/468/">BUG 468</ref> Order of elements in <gi>publicationStmt</gi> (AMBER open-accepted). Group discussion:<list style="ul">
+<item>SB: Despite Lou’s comment on the ticket, I think the content model I propose will accomplish what we want.</item>
+<item>LB admitted that he had misunderstood but that his prose expresses the same thing but noted that we need to test SB’s content model to make sure it’s deterministic. <hi style="bold">Action: SB will do the content model and LB will do the prose. They’ll work out the specifics.</hi></item>
+</list>
+</item>
+</list>
+</item>
+</list>
+</div></div>
+<div><head>
+             Wednesday 13 November 2013</head>
+<div><head>
+               09:00 – 10:30 Morning Discussion Session</head>
+<list style="ul">
+<item>Council reviewed object description wiki pages before bringing Torsten Schassen online. The main purpose of our discussion will be about chartering WG or not. What does “element sharing element is part of the issue that the workgroup will address” mean? Refactoring some existing elements for more generic purpose. NEDIMAH a European project that has a WG on ontologies and linked data which Christian-Emile and SR chair. They might be able to pay for a face-to-face of this group. An <gi>object</gi> element might be analogous to <gi>person</gi> or <gi>place</gi>.</item>
+<item>[Added Stefanie Gehrke via Skype; eventually added Torsten Schassan via Skype]</item>
+<item><list style="ul">
+<item>From 09:30: Discussion with Torsten Schassan and Stefanie Gehrke (via Skype) about need for Object Description Chapter (see http://wiki.tei-c.org/index.php/Council_agenda_2013-11-OntologySIG and http://www.tei-c.org/SIG/Ontologies/meetings/m20131003.html)</item>
+<item>TS: Idea of generalizing <gi>msDesc</gi> has been around since at least 2008, finally decided to go for WG. Questions include which wordings in MS need to be changed and which element structures need to be modified. The least that could be done would be to re-define semantics of some MS description elements. But we don’t know yet is whether or not some of the constraints for MS would not apply to non-MS objects.</item>
+<item>JC: Question: Why TBO instead of any object regardless of whether it has text?</item>
+<item>TS: Answer․says “well, it’s the *T*EI”</item>
+<item>JC: But what about references from within the text to non-textual objects.</item>
+<item>Two issues: TBOs and objects in general; we need clarity as to which of these two (or both) this WG is to be working on. Epidoccers have been using <gi>msDesc</gi> for non-MS inscriptions for awhile. MS definition even includes.</item>
+<item>TS: The WG should address this at the very beginning.</item>
+<item>MH: Group that is not addressing generic entity is only solving ½ the problem. <gi>msDesc</gi> is not a weird orphaned parallel of <gi>person</gi>. A particular MSS might be described by one project as a manuscript and another as a generic object. There is a need for blue-sky thinking of objects in general; there is also a need to make <gi>msDesc</gi> less MSS-specific. TBOs are a subset of “objects”. Thus suggestion (MH) to solve them at the same time.</item>
+<item>SR/SB: observation that describing a TBO is harder, or at least involves more information, than a non-TBO.</item>
+<item>RW: Maybe the issue is not TBO vs non-TBO, but rather “what is object’s relationship to the TEI document”.</item>
+<item>SB: <gi>msDesc</gi> in <gi>body</gi> is an answer to a particular problem for a particular constituency, it is not parallel to other treatments of metadata. (disagreement on this)</item>
+<item>EM: Would like to base this on examples of problems.</item>
+<item>PS: There are existing practices for describing objects we should pay attention to (e.g., museum folks)</item>
+<item>TS: E.g., our paintings catalogue. Tried to fit into <gi>msDesc</gi>, and most of it worked save one issue (which was or is a ticket).</item>
+<item>LB: This WG might take a look at specific examples and see what is missing in TEI to address?</item>
+<item>SG: has data to contribute as well</item>
+<item>JC: Action going forward?</item>
+<item>TS: 2 things: reading chapter, try to find out what wordings should be changed in what way; call to community to bring up areas where current scheme is insufficient. EM requests higher-level description of problem in general. SR suggests we already have this in FR for <gi>object</gi> and use of <gi>msDesc</gi> for non-MSS. TS never thought of this distinction as he always thought it useful to have same elements for metadata and transcription. <hi style="bold">Action: TS to come up with a more detailed problem description and what the WG should attempt to solve by 2014-01-01.</hi></item>
+<item>Problem: one issue or two. EM suggests we need TS to submit document scoping problem space. TS asks if minutes of Rome meeting are sufficient? JC responds not really, need higher-level scoping document that includes budget request, if any. Council will discuss minutes on list (which TS can read), as a collaborative effort to forge this document before the end of this year.</item>
+</list>
+</item>
+</list>
+</div>
+<div>
+  <head>             10:30 – 10:45 Break
+</head>             </div>
+<div><head>&gt;
+               10:45 – 12:30 SourceForge Tickets
+               </head><list style="ul">
+<item>Group 18
+<list style="ul">
+<item><ref target="https://sourceforge.net/p/tei/bugs/581/">BUG 581</ref> `<gi>attRef</gi>` needs better documentation (AMBER open).
+                     <list style="ul">
+<item><hi style="bold">Action: SR to implement either removal of attRef, MH to adjust documentation.</hi></item>
+</list>
+</item>
+<item><ref target="https://sourceforge.net/p/tei/bugs/405/">BUG 405</ref> XPointer schemes may not nest, but see ch. 16 (AMBER open).
+                     <list style="ul">
+<item><hi style="bold">Action: SB to fix documentation.</hi></item>
+</list>
+</item>
+<item><ref target="https://sourceforge.net/p/tei/bugs/601/">BUG 601</ref><ident type='class'>att.patternReplacement</ident>/@matchPattern should be XPath regex, not XML Schema (AMBER open).
+                     <list style="ul">
+<item><hi style="bold">Action: JC to close as a dupe of <ref target="https://sourceforge.net/p/tei/feature-requests/432/">FR 432</ref>.</hi></item>
+</list>
+</item>
+</list>
+</item>
+<item>Group 23
+                   <list style="ul">
+<item><ref target="https://sourceforge.net/p/tei/feature-requests/432/">FR 432</ref> Change regex flavor on @matchPattern (GREEN open).
+                       <list style="ul">
+<item>Agreed, XPath. <hi style="bold">Action: MH Write to TEI-L list, if no negative feedback, change.</hi></item>
+</list>
+</item>
+<item><ref target="https://sourceforge.net/p/tei/feature-requests/469/">FR 469</ref> add extent to <ident type='class'>att.dimensions</ident> (GREEN open).
+                       <list style="ul">
+<item>Agreed. <hi style="bold">Action: LB to provide an example in HD chapter (2.2.3) and close ticket.</hi></item>
+</list>
+</item>
+<item><ref target="https://sourceforge.net/p/tei/feature-requests/460/">FR 460</ref> Use of geogFeat in transcription? (GREEN open).
+                       <list style="ul">
+<item>Ok. <hi style="bold">Action: JC to do it before next teleconference.</hi></item>
+</list>
+</item>
+</list>
+</item>
+<item>Group 21
+                   <list style="ul">
+<item><ref target="https://sourceforge.net/p/tei/bugs/605/">BUG 605</ref> clarifying <gi>add</gi> vs. <gi>supplied</gi> and <gi>del</gi> vs. <gi>surplus</gi> (AMBER open).
+                       <list style="ul">
+<item><hi style="bold">Action: HC to emend the prose of the paragraph beginning “The add element should not be used” to reference the surplus element also; LB points out that the specList can’t be modified, because supplied/surplus aren’t defined in Core.</hi></item>
+</list>
+</item>
+<item><ref target="https://sourceforge.net/p/tei/bugs/609/">BUG 609</ref> “lemma” used in a confusing way in <ident type="file">CriticalApparatus.xml</ident> (AMBER open).
+                       <list style="ul">
+<item><hi style="bold">Action: LB to remove the phrase “on any one lemma” from the @varSeq description.</hi></item>
+</list>
+</item>
+<item><ref target="https://sourceforge.net/p/tei/bugs/610/">BUG 610</ref> “lem” used in a confusing way in CriticalApparatus.xml (AMBER open).  
+                       <list style="ul">
+<item><hi style="bold">Action: BB to remove the last clause of the sentence in question, beginning “, or to make clear”.</hi></item>
+</list>
+</item>
+<item><ref target="https://sourceforge.net/p/tei/bugs/558/">BUG 558</ref> name/​orgName (AMBER open). 
+                       <list style="ul">
+<item><hi style="bold">Action: RW to ask PS where he is on this; change ticket status to GREEN.</hi></item>
+</list>
+</item>
+</list>
+</item>
+<item>Group 24
+                   <list style="ul">
+<item><ref target="https://sourceforge.net/p/tei/feature-requests/474/">FR 474</ref> add an <gi>exemplum</gi> for @ref (GREEN open).
+                     <list style="ul">
+<item><hi style="bold">Action: JC to poke JC; deadline by next teleconference.</hi></item>
+</list>
+</item>
+<item><ref target="https://sourceforge.net/p/tei/feature-requests/475/">FR 475</ref> Stop using attributes to store space-delimited values (GREEN open).
+                       <list style="ul">
+<item>Nothing wrong with space-delimited attribute values. <hi style="bold">Action: JC to Close as Closed-rejected.</hi></item>
+</list>
+</item>
+<item><ref target="https://sourceforge.net/p/tei/feature-requests/461/">FR 461</ref> Two small improvements to `<gi>recording</gi>` (GREEN open).
+                       <list style="ul">
+<item><hi style="bold">Action: LB to do this by next teleconference.</hi></item>
+</list>
+</item>
+<item><ref target="https://sourceforge.net/p/tei/feature-requests/467/">FR 467</ref> Make @name optional on tei:relation (GREEN open).
+                       <list style="ul">
+<item><hi style="bold">Action: SR has already done this.</hi></item>
+</list>
+</item>
+</list>
+</item>
+<item>Group 22
+                 <list style="ul">
+<item><ref target="https://sourceforge.net/p/tei/bugs/216/">BUG 216</ref> half title pages in TEI Tite (AMBER open-postponed).
+                     <list style="ul">
+<item>KH has to finish comparing TEI-Tite with the Apex version. Then all the problems can be fixed. He says he will get to this in 2014. <hi style="bold">Action: KH to  resolve Tite problems and report regularly to Council on progress.</hi><hi style="bold">Action: Council to ask for reports before each meeting.</hi></item>
+</list>
+</item>
+<item><ref target="https://sourceforge.net/p/tei/bugs/228/">BUG 228</ref> when and where to capture line breaks (AMBER open-postponed).
+                     <list style="ul">
+<item>Same as <ref target="https://sourceforge.net/p/tei/bugs/216/">BUG 216</ref></item>
+</list>
+</item>
+<item><ref target="https://sourceforge.net/p/tei/bugs/231/">BUG 231</ref> how to handle forme work (AMBER open-postponed).
+                     <list style="ul">
+<item>Same as <ref target="https://sourceforge.net/p/tei/bugs/216/">BUG 216</ref></item>
+</list>
+</item>
+<item><ref target="https://sourceforge.net/p/tei/bugs/234/">BUG 234</ref> use of @n on divs (AMBER open-postponed).
+                     <list style="ul">
+<item>Tite documentation (or maybe just the example) needs to be clarified to express better practice; otherwise, similar to <ref target="https://sourceforge.net/p/tei/bugs/216/">BUG 216</ref>.</item>
+</list>
+</item>
+</list>
+</item>
+<item>Group 25
+                   <list style="ul">
+<item><ref target="https://sourceforge.net/p/tei/feature-requests/478/">FR 478</ref> loosening content and model of `<gi>signed</gi>` (GREEN open).
+                       <list style="ul">
+<item>Agree that is is green. Though would <ident type="class">model.divWrapper</ident> work as well? <hi style="bold">Action: SR to implement <gi>signed</gi> at top as well as bottom [DONE].</hi></item>
+</list>
+</item>
+<item><ref target="https://sourceforge.net/p/tei/feature-requests/280/">FR 280</ref> clarification of <gi>colloc</gi> (GREEN pending-accepted).
+                       <list style="ul">
+<item>#1 is already done. #2: Breakout group agreed that the value of @type in the example is meant to indicate the part of speech of the collocate, not the type of collocate. We can add an explanation in section 9.3.2 and in remarks in the colloc element spec. #3: We think that <gi>colloc</gi>’s content model should allow &lt;pos type=”prep”&gt; inside, or we should remove the @type in the example. If the latter, we shouldn’t do the action recommended for #2. <hi style="bold">Action: KH to remove @type from both examples, etc.</hi></item>
+</list>
+</item>
+<item><ref target="https://sourceforge.net/p/tei/feature-requests/389/">FR 389</ref> clarify definition of @from on locus and biblScope (GREEN open).
+                       <list style="ul">
+<item>EM admits to sloth and will do so. <hi style="bold">Action: EM to do before next teleconference.</hi></item>
+</list>
+</item>
+<item><ref target="https://sourceforge.net/p/tei/feature-requests/401/">FR 401</ref> extend and clarify use of particDesc and settingDesc (GREEN open).
+                       <list style="ul">
+<item>JC admits sloth and will implement. <hi style="bold">Action: JC to implement before next teleconference; Council decides it might be better to add these (model.</hi>listLike) directly to <ident type="class">model.profileDescPart</ident>. JC to confirm and implement.</item>
+</list>
+</item>
+</list>
+</item>
+</list>
+</div>
+<div>
+  <head>             12:50 – 14:00 Lunch Break (in Meeting Room)
+  </head>           </div>
+<div><head>
+               14:00 – 15:30 Afternoon Discussion Session</head>
+<list style="ul">
+<item><ref target="https://wiki.tei-c.org/index.php/TEI_Cheatsheets">Cheatsheets: Short best/recommended practice documents</ref><list style="ul">
+<item>EM: Not cheatsheets – negative implication.</item>
+<item>RW: Quick Start.</item>
+<item>HC: Quick Reference;</item>
+<item>SB: “Guidelettes”</item>
+<item>LB: How-Tos . <hi style="bold">Action: EM to ask MB to clarify what she wants from Council with regard to helping cheatsheets.</hi></item>
+<item>We agree that this is a community effort in which Council has no direct role. Council members may well contribute, of course. We should (not “must”, mind you) keep abreast of them, and if we notice something we disagree with we should speak up, bring it to the author’s attention, or edit it (after all, it is a wiki). We recognize that suggestions are likely to go out of date, but feel there is no direct responsibility for Council to keep these up to date.</item>
+<item>EM points out that these are different from project documentation that has been slightly modified for public consumption, which are also good things.</item>
+<item>MH suggests culling TEI-L for encoding snippets and advice. SB wonders if that wouldn’t be a good student project — we should ask a DH professor.</item>
+</list>
+</item>
+<item>Terminology Chapter, TBX, and <ref target="https://sourceforge.net/p/tei/feature-requests/482/">FR 482</ref><list style="ul">
+<item>Earlier we decided:<hi style="bold">Action: LB, KH and SB to articulate a more generic policy for TEI on the integration of external standards and will generate a one-page proposal for this policy. This should be provided to Council ahead of the next teleconference. In addition, LB, KH, and SB will check with Laurent that he wants TBX incorporated into the Guidelines as is or kept in sync in the future and what he thinks about melding into the rest of the TEI Guidelines (in language, approach, element naming conventions) or keeping it self-contained.</hi></item>
+</list>
+</item>
+<item>
+                 <p>  LingSIG Meeting and Modelling / Serializing standoff (c.f. <ref target="https://sourceforge.net/p/tei/feature-requests/378/">FR 378</ref>; c.f. <ref target="https://sourceforge.net/p/tei/feature-requests/_discuss/thread/1e0e4acb/13db/attachment/A%20Generic%20Formalism%20for%20Encoding%20Standoff%20annotations%20in%20TEI.pdf">A Generic Formalism for Encoding Standoff annotations in TEI</ref>).</p>
+<list style="ul">
+<item><hi style="bold">Action: JC to ask Peter Stadler if he’d like to attend as Council rep; otherwise any interested members of Council (HC,SB) are encouraged to attend virtually.</hi> Council is interested in ensuring that the results are not just dedicated to linguistic annotation, but address a wider issue. Council feels that the experience of Laurent and Piotr are more than enough to understand workings of the TEI and they can report back to Council if no one is able to attend.</item>
+</list>
+</item>
+<item>Correspondence SIG:
+                   <list style="ul">
+<item><ref target="https://wiki.tei-c.org/index.php/SIG:Correspondence/task-force-correspDesc">http://wiki.tei-c.org/index.php/SIG:Correspondence/task-force-correspDesc</ref></item>
+<item><ref target="https://wiki.tei-c.org/index.php/SIG:Correspondence/draft-minutes-rome-meeting">http://wiki.tei-c.org/index.php/SIG:Correspondence/draft-minutes-rome-meeting</ref></item>
+<item><ref target="https://wiki.tei-c.org/index.php/SIG:Correspondence/RequestForModule">http://wiki.tei-c.org/index.php/SIG:Correspondence/RequestForModule</ref></item>
+<item>JC Thanked the SIG for the update and reported on it with the help of SB. <hi style="bold">Action: SB and LB would like to (re?-)join the task force. Council advises them to keep in mind the work by the Ontology/MS SIGs, in particular Torsten Schassan, on an ‘object’ or ‘objectDesc’ element.</hi></item>
+</list>
+</item>
+<item>Next face-to-face meeting
+                 <list style="ul">
+<item>Discussion of costs of hosting in various locations considering composition of Council beginning in 2014. EM offered Brown again. Said that if people will give talks for the Boston-area DH event, that organization might be able to give honoraria that could be paid to TEI-C to defray travel reimbursement. (Would need to talk with John Unsworth.) This would take a lot of work to organize, so she would need help. HC said he might be able to host at Duke. EM added that she can host quite a few people at her house. PS said he also has two guest rooms. KH points out that the “Big 10 Center” near O’Hare is another possibility. Oxford remains an attractive option for all the usual reasons (central location, three members on site, convenient transportation.)
+                   </item>
+</list>
+</item>
+<item>Teleconference
+                 <list style="ul">
+<item>JC: We have to have a teleconference early in 2014 with the new members. Do we need one in November or December? EM and HC: The end of the year is really difficult. JC: Maybe incoming/returning Council members can agree to a set schedule of conference calls for the whole year, occurring approximately once every other month. SB: Have a Doodle poll right after a call to schedule the next one? JC: I worry that for some of us that is not enough notice. MH: But others will have an unavoidable conflict that arises even after agreeing to a certain time! Council agrees to try to set up several doodle polls for several months in advance.
+                   </item>
+</list>
+</item>
+<item>Election
+                   <list style="ul">
+<item>Need to elect a new chair. JC has put a <ref target="https://wiki.tei-c.org/index.php/TEI-Council-FAQ#How_is_the_TEI_Technical_Council_Chair_elected.3F">list of steps to follow</ref> in the wiki. SB has already modified, others should feel free to do so. Council agrees that the general process should be used this time and then refined as needed.
+</item>
+</list>
+</item>
+<item>Board representative
+                   <list style="ul">
+<item>LB: I am a Board member for another year. If Council wishes me to return as a Board rep, I can do that for another year. If the Council decides to no longer invite a Board representative, he will stop joining our meetings.</item>
+<item>SB: The difficulty is that someone might say that having a Board member attend twice a year is a waste of money, but we might also say that LB’s experience specifically is valuable to council.</item>
+<item>PS: So we need to separate the person from their role.</item>
+<item>JC: We don’t have to decide now. We can tell the Board that we would like the Board representative and would like LB in particular. Council also has the right to approach any experts it wants to assist it.</item>
+<item>EM: While LB has actively participated in discussions, he hasn’t really represented the Board very much; instead, he’s just participated in technical discussions.</item>
+<item>SB: I don’t think a Board rep per se is useful or cost-effective, but we should have the ability to invite experts to help with our discussions.</item>
+<item>LB: Indeed, the Bylaws allow the Council to bring in any experts it likes.</item>
+<item>KH: The chair of the Council can represent the Board to the Council as the Board rep supposedly had been doing.</item>
+<item>JC: We could also have different reps for different meetings: no need for it to be the same person all year.</item>
+<item>SB: I think having a Board rep is not important to have. LB’s sage advice is useful but not in the capacity of a Board rep. After further discussion, and lauding of LB’s support and assistance, Council confirmed that it will defer the decision till later.</item>
+</list>
+</item>
+</list>
+</div>
+<div><head>15:30 – 15:45 Break</head></div>
+<div><head>15:45 – 16:30 SourceForge Tickets</head>
+<list style="ul">
+<item>Group 26
+                 <list style="ul">
+<item><ref target="https://sourceforge.net/p/tei/bugs/229/">BUG 229</ref> Check desc of all xs:anyURI atts for in-doc restrictions (GREEN pending).
+                     <list style="ul">
+<item>We got rid of data.code already, but we still need to check all xsd:anyURI attributes. <hi style="bold">Action: JC to check prose discussion all xsd:anyURI attributes by next teleconference.</hi></item>
+</list>
+</item>
+<item><ref target="https://sourceforge.net/p/tei/bugs/281/">BUG 281</ref> value of date@when (GREEN open-postponed).
+                     <list style="ul">
+<item>This is another Tite ticket being intentionally postponed.</item>
+</list>
+</item>
+<item><ref target="https://sourceforge.net/p/tei/bugs/312/">BUG 312</ref> i18n revision due (GREEN open).
+                     <list style="ul">
+<item><hi style="bold">Action:  MH, when he completes action on related ticket (perhaps after moving notes from minutes into tickets), to update this ticket.</hi></item>
+</list>
+</item>
+<item><ref target="https://sourceforge.net/p/tei/bugs/442/">BUG 442</ref> update ODD documentation on www.tei-c.org and in Guidelines (GREEN open).
+                     <list style="ul">
+<item><hi style="bold">Action: MH to finish it.</hi></item>
+</list>
+</item>
+<item><ref target="https://sourceforge.net/p/tei/bugs/336/">BUG 336</ref> AdBlock blocks ‘msad’ ID (GREEN pending-later).
+                     <list style="ul">
+<item>Per last comment, time has passed and nothing else has happened. We’ll close the ticket. <hi style="bold">Action: JC to close ticket.</hi></item>
+</list>
+</item>
+<item><ref target="https://sourceforge.net/p/tei/bugs/587/">BUG 587</ref> Guidelines version info on pages should link better (GREEN open).
+                     <list style="ul">
+<item><hi style="bold">Action: JC to carry out his last comment on the ticket.</hi></item>
+</list>
+</item>
+</list>
+</item>
+<item>Group 28
+               <list style="ul">
+<item><ref target="https://sourceforge.net/p/tei/bugs/524/">BUG 524</ref> @perf on <gi>tech</gi> should be data.pointer(s) (GREEN open-accepted).
+                   <list style="ul">
+<item>Done by MH before the meeting.</item>
+</list>
+</item>
+<item><ref target="https://sourceforge.net/p/tei/bugs/519/">BUG 519</ref> Make lb, pb, cb, gb consistent (GREEN open-accepted).
+                   <list style="ul">
+<item>Council decided to close. <hi style="bold">Action: JC to close [DONE].</hi></item>
+</list>
+</item>
+<item><ref target="https://sourceforge.net/p/tei/bugs/441/">BUG 441</ref> fDecl doesn’t allow <ident type='class'>att.datcat</ident> yet (GREEN open-accepted).
+                   <list style="ul">
+<item><hi style="bold">Action: MH to prod Piotr.</hi></item>
+</list>
+</item>
+</list>
+</item>
+<item>Group 29
+               <list style="ul">
+<item><ref target="https://sourceforge.net/p/tei/bugs/525/">BUG 525</ref><gi>citedRange</gi> and <gi>biblScope</gi> should share att class (GREEN open).
+                   <list style="ul">
+<item>SB admitted to sloth.</item>
+<item><hi style="bold">Action: SB to complete.</hi></item>
+<item><hi style="bold">Action: MH to check Allura settings to make sure that the owners of both bugs and feature requests receive email notifications. [JC and KH looked into this during a break and might have fixed it through another mechanism. MH to check with JC].</hi></item>
+</list>
+</item>
+<item><ref target="https://sourceforge.net/p/tei/bugs/418/">BUG 418</ref> Names and Dates chapter does not mention calendar (GREEN open).
+                   <list style="ul">
+<item><hi style="bold">Action: JC will add the prose before the next teleconference.</hi></item>
+</list>
+</item>
+<item><ref target="https://sourceforge.net/p/tei/bugs/401/">BUG 401</ref> Most attributes lack good examples (GREEN open-accepted).
+                   <list style="ul">
+<item>This was previously discussed. <hi style="bold">Action: RW to follow up.</hi></item>
+</list>
+</item>
+</list>
+</item>
+<item>Group 30
+               <list style="ul">
+<item><ref target="https://sourceforge.net/p/tei/bugs/314/">BUG 314</ref> deprecated tickets should be accessible from website (GREEN pending-accepted).
+                   <list style="ul">
+<item>This is no longer needed under our new deprecation policy, so we closed the ticket.</item>
+</list>
+</item>
+<item><ref target="https://sourceforge.net/p/tei/bugs/387/">BUG 387</ref> clarifying heading or title of a graphic (GREEN open).
+                   <list style="ul">
+<item>LB recently posted a comment approving of the wording. <hi style="bold">Action: BB will implement the ticket.</hi></item>
+</list>
+</item>
+</list>
+</item>
+<item>Group 31
+               <list style="ul">
+<item><ref target="https://sourceforge.net/p/tei/feature-requests/160/">FR 160</ref> Alignment and documentation of sound files (RED open).
+                   <list style="ul">
+<item>Assigned to LB, left RED open.</item>
+</list>
+</item>
+<item><ref target="https://sourceforge.net/p/tei/feature-requests/176/">FR 176</ref> Cater for audio/video facsimile (RED open).
+                   <list style="ul">
+<item>Closed-duplicate of <ref target="https://sourceforge.net/p/tei/feature-requests/160/">FR 160</ref>.</item>
+</list>
+</item>
+<item><ref target="https://sourceforge.net/p/tei/feature-requests/464/">FR 464</ref> Need for some way to test the oxygen-tei package before release (RED open).
+                   <list style="ul">
+<item>New ticket on MH — no one knows how to do it yet.</item>
+</list>
+</item>
+<item><ref target="https://sourceforge.net/p/tei/feature-requests/342/">FR 342</ref> New section on encoding text directionality (RED open).
+                   <list style="ul">
+<item>MH work-in-progress, changed to AMBER.</item>
+</list>
+</item>
+<item><ref target="https://sourceforge.net/p/tei/feature-requests/396/">FR 396</ref><gi>ptr</gi> (RED open).
+                   <list style="ul">
+<item>Closed-invalid.</item>
+</list>
+</item>
+<item><ref target="https://sourceforge.net/p/tei/feature-requests/289/">FR 289</ref><ident type='class'>att.canonical</ident> for <ident type="class">model.persTraitLike</ident> (RED open-accepted).
+                   <list style="ul">
+<item>Left RED.</item>
+</list>
+</item>
+</list>
+</item>
+<item>Group 32
+                 <list style="ul">
+<item><ref target="https://sourceforge.net/p/tei/feature-requests/292/">FR 292</ref> add SourceForge feeds to http://www.tei-c.org/Activities/ (RED open-later).
+                   <list style="ul">
+<item>Left RED.</item>
+</list>
+</item>
+<item><ref target="https://sourceforge.net/p/tei/feature-requests/324/">FR 324</ref> Allow certainty etc. inside milestoneLike elements (RED open).
+                     <list style="ul">
+<item>Left RED.</item>
+</list>
+</item>
+<item><ref target="https://sourceforge.net/p/tei/feature-requests/369/">FR 369</ref> *Spec elements could have <gi>keywords</gi> or use @ana (RED open).
+                     <list style="ul">
+<item>Closed-out-of-date.</item>
+</list>
+</item>
+<item><ref target="https://sourceforge.net/p/tei/feature-requests/387/">FR 387</ref> allow <gi>head</gi> in more places in div*, table, and list (RED open).
+                     <list style="ul">
+<item>Made Amber; Assigned PS.</item>
+</list>
+</item>
+<item><ref target="https://sourceforge.net/p/tei/feature-requests/393/">FR 393</ref> availability (RED open).
+                     <list style="ul">
+<item>Made amber; Assigned LB.</item>
+</list>
+</item>
+<item><ref target="https://sourceforge.net/p/tei/feature-requests/422/">FR 422</ref> teitoX: support passing configuration to saxon (RED open).
+                     <list style="ul">
+<item>Made amber; Assigned SR.</item>
+</list>
+</item>
+</list>
+</item>
+</list>
+</div>
+<div><head>&gt;Closing remarks
+               </head><list style="ul">
+<item>JC: Council thanks those members departing at the end of the year, with a fond and appreciative farewell. They will, of course, still be expected to complete their tickets as active ongoing members of the TEI community. Thank you, all of Council, for your hard work over the last 3 days, and for the future.</item>
+</list>
+</div></div>
+	</div></body><!-- #post-## --></text></TEI>

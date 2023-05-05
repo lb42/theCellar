@@ -1,0 +1,715 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/home/lou/Public/TEI/TEICSS/tei.css" type="text/css"
+ ?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:t="http://www.tei-c.org/ns/1.0" n="2019-09"><teiHeader><fileDesc><titleStmt><title>Minutes of the TEI Technical Council</title><meeting n="2019-09" from="2019-09-14" to="2019-09-16">TEI Technical
+     Council ftf meeting : <placeName>Graz</placeName>, <date>14–16 September 2019</date></meeting></titleStmt><publicationStmt><distributor>TEI Website</distributor><idno>TCM118</idno></publicationStmt><sourceDesc><p>Retagged from a WordPress HTML file</p></sourceDesc></fileDesc><revisionDesc><change when="2023-04-25">Archival header confected</change><change>Extracted from Word Press article with id post-29788</change></revisionDesc></teiHeader><text><body><div><p><hi style="strong">Venue </hi></p><p>Centre for Information Modelling – Austrian Centre for Digital Humanities, University of Graz</p><p>Elisabethstraße 59/III, 8010 Graz</p><table>
+
+<row>
+<cell><hi style="b">Saturday, Sep 14</hi></cell>
+<cell>09:00–12:30</cell>
+<cell>Council meeting</cell>
+</row>
+<row>
+<cell/>
+<cell>14:00–17:00</cell>
+<cell>Council meeting</cell>
+</row>
+<row>
+<cell><hi style="b">Sunday, Sep 15</hi></cell>
+<cell>09:00–12:30</cell>
+<cell>Council meeting</cell>
+</row>
+<row>
+<cell/>
+<cell>14:00–17:00</cell>
+<cell>Council meeting</cell>
+</row>
+<row>
+<cell><hi style="b">Monday, Sep 16</hi></cell>
+<cell>09:00–12:30</cell>
+<cell>Council meeting (+invite people standing for Council)</cell>
+</row>
+<row>
+<cell/>
+<cell>14:00–16:00</cell>
+<cell>Standoff meeting (Guests: Laurent Romary, Georg Vogeler, Lou Burnard, Piotr Banski)</cell>
+</row>
+<row>
+<cell/>
+<cell>17:00–18:00</cell>
+<cell>Joint Board-Council Meeting</cell>
+</row>
+<row>
+<cell><hi style="b">Thursday, Sep 19</hi></cell>
+<cell>19:00</cell>
+<cell>Infrastructure Group Meeting</cell>
+</row>
+
+</table><p><hi style="strong">Present</hi></p><list style="ul">
+<item>Elisa Beshero-Bondar (EB)</item>
+<item>Syd Bauman (SB)</item>
+<item>Hugh Cayless (HC)</item>
+<item>James Cummings (JC)</item>
+<item>Martin Holmes (MH)</item>
+<item>Elli Mylonas (EM)</item>
+<item>Martina Scholger (MS)</item>
+<item>Peter Stadler (PS)</item>
+<item>Sarah Stanley (SS)</item>
+<item>Magdalena Turska (MT)</item>
+<item>Raff Viglianti (RV)</item>
+</list><div type="h2"><head>Saturday, Sep 14 – Morning Session (9:00-12:30)</head><list style="ul">
+<item><hi style="strong">Organisational</hi></item>
+<item><hi style="strong">Ontologies / LOD SIG</hi>
+<list style="ul">
+<item>Council should charge the formation of a working group.</item>
+<item>Working Group, entirely independent of Ontologies SIG:
+<list style="ul">
+<item>work on new practical material for Guidelines (where do we add info for LOD: which attributes, etc.)</item>
+<item>Council wants to make a working group to implement this. We want to see Connie Crompton’s proposal on what she’d like to do with the TEI.</item>
+</list>
+</item>
+<item>Co-convene with Council member – Council can help organize.</item>
+<item><hi style="b">Action on</hi> MS to write to Connie Crompton.</item>
+</list>
+</item>
+<item><hi style="strong">Report at the Members’ Meeting</hi>
+<list style="ul">
+<item>Responsibilities of the TEI Council</item>
+<item>Thank outgoing Council members</item>
+<item>ROMA beta</item>
+<item>Guidelines</item>
+<item>Stylesheets</item>
+<item>Infrastructure Group</item>
+<item>SIGs</item>
+</list>
+</item>
+<item><hi style="strong">Michael Beddow</hi>
+<list style="ul">
+<item>Council discusses its “threshold” for commemoration on the “Dedications” page. Remind Board that posts on TEI-L may be sufficient, and remembrance during membership meeting.</item>
+</list>
+</item>
+</list><list style="ul">
+<item><hi style="strong">Preparation for standoff meeting</hi>
+<list style="ul">
+<item>make time on Sunday afternoon.</item>
+</list>
+</item>
+<item><hi style="strong">Meeting times and dates</hi>
+<list style="ul">
+<item>Council meeting:
+Tuesdays 08:00 ET, 13:00 GMT, 14:00 CEST</item>
+<item>Stylesheets meeting:
+Tuesdays 06:00 PST, 09:00 ET, 14:00 GMT, 15:00 CEST</item>
+</list>
+</item>
+<item><hi style="strong">Miscellaneous notes from ticket discussion</hi>
+<list style="ul">
+<item>unrelated to specific tickets</item>
+<item>For those who don’t yet have the ability to do local builds, have a look at the TCW paper on Building and Testing the TEI Guidelines: <ref target="http://teic.github.io/TCW/testing_and_building.html">http://teic.github.io/TCW/testing_and_building.html</ref></item>
+<item>Possibility of updating the Testing and Building document?</item>
+</list>
+</item>
+</list></div><div type="h2"><head>Saturday, Sep 14 – Afternoon Session (14:00–17:00)</head><list style="ul">
+<item>Review Guidelines issues — see table below</item>
+</list></div><div type="h2"><head>Sunday, Sep 15 – Morning Session (09:00–12:30)</head><list style="ul">
+<item>Review Guidelines issues — see table below</item>
+</list></div><div type="h2"><head>Sunday, Sep 15 – Afternoon Session (14:00-17:00)</head><list style="ul">
+<item><hi style="strong">Report on MEIGarage</hi>
+<list style="ul">
+<item><ref target="https://meigarage.edirom.de">https://meigarage.edirom.de</ref></item>
+<item>PS presents an early pre-release view of MEI Garage to Council</item>
+</list>
+</item>
+<item><hi style="strong">Mailinglists@Brown University</hi>
+<list style="ul">
+<item>EM: Still okay to keep the current Brown TEI mailing lists at Brown, at least for the near future. Running on Listserv.</item>
+<item>Transferring from Brown (Listserv) to Pipermail (what TEI-C is using on lists.tei-c.org) is possible but non-trivial.</item>
+<item>Make sure there’s not a single point of failure – Council chair (at least) should be able to make/manage/admin mailing lists if desired.</item>
+<item>Infrastructure group: Huma-Num will use a different mailing list software.</item>
+<item>JC: per month at least one can download gzipped per month / year, e.g. on the <ref target="https://lists.tei-c.org/pipermail/tei-council/">tei-council mailing list</ref> (<ref target="https://lists.tei-c.org/pipermail/tei-council/">https://lists.tei-c.org/pipermail/tei-council/</ref>).</item>
+<item>JC: This looks like it is in unix mbox format so should just be able to be imported by any sensible mailing list software. In a Huma-Num version of lists.tei-c.org should we switch mailing list software?</item>
+</list>
+</item>
+<item><hi style="strong">Stylesheets circularity</hi>
+<list style="ul">
+<item>MH suggests a solution: Stylesheets get released &gt; 1 month ahead of P5, and the CI servers build dev P5 against released Stylesheets; meanwhile, Stylesheets dev builds against the released P5.</item>
+<item>PS: The real problem is that Stylesheets tests are working on dated P5 subset. We’ll still have a problem with an early release of Stylesheets with the tests failing. A Guidelines release breaks the Stylesheets tests.
+<list style="ul">
+<item>July 2019 release: still release Guidelines with Stylesheets. Release both at the same time, and update the Stylesheets tests.</item>
+<item>Or try this: build of Stylesheets Master just skips the tests temporarily.</item>
+</list>
+</item>
+<item>Tests issue: MH: We’re currently testing by git diffs, but should be doing that with dedicated Schematron.
+<list style="ul">
+<item>Diff is important: include it into the process to review all diffs. It’s currently plain-text diffing. What about XML diffing?</item>
+<item>Pulling P5 subset from release branch rather than current vault P5. Increment the source version forward when we realize tests are out of date. DEFAULTSOURCE is a “moving target”. Need a version number hard-coded in the makefile that makes it possible to move the target forward.</item>
+<item>Tests need to prove against old AND new. This is good practice.</item>
+<item>Test 2 test basis is better.</item>
+</list>
+</item>
+<item>Action on PS to write up last release process with Paderborn Jenkins, so other Jenkins can do the same. When exactly do we update the defaultsource? (We need TCW 22 release notes for Jenkins maintainers!)
+<list style="ul">
+<item>Bump the version when you’re introducing a new feature, such as update to tagDocs, with new processing which isn’t caught by the old source.</item>
+<item>Ordinary process of inventing new elements shouldn’t cause the tests to break. But Guidelines tests may still break.</item>
+<item>Jenkins points at both dev and master.</item>
+</list>
+</item>
+</list>
+</item>
+<item><hi style="strong">Preparation for standoff meeting</hi>
+<list style="ul">
+<item>introduce <gi>standoff</gi>
+<list style="ul">
+<item>as a child: <gi>listAnnotation</gi></item>
+<item>Children of <gi>listAnnotation</gi>: <gi>annotation</gi> (doesn’t exist yet) and <gi>annotationBlock</gi> (already exists).</item>
+<item><gi>annotation</gi> needs to be recognizable as expression of open web annotation standard. The annotation body might be a pointer with @target pointing to another document. No inline annotation body.</item>
+<item><gi>annotation</gi> content model hasn’t been defined yet.</item>
+<item>Where does metadata about standoff go?
+<list style="ul">
+<item>Earlier expectation from Ann Arbor that this metadata goes inside <gi>standoff</gi>, in something like a <gi>teiHeader</gi>.</item>
+<item>But standoff group Council members want this to go in a real <gi>teiHeader</gi> child of <gi>TEI</gi>, not a child of <gi>standoff</gi>.</item>
+<item>You could have a whole series of these bundled in <gi>teiCorpus</gi>, or in nesting <gi>TEI</gi> elements.</item>
+</list>
+</item>
+<item>Question of where <gi>listApp</gi>, <gi>listPerson</gi>, etc. could go: at same level as <gi>listAnnotation</gi>?</item>
+<item><gi>standoff</gi> was originally conceived to accommodate <gi>link</gi>, <gi>linkGroup</gi>, and other things. It wasn’t ever supposed to be just for linguistic purposes.</item>
+<item>Link to Syd’s Standoff Proposal: <ref target="https://github.com/sydb/stdfSpec">https://github.com/sydb/stdfSpec</ref>.</item>
+<item>Link to Laurent’s standoff proposal: <ref target="https://github.com/laurentromary/stdfSpec/blob/AnnArbor/Scenarios/StandOffScenarios.xml">https://github.com/laurentromary/stdfSpec/blob/AnnArbor/Scenarios/StandOffScenarios.xml</ref>.</item>
+<item>Issues with multiple teiHeader or standoffHeader: confusion in levels of metadata. But probably auto-generated and meant to indicate software that generated the standoff markup.</item>
+</list>
+</item>
+</list>
+</item>
+</list></div><div type="h2"><head>Monday, Sep 16 – Morning Session (9:00–12:30)</head><list style="ul">
+<item><hi style="strong">ROMA</hi>
+<list style="ul">
+<item><ref target="http://romabeta.tei-c.org">http://romabeta.tei-c.org</ref></item>
+<item>It is great!</item>
+<item>RV will do a new release today, and create a public announcement. Important to note it only works with pure ODD (not schemas with RNG content).</item>
+<item>Will Docker containers be updated? – yes</item>
+</list>
+</item>
+<item><hi style="strong">zenodo</hi>
+<list style="ul">
+<item>PS: Release Guidelines on zenodo</item>
+<item>DOI for the Guidelines</item>
+<item><ref target="https://blog.zenodo.org/2017/05/30/doi-versioning-launched/">https://blog.zenodo.org/2017/05/30/doi-versioning-launched/</ref></item>
+<item>Create a “community” on zenodo; administrator has to accept release.</item>
+<item>Initial zenodo release is online at <ref target="https://doi.org/10.5281/zenodo.3413524">https://doi.org/10.5281/zenodo.3413524</ref>  BUT zenodo orders the releases in order of addition, not by version number. PS will first add all releases and then ask zenodo support to reorder the releases by version number.</item>
+</list>
+</item>
+<item><hi style="strong">Review Stylesheets issues</hi>
+<list style="ul">
+<item>Action on Stylesheets group in the next Stylesheets meeting  in October: <ref target="https://github.com/TEIC/Stylesheets/pull/327">https://github.com/TEIC/Stylesheets/pull/327</ref>.</item>
+<item>PS created a new milestone <ref target="https://github.com/TEIC/Stylesheets/milestone/7">https://github.com/TEIC/Stylesheets/milestone/7</ref> for Release 7.49.0.</item>
+</list>
+</item>
+<item><hi style="strong">Review Guidelines issues</hi>
+<list style="ul">
+<item>PS created a new milestone <ref target="https://github.com/TEIC/TEI/milestone/8">https://github.com/TEIC/TEI/milestone/8</ref> for Release 3.7.0 and added (almost) all tickets that are “status:go” (without those “status:needs discussion” and/or “priority:low”.</item>
+</list>
+</item>
+</list></div><div type="h2"><head>Monday, Sep 16 – Afternoon Session (14:00–17:00)</head><list style="ul">
+<item><hi style="strong"><gi>standOff</gi> discussion</hi>
+<list style="ul">
+<item>Guests for the discussion on <gi>standOff</gi>: Piotr Banski (PB), Lou Burnard (LB), Laurent Romary (LR), Georg Vogeler (GV)</item>
+<item>Presentation from MT (available in Slack)
+<list style="ul">
+<item>Overview of history, use cases, progress</item>
+<item>Proposing implementing W3C Web Annotation Data Model (WADM) with <gi>annotation</gi>.</item>
+<item>Open questions/unfinished activities:
+<list style="ul">
+<item>Elaborating on examples from different disciplines</item>
+<item>Where and how to store metadata</item>
+</list>
+</item>
+<item>Proposed steps
+<list style="ul">
+<item>Minimal scaffolding for <gi>standOff</gi></item>
+<item>Implement linguistic-specific features</item>
+<item>Incrementally elaborate <gi>standOff</gi></item>
+</list>
+</item>
+</list>
+</item>
+<item>Discussion
+<list style="ul">
+<item>Clearly differentiate targetAnnotation and body</item>
+<item>LR’s comments
+<list style="ul">
+<item>Is <gi>standOff</gi> recursive? (addressed in discussion of <gi>teiCorpus</gi>) (possibly by making TEI recursive).</item>
+<item>Concern about multiple use-cases blurring the model.</item>
+</list>
+</item>
+<item><gi>standOff</gi> – version of record document – text that you leave untouched without altering the content. So it needs a header.</item>
+<item>Is this something that we should address today or form a working group?</item>
+<item>MT: create general structure today and hold off on details, so that <gi>standOff</gi> is available for use ASAP.
+<list style="ul">
+<item><gi>annotationBlock</gi> is already available, so this is feasible</item>
+</list>
+</item>
+<item>PB’s Comments
+<list style="ul">
+<item>standOff annotation does not originate with linguistics (e.g. Amaya – in-browser annotations with no source modification) and there are many competing variants.</item>
+<item>Try to be aware of this history and keep it separate from resource (like lists of bibliography, person, etc.)</item>
+</list>
+</item>
+<item>TEI is already rich in pointing mechanisms.</item>
+<item>HC: personography can be standoff, with resource – body – annotation.</item>
+<item>LR wants a <gi>resource</gi> element (that we have previously discussed as <gi>ldb</gi>).</item>
+<item>MT: This is the “hinge” concept: Annotation is a singular act of that associates a passage of text with its interpretation (interpretation inlined in the annotation or pointed to and gathers additional metadata about this association.</item>
+<item>PB: Compare this with Xlink.</item>
+<item>GV: Can’t we just do this with the W3C model so that the TEI doesn’t have to invent something that already exists?</item>
+<item>PS: Instead of calling it <gi>standOff</gi> then, just call it <gi>resource</gi>? JC: That ship has sailed.</item>
+<item>PB: In Nancy Ide’s time, there were two versions of standoff. One is compressed, the other is dissociated as a (MH supplies: pure link). Merged standoff: annotation together with linking that points to text. And pure link that connects to resources, whether parallel corpora, or text on one side and some other resource on the other. Resource is not the same as standoff, because you can remove a resource.</item>
+<item>LB: One of the oldest and earliest approaches to this was the element <gi>join</gi>: for a structure you can’t represent with the XML hierarchy, implemented with lots of pointers. Is that a use case for annotation or resource? (<gi>join</gi> was used for interrupted speech, for example.)</item>
+<item>PROPOSAL 1:
+<list style="ul">
+<item><gi>standOff</gi>
+<list style="ul">
+<item>model.listLike or <gi>listBibl</gi>. Put <gi>listPerson</gi>, <gi>listEvent</gi>, other lists here at this level. Automated named entity recognition. <gi>linkGrp</gi>, <gi>joinGrp</gi>, etc. feature structures, <gi>taxonomy</gi>. Is the target a person element, or a web resource for more info? HC: body of an annotation can be a pointer.</item>
+<item><gi>listAnnotation</gi>
+<list style="ul">
+<item><gi>annotationBlock</gi></item>
+<item><gi>annotation</gi></item>
+</list>
+</item>
+</list>
+</item>
+</list>
+</item>
+<item>PROPOSAL 1A
+<list style="ul">
+<item><gi>standOff</gi>
+<list style="ul">
+<item>model.listLike++ or <gi>listBibl</gi>. Automated named entity recognition. <gi>linkGrp</gi>, <gi>joinGrp</gi>, etc. Is the target a person element, or a web resource for more info? HC: body of an annotation can be a pointer.</item>
+<item><gi>listAnnotation</gi>
+<list style="ul">
+<item><gi>annotationBlock</gi></item>
+<item><gi>annotation</gi></item>
+</list>
+</item>
+</list>
+</item>
+</list>
+</item>
+<item>PROPOSAL 2:
+<list style="ul">
+<item><gi>standOff</gi>
+<list style="ul">
+<item><gi>listAnnotation</gi>
+<list style="ul">
+<item><gi>annotationBlock</gi></item>
+<item><gi>annotation</gi></item>
+</list>
+</item>
+</list>
+</item>
+<item>SomeResourcesWrapper not called ‘resources’ maybe ldb
+<list style="ul">
+<item>model.listLike, listPerson, etc.</item>
+</list>
+</item>
+</list>
+</item>
+</list>
+</item>
+</list>
+</item>
+</list><list style="ul">
+<item>
+<list style="ul">
+<item>
+<list style="ul">
+<item>MH: What do we do with things that belong in both? <gi>listApp</gi>, <gi>listTranspose</gi>, <gi>listNote</gi> for example? Maybe we could put them in the content model of both? Discussion: JC: No, that’s making things worse by clouding categories.</item>
+<item>GV: make <gi>listAnnotation</gi> conform as much as possible to web annotation model.</item>
+</list>
+</item>
+<item>LB: Perhaps we don’t need to create boundaries where they aren’t needed. The second proposal puts the linguists in charge of <gi>standOff</gi> and excludes other applications.</item>
+<item>PS: We need separate sections in the Guidelines for personographies, gazetteers, etc. And another section on how to do unmerged standOff. Clearly distinguish sections for use-cases.</item>
+<item>HC: Disagrees: There’s no clear separation of these use-cases. During the process you are identifying the entities to which you want to point. And there are distinct ways to write a personography. One may be a standoff way. Another may not, and there may be varying degrees of remoteness of resources.</item>
+<item>GV: Think about the ‘Text as Graph’ community, and how they would apply Proposal 1.</item>
+<item>General appreciation of the simplicity of Proposal 1.</item>
+<item>LR reiterates that the name of the <gi>standOff</gi> element needs a capital ‘O’.</item>
+<item>PB says he now accepts proposal 1 (with mild preference for proposal 2) but not enough to argue for it. He feels the second is more analytic and preserves more of the original sense of standOff. GV: It’s a distinction between the analytic and the practical. RV: Some of these lists really would apply to both places (resources vs. standOff). JC: we are doing better future-proofing. The analytical form is not necessarily the better one when the analysis will inevitably break.</item>
+<item>We choose proposal and there is much rejoicing!</item>
+<item><gi>standOff</gi> will contain <gi>listAnnotation</gi> and model.listLike, <gi>listPerson</gi>, <gi>listEvent</gi>, <gi>listBibl</gi>, <gi>taxonomy</gi>, <gi>linkGrp</gi>, <gi>listTranspose</gi>, <gi>fs</gi>, <gi>taxonomy</gi>, etc. These should not be constrained in order and are all alternatives of minOccurs=”0” and maxOccurs=”unbounded”.</item>
+<item>Recursiveness of standOff?</item>
+</list>
+</item>
+</list><p>Proposal 1:</p><p rend="pre"><gi>TEI</gi>
+   <gi>teiHeader</gi>
+   <gi>text</gi>
+   <gi>standOff</gi></p><p>or</p><p>Proposal 2:</p><p rend="pre"><gi>TEI</gi>
+   <gi>teiHeader</gi>
+   <gi>text</gi>
+   <gi>TEI</gi>
+      <gi>teiHeader</gi>
+      <gi>standOff</gi>
+   <gi>TEI</gi>
+      <gi>teiHeader</gi>
+      <gi>standOff</gi>
+   <gi>TEI</gi>
+      <gi>teiHeader</gi>
+      <gi>standOff</gi>
+
+or</p><p>Proposal 3:</p><p rend="pre"><gi>TEI</gi>
+  <gi>teiHeader</gi>
+  <gi>text</gi>
+  <gi>standOff</gi>
+     <gi>standOffHeader</gi></p><list style="ul">
+<item><gi>teiHeader</gi> can be associated with each <gi>standOff</gi>, and recursiveness works because <gi>TEI</gi> can nest.</item>
+<item>Can there be some kind of header information within standOff, so there’s a header say for a <gi>listAnnotation</gi>?</item>
+<item>EM: What about <gi>standOffHeader</gi>?</item>
+<item>At issue: Capacity for plugging and unplugging standOff layers.</item>
+<item><hi style="b">Council and StandOff Group consensus is for #2 with nested TEI elements.</hi></item>
+<item>Certain members like LB and JC and some others were against this idea. Others pointed out the considerable advantages of this model for handling other types of documents in contexts outside the linguistic annotation use-case.</item>
+<item>LR brilliantly summarized the actionable items. MTs recollection is: to implement nesting <gi>TEI</gi>, <gi>standOff</gi> element with <gi>listAnnotation</gi> and <gi>annotationBlock</gi> and add <gi>annotation</gi> as an element conformant with the WADM.</item>
+</list></div><div type="h2"><head>Monday, Sep 16 – Joint Board-Council Meeting (17:00–18:00)</head><list style="ul">
+<item>Board Council Meeting</item>
+</list><div type="h3"><head>Stylesheets issues</head><div type="h4"><head>Stylesheets pull requests</head><p>Group A: RV, EBB, MT</p><p>Group B: MS, JC, MH, EM</p><p>Group C: HC, SS, PS, SB</p><p> </p><table>
+
+<row>
+<cell><hi style="strong">Ticket</hi></cell>
+<cell><hi style="strong">Group</hi></cell>
+<cell><hi style="strong">Description</hi></cell>
+<cell><hi style="strong">Notes</hi></cell>
+</row>
+<row>
+<cell>#377</cell>
+<cell>B</cell>
+<cell><ref target="https://github.com/TEIC/Stylesheets/pull/377">Add instructions on how to build documentation</ref></cell>
+<cell><p>PR merged</p>
+<p>MH asked Luis to fix two broken links in the documentation and to turn on directory browsing.</p></cell>
+</row>
+<row>
+<cell>#369</cell>
+<cell>C</cell>
+<cell><ref target="https://github.com/TEIC/Stylesheets/pull/369">Improve error handling for faulty moduleRef uri</ref></cell>
+<cell>F2F subgroup is just going to implement this one. It’s a minor change.</cell>
+</row>
+<row>
+<cell>#327</cell>
+<cell>B</cell>
+<cell><ref target="https://github.com/TEIC/Stylesheets/pull/327">use ODT ‘Author’ style to specify author</ref></cell>
+<cell>PS to implement. Green for Go.</cell>
+</row>
+<row>
+<cell>#301</cell>
+<cell>C</cell>
+<cell><ref target="https://github.com/TEIC/Stylesheets/pull/301">Reordered stylesheets and addressed #281</ref></cell>
+<cell>PS has already addressed this difficult to discern PR on the PR itself. Main problem is we do not have sufficient CIDOC-CRM knowledge to evaluate some bits. Suggest that someone from Council ask Ontologies SIG for input.</cell>
+</row>
+<row>
+<cell>#109</cell>
+<cell>A</cell>
+<cell><ref target="https://github.com/TEIC/Stylesheets/pull/109">Fix missing first text node, a [, in certain references.</ref></cell>
+<cell>Fixed!</cell>
+</row>
+
+</table><p> </p></div></div><div type="h3"><head>TEI Guidelines issues under discussion</head><p><hi style="b">Group A:</hi> JC, HC, EB, SB</p><p><hi style="b">Group B:</hi> MH, MT, PS, MS</p><p><hi style="b">Group C:</hi> EM, RV, SS</p><p> </p><table>
+
+<row>
+<cell><hi style="strong">Ticket</hi></cell>
+<cell><hi style="strong">Group</hi></cell>
+<cell><hi style="strong">Description</hi></cell>
+<cell><hi style="strong">Notes</hi></cell>
+</row>
+<row>
+<cell>#1813</cell>
+<cell>A</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/1813">examples in ODD example page do not use ODD pure</ref></cell>
+<cell>Nudge LB to finish this ticket. Check if he needs write access to this page, which isn’t in the Guidelines.</cell>
+</row>
+<row>
+<cell>#1823</cell>
+<cell>B</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/1823">teiCorpus: make guidelines and data model consistent</ref></cell>
+<cell><p>Subgroup (from GitHub comment): Subgroup suggests changing the content model to exclude text from <gi>teiCorpus</gi> and prescribe one or more <gi>TEI</gi> | <gi>teiCorpus</gi> children</p>
+<p>Considered corrigible error, made green for PS to fix. (He plans to fix by changing content model of <gi>teiCorpus</gi> directly — we may wish to submit another ticket to factor <gi>text</gi> out of model.resourceLike at a later date.</p></cell>
+</row>
+<row>
+<cell>#1824</cell>
+<cell>C</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/1824">Guidelines: customized ODD examples based on teiCorpus?</ref></cell>
+<cell>We think that Vanessa’s question about actual encoding may be handled within TEI, but at the same time, examples for customization (and other parts of the TEI) are very western and could benefit from a broader set of examples.</cell>
+</row>
+<row>
+<cell>#1825</cell>
+<cell>A</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/1825">Revision of TCW-20 re branching in TEIC GitHub Repo</ref></cell>
+<cell>Prod EBB to do this.</cell>
+</row>
+<row>
+<cell>#1826</cell>
+<cell>B</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/1826">migrate to travis.com</ref></cell>
+<cell>PS did the migration today. We just need to watch to see that everything goes OK. Close the ticket if the builds and notifications run well.</cell>
+</row>
+<row>
+<cell>#1830</cell>
+<cell>C</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/1830"><gi>derivation</gi> should allow <gi>bibl</gi> in its content model</ref></cell>
+<cell><p>MS: I agree with LB that the information about the original text should be supplied in <gi>sourceDesc</gi></p>
+<p>Council discussion: Is <gi>sourceDesc</gi> actually right for describing the origin of a translation?</p>
+<p><gi>textDesc</gi> not used very much</p>
+<p>Group C – might be reasonable to have a place for bibliography, not <gi>sourceDesc</gi>, but external to <gi>derivation</gi>. Then again it can contain everything else, so why not <gi>bibl</gi></p>
+<p>These elements can contain text but all the examples are empty, perhaps worth reconsidering how they (should) work? Related to this, these elements are contained within <gi>profileDesc</gi> which is not supposed to encode bibliographic aspects</p>
+<p>Finally <gi>sourceDesc</gi>  describes the source from which an electronic text was derived (so not what that text was derived from)</p>
+<p><hi style="b">Conclude</hi> – add example of this type to <gi>sourceDesc</gi>. Assign to MH</p></cell>
+</row>
+<row>
+<cell>#1834</cell>
+<cell>A</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/1834">Guidelines page links broken</ref></cell>
+<cell>Only a problem in Jenkins. Changed to low priority, and added a TEI Build label. This is really about build processing. Also seems to be working Paderborn Jenkins.</cell>
+</row>
+<row>
+<cell>#1838</cell>
+<cell>C</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/1838">allow <gi>g</gi> in <gi>zone</gi>/<gi>line</gi></ref></cell>
+<cell>yes, and make zone and line xtext as noted by Lou.</cell>
+</row>
+<row>
+<cell>#1842</cell>
+<cell>A</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/1842">`setting` should contain `placeName`</ref></cell>
+<cell>Subgroup notes that you can add this in locale. But larger group discussion ends up agreeing with Dario, and will add <gi>placeName</gi> and tweak examples to use it.</cell>
+</row>
+<row>
+<cell>#1844</cell>
+<cell>C</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/1844">Remove @type from att.interpLike and use att.typed</ref></cell>
+<cell><p>is this part of the @type reconciliation?</p>
+<p>Is green so will implement.</p></cell>
+</row>
+<row>
+<cell>#1847</cell>
+<cell>A</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/1847">move free-standing minOccurs= and maxOccurs on elements to class?</ref></cell>
+<cell>Go for green.</cell>
+</row>
+<row>
+<cell>#1848</cell>
+<cell>B</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/1848">Allow titlePage and other block-level elements in rdg</ref></cell>
+<cell>We already allow div and <gi>floatingText</gi> so we’ve already gone down the slippery rabbit hole, so why not <gi>titlePage</gi> and <gi>text</gi>? Council says yes to <gi>titlePage</gi> and also to all its children. Go for green.</cell>
+</row>
+<row>
+<cell>#1851</cell>
+<cell>A</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/1851">msContents/msItem should be replaced in tei:object with something non-MS specific</ref></cell>
+<cell><p>Subgroup recognize this has larger implications for more generalized description of objects. We *could* change this and Subgroup doesn’t know how yet.</p>
+<p>Full Council: SB notes that the content model of <gi>msDesc</gi> is problematic because you have to choose between paragraph description OR structured content, and you can’t do both. We don’t want to continue that problem in a non-MS specific model.</p>
+<p>JC:</p>
+<list style="ul">
+<item>Should we build a new model based on <gi>msContents</gi>?</item>
+<item>Or move to an entirely new model with help from object ontologists?</item>
+</list>
+</cell>
+</row>
+<row>
+<cell>Afternoon session – same groups</cell>
+</row>
+<row>
+<cell>#1849</cell>
+<cell>C</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/1849">Add more discussion of editorial practice to TC chapter</ref></cell>
+<cell>We suggest double status: Go, then review.</cell>
+</row>
+<row>
+<cell>#1843</cell>
+<cell>B</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/1843">`dateline` should be a member of `model.pLike.front`</ref></cell>
+<cell>Council subgroup agrees in principle with the equivalence between <gi>byline</gi> and <gi>dateline</gi>; where one is available, the other should be. Both are available at the end of <gi>front</gi>, but only <gi>byline</gi> is available at the beginning of <gi>front</gi>, which makes no sense. Green: add <gi>dateline</gi> to model.pLike.front, and add a good example showing both <gi>byline</gi> and <gi>dateline</gi> together, or get one from Dario.</cell>
+</row>
+<row>
+<cell>#1837</cell>
+<cell>B</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/1837">improve explanation of @defaultExceptions on schemaSpec</ref></cell>
+<cell><p>MH considers @defaultException to be an ugly cludge to solve TEI’s own problem and would ideally see it automatically handled by schema-generating software.</p>
+<p>Council: We need to investigate how to process @defaultException in odd2rng Stylesheet, which currently throws bizarre ID errors over namespace issues. Figure it out, decide whether to get rid of @defaultException, and then write up the documentation called for in the ticket.</p></cell>
+</row>
+<row>
+<cell>        #1852</cell>
+<cell>B</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/1852">Define semantics of witDetail without @target</ref></cell>
+<cell><p>Subgroup tends to disagree with that and recommend to do this on a project level.</p>
+<p>Full Council: agrees that we should add prose that <gi>witDetail</gi> when a child of <gi>app</gi>, when a sibling of <gi>rdg</gi> or <gi>lem</gi>, without @target, should conventionally refer to the first preceding sibling witness (<gi>rdg</gi> or <gi>lem</gi>). Add prose that projects may change this with documentation.</p></cell>
+</row>
+<row>
+<cell>#1854</cell>
+<cell>C</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/1854">Deprecations Appendix is seriously ugly</ref></cell>
+<cell>yes – either make list with sub-items for cell values (mobile compatible) or fix table, fix column heads, move “component type” to column 4, remove or clarify deprecation statement which looks like an element name, etc. (another suggestion: shorten to “withdrawn after”). Poke Hugh to define new look and tell MH, SB. (this is automatically generated, right? – yes)</cell>
+</row>
+<row>
+<cell>#1856</cell>
+<cell>A</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/1856">`<gi>ab</gi>` should be able to nest</ref></cell>
+<cell><p>Subgroup agrees to disagree and punt this to full Council.</p>
+<p>Council: semantically nested block-level text perhaps has consequences for processing: forcing some to add constraints to prevent nestable ab’s when they don’t want them. Perhaps introduce a new element (<gi>nb</gi> for nesting block) to prevent this trouble? <gi>nb</gi> sounds too much like nota bene. Better name? <gi>nestBlock</gi></p>
+<p>or just permit <gi>ab</gi> to self-nest anyway?</p></cell>
+</row>
+<row>
+<cell>#1857</cell>
+<cell>B</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/1857">`<gi>egXML</gi>` should be able to nest</ref></cell>
+<cell>see comment in ticket</cell>
+</row>
+<row>
+<cell>#1858</cell>
+<cell>C</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/1858"><gi>q</gi> should be allowed in <gi>byline</gi></ref></cell>
+<cell><p>Subgroup thinks we should implement this the way that SB outlines in the comment and should mark in green. Although we may want to consider the implications of putting things like <gi>floatingText</gi> in <gi>byline</gi></p>
+<p>Full group: To be fixed with a redesign of <gi>q</gi> (new ticket: <ref target="https://github.com/TEIC/TEI/issues/1918">#1918</ref>)</p></cell>
+</row>
+<row>
+<cell>#1859</cell>
+<cell>A</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/1859"><gi>altIdent</gi> should never be empty</ref></cell>
+<cell><gi>altIdent</gi> should only permit XML names, but it’s currently allowed in <gi>category</gi>, <gi>taxonomy</gi> and <gi>joinGrp</gi> (where perhaps <gi>gloss</gi> would be a better choice?). This is a corrigible error, but we should do a deprecation period anyway in case people are using this in the wrong way.</cell>
+</row>
+<row>
+<cell>#1860</cell>
+<cell>EM, MH, JC, MS</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/1860">Encoding RDF relationships in TEI (TEI+RDFa and alternatives)</ref></cell>
+<cell>should be discussed by the workgroup on LOD, and ensure some Council members are involved with that.</cell>
+</row>
+<row>
+<cell>#1861</cell>
+<cell>C</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/1861">Feature Request: <gi>listFigure</gi> element</ref></cell>
+<cell>Yes? Maybe? We aren’t <hi style="i">opposed </hi>to the idea, but we aren’t sure if it needs its own element, or if <gi>list</gi> (in <gi>sourceDesc</gi>?) would suffice. Would this also be something that gets generated by processing (akin to <gi>divGen</gi>?)
+Full Council: action on EBB to work with Joey Takeda on some use cases for Council to consider. Look at <gi>object</gi> to see what it might need to refer to graphics the way <gi>figure</gi> does.</cell>
+</row>
+<row>
+<cell>#1862</cell>
+<cell>A</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/1862">Element content models with valList should not have any other content</ref></cell>
+<cell>Sub-group thinks this constraint certainly belongs in p5odds (the schema P5 itself uses) and in tei_customization (the schema for writing TEI customization ODDs). We are unconvinced, however, that it belongs in P5 itself. If you want to define a markup language using ODD that allows this weird kind of data, power to you.</cell>
+</row>
+<row>
+<cell>#1864</cell>
+<cell>B</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/1864">Feature Request: Expand the content model of <gi>catDesc</gi></ref></cell>
+<cell>solution 3 implemented</cell>
+</row>
+<row>
+<cell>#1868</cell>
+<cell>C</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/1868">listWit should also allow msDesc and object</ref></cell>
+<cell>Subgroup thinks that it would be best to keep things as they are so that <gi>listWit</gi> contains a list of <gi>witness</gi> elements, which can in turn describe witnesses using <gi>msDesc</gi>, <gi>object</gi>, etc. We don’t see an issue with the nesting that this requires.</cell>
+</row>
+<row>
+<cell>#1869</cell>
+<cell>A</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/1869">ODD spec elements should have their own source attribute</ref></cell>
+<cell>Subgroup likes solution 2, and LB’s @lib attribute. (In large part because the obvious way to handle #1 doesn’t work here, because one of the attributes is global.) Full Council: We recommend calling it @specSource, but processing will have to support both @source and @specSource when pointing to an ODD source. We don’t know what elements get the special new attribute yet.</cell>
+</row>
+<row>
+<cell>#1871</cell>
+<cell>C</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/1871">restore explanation of TEI namespace</ref></cell>
+<cell><p>JC: Note, best solution is probably to redirect the namespace URL to a different documentation URL, which is then https. (There saying it has been redirected.)</p>
+<p>F2F subgroup: agrees with JC</p>
+<p>HC: I don’t know how to do what JC suggests, but I have tried adding pages for the namespaces, and they seem to work.</p>
+<p>JC: No, they don’t work! They redirect to https which is completely wrong. What I’m saying is that the <ref target="https://www.tei-c.org/ns/1.0">https://www.tei-c.org/ns/1.0</ref> should redirect somewhere else precisely because we don’t want to confuse people with putting https in the namespace.</p></cell>
+</row>
+<row>
+<cell>#1872</cell>
+<cell>A</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/1872">Multiple sibling remarks in the same language cause translation issues</ref></cell>
+<cell>Subgroup favours solution 2. Solution 1 may be more robust, but too much work to implement. This involves changing the stylesheets so that in a tagdoc the <gi>remarks</gi> are labeled “Notes” (plural). Full Council: Add schematron rule to say only one <gi>remark</gi> per language.</cell>
+</row>
+<row>
+<cell>#1873</cell>
+<cell>B</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/1873">Create Website Documentation Specifically Aimed at Developers</ref></cell>
+<cell>Full Council: Maybe start working on this in the TEI wiki. Assign PS to make the space on the TEI wiki.</cell>
+</row>
+<row>
+<cell>#1875</cell>
+<cell>C</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/1875">sentence on tables merges style and rend attrs</ref></cell>
+<cell>Good idea. Council approves if they agree and RV does it.</cell>
+</row>
+<row>
+<cell>#1876</cell>
+<cell>A</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/1876">att.pointing and att.scoping overlap</ref></cell>
+<cell><p>Make att.pointing claim membership in att.scoping.</p>
+<p>Full Council: @match (with XPath) may be obsolete now that we have XPointer?</p>
+<p>@target takes you to known processible stuff. @match used to be use for uncertainty.</p>
+<p>Questions: Are we overcomplicating the class system in trying to reduce the number of permitted attributes. Or is it more daunting for the user to have to choose from among a long list of attributes</p>
+<p>CLOSED-WON’T-FIX. All simple solutions are worse than doing nothing.</p></cell>
+</row>
+<row>
+<cell>#1878</cell>
+<cell>C</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/1878">datatype of @name of <gi>attRef</gi> too loose</ref></cell>
+<cell>yes.</cell>
+</row>
+<row>
+<cell>#1879</cell>
+<cell>A</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/1879">New element listNote as a wrapper for note elements</ref></cell>
+<cell>Subgroup: Wait until standoff proposal figures out what’s going on with annotations</cell>
+</row>
+<row>
+<cell>#1881</cell>
+<cell>C</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/1881">Repair ambiguous language referring to figures, tables, and examples</ref></cell>
+<cell>Should be set to go: should be cleaned up for clarity. Sarah wants to do this.</cell>
+</row>
+<row>
+<cell>#1883</cell>
+<cell>A</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/1883">simplePrint ODD has duplicate lines</ref></cell>
+<cell>already fixed and closed</cell>
+</row>
+<row>
+<cell>#1885</cell>
+<cell>C</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/1885">Update teidata.temporal.iso (and teidata.duration.iso?)</ref></cell>
+<cell><p>We should be conformant with ISO. So we should update our datatypes.</p>
+<p>Council: This needs more review to see how it affects our current practice of encoding ambiguous dates.</p></cell>
+</row>
+<row>
+<cell>#1889</cell>
+<cell>A</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/1889">why cant i define a PM in terms of model classes rather than individual elements?</ref></cell>
+<cell>JC: Sounds like a great idea. Hard to implement.
+MT: Probably not that useful.If we had inheritance-based classes it might be easier. But it might not benefit users to have to study the model classes and their various dependencies.</cell>
+</row>
+<row>
+<cell>#1902</cell>
+<cell>C</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/1902">Add model.bibl to model.entryPart.top</ref></cell>
+<cell>Not clear whether OP wants <gi>bibl</gi>, model.biblPart, or model.blblLike. SS to ask on ticket.</cell>
+</row>
+<row>
+<cell>#1906</cell>
+<cell>A</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/1906">repositories and manuscripts in multiple locations</ref></cell>
+<cell><p>JC: Original Poster is mistaken in what they are doing.</p>
+<p>Council: JC will make a final response to close this ticket</p></cell>
+</row>
+<row>
+<cell>#1907</cell>
+<cell>B</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/1907">Datatype example doesn’t do what prose implies it does</ref></cell>
+<cell>Sub-group (SB,HC,PS,SS) thinks that SB’s (2) is the better solution, and leaves it to assignee (EBB) to improve the wording.</cell>
+</row>
+<row>
+<cell>#1909</cell>
+<cell>A</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/1909">non-formulaic formula</ref></cell>
+<cell>Closed</cell>
+</row>
+<row>
+<cell>#1910</cell>
+<cell>B</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/1910">Add location information to the new `<gi>conversion</gi>` element</ref></cell>
+<cell>SB—Not sure I understand entirely, and I agree with @duncdrum’s request for examples. But I suspect an attribute that points to a <gi>place</gi> is better than a child <gi>placeName</gi></cell>
+</row>
+
+</table><p> </p></div></div></div></body><!-- #post-## --></text></TEI>

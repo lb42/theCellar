@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/home/lou/Public/TEI/TEICSS/tei.css" type="text/css"
+ ?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:t="http://www.tei-c.org/ns/1.0" n="2016-10"><teiHeader><fileDesc><titleStmt><title>Minutes of the TEI Technical Council</title><meeting n="2016-10" when="2016-10-27">TEI Technical Council online
+     meeting : <date>27 October 2016</date></meeting></titleStmt><publicationStmt><distributor>TEI Website</distributor><idno>TCM085</idno></publicationStmt><sourceDesc><p>Retagged from a WordPress HTML file</p></sourceDesc></fileDesc><revisionDesc><change when="2023-04-25">Archival header confected</change><change>Extracted from Word Press article with id post-28101</change></revisionDesc></teiHeader><text><body><div>
+		
+	
+<div>
+<p rend="head">Present</p>
+<list style="ul">
+<item>Syd Bauman (SB)</item>
+<item>Sarah Stanley (SS)</item>
+<item>Elli Mylonas (EM)</item>
+<item>Hugh Cayless (HC)</item>
+<item>Magdalena Turska (MT)</item>
+<item>Elisa Beshero-Bondar (EB)</item>
+<item>Raff Viglianti (RV)</item>
+<item>Martina Scholger (MS)</item>
+</list>
+<p rend="head">Apologies</p>
+<list style="ul">
+<item>Lou Burnard (LB)</item>
+<item>James Cummings (JC)</item>
+<item>Peter Stadler (PS)</item>
+<item>Stefan Majewski (SM)</item>
+</list>
+</div>
+<div type="h2"><head>Notes</head><p>Begun 14:03Z</p><p>Introductions (new member = SS!)</p><p>Notes taken in-line, below.</p><p>LB joined ~14:45Z</p></div>
+<div type="h2"><head>Agenda and minutes</head><list style="ul">
+<item>Finalizing the TEI That Dare Not Speak Its Name (née Simple)
+<list style="ul">
+<item>oxygen framework entry</item>
+<item>Adding more examples</item>
+<item>Stylesheet support</item>
+</list>
+</item>
+</list><div>
+<table>
+
+<row>
+<cell/>
+<cell>DISLIKE</cell>
+<cell>TOLERABLE</cell>
+<cell>SUPPORTED</cell>
+</row>
+<row>
+<cell>Bookish</cell>
+<cell>JC, MT, LB</cell>
+<cell>HC, EM, SB</cell>
+<cell>EB, KT, RV</cell>
+</row>
+<row>
+<cell>Go</cell>
+<cell>LB, EB, JC</cell>
+<cell>SB, HC</cell>
+<cell>PS, MT</cell>
+</row>
+<row>
+<cell>Print</cell>
+<cell>MS, JC</cell>
+<cell>RV, EB, LB, MT</cell>
+<cell>EM, HC</cell>
+</row>
+<row>
+<cell>Simple</cell>
+<cell>RV, HC, SB, EB</cell>
+<cell>MT</cell>
+<cell>MS, JC, LB</cell>
+</row>
+<row>
+<cell>Simple-Print</cell>
+<cell/>
+<cell>EB</cell>
+<cell>EM JC</cell>
+</row>
+
+</table>
+<p>The decision is really between The Customization as on-ramp, vs. a regular customization. (But every customization is potentially an onramp, so LB don’t think this distinction is helpful.)</p><p>If Simple becomes a way of alluding to the existence of the Processing Model in the customization, then we can use the hyphenated form of the name (simple-print, simple:epidoc!!) etc. to identify those customizations. Also, not necessary to refer to the processing model in the forward facing doc, so as not to confuse users. (The equation of “uses PM” and “Simple” is one I find a little counterintuitive! LB) JC: Yes. I would stop talking about the Processing Model with regard to Simple — most people won’t be using the PM, just its results. (Just as most people don’t modify the ODD of TEI Lite, just use it.)</p><p>(Several operating systems barf on colons in filenames, thus my preference for hyphen or CamelCase or whatever. — SB)</p><p>The customization is an example of our nascent on-ramp strategy, so the name ought to capture both the strategy and the specific customization:</p><list style="ul">
+<item>Go-Print?</item>
+<item>Simple-Print?</item>
+<item>EZ-Print?</item>
+</list><p>JC: Simple-Print seems easiest to me. Has benefit of partly maintaining current name it is known by, and explaining it is only about Print.</p><list style="ul">
+<item>Release 3.1.0
+<list style="ul">
+<item><ref target="https://github.com/TEIC/TEI/milestone/2">https://github.com/TEIC/TEI/milestone/2</ref></item>
+<item>Release blockers? Suggest candidates for release blockers asap, for ex. By Thursday Nov 3. ACTION ON EVERYONE</item>
+<item>Tue 06 Dec 2016 (codename Sinterklaas) is our expected release day. JC &amp; MT are release techs)</item>
+<item>When do we create a release branch (Wed 11-23 by MT)</item>
+<item>What is a release blocker: ex: ticket so important that it would push the release date back (e.g., name for Simple)</item>
+<item>Release doc: <ref target="http://teic.github.io/TCW/tcw22.html">http://teic.github.io/TCW/tcw22.html</ref>(<ref target="https://github.com/TEIC/TEI/blob/dev/Documents/TCW/tcw22.xml">https://github.com/TEIC/TEI/blob/dev/Documents/TCW/tcw22.xml</ref>) Action on EB to observe Release and record revisions for tcw22</item>
+<item>Important to have the customization known as SIMPLE in the Oxygen framework for this release; MT to research the state of TEI Simple framework for oXygen and report back to Council via email</item>
+</list>
+</item>
+<item>Spring Face to Face meeting
+<list style="ul">
+<item>Suggested venue is Prague, around the time of XMLPrague Feb 9–11 <ref target="http://www.xmlprague.cz/">http://www.xmlprague.cz</ref> , with a day spent working with local TEI-ers.</item>
+<item>HC did hear back from Marjorie Burghart, suggesting we meet before. (After also a possibility.)</item>
+<item>Council 5-7, then day in-between and doing ‘TEI for developers’ on 9th at the XML Prague conference?
+<list style="ul">
+<item>Ideas for presentation: types of users and use-cases, documents in the TEI, ODD, approaches to processing</item>
+</list>
+</item>
+</list>
+</item>
+<item>Fall Face to Face meeting
+<list style="ul">
+<item>Martin Holmes says if we want to meet at UVic, we should nail the dates down early, as room reservations are liable to be tough.</item>
+<item>TEI Conference is Nov 12–14; F2F hold afterwards, Nov 15–17</item>
+</list>
+</item>
+<item>Other business
+<list style="ul">
+<item>Remove support for p4 from oxygen framework (see <ref target="https://github.com/TEIC/oxygen-tei/issues/8#issuecomment-255604849">https://github.com/TEIC/oxygen-tei/issues/8#issuecomment-255604849</ref>)</item>
+<item>Martin’s post from that ticket is about Minimal, not P4. See <ref target="https://listserv.brown.edu/?A2=tei-l;8ef50537.1610">the post itself</ref></item>
+<item>LB: Support for “Simple” would also be nice to have in Oxygen. ACTION on MT to investigate the state of the Simple Oxygen plugin and report back to Council. Might have to do just a simple (ha!) template and wait on fuller support. JC: A simple template already exists.</item>
+</list>
+</item>
+</list></div></div>
+	</div></body><!-- #post-## --></text></TEI>

@@ -1,0 +1,700 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/home/lou/Public/TEI/TEICSS/tei.css" type="text/css"
+ ?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:t="http://www.tei-c.org/ns/1.0" n="2022-09"><teiHeader><fileDesc><titleStmt><title>Minutes of the TEI Technical Council</title><meeting n="2022-09" from="2022-09-11" to="2022-09-13">TEI Technical
+     Council ftf meeting : <placeName>Newcastle</placeName>, <date>11–13 September
+     2022</date></meeting></titleStmt><publicationStmt><distributor>TEI Website</distributor><idno>TCM158</idno></publicationStmt><sourceDesc><p>Retagged from a WordPress HTML file</p></sourceDesc></fileDesc><revisionDesc><change when="2023-04-29">Archival header confected</change><change>Extracted from Word Press article with id post-31485</change></revisionDesc></teiHeader><text><body ><div><p><hi style="strong">Meeting Times</hi></p><table>
+
+<row>
+<cell><hi style="b">Date</hi></cell>
+<cell><hi style="b">Time</hi></cell>
+<cell><hi style="b">Meeting of</hi></cell>
+<cell><hi style="b">Location</hi></cell>
+</row>
+<row>
+<cell><hi style="b">Sunday, Sept 11</hi></cell>
+<cell><p>09:30–12:30, break at ~10:45</p><p>14:00–17:30, break at ~15:45</p></cell>
+<cell><p>Full Council meeting</p><list style="ul">
+<item>atop meeting</item>
+</list>
+</cell>
+<cell><ref target="https://www.google.com/maps/place/Percy+Building/@54.9801419,-1.6163724,300m/data=!3m1!1e3!4m5!3m4!1s0x487e71c09b0bac75:0x17586dc8018ae0ed!8m2!3d54.9804483!4d-1.6165735">Percy Building
+</ref>in  <ref target="https://roomfinder.ncl.ac.uk/room.php?r=ROM42E48712-2B7B-4224-A997-5A9962BC6C78">G.09</ref></cell>
+</row>
+<row>
+<cell/>
+<cell><hi style="i">Dinner</hi></cell>
+<cell><hi style="i">TBC</hi></cell>
+</row>
+<row>
+<cell><hi style="b">Monday, Sept 12</hi></cell>
+<cell><p>09:30–13:00, break at ~10:45</p><p>14:30–17:30, break at ~16:00</p></cell>
+<cell>Full Council meeting</cell>
+<cell><p><ref target="https://www.google.com/maps/place/Armstrong+Building/@54.979964,-1.6161301,163m/data=!3m2!1e3!5s0x487e70cc432f667b:0x1c2ba26e36a50875!4m12!1m6!3m5!1s0x487e71c09b0bac75:0x17586dc8018ae0ed!2sPercy+Building!8m2!3d54.9804483!4d-1.6165735!3m4!1s0x487e70c8a2a66045:0x8880ba2439300b80!8m2!3d54.9797706!4d-1.6166911">Armstrong Building</ref></p>
+<p>in <ref target="https://roomfinder.ncl.ac.uk/room.php?r=ROM66D2CC83-2B06-4EAD-AB10-D11FE822826E">G.09.KLLT</ref></p></cell>
+</row>
+<row>
+<cell>17:30–18:30</cell>
+<cell>Joint Board/Council meeting</cell>
+</row>
+<row>
+<cell/>
+<cell><hi style="i">Dinner</hi></cell>
+<cell><hi style="i">TBC</hi></cell>
+</row>
+<row>
+<cell><hi style="b">Tuesday, Sept 13</hi></cell>
+<cell>09:00–13:00, break at ~10:45</cell>
+<cell>Full Council meeting</cell>
+<cell><p><ref target="https://www.google.com/maps/place/Armstrong+Building/@54.979964,-1.6161301,163m/data=!3m2!1e3!5s0x487e70cc432f667b:0x1c2ba26e36a50875!4m12!1m6!3m5!1s0x487e71c09b0bac75:0x17586dc8018ae0ed!2sPercy+Building!8m2!3d54.9804483!4d-1.6165735!3m4!1s0x487e70c8a2a66045:0x8880ba2439300b80!8m2!3d54.9797706!4d-1.6166911">Armstrong Building</ref></p>
+<p>in <ref target="https://roomfinder.ncl.ac.uk/room.php?r=ROM66D2CC83-2B06-4EAD-AB10-D11FE822826E">G.09.KLLT</ref></p></cell>
+</row>
+
+</table><p> </p><p><hi style="strong">Present:</hi></p><list style="ul">
+<item>Syd Bauman (SB, except on Mon from 16:15 to 17:05)</item>
+<item>Helena Bermúdez Sabel (HBS)</item>
+<item>Elisa Beshero-Bondar (EBB, except on Mon from 16:15 to 17:05)</item>
+<item>Elli Bleeker (EB, except on Tue)</item>
+<item>Hugh Cayless (HC)</item>
+<item>Martin Holmes (MH, as representative for Janelle Jenstad)</item>
+<item>Martina Scholger (MS)</item>
+<item>Sabine Seifert (SS)</item>
+<item>Peter Stadler (PS)</item>
+<item>Magdalena Turska (MT)</item>
+<item>Raff Viglianti (RV, except on Tue)</item>
+<item>Patricia O Connor (TOC, invited for the Monday morning session)</item>
+<item>Nicholas Laiacona (NL, invited for Monday morning session)</item>
+</list><p><hi style="strong">Apologies:</hi></p><list style="ul">
+<item>Janelle Jenstad (JJ)</item>
+</list><p><hi style="strong">Council Members running workshops</hi></p><list style="ul">
+<item>RV is busy on Tuesday (EB will be attending his event)</item>
+<item>EBB is busy on Monday from 16:15 to 17:05 (SB will join her)</item>
+</list><p> </p><div type="h2"><head>SUNDAY, September 11</head></div><div type="h2"><head>&gt; Morning session (9:30–12:30)</head></div><div type="h2"><head>&gt;&gt; Approval of the agenda</head></div><div type="h2"><head xml:id="BoardCouncil">&gt;&gt; Topics for Board consideration</head><list style="ul">
+<item>Mailing lists
+<list style="ul">
+<item>Moving TEI-L (et al.) from Brown to Huma-Num.
+<list style="ul">
+<item>RV: Is Paderborn an option as well? They run the MEI ones. For archiving the TEI-L as HTML we could ask the Humanist Discussion Group for advice.</item>
+</list>
+</item>
+<item>Purchase of new mailing list services?</item>
+<item>HC: notes that there is less discussion on the TEI-Council List because most discussion happens on the Github issues.</item>
+<item>SB: There are ~17 lists on LISTSERV at Brown, most of which are no longer active.</item>
+<item>Anticipate problems with change of list names, inviting members (and losing invitations)
+<list style="ul">
+<item>Maintaining a consistent archive back to 1990 would be nice</item>
+<item>One of the only archives running that long in digital humanities</item>
+<item>Make the old archive a <ref target="https://endings.uvic.ca/staticSearch/docs/index.html">StaticSearch</ref> HTML project via Endings</item>
+<item>How do we organize the archive? Per creator, per thread… This makes a project in and by itself.</item>
+</list>
+</item>
+<item>Let’s figure out what the Humanist list does?
+<list style="ul">
+<item><ref target="https://dhhumanist.org/search.html">https://dhhumanist.org/search.html </ref></item>
+<item>They have a searchable archive online</item>
+<item>We figured out that this isn’t quite a full mailing list, it’s a distribution list and it seems to have a lot of custom code. So, it’s <hi style="i">not for us</hi>.</item>
+</list>
+</item>
+<item>Answer from Laurent on migration of mailing lists to Huma-Num:  “I have checked with them and they actually lack competence/capacity on the subject at present (they have opened a position to hire someone on the mailing infrastructure and hope to get better in the future). If the board is ready to pay, we need to find a freelancer on the issue.”</item>
+</list>
+</item>
+<item>Slack
+<list style="ul">
+<item>Slack’s policy is that messages disappear after 90 days <hi style="b">if</hi> we don’t pay for it, which means that we will lose our history if we don’t preserve it. If we keep it as an informal chat, this should be okay.
+<list style="ul">
+<item>Look into getting Slack for free (they managed to do that for e-editiones).</item>
+<item>Making a #public Slack channel available would be helpful to TEI users who aren’t used to TEI email listserv culture.</item>
+</list>
+</item>
+</list>
+</item>
+<item>Discuss with Board whether we can still afford the two F2F meetings or if we should scale back to just one and do the other as a series of VF2F
+<list style="ul">
+<item>General Council preference for physical F2F</item>
+</list>
+</item>
+<item>Discuss with Board whether we still host an Annual Conference and Membership meeting
+<list style="ul">
+<item>Suggestion to host General Meeting over Zoom to make it available to members/public?</item>
+</list>
+</item>
+</list></div><div type="h2"><head>&gt;&gt; Invite potential Council members to the current F2F meeting</head><list style="ul">
+<item>Invite those who are here in Newcastle</item>
+</list></div><div type="h2"><head>&gt;&gt; Council’s report at annual general meeting</head><list style="ul">
+<item>ATOP</item>
+<item>Next release
+<list style="ul">
+<item><gi>gender</gi> (round of feedback)</item>
+<item>nested <gi>ab</gi>s</item>
+</list>
+</item>
+<item>OxGarage / TEIGarage / MEIGarage</item>
+<item>CMC (expected in early next year)</item>
+<item>Social aspects of Council work during COVID-19</item>
+</list></div><div type="h2"><head>&gt;&gt; Tasks to takeover from PS</head><list style="ul">
+<item>PS will continue to run Jenkins services at Paderborn.</item>
+<item>He will still be part of the Stylesheets meetings and the CMC working group.</item>
+<item>Following in Martin Holmes’s example of remaining actively connected with the Council.</item>
+<item>PS will reassign some tickets.</item>
+<item>Docker-related stuff is well documented; much of it is automated through GitHub Actions. Workflows are in a .yml file which is relatively straightforward.</item>
+<item>PS will stay on Council’s e-mail list, infrastructure and CMC groups.</item>
+</list></div><div type="h2"><head>&gt;&gt; Moving from OxGarage to TEIGarage</head><list style="ul">
+<item>Report from PS</item>
+<item>Current status
+<list style="ul">
+<item>The monolithic OxGarage repo has been split up into various repos, facilitating maintenance and development of other “Garages”.</item>
+<item>There’s a new <ref target="https://github.com/TEIC/TEIGarage">TEIGarage repo</ref> (under the TEIC organization at GitHub) that serves as a wrapper and main builder for the TEIGarage.</item>
+<item>The TEIGarage client application has been tentatively modified to show the new status; see the demo deployment at <ref target="http://teigarage.tei-c.de">http://teigarage.tei-c.de</ref>.</item>
+<item>The new TEIGarage features many updates of libraries and dependencies, security fixes, and other improvements and is ready to be rolled out.</item>
+<item>TEI and MEI now have multiple “Garages” that can be used together
+<list style="ul">
+<item>TEIGarage is the main entry point.</item>
+</list>
+</item>
+</list>
+</item>
+<item>Actions to be approved by the Council
+<list style="ul">
+<item>Deploy TEIGarage at <ref target="http://teigarage.tei-c.org">http://teigarage.tei-c.org</ref> and <ref target="http://oxgarage.tei-c.org">http://oxgarage.tei-c.org</ref>  (i.e. no redirect, but OxGarage becomes an alias for TEIGarage).</item>
+<item>Move tickets from OxGarage repo to appropriate new repo(s).</item>
+<item>Place note on OxGarage repo.</item>
+<item>Archive OxGarage repo.</item>
+<item>Place note on OxGarage Docker repo.</item>
+</list>
+</item>
+</list></div><div type="h2"><head>&gt;&gt; ROMA</head><list style="ul">
+<item>RV contemplates removing beta
+<list style="ul">
+<item>This means: <ref target="http://romabeta.tei-c.org">http://romabeta.tei-c.org</ref> becomes <ref target="http://roma.tei-c.org">http://roma.tei-c.org</ref>
+and <ref target="http://roma.tei-c.org">http://roma.tei-c.org</ref> becomes <ref target="http://romaclassic.tei-c.org">http://romaclassic.tei-c.org</ref>.</item>
+</list>
+</item>
+<item>Before removing beta, RV wants to finish its internationalization in the interface so it matches the original Roma
+<list style="ul">
+<item><hi style="b">Action on RV</hi>: December deadline for internationalization.</item>
+</list>
+</item>
+<item>Try crowdsourcing it, following TEI Publisher’s example.</item>
+<item>RV does have volunteers for covering French, Spanish, Italian, and German.</item>
+<item>Anything old Roma does that new Roma can’t?
+<list style="ul">
+<item>Support for RelaxNG (maybe not necessary for Roma, since it’s mainly for producing new ODDs in Pure ODD).</item>
+</list>
+</item>
+<item>Help from people knowing JavaScript / React would be appreciated, RV thinks about students of his
+<list style="ul">
+<item>People involved would bridge JS and XML communities: these are unusual!</item>
+</list>
+</item>
+</list></div><div type="h2"><head>&gt;&gt; CMC</head><list style="ul">
+<item>October next meeting with CMC, then pass a draft chapter on to Council in ~November.</item>
+<item>It is planned to include it into the 2023 spring release.</item>
+</list></div><div type="h2"><head>&gt;&gt; Documentation</head><list style="ul">
+<item>Documentation is in different places – <ref target="https://wiki.tei-c.org/index.php?title=Main_Page">Wiki</ref>, <ref target="https://tei-c.org/">WordPress</ref>, <ref target="http://github.com/TEIC/Documentation/">documentation repo</ref>, Google drive, TCW – and some of it is out of date.</item>
+<item>A Task Force or subgroup effort is needed
+<list style="ul">
+<item>Take a moment to review what needs to be in the documentation repo; what’s missing and needs to be moved there.</item>
+<item>Research old nomenclature system, and make a new system for documentation.</item>
+<item>Council is in agreement of using the documentation repo.</item>
+<item>Discard the old wikis for the Council’s documentation.</item>
+<item>Start right off during this F2F in a small group.</item>
+</list>
+</item>
+<item><hi style="b">Action on HC</hi> to update the GitHub Action to publish from the Documentation repo again.</item>
+<item>Should all our TCW documentation be written in TEI?
+<list style="ul">
+<item>Documentation repo supports both TEI and markdown, they can be made to look more or less the same.</item>
+<item>SB has been tinkering with publishing examples via XSLT.</item>
+<item>Should we use Guidelines <gi>egXML</gi>?</item>
+<item>However we do this, it must have one XSLT for transforming TCW TEI.</item>
+<item>One consistent TEI URL for all the documentation published from GitHub pages.</item>
+</list>
+</item>
+</list><p> </p></div><div type="h2"><head>&gt; Afternoon session (14:00–17:30)</head></div><div type="h2"><head>&gt;&gt; Preparation for the next release</head><list style="ul">
+<item>Timeline
+<list style="ul">
+<item>Refridge = 11 Oct</item>
+<item>Freeze = 20 Oct</item>
+<item>Release = 25 Oct</item>
+</list>
+</item>
+<item>Features (issues) that we want to have in the next release:
+<list style="ul">
+<item><gi>gender</gi> merged into dev: <ref target="https://github.com/TEIC/TEI/issues/2189">#2189</ref></item>
+<item>draft ready for nesting <gi>ab</gi>: <ref target="https://github.com/TEIC/TEI/issues/1856">#1856</ref></item>
+</list>
+</item>
+</list></div><div type="h2"><head>&gt;&gt; Housekeeping</head><list style="ul">
+<item>Best to delete branches when they have been merged to dev.</item>
+<item>Stale release branches:
+<list style="ul">
+<item>On a new release, delete the release branches from past releases except the last one.</item>
+</list>
+</item>
+</list></div><div type="h2"><head>&gt;&gt; Review of Guidelines Issues</head><list style="ul">
+<item><ref target="#GL0ct2021">Guidelines issues from October 2021</ref></item>
+<item><ref target="#GLApr2022">Guidelines issues from April 2022</ref></item>
+</list><p> </p></div><div type="h2"><head>MONDAY, September 12</head></div><div type="h2"><head>&gt; Morning session (09:30–13:00)</head></div><div type="h2"><head>&gt;&gt; Invited guest: TOC and NL</head><list style="ul">
+<item>Those who ran for TEI Council and are present in Newcastle were invited to attend Monday morning’s meeting to get a sense of the Council’s work.</item>
+</list></div><div type="h2"><head>&gt;&gt; Discussion and review of Guidelines Issues</head><list style="ul">
+<item>Discussion of <ref target="#GLSep2022">Guidelines issues</ref> (break out sessions).</item>
+<item>Review of <ref target="#GLSep2022">Guidelines issues</ref> with the whole group.</item>
+</list><p> </p></div><div type="h2"><head>&gt; Afternoon session (14:30–17:30)</head></div><div type="h2"><head>&gt;&gt; ATOP report:</head><list style="ul">
+<item>ATOP (Another TEI ODD Processor)</item>
+<item>Repo: <ref target="https://github.com/TEIC/atop">https://github.com/TEIC/atop</ref></item>
+<item>Meeting notes: <ref target="https://github.com/TEIC/atop/wiki/Meeting-notes">https://github.com/TEIC/atop/wiki/Meeting-notes</ref></item>
+<item>Terminology: <ref target="https://github.com/TEIC/atop/wiki/Terminology">https://github.com/TEIC/atop/wiki/Terminology</ref></item>
+<item>Schematron for our own code: <ref target="https://github.com/TEIC/atop/blob/dev/Schemas/atop_xslt.sch">https://github.com/TEIC/atop/blob/dev/Schemas/atop_xslt.sch</ref></item>
+<item>ATOP tickets on TEI: <ref target="https://github.com/TEIC/TEI/issues?q=is%3Aissue+is%3Aopen+atop">https://github.com/TEIC/TEI/issues?q=is%3Aissue+is%3Aopen+atop</ref></item>
+<item>Intention of ATOP
+<list style="ul">
+<item>Providing a processor that reads a customization ODD and a base ODD and produces an RNG + Schematron schema.</item>
+<item>ATOP would not replace all the Stylesheets (not make epub, etc.)</item>
+<item>ATOP is only to produce RNG and ISO-Schematron schemas.</item>
+</list>
+</item>
+<item>ATOP group meets once per week and gets work done in between
+<list style="ul">
+<item>Emphasis on strategizing HOW to do the work first.</item>
+<item>Thinking about inputs/outputs before they write any XSLT.</item>
+<item>Writing rules or “guardrails” for writing: consistent naming of files and variables, always using `@as` to type values. Try to make it easier to deduce what rules are handling particular actions.</item>
+<item>Problem: Pure ODD (and ODDs generally) are underspecified.</item>
+<item>They’re starting from the end: The last step of the process would be to produce a pruned localized ODD. Take the last output ODD and “transpile” it to RNG. The group is working on “transpiling”.</item>
+<item>Validity testing at every stage: Files produced in intermediate stages need to be valid.</item>
+<item>Start by combining base + customization ODD to create a “derived ODD”.</item>
+</list>
+</item>
+<item>Discussion:
+<list style="ul">
+<item>Why is it important to work on the PLODD (Pruned Localized ODD) in the last step?
+<list style="ul">
+<item>Not using the term ”compiled ODD” because that contains the fuzzy baggage of the current Stylesheets. This is really different/more precise.</item>
+<item>PLODD doesn’t need to enter general community terminology; it’s for developers / the Council.</item>
+<item>Need a better path to produce PLODDs for development (currently working with sample project ODDs we’ve sent to help ATOP).</item>
+</list>
+</item>
+<item>Good that ATOP might refine/improve/specify the way we handle classes.</item>
+<item>What Council can do to help: keep an eye out on the tickets that the ATOP group will open (there is now also an ATOP label).</item>
+</list>
+</item>
+</list></div><div type="h2"><head>&gt;&gt; Stylesheets issues</head><list style="ul">
+<item><ref target="https://github.com/TEIC/Stylesheets/issues/544">add @classpathref to common/teianttasks.xml #544</ref>
+<list style="ul">
+<item>already fixed and closed with PR  <ref target="https://github.com/TEIC/Stylesheets/pull/550">https://github.com/TEIC/Stylesheets/pull/550</ref></item>
+</list>
+</item>
+</list></div><div type="h2"><head>&gt;&gt; Discussion of Guidlines issues</head><list style="ul">
+<item>Continue plenary discussion of <ref target="#GLSep2022">Guidelines issues</ref>, starting with <ref target="https://github.com/TEIC/TEI/issues/2247">#2247</ref></item>
+</list></div><div type="h2"><head>&gt;&gt; i18n report</head><list style="ul">
+<item>HC reports on the <ref target="https://translate.tei-c.org/user.html">Spec Translator</ref>.</item>
+<item>We should add more translations of the interface to <ref target="https://github.com/TEIC/TEI/tree/dev/I18N/specTranslator.xml">https://github.com/TEIC/TEI/tree/dev/I18N/specTranslator.xml</ref></item>
+</list><p> </p></div><div type="h2"><head>&gt; Board/Council meeting (17:30–18:30)</head><list style="ul">
+<item>see <ref target="#BoardCouncil">Topics for Board consideration</ref></item>
+</list><p> </p></div><div type="h2"><head>TUESDAY, September 13</head></div><div type="h2"><head>&gt; Morning session (9:00–13:00)</head></div><div type="h2"><head>&gt;&gt; Discussion of Guidelines issues</head><list style="ul">
+<item>Continue plenary discussion of <ref target="#GLSep2022">Guidelines issues</ref>, ending with <ref target="https://github.com/TEIC/TEI/issues/2295">#2295</ref></item>
+</list><p> </p><div type="h3"><head xml:id="GL0ct2021">Guidelines issues from SVF2F meeting in October 2021</head><p>Issues from the October 2021 meeting discussed by group B (European Group: MS, PS, MT, HBS) but on which no final decision was by the plenary.</p><table>
+
+<row>
+<cell>#2136</cell>
+<cell>B</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/2136">Use PureODD inside attribute lists</ref></cell>
+<cell><p>Subgroup recommends to deprecate @org on <gi>attList</gi> and use schematron rules instead. A few elements use &lt;attList org=””&gt; at the moment, e.g. <gi>relation</gi>. These would have to be re-written.</p><p>SB: There is no comment on the ticket to this effect, so I am commenting here. I think this [using Schematron instead] is a terrible idea. One can express this (alternation of attributes) in RELAX NG, XML Schema, and even in ODD (except that it does not work in classes). There is no reason it should not remain expressible in ODD.</p>
+<p>2022-09-11: SB left a comment in GitHub; issue closed, Stylesheets issue reopened</p></cell>
+</row>
+
+</table><p> </p></div><div type="h3"><head xml:id="GLApr2022">Guidelines issues from SVF2F meeting in April 2022</head><p>Issues from the SVF2F meeting in April 2022 discussed by group B (European Group: MS, PS, MT, HBS) but on which no final decision was made by the plenary.</p><p>Group A: (HC), EBB, JJ, SB, RV</p><p>Group B: PS, HBS, MS, SS, EB</p><table>
+
+<row>
+<cell>No.</cell>
+<cell>Group</cell>
+<cell>Title</cell>
+<cell>Comment</cell>
+</row>
+<row>
+<cell>#2137</cell>
+<cell>B</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/2137">bookmark links in examples pages have no mouse-over text</ref></cell>
+<cell><p>Subgroup proposes to 1) add @rel=”bookmark” and @aria-label on HTML output <gi>a</gi>. Consider opening a new issue for citation recommendation (issue with this is which link should be in the citation recommendation, the current release or stable link to the Vault).</p><p>MT: Discuss issues arising from the request to offer citation buttons / bookmarks: tension between human readable and significant citation, e.g. TEI Guidelines, Reference for element <gi>abbr</gi>, Example 3 vs using a generated example id, direct bookmark link; latest vs fixed version (permalink)</p>
+<p>HC: Could we solve the citation problem (that the example id changes every version) by redirecting /latest/ to the current version?</p></cell>
+</row>
+<row>
+<cell>#2140</cell>
+<cell>B</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/2140">Example needed to model attList for delimiting alternative groupings of attributes</ref></cell>
+<cell><p>Subgroup thinks this is great and should be added to the Guidelines after the Stylesheets have been prepared to support both the HTML output and the overriding of @type &amp; @subtype as mentioned on the ticket. For the HTML output there’s already a <ref target="https://github.com/TEIC/Stylesheets/issues/506">ticket</ref> but for the overriding we need one.</p>
+<p>2022-09-11: green, EBB will provide a reduced example</p></cell>
+</row>
+<row>
+<cell>#2144</cell>
+<cell>B</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/2144">wrong attribution for example</ref></cell>
+<cell><p>Subgroup proposes (1) to change the whitespace to a hyphen; and (2) to add the same example with @ref instead of @key plus URL as value.</p><p>2022-09-11:SB will come up with an improved example</p></cell>
+</row>
+<row>
+<cell>#2190</cell>
+<cell/>
+<cell><ref target="https://github.com/TEIC/TEI/issues/2190">Should we revise datatypes related to sex and gender?</ref></cell>
+<cell><p>This is related to issue <ref target="https://github.com/TEIC/TEI/issues/2189">#2189</ref>: <ref target="https://github.com/TEIC/TEI/issues/2189">Create a gender element</ref> which is yellow and green</p>
+<p>2022-09-11:CLOSED with all the action on gender branch.</p></cell>
+</row>
+<row>
+<cell>#2213</cell>
+<cell/>
+<cell><ref target="https://github.com/TEIC/TEI/issues/2213">att.datatable.custom is under-documented in the Guidelines</ref></cell>
+<cell><p>This issue will be discussed on Saturday in the full Council session</p><p>Where we introduced @datingPoint in the prose of the Guidelines (with ref to <gi>calendar</gi> element isn’t helpful yet.</p>
+<p>2022-09-11: EB and MH will come up with an example. Work is proceeding on this branch: <ref target="https://github.com/TEIC/TEI/tree/issue-2213">https://github.com/TEIC/TEI/tree/issue-2213</ref></p></cell>
+</row>
+
+</table><p> </p></div><div type="h3"><head xml:id="GLPR">Guidelines pull requests</head><table>
+
+<row>
+<cell>No.</cell>
+<cell>Group</cell>
+<cell>Title</cell>
+<cell>Comment</cell>
+</row>
+<row>
+<cell>#2245</cell>
+<cell/>
+<cell><ref target="https://github.com/TEIC/TEI/pull/2245">Translation from CarmendeSantiago/TEI</ref></cell>
+<cell>Review HBS</cell>
+</row>
+<row>
+<cell>#2281</cell>
+<cell/>
+<cell><ref target="https://github.com/TEIC/TEI/pull/2281">Translation from knagasaki/TEI</ref></cell>
+<cell>Review with MH, but probably ready to pull in</cell>
+</row>
+<row>
+<cell>#2294</cell>
+<cell/>
+<cell><ref target="https://github.com/TEIC/TEI/pull/2294">Translation from knagasaki/TEI</ref></cell>
+<cell>Review with MH, but probably ready to pull in</cell>
+</row>
+<row>
+<cell>#2320</cell>
+<cell/>
+<cell><ref target="https://github.com/TEIC/TEI/pull/2320">Translation from dh-miami/TEI</ref></cell>
+<cell>Review HBS</cell>
+</row>
+<row>
+<cell>#2321</cell>
+<cell/>
+<cell><ref target="https://github.com/TEIC/TEI/pull/2321">Translation from joloor2/TEI</ref></cell>
+<cell>Review HBS</cell>
+</row>
+<row>
+<cell>#2323</cell>
+<cell/>
+<cell><ref target="https://github.com/TEIC/TEI/pull/2323">Translation from casanso/TEI</ref></cell>
+<cell>Review HBS</cell>
+</row>
+<row>
+<cell>#2328</cell>
+<cell/>
+<cell><ref target="https://github.com/TEIC/TEI/pull/2328">rename unboundedInt to unboundedCount</ref></cell>
+<cell>Review EBB and EB</cell>
+</row>
+
+</table><p> </p></div><div type="h3"><head xml:id="GLSep2022">Guidelines issues</head><p>Group A: HB, EBB, HC, RV, NL</p><p>Group B: SB, MT, TOC, PS</p><p>Group C: MH, EB, MS, SS</p><p>—-</p><p>Group D: SB, HB, SS</p><p>Group E: MT, MH, EBB</p><p>Group F: HC, MS, PS</p><p> </p><table>
+
+<row>
+<cell>No.</cell>
+<cell>Group</cell>
+<cell/>
+<cell>Comment</cell>
+</row>
+<row>
+<cell>#2215</cell>
+<cell>A</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/2215">att.pointing for <gi>app</gi>?</ref></cell>
+<cell>Subgroup: There’s no need to do this. Close won’t-fix. Maybe consider tweaking the note on @from.
+Council discussion: Green for EBB to tweak note and provide a simple example on the Spec page.</cell>
+</row>
+<row>
+<cell>#2216</cell>
+<cell>B</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/2216">Example in rhyme.xml looks weird</ref></cell>
+<cell>Assigned to JJ to get in touch with Christian Wittern.</cell>
+</row>
+<row>
+<cell>#2221</cell>
+<cell>C</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/2221">Why doesn’t divGen have the same content model as div?</ref></cell>
+<cell><p>Subgroup: <gi>divGen</gi> is not supposed to have any content at all: it is supposed to be empty. So technically it should not contain <gi>head</gi> either, but in view of the Birnbaum doctrine we cannot make its data model empty. We should just close the ticket.</p><p>Ticket is closed.</p></cell>
+</row>
+<row>
+<cell>#2222</cell>
+<cell>A</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/2222">tagdoc for egXML speaks of attr in TEI namespace</ref></cell>
+<cell>Subgroup is repairing this on the spot. Error appears on the <gi>egXML</gi> spec, in the example. “used in the TEI namespace” was removed and the verb now agrees with the subject. Ticket is closed.</cell>
+</row>
+<row>
+<cell>#2225</cell>
+<cell>B</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/2225">missing space</ref></cell>
+<cell><p>Leave for JJ – add space after or before <gi>cl</gi> and surround the example with <gi>l</gi> because it is verse (hence the uppercase T in “They”). The same problem occurs in the following example (which is in French).</p><p>Green for JJ to fix.</p></cell>
+</row>
+<row>
+<cell>#2227</cell>
+<cell>C</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/2227">Update ISOCat reference to DatCatInfo</ref></cell>
+<cell><p>MS: there is a related issue – I hope that MH can help with this</p><p>Does login for <ref target="https://datcatinfo.net/">https://datcatinfo.net/</ref> work for everybody? It seems that attempts to access actual content in datcatinfo.net require logins, so we can’t link there. Linking directly to terms prompts login. Council is not in favor of using DatCatInfo.</p>
+<p>Reach out to LingSIG and Piotr Banski to come up with some wording to indicate the need to refer to a standard (and also to suggest the standard, if there is one). We need to remove all links to ISOCat anyway.</p></cell>
+</row>
+<row>
+<cell>#2228</cell>
+<cell>A</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/2228">figure element in model.titlepagePart class?</ref></cell>
+<cell><p>Subgroup: Wordsmithing required to correct the false impression that <gi>figure</gi> is a member of model.titlePart. Subgroup is checking in this change now.</p><p>Closed.</p></cell>
+</row>
+<row>
+<cell>#2242</cell>
+<cell>B</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/2242">Another lg content model deficiency</ref></cell>
+<cell><p>Subgroup discussed several options: a) allow for <gi>supplied</gi> since it’s already allowed within <gi>ellipsis</gi>; or b) do not allow for <gi>supplied</gi> since it allows for too many elements not originally allowed within <gi>lg</gi>; or c) propose a new element <gi>suppliedSpan</gi> that would allow the editors to supply structural information (like lines) without allowing any further elements; d) make model.pPart.transcriptional part of the <gi>lg</gi> content model (suggested by RV; see below).</p><p>Council discussion: If we go with a), provide strong guiding text in the Guidelines: What goes in <gi>supplied</gi> should be what belongs in <gi>lg</gi>.RV suggests we can add model.pPart.transcriptional to <gi>lg</gi>’s content model. This gets approval.</p></cell>
+</row>
+<row>
+<cell>#2246</cell>
+<cell>C</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/2246">att.spanning value targeting an external document</ref></cell>
+<cell><p>Subgroup checked the current schematron rule in att.spanning.xml and, following HC’s suggestion to change it, we suggest the following: assert test=”not(starts-with(@spanTo, ‘#’)) or(id(substring(@spanTo,2)) and following::*[@xml:id=substring(current()/@spanTo,2)])”</p><p>This change requires testing of course.</p>
+<p>Green for MT.</p></cell>
+</row>
+<row>
+<cell>#2247</cell>
+<cell>A</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/2247">&lt;handShift/&gt; should be a member of model.global</ref></cell>
+<cell>Subgroup thinks `@hand` should suffice, and possibly that att.written might be expanded if someone needs more elements to be included. RV opens a new ticket to add a sentence to chapter 11, making the use of @hand and <gi>handShift</gi> more clear.</cell>
+</row>
+<row>
+<cell>#2248</cell>
+<cell>B</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/2248">textLang should be able to contain bibl</ref></cell>
+<cell>Subgroup suggests to a) keep the current macro and add only <gi>bibl</gi>, or b) widen the content model to macro.specialPara (like other header elements).
+Council decides on b) and marks the issue as green.</cell>
+</row>
+<row>
+<cell>#2249</cell>
+<cell>C</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/2249">Update data.temporal.iso</ref></cell>
+<cell><p>Subgroup: The first (and easiest) thing to do would be to simply remove the remark, which is what we did. The second action point would be to update to ISO8601:2019 and allow users to only use @when-iso, while still permitting the old expressions like @from-iso, etc.</p><p><ref target="https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-teidata.temporal.iso.html">https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-teidata.temporal.iso.html</ref>.</p>
+<p>It’s not clear to us that the semantics of @notBerfore-iso and @notAfter-iso are actually supported by ISO 8601’s Extended Date-Time Format; if they are, could someone who knows 8601 well explain how?</p></cell>
+</row>
+<row>
+<cell>#2251</cell>
+<cell>A</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/2251">Need to update ODD transformation scenarios</ref></cell>
+<cell><p>Subgroup asks: was this fixed already? Check with MH then close.</p><p>Closed.</p></cell>
+</row>
+<row>
+<cell>#2252</cell>
+<cell>B</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/2252">Misuse of @xml:lang in an example for msPart</ref></cell>
+<cell>Mark as green</cell>
+</row>
+<row>
+<cell>#2254</cell>
+<cell>C</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/2254"><gi>measure</gi> should be a member of att.ranging</ref></cell>
+<cell>Work in progress, SB and EB will come back to Council as soon as they have a proposal.</cell>
+</row>
+<row>
+<cell>#2258</cell>
+<cell>A</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/2258">msIdentifier constraint should test node instead of its name; and does it make sense?</ref></cell>
+<cell><p>Subgroup thinks SB should make the Schematron test for the node rather than local-name() or name().</p><list style="ol">
+<item>We should improve the prose of the Schematron message. For example, this message (“An <gi>msIdentifier</gi> must contain either a repository or location.”) fires if we introduce an empty <gi>collection</gi>, when just adding contents to the element would make it valid.</item>
+<item>The test shouldn’t force that the elements are not empty (as SB showed, examples with @key are perfectly valid)</item>
+</list>
+<p>Be clear what we’re testing for, or whether there’s a need for it at all. This test might have been overly strict in the first place.</p>
+<p>Mark as green.</p></cell>
+</row>
+<row>
+<cell>#2261</cell>
+<cell>B</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/2261">no need to specify scheme when deleting a constraint specification</ref></cell>
+<cell><p>Subgroup agrees that @scheme should not be required (and perhaps not allowed) if @mode is “delete”, but also wonders about a different solution (see ticket). Furthermore this issue raises the “what happens if you have multiple <gi>constraintSpec</gi>s in chained ODDs that have the same @ident?” question.</p><p>Council agrees with the subgroup’s proposal, green for SB.</p></cell>
+</row>
+<row>
+<cell>#2262</cell>
+<cell>C</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/2262">need examples of changing or deleting constraint specifications</ref></cell>
+<cell><p>Council discussion: we should provide an example that demonstrates and discusses deletion of any kind of spec (not just constraintSpec). Nothing too long.</p><p>Discussion: Suggestion to create an example demonstrating how to work with att.combinable.</p>
+<p>mode=”change” is much more complicated than mode=”delete”. But mode=”change” is better exemplified.</p>
+<p>Green + Yellow for EB to work on examples for deletion and replacement.</p></cell>
+</row>
+<row>
+<cell>#2267</cell>
+<cell>A</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/2267">detest target needs to be more comprehensible</ref></cell>
+<cell><p>SB added a note some days ago asking if this can be closed. Subgroup thinks, probably yes?</p><p>Council: PR is merged, issue closed.</p></cell>
+</row>
+<row>
+<cell>#2271</cell>
+<cell>A</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/2271">broken links on BIB.html</ref></cell>
+<cell>HC suggests checking for the broken links on the Internet archive and updating them. Subgroup greenlights.</cell>
+</row>
+<row>
+<cell>#2272</cell>
+<cell>A</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/2272">various broken links to external resources</ref></cell>
+<cell>Subgroup thinks similar recommendation as for <ref target="https://github.com/TEIC/TEI/issues/2271">#2271</ref> (check for where these external resources have moved).</cell>
+</row>
+<row>
+<cell>#2273</cell>
+<cell>D</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/2273">Dictionaries:Homograph number is a property of the headword</ref></cell>
+<cell>SB suggests to ask  @chr-emil: “Do you still want <gi>hom</gi> as a child of <gi>form</gi>, or have you decided to use some other method? If you still need it, we (Council) think we should put <gi>hom</gi> into model.formPart.”</cell>
+</row>
+<row>
+<cell>#2274</cell>
+<cell>E</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/2274">example of decls= shows incorrect non-usage of default=</ref></cell>
+<cell><p>Subgroup thinks this is more complicated than SB’s ticket implies. Should the @xml:lang on <gi>metDecl</gi> or the elements effectively decide which one is default? Should we arbitrarily declare one default? Why must the Guidelines require a default?</p><p>Default should be for guiding the processing, but it may not be required if it’s following the language declared.</p>
+<p>The example already illustrates how to reference the rhyming pattern explicitly for a piece.</p></cell>
+</row>
+<row>
+<cell>#2275</cell>
+<cell>F</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/2275">Nabble TEI-L Archive No Longer Exists</ref></cell>
+<cell>Fixed</cell>
+</row>
+<row>
+<cell>#2276</cell>
+<cell>D</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/2276">shouldn’t the class= attribute of the attRef element be a name?</ref></cell>
+<cell>Subgroup made this GREEN for EB to implement.</cell>
+</row>
+<row>
+<cell>#2277</cell>
+<cell>E</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/2277">Seeking examples for att.written on stage</ref></cell>
+<cell>MH has added an example on the ticket to get us started. JJ and EBB to work on this in a branch.</cell>
+</row>
+<row>
+<cell>#2279</cell>
+<cell>F</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/2279">Constrain translatable elements in TEI ODDs</ref></cell>
+<cell>Almost done; duplicate French gloss is actually mislabeled Spanish;
+mark green</cell>
+</row>
+<row>
+<cell>#2282</cell>
+<cell>D</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/2282">attributes of <gi>attRef</gi></ref></cell>
+<cell><p>Subgroup thinks both attributes should be required.</p><p>Council: GREEN to require both.</p>
+<p>&lt;attList org=”choice”&gt;</p>
+<p>&lt;attRef class=”att.typed”/&gt;</p>
+<p>&lt;attRef class=”att.datable”/&gt;</p>
+<p>&lt;/attList&gt;</p></cell>
+</row>
+<row>
+<cell>#2285</cell>
+<cell>E</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/2285">more on <gi>altIdent</gi></ref></cell>
+<cell>Subgroup believes that:
+For the ODD stage where RNG is being generated, there should only be a single <gi>altIdent</gi> at most. However, earlier in the processing chain, it is reasonable to have different <gi>altIdent</gi>s for different languages; it makes sense, for instance, to have Arabic <gi>altIdent</gi>s for convenience when working RTL, with another LTR language <gi>altIdent</gi> alongside it. So we think that the requirement should be that if you have multiple <gi>altIdent</gi>s, they must all have different @xml:lang values. The processor would then select the correct language <gi>altIdent</gi> before generating the PLODD (to use ATOP terminology) and then have no further decision to make when generating the RNG.On the issue of elements where <gi>altIdent</gi> can never end up in the schema at all, we see no reason to retain <gi>altIdent</gi>, and it would be clearer to deprecate and remove it.</cell>
+</row>
+<row>
+<cell>#2286</cell>
+<cell>F</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/2286">errors in the generation of templates</ref></cell>
+<cell>Mark as green; ask SB about the current status.</cell>
+</row>
+<row>
+<cell>#2292</cell>
+<cell>D</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/2292">Allow <gi>listBibl</gi> in <gi>abstract</gi></ref></cell>
+<cell><p>Subgroup suggests to allow <gi>listBibl</gi> either in <gi>abstract</gi> or to add it to model.listLike (group B is partial to the latest if it doesn’t cause too many problems).</p><p>Council agrees to SS’ proposal. GREEN.</p></cell>
+</row>
+<row>
+<cell>#2295</cell>
+<cell>E</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/2295">Add an organism element</ref></cell>
+<cell><p>Subgroup thinks that rather than creating elements for more specific types of things, it would be better to create a more generic <gi>entity</gi> element, of which all the specifics we have (<gi>person</gi>, <gi>org</gi> etc.) are all syntactic sugar. This way, whatever your ontological preferences in dividing the world, you can use &lt;entity type=”organism”&gt; or whatever.  SB:+1</p><p>Council decision: Close this ticket and open a new one to propose <gi>entity</gi>, <gi>listEntity</gi>, and create a content model. Should there be a task force? YES</p>
+<p>Do not merge with #<ref target="https://github.com/TEIC/TEI/issues/367">367</ref>, says PS</p>
+<p><gi>entity</gi> can be used as a more generic and customizable mechanism when existing “ography” constructions don’t work.</p>
+<p>Issue closed, new issue <ref target="https://github.com/TEIC/TEI/issues/2341">#2341</ref> opened.</p></cell>
+</row>
+<row>
+<cell>#2298 (continue with review in October 2022 meeting)</cell>
+<cell>F</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/2298">description vs gloss in @type of <gi>divGen</gi></ref></cell>
+<cell>Mark as green; go ahead</cell>
+</row>
+<row>
+<cell>#2300</cell>
+<cell>D</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/2300">restrict embedded transcription to sourceDoc / exclude text in zone and line as part of facsimile</ref></cell>
+<cell>Subgroup suggests marking it as green.</cell>
+</row>
+<row>
+<cell>#2303</cell>
+<cell>E</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/2303">URLs of projects using TEI are not displayed on the individual project info pages</ref></cell>
+<cell><p>Subgroup inquires: where is the TEI underlying the projects page? And where is the XSLT that processes it?</p><p>For some entries (probably older ones), it looks like some TEI elements (like <gi>ptr</gi>) are embedded in the HTML, while others are just HTML. The TEI needs to be cleaned out of the page.</p></cell>
+</row>
+<row>
+<cell>#2306</cell>
+<cell>F</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/2306">tagdocs elements are available in silly contexts</ref></cell>
+<cell>Subgroup: that would be a breaking change and we’re not sure whether it’s worth the effort. Might make a case for an ATOP-specific application profile (customization)? Does SB remember why the membership in model.inter came about?</cell>
+</row>
+<row>
+<cell>#2314</cell>
+<cell>D</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/2314">TEI example is old-formatted</ref></cell>
+<cell>Subgroup suggests marking it as green.</cell>
+</row>
+<row>
+<cell>#2315</cell>
+<cell>E</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/2315">example example discusses a possible future feature</ref></cell>
+<cell>Subgroup agrees that changing the item is a good idea to encourage best practices.</cell>
+</row>
+<row>
+<cell>#2316</cell>
+<cell>F</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/2316"><gi>speaker</gi> as content of <gi>lem</gi></ref></cell>
+<cell>Subgroup: we’re not against it, but it seems too hard to implement (i.e. too much of a stretch for the content models of <gi>lem</gi> and <gi>wit</gi>); and for the currently provided example there are several workarounds in the comments.</cell>
+</row>
+<row>
+<cell>#2317</cell>
+<cell>D</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/2317"><gi>app</gi> as sole content of a <gi>sp</gi> element</ref></cell>
+<cell>Subgroup thinks this should be allowed, but note that since <gi>app</gi> is a member of model.global.edit it is going to be very difficult (if not impossible) to do.
+<gi>app</gi> should have a warning informing encoders that it’s their responsibility that the contents of each <gi>app</gi>/<gi>rdg</gi> or <gi>app</gi>/<gi>lem</gi> is valid within the parent of the <gi>app</gi>.</cell>
+</row>
+<row>
+<cell>#2326</cell>
+<cell>E</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/2326">constraints on <gi>dataFacet</gi> and @restriction should be explicit</ref></cell>
+<cell>PS has already solved and closed this.</cell>
+</row>
+<row>
+<cell>#2327</cell>
+<cell>F</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/2327">teidata.unboundedInt should be named teidata.unboundedCount</ref></cell>
+<cell>Seems sensible. Subgroup thinks we should merge the PR and close.
+Do we need deprecation of teidata.unboundedInt before nuking it?Council: no, deprecation is not necessary.</cell>
+</row>
+<row>
+<cell>#2330</cell>
+<cell>D</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/2330">schemaSpec should provide a mechanism for specifing Schematron query language binding</ref></cell>
+<cell/>
+</row>
+<row>
+<cell>#2331</cell>
+<cell>E</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/2331">bad link → consistent referencing needed to ISO 24611</ref></cell>
+<cell>Subgroup suggests green for go to create a new bibliography entry and fix all references to point to it.</cell>
+</row>
+<row>
+<cell>#2332</cell>
+<cell>F</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/2332">How are we to refer to an <gi>egXML</gi>? (Or <gi>figure</gi> or <gi>table</gi>?)</ref></cell>
+<cell>Subgroup: This should be addressed and added to TCW20.</cell>
+</row>
+
+</table><p> </p></div></div></div></body><!-- #post-## --></text></TEI>

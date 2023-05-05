@@ -1,0 +1,120 @@
+<?xml version="1.0"?> 
+<?xml-stylesheet type="text/css" href="teixlite.css"?>
+<!DOCTYPE TEI.2 PUBLIC "-//TEI//DTD TEI Lite XML ver. 1//EN"
+"http://www.tei-c.org.uk/Lite/DTD/teixlite.dtd" [
+<!ATTLIST xref url CDATA #IMPLIED>]
+>
+<TEI.2>
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title>Charge for the TEI Council's Manuscript Description Taskforce</title>
+</titleStmt>
+<publicationStmt>
+<distributor>TEI</distributor>
+</publicationStmt>
+<sourceDesc>
+<p>Loosely based on AI1P01</p>
+</sourceDesc>
+</fileDesc>
+<revisionDesc>
+<change>
+<date>2 Feb 2003</date>
+<respStmt>
+<name>Lou</name>
+<resp>Draft</resp>
+</respStmt>
+<item>First draft</item>
+</change>
+</revisionDesc>
+</teiHeader>
+<text>
+/<body>
+<div><head>Background</head>
+
+<p>Over the last few years, several groups have worked
+on the problem of defining standards for manuscript description.
+Of particular relevance to the TEI are :
+<list>
+<item>	The TEI Medieval Manuscripts Description Work Group (TEI 
+MMSS), headed by Consuelo Dutschke and Ambrogio Piazzoni, which first 
+met in 1998; the last meeting (for which there are minutes) was in the autumn 
+of 2000. Its proposed DTD is available on the <xref url="http://www.stg.brown.edu/~tei-mmss/">TEI-MMSS website</xref>, but the final report of the Work 
+Group, including the documentation for the DTD, has not yet been made 
+available.</item>
+<item>	MASTER (Manuscript Access through Standards for Electronic 
+Records), an EU-funded project headed by Peter Robinson, which ran from 
+January 1999 to June 2001. The reference manual for the MASTER DTD, and 
+the DTD itself, both unrevised since the end of the project period, are 
+available at <xref url="http://www.tei-c.org.uk/Master/Reference/">the
+	Master project website</xref>.
+      </item>
+     </list></p>
+<p>There is, despite an avowed intention that there should not be, a degree of 
+discrepancy between the two DTDs.  In the absence of documentation from 
+the Work Group, it is hard to assess the extent or rationale for the
+     discrepancy,
+although in most cases it will presumably have been 
+that one of the groups has simply paid more attention to one area than the 
+other did.  The MASTER project, for example, never finalised its discussion 
+on seals, while the Work Group did, whereas MASTER developed quite 
+sophisticated mechanisms for dealing with personal and place names, an area 
+untouched by the Work Group.  In this sense, the two schemes may be said to 
+complement each other. There appears, however, to be one fundamental 
+difference between to two, which is a tendency on the part of the Work Group 
+toward a looser structure, but it is unlikely that the differences between the 
+two are so great in this regard that a reconciliation is impossible.  
+    </p><p>
+At its 2001 meeting, the TEI Council requested the two groups to work
+towards a consensus, or to produce reports which could be collated by a
+third party, but no progress has yet been reported. The Council has now
+determined that a small task force should be charged with the job of
+identifying a common set of proposals, which will review both sets of
+proposals as currently articulated, also taking into account
+complementary work done in this area by other agencies, notably the
+Reportorium of Old Bulgarian Literarture and Letters.
+    </p>
+   </div>
+<div><head>Work Plan</head>
+<p>The Task force is requested:-
+<list>
+<item> to review the current state of TEI-based recommendations for the
+detailed description of manuscript materials, in particular the
+proposals from Master, the TEI Workgroup, and the ROBLL</item>
+
+<item> to identify and define a common subset of those recommendations
+adequate to the needs of the TEI community</item>
+
+<item>to document that set of recommendations in such a way as to facilitate
+their inclusion in TEI P5, once approved by the TEI Council</item>
+     </list>
+    </p>
+<p>The task force should do its work by email, mailing list, or telephone
+as the head of the group sees fit. No funding is available for in-person
+meetings.
+    </p>
+
+
+   </div>
+<div><head>Timetable</head>
+
+<p>A preliminary report should be submitted by the Chair in advance of the
+meeting of the May 2003 meeting of the Council. A final report should be
+available by 1st October 2003.
+    </p>
+   </div>
+<div><head>Membership</head>
+
+<p>The Chair of the group is Matthew Driscoll. Members proposed by the
+     Council are Merillee Proffitt and David Birnbaum. The Chair may
+     choose to co-opt help from outside sources at his discretion. The
+     TEI editors are ex officio members of the Taskforce.
+    </p>
+
+   </div>
+  </body>
+ </text>
+</TEI.2>
+
+
+

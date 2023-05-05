@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/home/lou/Public/TEI/TEICSS/tei.css" type="text/css"
+ ?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:t="http://www.tei-c.org/ns/1.0" n="2021-03"><teiHeader><fileDesc><titleStmt><title>Minutes of the TEI Technical Council</title><meeting n="2021-03" when="2021-03-11">TEI Technical Council online
+     meeting : <date>11 March 2021</date></meeting></titleStmt><publicationStmt><distributor>TEI Website</distributor><idno>TCM138</idno></publicationStmt><sourceDesc><p>Retagged from a WordPress HTML file</p></sourceDesc></fileDesc><revisionDesc><change when="2023-04-25">Archival header confected</change><change>Extracted from Word Press article with id post-30974</change></revisionDesc></teiHeader><text><body><div><p><hi style="strong">Meeting times: </hi></p><list style="ul">
+<item>11am-12:30pm PST/2pm-3:30pm EST/7pm-8:30pm GMT/8pm-9:30pm CET</item>
+<item>Started:    19:08Z    Ended:    ~20:29Z</item>
+</list><p><hi style="strong">Present:</hi></p><list style="ul">
+<item>Syd Bauman (SB)</item>
+<item>Helena Bermúdez Sabel (HS)</item>
+<item>Elisa Beshero-Bondar (EB)</item>
+<item>Meaghan Brown (MB)</item>
+<item>Hugh Cayless (HC)</item>
+<item>Janelle Jenstad (JJ)</item>
+<item>Jessica H. Lu (JL)</item>
+<item>Martina Scholger (MS)</item>
+<item>Peter Stadler (PS)</item>
+<item>Magdalena Turska (MT)</item>
+<item>Raff Viglianti (RV)</item>
+</list><p><hi style="b">Note:</hi> ticket triage table is near the end of this document.</p><div type="h2"><head>Short virtual F2F meeting</head><list style="ul">
+<item>May 7 and 8</item>
+</list></div><div type="h2"><head>TEI conference/MM</head><list style="ul">
+<item>Dates not fixed yet, but tentatively week of 25 Oct 2021.</item>
+<item>Will be virtual, not physical.</item>
+</list></div><div type="h2"><head>Release debriefing</head><list style="ul">
+<item>oXygen release
+<list style="ul">
+<item>Add instructions for the oXygen plugin to TCW 22 (HC and Martin Holmes will work on this.)</item>
+<item>Backwards compatibility – how long should we sustain compatibility? Should we do a formal request to oXygen with a contract? Or ask oXygen to help us identify what features need to be supported to maintain compatibility?
+<list style="ul">
+<item>Maven repository issue: ideally we don’t host the jar file(s) ourselves but draw directly on their Maven repo?</item>
+<item>oXygen would probably be willing to help us when they have major API changes.</item>
+<item>Can we trust the version of the plugin produced by Jenkins?</item>
+<item>What version of the oXygen library should we build against (to set the compatibility frame of reference)?
+<list style="ul">
+<item>Now the plugin is building from 18.1, so we’re compatible with oXygen versions 18.1 – 23.1.</item>
+<item>Maven repo goes back to 2014, but we may not want the hassle of having to support 2 versions of the plugin.</item>
+</list>
+</item>
+</list>
+</item>
+</list>
+</item>
+<item>Updates of release minutes (NC wants to add more detail.)</item>
+</list></div><div type="h2"><head>Saxon upgrade</head><list style="ul">
+<item>Upgrading Saxon 9 HE → Saxon 10 HE.</item>
+<item>½ done for the <ref target="https://github.com/TEIC/Stylesheets/issues/490">Stylesheets repo</ref>; expecting to do <ref target="https://github.com/TEIC/TEI/issues/2117">TEI repo</ref> tomorrow.</item>
+<item>By “done” we mean done in a branch; PRs not issued yet.</item>
+<item>Want to merge the branches as close together in time as possible(!)</item>
+<item>PS suggests running the upgrade on Stylesheets first.</item>
+</list></div><div type="h2"><head>Report from Computer Mediated Communication (CMC) meeting</head><list style="ul">
+<item>Met on 5 March to continue discussions toward consensus regarding the schema
+<list style="ul">
+<item><gi>post</gi>, @indentLevel vs. @rend or @rendition or @style, encoding emoji, @creation→@generatedBy</item>
+</list>
+</item>
+<item>Next meeting: 31 March, to begin drafting prose for new chapter</item>
+<item>Still anticipating bringing CMC to Council for review during Summer 2021, with a hope to get it into the early 2022 release (the ~August 2021 release would be great, but we doubt that will be a reasonable goal).
+<list style="ul">
+<item>Will be submitted as a request for a new chapter.</item>
+</list>
+</item>
+</list></div><div type="h2"><head>New feature of GitHub called “Discussions”</head><list style="ul">
+<item>Did anyone have a look at this new feature or have experience with it?</item>
+<item>PS suggests that we could release it now silently or after the next members meeting.</item>
+<item>A Discussion board is easier to explore for people investigating information, and is less intimidating than a listserv where you “push” questions forward.</item>
+<item>We could launch it with a question, like who is still using oXygen 17?</item>
+<item>Who is using oXygen 11 or earlier? (JJ noted that the BC Provincial Government is using oXygen 11 to encode Hansard [the legislative proceedings] and that they are shifting from custom XML to TEI.)</item>
+</list></div><div type="h2"><head>Placement of classes, macro, and datatypes in modules</head><list style="ul">
+<item>See issue <ref target="https://github.com/TEIC/TEI/issues/1710">#1710</ref></item>
+<item>How does Council feel about doing a mini-release?</item>
+<item>An <gi>elementRef</gi> that includes an element that is from a module that is <hi style="i">not</hi> being included, you may run into trouble if it is a member of a <hi style="b">class</hi> that you did not remember to include. (Is this a solution to that problem?)</item>
+</list></div><div type="h2"><head>AOB</head><list style="ul">
+<item>MT demonstrates TEI Processing Model-based version of the <hi style="i">Guidelines</hi>, to be released as a package for eXist (tentatively for Ides of March).</item>
+</list></div><div type="h2"><head>Tickets</head><list style="ul">
+<item><ref target="https://github.com/TEIC/TEI/issues/2049">on altIdent</ref>
+<list style="ul">
+<item>Particularly <ref target="https://github.com/TEIC/TEI/issues/2049#issuecomment-725088683">Council input requested</ref></item>
+<item><hi style="b">Action</hi> on <hi style="b">SB</hi> by <hi style="b">2021-03-15</hi>: Reduce that large table to just those about which there is some disagreement, and repeat request for input from Council.</item>
+</list>
+</item>
+</list><p> </p></div></div></body><!-- #post-## --></text></TEI>

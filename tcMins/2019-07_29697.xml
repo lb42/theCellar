@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/home/lou/Public/TEI/TEICSS/tei.css" type="text/css"
+ ?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:t="http://www.tei-c.org/ns/1.0" n="2019-07"><teiHeader><fileDesc><titleStmt><title>Minutes of the TEI Technical Council</title><meeting n="2019-07" when="2019-07-19">TEI Technical Council online
+     meeting : <date>19 July 2019</date></meeting></titleStmt><publicationStmt><distributor>TEI Website</distributor><idno>TCM116</idno></publicationStmt><sourceDesc><p>Retagged from a WordPress HTML file</p></sourceDesc></fileDesc><revisionDesc><change when="2023-04-25">Archival header confected</change><change>Extracted from Word Press article with id post-29697</change></revisionDesc></teiHeader><text><body><div><p><hi style="strong">Meeting time</hi></p><list style="ul">
+<item>EDT 16:00-17:30, GMT 21:00-22:30, CEST 22:00-23:30</item>
+<item>Started: 20:09 UTC; ended 21:35.</item>
+</list><p><hi style="strong">Present</hi></p><list style="ul">
+<item>Syd Bauman (SB)</item>
+<item>Elisa Beshero-Bondar (EB)</item>
+<item>Hugh Cayless (HC)</item>
+<item>James Cummings (JC)</item>
+<item>Elli Mylonas (EM)</item>
+<item>Martina Scholger (MS)</item>
+<item>Peter Stadler (PS)</item>
+<item>Sarah Stanley (SS)</item>
+<item>Magdalena Turska (MT)</item>
+<item>Raff Viglianti (RV)</item>
+</list><p><hi style="strong">Apologies/Not Present</hi></p><list style="ul">
+<item>Vanessa Bigot Juloux (VBJ)</item>
+</list><p> </p><div type="h2"><head>Release debriefing</head><list style="ul">
+<item>General debrief of issues encountered
+<list style="ul">
+<item>Temporary scratch server was a serious problem because this was not a clone of the TEI server as we all expected, and because we did not all have access. The release techs had to install necessary software during the release.</item>
+</list>
+</item>
+<item>oXygen plugin
+<list style="ul">
+<item>Status: updated with new release.</item>
+<item><hi style="b">Action on</hi><hi style="strong"> MS</hi> to announce update on TEI-L.</item>
+</list>
+</item>
+<item>Circularity: How to deal with?
+<list style="ul">
+<item>On agenda for the face-to-face meeting in Graz.</item>
+<item>To prepare: try to understand the process.</item>
+<item><hi style="b">Action on PS</hi> by <hi style="b">2019-09-04 </hi>will write up what our thinking and process was for this release.</item>
+<item>We could use a better explanation in TCW 22 about this.</item>
+<item>RV: let’s consider that the core cause of the circularity is our way of testing.</item>
+</list>
+</item>
+</list></div><div type="h2"><head>Nesting <gi>TEI</gi> and deprecation of <gi>teiCorpus</gi></head><list style="ul">
+<item>Given feedback, argument for deprecating <gi>teiCorpus</gi> is less strong.</item>
+<item>Need to re-assess handling of standoff / nesting <gi>TEI</gi>.</item>
+<item>PS: This issue is much too big to deal with in a single meeting or F2F.</item>
+<item>PS: Proposal: dedicated standoff boot-camp, bring together all the people involved—need 2 or 3 days.
+<list style="ul">
+<item>SB: We have precedent, and can create a task force, give it a charge, and get funding from the Board for them to meet.</item>
+<item>JC: Invite Piotr Bański and Laurent Romary to a workshop /task force meeting (do this in Europe to make it cheaper).</item>
+<item>RV: parallel case like genetic group. The group had meetings, people used their proposed markup, but then Council changed it. Is this process going to be similar? Consensus: yes, likely, because the key players would be involved with Council in conversation.</item>
+<item>MS: Laurent Romary is available on Monday afternoon in Graz. Perhaps we hold a planning meeting for a 2–3 day task force session then? Maybe even just one hour, to decide who, when, what country, funding. Additional hour or so for additional communication (e.g. presentation of alternative options). Some people who might be interested or form part of a task force include:
+<list style="ul">
+<item>Roberto Rosselli del Turco</item>
+<item>Piotr Bański</item>
+<item>Martin Holmes</item>
+<item>Laurent Romary (and ask Laurent if there’s anyone else to invite)</item>
+<item>Georg Vogeler</item>
+</list>
+</item>
+<item><hi style="b">Action on MT </hi>by <hi style="b">2019-09-07</hi>: to prepare a list of use-cases (with help from rest of Council). HC and others will provide some examples for stand-off and linked-data block. We need to investigate the consequences of the web annotation model, etc.</item>
+<item>Set 90 minutes, maybe start at 2pm.</item>
+<item><hi style="b">Action on MS </hi>by <hi style="b">2019-07-22</hi>: write to TEI-list that tei-corpus deprecation is off the table, and we’ll be discussing stand-off proposals and alternatives in Graz.</item>
+</list>
+</item>
+</list></div><div type="h2"><head>F2F in Graz</head><list style="ul">
+<item>Stand-off meeting on Monday afternoon (September 16)?
+<list style="ul">
+<item>see above</item>
+</list>
+</item>
+</list></div><div type="h2"><head>ROMA</head><list style="ul">
+<item>Please help RV write text for the landing page on this <ref target="https://docs.google.com/document/d/1shx5xgCmyqk1lYfI_qcKhKb0npn5OnRXozer-bTh3vE/edit?usp=sharing">google doc</ref>.</item>
+<item>RV recently added certificate for <ref target="http://romabeta.tei-c.org">romabeta.tei-c.org</ref>.</item>
+<item><hi style="b">Action on RV </hi>by <hi style="b">2019-09:</hi> update Roma to be pointing to latest TEI release.</item>
+<item>Maybe another round of testing from Council before August meeting.</item>
+</list></div><div type="h2"><head>Minutes</head><list style="ul">
+<item>All minutes are online</item>
+<item>Document with collection of “action on items” in Google Drive</item>
+</list></div><div type="h2"><head>Google Calendar</head><list style="ul">
+<item>Council decided that the Google Calendar can be made public; should we make an announcement on TEI-L? <hi style="b">Action on HC</hi> to make calendar public.</item>
+<item>Make a list announcement about 2 months before the release with general time frame of next release (not specific dates; just a window).
+<list style="ul">
+<item>Don’t announce specific freeze/refrigeration dates.</item>
+</list>
+</item>
+<item><hi style="b">Action on EM</hi> to put the timetable for ticket triage and minute review/assist in the Google Calendar:<hi style="b"> </hi>
+<list style="ul">
+<item>EM entered at 9 am on the first weekday of each month. However, the timing may be off because it’ll probably show up as EST. Best to go ahead and change as needed.</item>
+<item>Minute Review/Assist is right after/before the Council meeting event (except for July, because the meeting is past).</item>
+</list>
+</item>
+</list></div><div type="h2"><head>uniHan</head><list style="ul">
+<item>Duncan Paterson did not know when the freeze &amp; release were happening.</item>
+<item>Please have a look at the issue and review: <ref target="https://github.com/TEIC/TEI/issues/1805">https://github.com/TEIC/TEI/issues/1805</ref></item>
+</list></div><div type="h2"><head><hi style="b">Next Stylesheets Meeting </hi></head><list style="ul">
+<item>Monday, July 22</item>
+</list></div></div></body><!-- #post-## --></text></TEI>

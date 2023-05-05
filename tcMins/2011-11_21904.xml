@@ -1,0 +1,829 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/home/lou/Public/TEI/TEICSS/tei.css" type="text/css"
+ ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:t="http://www.tei-c.org/ns/1.0" n="2011-11">
+ <teiHeader>
+  <fileDesc>
+   <titleStmt>
+    <title>Minutes of the TEI Technical Council</title>
+    <meeting n="2011-11" from="2011-11-07" to="2011-11-09">TEI Technical Council ftf meeting :
+     <placeName>Paris</placeName>, <date>7–9 November 2011</date></meeting>
+   </titleStmt>
+   <publicationStmt>
+    <distributor>TEI Website</distributor>
+    <idno>TCM048</idno>
+   </publicationStmt>
+   <sourceDesc>
+    <p>Retagged from a WordPress HTML file</p>
+   </sourceDesc>
+  </fileDesc>
+  <revisionDesc>
+   <change when="2023-04-25">Archival header confected</change>
+   <change>Extracted from Word Press article with id post-21904</change>
+   <change><name>Martin Holmes with input from others</name><date when="2011-11-14">14 November
+    2011</date> Creation of minutes</change>
+  </revisionDesc>
+ </teiHeader>
+ <text>
+  <body>
+   <div>
+
+  <!-- hand edited to deal with <tag> elements -->
+    
+    <p> <label>Present in person: </label> Laurent Romary (Chair, LR), Piotr Banski (PB), Brett
+     Barney (BB), Lou Burnard (LB), James Cummings (JC), Kevin Hawkins (KH), Martin Holmes (MH),
+     Elena Pierazzo (EP)</p>
+
+    <p><label>Guest (day 2 only): Brian L. Pytlik Zillig (BZ) </label></p>
+
+    <p><label>Present remotely: </label>Gabriel Bodard (GB), Sebastian Rahtz (SR), Stuart Yeates
+     (SY)</p>
+
+    <p><label>Location: </label> INRIA, Paris, France</p>
+
+    <div>
+     <head>Day 1: November 7 2011</head>
+     <div>
+      <head> 1.1 Morning</head>
+      <div>
+       <head> 1.1.1 Green Tickets </head>
+       <p>Review of green feature requests and bugs previously discussed by email.</p>
+
+       <div>
+        <head> 1.1.1.1 Feature Requests </head>
+        <list>
+         <item><ref target="http://purl.org/TEI/FR/3415411">3415411</ref>: <label>Split
+          <gi>certainty</gi>/<gi>precision</gi>/<gi>respons</gi> from model.glossLike.</label>
+          Straightforward ticket: LB will do it and close ticket. </item>
+         <item><ref target="http://purl.org/TEI/FR/3411906">3411906</ref>: Ticket was already
+          implemented by LR. Ticket now closed. </item>
+         <item><ref target="http://purl.org/TEI/FR/3408683">3408683</ref>: <label>Hyphenation
+          section doesn’t reference <gi>pc</gi>/<att>force</att>.</label> Decided, and MH has
+          already proposed wording. MH will implement and close ticket. </item>
+         <item><ref target="http://purl.org/TEI/FR/3296398">3296398</ref>: <label>Add <gi>hi</gi> to
+          <gi>figDesc</gi>.</label> Looks trivial, but actually quite complicated. SR’s comments
+          make sense. LB volunteers to test whether SR’s proposal works. </item>
+         <item><ref target="http://purl.org/TEI/FR/3293070">3293070</ref>: <label>Enhancement of
+          notes and examples in ref-del.</label> EP disagrees with KH’s comment; she maintains that
+          there is a difference between <tag>gap reason=”deleted”</tag> and <tag>gap
+          reason=”cancelled”</tag>. So “deleted” needs to be added to the list as well. GB will be
+          asked to implement the proposed changes. </item>
+         <item><ref target="http://purl.org/TEI/FR/3282689">3282689</ref>: <label>Replace ‘file’
+          with ‘document’.</label> Even SY agrees that it might not be worth it to implement the
+          ticket; anyone can replace individual usage where they come across it. The ticket will be
+          closed. </item>
+         <item><ref target="http://purl.org/TEI/FR/3275613">3275613</ref>: <label>Make
+          <gi>textLang</gi> usable in bibliographies.</label> Proposal now is to move
+          <gi>textLang</gi> to core, and move all the corresponding discussion of the element. LB
+          objects a bit because core is too big, but that’s a different issue. JC will actually
+          implement it. </item>
+         <item><ref target="http://purl.org/TEI/FR/3266021">3266021</ref>: <label>Dictionary entries
+          with a single <gi>sense</gi>.</label> LR says this is a consistent repeated request from
+          users. LB is unconvinced; PB thinks that much broader changes must be undertaken in the
+          dictionaries module in the future, and is uneasy with this because of his practice of
+          building up markup progressively. Nevertheless, it will be implemented; KH will do it, and
+          will leave in one example of the practice we now deprecate (not using <gi>sense</gi>), so
+          as not to absolutely de-legitimate it. </item>
+         <item><ref target="http://purl.org/TEI/FR/3210946">3210946</ref>: <label>Examples for
+          digital facsimile.</label> We will defer this until we talk about the genetic module. </item>
+         <item><ref target="http://purl.org/TEI/FR/3064014">3064014</ref>: <label>Provide suggested
+          values for <gi>rs</gi>/<att>type</att>.</label> Over objections by SR and LB, the Council
+          agree that it’s a good idea in any discussion of <att>type</att>-like attributes to
+          provide a pointer to an existing ontology or taxonomy. We have a current practice in which
+          syntactic sugar <att>type</att> values are taken from the names of the corresponding
+          elements; we should express this clearly under <att>type</att>‘s explanation. There should
+          also be a comment on the general definition of <att>type</att> to the effect that we
+          recommend the use of existing taxonomies where suitable. We should also ensure that all
+          our examples in the Guidelines are consistent with this practice, so one example in 3.5.1
+          needs to be changed (“organization” becomes “org”). However, rs defines its own
+          <att>type</att>, so the same text needs to be added there. The reference to the BBN
+          taxonomy belongs in <gi>rs</gi>/<att>type</att>, not the general <att>type</att>. KH will
+          implement this. </item>
+         <item><ref target="http://purl.org/TEI/FR/3051750">3051750</ref>: <label>Choice of schema
+          language when using the TEI.</label> The only comments are against the ticket, and KH was
+          initially OK with closing it unimplemented, but the general sense of the Council is that
+          there should be some information about the various advantages and disadvantages of
+          particular schema types. KH believes this belongs in 23.3.2. LB points out that there is a
+          basic discussion in the General Introduction. LB suggested a rewording of the second para
+          of 23.3.2, moving the first sentence after the second, and modifying it somewhat. A
+          broader discussion belongs elsewhere, either on a wiki page or in Roma. The consensus is
+          that it belongs in Roma, on the Generate Schemas page; SY suggests it should take the form
+          of a link to a Wikipedia page. JC will write the sentence, and insert it into Roma. </item>
+         <item><ref target="http://purl.org/TEI/FR/3046288">3046288</ref>: <label>Allow <gi>f</gi>
+          to contain PCDATA.</label> LR will implement this, getting examples from documents created
+          by the group requesting the change. </item>
+         <item><ref target="http://purl.org/TEI/FR/3041605">3041605</ref>: <label>Update list of
+          Council members.</label> The Council agrees that the current list of members should be
+          updated, and that a complete list of current and former Council members should be
+          maintained and included in the Guidelines. KH will collect info from LB and elsewhere to
+          create the list, and MH will then take over to create a more robust and formal collection
+          of info based on a <gi>listPerson</gi>; a template <gi>person</gi> can be sent out to
+          TEI-L. LB reminds us about privacy concerns. </item>
+        </list>
+       </div>
+
+       <div>
+        <head> 1.1.1.2 Bugs </head>
+        <list>
+         <item><ref target="http://purl.org/TEI/bug/3432216">3432216</ref>: <label>i18n revision
+          due.</label> Deferred in favour of a broader discussion of translations. </item>
+         <item><ref target="http://purl.org/TEI/bug/3400295">3400295</ref>: <label>Inconsistent
+          definitions for some elements.</label> MH will provide LB with examples of <gi>label</gi>
+          used to mark topic transition in prose text. </item>
+         <item><ref target="http://purl.org/TEI/bug/3304622">3304622</ref>: <label>Invalid
+          <att>xml:lang</att> values.</label> EP and PB: We must use two-letter codes where they
+          exist, and where they don’t, three-letter codes can be used; locations should be in
+          upper-case. PB will recheck Syd Bauman’s list (on the ticket) and fix all bad examples. </item>
+         <item><ref target="http://purl.org/TEI/bug/3289073">3289073</ref>: <label>Many missing
+          references in Guidelines.</label> SY will implement; KH will handle the three references
+          he added. </item>
+         <item><ref target="http://purl.org/TEI/bug/3285020">3285020</ref>: <label>Irregularities in
+          <gi>gram</gi> syntactic sugar variants.</label> LR suggests that we create a new attribute
+          class for <att>dcr:datcat</att>, apply it to all the model.gramPart elements, and then
+          wait for other requests for the same attribute. PB will implement this, and make a list of
+          other elements that might also want it (in collaboration with the linguistic SIG). </item>
+         <item><ref target="http://purl.org/TEI/bug/3223544">3223544</ref>: <label>Use of
+          <gi>head</gi> and <gi>p</gi> within <gi>figure</gi>.</label> Solution: remove “Figure 1: ”
+          from the second example, to reduce confusion. LB has implemented and closed the ticket.
+         </item>
+        </list>
+       </div>
+      </div>
+
+      <div>
+       <head> 1.1.2 General Discussion </head>
+       <p>LR commented that he would like to see many people in the community implement tickets in
+        future, based on OK from Council. </p>
+
+       <p>Who should assign colours to tickets? At the moment it’s LB who assigns colours, but
+        others could/should. The submitter shouldn’t, but the first commenter perfectly well could.
+        For clarification: </p>
+
+       <list>
+        <item><label>GREEN:</label> It’s clear what needs to be done, or is being requested.</item>
+        <item><label>AMBER:</label> It’s not yet clear what action is requested.</item>
+        <item><label>RED:</label> It’s completely unclear what’s being requested or
+         suggested.</item>
+       </list>
+      </div>
+     </div>
+
+     <div>
+      <head> 1.2 Afternoon</head>
+      <div>
+       <head> 1.2.1 Amber Tickets </head>
+       <list>
+        <item><ref target="http://purl.org/TEI/FR/3423687">3423687</ref>: <label>A general purpose
+         <gi>description</gi> alongside <gi>trait</gi>s/<gi>state</gi>s.</label> LR, PB: The
+         proposal for a new <gi>description</gi> element is rejected. However, there is still an
+         issue to deal with. <gi>trait</gi> and <gi>state</gi> are essentially the same, the only
+         difference being ontological (essential vs incidental). The content model is the same, and
+         they are both timed. In the long run, we would want to keep <gi>trait</gi> only, and when
+         you need to differentiate essential and incidental, you rely on the <att>type</att>
+         attribute, and the possible temporal attributes you may use to limit applicability. Should
+         we deprecate <gi>state</gi> in favour of <gi>trait</gi>; or use the Guidelines text to
+         explain that if you’re confused about the difference, use <gi>trait</gi>, and that
+         <gi>state</gi> is syntactic sugar for <tag>trait type=”state”</tag>? We recommend that
+         <gi>trait</gi> is the default element to represent semantics of properties etc.; this will
+         require an adjustment to the definition of <gi>trait</gi> to make it broader, so that it
+         can be used for temporally-bounded characteristics. After some discussion, we decided that
+         <gi>state</gi> makes a more obvious default, because it can handle both temporal and
+         non-temporal properties. So: in immediate response, we will suggest <gi>state</gi> as the
+         default choice, purify the <gi>trait</gi> examples in the Guidelines to remove the temporal
+         attributes, check all the <gi>trait</gi> examples to see which need to be changed to
+         <gi>state</gi>, and raise a new ticket to consider the merging of model.traitLike into
+         model.stateLike. </item>
+        <item><ref target="http://purl.org/TEI/FR/3412198">3412198</ref>: <label>JC, MH: make
+         <gi>listPerson</gi> and <gi>listOrg</gi> members of model.personLike.</label> We should add
+         <gi>listPerson</gi>, <gi>listPlace</gi> and <gi>listOrg</gi> to <gi>org</gi>; and add
+         <gi>listOrg</gi> to <gi>particDesc</gi>. LB suggested creating a new model.orgPart, which
+         would make the changes to <gi>org</gi> simpler, and adding <gi>listOrg</gi> to the content
+         model of <gi>particDesc</gi>. LB will implement it. </item>
+        <item><ref target="http://purl.org/TEI/FR/3408897">3408897</ref>: <label>KH, EP:
+         <att>role</att> for <gi>publisher</gi>.</label> To deal with this ticket, we should allow
+         <gi>respStmt</gi> within <gi>imprint</gi>. We would then have ways to handle more than just
+         publisher-like roles within <gi>imprint</gi>. This requires broadening the definition of
+         <gi>resp</gi> and <gi>respStmt</gi> to allow them to apply to organizations. We should also
+         consult with the workgroup who looked at physical bibliography for more guidance on
+         requirements in this area. LB objected that there was little distinction in the past
+         between the functions we now distinguish (printer, bookseller etc.); EP objected that this
+         is certainly not the case for early printed books, and gave examples. The Council decided
+         that KH &amp; EP’s solution should be implemented, and MH will implement it. </item>
+        <item><ref target="http://purl.org/TEI/FR/3311604">3311604</ref>: <label>att.coordinated
+         language.</label> BB, LB: Point 2 is agreed: we need more examples of <att>start</att>.
+         Point 1: should be rejected because we can think of good use-cases where both may be
+         required; Point 3: We can’t really make much sense of the comment, except that we do need
+         more examples of the use of <att>points</att>. MH will look for (or create) more examples
+         of <att>start</att> and <att>points</att>. </item>
+        <item><ref target="http://purl.org/TEI/FR/3086675">3086675</ref>: <label>Expand note on
+         <gi>availability</gi>.</label> Assigned to MH to finish implementation. </item>
+        <item><ref target="http://purl.org/TEI/FR/3113682">3113682</ref>: <label>Make <gi>ptr</gi>
+         &amp; <gi>ref</gi> members of att.internetMedia.</label> Assigned to MH to finish
+         implementation. </item>
+        <item><ref target="http://purl.org/TEI/FR/2834511">2834511</ref>: <label>Add more elements
+         to att.spanning with schematron constraint.</label> LR, JC: This introduces a parallel
+         method of doing spanning for elements (<gi>add</gi>, <gi>del</gi>) which already have a
+         method (<gi>addSpan</gi> and <gi>delSpan</gi>), so it’s unlikely that anyone would have a
+         need for it right now, unless we implement it for all of model.pPart.transcriptional.
+         Everyone likes the longer-term vision of implementing spanning through att.spanning being
+         added to many elements, but is unwilling to implement only a part of it that gives us
+         nothing new. A working group of GB, BB and LB will go away and a) check which elements they
+         believe should be included, and b) write an explanation of what it means when these spans
+         cross element boundaries such as paragraphs. </item>
+        <item><ref target="http://purl.org/TEI/FR/2925145">2925145</ref>: <label>Generic dating
+         class.</label> MH, KH: This ticket has a detailed implementation strategy, which was only
+         waiting on the implementation of two other tickets before it could proceed; those have now
+         been done, so it should be implemented. The new objection by ianrons is basically that up
+         to now, people have been abusing <att>calendar</att> because <att>datingMethod</att> did
+         not exist, so these two attributes may be confused; our response would be that now
+         <att>datingMethod</att> will be available, there is no need to abuse <att>calendar</att>,
+         and existing abuses can be fixed, or not, at the discretion of their perpetrators. Assigned
+         to GB to implement. </item>
+        <item><ref target="http://purl.org/TEI/FR/3060867">3060867</ref>: <label>Grouping traitlike,
+         statelike, and eventlike elements.</label> LB, PB: We should create a new
+         <gi>listState</gi> element, to be added to the content models of <gi>person</gi>,
+         <gi>place</gi> and <gi>org</gi>, and which would have a content model of model.stateLike
+         (assuming that’s the one we recommend in the other ticket). Assigned to PB for
+         implementation. </item>
+        <item><ref target="http://purl.org/TEI/FR/3393244">3393244</ref>: <label>Simplify content
+         model of <gi>subst</gi> to <gi>add</gi> and <gi>del</gi> only.</label> EP, BB: This ticket
+         arose out of an old ticket which was previously discussed and assigned to JC, but was not
+         implemented. The proposal is to deprecate the current model of <gi>subst</gi>
+         (model.pPart.transcriptional); create a new content model that allows only <gi>add</gi>,
+         <gi>del</gi> and milestone elements (starting with adding the milestones, removing
+         model.pPart.transcriptional and replacing it with the individual elements, and then
+         removing the others at the expiry of the deprecation period); and create <gi>substJoin</gi>
+         to allow the grouping of a range of elements. The Council gradually came round to the view
+         that we should actually remove model.pPart.transcriptional elements now, and avoid the
+         deprecation period, because the original inclusion of those elements was wrong, and
+         therefore this is a bug and should be fixed. GB suggests we should actually use this as an
+         exercise to work out how we should do deprecation. In the end we came down in favour of
+         implementing it right now. GB will implement it. </item>
+        <item><ref target="http://purl.org/TEI/FR/3393244">3210946</ref>: <label>Examples for
+         digital facsimile.</label> We will defer this until we talk about the genetic
+         module.</item>
+       </list>
+      </div>
+     </div>
+    </div>
+
+    <div>
+     <head> Day 2: November 8 2011</head>
+     <div>
+      <head> 2.1 Morning</head>
+      <div>
+       <head> 2.1.1 Genetic Transcription</head>
+       <p>The transition between the discussion of <gi>facsimile</gi> and the explanation of
+        <gi>sourceDoc</gi>, and when you would use the latter, needs to be expanded (EP, MH and LB).
+        The content models of <gi>surface</gi>, <gi>zone</gi> etc. are identical whether they appear
+        within <gi>facsimile</gi> or <gi>sourceDoc</gi>. This could lead to confusion. EP: The idea
+        is to discourage <gi>facsimile</gi>. MH: But the genetic workgroup believes that
+        <gi>facsimile</gi> and <gi>sourceDoc</gi> are different; if we remove the former, those who
+        need that will surely complain. JC: <gi>facsimile</gi> and <gi>sourceDoc</gi> are different,
+        and have different use cases. LB: We should provide schematron rules to say that if you use
+        e.g. <gi>line</gi>, it should have ancestor::sourceDoc. LR: three points: We have ended up
+        with a double mechanism, when a single mechanism would be simpler; some people like
+        <gi>facsimile</gi> and want to keep it; some people would pursue the goal of coherence and
+        want to remove one of them. MH: can we make <gi>facsimile</gi> an actual alias for
+        <gi>sourceDoc</gi> through a technical mechanism? LR: Yes, through <gi>equiv</gi> in the
+        description of <gi>facsimile</gi>, in the ODD. We could provide two ODDs, one for
+        <gi>sourceDoc</gi> and one for <gi>facsimile</gi>, and the latter could be defined as a
+        subset of the former. This is not yet possible in ODD. MH, summarizing: For now, we’re stuck
+        with using both elements, explaining the difference between them, and explaining the
+        long-term strategy. </p>
+
+       <p>EP: There are some major problems with the chapter as it stands: </p>
+
+       <list>
+        <item>The opening with two facing pages, with a patch crossing the two pages, or where the
+         author has considered the opening as a single surface (e.g. Proust’s working texts). EP
+         proposed to the Goethe working group that a single <gi>surface</gi> be used in this case;
+         this means that <gi>surface</gi> is being used as a psychological construct. The working
+         group responded positively to this, and Council thinks it’s uncontroversial. EP has
+         examples, and will provide one from Proust, because the chapter should have one. BB: the
+         chapter currently reads as though a <gi>surface</gi> is a physical object, or exists prior
+         to interpretation, but we need to modify that description so that it allows for, or even
+         specifies, the fact that a <gi>surface</gi> is a psychological construct of the encoder,
+         presumably based on the assumed perception of the original author who chose to use it that
+         way. JC: Why shouldn’t this situation be handled by nesting <gi>surface</gi>? EP: In this
+         case, you could represent the page <gi>surface</gi>s side-by-side, rather than nesting
+         them. There is no need for nesting. </item>
+        <item>A mini-<gi>surface</gi> within an existing <gi>surface</gi> is represented as a
+         <gi>patch</gi>. If the patch is written on both sides, then it’s <att>flippable</att>, but
+         how do we distinguish that from two separate patches? JC, LR: We need nested surfaces to
+         handle this. LB: <gi>patch</gi> is just a special kind of <gi>surface</gi>. Should we
+         collapse it into the definition of <gi>surface</gi>? LB suggests we kill <gi>patch</gi>,
+         and we introduce something called <gi>surfaceGrp</gi>, of which the prototypical case is a
+         “leaf”; another example is a pile of post-it notes on top of each other. A
+         <gi>surfaceGrp</gi> is not a matter of interpretation; it’s a physical object which
+         includes multiple <gi>surface</gi>s. EP objects to the idea of physical objects, because
+         all determination of <gi>surface</gi> is by the encoder; we can’t really express physical
+         reality. MH, JC: A <gi>surfaceGrp</gi> could not have a single coordinate space because it
+         is not a single two-dimensional space; a <gi>surfaceGrp</gi> can have a location within the
+         coordinate space of its parent <gi>surface</gi>, and its child <gi>surface</gi>s have their
+         own coordinate spaces. The group consensus now is that what we were thinking of as a patch
+         could be represented either as a nested <gi>surface</gi> (in the case of a single pasted
+         object with only one significant face) or a <gi>surfaceGrp</gi> (in the case of a flippable
+         two-sided object, or a multi-page booklet pasted onto the parent surface). Both
+         <gi>surface</gi> and <gi>surfaceGrp</gi> therefore need to be able to express their
+         dimensions within the coordinate space of their parent <gi>surface</gi>; in the case of a
+         nested <gi>surface</gi>, it may also define its own coordinate space which act as the
+         context for <gi>zone</gi> elements defined within it. <gi>surfaceGrp</gi> may be a child of
+         <gi>facsimile</gi> or <gi>sourceDoc</gi>. </item>
+        <item>The leaf concept has been largely covered with <gi>surfaceGrp</gi>, but there’s the
+         issue of transparency; a writer may interact with something visible from the other side of
+         a leaf, by e.g. doodling around it. MH: this might be handled through an attribute on
+         <gi>zone</gi>, such as “bleedThrough”. </item>
+        <item>EP: BB raised the issue of <att>alt</att> on the list; exactly what did he mean? BB:
+         I’ll have to go back and look at that again. </item>
+       </list>
+       <p><label>SUMMARY</label>: LB will rework the draft, and do it as fast as possible; he’ll
+        then ask all Council members to read the whole thing again. We should allow three working
+        days, including if possible a weekend, to do the appropriate level of proofing. </p>
+      </div>
+
+      <div>
+       <head> 2.1.2 Amber Tickets</head>
+       <p>Three amber FRs were assigned to LB and set to Pending because they relate to the genetic
+        proposal already in process: </p>
+
+       <list>
+        <item><ref target="http://purl.org/TEI/FR/3095641">3095641</ref>: <label>New elements to
+         document stages in the writing process.</label> </item>
+        <item><ref target="http://purl.org/TEI/FR/3095640">3095640</ref>: <label>New
+         model.pPart.transcriptional elements for genetic markup.</label> </item>
+        <item><ref target="http://purl.org/TEI/FR/3095637">3095637</ref>: <label>New
+         <gi>document</gi><gi>patch</gi><gi>line</gi> elements for genetic view.</label> </item>
+       </list>
+       <p>Two tickets were postponed till the afternoon EEBO session. The following tickets were
+        addressed: </p>
+
+       <list>
+        <item><ref target="http://purl.org/TEI/FR/3293316">3293316</ref>: <label>Move
+         <gi>witStart</gi> et al. to model.milestoneLike.</label> This topic is being addressed by a
+         working group right now, so the ticket is assigned to EP with a note to that effect. </item>
+        <item><ref target="http://purl.org/TEI/FR/3115238">3115238</ref>:
+         <label><gi>altIdentifier</gi> in <gi>msPart</gi>.</label> Assigned to EP, who will nudge
+         Torsten to provide the required examples. </item>
+        <item><ref target="http://purl.org/TEI/FR/3118435">3118435</ref>: <label>Classes in
+         interleave mode and cardinality membership.</label> This is an ODD3 request; MH asks if the
+         suggested functionality in ODD would be implementable in XSD, or whether it would reduce us
+         to only RelaxNG as a fully-working output schema language. There are actually two tickets
+         here; the cardinality issue has been moved to another ticket, while this ticket is now
+         addressing only interleave. We will post a comment asking gaiffe to create a new ticket
+         only about interleave, and close this ticket. </item>
+       </list>
+       <p>The following tickets were dealt with: </p>
+
+       <list>
+        <item><ref target="http://purl.org/TEI/FR/3290834">3290834</ref>: <label><gi>memberOf</gi>
+         with cardinality restrictions.</label> [Related to above.] We will make this green and
+         accepted. It is assigned to SR. </item>
+        <item><ref target="http://purl.org/TEI/FR/3258912">3258912</ref>: <label>Clarification of
+         <gi>colloc</gi>.</label> Marked as green, accepted and pending, and assigned to LR. </item>
+        <item><ref target="http://purl.org/TEI/FR/3156049">3156049</ref>: <label>Managing
+         <gi>egXML</gi> content (validation and presentation).</label> JC, PB: There are two
+         separate issues. First, does the prose need to be tidied up with respect to the last two
+         comments. We agree, and this should be done. Second, should the <att>teix:show</att>
+         attribute be handled. LB commented on the ticket to say that <att>tei:rend</att> could be
+         used both for showing and for specialized rendering to e.g. highlight part of some code for
+         teaching purposes. Therefore JC and PB propose using the <att>tei:rend</att> attribute
+         inside <gi>teix:egXML</gi> to specify rendering requirements etc. So: a) correct the prose
+         according to the last two comments on the ticket, and 2) add <att>tei:rend</att> to all
+         elements within the teix namespace. The implication of <att>tei:rend</att> in this context
+         is that a processor will act on the attribute as a rendering instruction, rather than show
+         it as part of the example. Set to green and assigned to JC. </item>
+        <item><ref target="http://purl.org/TEI/FR/3147225">3147225</ref>:<label> New element
+         <gi>spGrp</gi>.</label> EP, LB: The proposal is that there are sub-div-level structural
+         groups of speeches etc., as in e.g. shared arias or musical numbers, or play-within-a-play
+         situations, and that a new <gi>spGrp</gi> element should be created to handle this. The
+         content model would require a minimum of two <gi>sp</gi>s, along with anything else that
+         can appear between <gi>sp</gi>s. But is this too specific? Should we instead introduce a
+         new <gi>floatingDiv</gi> element that would handle other cases too? However, this is a
+         simple case with a simple proposed solution which everyone understands, so we accept it.
+         Marked as accepted and green, and assigned to LB. </item>
+        <item><ref target="http://purl.org/TEI/FR/3188679">3188679</ref>: <label>Change content
+         model of <gi>ident</gi>.</label> MH, LR: LB’s use-case is actually a use-case for
+         <gi>idno</gi>, not for <gi>ident</gi>. For instance, he uses URLs and filenames, and both
+         of these should be <gi>idno</gi>. However, <gi>idno</gi> also does not permit internal
+         structure, and there are other use-cases where that would be a good idea (for instance
+         ISBNs and ISSNs). At the same time, <gi>ident</gi> does have a specific purpose, which is
+         tagging formal identifiers in e.g. programming languages, and these do <emph>not</emph>
+         typically have internal structure. Finally, we are sympathetic to Sebastian’s objections
+         related to processing. Therefore we propose that <gi>idno</gi> should be made recursive,
+         allowing internal structure, examples of recursive <gi>idno</gi> should be supplied, and LB
+         should be encouraged to use <gi>idno</gi> instead of <gi>ident</gi> for his purposes. EP
+         strongly objected that the subdivisions of <gi>idno</gi> are not necessarily
+         <gi>idno</gi>s. LB says that the difference between <gi>ident</gi> and <gi>idno</gi>
+         definitely needs some clarification. Assigned to MH to clarify the guidelines on the
+         difference between <gi>idno</gi> and <gi>ident</gi>, and close the ticket, and to LR to
+         raise a new ticket for the nesting of <gi>idno</gi> so the council can address it at
+         length. </item>
+        <item><ref target="http://purl.org/TEI/FR/3305016">3305016</ref>: <label>Make
+         <gi>graphic</gi> available within <gi>table</gi> and <gi>formula</gi>.</label> BB, KH: The
+         current content model of <gi>formula</gi> allows text or graphics. It turns out that table
+         has similar requirements: it may (need to) be represented by a graphic element. So the
+         proposal is to extend the model of table to include <gi>graphic</gi>. The prose should be
+         revised not only for table but also for <gi>formula</gi> to explain that this is allowed.
+         LB pointed out that you could use <att>facs</att>, but MH replied that you should be able
+         to choose between doing things in the same way as is done with <gi>formula</gi> if you
+         wish, or use <att>facs</att> throughout if that is your encoding practice. MH also pointed
+         out that there is a use-case for more than one graphic (tables printed over several pages),
+         so it should be one or more graphics. Set to pending, accepted and green. Assigned to KH
+         (with help from LB for the content model change) to implement. </item>
+        <item><ref target="http://purl.org/TEI/FR/3106834">3106834</ref> and <ref
+         target="http://purl.org/TEI/FR/3106829">3106829</ref><label><gi>floatingText</gi>
+         issues.</label> (Discussed in the afternoon, but added here for clarity.) KH summarized
+         that we appear to have a pointless prohibition against using <gi>floatingText</gi> for
+         incomplete texts. The practical problem is that you can’t use <gi>quote</gi> for a quote of
+         a lengthy part of a text, because its content model is too restrictive, but the
+         description/definition of <gi>floatingText</gi> specifies “complete”. The Council had
+         discussed and agreed on the second ticket in Chicago, but implementation was held up by
+         another ticket, which has now been resolved, so we can go ahead with minor adjustments to
+         the proposed wording to remove the example of a musical number, which we now recommend
+         handling through <gi>spGrp</gi> (see above). Council created a new, improved formulation of
+         the change to the text. Set to agreed, green and pending, and assigned to KH for
+         implementation, although he will assign it to BB when SourceForge settings have been
+         changed to permit this. </item>
+       </list>
+      </div>
+     </div>
+
+     <div>
+      <head> 2.2 Afternoon: ECCO/EEBO Discussion </head>
+      <p>Brian L. Pytlik Zillig (BZ) from EEBO joined the meeting all day, and in the afternoon
+       Council worked with him on a number of issues regarding the possible convergence of TCP and
+       TEI. The EEBO corpus will contain several billion words, and will be freely available in the
+       future, so it’s in our interests to make sure that interoperability between TCP and TEI is
+       maximized. </p>
+
+      <p>There are a number of areas in which moving from TCP to TEI P5 is complicated. Three groups
+       of issues were identified by Martin Mueller (MM): </p>
+
+      <div>
+       <head> 2.2.1 First Group of Issues</head>
+       <list>
+        <item><label>Accept the EECO model for <gi>figure</gi> wholly or in part.</label>
+         <p>The Council first looked at the following items from MM’s spreadsheet in GoogleDocs:
+         </p> <list>
+         <item><gi>figure</gi>/<gi>l</gi></item>
+         <item><gi>figure</gi>/<gi>lg</gi></item>
+         <item><gi>figure</gi>/<gi>quote</gi></item>
+         <item><gi>figure</gi>/<gi>signed</gi></item>
+         <item><gi>figure</gi>/<gi>sp</gi></item>
+         <item><gi>figure</gi>/<gi>stage</gi></item>
+         <item><gi>figure</gi>/<gi>table</gi></item>
+         </list>
+         <p> We discussed possible approaches that involve an intermediary element that would allow
+         the required elements inside it, but eventually settled on allowing these elements inside
+         <gi>figure</gi> because this expansion of the content model of <gi>figure</gi> is likely to
+         benefit many other projects too (BB). SR proposes that we change the content model of
+         <gi>figure</gi> to match that of the prototype of <gi>floatingDiv</gi>. LB suggests that
+         <gi>figure</gi> should have the same content model as div. The Council agrees that this
+         should be enacted and JC has created ticket <ref target="http://purl.org/TEI/FR/3434973"
+         >3434973</ref> for it. </p> </item>
+        <item>
+         <p><label>Add <gi>opener</gi> and <gi>closer</gi> to the P5 <gi>postscript</gi>
+         model.</label> (This is our ticket <ref target="http://purl.org/TEI/FR/3232942"
+         >3232942</ref>.) </p>
+         <p>EP: The current content model of <gi>postscript</gi> makes it useless anyway, so if
+         we’re going to change its model we might as well try to make it truly useful, by adding all
+         elements allowed in <gi>div</gi>. It became apparent to the Council that the current
+         content model of <gi>postscript</gi> is ridiculous because it’s simultaneously
+         over-permissive (<gi>camera</gi>, <gi>elementSpec</gi>) and overly restrictive (no
+         <gi>opener</gi> or <gi>closer</gi>). SR proposed a more sophisticated content model which
+         has been added to a comment on the ticket. SR volunteers to implement this. </p> </item>
+        <item><label>Permit <gi>l</gi> as a direct child of <gi>head</gi>.</label>
+         <p>EEBO has lots of examples of <gi>l</gi> inside head, but P5 does not permit this. Some
+         members of council felt we should allow <gi>l</gi> in <gi>head</gi>; others thought we
+         should allow <gi>lg</gi>, and require that <gi>lg</gi> wrap the <gi>l</gi>s; still others
+         thought that no line-group could possibly constitute a <gi>head</gi>. Council agrees that
+         both <gi>lg</gi> and <gi>l</gi> should be allowed inside <gi>head</gi>, because elsewhere
+         both <gi>lg</gi> and <gi>l</gi> are allowed alongside each other. How to implement this is
+         not yet clear. LB has raised ticket <ref target="http://purl.org/TEI/FR/3434992"
+         >3434992</ref> for this, and it is not yet assigned to anyone. </p> </item>
+        <item><label>Permit <gi>stage</gi> as a direct child of <gi>lg</gi>.</label>
+         <p>The justification for this is convincing, and SR suggests adding model.stageLike to the
+         content model of <gi>lg</gi>, which the Council approved. LB has raised ticket <ref
+         target="http://purl.org/TEI/FR/3434996">3434996</ref> for this. </p> </item>
+        <item><label>Permit <gi>floatingText</gi> and <gi>table</gi> as direct children of
+         <gi>sp</gi> (which would also align <gi>sp</gi> with <gi>said</gi>, which does allow those
+         elements). </label>
+         <p>Council agreed that, since a letter can be read out by a speaker, and a letter is a
+         <gi>floatingText</gi>, then <gi>sp</gi> should allow <gi>floatingText</gi>; the case for
+         <gi>table</gi> is harder to make, especially since it can be avoided simply by wrapping the
+         <gi>table</gi> in <gi>sp</gi>. SR could not find any examples of <gi>table</gi> in
+         <gi>sp</gi> in ECCO, but found one of a <gi>sp</gi>/<gi>p</gi>/<gi>table</gi>, which looks
+         quite convincing, and Council came to the view that <gi>table</gi> should be allowed. The
+         Council’s decision is that we want to allow both <gi>floatingText</gi> and table within
+         <gi>sp</gi>, and a ticket should be raised and someone assigned to discover the best
+         approach to this, since it’s not immediately obvious. This has not yet been assigned to
+         anyone. </p> </item>
+       </list>
+      </div>
+
+      <div>
+       <head> 2.2.2 Second Group of Issues (EEBO’s responsibility)</head>
+       <p> Council looked at the following five items, and concluded that all seem reasonable, and
+        are the responsibility of whoever is tranforming the EEBO texts: </p>
+
+       <list>
+        <item><label><gi>headnote</gi> and <gi>tailnote</gi> can be expressed as <gi>notes</gi> with
+         type attributes.</label> </item>
+        <item><label>Single <gi>p</gi> elements inside <gi>cell</gi> can be deleted making the
+         content of <gi>p</gi> the immediate content of <gi>cell</gi>.</label> </item>
+        <item><label>The EEBO <gi>element</gi> can be expressed as <tag>floatingText
+         type=”letter”</tag>.</label> </item>
+        <item><label>The rare <gi>above</gi> and <gi>below</gi> can be expressed as <tag>hi
+         class=”above”</tag> or perhaps some different ways.</label> </item>
+        <item><label><gi>postscript</gi> elements as last children of <gi>closer</gi> can be turned
+         into right siblings of <gi>closer</gi>.</label> </item>
+       </list>
+      </div>
+
+      <div>
+       <head> 2.2.3 Third Group of Issues (unaddressed)</head>
+       <p>There was no time to consider the third type of issue identified by MM, exemplified in the
+        following items: </p>
+
+       <list>
+        <item><label>Cases in which <gi>list</gi> appears as child of <gi>label</gi> in EEBO texts
+         should be remodeled as two-column tables or expressed in some other way.</label></item>
+        <item><label>The few instances in which <gi>cell</gi> has a complex content model along the
+         lines of <gi>item</gi> should be rethought.</label> </item>
+        <item><label>In addition to these problems, the encoding of signatures in early modern texts
+         may require additional discussion.</label> </item>
+       </list>
+       <p>Council noted that it would also like to request access to the current state of EEBO in
+        its “lossless XML” form, as well as the facsimiles, so that we can generate a list of issues
+        that we believe EEBO might wish to address, and made that request to BZ. </p>
+      </div>
+     </div>
+    </div>
+
+    <div>
+     <head> Day 3: November 9 2011 </head>
+     <div>
+      <head> 3.1 Morning </head>
+      <p>The council started with a brief review of the last ticket discussed at the end of the
+       preceding day, to bring LR up to date on its resolution.</p>
+
+      <div>
+       <head> 3.1.1 Amber Tickets </head>
+       <list>
+        <item><ref target="http://purl.org/TEI/FR/3432520">3432520</ref><label>Introduce standard
+         attributes to refer to ISOCat.</label> This ticket has been assigned to PB. The original
+         proposal was to add the new <att>dcr:valueDatcat</att> attribute to global attributes, but
+         instead we will create an attribute class called att.datcat for it, and add that class to
+         elements only in response to specific requests. Initially, all the members
+         ofmodel.gramPartand <gi>gram</gi> will get the attribute. Set to Pending and assigned to
+         PB. </item>
+        <item><ref target="http://purl.org/TEI/FR/3434990">3434990</ref><label> Require minimum of
+         two lines or <gi>lg</gi> inside <gi>lg</gi>.</label> JC believes the definition of
+         <gi>lg</gi> requires that there be more than one <gi>l</gi> in a <gi>lg</gi>. Others (LR,
+         MH) believe that there are good use-cases for a single <gi>l</gi> inside <gi>lg</gi>.
+         Assigned to LR to gather and express arguments on both sides of the issue. </item>
+        <item><ref target="http://purl.org/TEI/FR/3064757">3064757</ref><label>XML construct
+         encoding within Schematron.</label> This was assigned to SR, asking him to check whether
+         it’s a simple fix or something very complicated because of processing requirements. </item>
+        <item><ref target="http://purl.org/TEI/BUG/3376456">3376456</ref><label>Deprecate use of
+         <gi>gram</gi> except as a child of <gi>gramGrp</gi> (<gi>gramGrp</gi> is allowed as a child
+         of both <gi>form</gi> and <gi>sense</gi>, but <gi>gram</gi> is allowed only as a child of
+         <gi>form</gi>.)</label> (Submitter would like it added to <gi>sense</gi> as well in keeping
+         with feature request 3266021 and in keeping with section 9.3.2, which implies that you can
+         encode grammatical information either way.) Assigned to KH to implement; he will then open
+         a deprecation ticket, on which we’ll eventually act. </item>
+        <item><ref target="http://purl.org/TEI/BUG/3270162"
+         >3270162</ref><label><gi>profileDesc</gi>: one or more <gi>catRef</gi>.</label> KH: We
+         should either use one <gi>catRef</gi> or explain the reasons for using more than one. LB:
+         We can’t enforce a single <gi>catRef</gi> without breaking backward compatibility. The
+         consensus is that this is a matter of stylistic preference, and the Guidelines should make
+         this clear. PB provided good use cases for both styles. KH: We should recommend one
+         approach in the interests of interoperability. SY: Picking one makes writing stylesheets
+         easier. The Council generally agrees, with one exception. PB: We should not recommend use
+         of a single <gi>catRef</gi> because it’s difficult to maintain. Council agrees that we
+         should recommend that people use multiple <gi>catRef</gi>s, because multiple targets can be
+         cumbersome. KH was asked to propose a wording for this, and the ticket was assigned to him. </item>
+        <item><ref target="http://purl.org/TEI/BUG/3223636">3223636</ref><label><att>xml:space</att>
+         vs. CDATA for blocks of code.</label> MH, PB: A careful reading of the definition of
+         <att>xml:space</att> fails to reveal what its value of ‘default’ implies, although
+         ‘preserve’ should act as an instruction to a processor to preserve whitespace in the
+         hosting element and all its descendants (meaning that LB’s determination, in the TEI-L
+         discussion, that it’s meaningless in the context of text-only elements is presumably
+         wrong); but evidence from actual implementations in browsers suggest that it only applies
+         to the whitespace between child elements in element-only content elements (meaning that LB
+         would be correct). So for various reasons <att>xml:space</att> may be a red herring anyway.
+         The problem raised by KH on the ticket is one of rendering. In the TEI stylesheets,
+         <gi>tei:code</gi> is simply converted to <gi>xhtml:code</gi>. We recommend that someone
+         draft an explanation of <att>xml:space</att> and its meaning in TEI. PB recommends that we
+         remove the one sentence referring to <att>xml:space</att> from the Guidelines, but LB
+         suggests instead supplementing it with an explanation of the difficulties we see with
+         regard to using it. LR suggests making a request to the W3C to clarify their specification.
+         In the context where it appears, though, that sentence is irrelevant because it will have
+         no effect on the element concerned, so we should remove it, but we should still add an
+         explanation of difficulties with <att>xml:space</att> wherever <att>xml:space</att> is
+         defined. Assigned to PB, but left as Open, not Pending, because it’s not urgent. </item>
+        <item><ref target="http://purl.org/TEI/BUG/3216049">3216049</ref><label>Normalize attributes
+         and classes on <gi>placeName</gi>/<gi>geogName</gi>.</label> JC, LB: There is some
+         rationale behind the absence of these attributes from <gi>geogName</gi>, but it doesn’t
+         really hold up. The content model for <gi>placeName</gi> is a bit suspect (e.g.
+         <att>dimensions</att>), but that’s a different issue. The Council agrees to give
+         <gi>geogName</gi> the same attribute set as <gi>placeName</gi>, and then raise a second
+         ticket to deal with the problems in that set of attributes. Assigned to LB. </item>
+        <item><ref target="http://purl.org/TEI/FR/3423686">3423686</ref><label>An <gi>object</gi>
+         element.</label> KH, EP: KH and EP suggest asking the Ontology SIG to go ahead and draft a
+         proposal for creating <gi>object</gi>, <gi>listObject</gi> and <gi>objectName</gi>, and
+         accompanying details and Guidelines text, and submit them to Council for consideration. The
+         ticket will is assigned to SR and left open. </item>
+        <item><ref target="http://purl.org/TEI/FR/3309894">3309894</ref><label>Encoding RDF
+         relationships in TEI.</label> SR: <gi>relation</gi> is nearly adequate to enabling the
+         extraction of RDF triples. <gi>relation</gi> was originally for people, but should be
+         extended for more general applicability, and adding <att>ref</att> and <att>key</att> on
+         it. SY objects on the basis that RDF can be embedded in TEI anyway, but the submitter and
+         the SIG are strongly in favour. The submitter strongly recommends renaming the
+         <att>active</att> and <att>passive</att> attributes to <att>subject</att> and
+         <att>object</att>, and removing <att>mutual</att>, but Council feels it’s not worth
+         breaking backward compatibility just to rename attributes. The SIG will be asked to raise a
+         new ticket if they feel very strongly about the naming issue. <gi>relationGrp</gi> will
+         also be added to model.biblLike. Assigned to SR to implement, and set to Pending and green.
+        </item>
+       </list>
+      </div>
+
+      <div>
+       <head> 3.1.2 Other Issues </head>
+       <p>EP asked that we create a link on the TEI site to a filtered list of SF tickets including
+        only the deprecation tickets, so people can easily see what is currently deprecated. MH
+        suggested there be two lists, one showing open deprecation tickets and one showing closed
+        (because enacted) deprecation tickets. LB opened a ticket for this, and assigned it to
+        JC.</p>
+      </div>
+     </div>
+
+     <div>
+      <head> 3.2 Afternoon</head>
+      <div>
+       <head> 3.2.1 Discussion Topics </head>
+       <list>
+        <item><label>Dealing with SPAM on the wiki.</label> Right now anyone can create an account
+         on the wiki, and this results in spam. If we change this to submitting an email, then there
+         may be a significant delay before people get logons, and we may still not easily be able to
+         tell genuine requests from spammers. The Council recommends that the webmasters (DS and JC)
+         investigate possible alternative solutions to these problems. </item>
+        <item><label>P4 survey report.</label> JC did a survey of usage of P4, in advance of its
+         scheduled end-of-life: <ref
+         target="http://blogs.oucs.ac.uk/jamesc/2011/10/27/tei_p4_support/"
+         >http://blogs.oucs.ac.uk/jamesc/2011/10/27/tei_p4_support/</ref>. JC: this basically gives
+         us encouragement to start moving P4 to the Vault over the next year. </item>
+        <item>
+         <p><label><code>*Grp</code> vs. <code>list*</code>.</label> BB, LB, PB: The current
+         situation is horrible: </p>
+         <p>list*.xml:</p><list>
+         <item>listBibl.xml</item>
+         <item>listChange.xml</item>
+         <item>listEvent.xml</item>
+         <item>listNym.xml</item>
+         <item>listOrg.xml</item>
+         <item>listPerson.xml</item>
+         <item>listPlace.xml</item>
+         <item>listRef.xml</item>
+         <item>listWit.xml</item>
+         <item>list.xml</item>
+         </list>
+         <p>*List.xml:</p> <list>
+         <item>attList.xml</item>
+         <item>castList.xml</item>
+         <item>specList.xml</item>
+         <item>valList.xml</item>
+         </list>
+         <p>*Grp.xml:</p> <list>
+         <item>altGrp.xml</item>
+         <item>forestGrp.xml</item>
+         <item>gramGrp.xml</item>
+         <item>interpGrp.xml</item>
+         <item>joinGrp.xml</item>
+         <item>linkGrp.xml</item>
+         <item>locusGrp.xml</item>
+         <item>measureGrp.xml</item>
+         <item>personGrp.xml</item>
+         <item>rdgGrp.xml</item>
+         <item>relationGrp.xml</item>
+         <item>spanGrp.xml</item>
+         <item>specGrp.xml</item>
+         <item>transposeGrp.xml</item>
+         </list>
+         <p>*Group.xml:</p> <list>
+         <item>castGroup.xml</item>
+         </list>
+         <p> EP: We could try to use <gi>equiv</gi> to make element aliasing work, and then
+         rationalize the names; we could push this problem forward to P6, and develop an explicit
+         strategy for naming these things; or we could throw up our hands and do nothing. PB: We
+         should fix <gi>transposeGrp</gi> while we can. We should develop a clear set of naming
+         principles for these things. LB: There is a general section in the Guidelines on naming of
+         elements. A description should go there. LR: It should go in tagDocs because people use
+         that when writing ODDs. LB: All but a handful of the <code>*Grp</code> elements are
+         syntactically correct as groups; the exceptions are <gi>transposeGrp</gi>, which we’ve
+         agreed to change, <gi>forestGrp</gi>, and <gi>relationGrp</gi>. LB will raise a ticket for
+         this.</p></item>
+        <item><label>Magic tokens.</label> JC, KH, LR: The consensus is that we could integrate
+         within <att>ref</att> all the usages currently covered by <att>key</att>, so the vision for
+         the future is that we don’t need <att>key</att>. However, <att>key</att> is widely used
+         right now, so we should not remove it or deprecate it. We should modify the Guidelines to
+         make the point that people should switch to <att>ref</att> wherever <att>key</att> is
+         mentioned. KH will create a ticket and start implementing it. </item>
+        <item><label>Translations.</label> MH, EP: First, how should we realign the translations
+         from 2007? Second, how do we put a system in place to ensure that translations don’t get
+         too far behind? Before we can act, though, we need to know whether the TEI prioritizes it
+         or not, and is willing to put some money into it. To do that, we really need to do a survey
+         of the community; such a survey would have to be multilingual, and we would need to make
+         sure we can reach non-English-speaking users, so we’ll have to issue a multilingual call,
+         and ask TEI-L users to circulate it among their communities. PB: Adding requirements for
+         translation of every change can actually make the maintainers of a project reluctant to
+         make needed changes. We could also go for a wiktionary approach for element definitions,
+         but that would be another environment to maintain. LR: The first action is to issue a
+         multilingual survey; the second action is to implement models for translation environments
+         and tools; and thirdly, we need to find a way to officially validate or certify
+         translations. We should report our intentions to the Board through EP, and we will raise a
+         ticket that ensures we return to the issue at the next meeting. </item>
+        <item><label>Architecture of TEI/ODD.</label> LR, JC, LB: There are three main orientations
+         that the TEI should follow in the medium- and long-term. First, we should make ODD
+         feature-complete (getting rid of external vocabularies etc.). Second, we should start by
+         working on the inheritance model to deal with the <att>type</att> issue (enable the
+         overriding of an attribute description inherited from a class). We should have a
+         traditional class inheritance structure for e.g. content models. Finally, we should derive
+         modules from this class inheritance. </item>
+        <item><label>Tools.</label> PB, KH, SR: The web Roma (not the command-line processor) needs
+         a rewrite. Much of its functionality has been taken over by OxGarage. It can be done with
+         JavaScript/AJAX. There are two ways to do this: get some money and pay an intern to do it,
+         or apply for outside grant money. However, if we are going for outside money, we should
+         have greater ambitions. Roma should be more generalizable, as LR wants, to use with non-TEI
+         ODDs. The whole of the processing could actually be written in JavaScript and run on the
+         client, so no server back-end is required. EP asked what about Vesta? SR notes that most of
+         its functionality is available in OxGarage. Vesta was an experiment to see if we could
+         write a desktop version of Roma, and it was never finished, and now can no longer be built.
+         We no longer need it because we can do the same work in oXygen. Council concluded that we
+         should look around for possible granting agencies that might give us a substantial grant
+         for this, and earmark some time at the next meeting to polish a formal grant application.
+         All council members should do this. We should also add OxGarage to the Tools page on the
+         TEI site. KH will do that. </item>
+        <item><label>Workflow for Community and Council.</label> MH, EP, BB: First, the SF
+         ticket/list system is only comfortable for programming types, so there should be an
+         intermediate mechanism to enable people to submit a request to the Council mailing list, so
+         one of us can pick it up and turn it into a ticket. This should be on the TEI website, and
+         have a captcha. Second, the <ref target="http://tbe.kantl.be/TBE/">TEI by Example</ref>
+         site is not linked from the TEI website; it should be prominent. This should be submitted
+         as a FR. Third, our website is not helpful at all. It needs to be reimagined or
+         restructured from the point of view of new users, in accordance with usability guidelines.
+         For workflow with regard to Council, can we reduce the volume of messages and in particular
+         the noise and trivialities. LB ‘s guide to editing the source needs to be expanded, and
+         complemented by a semi-formal mentoring system to enable new members to become effective.
+         We should also attempt to express formally the institutional knowledge we now share about
+         e.g. tasks to be completed by the Council Chair and members prior to a ftf meeting.
+         Actions: We will make public all the current expectations of members of Council prior to
+         the next call for candidates. The Council page on the website should make this clear. JC
+         will add EP as an admin on the TEI website so that she can make changes. </item>
+       </list>
+      </div>
+
+      <div>
+       <head> 3.2.2 SIG Report from Linguistics SIG (PB)</head>
+       <p>PB has sent to the Council a report on the <ref
+        target="https://www.zotero.org/groups/tei-lingsig/items/">TEI/linguistic bibliography
+        list</ref>, created and maintained in the context of LingSIG. Action for JC: Before Council
+        meetings, email the SIG lists to ask for reports or issues to discuss. </p>
+      </div>
+
+      <div>
+       <head> 3.2.3 Thanks to Laurent Romary </head>
+       <p>All members of the Council expressed their sincere gratitude and admiration for the
+        leadership and vision Laurent has provided over many years as Council chair. He was
+        presented with a card and suitable token of our appreciation in liquid form.</p>
+      </div>
+
+      <div>
+       <head> 3.2.4 Priorities for the Coming Year </head>
+       <p>We should have regular telcos every two months, and deal with tickets at all of them.
+        Telcos should not be more than an hour. </p>
+
+       <p>The next ftf will take place mid-to-late April 2012. The date will be finalized before the
+        end of the year. </p>
+
+       <p>The strategy for Roma is a priority (see above). We might be able to prod someone with the
+        right skill-set to apply for a grant from the Board to do it; calls for applications will go
+        out from the Board soon. </p>
+
+       <p>We should create a SIG for the ideas around the future of ODD, and invite likely experts
+        and interested community members to join it. </p>
+
+       <p>Solve all outstanding problems regarding conversion from EEBO/ECCO. </p>
+
+       <p>Investigate methods of allowing element and attribute name aliasing, so that we could
+        rename elements without breaking backward compatibility. </p>
+      </div>
+     </div>
+    </div>
+
+   </div>
+  </body>
+  <!-- #post-## -->
+ </text>
+</TEI>

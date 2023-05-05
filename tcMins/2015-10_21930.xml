@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/home/lou/Public/TEI/TEICSS/tei.css" type="text/css"
+ ?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:t="http://www.tei-c.org/ns/1.0" n="2015-10"><teiHeader><fileDesc><titleStmt><title>Minutes of the TEI Technical Council</title><meeting n="2015-10" from="2015-10-25" to="2015-10-28">TEI Technical
+     Council ftf meeting : <placeName>Lyon</placeName>, <date>25–28 October 2015</date></meeting></titleStmt><publicationStmt><distributor>TEI Website</distributor><idno>TCM074</idno></publicationStmt><sourceDesc><p>Retagged from a WordPress HTML file</p></sourceDesc></fileDesc><revisionDesc><change when="2023-04-25">Archival header confected</change><change>Extracted from Word Press article with id post-21930</change></revisionDesc></teiHeader><text>
+        <body>
+
+            <head>TEI Technical Council Minutes 2015-10</head>
+            <milestone unit="unknown" rend="rule"/>
+
+
+            <div>
+
+
+
+                <div>
+                    <head>TEI Technical Council Agenda and Minutes, 2015-10</head>
+                    <list>
+                        <head>Present:</head>
+                        <item>Syd Bauman (SB)</item>
+                        <item>Lou Burnard (LB)</item>
+                        <item>Hugh Cayless (HC)</item>
+                        <item>James Cummings (JC)</item>
+                        <item>Stefanie Gehrke (SG)</item>
+                        <item>Martin Holmes (MH)</item>
+                        <item>Stefan Majewski (SM)</item>
+                        <item>Paul Schaffner (PFS)</item>
+                        <item>Peter Stadler (PWS)</item>
+                        <item>Raffaele Viglianti (RV)</item>
+                        <item>Fabio Ciotti (FC) – from 4 pm Sun</item>
+                    </list>
+                    <list>
+                        <head>GUESTS ON WEDNESDAY MORNING:</head>
+                        <item>Elisa Beshero-Bondar (EBB)</item>
+                        <item>Antonio Rojas Castro (ARC)</item>
+                        <item>Martina Scholger (MS)</item>
+                    </list>
+                </div>
+
+                <div>
+                    <head> Sunday 25 October, 09:00–17:00</head>
+                    <p>venue: <ref target="https://www.google.com/maps/place/Mama+Shelter+Lyon/@45.7458268,4.8387803,15.89z/data=!4m7!1m4!3m3!1s0x47f4ea411d5dbddd:0x89b42b659826e561!2sMama+Shelter+Lyon!3b1!3m1!1s0x47f4ea411d5dbddd:0x89b42b659826e561"><hi style="underline color(1155CC)">Mama Shelter</hi></ref>,
+                        Atelier 3</p>
+                    <p>SSID: Mama Shelter, login: Visitors; 5821191761</p>
+                    <p>09:00–10:30: Agenda setting, etc.</p>
+                    <p>10:30: Coffee Break</p>
+                    <p>13:00–14:00: Lunch at hotel</p>
+                    <div>
+                        <head> Items for discussion </head>
+                        <list>
+                            <item>What is wrong with anyXML, and how can we fix it? (RelaxNG, Jing
+                                and @xml:ids)<list>
+                                    <item>Content model for macro.anyXML has not changed.
+                                        Nevertheless, the introduction of <gi>xenoData</gi> has
+                                        caused a problem to occur. The macro has been moved from
+                                        tagdocs to tei module, which may be one reason. We need to
+                                        find out whether the move to another module caused it, or
+                                        its use in <gi>xenoData</gi>. It’s possible that the order
+                                        of modules in an ODD may cause this; if so, we could
+                                        constrain that with Schematron. HC has turned off one of the
+                                        tests in the build process to avoid the problem for now. <hi style="bold">Action on LB to do testing and report back
+                                            to Council.</hi> due 2015-11-25</item>
+                                    <item><hi style="bold">Action on HC to figure out what specific
+                                            test caused the problem and why. Also to create an Issue
+                                            for this. Done.</hi></item>
+                                    <item>For Schematron to check ID uniqueness, see <ref target="https://wiki.tei-c.org/index.php/Xmlid_uniqueness.sch"><hi style="underline color(1155CC)">wiki
+                                                example</hi></ref></item>
+                                </list>
+                            </item>
+                            <item>Release scheduling:<list>
+                                    <item>We don’t have to release on schedule, perhaps we should
+                                        not feel forced to have a release when we’re still
+                                        discussing issues? (but how does that pair with our desire
+                                        to always have a release some time before members
+                                        meeting)</item>
+                                    <item>“release-candidate”? or work on three levels in github :
+                                        a/branches – b/development (all work there) – c/master <list>
+                                            <item>git fetch + git merge <ref target="https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell"><hi style="underline color(1155CC)">https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell</hi></ref></item>
+                                        </list>
+                                    </item>
+                                </list>
+                            </item>
+                        </list>
+                        <p>What is a release?</p>
+                        <list>
+                            <item>Guidelines and Schemas</item>
+                            <item>Oxygen Packages</item>
+                            <item>Debian Packages? Which ones?</item>
+                            <item>HC suggests a new process taking better advantage of natural git
+                                methods of working. This would involve creating a new development
+                                branch, which would be where we branch from and merge to, and then
+                                build the development branch on Jenkins. The master branch (renamed
+                                to release?) would be where releases come from; merges are made from
+                                development to master before release. We should make the development
+                                branch the default on GitHub, and document this in the readme
+                                document. </item>
+                            <item><list>
+                                    <head>Decisions after discussion:</head>
+                                    <item>copy current master branch to new dev branch</item>
+                                    <item>make the dev branch the default (on GitHub)</item>
+                                    <item>master branch is our new stable branch (aka
+                                        release)</item>
+                                    <item>Ticket is closed when in dev branch</item>
+                                    <item>whole dev branch is merged into master once ONLY for
+                                        release and tagged</item>
+                                    <item>Jenkins monitors dev branch.</item>
+                                    <item>When a tag is created for a release candidate (with a
+                                        version number ending in e.g. rc1 for “release candidate
+                                        1”), the zip of the products built by Jenkins is pulled down
+                                        and pushed to tei.github.io, where it is public and we can
+                                        ask for feedback.</item>
+                                    <item>No one pushes to the Master unless making a
+                                        release.</item>
+                                </list>
+                            </item>
+                        </list>
+                        <list>
+                            <item>Adding and improving release processes and documentation</item>
+                            <item>Jenkins: Victoria and Oxford or tei-c?<list>
+                                    <item>Or Amazon AWC? It’s a cost that the board would have to
+                                        approve. Pricing: <ref target="https://aws.amazon.com/ec2/pricing/"><hi style="underline color(1155CC)">https://aws.amazon.com/ec2/pricing/</hi></ref>
+                                        though note the costing is dependent on the number of back
+                                        builds we keep, etc.</item>
+                                    <item>We need a stable URL for the Jenkins server, wherever it
+                                        is, so that this can be changed once for all in all the spec
+                                        files.</item>
+                                    <item>Consensus seems to be that we should get:
+                                        jenkins.tei-c.org (redirected at tei-c.org to wherever it
+                                        needs to be whether a local hosted copy or AWS or
+                                        whatever)</item>
+                                    <item><hi style="bold">Action: JC to get jenkins.tei-c.org (as
+                                            soon as Martin configures his server to have it pointed
+                                            at) also jenkins-backup.tei-c.org for another
+                                            server.</hi></item>
+                                    <item><hi style="bold">Action: PWS will set up a Jenkins at
+                                            upb.de; done.</hi></item>
+                                    <item>SM: Travis-CI? any experiences. MH we are currently
+                                        hitting the 30Min limit. SM could do a Tue hackathon on
+                                        this. Would need reduction of build time because of
+                                        limits.</item>
+                                </list>
+                            </item>
+                            <item>Stylesheets management<list>
+                                    <item>What parts of the Stylesheets repo should Council be
+                                        responsible for?<list>
+                                            <item>LB argues: All of it (all needed for co-products
+                                                like guidelines)</item>
+                                            <item>prioritize : docx; pdf; html ; odf </item>
+                                            <item>develop workflow for stylesheets</item>
+                                        </list>
+                                    </item>
+                                    <item>Suggestion that “every issue should have an Issue” (e.g.
+                                        both in Guidelines and Stylesheets if it affects
+                                        both?)</item>
+                                    <item>Branch workflow in Stylesheets repository: we’ll use the
+                                        same “dev” and “master” 2-main-branch system we decided upon
+                                        for the Guidelines, above. </item>
+                                    <item><hi style="bold">HC to send e-mail to non-Council
+                                            Stylesheets contributors </hi>[turns out the only
+                                        contributor with push access is Magdalena Turska, who’s
+                                        about to join Council anyway]</item>
+                                    <item><hi style="bold">HC to actually change repo to the
+                                            2-main-branch system</hi> [done]</item>
+                                </list>
+                            </item>
+                            <item>Debian packages?<list>
+                                    <item>several packages involved: stylesheets, Guidelines,
+                                        etc.</item>
+                                    <item>Need a stable location for the packages, e.g.
+                                        packages.tei-c.org (could then transparently to users be
+                                        hosted at any of our institution).</item>
+                                    <item>Need a TEI gpg key for signing debian packages</item>
+                                    <item><ref target="http://packages.tei-c.org/deb/"><hi style="underline color(1155CC)">http://tei.it.ox.ac.uk/teideb/</hi></ref></item>
+                                    <item>list of packages, status: <ref target="https://docs.google.com/spreadsheets/d/1w3ObgtqxpwYLrfaF-N0SPTt5X3ITmg2iLa5ZevAg3eE/edit?usp=sharing"><hi style="underline color(1155CC)">https://docs.google.com/spreadsheets/d/1w3ObgtqxpwYLrfaF-N0SPTt5X3ITmg2iLa5ZevAg3eE/edit?usp=sharing</hi></ref></item>
+                                    <item><hi style="bold">Action on SM, SB, and MH to learn how to
+                                            build &amp; sign packages, and set up a repository, with
+                                            a view to replacing the existing repository with a new
+                                            one and creating a new build/sign/release process. Also
+                                            to investigate if/which old packages could be dropped
+                                            (TEI-P4 f.ex). Investigate whether we can use PPAs; By
+                                            2015-11-30. This should be tracked with an
+                                        Issue.</hi></item>
+                                </list>
+                            </item>
+                            <item>Jenkins setup:<list>
+                                    <item><hi style="bold">Action on JC and MH to set up virtual
+                                            hosts on their Jenkins machines for jenkins.tei-c.org
+                                            and jenkins-backup.tei-c.org. Action on JC after this is
+                                            done to ask Ian Rifkin to set up pointers on tei-c to
+                                            point the first to the Oxford server and the second to
+                                            the Victoria one. BY 2015-11-30.</hi></item>
+                                </list>
+                            </item>
+                            <item>Year-end release<list>
+                                    <item>Pure ODD</item>
+                                    <item>Processing Model Documentation</item>
+                                    <item>TEI Simple</item>
+                                    <item>Consensus: Release when ready but would be preferable to
+                                        release Pure ODD and PM together.</item>
+                                </list>
+                            </item>
+                            <item>Git / GitHub tutorial?<list>
+                                    <item>Too many labels on GitHub. <hi style="bold">Action on RV
+                                            to review, report to council, and clean up (or mentor
+                                            new council member). Between election and Jan? Or do we
+                                            feel it’s needed sooner? By 2015-12-25</hi></item>
+                                </list>
+                            </item>
+                            <item>Ticket Review<list>
+                                    <item>BUGS </item>
+                                </list>
+                            </item>
+                        </list>
+                    </div>
+                </div>
+                <div>
+                    <head> Monday 26 October, 09:00–17:00</head>
+                    <p>venue: <ref target="https://www.google.com/maps/place/ENS+de+Lyon+-+Site+Descartes/@45.7411221,4.8316472,15z/data=!4m2!3m1!1s0x47f4ea2eb874b39d:0x3138a4e7dc6840c5"><hi style="underline color(1155CC)">L’École normale supérieure de
+                                Lyon</hi></ref>, <hi style="color(3D3D3D) background(white)">Institut français de l’Éducation, meeting room 3</hi> (<ref target="http://tei2015.huma-num.fr/en/venue/"><hi style="underline color(1155CC)">conference venue
+                        page</hi></ref>)</p>
+                    <p>09:00–12:30 Ticket Review</p>
+                    <p>12:30–13:30: Lunch (delivered)</p>
+                    <p>13:30–17:00: Ticket Review</p>
+                </div>
+                <div>
+                    <head> Tuesday 27 October </head>
+                    <p>HACKING DAY: Some TEI Council members sat in a computer room at ENS and
+                        worked on their tickets and other TEI-related activity.</p>
+                </div>
+                <div>
+                    <head> Wednesday 28 October, 09:00–12:30</head>
+                    <p>venue: ENS again; guests (listed above) present</p>
+                    <p>from 9:15</p>
+                    <list>
+                        <item>Round of introductions</item>
+                        <item>HC introduces minutes document and general council workflow</item>
+                        <item>Tickets<list>
+                                <item>Vote on @source in att.global.responsibility carried in favour
+                                    against all sensible reason.</item>
+                            </list>
+                        </item>
+                        <item>Stylesheets tickets<list>
+                                <item><hi style="bold">Action on all</hi>: Please look at
+                                    Stylesheets issues and choose a ticket or two by 2015-11-08;
+                                    those tickets not assigned will be handed out at random (to MH,
+                                    JC, SB, LB, RV, PS, HC, SM, keeping in mind those that have
+                                    already taken tickets) by Chair on or about 2015-11-09.</item>
+                            </list>
+                        </item>
+                        <item>TEI Simple<list>
+                                <item><hi style="bold">Action on all</hi>: Read docs pointed at
+                                    below by 2015-11-12, and if you don’t want to actually edit it
+                                    send comments to list or LB.</item>
+                                <item>PM stuff: <ref target="http://htmlpreview.github.io/?https://github.com/TEIC/TEI-Simple/blob/master/tei-pm.html"><hi style="underline color(1155CC)">http://htmlpreview.github.io/?https://github.com/TEIC/TEI-Simple/blob/master/tei-pm.html</hi></ref>
+                                    (for the –summaryDoc version or for the full odd version see)
+                                        <ref target="http://htmlpreview.github.io/?https://github.com/TEIC/TEI-Simple/blob/master/tei-pm.odd.html"><hi style="underline color(1155CC)">http://htmlpreview.github.io/?https://github.com/TEIC/TEI-Simple/blob/master/tei-pm.odd.html</hi></ref></item>
+                            </list>
+                        </item>
+                        <item>Pure ODD<list>
+                                <item>Main job left is getting the display to look right, which is
+                                    on HC.</item>
+                                <item>LB asks that people check out the branch and test
+                                    things</item>
+                            </list>
+                        </item>
+                        <item>Next Release<list>
+                                <item>Year end or wait until Simple-PM and Pure ODD are ready?<list>
+                                        <item>Test suite for processing model needs to be
+                                            understood: we would like to ensure there is a test
+                                            suite that properly exercises the structures and
+                                            capabilities of the PM </item>
+                                        <item>JC believes that SPQR built these tests into the
+                                            development of Simple. The <ref target="https://github.com/TEIC/TEI-Simple/blob/master/build.xml"><hi style="underline color(1155CC)">https://github.com/TEIC/TEI-Simple/blob/master/build.xml</hi></ref>
+                                            has a ‘pm’ target (as does the Makefile) which runs a
+                                            series of test files through the PM. </item>
+                                        <item>Action: JC to make a branch off of LB’s pureODD
+                                            branch, add new tests there. </item>
+                                    </list>
+                                </item>
+                            </list>
+                        </item>
+                        <item>anyXML<list>
+                                <item>Guidance on this problem belongs to the tagdocs chapter
+                                    (specifically, a new para at the end of <ref target="/release/doc/tei-p5-doc/en/html/TD.html#TDeg"><hi style="underline color(1155CC)">http://www.tei-c.org/release/doc/tei-p5-doc/en/html/TD.html#TDeg</hi></ref>)
+                                    , perhaps using the svg: example, linked to from a note in the
+                                    header chapter (re: xenoData where the problem could conceivably
+                                    arise, whereas egXML is a more likely locus for the
+                                    problem.)</item>
+                                <item>explanation should include a sample of Schematron that can be
+                                    used for ID uniqueness checking</item>
+                            </list>
+                        </item>
+                        <item>Meeting adjourned 11:31Z, with Council expressing its best wishes to
+                            Sebastian Rahtz and his family</item>
+                    </list>
+                </div>
+            </div>
+
+        </body>
+    </text></TEI>

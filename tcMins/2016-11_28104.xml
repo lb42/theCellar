@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/home/lou/Public/TEI/TEICSS/tei.css" type="text/css"
+ ?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:t="http://www.tei-c.org/ns/1.0" n="2016-11"><teiHeader><fileDesc><titleStmt><title>Minutes of the TEI Technical Council</title><meeting n="2016-11" when="2016-11-17">TEI Technical Council online
+     meeting : <date>17 November 2016</date></meeting></titleStmt><publicationStmt><distributor>TEI Website</distributor><idno>TCM086</idno></publicationStmt><sourceDesc><p>Retagged from a WordPress HTML file</p></sourceDesc></fileDesc><revisionDesc><change when="2023-04-25">Archival header confected</change><change>Extracted from Word Press article with id post-28104</change></revisionDesc></teiHeader><text><body>
+		
+		<div>
+<div>
+<p rend="head">Present</p>
+<list style="ul">
+<item>Hugh Cayless (HC)</item>
+<item>Syd Bauman (SB)</item>
+<item>Peter Stadler (PS)</item>
+<item>Martina Scholger (MS)</item>
+<item>Magdalena Turska (MT)</item>
+<item>Raff Viglianti (RV)</item>
+<item>Elisa Beshero-Bondar (EB)</item>
+<item>Elli Mylonas (EM)</item>
+<item>Lou Burnard (LB) joined at 14:15Z</item>
+<item>James Cummings (JC) joined at 14:19Z</item>
+</list>
+</div>
+<div type="h2"><head>Notes</head><list style="ul">
+<item>Pre-meeting discussion: MT searching for ticket on how a document declares what flavor of TEI it is; RV finds it: <ref target="https://github.com/TEIC/TEI/issues/564">https://github.com/TEIC/TEI/issues/564</ref></item>
+<item>Meeting started at 14:03Z</item>
+<item>Council wishes HC a happy birthday</item>
+<item>Many leave between 15:00Z and 15:15Z.</item>
+<item>Meeting ended ~15:18Z. A few (HC, SB, RV, EB) remained and chatted:
+<list style="ul">
+<item>Should start thinking about hotels in Prague soon; action on HC to post a reminder to everyone to do so</item>
+<item>We like Lou’s idea of a different name for anyElement/@include, but SB at least is not keen on @require. How about @onlyFrom or @useOnly?</item>
+</list>
+</item>
+</list></div>
+<div type="h2"><head>Agenda and minutes</head><list style="ul">
+<item>Naming “Simple” (see discussion from <ref target="https://docs.google.com/document/d/1YFW89NbqeSwXe3dNwtDjaSLqRJ10_K_Evorn8H-zR14/edit?usp=sharing">previous meeting</ref>)
+<list style="ul">
+<item>JC: Simple-Print seems easiest to me. Has benefit of partly maintaining current name it is known by, and explaining it is only about Print.</item>
+<item>Suggestions include (asterisks indicate a ‘yes’ vote):
+<list style="ul">
+<item>SimplePrint -***–</item>
+<item>simplePrint ****-**</item>
+<item>simplePrinted – ***-</item>
+<item>simple4printed – –**–</item>
+<item>TEMPB —-*–</item>
+<item>EMP ——-</item>
+<item>Bookish-* *–*</item>
+</list>
+</item>
+<item>Lou changes name in the ODD, note that schema name is case sensitive.</item>
+<item>Decision is: simplePrint</item>
+</list>
+</item>
+<item>Release 3.1.0 remaining to-dos:
+<list style="ul">
+<item><ref target="https://github.com/TEIC/TEI/milestone/2">https://github.com/TEIC/TEI/milestone/2</ref></item>
+<item>anyElement: where to get namespaces/elements to exclude? Right now, from definition of macro.anyXML, which is hacky.
+<list style="ul">
+<item>Pure ODD vs. RelaxNG vs. DTD handle exclusions differently
+<list style="ul">
+<item>Rename @include as @require</item>
+<item>Example: See <ref target="https://github.com/TEIC/TEI/blob/dev/P5/Exemplars/tei_allPlus.odd#L101-L106">https://github.com/TEIC/TEI/blob/dev/P5/Exemplars/tei_allPlus.odd#L101-L106</ref></item>
+<item>Add @defaultExceptionNS attribute to <gi>schemaSpec</gi> and remove @reject/@except</item>
+</list>
+</item>
+<item>Action on SB: write to SyncroSoft and see if we can get DTD compatibility mode turned off by default</item>
+</list>
+</item>
+<item>SB still working on @minOccurs @maxOccurs</item>
+<item>JC: I think the global @source issue is important (even though I voted against it). It is Green and agreed. I’ve just not got around to doing it. <ref target="https://github.com/TEIC/TEI/issues/536">https://github.com/TEIC/TEI/issues/536</ref> If I make the changes adding the new class etc., are there any volunteers to collaborate and help sort out the inevitable jenkins/testing breakage?</item>
+<item>TEI Simple oxygen framework
+<list style="ul">
+<item>How do we do it for TEI Lite or any other customization (if at all?)</item>
+<item>What TEI Simple framework should contain:
+<list style="ul">
+<item>TEI Simple document template</item>
+<item>Transformation scenario following teisimple.odd</item>
+</list>
+</item>
+<item>How should oXygen determine when to trigger TEI Simple framework (as opposed to default TEI framework); related discussion at <ref target="https://github.com/TEIC/TEI/issues/564">https://github.com/TEIC/TEI/issues/564</ref> (This will be done in next couple weeks -JC)</item>
+</list>
+</item>
+<item><ref target="https://github.com/TEIC/TEI/issues/1492">https://github.com/TEIC/TEI/issues/1492</ref> please have a look at the proposal (last comment)</item>
+<item>Current schedule: create release branch on Nov. 23, release on Dec 6. Still viable?</item>
+</list>
+</item>
+<item>Face to Face: Prague, Charles U., Feb. 5-7, meeting/workshop with local TEI on Feb 8, XML Prague, Feb. 9-11. More details to follow, but those are the dates.</item>
+<item>Council Chair elections; <ref target="https://wiki.tei-c.org/index.php/TEI-Council-FAQ#How_is_the_TEI_Technical_Council_Chair_elected.3F">http://wiki.tei-c.org/index.php/TEI-Council-FAQ#How_is_the_TEI_Technical_Council_Chair_elected.3F</ref></item>
+</list></div></div>
+
+	</body><!-- #post-## --></text></TEI>

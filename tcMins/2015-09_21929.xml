@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/home/lou/Public/TEI/TEICSS/tei.css" type="text/css"
+ ?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:t="http://www.tei-c.org/ns/1.0" n="2015-09"><teiHeader><fileDesc><titleStmt><title>Minutes of the TEI Technical Council</title><meeting n="2015-09" when="2015-09-24">TEI Technical Council online
+     meeting : <date>24 September 2015</date></meeting></titleStmt><publicationStmt><distributor>TEI Website</distributor><idno>TCM073</idno></publicationStmt><sourceDesc><p>Retagged from a WordPress HTML file</p><p>Converted from a Word document</p></sourceDesc></fileDesc><revisionDesc><change when="2023-04-27">Archival header confected</change><change>Extracted from Word Press article with id post-21929</change><change><date>2015-11-03T17:05:31Z</date><name>Hugh Cayless</name></change></revisionDesc></teiHeader><text><body>
+<div><head>
+ Teleconference 2015-09-24 14:00 UTC</head><p>Present</p>
+<list style="ul">
+<item>Hugh Cayless (HC)</item>
+<item>James Cummings (JC)</item>
+<item>Lou Burnard (LB)</item>
+<item>Fabio Ciotti (FC)</item>
+<item>Raffaele Viglianti (RV)</item>
+<item>Syd Bauman (SB)</item>
+<item>Stefanie Gehrke (SG)</item>
+<item>Martin Holmes (MH)</item>
+<item>Peter Stadler (PWS)</item>
+<item>Paul Schaffner (PFS)</item>
+</list>
+ <p>Apologies</p><list style="ul">
+<item>Stefan Majewski (SM)</item>
+</list>
+<div><head> id="h.8defx5cq513n"&gt;
+          Agenda
+          </head><list style="ul">
+<item>F2F in Lyon<list style="ul">
+<item>Sun 25 October: Mama Shelter (From 9am)</item>
+<item>Mon 26 October: <ref target="http://www.ens-lyon.eu/informations-pratiques/acces-a-l-ens-de-lyon--81546.kjsp?RH=ENS-LYON-FR"><hi style="underline color(1155cc)">Ecole Normale Superieure </hi></ref></item>
+<item>Wed 28 October: <ref target="http://www.ens-lyon.eu/informations-pratiques/acces-a-l-ens-de-lyon--81546.kjsp?RH=ENS-LYON-FR"><hi style="underline color(1155cc)">ENS</hi></ref></item>
+</list>
+</item>
+<item>Releasing from GitHub: any blockers? <list style="ul">
+<item>JC will test creation of deb files. [Done, to sign, needs @rahtz
+                  passkey]</item>
+<item>Upcoming Oxygen release 17.1; should this block? MH is not keen on a
+                  potentially risky release process that might result in the need for a rapid update
+                  being perhaps taken up by the Oxygen folks in their release process. We don’t want
+                  to force Oxygen to do a 17.2 rapidly to fix our issues.</item>
+<item>Need to release on SourceForge as well</item>
+<item>PureODD is not merged yet</item>
+<item>TEISimple depends on PureODD. Could it be rewritten using RelaxNG? Yes, it
+                  could, but hopefully shouldn’t.</item>
+<item>Date of freeze and release: Freeze should be October 1(?) and release around
+                  8(?). This will be 2.9 (because of the inclusion of <gi>xenoData</gi>). The
+                  subsequent release which includes Pure ODD will be 3.0.</item>
+<item>MH points out that we haven’t been checking the Stylesheets to see if all our
+                  P5 changes are appropriately handled; and that the normal process involves SR
+                  doing a Stylesheets release immediately after the P5 release; we’ll now have to do
+                  that, and the process is not documented. JC will try to test the release script,
+                  which is on the Oxford TEI server, to make sure it will actually run without e.g.
+                  currently-unknown passwords. JC notes that this should be built into a build
+                  process somehow so it doesn’t depend on any particular server or person at
+                  Oxford.</item>
+</list>
+</item>
+<item>What’s in / out of the next release?<list style="ul">
+<item><gi>xenoData</gi>: Yes.</item>
+<item>TEI Pure ODD: Not ready.</item>
+<item>TEI Simple infrastructure (processing models): Not ready.</item>
+<item>block-level apparatus — SB doesn’t think so; HC does!; Not fully tested?! HC
+                  thinks this should be ready to go; there are virtually no changes required to the
+                  existing prose, although JC suggests that more material be added. HC is planning
+                  to add examples. Suggestion that some discussion of what is not allowed (e.g.,
+                  head/name/app/rdg/div) should be included in addition to Schematron. SB posits
+                  that generation of Schematron should be automated at build-time, not static.
+                  General agreement that he is right, but that this is a separate feature that
+                  should not prevent release of block-level <gi>app</gi>.</item>
+<item>what else? </item>
+<item>tweak of xml:lang language </item>
+<item>removal of att.identified/@status</item>
+<item>removal of: @degree from internal use<note>The degree construct becomes outdated on 2015-11-12: 
+<list style="ul">
+<item>Location:
+                      /TEI[1]/text[1]/body[1]/div[21]/div[1]/div[2]/div[4]/specGrp[1]/elementSpec[1]/attList[1]/attDef[1]</item>
+<item>
+                      WARNING: use of deprecated attribute — @degree of the precision element will
+                      be removed from the TEI on 2015-11-12.</item>
+<item> Location:
+                      /TEI[1]/text[1]/body[1]/div[21]/div[1]/div[2]/div[4]/specGrp[1]/elementSpec[1]/exemplum[1]/egXML[namespace-uri()=’http://www.tei-c.org/ns/Examples’][1]/precision[namespace-uri()=’http://www.tei-c.org/ns/Examples’][1]</item>
+<item>
+                      WARNING: use of deprecated attribute — @degree of the precision element will
+                      be removed from the TEI on 2015-11-12.</item>
+<item> Location:
+                      /TEI[1]/text[1]/body[1]/div[21]/div[1]/div[2]/div[4]/specGrp[1]/elementSpec[1]/exemplum[1]/egXML[namespace-uri()=’http://www.tei-c.org/ns/Examples’][1]/precision[namespace-uri()=’http://www.tei-c.org/ns/Examples’][2]</item>
+</list>
+</note></item>
+</list>
+</item>
+<item>Release date and personnel<list style="ul">
+<item>2.9.0</item>
+<item>Any problem with sticking with original dates? freeze Thu 10-01 release Thu
+                  10-08 / Fri 10-09. Some danger of collision with oXygen, but this will be
+                  minimized by deferring inclusion of PureODD and Simple; and Martin will talk to
+                  oXygen to try to preclude even this risk. </item>
+<item>Available: Martin, Raff, Hugh, Peter,Lou , Syd (more on Fri than Thu)</item>
+</list>
+</item>
+<item>Next steps with migration<list style="ul">
+<item>Freeze on SF Feature Requests &amp; Bugs + Migration of FRs and Bugs to GitHub
+                    <list style="ul">
+<item>RV to do this during release freeze week.</item>
+<item>Look at the TEI website menu structure (hard-coded in OpenCMS) and the
+                      equivalent menu-constructing stuff for the Guidelines; we should probably add
+                      GitHub links alongside SF links soon, then retire the latter at release
+                      time.</item>
+</list>
+</item>
+</list>
+</item>
+</list>
+</div></div>
+</body><!-- #post-## --></text></TEI>

@@ -1,0 +1,568 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/home/lou/Public/TEI/TEICSS/tei.css" type="text/css"
+ ?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:t="http://www.tei-c.org/ns/1.0" n="2011-04"><teiHeader><fileDesc><titleStmt><title>Minutes of the TEI Technical Council</title><meeting n="2011-04" from="2011-04-11" to="2011-04-13">TEI Technical
+     Council ftf meeting : <placeName>Chicago</placeName>, <date>11–13 April 2011</date></meeting></titleStmt><publicationStmt><distributor>TEI Website</distributor><idno>TCM046</idno></publicationStmt><sourceDesc><p>Retagged from a WordPress HTML file</p></sourceDesc></fileDesc><revisionDesc><change when="2023-04-25">Archival header confected</change><change>Extracted from Word Press article with id post-21902</change></revisionDesc></teiHeader><text>
+        <body>
+
+            <head>TEI Council Meeting, Chicago 11-13 April 2011</head>
+            <milestone unit="unknown" rend="rule"/>
+
+
+            <div>
+                <p>
+                    <label>Participants</label> : Elena Pierazzo (EP), James Cummings (JC), Julianne
+                    Nyhann (JN), Gabriel Bodard (GB), Martin Holmes (MH), Kevin Hawkins (KH), Brett
+                    Barney (BB), Lou Burnard (LB), Martin Mueller (MM; day 2 only) , Piotr Banski
+                    (PB), Stuart Yeates (SY; by skype, periodically), Sebastian Rahtz (SR; day 2, am
+                    only, by video).</p>
+                <p>
+                    <label>Location</label> : The meeting was held at the Big Ten Conference Center,
+                    Higgins Road, Chicago Il. Council expresses thanks to Kevin Hawkins for
+                    facilitation, and for a guided tour of the Chicago downtown area on Tuesday
+                    evening, notably featuring dinner at Bistro 110, a favourite dining spot for TEI
+                    Committees <ref target="../../../Pictures/History/1992_0525_00.jpg">since
+                        1992</ref>.</p>
+                <div>
+                    <head> Day 1</head>
+                    <p>Laurent opened the meeting at 0900 local time, welcoming Council members, and
+                        giving a brief overview of the Council’s <foreign>modus operandi</foreign>
+                        for the benefit of new members. The main object of this meeting would be to
+                        resolve as many of the outstanding amber tickets as possible, but also to
+                        discuss some procedural issues, notably those associated with the editorial
+                        process. SR would give an overview of the technical production line for P5
+                        and a draft paper on Editorial Practice would be reviewed. It was important
+                        to reduce the number and complexity of tools we depend on, and to make the
+                        production and maintenance of the Guidelines automatic as far as possible.
+                        He also reminded those present that not all members were native British
+                        English speakers. </p>
+                    <p>An <ref target="http://lists.village.virginia.edu/pipermail/tei-council/2011/012872.html"> email dividing the currently amber tickets into groups</ref> had been
+                        circulated and served as a basis for constructing the agenda. We would
+                        divide into small groups, each one focussing on one of the groups of tickets
+                        identified, and then report back with proposals for discussion or resolution
+                        in plenary.</p>
+                    <div>
+                        <head> Tickets</head>
+                        <div>
+                            <head> Group C1 correct usage of floating text (tickets <ref target="http://purl.org/TEI/FR/3106834">3106834</ref>, <ref target="http://purl.org/TEI/FR/3106829">3106829</ref>) </head>
+                            <p>We agreed that “completeness” as such was not a useful touchstone for
+                                deciding whether something should be tagged as quote or as
+                                floatingText. The existing references to “complete” should be
+                                removed, perhaps in favour of a word such as “substantial”, or
+                                simply removed. We noted that floatingText was permissible within
+                                quote, if the quoted material has a sufficiently complex internal
+                                structure. We agreed that “quotation” was a property relating to
+                                some section’s narrative status, while “floatingText” related more
+                                to a passage’s internal substructure. Rewording has subsequently
+                                been provided by MH, BB, KH, and LB (see ticket; see also <ref target="http://lists.village.virginia.edu/pipermail/tei-council/2011/012890.html">lengthy email from MM</ref>)</p>
+                        </div>
+                        <div>
+                            <head>Group C2 formalisation of <gi>availability</gi> (tickets <ref target="http://purl.org/TEI/FR/3086675">3086675</ref><ref target="http://purl.org/TEI/FR/3044329">3044329</ref>)</head>
+                            <p>We agreed that values for the existing <att>status</att> attribute
+                                should not be changed. One possibility would be to complement this
+                                with an additional <att>licence</att> attribute, but we preferred
+                                the idea of proposing a new <gi>licence</gi> child element within
+                                    <gi>availability</gi>. In the simplest case, this might simply
+                                reference an existing licence agreement by means of its
+                                    <att>target</att> attribute. This might be complemented by prose
+                                content explaining any conditions about the applicability of the
+                                referenced licence, or stating the licence itself. Multiple
+                                    <gi>licence</gi> elements might be supplied for a single
+                                    <gi>avail</gi> ability&gt; if different licences were applicable
+                                to the whole text in different situations. Multiple
+                                    <gi>availability</gi> elements should be supplied, and selected
+                                by the <att>decls</att> atrtribute if different licences applied to
+                                different parts of the document. Additionally, having noted in
+                                discussion the need for such features as an embargo date, we agreed
+                                that the <gi>licence</gi> element should be made a member of the
+                                datable class, with the specific semantics that the dates supplied
+                                would indicate the period during which the licence in question was
+                                applicable. We noted that we should not attempt to supply a complete
+                                rights management language.</p>
+                        </div>
+                        <div>
+                            <head> C3: usage of altIdentifier within <gi>msPart</gi> (ticket <ref target="http://purl.org/TEI/FR/3115238">3115238</ref>) </head>
+                            <p><gi>altIdentifier</gi> did not have the same substructure as
+                                    <gi>msIdentifier</gi>, but was the only mechanism available for
+                                recording a former identifier for an individual <gi>msPart</gi>.
+                                Reviewing this decision, council agreed that it would be better to
+                                permit <gi>msIdentifier</gi> within <gi>msPart</gi> than to abolish
+                                    <gi>msPart</gi> and permit nested <gi>msDesc</gi> elements. We
+                                agreed to make the content model of <gi>msPart</gi> identical to
+                                that of <gi>msDesc</gi>, and to make clear that the continued use of
+                                    <gi>altIdentifier</gi> as a sibling of <gi>msIdentifier</gi>
+                                rather than as a child of it should be deprecated.</p>
+                            <p>We agreed to revisit the appropriate mechanism for recording and
+                                implementing deprecation later in the meeting.</p>
+                        </div>
+                        <div>
+                            <head> Group A1 : container element for musical notation (tickets <ref target="http://purl.org/TEI/FR/3086720">3086720</ref>, <ref target="http://purl.org/TEI/FR/3086726">3086726</ref>) </head>
+                            <p>The Music SIG had made several proposals for ways of embedding in a
+                                TEI document specialised representation of musical notation
+                                expressed for example using the MEI or other vocabularies. The
+                                existing <gi>musicNotation</gi> element might perhaps better be
+                                renamed <gi>musicNotationDesc</gi> since it documents the presence
+                                of music notation in a manuscript rather than actually representing
+                                it. Council sympathised with this view, but did not wish to perturb
+                                existing usage too much. We agreed that an appropriate name for the
+                                proposed container element would be <gi>notatedMusic</gi> and
+                                requested the Music SIG to continue their excellent work by
+                                providing a preliminary ODD for the new element. This is now
+                                available in the SVN repository, along with a sample ODD embedding
+                                it; see further
+                                http://tei.svn.sourceforge.net/viewvc/tei/trunk/Documents/notatedMusic/
+                                ) </p>
+                        </div>
+                        <div>
+                            <head> Group A2. Proposed new grouping elements (tickets <ref target="http://purl.org/TEI/FR/3060867">3060867</ref>, <ref target="http://purl.org/TEI/FR/3147225">3147225</ref>) </head>
+                            <p>This proposal sought to organise and provide several new grouping
+                                elements within <gi>person</gi>, <gi>place</gi>, <gi>org</gi> :
+                                    <gi>stateGrp</gi>, <gi>eventGrp</gi>, <gi>traitGrp</gi> etc.
+                                Though sympathetic to the use case we felt that we needed to see
+                                more justification; we were also unable to reach consensus about the
+                                difference (if any) between xxxGrp and listXXX as element names. The
+                                ticket should remain open.</p>
+                        </div>
+                        <div>
+                            <head> Group A2: Proposed new <gi>document</gi> element (ticket <ref target="http://purl.org/TEI/FR/3095637">3095637</ref>)</head>
+                            <p>We explored this proposal at length in a plenary session facilitated
+                                by EP. Council recognised and endorsed the use case for a view of
+                                the encoded physical object, comprising surfaces, zones, patches,
+                                and optionally lines of writing. <mentioned>diploma</mentioned> was
+                                suggested as an alternative name. Discussion focussed chiefly on the
+                                distinction between the proposed <gi>document</gi> and the existing
+                                    <gi>facsimile</gi> elements. Some expressed concern that it
+                                would be difficult to explain and justify this distinction; others
+                                felt that the two were entirely discrete. It might be possible to
+                                regard the existing <gi>facsimile</gi> as a special case of the
+                                proposed <gi>document</gi>, even though (for example) the
+                                    <gi>zone</gi>s identified within a <gi>facsimile</gi> might be
+                                motivated by other factors than those identified within a
+                                    <gi>document</gi>. We agreed that it might be useful to find out
+                                whether the proposed user community would find it unacceptable to
+                                embed the image information currently managed by <gi>facsimile</gi>
+                                within the proposed <gi>document</gi> element. </p>
+                        </div>
+                        <div>
+                            <head> Group C4 : <gi>epigraph</gi> content wrongly described (ticket
+                                    <ref target="http://purl.org/TEI/bug/3227935">3227935</ref>) </head>
+                            <p>The description for <gi>epigraph</gi> implies that it may contain
+                                only quotations. We agreed that this was a mistake, and that the
+                                wording should be changed to suggest an epigraph might contain a
+                                saying or motto. An example such as the Forster one cited in the
+                                ticket should be added to the element spec. </p>
+                        </div>
+                        <div>
+                            <head> Group C5 : <gi>geogName</gi> and <gi>placeName</gi> (ticket <ref target="http://purl.org/TEI/bug/3216049">3216049</ref>) </head>
+                            <p>There was a general feeling that there was a case for permitting
+                                    <att>cert</att> on <gi>geogName</gi> as well as on
+                                    <gi>placeName</gi>. LB proposed that this should be done as part
+                                of a general review of the attribute class memberships of these
+                                naming elements and undertook to document the situation.</p>
+                        </div>
+                        <div>
+                            <head> Group C6 : retaining formatting within <gi>code</gi> (ticket <ref target="http://purl.org/TEI/bug/3223636">3223636</ref>) </head>
+                            <p>Some way of retaining whitespace, tabs, line breaks, etc within the
+                                content of <gi>code</gi> elements was needed. We felt that this
+                                should be done by using xml:space rather than by permitting e.g.
+                                    <gi>lb</gi> or <gi>space</gi> within its content. </p>
+                        </div>
+                        <div>
+                            <head> Group F : various bibliographic issues </head>
+                            <p>Ticket <ref target="http://purl.org/TEI/FR/2976715">2976715</ref>: We
+                                agreed to add <gi>distributor</gi> to model.respLike, and to use
+                                model.respLike within content models passim. The distinction between
+                                intellectual responsibility and responsibility for distribution
+                                might be sorted out later.</p>
+                            <p>Ticket <ref target="http://purl.org/TEI/FR/2984463">2984463</ref> :
+                                We agreed to define a new att.sortable class providing
+                                    <att>sortKey</att>, with initial members
+                                    <gi>bibl</gi><gi>biblStruct</gi>, <gi>person</gi>,
+                                    <gi>place</gi>, and <gi>event</gi></p>
+                            <p>Ticket <ref target="http://purl.org/TEI/FR/2493417">2493417</ref> :
+                                This had already been implemented, but lacked documentation; KH
+                                agreed to provide documentation.</p>
+                        </div>
+                        <div>
+                            <head> Group D1: various attribute class membership modifications</head>
+                            <p>Ticket <ref target="http://purl.org/TEI/FR/3113682">3113682</ref> :
+                                Make <gi>ptr</gi> and <gi>ref</gi> members of att.internetMedia. We
+                                agreed that this was desirable for documentary purposes, whether or
+                                not the server could deliver the goods. The datatype of
+                                    <att>mimeType</att> is a different question</p>
+                            <p>Ticket <ref target="http://purl.org/TEI/FR/3060874">3060874</ref> :
+                                Make <gi>faith</gi>, and other model.persTraitLike and
+                                model.persStateLike elements members of att.canonical; other
+                                examples mentioned included <gi>nationality</gi>,
+                                    <gi>socecStatus</gi>, <gi>affiliation</gi>, <gi>education</gi>,
+                                    <gi>occupation</gi>. We agreed that this seemed reasonable. </p>
+                            <p>We also considered whether all elements currently using
+                                    <att>code</att> and <att>scheme</att> should systematically be
+                                made members of att.canonical instead,</p>
+                        </div>
+                        <div>
+                            <head> Group E1 : various technical issues</head>
+                            <p>Ticket <ref target="http://purl.org/TEI/FR/3118435">3118435</ref>
+                                Expanding ODD <gi>content</gi> element to support interleaving of
+                                content models and also specification of max and min. We were
+                                unclear about the purpose of this: LR to check with the poster.</p>
+                            <p>Ticket <ref target="http://purl.org/TEI/FR/3156049">3156049</ref> :
+                                We were not sure whether validation of examples which contained no
+                                single root element was feasibly valid. We agreed that recommended
+                                practice should be documented in tcw20 and in the specification for
+                                    <gi>egXML</gi> A further comment on the ticket clarifies the
+                                concerns expressed at the meeting. </p>
+                            <p>Ticket <ref target="http://purl.org/TEI/FR/3064757">3064757</ref> :
+                                Not discussed through lack of time.</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <head> Day 2</head>
+                    <div>
+                        <head> TEI P5 Workflow and Toolkit</head>
+                        <p>Sebastian joined us by video conference to present the wonderful new
+                            Jenkins system. This web application constantly monitors updates to the
+                            TEI’s sourceforge svn repository, automatically rebuilding and testing
+                            the </p>
+                        <p>Guidelines and schemas in response to any changes. </p>
+                        <p>Martin H agreed to investigate the possibility of providing a second
+                            Jenkins instance at Victoria. The process of doing so would hopefully
+                            show up any undocumented special-case knowledge in the present
+                            installation and scripts.</p>
+                        <p>Sebastian noted that W3C schema source is currently generated from the
+                            RELAXNG source, and that there is no direct ODD to W3C schema
+                            translator. Some W3C schema features cannot be generated from ODD.</p>
+                        <p>Piotr suggested that svn commits might also trigger an email to a sf
+                            mailing list to which interested parties might subscribe themselves. The
+                            list tei-notify<att>lists</att>.sf.net has now been set up accordingly
+                            (for instructions see <ref target="https://wiki.tei-c.org/index.php/TEI-Council-FAQ#How_can_I_find_out_about_every_time_a_change_is_made_in_the_TEI_subversion_repository">wiki entry</ref>). </p>
+                    </div>
+                    <div>
+                        <head> Tickets contd.</head>
+                        <div>
+                            <head> Group F various bibliographic issues, continued</head>
+                            <p>Ticket <ref target="http://purl.org/TEI/FR/3177339">3177339</ref> :
+                                We agreed that series and seriesStmt should permit the same child
+                                elements; the only difference being that the former permits TEXT
+                                data between child elements. </p>
+                            <p>Ticket <ref target="http://purl.org/TEI/bug/2987241">2987241</ref> :
+                                We agreed that it would be desirable to provide some substructure
+                                within <gi>bibl</gi>, for cases where <gi>biblStruct</gi> is
+                                considered inappropriate. After consideration, it was agreed that
+                                the best way would be to allow <gi>bibl</gi> within <gi>bibl</gi> so
+                                that for example information about a conference volume could be
+                                grouped distinct from the title (etc) of an article in it. The
+                                    <att>type</att> attribute should be used to distinguish
+                                different use cases. Some examples were needed. We also agreed that
+                                    <gi>series</gi> as a child of <gi>bibl</gi> should be deprecated
+                                in favour of a nested <gi>bibl</gi> type=”series”&gt; </p>
+                        </div>
+                        <div>
+                            <head> Group D2: define generic dating class (ticket <ref target="http://purl.org/TEI/FR/2925145">2925145</ref>);
+                                    <att>calendar</att> datatype (ticket <ref target="http://purl.org/TEI/FR/2994671">2994671</ref>) </head>
+                            <p>With some reluctance at the proliferation of attributes implied, it
+                                was agreed that some way of providing normalised date values using
+                                something other than the Gregorian calendar was needed, both on
+                                    <gi>date</gi> itself and on members of the current att.datable
+                                class such as persEvent. The datatype for such new attributes would
+                                probably need to be data.word . We felt that the name
+                                att.datable.custom would be better than the proposed
+                                att.datable.generic.</p>
+                            <p>We agreed that the <att>calendar</att> attribute should become a
+                                pointer element, pointing to some kind of definition for the
+                                calendar concerned. If not externally defined, such new definition
+                                would be provided by a new <gi>calendarDesc</gi> element within the
+                                    <gi>profileDesc</gi></p>
+                            <p>GB wrote up and implemented the calendar proposal. </p>
+                            <p>MH subsequently clarified the proposed implementation for generic
+                                dates as follows:<q>The following attribute class should be
+                                    created: att.datable.custom It should be added to att.datable,
+                                    alongside att.datable.w3c and att.datable.iso. The following
+                                    optional attributes should be added to the class, with a
+                                    datatype of 1-to-infinity of data.word:
+                                        <att>when-custom</att><att>from-custom</att><att>to-custom</att><att>notBefore-custom</att><att>notAfter-custom</att>
+                                    The following optional attributes should be added to the class,
+                                    with a datatype of data.pointer:
+                                        <att>datingPoint</att><att>datingMethod</att> In addition:
+                                        <att>calendar</att> should be moved from att.date to
+                                    att.datable. <att>period</att> should be moved from
+                                    att.datable.w3c to att.datable. Finally, a new section needs to
+                                    be added to the Guidelines to explain the use of these
+                                    attributes. This can only be accomplished once action has also
+                                    been taken on ticket <ref target="http://purl.org/TEI/FR/2994671">2994671</ref>
+                                        (<gi>calendarDesc</gi>). </q></p>
+                        </div>
+                        <div>
+                            <head> Group B2: datatype issues </head>
+                            <p>Ticket <ref target="http://purl.org/TEI/FR/3060919">3060919</ref> :
+                                We agreed that “confidence” had a useful mathematical sense, and was
+                                quite distinct from the existing “low/medium/high” valued confidence
+                                specified by <att>cert</att>. We agreed the existing att.ranging
+                                class should also provide an attribute <att>confidence</att> to
+                                express it, expressed as a numerical value between 0 and 1. </p>
+                            <p>Ticket <ref target="http://purl.org/TEI/FR/3060909">3060909</ref> :
+                                We agreed to add <att>precision</att> to <gi>precision</gi> and
+                                    <att>cert</att> to <gi>certainty</gi> each having data.certainty
+                                values high,medium,low. Ticket has been updated and change made. </p>
+                            <p>Ticket <ref target="http://purl.org/TEI/FR/2994671">2994671</ref> :
+                                Datatype for <att>calendar</att>: agreed (and implemented)</p>
+                        </div>
+                        <div>
+                            <head> Group A4: new transcriptional elements for genetic markup (ticket
+                                    <ref target="http://purl.org/TEI/FR/3095640">3095640</ref>) </head>
+                            <p>EP presented the purpose of each of these proposed new elements. We
+                                agreed that <gi>modSpan</gi> was unnecessary if <gi>mod</gi> was
+                                provided, and a member of att.spanning. We agreed that
+                                    <gi>rewrite</gi> might be better renamed as <gi>retrace</gi>. We
+                                noted that <gi>used</gi> was a special case of <gi>metamark</gi>.
+                                Some felt the need for greater clarity about the distinction between
+                                    <gi>undo</gi> and <gi>redo</gi>. Discussion chiefly focussed on
+                                which of these elements, if any, should be permitted in the content
+                                of <gi>document</gi>; EP felt strongly that all transcriptional
+                                elements (these, plus the existing ones) should be permitted in both
+                                    <gi>text</gi> and <gi>document</gi>; others were less sure. Some
+                                of them seemed definitely non-documentary, others less so. </p>
+                        </div>
+                        <div>
+                            <head> Group A5: new <att>stage</att> attribute and <gi>stage</gi>
+                                element (ticket <ref target="http://purl.org/TEI/FR/3095641">3095641</ref>)</head>
+                            <p>We agreed that the idea of documenting writing stages in this way was
+                                useful and feasible. We noted that stages of this kind were not
+                                necessarily always chronological, but could be used for any kind of
+                                grouping; also that a given stretch of writing might be assigned to
+                                multiple “stages”.</p>
+                            <p>Mostly we found it difficult to decide on a better name than “stage”
+                                which was clearly too confusing in a TEI context. Alternatives
+                                proposed were “layer”, “changeSet”, “stratum” or “phase”. LB
+                                attempted a straw poll, the results of which were as follows:</p>
+                            <table>
+                                <row>
+                                    <cell>name</cell>
+                                    <cell>Favourite</cell>
+                                    <cell>Acceptable</cell>
+                                    <cell>Possible</cell>
+                                    <cell>score</cell>
+                                </row>
+                                <row>
+                                    <cell>actionGrp</cell>
+                                    <cell>1</cell>
+                                    <cell>1</cell>
+                                    <cell>1</cell>
+                                    <cell>6</cell>
+                                </row>
+                                <row>
+                                    <cell>changeSet</cell>
+                                    <cell>2</cell>
+                                    <cell>1</cell>
+                                    <cell>0</cell>
+                                    <cell>8</cell>
+                                </row>
+                                <row>
+                                    <cell>docStage</cell>
+                                    <cell>1</cell>
+                                    <cell>0</cell>
+                                    <cell>0</cell>
+                                    <cell>3</cell>
+                                </row>
+                                <row>
+                                    <cell>intervention</cell>
+                                    <cell>0</cell>
+                                    <cell>1</cell>
+                                    <cell>1</cell>
+                                    <cell>3</cell>
+                                </row>
+                                <row>
+                                    <cell>interventionGroup</cell>
+                                    <cell>1</cell>
+                                    <cell>2</cell>
+                                    <cell>0</cell>
+                                    <cell>7</cell>
+                                </row>
+                                <row>
+                                    <cell>juncture</cell>
+                                    <cell>0</cell>
+                                    <cell>0</cell>
+                                    <cell>1</cell>
+                                    <cell>1</cell>
+                                </row>
+                                <row>
+                                    <cell>layer</cell>
+                                    <cell>3</cell>
+                                    <cell>1</cell>
+                                    <cell>1</cell>
+                                    <cell>12</cell>
+                                </row>
+                                <row>
+                                    <cell>phase</cell>
+                                    <cell>1</cell>
+                                    <cell>0</cell>
+                                    <cell>0</cell>
+                                    <cell>3</cell>
+                                </row>
+                                <row>
+                                    <cell>revCampaign</cell>
+                                    <cell>0</cell>
+                                    <cell>0</cell>
+                                    <cell>1</cell>
+                                    <cell>1</cell>
+                                </row>
+                                <row>
+                                    <cell>stage</cell>
+                                    <cell>0</cell>
+                                    <cell>0</cell>
+                                    <cell>2</cell>
+                                    <cell>2</cell>
+                                </row>
+                                <row>
+                                    <cell>stratum</cell>
+                                    <cell>0</cell>
+                                    <cell>3</cell>
+                                    <cell>0</cell>
+                                    <cell>6</cell>
+                                </row>
+                            </table>
+                            <p> The scoring above gives 3 for a first place choice, 2 for a second,
+                                and 1 for a third. Although <gi>layer</gi> comes out
+                                well ahead of the rest, there is also a sizeable vote for some kind
+                                of compound name, notably <gi> changeSet</gi>.
+                                Combining the votes for <gi>actionGrp</gi> and
+                                    <gi>interventionGroup</gi> with those for
+                                    <gi>changeSet</gi> gives a total of (4,4,1) i.e.
+                                21. </p>
+                        </div>
+                    </div>
+                    <div>
+                        <head> The Board Perspective</head>
+                        <p>Martin Mueller gave an overview of some of the major issues and
+                            challenges facing the TEI, from his perspective as Board Chair. Although
+                            the TEI is widely recognized as the de facto standard for serious
+                            scholarly editing amongst the digerati, mainstream literary scholars and
+                            “library folks” alike seemed largely ignorant of its importance to their
+                            work. This lack of perception and recognition needed to be addressed
+                            urgently if we were to overcome the current serious budgetary issues. </p>
+                        <p>He reported on some recent conversations with Google, and his own
+                            experience of the difficulty of reconciling widely varying encoding
+                            practice even within the TEI family. He noted that in 2015 the EEBO TCP
+                            text collection would become public domain: perhaps this would be a good
+                            moment to aim for in making their texts P5 compliant. It was hard to
+                            make the case for good encoding practice when current text mining tools
+                            could not take advantage of it. In discussion, we noted that librarians,
+                            often operating with limited resources and needing to serve a wide range
+                            of scholars, tended to prioritize making content available and usable.
+                            Their focus was more likely to be on creating metadata to make content
+                            accessible, rather than on rich encoding of text, which often involves
+                            specialist knowledge of the material. In determining strategic
+                            objectives and priorities for the TEI we needed to consider traditional
+                            scholarly tools, but also how an industrial approach using baseline
+                            encodings might best contribute to scholarship. How feasible might it be
+                            to imagine a convergence amongst the many dialects of P5? He felt that
+                            we should seriously consider reducing the number of different ways of
+                            doing things at P6, though others felt that variety of approaches was a
+                            major strength of the TEI. We agreed that there was need to introduce a
+                            “deprecation strategy” to indicate clearly to the community the
+                            direction we envisaged for the TEI.</p>
+                        <p>EP asked about the status of SIGs and workgroups; specifically, who would
+                            be co-ordinating them in future and whether there would be a report from
+                            them at the next Members Meeting. LR noted that the SIG rules of
+                            engagement required them to report to the Council. </p>
+                    </div>
+                </div>
+                <div>
+                    <head> Day 3</head>
+                    <div>
+                        <head> The How to Edit P5 document.</head>
+                        <p>LB introduced the <ref target="/Activities/Council/Working/tcw20.xml">working paper TCW20</ref>. In discussion, it became apparent that
+                            the document needed more background information, for example that “the
+                            Guidelines” referred to the ODD sources, rather than the published
+                            outputs; also it provided no information about how one might construct a
+                            “local build environment” rather than relying on Jenkins for validation.
+                            Maybe some kind of sandbox environment would be useful. So far we didn’t
+                            know of any build environments not running under Linux, though it would
+                            be excellent if someone developed one. </p>
+                        <p>Some gaps in the document were deliberate: it does not tell you how to
+                            use sourceforge or subversion. Any council member wishing to commit
+                            changes to the svn repository needs to be registered as a developer with
+                            the project; registration can be done by the current project admins (LB
+                            or SR) and there are currently about a dozen developers. </p>
+                        <p>To show what is involved in practice, GB then walked through his actions
+                            in implementing and testing one of the changes agreed yesterday (adding
+                            calendarDesc). </p>
+                        <p>LB agreed to update the document further, possibly adding some tutorial
+                            examples for common scenarios.</p>
+                        <p>PB asked whether to add Polish translations to any specs he was working
+                            on. Although these would not appear in the Guidelines until the
+                            multilingual framework had been expanded to include Polish, this might
+                            be worthwhile. He should check this with SR, as translation
+                            co-ordinator.</p>
+                    </div>
+                    <div>
+                        <head> Tickets: the final frontier</head>
+                        <p>Following publication of the minutes, Council members wishing to
+                            experiment with svn should volunteer to implement any changes specified
+                            in them. Any agreed changes not implemented within one week of
+                            publication of the minutes would be implemented by LB.</p>
+                        <p>Reviewing the discussion of the genetic issues, Council agreed the need
+                            for some way to represent documentary structure was entirely accepted,
+                            as was the case for the additional elements discussed under A4 and A5.
+                            Exact implementation details needed further discussion and clarification
+                            however.</p>
+                        <div>
+                            <head> Group A6: Proposed <gi>object</gi> element (ticket <ref target="http://purl.org/TEI/FR/2811239">2811239</ref>)</head>
+                            <p> This ticket appeared on the list in error, as it should have been
+                                closed since the substantive work has already been done (by
+                                providing the <gi>objectType</gi> element). If the
+                                ticket requestor wishes to propose a new <gi>object</gi> element, a
+                                new ticket should be opened. </p>
+                        </div>
+                        <div>
+                            <head> Group B1: review content model of <gi>subst</gi> (tickets <ref target="http://purl.org/TEI/FR/3080015">3080015</ref>, <ref target="http://purl.org/TEI/FR/2859355">2859355</ref>)</head>
+                            <p>Despite a lengthy and occasionally heated discussion, we were unable
+                                to reach consensus about the content model for <gi>subst</gi>.
+                                Several felt that it was only useful as a simple grouping of
+                                    <gi>add</gi> and <gi>del</gi> elements which the encoder wished
+                                to consider expressions of a single act of emendation, and that
+                                hence it could not contain anything other than those elements, In
+                                cases where this simple model did not work, for example because the
+                                addition and the deletion were not contiguous, it was suggested that
+                                a standoff <tag>join type=”subst”</tag> element should be preferred.
+                                This seemed an excessively complex solution to the simple case where
+                                the addition and deletion are separated by a single unchanged word
+                                or by a linebreak, or (less plausibly) other milestone. Certainly
+                                the Guidelines needed more examples and clearer guidance on when
+                                this element should be employed. Eventually, it was agreed that a
+                                subgroup comprising JC, EP, GB would discuss further, preferably
+                                with input from others in the MS SIG such as Thorsten Schassen, and
+                                other commenters on the ticket, and then report back as soon as
+                                possible.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <head> Deprecation</head>
+                        <p>What does it mean to say that an element, attribute, value list etc is
+                            “deprecated”? At present we do this only in the prose of the Guidelines.
+                            We agreed that we should do more to make clear when this occurred. The
+                                <att>status</att> attribute had been added to allow clear indication
+                            in the ODD source for any identifiable component, but was not being
+                            currently used, nor did any of the current ODD processing stack take
+                            note of it. </p>
+                        <p>We agreed that we should systematically add <code>status
+                                =”deprecated”</code> for features having that status, and also
+                            investigate the possibility of making the odd2odd stylesheet ignore such
+                            components by default.</p>
+                        <p>We discussed ways of announcing deprecation in advance of release notes,
+                            and agreed to add “deprecated” as a possible category value on the
+                            feature request and bug trackers (This has now been done). </p>
+                    </div>
+                    <div>
+                        <head> Next face to face meeting</head>
+                        <p>LR confirmed that he believed there would be funding available for a
+                            further face to face council meeting before the end of the year. It was
+                            hoped to hold this in Paris in early November. LR would circulate a
+                            doodle to fix the date. </p>
+                        <p>The meeting closed at 1430 with renewed thanks to KH for local
+                            facilities.</p>
+                    </div>
+                </div>
+            </div>
+
+        </body>
+    </text></TEI>

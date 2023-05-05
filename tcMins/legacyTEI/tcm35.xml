@@ -1,0 +1,555 @@
+<?oxygen RNGSchema="http://www.tei-c.org/cms/system/modules/org.tei.www/_common/schemas/teilite.rnc" type="compact"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" rend="nospilt">
+  
+   <teiHeader>
+      <fileDesc>
+      
+         <titleStmt>
+        
+            <title>TEI Council Meeting <date when="2007-09-25">25 September 2007</date>
+            </title>
+        
+            <author>Dan O'Donell</author>
+      
+         </titleStmt>
+      
+         <publicationStmt>
+            <availability>
+               <p>Licensed under <ptr target="http://creativecommons.org/licenses/by-sa/2.0/uk/"/>
+               </p>
+            </availability>
+         </publicationStmt>
+      
+         <sourceDesc>
+        
+            <p>Notes transcribed from hand minutes</p>
+      
+         </sourceDesc>
+    
+      </fileDesc>
+      <revisionDesc>
+         <change when="2007-09-26" who="editor">
+            <p>
+               <name>Syd Bauman</name>minor tweaks to some encoding and temporal values;
+	re-wrote section on my NH task; added DOCTYPE decl</p>
+         </change>
+         <change when="2007-09-25" who="author">
+            <p>
+               <name>DO</name>creation</p>
+         </change>
+      </revisionDesc>
+   </teiHeader>
+  
+   <text>
+    
+      <front>
+      
+         <div>
+        
+            <p>The TEI Council teleconference meeting took place on Tuesday 25 September at 12:00 UTC.</p>
+        
+            <p>
+               <label>Participants:</label> Arianna Ciula (AC), Syd Bauman (SB), Tone Merete Bruvik
+          (TMB), Lou Burnard (LB), Matthew Driscoll (MD), Dan O'Donnell (Minutes; DO), Dot Porter
+          (arrived 12:45; DP), Sebastian Rahtz (SR), Laurent Romary (LR), John Walsh (JW), and Christian Wittern
+          (Chair;CW).</p>
+        
+            <p>Council members unable to participate: James Cummings (JC), David Birnbaum (DB), and
+          Conal Tuohy (CT). </p>
+      
+         </div>
+    
+      </front>
+    
+      <body>
+      
+         <div>
+        
+            <head>Open action items</head>
+        
+            <p>CW reviewed the action items from the previous minutes.
+	  <list type="gloss">
+            
+                  <label>
+                     <hi>LB </hi> Integrate list of workgroups and members into Guidelines. 2007-09-07</label>
+            
+                  <item> LB reports that all work has been done except some affiliations; suggestion was
+              made that we might want to include new affiliations for those who have changed
+              institutions since their work for us; LB will contact relevant people either directly
+              or via tei-l for checking names and affilitations.<note type="action" anchored="true">
+                        <label>LB</label> contact workgroup participants and others who have helped on P5 to check spelling of names and current affiliations. <date>2007-09-30</date>
+                     </note>
+                  </item>
+          
+                  <label>
+                     <hi>LB/JW</hi>	 Integrate revised rendition recommendations into Guidelines. 	2007-09-14</label>
+                  <item>Done. <note type="action" anchored="true">
+                        <label>JW</label> to provide additional e.g.s and read through existing ones in rendition <date>2007-09-30</date>
+                     </note>
+            
+                     <note type="action" anchored="true">
+                        <label>ALL</label>read through the proposed list of rendition attribute values and provide feedback to LB <date>2007-09-30</date>
+                     </note>
+                  </item>
+          
+                  <label>
+                     <hi>CT</hi>	Produce workable examples and proposals for change to facsimile markup (with regard to the meaning of surface and its children). 	2007-09-14</label>
+                  <item>Done. Consensus implemented by LB. <emph>This item is closed except for bugs and errors.</emph>
+                  </item>
+          
+                  <label>
+                     <hi>DB, TMB, SB, LB</hi>	Revise NH chapter.
+            2007-09-07</label>
+                  <item>Revision of this chapter is almost
+            complete; SB reports that most all has been completed
+            except replacement of one example, and the
+            provision of English examples throughout as hoped for by
+            Council last meeting. However, SB had thought that because
+            deadline had passed, we were simply foregoing the English
+            examples. Council thought otherwise, and expressed a
+            desire to have the English running example in place even
+            now. <note type="action" anchored="true">
+                        <label>SB</label> to finish
+            revisions of NH by end of month <date>2007-09-30</date>
+                     </note>
+                     <note type="action" anchored="true">
+                        <label>All</label> review NH, which has yet to be read in its new form by anybody other than the authors <date>2007-09-30</date>
+                     </note>
+                  </item>
+          
+                  <label>
+                     <hi>LB</hi> 	Report back to council on any changes to FSD/FS and if necessary rationalise the TEI version. 	2007-09-14</label>
+                  <item>
+                     <hi>LB</hi> reports that there are no changes to report; still possible that there may be last minute changes from their side; LB and LR are pushing to get action from the responsible person at the ISO.</item>
+          
+                  <label>
+                     <hi>DO</hi> 	Produce an ODD for add/del/supplied/etc. proposals with regard to latest modifications of PH/CO chapters. Reporting to Council list. 	2007-09-07</label>
+                  <item>
+                     <hi>DO</hi> reports that this was done, but received such luke warm to cold reception from the editors that he decided there was more to lose by introducing these kind of changes this late in the process. As a result abandoned it temporarily. Punted down field for P5.1</item>
+          
+                  <label>
+                     <hi>ALL</hi>	Comment on revised add/del/supplied proposals on Council mailing list. 	2007-09-14</label>
+                  <item>No Longer Applicable</item>
+          
+                  <label>
+                     <hi>LB</hi>	Integrate any agreed add/del/supplied revisions (after Council input) to the Guidelines. 	2007-09-20</label>
+                  <item>No Longer Applicable</item>
+          
+                  <label>
+                     <hi>JC, DP</hi>	All issues should be resolved and/or reported to Sebastian and/or Council. 	2007-09-07</label>
+                  <item>In absence of JC and DP at this point of the call, Council discussed the nexts steps more generally. Decided to call the web design closed except for bugs and errors to comment from TC members on 9-28, while encouraging TC members not to raise major changes before that time. Acceptance or rejections of suggestions delegated to JC and DP. With reassignment of SB back to editorial duties, he will be leaving the site in the hands of JP and DP (with support from SR as needed). JC and DP are to begin liasing with Chris Ruotolo to ensure the integration of the new tei-c.org site and the P5 site. DO is to facilitate this integration process. The TC felt that the webmast from the main board site should have over all leadership responsibility.<note type="action" anchored="true">
+                        <label>ALL</label> Report any last minute major suggestions for changes to web design (if you absolutely must) to JC and DP<date>2007-09-28</date>
+                     </note>
+                     <note type="action" anchored="true">
+                        <label>JC, DP</label> Begin integration process with main site with Chris Ruotolo (ongoing)</note>
+                     <note type="action" anchored="true">
+                        <label>DO</label> Facilitate communication between the two web teams<date>2007-09-25</date>
+                     </note>
+                  </item>
+          
+                  <label>
+                     <hi>JC</hi>	Post a message summarising his objections to the way <gi>specGrp</gi> and <gi>specGrpRef</gi> elements are handled to Council list. 	2007-09-01</label>
+                  <item>Done.</item>
+          
+                  <label>
+                     <hi>ALL</hi>	Discuss what should be done about <gi>specGrp</gi> and <gi>specGrpRef</gi> elements. 	2007-09-07</label>
+                  <item>Done</item>
+          
+                  <label>
+                     <abbr>EDs</abbr>	Remove all leading prose before <gi>specGrp</gi> and <gi>specGrpRef</gi> elements. 	2007-09-14</label>
+                  <item>Done</item>
+          
+                  <label>
+                     <hi>SR</hi>	Modify XSLT in response to Council decisions concerning <gi>specGrp</gi> and <gi>specGrpRef</gi> elements and/or Council. 	2007-09-14</label>
+                  <item>Done</item>
+          
+                  <label>
+                     <hi>DO, SB</hi>	Produce revised proposal/ODD about what to do with app/rdg issues and post to Council list. 	2007-09-14</label>
+                  <item>
+                     <hi>DO</hi> reported that given the objection to the choice/subst/del/add, he saw no point in pursuing this more complex proposal for P 5.0. CW asked if DO would be willing to prepare a customisation that others could use with P5.0 andadd this to the list of things that should go in P 5.1 <hi>DO</hi> said he would.</item>
+          
+                  <label>
+                     <hi>ALL</hi>	Comment on revised app/rdg draft on Council mailing list. 	2007-09-21</label>
+                  <item>No longer applicable</item>
+          
+                  <label>
+                     <hi>SB</hi>	Integrate revisions to app/rdg (after Council input) to the Guidelines. 	2007-09-28</label>
+                  <item>No longer applicable</item>
+          
+                  <label>
+                     <hi>LB</hi>	Integrate changes necessary for a working implementation for modelling of manuscript stemmata, as proposed on council list. 	2007-09-07</label>
+                  <item>Done</item>
+          
+                  <label>
+                     <hi>ALL</hi>	Review chapters and correct mistakes as per http://tei.oucs.ox.ac.uk/trac/TEIP5/wiki/Review 	2007-09-07</label>
+                  <item>Skipped until later in the meeting.</item>
+          
+                  <label>
+                     <hi>All</hi>	Add new significant technical revisions to trac for P5 1.1 to keep track of these ideas as they occur to Council during in P5 1.0 revisions. http://tei.oucs.ox.ac.uk/trac/TEIP5/milestone/P5%201.1. 	Ongoing</label>
+                  <item>No comment was made on this.</item>
+          
+                  <label>
+                     <hi>SB</hi>	Check Guidelines prose and examples for namespaces which are not TEI, a recognised schema, or www.example.com (for example, www.hatstand.org). 	2007-09-14</label>
+                  <item>On going as the chapters are reviewed and copy-edited.</item>
+          
+                  <label>
+                     <hi>LB</hi>	Expand explanatory prose in USE concerning which elements are mandatory and how a user can know this. 	2007-09-14</label>
+                  <item>The point of this item was initially lost on Council. Later, after AC discovered additional information, LB said he would devote some attention to it<note type="action" anchored="true">
+                        <label>LB</label> Expand explanatory prose in USE concerning which elements are mandatory and how a user can know this as Arianna described it in her email today. <date>2007-09-30</date>
+                     </note>
+                  </item>
+          
+                  <label>
+                     <hi>Eds/SR/LR</hi>	Consider whether <gi>classes</gi> should have a mode attribute. 	2007-09-14</label>
+                  <item>Done. Awaiting final comment from SB.<note type="action" anchored="true">
+                        <label>SB</label> read and comment if nec. on solution to mode attribute on <gi>classes</gi>. <date>2007-10-10</date>
+                     </note>
+                  </item>
+          
+                  <label>
+                     <hi>LB</hi>	Post to Council list a call for examples meeting particular requirements. 	2007-09-21</label>
+                  <item>Not done. To be done as part of chapter reviewes and editing.</item>
+          
+                  <label>
+                     <hi>CW</hi>	CW to set date for next meeting using meetomatic, and announce. 	2007-09-07</label>
+                  <item>Done. Very successfully.</item>
+               </list>
+        
+            </p>
+      
+         </div>
+      
+         <div>
+        
+            <head>Chapter Triage</head>
+        
+            <p>CW asked Council members to report on outstanding chapter reviews:
+            <table rend="wiki">
+            
+                  <row role="data">
+              
+                     <cell role="data" rows="1" cols="1">
+                
+                        <hi>Who</hi>
+              
+                     </cell>
+              
+                     <cell role="data" rows="1" cols="1"> # </cell>
+              
+                     <cell role="data" rows="1" cols="1">
+                
+                        <hi>Title</hi>
+              
+                     </cell>
+              
+                     <cell role="data" rows="1" cols="1">
+                
+                        <hi>Comments</hi>
+              
+                     </cell>
+            
+                  </row>
+            
+                  <row role="data">
+              
+                     <cell role="data" rows="1" cols="1">AC</cell>
+              
+                     <cell role="data" rows="1" cols="1">MS</cell>
+              
+                     <cell role="data" rows="1" cols="1">Manuscript Description</cell>
+              
+                     <cell role="data" rows="1" cols="1">Done except for question about <gi>hand</gi>/<gi>handDesc</gi>
+                        <note type="action" anchored="true">
+                           <label>LB</label> deal with <gi>hand</gi>/<gi>handDesc</gi> issue in MS <date>2007-09-30</date>
+                        </note>
+                     </cell>
+            
+                  </row>
+            
+                  <row role="data">
+              
+                     <cell role="data" rows="1" cols="1">CW</cell>
+              
+                     <cell role="data" rows="1" cols="1">WD</cell>
+              
+                     <cell role="data" rows="1" cols="1">Representation of non-standard characters and glyphs</cell>
+              
+                     <cell role="data" rows="1" cols="1">Done.</cell>
+            
+                  </row>
+            
+                  <row role="data">
+              
+                     <cell role="data" rows="1" cols="1">CT</cell>
+              
+                     <cell role="data" rows="1" cols="1">PH</cell>
+              
+                     <cell role="data" rows="1" cols="1"> Transcription of Primary Sources</cell>
+              
+                     <cell role="data" rows="1" cols="1">CW to contact CT and discover status<note type="action" anchored="true">
+                           <label>CW</label> contact CT and discover status of PH</note>
+                     </cell>
+            
+                  </row>
+            
+                  <row role="data">
+              
+                     <cell role="data" rows="1" cols="1">DB</cell>
+              
+                     <cell role="data" rows="1" cols="1">ND</cell>
+              
+                     <cell role="data" rows="1" cols="1"> Names, Dates, People, and Places</cell>
+              
+                     <cell role="data" rows="1" cols="1">Not present; CW to contact and discover status<note type="action" anchored="true">
+                           <label>CW</label> contact DB and discover status of ND</note>
+                     </cell>
+            
+                  </row>
+            
+                  <row role="data">
+              
+                     <cell role="data" rows="1" cols="1">DB</cell>
+              
+                     <cell role="data" rows="1" cols="1">FT</cell>
+              
+                     <cell role="data" rows="1" cols="1"> Tables, Formulae, and Graphics</cell>
+              
+                     <cell role="data" rows="1" cols="1">Done</cell>
+            
+                  </row>
+            
+                  <row role="data">
+              
+                     <cell role="data" rows="1" cols="1">DP</cell>
+              
+                     <cell role="data" rows="1" cols="1">CO</cell>
+              
+                     <cell role="data" rows="1" cols="1"> Elements Available in All TEI Documents</cell>
+              
+                     <cell role="data" rows="1" cols="1">Ongoing. To be finished by 09-30<note type="action" anchored="true">
+                           <label>DP</label> finish review of CO <date>2007-09-30</date>
+                        </note>
+                     </cell>
+            
+                  </row>
+            
+                  <row role="data">
+              
+                     <cell role="data" rows="1" cols="1">JC</cell>
+              
+                     <cell role="data" rows="1" cols="1">DS</cell>
+              
+                     <cell role="data" rows="1" cols="1"> Default Text Structure </cell>
+              
+                     <cell role="data" rows="1" cols="1">Allegedly spotted in hall with copy of chapter in hand; witness was uncertain if this was a ruse or evidence of ongoing or completed effort. CW to find out.<note type="action" anchored="true">
+                           <label>CW</label> contact JC and discover status of DS</note>
+                     </cell>
+            
+                  </row>
+            
+                  <row role="data">
+              
+                     <cell role="data" rows="1" cols="1">JW</cell>
+              
+                     <cell role="data" rows="1" cols="1">SA</cell>
+              
+                     <cell role="data" rows="1" cols="1"> Linking, Segmentation, and Alignment</cell>
+              
+                     <cell role="data" rows="1" cols="1">On going; to be completed by 09-30<note type="action" anchored="true">
+                           <label>JW</label> complete review of SA <date>2007-09-30</date>
+                        </note>
+                     </cell>
+            
+                  </row>
+            
+                  <row role="data">
+              
+                     <cell role="data" rows="1" cols="1">JW</cell>
+              
+                     <cell role="data" rows="1" cols="1">AI</cell>
+              
+                     <cell role="data" rows="1" cols="1"> Simple Analytic Mechanisms</cell>
+              
+                     <cell role="data" rows="1" cols="1">On going; to be completed by 09-30<note type="action" anchored="true">
+                           <label>JW</label> complete review of AI <date>2007-09-30</date>
+                        </note>
+                     </cell>
+            
+                  </row>
+            
+                  <row role="data">
+              
+                     <cell role="data" rows="1" cols="1">LR</cell>
+              
+                     <cell role="data" rows="1" cols="1">FS</cell>
+              
+                     <cell role="data" rows="1" cols="1"> Feature Structures</cell>
+              
+                     <cell role="data" rows="1" cols="1"> Done</cell>
+            
+                  </row>
+            
+                  <row role="data">
+              
+                     <cell role="data" rows="1" cols="1">LR</cell>
+              
+                     <cell role="data" rows="1" cols="1">FD</cell>
+              
+                     <cell role="data" rows="1" cols="1"> Feature System Declaration</cell>
+              
+                     <cell role="data" rows="1" cols="1"> Review ongoing ; to be completed by 09-30<note type="action" anchored="true">
+                           <label>LR</label> complete review of FD <date>2007-09-30</date>
+                        </note>
+                     </cell>
+            
+                  </row>
+            
+                  <row role="data">
+              
+                     <cell role="data" rows="1" cols="1">LR</cell>
+              
+                     <cell role="data" rows="1" cols="1">TD</cell>
+              
+                     <cell role="data" rows="1" cols="1"> Documentation Elements </cell>
+              
+                     <cell role="data" rows="1" cols="1"> Done.</cell>
+            
+                  </row>
+            
+                  <row role="data">
+              
+                     <cell role="data" rows="1" cols="1">MD</cell>
+              
+                     <cell role="data" rows="1" cols="1">GD</cell>
+              
+                     <cell role="data" rows="1" cols="1"> Graphs, Networks, and Trees</cell>
+              
+                     <cell role="data" rows="1" cols="1"> Done</cell>
+            
+                  </row>
+            
+                  <row role="data">
+              
+                     <cell role="data" rows="1" cols="1">MD</cell>
+              
+                     <cell role="data" rows="1" cols="1">CC</cell>
+              
+                     <cell role="data" rows="1" cols="1"> Language Corpora </cell>
+              
+                     <cell role="data" rows="1" cols="1"> Done</cell>
+            
+                  </row>
+            
+                  <row role="data">
+              
+                     <cell role="data" rows="1" cols="1"> SR </cell>
+              
+                     <cell role="data" rows="1" cols="1">NH</cell>
+              
+                     <cell role="data" rows="1" cols="1"> Using the TEI (NH)</cell>
+              
+                     <cell role="data" rows="1" cols="1"> Awaiting revised version</cell>
+            
+                  </row>
+            
+                  <row role="data">
+              
+                     <cell role="data" rows="1" cols="1"> SR</cell>
+              
+                     <cell role="data" rows="1" cols="1">DI</cell>
+              
+                     <cell role="data" rows="1" cols="1"> Dictionaries</cell>
+              
+                     <cell role="data" rows="1" cols="1"> Review ongoing; to be completed by 09-30<note type="action" anchored="true">
+                           <label>SR</label> complete review of DI <date>2007-09-30</date>
+                        </note>
+                     </cell>
+            
+                  </row>
+            
+                  <row role="data">
+              
+                     <cell role="data" rows="1" cols="1">TMB</cell>
+              
+                     <cell role="data" rows="1" cols="1">ND</cell>
+              
+                     <cell role="data" rows="1" cols="1"> Names Dates, etc.</cell>
+              
+                     <cell role="data" rows="1" cols="1"> Done </cell>
+            
+                  </row>
+          
+               </table>
+            </p>
+      
+         </div>
+      
+         <div>
+        
+            <head>Additional Items for Discussion</head>
+        
+            <p>There were two additional items for discussion on the agenda: <list type="simple">
+                  <item>Bibliography</item>
+                  <item>Formatting of the Guidelines: decision process for confliction proposals (e.g. formatting "bug" in empty elements like <gi>specDesc</gi>)</item>
+               </list>
+        The second of these topics was discussed during our review of the relevant action item; only the bibliography question was discussed in detail here.</p>
+        
+            <div>
+          
+               <head>Bibliography</head>
+          
+               <p>A vigorous discussion of where we stood and what was involved took place. Minutes became hard to keep and it was agreed DO would post a summary for review. All action items are currently dated to 10-15 pro forma; but some need to be completed before others.</p>
+          
+               <p>In short: the Gudieline's "bibliography" will contain three parts: <list type="simple">
+                     <item n="1">Suggested Reading</item>
+                     <item n="2">Works Cited</item>
+                     <item n="3">Sources of Examples used in the Guidelines</item>
+                  </list> The <label>Suggested Reading</label> section is derived from the 180 or so items in an unstructured bibliography supplied by Kevin Hawkins and Susan Schreibman. DP agreed to take this list, compare it to the 50 or so items in our current Works cited and remove duplicates from the reading list. LR will then convert the Reading List to biblStruct in the same way he and his magic workshop have just finished the Works Cited List. Meanwhile, AC is also collecting sources for examples for use in our "Sources" list. The actual implementation of this part of the bibliography (i.e. the linking of documentation to examples) will be effected by SR. Meanwhile again SR and LB will be converting <gi>bibl</gi> in the text of the guidelines to <gi>ref</gi> pointing at the works cited list.</p>
+          
+               <p>All the above action produced the following action list: <note type="action" anchored="true">
+                     <label>DP</label> Compare Reading List and Works Cited and remove duplicates from the Reading List.<date>2007-10-15</date>
+                  </note>
+                  <note type="action" anchored="true">
+                     <label>LR</label> Convert Reading List to StructBibl <date>2007-10-15</date>
+                  </note>
+                  <note type="action" anchored="true">
+                     <label>AC</label> Finish extracting sources for list of sources for examples <date>2007-10-15</date>
+                  </note>
+                  <note type="action" anchored="true">
+                     <label>SR</label> Connect sources of examples bibliography to examples in text <date>2007-10-15</date>
+                  </note>
+                  <note type="action" anchored="true">
+                     <label>SR/LB</label> Convert <gi>bibl</gi> in the text of the guidelines to <gi>ref</gi> pointing at the works cited list <date>2007-10-15</date>
+                  </note>
+               </p>
+        
+            </div>
+      
+         </div>
+      
+         <div>
+        
+            <head>Next Meeting</head>
+        
+            <p>The next teleconference was not scheduled. CW will put up a meetomatic survey to
+          determine the best date. It will, however be at 12:00 noon UTC. This will be:<lb/> 06:00
+          MDT in Calgary,<lb/> 07:00 CDT in Chicago,<lb/> 08:00 EDT in New York,<lb/> 13:00 BST in
+          London,<lb/> 14:00 CEST in Paris,<lb/> 21:00 JST in Kyoto, and<lb/> 00:00
+          NZST in Wellington.<lb/>
+          
+               <note type="action" anchored="true">
+            
+                  <label>CW</label> CW to set date for next meeting using meetomatic, and announce.
+              <date>2007-09-30</date>
+          
+               </note>
+        
+            </p>
+      
+         </div>
+    
+      </body>
+  
+   </text>
+
+</TEI>

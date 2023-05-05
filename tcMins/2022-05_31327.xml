@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/home/lou/Public/TEI/TEICSS/tei.css" type="text/css"
+ ?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:t="http://www.tei-c.org/ns/1.0" n="2022-05"><teiHeader><fileDesc><titleStmt><title>Minutes of the TEI Technical Council</title><meeting n="2022-05" when="2022-05-13">TEI Technical Council online
+     meeting : <date>13 May 2022</date></meeting></titleStmt><publicationStmt><distributor>TEI Website</distributor><idno>TCM154</idno></publicationStmt><sourceDesc><p>Retagged from a WordPress HTML file</p></sourceDesc></fileDesc><revisionDesc><change when="2023-04-25">Archival header confected</change><change>Extracted from Word Press article with id post-31327</change></revisionDesc></teiHeader><text><body><div><p><hi style="strong">Meeting Times:</hi></p><list style="ul">
+<item>7am PDT / 10am EDT / 4pm CEST</item>
+<item>Started:     15:05Z    Ended:    16:34Z</item>
+</list><p><hi style="strong">Present:</hi></p><list style="ul">
+<item>Syd Bauman (SB)</item>
+<item>Helena Bermúdez Sabel (HBS)</item>
+<item>Elisa Beshero-Bondar (EBB)</item>
+<item>Elli Bleeker (EB)</item>
+<item>Janelle Jenstad (JJ)</item>
+<item>Sabine Seifert (SS)</item>
+<item>Peter Stadler (PS)</item>
+</list><p><hi style="strong">Apologies/Not Present:</hi></p><list style="ul">
+<item>Hugh Cayless (HC)</item>
+<item>Martina Scholger (MS)</item>
+<item>Magdalena Turska (MT)</item>
+<item>Raff Viglianti (RV)</item>
+</list><p>Meeting minutes previous month (<ref target="https://tei-c.org/activities/council/meetings/tei-technical-council-teleconference-2022-04-08/">April</ref>)</p><p> </p><div type="h2"><head>F2F meeting in Newcastle</head><list style="ul">
+<item>September 11–13 (Sun–Tue). Is this still ok for everyone?
+<list style="ul">
+<item>JJ cannot attend after the conference and we think that MT said the same.</item>
+<item>It seems likely that it will be okay, yes. <hi style="b">Would we want to start on Saturday </hi>and keep Tuesday off for some workshops? Or start on <hi style="b">Sunday</hi>? We should canvas everyone since this meeting is not fully attended. <hi style="b">ACTION</hi> on <hi style="b">MS</hi> to set up a poll.</item>
+</list>
+</item>
+<item>JC has booked a room in a different building for the council meeting on both Sat 10 Sep (just in case) and Sun 11 Sep. The reason for the different building is this will be the building next door where the school of English and JC’s office is, the Percy building – he’ll be able to let us in &amp; out of the building.</item>
+<item>On Mon 12 &amp; Tue 13 we will be in a room in the main conference venue. (The Armstrong building next door.)</item>
+</list></div><div type="h2"><head>Discussion of new <gi>gender</gi> element and ancillary elements</head><list style="ul">
+<item>EBB, HBS, RV, and JJ are bringing to Council all of the changes listed here in our “gender” branch and listed below in our “Things Done” notes: <ref target="https://github.com/TEIC/TEI/compare/gender"><hi style="b">https://github.com/TEIC/TEI/compare/gender</hi></ref>
+<list style="ul">
+<item>SB: Well done; overall looks good. A couple of comments interspersed below.</item>
+<item>EBB presented the subgroup’s changes
+<list style="ul">
+<item>PS pointed to the discussion in the FOAF Vocabulary Specification here: <ref target="http://xmlns.com/foaf/spec/#term_gender">http://xmlns.com/foaf/spec/#term_gender</ref><hi style="b"/></item>
+</list>
+</item>
+<item><hi style="b">Changes to make: </hi>
+<list style="ul">
+<item>“specifies the gender identity of a person<hi style="b">, persona, or character</hi>.”</item>
+<item>use teidata.enumerated for values of teidata.sex and teidata.gender</item>
+<item>Modify remarks on @value: Values for this attribute …. may be locally defined by a project <hi style="i">or according to an external standard</hi> (so we don’t get confused with reference pointing)</item>
+<item>Add comma after hair type: “skin colour, hair type<hi style="b">,</hi> and skull measurements”</item>
+<item>Add Gayle Rubin to the bibliography.</item>
+<item>add source=”#NONE” or created for these Guidelines to simple example, or see below (provide exempla that point to these.)</item>
+<item>Make a vCard exemplum and we cite it. “For example, here is an example of something that is defined according to the vCard (<ref target="https://datatracker.ietf.org/doc/html/rfc6350#section-6.2.7">https://datatracker.ietf.org/doc/html/rfc6350#section-6.2.7</ref>)</item>
+<item>SHOULD we consider mentioning ISO? Discussion: no, good that we drop.</item>
+<item>Provide an example of how to create a controlled vocabulary in an ODD. We are thinking of using a defined vocabulary from a completely new/unusual anthropological set that is not just M/F.</item>
+<item>Sidenote: UN is working on a proposed ontology of gender now: <ref target="https://www.scc.ca/en/flagships/gender">https://www.scc.ca/en/flagships/gender</ref></item>
+<item>Add commentary that there are MANY standards available and currently in development, including but not limited to A, B, and C. Projects are encouraged to find and deploy standards developed for their fields or to customize their own.</item>
+</list>
+</item>
+<item><hi style="b">Things Done:</hi>
+<list style="ul">
+<item>Edited sex.xml as follows:
+<list style="ul">
+<item>Removed recommendations for vCard and ISO standards on the grounds that they connote the reinforcement of sexist stereotypes. Said that values may be locally defined or drawn from an external standard.</item>
+<item>Amended examples (F for female, rather than 2).
+<list style="ul">
+<item>SB: The above two bullet points seem at odds with one another. Surely ‘F’ is more Eurocentric than ‘2’?</item>
+</list>
+</item>
+<item>Simplified the remarks.</item>
+<item>Changed <gi>desc</gi> to “specifies the sex of an organism” (to account for projects that want to capture the sex of plants and animals).</item>
+<item>Provided French, Italian, and Spanish translations for <gi>desc</gi>.</item>
+</list>
+</item>
+<item>Edited teidata.sex.xml as follows:
+<list style="ul">
+<item> We removed references to ISO standards.</item>
+</list>
+</item>
+<item>Introduced teidata.gender.xml:
+<list style="ul">
+<item><gi>desc</gi>: “defines the range of attribute values used to represent the gender of a person or persona”
+<list style="ul">
+<item>SB: Should probably include “character” as well as person and persona, no?</item>
+</list>
+</item>
+<item>Made it clear in remarks that it may not be used to encode morphological gender.
+<list style="ul">
+<item>SB: But wording is problematic (“this attribute” — it is the possible values that are being defined, not the attribute).</item>
+</list>
+</item>
+</list>
+</item>
+<item>Created a gender.xml file with exemplum and remarks.</item>
+<item>Edited ND-NamesDates.xml:
+<list style="ul">
+<item>Added <gi>gender</gi> to <gi>specList</gi>.</item>
+<item>Alphabetized the <gi>specDesc</gi>s for searchability and neutrality.</item>
+<item>Did quite a bit of revising to eliminate words like “mankind.”</item>
+<item>Revised advice to encoders about culturally determined concepts.</item>
+<item>Paragraph on <gi>persona</gi>: Added <gi>gender</gi> to the list.</item>
+<item>Revised the example of Griffin-Gracy to include the <gi>gender</gi> element.</item>
+</list>
+</item>
+<item>Opened a new ticket to add an `<gi>organism</gi>` element. <ref target="https://github.com/TEIC/TEI/issues/2295">#2295</ref> and assigned ourselves to it.</item>
+</list>
+</item>
+</list>
+</item>
+</list></div><div type="h2"><head>Discuss ticket triage</head><list style="ul">
+<item>Should we also triage the <ref target="https://github.com/TEIC/Documentation">Documentation repo</ref>?
+<list style="ul">
+<item>There is only one open unassigned ticket. Ticket triage folks need to assign it.</item>
+</list>
+</item>
+<item>Ticket triage means also to triage Stylesheets, but there are a lot of ancient issues there.
+<list style="ul">
+<item>New tickets should be assigned.</item>
+<item>Ticket triage people should not be expected to go through all old stylesheet tickets.</item>
+<item>Perhaps we could mop up old stylesheets tickets at a F2F.</item>
+</list>
+</item>
+<item>EB &amp; SB expect to do ticket triage for May on Fri 20 May.</item>
+</list></div><div type="h2"><head>Oxygen</head><list style="ul">
+<item>Do we still want to support older versions?
+<list style="ul">
+<item>Meeting on this issue (with Martin) was recorded and it’s in this folder: <ref target="https://drive.google.com/drive/folders/1K1ugJvWzz6TQep87R8beLkYf-nGCpocX">TEI-Stylesheet_Meetings</ref></item>
+</list>
+</item>
+</list></div><div type="h2"><head>Documentation</head><list style="ul">
+<item>Publish documentation on how to create P5subset.xml. In the last Stylesheets meeting, we were thinking of publishing it in the Wiki. But I (MS) think we should publish it in the Documentation repo. The information in the wiki is very outdated. I suggest that we discuss in one of our next meetings what we want to have in the wiki and what should be in the documentation repo?</item>
+<item> <hi style="b">Action on EBB</hi> to review what we have: a Google Doc that MS started. There was some discussion of adding it to the Documentation repo but the general feeling was that it does not need a formal TCW document. <ref target="https://docs.google.com/document/d/1UhCg76_AgnS5PW0g_EN6zPZE4tTUs0bNeMXFVmZ4VuQ/edit#heading=h.yg4zfkshniwp">https://docs.google.com/document/d/1UhCg76_AgnS5PW0g_EN6zPZE4tTUs0bNeMXFVmZ4VuQ/edit#heading=h.yg4zfkshniwp</ref></item>
+</list><p><hi style="strong">REMINDER (post-meeting)</hi></p><list style="ul">
+<item><hi style="b">Action on EBB</hi> to organize late-May meeting re: nested <gi>ab</gi> ticket (<ref target="https://github.com/TEIC/TEI/issues/1856">#1856</ref>).</item>
+</list><p> </p></div></div></body><!-- #post-## --></text></TEI>

@@ -1,0 +1,627 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TEI.2 PUBLIC "-//TEI//DTD TEI Lite XML ver. 1//EN"
+                       "../Lite/DTD/teixlite.dtd" [
+  <!ATTLIST xref url CDATA #IMPLIED>
+  <!ATTLIST xptr url CDATA #IMPLIED>
+  ]>
+<TEI.2>
+  <teiHeader type="text" status="new">
+    <fileDesc>
+      <titleStmt>
+        <title>TEI Council Meeting <date value="2004-05-13">Thu, 13 May 04</date></title>
+      </titleStmt>
+      <publicationStmt>
+	<idno type="TEI">TC M 11</idno>
+	<publisher>Text Encoding Initiative Consortium</publisher>
+	<authority>TEI-C Council</authority>
+        <availability status="unknown">
+	  <p>For distribution first to Council, then to world via TEI
+	    website.</p>
+	</availability>
+      </publicationStmt>
+      <sourceDesc>
+	<p>This is the source.</p>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <langUsage>
+	<language id="EN" usage="99">English</language>
+	<language id="NL" usage="01">Dutch</language>
+      </langUsage>
+    </profileDesc>
+    <revisionDesc>
+      <change>
+	<date>21 May 2004</date>
+	<respStmt>
+	  <name>Lou</name>
+	  <resp>editor</resp>
+	</respStmt>
+	<item>corrected typos; fixed lacunae.</item>
+      </change>
+      <change>
+	<date>2004-05-15/19</date>
+	<respStmt>
+	  <name>Syd Bauman</name>
+	  <resp>editor</resp>
+	</respStmt>
+	<item>Cleaned up notes into first draft.</item>
+      </change>
+      <change>
+	<date>2004-05-13/14</date>
+	<respStmt>
+	  <name>Syd Bauman</name>
+	  <resp>editor</resp>
+	</respStmt>
+	<item>Started by taking notes at Council meeting.</item>
+      </change>
+    </revisionDesc>
+  </teiHeader>
+  <text lang="EN">
+    <front>
+      <div type="glossary" org="uniform" sample="complete" part="N">
+        <list type="simple">
+          <head>Initials Used for People</head>
+          <item> <term>SB</term> <gloss>Syd Bauman</gloss>       </item>
+          <item> <term>AB</term> <gloss>Alejandro Bia</gloss>       </item>
+          <item> <term>DB</term> <gloss>David Birnbaum</gloss>       </item>
+          <item> <term>LB</term> <gloss>Lou Burnard</gloss>      </item>
+          <item> <term>MD</term> <gloss>Matthew Driscoll</gloss>       </item>
+          <item> <term>DD</term> <gloss>David Durand</gloss>  </item>
+          <item> <term>JF</term> <gloss>Julia Flanders</gloss>       </item>
+          <item> <term>SR</term> <gloss>Sebastian Rahtz</gloss>      </item>
+	  <item> <term>LR</term> <gloss>Laurent Romary</gloss>    </item>
+	  <item> <term>CR</term> <gloss>Christine Ruotolo</gloss>  </item>
+          <item> <term>SS</term> <gloss>Susan Schreibman</gloss>       </item>
+          <item> <term>NS</term> <gloss>Natasha Smith</gloss>       </item>
+          <item> <term>JU</term> <gloss>John Unsworth</gloss>     </item>
+          <item> <term>EV</term> <gloss>Edward Vanhoutte</gloss>       </item>
+          <item> <term>PW</term> <gloss>Perry Willett</gloss>       </item>
+          <item> <term>CW</term> <gloss>Christian Wittern</gloss>       </item>
+        </list>
+      </div>
+      <div>
+	<p>All times are local; i.e. CEST (Central European Summer
+	  Time), or +02.</p>
+	<p>Meeting started at 05-13 ~14:45 with SB, AB, DB, LB, MD, JF,
+	  SR, LR, SS, NS, EV, PW, and CW. Day 1 ended at 18:10. Resumed on
+	  day 2 (05-14) at ~09:14 with same people plus DD (who had
+	  flight problems and thus missed day 1), ending at 18:05.</p>
+	<p>Council extends warm gratitude to the <xref url="http://www.kantl.be/"><name lang="NL" type="org">Koninklijke Academie voor Nederlandse Taal-
+	      en Letterkunde</name></xref> not only for hosting our
+	  meeting in inspiring surroundings, but also for its
+	  generosity in providing refreshments &amp; lunch.</p>
+      </div>
+    </front>
+    <body>
+      <div>
+	<head>Items from Previous Meeting</head>
+	<p>Council reviewed the action items from the conference call of 2004-03-29. (See the
+	<xref url="./tcm10.html">notes from that call</xref>.)</p>
+	<list type="simple">
+	  <item>CW has contacted Sanskritters; current state of their
+	    work to be reviewed at this meeting.</item>
+	  <item>SB reports that MB has sent him mail, needs to follow up.</item>
+	  <item>DD not present.</item>
+	  <item>LB reports ODD for MS has been done; review of current
+	  version is on agenda for this meeting.</item>
+	  <item>SR reports that customization tests have been done but
+	    not promulgated.</item>
+	  <item>DB reports that he discussed collation sequences with
+	    JF face-to-face.</item>
+	  <item>JF reports proposed charge has been written,
+	    circulated, and is on the agenda for this meeting.</item>
+	</list>
+      </div>
+      <div>
+	<head>MI</head>
+	<p>Discussed e-mail from CR <!--2004-05-10T17:49-04 -->to those who
+	  are on both the Council and the Migration Task Force
+	  (SB,AB,LB,SS,NS). Portions of this mail are reproduced
+	  <ref target="mail-from-CR">below</ref>. As well as the
+	points made there, it was noted that many case studies (<xref
+	url="../Activities/MI/miw06.html">MI W 06</xref>) still have
+	outstanding comments
+	  from the copy editor, and Tobias Rischer's checklist needs
+	further work.</p>
+	<p>Council learned indirectly from Daniel Pitti that the grant period
+	  ended on 2004-04-30. Thus the final report is due to the NEH on
+	  2004-07-30; this report will consist of a description of
+	  work completed and a financial report.</p>
+	<p>SS &amp; NS propose (to Council &amp; CR) that they (with
+	  AB &amp; CR) take charge of contacting the authors of the
+	  various case studies and reminding them to finish up. They
+	  will all be at ALLC, so would wrap-up there.</p>
+	<p>It was pointed out that the section on P5 is (currently)
+	  time-dependant, and probably shouldn't be in what is
+	  hopefully a static document. After very brief discussion it
+	  was agreed that these documents do need to be static, as
+	  there is no further funding to maintain them. Furthermore,
+	  tools pointed to by these documents need to be pointed to
+	  statically, i.e. on MI web sub-site.</p>
+	<p>There was some discussion of moving the reports (or
+	  copying them) into somewhere other than /Activities, but no
+	  resolution was reached.</p>
+      </div>
+      <div>
+	<head>Physical Bibliography (PB) Workgroup</head>
+	<p>Council learned that JF and DB had met in Providence and
+	had concluded that the areas of overlap between MS and the
+	proposed PB group were most significant in the <gi
+	>physDesc</gi> and inline elements. They had agreed that it
+	made most sense for MS group to continue to work on
+	<gi>physDesc</gi> but to communicate first to avoid
+	divergence; meanwhile the PB group would draw up a draft
+	of inline elements to be discussed in consultation with MS
+	taskforce.</p>
+	<p>Council learned that the PB group hopes that its output
+	  could be included in P5, whence the aggressive <xref url="../Activities/PB/pba01.html">work-plan</xref>
+	  proposed. The group has purposefully assigned itself a very
+	  limited scope, but plans to identify issues they may wish to
+	  address later.</p>
+	<p>After some discussion, Council suggests that, because the
+	  changes they are likely to suggest are quite limited, that
+	  they de-couple their time-line from that of P5, and instead
+	  plan to submit one or more specific <soCalled>proposals for  change</soCalled>.</p>
+      </div>
+      <div>
+	<head>P5</head>
+	<p>LB presented the current state of P5 (reviewing <xref url="../Drafts/edw81.html">edw81</xref>). Reviewed set of <q>for checking</q> chapters.<list type="simple">
+	    <item>Council considered, without definitive resolution,
+	      the idea of moving HD (ch. 5, <gi>teiHeader</gi>) to
+	      <soCalled>minor surgery</soCalled>. At least two Council
+	      members (LR &amp; PW) anticipate submitting suggestions
+	      for HD.</item>
+	    <item>Council noted that PH (ch. 18, primary sources) will
+	      likely need minor surgery with input from the PB group.</item>
+	    <item>It was proposed, without definite resolution, to
+	      move ND (ch. 20, names &amp; dates) to the
+	      <soCalled>minor surgery</soCalled> category for the
+	      addition of prosopographic tagging as discussed recently
+	      on TEI-L.</item>
+	    <item>Council agreed that the discussion of the
+	      relationship between <gi>teiHeader</gi> and other
+	      standards should be excised from IH (ch. 24, independent
+	      header) and moved to HD before IH is deleted.</item>
+	    <item>Council approved LR as the surgeon for TE
+	      (ch. 13, terminological databases).</item>
+	    <item>It was recommended that FT (ch. 22, tables,
+	      formulae, and graphics) be slated for major surgery, and
+	      that the SIG on presentation be the surgeon.</item>
+	  </list>
+	</p>
+	<p>It was suggested that <emph rend="italic">somewhere</emph>,
+	  if not in the <title>Guidelines</title>, the TEI-C needs to
+	  address issues of presentation. A <q>now what?</q> web page was
+	  suggested: the SIG on Presentation might be requested to
+	make a first stab at this.</p>
+	<p>MD says Menota group has several changes (mostly to PH) to
+	  suggest. Discussion of call for proposals ensued.</p>
+      </div>
+      <div>
+	<head>SourceForge</head>
+	<p>SR demonstrated a bit of SourceForge. Council considered the
+	  question which of the
+	  various SourceForge features we want to use.</p>
+	<p>Council agreed to concept of using SourceForge artifacts
+	  for bug tracking, feature requests, etc. Discussion of what
+	  artifact types there should be deferred for further experimentation.</p>
+	<p>Council considered the question of whether the ODD source
+	  of P5 should be moved to the SourceForge CVS tree
+	  immediately, later on in the P5 development process, or
+	  after P5 has been released. After much discussion, Council
+	  recommends that after each chapter is
+	  <soCalled>checked</soCalled> (per edw81), it be put up on
+	  SourceForge.</p>
+	<p>SR asked for input from the Council on what, if anything,
+	  we wanted on the TEI Knoppix CD.</p>
+	<div>
+	  <head>Licensing</head>
+	  <p>The Board representative (SR) informed us that the Board
+	    has voted to use GPL for the Guidelines, and asks Council
+	    to either accept, recommend to the Board that they reverse
+	    their decision, or tell the editors to separate the
+	    section on conformance out of Guidelines so it won't be
+	    under GPL. Council agreed to the last: to recommend to the
+	    Board that CF be separated from the Guidelines.</p>
+	  <p>Noting that trademarking the <mentioned>Text Encoding
+	      Initiative</mentioned> name (and logo, if we had one) is
+	    even more important in the face of copylefting the
+	    Guidelines, Council recommended that the Board trademark
+	    at least the name immediately.<note type="action">
+	      <label>JF</label>
+	      Take necessary actions with the Board to get our
+		name trademarked
+	      <date>ASAR</date>
+	    </note> It was noted that asking JU about how to do so
+	    and what has been done so far would be a good first
+	    step.</p>
+	</div>
+      </div>
+      <div>
+	<head>osx on Windows</head>
+	<p>LB reports that the developer of the extensions that allow
+	  osx to build on Windows has received no  response from
+	  OpenJade (the project that maintains OpenSP, of which osx is
+	  a part). Council agreed that whether or not an
+	  <soCalled>official</soCalled> version makes it through the
+	  OpenJade project, it should go on the MI/Tools page.</p>
+      </div>
+      <div>
+	<head>Sanskrit</head>
+	<p>CW briefly summarized a report from John Smith (<xptr
+	    url="../Activities/CE/cew10.pdf"/>)</p>
+	<p>In the ensuing discussion it was pointed out that the
+	  problem raised and addressed in the report is a general
+	  linguistic problem, although  particularly
+	  acute in Sanskrit. A  morphosyntactic group of TC37 SC4 is also
+	  working on this and related problems. It was
+	  pointed out that the general problem is similar to that
+	  which is encoded by the mirror tags <gi>orig</gi> and
+	  <gi>reg</gi>: in general, one of the forms could not be
+	  automatically generated from the other, and therefore there
+	  was a need to encode both explicitly.</p>
+	<p>LB says that he expects P5 to suggest use of
+	  <gi>choice</gi> for this kind of problem, and in fact to use
+	  a Sandhi example.</p>
+<!--	<p>It was pointed out that allowing lots of other elements into
+	  content of <gi>w</gi> then using two <gi>w</gi>s inside a
+	  single <gi>w</gi> would solve their problem.</p>-->
+	<p>Council thoughts are as follows.
+	  <list type="simple">
+	    <item>The problem is clearly stated and not restricted to
+	    Sanskrit: we should therefore seek a general solution</item>
+	    <item>The solution proposed uses mixed content in a way
+	    which seems inappropriate</item>
+	    <item>Sanskrit group should be made aware of related
+	    TC37/SC4 activities</item>
+	    <item>Our mechanisms (<gi>choice</gi>) are very general,
+	      and we'd appreciate their input in refining our
+	      documentation of it (as
+	      soon as we have some) </item>
+	  </list>
+	  <note type="action">
+	    <label>SB</label>
+	    attempt to enlist the assistance of those on TEI-L
+	      most interested in <gi>choice</gi> to write a working
+	      paper on the issues surrounding use of it and of
+	      previous attribute mechanism.
+	    <date>2004-05-27</date>
+	  </note>
+	</p>
+      </div>
+      <!-- end day 1, begin day 2 -->
+      <div>
+	<head>TD</head>
+	<p>SR gave the Council a presentation on the current status of
+	the ODD system. After the presentation the question of whether or not
+	  ODD format should rely more heavily on RelaxNG, in
+	  particular by using <gi>rng:pattern</gi> instead of
+	  <gi>classSpec</gi>, was raised.</p>
+	<p>After much discussion Council concluded by asking that the
+	  META work-group further discuss the issue.</p>
+	<p>It was noted
+	  that the proposed new modification system recommended  the user
+	  to express modifications in ODD language rather than in
+	  either DTD or Schema. It was an open question as to whether
+	  the facility to plug in predefined sets of modifications
+	  written in DTD language would be retained. </p>
+      </div>
+      <div>
+	<head>I18N</head>
+	<p>SR presented the mechanism developed by META group in and
+	  after Paris meeting, using an additional ODD language
+	  <soCalled>patch</soCalled> which is applied as a
+	  customization when creating a schema.</p>
+	<p>A single dictionary file (teinames.xml) is used to map names. A
+	  style-sheet uses this to  transform  the ODDs themselves,
+	  inserting <gi>altIdent</gi> elements as necessary. A
+	  different style-sheet can translate instances; theoretically
+	  a third could translate (XML syntax) schemas. In discussion,
+	  it was noted that this dictionary-based approach did not
+	  extend to providing translations of the element-specific
+	  text such as the <gi>gloss</gi> or <gi>desc</gi> sub-elements.</p>
+	<p>This was felt to restrict the usefulness of the current system
+	  for the needs of localizers; some of these concerns might be addressed by a
+	  more conventional terminological structure.<note type="action">
+	    <label>LR (as TE surgeon)</label>
+	    look at current implementation and use it as a test
+	      case for his revision of the TE module. </note>
+	  </p>
+	<p>Some discussion of how translations would actually take
+	  place occurred, but no definitive conclusions reached.</p>
+      </div>
+      <div>
+	<head>CE</head>
+	<p>CW reports CE WG had now produced draft replacements for
+	two chapters of P5: <title>Languages and character
+	sets</title> (CH) and. <title>Representation of non-standard
+	characters and glyphs</title> (WD). The former now included a new
+	  section on lang identification, which might need some more work.</p>
+	<p>On the issue of <ident>xml:lang</ident>, LB requested a
+	  summary of counter arguments. CW raised issue of reliance on
+	  external standards.</p>
+	<p>It was suggested that we consider using
+	  <ident>ident</ident> (the ID half of the string match
+	  mechanism TD uses) instead of <ident>n</ident> on
+	  <gi>lang</gi> as the mechanism CE uses to associate a
+	  <gi>xml:lang</gi> value with a <gi>language</gi> element.</p>
+	<p>In the ensuing discussion it was noted that the association
+	  of the language attribute (be it <ident>lang</ident> or <ident type="att">xml:lang</ident>) with a <gi>language</gi>
+	  element in the <gi>teiHeader</gi> is optional.</p>
+	<p>Turning to discussion of WD, council noted that this chapter was
+	  substantially updated from last year. CW presented the major
+	  mechanism (using the <gi>g</gi> element).</p>
+	<p>The CE WG feels its work is done. Council congratulates them.</p>
+	<p>LR brings up issue of object language vs. working language.
+	  SB suggests that <ident>ana</ident> is the
+	  appropriate mechanism to encode object language. LB suggests
+	  that MS's new <gi>textLang</gi> is.</p>
+	<p>
+	</p>
+      </div>
+      <div>
+	<head>FS</head>
+	<p>LR reported  on the progress of
+	  the joint TEI-ISO FS work-group. At the Nancy meeting
+	  (minutes may be found <xref url="../Activities/FS/fsm01.html">here</xref>), the group
+	  (following ISO procedures) addressed comments that have been
+	  received so far. Currently the group has two goals:
+	  <list type="simple">
+	    <item>produce at least a portion of document for P5</item>
+	    <item>have FS (not FD) finalized by August</item>
+	  </list></p>
+	<p>Some (but not all) members of the work-group will be in
+	  Lisbon (at <xref url="http://www.lrec-conf.org/lrec2004/index.php">LREC</xref>), 
+	  and they plan to discuss and dispose of the remaining small,
+	  mostly editorial, issues, and also the larger issue of
+	  re-entrancy.</p>
+	<p>In August there will be a 1.5 day meeting: 1 half day on
+	  FS, and 2 half days on FSD. The goal for FSD will be
+	  the same as with FS: a combined TEI &amp; ISO standard.</p>
+	<p>LB explains that the ISO standard format is not the same as
+	  TEI chapter format. Notes that a fair amount of work (on the
+	  ISO side) is left to perform the needed integration. There
+	  will, in the end, still need to be some minor differences
+	  (e.g., possibly references to the other; ISO version will
+	  want RelaxNG code as an appendix, etc.)</p>
+	<p>Question for Council is whether the break with P4
+	  compatibility is OK. Quite a large portion of the world's
+	  users of FS, and several implementors were on the WG, all
+	  think P5 version should go on without backward
+	  compatibility. Council has no objection to non-backward
+	  compatibility.</p>
+      </div>
+      <div>
+	<head>MS</head>
+	<p>MD presented the current <xref url="../Activities/MS/FASC-ms.pdf">MS fascicule</xref>,
+	  which represents not only the changes the task force
+	  developed at their meeting (of which <xref url="../Activities/MS/msm01.html">minutes</xref> are
+	  available) expressed in the new ODD format, but also
+	  includes some new changes. One of these changes was the
+	  subject of significant discussion: since the meeting, the
+	  <gi>msLooseDesc</gi> element had been dropped, and the
+	  <gi>p</gi> element is now permitted to intermingle at the
+	  top level as children of <gi>msDescription</gi>.</p>
+	<p>It was pointed out that this content model does not allow
+	  for fully structured records. Council did not resolve the
+	  details of this issue but rather concluded that the TF
+	  should do so as it prepares the proposed chapter for P5.</p>
+	<p>The chapter currently has a lot of material and topics that are addressed by other
+	  modules, and will soon need to be moved. 	  <note type="action">
+	    <label>editors</label>
+	    determine what parts, if any, of MS need to be in
+	      CO
+</note></p>
+	<p>Council learned that the task force had only considered elements to an
+	  arbitrary depth in the hierarchy (due to lack of time &amp;
+	  area-specific expertise), and that further down the
+	  hierarchy informal prose (in <gi>p</gi> elements) is
+	  permitted. The task force feels that there is a need to extend the
+	  specificity of specialized elements, i.e., to <q>take the
+	    hierarchy further down</q>. However, a chapter could be
+	delivered for P5 without doing so first.</p>
+	<p>On the question of rechartering the group as a work-group
+	(as opposed to a task force) Council agreed that the task force should finish up
+	  proposed chapter for P5 and then write a charge to be reconstituted as a
+	  WG for hammering out the lower level elements.
+	  <note type="action">
+	    <label>MD</label>
+	    Write examples
+	    <date>2004-06-04</date>
+	  </note>
+	  <note type="action">
+	    <label>MD</label>
+	    Write new charge for MS WG
+	    <date>2004-07-15</date>
+	  </note>
+	  <note type="action">
+	    <label>MS TF</label>
+	    Finish up MS chapter
+	    <date>2004-07-15</date>
+	  </note>
+	</p>
+      </div>
+      <div>
+	<head>SO</head>
+	<p>Council entertained report from DD on the progress of SO.
+	In particular, on the immediate goal set forth in Council's
+	previous conference 
+	  call to have decisions noted and written down so that P5
+	  could proceed. Summary of suggestions:<list type="simple">
+	    <item>ID/IDREF no longer in Guidelines, replaced by
+	      URIs.</item>
+	    <item>drop entire extended pointer mechanism</item>
+	    <item>use XPointer scheme framework</item>
+	    <item>use <ident>xml:id</ident> instead of
+	      <ident>id</ident></item>
+	    <item>Guidelines should recommend practice of using
+	      relative URIs, especially for large sets of files</item>
+	    <item>drop <gi>xptr</gi> and <gi>xref</gi></item>
+	    <item>the two pointer schemes (bare name and element())
+	      are missing a few methods of locating text that we
+	      dearly want (strings, ranges, regexps). In particular
+	      xpath(), xpath-2(), range(), string-point(),
+	      regexp().</item>
+	    <item>the W3C XPointer extension mechanism is very
+	      cumbersome, so it is recommended we create (register?)
+	      our own MIME type (xml/TEI), since the fragment
+	      identifier part of a URI is, according to IETF,
+	      interpreted based on the MIME-type</item>
+	    <item>For IDREFS (where the problem is that the attribute
+	      value would need to hold multiple URIs) the suggestion
+	      is to wrap each URI in curly braces</item> <!-- question
+	    of whether we should include
+	non-implemented methods -->
+	  </list>
+	</p>
+	<p>The question arose, with significant discussion, of whether
+	  or not we should include in the Guidelines any methods that
+	  have not yet been implemented. </p>
+	<p>The work group is soliciting input from Council on the
+	  following issues, which are listed here along with Council's
+	  response.<list type="simple">
+	    <item><term>use <ident>xml:id</ident></term>
+	      <gloss>Council approved</gloss></item>
+	    <item><term>drop ID/IDREF, but with separate customization
+		module to use it</term> <gloss>Council discussed the
+	  question, and charged the work group to examine the issues,
+	  in particular those of IDREFS, more closely. Council wants
+	  the options for handling IDREFS (embedded pointing
+	      sub-elements or any kind of multiple pointers
+	      in single attribute value, in which case Council prefers
+	  space as a separator.</gloss></item>
+	    <item><term>Renaming <ident>target</ident> to
+		<ident>href</ident></term> <gloss>Also
+	  referred back to WG</gloss></item>
+	    <item><term>Establishing a TEI MIME type</term>
+	      <gloss>Council approves, instructs Board to register it</gloss>
+	  <note type="action">
+		  <label>JF</label>
+		  register the MIME type
+		</note></item>
+	    <item><term>pointer extensions of our own (if so, which ones)</term>
+	      <gloss>Council endorses keeping xpath1(), xpath2(),
+	      string-point(), and range(), but dropping
+	      regexp()</gloss></item>
+	  </list>
+	</p>
+	<p>With respect to the IDREFS problem, concern was expressed that some processors in the
+	  world will process IDREFS, but none will process the
+	  proposed {} separated
+	  list of URIs solution.</p>
+	<p>Council identified three possible paths to follow:<list type="simple">
+	    <item>keep IDREFS</item>
+	    <item>use child elements</item>
+	    <item>separate URIs in a single attribute value</item>
+	  </list> Although concern was expressed about using a blank
+	  to separate the multiple URIs in the third method, because escaping blanks in URIs is
+	  already an area where users typically make a lot of
+	  errors.</p>
+      </div>
+      <div>
+	<head>Publication of P5</head>
+	<p>SR suggests continuous releases like OSS, rather than waiting.</p>
+	<p>CW voices preference that we measure P5 by milestones of
+	  accomplishment rather than by particular calendar
+	  dates.</p>
+	<p>The soon to be publicized call for participation, which
+	  could point out that now is the time for making suggestions
+	  for major changes, will have a deadline of 1 Sept for getting
+	  suggestions reviewed for inclusion in the Members' Meeting
+	  presentation. Intention is to have a coherent set of ODDs on
+	  SourceForge by the end of June. Editors to make release
+	  snapshots at their own judgment.</p>
+	<p>We hope to issue a call for copy editing by the time of the Members'
+	Meeting.</p>
+	<p>LB suggests that we revisit mapping of modules to chapters,
+	  in particular CO should be broken up. The P5 update page
+	  needs to be updated before the call for suggestions, which
+	is going out in 2 weeks, is made.
+	  <note type="action">
+	    <label>JF</label>
+	    Write draft updates to P5 update page
+	    <date>2004-05-27</date>
+	  </note>
+	</p>
+	<p>
+	  <note type="action">
+	    <label>LB,SR,CW,SB</label>
+	    Produce a project plan inventory
+	    <date>2004-06-01</date>
+	  </note>
+	  <note type="action">
+	    <label>LB,SR,CW,SB</label>
+	    Produce complete project plan
+	    <date>2004-07-01</date>
+	  </note>
+	</p>
+      </div>
+      <div>
+	<head>Budget</head>
+	<p>The issue of budget for WGs was briefly discussed. The possibility of
+	  a prosopography WG raised, but consensus was against.</p>
+      </div>
+    </body>
+    <back>
+      <div>
+	<head>Next meeting</head>
+	<p>Next conference call scheduled for <date>Fri 02 Jul 04 at 13:00 UTC</date>.</p>
+      </div>
+      <div id="mail-from-CR" type="appendix">
+	<head>e-mail from CR discussed at meeting</head>
+	<p>The following is an excerpt from e-mail which was
+	  distributed (in print form) at the meeting for
+	  discussion.</p>
+	<eg>From: Christine Ruotolo &lt;username@machine.in.virginia.edu&gt;
+Subject: TEI Migration TF update for Council meeting
+Date: Mon, 10 May 2004 17:49:11 -0400 (EDT)
+
+...
+
+* With the exception of a handful of accidentals and one substantive
+change still to be incorporated, the primary reports (MIW02 and MIW03) are
+complete.  (The change has to do with substituting the hypothetical "long
+s" SDATA example with a "qthorn" example from WWP -- Syd will remember
+this exchange from the list -- and I will post it along with the errata to
+TEI-MIGR.)
+
+* The tools page currently consists of one tool -- osx -- and even that
+information needs to updated in light of the build for Windows that Lou
+recently announced.  Someone needs to gather up the tools mentioned in the
+reports and the case studies and arrange them with accompanying blurbs
+into a new tools page.  I believe I agreed to do this a while back and
+have shamefully dropped the ball; I am now underway with this task and
+hope to finish up very soon.
+
+* A run through the linkbot reveals a number of broken links throughout
+the MI section of the TEI website.  In addition to pointers from the case
+studies to the currently non-existent tools page (with URLs of the type
+"idunno://where/we/will/put/this") there are a few other missing items
+(tei-emacs bits off the main TEI software page, the early TEILite test
+suite from Tobias) as well as some glitchy little things like broken
+anchors and links to phantom CSS stylesheets.  Again, I will
+synthesize and post to TEI-MIGR, although it might take a bit longer to
+sort out.
+
+So to sum up: written documentation complete, website bits and pieces
+still to be assembled and organized.  I'd like to have that assembling and
+organizing done by May 26, which is when Tomaz presents his paper on the
+workgroup activities to LREC. (I will be giving a similar poster session
+at ALLC/ACH a few weeks later.)
+
+Perhaps the Council could discuss what other dissemination strategies, if
+any, are necessary.  Assuming that the reports will be sent to NEH and
+announced on TEI-L, what else do we need to do?  Does the Council envision
+the need for any future migration-related activities?
+
+I'm sorry there hasn't been much progress of late, but I hope this has
+been a useful assessment of current status.  I can be reached at any time
+via email or phone (aaa.xxx.nnnn) if you need more info from me.  Have a
+great meeting, and I hope to see you all in Sweden next month.
+
+Chris
+</eg>
+      </div>
+    </back>
+  </text>
+</TEI.2>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/home/lou/Public/TEI/TEICSS/tei.css" type="text/css"
+ ?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:t="http://www.tei-c.org/ns/1.0" n="2020-07"><teiHeader><fileDesc><titleStmt><title>Minutes of the TEI Technical Council</title><meeting n="2020-07" when="2020-07-14">TEI Technical Council online
+     meeting : <date>14 July 2020</date></meeting></titleStmt><publicationStmt><distributor>TEI Website</distributor><idno>TCM128</idno></publicationStmt><sourceDesc><p>Retagged from a WordPress HTML file</p></sourceDesc></fileDesc><revisionDesc><change when="2023-04-25">Archival header confected</change><change>Extracted from Word Press article with id post-30767</change></revisionDesc></teiHeader><text><body><div><p><hi style="strong">Meeting time:</hi></p><list style="ul">
+<item>EST 09:00–10:30, GMT 14:00–15:30, CEST 15:00–16:30</item>
+<item>Started: 13:05Z; ended: 14:16Z</item>
+</list><p><hi style="strong">Present:</hi></p><list style="ul">
+<item>Syd Bauman (SB)</item>
+<item>Elisa Beshero-Bondar (EB)</item>
+<item>Meaghan Brown (MB)</item>
+<item>Hugh Cayless (HC)</item>
+<item>Nicholas Cole (NC)</item>
+<item>Jessica Lu (JL)</item>
+<item>Martina Scholger (MS, Chair)</item>
+<item>Raff Viglianti (RV)</item>
+</list><p><hi style="strong">Apologies/Not Present:</hi></p><list style="ul">
+<item>Vanessa Bigot Juloux (VB)</item>
+<item>Peter Stadler (PS)</item>
+<item>Magdalena Turska (MT)</item>
+</list><p> </p><div type="h2"><head>Next release</head><list style="ul">
+<item>Release techs: NC (note taker), HC (lead tech), JL (support tech)</item>
+<item>When: Week of 9–15 Aug, 2020. Specific target: Tues 08-11 &amp; Wed 08-12</item>
+<item>Content model of <gi>standOff</gi>: <ref target="https://github.com/TEIC/TEI/issues/1977">https://github.com/TEIC/TEI/issues/1977</ref>
+<list style="ul">
+<item>examples for annotation in TEI that describes the use-cases we envision.</item>
+<item>Council agrees: define the content model of <gi>annotation</gi> and add some attributes. There has to be a section on <gi>annotation</gi> in the Guidelines. RV, NC: will help with writing the documentation.</item>
+<item>RV, NC, SB, HC and anyone else who wants to help will meet Tuesday, 7-21 at 9am EST / 2pm GMT / 3pm CEST to work on this</item>
+</list>
+</item>
+<item>Several issues with “Status:Go” added to milestone 4.1.0 <ref target="https://github.com/TEIC/TEI/issues?q=is%3Aissue+is%3Aopen+label%3A%22Status%3A+Go%22+-label%3A%22Status%3A+Needs+Discussion%22+">https://github.com/TEIC/TEI/issues?q=is%3Aissue+is%3Aopen+label%3A%22Status%3A+Go%22+-label%3A%22Status%3A+Needs+Discussion%22+</ref></item>
+</list></div><div type="h2"><head>Git branch renaming</head><list style="ul">
+<item>New name, timeline, responsibilities</item>
+<item>NC: suggests to use a descriptive name, e.g. “stable” to replace “master”</item>
+<item>RV: “main” is becoming the standard</item>
+<item>SB: descriptive name makes sense, but can we do better than “stable”?</item>
+<item>Proposals
+<list style="ul">
+<item>main</item>
+<item><hi style="b">released</hi></item>
+<item>current-release (most Council members prefer just one word)</item>
+<item>release (but better with the past tense)</item>
+<item>stable (but is that clear that this is the actually released?</item>
+</list>
+</item>
+<item>Consensus seems to be “<hi style="b">released</hi>”, using “<hi style="b">rc-</hi>X.Y.0” for the branch the release techs are working on, and to keep each <hi style="b">rc-</hi> branch only until the next release. (i.e., release techs destroy the previous <hi style="b">rc- </hi>branch when they make the new one.)</item>
+<item>HC volunteers to create “released” branch prior to August release for the TEI and Stylesheets repos. (HC created “released” during the meeting.) Other repos that don’t have dev branches (like Documentation) should be changed by someone who feels responsible for that repo (probably to “<hi style="b">main</hi>”).</item>
+</list></div><div type="h2"><head>Report from labeling session</head><list style="ul">
+<item>With thanks to EB, SB, MH, PS, and MS, all the Stylesheets issues have labels now</item>
+<item>SB thinks that, in general, Ticket Triage person should  assign labels to each new Stylesheets ticket, but not assign them to people.</item>
+</list></div><div type="h2"><head>Report Stylesheets circularity</head><list style="ul">
+<item>In a group meeting of a subset of Council (SB, HC, Martin Holmes, MS &amp; PS) on 2020-07-03, and the Stylesheets group meeting of 2020-07-07 (SB, EB, MB, HC, NC, JL, MH, MS, &amp; RV), the Stylesheets circularity issue has been discussed. A working paper will be published as TCW.</item>
+</list></div><div type="h2"><head>SIG Manuscript description / restructuring Chapter 11</head><list style="ul">
+<item>Gerrit Brüning volunteers to help with specific questions</item>
+<item><hi style="b">Action on MS</hi> to contact the current co-convener Stephen McCormick first and then Yasmin Faghihi and Huw Jones to ask if they want to take over the group as conveners <hi style="b">by 2020-07-28</hi>.</item>
+<item>MB and RV started with restructuring Chapter 11. Expectation is that they will be far enough along to ask the Council, users on the tickets, and the MS-SIG mailing list to look at their version within a week.</item>
+</list></div><div type="h2"><head>Reminder — Action on</head><list style="ul">
+<item><hi style="b">SB, PS</hi>, and <hi style="b">JL</hi> to discuss issue <ref target="https://github.com/TEIC/TEI/issues/1955">https://github.com/TEIC/TEI/issues/1955</ref></item>
+<item><hi style="b">SB</hi> and <hi style="b">PS</hi> to work on issue  <ref target="https://github.com/TEIC/TEI/issues/1918">https://github.com/TEIC/TEI/issues/1918</ref> (Investigate changing the class membership of <gi>q</gi>)
+<list style="ul">
+<item>almost done</item>
+</list>
+</item>
+<item><hi style="b">SB:</hi> to ask Piotr to provide ODD for corpus — done</item>
+<item><hi style="b">SB</hi>: provide a summary categorization of the Exemplar/ ODDs on ticket <ref target="https://github.com/TEIC/TEI/issues/1916">#1916</ref>. — done, although not as readable as I might like</item>
+<item><hi style="b">MS</hi>: write email on @version issue to TEI-L — send proposal to SB on <hi style="b">2020-07-16</hi>.</item>
+</list><p> </p></div></div></body><!-- #post-## --></text></TEI>

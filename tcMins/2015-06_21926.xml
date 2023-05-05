@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/home/lou/Public/TEI/TEICSS/tei.css" type="text/css"
+ ?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:t="http://www.tei-c.org/ns/1.0" n="2015-06"><teiHeader><fileDesc><titleStmt><title>Minutes of the TEI Technical Council</title><author>TEI Technical Council</author><meeting n="2015-06" when="2015-06-29">TEI Technical Council online
+     meeting : <date>29 June 2015</date></meeting></titleStmt><publicationStmt><distributor>TEI Website</distributor><idno>TCM070</idno></publicationStmt><sourceDesc><p>Retagged from a WordPress HTML file</p><p>Converted from a Word document</p></sourceDesc></fileDesc><revisionDesc><change when="2023-04-27">Archival header confected</change><change>Extracted from Word Press article with id post-21926</change><change><date>2015-07-21T11:56:38Z</date><name>Hugh Cayless</name></change></revisionDesc></teiHeader><text><body>
+<div>
+<p>
+          <ref target="https://plus.google.com/hangouts/_/g32giwnw3t5eqysbfveh5sd2lma"><hi style="underline color(1155cc)">https://plus.google.com/hangouts/_/g32giwnw3t5eqysbfveh5sd2lma</hi></ref></p>
+<div>
+  <p>    Present:</p>
+<list style="ul">
+<item>Syd Bauman (SB)</item>
+<item>Lou Burnard (LB)</item>
+<item>Hugh Cayless (HC)</item>
+<item>Fabio Ciotti (FC)</item>
+<item>Stefan Majewski (SM)</item>
+<item>Raff Viglianti (RV)</item>
+<item>Paul Schaffner (PFS)</item>
+<item>Peter Stadler (PWS)</item>
+<item>James Cummings (JC @ 14:08 – 14:44)</item>
+</list>
+</div>
+<div>
+          <p>Apologies:</p>
+<list style="ul"><item>Martin Holmes</item>
+<item>Stefanie Gehrke</item></list>
+</div>
+<div><head> id="h.doc1nt2fyiwj"&gt;
+          Critical Apparatus Report
+          </head><list style="ul">
+<item>HC reports that SB’s off-the-cuff proposal in Ann Arbor doesn’t work well.</item>
+<item>HC also reports that MH balked at the idea of multiple different <gi>app</gi>
+              elements for different levels.</item>
+<item>Group wondered if OP (Marjorie B) wanted to break abstract model or not, so they
+              asked. She does not.</item>
+<item>SB suggests method used for “odd4odds” may help generate rules to check for
+              violations</item>
+<item>[SB suggests a name for the issue: “the director’s cut problem”]</item>
+<item>SB suggests one criterion: post-processing, each witnesses encoding must not break
+              abstract model. If there is non-parallelism between <gi>rdg</gi>s, that’s your problem.
+              ‘Post-Processing’ could be anything though, so JC argues it needs to be more direct:
+              if you choose one or other of the lem/rdg it should validate.</item>
+<item><hi style="bold">Action on SB</hi> to experiment with validation scenarios.</item>
+</list>
+</div>
+<div><head> id="h.p93ry96osqyv"&gt;
+          Status report on Standoff
+          </head><list style="ul">
+<item>Council working group (PFS, LB, MH, FC, SM, PWS) created an alternative proposal
+              as the “Ann Arbor” branch at <ref target="https://github.com/laurentromary/stdfSpec/tree/AnnArbor"><hi style="underline color(1155cc)">https://github.com/laurentromary/stdfSpec/tree/AnnArbor</hi></ref></item>
+<item>Laurent and Peter will flesh out examples and documentary prose</item>
+</list>
+</div>
+<div><head>
+          Bug 751 (SB)</head>
+<p>
+            <ref target="https://sourceforge.net/p/tei/bugs/751/"><hi style="underline color(1155cc)">http://sourceforge.net/p/tei/bugs/751/</hi></ref></p>
+<list style="ul">
+<item>Problem: detailed classes or just one?</item>
+<item>For now just one, SB to implement (by merging for-bug-751/ branch into trunk)
+              soon</item>
+</list>
+</div>
+<div><head>
+          <gi>xenoData</gi> (SB)</head>
+<p>Checked in and working in a different branch. Ready to check in to trunk?<lb/>Action on
+            SB: generate a copy of Guidelines HTML with <gi>xenoData</gi> for people to read.</p>
+</div>
+<div><head>
+          Schematron 1.x (SB)</head>
+<p>SB sent an email to TEI-L this morning asking for usage stats of non-ISO-schematron</p>
+</div>
+<div><head>
+          Fall F2F update</head>
+<p>HC still in discussion w/ Emmanuelle but building is closed on Sun 10-25, so we’d have
+            to find our own meeting room. Perhaps in the hotel? Action on HC to check on hotel and
+            possibility of reserving a conference room there.</p>
+</div>
+<div><head>
+          Next release</head>
+<p>Before TEI Members’ Meeting in Lyon. SB suggests last week Sept, 1st week Oct; which
+            means we’ll have a conference call right near release.</p>
+<list style="ul">
+<item>xenoData</item>
+<item>app(?)</item>
+<item>standOff(?)</item>
+<item>org</item>
+<item>msFrag</item>
+</list>
+</div>
+<div><head> id="h.5my1kqlecmw4"&gt;
+          Pure ODD
+          </head><list style="ul">
+<item>Lou blocked due to a problem with the implementation of dataSpec</item>
+<item>Yes, we do plan to continue to support RNG-ODD even after PureODD is available, at
+              least for some time.</item>
+<item>Need to talk soon about when to switch to new datatype definition method.</item>
+</list>
+</div></div>
+</body><!-- #post-## --></text></TEI>

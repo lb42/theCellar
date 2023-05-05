@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/home/lou/Public/TEI/TEICSS/tei.css" type="text/css"
+ ?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:t="http://www.tei-c.org/ns/1.0" n="2021-00"><teiHeader><fileDesc><titleStmt><title>Minutes of the TEI Technical Council</title></titleStmt><publicationStmt><distributor>TEI Website</distributor><idno/></publicationStmt><sourceDesc><p>Retagged from a WordPress HTML file</p></sourceDesc></fileDesc><revisionDesc><change when="2023-04-25">Archival header confected</change><change>Extracted from Word Press article with id post-30945</change></revisionDesc></teiHeader><text><body><div><p><hi style="strong">Meeting times: </hi></p><list style="ul">
+<item>6:00–7:30 PST, EST 09:00–10:30, GMT 14:00–15:30, CET 15:00–16:30</item>
+<item>Started:    19:04Z    Ended:    ~20:45Z</item>
+</list><p><hi style="strong">Present:</hi></p><list style="ul">
+<item>Syd Bauman (SB)</item>
+<item>Helena Bermúdez Sabel (HS)</item>
+<item>Elisa Beshero-Bondar (EB)</item>
+<item>Meaghan Brown (MB)</item>
+<item>Hugh Cayless (HC)</item>
+<item>Nicholas Cole (NC, invited guest)</item>
+<item>Janelle Jenstad (JJ, ~19:26Z)</item>
+<item>Martina Scholger (MS)</item>
+<item>Peter Stadler (PS, ~19:06Z)</item>
+<item>Magdalena Turska (MT, ~19:13Z)</item>
+<item>Raff Viglianti (RV)</item>
+</list><p><hi style="strong">Apologies/Not Present:</hi></p><list style="ul">
+<item>Jessica Lu (JL)</item>
+</list><p> </p><p><hi style="b">Note:</hi> ticket triage table is near the end of this document.</p><div type="h2"><head>Welcome</head></div><div type="h2"><head>Mentors for new Council members</head><list style="ul">
+<item>EB is JJ’s mentor (with SB as backup and Martin Holmes nearby)</item>
+<item>MT is HS’s mentor</item>
+</list></div><div type="h2"><head>Ticket Triage/Minute review</head><list style="ul">
+<item>MS: There is a new ticket triage/minute review table, please add your initials.</item>
+</list></div><div type="h2"><head>New meeting times</head><list style="ul">
+<item>Monthly Council call: Second Thursday of each month at
+<list style="ul">
+<item>11:00–12:30 PST</item>
+<item>14:00–15:30 EST</item>
+<item>20:00–21:30 CET</item>
+</list>
+</item>
+<item>Monthly Stylesheets call: Fourth Thursday of each month, at the same time as the Council meeting.</item>
+<item>Short virtual F2F meeting: Fri 29 &amp; Sat 30 January
+<list style="ul">
+<item>Invite Martin Holmes, Kiyonori Nagasaki, Satoru Nakamura, and Kazuhiro Okada to main meeting, Sat 30 Jan at 11pm JST.</item>
+</list>
+</item>
+</list></div><div type="h2"><head>Next release</head><list style="ul">
+<item>Release timeline
+<list style="ul">
+<item>Refridge: Fri 2021-02-12</item>
+<item>Freeze: Fri 2021-02-19</item>
+<item>Release: Thu 2021-02-25</item>
+</list>
+</item>
+<item>Release techs: NC (lead), PS (assist), MB (note taker)</item>
+<item>Goals for the next release
+<list style="ul">
+<item>Ruby: <hi style="b">action</hi> on <hi style="b">MS</hi> to write to Kiyonori Nagasaki  and ask if we can get this done in 1 month by <hi style="b">2021-01-16.</hi></item>
+<item>Open issues: <ref target="https://github.com/TEIC/TEI/issues?q=is%3Aopen+is%3Aissue+milestone%3A%22Guidelines+4.2.0%22">https://github.com/TEIC/TEI/issues?q=is%3Aopen+is%3Aissue+milestone%3A%22Guidelines+4.2.0%22</ref><hi style="b"> </hi></item>
+<item>New element for grouping notes – <gi>noteGrp</gi>: <ref target="https://github.com/TEIC/TEI/pull/1920">https://github.com/TEIC/TEI/pull/1920</ref> (MT to rebase before retesting and merging)</item>
+<item>Deprecation of locations of <gi>schemaSpec</gi>: <ref target="https://github.com/TEIC/TEI/pull/2032">https://github.com/TEIC/TEI/pull/2032</ref></item>
+<item>Remove <gi>altIdent</gi> from some unsuitable places: <ref target="https://github.com/TEIC/TEI/pull/2041">https://github.com/TEIC/TEI/pull/2041</ref></item>
+<item><hi style="b">Action on EB, MS, and PS</hi> to review feature request on declarative citation structure <ref target="https://github.com/TEIC/TEI/issues/1957">https://github.com/TEIC/TEI/issues/1957</ref>; pull request:<ref target="https://github.com/TEIC/TEI/pull/1983">https://github.com/TEIC/TEI/pull/1983</ref></item>
+<item><hi style="b">Action on EB: </hi>check if this is resolved or if it does need an example. Ask reviewers to verify (@where in att.locatable) <ref target="https://github.com/TEIC/TEI/pull/1958">https://github.com/TEIC/TEI/pull/1958</ref></item>
+</list>
+</item>
+</list></div><div type="h2"><head>Report on CMC meeting</head><list style="ul">
+<item>Needs to be rescheduled.</item>
+</list></div><div type="h2"><head>Notification on pull requests</head><list style="ul">
+<item>See <ref target="https://github.com/settings/notifications">https://github.com/settings/notifications</ref> for notification settings.</item>
+</list></div><div type="h2"><head>Pull requests pending</head><list style="ul">
+<item>SB created a TEI Council pull requests summary: <ref target="https://bauman.zapto.org/~syd/temp/4TEICouncil/GHPRs.html">https://bauman.zapto.org/~syd/temp/4TEICouncil/GHPRs.html</ref></item>
+</list></div><div type="h2"><head>Open pull requests</head><list style="ul">
+<item><ref target="https://github.com/TEIC/TEI/pull/2069">https://github.com/TEIC/TEI/pull/2069</ref></item>
+<item>Connected to Stylesheets issue #237
+<list style="ul">
+<item>Suggestions: test if the example on the ticket works in a proper ODD. On <gi>schemaSpec</gi> add hal:n as @prefix  and also try using it as the @ident on <gi>attDef</gi>.</item>
+</list>
+</item>
+</list></div><div type="h2"><head>AOB</head></div></div></body><!-- #post-## --></text></TEI>

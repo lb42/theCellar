@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/home/lou/Public/TEI/TEICSS/tei.css" type="text/css"
+ ?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:t="http://www.tei-c.org/ns/1.0" n="2002-06"><teiHeader><fileDesc><titleStmt><title>Minutes of the TEI Technical Council</title><meeting n="2002-06" when="2002-06-24">TEI Technical Council online
+     meeting : <date>24 June 2002</date></meeting><author>Syd Bauman</author></titleStmt><publicationStmt><distributor>TEI Website</distributor><idno>TCM002</idno></publicationStmt><sourceDesc><p>Re-tagged from a TEI Legacy format document which contained the following source note:</p><p>No source; this electronic version is the source.</p><p>This document was created from the notes I took (in TEI
+     Lite, btw) during the conversation, with some additions
+     provided by the notes MP took and sent to me; with a few
+     afterthoughts as well, usually relegated to <gi>note</gi>
+     elements.</p></sourceDesc></fileDesc><revisionDesc><change when="2023-05-01">Archival header confected</change><change>Converted from the TEI archival document tcm02</change></revisionDesc></teiHeader><text>
+  <front>
+   <div type="glossary">
+    <p>Names are copied-and-pasted from TEI website, so don't
+     blame me for misspellings :-).</p>
+    <list>
+     <head>Initials Used for People</head>
+     <item><term>SB</term> <gloss>Syd Bauman</gloss></item>
+     <item><term>LB</term> <gloss>Lou Burnard</gloss></item>
+     <item><term>MD</term> <gloss>Matthew Driscoll</gloss></item>
+     <item><term>DD</term> <gloss>David Durand</gloss></item>
+     <item><term>TE</term> <gloss>Toma&amp;#382; Erjavec</gloss></item>
+     <item><term>DB</term> <gloss>David J. Birnbaum</gloss></item>
+     <item><term>FJ</term> <gloss>Fotis Jannidis</gloss></item>
+     <item><term>MM</term> <gloss>Martin Mueller</gloss></item>
+     <item><term>MP</term> <gloss>Merrilee Proffitt</gloss></item>
+     <item><term>SR</term> <gloss>Sebastian Rahtz</gloss></item>
+     <item><term>PR</term> <gloss>Peter Robinson</gloss></item>
+     <item><term>GR</term> <gloss>Geoffrey Rockwell</gloss></item>
+     <item><term>LR</term> <gloss>Laurent Romary</gloss></item>
+     <item><term>JU</term> <gloss>John Unsworth</gloss></item>
+     <item><term>PW</term> <gloss>C. Perry Willett</gloss></item>
+     <item><term>CW</term> <gloss>Christian Wittern</gloss></item>
+    </list>
+   </div>
+  </front>
+  <body>
+   <div type="prelim">
+    <p>Call commenced at ~ 12:01-00 with GR, SB, FJ, PW, MP, LB,
+     SR, JU, DB; MD joined a bit later; CW &amp; TE never joined
+     (nor did DD nor LR, but that was expected).</p>
+    <p>CW &amp; TE, it turns out, were the victims of mistaken
+     timezone.</p>
+   </div>
+   <div n="1" type="agendaItem">
+    <head>committee reports</head>
+    <div n="1B" type="subAgendaItem">
+     <head>Training</head>
+     <p>GR explained the training committee had written 1 general
+      and 2 specific (for Chicago 2002-10, and for GA 2003) RFPs
+      for training courses. Suggested that within a few weeks all
+      3 would be edited &amp; posted. SB said the programme
+      committee for the Oct member's meeting would like that
+      specific RFP out ASAP, preferably shortly after MMs return. GR
+      thinks that's reasonable (he will be talking to MM on phone
+      circa 06-28).</p>
+     <p>Thanks to the training committee for this work.</p>
+     <p>Lou recommends that the three RFPs be combined into one;
+      general agreement, there should be one RFP, with an
+      appendix that gives particulars for upcoming events that
+      require specific proposals.
+      <note type="action" resp="GR">
+       Inform training committee of recommendation from
+        Council to combine RFPs
+      </note>
+      <note type="action" resp="training committee">
+      Combine RFPs into one general with reference to
+        the two specific events, perhaps as an
+        appendix. </note><note>In retrospect, I am not yet 100% convinced
+       of the wisdom of this, and plan to send the council
+       thoughts on the matter if I am still unconvinced after
+       discussing w/ GR. -- Syd</note></p>
+     <p>GR notes that, esp. for proposals for training at the Oct
+      member's meeting, they do not have to be full-blown
+      proposals. SB points out that programme committee is
+      expecting a 1-day training on Thu 2002-10-10.</p>
+     <p>Although questions about an RFP may (or should) be sent to
+      the training committee, and questions about the venue, etc.,
+      may (or should) be sent to the local organizer, the
+      Proposals themselves should be sent to JU, who will forward
+      them to the Council for [dis]approval.</p>
+     <p>Motion that amended (as discussed) RFPs be accepted; passed.</p>
+     <p><note type="action" resp="LB SR">
+       send a response to the general RFP their 15 Jul
+       course by <date when="2002-07-01"/></note></p>
+    </div>
+    <div n="1A" type="subAgendaItem">
+     <head>certification</head>
+     <p>Software certification discussion: we're leaning towards
+      encouraging reviews of software (cull form TEI-L?)
+      (certify reviewers? certify reviews?)
+      <note type="action" resp="MD, SB to proof if MD wants">
+    write a draft certification policy
+      </note>
+      <note type="action" resp="SR LB">
+      cull the list for reviews to put on website
+      </note><note>LB &amp; SR &amp;mdash; if you like, let me
+       know when you're ready to roll, and I'll send you an
+       archive of the list. -- SB</note>
+     So we are shifting from certification to reviews.</p>
+    </div>
+   </div>
+   <div n="2" type="agendaItem">
+    <head>P5</head>
+    <div n="2A" type="subAgendaItem">
+     <head>core tags and schema</head>
+     <p>Discussion of SR's proposal <title>notes for
+        conference call on 24th</title> <date>2002-06-24
+        00:25+01</date>-- SB thinks timescale
+      aggresive, but SR &amp; JU think it's reasonable (better
+      to have too aggresive a deadline than none at all).</p>
+     <p>SB agrees strongly that TSD become an additional tagset,
+      and that P5 be written in (possibly extended) TSD.</p>
+     <p>SR suggests Son of Odd report for members meeting
+      2002-10; SB suggests [dis]approval by Council in 2003-01;
+      SR recommends including discussions of manuscript, char
+      sets, standoff to that 2003-01 council meeting; MP reports
+      manuscript should be ready.</p>
+     <p>Within the discussion there was concensus that it's
+      important to change from DTD notation to some other
+      notation inside <gi>elemDecl</gi>s (whether a pre-existing
+      schema or our own is still an open question), and to allow
+      multiple schema output from odds (i.e., to give TEI users
+      choice in which schema language they use to validate their
+      TEI documents).</p>
+     <p>Motion to accept SR's timetable as a framework approved.</p>
+     <p><note type="action" resp="SR">
+       talk to PR or SB about getting a timeslot to
+        report on Son of Odd at 2002-10 member's meeting in
+        Chicago, perhaps as part of editor's report.
+      </note> SB reports that he thinks the preliminary plan
+      already has 20 mins for editors and a separate 20 mins for
+      SR.</p>
+    </div>
+    <div n="2B" type="subAgendaItem">
+     <head>character encoding WG update</head>
+     <p>LB reports on char sets WG progress -- lots of discussion
+      via e-mail, mostly centered on how much of the world's
+      problems Unicode solves. Face-to-face WG meeting planned
+      for 2002-07-23/24 in T&amp;uuml;bingen (in conjunction with
+      ALLC/ACH 2002). Both SB &amp; plan to be present. WG is
+      working on detailed proposals for a replacement to WSD
+      mechanism which LB (&amp; SB) expect will be discussed at
+      WG meeting in T&amp;uuml;bingen. CW doing good job keeping it
+      going w/o domination by a particular person or
+      constituency.</p>
+     <p>Council agreed that requirement for 1.5 days of meeting
+      in order to obtain TEI reimbursement be waved, if needed,
+      for this WG meeting. It was suggested that council need
+      not vote, that chair could just do this
+      unilaterally.<note type="action" resp="JU">
+    Notify CW of relaxed restriction of 1.5 days for
+        character sets WG meeting in T&amp;uuml;bingen
+        2002-07.
+      </note><note>Since the council had agreed, I didn't take
+       up valuable phone time saying this, but I think it is
+       important that no single individual have the power to
+       unilaterally make exceptions to or grant exemptions from
+       promulgated rules or procedures like those in ED W 54. I
+       think that such decisions need to be reserved for the
+       council or board, or for a pre-defined group of officers
+       (chair and both editors; chair, executive director, one
+       editor; chair, executive director, one host representive
+       &amp;mdash; idunno)</note>
+     </p>
+    </div>
+    <div n="2C" type="subAgendaItem">
+     <head>stand-off markup, xlink, xpointer WG</head>
+     <p>SB reported on WG progress by briefly reading some
+      sections of DD's mail to group of
+      <date>2002-06-19T16:31-04,</date>
+       <title>startup</title>:        
+      <q>... it's past time for us to start up.
+       ... trying to get John Garofolo of NIST to join the
+       group; if he does not, I will entertain suggestions of
+       corpus linguists who might join the group. ... an
+       email list, supplemented by a regular conference call
+       ... initial suggestion that the call be on
+       alternate Wednesdays, starting on 2002-06-26, at
+       13:00-00. ... attached the preliminary
+       <soCalled>charge</soCalled> ... Preliminary agenda:
+       <list>
+        <item>introductions</item>
+        <item>proceedures: ...</item>
+        <item>time limit: ...</item>
+        <item>reactions to charge: ...</item>
+       </list>
+      </q>
+     </p>
+     <p>Council wanted assurance that an editor would be
+      available for each call; SB &amp; LB do not think this
+      will be a problem.</p>
+     <p>Someone voiced concern as to whether or not council
+      should be worried about lack of progress &amp;mdash;
+      [preliminary or draft? -- SB] report is due [2002-08-01 or
+      2002-10-11? -- SB]. SB said no need to worry yet, but
+      should recheck after [2 or 3] of the planned conference
+      calls (and then become concerned if little or no
+      progress).
+      <note type="action" resp="SB or LB (whichever one makes conference call)">
+        keep council posted on WG progress
+      </note>
+     </p>
+    </div>
+    <div n="2D" type="subAgendaItem">
+     <head>medieval MSS description</head>
+     <p>While MP may not be at member's meeting (snif! What's
+      wrong with a TEI meeting as a honeymoon? Well,
+      congratulations in any case), she is still hopeful that
+      she and MD can get together this summer to hammer out
+      differences in manuscript description stuff.</p>
+    </div>
+    <div n="3" type="agendaItem">
+     <head>next meeting, assignments, future business</head>
+     <p>Future meetings: We like conference calls; SB suggests
+      one roughly every 3 months.
+      <note type="action" resp="JU">
+       schedule future council conference calls
+      </note> Perry is willing to continue hosting them. (And
+      subsequently agreed to post notices in UTC, preferably in
+      an unambiguous format).</p>
+     <p>SR points out we need to have firm deadlines before
+      2003-01 face-to-face, as it's expensive.</p>
+    </div>
+   </div>
+  </body>
+ </text></TEI>

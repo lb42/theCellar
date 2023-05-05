@@ -1,0 +1,15 @@
+<!-- Permit action element in phrase-level content -->
+<!ENTITY % x.phrase "action | ">
+
+<!-- Add url attribute to xPointer element class -->
+<!ENTITY % a.xPointer '
+           type CDATA #IMPLIED
+           resp CDATA #IMPLIED
+           crdata CDATA #IMPLIED
+           targType CDATA #IMPLIED
+           targOrder (Y|N|U) "U"
+           evaluate (all|one|none) #IMPLIED
+           url CDATA #IMPLIED
+           doc ENTITY #IMPLIED
+           from CDATA "ROOT"
+           to CDATA "DITTO"'>

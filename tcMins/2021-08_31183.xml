@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/home/lou/Public/TEI/TEICSS/tei.css" type="text/css"
+ ?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:t="http://www.tei-c.org/ns/1.0" n="2021-08"><teiHeader><fileDesc><titleStmt><title>Minutes of the TEI Technical Council</title><meeting n="2021-08" when="2021-08-12">TEI Technical Council online
+     meeting : <date>12 August 2021</date></meeting></titleStmt><publicationStmt><distributor>TEI Website</distributor><idno>TCM143</idno></publicationStmt><sourceDesc><p>Retagged from a WordPress HTML file</p></sourceDesc></fileDesc><revisionDesc><change when="2023-04-25">Archival header confected</change><change>Extracted from Word Press article with id post-31183</change></revisionDesc></teiHeader><text><body><div><p><hi style="strong">Meeting times: </hi></p><list style="ul">
+<item>10:30am–12:00pm PDT, 1:30pm–3:00pm EDT, 6:30pm–8:00pm BST, 7:30pm–9:00pm CEST</item>
+<item>Started: 17:36Z    Ended: ~18:15Z</item>
+</list><p><hi style="strong">Present:</hi></p><list style="ul">
+<item>Syd Bauman (SB)</item>
+<item>Helena Bermúdez Sabel (HBS)</item>
+<item>Elisa Beshero-Bondar (EBB)</item>
+<item>Meaghan Brown (MB)</item>
+<item>Hugh Cayless (HC)</item>
+<item>Martina Scholger (MS)</item>
+<item>Peter Stadler (PS)</item>
+<item>Magdalena Turska (MT)</item>
+</list><p><hi style="strong">Apologies/Not Present:</hi></p><list style="ul">
+<item>Janelle Jenstad (JJ)</item>
+<item>Jessica Lu (JL)</item>
+<item>Raff Viglianti (RV)</item>
+</list><p> </p><div type="h2"><head>Next VF2F meeting</head><list style="ul">
+<item>Date of SVF2F is <hi style="b">Fri 01 Oct &amp; Sat 02 Oct </hi></item>
+<item>Agenda/collection of topics is available in a google document. <hi style="b"> </hi></item>
+</list></div><div type="h2"><head>Next Release</head><list style="ul">
+<item>Techs: HBS, MS, PS</item>
+<item>refrigerate: Wed 25 Aug</item>
+<item>freeze:  Sun 29 Aug</item>
+<item>release: Tues 31 August</item>
+</list></div><div type="h2"><head>Merge from release-4.2.1 and release-4.2.2.</head><list style="ul">
+<item>The release notes from release 4.2.1 and 4.2.2 are missing from dev branch.</item>
+<item>Version numbers may be in conflict: be careful with merging. diff the branches before acting. <hi style="b">Action on MS</hi> to investigate, report to Council mailing list <hi style="b">by</hi> 2021-08-21.</item>
+</list></div><div type="h2"><head>GitHub issues / PR’s to discuss before next release</head><list style="ul">
+<item>PR’s
+<list style="ul">
+<item>att.locatable issue 1910: <ref target="https://github.com/TEIC/TEI/pull/2168">https://github.com/TEIC/TEI/pull/2168</ref>
+<list style="ul">
+<item>Original issue: <ref target="https://github.com/TEIC/TEI/issues/1910">https://github.com/TEIC/TEI/issues/1910</ref></item>
+<item><hi style="b">Action on SB</hi> to review PR <hi style="b">by</hi> 2021-08-13</item>
+</list>
+</item>
+<item>FR for new <gi>ellipsis</gi> element: <ref target="https://github.com/TEIC/TEI/pull/2165">https://github.com/TEIC/TEI/pull/2165</ref>
+<list style="ul">
+<item>Original issue (“elision”): <ref target="https://github.com/TEIC/TEI/issues/1877">https://github.com/TEIC/TEI/issues/1877</ref></item>
+<item>Maybe we should add one more example? E.g. one <gi>metamark</gi> with <gi>supplied</gi>. Possibly a <gi>table</gi> and ibid / ditto marks.</item>
+<item><hi style="b">Action on SB</hi> to look at examples from the Women Writers Project (WWP), see if he can apply the content model to it.</item>
+<item>Suggested code to try for HBS’s example:
+<p rend="pre">&lt;metamark function="signalChorus"&gt;꜒&lt;/metamark&gt;
+&lt;l rend="nobreak" part="I"&gt;Por q<gi>ex</gi>ue&lt;/ex&gt; nu<gi>ex</gi>n&lt;/ex&gt;ca&lt;/l&gt;
+<gi>ellipsis</gi>
+  &lt;metamark rend="nobreak" function="ellipsis"&gt;·:—&lt;/metamark&gt;
+    <gi>supplied</gi>
+      &lt;l style="nobreak" part="F"&gt;co<gi>ex</gi>n&lt;/ex&gt; el pode poer&lt;/l&gt;
+      &lt;l style="break"&gt;Queo podesse por amigauer&lt;/l&gt;
+    &lt;/supplied&gt;
+&lt;/ellipsis&gt;</p>
+</item>
+</list>
+</item>
+</list>
+</item>
+</list><list style="ul">
+<item>
+<list style="ul">
+<item>
+<list style="ul">
+<item>(Note that the above example is using @rend for its normal purpose, and @style to assert the rendition of supplied stuff.)
+<hi style="b">TEI ellipsis content model review: </hi>EB, SB, MB, MT, HC slated for Tues. 08-24 at 9 – 10:20am ET = 3 pm in Europe.</item>
+</list>
+</item>
+<item>PR for updating tei2html transformation to XHTML5: <ref target="https://github.com/TEIC/Stylesheets/pull/499">https://github.com/TEIC/Stylesheets/pull/499</ref>
+<list style="ul">
+<item>Original issue: <ref target="https://github.com/TEIC/Stylesheets/issues/487">https://github.com/TEIC/Stylesheets/issues/487</ref></item>
+<item>Summary: <ref target="https://github.com/TEIC/Stylesheets/pull/499#issuecomment-892149611">https://github.com/TEIC/Stylesheets/pull/499#issuecomment-892149611</ref></item>
+</list>
+</item>
+<item>PR for modifying Schematron constraint in ab: <ref target="https://github.com/TEIC/TEI/pull/2161">https://github.com/TEIC/TEI/pull/2161</ref>
+<list style="ul">
+<item>Original issue: <ref target="https://github.com/TEIC/TEI/issues/1988">https://github.com/TEIC/TEI/issues/1988</ref></item>
+<item><hi style="b">Action on EBB</hi> to provide test file and explain the situation with testing for <gi>floatingText</gi> inside an <gi>l</gi>.</item>
+<item>more PRs <ref target="https://github.com/TEIC/TEI/pulls">https://github.com/TEIC/TEI/pulls</ref></item>
+</list>
+</item>
+<item>inconsistent wording of descriptions of attr classes with only 1 attr
+<list style="ul">
+<item><ref target="https://github.com/TEIC/TEI/issues/2142">https://github.com/TEIC/TEI/issues/2142</ref></item>
+<item><hi style="b">Action on MS</hi>: to change the wording to plurals.</item>
+</list>
+</item>
+<item>Guideline issues milestone 4.3.0 <ref target="https://github.com/TEIC/TEI/issues?page=1&amp;q=is%3Aopen+is%3Aissue+milestone%3A%22Guidelines+4.3.0%22">https://github.com/TEIC/TEI/issues?page=1&amp;q=is%3Aopen+is%3Aissue+milestone%3A%22Guidelines+4.3.0%22</ref>
+<list style="ul">
+<item>discuss which of those we want to tackle before freeze</item>
+</list>
+</item>
+<item>Stylesheet issues milestone 7.52.0
+<list style="ul">
+<item><ref target="https://github.com/TEIC/Stylesheets/issues?q=is%3Aopen+is%3Aissue+milestone%3A%22Release+7.52.0%22">https://github.com/TEIC/Stylesheets/issues?q=is%3Aopen+is%3Aissue+milestone%3A%22Release+7.52.0%22</ref></item>
+</list>
+</item>
+</list>
+</item>
+</list></div><div type="h2"><head>Website navigation</head><list style="ul">
+<item>MS reminds HC to make sure the new WordPress menus work for the Guidelines.</item>
+</list></div><div type="h2"><head>Output of examples for all languages</head><list style="ul">
+<item>postponed to next meeting
+<list style="ul">
+<item><gi>gender</gi> or equivalent (or is this waiting for short VF2F?)</item>
+</list>
+</item>
+</list><list style="ul">
+<item>It’s currently listed as an activity for VF2F on the brainstorming document</item>
+</list></div><div type="h2"><head>Checking Pointers document — SB (see <ref target="https://github.com/TEIC/TEI/issues/1675#issuecomment-895225895">comment</ref> on issue)</head><list style="ul">
+<item>Re Syd’s questions:</item>
+<item>EBB agrees, and suggests linking the document from GitHub to TEI Wiki on ODD.</item>
+</list></div><div type="h2"><head>Report on OxGarage refactoring (PS)</head><list style="ul">
+<item>PS added his colleagues Daniel Röwenstrunk and Anne Ferger to TEIC organization on GitHub.</item>
+<item>Created a couple of new repos for OxGarage work.
+<list style="ul">
+<item>There is a new team for OxGarage work — add yourself if interested.</item>
+</list>
+</item>
+<item>Members of TEIC can now create repos (setting is changed).</item>
+</list></div><div type="h2"><head>Report on DockerHub Autobuilds trouble (PS)</head><list style="ul">
+<item>There are no free DockerHub builds any more. PS applied for an open source membership at DockerHub but didn’t get a response yet. Now there is no way to build docker images automatically.</item>
+<item>PS plans to try GitHub actions, add these to Jenkins repo, etc. to also use GitHub package registry. From there we could also push to DockerHub (possibly two locations to store the image). We need a GitHub token for this (provided by James Cummings) for the TEI Council user. PS has added this  token to organizational secrets.</item>
+<item>This is a workflow change, more about the infrastructure of OxGarage and Roma which rely on Docker images. Not so much about Council’s testing and building processes.</item>
+</list><p> </p></div></div></body><!-- #post-## --></text></TEI>

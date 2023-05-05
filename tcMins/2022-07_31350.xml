@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/home/lou/Public/TEI/TEICSS/tei.css" type="text/css"
+ ?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:t="http://www.tei-c.org/ns/1.0" n="2022-07"><teiHeader><fileDesc><titleStmt><title>Minutes of the TEI Technical Council</title><meeting n="2022-07" when="2022-07-08">TEI Technical Council online
+     meeting : <date>8 July 2022</date></meeting></titleStmt><publicationStmt><distributor>TEI Website</distributor><idno>TCM156</idno></publicationStmt><sourceDesc><p>Retagged from a WordPress HTML file</p></sourceDesc></fileDesc><revisionDesc><change when="2023-04-25">Archival header confected</change><change>Extracted from Word Press article with id post-31350</change></revisionDesc></teiHeader><text><body><div><p><hi style="strong">Meeting times:</hi></p><list style="ul">
+<item>7am PDT / 10am EDT / 4pm CEST</item>
+<item>Started:     15:05Z    Ended:    16:30Z</item>
+</list><p><hi style="strong">Present:</hi></p><list style="ul">
+<item>Syd Bauman (SB)</item>
+<item>Helena Bermúdez Sabel (HBS)</item>
+<item>Elisa Beshero-Bondar (EBB)</item>
+<item>Hugh Cayless (HC)</item>
+<item>Janelle Jenstad (JJ)</item>
+<item>Martina Scholger (MS)</item>
+<item>Sabine Seifert (SS)</item>
+</list><p><hi style="strong">Apologies/Not Present:</hi></p><list style="ul">
+<item>Elli Bleeker (EB)</item>
+<item>Peter Stadler (PS)</item>
+<item>Magdalena Turska (MT)</item>
+<item>Raff Viglianti (RV)</item>
+</list><p>Meeting minutes previous month (<ref target="https://tei-c.org/tei-technical-council-teleconference-2022-06-10/">June</ref>)</p><p> </p><div type="h2"><head>TEI Conference</head><list style="ul">
+<item>F2F meeting in Newcastle
+<list style="ul">
+<item>September 11–13 (Sun–Tue).</item>
+<item>Agenda F2F meeting</item>
+<item>Travel + Accommodation
+<list style="ul">
+<item>MS reminds us to book soon! Newcastle is already booking fast</item>
+</list>
+</item>
+<item>Invitations
+<list style="ul">
+<item>James Cummings</item>
+<item>David Maus — declined</item>
+<item>Martin Holmes — looking forward</item>
+</list>
+</item>
+</list>
+</item>
+<item>Joint Board/Council meeting
+<list style="ul">
+<item>Monday afternoon at 17:30, dinner afterwards</item>
+</list>
+</item>
+</list></div><div type="h2"><head>Next release</head><list style="ul">
+<item>Mid-Oct.</item>
+<item>Release techs will be SS, PS, &amp; MS. (Making this an all-European effort.)</item>
+</list></div><div type="h2"><head>Call for Nominations</head><list style="ul">
+<item>TEI-C Board: 1 open position</item>
+<item>TEI-C Council: 3 open positions</item>
+<item>Nominations form: <ref target="https://bit.ly/TEIC-Elections-2022">https://bit.ly/TEIC-Elections-2022</ref></item>
+<item>Link in the email sent today does not work. ACTION on MS to resend with correct link.</item>
+<item>SB reports link from Mon 04 Jul mail to TEI-L works (and confirms the link from the 05:49 mail this morning does not)</item>
+<item>HBS will nominate David Maus</item>
+<item>SB will nominate Nicolas Cole</item>
+</list></div><div type="h2"><head>Discussion of new gender element</head><list style="ul">
+<item>Issue: <ref target="https://github.com/TEIC/TEI/issues/2189">#2189</ref></item>
+<item>Do we wait to merge into dev until after the conference? SB says no. It will be ready to go after we fix the egregious but trivially fixed error in the order of datatypes. See the review by SB.</item>
+<item><hi style="b">Action on SB, HC, MS: </hi>Review PR <ref target="https://github.com/TEIC/TEI/pull/2299">2299</ref> <hi style="b">by</hi> 2022-06-24</item>
+</list></div><div type="h2"><head>Discussion of nested ab elements</head><list style="ul">
+<item>Issue #<ref target="https://github.com/TEIC/TEI/issues/1856">1856</ref></item>
+<item><hi style="b">Action</hi> on HC and EBB to update the prose <hi style="b">by</hi> mid-July.</item>
+<item><hi style="b">Action </hi>on HC, SB, or EBB after prose updated: make PR for <ref target="https://github.com/TEIC/TEI/compare/ab_in_ab_issue-1856">the branch</ref>.</item>
+<item>Discussion of the word “chunk” which isn’t easy to translate. Yet it has been with the Guidelines for a long time, and is all over the Guidelines. Original analogy was to soup with “chunks” floating in broth.</item>
+<item>Areas that we know need updating include:
+<list style="ul">
+<item><ref target="https://tei-c.org/release/doc/tei-p5-doc/en/html/ST.html#STBTC">STBTC</ref></item>
+<item><ref target="https://tei-c.org/release/doc/tei-p5-doc/en/html/CO.html#COPA">COPA</ref> (which is seriously problematic, particularly the first sentence with its totalizing assumptions about paragraphs)</item>
+</list>
+</item>
+</list></div><div type="h2"><head>Create p5subset.xml</head><list style="ul">
+<item>Ready to become TCW31?</item>
+<item>Yes. <hi style="b">Action on MS</hi> to add this to the documentation repo.</item>
+<item>It is SB’s job this month.</item>
+<item>Request PS to send a report on his automated method — progress, or has he given up? <hi style="b">ACTION on MS</hi> to ask PS.</item>
+</list></div><div type="h2"><head>Tickets</head><list style="ul">
+<item>Group worked on the gender ticket (<ref target="https://github.com/TEIC/TEI/issues/2189">#2189</ref>) and on (<ref target="https://github.com/TEIC/TEI/issues/2132">#2132</ref>).</item>
+</list></div><div type="h2"><head>AOB</head><list style="ul">
+<item>Returning to Newcastle, EBB requests that we share information about accommodation (beyond what conference organizers provide). Put info in the document where we are organizing the agenda.</item>
+</list></div><div type="h2"><head>Gender Ticket</head><table>
+
+<row>
+<cell>
+<list style="ul">
+<item>PR <ref target="https://github.com/TEIC/TEI/pull/2299">2299</ref></item>
+</list>
+</cell>
+<cell>[all]</cell>
+<cell><ref target="https://github.com/TEIC/TEI/pull/2299">https://github.com/TEIC/TEI/pull/2299</ref></cell>
+<cell><p>QOTD: “Shakespeare and Mrs. Doubtfire.”</p><p>Reach out to the TEI community at and after the conference.</p>
+<p>Translation into German, <hi style="b">Action on MS</hi> and <hi style="b">SS</hi></p></cell>
+</row>
+
+</table><p> </p></div><div type="h2"><head>Issues from the October 2021 meeting</head><p>Issues from the October meeting discussed by group B (European Group: MS, PS, MT, HBS) but on which no final decision was by the plenary.</p><p> </p><table>
+
+<row>
+<cell>#2132</cell>
+<cell>B</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/2132">Additional version/date attributes for gaiji description</ref></cell>
+<cell><p>How about renaming the att.styleDef</p><p>into att.schemeDef with attributes @scheme and @schemeVersion, eg. CSS 2.1 and Unicode 12.0 and change the @schemeVersion datatype teidata.versionNumber to accommodate e.g semver ranges like &gt;=1.2.7 &lt;1.3.0; alternatively @maxVersion @minVersion</p>
+<p>2022-07-08 Council discussion: There are 5 different versions of @version, and also @schemeVersion. Should we introduce datatype:semanticVersion with a datatype to accommodate semantic version ranges? Or introduce an alternative definition of @version att.gaijiprop. As for otherVer, no. Just put @version on another element. Change @version attribute so that it can support ranges.</p>
+<p>We will work on it in a branch and then engage <ref target="https://github.com/747">747</ref> again.</p>
+<p>ACTION on SB, MS, and Martin Holmes</p></cell>
+</row>
+<row>
+<cell>#2136</cell>
+<cell>B</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/2136">Use PureODD inside attribute lists</ref></cell>
+<cell><p>subgroup recommends to deprecate @org on <gi>attList</gi> and use schematron rules instead. A few elements use &lt;attList org=””&gt; at the moment, e.g. <gi>relation</gi>. These would have to be re-written.</p><p>————–
+There is no comment on the ticket to this effect, so I (SB) am commenting here. I think this [using Schematron instead] is a <hi style="b">terrible</hi> idea. One can express this (alternation of attributes) in RELAX NG, XML Schema, and even in ODD (except that it does not work in classes). There is no reason it should not remain expressible in ODD.</p></cell>
+</row>
+
+</table><p> </p></div></div></body><!-- #post-## --></text></TEI>

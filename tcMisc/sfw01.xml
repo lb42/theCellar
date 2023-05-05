@@ -1,0 +1,719 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet type="text/css" href="../Stylesheets/teixlite.css"?>
+<!DOCTYPE TEI.2 PUBLIC "-//TEI//DTD TEI Lite XML ver. 1//EN" "../Lite/DTD/teixlite.dtd"
+[
+  <!ATTLIST xptr url CDATA #IMPLIED >
+  <!ATTLIST xref url CDATA #IMPLIED >
+]>
+<TEI.2>
+ <teiHeader>
+  <fileDesc>
+   <titleStmt>
+    <title>Structured Bibliographies in TEI P5</title>
+    <author>Paul Henry Tremblay et al.</author>
+    <editor>Syd Bauman</editor>
+   </titleStmt>
+   <publicationStmt>
+    <p>Intended to be publicly available via the GFDL.</p>
+   </publicationStmt>
+   <sourceDesc>
+    <p>The initial paper written by Tremblay et al. was submitted as
+      part of TEI Sourceforge feature request 1012350, and (as of this
+     writing) is available on
+      <xref
+      url="http://sourceforge.net/tracker/download.php?group_id=106328&amp;atid=644065&amp;file_id=98435&amp;aid=1012350">Sourceforge</xref>.</p>
+   </sourceDesc>
+  </fileDesc>
+  <revisionDesc>
+<change><date value="2004-11-26">Fri, 26 Nov 04</date>
+        <respStmt><name>Syd Bauman</name>
+        <resp>editor</resp></respStmt>
+        <item>Minor improvements: Fixed some encoding, changed wording
+        here &amp; there to sound more like standardeze.</item>
+        </change>
+<change><date value="2004-11-25">Thu, 25 Nov 04</date>
+        <respStmt><name>Syd Bauman</name>
+        <resp>editor</resp></respStmt>
+        <item>Started converting source paper to TEI Lite.</item>
+        </change>
+  </revisionDesc>
+ </teiHeader>
+ <text>
+  <body>
+   <div>
+    <head>Overview</head>
+    <p>The group that has been working on bibliographic entries for
+     TEI proposes that <gi>biblStruct</gi> with its children
+     <gi>analytic</gi>, <gi>monogr</gi>, and <gi>series</gi> be
+     replaced by two new elements: <gi>biblItem</gi> and
+     <gi>relatedBiblItem</gi>.</p>
+    <p>After the lengthy discussion that resulted from encoding around
+     200 bibliographic entries, we have come to the conclusion that
+     the <gi>biblStruct</gi> element is both too ambiguous and too
+     restrictive. Take an example of an article that reviews a book
+     that was originally a manuscript. In order to render such an
+     entry in TEI P4, we need the following XML:
+<eg n="Example 1"><![CDATA[<biblStruct rend="article">
+  <analytic rend="article">
+    <author>
+      <persName>
+        <foreName>Frank</foreName>
+        <foreName>W.</foreName>
+        <surname>Heny</surname>
+      </persName>
+    </author>
+  </analytic>
+  <monogr rend="work.reviewed">
+    <author>
+      <persName>
+        <foreName>Noam</foreName>
+        <surname>Chomsky</surname>
+      </persName>
+    </author>
+    <title level="m">The Logical Structure of Linguistic Theory</title>
+    <imprint>
+      <pubPlace>New York</pubPlace>
+      <publisher>Plenum</publisher>
+      <date>1975</date>
+    </imprint>
+  </monogr>
+  <monogr rend="manuscript">
+    <author>
+      <persName>
+        <foreName>Noam</foreName>
+        <surname>Chomsky</surname>
+      </persName>
+    </author>
+    <title level="u">The Logical Structure of Linguistic Theory</title>
+    <imprint>
+      <pubPlace>Cambridge, Mass.</pubPlace>
+      <publisher>Massachusetts Institute of Technology</publisher>
+      <date>1955</date>
+    </imprint>
+  </monogr>
+  <monogr rend="journal">
+    <title level="j">Synthese</title>
+    <imprint>
+      <date>1979</date>
+    </imprint>
+    <biblScope type="volume">40</biblScope>
+    <biblScope type="pages">317-352</biblScope>
+  </monogr>
+ </biblStruct>]]></eg>
+    </p>
+    <p>Note that this entry needs three <gi>monogr</gi> elements. Each
+     of these <gi>monogr</gi> elements can only exist as a sibling of
+     the others, so the true relationship between them remains
+     ambiguous. The sibling relationship of the second <gi>monogr</gi>
+     element does not indicate that it is the origin for its older
+     brother. Likewise, the proximity of the third <gi>monogr</gi>
+     element to the second <gi>monogr</gi> element seems to indicate a
+     relationship, when in fact there is none.</p>
+    <p>A better way to encode this example is to nest related items
+     inside each other. Here is such an example, using our proposed
+     new elements:
+<eg n="Example 1 With New Elements"><![CDATA[<biblItem type="article">
+  <author>
+    <persName>
+      <forename>Frank</forename>
+      <forename>W.</forename>
+      <surname>Heny</surname>
+    </persName>
+  </author>
+  <relatedBiblItem role="work.reviewed" type="book">
+    <author>
+      <persName>
+        <forename>Noam</forename>
+        <surname>Chomsky</surname>
+      </persName>
+        <forename>Noam</forename>
+        <surname>Chomsky</surname>
+      </persName>
+    </author>
+    <title level="m">The Logical Structure of Linguistic Theory</title>
+    <imprint>
+      <pubPlace>New York</pubPlace>
+      <publisher>Plenum</publisher>
+      <date>1975</date>
+    </imprint>
+    <relatedBiblItem role="original" type="manuscript">
+      <author>
+        <persName>
+          <forename>Noam</forename>
+          <surname>Chomsky</surname>
+        </persName>
+      </author>
+      <title level="u">The Logical Structure of Linguistic
+        Theory</title>
+      <imprint>
+        <pubPlace>Cambridge, Mass.</pubPlace>
+        <publisher>Massachusetts Institute of Technology</publisher>
+        <date>1955</date>
+      </imprint>
+    </relatedBiblItem>
+  </relatedBiblItem>
+  <relatedBiblItem role="host" type="journal">
+    <title level="j">Synthese</title>
+    <biblScope type="volume">40</biblScope>
+    <imprint>
+      <date>1979</date>
+    </imprint>
+    <biblScope type="pages">317-352</biblScope>
+  </relatedBiblItem>
+</biblItem>]]></eg></p>
+    <p>Note how instead of three <gi>monogr</gi> elements, this entry
+     uses three <gi>relatedBiblItem</gi> elements. The second
+     <gi>relatedBiblItem</gi> indicates that it is the origin to the
+     work reviewed both by the role attribute (<ident
+      type="attrVal">original</ident>) and because it is the child of
+     the work reviewed.</p>
+    <p>The third <gi>relatedBiblItem</gi> is not nested inside the
+     first, so it correctly shows no relationship to it. We know that
+     this third <gi>relatedBiblItem</gi> serves as the host for the
+     actual review because its value for the role attribute is
+     <ident>host</ident>.</p>
+   </div>
+   <div>
+    <head>New Structure for <gi>biblStruct</gi></head>
+    <p>The elements <gi>analytic</gi>, <gi>monogr</gi>, and
+     <gi>series</gi> would not be used within <gi>biblItem</gi>, since
+     we believe these concepts unneeded and too vague.  For example,
+     some librarians refer to an individual article as a monographic
+     entry, while other vehemently insist that a journal is not a
+     monograph at all. Does one include information about a
+     multivolume work in a <gi>series</gi> element, even though an
+     editor of a multivolume work is distinct for the editor of a
+     series?</p>
+    <p>Instead, we propose that entries using <gi>analytic</gi>,
+     <gi>monograph</gi>, and <gi>series</gi> be encoded using the
+     <gi>relatedBiblItem</gi> element. This new structure would bring
+     TEI bibliographic representation closer in line with recent
+     library developments, such as the Metadata Object Description
+     Schema (MODS) from the Library of Congress. The proposed
+     <gi>relatedBiblItem</gi> element would be structurally equivalent to the
+     <gi>relatedItem</gi> element in MODS, which is itself influenced
+     by relator structures in Dublin Core.</p>
+    <p>Here is an example of article <title level="a">Weak
+      Indefinites</title>  that appears in volume 1 of a book called
+     <title level="m">The Syntax and Semantics of Noun
+      Phrases</title>. In turn, the book <title level="m">The Syntax
+      and Semantics of Noun Phrases</title> appears in a multivolume
+     work called <title level="s">From NP to DP</title>. In turn,
+     volumes of this work appears in a series called <title
+      level="s">Linguistics Today</title>.</p>
+    <eg n="Example 2"><![CDATA[<biblItem type="article">
+  <author>
+    <persName>
+      <forename>Gregory</forename>
+      <forename>N.</forename>
+      <surname>Carlson</surname>
+    </persName>
+  </author>
+  <title level="a">Weak Indefinites</title>
+  <relatedBiblItem role="host" type="book">
+    <title level="m">The Syntax and Semantics of Noun Phrases</title>
+    <relatedBiblItem role="host" type="book">
+      <title level="m">From NP to DP</title>
+      <editor>
+        <persName>
+          <forename>Martine</forename>
+          <surname>Coene</surname>
+        </persName>
+      </editor>
+      <editor>
+        <persName>
+          <forename>Yves</forename>
+          <surname>D'hulst</surname>
+        </persName>
+      </editor>
+      <imprint>
+        <pubPlace>Amsterdam</pubPlace>
+        <publisher>Benjamins</publisher>
+        <date>2003</date>
+      </imprint>
+      <biblScope type="volume">1</biblScope>
+    </relatedBiblItem>
+    <relatedBiblItem role="host" type="series">
+      <title level="s">Linguistics Today</title>
+      <biblScope type="volume">55</biblScope>
+    </relatedBiblItem>
+    <biblScope type="pages">195-210</biblScope>
+  </relatedBiblItem>
+</biblItem>]]></eg>
+    <p>In order to clarify exactly what our new structure will look
+     like, we have included further examples at the bottom of the
+     page. Each entry includes an example from TEI P4 using
+     <gi>biblStruct</gi>, and an additional entry re-written using our
+      proposed new elements.</p>
+   </div>
+   <div>
+    <head>Content Model</head>
+    <p>The <gi>biblItem</gi> and <gi>relatedBiblItem</gi> should allow
+     the same children as <gi>bibl</gi>, minus the phrase-level
+     element content. The new element should not allow any PCDATA.
+     Likewise, the new elements should not allow the elements
+     <gi>analytic</gi>, <gi>monograph</gi>, or <gi>series</gi>.</p>
+   </div>
+   <div>
+    <head>Attributes</head>
+    <p>We propose the following attributes for <gi>biblItem</gi> and
+    <gi>relatedBiblItem</gi>:
+     <list type="gloss">
+      <label><ident type="attrName">type</ident></label>
+      <item>Optional. Indicates either a
+       genre, such as <ident type="attrVal">review</ident>, or the physical qualities of the
+       element itself, such <ident type="attrVal">book</ident>.</item>
+      <label><ident type="attrName">target</ident></label>
+      <item>Optional. In P5 should be called <ident
+        type="attrName">url</ident>, <ident
+        type="attrName">href</ident>, <ident
+        type="attrName">xlink:href</ident>, or whatever is appropriate
+       to match similar such attributes. Indicates that the
+       <gi>relatedBiblItem</gi> is linked to <gi>biblItem</gi> in the
+       same file. For example, an XML document might have several
+       articles that are in the same journal. This linking attribute
+       would allow a user to enter the journal only once, and then
+       link to it for each article.</item>
+      <label><ident type="attrName">form</ident></label>
+      <item>Optional. Indicates the physical
+       form of a bibliographic entry. A play recorded on a video
+       cassette would look like <code><![CDATA[<biblItem type="performance" form="video-cassette">]]></code>.</item>
+      <label><ident type="attrName">status</ident></label>
+      <item>Optional. Indicates the
+       publication status of an entry. A book in manuscript form would
+       look like this: <code><![CDATA[<biblItem type="book" status="manuscript">]]></code>.
+       Other possible values for <ident type="attrName">status</ident> are
+       <ident type="attrVal">forthcoming</ident> and <ident type="attrVal">inPrint</ident>.</item>
+     </list>
+    </p>
+    <p>We propose there should be a mandatory <ident
+      type="attrName">role</ident> attribute on
+     <gi>relatedBiblItem</gi>. We would like to restrict its values to
+     a closed list, but do not have enough time to come up with a
+     comprehensive list at this time. However, here is a list of known
+     values:
+     <list>
+      <item><ident type="attrVal">host</ident> indicates that the
+       elements serves as a host.</item>
+
+      <item><ident type="attrVal">original</ident> indicates that the
+       element forms the origin.</item>
+
+      <item><ident type="attrVal">workReviewed</ident> indicates that
+       the element is the work reviewed.</item>
+
+      <item><ident type="attrVal">edition</ident> indicates that the
+       element contains separate information (such as an author) for
+       that particular edition. Conversely, one could use the
+       <gi>editionStmt</gi> if TEI P5 allows this element within our
+       new elements.</item>
+
+      <item><ident type="attrVal">isBasedOn</ident> indicates that the
+       element forms the base for the work in question.</item>
+
+      <item><ident type="attrVal">isReferencedBy</ident> indicates
+       that the element is a reference for the work in
+       question.</item>
+     </list>
+    </p>
+   </div>
+   <div>
+    <head>Rationale for New Elements</head>
+    <p>The group working on TEI P5 might ask why the element
+     <gi>biblItem</gi> is needed when three other items already exist
+     to indicate bibliographic information. We feel that the other
+     three element don't quite indicate that their contents will
+     include specific information that a processor would use to create
+     automatic bibliographic entries. We would hope that
+     <gi>biblItem</gi> would replace <gi>biblStruct</gi>. In a less
+     ideal situation, we hope that <gi>biblItem</gi> would be accepted
+     as a new element, while the use of <gi>biblStruct</gi> would be
+     deprecated. If neither of these cases are possible, we at least
+     hope that the <gi>relatedBiblItem</gi> would be allowed within
+     <gi>bibl</gi>.</p>
+   </div>
+   <div>
+    <head>Examples from TEI P4 and Proposed Changes</head>
+    <div>
+     <head>Section 6.10.1 example 4</head>
+     <eg><![CDATA[<biblStruct>
+   <monogr>
+      <author>Edward R. Tufte</author>
+      <title>Envisioning Information</title>
+      <imprint>
+         <pubPlace>Cheshire, Conn.</pubPlace>
+         <publisher>Graphics Press</publisher>
+         <date>1990</date>
+      </imprint>
+   </monogr>
+</biblStruct>]]></eg>
+     <eg><![CDATA[<biblItem type="book">
+    <author>Edward R. Tufte</author>
+    <title>Envisioning Information</title>
+    <imprint>
+     <pubPlace>Cheshire, Conn.</pubPlace>
+       <publisher>Graphics Press</publisher>
+       <date>1990</date>
+    </imprint>
+</biblItem>]]></eg>
+    </div>
+    <div>
+     <head>Section 6.10.1 example 6</head>
+     <eg><![CDATA[<listBibl>
+   <head>Bibliography</head>
+   <biblStruct id="NEL80">
+      <analytic>
+         <author>Nelson, T. H.</author>
+         <title>Replacing the printed word:
+             a complete literary system.</title>
+      </analytic>
+      <monogr>
+          <title>Information Processing '80:  Proceedings of the IFIPS
+             Congress, October 1980</title>
+         <editor>Simon H. Lavington</editor>
+         <imprint>
+            <publisher>North-Holland</publisher>
+            <pubPlace>Amsterdam</pubPlace>
+            <date>1980</date>
+         </imprint>
+         <biblScope>pp 1013&#x2013;23 </biblScope>
+      </monogr>
+      <note>Apparently a draft of section 4 of
+          <title>Literary Machines</title>.</note>
+   </biblStruct>
+</listBibl>]]></eg>
+     <eg><![CDATA[<listBibl>
+   <head>Bibliography</head>
+   <biblItem id="NEL80" type="article">
+      <author>Nelson, T. H.</author>
+      <title>Replacing the printed word</title>
+      <title type="subordinate">A complete literary system</title>
+      <relatedBiblItem role="host" type="book">
+         <title>Information Processing '80</title>
+         <title type="subordinate">Proceedings of the IFIPS Congress, October 1980</title>
+         <editor>Simon H. Lavington</editor>
+         <imprint>
+            <publisher>North-Holland</publisher>
+            <pubPlace>Amsterdam</pubPlace>
+            <date>1980</date>
+         </imprint>
+         <biblScope type="pages">1013&#x2013;1023</biblScope>
+      </relatedBiblItem>
+      <note>Apparently a draft of section 4 of
+          <title>Literary Machines</title>.</note>
+   </biblItem>
+</listBibl>]]></eg>
+    </div>
+    <div>
+     <head>Section 6.10.2.1 example 1</head>
+     <eg><![CDATA[<biblStruct>
+   <analytic>
+      <author>Thaller, Manfred</author>
+      <title level="a">A Draft Proposal for a Standard for the
+                       Coding of Machine Readable Sources</title>
+   </analytic>
+   <monogr>
+      <title level="j">Historical Social Research</title>
+      <imprint>
+         <biblScope type="vol">40</biblScope>
+         <date>October 1986</date>
+         <biblScope type="pages">3-46</biblScope>
+      </imprint>
+   </monogr>
+   <monogr>
+      <title level="m">Modelling Historical Data:
+                       Towards a Standard for Encoding and
+                       Exchanging Machine-Readable Texts</title>
+      <editor>Daniel I. Greenstein</editor>
+      <imprint>
+         <pubPlace>St. Katharinen</pubPlace>
+         <publisher>Max-Planck-Institut f&#xFC;r Geschichte
+                    In Kommission bei
+                    Scripta Mercaturae Verlag</publisher>
+         <date>1991</date>
+      </imprint>
+   </monogr>
+   <series lang="DEU">
+      <title level="s">Halbgraue Reihe
+                       zur Historischen Fachinformatik</title>
+      <respStmt>
+         <resp>Herausgegeben von</resp>
+         <name type="person">Manfred Thaller</name>
+         <name type="org">Max-Planck-Institut f&#xFC;r Geschichte</name>
+      </respStmt>
+      <title level="s">Serie A: Historische Quellenkunden</title>
+      <biblScope>Band 11</biblScope>
+   </series>
+</biblStruct>]]></eg>
+     <eg><![CDATA[<biblItem type="article">
+   <author>Thaller, Manfred</author>
+   <title>A Draft Proposal for a Standard for the Coding of Machine Readable Sources</title>
+   <relatedBiblItem role="host" type="book">
+      <title>Modelling Historical Data</title>
+      <title type="subordinate">Towards a Standard for Encoding and Exchanging
+      Machine-Readable Texts</title>
+      <editor>Daniel I. Greenstein</editor>
+      <imprint>
+         <pubPlace>St. Katharinen</pubPlace>
+         <publisher>Max-Planck-Institut f&#xFC;r Geschichte</publisher>
+         <date>1991</date>
+      </imprint>
+      <relatedBiblItem role="host" type="series">
+         <title lang="DEU" level="s">Historische Quellenkunden</title>
+         <relatedBiblItem role="host" type="series">
+            <title lang="DEU" level="s">Halbgraue Reihe zur Historischen Fachinformatik</title>
+            <respStmt>
+               <resp lang="DEU">Herausgegeben von</resp>
+               <name type="person">Manfred Thaller</name>
+               <name type="org">Max-Planck-Institut f&#xFC;r Geschichte</name>
+            </respStmt>
+            <biblScope type="series">A</biblScope>
+         </relatedBiblItem>
+         <biblScope type="volume">11</biblScope>
+      </relatedBiblItem>
+   </relatedBiblItem>
+   <relatedBiblItem role="orginal" type="journal">
+      <title>Historical Social Research</title>
+      <biblScope type="volume">40</biblScope>
+      <imprint>
+         <date>1986</date>
+      </imprint>
+      <biblScope type="pages">3&#x2013;46</biblScope>
+   </relatedBiblItem>
+</biblItem>]]></eg>
+    </div>
+    <div>
+     <head>Section 6.10.2.2 example 1</head>
+     <eg><![CDATA[<biblStruct>
+   <analytic>
+      <author>Lucy Allen Paton</author>
+      <title>Notes on Manuscripts of the
+         <title level="m" lang="FRA">Proph&#xE9;cies de Merlin</title>
+      </title>
+   </analytic>
+   <monogr>
+      <title level="j">PMLA</title>
+      <imprint>
+         <biblScope type="vol">8</biblScope>
+         <date>1913</date>
+         <biblScope type="pages">122</biblScope>
+      </imprint>
+   </monogr>
+</biblStruct>]]></eg>
+     <eg><![CDATA[<biblItem type="article">
+   <author>Lucy Allen Paton</author>
+   <title>Notes on Manuscripts of the
+      <title level="m" lang="FRA">Proph&#xE9;cies de Merlin</title>
+   </title>
+   <relatedBiblItem role="host" type="journal">
+      <title>PMLA</title>
+      <biblScope type="volume">8</biblScope>
+      <imprint>
+        <date>1913</date>
+      </imprint>
+      <biblScope type="page">122</biblScope>
+   </relatedBiblItem>
+</biblItem>]]></eg>
+    </div>
+    <div>
+     <head>Section 6.10.2.2 example 5</head>
+     <eg><![CDATA[<biblStruct>
+   <monogr lang="DEU">
+      <title>Des Minnesangs Fr&#xFC;hling</title>
+      <note place="inline">Mit 1 Faksimile</note>
+      <edition>36., neugestaltete und erweiterte Auflage</edition>
+      <respStmt>
+         <resp>Unter Benutzung der Ausgaben von <name>Karl
+            Lachmann</name> und <name>Moriz Haupt</name>, <name>Friedrich
+ Vogt</name> und <name>Carl von Kraus</name> bearbeitet von</resp>
+         <name>Hugo Moser</name>
+         <name>Helmut Tervooren</name>
+      </respStmt>
+      <imprint>
+         <biblScope type="volume">I</biblScope>
+         <biblScope type="volume title">Texte</biblScope>
+         <pubPlace>Stuttgart</pubPlace>
+         <publisher>S. Hirzel Verlag</publisher>
+         <date>1977</date>
+      </imprint>
+   </monogr>
+</biblStruct>]]></eg>
+     <eg><![CDATA[<biblItem type="book">
+   <title lang="DEU">Texte</title>
+   <relatedBiblItem role="host" type="book">
+      <title lang="DEU">Des Minnesangs Fr&#xFC;hling</title>
+      <edition lang="DEU">36., neugestaltete und erweiterte Auflage</edition>
+      <respStmt>
+         <resp lang="DEU">Unter Benutzung der Ausgaben von <name>Karl
+            Lachmann</name> und <name>Moriz Haupt</name>, <name>Friedrich
+            Vogt</name> und <name>Carl von Kraus</name> bearbeitet von</resp>
+         <name>Hugo Moser</name>
+         <name>Helmut Tervooren</name>
+      </respStmt>
+      <imprint>
+         <pubPlace>Stuttgart</pubPlace>
+         <publisher>S. Hirzel Verlag</publisher>
+         <date>1977</date>
+      </imprint>
+      <biblScope type="volume">I</biblScope>
+   </relatedBiblItem>
+   <note lang="DEU">Mit 1 Faksimile</note>
+</biblItem>]]></eg>
+    </div>
+    <div>
+     <head>Section 6.10.2.3 example 3</head>
+     <eg><![CDATA[<biblStruct>
+   <monogr>
+      <author>Shirley, James</author>
+      <title type="main">The gentlemen of Venice</title>
+      <title type="subordinate">a tragi-comedie presented at the private
+          house in Salisbury Court by Her Majesties servants</title>
+          <note place="inline">[Microform]</note>
+      <imprint>
+         <pubPlace>London</pubPlace>
+         <publisher>H. Moseley</publisher>
+         <date>1655</date>
+      </imprint>
+      <extent>78 p.</extent>
+   </monogr>
+   <monogr>
+      <imprint>
+         <pubPlace>New York</pubPlace>
+         <publisher>Readex Microprint</publisher>
+         <date>1953</date>
+      </imprint>
+      <extent>1 microprint card, 23 x 15 cm.</extent>
+   </monogr>
+   <series>
+      <title>Three centuries of drama: English, 1642&#x2013;1700</title>
+   </series>
+</biblStruct>]]></eg>
+     <eg><![CDATA[<biblItem type="book">
+   <author>Shirley, James</author>
+   <title>The gentlemen of Venice</title>
+   <title type="subordinate">A tragi-comedie presented at the private house in
+      Salisbury Court by Her Majesties servants</title>
+   <imprint>
+      <pubPlace>London</pubPlace>
+      <publisher>H. Moseley</publisher>
+      <date>1655</date>
+   </imprint>
+   <extent type="pages">78</extent>
+   <relatedBiblItem role="reprint" type="microform">
+      <imprint>
+         <pubPlace>New York</pubPlace>
+         <publisher>Readex Microprint</publisher>
+         <date>1953</date>
+      </imprint>
+      <extent>1 microprint card, 23 x 15 cm</extent>
+      <relatedBiblItem role="host" type="series">
+         <title>Three centuries of drama</title>
+         <title type="subordinate">English, 1642&#x2013;1700</title>
+      </relatedBiblItem>
+   </relatedBiblItem>
+</biblItem>]]></eg>
+    </div>
+    <div>
+     <head>Section 6.10.2.3 example 4</head>
+     <eg><![CDATA[<biblStruct>
+   <analytic>
+      <author>Wrigley, E. A.</author>
+      <title>Parish registers and the historian</title>
+   </analytic>
+   <monogr>
+      <editor>Steel, D. J.</editor>
+      <title>National index of parish registers</title>
+      <imprint>
+         <pubPlace>London</pubPlace>
+         <publisher>Society of Genealogists</publisher>
+         <date value="1968">1968</date>
+      </imprint>
+      <biblScope type="volume">vol. 1</biblScope>
+      <biblScope type="pages">pp. 155&#x2013;167.</biblScope>
+   </monogr>
+</biblStruct>]]></eg>
+     <eg><![CDATA[<biblItem type="article">
+   <author>Wrigley, E. A.</author>
+   <title>Parish registers and the historian</title>
+   <relatedBiblItem role="host" type="book">
+     <editor>Steel, D. J.</editor>
+     <title>National index of parish registers</title>
+     <imprint>
+       <pubPlace>London</pubPlace>
+         <publisher>Society of Genealogists</publisher>
+         <date>1968</date>
+     </imprint>
+     <biblScope type="volume">1</biblScope>
+     <biblScope type="pages">155&#x2013;167</biblScope>
+   </relatedBiblItem>
+</biblItem>]]></eg>
+    </div>
+    <div>
+     <head>Section 6.10.2.3 example 5</head>
+     <eg><![CDATA[<biblStruct>
+   <analytic>
+      <author>Boguraev, Branimir</author>
+      <author>Neff, Mary</author>
+      <title>Text Representation, Dictionary Structure,
+             and Lexical Knowledge</title>
+   </analytic>
+   <monogr>
+      <title level="j">Literary &amp; Linguistic Computing</title>
+      <imprint>
+         <biblScope type="volume">7</biblScope>
+         <biblScope type="issue">2</biblScope>
+         <date>1992</date>
+         <biblScope type="pages">110-112</biblScope>
+      </imprint>
+   </monogr>
+</biblStruct>]]></eg>
+     <eg><![CDATA[<biblItem type="article">
+   <author>Boguraev, Branimir</author>
+   <author>Neff, Mary</author>
+   <title>Text Representation, Dictionary Structure,
+          and Lexical Knowledge</title>
+   <relatedBiblItem role="host" type="journal">
+     <title>Literary &amp; Linguistic Computing</title>
+     <biblScope type="volume">7</biblScope>
+     <imprint>
+       <date>1992</date>
+     </imprint>
+     <biblScope type="issue">2</biblScope>
+     <biblScope type="pages">110&#x2013;112</biblScope>
+   </relatedBiblItem>
+</biblItem>]]></eg>
+    </div>
+    <div>
+     <head>Section 6.10.2.3 example 6</head>
+     <eg><![CDATA[<biblStruct>
+   <analytic>
+      <author>Chesnutt, David</author>
+      <title>Historical Editions in the States</title>
+   </analytic>
+   <monogr>
+      <title level="j">Computers and the Humanities</title>
+      <imprint>
+         <biblScope>25.6</biblScope>
+         <date value="1991-12">(December, 1991):</date>
+         <biblScope>377&#x2013;380</biblScope>
+      </imprint>
+   </monogr>
+</biblStruct>]]></eg>
+     <eg><![CDATA[<biblItem>
+   <author>Chesnutt, David</author>
+   <title>Historical Editions in the States</title>
+   <relatedBiblItem role="host" type="journal">
+      <title level="j">Computers and the Humanities</title>
+      <biblScope type="volume">25</biblScope>
+      <imprint>
+         <date value="1991-12">December, 1991</date>
+      </imprint>
+      <biblScope type="issue">6</biblScope>
+      <biblScope type="pages">377&#x2013;380</biblScope>
+   </relatedBiblItem>
+</biblItem>]]></eg>
+    </div>
+   </div>
+  </body>
+ </text>
+</TEI.2>

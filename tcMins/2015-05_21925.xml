@@ -1,0 +1,1226 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/home/lou/Public/TEI/TEICSS/tei.css" type="text/css"
+ ?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:t="http://www.tei-c.org/ns/1.0" n="2015-05"><teiHeader><fileDesc><titleStmt><title>Minutes of the TEI Technical Council</title><meeting n="2015-05" from="2015-05-28" to="2015-05-30">TEI Technical
+     Council ftf meeting : <placeName>Ann Arbor</placeName>, <date>28–30 May 2015</date></meeting></titleStmt><publicationStmt><distributor>TEI Website</distributor><idno>TCM069</idno></publicationStmt><sourceDesc><p>Retagged from a WordPress HTML file</p></sourceDesc></fileDesc><revisionDesc><change when="2023-04-27">Archival header confected</change><change>Extracted from Word Press article with id post-21925</change></revisionDesc></teiHeader><text><body><div>
+		
+		<!-- <div class="teiheader"><filedesc><titlestmt><title></title><author>TEI Technical Council</author></titlestmt><editionstmt><edition><date>2015-06-15</date></edition></editionstmt><publicationstmt>
+<p>Minutes from the Spring 2015 face-to-face meeting in Ann Arbor, MI</p>
+</publicationstmt><sourcedesc><p>Converted from a Word document</p>
+<p>      </sourcedesc></filedesc><encodingdesc><appinfo><application id="docxtotei" ident="TEI_fromDOCX" version="2.15.0"><label>DOCX to TEI</label>
+        </application></appinfo></encodingdesc><revisiondesc><listchange><change><date>2015-06-15T16:02:22Z</date><name>Hugh Cayless</name></change></listchange></revisiondesc></div> -->
+<!--<p><front><titlepage><doctitle><titlepart type="Title"><anchor id="h.tubqp5npvlw"/>, Ann Arbor, MI</titlepart></doctitle></titlepage></p>
+<p>Initial Agenda: <a href="https://wiki.tei-c.org/index.php/Council_Agenda_2015-05"><hi class="underline color(1155cc)">http://wiki.tei-c.org/index.php/Council_Agenda_2015-05</hi></a></p>-->
+<p>Participants</p>
+<p><hi style="bold">Council:</hi> Syd Bauman (SB), Lou Burnard (LB), Hugh Cayless (HC – Chair),
+        Fabio Ciotti (FC), James Cummings (JC); Martin Holmes (MH), Stefan Majewski (SM), Paul
+        Schaffner (PFS), Peter Stadler (PWS – Local Organizer), Raffaele Viglianti (RV), and Stefanie Gehrke (SG)
+        intermittently via Skype, </p>
+<p><hi style="bold">Guests:</hi> Sebastian Rahtz (SR) for TEI Simple discussion. Lauren Romary
+        (LR) for Standoff Discussion.</p>
+
+<div><head>
+        Thursday, 2015-05-28</head>
+<div><head>TEI Hackathon report (JC)
+          </head><list style="ul">
+<item>~9 people so far some not registered via our form.</item>
+<item>different topics: text and image, multiple versions, eXist-db, APIs, </item>
+<item>Fairly relaxed, unconference style of organization</item>
+<item>there is a mailing list, &amp; JC will be soliciting pitches beforehand</item>
+</list>
+</div>
+<div><head> SIG Reports
+          </head><list style="ul">
+<item>RILM (reported by RV) – <hi style="italic">potential</hi> work proposal to encode
+              musicological terminology in TEI, to be coordinated by music SIG</item>
+<item>Correspondence SIG (reported by PWS) has proposed a training workshop at the
+              Members’ Meeting</item>
+<item>PWS suggested moving the TEI-SIGs list to lists.tei-c.org for consistency. (And
+              otherwise updating list of SIGs, marking them as inactive, etc.) </item>
+<item>Publications-SIG appears to be dead and so should probably be
+              decommissioned</item>
+<item>HC suggests marking SIGs as inactive as opposed to simply removing them</item>
+<item><hi style="bold">Action on SB</hi>: send report of when each SIG list (at Brown)
+              was last active — DONE</item>
+<item><hi style="bold">Action on HC</hi>: write to conveners, telling them that (barring
+              objections) he will mark their SIG as inactive and <hi style="italic bold">may</hi> set
+              their mailing lists not to receive mail.</item>
+</list>
+</div>
+<div><head>           Fall f2f meeting
+          </head><list style="ul">
+<item>Conference starts on Wed.</item>
+<item>Council meeting <hi style="bold">must</hi> be beforehand</item>
+<item><hi style="bold">Action on HC</hi> to re-establish contact with Emmanuelle and find
+              out about meeting on Sunday—dependent on how workshop responsibilities pan out.</item>
+<item>Probably start on Sunday when workshops spread out, otherwise on Monday</item>
+</list>
+</div>
+<div>
+       <head>   MH on <hi style="italic">Building the Oxygen Plugin</hi></head><list style="ul">
+<item>MH presented on the difficulties and possibilities of building the oxygen-tei
+              plugin.</item>
+</list>
+</div>
+<div><head> Roma Redux
+          </head><list style="ul">
+<item>Should Council drive a replacement for Roma?</item>
+<item><hi style="bold">Action on JC</hi> to dig up previous specification document: <ref target="https://docs.google.com/document/d/1766WTJV2xcfANh8HRZW5m520yrC1nCzQJzUgKpwiylI/edit#heading=h.gj52guiijhg7"><hi style="underline color(1155cc)">https://docs.google.com/document/d/1766WTJV2xcfANh8HRZW5m520yrC1nCzQJzUgKpwiylI/edit#heading=h.gj52guiijhg7</hi></ref>
+                [<hi style="bold">DONE</hi>]</item>
+<item>LB mentions that there is some work being done in this direction at University of
+              Caen</item>
+<item>Council would like a new Roma and believes it is fundamental to people’s use of
+              the TEI.</item>
+</list>
+<p><hi style="bold">Note:</hi> Council would like to thank Paul and Paula Schaffner for
+            hosting a marvelous BBQ at their home — a fascinating place in its own right, and a
+            happy birthday to Fabio (FC).</p>
+</div>
+</div>
+<div><head>
+        Friday, 2015-05-29</head>
+<p>MH presents the oXygen plugin, the concept, features and build process; <hi style="bold">Action on MH: turn into TCW documentation after developing on wiki.</hi></p>
+<div><head>
+          Standoff</head>
+<p>Council had a skype discussion with Laurent Romary about standoff</p>
+<list style="ul">
+<item>New standoff element. Discussion set for Friday @ 10:00. Please review:<list style="ul">
+<item><ref target="https://github.com/laurentromary/stdfSpec"><hi style="underline color(1155cc)">https://github.com/laurentromary/stdfSpec</hi></ref></item>
+</list>
+</item>
+<item>Discussion about <gi>mapStruct</gi> with example from RV</item>
+<item>Council agrees on the importance of standoff, with some quibbles (especially
+              concerning the header). </item>
+<item>A subset of Council will meet to put together a roadmap for Laurent so that he can
+              put together a full proposal. Interested: PWS, HC, FC</item>
+<item>Action on PWS HC, FC: Form subgroup with others interested and report back to
+              Council.</item>
+</list>
+</div>
+<div><head>
+          TEI Simple</head>
+<p>
+            <hi style="bold">Materials:</hi></p>
+<list style="ul">
+<item><hi style="bold">Executive Summary:</hi><ref target="http://lists.lists.tei-c.org/pipermail/tei-council/attachments/20150527/7b566b81/attachment-0001.pdf"><hi style="underline color(1155cc)">http://lists.lists.tei-c.org/pipermail/tei-council/attachments/20150527/7b566b81/attachment-0001.pdf</hi></ref></item>
+<item><hi style="bold">TEI Simple:</hi><ref target="http://htmlpreview.github.io/?https://github.com/TEIC/TEI-Simple/blob/master/teisimple.html"><hi style="underline color(1155cc)">http://htmlpreview.github.io/?https://github.com/TEIC/TEI-Simple/blob/master/teisimple.html</hi></ref></item>
+<item><hi style="bold">Simple Processing Model:</hi><ref target="http://htmlpreview.github.io/?https://github.com/TEIC/TEI-Simple/blob/master/tei-pm.html"><hi style="underline color(1155cc)">http://htmlpreview.github.io/?https://github.com/TEIC/TEI-Simple/blob/master/tei-pm.html</hi></ref></item>
+<item><hi style="bold">Recent Intro Talk:</hi><ref target="https://github.com/TEIC/TEI-Simple/blob/master/advisory/oxford/teiSimple.pptx?raw=true"><hi style="underline color(1155cc)">https://github.com/TEIC/TEI-Simple/blob/master/advisory/oxford/teiSimple.pptx?raw=true</hi></ref></item>
+</list>
+<p>Discussion by Skype with Sebastian Rahtz, project Co-PI, with Sebastian introducing the
+            Simple Processing Model and its background. There was some worry about re-use of
+            <gi>rendition</gi> for output. Council suggests <gi>outputRendition</gi> if project
+            amenable.</p>
+<p>Council suggests giving some examples that are not related to TEI Simple; e.g.
+            manuscript description or prosopography, also to generate XForms interface. Sebastian
+            suggests XForms might be more challenging but msDesc could be done with existing
+            behaviours.</p>
+<p>Council recommends to stop calling it a function library. Call it a
+            method/signatures/rendering API of some sort. Would be good to get Guide on API (or
+            behaviour library), and examples in multiple implementation languages. It must not look
+            underspecified. Document that users of the processing model will need to decide how to
+            implement.</p>
+<p>Suggests a @mode attribute on <gi>model</gi> in order to keep @output a fixed list (e.g
+            of ‘Web’, ‘Print’ etc.).</p>
+<p>What will the Council have to do in order to support processing models? Do we need to
+            support a reference implementation, for example? Yes, there is a reference
+            implementation in the form of an XSLT function library that implements the behaviours
+            defined in the PM ODD.</p>
+<p>Note: There is an Implementation in XQuery of PM by Wolfgang Meier;
+              <hi style="color(1f497d)">you can see the showcase machine that Wolfgang set up at </hi><ref target="http://showcases.exist-db.org/exist/apps/tei-simple/index.html"><hi style="underline color(800080)">http://showcases.exist-db.org/exist/apps/tei-simple/index.html</hi></ref><hi style="color(1f497d)">  (for editing user: admin pass: simple)</hi></p>
+<p>
+            <hi style="color(1f497d)"> To install on your local machine, grab and run </hi><ref target="http://data.exist-db.org/eXist-db-setup-2.2-develop-3f8357b.jar"><hi style="underline color(800080)">http://data.exist-db.org/eXist-db-setup-2.2-develop-3f8357b.jar</hi></ref></p>
+<p>To recompile the whole thing locally, it requires the newest development build of eXist
+            as described here <ref target="https://github.com/wolfgangmm/tei-simple-pm"><hi style="underline color(800080)">https://github.com/wolfgangmm/tei-simple-pm</hi></ref></p>
+<p>For example HTML function library at: <ref target="https://github.com/TEIC/TEI-Simple/blob/master/polygon/html_functions.xsl"><hi style="underline color(1155cc)">https://github.com/TEIC/TEI-Simple/blob/master/polygon/html_functions.xsl</hi></ref></p>
+<p>or LateX (incomplete) at: <ref target="https://github.com/TEIC/TEI-Simple/blob/master/polygon/latex_functions.xsl"><hi style="underline color(1155cc)">https://github.com/TEIC/TEI-Simple/blob/master/polygon/latex_functions.xsl</hi></ref></p>
+<p>Council consensus was to agree to the TEI Simple proposals, with minor changes
+            suggested below.</p>
+<p>Actions for TEI Simple Project:</p>
+<list style="ul">
+<item>TEI Simple project should push forward with implementation and
+              documentation</item>
+<item>consider whether better to and how to XMLize the CSS properties of
+              <gi>outputRendition</gi>; cf XSLT (used in XSL:FO a lot): </item>
+</list>
+<p> &lt;xsl:attribute-set name=”font”&gt;</p>
+<p> &lt;xsl:attribute name=”fname”&gt;Arial&lt;/xsl:attribute&gt;</p>
+<p> &lt;xsl:attribute name=”size”&gt;14px&lt;/xsl:attribute&gt;</p>
+<p> &lt;xsl:attribute name=”color”&gt;red&lt;/xsl:attribute&gt;</p>
+<p>&lt;/xsl:attribute-set&gt;</p>
+<p>or
+            &lt;tei:funcVal&gt;&lt;tei:funcName&gt;fname&lt;/tei:funcName&gt;&lt;tei:val&gt;Arial&lt;/tei:val&gt;&lt;/tei:funcVal&gt;</p>
+<list style="ul">
+<item>work on fuller documentation for functions; TEI Chapter text, element
+              specifications and examples.</item>
+<item>don’t re-use existing <gi>rendition</gi>, but make new element, e.g.
+              <gi>outputRendition</gi></item>
+<item>needs another plan of where the list of functions are specified (ie reconsider
+              <gi>paramList</gi> and <gi>paramSpec</gi>) e.g. <gi>listBehaviour</gi> of
+              <gi>behaviourSpec</gi>s</item>
+<item>produce demonstration of non-Simple use of TEI PM (eg producing forms, or
+              processing <gi>msDesc</gi>)</item>
+</list>
+</div>
+<div><head>
+          Pure ODD (presentation by LB)</head>
+<p>cf. <ref target="https://sourceforge.net/p/tei/feature-requests/530/"><hi style="underline color(1155cc)">https://sourceforge.net/p/tei/feature-requests/530/</hi></ref></p>
+<list style="ul">
+<item>only remaining issue is: datatypes! (According to LB)</item>
+<item>Why <gi>zeroOrMore</gi> valList/Content ??</item>
+<item>Discussion of naming XSD Datatypes. xs:float vs. float. We are mildly in favour of
+              xs:float as it is more explicit.</item>
+<item>Schematron to prevent putting elements/textNode/etc. in dataSpec/content, or use
+              something other than content (<gi>dataContent</gi>?).</item>
+</list>
+<p>Council appreciate LB’s and SR’s sterling work on this spec and the associated
+            processing.</p>
+</div>
+<div><head>
+          msPart (feature request 505)</head>
+<p>Finishing off msPart revisions (<ref target="https://sourceforge.net/p/tei/feature-requests/538/"><hi style="underline color(1155cc)">538</hi></ref>; will assign to a group for discussion
+            later)</p>
+<list style="ul">
+<item><ref target="https://docs.google.com/document/d/1bpBPughQp5sOoB13iTMHMeRd88Mjv12_eGZiQXY-na8/edit#heading=h.8bdq2kwb0vyu"><hi style="underline color(1155cc)">https://docs.google.com/document/d/1bpBPughQp5sOoB13iTMHMeRd88Mjv12_eGZiQXY-na8/edit#heading=h.8bdq2kwb0vyu</hi></ref></item>
+<item><hi style="bold">Action on MH and SG</hi>: Create new element specification for
+              <gi>msFrag</gi>, document the heck out of it.</item>
+</list>
+</div>
+<div><head>
+          @selector proposal (MH):</head>
+<p>
+            <ref target="https://wiki.tei-c.org/index.php/Proposal_for_@selector_attribute_on_rendition"><hi style="underline color(1155cc)">http://wiki.tei-c.org/index.php/Proposal_for_@selector_attribute_on_rendition</hi></ref></p>
+<p>counts as a best practice model for proposals to the Council!!</p>
+<p><hi style="bold">Action on MH: </hi>wait for two weeks, then
+            implement if no one objects.</p>
+<p>SB points out that once @selector is implemented, we can deprecate the use of @render
+            on <gi>tagUsage</gi> for this purpose. Once that’s done, there is no longer a need for
+            @partial on <gi>tagsDecl</gi>, we can go back to insisting on one <gi>tagUsage</gi> for
+            each element type within &lt;text<note><date/><hi style="baseline">I’m sorry, but I do not remember
+                anyone suggesting that we allow this to alter the TEI Abstract Model. Rather, we
+                spoke of the need for prose that says “don’t do this” and perhaps formal checks to
+                guard against it, because it breaks the abstract model.</hi></note>&gt;.</p>
+</div>
+</div>
+<div><head>
+        Saturday, 2015-05-30</head>
+<div><head>
+          App. Crit. </head>
+<p>See:</p>
+<list style="ul">
+<item><ref target="https://github.com/hcayless/TEI-Guidelines"><hi style="underline color(1155cc)">https://github.com/hcayless/TEI-Guidelines</hi></ref></item>
+<item><ref target="http://marjorie.burghart.online.fr/?q=en/content/tei-critical-apparatus-cheatsheet"><hi style="underline color(1155cc)">TEI critical apparatus cheat sheet</hi></ref></item>
+</list>
+<p>Robust discussion. There appear to be several options on the table:</p>
+<list style="ul">
+<item><gi>app</gi> be generalized to every level. Some of our number believe this will
+              enable horrors because it allows nesting of larger classes of element inside smaller
+              classes (e.g., a division inside paragraph, a heading inside a word). This may also
+              have problems being modelled in DTDs. Others believe that is the concern of the
+              encoder; people may do silly things if they wish, and we might try to constrain it
+              with Schematron. One of the points of the TEI Guidelines is to produce recommendations
+              precisely to stop people doing silly things, to some it seems a retrograde step to
+              suddenly open up the ability to so vastly abuse the TEI Abstract Model. Likewise, JC
+              argues we can’t rely on people having Schematron. This could be seen as fundamentally
+              altering the nature of the TEI Abstract Model, enabling <gi>p</gi> inside <gi>p</gi>,
+              etc.</item>
+<item>There be several types of <gi>app</gi> for different levels (<gi>divApp</gi>,
+              <gi>pApp</gi>; or <gi>blockApp</gi>, <gi>chunkApp</gi>, <gi>phraseApp</gi>). Most people
+              dislike this because of the complexity — how many levels do we need? What if variation
+              crosses levels in some witnesses?</item>
+<item>A new proposal from SB that we could model all apparatus using a combination
+                of:
+<list style="ul">
+<item>@wit, available on every text
+                  element.,</item>
+<item>@lem, to carry the weight of the absence of distinction
+                  between <gi>lem</gi> and <gi>rdg</gi>.</item>
+<item><gi>witDetail</gi>, to provide the
+                  functionality of <gi>wit</gi>.</item>
+</list>
+</item>
+</list>
+<p>The objections to #3 come down to: </p>
+<list style="ul">
+<item>You cannot actually model things with the required level of richness already
+              supported by <gi>app</gi>.</item>
+<item>The community knows and loves <gi>app</gi> and could never be convinced to adopt an
+              alternative solution.</item>
+</list>
+<p>Council proposes that:</p>
+<list style="ul">
+<item><hi style="bold">Action: HC, MH, RV and SB work together to encode HC’s rich example
+                text using SB’s suggested solution.</hi></item>
+<item>If this works, then we go to the proponents of the original ticket (MP and EP) and
+              ask if they would be prepared to accept an approach based on this, or if it is
+              unsatisfactory.</item>
+</list>
+<p>Things to keep in mind for evaluating Syd’s approach: </p>
+<list style="ul">
+<item>grouping apparatus entries</item>
+<item>grouping readings</item>
+<item>specifying lemma</item>
+<item>location of witDetail (to be used instead of wit)</item>
+<item>location of rdg-like specialized attributes (e.g. @cause, @varSeq)</item>
+<item>large or disparate movements of text chuncks.</item>
+</list>
+</div>
+<div><head>
+          Council Terms and Elections</head>
+<p>HC pointed to a proposal on Board to change the date of elections and the starting date
+            of terms. Consensus was that Council does not mind earlier elections, but wants terms to
+            continue to start on 01 January.</p>
+<p>
+            <hi style="bold">Next telecon: Action on Hugh to make a Doodle poll to schedule.</hi></p>
+</div>
+<div><head>
+          Meeting adjourned</head>
+<p>Council commended Paul Schaffner for doing an excellent job as local organizer.</p>
+</div>
+</div>
+<div><head>
+        Feature Request Review</head>
+<p>Group A: PFS, SM, FC, SG</p>
+<p>Group B: JC, MH, SB</p>
+<p>Group C: RV, PWS, LB, HC</p>
+<div><head>
+          Amber Feature Requests</head>
+<table>
+<row>
+<cell><hi style="bold">GRP</hi></cell>
+<cell><hi style="bold">#</hi></cell>
+<cell><hi style="bold">Summary</hi></cell>
+<cell><hi style="bold">Owner</hi></cell>
+<cell><hi style="bold">Creator</hi></cell>
+<cell><hi style="bold">Created</hi></cell>
+<cell><hi style="bold">Notes</hi></cell>
+</row>
+<row>
+<cell>A</cell>
+<cell><ref target="https://sourceforge.net/p/tei/feature-requests/556/"><hi style="color(006699) background(white)">556</hi></ref></cell>
+<cell><ref target="https://sourceforge.net/p/tei/feature-requests/556/"><hi style="underline color(1155cc) background(white)">Allow <gi>hi</gi> to be
+                    contained by <gi>m</gi></hi></ref></cell>
+<cell>Hugh Cayless</cell>
+<cell><hi style="color(555555) background(white)">Caroline T. Schroeder</hi></cell>
+<cell>2015-05-27</cell>
+<cell>hi is allowed within w because it was added individually to model.hiLIke. Easy
+                enough to do the same for m. Would allow epidoc to be consistent in their use of hi
+                to record such things; OTOH, there are alternative mechanisms available, e.g. use of
+                seg. m and hi may seem to belong to different spheres but it cannot be denied that
+                there are people who wish to operate in both. Group is divided, marginally in favour
+                of allowing this change. <hi style="bold">Action: HC to implement</hi></cell>
+</row>
+<row>
+<cell> A</cell>
+<cell><ref target="https://sourceforge.net/p/tei/feature-requests/555/"><hi style="underline color(1155cc)">555</hi></ref></cell>
+<cell><ref target="https://sourceforge.net/p/tei/feature-requests/555/"><hi style="underline color(1155cc)">improve constraint constraints</hi></ref></cell>
+<cell>Syd Bauman</cell>
+<cell>Syd Bauman</cell>
+<cell>3 hours ago</cell>
+<cell>Syd go for it, sounds sensible. If Syd has concern with it, please raise and
+                explain. <hi style="bold">Action: SB to go for it [DONE]</hi></cell>
+</row>
+<row>
+<cell>A</cell>
+<cell><ref target="https://sourceforge.net/p/tei/feature-requests/554/"><hi style="underline color(1155cc)">554</hi></ref></cell>
+<cell><ref target="https://sourceforge.net/p/tei/feature-requests/554/"><hi style="underline color(1155cc)">guidance on use of @calendar and
+                    @datingMethod</hi></ref></cell>
+<cell>Gabriel Bodard</cell>
+<cell>Simona Stoyanova</cell>
+<cell>10 hours ago</cell>
+<cell>Martin’s document (referred and linked to in SF comments) seems very clear and
+                well explained. Could be followed. GB (again, see SF comments) has volunteered to
+                implement. Voting for doing this. <hi style="bold">Action: Assigned to Gabriel Bodard
+                  to implement</hi></cell>
+</row>
+<row>
+<cell>B</cell>
+<cell><ref target="https://sourceforge.net/p/tei/feature-requests/553/"><hi style="underline color(1155cc)">553</hi></ref></cell>
+<cell><ref target="https://sourceforge.net/p/tei/feature-requests/553/"><hi style="underline color(1155cc)">JTEI schematron validation issues</hi></ref></cell>
+<cell/>
+<cell>Lou Burnard</cell>
+<cell>2015-05-05</cell>
+<cell>Issues 1 &amp; 2 are solved. Issue 3: Council mildly recommends making this a
+                warning instead of error. <hi style="bold">Action on MH: Close ticket.
+                [DONE]</hi></cell>
+</row>
+<row>
+<cell>B</cell>
+<cell><ref target="https://sourceforge.net/p/tei/feature-requests/552/"><hi style="underline color(1155cc)">552</hi></ref></cell>
+<cell><ref target="https://sourceforge.net/p/tei/feature-requests/552/"><hi style="underline color(1155cc)">clarify how to encode author of subset or part
+                    of document</hi></ref></cell>
+<cell/>
+<cell>Kevin Hawkins</cell>
+<cell>2015-04-15</cell>
+<cell> SB Volunteers to add clarification prose to the note. <hi style="bold">Action on
+                  SB: Add clarification.</hi></cell>
+</row>
+<row>
+<cell>B</cell>
+<cell><ref target="https://sourceforge.net/p/tei/feature-requests/551/"><hi style="underline color(1155cc)">551</hi></ref></cell>
+<cell><ref target="https://sourceforge.net/p/tei/feature-requests/551/"><hi style="underline color(1155cc)">No abbr element in JTEI</hi></ref></cell>
+<cell/>
+<cell>Lou Burnard</cell>
+<cell>2015-04-06</cell>
+<cell>Council recommends adding abbr (but not expan or choice). <hi style="bold">Action
+                  on MH: Add <gi>abbr</gi> element. [DONE]</hi></cell>
+</row>
+<row>
+<cell>C</cell>
+<cell><ref target="https://sourceforge.net/p/tei/feature-requests/550/"><hi style="underline color(1155cc)">550</hi></ref></cell>
+<cell><ref target="https://sourceforge.net/p/tei/feature-requests/550/"><hi style="underline color(1155cc)">Provide place to record the Unicode
+                    Normalization Form used</hi></ref></cell>
+<cell>rviglian</cell>
+<cell>Jens Østergaard Petersen</cell>
+<cell>2015-03-24</cell>
+<cell>
+<p>This appears to be more a XML issue than a TEI one. Unicode also provides quick
+                  ways of checking for normalization: <ref target="http://unicode.org/reports/tr15/#Quick_Check_Table"><hi style="underline color(1155cc)">http://unicode.org/reports/tr15/#Quick_Check_Table</hi></ref></p>
+<p>Some clarification in the Guidelines may be needed anyway (eg add prose to
+                  projectDesc.)</p>
+<p>
+                  <hi style="bold">Action on RV: add clarification to guidelines</hi></p>
+</cell>
+</row>
+<row>
+<cell>C</cell>
+<cell><ref target="https://sourceforge.net/p/tei/feature-requests/549/"><hi style="underline color(1155cc)">549</hi></ref></cell>
+<cell><ref target="https://sourceforge.net/p/tei/feature-requests/549/"><hi style="underline color(1155cc)">More flexible dateline for periodical edition
+                    tracking</hi></ref></cell>
+<cell/>
+<cell>M. H. Beals</cell>
+<cell>2015-03-22</cell>
+<cell>
+<p> We don’t think the example constitutes a dateline.</p>
+<p>→ close, reject</p>
+</cell>
+</row>
+<row>
+<cell>C</cell>
+<cell><ref target="https://sourceforge.net/p/tei/feature-requests/548/"><hi style="underline color(1155cc)">548</hi></ref></cell>
+<cell><ref target="https://sourceforge.net/p/tei/feature-requests/548/"><hi style="underline color(1155cc)">Give more structure to abstract</hi></ref></cell>
+<cell/>
+<cell>Laurent Romary</cell>
+<cell>2015-03-15</cell>
+<cell>
+<p> We think Laurent’s request for structured abstract is reasonable, but are unsure
+                  whether to create a new <gi>section</gi> that can only contain <gi>head</gi> and
+                  <gi>p</gi> or to allow <gi>div</gi> but constrain it (presumably with Schematron)
+                  when in the header.</p>
+<p>(note: <hi style="italic">non transcriptional</hi> div and
+                  <hi style="italic">non transcriptional </hi>p for new element
+                  proposal)</p>
+</cell>
+</row>
+<row>
+<cell>A</cell>
+<cell><ref target="https://sourceforge.net/p/tei/feature-requests/547/"><hi style="underline color(1155cc)">547</hi></ref></cell>
+<cell><ref target="https://sourceforge.net/p/tei/feature-requests/547/"><hi style="underline color(1155cc)">Allow g in notatedMusic</hi></ref></cell>
+<cell/>
+<cell>rviglianti</cell>
+<cell>2015-03-13</cell>
+<cell>
+<p>Example does not appear to be notated music in the full sense at all. If there is
+                  a case for both marking the presence of notated music and transcribing to some
+                  extent the contents of the same, then two approaches suggest themselves: either
+                  allow a text-wrapper within notatedMusic (on the analogy of figure), e.g. ab or
+                  seg or both, which itself could contain either text or text-equivalents like
+                  <gi>g</gi>. Or allow a <gi>choice</gi> between <gi>notatedMusic</gi> and its textual
+                  representation. Rejected. If accepted, should probably be in the form of option 1,
+                  i.e. adding seg and/or ab or equivalent to notatedMusic, certainly not <gi>g</gi>.
+                  General rule should be that <gi>g</gi> should be allowed everywhere that character
+                  data is allowed, and also vice
+                  versa<hi style="bold">. Should perhaps open a new ticket requesting the addition of a text-bearing element to the content of notatedMusic. </hi></p>
+<p>
+                  <hi style="bold">Action: close-reject (PFS)</hi></p>
+</cell>
+</row>
+<row>
+<cell>A</cell>
+<cell><ref target="https://sourceforge.net/p/tei/feature-requests/546/"><hi style="underline color(1155cc)">546</hi></ref></cell>
+<cell><ref target="https://sourceforge.net/p/tei/feature-requests/546/"><hi style="underline color(1155cc)"><gi>defaultVal</gi> should be removed from all
+                    specs</hi></ref></cell>
+<cell>Syd Bauman</cell>
+<cell>Lou Burnard</cell>
+<cell>2015-02-08</cell>
+<cell>
+<p>We are not happy to opine definitively on this issue, on which Lou, Sebastian,
+                  Martin, and Syd have already had a full discussion. That discussion seemed to be
+                  moving in part at least toward mutual understanding if not consensus. It became
+                  clear that default values express a necessary decision in the generation of
+                  schemas (not just dtd or xsd) and that simply removing default values effectively
+                  leaves that decision to the XSLT, without documentation in the ODD. The suggestion
+                  that a constraint be added to warn that if <gi>defaultVal</gi> is used when
+                  usage=”req”, or if the value of <gi>defaultVal</gi> is not in a closed value list
+                  seems welcome (and was implemented approximately 2 months ago). We suspect that
+                  the alternative suggestions for the main point (dropping defaultVal and replacing
+                  it with something else, or redefining defaultVal to be documentary only) have
+                  unknown implications and should perhaps be deferred.</p>
+<p>
+                  <hi style="bold">Action: MH to report on cases where defaultVal is used.</hi></p>
+</cell>
+</row>
+<row>
+<cell>A</cell>
+<cell><ref target="https://sourceforge.net/p/tei/feature-requests/545/"><hi style="underline color(1155cc)">545</hi></ref></cell>
+<cell><ref target="https://sourceforge.net/p/tei/feature-requests/545/"><hi style="underline color(1155cc)">Deprecate oVar and pVar, Revamp oRef and
+                    pRef</hi></ref></cell>
+<cell>Stefanie Gehrke</cell>
+<cell>Laurent Romary</cell>
+<cell>2015-01-31</cell>
+<cell>We don’t have enough data on the usage of the less common forms (pVar and oVar),
+                so we cannot judge confidently whether to drop them, i.e. whether there might not be
+                people who will be affected. We may nevertheless support deprecation of *Var and
+                extension of the content model of the *Ref variants. Adding @notation to pRef is a
+                good idea. possibly in a class, have to check if @notation is used at other places.
+                  <hi style="bold">Action: MH to ask e.g. FN language encoders if they are using it.
+                  Action: SG to ask on TEI-L and TEI Ling SIG lists if anyone is using
+                them.</hi></cell>
+</row>
+<row>
+<cell>B</cell>
+<cell><ref target="https://sourceforge.net/p/tei/feature-requests/544/"><hi style="underline color(1155cc)">544</hi></ref></cell>
+<cell><ref target="https://sourceforge.net/p/tei/feature-requests/544/"><hi style="underline color(1155cc)">align oVar/ @type with the general taxonomy of
+                    grammatical features</hi></ref></cell>
+<cell>Stefanie Gehrke</cell>
+<cell>Piotr Banski</cell>
+<cell>2015-01-30</cell>
+<cell> Agree and recommend using datcat attributes. <hi style="bold">Action on SG: If
+                  Piotr agrees to suggestion, implement. (but bear in mind above ticket
+                545).</hi></cell>
+</row>
+<row>
+<cell>B</cell>
+<cell><ref target="https://sourceforge.net/p/tei/feature-requests/543/"><hi style="underline color(1155cc)">543</hi></ref></cell>
+<cell><ref target="https://sourceforge.net/p/tei/feature-requests/543/"><hi style="underline color(1155cc)">Make the content model of occupation more
+                    elaborate</hi></ref></cell>
+<cell>Fabio Ciotti</cell>
+<cell>Laurent Romary</cell>
+<cell>2015-01-22</cell>
+<cell>
+<p>Agreed. Make content model macro.specialPara; also should raise new ticket for
+                  bringing other similar elements (<gi>residence</gi>, <gi>nationality</gi>,
+                  <gi>climate</gi>, etc.) in line with this. <hi style="bold">Action on FC:
+                    Implement.</hi></p>
+<p><hi style="bold">Action on SB: create new ticket for other elements DONE </hi>(new
+                  ticket, FR #563, created 2015-06-04)</p>
+</cell>
+</row>
+<row>
+<cell>B</cell>
+<cell><ref target="https://sourceforge.net/p/tei/feature-requests/542/"><hi style="underline color(1155cc)">542</hi></ref></cell>
+<cell><ref target="https://sourceforge.net/p/tei/feature-requests/542/"><hi style="underline color(1155cc)">Make occupation part of the content model of
+                    author</hi></ref></cell>
+<cell>Fabio Ciotti</cell>
+<cell>Laurent Romary</cell>
+<cell>2015-01-22</cell>
+<cell>
+<p>NO. Council sub-group believes strongly that <gi>occupation</gi> should not be
+                  allowed as a child of <gi>author</gi>. It should reference a <gi>person</gi> if you
+                  want this kind of detail. (Furthermore, there’s lots of cruft allowed inside
+                  <gi>author</gi> that should not be.)</p>
+<p>
+                  <hi style="bold">Action: Waiting on Laurent to respond to JC’s comments otherwise
+                    close.</hi></p>
+</cell>
+</row>
+<row>
+<cell>C</cell>
+<cell><ref target="https://sourceforge.net/p/tei/feature-requests/541/"><hi style="underline color(1155cc)">541</hi></ref></cell>
+<cell><ref target="https://sourceforge.net/p/tei/feature-requests/541/"><hi style="underline color(1155cc)">Using `<gi>zone</gi>` for points and paths
+                    rather than shapes</hi></ref></cell>
+<cell>Stefan Majewski</cell>
+<cell>Martin Holmes</cell>
+<cell>2014-12-21</cell>
+<cell>
+<p>Need clarification for use cases – e.g. what is the need to finding a line on an
+                  image as it has no area?</p>
+<p>→ clarify definition of zone: should always be a closed area.</p>
+<p>
+                  <hi style="bold">Action on MH: Make a proposal for a path element</hi></p>
+</cell>
+</row>
+<row>
+<cell>C</cell>
+<cell><ref target="https://sourceforge.net/p/tei/feature-requests/540/"><hi style="underline color(1155cc)">540</hi></ref></cell>
+<cell><ref target="https://sourceforge.net/p/tei/feature-requests/540/"><hi style="underline color(1155cc)">expanded recommendations on values of
+                    @xml:id</hi></ref></cell>
+<cell>rviglianti</cell>
+<cell>Kevin Hawkins</cell>
+<cell>2014-12-18</cell>
+<cell>Raff working on this. Will produce some examples illustrating best practices.
+                  <hi style="bold">Action on RV: Produce examples and recommendations.</hi></cell>
+</row>
+<row>
+<cell>C</cell>
+<cell><ref target="https://sourceforge.net/p/tei/feature-requests/539/"><hi style="underline color(1155cc)">539</hi></ref></cell>
+<cell><ref target="https://sourceforge.net/p/tei/feature-requests/539/"><hi style="underline color(1155cc)">New element annotatedU</hi></ref></cell>
+<cell>Lou Burnard</cell>
+<cell>Lou Burnard</cell>
+<cell>2014-12-05</cell>
+<cell> &gt; to Friday 29 discussion</cell>
+</row>
+<row>
+<cell>A</cell>
+<cell><ref target="https://sourceforge.net/p/tei/feature-requests/538/"><hi style="underline color(1155cc)">538</hi></ref></cell>
+<cell><ref target="https://sourceforge.net/p/tei/feature-requests/538/"><hi style="underline color(1155cc)">guideline example <gi>msPart</gi></hi></ref></cell>
+<cell>Stefanie Gehrke</cell>
+<cell>Stefanie Gehrke</cell>
+<cell>2014-12-05</cell>
+<cell>
+<p> Go for it, this appears to be very clear </p>
+<p>
+                  <hi style="bold">Action on SG: change to green, implement</hi></p>
+</cell>
+</row>
+<row>
+<cell>A</cell>
+<cell><ref target="https://sourceforge.net/p/tei/feature-requests/537/"><hi style="underline color(1155cc)">537</hi></ref></cell>
+<cell><ref target="https://sourceforge.net/p/tei/feature-requests/537/"><hi style="underline color(1155cc)">Support for non-ISO schematron (1.4) should be
+                    removed</hi></ref></cell>
+<cell>Syd Bauman</cell>
+<cell>Martin Holmes</cell>
+<cell>2014-11-19</cell>
+<cell> Ask Syd for a list of changes this would require. We have apprehension that
+                this might break many other things.
+                <hi style="bold">Action on SB: Do something. </hi></cell>
+</row>
+<row>
+<cell>A</cell>
+<cell><ref target="https://sourceforge.net/p/tei/feature-requests/536/"><hi style="underline color(1155cc)">536</hi></ref></cell>
+<cell><ref target="https://sourceforge.net/p/tei/feature-requests/536/"><hi style="underline color(1155cc)">Make @source global</hi></ref></cell>
+<cell>James Cummings</cell>
+<cell>Hugh A. Cayless</cell>
+<cell>2014-11-18</cell>
+<cell>May be feasible to define a global @source broadly enough to replace all three
+                of the local @source attributes currently in use; or at least two of them. Most of
+                the arguments against making @source global would apply also to making @resp and
+                @cert global, which we chose to do anyway. (But @source does have a particular
+                bibliographic meaning.) Consensus very very skeptical about making it global. <hi style="bold">Action on HC: Produce set of examples for expansion of where @source
+                  should be allowed for reconsideration.</hi></cell>
+</row>
+<row>
+<cell>B</cell>
+<cell><ref target="https://sourceforge.net/p/tei/feature-requests/533/"><hi style="underline color(1155cc)">533</hi></ref></cell>
+<cell><ref target="https://sourceforge.net/p/tei/feature-requests/533/"><hi style="underline color(1155cc)">Add profileDesc as optional child biblFull</hi></ref></cell>
+<cell>Hugh A. Cayless</cell>
+<cell>Laurent Romary</cell>
+<cell>2014-11-14</cell>
+<cell>
+<p>Laurent needs independent headers; our options are:</p>
+<list style="ul">
+<item>Add model.profileDescPart to the biblFull content model.</item>
+<item><hi style="bold">Make the content model of biblFull an alternation between its
+                      current model and the teiHeader model.</hi></item>
+<item>Reintroduce independent headers by making teiHeader a child of
+                    listBibl.</item>
+<item>Why not just use teiHeader?</item>
+<item>Just do nothing; Laurent can customise.</item>
+</list>
+<p>
+                  <hi style="bold">Action on HC: Investigate implementation of #2</hi></p>
+</cell>
+</row>
+<row>
+<cell>B</cell>
+<cell><ref target="https://sourceforge.net/p/tei/feature-requests/531/"><hi style="underline color(1155cc)">531</hi></ref></cell>
+<cell><ref target="https://sourceforge.net/p/tei/feature-requests/531/"><hi style="underline color(1155cc)">New element for secluded text</hi></ref></cell>
+<cell>Hugh A. Cayless</cell>
+<cell>Hugh A. Cayless</cell>
+<cell>2014-10-17</cell>
+<cell>We request that Hugh create an elementSpec we can look at, with the expectation
+                that it will be approved.<lb/><hi style="bold">Action on HC: Create draft elementSpec
+                  and pass it by council for review.</hi></cell>
+</row>
+<row>
+<cell>B</cell>
+<cell><ref target="https://sourceforge.net/p/tei/feature-requests/525/"><hi style="underline color(1155cc)">525</hi></ref></cell>
+<cell><ref target="https://sourceforge.net/p/tei/feature-requests/525/"><hi style="underline color(1155cc)">translated from</hi></ref></cell>
+<cell>Syd Bauman</cell>
+<cell>Fxp33</cell>
+<cell>2014-09-14</cell>
+<cell>
+<p>Council subgroup 2015-05-28: Assign again to SB to follow up, and with the
+                  recommendation that he develop a proposal for @translationOf, to be available on
+                  all text-bearing elements.</p>
+<p><hi style="bold">Action on SB to follow up, but possibly create a proposal for
+                    @translationOf on a new ticket. Done</hi>, sort of: e-mail sent to fxp33
+                  2015-05-29</p>
+</cell>
+</row>
+<row>
+<cell>C</cell>
+<cell><ref target="https://sourceforge.net/p/tei/feature-requests/521/"><hi style="underline color(1155cc)">521</hi></ref></cell>
+<cell><ref target="https://sourceforge.net/p/tei/feature-requests/521/"><hi style="underline color(1155cc)">Allow &lt;lem/ &gt; to Contain Chunk-Level
+                    Markup</hi></ref></cell>
+<cell>Hugh A. Cayless</cell>
+<cell>Gregor Middell</cell>
+<cell>2014-07-31</cell>
+<cell> &gt; to Saturday 30 discussion</cell>
+</row>
+<row>
+<cell>C</cell>
+<cell><ref target="https://sourceforge.net/p/tei/feature-requests/517/"><hi style="underline color(1155cc)">517</hi></ref></cell>
+<cell><ref target="https://sourceforge.net/p/tei/feature-requests/517/"><hi style="underline color(1155cc)">transcription of quranic “end of
+                    ayah”-sign</hi></ref></cell>
+<cell>Elli Mylonas</cell>
+<cell>Tobias J. Jocham</cell>
+<cell>2014-07-07</cell>
+<cell><hi style="bold">Action on HC to poke Elli Mylonas and reassign if she isn’t planning
+                  to finish it.</hi></cell>
+</row>
+<row>
+<cell>C</cell>
+<cell><ref target="https://sourceforge.net/p/tei/feature-requests/515/"><hi style="underline color(1155cc)">515</hi></ref></cell>
+<cell><ref target="https://sourceforge.net/p/tei/feature-requests/515/"><hi style="underline color(1155cc)">re-think model.global’s membership and use in
+                    <gi>line</gi></hi></ref></cell>
+<cell>Lou Burnard</cell>
+<cell>Syd Bauman</cell>
+<cell>2014-07-02</cell>
+<cell>
+<p> Needs more investigation by LB</p>
+<p>
+                  <hi style="bold">Action on LB: Investigate more.</hi></p>
+</cell>
+</row>
+<row>
+<cell>A</cell>
+<cell><ref target="https://sourceforge.net/p/tei/feature-requests/511/"><hi style="underline color(1155cc)">511</hi></ref></cell>
+<cell><ref target="https://sourceforge.net/p/tei/feature-requests/511/"><hi style="underline color(1155cc)">New element <gi>transcriptionDesc</gi> as a
+                    possible child of <gi>encodingDesc</gi></hi></ref></cell>
+<cell>Martin Holmes</cell>
+<cell>Thomas Schmidt</cell>
+<cell>2014-06-26</cell>
+<cell> Discuss along with annotation
+                proposal.<hi style="bold"> Action: On Original Poster, give us something we can discuss publicly.</hi></cell>
+</row>
+<row>
+<cell>A</cell>
+<cell><ref target="https://sourceforge.net/p/tei/feature-requests/507/"><hi style="underline color(1155cc)">507</hi></ref></cell>
+<cell><ref target="https://sourceforge.net/p/tei/feature-requests/507/"><hi style="underline color(1155cc)">create generic policy for the TEI on
+                    integration of external standards</hi></ref></cell>
+<cell>Syd Bauman</cell>
+<cell>Kevin Hawkins</cell>
+<cell>2014-05-10</cell>
+<cell>
+<p>Subgroup wonders if this considers datatypes. Policy should deal with usages of
+                  W3C datatypes/CSS, for example. More contextual information (even if history
+                  cannot be used), examples, etc. would make it much clearer.
+                  Guidance/recommendations against relying on external standards that are not
+                  stable.</p>
+<p>
+                  <hi style="bold">Action on SB to pick this back up</hi></p>
+</cell>
+</row>
+<row>
+<cell>B</cell>
+<cell><ref target="https://sourceforge.net/p/tei/feature-requests/505/"><hi style="underline color(1155cc)">505</hi></ref></cell>
+<cell><ref target="https://sourceforge.net/p/tei/feature-requests/505/"><hi style="underline color(1155cc)">Redefine <gi>msPart</gi></hi></ref></cell>
+<cell>Stefanie Gehrke</cell>
+<cell>Caroline T. Schroeder</cell>
+<cell>2014-04-29</cell>
+<cell>We basically like the originally-proposed msFrag solution best; it’s clean and
+                straightforward. We see no strong objections raised to it so far.<lb/>Whole Council
+                agrees. <hi style="bold">Action on SG (with MH):</hi> generate elementSpec for
+                <gi>msFrag</gi>, and insert a subsection into the prose.</cell>
+</row>
+<row>
+<cell>C</cell>
+<cell><ref target="https://sourceforge.net/p/tei/feature-requests/504/"><hi style="underline color(1155cc)">504</hi></ref></cell>
+<cell><ref target="https://sourceforge.net/p/tei/feature-requests/504/"><hi style="underline color(1155cc)">Replace @active and @passive on relation with
+                    @from and @to</hi></ref></cell>
+<cell>Hugh A. Cayless</cell>
+<cell>Hugh A. Cayless</cell>
+<cell>2014-04-21</cell>
+<cell>
+<p> relation for rdf-like encoding is abuse. We should remove rdf-like examples from
+                  the guidelines and recommend better ways of representing rdf-like statements
+                  within TEI (eg with graph) or by embedding RDF-XML.</p>
+<p>
+                  <hi style="bold">Action: close-wontfix [DONE]</hi></p>
+<p>
+                  <hi style="bold">Action: HC will create new FR for handling RDF</hi></p>
+</cell>
+</row>
+<row>
+<cell>C</cell>
+<cell><ref target="https://sourceforge.net/p/tei/feature-requests/498/"><hi style="underline color(1155cc)">498</hi></ref></cell>
+<cell><ref target="https://sourceforge.net/p/tei/feature-requests/498/"><hi style="underline color(1155cc)">Permit new <gi>persona</gi> as a child of
+                    <gi>person</gi></hi></ref></cell>
+<cell>Lou Burnard</cell>
+<cell>David J Birnbaum</cell>
+<cell>2014-02-22</cell>
+<cell>
+<p> needs more investigation by LB</p>
+<p>
+                  <hi style="bold">Action on LB: Investigate more</hi></p>
+</cell>
+</row>
+<row>
+<cell>C</cell>
+<cell><ref target="https://sourceforge.net/p/tei/feature-requests/496/"><hi style="underline color(1155cc)">496</hi></ref></cell>
+<cell><ref target="https://sourceforge.net/p/tei/feature-requests/496/"><hi style="underline color(1155cc)">`<gi>taxonomy</gi>` should be allowed as a child
+                    of `<gi>category</gi>`</hi></ref></cell>
+<cell>Martin Holmes</cell>
+<cell>Martin Holmes</cell>
+<cell>2014-01-31</cell>
+<cell><hi style="bold">Action: MH to bug everyone on the Council list about this, and if no
+                  objections in 2 weeks, go ahead.</hi></cell>
+</row>
+<row>
+<cell>A</cell>
+<cell><ref target="https://sourceforge.net/p/tei/feature-requests/482/"><hi style="underline color(1155cc)">482</hi></ref></cell>
+<cell><ref target="https://sourceforge.net/p/tei/feature-requests/482/"><hi style="underline color(1155cc)">The term strikes back – terminology
+                    chapter</hi></ref></cell>
+<cell>Lou Burnard</cell>
+<cell>Laurent Romary</cell>
+<cell>2013-11-06</cell>
+<cell>Possible we just didn’t discuss it last time?</cell>
+</row>
+<row>
+<cell>A</cell>
+<cell><ref target="https://sourceforge.net/p/tei/feature-requests/479/"><hi style="underline color(1155cc)">479</hi></ref></cell>
+<cell><ref target="https://sourceforge.net/p/tei/feature-requests/479/"><hi style="underline color(1155cc)">Adding the @place attribute to <gi>head</gi> and
+                    <gi>seg</gi></hi></ref></cell>
+<cell>Sebastian Rahtz</cell>
+<cell>Ville Marttila</cell>
+<cell>2013-10-29</cell>
+<cell><hi style="bold"> Action: HC to close, since there’s been no followup</hi></cell>
+</row>
+<row>
+<cell>B</cell>
+<cell><ref target="https://sourceforge.net/p/tei/feature-requests/464/"><hi style="underline color(1155cc)">464</hi></ref></cell>
+<cell><ref target="https://sourceforge.net/p/tei/feature-requests/464/"><hi style="underline color(1155cc)">Need for some way to test the oxygen-tei
+                    package before release</hi></ref></cell>
+<cell>Martin Holmes</cell>
+<cell>Martin Holmes</cell>
+<cell>2013-07-05</cell>
+<cell>Agreed, we don’t see a practical way to have good test coverage. Maybe a manual
+                process that is defined in a release-manual is enough. <hi style="bold">Action: MH to
+                  test straightforward things, and not think of really complicated
+                tests.</hi></cell>
+</row>
+<row>
+<cell>B</cell>
+<cell><ref target="https://sourceforge.net/p/tei/feature-requests/459/"><hi style="underline color(1155cc)">459</hi></ref></cell>
+<cell><ref target="https://sourceforge.net/p/tei/feature-requests/459/"><hi style="underline color(1155cc)">warn user of dropped constructs</hi></ref></cell>
+<cell>Syd Bauman</cell>
+<cell>Syd Bauman</cell>
+<cell>2013-06-17</cell>
+<cell><hi style="bold">Closed</hi>, is already implemented. Related tickets with
+                partial aspects still open.</cell>
+</row>
+<row>
+<cell>B</cell>
+<cell><ref target="https://sourceforge.net/p/tei/feature-requests/457/"><hi style="underline color(1155cc)">457</hi></ref></cell>
+<cell><ref target="https://sourceforge.net/p/tei/feature-requests/457/"><hi style="underline color(1155cc)">make explicit difference between tagUsage and
+                    ODD documentation</hi></ref></cell>
+<cell>Lou Burnard</cell>
+<cell>Kevin Hawkins</cell>
+<cell>2013-05-24</cell>
+<cell><hi style="bold">Action on LB: Remind LB to have a look at bullet 4 of the last
+                  comment.</hi></cell>
+</row>
+<row>
+<cell>C</cell>
+<cell><ref target="https://sourceforge.net/p/tei/feature-requests/384/"><hi style="underline color(1155cc)">384</hi></ref></cell>
+<cell><ref target="https://sourceforge.net/p/tei/feature-requests/384/"><hi style="underline color(1155cc)">free-standing attributes -&gt; class</hi></ref></cell>
+<cell>Paul Schaffner</cell>
+<cell>Sebastian Rahtz</cell>
+<cell>2012-09-15</cell>
+<cell><hi style="bold">Action on PFS: Create list of changes needed.</hi></cell>
+</row>
+<row>
+<cell>C</cell>
+<cell><ref target="https://sourceforge.net/p/tei/feature-requests/378/"><hi style="underline color(1155cc)">378</hi></ref></cell>
+<cell><ref target="https://sourceforge.net/p/tei/feature-requests/378/"><hi style="underline color(1155cc)">Encoding of Standoff annotations</hi></ref></cell>
+<cell>Peter Stadler</cell>
+<cell>Javier Pose</cell>
+<cell>2012-08-26</cell>
+<cell>This ticket shd be linked to stdoff proposal. </cell>
+</row>
+<row>
+<cell>C</cell>
+<cell><ref target="https://sourceforge.net/p/tei/feature-requests/360/"><hi style="underline color(1155cc)">360</hi></ref></cell>
+<cell><ref target="https://sourceforge.net/p/tei/feature-requests/360/"><hi style="underline color(1155cc)">New attribute @keepHyphen</hi></ref></cell>
+<cell>Paul Schaffner</cell>
+<cell>Martin de la Iglesia</cell>
+<cell>2012-05-03</cell>
+<cell><hi style="bold">Action on PFS</hi> : to provide examples, one simple, one
+                complex, so coded as to represent Lou’s preferred solution (two different glyphs for
+                two different kinds of hyphen — not the original suggestion of a kludgy @keepHyphen
+                attribute. ) See comments on ticket.</cell>
+</row>
+<row>
+<cell>C</cell>
+<cell><ref target="https://sourceforge.net/p/tei/feature-requests/326/"><hi style="underline color(1155cc)">326</hi></ref></cell>
+<cell><ref target="https://sourceforge.net/p/tei/feature-requests/326/"><hi style="underline color(1155cc)">an <gi>object</gi> element</hi></ref></cell>
+<cell>Sebastian Rahtz</cell>
+<cell>Sebastian Rahtz</cell>
+<cell>2011-10-14</cell>
+<cell>No activity from SIG., We propose ticket should be closed as now over 4 years
+                old. Can always be reopened if action happens. <hi style="bold">Action on HC to close
+                  with comment.</hi></cell>
+</row>
+<row>
+<cell/>
+<cell/>
+<cell/>
+<cell/>
+<cell/>
+<cell/>
+<cell/></row>
+<row>
+<cell>C</cell>
+<cell><ref target="https://sourceforge.net/p/tei/feature-requests/366/"><hi style="underline color(1155cc)">366</hi></ref></cell>
+<cell><ref target="https://sourceforge.net/p/tei/feature-requests/366/"><hi style="color(006699)">rationalize content models of org and place (etc)</hi></ref></cell>
+<cell><hi style="color(555555) background(white)">James Cummings</hi></cell>
+<cell><hi style="color(555555) background(white)">BODARD Gabriel</hi></cell>
+<cell><hi style="color(555555) background(white)">2014-01-26</hi></cell>
+<cell>Could close ticket until JC stops having real work to do.</cell>
+</row>
+<row>
+<cell>C</cell>
+<cell><ref target="https://sourceforge.net/p/tei/feature-requests/324/"><hi style="underline color(1155cc)">324</hi></ref></cell>
+<cell><ref target="https://sourceforge.net/p/tei/feature-requests/324/"><hi style="underline color(1155cc)">Allow certainty etc. inside milestoneLike
+                    elements</hi></ref></cell>
+<cell><hi style="color(555555)">BODARD Gabriel</hi></cell>
+<cell><hi style="color(555555)">BODARD Gabriel</hi></cell>
+<cell><hi style="color(555555)">2012-06-03</hi></cell>
+<cell/></row>
+</table>
+</div></div>
+<div><head>
+        Amber Bugs</head>
+<p>Group A: MH, PWS, RV, HC (on Saturday)</p>
+<p>Group B: FC, SM, SB</p>
+<p>Group C: LB, JC, PFS, <hi style="strikethrough">HC</hi></p>
+<table>
+<row>
+<cell><hi style="bold">GRP</hi></cell>
+<cell><hi style="bold">#</hi></cell>
+<cell><hi style="bold">Summary</hi></cell>
+<cell><hi style="bold">Owner</hi></cell>
+<cell><hi style="bold">Creator</hi></cell>
+<cell><hi style="bold">Created</hi></cell>
+<cell><hi style="bold">Notes</hi></cell>
+</row>
+<row>
+<cell>A</cell>
+<cell><ref target="https://sourceforge.net/p/tei/bugs/754/"><hi style="underline color(1155cc)">754</hi></ref></cell>
+<cell><ref target="https://sourceforge.net/p/tei/bugs/754/"><hi style="underline color(1155cc)">Need for a standard way to warn of class changes
+                  affecting ODDs</hi></ref></cell>
+<cell/>
+<cell>Martin Holmes</cell>
+<cell>6 days ago</cell>
+<cell> &gt; close. It’s the user’s responsibility to associate their ODD with a specific
+              release, or deal with “nightly” builds.</cell>
+</row>
+<row>
+<cell> A</cell>
+<cell><ref target="https://sourceforge.net/p/tei/bugs/753/"><hi style="underline color(1155cc)">753</hi></ref></cell>
+<cell><ref target="https://sourceforge.net/p/tei/bugs/753/"><hi style="underline color(1155cc)"><gi>app</gi> is phrase-level</hi></ref></cell>
+<cell>Hugh A. Cayless</cell>
+<cell>Marjorie Burghart</cell>
+<cell>2015-05-18</cell>
+<cell> Defer to tomorrow’s discussion.</cell>
+</row>
+<row>
+<cell>A</cell>
+<cell><ref target="https://sourceforge.net/p/tei/bugs/752/"><hi style="underline color(1155cc)">752</hi></ref></cell>
+<cell><ref target="https://sourceforge.net/p/tei/bugs/752/"><hi style="underline color(1155cc)">Inconsistent extension on ODD template file</hi></ref></cell>
+<cell/>
+<cell>Martin Holmes</cell>
+<cell>2015-05-13</cell>
+<cell>
+<p> &gt; possibly change from xml to odd extension; </p>
+<p><hi style="bold">Action on MH:</hi> check with SPQR about motivation for odd
+                extension. <hi style="bold">[DONE/closed; the problem resolved itself,
+                  apparently.]</hi></p>
+</cell>
+</row>
+<row>
+<cell>B</cell>
+<cell><ref target="https://sourceforge.net/p/tei/bugs/751/"><hi style="underline color(1155cc)">751</hi></ref></cell>
+<cell><ref target="https://sourceforge.net/p/tei/bugs/751/"><hi style="underline color(1155cc)"><gi>event</gi> not allowed in <gi>org</gi></hi></ref></cell>
+<cell>Syd Bauman</cell>
+<cell>Syd Bauman</cell>
+<cell>2015-04-24</cell>
+<cell>Council subgroup agrees;. Approach appears to be clear. <hi style="bold">Acton on
+                SB:</hi> poke list to review branch P5/for-bug-75/1 [DONE, although I haven’t seen
+              my post show up on list yet], and if no objections in 2 weeks implement</cell>
+</row>
+<row>
+<cell>B</cell>
+<cell><ref target="https://sourceforge.net/p/tei/bugs/749/"><hi style="underline color(1155cc)">749</hi></ref></cell>
+<cell><ref target="https://sourceforge.net/p/tei/bugs/749/"><hi style="underline color(1155cc)">fatal bug in 2.8.0 apropos
+                  att.global.rendition</hi></ref></cell>
+<cell/>
+<cell>Sebastian Rahtz</cell>
+<cell>2015-04-14</cell>
+<cell> already fixed, confirmed by reviewing the source. (ticket closed) </cell>
+</row>
+<row>
+<cell>B</cell>
+<cell><ref target="https://sourceforge.net/p/tei/bugs/747/"><hi style="underline color(1155cc)">747</hi></ref></cell>
+<cell><ref target="https://sourceforge.net/p/tei/bugs/747/"><hi style="underline color(1155cc)">Updating Roma/ eXist on release day: improve the
+                  process</hi></ref></cell>
+<cell/>
+<cell>Martin Holmes</cell>
+<cell>2015-04-04</cell>
+<cell><hi style="bold">Action on PWS to fix the problem, making sure that Roma, and any other
+                release scripts still work.</hi></cell>
+</row>
+<row>
+<cell>C</cell>
+<cell><ref target="https://sourceforge.net/p/tei/bugs/746/"><hi style="underline color(1155cc)">746</hi></ref></cell>
+<cell><ref target="https://sourceforge.net/p/tei/bugs/746/"><hi style="underline color(1155cc)">Adjustment of example at Guidelines 16.2.5</hi></ref></cell>
+<cell/>
+<cell>Joel Kalvesmaki</cell>
+<cell>2015-03-25</cell>
+<cell><hi style="bold">Action : assigned to LB, who fixed it. </hi></cell>
+</row>
+<row>
+<cell>C</cell>
+<cell><ref target="https://sourceforge.net/p/tei/bugs/745/"><hi style="underline color(1155cc)">745</hi></ref></cell>
+<cell><ref target="https://sourceforge.net/p/tei/bugs/745/"><hi style="underline color(1155cc)">Menu item has bad link</hi></ref></cell>
+<cell>Kevin Hawkins</cell>
+<cell>Joel Kalvesmaki</cell>
+<cell>2015-03-25</cell>
+<cell><hi style="bold"> already closed-fixed (MDH)</hi></cell>
+</row>
+<row>
+<cell>C</cell>
+<cell><ref target="https://sourceforge.net/p/tei/bugs/744/"><hi style="underline color(1155cc)">744</hi></ref></cell>
+<cell><ref target="https://sourceforge.net/p/tei/bugs/744/"><hi style="underline color(1155cc)">Broken clarosnet/ Ashmolean links in relation
+                  example</hi></ref></cell>
+<cell>Martin Holmes</cell>
+<cell>Martin de la Iglesia</cell>
+<cell>2015-03-13</cell>
+<cell><hi style="bold">Action: HC open new ticket, close this one</hi></cell>
+</row>
+<row>
+<cell>A</cell>
+<cell><ref target="https://sourceforge.net/p/tei/bugs/740/"><hi style="underline color(1155cc)">740</hi></ref></cell>
+<cell><ref target="https://sourceforge.net/p/tei/bugs/740/"><hi style="underline color(1155cc)">“freestanding event” in 13.3.2.2</hi></ref></cell>
+<cell>Stefanie Gehrke</cell>
+<cell>Piotr Banski</cell>
+<cell>2015-02-20</cell>
+<cell><hi style="bold"> Action on SG</hi>: Check whether <gi>gi</gi>
+              elements are missing and rephrase according to the proposal. mark green</cell>
+</row>
+<row>
+<cell>A</cell>
+<cell><ref target="https://sourceforge.net/p/tei/bugs/738/"><hi style="underline color(1155cc)">738</hi></ref></cell>
+<cell><ref target="https://sourceforge.net/p/tei/bugs/738/"><hi style="underline color(1155cc)">documentation for <gi>media</gi> vs.
+                  att.media</hi></ref></cell>
+<cell>Peter Stadler</cell>
+<cell>Piotr Banski</cell>
+<cell>2015-02-18</cell>
+<cell>This is really a feature request, that overriding part of an inherited model does
+              not mean you are no longer a member of that model, and the documentation should
+              reflect that. <hi style="bold">Action on MH to open a BugUG and close the current
+                ticket. [DONE]</hi></cell>
+</row>
+<row>
+<cell>A</cell>
+<cell><ref target="https://sourceforge.net/p/tei/bugs/737/"><hi style="underline color(1155cc)">737</hi></ref></cell>
+<cell><ref target="https://sourceforge.net/p/tei/bugs/737/"><hi style="underline color(1155cc)">explaining NFC</hi></ref></cell>
+<cell>Stefan Majewski</cell>
+<cell>Jens Østergaard Petersen</cell>
+<cell>2015-02-18</cell>
+<cell>Was just a clarification in the text, have fixed this commit r13223 <hi style="bold">[DONE]</hi></cell>
+</row>
+<row>
+<cell>B</cell>
+<cell><ref target="https://sourceforge.net/p/tei/bugs/736/"><hi style="underline color(1155cc)">736</hi></ref></cell>
+<cell><ref target="https://sourceforge.net/p/tei/bugs/736/"><hi style="underline color(1155cc)">compatibility characters among East Asian
+                  logographs</hi></ref></cell>
+<cell>James Cummings</cell>
+<cell>Jens Østergaard Petersen</cell>
+<cell>2015-02-18</cell>
+<cell> Accepted and fixed <hi style="bold">[DONE]</hi></cell>
+</row>
+<row>
+<cell>B</cell>
+<cell><ref target="https://sourceforge.net/p/tei/bugs/735/"><hi style="underline color(1155cc)">735</hi></ref></cell>
+<cell><ref target="https://sourceforge.net/p/tei/bugs/735/"><hi style="underline color(1155cc)">older strata</hi></ref></cell>
+<cell>Fabio Ciotti</cell>
+<cell>Jens Østergaard Petersen</cell>
+<cell>2015-02-18</cell>
+<cell> Accepted and fixed <hi style="bold">[DONE]</hi></cell>
+</row>
+<row>
+<cell>B</cell>
+<cell><ref target="https://sourceforge.net/p/tei/bugs/730/"><hi style="underline color(1155cc)">730</hi></ref></cell>
+<cell><ref target="https://sourceforge.net/p/tei/bugs/730/"><hi style="underline color(1155cc)">Unicode history</hi></ref></cell>
+<cell>Hugh A. Cayless</cell>
+<cell>Jens Østergaard Petersen</cell>
+<cell>2015-02-18</cell>
+<cell> Subgroup thinks that a better correction should be
+              “<hi style="color(555555) background(white)">by the time the Unicode standard was first being developed”. </hi></cell>
+</row>
+<row>
+<cell>C</cell>
+<cell><ref target="https://sourceforge.net/p/tei/bugs/728/"><hi style="underline color(1155cc)">728</hi></ref></cell>
+<cell><ref target="https://sourceforge.net/p/tei/bugs/728/"><hi style="underline color(1155cc)">lamenting the passing of SGML SDATA</hi></ref></cell>
+<cell>Stefanie Gehrke</cell>
+<cell>Jens Østergaard Petersen</cell>
+<cell>2015-02-18</cell>
+<cell>Fair cop. Revise this section and rename it … maybe delete the whole thing. <ref target="/release/doc/tei-p5-doc/en/html/CH.html#D4-45-2"><hi style="underline color(1155cc)">http://www.tei-c.org/release/doc/tei-p5-doc/en/html/CH.html#D4-45-2</hi></ref></cell>
+</row>
+<row>
+<cell>C</cell>
+<cell><ref target="https://sourceforge.net/p/tei/bugs/727/"><hi style="underline color(1155cc)">727</hi></ref></cell>
+<cell><ref target="https://sourceforge.net/p/tei/bugs/727/"><hi style="underline color(1155cc)">dated XML processor info</hi></ref></cell>
+<cell>Stefan Majewski</cell>
+<cell>Jens Østergaard Petersen</cell>
+<cell>2015-02-18</cell>
+<cell>Comment SM: I find this information not dated, I think this still holds, even
+              though many people use UTF-8 today.</cell>
+</row>
+<row>
+<cell>C</cell>
+<cell><ref target="https://sourceforge.net/p/tei/bugs/724/"><hi style="underline color(1155cc)">724</hi></ref></cell>
+<cell><ref target="https://sourceforge.net/p/tei/bugs/724/"><hi style="underline color(1155cc)">part of the “Title” clipped by Roma, in a
+                  somewhat sneaky fashion</hi></ref></cell>
+<cell>Hugh A. Cayless</cell>
+<cell>Piotr Banski</cell>
+<cell>2015-02-18</cell>
+<cell>
+<p>Is the Council able to support Roma? In any case, this should be transformed into a
+                Github issue</p>
+<p><hi style="bold">Action on HC</hi>: mark green, assign to MH (and duplicate issue on
+                GitHub)</p>
+</cell>
+</row>
+<row>
+<cell>A</cell>
+<cell><ref target="https://sourceforge.net/p/tei/bugs/721/"><hi style="underline color(1155cc)">721</hi></ref></cell>
+<cell><ref target="https://sourceforge.net/p/tei/bugs/721/"><hi style="underline color(1155cc)">hors d’oeuvre unpalatable in 9.4</hi></ref></cell>
+<cell>Stefan Majewski</cell>
+<cell>Piotr Banski</cell>
+<cell>2015-01-30</cell>
+<cell><hi style="bold"> Action: SM implement (</hi><hi style="bold color(555555) background(white)">Update the inline examples for what
+                the referenced dictionaInries REALLY provide)Include example of use of @notation
+                e.g. for sampa</hi></cell>
+</row>
+<row>
+<cell>A</cell>
+<cell><ref target="https://sourceforge.net/p/tei/bugs/718/"><hi style="underline color(1155cc)">718</hi></ref></cell>
+<cell><ref target="https://sourceforge.net/p/tei/bugs/718/"><hi style="underline color(1155cc)">dated info on XML processors</hi></ref></cell>
+<cell>Syd Bauman</cell>
+<cell>Jens Østergaard Petersen</cell>
+<cell>2015-01-21</cell>
+<cell>The first sentence could be slightly rewritten. We think the whole chapter could
+              stand to be revisited, but this is low priority.</cell>
+</row>
+<row>
+<cell>A</cell>
+<cell><ref target="https://sourceforge.net/p/tei/bugs/710/"><hi style="underline color(1155cc)">710</hi></ref></cell>
+<cell><ref target="https://sourceforge.net/p/tei/bugs/710/"><hi style="underline color(1155cc)">xml:lang/ langUsage</hi></ref></cell>
+<cell>Syd Bauman</cell>
+<cell>Jens Østergaard Petersen</cell>
+<cell>2015-01-21</cell>
+<cell/></row>
+<row>
+<cell>B</cell>
+<cell><ref target="https://sourceforge.net/p/tei/bugs/706/"><hi style="underline color(1155cc)">706</hi></ref></cell>
+<cell><ref target="https://sourceforge.net/p/tei/bugs/706/"><hi style="underline color(1155cc)">revisionDesc suggesting order of changes</hi></ref></cell>
+<cell>rviglianti</cell>
+<cell>Sebastian Rahtz</cell>
+<cell>2015-01-17</cell>
+<cell>Subgroup suggest to drop “Conventionally” or even to drop the whole sentence <hi style="bold">Action on RV: Fix all examples in the guidelines;Remove
+                ‘Conventionally’.</hi></cell>
+</row>
+<row>
+<cell>B</cell>
+<cell><ref target="https://sourceforge.net/p/tei/bugs/703/"><hi style="underline color(1155cc)">703</hi></ref></cell>
+<cell><ref target="https://sourceforge.net/p/tei/bugs/703/"><hi style="underline color(1155cc)">nonsense in remarks of <gi>specGrp</gi></hi></ref></cell>
+<cell>Syd Bauman</cell>
+<cell>Syd Bauman</cell>
+<cell>2015-01-03</cell>
+<cell/></row>
+<row>
+<cell>B</cell>
+<cell><ref target="https://sourceforge.net/p/tei/bugs/697/"><hi style="underline color(1155cc)">697</hi></ref></cell>
+<cell><ref target="https://sourceforge.net/p/tei/bugs/697/"><hi style="underline color(1155cc)">sequence of declaration info is lost when making
+                  an ODD</hi></ref></cell>
+<cell>Lou Burnard</cell>
+<cell>Lou Burnard</cell>
+<cell>2014-10-31</cell>
+<cell/></row>
+<row>
+<cell>C</cell>
+<cell><ref target="https://sourceforge.net/p/tei/bugs/696/"><hi style="underline color(1155cc)">696</hi></ref></cell>
+<cell><ref target="https://sourceforge.net/p/tei/bugs/696/"><hi style="underline color(1155cc)">macro.paraContent doesn’t contain l</hi></ref></cell>
+<cell>James Cummings</cell>
+<cell>Hugh A. Cayless</cell>
+<cell>2014-10-18</cell>
+<cell>
+<p>But it does already, HC obviously smoking crack. (HC had done previously, but
+                forgotten to close the ticket)</p>
+<p>CLOSED.</p>
+</cell>
+</row>
+<row>
+<cell>C</cell>
+<cell><ref target="https://sourceforge.net/p/tei/bugs/695/"><hi style="underline color(1155cc)">695</hi></ref></cell>
+<cell><ref target="https://sourceforge.net/p/tei/bugs/695/"><hi style="underline color(1155cc)">distributed spec files point at wrong schema
+                  location</hi></ref></cell>
+<cell>Peter Stadler</cell>
+<cell>Peter Stadler</cell>
+<cell>2014-10-12</cell>
+<cell> This is already fixed</cell>
+</row>
+<row>
+<cell>C</cell>
+<cell><ref target="https://sourceforge.net/p/tei/bugs/630/"><hi style="underline color(1155cc)">630</hi></ref></cell>
+<cell><ref target="https://sourceforge.net/p/tei/bugs/630/"><hi style="underline color(1155cc)">use of <gi>listRef</gi> in specs</hi></ref></cell>
+<cell>Lou Burnard</cell>
+<cell>Kevin Hawkins</cell>
+<cell>2013-12-28</cell>
+<cell> Low priority: LB to try harder</cell>
+</row>
+<row>
+<cell>A</cell>
+<cell><ref target="https://sourceforge.net/p/tei/bugs/581/"><hi style="underline color(1155cc)">581</hi></ref></cell>
+<cell><ref target="https://sourceforge.net/p/tei/bugs/581/"><hi style="underline color(1155cc)">`<gi>attRef</gi>` needs better documentation</hi></ref></cell>
+<cell>Martin Holmes</cell>
+<cell>Martin Holmes</cell>
+<cell>2013-06-24</cell>
+<cell><hi style="bold">Action: MH to improve documentation</hi></cell>
+</row>
+<row>
+<cell>B</cell>
+<cell><ref target="https://sourceforge.net/p/tei/bugs/563/"><hi style="underline color(1155cc)">563</hi></ref></cell>
+<cell><ref target="https://sourceforge.net/p/tei/bugs/563/"><hi style="underline color(1155cc)">inconsistent encoding of citations to sources of
+                  examples</hi></ref></cell>
+<cell>Paul Schaffner</cell>
+<cell>Kevin Hawkins</cell>
+<cell>2013-04-12</cell>
+<cell/></row>
+<row>
+<cell>C</cell>
+<cell><ref target="https://sourceforge.net/p/tei/bugs/548/"><hi style="underline color(1155cc)">548</hi></ref></cell>
+<cell><ref target="https://sourceforge.net/p/tei/bugs/548/"><hi style="underline color(1155cc)">use of modal verbs in Guidelines</hi></ref></cell>
+<cell>Kevin Hawkins</cell>
+<cell>Kevin Hawkins</cell>
+<cell>2013-04-08</cell>
+<cell>Action on JC: He MUST — no, SHALL — review uses of “should” (etc.) and
+              distribute them among MUST (or SHALL), SHOULD, and possibly MAY (or alternative
+              formulation altogether.) JC also to add a short discussion on Modal Verbs and their
+              use in the Guidelines. </cell>
+</row>
+<row>
+<cell>A</cell>
+<cell><ref target="https://sourceforge.net/p/tei/bugs/216/"><hi style="underline color(1155cc)">216</hi></ref></cell>
+<cell><ref target="https://sourceforge.net/p/tei/bugs/216/"><hi style="underline color(1155cc)">half title pages in TEI Tite</hi></ref></cell>
+<cell>Syd Bauman</cell>
+<cell>Kevin Hawkins</cell>
+<cell>2010-08-09</cell>
+<cell/></row>
+</table>
+<p>Check Green Bugs / FR for updates on status?</p>
+<p>Check RED Bugs / FR for updates on whether should just be closed or potential status
+          change?</p>
+</div>
+	</div></body><!-- #post-## --></text></TEI>

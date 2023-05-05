@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/home/lou/Public/TEI/TEICSS/tei.css" type="text/css"
+ ?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:t="http://www.tei-c.org/ns/1.0" n="2023-03"><teiHeader><fileDesc><titleStmt><title>Minutes of the TEI Technical Council</title><meeting n="2023-03" when="2023-03-10">TEI Technical Council online
+     meeting : <date>10 March 2023</date></meeting></titleStmt><publicationStmt><distributor>TEI Website</distributor><idno>TCM164</idno></publicationStmt><sourceDesc><p>Retagged from a WordPress HTML file</p></sourceDesc></fileDesc><revisionDesc><change when="2023-05-04">Archival header confected</change><change>Extracted from Word Press article with id post-31562</change></revisionDesc></teiHeader><text><body><div><div type="h3"><head><hi style="strong">Meeting times</hi></head><list style="ul">
+<item>6:30am PST / 9:30am EST / 2:30pm UTC / 3:30pm CET</item>
+<item>Started: ~14:36Z Ended: ~16:06Z</item>
+</list></div><div type="h3"><head>Present:</head><list style="ul">
+<item>Syd Bauman (SB)</item>
+<item>Elisa Beshero-Bondar (EBB, Chair)</item>
+<item>Hugh Cayless (HC)</item>
+<item>Janelle Jenstad (JJ)</item>
+<item>Martina Scholger (MS, at 15:00Z)</item>
+<item>Sabine Seifert (SS)</item>
+<item>Joey Takeda (JT)</item>
+<item>Magdalena Turska (MT)</item>
+<item>Raff Viglianti (RV)</item>
+</list></div><div type="h3"><head>Apologies/Not Present:</head><list style="ul">
+<item>Elli Bleeker (EB)</item>
+<item>Helena Bermúdez Sabel (HBS)</item>
+<item>Patricia O’Connor (TOC)</item>
+</list><p>Meeting minutes previous month (<ref target="https://tei-c.org/activities/council/meetings/tei-technical-council-teleconference-2023-02-10/">February 2023</ref>)</p></div><div type="h3"><head>Spring F2F meeting</head><list style="ul">
+<item>May 7–9 at University of Guelph: working at <ref target="https://www.uoguelph.ca/arts/dhguelph/thinc">THINCLab</ref> <ref target="https://goo.gl/maps/wyf6RJ7grWwdAncMA">(McLaughlin Library)</ref></item>
+<item>Travel discussion
+<list style="ul">
+<item><ref target="https://lincsproject.ca/events/making-links-2023/">LINCS project conference</ref></item>
+<item><ref target="https://www.uoguelph.ca/arts/dhguelph/summer2023">DH@Guelph workshops</ref> (May 9–12): adjusted workshop model</item>
+<item>See details sent to TEI-Council mailing list on 2023-02-19.
+<list style="ul">
+<item>Updates to be sent via Slack and TEI-Council mailing list shortly!</item>
+</list>
+</item>
+<item><ref target="https://tei-c.org/wp-content/uploads/2022/09/TEI_travel_form.pdf">Travel Reimbursement form </ref></item>
+<item><hi style="b">Action on EBB</hi> to arrange a shared document for travel arrangements by <hi style="b">2023-03-17</hi>.</item>
+</list>
+</item>
+</list></div><div type="h3"><head>Fall F2F meeting</head><list style="ul">
+<item>Timing considerations
+<list style="ul">
+<item>TEI/MEI Conference is Mon 04 Sep to Fri 08 September at Paderborn (see <ref target="https://www.uni-paderborn.de/forschung/forschung-im-profil/digital-humanities/nachricht/save-the-date-joint-tei-and-mei-conference-2023">save the date notice</ref>):</item>
+<item>Best if Council meets before the conference begins</item>
+<item>Mon 04 Sep is Labour Day in US &amp; Canada</item>
+<item>Workshops: Mon 04 Sep and Tue 05 Sep
+<list style="ul">
+<item>Will be held in a different part of town than the main conference</item>
+</list>
+</item>
+</list>
+</item>
+<item>Review of responses to Slack poll for Council F2F meeting dates.</item>
+<item><hi style="b">Council decision: Sun 03 (morning)–Tue 05 (midday) September</hi>
+<list style="ul">
+<item><hi style="b">Action on EBB</hi> to arrange a shared document for travel arrangements by <hi style="b">2023-04-10</hi>.</item>
+<item>Recommendation for travel to Paderborn—try train transport from a larger hub.</item>
+</list>
+</item>
+</list></div><div type="h3"><head>TEI/MEC Conference planning</head><list style="ul">
+<item>RV is committee chair, puts together program committee</item>
+<item><ref target="https://teimec2023.uni-paderborn.de/cfp.html">CFP</ref> (proposals due April 16)</item>
+<item>Using ConfTool for submissions
+<list style="ul">
+<item>Request to provide option for people’s titles, including non-specific, ie. Mx</item>
+<item>No GatherTown event (not well attended last time), but some other virtual support for sharing posters.</item>
+</list>
+</item>
+<item><hi style="b">Action on Council:</hi> Help spread the word: RV explains that due to this being a joint event, there’s some confusion over whether this is the actual TEI annual conference. Therefore any further communications should make it very clear that it is.</item>
+</list></div><div type="h3"><head>Next release: April 2023</head><list style="ul">
+<item>Release techs: JT, HC, SB</item>
+<item>Release dates: <hi style="strong">Planning on Tue 04 Apr</hi> (perhaps start on Mon 03 April; either way release techs should meet the week before)</item>
+<item><hi style="b">Refrigerate on Thu 23 March</hi></item>
+<item><hi style="b">Freeze on Thu 30 March.</hi></item>
+</list></div><div type="h3"><head>Updates from TEI Board</head><list style="ul">
+<item>TEI identity guide for logo redesign: Write in your suggestions by March 15 on shared Google Doc from the Board.</item>
+<item>Communications Officer update: ~5 applicants (yay!)</item>
+</list></div><div type="h3"><head>Progress on Rendering “Attributes” section of tagdocs</head><list style="ul">
+<item>(Background)  <ref target="https://github.com/TEIC/Stylesheets/issues/592">Stylesheets #592</ref></item>
+<item>Work proceeding on this branch: <ref target="https://github.com/TEIC/Stylesheets/tree/stylesheets_group_on_592">https://github.com/TEIC/Stylesheets/tree/stylesheets_group_on_592</ref></item>
+<item>Progress from last Stylesheets meeting: managed to create semantic list elements to hold the att information</item>
+<item>to be continued.</item>
+</list></div><div type="h3"><head>TCW for TEI GitHub Webhooks and Secrets (HC and JT)</head><list style="ul">
+<item>Context: See <ref target="https://github.com/TEIC/Stylesheets/pull/588">Stylesheets PR #588</ref>: Tests fail due to failed Slack webhook action on external PRs.</item>
+<item><hi style="b"> </hi><ref target="https://github.com/TEIC/Stylesheets/issues/594">Stylesheets ticket #594</ref></item>
+<item>JT’s <ref target="https://docs.google.com/document/d/1X8l4urOTaKLcZhEBce7pdSNezbv44SnKnw5dvzIyhy4/edit">initial audit of secrets and webhooks in the TEIC GitHub org</ref>:
+<list style="ul">
+<item>Document is currently in JT’s Google Drive—we should move it to the TEIC Google Drive.</item>
+<item>Are we using waffle, Travis? These appear to be outdated.</item>
+<item>Status of DockerHub (using Peter Stadler’s credentials)</item>
+<item>Discussion: following JT’s query we realized we should update members and especially owners of the TEIC organization:
+<list style="ul">
+<item>During meeting: updated the owners, added JT to help with webhooks issue, removed Sebastian Rahtz from the owners group and as a memento kept his user as a member, etc.</item>
+<item>RV: Council membership should be able to write to the repo, but we should limit the direct write access to modifying the Guidelines (this is beyond simple membership–determine who has write access).</item>
+<item>Council may work on this in off hours of a F2F.</item>
+</list>
+</item>
+</list>
+</item>
+</list></div><div type="h3"><head>Another TEI ODD Processor (ATOP)</head><list style="ul">
+<item>Ongoing request that Council pay attention to tickets with <ref target="https://github.com/TEIC/TEI/labels/atop">atop label</ref>. While most are not actually blocking progress, resolution would speed things up.
+<list style="ul">
+<item><ref target="https://github.com/TEIC/TEI/issues/2306">#2306</ref>  — SB: Not surprisingly, this is more nuanced than we thought. See comment of 2023-03-09 on ticket.</item>
+<item><ref target="https://github.com/TEIC/TEI/issues/2330">#2330</ref> — Green + Yellow after February Council discussion and <ref target="https://github.com/TEIC/TEI/issues/2330#issuecomment-1426000839">ticket update</ref></item>
+<item><ref target="https://github.com/TEIC/TEI/issues/2381">#2381</ref> — Council decides:
+<list style="ul">
+<item>GREEN</item>
+<item>Add a warning on <gi>content</gi> tagdoc page</item>
+<item>Add a warning In release notes—indicate this might break something: use a source= attribute to point to the version you need.</item>
+</list>
+</item>
+</list>
+</item>
+</list></div><div type="h3"><head>RomaJS/Roma Beta Update</head><list style="ul">
+<item>Planned to be released before the TEI April release</item>
+<item>Still plan to release RomaJS as the new Roma with next release as v 1.0.0 and out of beta
+<list style="ul">
+<item>will have German, Italian, Spanish, French translations ready (Spanish translation is still in the works but with a good chance to be completed).</item>
+<item>Kiyonori’s students working on Japanese translations (but not very likely to be completed in time for the release)</item>
+<item>some bugs to squash yet: if contacted by RV about a bug, please respond before the TEI refridge date.</item>
+</list>
+</item>
+<item>Old Roma would stay under a different domain name (possible alternative domain names: Roma Classic, Roma Antiqua)</item>
+<item><hi style="b">Action HC and RV </hi>to work on DNS switch. (It should happen sooner, but can be announced with the next release.)</item>
+<item><hi style="b">Action on EBB</hi> to write the announcement to stop using old Roma and start on the new Roma when its released</item>
+</list></div><div type="h3"><head>TEI Specs Internationalization Update</head><list style="ul">
+<item>Interface of SpecTranslator
+<list style="ul">
+<item>HC: complete translations for Spanish, but no other languages</item>
+</list>
+</item>
+<item><hi style="b">Action on HC</hi> to prepare instructions / call for more from other languages. HC has launched a README at <ref target="https://github.com/TEIC/spec_translator">https://github.com/TEIC/spec_translator</ref> with instructions to edit the TEI file in the I18N folder for the spec translator.</item>
+</list></div></div></body><!-- #post-## --></text></TEI>

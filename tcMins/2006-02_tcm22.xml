@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/home/lou/Public/TEI/TEICSS/tei.css" type="text/css"
+ ?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:t="http://www.tei-c.org/ns/1.0" n="2006-02"><teiHeader><fileDesc><titleStmt><title>Minutes of the TEI Technical Council</title><meeting n="2006-02" when="2006-02-24">TEI Technical Council online
+     meeting : <date>24 February 2006</date></meeting></titleStmt><publicationStmt><distributor>TEI Website</distributor><idno>TCM022</idno></publicationStmt><sourceDesc><p>Re-tagged from a TEI Legacy format document which contained the following source note:</p><p>This electronic file is the source.</p></sourceDesc></fileDesc><revisionDesc><change when="2023-05-01">Archival header confected</change><change>Converted from the TEI archival document tcm22</change><change when="2006-02-26">Syd Bauman:  Corrections per LB's post to tei-council</change><change when="2006-02-25">Syd Bauman:  
+          
+            Fleshed out to rudimentary first draft status, still
+            using local meet-mins.dtd.
+            Converted to TEI Lite (using meet-mins2lite.xsl and
+              then remove_default_attrs.xslt)
+          
+        </change><change when="2006-02-24">Syd Bauman:  Captured notes during conference call, using
+          meet-mins.dtd.</change></revisionDesc></teiHeader><text>
+    <body>
+      <div>
+        <p>All times are UTC unless otherwise noted.</p>
+        <p>Call started at 12:06 with CW, DP, SB, JW, AB, LB, SR, MD,
+          CT, DB; absent were MZ, SS, LR, JC, although JC had sent
+          along his apologies in advance.</p>
+      </div>
+      <div n="1">
+        <head>Review of the minutes and action items</head>
+        <list type="gloss">
+          <label>JC: Review and then disseminate the P5 howto</label>
+          <item>JC reported prior to the teleconference that while
+            there was still room for work on this document, it had
+            been reviewed and disseminated (posted to TEI-L <date when="2005-12-22">22/23 Dec</date>), and that no one had
+            commented upon it.<note type="action">
+            <label>LB</label>
+            Ensure this document is easily accessible from P5
+          portion of website
+            <date>completed</date>
+          </note></item>
+          <label>SB: Circulate summary report on SO work-group outputs to date</label>
+          <item>SB reports this was accomplished. It was
+          agreed that Council members should review the current drafts
+            listed in <ref target="http://www3.iath.virginia.edu/pipermail/tei-council/2005/001163.html">Syd's
+              summary</ref>, and SB should revise them based on
+          comments received.<note type="action">
+              <label>All</label>
+              Review <ref target="http://www3.iath.virginia.edu/pipermail/tei-council/2005/001163.html">SO
+          Outputs</ref>
+              <date>2006-03-11</date>
+            </note>
+          </item>
+          <label>LB: to update the Activities web-page</label>
+          <item>LB reports he has updated this page as much as he can</item>
+          <label>CW, LB: Draft charge for personography activity, including deadlines and workplan</label>
+          <item>Done</item>
+          <label>CT: Initiate and facilitate production of note on
+            Page Image Management; report on progress to next Council
+            meeting</label>
+          <item>CT (&amp; DP) report that work is progressing; see
+          <ref target="http://www.tei-c.org.uk/wiki/index.php/FacsimileMarkup"/>. CT reports that after
+          some discussion and consideration he concluded that this
+            activity would be best situated as one of the <ref target="http://www.tei-c.org/Activities/SIG/Manuscript/index.xml?style=printable">Manuscript
+          SIG</ref>'s activities, rather than creating a new SIG.
+            <note type="action">
+              <label>CT or DP</label>
+              post to TEI-MS-SIG or TEI-L requesting input
+              <date>2006-03-12</date>
+            </note>
+          </item>
+          <label>LB: Ensure that ST corrections are completed</label>
+          <item>LB reports this item completed</item>
+          <label>SB: organize a proposal on how best to prosecute the class struggle</label>
+          <item>SB reports that while this item was completed (i.e., a
+            <ref target="http://www3.iath.virginia.edu/pipermail/tei-council/2005/001164.html">proposal 
+              was posted</ref>), neither he nor anyone else followed
+            up appropriately on the proposal, and thus the class
+            struggle has stagnated. It was agreed to follow LB's
+          counter-proposal, using e-mail on the entire Council list.
+          It was further agreed that rather than processing modules in
+          some sequential order, each member of Council will be
+          assigned some modules for which to propose what the class
+            structure should be. This process needs to be undertaken
+          quite soon.
+            <note type="action">
+              <label>CW w/ LB's help</label>
+              create list of modules needing
+                <soCalled>class</soCalled> attention
+              <date>2006-03-04</date>
+            </note><note type="action">
+              <label>CW</label>
+              assign modules to Council members
+              <date>2006-03-11</date>
+            </note>
+          </item>
+          <label>CW: Investigate options for holding council
+            meeting/TEI training meeting in Kyoto, reporting back by
+            next call</label>
+          <item>Done, discussion later on the agenda</item>
+          <label>SB/SS/NS: Report back from TEI Libraries meeting at
+            next TEI Council call</label>
+          <item>SB reported that the meeting went well. The DLF goals
+            were to revamp the <ref target="http://www.diglib.org/standards/tei.htm">TEI in
+              Libraries</ref> document, and begin the process of
+            creating a <soCalled>vendor DTD</soCalled> or
+            <soCalled>TEI Tight</soCalled> which could be used for
+            submitting texts to vendors for capture by those
+            institutions without the resources to create such a schema
+            on their own — this is the same schema that TEI
+            would like to use when aggregating requests for
+            digitization as a member benefit. The TEI goals were to
+            ensure that the results of the DLF process were freely
+            available to TEI users, to encourage participants to
+            consider P5, to ensure that the P4 schemas produced were
+            not egregiously problematic for upgrading to P5, and to
+            solicit librarian input on P5.
+            <note type="action">
+              <label>SB</label>
+              post a pointer to the minutes of this meeting
+              <date>as soon as the minutes are available</date>
+            </note>
+          </item>
+        </list>
+      </div>
+      <div n="2">
+        <head>Review of WG etc. progress</head>
+        <div n="2.1">
+          <head>PB</head>
+          <note>MM = Murray McGillivray</note>
+          <p>SB reports that MM has posted some documents with some
+            suggested sample encodings of collation formulae to the PB
+            list, and that JF has commented on them, but no one else
+            has. LB has put the documents on the website off the <ref target="http://www.tei-c.org/Activities/PB/index.xml?style=printable">Physical 
+              Bibliography Work Group</ref> page, under the headings
+            <q>Manuscript example</q> and <q>Print example</q>. LB
+            says that progress is being made, Council members should
+            read &amp; comment.</p>
+        </div>
+        <div n="2.2">
+          <head>personography</head>
+          <p>MD reports that the preliminary report by the graduate
+            student Eva Wedervang-Jensen, whom TEI paid to research
+            other biographic XML schemes, has been put on the web at
+          <ref target="http://www.tei-c.org/Activities/PERS/persw02.xml?style=printable"/>. 
+            Eva looked at ~10 systems for biographical data in XML
+            (the list is in the document). MD notes that, because it
+            started life as an MS Word document which was later
+            hand-converted to TEI, it has some significant formatting
+            problems which he hopes to iron out soon; however, he does
+            not want to post it to TEI-L until these formatting
+            problems have been fixed.</p>
+          <p>The plan is to have a face-to-face meeting about this,
+            hopefully soon. The exact reason for and makeup of this
+            meeting was discussed. The intent would be to gather some
+            non-TEI folks who are practiced in this field, to solicit
+            their opinions on our proposed scheme, in particular
+            whether or not they would use it. We are looking for
+            anxious implementors of this scheme.</p>
+          <p>Council members should send names of individuals who
+            should be involved in the personography face-to-face to
+            the council list or directly to MD. End of March a
+            possibility for this meeting. <!--note resp="SB" place="inline">I have the sentence <q>CT or LB to send
+                JG name to MD.</q> in my notes, but I have no idea
+              what it means. HELP??</note--></p>
+        </div>
+      </div>
+      <div n="3">
+        <head>P5</head>
+        <p>The newest pre-release alpha-test snapshot of P5, whose
+          Sourceforge number is <q>0.3.1</q>, was released 2006-01-30.
+          This is a significant improvement over the previous
+          snapshot. LB apologized to Council for not having a written
+          progress report prepared ahead of the conference call, but
+          promised to have one ready for inclusion in these minutes,
+          which he promptly did. For details see the <ref target="../release/doc/tei-p5-doc/readme-0.3.1.html">release
+            notes</ref>.</p>
+        <p>It was suggested that the newest snapshot should be
+        included with oXygen.<note type="action">
+            <label>SB</label>
+            bundle up 0.3.1 for oXygen
+            <date>2006-03-18</date>
+          </note>
+        </p>
+        <p>A revision of the TEI Lite tutorial, making it conformant
+          with TEI P5, was also undertaken. A preliminary draft of
+          this revision was circulated to Council mid February, and
+          also to TEI-L. Major differences are summarised in <ref target="#appndx"/>.</p>
+      </div>
+      <div n="4">
+        <head>Meetings</head>
+          <p>Next conference call is tentatively scheduled for <time when="2006-04-25T12:00:00Z">Tue 25 Apr @ 12:00 UTC</time>.</p>
+      </div>
+      <div>
+        <head>Miscellanea</head>
+          <p>LB &amp; SB suggest that the <soCalled>Class
+              Struggle</soCalled> is currently high priority.</p>
+          <p>Council members reviewing documents should post their
+            thoughts about the document reviewed, even if it is
+            nothing more than <q>It's OK</q>.</p>
+      </div>
+      <div>
+        <p>Meeting ended ~13:30.</p>
+      </div>
+    </body>
+    <back>
+      <div xml:id="appndx" n="1" type="appendix">
+        <head>Changes to TEI Lite (P5 version)</head>
+        <list type="ordered">
+          <item>The element <gi>expan</gi> wasn't previously
+            available. I have added it to complement <gi>abbr</gi> and
+            revised the discussion of how abbreviation should be
+            handled, in line with the revisions for <gi>corr</gi>,
+            <gi>reg</gi>, <gi>orig</gi>, <gi>sic</gi> etc. (and
+            introduced <gi>choice</gi>, obviously).</item>
+          <item>The <gi>series</gi> element, although listed as
+            available in U5, isn't actually present in any version of
+            the teilite dtd since 2004. I've removed discussion of
+            it.</item>
+          <item>The elements <gi>gi</gi>, <gi>code</gi>,
+            <gi>ident</gi>, <gi>kw</gi> were previously added as
+            extensions; all but the last are available from the
+            tagdocs module, so I've taken them from there now, adding
+            <gi>att</gi>  and <gi>val</gi>  (but not <gi>tag</gi>) for
+            good measure.  <gi>kw</gi> is gone. </item>
+          <item>I added <gi>teiCorpus</gi>: it has always been
+            discussed in U5, but not actually included in the DTD for
+            no very good reason.</item>
+          <item>Numbered  divs are removed. This required a rather
+            unpleasant manual hack of the ODD which  should only be
+            regarded as provisional.</item>
+          <item>The discussion of linking and pointers was revised in
+            line with the new P5 regime.</item>
+          <item>The  discussion of figures and graphics was also
+            revised in line with how it is now presented in P5, and
+            the elements <gi>graphic</gi> and <gi>binaryObject</gi>
+            added.</item>
+          <item>The  discussion of character entities has been
+            removed</item>
+        </list>
+      </div>
+    </back>
+  </text></TEI>

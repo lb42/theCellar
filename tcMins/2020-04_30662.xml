@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/home/lou/Public/TEI/TEICSS/tei.css" type="text/css"
+ ?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:t="http://www.tei-c.org/ns/1.0" n="2020-04"><teiHeader><fileDesc><titleStmt><title>Minutes of the TEI Technical Council</title><meeting n="2020-04" when="2020-04-14">TEI Technical Council online
+     meeting : <date>14 April 2020</date></meeting></titleStmt><publicationStmt><distributor>TEI Website</distributor><idno>TCM125</idno></publicationStmt><sourceDesc><p>Retagged from a WordPress HTML file</p></sourceDesc></fileDesc><revisionDesc><change when="2023-04-25">Archival header confected</change><change>Extracted from Word Press article with id post-30662</change></revisionDesc></teiHeader><text><body><div><p><hi style="strong">Meeting time:</hi></p><list style="ul">
+<item>EST 09:00–10:30, GMT 14:00–15:30, CEST 15:00–16:30</item>
+<item>Started: 14:05Z; ended: 15:37Z</item>
+</list><p><hi style="strong">Present:</hi></p><list style="ul">
+<item>Syd Bauman (SB)</item>
+<item>Elisa Beshero-Bondar (EB)</item>
+<item>Meaghan Brown (MB)</item>
+<item>Hugh Cayless (HC)</item>
+<item>Nicholas Cole (NC)</item>
+<item>Jessica Lu (JL)</item>
+<item>Martina Scholger (MS, Chair)</item>
+<item>Peter Stadler (PS, until 16:00)</item>
+<item>Magdalena Turska (MT)</item>
+<item>Raff Viglianti (RV)</item>
+</list><p><hi style="strong">Apologies/Not Present:</hi></p><list style="ul">
+<item>Vanessa Bigot-Juloux (VBJ)</item>
+</list><p> </p><div type="h2"><head>Planning of the virtual ‘F2F’ (VF2F) meeting</head><list style="ul">
+<item>1–3 May</item>
+<item>Options for organizing the meeting
+<list style="ol">
+<item>PS, MT, NC, VB, MS start in the (CEST) morning with e.g. break out groups); Plenary session with full Council in the (CEST) afternoon; JL, SB, HC, RV, EB, MB continue in the (CEST) evening.</item>
+<item>Start in the CEST afternoon / EDT morning.</item>
+<item>Time to implement tickets with “Status: go”.</item>
+</list>
+</item>
+<item>Which conference system do we want to use? Suggestion to use Zoom.</item>
+<item>Decision for organizing the VF2F:
+<list style="ul">
+<item>Use Zoom with password</item>
+<item>See <ref target="https://docs.google.com/document/d/1tIA1pWABSJlL9KfCwK6t6zwVXm762LNAbvs45YU5Pww/edit#">agenda</ref> for detailed table of meeting times</item>
+<item>Friday: full council group session (~4hrs) (EDT 09:00, GMT 14:00, CEST 15:00)</item>
+<item>Saturday: European break-outs (~3hrs) (BST 9:00, CEST 10:00 + full council session (~4hrs) (EDT 09:00, BST 14:00, CEST 15:00) + American break-outs (~3hrs) (EDT 15:00)</item>
+<item>Sunday: full council group session (~4hrs) (EDT 09:00, GMT 14:00, CEST 15:00)</item>
+</list>
+</item>
+</list></div><div type="h2"><head>Action on …</head><list style="ul">
+<item>The TEI-C Board is searching for an issue-tracking system
+<list style="ul">
+<item><ref target="https://kanboard.org/">https://kanboard.org/</ref></item>
+</list>
+</item>
+<item>Do we want/need this as well?
+<list style="ul">
+<item>Suggestion to try comments/task assignments in Google</item>
+<item>“Action on” document is useful too.</item>
+<item>Our minutes are converted to HTML for WordPress. Maybe use &lt;span class=”action”&gt;….&lt;/span&gt; to make these easier to manage/feature/collect into a task list.</item>
+</list>
+</item>
+</list></div><div type="h2"><head>Documentation</head><list style="ul">
+<item><ref target="https://github.com/TEIC/TEI/issues/1978">https://github.com/TEIC/TEI/issues/1978</ref></item>
+<item>Where should the documentation live?
+<list style="ul">
+<item>Using the GitHub repos, write in TEI.</item>
+<item>Some is in Documentation repo, some is in TEI repo.</item>
+<item>Perhaps we can create new directories in Documentation repo for Tutorials, etc.</item>
+<item>Move old stuff from TEI GitHub Documentation directory into the Documentation repo.</item>
+<item>TEI website documentation on customization (<ref target="https://tei-c.org/guidelines/customization/">https://tei-c.org/guidelines/customization/</ref>)? Does it belong here? (general consensus = no, if anywhere, it belongs on TEI-Wiki)</item>
+</list>
+</item>
+<item>How do we want to format it? TEI? Markdown? Wiki?
+<list style="ul">
+<item>Should they all be in TEI? (Our minutes were in TEI from at least 1990 to ~2013)</item>
+<item>NC: we could use a better collaborative editor (in an intermediate format) for TEI documentation. What intermediate formats will work, (how do we translate into / out?). NC would like to work on this with anyone interested. HC is interested. <hi style="b">Action on NC:</hi> prepare a show-and-tell for the VF2F of what he’s been investigating. “Hurdles for multi-user collaboration in the TEI”</item>
+</list>
+</item>
+<item>Where and how do we want to publish it?
+<list style="ul">
+<item>We could post documentation in GitHub and make sure TEI website links to it, or publishes it from GitHub (via CETEIcean, etc.)</item>
+<item>Have one spot to edit the Documentation and publish them in multiple places.</item>
+</list>
+</item>
+<item>What is the place of the <ref target="https://wiki.tei-c.org/index.php?title=Main_Page">TEI-wiki</ref>?
+<list style="ul">
+<item>SB: for content that is community-written, not by Council.</item>
+<item>Do the SIGs use it? Used to be the SIGs were given a section of the wiki to edit. Some SIGs use the wiki. Should still be just an option for them.</item>
+<item>Some of it is working documents trying to figure out complex processes.</item>
+<item>TEI-Wiki issue with logins: How are these managed? How do people create new accounts? <hi style="b">Action on the Infrastructure Group: </hi>Ask Luis about this; ensure there is some account management on TEI-Wiki (i.e., that a user can request an account).</item>
+<item>Infrastructure Group will be seeking new website manager / communications officer. Clarifying roles would be helpful.</item>
+<item>HC: Council should add pointers to where current Council documentation is.</item>
+<item>JL: TEI-Wiki has value as a community-authored space. If it’s actually used it might increase a sense of community instead of current TEI website’s top-down information dispensing. RV: TEI listserv and GitHub might be where our community connections are happening. What would we do with a revamped wiki? (TEI-by-example)</item>
+<item>Discussion of GitHub Wiki option vs. original TEI Wiki presents issue for us with having to migrate material, etc.</item>
+</list>
+</item>
+<item>What other documents should we pull in?</item>
+<item><ref target="#documentation">Current list of available documentation</ref> near bottom of these minutes, just above the ticket-triage assignment table.</item>
+</list></div><div type="h2"><head>TEI 2020 Conference Submissions</head><list style="ul">
+<item>JL notes conference site indicates CFP deadline is tomorrow: <ref target="https://tei2020.unl.edu/call-for-proposals/">https://tei2020.unl.edu/call-for-proposals/</ref></item>
+<item><hi style="b">Action on MS</hi> to get in touch with conference organizers and TEI-C Board (<ref target="mailto:textencoding2020@gmail.com">textencoding2020@gmail.com</ref>, James Cummings, Kay Walters) and find out what’s going on.</item>
+</list></div><div type="h2"><head>Report Working Group meeting I18n</head><list style="ul">
+<item>suggestion to consolidate l18n messages into a document for Council.</item>
+</list></div><div type="h2"><head>Issues</head><list style="ul">
+<item>Stand-off, annotations, and the Web Annotation Model: we need to work out the content model of <gi>annotation</gi>.</item>
+<item>uniHan: <ref target="https://github.com/TEIC/TEI/issues/1805">https://github.com/TEIC/TEI/issues/1805</ref></item>
+</list></div><div type="h2"><head>Reminders</head><list style="ul">
+<item>TCW-22 Release Process notes should be revised to urge Council members to report major changes (such as things that would break ODDs) to Council when we go to refrigeration! <hi style="b">Action on EB and JL </hi>to work on this documentation <hi style="b">by 2020-04-27</hi>.</item>
+<item>Policy for inactive members to accompany change to 3-year terms? <hi style="b">Action on EB, SB, JL</hi> to have a proposal by F2F</item>
+</list><div type="h3"><head xml:id="documentation">Documentation Currently Available</head><div type="h4"><head>Documentation on GitHub (TEI): <ref target="http://teic.github.io/TCW/">http://teic.github.io/TCW/</ref>:</head><list style="ul">
+<item><ref target="http://teic.github.io/TCW/tcw20.html">TCW 20: How to Edit the TEI Guidelines</ref></item>
+<item><ref target="http://teic.github.io/TCW/testing_and_building.html">Testing and Building the Guidelines and Stylesheets</ref></item>
+<item><ref target="http://teic.github.io/TCW/tcw22.html">TCW 22: Building TEI Release</ref></item>
+<item><ref target="http://teic.github.io/TCW/tcw24.html">TCW 24: Style Guide for Editing the TEI Guidelines</ref></item>
+<item><ref target="http://teic.github.io/TCW/tcw27.html">TCW 27: Procedure for handling practices that are no longer recommended or deprecated</ref></item>
+<item><ref target="http://teic.github.io/TCW/tcw29.html">TCW 29: The Roma install on tei-c.org</ref></item>
+<item><ref target="http://teic.github.io/TCW/howtoChain.html">Draft tutorial on ODD chaining</ref></item>
+<item><ref target="http://teic.github.io/TCW/purifyDoc.html">Draft tutorial on ODD purification</ref></item>
+<item><ref target="http://teic.github.io/TCW/howtoGenerate.html">Draft tutorial on ODD generation</ref></item>
+<item><ref target="http://teic.github.io/TCW/pureODDtutorial.html">Draft Pure ODD Tutorial</ref></item>
+</list></div><div type="h4"><head>Documentation in the TEI-Wiki (mediaWiki): <ref target="https://wiki.tei-c.org/">https://wiki.tei-c.org/</ref></head><list style="ul">
+<item><ref target="https://wiki.tei-c.org/index.php?title=TEI-Council-FAQ">https://wiki.tei-c.org/index.php?title=TEI-Council-FAQ</ref></item>
+<item>Council minutes to 2015: <ref target="https://wiki.tei-c.org/index.php?title=Council">https://wiki.tei-c.org/index.php?title=Council</ref> : NONE of the minutes links works. A list of redirects exists in an unusable form for the current TEI website’s nginx format. HC is working on it.</item>
+<item><ref target="https://wiki.tei-c.org/index.php/ODD_chaining">https://wiki.tei-c.org/index.php/ODD_chaining</ref></item>
+<item><ref target="https://wiki.tei-c.org/index.php?title=Mapping_ODD_processing">https://wiki.tei-c.org/index.php?title=Mapping_ODD_processing</ref></item>
+</list></div><div type="h4"><head>Documentation on the Website (HTML):</head><list style="ul">
+<item><ref target="https://tei-c.org/guidelines/customization/">https://tei-c.org/guidelines/customization/</ref>  *outdated: Move to a new-and-improved TEI-Wiki?</item>
+</list></div></div></div></div></body><!-- #post-## --></text></TEI>

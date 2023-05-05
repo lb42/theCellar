@@ -1,0 +1,887 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/home/lou/Public/TEI/TEICSS/tei.css" type="text/css"
+ ?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:t="http://www.tei-c.org/ns/1.0" n="2005-09"><teiHeader><fileDesc><titleStmt><title>Minutes of the TEI Technical Council</title><meeting n="2005-09" when="2005-09-09">TEI Technical Council online
+     meeting : <date>9 September 2005</date></meeting><author>Syd Bauman</author></titleStmt><publicationStmt><distributor>TEI Website</distributor><idno>TCM019</idno></publicationStmt><sourceDesc><p>Re-tagged from a TEI Legacy format document which contained the following source note:</p><p>
+Born digital; this file is derived from the notes taken at the meeting,
+</p></sourceDesc></fileDesc><revisionDesc><change when="2023-05-01">Archival header confected</change><change>Converted from the TEI archival document tcm20</change><change when="2005-10-01">Lou:  minor corrections</change><change when="2005-09-28">Syd:  continued to update and make improvements</change></revisionDesc></teiHeader><text>
+<front>
+<!--<div type="why is this <div> necessary?">
+-->
+ <div><p>
+This was a meeting of the subset of the TEI Council charged by the complete Council to examine and improve the TEI class system.
+</p>
+<p>
+The meeting was held at the University Club at Oxford University. Thanks are extended to the members from Oxford (LB, JC, SR) for their efforts in organizing the meeting, and to SR for providing home-grown apples.
+</p>
+<p>
+Meeting started with SB, LB, JC, SR, JW, CW at 09-26 09:25; LR arrived at 12:04; broke at ~17:00; continued 09-27 starting at 09:04; ended at 16:57. A subset (SB, JC, SR, CW) met the following morning (09-28) from 09:30 to 12:25 and worked on developing the guidelines for naming model classes.
+</p>
+</div>
+</front>
+<body>
+<div>
+<head>Preliminaries</head>
+<p>
+CW chaired the meeting; notes of decisions taken were recorded by SB, LB, and JC. This document is based upon SB's notes with some additions from JC's, revised by LB.
+</p>
+<p>
+First, the agenda was reviewed, and printed copies of ED W 84 were handed out. It was quickly realized that the current ED W 84 was insufficient for our purposes, so SR updated it so that part 1 also included a column for the class membership of each element. This new version was placed on the TEI website, and projected for the group.
+</p>
+<p>
+LB provided a quick overview of how classes work, defining attribute, model, and content classes as (respectively) elements which share a set of attributes, which occur in the same places in content models, and which share the same content model.
+</p>
+</div>
+<div>
+<head>General Decisions.</head>
+<p>
+We began by reviewing several general questions circulated before the meeting.
+<list type="ordered">
+<item>
+<p>
+We agreed to distinguish attribute classes from model classes. (I.e., no more
+<q>both</q>
+classes, and the naming scheme should reflect the different purposes.)
+</p>
+<p>
+We discussed whether or not we wanted another kind of class in order to group elements that share a content model ("content classes"), or for syntactic sugar issues. The following example was used to help anchor this question:
+<list>
+<item>If we had a model class X w/ members A and B.</item>
+<item>A is a member of X, has content D*</item>
+<item>
+thus there exists a content class DSTAR of which A is a member
+</item>
+<item>DSTAR has members A and others</item>
+<item>Now I want to change A so that it has E also: E|D*</item>
+<item>
+have I removed A from DSTAR, or have I changed DSTAR?
+</item>
+</list>
+</p>
+<p>
+We also considered whether it was helpful to divide classes into semantic and structural classes, noting that all current semantic classes are required to be subclasses of structural ones -- a semantic class such as tei.edit cannot combine elements which are members of different structural classes (say tei.phrase and tei.chunk). We decided that, at least for now, we would consider only attribute and model classes, although recognizing the potential usefulness of the
+<soCalled>content class</soCalled>
+concept.
+</p>
+</item>
+<item>
+<p>
+We affirmed that although different modules may extend membership of classes, the TEI class namespace is global. Consequently, all TEI classes are declared in the same module (at present,
+<ident type="module">core</ident>
+, but possibly
+<ident type="module">textstructure</ident>
+).
+</p>
+</item>
+<item>
+<p>
+We developed three criteria for an element to directly reference elements instead of only classes in its content model.
+<list>
+<item>
+the content does not already appear in some other TEI element, and we deem it unlikely a customizer will want to use it in an added element; or
+</item>
+<item>
+we deem it very unlikely that a customizer will want to add other child elements to the content model; or
+</item>
+<item>
+the content model includes occurrence indicators, or sequence markers making it more complex than a simple starred alternation of elements (in which case, it should probably be expressed as a macro).
+</item>
+</list>
+</p>
+<p>
+Because attribute classes are global, it makes no sense for the same attribute to be declared by more than one attribute class, unless, we can be very sure that no particular element would want to be members of both classes.
+</p>
+</item>
+<item>
+<p>
+We agreed that greater use of classes was unlikely to result in significantly looser content models than those already in place. We also noted the desirability of making explicit constraints (beyond the content model) currently represented only by prose.
+</p>
+<p>
+A
+<gi>constraint</gi>
+element as a child of
+<gi>elementSpec</gi>
+might be needed to do this, rather than (as at present) including them in the general
+<gi>remarks</gi>
+element. It might also contain Schematron code.
+</p>
+</item>
+</list>
+</p>
+<p>
+We discussed putting
+<gi>note</gi>
+into
+<ident type="class">tei.Incl</ident>
+but decided not to, based on argument that
+<list>
+<item>it can be a pain to process</item>
+<item>
+may cause content model problems (would not be able to have a
+<gi>div</gi>
+of only
+<gi>note</gi>
+s; would need to fix lots of content models)
+</item>
+<item>
+the existing
+<gi>note</gi>
+element represents both the content of a note and its point of attachment. It might be good practice to separate the two functions: in this case, the point of attachment would be represented by an
+<gi>anchor</gi>
+, and
+<gi>anchor</gi>
+is already a member of
+<ident type="class">tei.incl</ident>
+</item>
+</list>
+It was noted that the last argument implies a need for specific recommendations on how the anchoring element and the note should be linked (e.g., what the value of
+<att>type</att>
+should be).
+</p>
+<p>
+Participants were reminded that mixing leaf and non-leaf nodes in a single class is generally frowned upon.
+</p>
+<p>
+We agreed to the rule that if
+<ident type="class">S</ident>
+is a sub-class of
+<ident type="class">C</ident>
+and element
+<gi>E</gi>
+is a member of
+<ident type="class">S</ident>
+then it cannot also be a member of
+<ident type="class">C</ident>
+.
+</p>
+</div>
+<div>
+<head>Specific Decisions on Classes</head>
+<p>
+In going through the element list, the following specific changes and recommendations were agreed upon.
+</p>
+<list type="ordered">
+<item>
+move
+<gi>addrLine</gi>
+into
+<ident type="class">tei.addrPart</ident>
+, and change
+<gi>address</gi>
+content model accordingly:
+<code>
+( tei.Incl*, ( tei.addrPart, tei.Incl* )+ )
+</code>
+</item>
+<item>
+add the elements referenced by
+<ident type="macro">macro.glossSeq</ident>
+into a new class
+<ident type="class">tei.glossing</ident>
+; redefine macro.glossSeq to reference this class
+</item>
+<item>
+remove
+<gi>analytic</gi>
+,
+<gi>monogr</gi>
+, and
+<gi>imprint</gi>
+from
+<ident type="class">tei.biblPart</ident>
+</item>
+<item>
+new class
+<ident type="class">tei.resp</ident>
+contains
+<gi>author</gi>
+,
+<gi>editor</gi>
+, and
+<gi>respStmt</gi>
+, so that threesome can be factored out of various places (
+<ident type="class">tei.biblPart</ident>
+,
+<gi>analytic</gi>
+,
+<gi>monogr</gi>
+×3,
+<gi>titleStmt</gi>
+)
+</item>
+<item>
+new class,
+<ident type="class">tei.biblPhrases</ident>
+containing those phrase level elements which should be available within
+<gi>bibl</gi>
+(
+<gi>title</gi>
+,
+<gi>date</gi>
+,
+<gi>dateRange</gi>
+): this new class should be a subclass of
+<ident type="class">tei.biblPart</ident>
+. Content model of bibl should reference only
+<ident type="class">tei.biblPart</ident>
+.
+<note place="inline">See email discussion of 1 oct 05</note>
+</item>
+<item>
+need a new class,
+<ident type="class">tei.biblBoxes</ident>
+has members
+<code>bibl[Struct|Item|Full]</code>
+, many if not all references to
+<gi>bibl</gi>
+should be to new class. — but
+<ident type="class">tei.bibl</ident>
+already does this.
+</item>
+<item>
+factor out repeating parts of the
+<gi>fileDesc</gi>
+and
+<gi>biblFull</gi>
+content model to a macro
+<ident type="macro">macro.fileDesc</ident>
+. I.e.,
+<list>
+<item>
+<code>
+macro.fileDesc = titleStmt, editionStmt?, extent?, publicationStmt, seriesStmt?, notesStmt?
+</code>
+</item>
+<item>
+<code>fileDesc.content = macro.fileDesc, sourceDesc+ </code>
+</item>
+<item>
+<code>biblFull.content = macro.fileDesc, sourceDesc* </code>
+</item>
+</list>
+</item>
+<item>
+change name of
+<ident type="class">tei.refsys</ident>
+to
+<ident type="class">tei.refSys</ident>
+.
+</item>
+<item>
+new class,
+<ident type="class">tei.citable</ident>
+that currently contains only
+<gi>quote</gi>
+, and is referred to instead of
+<code>q | quote</code>
+in content of
+<gi>cit</gi>
+:
+<code>
+cit.content = ( tei.citable | tei.bibl | tei.loc | tei.Incl )+
+</code>
+</item>
+<item>
+change the content model of all various non-empty members of
+<ident type="class">tei.edit</ident>
+except
+<gi>choice</gi>
+, to
+<ident type="macro">macro.paraContent</ident>
+. The list is
+<gi>add</gi>
+,
+<gi>app</gi>
+,
+<gi>corr</gi>
+,
+<gi>damage</gi>
+,
+<gi>del</gi>
+,
+<gi>orig</gi>
+,
+<gi>reg</gi>
+,
+<gi>restore</gi>
+,
+<gi>sic</gi>
+,
+<gi>supplied</gi>
+, and
+<gi>unclear</gi>
+.
+</item>
+<item>
+<ident type="class">tei.data</ident>
+should reference
+<ident type="class">tei.date</ident>
+, thus remove
+<gi>date</gi>
+,
+<gi>dateRange</gi>
+, and
+<gi>dateStruct</gi>
+from it; i.e.
+<code>
+tei.data = ( abbr | address | tei.date | dimensions | eg | egXML | expan | geogName | lang | measure | name | num | orgName | persName | placeName | rs | time | timeRange | timeStruct )
+</code>
+(But note that more reductions should occur to this class later.)
+</item>
+<item>
+move
+<gi>abbr</gi>
+and
+<gi>expan</gi>
+from
+<ident type="class">tei.data</ident>
+to
+<ident type="class">tei.edit</ident>
+</item>
+<item>
+move
+<gi>gap</gi>
+into
+<ident type="class">tei.intervention</ident>
+, removing its
+<att>resp</att>
+</item>
+<item>
+make macro.glossSeq (or tei.glossing) the content for all those elements that used to have
+<att>desc</att>
+(i.e.,
+<gi>certainty</gi>
+,
+<gi>event</gi>
+,
+<gi>gap</gi>
+,
+<gi>join</gi>
+,
+<gi>joinGrp</gi>
+,
+<gi>kinesic</gi>
+,
+<gi>relation</gi>
+,
+<gi>respons</gi>
+, and
+<gi>restore</gi>
+)
+</item>
+<item>
+<gi>headItem</gi>
+and
+<gi>headLabel</gi>
+should not become a class; they may be removed during a reconsideration of the content model of
+<gi>list</gi>
+</item>
+<item>
+define new
+<ident type="class">tei.imprint</ident>
+class for current children of
+<gi>imprint</gi>
+(
+<code>
+pubPlace | publisher | date | biblScope
+</code>
+); factor them out of
+<gi>imprint</gi>
+, which becomes
+<code>( tei.imprint, tei.Incl* )+</code>
+(note that this model requires an element from
+<ident type="class">tei.imprint</ident>
+, which the previous did not); remove
+<gi>imprint</gi>
+from
+<ident type="class">tei.biblPart</ident>
+and make the content model of
+<gi>bibl</gi>
+reference
+<ident type="class">tei.imprint</ident>
+</item>
+<item>
+Remove
+<gi>indexTerm</gi>
+element, replacing it by
+<gi>term</gi>
+within
+<gi>index</gi>
+; add
+<att>sortKey</att>
+to
+<gi>term</gi>
+. (yes, this gives
+<att>target</att>
+and
+<att>cRef</att>
+to the
+<gi>term</gi>
+in an index) (no, we don't know where the
+<gi>gloss</gi>
+that the
+<att>target</att>
+points to goes).
+</item>
+<item>
+move
+<gi>label</gi>
+from
+<ident type="class">tei.lists</ident>
+to
+<ident type="class">tei.inter</ident>
+and
+<ident type="class">tei.common</ident>
+.
+</item>
+<item>
+new class,
+<ident type="class">tei.metricalCompents</ident>
+… we did not decide whether this class contains only
+<gi>l</gi>
+or both
+<gi>l</gi>
+and
+<gi>lg</gi>
+, or references to two other classes, one for potentially recursive (e.g.
+<gi>lg</gi>
+) and one for non-recursive components (e.g.
+<gi>l</gi>
+). This class is referenced as the content model of
+<gi>lg</gi>
+; LR argued that the potential recursion should not be hidden.
+</item>
+<item>
+change content models of
+<gi>list</gi>
+and
+<gi>listBibl</gi>
+so that
+<gi>head</gi>
+is replaced by
+<ident type="class">tei.divtop</ident>
+; also add
+<ident type="class">tei.divbot</ident>
+at the end. E.g.,
+<code>
+( tei.divtop | tei.Incl )*, ... ( tei.divbot | tei.Incl )*
+</code>
+</item>
+<item>
+take
+<gi>measure</gi>
+out of
+<ident type="class">tei.names</ident>
+, remember to change example in Guidelines
+<note place="inline">
+addendum — all examples with
+<att>key</att>
+or
+<att>reg</att>
+are in
+<ident type="file">CO/co.odd</ident>
+or
+<ident type="file">CO/measure.odd</ident>
+</note>
+</item>
+<item>
+new attribute class
+<ident type="class">tei.measured</ident>
+to contain
+<att>unit</att>
+,
+<att>quantity</att>
+,
+<att>commodity</att>
+<note place="inline">
+(A different name is needed to avoid confusion with the existing tei.measured class defined for manuscript description)
+</note>
+</item>
+<item>
+factor
+<gi>persName</gi>
+and
+<gi>orgName</gi>
+, out of
+<ident type="class">tei.naming</ident>
+into
+<ident type="class">tei.agent</ident>
+(which becomes a subclass of
+<ident type="class">tei.naming</ident>
+), and change content of
+<gi>respStmt</gi>
+accordingly:
+<code>
+( ( tei.agent, resp ) | ( resp, tei.agent ) ), ( tei.agent | resp )*
+</code>
+</item>
+<item>
+factor
+<gi>p</gi>
+elements out passim in favour of reference to
+<ident type="class">tei.paragraph</ident>
+, always putting
+<ident type="class">tei.paragraph</ident>
+first in the content model
+</item>
+<item>
+Class
+<ident type="class">tei.citable</ident>
+needs to be a subclass of
+<ident type="class">msItemPart</ident>
+(and possibly other elements currently directly referencing this class need similar treatment, e.g. making
+<ident type="class">tei.bibl</ident>
+)
+</item>
+<item>
+make
+<gi>choice</gi>
+content model
+<code>( seg | choice | tei.choosable )*</code>
+, removing
+<gi>choice</gi>
+and
+<gi>seg</gi>
+from
+<ident type="class">tei.chooseable</ident>
+, thus allowing it to be a pure subclass of
+<ident type="class">tei.edit</ident>
+</item>
+<item>
+new class
+<ident type="class">tei.spComponent</ident>
+used only in
+<gi>sp</gi>
+, only current member is
+<gi>stage</gi>
+; thus content of
+<gi>sp</gi>
+becomes
+<code>
+... (( tei.paragraph | tei.metricalComponent | lg | tei.segment | tei.spComponent ), tei.Incl* )+
+</code>
+</item>
+<item>
+move
+<gi>ab</gi>
+out of
+<ident type="class">tei.segment</ident>
+into
+<ident type="class">tei.paragraph</ident>
+</item>
+<item>
+add
+<gi>time</gi>
+,
+<gi>timeRange</gi>
+(if kept), and
+<gi>timeStruct</gi>
+to
+<ident type="class">tei.date</ident>
+(perhaps rename to
+<ident type="class">tei.temporal</ident>
+)
+</item>
+<item>
+<gi>scriptStmt</gi>
+,
+<gi>sourceDesc</gi>
+,
+<gi>taxonomy</gi>
+, and
+<gi>broadcast</gi>
+need to refer to
+<ident type="class">tei.bibl</ident>
+instead of directly to its elements
+</item>
+<item>
+rename
+<ident type="class">tei.front</ident>
+to
+<ident type="class">tei.extraBodyDiv</ident>
+and
+<ident type="class">tei.fmchunk</ident>
+to
+<ident type="class">tei.extraBodyChunk</ident>
+, but with something other than
+<q>extraBody</q>
+to indicate that this is stuff which can appear either at the front or the back. The content of
+<gi>front</gi>
+and
+<gi>back</gi>
+should be the same: boiling down to something akin to
+<code>
+( tei.extraBodyChunk | tei.chunk )*, ( tei.extraBodyDiv | div-stuff-here )+
+</code>
+</item>
+<item>
+transform the repetitive parts of
+<gi>body</gi>
+content model into macros (and consider ways of abolishing numbered divs)
+</item>
+<item>
+define new class
+<ident type="class">tei.bookends</ident>
+with members
+<code>byline | dateline | epigraph | salute | signed</code>
+as content of
+<gi>closer</gi>
+and
+<gi>opener</gi>
+; factor these out of
+<ident type="class">divtop</ident>
+and
+<ident type="class">divbot</ident>
+</item>
+<item>
+put all the individual children of
+<gi>publicationStmt</gi>
+into new class
+<ident type="class">tei.publicationComponents</ident>
+</item>
+<item>
+new content model defined for
+<gi>change</gi>
+: move
+<gi>date</gi>
+to a required attribute, change
+<gi>item</gi>
+to
+<ident type="class">macro.specialPara</ident>
+, change
+<gi>respStmt</gi>
+to required
+<att>who</att>
+, which points to a
+<gi>person</gi>
+or
+<gi>personGrp</gi>
+, [schematron rule ... pending work on prosopography]
+</item>
+<item>
+define new class
+<ident type="class">tei.recording</ident>
+with members
+<code>
+respStmt | equipment | broadcast | date
+</code>
+. Then change content model of
+<gi>recording</gi>
+to use it:
+<code>p+ | tei.recording+</code>
+<!--
+note place="inline">Note that I
+              have corrected the <code>*</code> to a
+              <code>+</code></note
+-->
+</item>
+<item>
+define new macro,
+<ident type="class">macro.rendition</ident>
+which contains
+<ident type="class">macro.paraContent</ident>
+and becomes the sole token in the content of
+<gi>rendition</gi>
+; this makes it easier to modify content of
+<gi>rendition</gi>
+eg to include an XML vocabulary
+</item>
+<item>
+try changing
+<gi>sourceDesc</gi>
+to have content
+<code>
+tei.paragraph+ | ( tei.bibl | tei.sourceDesc )+
+</code>
+</item>
+<item>
+remove
+<ident type="class">tei.teiHeader</ident>
+and
+<ident type="class">tei.teiText</ident>
+classes
+</item>
+<item>
+replace references to
+<gi>note</gi>
+with references to
+<ident type="class">tei.notes</ident>
+in classes and content models
+</item>
+<item>
+<gi>setting</gi>
+should reference new
+<ident type="class">tei.temporal</ident>
+class
+</item>
+</list>
+</div>
+<div>
+<head>Specific Decisions in Related Areas</head>
+<p>
+In going through each element in the core, textstructure, and header modules looking for improvements in the class system, we came across quite a few other areas where changes are needed.
+</p>
+<list>
+<item>
+remove
+<gi>p</gi>
+from content of
+<gi>langUsage</gi>
+</item>
+<item>
+change content of
+<gi>foreign</gi>
+to
+<ident type="macro">macro.phraseSeq</ident>
+instead of
+<ident type="macro">macro.paraContent</ident>
+.
+</item>
+<item>
+change model of
+<gi>teiCorpus</gi>
+to
+<code>teiHeader, ( TEI | teiCorpus )+</code>
+</item>
+<item>
+remember to fix tagdoc of
+<gi>binaryObject</gi>
+: attributes need proper declarations
+</item>
+<item>
+add
+<att>mimeType</att>
+attribute to
+<gi>rendition</gi>
+</item>
+<item>
+consider making
+<gi>encodingDesc</gi>
+and
+<gi>tagsDecl</gi>
+require at least one child element
+</item>
+<item>
+remove
+<ident type="class">tei.Incl</ident>
+from
+<gi>monogr</gi>
+,
+<gi>biblFull</gi>
+, and all of
+<gi>teiHeader</gi>
+</item>
+<item>
+suggested changing name of
+<ident type="class">tei.tpParts</ident>
+to
+<ident type="class">tei.model.titlePageComponents</ident>
+</item>
+<item>
+default position is to change
+<code>text</code>
+to
+<ident type="class">tei.text</ident>
+wherever it occurs. Only exception noticed so far is
+<gi>binaryObject</gi>
+but there may be others.
+</item>
+</list>
+<p>
+<note type="action">
+<label>LR</label>
+investigate merging
+<gi>label</gi>
+and
+<gi>lbl</gi>
+.
+</note>
+<note type="action">
+<label>SR</label>
+fix stylesheet so that namespace isn't lost from
+<att>xml:id</att>
+and
+<att>xml:lang</att>
+in examples
+</note>
+<note type="action">
+<label>eds. &amp; SR</label>
+sort out getting
+<gi>g</gi>
+into all references to
+<ident type="datatype">text</ident>
+; i.e., make new class
+<ident type="class">tei.text</ident>
+with only one member,
+<gi>g</gi>
+, new macro
+<ident type="macro">macro.text</ident>
+which is
+<code>( text | tei.text)*</code>
+.
+</note>
+</p>
+</div>
+<div>
+<head>On Naming</head>
+<p>
+We had time to discuss the major structural names, listed below.
+</p>
+<list type="gloss">
+<label>datatypes</label>
+<item>tei.data.*</item>
+<label>attribute class</label>
+<item>tei.att.*</item>
+<label>model class</label>
+<item>tei.model.*</item>
+<label>macro</label>
+<item>tei.macro.*</item>
+<label>module</label>
+<item>tei..*</item>
+</list>
+<p>
+We agreed that both the actual name and the corresponding filename should be in camelCase. We did not resolve whether or not the
+<q>tei.</q>
+prefix would be included in filenames or not.
+</p>
+<p>
+Several members (SB, JC, SR, and CW) met at OUCS 2005-09-28 from ~09:30 to 11:57 and continued the naming discussion. The results of this meeting have been incorporated into
+<ref target="http://www.tei-c.org/Drafts/edw87.xml?style=printable">ED W 87</ref>
+, thanks to SR.
+</p>
+</div>
+<div>
+<head>Further Work</head>
+<p>
+We agreed that work was needed in the following areas, but could not be taken up at the current meeting.
+</p>
+<list>
+<item>
+<ident type="class">tei.sourceDesc</ident>
+needs a new name
+</item>
+<item>
+whether or not the various
+<gi>docXX</gi>
+elements are needed, and if so should they still be in
+<ident type="class">divtop</ident>
+and
+<ident type="class">fmchunk</ident>
+</item>
+<item>
+Need to manage two things in ND: the murky mess of names, and prosopographic data. Could be a complete WG or a quick hack
+</item>
+<item>
+fix the content model of
+<gi>list</gi>
+, possibly dividing into two:
+<gi>list</gi>
+and a separate
+<gi>glossList</gi>
+</item>
+<item>
+<ident type="class">tei.chunk</ident>
+needs to be broken up into subclasses
+</item>
+</list>
+</div>
+</body>
+</text></TEI>

@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI.2>
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>TEI Council Conference Call <date value="2006-09-27">27
+            Sep 06</date></title>
+        <author>Syd Bauman</author>
+      </titleStmt>
+      <publicationStmt>
+        <p>For distribution first to Council, then to world via TEI
+          website.</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>This electronic file is the source.</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <front>
+      <div>
+        <p>Times are UTC unless otherwise noted.</p>
+        <p>Started ~12:04 with SB, SS, AK, LB, SR, JC, CW, CT, JW, DP, LR</p>
+        <p>MD had sent his apologies earlier.</p>
+      </div>
+    </front>
+    <body>
+      <div n="1">
+        <head>Minutes from last meeting</head>
+        <list type="gloss">
+          <label>Council: comment on the ‘short names’ …</label>
+          <item>done</item>
+          <label>eds.: implement …</label>
+          <item>Implemented except for French — agreed (LB
+	  dissenting) to go w/
+            LR's proposal to rename fr/ files to same as en/. <note type="action">
+              <label>SB</label>
+              change French filenames, too
+              <date>2006-10-11</date>
+            </note></item>
+          <label>CT &amp; DP: Post proposal of how to link texts and images</label>
+          <item>completed</item>
+          <label>Council: Read P5 chapter 14.9 Stand-off Markup …</label>
+          <item>No one read the chapter and reported. CW suggests we
+            can close this issue.</item>
+          <label>DB: Report on TD (documentation elements) with
+            respect to the class system …</label>
+          <item>DB not present, deferred</item>
+          <label>SB: Repost summary of the questions pending …</label>
+          <item>SB reports this item has been completed. Furthermore,
+            the changes to the Guidelines that were suggested have
+            been enacted. The only outstanding issue from this round
+            of discussion is that of certainty, accuracy, confidence,
+            exactness, precision, etc. However, another issue has
+            since been raised: how to encode regularizations of
+            non(-proleptic)-Gregorian dates. P4, while recommending a
+            specific format for (proleptic-)Gregorian dates permitted
+            users to use other systems so long as they were documented
+            in a particular manner. After some discussion on this
+            issue we were able to reject some possibilities (e.g.,
+            that the W3C syntax be retained, but without the
+            restriction to (proleptic-)Gregorian dates), but were not
+            able to definitively conclude how to proceed. Both use of
+            one set of attributes with their semantics declared in the
+            header (ala P4) was suggested, and two parallel sets of
+            attributes.<note type="action">
+              <label>SB</label>
+              summarize dating attributes issues for Council, with
+	      firm recommendations where possible. <date>2006-11-07</date></note></item>
+          <label>SB: find places where a ‘header-phrase’ class would be useful.</label>
+          <item>Done, see <xref url="http://www.tei-c.org/Council/limited_phrase.xml?style=printable#body.1_div.3">the 
+              result</xref>. However, after some discussion, we were
+            reminded that there are really two different questions of
+            interest:<list type="ordered">
+              <item>what elements in the current system would be
+                better if their content models included a limited
+                version of <name type="class">model.phrase</name>;
+                this group includes some elements that are not found
+                in the <gi>teiHeader</gi> (like <gi>figDesc</gi>), but
+                excludes many that may appear in the
+                <gi>teiHeader</gi> because they also can be used as
+                descendants of <gi>text</gi> in a manner that would
+                require the full <name type="class">model.phrase</name> (e.g. <gi>p</gi>
+                and <gi>name</gi>)</item>
+              <item>what parts of the <gi>teiHeader</gi> would be
+                better if their content models included a limited
+                version of <name type="class">model.phrase</name>,
+                regardless of whether or not it is currently possible
+                (because they might also appear in the transcription,
+                i.e. as a descendant of <gi>text</gi>)</item>
+            </list> SB had interpreted the action item as only
+            referring to the first of these questions. Council
+            discussed both issues; it was decided that both are worth
+            pursuing<!-- , the first immediately with the intention of
+            possible implementation before the initial
+            (<soCalled>1.0</soCalled>) release of P5, but the second
+            would be deferred until sometime in the future-->. Two
+            mechanisms were identigied for verifying which elements can make use of
+            the <soCalled>limited phrase</soCalled> class, and
+            which require the complete <name>model.phrase</name>. The
+            first was for Council members to scan the list SB produced
+            looking for obvious errors or elements of concern. The
+            second was to produce a schema that makes use of the
+            <soCalled>limited phrase</soCalled> class, and for Council
+            members to use this schema and large quantities of data
+            looking for problems. Council chose the former
+            method, without ruling out use of the latter later (did I get that right? —SB).<note type="action">
+              <label>Council</label>
+              consider list of limited phrase elements and propose
+	      refinements if needed
+              <date>2006-10-11</date>
+            </note><note type="action">
+              <label>SB</label>
+              Implement
+                <soCalled>limited phrase</soCalled> system using the
+                elements in the refined version of the list.
+              <date>2006-11-08</date>
+            </note>
+          </item>
+          <label>LR: Explain where macro.glossSeq or model.glossLike
+            is not a good idea, but &lt;desc&gt; is.</label>
+          <item>LR indicated that he needed a better method of
+            querying TEI to look for these. He was referred to
+            <xref url="../Drafts/edw84.xml?style=printable">ED W
+              84</xref>; a newer version of this is available 
+from <xptr url="http://tei.oucs.ox.ac.uk/Oxford/2006-09-methNet/Materials/catalogue.xhtml"/>.
+<note type="action">
+              <label>LR</label>
+              post to Council a list of elements which contain
+                either <name type="macro">macro.glossSeq</name> or <name type="class">model.glossLike</name> in their content
+                model, but really should have only <gi>desc</gi>
+              <date>2006-09-29</date>
+            </note></item>
+          <label>DP: post to TEI-OL-SIG about span alone, deferring
+            information about the chapter.</label>
+          <item>Done</item>
+          <label>CW: Remind JW about posting &lt;biblItem&gt;,
+            &lt;biblStruct&gt;, and MODS discussion</label>
+          <item>CW reports he did so. JW reports he has some notes
+            that he will get out to the group this week. 
+            <note type="action">
+              <label>JW</label>
+              Write a document discussing: 1. bibliographic
+                elements (<gi>bibl</gi>, <gi>biblFull</gi>,
+                <gi>biblItem</gi>, and <gi>biblStruct</gi>) 2. How to
+                incorporate MODS into a TEI document 3. his own and
+                perhaps others' opinions on <gi>extent</gi>.
+              <date>2006-10-01</date>
+            </note> He reports that MODS is much more of a cataloging
+            approach.</item>
+          <label>DB: post draft of ‘guiding principles for further development’ document</label>
+          <item>discussion deferred, see <ref target="backCompat">below</ref></item>
+          <label>Council: read PB document, post to list even if only "I read
+            it, it's fine". </label>
+          <item>Not done. Discussion deferred, see <ref target="PB">below</ref>.</item>
+          <label>MD: Rewrite the examples MM provides in the PB
+            document using a more generic mechanism</label>
+          <item>discussion deferred, as MD not present</item>
+          <label>DP: review her own manuscript description work to see
+            if anything there would be helpful, and report back to
+            list</label>
+          <item>Discussion deferred, see <ref target="PB">below</ref>.</item>
+          <label>MD &amp; DP</label>
+          <item>Discussion deferred, see <ref target="PB">below</ref>.</item>
+          <label>LB</label>
+          <item>Discussion deferred. Note: this item was accomplished,
+            DP &amp; MD are now on the <xref url="http://listserv.brown.edu/archives/tei-pb.html">PB
+              list</xref> — SB</item>
+          <label>MZ: Check whether the monies personography has not
+            spent was pre-budgeted, and whether Council reimbursements
+            have been processed yet</label>
+          <item>discussion deferred as MZ not present</item>
+          <label>SB: post to TEI-L, announcing that the deadline for a
+            feature request to be considered for P5 1.0 is
+            2006-09-01</label>
+          <item>SB reports this was done</item>
+          <label>Council: come up with a list of elements to be
+            considered for execution, and submit as a feature request
+            on Sourceforge</label>
+          <item>Not discussed. Note: this was not done — SB</item>
+        </list>
+      </div>
+      <div n="2">
+        <head>WGs</head>
+        <div id="PB" n="A">
+          <head>PB</head>
+          <p>DP reports that her comments were posted to the PB list,
+            and that MM replied. DP has been thinking about this,
+            thinks LB's response echoes some of her own concerns.
+            Consensus is to keep the conversation going, perhaps with
+            DP demonstrating her system. It should be pointed out that
+            marking up the formula limits processing as compared to an
+            abstract representation.</p>
+        </div>
+        <div n="B">
+          <head>PERS</head>
+          <p>CW suggests another meeting, but we're unsure of funds.
+            <note type="action">
+              <label>CW</label>
+               ask MD if he is willing to take personography
+                forward into places/ontology</note>
+            <note type="action">
+              <label>CW</label>
+              ascertain whether or not
+                we have funding for a meeting
+            </note>
+            There is  some overlap between
+              this WG and the planned activities of  the ontology SIG. SR suggests that
+            group decide via e-mail whether or not moving forward
+            would significantly change the existing work.</p>
+        </div>
+      </div>
+      <div n="3">
+        <head>Document review</head>
+        <div id="backCompat" n="A">
+          <head>Maintenance</head>
+          <p>Consensus that <xref url="http://lists.village.virginia.edu/pipermail/tei-council/2006/001597.html">DB's
+              document</xref> is pretty reasonable, and should be
+            published. Some suggested that it should be presented in Victoria. <note type="action">
+              <label>LB with DB</label>
+              revise DB's draft document as a working paper for Council TC W 08
+              <date>2006-10-20</date>
+            </note>
+          </p>
+        </div>
+        <div n="B">
+          <head>TEXT + IMAGE encoding</head>
+          <p>Council discussed the <xref url="http://www.rch.uky.edu/image_encoding.html">document</xref>
+            recently posted by DP &amp; CT, and then discussed somewhat
+            on the list.</p>
+          <p>It was generally agreed that the document is divided into
+            two parts: <list>
+              <item>linking text &amp; image</item>
+              <item>incorporating SVG into TEI</item>
+            </list> The general feeling was that the first part is
+            significant work that requires only a concrete formal
+            proposal to be added, a bit more revision before being
+            handed to the editors to be folded into the Guidelines
+            (either as part of PH or FT).<note type="action">
+              <label>DP &amp; CT</label>
+              revise document somewhat, with an eye towards what
+                parts are intended for Guidelines.
+              <date>by MM</date>
+            </note></p>
+          <p>As for the second part, the consensus was <!-- to reaffirm our
+            decision in Kyoto --> that SVG should not be incorporated in the
+            TEI Guidelines directly, but that instead a sample ODD
+            demonstrating how to do this be made publicly
+            available.<!-- note resp="SB">It is my belief that this is the
+              same as the position we took in Kyoto, although the minutes
+              do not reflect this.</note--></p>
+          <p>JW suggests a name other than <name type="attribute">fax</name> for the attribute that
+            points to an element's image.</p>
+        </div>
+      </div>
+      <div n="4">
+        <head>Open issues</head>
+        <div>
+          <head>conformance</head>
+          <p>— action still on MZ and JC; LR has points
+            he intends to contribute. All Council members should continue to
+            contribute to discussion. <note type="action">
+              <label>all</label>
+              contribute to conformance discussion
+              <date>2006-11-15</date>
+            </note>
+            Will be on agenda for next conference
+            call.</p>
+        </div>
+      </div>
+      <div n="6">
+        <head>Other business</head>
+        <div>
+          <head>feature requests</head>
+          <p>Lack of time precluded full discussion of this initial
+	  digest. LB asked for Council's endorsement of his
+	  provisional prioritization: this was given, modulo some
+	  corrections (see appended list). Further topics noted:
+ <list>
+            <label><gi>extent</gi></label>
+            <item>Three uses: how big (for librarians), like
+                <gi>biblScope</gi>, or structured data. Action on JW
+                (see above) to discuss the issue.</item>
+          </list>
+<!--          <note type="action">
+            <label>SB</label>
+              respond to LB comments on SF <xref url="https://sourceforge.net/tracker/?func=detail&amp;atid=644065&amp;aid=1550795&amp;group_id=106328">FR
+              on using <name type="class">model.glossLike</name> in &lt;catDesc&gt;</xref>
+            <date>2006-10-03</date>
+          </note><note type="action">
+            <label>all</label>
+              Read the SF FR requesting a <xref url="https://sourceforge.net/tracker/?func=detail&amp;atid=644065&amp;aid=1007370&amp;group_id=106328">new
+              element
+              &lt;theorem&gt;</xref> and discuss 
+              <date>2006-10-04</date>
+          </note>-->
+          next call 11-22; reports CW to discuss w/ editors, and post to council
+        </p>
+        </div>
+      </div>
+      <div n="5">
+        <head>Meetings</head>
+        <div>
+          <head>MM</head>
+          <p>As we are out of time, very little discussion of reports
+          took place. CW will discuss them with the editors and post
+          to the Council.</p>
+        </div>
+        <div>
+          <head>next call</head>
+          <p>Next conference call is tentatively scheduled for <date value="2006-11-22T12:00Z">Wed 22 Nov 06 at 12:00</date>.</p>
+        </div>
+      </div>
+<div n="6"><head>SF Feature requests</head>
+
+<p>LB had posted to the list a number of items  the following summary
+of issues for resolution. The agreed resolution is indicated as
+follows:
+
+<list>
+<item>
+1540221: Add <gi>age</gi> as a child of <gi>person</gi> analogous to <gi>sex</gi>  (YES)
+</item>
+<item>   1524368: Change content model of <gi>msIdentifier</gi> to reference class
+   model.placeLiLike_sequenceoptional  (YES, if  MJD and DB agree)</item>
+<item>
+   1442353: Add <gi>listPerson</gi> to att.typed class (YES)</item>
+
+<item>   1550795: Change content model of <gi>catDesc</gi> to reference
+   model.glossLike (MAYBE, at SB's request)</item>
+<item>
+   1058736: Add new <gi>stamp</gi> element to MS module analogous to <gi>seal</gi>
+   (MAYBE; or generalise?)</item>
+<item>
+   1007370: Add new <gi>theorem</gi> element as specific kind of <gi>ab</gi> (not clear
+   in which module to  put it)  (MAYBE: council requested more information)</item>
+<item>
+   1551357: Relax the content model of <gi>app</gi> to permit generic <gi>note</gi>
+   element as well as or instead of the structured <gi>rdg</gi> <gi>lem</gi>
+   pairs. This probably needs a class. (MAYBE)</item>
+<item>
+   1007369:  Define a set of default values for rend to indicate block
+   and numbering options (NO) </item>
+</list>
+</p></div>
+
+
+    </body>
+    <back>
+      <div>
+        <p>Call ended at 14:06.</p>
+      </div>
+    </back>
+</text>
+</TEI.2>

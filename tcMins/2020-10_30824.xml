@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/home/lou/Public/TEI/TEICSS/tei.css" type="text/css"
+ ?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:t="http://www.tei-c.org/ns/1.0" n="2020-10"><teiHeader><fileDesc><titleStmt><title>Minutes of the TEI Technical Council</title><meeting n="2020-10" when="2020-10-13">TEI Technical Council online
+     meeting : <date>13 October 2020</date></meeting></titleStmt><publicationStmt><distributor>TEI Website</distributor><idno>TCM131</idno></publicationStmt><sourceDesc><p>Retagged from a WordPress HTML file</p></sourceDesc></fileDesc><revisionDesc><change when="2023-04-25">Archival header confected</change><change>Extracted from Word Press article with id post-30824</change></revisionDesc></teiHeader><text><body><div><p><hi style="strong">Meeting time:</hi></p><list style="ul">
+<item>EST 09:00–10:30, BST 14:00–15:30, CEST 15:00–16:30</item>
+<item>Started:    13:06Z    Ended: ~14:28Z</item>
+</list><p><hi style="strong">Present:</hi></p><list style="ul">
+<item>Syd Bauman (SB)</item>
+<item>Elisa Beshero-Bondar (EB)</item>
+<item>Hugh Cayless (HC)</item>
+<item>Nicholas Cole (NC)</item>
+<item>Jessica Lu (JL)</item>
+<item>Martina Scholger (MS)</item>
+<item>Peter Stadler (PS)</item>
+<item>Raffaele Viglianti (RV)</item>
+</list><p><hi style="strong">Apologies/Not Present:</hi></p><list style="ul">
+<item>Meaghan Brown (MB)</item>
+<item>Vanessa Bigot Juloux (VB)</item>
+<item>Magdalena Turska (MT)</item>
+</list><div type="h2"><head>VF2F meeting</head><list style="ul">
+<item>Schedule / Collection of topics: <ref target="https://docs.google.com/document/d/1nIk4x5SDB0_EqSJG-DynzLz-n9WbmR0tjzM7Aaxfi5c/edit">https://docs.google.com/document/d/1nIk4x5SDB0_EqSJG-DynzLz-n9WbmR0tjzM7Aaxfi5c/edit</ref></item>
+<item>Invited guests
+<list style="ul">
+<item>Martin Holmes (MH)</item>
+<item>Laurent Romary (re: ISO invitation)</item>
+<item>CMC SIG folks?</item>
+<item>proposal on ruby glosses (Kiyonori Nagasaki and team)</item>
+</list>
+</item>
+</list></div><div type="h2"><head>Business Meeting</head><list style="ul">
+<item>Thursday, 19 November 2020</item>
+</list></div><div type="h2"><head>Stylesheets patch release</head><list style="ul">
+<item>Report: SB and Martin Holmes deliberately did not perform the release on Friday 02 October as they had announced, because they realized ahead of time their meeting would be too short. Instead, they spent the time preparing and setting up in advance what is needed for a release. Essentially, they tried a dry run. They found that the teinstall.sh script isn’t set up to deal with Stylesheets separate from Guidelines, and submitted <ref target="https://github.com/TEIC/TEI/issues/2038">a ticket</ref>.</item>
+<item>They’ll try to do the release this Friday 16 October.</item>
+<item>TCW 22 will need to be updated both in response to ticket <ref target="https://github.com/TEIC/TEI/issues/2038">#2038</ref> (mentioned above) and perhaps in other ways.</item>
+<item>Discussion of release cycle: NC would like to learn more to see if we can automate the process more to make releases easier. NC to consult with HC.</item>
+</list></div><div type="h2"><head>Update tests in Stylesheets repo</head><list style="ul">
+<item>PS (with HC &amp; NC) were supposed to set up a bot.</item>
+<item>Started with it in a branch. An ant build script checks the updated P5 subset, runs the tests, copies results to the expected results, commits this and creates a pull request for Council to review. Council reviews the changed results to make sure they make sense or not. The ant script would feed into a Jenkins job that would automatically run this for every push to the Guidelines repo—to trigger the Stylesheets repo. The ant build script should facilitate local builds. See PS branch: <ref target="https://github.com/TEIC/Stylesheets/issues/457">semi-automate the task of updating source/p5subset.xml and reviewing expected results</ref></item>
+</list></div><div type="h2"><head>ISO invitation</head><list style="ul">
+<item>MS reports no news, yet. Will invite Laurent Romary to VF2F meeting.</item>
+</list></div><div type="h2"><head>Proposal to add ruby, rb, and rt to encode ruby glosses for Japanese texts</head><list style="ul">
+<item>Proposal from the East Asian / Japanese SIG: <ref target="https://docs.google.com/document/d/1rRgBRYpxUlsnMEHbOPW-92u_AIMNwq9axGtpI1UGgz8/edit#heading=h.xjusjhhdlit2">https://docs.google.com/document/d/1rRgBRYpxUlsnMEHbOPW-92u_AIMNwq9axGtpI1UGgz8/edit#heading=h.xjusjhhdlit2</ref></item>
+<item><hi style="b">Action on MS</hi> to open ticket, proposers will share the document from there; when done ping SB. <hi style="b">Action on SB </hi>to review &amp; edit ticket.</item>
+<item>Invite proposers to VF2F.</item>
+</list></div><div type="h2"><head>Guidelines Redesign</head><list style="ul">
+<item>See issue <ref target="https://github.com/TEIC/TEI/issues/2023">https://github.com/TEIC/TEI/issues/2023</ref></item>
+<item>HC: We can try to update the old 2007 appearance.</item>
+<item>HC, RV interested in working on this. SB interested in Stylesheets end of this.</item>
+</list></div><div type="h2"><head>Website</head><list style="ul">
+<item>Related discussion: should TEI continue with WordPress for the website? Or should we be using it more effectively? (As in posting articles, updating it frequently…)</item>
+<item>Problems: we can’t change the menu, posting minutes is awkward.</item>
+<item>Maybe a subgroup at F2F to tackle this?</item>
+<item>What is the relationship between Council, Board, and Infrastructure group (IG) regarding the TEI website? It was suggested that it is <hi style="b">neither</hi> the responsibility of Council nor the IG. IG is not responsible for content, but maybe for implementing decisions of Board and Council. It’s probably the Board’s responsibility but it’s shared in many ways with Council.</item>
+<item>SB suggests the choice of TEI website front end is responsibility for Board, with advice from Council.</item>
+</list></div><div type="h2"><head>CMC subcommittee report</head><list style="ul">
+<item>The TEI Technical Council subgroup (SB, JL, PS) met on Tuesday 22 September, and has produced this draft position statement: <ref target="https://bauman.zapto.org/~syd/temp/TEItmp/cmc_conv_02.tei">source</ref> (or <ref target="https://bauman.zapto.org/~syd/temp/TEItmp/cmc_conv_02.xhtml">XHTML</ref>).</item>
+<item>CMC working on applications of TEI for social media archiving, email etc.</item>
+<item>existing TEI recommendations aren’t quite right to encode this.</item>
+<item>Council needs to decide:
+<list style="ul">
+<item>Should this be a separate chapter in the Guidelines, or be addressed in the core module?</item>
+<item>Or a separate coding system like EpiDoc?</item>
+</list>
+</item>
+<item>PS: This is an established group, connected with the linguists, that has been meeting for several years; the group has been active with TEI.</item>
+<item>EBB points out that students will love this.</item>
+<item>JL thinks there should be a full new chapter on CMC in the Guidelines, to clearly signal viability and suitability of encoding for newcomers unfamiliar with the TEI.</item>
+<item>NC: Is TEI necessary for email given the archiving tools available?</item>
+<item>RV: But APIs are constantly changing, and for assembling a corpus and working over a long period of time, TEI would be for a long-range sustainable structure and annotation. SB: Scholars studying communication would need to study across platforms.</item>
+<item>SB: What about combining CMC and <gi>correspDesc</gi> in a chapter on Episodic Communications?</item>
+<item>PS: <gi>correspDesc</gi> has examples of email in the Guidelines already.</item>
+<item>SB: Should the question of threading be a point of continuity between archiving paper/print and electronic communications?
+<list style="ul">
+<item>Definitely.</item>
+</list>
+</item>
+<item>Arguments in favour:
+<list style="ul">
+<item>It provides a way to store information for things like Twitter where a canonical raw format is not available.</item>
+<item>There are common features of communications that allow things to be compared across platforms.</item>
+</list>
+</item>
+<item>Arguments opposed:
+<list style="ul">
+<item>Make sure the applications the CMC group has in mind are continuous with the flow of the Guidelines.</item>
+<item>Should we check with them first to be sure this should be a full chapter in the Guidelines?</item>
+<item>Chapter in the Guidelines should be flexible in the spirit of the Guidelines—broadly applicable regardless of media.</item>
+</list>
+</item>
+<item>JL: Question of whether to meet with CMC before or after the F2F, or invite them directly. Perhaps we should discuss specific feedback on their proposal with them before discussing with full Council?
+<list style="ul">
+<item>Ask the subgroup to meet with the SIG, and invite them to a later Council meeting call?</item>
+<item>But Council F2F conversation would be nice this month!</item>
+<item>If it doesn’t work for the next F2F, we can do a special Council session just on this topic.</item>
+</list>
+</item>
+</list></div><div type="h2"><head>Normalization of dates, revisited.</head><list style="ul">
+<item>SB to give brief report on <ref target="https://github.com/TEIC/TEI/issues/1885">#1885</ref>, ISO 8601-2:2019, and the lack of need for @from-iso, @to-iso, @notBefore-iso, and @notAfter-iso. (See “<ref target="https://github.com/TEIC/TEI/tree/sydb-new_ISO_8601">sydb-new_ISO_8601</ref>” branch.)</item>
+<item>ISO has mechanisms for expressing seasons and approximate date ranges.</item>
+<item><hi style="b">Action on Council</hi> to check out branch and comment on it.</item>
+<item>Discussion on attributes
+<list style="ul">
+<item>Before we remove @from-iso and friends, we would have to think about how precision thereof would be expressed (i.e., what would <gi>precision</gi> point to?)</item>
+</list>
+</item>
+<item>Example where W3C (and ISO 8601 pre-2019) falls short: a date with only the month and day but missing the year. <ref target="https://www.w3.org/TR/xmlschema-2/#gMonthDay">xsd:gMonthDay</ref> is for cyclical recursion of a date every year, not specifically about a missing year. That is, &lt;date when=”–10-13″&gt; means “every October 13th”, <hi style="b">not</hi> “the 13th of October in some year, not sure which”.</item>
+<item>SB will be working on this and sharing in future.</item>
+</list></div><div type="h2"><head>2021 TEI Conference</head><list style="ul">
+<item>Is there a 2021 TEI Conference; when will it be?</item>
+<item>2021 will be a virtual conference—awaiting dates, maybe bring up at next Board meeting.</item>
+</list></div><div type="h2"><head>AOB</head><list style="ul">
+<item><hi style="strong">Action on MS</hi> to arrange Board + Council meeting to discuss website issues.</item>
+</list></div><div type="h2"><head>Reminder — Action on</head><list style="ul">
+<item>NC to write-up Oxygen release process [happy to write this up but someone needs to talk me through it, because I don’t fully understand it.]</item>
+<item>HC to update the release documentation from the release minutes.</item>
+<item>MS to send brief email to TEI list on @version — DONE, 2020-10-12T15:29Z.
+<list style="ul">
+<item>The few responses so far indicate no problem removing @version.</item>
+<item>We will leave it for at least another 6 days before any action.</item>
+</list>
+</item>
+<item>MS: Ask Laurent to join us to discuss ISO invitation with us. What are they doing, what would we be involved with? Maybe arrange a special meeting? — DONE, 2020-10-12</item>
+</list></div></div></body><!-- #post-## --></text></TEI>

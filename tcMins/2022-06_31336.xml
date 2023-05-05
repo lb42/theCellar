@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/home/lou/Public/TEI/TEICSS/tei.css" type="text/css"
+ ?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:t="http://www.tei-c.org/ns/1.0" n="2022-06"><teiHeader><fileDesc><titleStmt><title>Minutes of the TEI Technical Council</title><meeting n="2022-06" when="2022-06-10">TEI Technical Council online
+     meeting : <date>10 June 2022</date></meeting></titleStmt><publicationStmt><distributor>TEI Website</distributor><idno>TCM155</idno></publicationStmt><sourceDesc><p>Retagged from a WordPress HTML file</p></sourceDesc></fileDesc><revisionDesc><change when="2023-04-25">Archival header confected</change><change>Extracted from Word Press article with id post-31336</change></revisionDesc></teiHeader><text><body><div><p><hi style="strong">Meeting times:</hi></p><list style="ul">
+<item>7am PDT / 10am EDT / 4pm CEST</item>
+<item>Started:     15:04Z    Ended:    16:32Z</item>
+</list><p><hi style="strong">Present:</hi></p><list style="ul">
+<item>Syd Bauman (SB, joined @ 15:15Z)</item>
+<item>Helena Bermúdez Sabel (HBS)</item>
+<item>Elisa Beshero-Bondar (EBB)</item>
+<item>Elli Bleeker (EB)</item>
+<item>Hugh Cayless (HC)</item>
+<item>Martina Scholger (MS)</item>
+<item>Sabine Seifert (SS)</item>
+<item>Peter Stadler (PS, joined @ 15:28Z)</item>
+<item>Raff Viglianti (RV)</item>
+</list><p><hi style="strong">Apologies/Not Present:</hi></p><list style="ul">
+<item>Janelle Jenstad (JJ)</item>
+<item>Magdalena Turska (MT)</item>
+</list><p>Meeting minutes previous month (<ref target="https://tei-c.org/activities/council/meetings/tei-technical-council-teleconference-2022-05-13-1500z/">May</ref>)</p><div type="h2"><head>TEI Conference</head><list style="ul">
+<item>F2F meeting in Newcastle
+<list style="ul">
+<item>September 11–13 (Sun–Tue).
+<list style="ul">
+<item>It seems likely that it will be okay, yes. <hi style="b">Would we want to start on Saturday </hi>and keep Tuesday off for some workshops? Or start on <hi style="b">Sunday</hi>? We should canvas everyone since this meeting is not fully attended. <hi style="b">ACTION</hi> on <hi style="b">MS</hi> to set up a poll. (Done: <hi style="b">ACTION</hi> on everyone else to fill it out.)</item>
+</list>
+</item>
+<item>Invitations
+<list style="ul">
+<item>James Cummings</item>
+<item>David Maus</item>
+<item>Martin Holmes</item>
+</list>
+</item>
+</list>
+</item>
+<item>Joint Board/Council meeting
+<list style="ul">
+<item>Monday afternoon followed by dinner</item>
+</list>
+</item>
+<item>Submissions
+<list style="ul">
+<item>Do we want to submit something together / ask to reserve a slot?</item>
+<item>There will be some submissions by the Council:
+<list style="ul">
+<item>ATOP submission</item>
+<item>Gender submission</item>
+<item>RV is considering a workshop around new tools he’s been developing for CETEIcean/Gatsby.</item>
+</list>
+</item>
+</list>
+</item>
+</list></div><div type="h2"><head>Next release</head><list style="ul">
+<item>Last was 19 Apr</item>
+<item>Next release is planned for mid-October.</item>
+<item>Possible release techs are SS, PS, &amp; MS. (Making this an all-European effort.)</item>
+</list></div><div type="h2"><head>Next Stylesheet meeting</head><list style="ul">
+<item>Moved to Fri 01 July</item>
+<item>Next Council meeting is 08 July</item>
+</list></div><div type="h2"><head>Discussion of new gender element</head><list style="ul">
+<item><hi style="b">Action on SB, HC, MS: </hi>Review PR <ref target="https://github.com/TEIC/TEI/pull/2299">2299</ref> <hi style="b">by</hi> 2022-06-24</item>
+</list></div><div type="h2"><head>Automated generation of spec lists</head><list style="ul">
+<item>To deal with automated generation of spec lists on branches and dev (which makes branches become outdated and difficult to merge), HC recommends simply merge (don’t rebase) and resolve differences using GitHub’s diff merge tool: just resolve one of the different spec list files and it’ll be fine. HBS: there may be a way to merge and prioritize dev version if your stuff is entirely different from what people did in dev.</item>
+</list></div><div type="h2"><head>Discussion of nested ab elements</head><list style="ul">
+<item><hi style="b">Action</hi> on HC and EBB to update the prose <hi style="b">by</hi> 2022-07-10</item>
+<item><hi style="b">Action </hi>on HC, SB, or EBB after prose updated: make PR for <ref target="https://github.com/TEIC/TEI/compare/ab_in_ab_issue-1856">the branch</ref>.</item>
+<item>Discussion of the word “chunk” which isn’t easy to translate. Yet it has been with the Guidelines for a long time, and is all over the Guidelines. Original analogy was to soup with “chunks” floating in broth.</item>
+<item>Areas that we know need updating include:
+<list style="ul">
+<item><ref target="https://tei-c.org/release/doc/tei-p5-doc/en/html/ST.html#STBTC">STBTC</ref></item>
+<item><ref target="https://tei-c.org/release/doc/tei-p5-doc/en/html/CO.html#COPA">COPA</ref> (which is seriously problematic, particularly the first sentence with its totalizing assumptions about paragraphs)</item>
+</list>
+</item>
+</list></div><div type="h2"><head>Documentation</head><list style="ul">
+<item>There should be a longer discussion during the F2F meeting in Newcastle on how to organize, harmonize, and update the documentation. Currently, there is documentation on the Wiki, on the WordPress website, and in the GitHub repository.</item>
+<item>EBB reviewed the current status of the p5subset.xml documentation in the Google Doc.<ref target="https://docs.google.com/document/d/1UhCg76_AgnS5PW0g_EN6zPZE4tTUs0bNeMXFVmZ4VuQ/edit#heading=h.yg4zfkshniwp">https://docs.google.com/document/d/1UhCg76_AgnS5PW0g_EN6zPZE4tTUs0bNeMXFVmZ4VuQ/edit#heading=h.yg4zfkshniwp</ref></item>
+<item><hi style="b">Action on EB and SB:</hi> consolidate the documentation when they update the p5subset.xml in June.</item>
+<item>Documentation on p5subset.xml will become TCW31.</item>
+<item>TCW32 needs some review (currently in the TCW repo), to be linked to the public.
+<list style="ul">
+<item>We need to clarify the naming scheme:
+<list style="ul">
+<item>TEI U: a paper that is intended for the community as a  User Guide, e.g. TEI U5 was TEI Lite. Lou Burnard’s ODD-Chaining documents would be TEI Ux.</item>
+</list>
+</item>
+</list>
+</item>
+</list></div><div type="h2"><head>Issues</head><list style="ul">
+<item>attributes of <gi>attRef</gi>
+<list style="ul">
+<item><ref target="https://github.com/TEIC/TEI/issues/2282">https://github.com/TEIC/TEI/issues/2282</ref></item>
+<item>Our explanation in Guidelines isn’t clear enough about what it means to use `@class` without `@name` or vice versa.</item>
+<item>Sub-group of assignees (PS, MS, SS, SB) will meet to make a  a suggestion.</item>
+<item><hi style="b">Action on MS</hi> to schedule a meeting</item>
+</list>
+</item>
+<item>sequence of top level elements within <gi>msdesc</gi>
+<list style="ul">
+<item><ref target="https://github.com/TEIC/TEI/issues/2214">https://github.com/TEIC/TEI/issues/2214</ref></item>
+<item>Council favors loosening the content model and is thinking about how to implement it. Consider whether any possible sequence of these elements really makes sense, or if we can limit it a little. How loose does the content model need to be? Do we just want to permit these two possible sequences, or ANY possible sequence?</item>
+<item>Council make this ticket Green + Yellow: <hi style="b">Action on MS</hi> to take this to the MS-SIG to discuss</item>
+</list>
+</item>
+</list></div></div></body><!-- #post-## --></text></TEI>

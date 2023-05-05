@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<TEI.2>
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>TEI Council Conference Call</title>
+        <author>Syd Bauman</author>
+      </titleStmt>
+      <publicationStmt>
+        <authority>TEI Consortium</authority>
+      </publicationStmt>
+      <sourceDesc>
+        <p>None, this electronic version is the original.</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <front>
+      <div type="glossary">
+        <list>
+          <head>Initials Used for People</head>
+        </list>
+      </div>
+      <div>
+	<p>CW, SB, LB, MD, DB, DD, JF, SR, AB, SS, NS, EV, PW. started
+	13:05; LR joined 13:08.</p>
+      </div>
+    </front>
+<!--
+> John Smith will post his Sanskrit problems to the <choice> list.
+> 
+> Re: choice: Lou will revise the ODD, post to <choice> list
+> 
+> re: meta: turns out that we've neglected the area of 
+> attribute/element, through a mistake; DD will complete his chapter 
+> and express constraints through prose for now; revisit its inclusion 
+> after ODD freeze is over. Freeze ODD for six months (except bug 
+> fixes).
+> 
+> LR will check if current FSD chapter is consistent with FSR chapter (?)
+> 
+> Give Matthew Driscoll two weeks to polish up MS desc, then post to MS 
+> lists for comment.
+> 
+> Editors will come up with a proposal for handling the sourceforge discussion
+> 
+> Send statements of activity to Christian: chairs of workgroups in particular
+
+-->
+    <body>
+      <div>
+	<p>LB has (eventually) sent the Sanskrit examples; no response
+	  from JS yet (not suprisingly). CW reports he phoned
+	  a few days ago and they sought a solution. Plan is for JS to
+	  post his problem to the choice list.
+	</p>
+	<p>LB to find LR's URL for minutes.</p>
+	<p>P5 -> SF; SB recommends delay for deleted chaps and a few
+	  global changes; DD disagrees, suggests just note deleted
+	  chapters as bugs.</p>
+	<p>JF yet to actually post a <title>from the Chair</title>, is
+	  holding out for election slate. JF wants a process, will
+	  give Board &amp; Council a week's notice heads-up. JF is
+	  thinking of posting these quarterly.</p>
+	<p><note type="action">
+	    <name>SS &amp; JF</name>
+	    <resp>post a call for more SIGs &mdash; if you
+	  want to form a SIG, here's how.</resp>	  </note>
+	  <note type="action">
+	    <name>DD</name>
+	    <resp>post updated list of issues presented in Ghent to
+	      Council</resp>
+	    <dueDate>2 weeks</dueDate>
+	  </note>
+	  <note type="action">
+	    <name>SB &amp; DD</name>
+	    <resp>updated SA checked in</resp>
+	    <dueDate>2 weeks</dueDate>
+	  </note>
+	  <note type="action">
+	    <name>JF &amp; DD</name>
+	    <resp>get together and submit MIME proposal</resp>
+	    <dueDate>after SA checked in</dueDate>
+	  </note>
+	</p>
+	<p>Discussion of ODD, freeze or improve? SR suggests TD be
+	  frozen (bug fixes, of course) as is; SB concurs, but would
+	  like it to be explicit that we plan to improve ODD in the
+	  future. SR concedes an oversight on META's part (no way to
+	  express some things that are expressable in RelaxNG,
+	  particularly co-occurence constraints), but suggests (and
+	  all agree) that repair should be deferred (time span <q>6
+	    months</q> used in lieu of a real number).</p>
+	<p>FS close to final status, most recent changes are not of
+	  the TEI part.</p>
+	<p>
+	  <note type="action">
+	    <name>LR</name>
+	    <resp>investigate if P4 FSD works to describe new FSs.</resp>
+	    <dueDate>low priority</dueDate>
+	  </note>
+	</p>
+	<p>MD on MS description. Not much. Still waiting on feedback
+	  from task force.<note type="action">
+	    <name>MD (DD, SB, MP)</name>
+	    <resp>finish up MD</resp>
+	    <dueDate>2 weeks</dueDate>
+	  </note>
+	</p>
+	<p>JF on PB, little progress since July. LB suggests
+	  low-hanging fruit, JF will send to list.</p>
+	<p><note type="action">
+	    <name>editors</name>
+	    <resp>suggestion for how to handle this SF stuff, how to
+	      get Council input.</resp>
+	  </note>
+	</p>
+	<p><note type="action">
+	    <name>Councilors</name>
+	    <resp>read and comment on each SF feature request</resp>
+	  </note>
+	  <note type="action">
+	    <name>Councilors</name>
+	    <resp>submit report for MM to CW</resp>
+	    <dueDate>end of month</dueDate>
+	  </note>
+	</p>
+	<p>Next concall tentatively scheduled for 2004-11-29 13:00Z.</p>
+      </div>
+    </body>
+  </text>
+</TEI.2>
+
+ 
+
+
+

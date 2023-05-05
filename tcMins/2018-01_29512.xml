@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/home/lou/Public/TEI/TEICSS/tei.css" type="text/css"
+ ?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:t="http://www.tei-c.org/ns/1.0" n="2018-01"><teiHeader><fileDesc><titleStmt><title>Minutes of the TEI Technical Council</title><meeting n="2018-01" when="2018-01-25">TEI Technical Council online
+     meeting : <date>25 January 2018</date></meeting></titleStmt><publicationStmt><distributor>TEI Website</distributor><idno>TCM097</idno></publicationStmt><sourceDesc><p>Retagged from a WordPress HTML file</p></sourceDesc></fileDesc><revisionDesc><change when="2023-04-25">Archival header confected</change><change>Extracted from Word Press article with id post-29512</change></revisionDesc></teiHeader><text><body><div><p><hi style="strong">Meeting time:</hi></p><list style="ul">
+<item>08:00 EST, 13:00 UK, 14:00 CET</item>
+<item>Started: 13:06Z</item>
+</list><p><hi style="strong">Present:</hi></p><list style="ul">
+<item>Syd Bauman (SB)</item>
+<item>Elisa Beshero-Bondar (EBB)</item>
+<item>Alex Bia (AB)</item>
+<item>Hugh Cayless (HC)</item>
+<item>James Cummings (JC)</item>
+<item>Elli Mylonas (EM)</item>
+<item>Martina Scholger (MS)</item>
+<item>Peter Stadler (PS)</item>
+<item>Sarah Stanley (SS)</item>
+<item>Raff Viglianti (RV)</item>
+</list><p><hi style="strong">Apologies:</hi></p><list style="ul">
+<item>Magdalena Turska</item>
+</list><div type="h2"><head>Next release: January 31</head><list style="ul">
+<item>Release branch
+<list style="ul">
+<item>HC will create a release branch today or tomorrow.</item>
+<item>People should still commit minor updates to dev.</item>
+</list>
+</item>
+<item>Issue <ref target="https://github.com/TEIC/TEI/issues/299">#299</ref>: HC has gone ahead and removed some elements for the release; others should check that we agree with him. HC suggests we close this one and open a new ticket for the scope of @precision.</item>
+</list></div><div type="h2"><head>F2F meeting in Cologne</head><list style="ul">
+<item><ref target="https://docs.google.com/document/d/1CgyTW1lRTy-_32TbVJVJpmg9399bgWnjteiExC2neZw/edit#heading=h.nehbrcp8xfmn">https://docs.google.com/document/d/1CgyTW1lRTy-_32TbVJVJpmg9399bgWnjteiExC2neZw/edit#</ref> F2F Agenda</item>
+<item>The two meeting places are very close to one another.</item>
+<item>Have people booked hotels, which ones? Dates of arrival &amp; departure
+<list style="ul">
+<item>RV and JC will leave on Monday noon.</item>
+</list>
+</item>
+<item>Organisation of “Meet the TEI Council”
+<list style="ul">
+<item>Monday morning we will organize an open Council session.</item>
+<item>Keep some low hanging fruits which we decide beforehand
+<list style="ul">
+<item>eg. chap 11? (Isn’t that a bit complicated?)</item>
+</list>
+</item>
+<item>Should we solicit topics? We can also ask people who notify that they want to come, if they have an issue that they are particularly interested in. Some Council members suggest that we control the agenda so as to get work done.</item>
+<item>Do participants have to sign up? The room capacity is 30 at a maximum.</item>
+<item>PS will talk to organizers about the room and announcement.</item>
+</list>
+</item>
+</list></div><div type="h2"><head>Decommissioning jenkins-oxford.tei-c.org</head><list style="ul">
+<item>JC: Definitely good idea, Jenkins on there has been gone for almost a year now. Just ask Ian Rifkin or Luis Meneses to remove the subdomain. [DONE: JC has emailed Luis]</item>
+<item>PS: We should have several Jenkins at several institutions. Victoria and Paderborn. Good if we had at least 3, and we could provide tei-c subdomains pointing to these several services. Oxford is gone. Maybe Pittsburgh coming?</item>
+</list></div><div type="h2"><head>Report on current OxGarage (PS)</head><list style="ul">
+<item>Tag OxGarage versions (starting with the next TEI release)?
+Discussion: Version numbers shouldn’t correspond because we won’t release OxGarage when TEI Guidelines are released.</item>
+<item>Set up OxGarage servers elsewhere and ask Ian Rifkin for tei-subdomains.</item>
+<item>Docker image available from <ref target="https://hub.docker.com/r/teic/oxgarage/">https://hub.docker.com/r/teic/oxgarage/</ref> (with Hugh’s latest XSLT3 additions) Saxon 9.8 installed.</item>
+<item>Issue with TCP test.</item>
+<item>Start version number at 1.0.0</item>
+<item>Long range: we need more tests (currently only integration tests; no unit tests).</item>
+</list></div><div type="h2"><head>Report on Pittsburgh supercomputing Jenkins</head><list style="ul">
+<item>EB: (working with Martin Holmes and SB): Consulting with PS about issues with singularity and public web access.</item>
+</list></div><div type="h2"><head>Report on RomaJS</head><list style="ul">
+<item>Need CSS and UI help
+<list style="ul">
+<item>EM: Discuss institutional involvement: ask someone at one of our institutions to devote, say, 10 hours of their work time to CSS/UI stuff.</item>
+</list>
+</item>
+</list></div><div type="h2"><head>Report on TEI in Libraries BPGs</head><list style="ul">
+<item>SB: Getting close, looks like new version will be released well before the Members’ Meeting and Conference, but probably not before our next F2F meeting.</item>
+<item>EM: we have a Feb 1 deadline for all but 1 ticket. This ticket recommends including a <gi>sourceDoc</gi> element with ALTO info. We are finishing everything else, reserving this one for the end, as it is a big addition, and also worth doing. See <ref target="https://github.com/kshawkin/Best-Practices-for-TEI-in-Libraries/issues/27">https://github.com/kshawkin/Best-Practices-for-TEI-in-Libraries/issues/27</ref></item>
+</list></div><div type="h2"><head>Report on Stylesheets rub-a-dub</head><list style="ul">
+<item>SB: nothing to report</item>
+</list></div><div type="h2"><head>AOB</head><list style="ul">
+<item>Next Stylesheets meeting Tue, January 30 14:00Z</item>
+<item>Next week Stand-Off conference call with Laurent Romary: February 1, 14:00 UTC</item>
+</list></div></div></body><!-- #post-## --></text></TEI>

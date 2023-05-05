@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/home/lou/Public/TEI/TEICSS/tei.css" type="text/css"
+ ?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:t="http://www.tei-c.org/ns/1.0" n="2023-02"><teiHeader><fileDesc><titleStmt><title>Minutes of the TEI Technical Council</title><meeting n="2023-02" when="2023-02-10">TEI Technical Council online
+     meeting : <date>10 February 2023</date></meeting></titleStmt><publicationStmt><distributor>TEI Website</distributor><idno>TCM163</idno></publicationStmt><sourceDesc><p>Retagged from a WordPress HTML file</p></sourceDesc></fileDesc><revisionDesc><change when="2023-04-25">Archival header confected</change><change>Extracted from Word Press article with id post-31539</change></revisionDesc></teiHeader><text><body><div><div type="h3"><head><hi style="strong">Meeting times</hi></head><list style="ul">
+<item>6:30am PST / 9:30am EST / 2:30pm UTC / 3:30pm CET</item>
+<item>Started: ~14:33Z Ended: ~16:04Z</item>
+</list></div><div type="h3"><head>Present:</head><list style="ul">
+<item>Syd Bauman (SB)</item>
+<item>Helena Bermúdez Sabel (HBS) ~ 8 minutes late</item>
+<item>Elisa Beshero-Bondar (EBB, Chair)</item>
+<item>Hugh Cayless (HC)</item>
+<item>Patricia O’Connor (TOC)</item>
+<item>Sabine Seifert (SS)</item>
+<item>Joey Takeda (JT) ~ 20 minutes late</item>
+<item>Raff Viglianti (RV)</item>
+</list></div><div type="h3"><head>Apologies/Not Present:</head><list style="ul">
+<item>Elli Bleeker (EB)</item>
+<item>Martina Scholger (MS)</item>
+<item>Janelle Jenstad (JJ)</item>
+<item>Magdalena Turska (MT)</item>
+</list><p>Meeting minutes previous month (<ref target="https://tei-c.org/activities/council/meetings/tei-technical-council-teleconference-2023-01-13/">January 2023</ref>)</p></div><div type="h2"><head>Spring F2F meeting</head><list style="ul">
+<item>May 7–9 at University of Guelph: working at <ref target="https://www.uoguelph.ca/arts/dhguelph/thinc">THINCLab</ref> <ref target="https://goo.gl/maps/wyf6RJ7grWwdAncMA">(McLaughlin Library)</ref></item>
+<item>Before our F2F is the LINCS Project Conference (May 5–7): <ref target="https://lincsproject.ca/events/making-links-2023/">CFP</ref>. Proposals from Council members are highly encouraged!</item>
+<item>Afterwards 4-day DH@Guelph Workshops: (May 9–12). <ref target="https://www.uoguelph.ca/arts/dhguelph/summer2023">Call for Workshop Proposals</ref> (due 1 March).</item>
+<item>Will we be able to attend both Council meeting &amp; DH@Guelph on Tue 09 May?
+<list style="ul">
+<item>Find out about the timing</item>
+<item>Is it okay to submit a proposal?</item>
+</list>
+</item>
+<item><hi style="b">Action on EBB by 2023-02-13:</hi> Find out about accommodations and overlap with the other 2 events (LINCS before, DH@Guelph after).
+<list style="ul">
+<item>EBB (updating these minutes on 2023-02-19): Yes, it is okay for Council to book accommodations through the entire conference.</item>
+<item>See details sent to TEI-Council mailing list on 2023-02-19.</item>
+</list>
+</item>
+</list></div><div type="h2"><head>Fall F2F meeting</head><list style="ul">
+<item>Mon 04 Sep to Fri 08 Sep at Paderborn is TEI/MEI Conference (see <ref target="https://www.uni-paderborn.de/forschung/forschung-im-profil/digital-humanities/nachricht/save-the-date-joint-tei-and-mei-conference-2023">save the date notice</ref>):</item>
+<item>Council may meet before or after the conference (PS)</item>
+<item>Best if Council meets before the conference begins</item>
+<item>Workshops: Mon 04 Sep and Tue 05 Sep
+<list style="ul">
+<item>Will be held in a different part of town than the main conference</item>
+</list>
+</item>
+<item>Council meetings: Fri–Sun, Sat–Mon, or Sun–Tue. Obviously the former means a longer trip, but allows Council members to attend workshops. The last is shorter, but overlaps workshops a lot. The middle one is, well, in the middle.</item>
+<item><hi style="b">Action on EBB</hi> by <hi style="b">2023-03-10</hi>: Poll council about selection of days.</item>
+<item>Mon 04 Sep is Labour Day in US &amp; Canada</item>
+</list></div><div type="h2"><head>TEI/MEC Conference planning</head><list style="ul">
+<item>RV is committee chair, puts together program committee</item>
+<item>CFP to be posted possibly by Friday 2023-02-17, but no later than Friday 2023-02-24.</item>
+<item>Local organisers pushing for not using ConfTool, but instead using an <ref target="https://indico.cern.ch/">alternative tool called Indico</ref>. They believe this change would make conference attendance 20% less expensive than using ConfTool (but unclear if less expensive than previous conferences).</item>
+<item>Indico needs to be tested. Not sure if it generates the conference program as well as handling the conference submissions and submission review.</item>
+</list></div><div type="h2"><head>Planning the next release</head><list style="ul">
+<item>Last release: October 2022</item>
+<item>Next release: We agreed to circa April 2023</item>
+<item>Planning on Tue 04 Apr (perhaps start on Mon 03 Apr; either way release techs should meet the week before)</item>
+<item>Release techs: JT, HC, SB</item>
+</list></div><div type="h2"><head>Board question on updating the TEI Website’s Tools and Projects page</head><list style="ul">
+<item>Last month we proposed that the Board prepare a Google Form with guidance (descriptions of no longer than <hi style="i">N</hi> words) for TEI members to describe TEI tools. (This would allow us to list things like FairCopy, LeafWriter, etc.)</item>
+<item>Perhaps another form or the same form to be used for TEI projects.</item>
+<item>EBB discussed this with the Board. They like the idea, but raised a question for us: What do we think of distinguishing Tools maintained by TEI-C from those that are not?
+<list style="ul">
+<item>Council thinks this reasonable</item>
+<item>RV suggests something like Awesome DH Tools (<ref target="https://dh-tech.github.io/awesome-digital-humanities/">https://dh-tech.github.io/awesome-digital-humanities/</ref>) for interactive GitHub site</item>
+<item>HC: We should consider: what is most likely to encourage us (Council and Board) to engage with updating the site?</item>
+</list>
+</item>
+<item>The website is not Council Responsibility but Council (esp. Chair) needs to work with it</item>
+<item>WordPress is a security risk and upkeep is challenging.</item>
+<item>The infrastructure group could be revived (with a combination of Board and Council members) around the website.</item>
+</list></div><div type="h2"><head>Rendering “Attributes” section of tagdocs</head><list style="ul">
+<item> <ref target="https://github.com/TEIC/Stylesheets/issues/592">Stylesheets #592</ref> We need a better way to render attributes in the “Attributes” section of the tagdocs for elements and classes.</item>
+<item>Example: <ref target="https://guidelines.teipublisher.com/ref/acquisition/">https://guidelines.teipublisher.com/ref/acquisition/</ref> and <ref target="https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-acquisition.html">https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-acquisition.html</ref></item>
+<item>From the 2022-12 Stylesheets meeting (which was held 2023-01-05): “General consensus is that this needs to be improved, and a vertical listing with meaningful indentation is probably a good idea. We should do this more like MEI with optional alternative views. <ref target="https://music-encoding.org/guidelines/v4/elements/abbr.html#attributes">https://music-encoding.org/guidelines/v4/elements/abbr.html#attributes</ref>”</item>
+<item>Vertical arrangement would be more readable</item>
+<item>Revising punctuation—dealing with parentheses in confusing places.</item>
+<item>Total overhaul of spec pages? Well, maybe not right away, but:</item>
+<item>Start with nesting lists to improve legibility</item>
+<item>SB: Try for the compressed hierarchical, vertical arrangement on the ticket.</item>
+<item>Some council members to work on this at next Stylesheet meeting</item>
+</list></div><div type="h2"><head>Another TEI ODD Processor (ATOP):</head><list style="ul">
+<item>Request that people pay attention to tickets with <ref target="https://github.com/TEIC/TEI/labels/atop">atop label</ref>. While most are not actually blocking progress, resolution would speed things up.
+<list style="ul">
+<item>SB asks for Council members to read and comment on:
+<list style="ul">
+<item><ref target="https://github.com/TEIC/TEI/issues/2306">#2306</ref> — See below; can we agree within the next week?</item>
+<item><ref target="https://github.com/TEIC/TEI/issues/2330">#2330</ref> — only if you disagree with the consensus we came to at this meeting (see below and the comment on the ticket)</item>
+<item><ref target="https://github.com/TEIC/TEI/issues/2381">#2381</ref> — can we agree within the next week?</item>
+</list>
+</item>
+<item>SB on #2306: As no one has objected to removing model.oddDecl from model.inter, one has given it a thumbs up (Laurent Romary), and several of us (at least SB &amp; MH, probably others) think it is a really good idea; and since at least 2 people (SB and Piotr Bansk) think it needs to be deprecated, SB thinks this should be made GREEN for deprecation. See ticket for precise listing.</item>
+<item>Discussion of <ref target="https://github.com/TEIC/TEI/issues/2330">#2330</ref>:
+<list style="ul">
+<item>The main issue is how does a user specify which query language they wish to use, and what happens with conflicting bindings?</item>
+<item>The <gi>constraintDecl</gi> solution (#2, “adventurous” on the ticket) would allow resolution of potential conflicts</item>
+<item>HC notes that it is likely that later versions of XSLT would be backwards-compatible with earlier versions. SB notes this is generally, but not always, true; and Schematron defines quite a few possibilities, although in practice only <hi style="b">a few</hi> are ever used: exslt, stx, <hi style="b">xslt</hi>, <hi style="b">xslt2</hi>, <hi style="b">xslt3</hi>, xpath, xpath2, xpath3, xpath31, xquery, xquery3, and xquery31.
+Addendum: Note that “xslt” (meaning XSLT 1.0) is the default, so in fact our Stylesheets are doing this incorrectly.</item>
+<item>What if there’s just one central constraintDecl for now to define the binding globally?
+<list style="ul">
+<item>We could decide later to allow for multiple contraintDecls if called for.</item>
+</list>
+</item>
+<item>Council decides on the <gi>constraintDecl</gi> option but a simpler implementation of it. SB updates the ticket.</item>
+</list>
+</item>
+</list>
+</item>
+</list></div><div type="h2"><head>RomaJS/Roma Beta Update</head><list style="ul">
+<item>Should we make RomaJS the new Roma with the next release?
+<list style="ul">
+<item>Present council members agree.</item>
+</list>
+</item>
+<item>Update from RV: preparation for the new release, internationalization work, link relocation, etc.</item>
+<item>Will be finished by April 2023 (next TEI release)
+<list style="ul">
+<item>will have German, Italian, Spanish, French translations ready.</item>
+<item>Kiyonori’s students working on Japanese translations (but probably not ready yet)</item>
+<item>some bugs to squash yet</item>
+</list>
+</item>
+<item>Council approves of releasing the new version of Roma with internationalization as v 1.0.0 and out of beta
+<list style="ul">
+<item>Old Roma not being maintained by anyone at the moment.</item>
+<item>Old Roma would stay under a different domain name (possible alternative domain names: Roma Classic, Roma Antiqua)</item>
+<item><hi style="b">Action HC and RV </hi>to work on DNS switch. (It should happen sooner, but can be announced with the next release.)</item>
+<item><hi style="b">Action on EBB</hi> to write the announcement to stop using old Roma and start on the new Roma when its released</item>
+</list>
+</item>
+</list></div><div type="h2"><head>TCW for TEI GitHub Webhooks and Secrets</head><list style="ul">
+<item>Update? <hi style="b">Action on HC and JT: </hi>to write up TCW on webhooks and GitHub dependencies</item>
+<item>(Re See <ref target="https://github.com/TEIC/Stylesheets/pull/588">Stylesheets PR #588</ref>: Tests fail due to failed Slack webhook action on external PRs)</item>
+<item>EBB opens <ref target="https://github.com/TEIC/Stylesheets/issues/594">Stylesheets ticket #594</ref> about this.</item>
+</list></div><div type="h2"><head>Status of TEI mailing lists</head><list style="ul">
+<item>Board will consult Council with a proposed solution, before engaging the membership.</item>
+<item>Options Board is considering:
+<list style="ul">
+<item>Keep at Brown,</item>
+<item>Move to another university (that uses listserv) – Northeastern?</item>
+<item>Find a professional hosting solution like<ref target="https://www.lsoft.com/go/default.asp"> L-Soft</ref></item>
+<item>Other options?</item>
+</list>
+</item>
+<item>Consensus was to investigate L-Soft options and independent hosting expense</item>
+<item>Will also need to speak to Brown librarians and tech infrastructure staff whether we decide to stay or move.</item>
+</list><p> </p></div></div></body><!-- #post-## --></text></TEI>

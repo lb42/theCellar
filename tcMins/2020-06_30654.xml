@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/home/lou/Public/TEI/TEICSS/tei.css" type="text/css"
+ ?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:t="http://www.tei-c.org/ns/1.0" n="2020-06"><teiHeader><fileDesc><titleStmt><title>Minutes of the TEI Technical Council</title><meeting n="2020-06" when="2020-06-09">TEI Technical Council online
+     meeting : <date>9 June 2020</date></meeting></titleStmt><publicationStmt><distributor>TEI Website</distributor><idno>TCM127</idno></publicationStmt><sourceDesc><p>Retagged from a WordPress HTML file</p></sourceDesc></fileDesc><revisionDesc><change when="2023-04-25">Archival header confected</change><change>Extracted from Word Press article with id post-30654</change></revisionDesc></teiHeader><text><body><div><p><hi style="strong">Meeting time:</hi></p><list style="ul">
+<item>EST 09:00–10:30, GMT 14:00–15:30, CEST 15:00–16:30</item>
+<item>Started: 13:06Z; ended: 14:35Z</item>
+</list><p><hi style="strong">Present:</hi></p><list style="ul">
+<item>Syd Bauman (SB)</item>
+<item>Elisa Beshero-Bondar (EB)</item>
+<item>Hugh Cayless (HC)</item>
+<item>Nicholas Cole (NC, until ~14:21Z)</item>
+<item>Jessica Lu (JL)</item>
+<item>Martina Scholger (MS, chair)</item>
+<item>Peter Stadler (PS)</item>
+<item>Raff Viglianti (RV, until 14:26Z)</item>
+</list><p><hi style="strong">Apologies/Not Present:</hi></p><list style="ul">
+<item>Vanessa Bigot-Juloux (VBJ)</item>
+<item>Meaghan Brown (MB)</item>
+<item>Magdalena Turska (MT)</item>
+</list><p> </p><div type="h2"><head>Planning next release</head><list style="ul">
+<item>Release technicians: HC (lead technician), JL (support technician), NC (note taker)</item>
+<item>When: week of 9–15 Aug 20; Target: Tue 11 &amp; Wed 12 Aug</item>
+<item>Finalize the content model of <gi>standOff</gi>: <ref target="https://github.com/TEIC/TEI/issues/1977">https://github.com/TEIC/TEI/issues/1977</ref>
+<list style="ul">
+<item>SB: We really want to tackle the Web Annotation Data Model for the next release.</item>
+<item>HC presents shared document that describes the use-cases we envision and what we need to support WADM.</item>
+<item>HC, SB: we want to have a mapping on parts of the WADM that make sense.</item>
+<item>NC: what are the open questions that those examples raise?</item>
+<item>HC says his motivation was to convince himself that we can use WADM without inventing new elements. It works with existing TEI elements (except <gi>assert</gi> in #7).</item>
+<item>SB points out that the WADM has other features we need to consider, e.g. allowing multiple targets or bodies (or both), or allowing selection by CSS or XPath (or anything else)?</item>
+<item>RV affirms that there can be multiple bodies and targets in WADM: <ref target="https://www.w3.org/TR/annotation-model/#cardinality-of-bodies-and-targets">https://www.w3.org/TR/annotation-model/#cardinality-of-bodies-and-targets</ref>. “It is also possible for an Annotation to have multiple Bodies and/or Targets. In this case, each Body is considered to be equally related to each Target individually, rather than to the set of all of the Targets.”</item>
+<item>EB suggests we add examples that discuss whitespace issue.</item>
+<item>Council agrees: define the content model of <gi>annotation</gi> and add the necessary attributes for the next release. There has to be a section on <gi>annotation</gi> in the Guidelines too. RV &amp; NC volunteer to help with writing documentation.</item>
+</list>
+</item>
+<item>Several issues with “Status:Go” <ref target="https://github.com/TEIC/TEI/issues?q=is%3Aissue+is%3Aopen+label%3A%22Status%3A+Go%22+-label%3A%22Status%3A+Needs+Discussion%22+">https://github.com/TEIC/TEI/issues?q=is%3Aissue+is%3Aopen+label%3A%22Status%3A+Go%22+-label%3A%22Status%3A+Needs+Discussion%22+</ref> that might go into the release. Should we add those to the <ref target="https://github.com/TEIC/TEI/milestones/Guidelines%204.1.0">Milestone 4.1.0</ref>?
+<list style="ul">
+<item><hi style="b">Action on MS</hi> to add milestone to “Status: Go” issues</item>
+</list>
+</item>
+<item>Aim to finish tickets at the end of July.</item>
+<item><hi style="b">Action on MS</hi> to send email to TEI-L on next release schedule <hi style="b">by 2020-06-25</hi>.</item>
+</list></div><div type="h2"><head>Next (virtual) F2F meeting</head><list style="ul">
+<item>Sat 24–Mon 26 Oct</item>
+</list></div><div type="h2"><head>Report from labeling session</head><list style="ul">
+<item>the two groups have made good progress; more sessions are needed.</item>
+</list></div><div type="h2"><head>@version issue</head><list style="ul">
+<item><ref target="https://github.com/TEIC/TEI/issues/1993">https://github.com/TEIC/TEI/issues/1993</ref></item>
+<item><hi style="b">Action on MS: </hi>write to the TEI list about @version <hi style="b">by 2020-06-25.</hi> Ask if and how the attribute is used; if it would affect projects if we removed it; if <gi>schemaRef</gi> and its attributes would be sufficient.</item>
+</list></div><div type="h2"><head>Reminder: “elections — terms — rotation”</head><list style="ul">
+<item>James Cummings (summary in Board discussion): To move to a 4, 4, 3 structure of 3 year terms, I believe that in the elections this year we should have 4 Council members elected for 3 years, and 1 Council member for 2 years.</item>
+<item>Next year we elect 4 Council members for 3 years, and 2 Council members for just 1 year. The year after that we elect 3 Council members and are in a solid 4,4,3 repeating pattern.</item>
+</list></div><div type="h2"><head>Ticket discussion #1916</head><list style="ul">
+<item><ref target="https://github.com/TEIC/TEI/issues/1916">#1916: Corpus Exemplar should more explicitly state what it’s for</ref>: This ticket  was discussed by subgroup C (HC, MB, EB) at the VF2F. Their comments were “Subgroup agrees with Martin Holmes, we should recommend oXygen proceed with changing the template file names on disk. (Open a ticket on oXygen or contact Radu Coravu?)”.</item>
+<item>Council notes there has been significant discussion on the ticket since then.</item>
+<item>There has also been discussion on TEI-L recently.</item>
+<item>Address confusion over use of the Corpus customization for non-linguists. Generally we need to rethink the exemplars (i.e., the ODD files, etc., in P5/Exemplars/).</item>
+<item>PS suggests we keep the teiCorpus exemplar, but suppress it from being delivered to oXygen.</item>
+<item>SB asserts it is a useless exemplar, as it does nothing but supply a set of <gi>moduleRef</gi>s.</item>
+<item>MS notes a similar issue on dictionaries.</item>
+<item>SB notes that we have several such exemplars [that he called “template exemplars” in his jTEI paper].</item>
+<item><hi style="b">Action on SB</hi>: provide a summary categorization of the Exemplar/ ODDs on the ticket <hi style="b">by 2020-06-30</hi>. They could be eliminated or reduced to a single example. If reduced to a single example, then corpora may be a good test case, as it requires @start of <gi>schemaSpec</gi> (to allow <gi>TEI</gi> or <gi>teiCorpus</gi> as the root).</item>
+<item>Piotr Banski has volunteered to create a new, more realistic exemplar for encoding linguistic corpora (but could take a while.) SB: The customizations on dictionaries, drama, math, speech don’t seem necessary now (or then). <hi style="b">Action on SB</hi> to ask Piotr to provide ODD for corpus <hi style="b">by 2020-06-20</hi>.</item>
+</list></div><div type="h2"><head>Reminder</head><list style="ul">
+<item>SB, PS, and JL to discuss issue <ref target="https://github.com/TEIC/TEI/issues/1955">https://github.com/TEIC/TEI/issues/1955</ref>.</item>
+<item>MS to contact Gerrit Brüning regarding MS SIG about not declaring it dormant <hi style="b">by 2020-06-15</hi>.</item>
+</list><p> </p></div></div></body><!-- #post-## --></text></TEI>

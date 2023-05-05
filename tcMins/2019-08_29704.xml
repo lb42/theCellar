@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/home/lou/Public/TEI/TEICSS/tei.css" type="text/css"
+ ?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:t="http://www.tei-c.org/ns/1.0" n="2019-08"><teiHeader><fileDesc><titleStmt><title>Minutes of the TEI Technical Council</title><meeting n="2019-08" when="2019-08-19">TEI Technical Council online
+     meeting : <date>19 August 2019</date></meeting></titleStmt><publicationStmt><distributor>TEI Website</distributor><idno>TCM117</idno></publicationStmt><sourceDesc><p>Retagged from a WordPress HTML file</p></sourceDesc></fileDesc><revisionDesc><change when="2023-04-25">Archival header confected</change><change>Extracted from Word Press article with id post-29704</change></revisionDesc></teiHeader><text><body><div><p><hi style="strong">Meeting time</hi></p><list style="ul">
+<item>EDT 9:00-10:30, GMT 14:00-15:30, CEST 15:00-16:30</item>
+<item>Started: 15:04 CET</item>
+</list><p><hi style="strong">Present</hi></p><list style="ul">
+<item>Elisa Beshero-Bondar (EB)</item>
+<item>Hugh Cayless (HC)</item>
+<item>James Cummings (JC)</item>
+<item>Elli Mylonas (EM)</item>
+<item>Martina Scholger (MS)</item>
+<item>Peter Stadler (PS)</item>
+<item>Sarah Stanley (SS)</item>
+<item>Raff Viglianti (RV)</item>
+</list><p><hi style="strong">Apologies/Not Present</hi></p><list style="ul">
+<item>Syd Bauman (SB)</item>
+<item>Magdalena Turska (MT)</item>
+<item>Vanessa Bigot Juloux (VB)</item>
+</list><p> </p><div type="h2"><head>F2F meeting in Graz</head><list style="ul">
+<item>Standoff meeting on Monday afternoon
+<list style="ul">
+<item>Participants: Laurent Romary, Georg Vogeler, Piotr Banski  Roberto Rosselli del Turco cannot make it. JC wondered if there were others that should be invited.
+<list style="ul">
+<item>Lou Burnard</item>
+<item>Michael Sperberg-McQueen</item>
+<item><hi style="b">Action on</hi> <hi style="strong">MS</hi> to invite them.</item>
+</list>
+</item>
+<item>Reminder: MT (with help from rest of Council) to prepare a list of standoff use-cases</item>
+</list>
+</item>
+<item><ref target="https://docs.google.com/document/d/1d3OpQ8N-r1nJq0T0kUreUReCCG5FJ6P3HfHIEQ-kZbE/edit#heading=h.wcw74roupmsy">Agenda/minutes</ref></item>
+</list></div><div type="h2"><head>Infrastructure concerns to discuss with Board in Graz</head><list style="ul">
+<item>The Council needs to be able to undertake any of its duties without being hamstrung by single points of failure.</item>
+<item>TEI Website content: who is responsible and who has edit access? Discuss distributed responsibilities.</item>
+<item>TEI wiki: are we still editing?</item>
+<item>TEI website
+<list style="ul">
+<item>WordPress should have made it easier for more to edit (Board and Council members).</item>
+<item>Should Council members be editing more than just minutes?</item>
+<item>Can we change the navigation menu structure?</item>
+<item>Project page: schedule an annual sprint to edit?
+<list style="ul">
+<item>Create a form for adding detail like, “Is your XML visible?”</item>
+<item>Can Council and Board look at the old form / advise on a new one? Ask Board about this on Board/Council mailing list.</item>
+<item>Maybe we can circulate the form ahead of the TEI conference each year.</item>
+</list>
+</item>
+</list>
+</item>
+</list></div><div type="h2"><head>Roma</head><list style="ul">
+<item>RV fixed a wave of bugs last Friday. Needs to update Roma beta. Nearly ready for release on GitHub.</item>
+<item>Should alter old Roma main page (adding a link to <ref target="https://romabeta.tei-c.org/">romabeta</ref>) in a dedicated branch.</item>
+<item>Long-term: running Roma and Oxgarage from master branches (aka Docker image:latest) and have extra e.g. dev.oxgarage.tei-c-org for the dev branch.</item>
+<item>Council working on description on website: <ref target="https://romabeta.tei-c.org/">https://romabeta.tei-c.org/</ref>.</item>
+</list></div><div type="h2"><head>SIGs</head><list style="ul">
+<item>Constance Crompton wants to get involved in the Ontologies SIG. Interested in developing documentation on best practices for developing triple stores.</item>
+<item>Should there be a Linked Data SIG for this separate from the Ontologies SIG? (Ontologies seems more theoretical).</item>
+<item>Invite Connie to draft a SIG/working group proposal? Or at least a statement of the problem she would like to solve, so Council can review it with her/guide her a bit. Ask her to draft some parameters.</item>
+</list></div><div type="h2"><head>Rub-a-dub</head><list style="ul">
+<item>Deferred because SB isn’t here</item>
+</list></div><div type="h2"><head>Meeting days/times</head><list style="ul">
+<item>Just for fall because there will be a new Council in January.</item>
+<item>Add to agenda for F2F in Graz.</item>
+</list></div><div type="h2"><head>SS stepping down from Council</head><list style="ul">
+<item>SS announces that she is stepping down from Council at end of the year.</item>
+<item>Bylaws regarding what happens with the rest of SS’s term: “Each Technical Council Member shall be elected for a two-year term, or in the case of an election to fill a vacancy between regular elections, for the term remaining for the vacant position. Terms of office begin at the following January 1 and end on December 31.” The new person would fill one year term. SS and MS should discuss with Kathryn Tomasek on Board.</item>
+</list></div><div type="h2"><head>AOB</head><list style="ul">
+<item>MS will check in with VBJ whether she is coming to Graz.</item>
+</list><p> </p></div></div></body><!-- #post-## --></text></TEI>

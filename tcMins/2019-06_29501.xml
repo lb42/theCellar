@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/home/lou/Public/TEI/TEICSS/tei.css" type="text/css"
+ ?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:t="http://www.tei-c.org/ns/1.0" n="2019-06"><teiHeader><fileDesc><titleStmt><title>Minutes of the TEI Technical Council</title><meeting n="2019-06" when="2019-06-17">TEI Technical Council online
+     meeting : <date>17 June 2019</date></meeting></titleStmt><publicationStmt><distributor>TEI Website</distributor><idno>TCM115</idno></publicationStmt><sourceDesc><p>Retagged from a WordPress HTML file</p></sourceDesc></fileDesc><revisionDesc><change when="2023-04-25">Archival header confected</change><change>Extracted from Word Press article with id post-29501</change></revisionDesc></teiHeader><text><body><div><p><hi style="strong">Meeting time:</hi></p><list style="ul">
+<item>EDT 9:00-10:30, GMT 14:00-15:30, CEST 15:00-16:30</item>
+<item>Started @ 13:06Z</item>
+</list><p><hi style="strong">Present</hi></p><list style="ul">
+<item>
+<list style="ul">
+<item>Syd Bauman (SB, left @ 14:28)</item>
+<item>Elisa Beshero-Bondar (EB)</item>
+<item>James Cummings (JC)</item>
+<item>Elli Mylonas (EM)</item>
+<item>Martina Scholger (MS)</item>
+<item>Peter Stadler (PS)</item>
+<item>Sarah Stanley (SS)</item>
+</list>
+</item>
+</list><list style="ul">
+<item>Raff Viglianti (RV) (left at 14:15Z)</item>
+</list><p><hi style="strong">Apologies/Not Present</hi></p><list style="ul">
+<item>Vanessa Bigot Juloux</item>
+<item>Hugh Cayless</item>
+<item>Magdalena Turska</item>
+</list><p> </p><div type="h2"><head>Follow-up<hi style="strong"> F2F Washington</hi></head><list style="ul">
+<item>Release of RomaJS
+<list style="ul">
+<item>Current status
+<list style="ul">
+<item>Switchover from old Roma to new RomaJS—with appropriate notes on landing page, need to make banner on Roma announcing new Roma JS and asking for feedback. Wants to do this as soon as possible, so Stylesheets can be tweaked before next release as needed.</item>
+<item>Name will be Roma. Call it “Roma Classic”. Call the new one “Roma Beta” or “Romaβ” for a while.</item>
+<item>RV will start a google doc with some prose  to put in the blank space on the main page and reach out to JC, EBB, and EM</item>
+</list>
+</item>
+</list>
+</item>
+<item>Oxygen testing
+<list style="ul">
+<item>Martin Holmes asked us to test Oxygen plugin</item>
+<item><ref target="https://jenkins.tei-c.org/job/oxygen-tei-bleeding/lastSuccessfulBuild/artifact/oxygen-tei/updateSite.oxygen">https://jenkins.tei-c.org/job/oxygen-tei-bleeding/lastSuccessfulBuild/artifact/oxygen-tei/updateSite.oxygen</ref></item>
+<item><ref target="https://teijenkins.hcmc.uvic.ca/job/oxygen-tei-bleeding/lastSuccessfulBuild/artifact/oxygen-tei/updateSite.oxygen">https://teijenkins.hcmc.uvic.ca/job/oxygen-tei-bleeding/lastSuccessfulBuild/artifact/oxygen-tei/updateSite.oxygen</ref></item>
+<item>Please test if you haven’t done so far
+<list style="ul">
+<item>JC: testing in 18.1 (using jenkins.tei-c.org link above): Complains that it can’t get ‘<ref target="https://tei-c.org/release/oxygen/updateSite.oxygen">https://tei-c.org/release/oxygen/updateSite.oxygen</ref>’</item>
+<item>MS: works with version 19.1</item>
+<item>EM: just tried to add the add-on to 20.1 and the URL is not found.</item>
+</list>
+</item>
+<item>We need to write a documentation that it won’t work on old versions of oXygen. And centralize that documentation (from JC’s blog site) in a good visible place from the TEI site (<ref target="https://tei-c.org/guidelines/p5/#section-3">https://tei-c.org/guidelines/p5/#section-3</ref>). Add new item at the top of this page “oXygen Plugin” and fill in documentation for how to get the plugin, what versions of oXygen it works with and how to update. <hi style="b">Action on EB</hi> to start this so it’s part of next release. Write this in the <ref target="https://github.com/TEIC/Documentation">TEIC/Documentation</ref> repo. Make a new folder rather than use the TCW/ folder: exDoc/ (for “external documentation”) or end_user_doc/ or some such; or put it in a TEI wiki which is backed up in GitHub.</item>
+</list>
+</item>
+<item>Standoff proposal
+<list style="ul">
+<item><hi style="b">Action on MS:</hi> Ask Laurent Romary to instigate discussion on the TEI-list on deprecating <gi>teiCorpus</gi>.</item>
+<item>Next step is on SB to incorporate <gi>TEI</gi>-as-<gi>teiCorpus</gi>, but he will not have any time for TEI until after WWP publication, scheduled for Thu 20 Jun.</item>
+</list>
+</item>
+<item>TEI release @ zenodo
+<list style="ul">
+<item>In general Council agrees to release Guidelines on Zenodo. Action on <hi style="b">HC/MS/SS volunteers</hi> by June 2019 to have a closer look at the account management, etc. and take a look at Open Science Framework (OSF) for DOI and release? See <ref target="https://help.osf.io/hc/en-us/articles/360019931013-Create-DOIs">https://help.osf.io/hc/en-us/articles/360019931013-Create-DOIs</ref>
+<list style="ul">
+<item>To investigate: versionable DOIs? Or a distinct DOI for each release?</item>
+<item>Discussion: we need a way to automate the release process. Porting new release into Zenodo via API instead of manual upload?</item>
+<item>CORE (MLA Humanities Commons Repo) FAQ is here: <ref target="https://hcommons.org/core/faq/">https://hcommons.org/core/faq/</ref></item>
+</list>
+</item>
+</list>
+</item>
+<item>OxGarage release
+<list style="ul">
+<item>PS merged dev branch into master, tagged, and drafted release notes  at <ref target="https://github.com/TEIC/oxgarage/releases">https://github.com/TEIC/oxgarage/releases</ref> — ready to go.</item>
+<item>Version number issue: we’ve jumped from version 1 to version 3 (due to old version documentation inside “version 1”).</item>
+</list>
+</item>
+<item>Free standing attributes
+<list style="ul">
+<item>EM and SB will start changing the non-controversial attributes— adding them to classes with modifications to suggested values, for example. They will make tickets for more controversial cases to put them forward for discussion by Council. There’s a change-blocking issue to address first in the Stylesheets: <ref target="https://github.com/TEIC/Stylesheets/issues/370">#370</ref>. This will be addressed in the next Stylesheets meeting on Fri 21 June.</item>
+</list>
+</item>
+</list></div><div type="h2"><head><hi style="strong">TEI Conference in Graz </hi></head><list style="ul">
+<item>September Mon 16–Fri 20; workshops on Mon 16 and Tue 17
+<list style="ul">
+<item>Pre-conference TEI Summer School (Tue 10–Fri 13 Sep)
+<list style="ul">
+<item>The wonderful group of people: SB, RV, &amp; JC on Fri 13</item>
+</list>
+</item>
+<item>Council meeting Sat 14 Sep–Mon 16 Sep:
+<list style="ul">
+<item>JC: should we invite people standing for Council? If they happen to be there early. Yes: on Monday AM, <hi style="b">action on MS</hi> to invite as soon as bios and statements are in; they are due 06-26.</item>
+<item>Make sure we invite people we need to have present for high priority issues (like Laurent Romary, Martin Holmes). Martin Holmes will join us for the entire meeting. Luis and Laurent are needed for Infrastructure (as contact with HumaNum), which may be a separate meeting during Council meeting. <hi style="b">Action on MS: </hi>contact Luis and Laurent about when they could come<hi style="b">.</hi> Laurent also needed for LingSig issues.</item>
+<item>Joint Board and Council meeting on Mon 16?</item>
+<item>Open Council session? (No, not this year.)</item>
+</list>
+</item>
+<item>Discussion of agenda for joint Board and Council joint meeting: Invited experts should be posted prominently on the TEI website so their work is listed and they’re credited (and encourages us to involve others who perhaps stood for election and didn’t make it). People like Martin Holmes, Laurent Romary, Duncan Paterson, but others also.
+<list style="ul">
+<item><hi style="b">Action on MS:</hi> Ask Board for their agenda, what they want to discuss with us. Also ask about funding our invited experts to join us. Also, let’s formalize this: How best to present requests about this in future? Board should expect we’ll always/often want to invite outside experts.</item>
+</list>
+</item>
+<item>Dinner at MS’s on Sunday evening (Sep 15)</item>
+<item><hi style="b">Venue for </hi>Council meeting: Elisabethstraße 59/III, 8010 Graz (at the Centre for Information Modelling)</item>
+</list>
+</item>
+</list></div><div type="h2"><head><hi style="strong">Next release in July (EBB, MT, and VBJ)</hi></head><list style="ul">
+<item>Release dates:
+<list style="ul">
+<item>Refridge: June 30–July 8</item>
+<item>Freeze: July 9–13</item>
+<item>Create release branch: July 14</item>
+<item>Release: July 16</item>
+</list>
+</item>
+<item>Issues that we want to have ready for the July release:
+<list style="ul">
+<item>Measurement (EBB: Yes, starting back to work on this!) <ref target="https://github.com/TEIC/TEI/issues/1707">https://github.com/TEIC/TEI/issues/1707</ref></item>
+<item>Maybe nesting <gi>TEI</gi></item>
+<item>Pull request re #1621: EBB: make sure this doesn’t break build: <ref target="https://github.com/TEIC/TEI/pull/1886">https://github.com/TEIC/TEI/pull/1886</ref></item>
+<item>EBB requests Councilors mark issues expected to be in this release by applying “release 3.6.0” milestone. Will check in with VBJ to determine her availability to participate.</item>
+</list>
+</item>
+</list></div><div type="h2"><head><hi style="strong">Infrastructure group report</hi></head><list style="ul">
+<item>Ron Van den Branden is now part of the group</item>
+<item>Luis Meneses is in the process of moving services to HumaNum</item>
+</list></div><div type="h2"><head><hi style="strong">Rub-a-dub (SB): no progress</hi></head><p><hi style="b">Stylesheets Meeting</hi> Fri 21 June at 13:00 PST / 16:00 EST / 21:00 GMT / 22:00 CET</p></div></div></body><!-- #post-## --></text></TEI>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/home/lou/Public/TEI/TEICSS/tei.css" type="text/css"
+ ?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:t="http://www.tei-c.org/ns/1.0" n="2022-12"><teiHeader><fileDesc><titleStmt><title>Minutes of the TEI Technical Council</title><meeting n="2022-12" when="2022-12-08">TEI Technical Council online
+     meeting : <date>8 December 2022</date></meeting></titleStmt><publicationStmt><distributor>TEI Website</distributor><idno>TCM161</idno></publicationStmt><sourceDesc><p>Retagged from a WordPress HTML file</p></sourceDesc></fileDesc><revisionDesc><change when="2023-04-25">Archival header confected</change><change>Extracted from Word Press article with id post-31432</change></revisionDesc></teiHeader><text><body><div><p><hi style="strong">Meeting times:</hi></p><list style="ul">
+<item>8am PST / 11am EST / 4pm GMT / 5pm CET</item>
+<item>Started: ~16:05Z Ended: 17:32Z</item>
+</list><p><hi style="strong">Present:</hi></p><list style="ul">
+<item>Syd Bauman (SB)</item>
+<item>Helena Bermúdez Sabel (HBS)</item>
+<item>Elisa Beshero-Bondar (EBB, Chair-elect)</item>
+<item>Hugh Cayless (HC)</item>
+<item>Janelle Jenstad (JJ)</item>
+<item>Martina Scholger (MS, Chair)</item>
+<item>Sabine Seifert (SS)</item>
+<item>Peter Stadler (PS)</item>
+<item>Joey Takeda (JT, Councilor-elect)</item>
+<item>Magdalena Turska (MT)</item>
+<item>Raff Viglianti (RV)</item>
+</list><p><hi style="strong">Apologies/Not Present:</hi></p><list style="ul">
+<item>Elli Bleeker (EB)</item>
+<item>Patricia O Connor (TOC)</item>
+</list><p>Meeting minutes previous month (<ref target="https://tei-c.org/activities/council/meetings/tei-technical-council-teleconference-2022-11-10/">November</ref>)</p><p> </p><div type="h2"><head>Welcome Joey</head><list style="ul">
+<item>Mentoring: RV and HC volunteer</item>
+</list></div><div type="h2"><head>New meeting times</head><list style="ul">
+<item>We will need new meeting times. <hi style="b">Action on EBB</hi> to arrange new monthly meeting (via Doodle) by <hi style="b">2023-01-01.</hi></item>
+</list></div><div type="h2"><head>Spring F2F meeting</head><list style="ul">
+<item>Date: May 7–9</item>
+<item>Options for the meeting:
+<list style="ul">
+<item>Providence?</item>
+<item>Boston / Northeastern? <hi style="b">Action on SB </hi>to ask Julia Flanders et al. if Northeastern could host the meeting <hi style="b">by 2022-12-10.</hi></item>
+</list>
+</item>
+</list></div><div type="h2"><head>Fall F2F meeting</head><list style="ul">
+<item>The Conference and Members’ Meeting will be a joint event with MEI from Mon 04 Sep 23 through Fri 08 Sep 23 in Paderborn.</item>
+<item>Council may meet before or after the conference (PS)</item>
+</list></div><div type="h2"><head>Guidelines production via TEI Processing Model</head><list style="ul">
+<item>MT presents a prototype at <ref target="https://guidelines.teipublisher.com/">https://guidelines.teipublisher.com/</ref></item>
+<item>Request for testing and reporting issues (discrepancies with existing Guidelines) and feature requests via <ref target="https://github.com/eeditiones/tei-guidelines">https://github.com/eeditiones/tei-guidelines</ref></item>
+<item>Where is this version missing things (as in links to reference pages)? At what point shall we move this repo to TEI?
+<list style="ul">
+<item>RV suggests moving the repo to TEI to help us test it.</item>
+</list>
+</item>
+<item>Consider branding and design (involving touch-up of the TEI logo)
+<list style="ul">
+<item>MT seeks a budget for hiring a designer to work on updating the TEI logo
+<list style="ul">
+<item>Is this an individual request from MT to Board, or is Council in agreement to back this?</item>
+<item>Small budget request if it’s only the logo and less time-consuming.</item>
+</list>
+</item>
+<item>Original logo looks dated and clashes with modern websites. Text is hard to read in smaller sizes (because diagonal and italicized).</item>
+<item>PS has a logo for the upcoming TEI/MEI conference: it preserves brackets and color recognizable from current TEI logo (via <ref target="https://en.99designs.de">https://en.99designs.de</ref>)</item>
+<item>PS: It’s not just the logo or the Guidelines but the whole TEI website. Design maybe needs a more general plan: color schemes, fonts, etc.</item>
+<item>SB: Logo &amp; website design is (in general) a Board issue rather than a Council issue. Council needs to be involved somewhat to ensure that the Guidelines are well incorporated into the website.</item>
+<item>SB: TEI and markup is “agnostic about its own output”: providing multiple different views of the Guidelines would be a way to express this agnosticism. JJ noted in the chat that there are easier ways to demonstrate that TEI is output-agnostic.</item>
+<item>MT: The idea of ODD processing model was motivated by difficulty of maintaining Stylesheets. Council would need to decide what’s best to maintain in the long term.
+<list style="ul">
+<item>PS: Council will need a dedicated session to discuss how the ODD model replaces specific parts of the Stylesheets.</item>
+</list>
+</item>
+<item>HBS: We need a dedicated working group with this initiative to help Guidelines better support i18n.</item>
+<item>Next steps:
+<list style="ul">
+<item> Move the <ref target="https://github.com/eeditiones/tei-guidelines">repo</ref> to TEI organization.</item>
+<item>Council reviews <ref target="https://guidelines.teipublisher.com/">https://guidelines.teipublisher.com/</ref> and files bug reports &amp; feature requests as needed.</item>
+<item>Funding request to Board at meeting next Thursday 15 Dec 23.
+<list style="ul">
+<item>MS reminds that we need to request from the designer a full collection of material (design in a vector format that can be later adjusted, including fonts used etc.)</item>
+<item>MT: to ask for a quote we should limit the scope to the kind of “icon” logo that can be used in a narrow website header or favicon and have the expanded “Text Encoding Initiative” as a neighboring text with fonts suggested.</item>
+</list>
+</item>
+<item>We do need to discuss the TEI website in general and how it relates to the new design for Guidelines documentation. <hi style="b">Action on JJ</hi> to work on this in January 2023.</item>
+</list>
+</item>
+</list>
+</item>
+</list></div><div type="h2"><head>Internationalization</head><list style="ul">
+<item>Roma
+<list style="ul">
+<item>RV reports he is at work on this, e.g. replacing hard-coded strings with lookups.</item>
+<item>Lou Burnard has already provided French translations.</item>
+<item>After next few weeks RV will need to start thinking about methods for collecting translations.</item>
+</list>
+</item>
+<item>Interface of SpecTranslator
+<list style="ul">
+<item>HC: complete translations for Spanish, but no other languages.</item>
+<item><hi style="b">Action on HC</hi> to prepare instructions, and to write up a call for more participation from folks contributing other languages.</item>
+</list>
+</item>
+</list></div><div type="h2"><head>Ling SIG — Council liaison</head><list style="ul">
+<item>Meeting between MT, Piotr Banski, HBS, &amp; PS</item>
+<item>It was mostly a get-to-know each other event and discussion of how to bring the Ling SIG community together.</item>
+<item>Another meeting planned for mid-Jan 2023.</item>
+<item>Nothing specific to report, though.</item>
+</list></div><div type="h2"><head>Status of mailing lists</head><list style="ul">
+<item>We need to figure out how many of the 17 mailing lists from Brown we want to transfer to HumaNum.</item>
+<item>HC: Decide on which should be retired first.</item>
+<item><hi style="b">Action on SB</hi> to find inventory of Brown listservs and send them to Council list by <hi style="b">2022-12-16.</hi></item>
+<item><hi style="b">Action on MS</hi> to ask Laurent Romary:
+<list style="ul">
+<item>With whom do we need to communicate at HumaNum?</item>
+<item>Can we move 5–8 mailing lists to HumaNum?</item>
+<item>Loop EBB on messages so she can keep rolling with this in January 2023.</item>
+</list>
+</item>
+</list></div><div type="h2"><head>Documentation</head><list style="ul">
+<item>MS suggests we convene a subgroup.</item>
+<item>JJ, HC, and MS volunteer for the subgroup.</item>
+<item>Deal with TEI Wiki.</item>
+<item>Subgroup will meet after Christmas (i.e., after Jan. 11). <hi style="b">Action on MS</hi> to organize a meeting by <hi style="b">2022-12-31</hi>.</item>
+</list></div><div type="h2"><head>Status <ref target="https://github.com/TEIC/TEI/issues/2049">#2049</ref></head><list style="ul">
+<item>SB removed the deprecation in branch sydb_2049_on_altIdent_reduex, but not on dev. Given that the conversation never was resolved and petered out, SB chose <hi style="b">proposal one</hi> and implemented it. Thus <ref target="https://github.com/TEIC/TEI/pull/2334">PR</ref> is waiting for review from one of EBB, MH, HC, JC, NC, and then (presuming thumbs up) SS can pull.</item>
+<item>Next steps: <hi style="b">Action on HBS</hi> to test it, and if it’s passing, <hi style="b">action on SS</hi> to merge it if HBS finds all is well.</item>
+</list></div><div type="h2"><head>ATOP</head><list style="ul">
+<item>Request that people pay attention to tickets with <ref target="https://github.com/TEIC/TEI/labels/atop">atop label</ref>. While most are not actually blocking progress, resolution would speed things up.</item>
+<item>MS suggests to add Council Responsibility label to these tickets.</item>
+</list></div><div type="h2"><head>CMC</head><list style="ul">
+<item>PS will continue to work on CMC.</item>
+<item>SB reports various problems have come up delaying meetings, but still pushing forward.</item>
+<item>Next meeting is scheduled for next week.</item>
+</list></div><div type="h2"><head>Goodbye Peter and thank you! 😟❤️</head></div><div type="h2"><head>Handing over the chair to Elisa  🪑</head><list style="ul">
+<item>EBB wonders why we can’t see Board meeting dates on TEI-C Google Calendar?</item>
+<item>MS: because they were not added to the calendar – fixed.</item>
+</list></div><div type="h2"><head>Next Stylesheets</head><list style="ul">
+<item>Scheduled for 29 December? HBS might suggest moving to January.</item>
+</list></div></div></body><!-- #post-## --></text></TEI>

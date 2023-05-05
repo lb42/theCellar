@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/home/lou/Public/TEI/TEICSS/tei.css" type="text/css"
+ ?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:t="http://www.tei-c.org/ns/1.0" n="2015-02"><teiHeader><fileDesc><titleStmt><title>Minutes of the TEI Technical Council</title><meeting n="2015-02" when="2015-02-27">TEI Technical Council online
+     meeting : <date>27 February 2015</date></meeting></titleStmt><publicationStmt><distributor>TEI Website</distributor><idno>TCM066</idno></publicationStmt><sourceDesc><p>Retagged from a WordPress HTML file</p></sourceDesc></fileDesc><revisionDesc><change when="2023-04-27">Archival header confected</change><change>Extracted from Word Press article with id post-21922</change></revisionDesc></teiHeader><text><body><div>
+		
+		<!-- <div class="teiheader"><filedesc><titlestmt><title/><author/></titlestmt><editionstmt><edition><date/></edition></editionstmt><publicationstmt>
+<p>unknown</p>
+</publicationstmt><sourcedesc><p>Converted from a Word document </p>
+<p>      </sourcedesc></filedesc><encodingdesc><appinfo><application id="doxtotei" ident="TEI_fromDOCX" version="2.15.0"><label>DOCX to TEI</label>
+        </application></appinfo></encodingdesc><revisiondesc><listchange><change><date>2015-03-12T12:11:22Z</date><name/></change></listchange></revisiondesc></div> -->
+<div><head>
+        Teleconference 2015-02-27 13:30 UTC</head>
+<div><head>
+          Present:</head>
+<p>meeting started at 13:36</p>
+<p>Syd Bauman (SB)</p>
+<p>Hugh Cayless (HC)</p>
+<p>Fabio Ciotti (FC)</p>
+<p>James Cummings @ 13:40 (JC)</p>
+<p>Martin Holmes (MH)</p>
+<p>Stefan Majewski (SM)</p>
+<p>Paul Schaffner (PFS)</p>
+<p>Peter Stadler (PWS)</p>
+<p>Raff Viglianti (RV)</p>
+<p>Stefanie Gehrke (SG) (13:46)</p>
+<p>Lou Burnard (LB — able to be online for latter portion, but not on
+            conference call)</p>
+</div>
+</div>
+<div><head> id="h.b44bm1ili75v"&gt;
+        Agenda
+        </head><list style="ul">
+<item>Discuss/finalize<ref target="https://sourceforge.net/p/tei/feature-requests/505/"><hi style="Internet_Link"/></ref><ref target="https://sourceforge.net/p/tei/feature-requests/505/"><hi style="Internet_Link"><hi style="underline color(1155CC)">redefining msPart</hi></hi></ref> (see:<ref target="https://docs.google.com/document/d/1bpBPughQp5sOoB13iTMHMeRd88Mjv12_eGZiQXY-na8/edit"><hi style="Internet_Link"/></ref><ref target="https://docs.google.com/document/d/1bpBPughQp5sOoB13iTMHMeRd88Mjv12_eGZiQXY-na8/edit"><hi style="Internet_Link"><hi style="underline color(1155CC)">Google
+              Doc</hi></hi></ref> (SG / PWS))<list style="ul">
+<item>Some discussion on list;
+                FC still has some issues, MH raised a Q this morning. <hi style="bold">Action on
+                  PWS</hi> to make the document editable/commentable (DONE). JC notes that the main
+                worry is that <gi>msPart</gi> is being used for two different things; we could create
+                a new element (msFrag?), or we could add <gi>msPart</gi> to att.typed and use @type.
+                The argument against this is that MS description is talking about one specific
+                physical object; we use msPart when that single catalogued object is formed separate
+                physical fragments. That’s the exact reverse of having a notional object formed from
+                dispersed fragments which are being unified virtually. RV: notes an example of four
+                notebooks from Godwin-Shelley were unbound and distributed; they were once physical
+                objects; the component parts contain works which cross notebook boundaries. The
+                pieces have been arranged into boxes corresponding to the works. We need to be able
+                to describe both the component parts, the current arrangement, and the original
+                physical objects. PWS: We’ll have to change (the description/semantics of) msDesc as
+                well to support this.</item>
+<item>SB:
+<list style="ul">
+<item>perhaps attr (e.g.,
+                    @type) should be of parent <gi>msDesc</gi>, not
+                    <gi>msPart</gi></item>
+<item>Whatever solution we come up with should map well to
+                    the same problem as it occurs when the manuscripts are being <hi style="bold">transcribed</hi> not merely <hi style="bold">described</hi></item>
+<item>Thorny
+                    enough that we probably need to take this off conference
+                call</item>
+</list>
+</item>
+</list>
+</item>
+<item>Discuss<ref target="http://lists.tei-c.org/pipermail/tei-council/2015/020458.html"><hi style="Internet_Link"/></ref><ref target="http://lists.tei-c.org/pipermail/tei-council/2015/020458.html"><hi style="Internet_Link"><hi style="underline color(1155CC)">TEI Simple
+                report</hi></hi></ref> (JC)<list style="ul">
+<item>JC would like feedback on
+                TEI-Council list, TEI-Simple list, or direct e-mail if you don’t want it
+                public.</item>
+<item>Definitely wants written council feedback on the proposal.
+                Nothing should come as a surprise when we eventually propose these new elements to
+                  Council.
+<list style="ul">
+<item>Most meaty interesting part is the processing
+                    model documentation: <ref target="http://htmlpreview.github.io/?https://github.com/TEIC/TEI-Simple/blob/master/tei-pm.html"><hi style="Internet_Link"><hi style="underline color(1155CC)">http://htmlpreview.github.io/?https://github.com/TEIC/TEI-Simple/blob/master/tei-pm.html</hi></hi></ref></item>
+<item>See also Magdalena Turska’s blog post: <ref target="http://dixit.hypotheses.org/550"><hi style="Internet_Link"><hi style="underline color(1155CC)">http://dixit.hypotheses.org/550</hi></hi></ref> or <ref target="http://blogs.it.ox.ac.uk/mturska/2015/01/14/seeking-simple/"><hi style="Internet_Link"><hi style="underline color(1155CC)">http://blogs.it.ox.ac.uk/mturska/2015/01/14/seeking-simple/</hi></hi></ref></item>
+<item>The premise of processing model implementation is to generate XSLT
+                    stylesheet based solely on TEI Simple ODD file that contains models and
+                    renditions that define intended processing for TEI Simple elements. Base TEI
+                    Simple ODD can be found at <ref target="https://github.com/TEIC/TEI-Simple/blob/master/teisimple.odd"><hi style="Internet_Link"><hi style="underline color(1155CC)">https://github.com/TEIC/TEI-Simple/blob/master/teisimple.odd</hi></hi></ref>
+                    Processing model implementation files can be found in polygon subdirectory <ref target="https://github.com/TEIC/TEI-Simple/tree/master/polygon"><hi style="Internet_Link"><hi style="underline color(1155CC)">https://github.com/TEIC/TEI-Simple/tree/master/polygon</hi></hi></ref>
+                    and this is assumed to be working directory in all examples below. To generate
+                    the XSLT stylesheet one can run following command:<lb/><hi style="italic">saxon
+                      -xi -s:../teisimple.odd -o:simple.xsl -xsl:simpleoddtoxsl.xsl<lb/></hi>That
+                    will generate simple.xsl file which can be used in turn to transform the TEI
+                    Simple documents, eg:<lb/><hi style="italic">saxon -s:../tests/5730.xml
+                      -o:../tests/treasureisland.html -xsl:simple.xsl</hi><lb/>will produce html
+                    output for Treasure Island sample file.</item>
+</list>
+</item>
+</list>
+</item>
+<item>Discuss<ref target="http://bit.ly/1jyZC37"><hi style="Internet_Link"/></ref><ref target="http://bit.ly/1jyZC37"><hi style="Internet_Link"><hi style="underline color(1155CC)">Transcription of Spoken Language</hi></hi></ref>
+            draft (LB) — deferred for lack of LB<list style="ul">
+<item>PFS points us to
+                section 5.7 with a concern that it suggests non-tessellating <gi>div</gi>s; or
+                annotatedU being simultaneously a div-like object and a p-like
+                object.</item>
+<item>Council took quick look, and all but gasped in horror [clearly
+                this example only makes sense if <gi>annotatedU</gi> is a divLike object, which is
+                not made explicit elsewhere in the document — LB]</item>
+<item><hi style="bold">Action on PFS</hi> to comment about this on FR <ref target="https://sourceforge.net/p/tei/feature-requests/539/"><hi style="Internet_Link"><hi style="underline color(1155CC)">http://sourceforge.net/p/tei/feature-requests/539/</hi></hi></ref></item>
+</list>
+</item>
+<item>JTEI schema integration into P5 and Stylesheets: what goes where? (MH)<list style="ul">
+<item>Ready to start
+<list style="ul">
+<item>new customization w/
+                    documentation -&gt; P5</item>
+<item>transforms for docs in that schema -&gt;
+                    Stylesheets</item>
+<item>stuff for O2 framework to do that -&gt; oxygen-tei
+                    plugin framework</item>
+</list>
+</item>
+<item>One concern is that have to do this
+                in a manner that does not permit the framework to be published w/ only a piece of
+                this</item>
+<item>MH wants to aim for next release (early April)</item>
+<item>JC and
+                SB volunteer to test; JC suggests Sebastian Rahtz and Magdalena Turska might be
+                CC’ed on emails as people with experience in this area.; JC noted that the updates
+                of the framework from Jenkins were functioning fine.</item>
+<item><hi style="bold">Action on MH to investigate the feasibility of accomplishing all this by the next
+                  release, and report back within a week.</hi></item>
+<item><hi style="bold">Action on
+                  SB and HC to contact Oxygen and find out their release
+              schedule.</hi></item>
+</list>
+</item>
+<item>Update on<ref target="https://sourceforge.net/p/tei/feature-requests/510/"><hi style="Internet_Link"/></ref><ref target="https://sourceforge.net/p/tei/feature-requests/510/"><hi style="Internet_Link"><hi style="underline color(1155CC)">correspDesc proposal</hi></hi></ref>
+              (PWS)<list style="ul">
+<item>Current state: <ref target="http://teijenkins.hcmc.uvic.ca/job/TEIP5/lastSuccessfulBuild/artifact/release/doc/tei-p5-doc/en/html/ref-correspDesc.html"><hi style="Internet_Link"><hi style="underline color(1155CC)">http://teijenkins.hcmc.uvic.ca/job/TEIP5/lastSuccessfulBuild/artifact/release/doc/tei-p5-doc/en/html/ref-correspDesc.html</hi></hi></ref></item>
+<item>LB
+                updated prose</item>
+<item>PWS updated examples and added <gi>listRef</gi> for
+                elements</item>
+<item>suggested values for correspAction/@type still under
+                debate</item>
+<item>PWS suggests sticking with past participles (“sent”, “received”)
+                rather than LB’s suggested “sent-by”, because the latter suggest an actor, who may
+                not be known. Council generally agrees with PWS. [but if there is named agent, don’t
+                you want to know whether it was received by them or from them? LB]</item>
+<item><hi style="bold">Action on PWS to take this to the mailing list for final
+                  decision.</hi></item>
+</list>
+</item>
+<item>Announcement re: <hi style="italic">Balisage </hi>pre-conference event (HC)<list style="ul">
+<item><ref target="http://balisage.net/CulturalHeritage/index.html"><hi style="Internet_Link"><hi style="underline color(1155CC)">http://balisage.net/CulturalHeritage/index.html</hi></hi></ref> HC suggests
+                people put in proposals. Deadline is April 17th</item>
+</list>
+</item>
+<item>Face to Face dates<list style="ul">
+<item><hi style="bold">Location:</hi> Ann
+                Arbor</item>
+<item><hi style="bold">Dates:</hi> May 28–30</item>
+<item>Council thanks
+                PFS for taking this on.; <hi style="bold">Action on PFS to report back to council
+                  list on meeting details / hotel / travel / etc.</hi></item>
+</list>
+</item>
+<item>HC points out there are a lot of new bug reports (by Jens Østergaard Petersen)<list style="ul">
+<item>suggests people should choose those they want, including
+                mentor/mentoree pairs. </item>
+<item>HC will wait until 2014-03-06 or so then assign
+                them (on 2014-03-07 or so)</item>
+</list>
+</item>
+</list>
+</div>
+	</div></body><!-- #post-## --></text></TEI>

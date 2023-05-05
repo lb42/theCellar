@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/home/lou/Public/TEI/TEICSS/tei.css" type="text/css"
+ ?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:t="http://www.tei-c.org/ns/1.0" n="2015-12"><teiHeader><fileDesc><titleStmt><title>Minutes of the TEI Technical Council</title><meeting n="2015-12" when="2015-12-03">TEI Technical Council online
+     meeting : <date>3 December 2015</date></meeting></titleStmt><publicationStmt><distributor>TEI Website</distributor><idno>TCM075</idno></publicationStmt><sourceDesc><p>Retagged from a WordPress HTML file</p></sourceDesc></fileDesc><revisionDesc><change when="2023-04-27">Archival header confected</change><change>Extracted from Word Press article with id post-21931</change></revisionDesc></teiHeader><text><body><div>
+		
+		<!-- <div class="teiheader"><filedesc><titlestmt><title></title><author>TEI Technical Council</author></titlestmt><editionstmt><edition><date>2016-01-20</date></edition></editionstmt><publicationstmt>
+<p>unknown</p>
+</publicationstmt><sourcedesc><p>Converted from a Word document</p>
+<p>            </sourcedesc></filedesc><encodingdesc><appinfo><application id="docxtotei" ident="TEI_fromDOCX" version="2.15.0"><label>DOCX to TEI</label>
+                </application></appinfo></encodingdesc><revisiondesc><listchange><change><date>2016-01-20T15:12:26Z</date><name/></change></listchange></revisiondesc></div> -->
+
+<div><head>Teleconference 2015-12-03 14:00 UTC</head>
+<div><head>
+                Present</head>
+<list style="ul">
+<item>Hugh Cayless (HC)</item>
+<item>James Cummings (JC)</item>
+<item>Martin Holmes (MH)</item>
+<item>Lou Burnard (LB)</item>
+<item>Syd Bauman (SB)</item>
+<item>Raff Viglianti (RV)</item>
+<item>Elisa Beshero-Bondar (EB)</item>
+<item>Magdalena Turska (MT)</item>
+<item>Fabio Ciotti (FC until ~15:15)</item>
+<item>Elli Mylonas (EM)</item>
+<item>Stefan Majewski (SM) (reading until ~15:15)</item>
+<item>Martina Scholger (MS)</item>
+<item>Stefanie Gehrke (SG) (reading)</item>
+<item>Paul Schaffner (PFS)</item>
+</list>
+</div>
+<div><head>
+                Apologies</head>
+<list style="ul">
+<item>Peter Stadler (PWS)</item>
+</list>
+</div>
+</div>
+
+<div><head>
+                Agenda and Minutes</head>
+<div><head>&gt;
+                    Pure ODD branch integration
+                    </head><list style="ul">
+<item><ref target="http://teic.github.io/TEI/"><hi style="underline color(1155CC)">http://teic.github.io/TEI/</hi></ref> has the last available
+                            version</item>
+<item><ref target="https://github.com/TEIC/TEI/tree/lb42-pureodd"><hi style="underline color(1155CC)">https://github.com/TEIC/TEI/tree/lb42-pureodd</hi></ref></item>
+<item><ref target="https://github.com/TEIC/Stylesheets/tree/pureodd"><hi style="underline color(1155CC)">https://github.com/TEIC/Stylesheets/tree/pureodd</hi></ref></item>
+</list>
+<p>LB reported on the progress of this. Some stumbling blocks soon to be fixed.
+                        Hopes to have a version that runs Makefile in ~24 hrs. Discussed the example
+                        pages: MH and JC stress the usefulness of the description, examples, and
+                        remarks. LB points out that the class info is already present in the
+                        display, and it is confusing to duplicate it. MH points out that nobody is
+                        suggesting duplicating it; we’re talking about the order of items in the
+                        page. He thinks the examples and remarks should precede the ODD and RelaxNG
+                        content models. JC agrees or suggests that there should be some whizzy web
+                        mechanism for making examples/remarks more visible.</p>
+<p>[<hi style="italic bold">break owing to google hangouts having predefined
+                            limits</hi>] </p>
+<p>Continuing: LB and SB suggest that the class membership does not need to be
+                        in the ODD bit; and MH suggests that the caption should be “Content model”,
+                        not mentioning Pure ODD. SB suggests that we should also deprecate the
+                        display of the RelaxNG. Others think it should actually be enhanced with
+                        other schema languages (XSD, but not DTD). SB says that we should
+                        concentrate on getting Pure ODD out the door before worrying about the
+                        schema display. There is consensus on the removal of classes and
+                        recaptioning; the proposal to move the examples and remarks above the
+                        content model is subject to disagreement. HC to integrate these changes in
+                        next crack at pure-ODD processing stylesheet.</p>
+<p> LB raises problem of anyXML (ticket already <ref target="https://github.com/TEIC/TEI/issues/1373"><hi style="underline color(1155CC)">https://github.com/TEIC/TEI/issues/1373</hi></ref> ) Stylesheets
+                        need to be changed to cope with this, i.e. generate correct definition. </p>
+<p>MH suggests that the PDF generation may be a problem and it would be good to
+                        find out soon whether that’s going to be a big problem or not. HC thinks
+                        there are probably issues with PDF versions of PureODD content models, but
+                        does not know. However, it is difficult to do generalized testing until
+                        everyone has it. Need to get this ready to test.</p>
+<p>SM was working on PDFs. JC and MH note that the EPub generation will also be
+                        affected. </p>
+</div>
+<div><head>
+                    Processing Model integration</head>
+<p>JC reports that the draft text is in a branch ‘processing-model’ off the
+                        lb42-pureodd branch. All the model* elements, etc. have been added there and
+                        linked to from guidelines. LB noted that he has created a brand new branch
+                        and not checked it in yet, so JC will have to re-do all his work. JC agrees
+                        to do so but may need help with the tests. LB volunteers to help when Pure
+                        ODD is off his plate.</p>
+</div>
+<div><head>
+                    TEI Simple</head>
+<p>JC reports that the PIs of the TEI Simple project (Martin Mueller, Sebastian
+                        Rahtz, Brian Pytlig Zillig) desire TEI Simple to be added as soon as
+                        possible. It has a dependency on the processing model documentation, which
+                        has a dependency on Pure ODD.</p>
+</div>
+<div><head>
+                    Next Release?</head>
+<p>Much discussion of the integration and proposed release order leads to
+                        consensus that we should first integrate Pure ODD, and make sure everything
+                        works; then the Processing Model from Simple; and then Simple. We may
+                        release after Pure ODD is integrated, or try to get the other two components
+                        in before the next release. JC argues for getting Pure ODD right, and then
+                        while testing that (i.e. ensuring it all works well on every platform)
+                        adding in the processing model documentation elements. Adding in TEI Simple
+                        as a separate release of a new exemplar using those once they are in place. </p>
+</div>
+<div><head>&gt;
+                    Spring Face to Face?
+                    </head><list style="ul">
+<item>HC asks if we agree the Fall one should be in Vienna with the
+                            Conference. SM: that’s what I am going to suggest. I have already
+                            contacted the organisers concerning this and opportunities. I am not
+                            sure about the exact dates of the conference, yet.</item>
+<item>SB suggests Fall should be in Vienna, but that we explicitly reject
+                            the idea the Council <hi style="bold">always</hi> meets in conjunction
+                            with MM. </item>
+<item>Agreement to Vienna seems general. SM will continue inquiries and
+                            report back on the status.</item>
+<item>EM volunteers to host the Spring FtF at Brown if no-one else wants to
+                            host it. </item>
+<item>PFS suggests that he is willing and should be able to host in Michigan
+                            even though he’s not on Council from next year.</item>
+<item>JC reminds Council that it doesn’t have to be one of our institutions
+                            and if there is another institution which would benefit from the influx
+                            of people for a ‘TEI Day’ or similar that should be an option.</item>
+<item>Re timing: should be done with a Doodle Poll. HC will set one
+                            up.</item>
+</list>
+</div>
+<div><head>&gt;
+                    Jenkins Boxes
+                    </head><list style="ul">
+<item>At the FtF we decided to align all Jinks configurations and create
+                            some subdomains on tei-c.org for them. The Apache virtual host configs
+                            have now been set up, so IR has been asked to point these:<list style="ul">
+<item>jenkins.tei-c.org -&gt; Victoria Jenkins</item>
+<item>jenkins2.tei-c.org -&gt; Paderborn Jenkins</item>
+<item>Along with location-specific subdomains for explicit
+                                    comparison (jenkins-victoria.tei-c.org,
+                                    jenkins-oxford.tei-c.org, jenkins-paderborn.tei-c.org). </item>
+<item>We could add other stable jenkinses as desired.</item>
+</list>
+</item>
+<item>JC suggests waiting for integration of pure ODD; then using the
+                            jenkins.tei-c.org address will future-proof it since we can always
+                            change that DNS to point to a working location. (Unless of course paths
+                            on Jenkins jobs change or something.)</item>
+<item>Once these are working, a change needs to be made to the spec and
+                            chapter files which currently point to a (wrong) Oxford URI for their
+                            schema. Ticket #1408 <ref target="https://github.com/TEIC/TEI/issues/1408"><hi style="underline color(1155CC)">https://github.com/TEIC/TEI/issues/1408</hi></ref> created,
+                            assigned to SB</item>
+<item>16.04 script —if it works–write documentation for it. MH could work
+                            on it and pass it on to EB to see if she can get it to work
+                            (experimental Jenkins setup in Pittsburgh)</item>
+</list>
+</div>
+<div><head>&gt;
+                    Candidates for Chair for 2016?
+                    </head><list style="ul">
+<item>Elections for chair coming up; members encourage HC to stand again,
+                            but new members are also encouraged to stand. The election happens in
+                            January. HC reports that it’s a reasonable but not a crushing amount of
+                            work.</item>
+<item>JC reminds new council members that there is no requirement for lots
+                            of familiarity with technical TEI aspects, and that the council chair is
+                            more of the administrator of Council business. See also the Council FAQ
+                                <ref target="https://wiki.tei-c.org/index.php/TEI-Council-FAQ"><hi style="underline color(1155CC)">http://wiki.tei-c.org/index.php/TEI-Council-FAQ</hi></ref>
+                            which has a section on duties of the chair. So new members should not
+                            feel reluctant to stand, it can be better if we have a friendly election
+                            rather than an acclamation.</item>
+</list>
+</div>
+<div><head>&gt;
+                    Farewell to departing members (HC)
+                    </head><list style="ul">
+<item>Council thanks MH, PFS, FC, SG for their service.</item>
+<item>FC :I want to express my thanks to all Council members. It has been
+                            great to be part of this lively community. I wish all the best to all of
+                            you especially to new members. I hope I will have the chance to join
+                            Council again in the future. </item>
+<item>MH reiterated his desire to continue working on TEI things as a member
+                            of the community.</item>
+<item>Welcome to new members (MT, EB, EM, MS)<list style="ul">
+<item>Mentors and Mentees:<list style="ul">
+<item>SB mentors EB</item>
+<item>JC mentors MS</item>
+<item>LB mentors MT</item>
+<item>HC is everybody’s git mentor</item>
+</list>
+</item>
+</list>
+</item>
+</list>
+<p>Issues with getting minutes up on website / TEI website issues generally.
+                        [Kevin Hawkins reports via separate communication that the CMS is now so out
+                        of date that he only manages to do it with an old machine with an
+                        out-of-date OS and software he keeps for that purpose.]</p>
+</div>
+</div>
+	</div></body><!-- #post-## --></text></TEI>

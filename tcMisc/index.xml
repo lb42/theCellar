@@ -1,0 +1,110 @@
+<?xml version="1.0"?>
+<!DOCTYPE TEI.2 PUBLIC "-//TEI//DTD TEI Lite XML ver. 1//EN" "../Lite/DTD/teixlite.dtd" [
+  <!ATTLIST xref url CDATA #IMPLIED>
+  <!ATTLIST xptr url CDATA #IMPLIED>
+  ]>
+<TEI.2>
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>TEI council Pages</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>TEI Web</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>No source</p>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc>
+      <list>
+         <item><date>14 Jul 04</date> <name>Lou Burnard</name></item>
+        <item><date value="2004-05-09">09 May 2004</date> <name>Syd
+            Bauman</name>: Removed duplicate entry for one conference
+            call and put another back in order.</item>
+        <item><date value="2004-03-01">03 Mar 2004</date> <name>Syd
+            Bauman</name>: Deleted <gi>editionStmt</gi>; added DOCTYPE
+          declaration, made valid (corrected case of <gi>divgen</gi>);
+            added entry for 2004-01 conference call.</item>
+         <item><date>21 Sep 2003</date> <name>Lou Burnard</name></item>
+         <item><date>15 Jul 2003</date> <name>Lou Burnard</name></item>
+         <item><date>12 May 2003</date> <name>Lou Burnard</name></item>
+         <item><date>30 Mar 2003</date> <name>Lou Burnard</name></item>
+         <item><date>11 Dec 2002</date> <name>Lou Burnard</name></item>
+         <item><date>27 Nov 2002</date> <name>Lou Burnard</name></item>
+         <item><date>23 Nov 2002</date> <name>Lou Burnard</name></item>
+      </list>
+    </revisionDesc>
+  </teiHeader>
+<text>
+<body>
+
+
+<p>This section of the web site is restricted. It contains  information
+    relating to the TEI Technical  Council, and their procedures. </p>
+<divGen type="toc"/>
+<div type="subheading">
+<head>Meetings of the Council</head>
+<list>
+<item>The council held a telephone conference call on  2004;
+      see <xref url="tcm13.html">notes from the meeting</xref>.  </item>
+<item>The council held a telephone conference call on 2 July 2004;
+      see <xref url="tcm12.html">notes from the meeting</xref>.  </item>
+<item>The council met in Gent, 13-15 May 2004; see <xref url="tcm11.html">minutes of the
+      meeting</xref>.</item>
+<item>The council held a telephone conference call on 29 Mar 2004;
+      see <xref url="tcm10.html">notes from the meeting</xref>.  </item>
+<item>The council held a telephone conference call on 27 Jan 2004;
+      see <xref url="tcm09.html">notes from the meeting</xref>.  </item>
+<item>The council held a telephone conference call on 23 Sep 2003;
+      see <xref url="tcm08.html">notes from the meeting</xref>.  </item>
+<item>The council met in Oxford, 15-17 May 2003; see <xref url="tcm07.html">minutes of the
+      meeting</xref></item>
+<item>The council held a telephone conference call on 18 March 2003;
+      see <xref url="tcm05.html">notes from the meeting</xref>.  </item>
+<item>The council held a telephone conference call on 21 January 2003;
+      see <xref url="tcm04.html">notes from the meeting</xref>.  </item>
+<item>The council held a telephone conference call on 26 November 2002;
+      see <xref url="tcm03.html">notes from the meeting</xref>.  </item>
+<item>The council held a telephone conference call on 24 June 2002;
+      see <xref url="tcm02.html">notes from the meeting</xref>.  </item>
+<item>The first meeting of the TEI
+      Council was held January 12th 2002, at Kings College
+      London: see <xref url="tcm01.html">minutes of the
+      meeting</xref>.
+   </item>
+</list>
+</div>
+
+<div type="faqitem">
+<head>Conference call information</head>
+<p>TEI Council Conference calls are managed by Perry Willett, who has
+     put together some <xref url="confcall.html">useful
+      information</xref> on the subject.
+    </p>
+   </div>
+
+<div type="faqitem">
+<head>Constitution and Membership of the Council</head>
+<p>The Constitution of the Council is defined in <xref
+      url="../Consortium/TEIby-A6.html">Article VI.2 of the Consortium
+      Bylaws</xref>.</p>
+<p>Its current membership is listed, along with that of the TEI Board,
+     in the <xref url="../Consortium/TEI-TEI-C.html#TEI-council">TEI
+Membership Prospectus</xref>
+</p>
+</div>
+</body></text>
+</TEI.2>
+
+
+
+
+
+
+
+
+
+
+
+

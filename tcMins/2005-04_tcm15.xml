@@ -1,0 +1,748 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/home/lou/Public/TEI/TEICSS/tei.css" type="text/css"
+ ?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:t="http://www.tei-c.org/ns/1.0" n="2005-04"><teiHeader><fileDesc><titleStmt><title>Minutes of the TEI Technical Council</title><meeting n="2005-04" from="2005-04-28" to="2005-04-29">TEI Technical
+     Council ftf meeting : <placeName>Paris</placeName>, <date>28–29 April 2005</date></meeting><author>Syd Bauman</author></titleStmt><publicationStmt><distributor>TEI Website</distributor><idno>TCM017</idno></publicationStmt><sourceDesc><p>Re-tagged from a TEI Legacy format document which contained the following source note:</p><p>This electronic (TEI Lite P4 XML) file was created from
+        notes taken by the author during the meeting.</p></sourceDesc></fileDesc><revisionDesc><change when="2023-05-01">Archival header confected</change><change>Converted from the TEI archival document tcm17</change><change>5 May 05 LB: assorted updates and fixes</change><change>4 May 05 SB: first draft</change></revisionDesc></teiHeader><text>
+    <front>
+      <div xml:id="tcm17div_num_01">
+        <p>Times are local time (CEST, +02:00) unless otherwise noted.</p>
+<!--        <list type="simple">
+          <head>Initials Used for People</head>
+          <item> <term>SB</term> <gloss>Syd Bauman</gloss>       </item>
+          <item> <term>AB</term> <gloss>Alejandro Bia</gloss>       </item>
+          <item> <term>DB</term> <gloss>David Birnbaum</gloss>       </item>
+          <item> <term>LB</term> <gloss>Lou Burnard</gloss>      </item>
+          <item> <term>TC</term> <gloss>Terry Catapano</gloss>   </item>
+          <item> <term>JC</term> <gloss>James Cummings</gloss>   </item>
+          <item> <term>MD</term> <gloss>Matthew Driscoll</gloss>       </item>
+          <item> <term>DD</term> <gloss>David Durand</gloss>  </item>
+          <item> <term>JF</term> <gloss>Julia Flanders</gloss>       </item>
+          <item> <term>AH</term> <gloss>Anne Mette Hansen</gloss>  </item>
+          <item> <term>KL</term> <gloss>Kiyong Lee</gloss>      </item>
+          <item> <term>DP</term> <gloss>Daniel Pitti</gloss>     </item>
+          <item> <term>SR</term> <gloss>Sebastian Rahtz</gloss>      </item>
+          <item> <term>LR</term> <gloss>Laurent Romary</gloss>    </item>
+          <item> <term>SS</term> <gloss>Susan Schreibman</gloss>       </item>
+          <item> <term>JS</term> <gloss>John Smith</gloss>       </item>
+          <item> <term>NS</term> <gloss>Natasha Smith</gloss>       </item>
+          <item> <term>EV</term> <gloss>Edward Vanhoutte</gloss>       </item>
+          <item> <term>JW</term> <gloss>John Walsh</gloss>       </item>
+          <item> <term>PW</term> <gloss>Perry Willett</gloss>       </item>
+          <item> <term>CW</term> <gloss>Christian Wittern</gloss>       </item>
+        </list> -->
+        <p>Members present were: <list type="simple">
+            <item>Syd Bauman</item>
+            <item>Alejandro Bia</item>
+            <item>Lou Burnard</item>
+            <item>James Cummings</item>
+            <item>Matthew Driscoll</item>
+            <item>Julia Flanders</item>
+            <item>Laurent Romary</item>
+            <item>Susan Schreibman</item>
+            <item>Natasha Smith</item>
+            <item>Edward Vanhoutte</item>
+            <item>John Walsh</item>
+            <item>Perry Willett</item>
+            <item>Christian Wittern</item>
+          </list> Which is to say that all Council members were
+          present (including the ex-officio editors), except for
+          Sebastian Rahtz, who had indicated before the meeting had
+          even been arranged he would not be available.</p>
+        <p>Meetings were held at <ref target="http://www.afnor.fr/portail.asp">AFNOR</ref> (room
+          34), from 14:15 to 18:00 on <date when="2005-04-28">Thu
+            28</date> and from 09:05 to 16:51 on <date when="2005-04-29">Fri 29</date>, with a lunch break from
+          12:30 to 13:45. Because her purse had been stolen in Paris,
+          Susan Schreibman was unable to attend on Friday; Laurent
+          Romary left at 12:28 on Friday.</p>
+      </div>
+    </front>
+    <body>
+      <div xml:id="tcm17div_num_02">
+        <p>Council extends its heartfelt gratitude to AFNOR for
+          hosting our meeting, and to Laurent Romary for organizing
+          it. An essentially flawless operation at a nice, clean,
+          well-run institution helped provide for a successful
+          meeting.</p>
+        <p>Council also extends its condolences to Susan Schreibman,
+          who had to suffer through the (all too common) frustration,
+          stress, and annoyance of having her passport, money, and
+          credit cards stolen when her purse was snatched in
+          Paris.</p>
+        <p>With consultation of the group, Chair inserted two new
+          agenda items and swapped the order of two others. The added
+          items were a discussion of <gi>equiv</gi>, which never
+          occurred, and of edw89. Two items were swapped such that
+          chapter reviews were discussed prior to new work items, in
+          order to accommodate Laurent Romary's departure.</p>
+      </div>
+      <div xml:id="tcm17div_num_03">
+        <head>Review of Actions</head>
+        <p>The following action items from the <ref target="./tcm16.xml">previous conference call</ref> were
+          reviewed.</p>
+        <list type="gloss">
+          <label>wiki &amp; call for stylesheets</label>
+          <item>Julia Flanders reports TEI now has a wiki, set up by
+            Sebastian Rahtz, Matthew Zimmerman, James Cummings, Daniel
+            Pitti, and others at Oxford. Anyone with valid e-mail
+            address can register and edit the wiki. All that is on the
+            wiki now is the call for stylesheets. <note place="foot">By meetings end an area for submission of
+              P5 customizations had been created by James Cummings
+              &amp; Syd Bauman; no customizations were deposited,
+              though.</note> James Cummings and Daniel Pitti will be
+            submitting model stylesheets. There have been two
+            responses to the Call for Stylesheets so far, neither one
+            of which was actually a stylesheet, but one indicated
+            excitement about the plan.</item>
+          <label>P5 Editing Environment HOWTO Document</label>
+          <item>Lou Burnard reports P5 HOWTO has been circulated, and
+            that he is seeking feedback on it. John Walsh &amp;
+            Christian Wittern have both read the document &amp; tried
+            the procedure outlined, but each of them had difficulties
+            which have been reported to Lou Burnard.</item>
+          <label>README for P5 source files</label>
+          <item>James Cummings reports that the README is only for the
+            <name>p5</name> module. Christian Wittern suggests, and it
+            was generally agreed, that the README should provide
+            sufficient instruction to facilitate a local installation,
+            which would require the <name>stylesheets</name> module,
+            too. Council discussed whether or not the stylesheet
+            information should be in the same README or a separate
+            one, but decided it was not fruitful to make a decision at
+            this time, as Sebastian is changing how the two modules
+            interact. <note type="action"> <label>JC</label> Create a
+              HOWTO for the stylesheet module however he prefers (as
+              part of current HOWTO or separately) , will be combined
+              or separated later.<date>2005-07-01</date></note></item>
+          <label>Physical Bibliography Report</label>
+          <item>Julia Flanders reports that she had indeed circulated
+            reports.</item>
+          <label>Report on <gi>biblItem</gi> Proposal</label>
+     <item>Perry Willett's report is on today's agenda</item>
+          <label>Draft Report for Posting on Website</label>
+          <item>John Walsh reports that the draft report on MARC/TEI
+          crosswalk had been.</item>
+          <label>Review Procedure for MS</label>
+          <item>Matthew Driscoll reports that a set of reviewers for
+          the MS chapter had
+          been contacted; all  have responded
+            affirmatively, except for one (a contact at the Ecole des
+          Chartes who would be followed up by Laurent Romary). Consuelo Dutschke has
+            als sent in detailed comments. Council agreed that Matthew
+            Driscoll should review the critiques that he receives, and post as soon as possible a list of items that
+            need to be addressed and perhaps a proposal for further
+            work for Council's consideration.<note type="action">
+              <label>MD</label>
+              post summary of comments received on MS, with
+                proposed responses
+            </note>
+            <note type="action">
+              <label>MD</label>
+              finish revisions to manuscript description chapter
+                (MS) 
+              <date>2005-10-21</date>
+            </note>.</item>
+          <label>Chapter Review Assignments</label>
+          <item>Christian Wittern reports that the assignments of
+            chapters to members of Council for review has been
+            accomplished.</item>
+        </list>
+        <p>The editors both point out that it is very important that
+          all council members become familiar with creating P5
+          customizations with the ODD language (either using Roma web
+          interface, or otherwise).</p>
+        <p>Council discussed some  details of the
+          documentation needed to make effective use of P5. It was suggested
+          that three different documents are needed: <list type="simple">
+            <item>a reference document on the ODD tagset ߞ
+              already done, the <ref target="../P5/Guidelines/TD.html">Documentation
+                Elements</ref> (aka TD) chapter</item>
+            <item>a tutorial guide on using ODD — already begun:
+              <ref target="../Drafts/edw88.xml">edw88</ref></item>
+            <item>a reference document discussing the principles to
+          follow when
+              modifying TEI — the <ref target="../P5/Guidelines/MD.html">Modifying and
+                Customizing the TEI DTD</ref> (aka MD) chapter, which
+              needs <soCalled>major surgery</soCalled></item>
+          </list>
+        </p>
+        <p>Currently instructions for installing and running the
+        standalone Roma utility only
+        apply to a generic (Debian-like) system. It was suggested that
+        this was easily confused with the web-hosted Roma application,
+        and maybe the two should have different names. It was agreed
+        that modifying the standalone shell script to run in other
+        environments would be very useful. <note type="action">
+            <label>AB</label>
+             attempt to get standalone Roma working locally under
+              Windows<date>2005-07-01</date></note></p>
+        <p>It was suggested and agreed that
+        instructions for using P5 should include some guidance for how
+        to use it in particular environments, for example basic high-level
+        instructions, such as  which folder should contain the P5
+        grammar fragments (DTD or schema); how to tell the application which grammar
+        you want to use for a given document; how to add new grammars etc.
+          <note type="action">
+            <label>AB</label>
+            Instructions for using a P5 grammar in XMLSpy &amp;
+              XMetal <date>2005-07-01</date></note>
+          <note type="action">
+            <label>JW</label>
+            Instructions for using a P5 grammar in oXygen
+            <date>2005-07-01</date></note> </p>
+        <p>In response to a question from John Walsh, Council
+            discussed whether  users should be advised to specify TEI
+            grammars by defining an ODD or by manipulating grammar
+            fragments in a particular schema language such as RelaxNG
+            or DTD. Both are permitted, but for modifications in
+            particular the consensus was that the ODD route was
+            preferable, assuming the availability of  reliable tools.
+<!--          <soCalled>permitted</soCalled> to create P5 RelaxNG grammars
+          directly was briefly discussed. No formal vote was taken,
+            but the majority of participants in the discussion thought
+            not. --><!-- LR, LB, CW thought not; SB dissents, claiming
+            the users may have trouble creating schemas from ODDs, as
+            (AB or JW reported) and
+            that shouldn't stop them from using TEI. --></p>
+        <p>The subject of extending the manuscript description
+          capability to stone rubbings was raised. Council was
+          reminded that we had explicitly decided to handle
+          manuscripts first, before all other <soCalled>Text Bearing
+            Objects</soCalled><!-- (<abbr expan="text bearing objects">TBO</abbr>s).--></p>
+      </div>
+      <div xml:id="tcm17div_num_04">
+        <head>Principles of Attribute Usage in P5</head>
+        <p>Council discussed <ref target="../Drafts/edw86.xml">ED W
+            86</ref> in detail. The first item discussed was the
+          general proposal for handling of textual attributes on
+          elements that have content.</p>
+        <div xml:id="tcm17div_num_05">
+          <head>Real text and where to put it</head>
+          <p>A recommendation for an internal wrapper element around the
+            elements that represent what used to be
+            attributes was considered.<note resp="SB" place="foot">E.g., something
+        like <eg>
+&lt;supplied-prime&gt;
+  &lt;attrs&gt;
+    &lt;agent&gt;ablah&lt;/agent&gt;
+    &lt;reason&gt;rblah&lt;/reason&gt;
+  &lt;/attrs&gt;
+  &lt;supplied&gt;whatever&lt;/supplied&gt;
+&lt;/supplied-prime&gt;</eg></note> Use of a generic wrapper element,
+            rather than different wrappers for each content-bearing
+            element which currently has textual attributes (i.e., the
+            equivalent of ISO TC37/SC4's 
+            <gi>brack</gi> element, was also considered.<note resp="SB" place="foot">E.g., something like <eg>
+&lt;prime&gt;
+  &lt;agent&gt;ablah&lt;/agent&gt;
+  &lt;reason&gt;rblah&lt;/reason&gt;
+  &lt;supplied&gt;whatever&lt;/supplied&gt;
+&lt;/prime&gt;</eg></note> The editors objected to both of these
+            proposals because it would be impossible to 
+            constrain which <soCalled>attributes</soCalled> go with which elements.</p>
+          <p>It was also suggested that the wrapper element retain the
+            same name as in P4 name, and have a generic
+            <gi>content</gi> child element. <note resp="SB" place="foot">E.g., something like <eg>
+&lt;supplied&gt;
+  &lt;agent&gt;ablah&lt;/agent&gt;
+  &lt;reason&gt;rblah&lt;/reason&gt;
+  &lt;content&gt;whatever&lt;/content&gt;
+&lt;/supplied&gt;</eg></note>. This could only work if all elements
+          had the same content: it was agreed that  investigation
+          of real cases was needed to decide the issue<note type="action">
+            <label>MD</label>
+            to create some  
+            examples demonstrating the different approaches</note>. This proposal was thought to be
+            sufficiently promising as to merit further investigation. It
+            may also be useful for other similar problems, particularly
+            with the naming set of elements.</p>
+        </div>
+        <div xml:id="tcm17div_num_06">
+          <head>generic datatypes and further constraints</head>
+          <p>Council discussed some of the issues surrounding the
+            simplified datatype system suggested in ED W 86.</p>
+          <p>Concern was expressed <!-- by SB --> that relying solely
+          on the use of the
+            <gi>valList</gi> element limited our ability to constrain
+          attribute values (you cannot define a valList to say that an
+          attribute must be a positive integer less than 42, for
+          example). It was not clear how many such cases there were:
+          if they are few in number, a small set of patterns might
+          suffice for that need.</p>
+<p>Overall, Council endorsed  the general approach in favour of having
+          fewer, more general, 
+            datatypes as presented in ED W 86. <note type="action">
+              <label>SB</label>
+              review all  current attributes, attempt to
+                classify each as a particular datatype, looking for
+                attributes that need a new datatype, are eligible for
+                requiring a &lt;valList&gt;, or need extra
+                constraint; also consider use of tei.tokens vs.
+                rng:text, particularly with respect to
+                rend attribute
+              <date>2005-06-01</date></note>.</p>
+          <p>A suggestion was made that a datatype
+            <ident type="datatype">tei.enumerated</ident> be created which would be
+            similar to <ident type="datatype">tei.token</ident>, except that it would
+            require a <gi>valList</gi> (i.e., a documented closed list
+            of possible values), whereas <ident type="datatype">tei.token</ident>
+            permits, but does not require, a <gi>valList</gi>. It was
+            suggested that when Syd goes through the list, he would
+            report if any seem eligible for requiring
+            <gi>valList</gi>; also if any need extra constraints (like
+            pattern or positive integer).</p>
+<!--          <p>Julia Flanders requested a feature that permits user to
+            easily change <name>tei.token</name> to
+            <name>tei.enumerated</name>, thus to force themselves to
+            add a <gi>valList</gi>.</p> --><!-- we already have this
+          feature: it's an ODD -->
+          <p>It was agreed that <ident type="datatype">tei.enumerated</ident> might be
+            useful even though a schema designer
+            could just change it to <ident type="datatype">tei.token</ident>.</p>
+          <p>Council briefly discussed whether or not every
+            element that bears a <att>type</att>
+            attribute should automatically get a <att>subtype</att> as well: it was noted that
+          deciding this issue was a matter of how the typed class
+          should be defined.</p>
+        </div>
+        <div xml:id="tcm17div_num_07">
+          <head>Miscellaneous</head>
+          <p>It was noted that some of the elements in ED W 79 are
+            already handled, and thus are not listed in the table at
+            the end of ED W 86 (e.g. the <att>sic</att> attribute of
+            <gi>corr</gi>).</p>
+        <p>Council briefly discussed, but did not endorse, a
+            suggestion for a capture schema, and a stylesheet for
+            transforming to vanilla TEI.</p>
+        <p>It was suggested <!-- by LB --> that we look at
+          the three methods so far proposed
+          (and perhaps 
+            others) for handling <att>reg</att> on
+            the various naming elements.<note resp="SB" place="foot">Those three solutions are:<list type="gloss">
+                <label>wrapping</label>
+                <item><eg>
+&lt;choice&gt;
+  &lt;name&gt;Bill Clinton&lt;/name&gt;
+  &lt;reg&gt;Clinton, William J.&lt;/reg&gt;
+&lt;/choice&gt;</eg> Recommended by ED W 79</item>
+                <label>pointing</label>
+                <item><eg>
+&lt;reg xml:id="rn17"&gt;Clinton, William J.&lt;/reg&gt;
+&lt;!-- above &lt;reg&gt; element may be somewhere in &lt;teiHeader&gt; or &lt;hyperDiv&gt;,
+          and may be part of a new prosopographic element, and may end
+          up being something other than &lt;reg&gt; ... all undetermined as
+          of yet --&gt;
+&lt;!-- ... --&gt;
+&lt;name reg="#rn17"&gt;Bill Clinton&lt;/name&gt;</eg> Suggested as a
+          possibility by ED W 79</item>
+                <label>using child element</label>
+                <item><eg>
+&lt;name&gt;
+  &lt;reg&gt;Clinton, William J.&lt;/reg&gt;
+  &lt;content&gt;Bill Clinton&lt;/content&gt;
+&lt;/name&gt;</eg></item>
+              </list>
+</note> <note type="action">
+              <label>JF &amp; PW</label>
+              look at the various methods for handling <att>reg</att> of the various naming
+                elements, and report back to Council
+              <date>2005-07-01</date></note>.</p>
+          <p>The <gi>index</gi> element has the three attributes for
+            specifying the index headings under which the current spot
+            should be indexed (<att>level1</att>,
+            <att>level2</att>, and <att>level3</att>). Lou Burnard reported on
+            recent discussion among Lou Burnard, Syd Bauman, Sebastian
+            Rahtz, James Cummings, Christian Wittern, and others on
+            what to do with these attributes; and presented a further
+            suggestion using <gi>seg</gi> children of <gi>label</gi>; more to follow. <note type="action">
+              <label>LB</label>
+              Report on progress of discussions of
+                &lt;index&gt; attributes
+            </note>
+          </p>
+          <p>Council discussed some of the implications of using
+            <ident type="datatype">tei.tokens</ident> rather than
+            <name>rng:text</name> for the datatype of the global
+            <att>rend</att> attribute. It was
+            agreed that this issue should be addressed in Syd's  report on
+            datatypes.</p>
+        </div>
+        <div xml:id="tcm17div_num_08">
+          <head>Some open issues</head>
+          <list type="gloss">
+	    <label><att>cert</att> vs. <att>certainty</att></label> <item>ED W
+	      86 asks whether these two perform the same function, and
+	      thus whether or not both are needed. Council recommended
+	      that <att>certainty</att> of
+	      <gi>date</gi> and <att>exact</att>
+	      of <gi>dateStruct</gi> become <att>precision</att>. Council noted that
+	      <att>cert</att> means different
+	      things in different places, and thus this issue needs
+	      urgent attention. <note type="action"> <label>JF &amp;
+		  EV</label> look at <att>cert</att> attribute on different
+		elements and think about how they might be
+		rationalized, and report results
+		<date>2005-07-01</date></note></item>
+ <!--           <label><name>tei.numeric</name></label><item> &amp;what;</item> -->
+          <label><att>key</att></label><item>
+	      Council suggests renaming <att>key</att> to <att>sortKey</att> when used for that
+	      purpose.</item>
+          <label>On <att>resp</att></label> <item>The
+            <att>ref</att> attribute is declared
+            IDREF when it occurs on some elements, but for others is
+            declared as a token. Council thinks all should be made
+            pointers.<note type="action">
+              <label>SB</label>
+              Change P5 so that all RESP attributes are declared
+                as pointers.
+              <date>2005-09-01</date>
+            </note>
+          </item>
+        <label>canonical references</label><item>Canonical references
+	      were briefly discussed with respect to
+          <att>loc</att> of <gi>app</gi>; it seems
+          we could simply remove <att>loc</att> in
+          favor of a <att>cref</att> (which would
+          likely be used in alternation with <att>from</att> &amp; <att>to</att>) but we need to look into
+          location-reference meted etc. <note type="action"><label>LB</label>
+            research whether or not LOC performs same function as
+              CREF
+            <date>2005-07-01</date></note></item>
+     </list>
+        <p>It was suggested that examples of usage of various new
+          encodings of the attributes will be useful.</p>
+        </div>
+      </div>
+      <div xml:id="tcm17div_num_09">
+        <head>Principles for rationalization of TEI classes</head>
+        <p>Council discussed <ref target="../Drafts/edw87.xml">ED W
+            87</ref>.</p>
+        <p>Classes are all declared globally, but are instantiated
+          (i.e., populated) by individual modules. Classes can be
+          hierarchical. Creation of a class system from the bottom up
+          (deciding that a group of elements have a common semantic
+          and thus belong together) and from the top down (finding
+          commonalities in syntax of content models) are both
+          necessary.</p>
+        <p>Council directly addressed the first three of nine rules
+          for revising the class system.<list type="ordered">
+            <item n="1">Council changed <q>possible</q> to
+              <q>reasonable</q>.</item>
+            <item n="2">Council agreed, but decided to entertain the
+              suggestion that <emph>every</emph> attribute (whether 2
+              exist or not) be in a class.</item>
+            <item n="3">On suggestion of the editors, Council reworded
+              this to <q>... should reference TEI datatypes (which
+                are themselves derived from W3C datatypes) directly
+                ... </q>.</item>
+          </list>
+          <note type="action">
+            <label>Chapter reviewers</label>
+            should consider the
+            existing
+            classes, and make suggestions as to what new ones are required,
+            if any<date>2005-07-01</date></note></p>
+        <p>Council to ask Matthew Zimmerman and Wendell Piez if either
+          would be interested in writing a visualization tool to make
+          class system more tractable.</p>
+        <p>Council decided that a meeting to straighten out the TEI
+          class system should be held; it is tentatively scheduled to
+          occur in Oxford on or about <date when="2005-09-26">Mon 26
+            Sep</date>. At least Lou Burnard, Syd Bauman, Sebastian
+          Rahtz, Laurent Romary, Christian Wittern to attend.</p>
+        <p>Next Council conference call was scheduled for <date when="2005-07-08T13:00:00Z">Fri 08 Jul 13:00 UTC</date>.</p>
+      </div>
+      <div xml:id="tcm17div_num_10">
+        <head><gi>equiv</gi></head>
+        <p>Discussion of  Sebastian Rahtz's suggestion
+          on <q>use of <gi>equiv</gi></q> made in e-mail to Lou
+          Burnard, Syd Bauman, &amp; Laurent Romary on <date when="2005-04-28T03:52:00Z">28 Apr</date> was deferred (but
+        LR has subsequently made some comments).</p>
+      </div>
+      <div xml:id="tcm17div_num_11">
+        <head>Associating a Schema with an Instance</head>
+        <p>Syd Bauman presented <ref target="../Drafts/edw89.xml">ED W
+            89</ref>, with an emphasis on the fact that this is
+          hopefully going to occur in cooperation with at least
+          DocBook, if not OASIS. Concerns were raised that this
+          was not a TEI core concern, since it was an issue common to
+        any XML application.
+          Council agreed Syd Bauman should continue this activity at
+          least until next conference call, when he should report
+          and Council will again decide.</p>
+      </div>
+      <div xml:id="tcm17div_num_12">
+        <head>Chapter Reviews</head>
+        <p>Chair expressed concern over the process for activities
+          that include work on a chapter.</p>
+        <p>During chapter review, potential corrigible errors should
+          be reported to the <ref target="mailto:tei-council@lists.village.Virginia.EDU">council 
+            list</ref>.</p>
+        <p>Reviews may ignore occurrences of <soCalled>global
+            changes</soCalled> that have not been effected yet,
+          including: <list type="simple">
+            <item>ID/IDREF</item>
+            <item>DOCTYPE declarations</item>
+            <item>references to <q>additional</q> or <q>base</q>
+              tagsets or the <soCalled>pizza model</soCalled></item>
+          </list> However, reviewers should note places where entity
+          references are suggested.</p>
+        <div xml:id="tcm17div_num_13">
+          <head>SA</head>
+          <p>Syd Bauman reports that the prose in the <ref target="../P5/Guidelines/SA.html">Linking, Segmentation,
+              and Alignment</ref> explaining XPointer and TEI
+            extensions thereof still needs a lot of improvement.
+            <note type="action"><label>SB
+                &amp; DD</label>
+              finish writing SA discussions of pointing &amp;
+                XPointer extensions; identify external reviewer/s for the chapter.
+              <date>2005-07-01</date></note> Also noted that
+            what used to be a chapter on canonical references (aka CR)
+            is now a section of this chapter; it is not clear whether
+            ot not this should be its permanent placement. Council
+            suggested approaching Michael Beddow as a reviewer for this
+            chapter.</p>
+        </div>
+        <div xml:id="tcm17div_num_14">
+          <head>Laurent Romary</head>
+          <p><label>TE</label> Laurent Romary reports that the specification of
+            chapter <ref target="../P5/Guidelines/TE.html">Terminological
+              Databases</ref> is done, but prose not written yet.</p>
+          <p><label>TS</label> Laurent Romary reports that a member of
+          his research group (Mathieu Quignard) had made some
+          proposals for extension of the chapter on <ref target="../P5/Guidelines/TS.html">Transcriptions of
+              Speech</ref>.</p>
+          <p><label>DI</label> Laurent Romary is still working on
+          revising the   chapter om <ref target="../P5/Guidelines/DI.html">Print
+              Dictionaries</ref>.</p>
+        </div>
+        <div xml:id="tcm17div_num_15">
+          <head>Edward Vanhoutte</head>
+          <p><label>PR</label> Edward Vanhoutte suggests that as the chapter <ref target="../P5/Guidelines/PR.html">Base Tag Set for
+              Prose</ref> had been dropped <!--(as was hinted at in <xref url="../Drafts/edw81.xml">P5 today: current state of
+              play</xref>), --> a sentence should be added to a paragraph
+            in <ref target="../P5/Guidelines/ST.html">Structure of the
+              TEI Document Type Definition</ref> describing how
+            the Guidelines can be used for prose. Furthermore, this
+            sentence should be indexed under <q>prose</q>.</p>
+        </div>
+        <div xml:id="tcm17div_num_16">
+          <head>John Walsh &amp; Natasha Smith on HD, SH, and CO</head>
+          <p><label>CO</label> The editors particularly request that
+            John Walsh &amp; Natasha Smith consider ways of
+          restructuring the material now thrown
+          together in the chapter <ref target="../P5/Guidelines/CO.html">Elements Available in All
+              TEI Documents</ref>, as this chapter
+            is getting unmanageably large.</p>
+        </div>
+        <div xml:id="tcm17div_num_17">
+          <head>James Cummings &amp; PW</head>
+          <p>James Cummings &amp; Perry Willett report that their
+            current impressions are that: <list type="simple">
+              <label>DR</label>
+              <item><ref target="../P5/Guidelines/DR.html">Base Tag Set
+                  for Drama</ref> probably will be unchanged</item>
+              <label>ND</label>
+              <item><ref target="../P5/Guidelines/ND.html">Names and
+                  Dates</ref> may need a lot of work; Council suggested
+                that the Ontologies SIG may be a useful source of
+                input</item></list> It was noted that much of the work
+            likely to be needed for ND ties in with task Julia
+            Flanders &amp; Perry Willett are charged with, above. Also
+            classes need attention in this area.</p>
+          <p>SG does not need to be reviewed at this time, but is
+          still in need of expansion.</p>
+        </div>
+        <div xml:id="tcm17div_num_18">
+          <head>Christian Wittern</head>
+          <p><label>DI</label> Christian Wittern has deferred his
+            review of the <ref target="../P5/Guidelines/DI.html">Print
+              Dictionaries</ref> chapter, pending Laurent Romary's
+            work on it.</p>
+          <p><label>DS &amp; AI</label> Christian Wittern reports he
+            has made notes on the <ref target="../P5/Guidelines/DS.html">Default Text
+              Structure</ref> and <ref target="../P5/Guidelines/AI.html">Simple Analytic
+              Mechanisms</ref> chapters, and will write them up and
+            post to the council list soon.</p>
+        </div>
+        <div xml:id="tcm17div_num_19">
+          <head>Julia Flanders</head>
+          <p><label>CE</label> Julia Flanders believes that the chapter <ref target="../P5/Guidelines/CE.html">Certainty and
+              Responsibility</ref> has some areas of
+            underspecification or ambiguity that need attention, and
+            that the chapter provides insufficient capability compared
+            to overhead needed. She plans to do further research into
+            whether the appropriate solution is to abandon the attempt
+            or put the effort into doing it right. Council discussed
+            the fact that this somewhat experimental chapter may in
+            fact be utterly unused. Research into whether or not
+            anyone is using it (or would like to use an improved
+            version) seems worthwhile.</p>
+          <p><label>VE</label> Julia Flanders's initial
+            recommendation for the chapter <ref target="../P5/Guidelines/VE.html">Base Tag Set for
+              Verse</ref> is that Council consider ditching numbered
+            <gi>lg</gi>s. Most, if not all, members thought this was a
+            good idea. The editors are interested in what else can or
+            should be done in this chapter — should rhymes be
+            encoded more explicitly; are there other useful constructs
+            that should be marked up; more examples are always good.
+          </p>
+        </div>
+        <div xml:id="tcm17div_num_20">
+          <head>Alejandro Bia</head>
+          <p><label>CH</label> Alejandro Bia reports that the new
+            <ref target="../P5/Guidelines/CH.html">Languages and
+              Character Sets</ref> chapter is excellent. The chapter
+            has lots of typos &amp; mistakes, and thus Alejandro Bia
+            has lots of corrections which he will send to <ref target="mailto:editors@tei-c.org">the editors</ref>. The
+            language that explains how to use ISO 3066 tags needs
+            improvement; in particular the fact that 2-letter codes
+            are preferred over 3-letter codes when available is not
+            mentioned.</p>
+        </div>
+      </div>
+      <div xml:id="tcm17div_num_21">
+        <head><gi>biblItem</gi></head>
+        <p>Perry Willett, Syd Bauman, and Lou Burnard reported that a
+        small 
+group of (2 or 3) individuals have formed <ref target="http://xml-biblio.sourceforge.net/">xml-biblio</ref>, 
+          a Sourceforge project expressly to investigate use of TEI
+          for bibliographies. It is not clear whether any members
+          of this group are bibliographers, cataloguers, or have any particular
+          librarian expertise. The group suggested that
+          <gi>biblStruct</gi> be altered to remove <gi>monogr</gi>,
+          <gi>analytic</gi>, and <gi>series</gi> and to permit
+        self-nesting structures rather than the traditionally flat
+        bibliographic structure <!--(a
+          suggestion that was made by Council, actually)--> They also propose a
+          few extra attributes with which to encode the relationship
+          between nested entries. They propose that the various
+          bibliographic child elements be permitted in any order, but
+          that no PCDATA be allowed. Syd Bauman pointed out that it
+          could no longer be called <gi>biblStruct</gi>, as it was no
+          longer rigidly structured, and so the new element was named
+          <gi>biblItem</gi>.</p>
+        <p>The group has developed an <ref target="http://xml-biblio.sourceforge.net/examples_ver.4.xml">examples 
+            file</ref><note place="foot">Latest version should be
+            available from <ref target="http://cvs.sourceforge.net/viewcvs.py/xml-biblio/xml-biblio/example_files/"/>.</note> 
+          from the <title>Chicago Manual of Style</title> examples.
+        While Syd Bauman has tried to improve it a little, this file still
+          proves to be somewhat unhelpfully inconsistent and poorly
+          encoded.</p>
+        <p>The main differences between <gi>bibl</gi> and
+        <gi>biblItem</gi> are the additions of attributes for
+        semantically informative nesting and the removal of PCDATA. It
+          was pointed out that, were some minor changes to be made to
+          <gi>bibl</gi>, <gi>biblItem</gi> would not be needed. It was
+        countered that the exclusion of PCDATA is an important constraint.</p>
+        <p>There was overall discontent with the idea of having 4
+          bibliographic citation elements. <note type="action"><label>SB</label>
+            get back to BIBL using &lt;bibl&gt;, with as little
+              change as possible<date>2005-07-08</date></note></p>
+        <div xml:id="tcm17div_num_22">
+          <head><gi>teiHeader</gi>'s relationship to other standards</head>
+          <p>John Walsh reports that he and Natasha Smith have created
+            a spreadsheet with one entry for each
+            header-element-in-context, and that this the list is being
+            sent to catalogers at IU and UNC so that they can fill in
+            the corresponding MARC &amp; DC fields for each record.
+            Perhaps MODS will be added later. Council suggested that
+            after the catalogers at IU and UNC have had a crack,
+            perhaps others should also be consulted —
+            particularly a European.</p>
+          <p>They are expecting to be able to move on to next phase
+          (i.e., after feedback from the cataloguers) as early as mid-June. <note type="action">
+              <label>JW &amp; NS</label>
+              write-up a quick report on
+              the progress of the header element mapping to other
+                standards project and post to council
+          list <date>2005-07-01</date></note></p>
+        </div>
+        <div xml:id="tcm17div_num_23">
+          <head>physBib</head>
+          <p>At Council's suggestion, Julia Flanders did contact Murray
+            McGillivray, asking him to take over as chair of the
+            physical bibliography workgroup; he has expressed interest
+            insofar as he asked to see the PB materials, but hasn't
+            gotten back to her yet.</p>
+          <p>It was noted that Anne Mette
+            Hansen has finished defending her dissertation, and thus
+            may now have more time to devote to this WG. Julia
+            Flanders is a little bit optimistic that a group may be
+            able to be formed.</p>
+          <p>Matthew Driscoll reports that Zdenek Uhlir and Jindrich
+            Marek in Prague are working on a <gi>page</gi> element
+            which contains the description of the page. Jindrich Marek
+            recently presented a paper at a Bulgarian conference on
+            this approach, which he believes is much better than that
+            of <gi>msDesc</gi>.</p>
+          <p>Dr Georg Vogeler has recently organized a workshop on the
+          encoding of medieval charters, dealing both with the physical and
+            informational content. He  presented a paper on
+            this <soCalled>Charter Encoding Initiative</soCalled>
+           at DRH 2004 (see <ref target="http://drh2004.ncl.ac.uk/abstract.php?abstract=215">the
+          abstract</ref>), but its current status is unknown.</p>
+          <p>Council was reminded that the PhysBib group has a clearly
+          defined set of goals: collation &amp; page descriptions. Lots of
+            other nifty things can &amp; perhaps should be done, but
+            not necessarily by this group.</p>
+        </div>
+        <div xml:id="tcm17div_num_24">
+          <head>Roma</head>
+          <p>The new version (installed a few days ago) is broken. The
+            current version is working but there is an incorrect
+            redirect in effect at the UVA server (now fixed). Lou Burnard updated
+            Council on Roma changes.</p>
+        </div>
+        <div xml:id="tcm17div_num_25">
+          <head>Stone Rubbings</head>
+          <p>Christian Wittern is interested in seeing TEI support
+            some epigraphical encoding. Julia Flanders recommends
+            speaking to Elli Mylonas, who knows both epiDoc and their
+            rival.<note type="action">
+              <label>CW</label>
+              Look at current epigraphical standards, contact
+                Elli Mylonas, report on findings to list
+              <date>2005-07-01</date></note> Epigraphical
+            encoding should be considered in light of what MS will be
+            doing with TBOs.</p>
+        </div>
+        <div xml:id="tcm17div_num_26">
+          <head>Changes between P4 and P5</head>
+          <p>People are asking about the differences between P4 and P5
+            on TEI-L. It was pointed out that several documents (P5
+            publicity page, P5 mission statement, edw81, etc.) need
+            updating.</p>
+          <p>It was suggested that some sort of high-level summary
+            would be appropriate for the present, and that a more
+            detailed comparison, perhaps with some commentary on the
+            advantages of P5 and suggestions on who should upgrade,
+            would not be possible or appropriate until P5 is
+            <soCalled>complete</soCalled>.</p>
+        </div>
+      </div>
+      <div xml:id="tcm17div_num_27">
+        <head>WG reports</head>
+        <p>ISO/FS is still awaiting ballot. The chapter will use the
+          <att>xml:id</att> attribute (as opposed
+          to <att>id</att>). There will be a
+          meeting in Warsaw in <date when="2005-08">August</date>.</p>
+      </div>
+      <div xml:id="tcm17div_num_28">
+        <head>Council Work Procedures</head>
+        <p>Discussion of audibility during conference calls —
+          speak slower and more clearly; headsets &amp; mute buttons
+          are our friends.</p>
+        <p>In order to try to make the calls themselves shorter, we
+          will try reviewing action items via e-mail the day before
+          the call.</p>
+        <p>Julia Flanders suggests that every report to be considered be
+          accompanied by a question or items for discussion.</p>
+        <p>Several council members would prefer not to need to pay for
+          conference calls. <note type="action"><label>AB</label>
+            investigate alternative conference call
+              systems
+            <date>2005-07-01</date></note></p>
+        <p>Council needs to be responsible for supervising the work
+          being done on the Guidelines.</p>
+      </div>
+    </body>
+  </text></TEI>

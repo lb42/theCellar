@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE TEI.2 PUBLIC "-//TEI//DTD TEI Lite P4 XML 2002-05//EN"
+                       "../Lite/DTD/teixlite.dtd" [
+<!ATTLIST xref url CDATA #IMPLIED>
+<!ATTLIST xptr url CDATA #IMPLIED>
+<!ENTITY what "[?...?]">
+]>
+<TEI.2>
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>TEI Council Conference Call <date value="2007-01-23">23
+            Jan 07</date></title>
+        <author>Syd Bauman</author>
+      </titleStmt>
+      <publicationStmt>
+        <idno type="TEI">TC M 28</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <p>This electronic file is the source.</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <front>
+      <div>
+        <p>Times are UTC unless otherwise noted.</p>
+        <p>Started ~12:06. Meeting participants were LB, CW, SB, SR,
+          AC, CT, DO, TM, LR, JW, DB, DP, and a mysterious tennis
+          player.</p>
+        <p>MD sends apologies; JC had sent his apologies earlier.</p>
+        <p>SB is taking notes.</p>
+      </div>
+    </front>
+    <body>
+      <div n="1">
+        <head>Minutes from last meeting</head><list type="gloss">
+          <label>SB: summarize issues surrounding dating attributes …</label>
+          <item>SB reports this action was finally completed last night
+            <note type="action">
+              <label>all</label>
+              read &amp; comment on <xref url="http://lists.village.virginia.edu/pipermail/tei-council/2007/002164.html">SB's
+                  post <title>date attributes: summary, problems, and
+                    some suggestions</title> <date value="2007-01-22T22:23"/></xref> 
+              <date>2006-02-06</date>
+            </note>
+          </item>
+          <label>LB: statement of 'limited phrase'
+            problem …</label>
+          <item>SB reminded Council that this had been determined to
+            be a false action immediately after the last call. LB
+            reminded Council that SB had proposed two possible paths forward
+            in <xref
+            url="http://lists.village.virginia.edu/pipermail/tei-council/2006/001986.html">post
+            <title>oops; I mis-led y'all on 'limited
+                phrase' task</title> of <date value="2006-11-26T21:11"/></xref> labeled
+            <q>A</q> and <q>B</q>; SR, CW, and CT all voted for
+            <q>B</q>, and no one objected. <note type="action">
+              <label>SB</label>
+              implement limited phrase
+              <date>2007-02-14</date>
+            </note>
+          </item>
+          <label>all: read &amp; comment on JW's <xref
+          url="http://ella.slis.indiana.edu/~jawalsh/tei/biblItem.html">revised document</xref></label>
+          <item>JW's document recommends that <gi>biblItem</gi> be
+            replaced with a different mechanism (<gi>relatedItem</gi>)
+            for encoding the relationship of one bibliographic item to
+            another. While no one objected in principle, both SB &amp;
+            LR requested more time to discuss the proposal to ensure
+            that the capabilities of the current <gi>biblItem</gi> are
+            retained.
+            <note type="action">
+              <label>LR &amp; LB</label>
+              discuss <gi>relatedItem</gi> on the Council list
+                &what;is this due date for discussion or implementation?&what;
+              <date>2007-02-13</date>
+            </note></item>
+          <label>DO: inform MD how much money is available to Council</label>
+          <item>DO reported his findings, explaining that the Board
+	    had voted to roll Council's unspent funds from last year
+	    over to this year; DO noted that this is not an automatic
+	    rollover &mdash; the Board votes each year what to do whit
+	    surplusses. Council agreed to spend its rollover on the
+	    second <soCalled>personagrphay</soCalled> meeting MD will
+	    be organizing.</item>
+          <label>DP &amp; CT: post revised text &amp; image encoding
+            document …</label>
+          <item>A draft was posted on <date value="2006-11-23T08:25"/>: <xref url="http://lists.village.virginia.edu/pipermail/tei-council/2006/001993.html"><title>facsimile 
+                markup</title></xref></item>
+          <label>DP &amp; CT: make ODD of it</label>
+          <item>CT reports he is almost done coding an ODD; he has run
+            into a hitch redefining classes, hopes to have it
+            straightened out soon, but may need the help of an ODD
+            expert. This ODD is based on the ideas put forth in the
+            <xref url="http://lists.village.virginia.edu/pipermail/tei-council/2006/001993.html"><title>facsimile 
+                markup</title></xref> post mentioned above. There was
+            general agreement that if new TEI elements are introduced
+            they should probably go into chapter
+            FT-TablesFormulaeGraphics.
+            <note type="action">
+              <label>CT (&amp; DP)</label>
+              finish specifications in ODD
+              <date>2007-01-27</date>
+            </note><note type="action">
+              <label>CT (&amp; DP)</label>
+              finish prose in ODD
+              <date>2007-01-31</date>
+            </note>
+            <note type="action">
+              <label>all</label>
+              read facsimile ODD, test schemata
+              <date>2007-02-08</date>
+            </note>
+          </item>
+          <label>MD: Rewrite the examples …</label>
+          <item>As MD not present, discussion of this item was
+            deferred, and the item is carried forward:<note type="action">
+              <label>MD</label>
+              Rewrite the examples MM provides in the PB
+                document using a more generic mechanism
+              <date>2007-03-04</date>
+            </note>
+          </item>
+          <label>LB: ponder and post discussion of multilingual example
+            problem …</label>
+          <item>LB posted a few days ago that he does not think this
+            will require changes to ODD, just a procedures
+            document.<note type="action">
+              <label>eds.</label>
+              put <gi>exemplum</gi> into att.typed
+              <date>[done]</date>
+            </note>
+            <note type="action">
+              <label>CW</label>
+              look for problems in current system; report
+                findings to Council
+              <date>2007-02-14</date>
+            </note>
+          </item>
+          <label>JC: summarize discussion of conformance and write a proposal</label>
+          <item>Discussion postponed as JC not present.</item>
+          <label>eds.: update [SF feature request] doc …</label>
+          <item>This was not discussed on the call; however, it was
+          subsequently pointed out that it will come up prominently in
+          the road-map being developed.</item>
+          <label>all: let list know if you expect to be available for a meeting in Berlin</label>
+          <item>everyone had done so.</item>
+          <label>SR: report on high speed conferences .com
+            system</label>
+          <item>This was not reported on directly, but since this
+	  meeting was using the system, we can draw the conclusion
+	  that SR has reported back on this as being worth a trial. </item>
+        </list>
+      </div>
+      <div n="2">
+        <div n="A">
+          <head>PB</head>
+          <p>Council reluctantly concluded that, realistically, it will
+            probably be necessary to defer inclusion of a detailed
+            discussion of physical bibliography to a future
+            sub-release of P5 (e.g., to P5 1.1).</p>
+        </div>
+        <div n="B">
+          <head>PERS</head>
+	  <p>It was reported that MD is organizing a two-headed
+	    meeting in Vilnius in late February, consisting of a 2-day
+	    discussion on place name issues and any other outstanding
+	    personography hosted by the Institute for Lithuanian
+	    Language of the Lithuanian Academy of Sciences, and a
+	    1-day TEI outreach event at and co-hosted by Vilnius
+	    University.</p>
+        </div>
+        <div n="C">
+          <head>I18N</head>
+          <p>As sufficient funds were available, SR has added Italian
+          to the list of languages being worked on. By the summer we
+          will need to think about how this stuff will be made
+          available in the P5 release, i.e.  what the user interface
+          and the look-and-feel will be in the online Guidelines. </p>
+        </div>
+      </div>
+      <div n="3">
+        <head>Road to P5</head>
+        <p>The discussion revolved around the possible use of
+        task-tracking software and the need for a <soCalled>prodding
+        czar</soCalled> to remind people of ongoing tasks to help keep
+        us on schedule. It was pointed out that project management or
+        task-tracking software is really just a tool in the prodding
+        czar's arsenal. LB suggested that the main problem is a lack of
+        resources, not lack of planning. Other said that more
+        structured planning can make better use of scarce
+        resources. CW suggested TCW08, EDW81 and a couple of other
+        lists should be placed on a Wiki. After a lengthy discussion,
+        it was decided to create a planning subcommittee, initially
+        consisting of DO, CW, and SR. Their first action is to create
+        a list of things which had to be achieved to reach P5 by a
+        notional date of October 1st, along with their necessary dates
+        of completion. When agreed, the same group would be tasked to
+	ensure the tasks were implemented. The list should use previous efforts &amp;
+        lists as a starting point.<note type="action"> <label>planning
+        sub</label> post draft <soCalled>road-map</soCalled> list to
+        Council <date>2007-02-02</date>
+          </note>
+          <note type="action">
+            <label>all</label>
+            read &amp; discuss <soCalled>road-map</soCalled> list
+            <date>2007-02-09</date>
+          </note>
+        </p>
+      </div>
+      <div n="4">
+        <head>Meetings</head>
+        <p>LR reports all systems are <q>go</q> for Berlin. He is gathering
+          a list of projects interested &what;in the pre-meeting event.</p>
+        <p>Next conference call scheduled for <date value="2007-03-19T12:00">2007-03-19 12:00</date> with the
+          same dialing instructions as for today's call.<note
+        resp="SB" place="foot">That will be: <list type="gloss">
+              <label>Vancouver</label>
+              <item>Mon 19 Mar at 05:00</item>
+              <label>Calgary</label>
+              <item>Mon 19 Mar at 06:00</item>
+              <label>Chicago</label>
+              <item>Mon 19 Mar at 07:00</item>
+              <label>Indianapolis</label>
+              <item>Mon 19 Mar at 08:00</item>
+              <label>Providence</label>
+              <item>Mon 19 Mar at 08:00</item>
+              <label>London</label>
+              <item>Mon 19 Mar at 12:00</item>
+              <label>Paris</label>
+              <item>Mon 19 Mar at 13:00</item>
+              <label>Taipei</label>
+              <item>Mon 19 Mar at 20:00</item>
+              <label>Kyoto</label>
+              <item>Mon 19 Mar at 21:00</item>
+              <label>Wellington</label>
+              <item>Tue 20 Mar at 00:00</item>
+            </list>
+          </note>
+        </p>
+      </div>
+    </body>
+    <back>
+      <div>
+        <p>LR attempted to add something, but was cut off.</p>
+        <p>Call ended at 13:27.</p>
+      </div>
+    </back>
+  </text>
+</TEI.2>

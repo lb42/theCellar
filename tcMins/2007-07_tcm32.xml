@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/home/lou/Public/TEI/TEICSS/tei.css" type="text/css"
+ ?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:t="http://www.tei-c.org/ns/1.0" n="2007-07"><teiHeader><fileDesc><titleStmt><title>Minutes of the TEI Technical Council</title><meeting n="2007-07" when="2007-07-17">TEI Technical Council online
+     meeting : <date>17 July 2007</date></meeting><author>James Cummings</author></titleStmt><publicationStmt><distributor>TEI Website</distributor><idno>TCM032</idno></publicationStmt><sourceDesc><p>Re-tagged from a TEI Legacy format document which contained the following source note:</p><p>Notes taken directly into TEI P4</p></sourceDesc></fileDesc><revisionDesc><change when="2023-05-01">Archival header confected</change><change>Converted from the TEI archival document tcm32</change><change when="2007-07-17">James:  creation</change></revisionDesc></teiHeader><text>
+        <front>
+            <div>
+                
+<p>The TEI Council teleconference meeting took place on Friday 17 July
+at 12:00 UTC.</p>
+<p>Participants: Syd Bauman (SB), David Birnbaum (DB), Lou Burnard
+(LB), Arianna Ciula (AC), James Cummings (Minutes;JC), Matthew
+Driscoll (MD), Dan O'Donnel (DO), Dot Porter (DP), Laurent
+Romary (LR), Conal Tuohy (CT), John Walsh (JW), and
+Christian Wittern (Chair;CW).</p>
+<p>Council members unable to participate: Tone Merete Bruvik (TMB),
+Sebastian Rahtz (SR)</p>
+            </div>
+        </front>
+        <body>
+            <div>
+<head>Open action items</head>
+<p>CW reviewed the action items from the previous minutes. <list type="gloss">
+        <label>LB Confirm trac #332 (witList/witDetail) is properly
+        resolved.</label>
+        <item>LB confirmed this had been completed.</item>
+        <label>LB Confirm trac #332 (witList/witDetail) is properly resolved.
+            2007-07-13 </label>
+        <item>LB confirmed this had been completed.</item>
+        <label>DO Circulate Board decision with regard to title page and exact
+            wording to Council. 2007-06-22 </label>
+        <item>DO confirmed this had been completed.</item>
+        <label>Eds Implement Board decision with regard to title page. 2007-07-13 </label>
+        <item>Eds now ready to do this. <note type="action">
+<label>Eds</label> Implement Board decision with regard to title
+page. <date>2007-07-20</date>
+            </note>
+        </item>
+        <label>CW Draft list of workgroups and their members for
+        editors. 2007-08-01 </label>
+        <item>CW  hadn't done this yet but it would be done for its due
+            date. <note type="action">
+<label>CW</label> Draft list of workgroups and their members for
+editors. <date>2007-08-01</date>
+            </note></item>
+        <label>LB Confirm the gap in transcribed speech example and
+        surrounding text has been clarified. 2007-07-13 </label>
+        <item>LB confirmed this had been completed.</item>
+        <label>SB Regularize glosses on *specs passim.2007-07-13 </label>
+        <item>SB confirmed this had been completed.</item>
+        <label>Eds Review current wording in light of Council's recommendation.
+            2007-07-13 </label>
+        <item>Both Eds confirmed this had been completed.</item>
+        <label>DB Propose a revision of egXML desc and send it to
+        LB. 2007-07-13 </label>
+        <item>DB confirmed this had been completed. LB confirmed it
+        had been included into the Guidelines</item>
+        <label>LB Ensure errors reported by JW in VE have been
+        corrected. 2007-07-13 </label>
+        <item>LB confirmed this had been completed.</item>
+        <label>LB Add discussion of PIs to CO.8.2.2. 2007-07-13 </label>
+        <item>LB confirmed this had been completed.</item>
+        <label>SB Change q to quote in MS.2007-07-13 </label>
+        <item>SB confirmed this had been done.</item>
+        <label>SB Finish 3066 to 4646 update.2007-07-27 </label>
+        <item>SB confirmed this had been done.</item>
+        <label>SB create second said proposal for q and said, post
+        both. 2007-07-13 </label>
+        <item>SB confirmed this had been done.</item>
+        <label>SB move postscript to a free standing ODD. 2007-07-13 </label>
+        <item>SB had not yet done this. <note type="action">
+        <label>SB</label> move postscript to a free standing ODD.
+        <date>2007-08-01</date> </note> Discussion ensued about
+        whether the content model of &lt;div&gt; needed revision. LB
+        believed any such work should at most be reconsidered for P5
+        1.0, SB felt will post a reminder concerning the current
+        &lt;div&gt; problems to council list. <note type="action">
+        <label>SB</label> Post reminder of the current &lt;div&gt;
+        problems to council list. <date>2007-07-20</date>
+            </note>
+        </item>
+        <label>SB remove wording of description of resp in prose PH.1.2 &amp;
+            PH.1.3. 2007-07-13 </label>
+        <item>SB confirmed this had been completed.</item>
+        <label>MD/DB Stemma modeling using graph elements. 2007-07-13 </label>
+        <item>Discussion of this was postponed for later in the agenda.</item>
+        <label>JW Rewrite rendition recommendations and evaluate
+        whether possible for P5 1.0. 2007-08-01 </label>
+        <item>JW confirmed that he is on target to meet the due date
+        for this action. <note type="action"> <label>JW</label>
+        Rewrite rendition recommendations and evaluate whether
+        possible for P5 1.0 <date>2007-08-01</date>
+            </note>
+        </item>
+        <label>LB Prepare the ground for changes to
+        rendition/@rend/@rendRef in P5 1.1 if JW's recommendations
+        cannot be included in P5 1.0. 2007-08-01 </label>
+        <item>LB confirmed that he is on target to meet the due date for this
+            action. <note type="action">
+<label>LB</label> Prepare the ground for changes to
+rendition/@rend/@rendRef in P5 1.1 if JW's recommendations are
+unable to be included in P5 1.0 <date>2007-08-01</date>
+            </note>
+        </item>
+        <label>ALL Review work on facsimile markup
+        http://tei.oucs.ox.ac.uk/trac/TEIP5/ticket/291, especially
+        Comenius example, report to Council list. 2007-06-29 </label>
+        <item>Some discussion of this took place and will be continued
+        on the council list, with a final draft being hammered out by
+        LB, CT, and DP.
+<note type="action">
+<label>LB, CT, DP (and ALL)</label> Discuss work on facsimile markup
+on council list.<date>2007-07-24</date>
+            </note>
+            <note type="action">
+<label>LB, CT, DP</label> Hammer out final P5 1.0 draft of facsimile
+markup. <date>2007-08-01</date>
+            </note>
+        </item>
+        <label>SB, DP, MD Discuss merging of Corpus chapter in DS, and
+        if necessary come up with concrete proposals for
+        implementation (or not). 2007-06-29 </label>
+        <item>SB had not yet done this. LB argued that this may not be
+        necessary at all. It was suggested that one possibility is a
+        change from &lt;teiCorpus&gt; to &lt;teiGroup&gt;. It was
+        decided that this should be discussed on the council list once
+        more. If a concrete proposal has not been received by
+        2007-07-20, then it will have to wait until P5 1.1. <note type="action"> <label>SB</label> Make concrete proposal with
+        regard to merging of Corpus chapter into DS or
+        teiCorpus/teiGroup.  <date>2007-07-20</date>
+            </note>
+        </item>
+        <label>LB Implement any recommendations concerning the merging
+        of Corpus into DS. 2007-07-13 </label>
+        <item>LB noted that no concrete recommendations had been
+        made. <note type="action"> <label>LB</label> Implement any
+        council-approved recommendations concerning the merging of
+        Corpus into DS.<date>2007-08-01</date>
+            </note>
+        </item>
+        <label>LB Revise ST to be more ODD focused and move any schema
+        specific material to chapter on ODD specification. 2007-07-13
+        </label>
+        <item>LB confirmed that this had been completed. He also
+        mentioned that lots of the schema-specific discussion had been
+        moved to the IM chapter.</item>
+        <label>TMB Provide concrete proposals to Council list on necessary
+            reorganisation/reworking of NH. 2007-07-01 </label>
+        <item>TMB was not present which hampered discussion. SB
+        discussed the moving of prev/next/part attributes from SA and
+        CO to NH. Most of council appeared to disagree with the moving
+        of these attributes. LB commented that the chapter as a
+        minimum needs a rewrite to highlight TEI ways of dealing with
+        overlap. Moving of attributes was shelved for P5 1.1. <note type="action"> <label>DB, TMB, SB, LB</label> Review prose of
+        NH and discuss on council list from 1 August, providing
+        rewritten chapter by mid August. <date>2007-08-15</date>
+            </note>
+        </item>
+        <label>LR Complete final revision of Dictionary chapter and
+        submit to Editors in two weeks. 2007-06-29 </label>
+        <item>LR summarised all the work done and LB confirmed that he
+        had also seen it. Discussion continued concerning the 3 views
+        section at the end of the chapter. It was unclear whether to
+        keep unchanged, revise, or discard this entirely for P5 1.1
+        <note type="action"> <label>LR</label> Provide any further
+        changes to Dictionary chapter in light of discussion and submit to
+        Eds.<date>2007-08-1</date>
+            </note>
+        </item>
+        <label>Eds to integrate final Dictionary revisions into Guidelines.
+            2007-07-13 </label>
+        <item>The Eds noted this was pending the above item. <note type="action"> <label>Eds</label> Editors to integrate final
+        Dictionary revisions into Guidelines.<date>2007-08-15</date>
+            </note>
+        </item>
+        <label>LB Post person/places draft, and announce its existence to TEI-L
+            directing community to comment on that mailing list asap.2007-06-18 </label>
+        <item>LB confirmed that he had indeed done this, but that
+        reaction from the community was somewhat
+        underwhelming. <note type="action"> <label>LB</label> To
+        continue to encourage community feedback until
+        <date>2007-07-27</date>
+            </note>
+        </item>
+        <label>LB Revise person/places draft with regard to TEI
+        Community comment, announce final draft version on mailing
+        list.2007-08-01 </label>
+        <item>
+            <note type="action">
+<label>LB</label> Revise person/places draft with regard to TEI
+Community comment, announce final draft version on mailing list.
+<date>2007-08-01</date>
+            </note>
+        </item>
+        <label>LB Merge FSD and Feature Structures into a single
+        module with other necessary revisions.2007-08-01 </label>
+        <item>LB reported that although not due yet, he had started
+        this. He warned that it might be difficult to keep the
+        recommendations of TEI and ISO in sync given the date of ISO
+        meetings. <note type="action"> <label>LB</label> Report back
+        to council on any changes to FSD/FS and if necessary
+        rationalise the TEI version.  <date>2007-08-15</date>
+            </note>
+        </item>
+        <label>LB Revise add/del/supplied issues (cf trac 301,
+        331)</label>
+        <item>LB confirmed this had not yet been done. <note type="action"> <label>LB</label> Revise add/del/supplied
+        issues (e.g.trac 301, 331) <date>2007-08-01</date></note>
+        </item>
+    </list>
+</p>
+            </div>
+            <div>
+<head>Reports</head>
+
+<p><hi>Layout of the Guidelines (JC/DP)</hi> JC reported briefly
+on the status of the work on the layout of the Guidelines. He and DP
+had solicited contributions of formatting suggestions and created a
+wiki page listing some initial suggestions. SR had solved a number of
+the problems which were bugs or highly structural such as the toggling
+of RNG/RNC schemas. JC had posted a message to the council list
+summarising the work and timetable. <note type="action"> <label>JC,
+DP</label> Report back to council on progress of formatting of the
+Guidelines so far and any outstanding issues <date>2007-08-03</date>
+    </note>
+    <note type="action">
+        <label>JC, DP</label> All issues should be resolved and/or reported to
+        Sebastian and/or Council <date>2007-09-07</date>
+    </note>
+</p>
+<p><hi>discussion of appInfo</hi> As SR was not present, JC
+reported that the &lt;appInfo&gt; proposal seemed to answer all the
+concerns expressed in the discussion on TEI-L. Although it is more
+fixed than the original discussions agreed from Berlin, Council agreed
+to support it.</p>
+<p><hi>Content model of &lt;rdg&gt;</hi> DO argued that things
+larger than phrases are used for textual variants. LB believes that
+there are already available solutions for situations where variants
+are not easily nestable or not phrase-level. DO suggests that
+&lt;app&gt; should be a member of listLike. LB does not
+disagree. <note type="action"> <label>DO</label> Report back to
+Council with proposal for any changes to app/rdg
+<date>2007-07-20</date>
+    </note>
+</p>
+<p><hi>said proposal</hi> SB summarised the proposal, and most
+of Council agreed. SB was worried about the name of the proposed aloud
+attribute. Other suggestions were made, notably "explicit".  SB to
+finalised it and add it to the Guidelines, consulting council by
+mailing list. <note type="action"> <label>SB</label> SB to finalise
+new <gi>said</gi> element and add to guidelines.
+<date>2007-08-01</date>
+    </note>
+</p>
+<p><hi>Stemma Model</hi> DB reported on the proposal for ways of
+modelling textual stemmata, both within the existing TEI framework,
+and possible better ways to do it. Council should review this material
+and make any comments on the list by Friday. <note type="action">
+<label>ALL</label> Provide comments on DB's proposals for modelling
+stemmata. <date>2007-07-20</date>
+    </note>
+</p>
+            </div>
+            <div>
+<head>Next Meeting</head>
+<p>The next teleconference was scheduled for Thursday 2 August 2007,
+12pm noon UTC.  This will be:<lb/> 06:00 MDT in Calgary,<lb/> 07:00
+CDT in Chicago,<lb/> 08:00 EDT in New York,<lb/> 13:00 BST in
+London,<lb/> 14:00 CEST in Paris,<lb/> 21:00 JST in Kyoto, and<lb/>
+Wed 18 July, 00:00 NZST in Wellington.<lb/> This is shortly after the
+major 2007-08-01 deadline for most technical revisions to be
+complete. Council members should ensure that they have posted reports
+concerning all action items pertaining to them by this date.</p>
+<p>Failing a better solution, we will revert to using Indiana's
+teleconferencing system, since much of today's meeting was inaudible
+to nmany participants, for the second time.</p>
+            </div>
+        </body>
+    </text></TEI>

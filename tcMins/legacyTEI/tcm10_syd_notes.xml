@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TEI.2 SYSTEM "../../../editor/meet-mins.dtd" [
+  <!ATTLIST xref url CDATA #IMPLIED>
+  <!ATTLIST xptr url CDATA #IMPLIED>
+  <!ENTITY what "[?...?]" >
+  ]>
+<TEI.2>
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>TCM10: TEI Council Conference Call <date value="2004-03-29">29 Mar 04</date></title>
+        <author>Syd Bauman</author>
+      </titleStmt>
+      <publicationStmt>
+        <p>For distribution first to Council, then to world via TEI
+          website.</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>This electronic file is the source.</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <front>
+      <div>
+        <p>Times are UTC unless otherwise noted.</p>
+        <p>Started 13:06 with NS, DD, JF, MD, PW, SS, EV, SB, LB, SR,
+          AB, CW; DB @ 13:34 after having been stuck in an elevator.</p>
+      </div>
+    </front>
+    <body>
+      <div>
+        <head>Previous Minutes</head>
+        <list>
+          <item>SR reports Roma development list has been established and
+            seen a little traffic.</item>
+          <item>DD reports has done nothing</item>
+          <item>CW believes Sanskritters will be able to deliver something
+            for P5. They have been convinced to be a bit more general.
+            Interesting note: they have independently invented
+            <gi>choice</gi>.<action>
+              <name>CW</name>
+              <resp>Liaison with Sanskritters and request that they
+                prepare at least a report, if not deliverables, for
+                Council meeting in May.</resp>
+              <dueDate>none assigned</dueDate>
+            </action>
+          </item>
+          <item>CW reports that he has reconsider item 8 from previous
+            meeting, and thinks we should not in fact set up a joint
+            committee. No one disagreed.</item>
+          <item>Only META asked for funding, or at least took it.</item></list>
+      </div>
+      <div>
+        <head>CE</head>
+        <p>CW reports little progress on Ch. 4, pending input from MB.
+          <action>
+            <name>SB</name>
+            <resp>Get MB's phone # from LB, and attempt phone
+              contact.</resp>
+            <dueDate>none assigned</dueDate>
+          </action> WG is almost done with what is called CEW06. All
+          seem to think this one is going very well. Credits
+          particularly to LB and M. Duerst. Group still needs a good
+          name for what is currently called WSD-NG.</p>
+      </div>
+      <div>
+        <head>SO</head> <p>DD has been the bottleneck. Agrees in
+          principle with suggestion from SB over the weekend. <note
+            resp="SB">Lou &mdash; were I writing these minutes I'd post my
+            mail to TEI-SOM, then provide a pointer to it for Council. Let
+            me know if you want me to go ahead with that idea.</note>
+          Would like to set up meetings with SB. SB agreed to idea. LB
+          suggests we need a fall back plan. FV was only suggestion.
+          Thus, SB &amp; DD to meet regularly and use work-plan SB sent
+          to LB &amp; DD over weekend. LB and JF to oversee, as it
+          were.<action>
+            <name>DD</name>
+            <resp>Post to TEI-SOM new plan of action</resp>
+            <dueDate>ASAP</dueDate>
+          </action>
+          <action>
+            <name>SB &amp; DD</name>
+            <resp>Write up draft of main XPointer recommendations</resp>
+            <dueDate>2004-04-06</dueDate>
+          </action>
+          <action>
+            <name>SB &amp; DD</name>
+            <resp>Write up draft of main portions of SO W 03</resp>
+            <dueDate>2004-05-06</dueDate>
+          </action>
+        </p>
+      </div>
+      <div>
+        <head>FS</head>
+        <p>Was doing very well; good meeting in Nancy; even better one
+          in Korea. Some dissension occurred when question of
+          re-entrancy or shared structures came up. Not solved.
+          Waiting for more input and discussion within group. ISO
+          intending a list of current implementations. Since we'll
+          have list, we can notify folks about P4 to P5 changes.</p>
+        <p>Group will meet informally at LREC in late May; formally in
+          late Aug. At least LB, probably SB, will need to be funded
+          to this latter meeting. No WG funding for former.</p>
+        <p>DD notes that why changes made and implications thereof not
+          clear in FSW01. LB responds that this document is intended
+          to be read in conjunction with the draft chapter.</p>
+      </div>
+      <div>
+        <head>MS</head>
+        <p>WG has mostly been waiting for LB to get Master DTD into
+          RelaxNG, which is just now done. DB raises issue of TF v WG.
+          Basic plan is for current group to work out Reykjavik
+          proposals by May Council meeting, then consider expansion
+          &amp; face-to-face. <action>
+            <name>MS WG</name>
+            <resp>Finish up work begun in Reykjavik</resp>
+            <dueDate>2004-05-06</dueDate>
+          </action></p>
+      </div>
+      <div>
+        <head>ME</head>
+        <p>ODD language itself revised again in Paris. TD will be
+          ready to discuss in May. Implementation except for
+          extensions essentially done. Extensions will take
+          longer.</p>
+        <p>Extensions will also cover needs of internationalization.
+          Web interface will need work and likely take longer, too.</p>
+        <p>SR hopes work of <sic corr="WG">TF</sic> can be declared done in May. &what; </p>
+        <p>Question of how Guidelines should recommend users actually
+          create extensions.</p>
+        <p>LB points out that this (TD) is probably the most important
+          thing for Council members to tackle and have a good
+          understanding of. SB agrees.</p>
+        <p>SB recommends either TD become more tutorial-like or a
+          separate tutorial be written. JF suggests perhaps WWP Guide,
+          which will cover this anyway, might serve a lay audience. SR suggests TM,
+          LB suggests AB, do so. AB says he will most likely not have
+          time to commit to this project.</p>
+        <p>SR plans to have a couple of simple extensions available
+          for Council in May.</p>
+      </div>
+      <div>
+        <head>PB</head>
+        <p>Main goal of group is to develop encoding for collation
+          formula. Discussion on how PB and MS may or may not
+          overlap. LB points out that work of PB could perhaps be
+          plugged into MS.</p>
+        <p><action>
+            <name>DB</name>
+            <resp>Send the work he has done on collation sequence
+              encoding for his own manuscript project to PB (i.e., JF
+              or TC).</resp>
+            <dueDate>ASAP</dueDate>
+          </action>
+          SB, JF, &amp; DB to meet in mid-April in Providence.</p>
+        <p>ACTION: JF write charge by DB's trip here (16 Apr).</p>
+        <p><action>
+            <name>JF</name>
+            <resp>Write draft of PB WG charge.</resp>
+            <dueDate>2004-04-15</dueDate>
+          </action>
+          JF hopes also to spur, if not produce, a list of related
+          issues that need to be tackled.</p>
+      </div>
+    </body>
+    <back>
+      <div>
+        <p>Wrapped up at 14:23 with information that Members' Meeting
+          will be at John's Hopkins on <date value="2004-10-22/23">22
+            &amp; 23 Oct</date>. MD will be doing a workshop there in
+          April.</p>
+        <p>SS requests that documents for next meeting be on website
+          well before meeting. All agreed to <date
+            value="2004-05-06">06 May</date>.</p>
+        <p>EV will investigate group hotel rates, but doesn't have
+          much hope.</p>
+      </div>
+    </back>
+  </text>
+</TEI.2>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/home/lou/Public/TEI/TEICSS/tei.css" type="text/css"
+ ?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:t="http://www.tei-c.org/ns/1.0" n="2019-12"><teiHeader><fileDesc><titleStmt><title>Minutes of the TEI Technical Council</title><meeting n="2019-12" when="2019-12-10">TEI Technical Council online
+     meeting : <date>10 December 2019</date></meeting></titleStmt><publicationStmt><distributor>TEI Website</distributor><idno>TCM121</idno></publicationStmt><sourceDesc><p>Retagged from a WordPress HTML file</p></sourceDesc></fileDesc><revisionDesc><change when="2023-04-25">Archival header confected</change><change>Extracted from Word Press article with id post-29781</change></revisionDesc></teiHeader><text><body><div><p><hi style="strong">Meeting time:</hi></p><list style="ul">
+<item>EDT 9:00–10:30, GMT 14:00–15:30, CEST 15:00–16:30</item>
+<item>Started: 14:07Z; ended: 15:48Z</item>
+</list><p><hi style="strong">Present:</hi></p><list style="ul">
+<item>Syd Bauman (SB)</item>
+<item>Elisa Beshero-Bondar (EB)</item>
+<item>Meaghan Brown (MB) (left @ 15:29Z)</item>
+<item>Hugh Cayless (HC)</item>
+<item>James Cummings (JC)</item>
+<item>Martin Holmes (MH)</item>
+<item>Elli Mylonas (EM)</item>
+<item>Martina Scholger (MS)</item>
+<item>Sarah Stanley (SS)</item>
+<item>Magdalena Turska (MT)</item>
+<item>Raff Viglianti (RV)</item>
+</list><p><hi style="strong">Apologies/Not Present:</hi></p><list style="ul">
+<item>Vanessa Bigot Juloux (VBJ)</item>
+<item>Nicholas Cole (NC)</item>
+<item>Jessica Lu (JL)</item>
+<item>Peter Stadler (PS)</item>
+</list><p> </p><div type="h2"><head>Next Release 3.7.0</head><list style="ul">
+<item>Release technicians: RV, EB (+ newcomers shadowing)</item>
+<item>Release: Thu 02–13; Refrigeration: Thu 01–30, Freeze starts Mon 02–10
+<list style="ul">
+<item><gi>uniHan</gi>
+<list style="ul">
+<item>See the original issue: <ref target="https://github.com/TEIC/TEI/issues/1805">https://github.com/TEIC/TEI/issues/1805</ref></item>
+<item>Last successful builds:
+&lt;<ref target="https://jenkins.tei-c.org/job/TEIP5-branch-unihan/lastSuccessfulBuild/artifact/P5/release/doc/tei-p5-doc/en/html/WD.html#ucsprops">https://jenkins.tei-c.org/job/TEIP5-branch-unihan/lastSuccessfulBuild/artifact/P5/release/doc/tei-p5-doc/en/html/WD.html#ucsprops</ref>&gt;</item>
+<item>and specifically the att.gaijiProp class: &lt;<ref target="https://jenkins.tei-c.org/job/TEIP5-branch-unihan/lastSuccessfulBuild/artifact/P5/release/doc/tei-p5-doc/en/html/ref-att.gaijiProp.html">https://jenkins.tei-c.org/job/TEIP5-branch-unihan/lastSuccessfulBuild/artifact/P5/release/doc/tei-p5-doc/en/html/ref-att.gaijiProp.html</ref>&gt;</item>
+</list>
+</item>
+<item>and the three elements <gi>localProp</gi>, <gi>unicodeProp</gi> and <gi>unihanProp</gi>:
+&lt;<ref target="https://jenkins.tei-c.org/job/TEIP5-branch-unihan/lastSuccessfulBuild/artifact/P5/release/doc/tei-p5-doc/en/html/ref-localProp.html">https://jenkins.tei-c.org/job/TEIP5-branch-unihan/lastSuccessfulBuild/artifact/P5/release/doc/tei-p5-doc/en/html/ref-localProp.html</ref>&gt;
+&lt;<ref target="https://jenkins.tei-c.org/job/TEIP5-branch-unihan/lastSuccessfulBuild/artifact/P5/release/doc/tei-p5-doc/en/html/ref-unicodeProp.html">https://jenkins.tei-c.org/job/TEIP5-branch-unihan/lastSuccessfulBuild/artifact/P5/release/doc/tei-p5-doc/en/html/ref-unicodeProp.html</ref>&gt;
+&lt;<ref target="https://jenkins.tei-c.org/job/TEIP5-branch-unihan/lastSuccessfulBuild/artifact/P5/release/doc/tei-p5-doc/en/html/ref-unihanProp.html">https://jenkins.tei-c.org/job/TEIP5-branch-unihan/lastSuccessfulBuild/artifact/P5/release/doc/tei-p5-doc/en/html/ref-unihanProp.html</ref>&gt;</item>
+<item>In att.gaijiProp, why does the @version not specify that it’s Unicode; or if it’s not intended to be only Unicode, then why are these precise version numbers listed?</item>
+<item>Rephrase @version in att.gajiProp: “specifies the version number of  the Unicode standard in which this property name is defined.” (And if we want to suggest other standards, we should provide some explanation.)
+<list style="ul">
+<item>Instead of specifying a version number, should @version be pointing to a URI of the standard? Providing a standard URL would be ideal, but what if that isn’t available?</item>
+<item>Is there any reason to have @version on <gi>localProp</gi>?</item>
+</list>
+</item>
+<item>We are deprecating the old mechanism, but so far this has only been done with Schematron constraints; need to check to see what should be done with @validUntil instead.</item>
+<item>The Guidelines need more documentation: fully-worked-out examples in multiple scripts of how one would use this. Also examples that could benefit from using <gi>localProp</gi> where it’s not a necessity. Brevigraph, ligatures (both! q-et), examples. See also <ref target="https://skaldic.abdn.ac.uk/m.php?p=mufi">Medieval Unicode Font Initiative </ref></item>
+<item><hi style="b">Action on MS</hi> to call a subgroup meeting with Duncan Paterson in January: Ask Duncan to work up an example, and also have others of us create examples. MH suggests nonexperts be involved. MB volunteered.</item>
+<item>Be sure to properly deprecate and deal with elements that are disappearing from the Guidelines. Need to make a list of everything that needs to be fixed.</item>
+<item>Develop a stylesheet to convert old to new mechanism.</item>
+<item>There are lots of unihan branches in <ref target="https://github.com/duncdrum/TEI">Duncan’s repository</ref>: check with PS and Duncan if we’ve been looking at the correct one. <hi style="b">Action on MS: </hi>send this query by <hi style="b">2019-12-17</hi> (this was not necessary, we found out during the call).</item>
+</list>
+</item>
+<item><gi>standOff</gi>
+<list style="ul">
+<item>Action on <hi style="b">SB: </hi>see what the world looks like if we factor <gi>TEI</gi> out of model.resourceLike, and create a new class for <gi>TEI</gi> and <gi>teiCorpus</gi>. (Perhaps model.root for now, to come up with a better name later; maybe model.container or model.containerLike)</item>
+<item>RV suggests <gi>teiCorpus</gi> should not be allowed as a descendant of <gi>TEI</gi></item>
+<item>SB to do this in a new branch</item>
+</list>
+</item>
+</list></div><div type="h2"><head>Reminder: “TEI Local Build Processes: A Hands On Orientation”</head><list style="ul">
+<item>Wed 2019-12-18, 19:00Z/21:00Z (i.e., 11:00/13:00 PST, 14:00/16:00 EST, 19:00/21:00 GMT, 20:00/22:00 CET)</item>
+<item>MH says he can make it. SB 50% chance. MB 75% chance.</item>
+<item>Organisation/preparation of that meeting
+<list style="ul">
+<item><hi style="b">Action on HC</hi> to e-mail PS to sort out which Docker image to use; one of them to send e-mail to Council list with instructions <hi style="b">by 2019-12-11.</hi></item>
+</list>
+</item>
+</list></div><div type="h2"><head>Next F2F meeting</head><list style="ul">
+<item><ref target="https://tei-c.org/activities/council/meetings/tei-technical-council-teleconference-2019-11-19/">previous discussion</ref></item>
+<item>Our options are:
+<list style="ul">
+<item>XML <hi style="b">Prague</hi>, February 13–15</item>
+<item><hi style="b">Buenos Aires</hi> (End of April / 1st week of May):
+<list style="ul">
+<item>JL unavailable May 3ish–May 13 (advising student Capstone projects to completion)</item>
+</list>
+</item>
+<item><hi style="b">Paderborn</hi> (Beginning of March, after (or before) <ref target="https://dhd2020.de">https://dhd2020.de</ref>) — March 2–6</item>
+<item>Newcastle (the TEI conference 2021 is in Newcastle, so will be there in early September 2021)</item>
+<item>Warsaw (mid-May?)</item>
+<item>Timing concerns
+<list style="ul">
+<item>Good weeks for EB are March 7–14, and after April 29. (juggling classes)</item>
+<item>March 9–21 are absolutely out for MB</item>
+</list>
+</item>
+</list>
+</item>
+<item>Annual Meeting: Lincoln October 27–30</item>
+<item><hi style="b">Action on MS: post a Doodle poll on times (not place) by 2019-12-11; Action on ALL to fill out poll by 2019-12-13</hi></item>
+</list></div><div type="h2"><head>Broken oXygen plugin, oxygen issues</head><list style="ul">
+<item>Organize a dedicated call
+<list style="ul">
+<item>MT has been in touch with Alex Jitianu &amp; George Bina from SyncRO. They are amenable, but it is not clear yet what it will involve. Needs some guidance from MH / Council list for a detailed description of the problem. <hi style="b">Action on MT</hi>: ask on list for detailed description of problem <hi style="b">by</hi> <hi style="b">2019-12-17</hi></item>
+<item><ref target="https://github.com/TEIC/oxygen-tei/issues/30">https://github.com/TEIC/oxygen-tei/issues/30</ref></item>
+</list>
+</item>
+<item>ODD customization
+<list style="ul">
+<item>MH fixed</item>
+</list>
+</item>
+</list></div><div type="h2"><head>Report on Triangle SCI</head><list style="ul">
+<item>See report in Google Drive</item>
+<item>One of the first goals would be establishing a TEI Workgroup.</item>
+<item>Inspiration / collaboration: <ref target="http://multilingualdh.org/en/">http://multilingualdh.org/en/</ref>.</item>
+</list></div><div type="h2"><head>Proposal on Council terms</head><list style="ul">
+<item>The proposal is ready to be presented to the TEI Board</item>
+<item><hi style="b">Action on HC &amp; MS: Raise issue of what is and is not covered for Council member who attends Members’ Meeting with the Board by 2019-12-13</hi></item>
+</list></div><div type="h2"><head>Council chair elections</head><list style="ul">
+<item><ref target="https://wiki.tei-c.org/index.php?title=TEI-Council-FAQ#TEI_Technical_Council_Chair">https://wiki.tei-c.org/index.php?title=TEI-Council-FAQ#TEI_Technical_Council_Chair</ref></item>
+<item>No candidates standing other than Martina</item>
+<item>All in favor by acclamation (no opposed, no abstentions). Congratulations, Martina!</item>
+</list></div><div type="h2"><head>Goodbye to James Cummings, Elli Mylonas, and Sarah Stanley</head><list style="ul">
+<item><hi style="strong">Issue for face-to-face</hi>: Generate a list of things that should be checked when someone joins Council, and that should be dealt with when someone leaves Council (e.g., GitHub admin, logins to servers, etc.)</item>
+<item><hi style="strong">Action on JC, EM, &amp; SS</hi>: Go through your own tickets, removing yourselves from those you do not expect to accomplish, leaving yourself on those you do <hi style="strong">by 2019-12-31</hi></item>
+</list><p> </p></div></div></body><!-- #post-## --></text></TEI>
