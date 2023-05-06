@@ -133,7 +133,7 @@ from <ref target="http://tei.oucs.ox.ac.uk/Oxford/2006-09-methNet/Materials/cata
             </note> He reports that MODS is much more of a cataloging
             approach.</item>
           <label>DB: post draft of ‘guiding principles for further development’ document</label>
-          <item>discussion deferred, see <ref target="backCompat">below</ref></item>
+          <item>discussion deferred, see <ref target="#backCompat">below</ref></item>
           <label>Council: read PB document, post to list even if only "I read
             it, it's fine". </label>
           <item>Not done. Discussion deferred, see <ref target="PB">below</ref>.</item>
