@@ -70,7 +70,7 @@
    -->
     </table></p>
 
-   <p>The P5 archival format used is described by a TEI customisation called <ident>tcMins</ident>, documentation and definition of which is a work in progress. A| preliminary (auto-generated) version of the ODD source is 
+   <p>The P5 archival format used is described by a TEI customisation called <ident>tcMins</ident>, documentation and definition of which is a work in progress. A preliminary (auto-generated) version of the ODD source is 
     visible at <ref target="https://raw.githubusercontent.com/lb42/theCellar/main/tcMins.odd">current tcMins ODD</ref>. </p>
    <p>The archival files were produced as follows<list>
     <item>For all minutes from 2009 to date (with one exception), the most recently edited
