@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/home/lou/Public/TEI/TEICSS/tei.css" type="text/css"
  ?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:t="http://www.tei-c.org/ns/1.0" n="2005-09"><teiHeader><fileDesc><titleStmt><title>Minutes of the TEI Technical Council</title><meeting n="2005-09" when="2005-09-09">TEI Technical Council online
-     meeting : <date>9 September 2005</date></meeting><author>Syd Bauman</author></titleStmt><publicationStmt><distributor>TEI Website</distributor><idno>TCM019</idno></publicationStmt><sourceDesc><p>Re-tagged from a TEI Legacy format document which contained the following source note:</p><p>
+     meeting : <date>9 September 2005</date></meeting><author>Syd Bauman</author></titleStmt><publicationStmt><distributor>TEI Website</distributor><idno>TCM020</idno></publicationStmt><sourceDesc><p>Re-tagged from a TEI Legacy format document which contained the following source note:</p><p>
 Born digital; this file is derived from the notes taken at the meeting,
-</p></sourceDesc></fileDesc><revisionDesc><change when="2023-05-01">Archival header confected</change><change>Converted from the TEI archival document tcm20</change><change when="2005-10-01">Lou:  minor corrections</change><change when="2005-09-28">Syd:  continued to update and make improvements</change></revisionDesc></teiHeader><text>
+</p></sourceDesc></fileDesc><revisionDesc><change when="2023-05-01">Archival header confected: idno corrected</change><change>Converted from the TEI archival document tcm20</change><change when="2005-10-01">Lou:  minor corrections</change><change when="2005-09-28">Syd:  continued to update and make improvements</change></revisionDesc></teiHeader><text>
 <front>
 <!--<div type="why is this <div> necessary?">
 -->
