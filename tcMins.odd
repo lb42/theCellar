@@ -1,16 +1,15 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+<?xml version="1.0" encoding="UTF-8"?><TEI  xml:lang="en" xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
          <titleStmt>
             <title type="short">TCM Schema</title>
-            <title>An ODD by Example customization</title>
+            <title>An ODD by Example customization</title>         
          </titleStmt>
          <publicationStmt>
             <p>Unpublished draft</p>
          </publicationStmt>
          <sourceDesc>
-            <p>Derived from the TEI <ref target="https://www.tei-c.org/Vault/P5/current/xml/tei/odd/p5subset.xml">base odd</ref> after an analysis of 171 files in /home/lou/TCM/TCM/TEI</p>
+            <p>Derived from the TEI <ref target="https://www.tei-c.org/Vault/P5/current/xml/tei/odd/p5subset.xml">base odd</ref> after an analysis of 171 files in /home/lou/TCM/TCM/TEI. Examples auto-added using exemplagen.xsl.  </p>
          </sourceDesc>
       </fileDesc>
    </teiHeader>
@@ -35,15 +34,14 @@
             <!--Checking module namesdates-->
             <classRef key="model.persNamePart"/>
             <moduleRef key="namesdates" include="placeName"/>
-            <elementSpec ident="placeName" mode="change">
-               <attList>
+            <elementSpec ident="placeName" mode="change"><attList>
                   <attDef ident="when" mode="delete"/>
                   <attDef ident="from" mode="delete"/>
                   <attDef ident="to" mode="delete"/>
                   <attDef ident="resp" mode="delete"/>
                   <attDef ident="type" mode="delete"/>
-               </attList>
-            </elementSpec>
+               </attList><exemplum><egXML xmlns="http://www.tei-c.org/ns/Examples"><placeName >London</placeName></egXML>
+ </exemplum></elementSpec>
             <!--Checking module dictionaries-->
             <classRef key="att.lexicographic"/>
             <classRef key="model.entryLike"/>
@@ -67,31 +65,51 @@
             <classRef key="att.identified"/>
             <classRef key="model.contentPart"/>
             <moduleRef key="tagdocs" include="att code eg gi ident tag egXML"/>
-            <elementSpec ident="att" mode="change">
-               <attList>
+            <elementSpec ident="att" mode="change"><attList>
                   <attDef ident="scheme" mode="delete"/>
                   <attDef ident="resp" mode="delete"/>
-               </attList>
-            </elementSpec>
-            <elementSpec ident="code" mode="change">
-               <attList>
+               </attList><exemplum><egXML xmlns="http://www.tei-c.org/ns/Examples"><att >version</att></egXML>
+ </exemplum></elementSpec>
+            <elementSpec ident="code" mode="change"><attList>
                   <attDef ident="lang" mode="delete"/>
                   <attDef ident="resp" mode="delete"/>
-               </attList>
-            </elementSpec>
-            <elementSpec ident="eg" mode="change">
-               <attList>
+               </attList><exemplum><egXML xmlns="http://www.tei-c.org/ns/Examples"><code >wordgroup</code></egXML>
+ </exemplum></elementSpec>
+            <elementSpec ident="eg" mode="change"><attList>
                   <attDef ident="resp" mode="delete"/>
-               </attList>
-            </elementSpec>
-            <elementSpec ident="gi" mode="change">
-               <attList>
+               </attList><exemplum><egXML xmlns="http://www.tei-c.org/ns/Examples"><eg > 
+"In the reports of the workgroups at MM2 in Chicago, and also in the
+discussions of the migration WG immediately after that, it became
+clear (at least to me) that there are some architectural decisions
+that have to be made on the road to P5.  <!-- ... -->
+
+- Should/could  P5 limit the content of attribute values to tokens
+   (and similar material) as opposed to the many attribute values in
+   P4, which allow essentially the same content as in PCDATA.
+   Background:  Attribute values are different from PCDATA in that they
+   can not contain other markup constructs.  This makes it impossible,
+   for example, to specify language, writing system, readings and the
+   like for the content of attribute values.  Additionally, there is some area of
+   conflict between XML:lang and language specification in  TEI, which
+   could be cleared up as well.
+   To make this possible, things like
+   &lt;corr sic="foo"&gt;bar&lt;/corr&gt; would have to be expressed as
+   &lt;seg&gt;
+      &lt;corr&gt;bar&lt;/corr&gt;
+      &lt;sic&gt;foo&lt;/sic&gt;
+   &lt;/seg&gt;
+   Since this would require a considerable change to the architecture
+   of TEI and the view of its underlying text (which could not be
+   considered to be 'simply a concatenation of all #PCDATA in a
+   document', I would appreciate a statement from the council on this."
+       </eg></egXML>
+ </exemplum></elementSpec>
+            <elementSpec ident="gi" mode="change"><attList>
                   <attDef ident="scheme" mode="delete"/>
                   <attDef ident="resp" mode="delete"/>
-               </attList>
-            </elementSpec>
-            <elementSpec ident="ident" mode="change">
-               <attList>
+               </attList><exemplum><egXML xmlns="http://www.tei-c.org/ns/Examples"><gi >note</gi></egXML>
+ </exemplum></elementSpec>
+            <elementSpec ident="ident" mode="change"><attList>
                   <attDef ident="resp" mode="delete"/>
                   <attDef ident="type" mode="change">
                      <valList mode="add" type="closed">
@@ -108,16 +126,15 @@
                         <valItem ident="xpscheme"/>
                      </valList>
                   </attDef>
-               </attList>
-            </elementSpec>
-            <elementSpec ident="tag" mode="change">
-               <attList>
+               </attList><exemplum><egXML xmlns="http://www.tei-c.org/ns/Examples"><ident  type="datatype">xsd:language</ident></egXML>
+ </exemplum></elementSpec>
+            <elementSpec ident="tag" mode="change"><attList>
                   <attDef ident="type" mode="delete"/>
                   <attDef ident="scheme" mode="delete"/>
                   <attDef ident="resp" mode="delete"/>
                   <attDef ident="type" mode="delete"/>
-               </attList>
-            </elementSpec>
+               </attList><exemplum><egXML xmlns="http://www.tei-c.org/ns/Examples"><tag >c type=”punct”</tag></egXML>
+ </exemplum></elementSpec>
             <classSpec ident="att.combinable" type="atts" mode="change">
                <attList>
                   <attDef ident="mode" mode="delete"/>
@@ -235,61 +252,66 @@
             </classSpec>
             <!--Checking module core-->
             <classRef key="att.milestoneUnit"/>
-            <moduleRef key="core"
-                       include="p foreign emph hi q mentioned soCalled gloss term name rs date time ref list item label head note milestone lb author title meeting sp speaker"/>
-            <elementSpec ident="p" mode="change">
-               <attList>
+            <moduleRef key="core" include="p foreign emph hi q mentioned soCalled gloss term name rs date time ref list item label head note milestone lb author title meeting sp speaker"/>
+            <elementSpec ident="p" mode="change"><attList>
                   <attDef ident="resp" mode="delete"/>
-               </attList>
-            </elementSpec>
-            <elementSpec ident="foreign" mode="change">
-               <attList>
+               </attList><exemplum><egXML xmlns="http://www.tei-c.org/ns/Examples"><p>Unpublished first draft </p></egXML>
+ </exemplum></elementSpec>
+            <elementSpec ident="foreign" mode="change"><attList>
                   <attDef ident="resp" mode="delete"/>
-               </attList>
-            </elementSpec>
-            <elementSpec ident="emph" mode="change">
-               <attList>
+               </attList><exemplum><egXML xmlns="http://www.tei-c.org/ns/Examples"><foreign >de novo</foreign></egXML>
+ </exemplum></elementSpec>
+            <elementSpec ident="emph" mode="change"><attList>
                   <attDef ident="resp" mode="delete"/>
-               </attList>
-            </elementSpec>
-            <elementSpec ident="hi" mode="change">
-               <attList>
+               </attList><exemplum><egXML xmlns="http://www.tei-c.org/ns/Examples"><emph  rend="italic">somewhere</emph></egXML>
+ </exemplum></elementSpec>
+            <elementSpec ident="hi" mode="change"><attList>
                   <attDef ident="resp" mode="delete"/>
-               </attList>
-            </elementSpec>
-            <elementSpec ident="q" mode="change">
-               <attList>
+               </attList><exemplum><egXML xmlns="http://www.tei-c.org/ns/Examples"><hi >major.minor.micro</hi></egXML>
+ </exemplum></elementSpec>
+            <elementSpec ident="q" mode="change"><attList>
                   <attDef ident="type" mode="delete"/>
                   <attDef ident="resp" mode="delete"/>
                   <attDef ident="who" mode="delete"/>
-               </attList>
-            </elementSpec>
-            <elementSpec ident="mentioned" mode="change">
-               <attList>
+               </attList><exemplum><egXML xmlns="http://www.tei-c.org/ns/Examples"><q >... it's past time for us to start up.
+       ... trying to get John Garofolo of NIST to join the
+       group; if he does not, I will entertain suggestions of
+       corpus linguists who might join the group. ... an
+       email list, supplemented by a regular conference call
+       ... initial suggestion that the call be on
+       alternate Wednesdays, starting on 2002-06-26, at
+       13:00-00. ... attached the preliminary
+       <soCalled>charge</soCalled> ... Preliminary agenda:
+       <list>
+        <item>introductions</item>
+        <item>proceedures: ...</item>
+        <item>time limit: ...</item>
+        <item>reactions to charge: ...</item>
+       </list>
+      </q></egXML>
+ </exemplum></elementSpec>
+            <elementSpec ident="mentioned" mode="change"><attList>
                   <attDef ident="resp" mode="delete"/>
-               </attList>
-            </elementSpec>
-            <elementSpec ident="soCalled" mode="change">
-               <attList>
+               </attList><exemplum><egXML xmlns="http://www.tei-c.org/ns/Examples"><mentioned >Text Encoding
+	      Initiative</mentioned></egXML>
+ </exemplum></elementSpec>
+            <elementSpec ident="soCalled" mode="change"><attList>
                   <attDef ident="resp" mode="delete"/>
-               </attList>
-            </elementSpec>
-            <elementSpec ident="gloss" mode="change">
-               <attList>
+               </attList><exemplum><egXML xmlns="http://www.tei-c.org/ns/Examples"><soCalled >core</soCalled></egXML>
+ </exemplum></elementSpec>
+            <elementSpec ident="gloss" mode="change"><attList>
                   <attDef ident="resp" mode="delete"/>
                   <attDef ident="type" mode="delete"/>
                   <attDef ident="target" mode="delete"/>
-               </attList>
-            </elementSpec>
-            <elementSpec ident="term" mode="change">
-               <attList>
+               </attList><exemplum><egXML xmlns="http://www.tei-c.org/ns/Examples"><gloss >Syd Bauman</gloss></egXML>
+ </exemplum></elementSpec>
+            <elementSpec ident="term" mode="change"><attList>
                   <attDef ident="resp" mode="delete"/>
                   <attDef ident="target" mode="delete"/>
                   <attDef ident="type" mode="delete"/>
-               </attList>
-            </elementSpec>
-            <elementSpec ident="name" mode="change">
-               <attList>
+               </attList><exemplum><egXML xmlns="http://www.tei-c.org/ns/Examples"><term >SB</term></egXML>
+ </exemplum></elementSpec>
+            <elementSpec ident="name" mode="change"><attList>
                   <attDef ident="resp" mode="delete"/>
                   <attDef ident="when" mode="delete"/>
                   <attDef ident="from" mode="delete"/>
@@ -303,36 +325,32 @@
                         <valItem ident="xpscheme"/>
                      </valList>
                   </attDef>
-               </attList>
-            </elementSpec>
-            <elementSpec ident="rs" mode="change">
-               <attList>
+               </attList><exemplum><egXML xmlns="http://www.tei-c.org/ns/Examples"><name  xml:lang="NL" type="org">Koninklijke Academie voor Nederlandse Taal-
+	      en Letterkunde</name></egXML>
+ </exemplum></elementSpec>
+            <elementSpec ident="rs" mode="change"><attList>
                   <attDef ident="resp" mode="delete"/>
                   <attDef ident="type" mode="delete"/>
-               </attList>
-            </elementSpec>
-            <elementSpec ident="date" mode="change">
-               <attList>
+               </attList><exemplum><egXML xmlns="http://www.tei-c.org/ns/Examples"><rs >JC</rs></egXML>
+ </exemplum></elementSpec>
+            <elementSpec ident="date" mode="change"><attList>
                   <attDef ident="resp" mode="delete"/>
                   <attDef ident="type" mode="delete"/>
-               </attList>
-            </elementSpec>
-            <elementSpec ident="time" mode="change">
-               <attList>
+               </attList><exemplum><egXML xmlns="http://www.tei-c.org/ns/Examples"><date >12 January 2002</date></egXML>
+ </exemplum></elementSpec>
+            <elementSpec ident="time" mode="change"><attList>
                   <attDef ident="resp" mode="delete"/>
                   <attDef ident="from" mode="delete"/>
                   <attDef ident="to" mode="delete"/>
                   <attDef ident="type" mode="delete"/>
-               </attList>
-            </elementSpec>
-            <elementSpec ident="ref" mode="change">
-               <attList>
+               </attList><exemplum><egXML xmlns="http://www.tei-c.org/ns/Examples"><time  when="2006-04-25T12:00:00Z">Tue 25 Apr @ 12:00 UTC</time></egXML>
+ </exemplum></elementSpec>
+            <elementSpec ident="ref" mode="change"><attList>
                   <attDef ident="resp" mode="delete"/>
                   <attDef ident="type" mode="delete"/>
-               </attList>
-            </elementSpec>
-            <elementSpec ident="list" mode="change">
-               <attList>
+               </attList><exemplum><egXML xmlns="http://www.tei-c.org/ns/Examples"><ref  target="http://www.tei-c.org/Vault/ED/edw55.tei">EDW55</ref></egXML>
+ </exemplum></elementSpec>
+            <elementSpec ident="list" mode="change"><attList>
                   <attDef ident="type" mode="change">
                      <valList mode="add" type="closed">
                         <valItem ident="gloss"/>
@@ -350,29 +368,29 @@
                         <valItem ident="unordered"/>
                      </valList>
                   </attDef>
-               </attList>
-            </elementSpec>
-            <elementSpec ident="item" mode="change">
-               <attList>
+               </attList><exemplum><egXML xmlns="http://www.tei-c.org/ns/Examples"><list  type="simple">
+       <item>7 votes for P3-like text</item>
+       <item>1 vote for dividing the information by tag set</item>
+       <item>1 vote for leaving relatives out</item>
+      </list></egXML>
+ </exemplum></elementSpec>
+            <elementSpec ident="item" mode="change"><attList>
                   <attDef ident="resp" mode="delete"/>
-               </attList>
-            </elementSpec>
-            <elementSpec ident="label" mode="change">
-               <attList>
-                  <attDef ident="resp" mode="delete"/>
-                  <attDef ident="type" mode="delete"/>
-                  <attDef ident="place" mode="delete"/>
-               </attList>
-            </elementSpec>
-            <elementSpec ident="head" mode="change">
-               <attList>
+               </attList><exemplum><egXML xmlns="http://www.tei-c.org/ns/Examples"><item >7 votes for P3-like text</item></egXML>
+ </exemplum></elementSpec>
+            <elementSpec ident="label" mode="change"><attList>
                   <attDef ident="resp" mode="delete"/>
                   <attDef ident="type" mode="delete"/>
                   <attDef ident="place" mode="delete"/>
-               </attList>
-            </elementSpec>
-            <elementSpec ident="note" mode="change">
-               <attList>
+               </attList><exemplum><egXML xmlns="http://www.tei-c.org/ns/Examples"><label >SB</label></egXML>
+ </exemplum></elementSpec>
+            <elementSpec ident="head" mode="change"><attList>
+                  <attDef ident="resp" mode="delete"/>
+                  <attDef ident="type" mode="delete"/>
+                  <attDef ident="place" mode="delete"/>
+               </attList><exemplum><egXML xmlns="http://www.tei-c.org/ns/Examples"><head >Initial Discussion</head></egXML>
+ </exemplum></elementSpec>
+            <elementSpec ident="note" mode="change"><attList>
                   <attDef ident="place" mode="change">
                      <valList mode="add" type="closed">
                         <valItem ident="foot"/>
@@ -386,10 +404,10 @@
                         <valItem ident="temp"/>
                      </valList>
                   </attDef>
-               </attList>
-            </elementSpec>
-            <elementSpec ident="milestone" mode="change">
-               <attList>
+               </attList><exemplum><egXML xmlns="http://www.tei-c.org/ns/Examples"><note  type="action" resp="LB">Move list of
+     institutional members up near top of web site.</note></egXML>
+ </exemplum></elementSpec>
+            <elementSpec ident="milestone" mode="change"><attList>
                   <attDef ident="resp" mode="delete"/>
                   <attDef ident="unit" mode="change">
                      <valList mode="add" type="closed">
@@ -397,24 +415,21 @@
                      </valList>
                   </attDef>
                   <attDef ident="type" mode="delete"/>
-               </attList>
-            </elementSpec>
-            <elementSpec ident="lb" mode="change">
-               <attList>
+               </attList><exemplum><egXML xmlns="http://www.tei-c.org/ns/Examples"><milestone  unit="unknown" rend="rule"/></egXML>
+ </exemplum></elementSpec>
+            <elementSpec ident="lb" mode="change"><attList>
                   <attDef ident="resp" mode="delete"/>
                   <attDef ident="type" mode="delete"/>
-               </attList>
-            </elementSpec>
-            <elementSpec ident="author" mode="change">
-               <attList>
+               </attList><exemplum><egXML xmlns="http://www.tei-c.org/ns/Examples"><lb /></egXML>
+ </exemplum></elementSpec>
+            <elementSpec ident="author" mode="change"><attList>
                   <attDef ident="resp" mode="delete"/>
                   <attDef ident="when" mode="delete"/>
                   <attDef ident="from" mode="delete"/>
                   <attDef ident="to" mode="delete"/>
-               </attList>
-            </elementSpec>
-            <elementSpec ident="title" mode="change">
-               <attList>
+               </attList><exemplum><egXML xmlns="http://www.tei-c.org/ns/Examples"><author >Syd Bauman</author></egXML>
+ </exemplum></elementSpec>
+            <elementSpec ident="title" mode="change"><attList>
                   <attDef ident="level" mode="delete"/>
                   <attDef ident="type" mode="delete"/>
                   <attDef ident="resp" mode="delete"/>
@@ -422,99 +437,172 @@
                   <attDef ident="when" mode="delete"/>
                   <attDef ident="from" mode="delete"/>
                   <attDef ident="to" mode="delete"/>
-               </attList>
-            </elementSpec>
-            <elementSpec ident="meeting" mode="change">
-               <attList>
+               </attList><exemplum><egXML xmlns="http://www.tei-c.org/ns/Examples"><title>TCM : complete rescued wordpress and  docs</title></egXML>
+ </exemplum></elementSpec>
+            <elementSpec ident="meeting" mode="change"><attList>
                   <attDef ident="resp" mode="delete"/>
-               </attList>
-            </elementSpec>
-            <elementSpec ident="sp" mode="change">
-               <attList>
+               </attList><exemplum><egXML xmlns="http://www.tei-c.org/ns/Examples"><meeting  n="2002-01" when="2002-01-12">TEI Technical Council ftf meeting
+     : <placeName>London</placeName>, <date>12 January 2002</date></meeting></egXML>
+ </exemplum></elementSpec>
+            <elementSpec ident="sp" mode="change"><attList>
                   <attDef ident="resp" mode="delete"/>
                   <attDef ident="who" mode="delete"/>
-               </attList>
-            </elementSpec>
-            <elementSpec ident="speaker" mode="change">
-               <attList>
+               </attList><exemplum><egXML xmlns="http://www.tei-c.org/ns/Examples"><sp ><speaker>SR:</speaker>
+<p>There are three specific problems remaining in the conversion from EEBO-TCP to P5,
+                two of which are in the spreadsheet from MM:</p>
+
+<p>
+                  <gi>signed</gi> : Is this a phrase-level element for only a signature, or is this
+                  a block-level element that is really a signature block? If the latter, then more
+                  structure is required within it. If there are multiple signatures, EEBO-TCP
+                  encodes them as a list, which TEI doesn’t allow. The proposed action is to loosen
+                  up the content model of <gi>signed</gi>.</p></sp></egXML>
+ </exemplum></elementSpec>
+            <elementSpec ident="speaker" mode="change"><attList>
                   <attDef ident="resp" mode="delete"/>
-               </attList>
-            </elementSpec>
+               </attList><exemplum><egXML xmlns="http://www.tei-c.org/ns/Examples"><speaker >SR:</speaker></egXML>
+ </exemplum></elementSpec>
             <!--Checking module figures-->
             <moduleRef key="figures" include="table row cell"/>
-            <elementSpec ident="table" mode="change">
-               <attList>
+            <elementSpec ident="table" mode="change"><attList>
                   <attDef ident="rows" mode="delete"/>
                   <attDef ident="cols" mode="delete"/>
                   <attDef ident="resp" mode="delete"/>
                   <attDef ident="type" mode="delete"/>
-               </attList>
-            </elementSpec>
-            <elementSpec ident="row" mode="change">
-               <attList>
+               </attList><exemplum><egXML xmlns="http://www.tei-c.org/ns/Examples"><table  rend="wiki">
+            <row>
+              <cell>
+                <hi>Who</hi>
+              </cell>
+              <cell> # </cell>
+              <cell>
+                <hi>Title</hi>
+              </cell>
+              <cell>
+                <hi>Comments</hi>
+              </cell>
+            </row>
+            <row>
+              <cell>AC</cell>
+              <cell>15</cell>
+              <cell>Critical Apparatus</cell>
+              <cell>Done </cell>
+            </row>
+            <row>
+              <cell>AC</cell>
+              <cell>9</cell>
+              <cell>Manuscript Description</cell>
+              <cell>Review ongoing </cell>
+            </row>
+            <row>
+              <cell>CW</cell>
+              <cell>2</cell>
+              <cell> The TEI Header </cell>
+              <cell>Done</cell>
+            </row>
+          <!-- ... -->
+            <row>
+              <cell>Tone</cell>
+              <cell>6</cell>
+              <cell> Performance Texts</cell>
+              <cell> Done </cell>
+            </row>
+          </table></egXML>
+ </exemplum></elementSpec>
+            <elementSpec ident="row" mode="change"><attList>
                   <attDef ident="resp" mode="delete"/>
-               </attList>
-            </elementSpec>
-            <elementSpec ident="cell" mode="change">
-               <attList>
+               </attList><exemplum><egXML xmlns="http://www.tei-c.org/ns/Examples"><row >
+              <cell>
+                <hi>Who</hi>
+              </cell>
+              <cell> # </cell>
+              <cell>
+                <hi>Title</hi>
+              </cell>
+              <cell>
+                <hi>Comments</hi>
+              </cell>
+            </row></egXML>
+ </exemplum></elementSpec>
+            <elementSpec ident="cell" mode="change"><attList>
                   <attDef ident="resp" mode="delete"/>
-               </attList>
-            </elementSpec>
+               </attList><exemplum><egXML xmlns="http://www.tei-c.org/ns/Examples"><cell >
+                <hi>Who</hi>
+              </cell></egXML>
+ </exemplum></elementSpec>
             <!--Checking module header-->
-            <moduleRef key="header"
-                       include="teiHeader fileDesc titleStmt publicationStmt distributor idno sourceDesc revisionDesc change"/>
-            <elementSpec ident="teiHeader" mode="change">
-               <attList>
+            <moduleRef key="header" include="teiHeader fileDesc titleStmt publicationStmt distributor idno sourceDesc revisionDesc change"/>
+            <elementSpec ident="teiHeader" mode="change"><attList>
                   <attDef ident="resp" mode="delete"/>
-               </attList>
-            </elementSpec>
-            <elementSpec ident="fileDesc" mode="change">
-               <attList>
+               </attList><exemplum><egXML xmlns="http://www.tei-c.org/ns/Examples"><teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>TCM : complete rescued wordpress and  docs</title>
+             </titleStmt>
+            <publicationStmt>
+                <p>Unpublished first draft </p>
+            </publicationStmt>
+            <sourceDesc>
+                <p/>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader></egXML>
+ </exemplum></elementSpec>
+            <elementSpec ident="fileDesc" mode="change"><attList>
                   <attDef ident="resp" mode="delete"/>
-               </attList>
-            </elementSpec>
-            <elementSpec ident="titleStmt" mode="change">
-               <attList>
+               </attList><exemplum><egXML xmlns="http://www.tei-c.org/ns/Examples"><fileDesc>
+            <titleStmt>
+                <title>TCM : complete rescued wordpress and  docs</title>
+             </titleStmt>
+            <publicationStmt>
+                <p>Unpublished first draft </p>
+            </publicationStmt>
+            <sourceDesc>
+                <p/>
+            </sourceDesc>
+        </fileDesc></egXML>
+ </exemplum></elementSpec>
+            <elementSpec ident="titleStmt" mode="change"><attList>
                   <attDef ident="resp" mode="delete"/>
-               </attList>
-            </elementSpec>
-            <elementSpec ident="publicationStmt" mode="change">
-               <attList>
+               </attList><exemplum><egXML xmlns="http://www.tei-c.org/ns/Examples"><titleStmt>
+                <title>TCM : complete rescued wordpress and  docs</title>
+             </titleStmt></egXML>
+ </exemplum></elementSpec>
+            <elementSpec ident="publicationStmt" mode="change"><attList>
                   <attDef ident="resp" mode="delete"/>
-               </attList>
-            </elementSpec>
-            <elementSpec ident="distributor" mode="change">
-               <attList>
+               </attList><exemplum><egXML xmlns="http://www.tei-c.org/ns/Examples"><publicationStmt>
+                <p>Unpublished first draft </p>
+            </publicationStmt></egXML>
+ </exemplum></elementSpec>
+            <elementSpec ident="distributor" mode="change"><attList>
                   <attDef ident="resp" mode="delete"/>
-               </attList>
-            </elementSpec>
-            <elementSpec ident="idno" mode="change">
-               <attList>
+               </attList><exemplum><egXML xmlns="http://www.tei-c.org/ns/Examples"><distributor >TEI Website</distributor></egXML>
+ </exemplum></elementSpec>
+            <elementSpec ident="idno" mode="change"><attList>
                   <attDef ident="type" mode="delete"/>
                   <attDef ident="resp" mode="delete"/>
                   <attDef ident="when" mode="delete"/>
                   <attDef ident="from" mode="delete"/>
                   <attDef ident="to" mode="delete"/>
                   <attDef ident="type" mode="delete"/>
-               </attList>
-            </elementSpec>
-            <elementSpec ident="sourceDesc" mode="change">
-               <attList>
+               </attList><exemplum><egXML xmlns="http://www.tei-c.org/ns/Examples"><idno >TCM001</idno></egXML>
+ </exemplum></elementSpec>
+            <elementSpec ident="sourceDesc" mode="change"><attList>
                   <attDef ident="resp" mode="delete"/>
-               </attList>
-            </elementSpec>
-            <elementSpec ident="revisionDesc" mode="change">
-               <attList>
+               </attList><exemplum><egXML xmlns="http://www.tei-c.org/ns/Examples"><sourceDesc>
+                <p/>
+            </sourceDesc></egXML>
+ </exemplum></elementSpec>
+            <elementSpec ident="revisionDesc" mode="change"><attList>
                   <attDef ident="resp" mode="delete"/>
-               </attList>
-            </elementSpec>
-            <elementSpec ident="change" mode="change">
-               <attList>
+               </attList><exemplum><egXML xmlns="http://www.tei-c.org/ns/Examples"><revisionDesc ><change when="2023-05-01">Archival header confected</change><change>Converted from the TEI archival document tcm01</change><change when="2002-01-22">Stuart Brown/Lou Burnard:  XML version created</change></revisionDesc></egXML>
+ </exemplum></elementSpec>
+            <elementSpec ident="change" mode="change"><attList>
                   <attDef ident="target" mode="delete"/>
                   <attDef ident="resp" mode="delete"/>
                   <attDef ident="type" mode="delete"/>
-               </attList>
-            </elementSpec>
+               </attList><exemplum><egXML xmlns="http://www.tei-c.org/ns/Examples"><change  when="2023-05-01">Archival header confected</change></egXML>
+ </exemplum></elementSpec>
             <!--Checking module gaiji-->
             <!--Checking module verse-->
             <!--Checking module transcr-->
@@ -531,28 +619,42 @@
                </attList>
             </classSpec>
             <!--Checking module textstructure-->
-            <moduleRef key="textstructure"
-                       include="TEI text body div titlePage docTitle titlePart docAuthor docDate front back"/>
-            <elementSpec ident="TEI" mode="change">
-               <attList>
+            <moduleRef key="textstructure" include="TEI text body div titlePage docTitle titlePart docAuthor docDate front back"/>
+            <elementSpec ident="TEI" mode="change"><attList>
                   <attDef ident="version" mode="delete"/>
                   <attDef ident="resp" mode="delete"/>
                   <attDef ident="type" mode="delete"/>
-               </attList>
-            </elementSpec>
-            <elementSpec ident="text" mode="change">
-               <attList>
-                  <attDef ident="resp" mode="delete"/>
-                  <attDef ident="type" mode="delete"/>
-               </attList>
-            </elementSpec>
-            <elementSpec ident="body" mode="change">
-               <attList>
-                  <attDef ident="resp" mode="delete"/>
-               </attList>
-            </elementSpec>
-            <elementSpec ident="div" mode="change">
-               <attList>
+               </attList><exemplum><egXML xmlns="http://www.tei-c.org/ns/Examples"><TEI  n="2002-01" xml:base="TEI/2002-01_tcm01.xml"><teiHeader><fileDesc><titleStmt><title>Minutes of the TEI Technical Council</title><meeting n="2002-01" when="2002-01-12">TEI Technical Council ftf meeting
+     : <placeName>London</placeName>, <date>12 January 2002</date></meeting></titleStmt><publicationStmt><distributor>TEI Website</distributor><idno>TCM001</idno></publicationStmt><sourceDesc><p>Re-tagged from a TEI Legacy format document which contained the following source note:</p><p>Email from Geoffrey Rockwell, as amended by Lou Burnard</p></sourceDesc></fileDesc><revisionDesc><change when="2023-05-01">Archival header confected</change><change>Converted from the TEI archival document tcm01</change><change when="2002-01-22">Stuart Brown/Lou Burnard:  XML version created</change></revisionDesc></teiHeader><text>
+  <front>
+   <titlePage>
+    <docTitle>
+     <titlePart>TEI-C Council meeting, Jan. 12th, 2002</titlePart>
+     <titlePart>Minutes v1.2</titlePart>
+    </docTitle>
+    <docAuthor>Geoffrey Rockwell</docAuthor>
+   </titlePage>
+   <div>
+    <p>Attending: Christian Wittern (CW), Perry Willett (PW), Geoffrey
+     Rockwell (GW), Sebastian Rahtz (SR, board representative),
+     Merrilee Proffitt (MP), Syd Bauman (SB, editor), Matthew Driscoll
+     (MD), Lou Burnard (LB, editor), John Unsworth (JU, chair), David
+     Durand (DD), Laurent Romary (LR)</p>
+   </div>
+  </front>
+  <body>
+   <!--<divGen type="actionItems"/>
+  --> <div xml:id="I1">
+    <head>Initial Discussion</head>
+     <div xml:id="I1.1">
+      <p>It was agreed that Geoffrey Rockwell would take notes.</p>
+    </div></div>
+  </body><!-- ... -->
+     </text></TEI></egXML>
+
+ 
+ </exemplum></elementSpec>
+            <elementSpec ident="div" mode="change"><attList>
                   <attDef ident="resp" mode="delete"/>
                   <attDef ident="type" mode="change">
                      <valList mode="add" type="closed">
@@ -570,48 +672,88 @@
                         <valItem ident="subAgendaItem"/>
                      </valList>
                   </attDef>
-               </attList>
-            </elementSpec>
-            <elementSpec ident="titlePage" mode="change">
-               <attList>
+               </attList><exemplum><egXML xmlns="http://www.tei-c.org/ns/Examples"><div >
+    <p>Attending: Christian Wittern (CW), Perry Willett (PW), Geoffrey
+     Rockwell (GW), Sebastian Rahtz (SR, board representative),
+     Merrilee Proffitt (MP), Syd Bauman (SB, editor), Matthew Driscoll
+     (MD), Lou Burnard (LB, editor), John Unsworth (JU, chair), David
+     Durand (DD), Laurent Romary (LR)</p>
+   </div></egXML>
+ </exemplum></elementSpec>
+            <elementSpec ident="titlePage" mode="change"><attList>
                   <attDef ident="type" mode="delete"/>
                   <attDef ident="resp" mode="delete"/>
                   <attDef ident="type" mode="delete"/>
-               </attList>
-            </elementSpec>
-            <elementSpec ident="docTitle" mode="change">
-               <attList>
+               </attList><exemplum><egXML xmlns="http://www.tei-c.org/ns/Examples"><titlePage >
+    <docTitle>
+     <titlePart>TEI-C Council meeting, Jan. 12th, 2002</titlePart>
+     <titlePart>Minutes v1.2</titlePart>
+    </docTitle>
+    <docAuthor>Geoffrey Rockwell</docAuthor>
+   </titlePage></egXML>
+ </exemplum></elementSpec>
+            <elementSpec ident="docTitle" mode="change"><attList>
                   <attDef ident="resp" mode="delete"/>
-               </attList>
-            </elementSpec>
-            <elementSpec ident="titlePart" mode="change">
-               <attList>
+               </attList><exemplum><egXML xmlns="http://www.tei-c.org/ns/Examples"><docTitle >
+     <titlePart>TEI-C Council meeting, Jan. 12th, 2002</titlePart>
+     <titlePart>Minutes v1.2</titlePart>
+    </docTitle></egXML>
+ </exemplum></elementSpec>
+            <elementSpec ident="titlePart" mode="change"><attList>
                   <attDef ident="type" mode="delete"/>
                   <attDef ident="resp" mode="delete"/>
                   <attDef ident="type" mode="delete"/>
-               </attList>
-            </elementSpec>
-            <elementSpec ident="docAuthor" mode="change">
-               <attList>
+               </attList><exemplum><egXML xmlns="http://www.tei-c.org/ns/Examples"><titlePart >TEI-C Council meeting, Jan. 12th, 2002</titlePart></egXML>
+ </exemplum></elementSpec>
+            <elementSpec ident="docAuthor" mode="change"><attList>
                   <attDef ident="resp" mode="delete"/>
-               </attList>
-            </elementSpec>
-            <elementSpec ident="docDate" mode="change">
-               <attList>
+               </attList><exemplum><egXML xmlns="http://www.tei-c.org/ns/Examples"><docAuthor >Geoffrey Rockwell</docAuthor></egXML>
+ </exemplum></elementSpec>
+            <elementSpec ident="docDate" mode="change"><attList>
                   <attDef ident="when" mode="delete"/>
                   <attDef ident="resp" mode="delete"/>
-               </attList>
-            </elementSpec>
-            <elementSpec ident="front" mode="change">
-               <attList>
+               </attList><exemplum><egXML xmlns="http://www.tei-c.org/ns/Examples"><docDate >18 May 2003</docDate></egXML>
+ </exemplum></elementSpec>
+            <elementSpec ident="front" mode="change"><attList>
                   <attDef ident="resp" mode="delete"/>
-               </attList>
-            </elementSpec>
-            <elementSpec ident="back" mode="change">
-               <attList>
+               </attList><exemplum><egXML xmlns="http://www.tei-c.org/ns/Examples"><front >
+   <titlePage>
+    <docTitle>
+     <titlePart>TEI-C Council meeting, Jan. 12th, 2002</titlePart>
+     <titlePart>Minutes v1.2</titlePart>
+    </docTitle>
+    <docAuthor>Geoffrey Rockwell</docAuthor>
+   </titlePage>
+   <div>
+    <p>Attending: Christian Wittern (CW), Perry Willett (PW), Geoffrey
+     Rockwell (GW), Sebastian Rahtz (SR, board representative),
+     Merrilee Proffitt (MP), Syd Bauman (SB, editor), Matthew Driscoll
+     (MD), Lou Burnard (LB, editor), John Unsworth (JU, chair), David
+     Durand (DD), Laurent Romary (LR)</p>
+   </div>
+  </front></egXML>
+ </exemplum></elementSpec>
+            <elementSpec ident="back" mode="change"><attList>
                   <attDef ident="resp" mode="delete"/>
-               </attList>
-            </elementSpec>
+               </attList><exemplum><egXML xmlns="http://www.tei-c.org/ns/Examples"><back >
+      <div>
+	<head>Next meeting</head>
+	<p>Next conference call scheduled for <date>Fri 02 Jul 04 at 13:00 UTC</date>.</p>
+      </div>
+      <div xml:id="mail-from-CR" type="appendix">
+	<head>e-mail from CR discussed at meeting</head>
+	<p>The following is an excerpt from e-mail which was
+	  distributed (in print form) at the meeting for
+	  discussion.</p><!-- ... -->
+
+I'm sorry there hasn't been much progress of late, but I hope this has
+been a useful assessment of current status.  I can be reached at any time
+via email or phone (aaa.xxx.nnnn) if you need more info from me.  Have a
+great meeting, and I hope to see you all in Sweden next month.
+
+Chris</div></back></egXML>
+
+ </exemplum></elementSpec>
          </schemaSpec>
       </body>
    </text>
