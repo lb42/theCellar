@@ -248,7 +248,7 @@
     <bibl xml:id="TCM099" n="2018-03_29519"> <meeting n="2018-03" when="2018-03-29">TEI
      Technical Council online meeting <date>29 March 2018</date></meeting> <listRef><ref target="https://lb42.github.io/theCellar/tcMins/2018-03_29519.html">TEI P5 </ref><ref target="https://raw.githubusercontent.com/lb42/theCellar/main/tcMins/2018-03_29519.xml">Raw TEI P5 </ref><ref target="https://tei-c.org/activities/council/meetings/tei-technical-council-teleconference-2018-03-29/"> [on website]</ref></listRef> </bibl>
     <bibl xml:id="TCM098"> <meeting n="2018-02" from="2018-02-24" to="2018-02-26">TEI Technical
-     Council online meeting <date>24–26 February 2018</date></meeting> <listRef><ref target=".html">TEI P5 </ref><ref target="https://raw.githubusercontent.com/lb42/theCellar/main/">Raw TEI P5 </ref></listRef> </bibl>
+     Council ftf meeting <placeName>Köln</placeName>, <date>24–26 February 2018</date></meeting> <listRef><ref target="2018-02_gdoc.html">TEI P5 </ref><ref target="https://raw.githubusercontent.com/lb42/theCellar/main/2018-02_gdoc.xml">Raw TEI P5 </ref></listRef> </bibl>
     <bibl xml:id="TCM097" n="2018-01_29512"> <meeting n="2018-01" when="2018-01-25">TEI
      Technical Council online meeting <date>25 January 2018</date></meeting> <listRef><ref target="https://lb42.github.io/theCellar/tcMins/2018-01_29512.html">TEI P5 </ref><ref target="https://raw.githubusercontent.com/lb42/theCellar/main/tcMins/2018-01_29512.xml">Raw TEI P5 </ref><ref target="https://tei-c.org/activities/council/meetings/tei-technical-council-teleconference-2018-01-25/"> [on website]</ref></listRef> </bibl>
    </listBibl>

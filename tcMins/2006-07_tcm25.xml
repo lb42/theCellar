@@ -121,10 +121,10 @@
             Furthermore, it seems that many on the call believe that
             these elements (except perhaps for <gi>geog</gi>) serve no
             useful purpose. It was suggested that we investigate the
-            removal of these and perhaps other elements. (See <ref target="kill">below</ref>.)</item>
+            removal of these and perhaps other elements. (See <ref target="#kill">below</ref>.)</item>
           <label>SB: Change <gi>region</gi>, <gi>country</gi> to
             <ident type="macro">macro.phraseSeq</ident> instead of
-            <ident type="macro">marcro.paraContent</ident></label>
+            <ident type="macro">macro.paraContent</ident></label>
           <item>SB reports this has been completed</item>
           <label>LB: Add <ident type="class">model.phrase</ident> to
             <ref target="./tcw07.xml?style=printable">TCW07</ref></label>
