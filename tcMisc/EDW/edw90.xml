@@ -1,0 +1,587 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet type="text/css" href="../Stylesheets/teixlite.css"?>
+<!--DOCTYPE TEI.2 PUBLIC "-//TEI//DTD TEI Lite XML ver. 1//EN"
+                       "../Lite/DTD/teixlite.dtd" [
+   <!ATTLIST xref url CDATA #IMPLIED >
+   <!ATTLIST xptr url CDATA #IMPLIED >
+   ]-->
+<TEI.2>
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>On Attributes and Datatypes</title>
+        <author>Syd Bauman</author>
+      </titleStmt>
+      <publicationStmt>
+        <idno type="TEI">ED W 90</idno>
+        <distributor>TEI Consortium</distributor>
+        <availability>
+          <p>Currently unpublished for TEI Council and editors' use.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <p>This TEI Lite (P4 XML) encoded digital file is the
+          original.</p>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc>
+      <change>
+        <date value="2005-09-05"/>
+        <respStmt>
+          <name>Syd</name>
+          <resp>editor</resp>
+        </respStmt>
+        <item>Reworded discussion of whitespace and <ident
+            type="attrName">rend</ident>, now that I'm sure I had it
+          right. Remove references tei.data.string, as Lou's talked me
+          out of it. Changed boolean to truthValue.</item>
+      </change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <head>Introduction</head>
+        <p>At our meeting in Paris, Council charged the North American
+          Editor with the task to <q>review all  current attributes,
+            attempt to classify each as a particular datatype, looking
+            for attributes that need a new datatype, are eligible for
+            requiring a <gi>valList</gi>, or need extra constraint;
+            also consider use of <ident
+              type="datatype">tei.tokens</ident> vs. <ident
+              type="kw">rng:text</ident>, particularly with respect to
+            <ident type="attrName">rend</ident> attribute</q>. I
+          undertook this task understanding full well that it was not
+          a small endeavor; however, I did not realize just how
+          monumental an undertaking it would be.</p>
+        <p>The results of this project should in no way be considered
+          final; quite the opposite, they should be considered
+          preliminary. A first look for guiding further thought. While
+          in many cases the datatypes and restrictions I have chosen
+          are likely be those that TEI ends up using, in others they
+          will not, and in no case should they be presumed definitive
+          at this point.</p>
+      </div>
+      <div>
+        <head>Challenges</head>
+        <p>We had two essentially conflicting goals going into this
+          project. The first is to reduce the overall number of
+          datatypes used to declare TEI attributes. The second is to
+          provide better validation constraints on attribute values
+          than DTDs could provide.</p>
+        <p>At our Paris meeting we discussed three mechanisms, in ways
+          quite similar, that might be used to help accomplish both
+          goals at once: to simplify the overall datatype system, but
+          permit tighter constraints on individual attributes. The
+          first was discussed specifically with respect to the
+          extremely common <ident type="attrName">type</ident>
+          attribute;<note place="foot">A total of 93 distinct
+            attribute/element or attribute/element class pairs.</note>
+          the second was suggested as a generalization of this
+          principle; and the third suggested a slightly more rigorous
+          or formal approach.</p>
+        <p>The first mechanism suggested was initially expressed in
+          <xref url="./edw86.xml">Rationalization of TEI
+            Attributes</xref>. It is to declare the <ident
+            type="attrName">type</ident> attribute (probably via the
+          <ident type="class">tei.typed</ident> class) as a datatype
+          then called <ident type="datatype">tei.enumerated</ident>,
+          which itself places only one constraint on the value: that
+          it must not contain whitespace. Then, each individual
+          element that is a member of <ident
+            type="class">tei.typed</ident> declares an
+          <soCalled>override</soCalled> in its <gi>elementSpec</gi>
+          that changes the attribute definition for <ident
+            type="attrName">type</ident>, specifically providing a
+          value list (via a <gi>valList</gi> element in an ODD file).
+          That value list may be closed or semi. In this system, a
+          closed list consists of only a set of declared values (in
+          which case a user who wants to use a value or values not in
+          the list TEI provides would need to override it in her
+          customization ODD); a semi list is similar, but the
+          resulting RelaxNG would include the open-ended value <ident
+            type="datatype">tei.data.token</ident> (in which case a
+          user who actually wants validation of the suggested values
+          would need to remove that entry in her customization ODD).
+          Because it is imagined that members of the <ident
+        type="class">tei.enumerated</ident>
+          class will <emph>always</emph> have a restricted set of
+          values in a <gi>valList</gi> (even if it is of <ident
+            type="attrName">type</ident> <ident
+            type="attrVal">open</ident> and has no members, and thus
+          boils down to <ident type="datatype">tei.data.token</ident>,
+          which actually provides no restriction except prohibits
+          whitespace) I have not named this mechanism other than
+          <ident type="datatype">tei.data.enumerated.</ident> One way to think of this mechanism is
+          that the schema customizer can almost always obtain her
+          desired effect by changing the <gi>valList</gi>, not the
+          datatype.</p>
+        <p>The second mechanism was discussed only briefly and
+          ephemerally; the specifics were never, and may never be,
+          hammered out. It was to permit some method of allowing an
+          attribute to be declared as belonging to a particular
+          datatype, but then to express some further validation
+          information that would <soCalled>override</soCalled> some of
+          the details of the datatype. E.g., an attribute that existed
+          to express a count of some feature (and thus whose value
+          should be restricted to positive whole numbers or zero)
+          could be declared as <ident type="datatype">tei.data.numeric</ident> (which permits
+          fractions, negative numbers, percentages, etc.) and then be
+          further restricted to non-negative integers.</p>
+        <p>Initially I had thought that all uses of this mechanism
+          would be similar to to the example above, in which an
+          additional constraint was expressed. Thus, in my mind, I had
+          been thinking of this as the <soCalled>additional
+            constraint</soCalled> mechanism. But in fact it would be
+          very useful to be able to express loosened constraints using
+          the same mechanism. I.e., if a datatype permits values
+          <code>"a" | "b" | "c"</code>, it would be useful to have the
+          capability to declare an attribute as that datatype, but
+          also permitting value <code>"d"</code>. Thus it would
+          probably be better to think of this mechanism as
+          <soCalled>additional rules</soCalled> or some such. It
+          should be emphasized that no one with serious technical
+          expertise in the details of the ODD system operations has
+          looked at this mechanism to ascertain whether it can
+          actually be done or not (except when the additional
+          constraint is expressed as a Schematron rule, in which case
+          a separate validation process would be required of the
+          user).</p>
+        <p>Lastly, it was suggested that a system of datatypes might
+          operate similarly to a class system, and permit proper
+          subclasses. It is not clear to me whether a sub-datatype
+          would inherit the constraints expressed by its parent
+          datatype and then provide additional constraints or permit
+          additional values. At the moment I have no idea of how
+          either such system might be implemented. I have been
+          thinking of this system as <soCalled>proper
+            subclassing</soCalled>.</p>
+      </div>
+      <div>
+        <head>Methods</head>
+        <p>At the time I began, there were 541 distinct attributes
+          (i.e., attribute/element or attribute/element class pairs).
+          I created a spreadsheet document (AppleWorks 6.0, if anyone
+          cares) that listed each pair along with its declaration as
+          of the P5 stored in CVS on <date value="2005-05-15">Sun, 15
+            May 05</date>.</p>
+        <p>I then went through each individually, checking (and
+          usually recording) what the recommendation had been in
+          previous editorial reports (<xref url="edw79.xml">CDATA
+            attributes in P4</xref> and <xref
+            url="./edw86.xml">Rationalization of TEI
+            Attributes</xref>), usually reading the current released
+          tagdoc (i.e., version 0.1.2 from Sourceforge) for the
+          attribute, and deciding if it fit into any of the existing
+          datatypes, and if so what additional constraints or laxities
+          needed to be added. I recorded my thoughts in three separate
+          fields: suggested new declaration (generally a datatype),
+          suggested new additional constraints (generally a fragment
+          of RelaxNG or prose describing a Schematron rule), and
+          comments (prose). For reasons I can not explain (and if I
+          could, perhaps would not, for they might be embarrassing) my
+          comments sometimes ended up in the <name>additional</name>
+          field when there was no information in that field. I have
+          corrected some of these, but more may still remain.</p>
+      </div>
+      <div>
+        <head>On Tokenization</head>
+        <note place="inline">Those who are already familiar with
+          RelaxNG and W3C Schema whitespace and tokenization issues
+          can skim this section.</note>
+        <p>Character string values have always been problematic in
+          text formatting systems due to white space
+            issues, SGML worse than most. While XML avoided
+          some of the problems SGML has with whitespace, it inherited
+          others. RelaxNG using W3C Schema datatypes provides several
+          datatypes for handling character strings and their
+          whitespace in different ways.
+          <list type="gloss">
+            <label>string</label>
+            <item>A string of characters, without any whitespace
+            regularization performed. Because XML processors must
+            perform some regularization of white space in an attribute
+            value, using this datatype for attribute values can cause
+            lots of confusion. From Eric van der Vlist's book on
+              RelaxNG: <cit>
+                <q>Keep in mind that you shouldn't use the <ident
+                    type="datatype">string</ident> datatype unless you
+                  have a good reason to do so. If whitespace is
+                  genuinely significant to your information, use the
+                  <ident type="datatype">string</ident> type;
+                  otherwise, use the <ident
+                    type="datatype">token</ident> type.</q>
+                <bibl><author>Eric van der Vlist</author>,
+            <title>RelaxNG</title>. <xptr
+                    url="http://books.xmlschemata.org/relaxng/relax-CHP-7-SECT-6.html"/></bibl>
+              </cit>
+            </item>
+            <label>token</label>
+            <item>Whitespace regularization just like the
+              <code>normalize-space()</code> XSLT function is
+              performed: sequences of one or more whitespace characters
+              (U+0009 = tab, U+000A = linefeed, U+000D = carriage
+              return, and U+0020 = space) are replaced by a single
+              U+0020 = space, and the leading and trailing space (if
+              any) are then stripped off. It is important to remember
+              that the value of an attribute of datatype token is not
+              restricted to a single token in the normal computer
+              science sense of the word <mentioned>token</mentioned>;
+              rather the attribute values in both the schema and the
+              instance are whitespace regularized in preparation for
+              tokenization before they are compared to see if the
+              instance matches the requirements of the schema.</item>
+            <label>xsd:string</label>
+            <item>The same as <name>string</name>, but has one
+              additional (powerful) feature and one (minor) drawback.
+              The additional feature is that further constraints can
+              be applied via <term>facets</term>. This extremely
+              powerful feature allows schema writers to do things like
+              restrict the length of a string or ensure it matches a
+              particular regular expression pattern. The drawback is
+              that your RelaxNG processor has to know about W3C Schema
+              datatypes. This is only a minor drawback because, to my
+              knowledge, <emph>all</emph> current RelaxNG processors
+              do know about W3C datatypes.</item>
+            <label>xsd:normalizedString</label>
+            <item>Just like an xsd:string, but tab, linefeed, and
+              carriage return characters are replaced by space
+              characters; but runs of such characters are not reduced
+              to a single space, and leading and trailing spaces are
+              not stripped. I have yet to figure out when this
+              datatype would be useful (perhaps through lack of
+              trying).</item>
+            <label>xsd:token</label>
+            <item>Just like token, but with the same additional
+              feature and minor drawback as xsd:string.</item>
+          </list>
+        </p>
+        <p>In addition, there are several datatypes for dealing with
+            strings that consist of only those characters permitted in
+            XML names.
+          <list type="gloss">
+            <label>NMTOKEN</label>
+            <item>As in XML 1.0, a sequence of name characters.</item>
+            <label>NMTOKENS</label>
+            <item>As in XML 1.0, a whitespace-separated list of
+              NMTOKEN components.</item>
+            <label>NCName</label>
+            <item>An XML 1.0 name that does not have any colons.</item>
+            <label>QName</label>
+            <item>An XML 1.0 name, which may optionally have a
+              namespace prefix, but if it does, that prefix must be
+              defined and in scope for the element on which the
+              attribute declared as QName is specified.</item>
+            <label>Name</label>
+            <item>I haven't figured this one out yet -- the
+              syntax permits colon, but <xref
+                url="http://books.xmlschemata.org/relaxng/relax-CHP-8-SECT-1.html#relax-CHP-8-ITERM-1586">the 
+                description</xref> in the book says not to use it for names with a
+              namespace prefix.</item>
+          </list>
+        </p>
+      </div>
+      <div>
+        <head>On <ident type="attrName">rend</ident> being <ident
+            type="kw">text</ident>, <ident type="kw">string</ident>,
+          or <ident type="kw">token</ident></head>
+        <p>Note that there is no difference
+          between declaring an attribute to contain <ident
+            type="kw">text</ident> or <ident type="kw">string</ident>.
+          A processor parsing an XML instance that conforms
+          to a RelaxNG grammar does no more whitespace regularization
+          on the values it hands to an application than those required
+          by the XML specification, regardless of how the attribute is
+          declared in RelaxNG. I.e., the RelaxNG declaration only
+          affects whitespace regularization of the attribute value for
+          purposes of comparison to the schema for validity, not for
+          other processes.</p>
+        <p>I am currently of the opinion that the global
+          <ident type="attrName">rend</ident> attribute should be
+          declared as datatype <ident
+            type="datatype">tei.data.tokens</ident>, which corresponds
+          to <ident type="kw">xsd:token</ident>. This means that
+          whitespace regularization would take place prior to
+          validation. Unless users change the declaration to restrict
+          the attribute to a particular set of values, this will have
+          no effect. And if a user particularly wants to retain
+          whitespace when validating against those particular values,
+          she can change the base datatype at the same time she is
+          adding the particular values.</p>
+      </div>
+      <div>
+        <head>The Datatypes</head>
+        <p>Here is the list of my current recommendations for
+        datatypes for TEI attributes.</p>
+        <table rend="rules">
+          <head>Suggested <soCalled>Base</soCalled> Datatypes</head>
+          <row role="label">
+            <cell>datatype name</cell>
+            <cell>RelaxNG declaration</cell>
+            <cell>additional / comments</cell>
+          </row>
+          <row>
+            <cell>tei.data.token</cell>
+            <cell>xsd:token { pattern="\S+" }</cell>
+            <cell>I.e., a string with no whitespace (ala EDW86)</cell>
+          </row>
+          <!-- tei.data.string removed -->
+          <row>
+            <cell>tei.data.pointer</cell>
+            <cell>xsd:anyURI</cell>
+            <cell></cell>
+          </row>
+          <row>
+            <cell>tei.data.truthValue</cell>
+            <cell>xsd:boolean | "unknown" | "unspecified"</cell>
+            <cell></cell>
+          </row>
+          <row>
+            <cell>tei.data.temporalExpression</cell>
+            <cell>xsd:date | xsd:gYear | xsd:gMonth | xsd:gDay |
+              xsd:gYearMonth | xsd:gMonthDay | xsd:time | xsd:dateTime
+              | xsd:token { pattern="([01][0-9]|2[0-3]):[0-5][0-9]"
+              }</cell>
+            <cell>That last alternate permits times to be expressed as
+              hh:mm, without seconds (xsd:time requires
+              seconds)</cell>
+          </row>
+          <row>
+            <cell>tei.data.duration</cell>
+            <cell>xsd:duration | xsd:token {
+              pattern= "[+-]?[0-9]+(\.[0-9]*)? \s* (y((ea)?r)?|mon(th)?|w((ee)?k)?|d|h|min|s|ms|µs|ns|ps" 
+              }<note rend="small" place="inline">There should be no whitespace
+            inside the pattern; it is added here just to prevent this
+            column from being exorbitantly wide.</note></cell>
+            <cell>That last alternate permits durations like
+              <q>2yr</q>, <q>1 year</q>, <q>3.2 month</q>, <q>1
+                wk</q>, <q>+12d</q>, etc. Where there is an SI symbol
+              or a non-SI symbol accepted for use with SI I have used
+              it exclusively; where there is no such symbol I have
+              permitted a variety of possibilities, although (at least
+              for now) the pattern does not permit plurals (e.g.
+              <q>month</q> is valid, but <q>months</q> is not).</cell>
+          </row>
+          <row>
+            <cell>tei.data.probability</cell>
+            <cell>xsd:token { pattern = "(100|[0-9]{1,2}\.?[0-9]*)%" } | xsd:double { minInclusive = "0" maxInclusive = "1" }></cell>
+            <cell>That first alternate permits percentages ranging from
+              0.0% to 100%, with no space before the percent
+              sign.</cell>
+          </row>
+          <row>
+            <cell>tei.data.numeric</cell>
+            <cell>xsd:long | xsd:double | xsd:token { pattern = "[+-]?[0-9]+\.?[0-9]*%" }</cell>
+            <cell>That last alternate permits percentages of any value
+              with an optional preceding sign, with no space before
+              the percent sign. Note that this declaration <emph>does permit</emph>
+              scientific notation, as <xref
+                url="http://listserv.brown.edu/archives/cgi-bin/wa?A2=ind0505&amp;L=TEI-L&amp;P=R2718&amp;I=-3">requested 
+                on TEI-L</xref> recently.</cell>
+          </row>
+        </table>
+        <table rend="rules">
+          <head>Suggested <soCalled>Derived</soCalled> Datatypes</head>
+          <row role="label">
+            <cell>datatype name</cell>
+            <cell>RelaxNG declaration</cell>
+            <cell>additional / comments</cell>
+          </row>
+          <row>
+            <cell>tei.data.tokens</cell>
+            <cell>list { tei.data.token+ }</cell>
+            <cell>A series of whitespace-separated strings that do not
+              have whitespace themselves.</cell>
+          </row>
+          <row>
+            <cell>tei.data.certainty</cell>
+            <cell>"high" | "medium" | "low" | "unknown" | tei.data.probability</cell>
+            <cell></cell>
+          </row>
+          <row>
+            <cell>tei.data.language</cell>
+            <cell>tei.data.token</cell>
+            <cell>xsd:language<note place="foot"><p>As mentioned
+                  above, I don't know how an additional restriction
+                  like this would actually be implemented. If it could
+                  not be, the RelaxNG declaration would be
+                  xsd:language, and this would be a base datatype.</p>
+                <p>I am not so sure there is really an advantage to
+                  deriving a datatype like this (as opposed to making
+                  it a base type) and seek guidance from Council on
+                  this issue.</p> <p>One might well ask why make a
+                  datatype that is used only four times and maps
+                  directly to a W3C datatype. The answer, I believe,
+                  is that it gives us a place to explain how to use
+                  this datatype in a manner written for a TEI
+                  audience.</p></note></cell>
+          </row>
+          <row>
+            <cell>tei.data.enumerated</cell>
+            <cell>a <gi>valList</gi> is required</cell>
+            <cell>Used to constrain the set of values to a possibly
+              open-ended list declared in the ODD files and thus
+              schema. For an open-ended enumeration, <ident type="datatype">tei.data.token</ident>
+              is one of (or even the only) value listed, although
+              this would likely be accomplished by an attribute value
+              on the <gi>valList</gi> in the ODD.</cell>
+          </row>
+          <row>
+            <cell>tei.data.code</cell>
+            <cell>tei.data.pointer</cell>
+            <cell>{ pattern = "^#.*" }<note place="foot">Used when a constrained
+                vocabulary is declared elsewhere in the same document,
+                e.g. in the <gi>handList</gi> in the TEI
+                header.</note></cell>
+          </row>
+          <row>
+            <cell>tei.data.key</cell>
+            <cell>tei.data.pointer</cell>
+            <cell>Used when a constrained vocabulary is declared
+              externally, e.g. in a web-accessible XML resource.
+              Otherwise very similar to <ident type="datatype">tei.data.code.</ident></cell>
+          </row>
+          <row>
+            <cell>tei.data.regexp</cell>
+            <cell>tei.data.tokens</cell>
+            <cell>must match the <xref
+                url="http://www.w3.org/TR/xmlschema-2/#regexs">W3C 
+                regular expression</xref> syntax.</cell>
+          </row>
+          <row>
+            <cell>tei.data.sex</cell>
+            <cell>tei.data.enumerated</cell>
+            <cell>"m" | "f" | "u" | "x"</cell>
+          </row>
+          <row>
+            <cell>tei.data.pointers</cell>
+            <cell>list { tei.data.pointer+ }</cell>
+            <cell></cell>
+          </row>
+        </table>
+        <p>There are several instances of attributes which I have
+          assigned directly to W3C datatypes, as this seems to make
+          the most sense. For example, the <ident
+            type="attrName">cols</ident> attribute of <gi>table</gi>
+          and <gi>cell</gi> is just a count, and so I have used <ident
+            type="kw">xsd:nonNegativeInteger</ident> directly. There
+          is, however, one not insignificant argument for creating a
+          <ident type="datatype">tei.data.count</ident> datatype that boils down to
+          <ident type="kw">xsd:nonNegativeInteger</ident>: it would give us a place to explain
+          the datatype to TEI users such that they would not have to
+          refer to W3C specifications to find out what
+          <ident type="kw">xsd:nonNegativeInteger</ident> means.</p>
+      </div>
+      <div>
+        <head>On <ident type="datatype">tei.data.enumerated</ident>,
+        <ident type="datatype">tei.data.code</ident>, and <ident type="datatype">tei.data.key</ident></head>
+        <p>These three datatypes are similar in nature. In each case,
+          the intent is that the value of an attribute will be
+          constrained to a list of particular values declared
+          elsewhere (although for <ident
+            type="datatype">tei.data.enumerated</ident> the
+          <gi>valList</gi> may be of <ident
+            type="attrName">type</ident> <ident
+            type="attrVal">semi</ident>, in which the resulting list,
+          while providing suggestions, would not provide any actual
+          constraint).<note place="foot">Currently, TEI P5 source ODD
+            files are written such that when there is a
+            <gi>valList</gi> of <ident type="attrName">type</ident>
+            <ident type="attrVal">semi</ident> there is also a
+            <gi>datatype</gi> specified as <ident
+              type="kw">rng:text</ident>. This should be changed so
+            that the datatype is <ident
+              type="datatype">tei.data.enumerated</ident>, and the
+            output of the tangle process depends on the <ident
+              type="attrName">type</ident> of the (required) sibling
+            <gi>valList</gi>. The requirement of the <gi>valList</gi>
+            could not easily be enforced by TEI RelaxNG schemas, but
+            could easily be enforced by a TEI Schematron
+            rule.</note></p>
+        <p>For <ident type="datatype">tei.data.enumerated</ident>,
+          <q>elsewhere</q> is in the schema file, and the values are
+          constrained directly by the RelaxNG grammar.</p>
+        <p>For <ident type="datatype">tei.data.code</ident>,
+          <q>elsewhere</q> is somewhere else in the same document
+          instance, and the attribute values are constrained by the
+          RelaxNG grammar only insofar as they must be fragment
+          identifiers (e.g., <code>#hand07</code>), i.e. they must be
+          pointers that do not point outside the current document.
+          However, as with all URI references, the RelaxNG grammar
+          will not check that they actually point anywhere at all. A
+          link-checker must be used separately to ensure this. In many
+          cases, it has not been decided where each attribute should
+          point. I am entertaining the thought that, for those cases
+          where there is not already an obvious place it should point,
+          <ident type="datatype">tei.data.code</ident> attributes
+          should point to <gi>valItem</gi> elements (by pointing to
+          their <ident type="attrName">xml:id</ident> attributes, not
+          by matching their <ident type="attrName">ident</ident>
+          attributes) that are children of a <gi>valList</gi> that is
+          itself a child of a specialized element that gives the
+          appropriate semantic.</p>
+        <p>For <ident type="datatype">tei.data.key</ident>,
+          <q>elsewhere</q> is somewhere else, most likely in a
+          web-accessible resource. Here the values are just <ident
+            type="datatype">tei.data.pointer</ident>s, and a
+          link-checker would need to be used to validate that each
+          points to an available resource.</p>
+        <p>To summarize:<list type="gloss">
+            <label>tei.data.code</label>
+            <item>Possible values (which start with <q>#</q>) are
+              defined by a list that appears inside the current
+              document (most likely in the TEI header). A Schematron
+              rule can validate that a given attribute's value is from
+              the appropriate list.</item>
+            <label>tei.data.enumerated</label>
+            <item>Possible values are defined by a list which appears
+              in the project ODD customization file and thus schema.
+              TEI provides defaults for when the attributes of
+              interest are not directly addressed by the ODD
+              customization file. In some cases (<ident
+                type="attrVal">closed</ident>), validation would
+              require that values come from the list of defined
+              values. In other cases (<ident
+                type="attrVal">semi</ident>), the list provides
+              semantics for the available set of values (and a place
+              to list them for easy reference), but attribute values
+              are not validated against them.</item>
+            <label>tei.data.key</label>
+            <item>Possible values are simply URI References. They may
+              or may not point to something useful that local software
+              may or may note be able to validate. (Not unlike the P4
+              <ident type="attrName">key</ident> attribute.)</item>
+          </list>
+        </p>
+        <p>Here is a fanciful example of the use of the <ident
+            type="attrName">resp</ident> attribute as <ident
+            type="datatype">tei.data.code</ident>.<eg>
+<![CDATA[        <!-- somewhere in <teiHeader>: -->
+        <respStmt xml:id="P1">
+          <name>Will Scribbler</name>
+          <resp>paleographer</resp>
+        </respStmt>
+        <respStmt xml:id="P2">
+          <name>Mark D. Errors</name>
+          <resp>Proofreader</resp>
+        </respStmt>
+      <!-- somewhere in <body>: -->
+      <p>This is ha<unclear resp="#P1">r</unclear>d to read.</p>]]></eg></p>
+      </div>
+      <div>
+        <head>Application of Datatypes to Attributes: the Details</head>
+        <p>The details of which datatype each attribute is assigned
+          to, and what additional constraints or possible values I
+          imagine for them, were imported from the spreadsheet to a
+          MySQL database. With the help of <xref
+            url="http://www.stg.brown.edu/staff/kerri.html">a
+            colleague</xref> I have built a simple <xref
+            url="http://dev.stg.brown.edu/staff/Syd_Bauman/edw90.php">PHP 
+            interface</xref> to this database for Council's use.
+          While I am sure there are still errors, it is certainly
+          worth a careful look. Note that <q>NaAA</q> means <q>not an
+        attribute anymore</q>.</p>
+      </div>
+    </body>
+  </text>
+</TEI.2>

@@ -1,0 +1,762 @@
+<?xml version="1.0"?>
+<attribList>
+
+<attrib n="" ident="" gi="" class=""><current></current><datatype></datatype><vals></vals><comments></comments></attrib>
+<attrib n="&#10;" ident="" gi="" class=""><current></current><datatype></datatype><vals></vals><comments></comments></attrib>
+<attrib n="106" ident="expand" gi="" class="tei.dictionaries"><current>text</current><datatype></datatype><vals></vals><comments>still pending DI revision; good candidate for child
+element</comments></attrib>
+<attrib n="181" ident="lemma" gi="w" class=""><current>text</current><datatype></datatype><vals></vals><comments>This, it seems to me, is a good candidate for being a child
+element</comments></attrib>
+<attrib n="341" ident="split" gi="" class="tei.dictionaries"><current>text</current><datatype></datatype><vals></vals><comments>still pending DI revision; good candidate for children
+elements</comments></attrib>
+<attrib n="494" ident="value" gi="" class="tei.dictionaries"><current>text</current><datatype></datatype><vals></vals><comments>?? pending DI revision; probably needs to be a child
+element</comments></attrib>
+<attrib n="373" ident="targFunc" gi="" class="tei.pointerGroup"><current>list { xsd:NCName, xsd:NCName+ }</current><datatype>list { tei.data.ident, tei.data.idents }</datatype><vals></vals><comments></comments></attrib>
+<attrib n="240" ident="otherLangs" gi="textLang" class=""><current>datatype.uriList</current><datatype>list { tei.data.language+ }</datatype><vals></vals><comments></comments></attrib>
+<attrib n="88" ident="domains" gi="" class="tei.pointerGroup"><current>list { xsd:anyURI, xsd:anyURI+ }</current><datatype>list { tei.data.pointer, tei.data.pointers }</datatype><vals></vals><comments></comments></attrib>
+<attrib n="516" ident="weights" gi="alt" class=""><current>text</current><datatype>list { tei.data.probability+ }</datatype><vals></vals><comments>Because tei.data.probability permits both reals and
+percentages, differentiated by syntax (a percent sign, "%"), the
+wScale= attribute would no longer be needed.</comments></attrib>
+<attrib n="17" ident="atts" gi="specDesc" class=""><current>text</current><datatype>list { xsd:NCName* }</datatype><vals></vals><comments>Can't be tei.data.idents, as an emtpy value has meaning.</comments></attrib>
+<attrib n="76" ident="desc" gi="gap" class=""><current>text</current><datatype>NaAA</datatype><vals></vals><comments></comments></attrib>
+<attrib n="77" ident="desc" gi="join" class=""><current>text</current><datatype>NaAA</datatype><vals></vals><comments></comments></attrib>
+<attrib n="78" ident="desc" gi="joinGrp" class=""><current>text</current><datatype>NaAA</datatype><vals></vals><comments></comments></attrib>
+<attrib n="168" ident="label2" gi="arc" class=""><current>text</current><datatype>NaAA</datatype><vals></vals><comments></comments></attrib>
+<attrib n="169" ident="label2" gi="node" class=""><current>text</current><datatype>NaAA</datatype><vals></vals><comments></comments></attrib>
+<attrib n="170" ident="label" gi="arc" class=""><current>text</current><datatype>NaAA</datatype><vals></vals><comments></comments></attrib>
+<attrib n="171" ident="label" gi="eLeaf" class=""><current>text</current><datatype>NaAA</datatype><vals></vals><comments></comments></attrib>
+<attrib n="172" ident="label" gi="eTree" class=""><current>text</current><datatype>NaAA</datatype><vals></vals><comments></comments></attrib>
+<attrib n="173" ident="label" gi="graph" class=""><current>text</current><datatype>NaAA</datatype><vals></vals><comments></comments></attrib>
+<attrib n="174" ident="label" gi="iNode" class=""><current>text</current><datatype>NaAA</datatype><vals></vals><comments></comments></attrib>
+<attrib n="175" ident="label" gi="leaf" class=""><current>text</current><datatype>NaAA</datatype><vals></vals><comments></comments></attrib>
+<attrib n="176" ident="label" gi="node" class=""><current>text</current><datatype>NaAA</datatype><vals></vals><comments></comments></attrib>
+<attrib n="177" ident="label" gi="root" class=""><current>text</current><datatype>NaAA</datatype><vals></vals><comments></comments></attrib>
+<attrib n="178" ident="label" gi="tree" class=""><current>text</current><datatype>NaAA</datatype><vals></vals><comments></comments></attrib>
+<attrib n="179" ident="label" gi="triangle" class=""><current>text</current><datatype>NaAA</datatype><vals></vals><comments></comments></attrib>
+<attrib n="238" ident="orig" gi="" class="tei.dictionaries"><current>text</current><datatype>NaAA</datatype><vals></vals><comments>must become an element, somehow</comments></attrib>
+<attrib n="269" ident="reg" gi="" class="tei.names"><current>text</current><datatype>NaAA</datatype><vals></vals><comments></comments></attrib>
+<attrib n="270" ident="reg" gi="" class="tei.personPart"><current>text</current><datatype>NaAA</datatype><vals></vals><comments></comments></attrib>
+<attrib n="271" ident="reg" gi="" class="tei.temporalExpr"><current>text</current><datatype>NaAA</datatype><vals></vals><comments></comments></attrib>
+<attrib n="272" ident="reg" gi="orgDivn" class=""><current>text</current><datatype>NaAA</datatype><vals></vals><comments></comments></attrib>
+<attrib n="273" ident="reg" gi="orgName" class=""><current>text</current><datatype>NaAA</datatype><vals></vals><comments></comments></attrib>
+<attrib n="274" ident="reg" gi="orgTitle" class=""><current>text</current><datatype>NaAA</datatype><vals></vals><comments></comments></attrib>
+<attrib n="275" ident="reg" gi="orgType" class=""><current>text</current><datatype>NaAA</datatype><vals></vals><comments></comments></attrib>
+<attrib n="150" ident="index" gi="index" class=""><current>text</current><datatype>pending &lt;index&gt; revision</datatype><vals></vals><comments>Name "indexName" is better, if this is kept as a data token; by
+why not a pointer to a &lt; div&gt; or &lt; divGen&gt;?</comments></attrib>
+<attrib n="18" ident="baseForm" gi="m" class=""><current>text</current><datatype>pending DI revision</datatype><vals></vals><comments>This, it seems to me, is a likely place where &lt; g&gt; would
+be needed, and seems a good candidate for being a child
+element</comments></attrib>
+<attrib n="32" ident="certainty" gi="" class="tei.datable"><current>text</current><datatype>tei.data.certainty</datatype><vals></vals><comments></comments></attrib>
+<attrib n="102" ident="exact" gi="dateStruct" class=""><current>text</current><datatype>tei.data.certainty</datatype><vals></vals><comments>needs to become accuracy=, as amember of a new tei.att.measure
+class</comments></attrib>
+<attrib n="346" ident="status" gi="correction" class=""><current>"high" | "medium" | "low" | "unknown"</current><datatype>tei.data.certainty</datatype><vals></vals><comments></comments></attrib>
+<attrib n="542" ident="cert" gi="" class="tei.intervention"><current>text</current><datatype>tei.data.certainty</datatype><vals></vals><comments></comments></attrib>
+<attrib n="68" ident="degree" gi="certainty" class=""><current>datatype.Certainty</current><datatype>tei.data.certainty | tei.data.probability</datatype><vals></vals><comments></comments></attrib>
+<attrib n="69" ident="degree" gi="damage" class=""><current>text</current><datatype>tei.data.certainty | tei.data.probability</datatype><vals></vals><comments>the semantics aren't quite right, but the syntax is exactly
+what we want.</comments></attrib>
+<attrib n="71" ident="degree" gi="purpose" class=""><current>"high" | "medium" | "low" | "unknown"</current><datatype>tei.data.certainty | tei.data.probability</datatype><vals></vals><comments>May wish to drop the tei.data.probability?</comments></attrib>
+<attrib n="41" ident="class" gi="msItemStruct" class=""><current>datatype.uriList</current><datatype>tei.data.code</datatype><vals></vals><comments>??? element introduced after tei-doc-0.1.2 generated</comments></attrib>
+<attrib n="82" ident="desc" gi="restore" class=""><current>text</current><datatype>tei.data.code</datatype><vals></vals><comments>to where would it point?</comments></attrib>
+<attrib n="91" ident="ed" gi="cb" class=""><current>text</current><datatype>tei.data.code</datatype><vals></vals><comments>But to where should it point?</comments></attrib>
+<attrib n="92" ident="ed" gi="lb" class=""><current>text</current><datatype>tei.data.code</datatype><vals></vals><comments>But to where should it point?</comments></attrib>
+<attrib n="93" ident="ed" gi="milestone" class=""><current>text</current><datatype>tei.data.code</datatype><vals></vals><comments>But to where should it point?</comments></attrib>
+<attrib n="94" ident="ed" gi="pb" class=""><current>text</current><datatype>tei.data.code</datatype><vals></vals><comments>But to where should it point?</comments></attrib>
+<attrib n="95" ident="ed" gi="state" class=""><current>text</current><datatype>tei.data.code</datatype><vals></vals><comments>But to where should it point?</comments></attrib>
+<attrib n="151" ident="ink" gi="hand" class=""><current>text</current><datatype>tei.data.code</datatype><vals></vals><comments>pointing where?</comments></attrib>
+<attrib n="152" ident="ink" gi="handShift" class=""><current>text</current><datatype>tei.data.code</datatype><vals></vals><comments>pointing where?</comments></attrib>
+<attrib n="198" ident="medium" gi="handNote" class=""><current>datatype.Key</current><datatype>tei.data.code</datatype><vals></vals><comments>Either tei.data.enumerated or tei.data.code; ask MS</comments></attrib>
+<attrib n="221" ident="notation" gi="formula" class=""><current>formulaNotations</current><datatype>tei.data.code</datatype><vals></vals><comments>?? Pointing to where? Use a QName?</comments></attrib>
+<attrib n="326" ident="scribe" gi="handNote" class=""><current>datatype.Key</current><datatype>tei.data.code</datatype><vals></vals><comments>Either tei.data.enumerated or tei.data.code; ask MS.</comments></attrib>
+<attrib n="327" ident="script" gi="handNote" class=""><current>datatype.Key</current><datatype>tei.data.code</datatype><vals></vals><comments>Either tei.data.enumerated or tei.data.code; ask MS.</comments></attrib>
+<attrib n="328" ident="script" gi="writing" class=""><current>datatype.uri</current><datatype>tei.data.code</datatype><vals></vals><comments>Schematron rule that it points to a &lt; bibl&gt;, &lt;
+biblStruct&gt;, &lt; biblFull&gt;, or (maybe) &lt;
+biblItem&gt;?</comments></attrib>
+<attrib n="336" ident="social" gi="distinct" class=""><current>text</current><datatype>tei.data.code</datatype><vals></vals><comments>points to what?</comments></attrib>
+<attrib n="340" ident="space" gi="distinct" class=""><current>text</current><datatype>tei.data.code</datatype><vals></vals><comments>points to what?</comments></attrib>
+<attrib n="376" ident="time" gi="distinct" class=""><current>text</current><datatype>tei.data.code</datatype><vals></vals><comments>points to what?</comments></attrib>
+<attrib n="510" ident="value" gi="symbol" class=""><current>datatype.Key</current><datatype>tei.data.code</datatype><vals></vals><comments>Problematic as this is part of ISO DIS now.</comments></attrib>
+<attrib n="216" ident="new" gi="handShift" class=""><current>datatype.uri</current><datatype>tei.data.code</datatype><vals>[schematron rule that it points to a &lt;hand&gt;]</vals><comments></comments></attrib>
+<attrib n="226" ident="old" gi="handShift" class=""><current>datatype.uri</current><datatype>tei.data.code</datatype><vals>[schematron rule that it points to a &lt;hand&gt;]</vals><comments></comments></attrib>
+<attrib n="39" ident="class" gi="msContents" class=""><current>datatype.uriList</current><datatype>tei.data.code</datatype><vals>[schematron rule that it points to a &lt;textClass&gt; or child
+of a &lt;textClass&gt;? ask MS]</vals><comments></comments></attrib>
+<attrib n="40" ident="class" gi="msItem" class=""><current>datatype.uriList</current><datatype>tei.data.code</datatype><vals>[schematron rule that it points to a &lt;textClass&gt; or child
+of a &lt;textClass&gt;? ask MS]</vals><comments></comments></attrib>
+<attrib n="304" ident="role" gi="person" class=""><current>text</current><datatype>tei.data.code</datatype><vals>[schematron rule that it points to a ??]</vals><comments></comments></attrib>
+<attrib n="305" ident="role" gi="personGrp" class=""><current>text</current><datatype>tei.data.code</datatype><vals>[schematron rule that it points to a ??]</vals><comments></comments></attrib>
+<attrib n="325" ident="scribe" gi="hand" class=""><current>text</current><datatype>tei.data.code</datatype><vals>[schematron rule that it points to a tei.naming or
+&lt;person&gt; element?]</vals><comments>tough one; only example in the GLs puts it on n=, certainly a
+bad idea</comments></attrib>
+<attrib n="278" ident="resp" gi="" class="tei.interpret"><current>text</current><datatype>tei.data.code</datatype><vals>[schematron rule that it points to a tei.naming or
+&lt;person&gt; element]</vals><comments>obvious candidate for a new attr class</comments></attrib>
+<attrib n="279" ident="resp" gi="" class="tei.readings"><current>text</current><datatype>tei.data.code</datatype><vals>[schematron rule that it points to a tei.naming or
+&lt;person&gt; element]</vals><comments>obvious candidate for a new attr class</comments></attrib>
+<attrib n="288" ident="resp" gi="hand" class=""><current>datatype.Key</current><datatype>tei.data.code</datatype><vals>[schematron rule that it points to a tei.naming or
+&lt;person&gt; element]</vals><comments>obvious candidate for a new attr class</comments></attrib>
+<attrib n="289" ident="resp" gi="handShift" class=""><current>datatype.uri</current><datatype>tei.data.code</datatype><vals>[schematron rule that it points to a tei.naming or
+&lt;person&gt; element]</vals><comments>obvious candidate for a new attr class</comments></attrib>
+<attrib n="290" ident="resp" gi="note" class=""><current>text</current><datatype>tei.data.code</datatype><vals>[schematron rule that it points to a tei.naming or
+&lt;person&gt; element]</vals><comments>obvious candidate for a new attr class</comments></attrib>
+<attrib n="291" ident="resp" gi="reg" class=""><current>datatype.uri</current><datatype>tei.data.code</datatype><vals>[schematron rule that it points to a tei.naming or
+&lt;person&gt; element]</vals><comments>obvious candidate for a new attr class</comments></attrib>
+<attrib n="292" ident="resp" gi="respons" class=""><current>text</current><datatype>tei.data.code</datatype><vals>[schematron rule that it points to a tei.naming or
+&lt;person&gt; element]</vals><comments>obvious candidate for a new attr class</comments></attrib>
+<attrib n="293" ident="resp" gi="restore" class=""><current>datatype.uri</current><datatype>tei.data.code</datatype><vals>[schematron rule that it points to a tei.naming or
+&lt;person&gt; element]</vals><comments>obvious candidate for a new attr class</comments></attrib>
+<attrib n="294" ident="resp" gi="space" class=""><current>datatype.Key</current><datatype>tei.data.code</datatype><vals>[schematron rule that it points to a tei.naming or
+&lt;person&gt; element]</vals><comments>obvious candidate for a new attr class</comments></attrib>
+<attrib n="295" ident="resp" gi="supplied" class=""><current>datatype.Key</current><datatype>tei.data.code</datatype><vals>[schematron rule that it points to a tei.naming or
+&lt;person&gt; element]</vals><comments>obvious candidate for a new attr class</comments></attrib>
+<attrib n="296" ident="resp" gi="unclear" class=""><current>datatype.Key</current><datatype>tei.data.code</datatype><vals>[schematron rule that it points to a tei.naming or
+&lt;person&gt; element]</vals><comments>obvious candidate for a new attr class</comments></attrib>
+<attrib n="297" ident="resp" gi="witDetail" class=""><current>datatype.Key</current><datatype>tei.data.code</datatype><vals>[schematron rule that it points to a tei.naming or
+&lt;person&gt; element]</vals><comments>obvious candidate for a new attr class</comments></attrib>
+<attrib n="543" ident="resp" gi="" class="tei.intervention"><current>datatype.uri</current><datatype>tei.data.code</datatype><vals>[schematron rule that it points to a tei.naming or
+&lt;person&gt; element]</vals><comments>obvious candidate for a new attr class</comments></attrib>
+<attrib n="338" ident="source" gi="normalization" class=""><current>text</current><datatype>tei.data.code</datatype><vals>[schematron rule that it points to a tei.naming,
+&lt;person&gt;, &lt;bibl&gt;, &lt;biblStruct&gt;, &lt;biblFull&gt;,
+or &lt;biblItem&gt; element]</vals><comments></comments></attrib>
+<attrib n="15" ident="arity" gi="tree" class=""><current>xsd:nonNegativeInteger</current><datatype>tei.data.count</datatype><vals></vals><comments></comments></attrib>
+<attrib n="44" ident="cols" gi="cell" class=""><current>xsd:nonNegativeInteger</current><datatype>tei.data.count</datatype><vals></vals><comments></comments></attrib>
+<attrib n="45" ident="cols" gi="table" class=""><current>xsd:nonNegativeInteger</current><datatype>tei.data.count</datatype><vals></vals><comments></comments></attrib>
+<attrib n="46" ident="columns" gi="layout" class=""><current>datatype.Key</current><datatype>tei.data.count</datatype><vals></vals><comments></comments></attrib>
+<attrib n="70" ident="degree" gi="node" class=""><current>xsd:nonNegativeInteger</current><datatype>tei.data.count</datatype><vals></vals><comments></comments></attrib>
+<attrib n="149" ident="inDegree" gi="node" class=""><current>xsd:nonNegativeInteger</current><datatype>tei.data.count</datatype><vals></vals><comments></comments></attrib>
+<attrib n="182" ident="length" gi="state" class=""><current>xsd:nonNegativeInteger</current><datatype>tei.data.count</datatype><vals></vals><comments></comments></attrib>
+<attrib n="225" ident="occurs" gi="tagUsage" class=""><current>xsd:nonNegativeInteger</current><datatype>tei.data.count</datatype><vals></vals><comments></comments></attrib>
+<attrib n="231" ident="order" gi="graph" class=""><current>xsd:nonNegativeInteger</current><datatype>tei.data.count</datatype><vals></vals><comments></comments></attrib>
+<attrib n="232" ident="order" gi="tree" class=""><current>xsd:nonNegativeInteger</current><datatype>tei.data.count</datatype><vals></vals><comments></comments></attrib>
+<attrib n="241" ident="outDegree" gi="iNode" class=""><current>xsd:nonNegativeInteger</current><datatype>tei.data.count</datatype><vals></vals><comments></comments></attrib>
+<attrib n="242" ident="outDegree" gi="node" class=""><current>xsd:nonNegativeInteger</current><datatype>tei.data.count</datatype><vals></vals><comments></comments></attrib>
+<attrib n="243" ident="outDegree" gi="root" class=""><current>xsd:nonNegativeInteger</current><datatype>tei.data.count</datatype><vals></vals><comments></comments></attrib>
+<attrib n="307" ident="rows" gi="cell" class=""><current>xsd:nonNegativeInteger</current><datatype>tei.data.count</datatype><vals></vals><comments></comments></attrib>
+<attrib n="308" ident="rows" gi="table" class=""><current>xsd:nonNegativeInteger</current><datatype>tei.data.count</datatype><vals></vals><comments></comments></attrib>
+<attrib n="309" ident="ruledLines" gi="layout" class=""><current>datatype.Key</current><datatype>tei.data.count</datatype><vals></vals><comments></comments></attrib>
+<attrib n="334" ident="size" gi="graph" class=""><current>xsd:nonNegativeInteger</current><datatype>tei.data.count</datatype><vals></vals><comments></comments></attrib>
+<attrib n="337" ident="sort" gi="" class="tei.personPart"><current>xsd:nonNegativeInteger</current><datatype>tei.data.count</datatype><vals></vals><comments></comments></attrib>
+<attrib n="513" ident="varSeq" gi="" class="tei.readings"><current>xsd:nonNegativeInteger</current><datatype>tei.data.count</datatype><vals></vals><comments></comments></attrib>
+<attrib n="533" ident="withId" gi="tagUsage" class=""><current>xsd:nonNegativeInteger</current><datatype>tei.data.count</datatype><vals></vals><comments></comments></attrib>
+<attrib n="534" ident="writtenLines" gi="layout" class=""><current>datatype.Key</current><datatype>tei.data.count</datatype><vals></vals><comments></comments></attrib>
+<attrib n="89" ident="dur" gi="" class="tei.timed"><current>xsd:duration</current><datatype>tei.data.duration</datatype><vals></vals><comments></comments></attrib>
+<attrib n="90" ident="dur" gi="recording" class=""><current>xsd:duration</current><datatype>tei.data.duration</datatype><vals></vals><comments></comments></attrib>
+<attrib n="193" ident="locus" gi="respons" class=""><current>text</current><datatype>tei.data.enumerated</datatype><vals></vals><comments></comments></attrib>
+<attrib n="217" ident="new" gi="shift" class=""><current>text</current><datatype>tei.data.enumerated</datatype><vals></vals><comments></comments></attrib>
+<attrib n="235" ident="org" gi="coll" class=""><current>"set" | "bag" | "list"</current><datatype>tei.data.enumerated</datatype><vals></vals><comments>org= of &lt; coll&gt;, &lt; vMerge&gt;, and &lt; fDecl&gt; are
+very similar, and would be candidates for making a class by just
+permitting "unit" on &lt; coll&gt; and &lt; vMerge&gt;. However,
+since this is part of the ISO spec, we shouldn't just change
+it.</comments></attrib>
+<attrib n="246" ident="part" gi="" class="tei.divn"><current>"Y" | "N" | "I" | "M" | "F"</current><datatype>tei.data.enumerated</datatype><vals></vals><comments>should become member of new attribute class,
+tei.attr.partitionable</comments></attrib>
+<attrib n="247" ident="part" gi="" class="tei.seg"><current>"Y" | "N" | "I" | "M" | "F"</current><datatype>tei.data.enumerated</datatype><vals></vals><comments>should become member of new attribute class,
+tei.attr.partitionable</comments></attrib>
+<attrib n="248" ident="part" gi="ab" class=""><current>"Y" | "N" | "I" | "M" | "F"</current><datatype>tei.data.enumerated</datatype><vals></vals><comments>should become member of new attribute class,
+tei.attr.partitionable</comments></attrib>
+<attrib n="249" ident="part" gi="l" class=""><current>"Y" | "N" | "I" | "M" | "F"</current><datatype>tei.data.enumerated</datatype><vals></vals><comments>should become member of new attribute class,
+tei.attr.partitionable</comments></attrib>
+<attrib n="301" ident="role" gi="biblItem" class=""><current>text</current><datatype>tei.data.enumerated</datatype><vals></vals><comments>need to get list from xml-biblio or others</comments></attrib>
+<attrib n="387" ident="type" gi="" class="tei.divn"><current>text</current><datatype>tei.data.enumerated</datatype><vals></vals><comments></comments></attrib>
+<attrib n="390" ident="type" gi="" class="tei.personPart"><current>text</current><datatype>tei.data.enumerated</datatype><vals></vals><comments>??</comments></attrib>
+<attrib n="391" ident="type" gi="" class="tei.pointer"><current>text</current><datatype>tei.data.enumerated</datatype><vals></vals><comments>??</comments></attrib>
+<attrib n="396" ident="type" gi="abbr" class=""><current>text</current><datatype>tei.data.enumerated</datatype><vals></vals><comments>P4's list is "suspension" | "contraction" | "brevigraph" |
+"superscription" | "acronym" | "title" | "organization" |
+"geographic"</comments></attrib>
+<attrib n="406" ident="type" gi="colloc" class=""><current>text</current><datatype>tei.data.enumerated</datatype><vals></vals><comments>need a list of values ï¿½ any linguists care to
+contribute?</comments></attrib>
+<attrib n="411" ident="type" gi="del" class=""><current>text</current><datatype>tei.data.enumerated</datatype><vals></vals><comments></comments></attrib>
+<attrib n="412" ident="type" gi="delSpan" class=""><current>text</current><datatype>tei.data.enumerated</datatype><vals></vals><comments></comments></attrib>
+<attrib n="415" ident="type" gi="distinct" class=""><current>text</current><datatype>tei.data.enumerated</datatype><vals></vals><comments></comments></attrib>
+<attrib n="420" ident="type" gi="forest" class=""><current>text</current><datatype>tei.data.enumerated</datatype><vals></vals><comments></comments></attrib>
+<attrib n="421" ident="type" gi="forestGrp" class=""><current>text</current><datatype>tei.data.enumerated</datatype><vals></vals><comments></comments></attrib>
+<attrib n="424" ident="type" gi="fsdDecl" class=""><current>text</current><datatype>tei.data.enumerated</datatype><vals></vals><comments>note that type= here must correspond with type= on &lt;
+fs&gt;</comments></attrib>
+<attrib n="425" ident="type" gi="fsDecl" class=""><current>text</current><datatype>tei.data.enumerated</datatype><vals></vals><comments></comments></attrib>
+<attrib n="428" ident="type" gi="geogName" class=""><current>text</current><datatype>tei.data.enumerated</datatype><vals></vals><comments></comments></attrib>
+<attrib n="431" ident="type" gi="head" class=""><current>text</current><datatype>tei.data.enumerated</datatype><vals></vals><comments></comments></attrib>
+<attrib n="432" ident="type" gi="idno" class=""><current>text</current><datatype>tei.data.enumerated</datatype><vals></vals><comments></comments></attrib>
+<attrib n="436" ident="type" gi="lbl" class=""><current>text</current><datatype>tei.data.enumerated</datatype><vals></vals><comments></comments></attrib>
+<attrib n="443" ident="type" gi="msDescription" class=""><current>text</current><datatype>tei.data.enumerated</datatype><vals></vals><comments></comments></attrib>
+<attrib n="444" ident="type" gi="name" class=""><current>text</current><datatype>tei.data.enumerated</datatype><vals></vals><comments></comments></attrib>
+<attrib n="459" ident="type" gi="re" class=""><current>text</current><datatype>tei.data.enumerated</datatype><vals></vals><comments></comments></attrib>
+<attrib n="463" ident="type" gi="rs" class=""><current>text</current><datatype>tei.data.enumerated</datatype><vals></vals><comments></comments></attrib>
+<attrib n="465" ident="type" gi="schemaSpec" class=""><current>text</current><datatype>tei.data.enumerated</datatype><vals></vals><comments>is this used at all?</comments></attrib>
+<attrib n="477" ident="type" gi="witDetail" class=""><current>text</current><datatype>tei.data.enumerated</datatype><vals></vals><comments></comments></attrib>
+<attrib n="478" ident="type" gi="writing" class=""><current>text</current><datatype>tei.data.enumerated</datatype><vals></vals><comments></comments></attrib>
+<attrib n="540" ident="zone" gi="time" class=""><current>text</current><datatype>tei.data.enumerated</datatype><vals>"A" | "ACDT" | "ACST" | "ADT" | "AEDT" | "AEST" | "AKDT" |
+"AKST" | "AST" | "AWST" | "B" | "BST" | "C" | "CDT" | "CDT" |
+"CEDT" | "CEST" | "CET" | "CST" | "CST" | "CXT" | "D" | "E" | "EDT"
+| "EDT" | "EEDT" | "EEST" | "EET" | "EST" | "EST" | "F" | "G" |
+"G</vals><comments>as there are 2 of them, perhaps should be a class; list is from
+http://www.timeanddate.com/library/abbreviations/timezones/
+2005-07-05</comments></attrib>
+<attrib n="541" ident="zone" gi="timeStruct" class=""><current>text</current><datatype>tei.data.enumerated</datatype><vals>"A" | "ACDT" | "ACST" | "ADT" | "AEDT" | "AEST" | "AKDT" |
+"AKST" | "AST" | "AWST" | "B" | "BST" | "C" | "CDT" | "CDT" |
+"CEDT" | "CEST" | "CET" | "CST" | "CST" | "CXT" | "D" | "E" | "EDT"
+| "EDT" | "EEDT" | "EEST" | "EET" | "EST" | "EST" | "F" | "G" |
+"G</vals><comments>as there are 2 of them, perhaps should be a class; list is from
+http://www.timeanddate.com/library/abbreviations/timezones/
+2005-07-05</comments></attrib>
+<attrib n="435" ident="type" gi="itype" class=""><current>text</current><datatype>tei.data.enumerated</datatype><vals>"abbrev" | "verbTable" | tei.data.token</vals><comments>must be others we can add to list</comments></attrib>
+<attrib n="204" ident="mode" gi="" class="tei.identifiable"><current>text</current><datatype>tei.data.enumerated</datatype><vals>"add" | "delete" | "change" | "replace"</vals><comments></comments></attrib>
+<attrib n="322" ident="scope" gi="" class="tei.measured"><current>text</current><datatype>tei.data.enumerated</datatype><vals>"all" | "most" | "range"</vals><comments>someone needs to explain this to me; I'Ve asked on TEI-MS</comments></attrib>
+<attrib n="98" ident="eol" gi="hyphenation" class=""><current>"all" | "some" | "hard" | "none"</current><datatype>tei.data.enumerated</datatype><vals>"all" | "one" | "none"</vals><comments></comments></attrib>
+<attrib n="99" ident="evaluate" gi="" class="tei.pointer"><current>"all" | "one" | "none"</current><datatype>tei.data.enumerated</datatype><vals>"all" | "some" | "hard" | "none"</vals><comments></comments></attrib>
+<attrib n="471" ident="type" gi="time" class=""><current>"am" | "pm" | "military" | "descriptive"</current><datatype>tei.data.enumerated</datatype><vals>"am" | "pm" | "24hr" | "descriptive"</vals><comments></comments></attrib>
+<attrib n="188" ident="level" gi="title" class=""><current>"a" | "m" | "j" | "s" | "u"</current><datatype>tei.data.enumerated</datatype><vals>"analytic" | "monograph" | "journal" | "seris" | "unpublished"
+(| tei.data.token)?</vals><comments></comments></attrib>
+<attrib n="446" ident="type" gi="note" class=""><current>text</current><datatype>tei.data.enumerated</datatype><vals>"annotation" | "gloss" | "citation" | "digression" |
+"preliminary" | "temporary" | tei.data.token</vals><comments></comments></attrib>
+<attrib n="417" ident="type" gi="domain" class=""><current>text</current><datatype>tei.data.enumerated</datatype><vals>"art" | "domestic" | "religious" | "business" | "education" |
+"govt" | "public" | tei.data.token</vals><comments></comments></attrib>
+<attrib n="460" ident="type" gi="recording" class=""><current>"audio" | "video"</current><datatype>tei.data.enumerated</datatype><vals>"audio" | "video" | "audio-video"</vals><comments></comments></attrib>
+<attrib n="117" ident="form" gi="biblItem" class=""><current>xsd:token</current><datatype>tei.data.enumerated</datatype><vals>"book.hardcover" | "book.paperback" | "video.VHS" | "video.DVD"
+| "audio.casette" | "audio.CD" | tei.data.token</vals><comments></comments></attrib>
+<attrib n="449" ident="type" gi="orgDivn" class=""><current>text</current><datatype>tei.data.enumerated</datatype><vals>"branch" | "department" | "section" | "division" |
+tei.data.token</vals><comments></comments></attrib>
+<attrib n="447" ident="type" gi="num" class=""><current>text</current><datatype>tei.data.enumerated</datatype><vals>"cardinal" | "ordinal" | "nominal" | "fraction" | "percentage"
+| "whole" | "real" | "imaginary" | tei.data.token</vals><comments></comments></attrib>
+<attrib n="476" ident="type" gi="valList" class=""><current>"closed" | "semi" | "open"</current><datatype>tei.data.enumerated</datatype><vals>"closed" | "semi" | "open"</vals><comments></comments></attrib>
+<attrib n="485" ident="unit" gi="" class="tei.measured"><current>text</current><datatype>tei.data.enumerated</datatype><vals>"cm" | "mm" | "in"</vals><comments></comments></attrib>
+<attrib n="233" ident="org" gi="" class="tei.divn"><current>"composite" | "uniform"</current><datatype>tei.data.enumerated</datatype><vals>"composite" | "uniform"</vals><comments></comments></attrib>
+<attrib n="441" ident="type" gi="moduleSpec" class=""><current>text</current><datatype>tei.data.enumerated</datatype><vals>"core" | "decls"</vals><comments></comments></attrib>
+<attrib n="483" ident="unit" gi="timeline" class=""><current>xsd:NMTOKEN</current><datatype>tei.data.enumerated</datatype><vals>"d" | "h" | "min" | "s" | "ms" | "Âµs" | "ns" |
+"ps"</vals><comments>could consider folding into interval=, which would become
+tei.data.duration</comments></attrib>
+<attrib n="484" ident="unit" gi="when" class=""><current>text</current><datatype>tei.data.enumerated</datatype><vals>"d" | "h" | "min" | "s" | "ms" | "Âµs" | "ns" |
+"ps"</vals><comments>could consider folding into interval=, which would become
+tei.data.duration</comments></attrib>
+<attrib n="58" ident="dateAttrib" gi="" class="tei.datable"><current>text</current><datatype>tei.data.enumerated</datatype><vals>"datable" | "dated" | "unkown"</vals><comments></comments></attrib>
+<attrib n="442" ident="type" gi="move" class=""><current>text</current><datatype>tei.data.enumerated</datatype><vals>"entrance" | "exit" | "onstage"</vals><comments></comments></attrib>
+<attrib n="347" ident="status" gi="del" class=""><current>text</current><datatype>tei.data.enumerated</datatype><vals>"excessStart" | "excessEnd" | "shortStart" | "shortEnd" |
+tei.data.token</vals><comments></comments></attrib>
+<attrib n="348" ident="status" gi="delSpan" class=""><current>text</current><datatype>tei.data.enumerated</datatype><vals>"excessStart" | "excessEnd" | "shortStart" | "shortEnd" |
+tei.data.token</vals><comments></comments></attrib>
+<attrib n="205" ident="mode" gi="alt" class=""><current>"excl" | "incl"</current><datatype>tei.data.enumerated</datatype><vals>"excl" | "incl"</vals><comments></comments></attrib>
+<attrib n="206" ident="mode" gi="altGrp" class=""><current>"excl" | "incl"</current><datatype>tei.data.enumerated</datatype><vals>"excl" | "incl"</vals><comments></comments></attrib>
+<attrib n="409" ident="type" gi="damage" class=""><current>text</current><datatype>tei.data.enumerated</datatype><vals>"faded" | "overbound" | "liquid spill" | "tear" | "burned" |
+tei.data.token</vals><comments>list probably needs improvement</comments></attrib>
+<attrib n="480" ident="type" gi="factuality" class=""><current>"fiction" | "fact" | "mixed" | "inapplicable"</current><datatype>tei.data.enumerated</datatype><vals>"fiction" | "fact" | "mixed" | "inapplicable"</vals><comments></comments></attrib>
+<attrib n="259" ident="place" gi="note" class=""><current>text</current><datatype>tei.data.enumerated</datatype><vals>"foot" | "end" | "inline" | "left" | "right" | "interlinear" |
+"app" | tei.data.token</vals><comments></comments></attrib>
+<attrib n="260" ident="place" gi="witDetail" class=""><current>text</current><datatype>tei.data.enumerated</datatype><vals>"foot" | "end" | "inline" | "left" | "right" | "interlinear" |
+"app" | tei.data.token</vals><comments></comments></attrib>
+<attrib n="451" ident="type" gi="orgTitle" class=""><current>text</current><datatype>tei.data.enumerated</datatype><vals>"formal" | "colloquial" | "acronym" | tei.data.token</vals><comments></comments></attrib>
+<attrib n="452" ident="type" gi="orgType" class=""><current>text</current><datatype>tei.data.enumerated</datatype><vals>"function" | "structure" | tei.data.token</vals><comments></comments></attrib>
+<attrib n="475" ident="type" gi="usg" class=""><current>text</current><datatype>tei.data.enumerated</datatype><vals>"geo" | "time" | "dom" | "reg" | "style" | "plev" | "lang" |
+"gram" | "syn" | "hyper" | "colloc" | "comp" | "obj" | "subj" |
+"verb" | "hint"</vals><comments></comments></attrib>
+<attrib n="192" ident="locus" gi="certainty" class=""><current>text</current><datatype>tei.data.enumerated</datatype><vals>"gi" | "startloc" | "endloc" | "location" |
+"transcribedContent" | "suppliedContent" | xsd:token {
+pattern="^(attrName\.\i\c*|attrValue\..*)" }</vals><comments></comments></attrib>
+<attrib n="20" ident="calendar" gi="date" class=""><current>text</current><datatype>tei.data.enumerated</datatype><vals>"Gregorian" | "Julian" | "Islamic" | "Hebrew" | "Revolutionary"
+| "Iranian" | "Coptic" | "Chinese" | tei.data.token</vals><comments>list taken from wikipedia; other suggestions? Used to have the
+Emacs list ("mayan" | "french" | "islamic" | "hebrew" |
+"astronomical" | "julian" | "persian" | "ethiopic" | "coptic" |
+"chinese")</comments></attrib>
+<attrib n="21" ident="calendar" gi="dateRange" class=""><current>text</current><datatype>tei.data.enumerated</datatype><vals>"Gregorian" | "Julian" | "Islamic" | "Hebrew" | "Revolutionary"
+| "Iranian" | "Coptic" | "Chinese" | tei.data.token</vals><comments>list taken from wikipedia; other suggestions? Used to have the
+Emacs list ("mayan" | "french" | "islamic" | "hebrew" |
+"astronomical" | "julian" | "persian" | "ethiopic" | "coptic" |
+"chinese")</comments></attrib>
+<attrib n="22" ident="calendar" gi="dateStruct" class=""><current>text</current><datatype>tei.data.enumerated</datatype><vals>"Gregorian" | "Julian" | "Islamic" | "Hebrew" | "Revolutionary"
+| "Iranian" | "Coptic" | "Chinese" | tei.data.token</vals><comments>list taken from wikipedia; other suggestions? Used to have the
+Emacs list ("mayan" | "french" | "islamic" | "hebrew" |
+"astronomical" | "julian" | "persian" | "ethiopic" | "coptic" |
+"chinese")</comments></attrib>
+<attrib n="234" ident="org" gi="attList" class=""><current>"group" | "choice"</current><datatype>tei.data.enumerated</datatype><vals>"group" | "choice"</vals><comments></comments></attrib>
+<attrib n="473" ident="type" gi="titlePage" class=""><current>text</current><datatype>tei.data.enumerated</datatype><vals>"half" | "full" | "series" | "volume" | "caption" |
+tei.data.token</vals><comments>?? list right?</comments></attrib>
+<attrib n="427" ident="type" gi="fw" class=""><current>text</current><datatype>tei.data.enumerated</datatype><vals>"header" | "footer" | "pag" | "sig" | "catch" |
+tei.data.token</vals><comments></comments></attrib>
+<attrib n="23" ident="cause" gi="" class="tei.readings"><current>text</current><datatype>tei.data.enumerated</datatype><vals>"homeoteleuton" | "homeoarchy" | "paleographic-confusion" |
+"haplography" | "dittography" | "false-emendation" |
+tei.data.token</vals><comments></comments></attrib>
+<attrib n="84" ident="dim" gi="space" class=""><current>"horizontal" | "vertical"</current><datatype>tei.data.enumerated</datatype><vals>"horizontal" | "vertical"</vals><comments></comments></attrib>
+<attrib n="33" ident="precision" gi="date" class=""><current>text</current><datatype>tei.data.enumerated</datatype><vals>"hour" | "minute"</vals><comments>Only needed if we do not permit times precise to the hour or
+minute. If we do permit such times, this attribute should be
+dropped. If not, it should be added to &lt; time&gt;, and perhaps
+&lt; dateRange&gt; and &lt; timeRange&gt;.</comments></attrib>
+<attrib n="389" ident="type" gi="" class="tei.interpret"><current>text</current><datatype>tei.data.enumerated</datatype><vals>"image" | "character" | "theme" | "allusion" |
+tei.data.token</vals><comments></comments></attrib>
+<attrib n="416" ident="type" gi="divGen" class=""><current>text</current><datatype>tei.data.enumerated</datatype><vals>"index" | "toc" | "figList" | "tabList" | tei.data.token</vals><comments></comments></attrib>
+<attrib n="448" ident="type" gi="oRef" class=""><current>text</current><datatype>tei.data.enumerated</datatype><vals>"initCap" | "noHyphen" | teii.data.token</vals><comments>Are these two mutually exclusive, or does this have to be a
+list { ("initialCap" | "noHyphen")+ }?</comments></attrib>
+<attrib n="445" ident="type" gi="node" class=""><current>text</current><datatype>tei.data.enumerated</datatype><vals>"initial" | "final"</vals><comments></comments></attrib>
+<attrib n="311" ident="sample" gi="" class="tei.divn"><current>"initial" | "medial" | "final" | "unknown" | "complete"</current><datatype>tei.data.enumerated</datatype><vals>"initial" | "medial" | "final" | "unknown" | "complete"</vals><comments>could use "I" | "M" | "F" (matching part=) unless we wish to
+continue support for SGML</comments></attrib>
+<attrib n="191" ident="location" gi="variantEncoding" class=""><current>"internal" | "external"</current><datatype>tei.data.enumerated</datatype><vals>"internal" | "external"</vals><comments></comments></attrib>
+<attrib n="100" ident="evidence" gi="" class="tei.datable"><current>text</current><datatype>tei.data.enumerated</datatype><vals>"internal" | "external" | "conjecture"</vals><comments></comments></attrib>
+<attrib n="222" ident="notation" gi="pron" class=""><current>text</current><datatype>tei.data.enumerated</datatype><vals>"IPA" | "Murray" | tei.data.token</vals><comments>would be nice if we could come up with a more complete
+list!</comments></attrib>
+<attrib n="302" ident="role" gi="cell" class=""><current>text</current><datatype>tei.data.enumerated</datatype><vals>"label" | "data"</vals><comments></comments></attrib>
+<attrib n="306" ident="role" gi="row" class=""><current>text</current><datatype>tei.data.enumerated</datatype><vals>"label" | "data"</vals><comments></comments></attrib>
+<attrib n="453" ident="type" gi="orth" class=""><current>text</current><datatype>tei.data.enumerated</datatype><vals>"latinate" | "standard" | "transliterated" |
+tei.data.token</vals><comments></comments></attrib>
+<attrib n="414" ident="type" gi="dimensions" class=""><current>datatype.Key</current><datatype>tei.data.enumerated</datatype><vals>"leaves" | "ruled" | "pricked" | "written" | "miniatures" |
+"binding" | "box" | tei.data.token</vals><comments>should be renamed to of= or res= (latin for "thing")</comments></attrib>
+<attrib n="468" ident="type" gi="tech" class=""><current>"light" | "sound" | "prop" | "block"</current><datatype>tei.data.enumerated</datatype><vals>"light" | "sound" | "prop" | "block" | tei.data.token</vals><comments></comments></attrib>
+<attrib n="203" ident="method" gi="variantEncoding" class=""><current>"location-referenced" | "double-end-point" |
+"parallel-segmentation"</current><datatype>tei.data.enumerated</datatype><vals>"location-referenced" | "double-end-point" |
+"parallel-segmentation"</vals><comments></comments></attrib>
+<attrib n="388" ident="type" gi="" class="tei.entries"><current>text</current><datatype>tei.data.enumerated</datatype><vals>"main" | "hom" | "xref" | "affix" | "abbr" | "supplemental" |
+"foreign" | tei.data.token</vals><comments></comments></attrib>
+<attrib n="474" ident="type" gi="titlePart" class=""><current>text</current><datatype>tei.data.enumerated</datatype><vals>"main" | "sub" | "alt" | "desc" | tei.data.token</vals><comments>value list must be aligned with that of &lt; title&gt;</comments></attrib>
+<attrib n="472" ident="type" gi="title" class=""><current>text</current><datatype>tei.data.enumerated</datatype><vals>"main" | "subordinate" | "parallel" | "abbreviated" |
+tei.data.token</vals><comments>value list must be aligned with that of &lt; titlePart&gt;</comments></attrib>
+<attrib n="345" ident="status" gi="biblItem" class=""><current>text</current><datatype>tei.data.enumerated</datatype><vals>"manuscript" | "forthcoming" | "inPrint" | tei.data.token</vals><comments>need better list from xml-biblio</comments></attrib>
+<attrib n="455" ident="type" gi="persName" class=""><current>text</current><datatype>tei.data.enumerated</datatype><vals>"married" | "maiden" | "pen" | "religious" |
+tei.data.token</vals><comments></comments></attrib>
+<attrib n="440" ident="type" gi="metDecl" class=""><current>list { ("met" | "real" | "rhyme")+ }</current><datatype>tei.data.enumerated</datatype><vals>"met" | "met_real" | "met_rhyme" | "met_real_rhyme" | "real" |
+"rhyme" | "real_rhyme"</vals><comments></comments></attrib>
+<attrib n="404" ident="type" gi="classSpec" class=""><current>"model" | "atts" | "both"</current><datatype>tei.data.enumerated</datatype><vals>"model" | "attribute"</vals><comments></comments></attrib>
+<attrib n="466" ident="type" gi="sound" class=""><current>text</current><datatype>tei.data.enumerated</datatype><vals>"music" | "effect" | tei.data.token</vals><comments></comments></attrib>
+<attrib n="434" ident="type" gi="interaction" class=""><current>"none" | "partial" | "complete" | "inapplicable"</current><datatype>tei.data.enumerated</datatype><vals>"none" | "partial" | "complete" | "inapplicable" |
+tei.data.token</vals><comments>I don't know if this list comes from some external standard or
+not</comments></attrib>
+<attrib n="456" ident="type" gi="preparedness" class=""><current>text</current><datatype>tei.data.enumerated</datatype><vals>"none" | "scripted" | "formulaic" | "revised" |
+tei.data.token</vals><comments></comments></attrib>
+<attrib n="195" ident="marks" gi="quotation" class=""><current>"none" | "some" | "all"</current><datatype>tei.data.enumerated</datatype><vals>"none" | "some" | "all"</vals><comments>could use tei.certainty instead, but not quite right; could
+make semi (i.e., add text), or tei.certainty, but doesn't seem
+necessary</comments></attrib>
+<attrib n="413" ident="type" gi="derivation" class=""><current>text</current><datatype>tei.data.enumerated</datatype><vals>"original" | "revision" | "translation" | "abridgment" |
+"plagiarism" | "traditional" | tei.data.token</vals><comments></comments></attrib>
+<attrib n="481" ident="unit" gi="milestone" class=""><current>text</current><datatype>tei.data.enumerated</datatype><vals>"page" | "column" | "line" | "book" | "poem" | "canto" |
+"stanza" | "act" | "scene" | "section" | "absent" | "signature" |
+tei.data.token</vals><comments>w/ unit= of &lt; state&gt; a class?</comments></attrib>
+<attrib n="482" ident="unit" gi="state" class=""><current>text</current><datatype>tei.data.enumerated</datatype><vals>"page" | "column" | "line" | "book" | "poem" | "canto" |
+"stanza" | "act" | "scene" | "section" | "absent" | "signature" |
+tei.data.token</vals><comments>w/ unit= of &lt; milestone&gt; a class?</comments></attrib>
+<attrib n="196" ident="material" gi="supportDesc" class=""><current>datatype.Key</current><datatype>tei.data.enumerated</datatype><vals>"paper" | "parch" | "mixed" | tei.data.token</vals><comments></comments></attrib>
+<attrib n="438" ident="type" gi="macroSpec" class=""><current>"pe" | "epe" | "ge" | "dt"</current><datatype>tei.data.enumerated</datatype><vals>"pe" | "epe" | "ge" | "dt"</vals><comments>dropped if TEI drops support for SGML</comments></attrib>
+<attrib n="457" ident="type" gi="purpose" class=""><current>text</current><datatype>tei.data.enumerated</datatype><vals>"persuade" | "express" | "inform" | "entertain" |
+tei.data.token</vals><comments></comments></attrib>
+<attrib n="429" ident="type" gi="gram" class=""><current>text</current><datatype>tei.data.enumerated</datatype><vals>"pos" | "gender" | "number" | "animacy" | "proper"</vals><comments></comments></attrib>
+<attrib n="454" ident="type" gi="oVar" class=""><current>text</current><datatype>tei.data.enumerated</datatype><vals>"pt" | "pp" | "prp" | "f" | "pl" | tei.data.token</vals><comments></comments></attrib>
+<attrib n="491" ident="usage" gi="attDef" class=""><current>"req" | "mwa" | "rec" | "rwa" | "opt"</current><datatype>tei.data.enumerated</datatype><vals>"req" | "mwa" | "rec" | "rwa" | "opt"</vals><comments></comments></attrib>
+<attrib n="492" ident="usage" gi="elementSpec" class=""><current>"req" | "mwa" | "rec" | "rwa" | "opt"</current><datatype>tei.data.enumerated</datatype><vals>"req" | "mwa" | "rec" | "rwa" | "opt"</vals><comments></comments></attrib>
+<attrib n="403" ident="type" gi="castItem" class=""><current>"role" | "list"</current><datatype>tei.data.enumerated</datatype><vals>"role" | "list"</vals><comments></comments></attrib>
+<attrib n="324" ident="scope" gi="join" class=""><current>"root" | "branches"</current><datatype>tei.data.enumerated</datatype><vals>"root" | "branches"</vals><comments></comments></attrib>
+<attrib n="9" ident="agent" gi="damage" class=""><current>text</current><datatype>tei.data.enumerated</datatype><vals>"rubbing" | "mildew" | "smoke" | tei.data.token</vals><comments>Editors disagree: one suggests tei.data.code, the other the
+enumeration listed here and currently in tagdoc.</comments></attrib>
+<attrib n="10" ident="agent" gi="gap" class=""><current>text</current><datatype>tei.data.enumerated</datatype><vals>"rubbing" | "mildew" | "smoke" | tei.data.token</vals><comments>Editors disagree: one suggests tei.data.code, the other the
+enumeration listed here and currently in tagdoc.</comments></attrib>
+<attrib n="11" ident="agent" gi="supplied" class=""><current>text</current><datatype>tei.data.enumerated</datatype><vals>"rubbing" | "mildew" | "smoke" | tei.data.token</vals><comments>Editors disagree: one suggests tei.data.code, the other the
+enumeration listed here and currently in tagdoc.</comments></attrib>
+<attrib n="12" ident="agent" gi="unclear" class=""><current>text</current><datatype>tei.data.enumerated</datatype><vals>"rubbing" | "mildew" | "smoke" | tei.data.token</vals><comments>Editors disagree: one suggests tei.data.code, the other the
+enumeration listed here and currently in tagdoc.</comments></attrib>
+<attrib n="351" ident="style" gi="hand" class=""><current>text</current><datatype>tei.data.enumerated</datatype><vals>"secretary" | "copperplate" | "Chancery" | "Italian" |
+tei.data.token</vals><comments></comments></attrib>
+<attrib n="352" ident="style" gi="handShift" class=""><current>text</current><datatype>tei.data.enumerated</datatype><vals>"secretary" | "copperplate" | "Chancery" | "Italian" |
+tei.data.token</vals><comments></comments></attrib>
+<attrib n="250" ident="passive" gi="interaction" class=""><current>text</current><datatype>tei.data.enumerated</datatype><vals>"self" | "single | "many" | "group" | "world"</vals><comments></comments></attrib>
+<attrib n="34" ident="writing" gi="hand" class=""><current>text</current><datatype>tei.data.enumerated</datatype><vals>"shaky" | "thick" | "regular" | tei.data.token</vals><comments></comments></attrib>
+<attrib n="35" ident="writing" gi="handShift" class=""><current>text</current><datatype>tei.data.enumerated</datatype><vals>"shaky" | "thick" | "regular" | tei.data.token</vals><comments></comments></attrib>
+<attrib n="201" ident="method" gi="correction" class=""><current>"silent" | "tags"</current><datatype>tei.data.enumerated</datatype><vals>"silent" | "tags"</vals><comments>Candidate for membership in new class, tei.encodingMethod; see
+method= of &lt; normalization&gt;</comments></attrib>
+<attrib n="202" ident="method" gi="normalization" class=""><current>"silent" | "tags"</current><datatype>tei.data.enumerated</datatype><vals>"silent" | "tags"</vals><comments>candidate for being dropped (does anyone make use of it?) or
+expanded to reflect more detail; see method= of &lt;
+correction&gt;</comments></attrib>
+<attrib n="422" ident="type" gi="form" class=""><current>text</current><datatype>tei.data.enumerated</datatype><vals>"simple" | "lemma" | "variant" | "compound" | "derivative" |
+"inflected" | "phrase" | tei.data.token</vals><comments></comments></attrib>
+<attrib n="407" ident="type" gi="constitution" class=""><current>"single" | "composite" | "frags" | "unknown"</current><datatype>tei.data.enumerated</datatype><vals>"single" | "composite" | "frags" | "unknown"</vals><comments></comments></attrib>
+<attrib n="2" ident="active" gi="interaction" class=""><current>text</current><datatype>tei.data.enumerated</datatype><vals>"singular" | "plural" | "corporate" | "unknown" |
+tei.data.token</vals><comments></comments></attrib>
+<attrib n="385" ident="trans" gi="u" class=""><current>"smooth" | "latching" | "overlap" | "pause"</current><datatype>tei.data.enumerated</datatype><vals>"smooth" | "latching" | "overlap" | "pause"</vals><comments></comments></attrib>
+<attrib n="461" ident="type" gi="relation" class=""><current>text</current><datatype>tei.data.enumerated</datatype><vals>"social" | "personal" | tei.data.token</vals><comments></comments></attrib>
+<attrib n="458" ident="type" gi="q" class=""><current>text</current><datatype>tei.data.enumerated</datatype><vals>"spoken" | "thought" | tei.data.token</vals><comments></comments></attrib>
+<attrib n="207" ident="mode" gi="channel" class=""><current>"s" | "w" | "sw" | "ws" | "m" | "x"</current><datatype>tei.data.enumerated</datatype><vals>"spoken" | "written" | "spoken_to_be_written" |
+"written_to_be_spoken" | "mixed" | "unknown" | "inapplicable"</vals><comments></comments></attrib>
+<attrib n="392" ident="type" gi="" class="tei.readings"><current>text</current><datatype>tei.data.enumerated</datatype><vals>"substative" | "orthographic"</vals><comments></comments></attrib>
+<attrib n="479" ident="type" gi="xr" class=""><current>text</current><datatype>tei.data.enumerated</datatype><vals>"syn" | "etym" | "cf" | "illus" | tei.data.token</vals><comments>as documented, this should be a toWhat=, not type=</comments></attrib>
+<attrib n="113" ident="feature" gi="shift" class=""><current>"tempo" | "loud" | "pitch" | "tension" | "rhythm" |
+"voice"</current><datatype>tei.data.enumerated</datatype><vals>"tempo" | "loudness" | "pitch" | "tension" | "rhythm" |
+"voice"</vals><comments></comments></attrib>
+<attrib n="469" ident="type" gi="teiHeader" class=""><current>text</current><datatype>tei.data.enumerated</datatype><vals>"text" | "corpus"</vals><comments>is this useful?</comments></attrib>
+<attrib n="101" ident="exact" gi="dateRange" class=""><current>"to" | "from" | "both" | "none"</current><datatype>tei.data.enumerated</datatype><vals>"to" | "from" | "both" | "none"</vals><comments>needs to become 2 attributes, accuracyFrom= and accuracyTo=,
+similar to a new accuracy= attribute of tei.att.measure</comments></attrib>
+<attrib n="104" ident="exact" gi="timeRange" class=""><current>"to" | "from" | "both" | "none"</current><datatype>tei.data.enumerated</datatype><vals>"to" | "from" | "both" | "none"</vals><comments>needs to become 2 attributes, accuracyFrom= and accuracyTo=,
+similar to a new accuracy= attribute of tei.att.measure</comments></attrib>
+<attrib n="258" ident="place" gi="fw" class=""><current>text</current><datatype>tei.data.enumerated</datatype><vals>"top" | "bottom" | "left" | "right" | "top left" | "top center"
+| "top right" | "bottom left" | "bottom center" | "bottom
+right"</vals><comments></comments></attrib>
+<attrib n="303" ident="role" gi="editor" class=""><current>text</current><datatype>tei.data.enumerated</datatype><vals>"translator" | "editor" | "compiler" | "illustrator"</vals><comments>the list I'Ve provided here is from the Guidelines and, I
+think, are in direct opposition to &lt; respStmt&gt;; either more
+editor-like roles should be thought up, or this attribute should be
+removed completely</comments></attrib>
+<attrib n="430" ident="type" gi="graph" class=""><current>text</current><datatype>tei.data.enumerated</datatype><vals>"undirected" | "directed" | "transitionNetwork" | "transducer"
+| tei.data.token</vals><comments></comments></attrib>
+<attrib n="349" ident="status" gi="msDescription" class=""><current>text</current><datatype>tei.data.enumerated</datatype><vals>"unitary" | "composite" | "fragmentary" | "defective" |
+"unknown"</vals><comments></comments></attrib>
+<attrib n="437" ident="type" gi="list" class=""><current>text</current><datatype>tei.data.enumerated</datatype><vals>"unordered" | "ordered" | "gloss" | tei.data.token</vals><comments></comments></attrib>
+<attrib n="401" ident="type" gi="biblScope" class=""><current>text</current><datatype>tei.data.enumerated</datatype><vals>"vol" | "issue" | "pp" | "cap" | "part" | tei.data.token</vals><comments>value list could stand some improvement</comments></attrib>
+<attrib n="450" ident="type" gi="orgName" class=""><current>text</current><datatype>tei.data.enumerated</datatype><vals>"voluntary" | "political" | "governmental" | "industrial" |
+"commercial" | "non-profit" | tei.data.token</vals><comments></comments></attrib>
+<attrib n="439" ident="type" gi="measure" class=""><current>text</current><datatype>tei.data.enumerated</datatype><vals>"weight" | "mass" | "count" | "length" | "area" | "volume" |
+"currency" | tei.data.token</vals><comments>perhaps should have separate attributes; see discussion on
+sourceforge at
+https://sourceforge.net/tracker/?func=detail&amp;atid=644065&amp;aid=980854&amp;group_id=106328</comments></attrib>
+<attrib n="126" ident="full" gi="" class="tei.personPart"><current>"yes" | "abb" | "init"</current><datatype>tei.data.enumerated</datatype><vals>"yes" | "abb" | "init"</vals><comments>should become member of new class tei.att.spelledOut; should
+*not* default to "yes" (either no default at all, or new value
+"unspecified"); similar to initial,medial,final,complete of
+divn</comments></attrib>
+<attrib n="127" ident="full" gi="" class="tei.temporalExpr"><current>"yes" | "abb" | "init"</current><datatype>tei.data.enumerated</datatype><vals>"yes" | "abb" | "init"</vals><comments>should become member of new class tei.att.spelledOut; should
+*not* default to "yes" (either no default at all, or new value
+"unspecified"); similar to initial,medial,final,complete of
+divn</comments></attrib>
+<attrib n="97" ident="enjamb" gi="" class="tei.enjamb"><current>text</current><datatype>tei.data.enumerated</datatype><vals>"yes" | "no" | "weak" | "strong" | tei.data.token</vals><comments>I am making the presumption that characterization further than
+yes/no/unnkown is of interest</comments></attrib>
+<attrib n="400" ident="type" gi="app" class=""><current>text</current><datatype>tei.data.enumerated</datatype><vals>??</vals><comments>Simple enumeration may not be sufficient. Description in P4 led
+me to list { ( "word" | "phrase" | "punctuation" | "significant" |
+"accidental" | "unclear" | "lectio difficilior" | "usus auctoris" |
+tei.data.word )+ }</comments></attrib>
+<attrib n="103" ident="exact" gi="distance" class=""><current>datatype.UBoolean</current><datatype>tei.data.enumerated</datatype><vals>???</vals><comments>needs to be rationalized against the other cert=, certainty=,
+and exact= attributes</comments></attrib>
+<attrib n="423" ident="type" gi="fs" class=""><current>datatype.Key</current><datatype>tei.data.enumerated</datatype><vals>Can we supply a &lt;valList&gt;? This is part of ISO now.</vals><comments></comments></attrib>
+<attrib n="467" ident="type" gi="stage" class=""><current>text</current><datatype>tei.data.enumerated</datatype><vals>list { ( "setting" | "entrance" | "exit" | "business" |
+"novelistic" | "delivery" | "modifier" | "location" |
+tei.data.token )+ }</vals><comments></comments></attrib>
+<attrib n="344" ident="status" gi="availability" class=""><current>"free" | "unknown" | "restricted"</current><datatype>tei.data.enumerated</datatype><vals>may need updating ï¿½ separate out public_domain
+from free-as-in-speech?</vals><comments></comments></attrib>
+<attrib n="236" ident="org" gi="fDecl" class=""><current>"unit" | "set" | "bag" | "list"</current><datatype>tei.data.enumerated</datatype><vals>see org= of &lt;coll&gt;</vals><comments></comments></attrib>
+<attrib n="237" ident="org" gi="vMerge" class=""><current>"set" | "bag" | "list"</current><datatype>tei.data.enumerated</datatype><vals>see org= of &lt;coll&gt;</vals><comments></comments></attrib>
+<attrib n="74" ident="desc" gi="certainty" class=""><current>text</current><datatype>tei.data.enumerated</datatype><vals>tei.data.token</vals><comments>for controlled vocabulary; prose descriptions as %paraContent;
+of &lt; certainty&gt;</comments></attrib>
+<attrib n="75" ident="desc" gi="event" class=""><current>text</current><datatype>tei.data.enumerated</datatype><vals>tei.data.token</vals><comments>for controlled vocabulary; prose descriptions as %paraContent;
+of &lt; certainty&gt;</comments></attrib>
+<attrib n="79" ident="desc" gi="kinesic" class=""><current>text</current><datatype>tei.data.enumerated</datatype><vals>tei.data.token</vals><comments>for controlled vocabulary; prose descriptions as %paraContent;
+of &lt; kinesic&gt;</comments></attrib>
+<attrib n="80" ident="desc" gi="relation" class=""><current>text</current><datatype>tei.data.enumerated</datatype><vals>tei.data.token</vals><comments>for controlled vocabulary; prose descriptions as %paraContent;
+of &lt; relation&gt;</comments></attrib>
+<attrib n="81" ident="desc" gi="respons" class=""><current>text</current><datatype>tei.data.enumerated</datatype><vals>tei.data.token</vals><comments>for controlled vocabulary; prose descriptions as %paraContent;
+of &lt; respons&gt;</comments></attrib>
+<attrib n="83" ident="desc" gi="vocal" class=""><current>text</current><datatype>tei.data.enumerated</datatype><vals>tei.data.token</vals><comments></comments></attrib>
+<attrib n="128" ident="function" gi="" class="tei.seg"><current>text</current><datatype>tei.data.enumerated</datatype><vals>tei.data.token</vals><comments>maybe should be tei.data.code, or tei.data.words?</comments></attrib>
+<attrib n="394" ident="type" gi="" class="tei.temporalExpr"><current>text</current><datatype>tei.data.enumerated</datatype><vals>tei.data.token</vals><comments></comments></attrib>
+<attrib n="119" ident="form" gi="quotation" class=""><current>"data" | "rend" | "std" | "nonstd" | "unknown"</current><datatype>tei.data.enumerated</datatype><vals>value list needs work; 'std' and 'nonstd' mean regularized? if
+so, need to be a separate attribute</vals><comments></comments></attrib>
+<attrib n="393" ident="type" gi="" class="tei.seg"><current>datatype.Key</current><datatype>tei.data.enumerated</datatype><vals>[&lt;valList&gt;s supplied by individual elements]</vals><comments>if I understand current suggestion (mail to Council,
+2005-08-08), this attribute will need to be dropped from this
+class.</comments></attrib>
+<attrib n="318" ident="scheme" gi="locus" class=""><current>datatype.Key</current><datatype>tei.data.enumerated</datatype><vals>[need default values from MS]</vals><comments></comments></attrib>
+<attrib n="118" ident="form" gi="objectDesc" class=""><current>datatype.Key</current><datatype>tei.data.enumerated</datatype><vals>[need defaults from MS]</vals><comments></comments></attrib>
+<attrib n="19" ident="baseType" gi="fsDecl" class=""><current>text</current><datatype>tei.data.ident</datatype><vals></vals><comments>I'm not sure why this isn't a pointer to the &lt; fsDecl&gt;
+that declares the base feature structure type</comments></attrib>
+<attrib n="73" ident="depend" gi="" class="tei.identifiable"><current>xsd:NCName</current><datatype>tei.data.ident</datatype><vals></vals><comments></comments></attrib>
+<attrib n="87" ident="doctype" gi="refsDecl" class=""><current>xsd:NCName</current><datatype>tei.data.ident</datatype><vals></vals><comments>should be removed unless NH conintues supports CONCUR (or
+JITT?)</comments></attrib>
+<attrib n="146" ident="ident" gi="" class="tei.identifiable"><current>text</current><datatype>tei.data.ident</datatype><vals></vals><comments></comments></attrib>
+<attrib n="163" ident="key" gi="attRef" class=""><current>xsd:NCName</current><datatype>tei.data.ident</datatype><vals></vals><comments>the example in [cvs]/tei/P5/Source/TD/attref.odd shows an
+xsd:Name, not an xsd:NCName</comments></attrib>
+<attrib n="165" ident="key" gi="moduleRef" class=""><current>xsd:NCName</current><datatype>tei.data.ident</datatype><vals></vals><comments></comments></attrib>
+<attrib n="167" ident="key" gi="specDesc" class=""><current>xsd:NCName</current><datatype>tei.data.ident</datatype><vals></vals><comments></comments></attrib>
+<attrib n="208" ident="module" gi="" class="tei.identifiable"><current>xsd:NCName</current><datatype>tei.data.ident</datatype><vals></vals><comments></comments></attrib>
+<attrib n="212" ident="name" gi="f" class=""><current>xsd:NMTOKEN</current><datatype>tei.data.ident</datatype><vals></vals><comments>Need to advise ISO of this change.</comments></attrib>
+<attrib n="213" ident="name" gi="fDecl" class=""><current>xsd:NMTOKEN</current><datatype>tei.data.ident</datatype><vals></vals><comments>Need to advise ISO of this change.</comments></attrib>
+<attrib n="214" ident="name" gi="vLabel" class=""><current>datatype.Key</current><datatype>tei.data.ident</datatype><vals></vals><comments></comments></attrib>
+<attrib n="38" ident="class" gi="attRef" class=""><current>xsd:NCName</current><datatype>tei.data.ident</datatype><vals>[schematron rule that it matches the name of a TEI class]</vals><comments></comments></attrib>
+<attrib n="164" ident="key" gi="memberOf" class=""><current>xsd:NCName</current><datatype>tei.data.ident</datatype><vals>[schematron rule that it matches the name of a TEI class]</vals><comments></comments></attrib>
+<attrib n="298" ident="result" gi="join" class=""><current>text</current><datatype>tei.data.ident</datatype><vals>[schematron rule that this is the name of a TEI element
+type]</vals><comments>this presuposes that &lt; joinGrp&gt; is not used to join
+elements from other namespaces</comments></attrib>
+<attrib n="299" ident="result" gi="joinGrp" class=""><current>xsd:NCName</current><datatype>tei.data.ident</datatype><vals>[schematron rule that this is the name of a TEI element
+type]</vals><comments>this presuposes that &lt; joinGrp&gt; is not used to join
+elements from other namespaces</comments></attrib>
+<attrib n="374" ident="TEIform" gi="" class="tei.TEIform"><current>xsd:NCName</current><datatype>tei.data.ident</datatype><vals>[schematron rule that this is the name of a TEI element
+type]</vals><comments></comments></attrib>
+<attrib n="462" ident="type" gi="restore" class=""><current>text</current><datatype>tei.data.ident</datatype><vals>[schematron rule that this is the name of a TEI element
+type]</vals><comments></comments></attrib>
+<attrib n="130" ident="gi" gi="tagUsage" class=""><current>text</current><datatype>tei.data.ident</datatype><vals>[schematron rule that value occurs only once, that it matches a
+GI in current schmea]</vals><comments></comments></attrib>
+<attrib n="343" ident="start" gi="schemaSpec" class=""><current>xsd:NMTOKENS</current><datatype>tei.data.idents</datatype><vals></vals><comments></comments></attrib>
+<attrib n="160" ident="key" gi="" class="tei.names"><current>text</current><datatype>tei.data.key</datatype><vals></vals><comments></comments></attrib>
+<attrib n="161" ident="key" gi="" class="tei.personPart"><current>text</current><datatype>tei.data.key</datatype><vals></vals><comments>I do not understnad why this attribute exists; these elements
+can only be children of &lt; persName&gt;, which bears key=.</comments></attrib>
+<attrib n="162" ident="key" gi="" class="tei.temporalExpr"><current>text</current><datatype>tei.data.key</datatype><vals></vals><comments>Should be on wrappers &lt; dateStruct&gt; and &lt;
+timeStruct&gt; instead?</comments></attrib>
+<attrib n="166" ident="key" gi="orgName" class=""><current>text</current><datatype>tei.data.key</datatype><vals></vals><comments></comments></attrib>
+<attrib n="147" ident="ident" gi="language" class=""><current>datatype.Language</current><datatype>tei.data.language</datatype><vals></vals><comments></comments></attrib>
+<attrib n="180" ident="langKey" gi="textLang" class=""><current>datatype.uri</current><datatype>tei.data.language</datatype><vals></vals><comments></comments></attrib>
+<attrib n="194" ident="mainLang" gi="hand" class=""><current>text</current><datatype>tei.data.language</datatype><vals></vals><comments></comments></attrib>
+<attrib n="539" ident="xmllang" gi="" class="tei.global"><current>xsd:language</current><datatype>tei.data.language</datatype><vals></vals><comments></comments></attrib>
+<attrib n="145" ident="height" gi="graphic" class=""><current>text</current><datatype>tei.data.numeric</datatype><vals></vals><comments>translates well to HTML, but not to CSS2</comments></attrib>
+<attrib n="312" ident="scale" gi="graphic" class=""><current>text</current><datatype>tei.data.numeric</datatype><vals></vals><comments></comments></attrib>
+<attrib n="506" ident="value" gi="num" class=""><current>xsd:decimal</current><datatype>tei.data.numeric</datatype><vals></vals><comments></comments></attrib>
+<attrib n="515" ident="version" gi="unicodeName" class=""><current>text</current><datatype>tei.data.numeric</datatype><vals></vals><comments>need to take quick look at unicode.org again, but IIRC this
+will do</comments></attrib>
+<attrib n="529" ident="width" gi="graphic" class=""><current>text</current><datatype>tei.data.numeric</datatype><vals></vals><comments>translates well to HTML, but not to CSS2</comments></attrib>
+<attrib n="507" ident="value" gi="numeric" class=""><current>xsd:decimal</current><datatype>tei.data.numeric</datatype><vals>[schematron rule that this attr is &amp;#8804; max=, iff max=
+was specified]</vals><comments></comments></attrib>
+<attrib n="197" ident="max" gi="numeric" class=""><current>xsd:decimal</current><datatype>tei.data.numeric</datatype><vals>[schematron rule that this attr is &amp;#8805; value=]</vals><comments></comments></attrib>
+<attrib n="253" ident="pattern" gi="metDecl" class=""><current>datatype.Regexp</current><datatype>tei.data.pattern</datatype><vals></vals><comments>name needs to change to match re= of &lt; fragmentPattern&gt;,
+or vice-versa</comments></attrib>
+<attrib n="263" ident="re" gi="fragmentPattern" class=""><current>datatype.Regexp</current><datatype>tei.data.pattern</datatype><vals></vals><comments>name needs to change to match pattern= of &lt; metDecl&gt;, or
+vice-versa</comments></attrib>
+<attrib n="50" ident="copyOf" gi="" class="tei.linking"><current>datatype.uri</current><datatype>tei.data.pointer</datatype><vals></vals><comments></comments></attrib>
+<attrib n="120" ident="from" gi="app" class=""><current>datatype.uri</current><datatype>tei.data.pointer</datatype><vals></vals><comments></comments></attrib>
+<attrib n="124" ident="from" gi="span" class=""><current>datatype.uri</current><datatype>tei.data.pointer</datatype><vals></vals><comments></comments></attrib>
+<attrib n="129" ident="fVal" gi="f" class=""><current>datatype.uri</current><datatype>tei.data.pointer</datatype><vals></vals><comments></comments></attrib>
+<attrib n="199" ident="mergedin" gi="" class="tei.dictionaries"><current>datatype.uri</current><datatype>tei.data.pointer</datatype><vals></vals><comments>should be renamed mergedIn=</comments></attrib>
+<attrib n="310" ident="sameAs" gi="" class="tei.linking"><current>datatype.uri</current><datatype>tei.data.pointer</datatype><vals></vals><comments></comments></attrib>
+<attrib n="377" ident="to" gi="addSpan" class=""><current>datatype.uri</current><datatype>tei.data.pointer</datatype><vals></vals><comments>[We should consider dropping &lt; addSpan&gt; in favor of HORSE
+markup on &lt; add&gt;.]</comments></attrib>
+<attrib n="378" ident="to" gi="app" class=""><current>datatype.uri</current><datatype>tei.data.pointer</datatype><vals></vals><comments></comments></attrib>
+<attrib n="381" ident="to" gi="delSpan" class=""><current>datatype.uri</current><datatype>tei.data.pointer</datatype><vals></vals><comments>[We should consider dropping &lt; delSpan&gt; in favor of HORSE
+markup on &lt; del&gt;.]</comments></attrib>
+<attrib n="383" ident="to" gi="span" class=""><current>datatype.uri</current><datatype>tei.data.pointer</datatype><vals></vals><comments></comments></attrib>
+<attrib n="486" ident="uri" gi="equiv" class=""><current>xsd:anyURI</current><datatype>tei.data.pointer</datatype><vals></vals><comments></comments></attrib>
+<attrib n="489" ident="url" gi="graphic" class=""><current>xsd:anyURI</current><datatype>tei.data.pointer</datatype><vals></vals><comments>should be uri= or location=</comments></attrib>
+<attrib n="490" ident="url" gi="moduleRef" class=""><current>xsd:anyURI</current><datatype>tei.data.pointer</datatype><vals></vals><comments>should be uri= or location=</comments></attrib>
+<attrib n="499" ident="value" gi="eLeaf" class=""><current>datatype.uri</current><datatype>tei.data.pointer</datatype><vals></vals><comments>candidate for a new class, tei.attr.valuable :-)</comments></attrib>
+<attrib n="500" ident="value" gi="eTree" class=""><current>datatype.uri</current><datatype>tei.data.pointer</datatype><vals></vals><comments>candidate for a new class, tei.attr.valuable :-)</comments></attrib>
+<attrib n="501" ident="value" gi="iNode" class=""><current>datatype.uri</current><datatype>tei.data.pointer</datatype><vals></vals><comments>candidate for a new class, tei.attr.valuable :-)</comments></attrib>
+<attrib n="503" ident="value" gi="leaf" class=""><current>datatype.uri</current><datatype>tei.data.pointer</datatype><vals></vals><comments>candidate for a new class, tei.attr.valuable :-)</comments></attrib>
+<attrib n="505" ident="value" gi="node" class=""><current>datatype.uri</current><datatype>tei.data.pointer</datatype><vals></vals><comments>candidate for a new class, tei.attr.valuable :-)</comments></attrib>
+<attrib n="508" ident="value" gi="root" class=""><current>datatype.uri</current><datatype>tei.data.pointer</datatype><vals></vals><comments>candidate for a new class, tei.attr.valuable :-)</comments></attrib>
+<attrib n="512" ident="value" gi="triangle" class=""><current>datatype.uri</current><datatype>tei.data.pointer</datatype><vals></vals><comments>candidate for a new class, tei.attr.valuable :-)</comments></attrib>
+<attrib n="537" ident="xmlbase" gi="" class="tei.global"><current>xsd:anyURI</current><datatype>tei.data.pointer</datatype><vals></vals><comments>perhaps should remain xsd:anyURI plain, as that's what W3C
+defines it as; i.e., perhaps we don't want a level of indirection
+here</comments></attrib>
+<attrib n="488" ident="url" gi="fsdDecl" class=""><current>datatype.uri</current><datatype>tei.data.pointer</datatype><vals>[schematron rule that it points to a (file whose root is a)
+&lt;teifsd&gt;?]</vals><comments>SB: name is wrong: should be fsd= or location=, no? LB: One ISO
+proposal is to do away with this, and embed FSD in the header
+directly.</comments></attrib>
+<attrib n="42" ident="code" gi="occupation" class=""><current>datatype.uri</current><datatype>tei.data.pointer</datatype><vals>[schematron rule that it points to a &lt;category&gt;
+element]</vals><comments></comments></attrib>
+<attrib n="43" ident="code" gi="socecStatus" class=""><current>datatype.uri</current><datatype>tei.data.pointer</datatype><vals>[schematron rule that it points to a &lt;category&gt;
+element]</vals><comments></comments></attrib>
+<attrib n="268" ident="ref" gi="g" class=""><current>datatype.uri</current><datatype>tei.data.pointer</datatype><vals>[schematron rule that it points to a &lt;char&gt; or a
+&lt;glyph&gt;]</vals><comments></comments></attrib>
+<attrib n="366" ident="target" gi="term" class=""><current>datatype.uri</current><datatype>tei.data.pointer</datatype><vals>[schematron rule that it points to a &lt;gloss&gt;]</vals><comments></comments></attrib>
+<attrib n="133" ident="hand" gi="" class="tei.readings"><current>datatype.uri</current><datatype>tei.data.pointer</datatype><vals>[schematron rule that it points to a &lt;hand&gt;]</vals><comments>At first blush, hand= looks like a good candidate for a class.
+However, semantics differ.</comments></attrib>
+<attrib n="134" ident="hand" gi="add" class=""><current>datatype.uri</current><datatype>tei.data.pointer</datatype><vals>[schematron rule that it points to a &lt;hand&gt;]</vals><comments></comments></attrib>
+<attrib n="135" ident="hand" gi="addSpan" class=""><current>datatype.uri</current><datatype>tei.data.pointer</datatype><vals>[schematron rule that it points to a &lt;hand&gt;]</vals><comments></comments></attrib>
+<attrib n="136" ident="hand" gi="damage" class=""><current>datatype.uri</current><datatype>tei.data.pointer</datatype><vals>[schematron rule that it points to a &lt;hand&gt;]</vals><comments>consider removal?</comments></attrib>
+<attrib n="137" ident="hand" gi="del" class=""><current>datatype.uri</current><datatype>tei.data.pointer</datatype><vals>[schematron rule that it points to a &lt;hand&gt;]</vals><comments></comments></attrib>
+<attrib n="138" ident="hand" gi="delSpan" class=""><current>datatype.uri</current><datatype>tei.data.pointer</datatype><vals>[schematron rule that it points to a &lt;hand&gt;]</vals><comments></comments></attrib>
+<attrib n="139" ident="hand" gi="gap" class=""><current>datatype.uri</current><datatype>tei.data.pointer</datatype><vals>[schematron rule that it points to a &lt;hand&gt;]</vals><comments>consider removal?</comments></attrib>
+<attrib n="141" ident="hand" gi="restore" class=""><current>datatype.uri</current><datatype>tei.data.pointer</datatype><vals>[schematron rule that it points to a &lt;hand&gt;]</vals><comments></comments></attrib>
+<attrib n="142" ident="hand" gi="supplied" class=""><current>datatype.uri</current><datatype>tei.data.pointer</datatype><vals>[schematron rule that it points to a &lt;hand&gt;]</vals><comments>consider removal?</comments></attrib>
+<attrib n="143" ident="hand" gi="unclear" class=""><current>datatype.uri</current><datatype>tei.data.pointer</datatype><vals>[schematron rule that it points to a &lt;hand&gt;]</vals><comments>consider removal?</comments></attrib>
+<attrib n="96" ident="end" gi="" class="tei.timed"><current>datatype.uri</current><datatype>tei.data.pointer</datatype><vals>[schematron rule that it points to a &lt;loc&gt;]</vals><comments></comments></attrib>
+<attrib n="342" ident="start" gi="" class="tei.timed"><current>datatype.uri</current><datatype>tei.data.pointer</datatype><vals>[schematron rule that it points to a &lt;loc&gt;]</vals><comments></comments></attrib>
+<attrib n="121" ident="from" gi="arc" class=""><current>datatype.uri</current><datatype>tei.data.pointer</datatype><vals>[schematron rule that it points to a &lt;node&gt;]</vals><comments></comments></attrib>
+<attrib n="379" ident="to" gi="arc" class=""><current>datatype.uri</current><datatype>tei.data.pointer</datatype><vals>[schematron rule that it points to a &lt;node&gt;]</vals><comments></comments></attrib>
+<attrib n="251" ident="passive" gi="relation" class=""><current>datatype.uriList</current><datatype>tei.data.pointer</datatype><vals>[schematron rule that it points to a &lt;person&gt; or
+&lt;personGrp&gt;, pending work on prosopography]</vals><comments>prose in tagdoc should be fixed</comments></attrib>
+<attrib n="277" ident="render" gi="tagUsage" class=""><current>datatype.uri</current><datatype>tei.data.pointer</datatype><vals>[schematron rule that it points to a &lt;rendition&gt;
+element]</vals><comments></comments></attrib>
+<attrib n="365" ident="target" gi="specGrpRef" class=""><current>datatype.uri</current><datatype>tei.data.pointer</datatype><vals>[schematron rule that it points to a &lt;specGrp&gt;]</vals><comments></comments></attrib>
+<attrib n="314" ident="scheme" gi="catRef" class=""><current>datatype.uri</current><datatype>tei.data.pointer</datatype><vals>[schematron rule that it points to a &lt;taxonomy&gt;
+element]</vals><comments>candidate for creation of new class, tei.attr.scheme</comments></attrib>
+<attrib n="315" ident="scheme" gi="classCode" class=""><current>datatype.uri</current><datatype>tei.data.pointer</datatype><vals>[schematron rule that it points to a &lt;taxonomy&gt;
+element]</vals><comments>candidate for creation of new class, tei.attr.scheme</comments></attrib>
+<attrib n="317" ident="scheme" gi="keywords" class=""><current>datatype.uri</current><datatype>tei.data.pointer</datatype><vals>[schematron rule that it points to a &lt;taxonomy&gt;
+element]</vals><comments>candidate for creation of new class, tei.attr.scheme</comments></attrib>
+<attrib n="319" ident="scheme" gi="occupation" class=""><current>datatype.uri</current><datatype>tei.data.pointer</datatype><vals>[schematron rule that it points to a &lt;taxonomy&gt;
+element]</vals><comments>candidate for creation of new class, tei.attr.scheme</comments></attrib>
+<attrib n="320" ident="scheme" gi="socecStatus" class=""><current>datatype.uri</current><datatype>tei.data.pointer</datatype><vals>[schematron rule that it points to a &lt;taxonomy&gt;
+element]</vals><comments>candidate for creation of new class, tei.attr.scheme</comments></attrib>
+<attrib n="360" ident="target" gi="gloss" class=""><current>datatype.uri</current><datatype>tei.data.pointer</datatype><vals>[schematron rule that it points to a &lt;term&gt;]</vals><comments></comments></attrib>
+<attrib n="333" ident="since" gi="when" class=""><current>datatype.uri</current><datatype>tei.data.pointer</datatype><vals>[schematron rule that it points to a sibling &lt;when&gt;]</vals><comments></comments></attrib>
+<attrib n="190" ident="location" gi="" class="tei.dictionaries"><current>datatype.uri</current><datatype>tei.data.pointer</datatype><vals>[schematron rule that it points to an &lt;anchor&gt;]</vals><comments></comments></attrib>
+<attrib n="115" ident="follow" gi="iNode" class=""><current>datatype.uri</current><datatype>tei.data.pointer</datatype><vals>[schematron rule that it points to an &lt;iNode&gt; or
+&lt;leaf&gt;]</vals><comments></comments></attrib>
+<attrib n="116" ident="follow" gi="leaf" class=""><current>datatype.uri</current><datatype>tei.data.pointer</datatype><vals>[schematron rule that it points to an &lt;iNode&gt; or
+&lt;leaf&gt;]</vals><comments></comments></attrib>
+<attrib n="244" ident="parent" gi="iNode" class=""><current>datatype.uri</current><datatype>tei.data.pointer</datatype><vals>[schematron rule that it points to an &lt;iNode&gt;,
+&lt;root&gt;, or &lt;leaf&gt;]</vals><comments></comments></attrib>
+<attrib n="245" ident="parent" gi="leaf" class=""><current>datatype.uri</current><datatype>tei.data.pointer</datatype><vals>[schematron rule that it points to an &lt;iNode&gt;,
+&lt;root&gt;, or &lt;leaf&gt;]</vals><comments></comments></attrib>
+<attrib n="357" ident="target" gi="" class="tei.formPointers"><current>datatype.uri</current><datatype>tei.data.pointer</datatype><vals>[schematron rule that it points to an &lt;orth&gt;,
+&lt;pron&gt;, or &lt;form&gt;]</vals><comments></comments></attrib>
+<attrib n="218" ident="next" gi="" class="tei.linking"><current>datatype.uri</current><datatype>tei.data.pointer</datatype><vals>[schematron rule that it points to an element of same
+type]</vals><comments></comments></attrib>
+<attrib n="262" ident="prev" gi="" class="tei.linking"><current>datatype.uri</current><datatype>tei.data.pointer</datatype><vals>[schematron rule that it points to an element of same
+type]</vals><comments></comments></attrib>
+<attrib n="239" ident="origin" gi="timeline" class=""><current>datatype.uri</current><datatype>tei.data.pointer</datatype><vals>[schematron rule that it points to one of its own &lt;when&gt;
+children]</vals><comments>comment on absolute= of &lt; when&gt; probably doesn't belong
+in timeline.odd?</comments></attrib>
+<attrib n="313" ident="scheme" gi="att" class=""><current>text</current><datatype>tei.data.pointer | tei.data.ident</datatype><vals></vals><comments>perhaps should be namespace=, instead?</comments></attrib>
+<attrib n="316" ident="scheme" gi="gi" class=""><current>text</current><datatype>tei.data.pointer | tei.data.ident</datatype><vals></vals><comments>perhaps should be namespace=, instead?</comments></attrib>
+<attrib n="321" ident="scheme" gi="tag" class=""><current>text</current><datatype>tei.data.pointer | tei.data.ident</datatype><vals></vals><comments>perhaps should be namespace=, instead?</comments></attrib>
+<attrib n="13" ident="ana" gi="" class="tei.analysis"><current>datatype.uriList</current><datatype>tei.data.pointers</datatype><vals></vals><comments></comments></attrib>
+<attrib n="51" ident="corresp" gi="" class="tei.linking"><current>datatype.uriList</current><datatype>tei.data.pointers</datatype><vals></vals><comments></comments></attrib>
+<attrib n="61" ident="decls" gi="" class="tei.declaring"><current>datatype.uriList</current><datatype>tei.data.pointers</datatype><vals></vals><comments></comments></attrib>
+<attrib n="131" ident="given" gi="certainty" class=""><current>text</current><datatype>tei.data.pointers</datatype><vals></vals><comments>[schematron rule that each points to a different &lt;
+certainty&gt; or a &lt; p&gt;?]</comments></attrib>
+<attrib n="153" ident="inst" gi="" class="tei.interpret"><current>datatype.uriList</current><datatype>tei.data.pointers</datatype><vals></vals><comments></comments></attrib>
+<attrib n="356" ident="synch" gi="" class="tei.linking"><current>datatype.uriList</current><datatype>tei.data.pointers</datatype><vals></vals><comments></comments></attrib>
+<attrib n="359" ident="target" gi="certainty" class=""><current>datatype.uriList</current><datatype>tei.data.pointers</datatype><vals></vals><comments></comments></attrib>
+<attrib n="361" ident="target" gi="note" class=""><current>datatype.uriList</current><datatype>tei.data.pointers</datatype><vals></vals><comments></comments></attrib>
+<attrib n="362" ident="target" gi="ptr" class=""><current>datatype.uriList</current><datatype>tei.data.pointers</datatype><vals></vals><comments></comments></attrib>
+<attrib n="363" ident="target" gi="ref" class=""><current>datatype.uriList</current><datatype>tei.data.pointers</datatype><vals></vals><comments></comments></attrib>
+<attrib n="364" ident="target" gi="respons" class=""><current>datatype.uriList</current><datatype>tei.data.pointers</datatype><vals></vals><comments></comments></attrib>
+<attrib n="367" ident="target" gi="witDetail" class=""><current>datatype.uriList</current><datatype>tei.data.pointers</datatype><vals></vals><comments></comments></attrib>
+<attrib n="368" ident="targetEnd" gi="note" class=""><current>datatype.uriList</current><datatype>tei.data.pointers</datatype><vals></vals><comments>don't the number of URIs in targetEnd= have to match the number
+in target=?</comments></attrib>
+<attrib n="369" ident="targets" gi="alt" class=""><current>datatype.uriList</current><datatype>tei.data.pointers</datatype><vals></vals><comments></comments></attrib>
+<attrib n="370" ident="targets" gi="join" class=""><current>datatype.uriList</current><datatype>tei.data.pointers</datatype><vals></vals><comments>should all elements pointed at be of same type?</comments></attrib>
+<attrib n="371" ident="targets" gi="link" class=""><current>datatype.uriList</current><datatype>tei.data.pointers</datatype><vals></vals><comments></comments></attrib>
+<attrib n="372" ident="targets" gi="locus" class=""><current>datatype.uriList</current><datatype>tei.data.pointers</datatype><vals></vals><comments></comments></attrib>
+<attrib n="530" ident="wit" gi="" class="tei.fragmentary"><current>datatype.uriList</current><datatype>tei.data.pointers</datatype><vals></vals><comments>obvious candidate for a new attr class</comments></attrib>
+<attrib n="531" ident="wit" gi="" class="tei.readings"><current>datatype.uriList</current><datatype>tei.data.pointers</datatype><vals></vals><comments>obvious candidate for a new attr class</comments></attrib>
+<attrib n="532" ident="wit" gi="witDetail" class=""><current>datatype.Key</current><datatype>tei.data.pointers</datatype><vals></vals><comments>obvious candidate for a new attr class</comments></attrib>
+<attrib n="358" ident="target" gi="catRef" class=""><current>datatype.uriList</current><datatype>tei.data.pointers</datatype><vals>[schematron rule that it points to &lt;taxonomy&gt;
+elements]</vals><comments></comments></attrib>
+<attrib n="3" ident="active" gi="relation" class=""><current>datatype.uriList</current><datatype>tei.data.pointers</datatype><vals>[schematron rule that it points to a &lt;person&gt; or
+&lt;personGrp&gt;, pending work on prosopography]</vals><comments></comments></attrib>
+<attrib n="544" ident="who" gi="" class="tei.ascribed"><current>datatype.uriList</current><datatype>tei.data.pointers</datatype><vals>[schematron rule that it points to a &lt;person&gt; or
+&lt;personGrp&gt;, pending work on prosopography]</vals><comments></comments></attrib>
+<attrib n="112" ident="feats" gi="fs" class=""><current>datatype.uriList</current><datatype>tei.data.pointers</datatype><vals>[schematron rule that it points to one or more &lt;f&gt;s]</vals><comments></comments></attrib>
+<attrib n="36" ident="children" gi="iNode" class=""><current>datatype.uriList</current><datatype>tei.data.pointers</datatype><vals>[schematron rule that it points to one or more &lt;iNode&gt;s
+or &lt;leaf&gt;s]</vals><comments></comments></attrib>
+<attrib n="37" ident="children" gi="root" class=""><current>datatype.uriList</current><datatype>tei.data.pointers</datatype><vals>[schematron rule that it points to one or more &lt;iNode&gt;s
+or &lt;leaf&gt;s]</vals><comments></comments></attrib>
+<attrib n="4" ident="adj" gi="node" class=""><current>datatype.uriList</current><datatype>tei.data.pointers</datatype><vals>[schematron rule that it points to one or more
+&lt;node&gt;s]</vals><comments></comments></attrib>
+<attrib n="5" ident="adjFrom" gi="node" class=""><current>datatype.uriList</current><datatype>tei.data.pointers</datatype><vals>[schematron rule that it points to one or more
+&lt;node&gt;s]</vals><comments></comments></attrib>
+<attrib n="6" ident="adjTo" gi="node" class=""><current>datatype.uriList</current><datatype>tei.data.pointers</datatype><vals>[schematron rule that it points to one or more
+&lt;node&gt;s]</vals><comments></comments></attrib>
+<attrib n="254" ident="perf" gi="move" class=""><current>datatype.uriList</current><datatype>tei.data.pointers</datatype><vals>[schematron rule that it points to one or more
+&lt;performance&gt;s]</vals><comments></comments></attrib>
+<attrib n="255" ident="perf" gi="tech" class=""><current>datatype.uriList</current><datatype>tei.data.pointers</datatype><vals>[schematron rule that it points to one or more
+&lt;performance&gt;s]</vals><comments></comments></attrib>
+<attrib n="105" ident="exclude" gi="" class="tei.linking"><current>datatype.uriList</current><datatype>tei.data.pointers</datatype><vals>[schematron rule that it points to one or more members of the
+tei.declarable class]</vals><comments></comments></attrib>
+<attrib n="329" ident="select" gi="" class="tei.linking"><current>datatype.uriList</current><datatype>tei.data.pointers</datatype><vals>[schematron rule that it points to one or more of its own
+descendants]</vals><comments></comments></attrib>
+<attrib n="493" ident="usage" gi="language" class=""><current>xsd:nonNegativeInteger { maxInclusive = "100" }</current><datatype>tei.data.probability</datatype><vals></vals><comments></comments></attrib>
+<attrib n="330" ident="sex" gi="person" class=""><current>datatype.Sex</current><datatype>tei.data.sex</datatype><vals></vals><comments></comments></attrib>
+<attrib n="331" ident="sex" gi="personGrp" class=""><current>datatype.Sex</current><datatype>tei.data.sex</datatype><vals></vals><comments></comments></attrib>
+<attrib n="1" ident="absolute" gi="when" class=""><current>xsd:time</current><datatype>tei.data.temporal</datatype><vals></vals><comments>P5 will not support descriptive times.</comments></attrib>
+<attrib n="57" ident="date" gi="birth" class=""><current>xsd:date</current><datatype>tei.data.temporal</datatype><vals></vals><comments></comments></attrib>
+<attrib n="122" ident="from" gi="dateRange" class=""><current>xsd:date | xsd:gYear | xsd:gMonth | xsd:gDay | xsd:gYearMonth |
+xsd:gMonthDay | xsd:time | xsd:dateTime</current><datatype>tei.data.temporal</datatype><vals></vals><comments>should consider a single attribute with tei.data.duration
+instead</comments></attrib>
+<attrib n="125" ident="from" gi="timeRange" class=""><current>xsd:time</current><datatype>tei.data.temporal</datatype><vals></vals><comments>should consider a single attribute with tei.data.duration
+instead</comments></attrib>
+<attrib n="220" ident="notAfter" gi="" class="tei.datable"><current>xsd:date | xsd:gYear | xsd:gMonth | xsd:gDay | xsd:gYearMonth |
+xsd:gMonthDay | xsd:time | xsd:dateTime</current><datatype>tei.data.temporal</datatype><vals></vals><comments></comments></attrib>
+<attrib n="223" ident="notBefore" gi="" class="tei.datable"><current>xsd:date | xsd:gYear | xsd:gMonth | xsd:gDay | xsd:gYearMonth |
+xsd:gMonthDay | xsd:time | xsd:dateTime</current><datatype>tei.data.temporal</datatype><vals></vals><comments></comments></attrib>
+<attrib n="380" ident="to" gi="dateRange" class=""><current>xsd:date | xsd:gYear | xsd:gMonth | xsd:gDay | xsd:gYearMonth |
+xsd:gMonthDay | xsd:time | xsd:dateTime</current><datatype>tei.data.temporal</datatype><vals></vals><comments>should consider a single attribute with tei.data.duration
+instead</comments></attrib>
+<attrib n="384" ident="to" gi="timeRange" class=""><current>xsd:time</current><datatype>tei.data.temporal</datatype><vals></vals><comments>should consider a single attribute with tei.data.duration
+instead</comments></attrib>
+<attrib n="495" ident="value" gi="" class="tei.temporalExpr"><current>xsd:date | xsd:gYear | xsd:gMonth | xsd:gDay | xsd:gYearMonth |
+xsd:gMonthDay | xsd:time | xsd:dateTime</current><datatype>tei.data.temporal</datatype><vals></vals><comments></comments></attrib>
+<attrib n="497" ident="value" gi="date" class=""><current>xsd:date | xsd:gYear | xsd:gMonth | xsd:gDay | xsd:gYearMonth |
+xsd:gMonthDay | xsd:time | xsd:dateTime</current><datatype>tei.data.temporal</datatype><vals></vals><comments></comments></attrib>
+<attrib n="498" ident="value" gi="docDate" class=""><current>xsd:date</current><datatype>tei.data.temporal</datatype><vals></vals><comments></comments></attrib>
+<attrib n="511" ident="value" gi="time" class=""><current>xsd:time</current><datatype>tei.data.temporal</datatype><vals></vals><comments></comments></attrib>
+<attrib n="14" ident="anchored" gi="note" class=""><current>xsd:boolean</current><datatype>tei.data.truthValue</datatype><vals></vals><comments></comments></attrib>
+<attrib n="47" ident="combine" gi="macroSpec" class=""><current>xsd:boolean</current><datatype>tei.data.truthValue</datatype><vals></vals><comments>?? what is this?</comments></attrib>
+<attrib n="48" ident="contemporary" gi="binding" class=""><current>datatype.UBoolean</current><datatype>tei.data.truthValue</datatype><vals></vals><comments></comments></attrib>
+<attrib n="49" ident="contemporary" gi="seal" class=""><current>datatype.UBoolean</current><datatype>tei.data.truthValue</datatype><vals></vals><comments></comments></attrib>
+<attrib n="63" ident="defective" gi="explicit" class=""><current>datatype.UBoolean</current><datatype>tei.data.truthValue</datatype><vals></vals><comments></comments></attrib>
+<attrib n="64" ident="defective" gi="incipit" class=""><current>datatype.UBoolean</current><datatype>tei.data.truthValue</datatype><vals></vals><comments></comments></attrib>
+<attrib n="65" ident="defective" gi="msContents" class=""><current>datatype.UBoolean</current><datatype>tei.data.truthValue</datatype><vals></vals><comments></comments></attrib>
+<attrib n="66" ident="defective" gi="msItem" class=""><current>datatype.UBoolean</current><datatype>tei.data.truthValue</datatype><vals></vals><comments></comments></attrib>
+<attrib n="67" ident="defective" gi="msItemStruct" class=""><current>datatype.UBoolean</current><datatype>tei.data.truthValue</datatype><vals></vals><comments></comments></attrib>
+<attrib n="85" ident="direct" gi="q" class=""><current>datatype.UBoolean</current><datatype>tei.data.truthValue</datatype><vals></vals><comments></comments></attrib>
+<attrib n="86" ident="discrete" gi="sound" class=""><current>datatype.UBoolean</current><datatype>tei.data.truthValue</datatype><vals></vals><comments></comments></attrib>
+<attrib n="114" ident="first" gi="hand" class=""><current>xsd:boolean</current><datatype>tei.data.truthValue</datatype><vals></vals><comments></comments></attrib>
+<attrib n="132" ident="gradual" gi="writing" class=""><current>datatype.UBoolean</current><datatype>tei.data.truthValue</datatype><vals></vals><comments></comments></attrib>
+<attrib n="156" ident="iterated" gi="event" class=""><current>datatype.UBoolean</current><datatype>tei.data.truthValue</datatype><vals></vals><comments></comments></attrib>
+<attrib n="157" ident="iterated" gi="kinesic" class=""><current>datatype.UBoolean</current><datatype>tei.data.truthValue</datatype><vals></vals><comments></comments></attrib>
+<attrib n="158" ident="iterated" gi="vocal" class=""><current>datatype.UBoolean</current><datatype>tei.data.truthValue</datatype><vals></vals><comments></comments></attrib>
+<attrib n="209" ident="mutual" gi="relation" class=""><current>xsd:boolean</current><datatype>tei.data.truthValue</datatype><vals></vals><comments></comments></attrib>
+<attrib n="227" ident="opt" gi="" class="tei.dictionaries"><current>xsd:boolean</current><datatype>tei.data.truthValue</datatype><vals></vals><comments>maybe really should just be xsd:boolean?</comments></attrib>
+<attrib n="228" ident="ord" gi="iNode" class=""><current>xsd:boolean</current><datatype>tei.data.truthValue</datatype><vals></vals><comments></comments></attrib>
+<attrib n="229" ident="ord" gi="root" class=""><current>xsd:boolean</current><datatype>tei.data.truthValue</datatype><vals></vals><comments></comments></attrib>
+<attrib n="230" ident="ord" gi="tree" class=""><current>text</current><datatype>tei.data.truthValue | "partial"</datatype><vals></vals><comments>presuming such a disjunction will work</comments></attrib>
+<attrib n="7" ident="age" gi="person" class=""><current>text</current><datatype>tei.data.word</datatype><vals></vals><comments>Perhaps tei.data.code would be better? (See mail from Syd to
+Lou on or about 2005-09-22.)</comments></attrib>
+<attrib n="8" ident="age" gi="personGrp" class=""><current>text</current><datatype>tei.data.word</datatype><vals></vals><comments>Perhaps tei.data.code would be better? (See mail from Syd to
+Lou on or about 2005-09-22.)</comments></attrib>
+<attrib n="123" ident="from" gi="locus" class=""><current>datatype.Key</current><datatype>tei.data.word</datatype><vals></vals><comments></comments></attrib>
+<attrib n="159" ident="key" gi="" class="tei.entries"><current>text</current><datatype>tei.data.word</datatype><vals></vals><comments>at a minimum should be renamed to sortKey=; but, in order to
+accomodate dictionaries of dying or rare languages that may have
+characters not in Unicode, does this need to be a child?</comments></attrib>
+<attrib n="353" ident="subtype" gi="" class="tei.typed"><current>text</current><datatype>tei.data.word</datatype><vals></vals><comments>should this be tei.data.enumerated?</comments></attrib>
+<attrib n="355" ident="subtype" gi="seg" class=""><current>text</current><datatype>tei.data.word</datatype><vals></vals><comments>should this be tei.data.enumerated? become member of attribute
+type tei.att.typed?</comments></attrib>
+<attrib n="382" ident="to" gi="locus" class=""><current>datatype.Key</current><datatype>tei.data.word</datatype><vals></vals><comments></comments></attrib>
+<attrib n="395" ident="type" gi="" class="tei.typed"><current>text</current><datatype>tei.data.word</datatype><vals></vals><comments></comments></attrib>
+<attrib n="504" ident="value" gi="metSym" class=""><current>text</current><datatype>tei.data.word</datatype><vals></vals><comments>Can we check that it's inside pattern=? Idunno.</comments></attrib>
+<attrib n="517" ident="where" gi="move" class=""><current>text</current><datatype>tei.data.word</datatype><vals></vals><comments>SB: maybe should be renamed to direction=? LB: no need for
+change, i think: should be an open valList. Used to be 'list { (
+"up" | "down" | "mid" )?, ("left" | "right" | "center" )?,
+tei.data.token* }'</comments></attrib>
+<attrib n="405" ident="lang" gi="code" class=""><current>text</current><datatype>tei.data.word</datatype><vals>"A#" | "ABEL" | "ABCL" | "ACCENT" | "ACTOR" | "ACTOR" | "ADA" |
+"AGORA" | "AKL" | "ALEF" | "ALEPH" | "ALF" | "ALGOL" | "ALLOY" |
+"AMBER" | "AML" | "AMPL" | "AVAIL" | "AWK" | "B" | "BABEL" |
+"BASIC" | "BAWK" | "BEFUNGE" | "BETA" | "BIGWIG" | "BISTRO" |
+"BR</vals><comments>list, from
+http://www.hypernews.org/HyperNews/get/computing/lang-list.html, is
+sadly all uppercase; needs to be fixed</comments></attrib>
+<attrib n="323" ident="scope" gi="handNote" class=""><current>datatype.Key</current><datatype>tei.data.word</datatype><vals>"sole" | "major" | "minor" | tei.data.probability</vals><comments></comments></attrib>
+<attrib n="16" ident="assertedValue" gi="certainty" class=""><current>text</current><datatype>tei.data.word | tei.data.pointer</datatype><vals></vals><comments>interpretation of pointer depends upon locus=</comments></attrib>
+<attrib n="53" ident="cref" gi="gloss" class=""><current>text</current><datatype>tei.data.words</datatype><vals></vals><comments></comments></attrib>
+<attrib n="54" ident="cref" gi="ptr" class=""><current>text</current><datatype>tei.data.words</datatype><vals></vals><comments></comments></attrib>
+<attrib n="55" ident="cref" gi="ref" class=""><current>text</current><datatype>tei.data.words</datatype><vals></vals><comments></comments></attrib>
+<attrib n="56" ident="cref" gi="term" class=""><current>text</current><datatype>tei.data.words</datatype><vals></vals><comments></comments></attrib>
+<attrib n="72" ident="delim" gi="state" class=""><current>text</current><datatype>tei.data.words</datatype><vals></vals><comments></comments></attrib>
+<attrib n="107" ident="extent" gi="damage" class=""><current>text</current><datatype>tei.data.words</datatype><vals></vals><comments></comments></attrib>
+<attrib n="108" ident="extent" gi="gap" class=""><current>text</current><datatype>tei.data.words</datatype><vals></vals><comments></comments></attrib>
+<attrib n="109" ident="extent" gi="orth" class=""><current>text</current><datatype>tei.data.words</datatype><vals></vals><comments></comments></attrib>
+<attrib n="110" ident="extent" gi="pron" class=""><current>text</current><datatype>tei.data.words</datatype><vals></vals><comments></comments></attrib>
+<attrib n="111" ident="extent" gi="space" class=""><current>text</current><datatype>tei.data.words</datatype><vals></vals><comments></comments></attrib>
+<attrib n="148" ident="included" gi="witness" class=""><current>text</current><datatype>tei.data.words</datatype><vals></vals><comments></comments></attrib>
+<attrib n="189" ident="loc" gi="app" class=""><current>text</current><datatype>tei.data.words</datatype><vals></vals><comments></comments></attrib>
+<attrib n="200" ident="met" gi="" class="tei.metrical"><current>datatype.Key</current><datatype>tei.data.words</datatype><vals></vals><comments>needs to match regexp expressed in pattern= of &lt;
+metDecl&gt;</comments></attrib>
+<attrib n="210" ident="n" gi="" class="tei.global"><current>text</current><datatype>tei.data.words</datatype><vals></vals><comments>really could just remain 'text', eh?</comments></attrib>
+<attrib n="211" ident="name" gi="equiv" class=""><current>text</current><datatype>tei.data.words</datatype><vals></vals><comments></comments></attrib>
+<attrib n="219" ident="norm" gi="" class="tei.dictionaries"><current>text</current><datatype>tei.data.words</datatype><vals></vals><comments>if normalization of a word might be in a different language or
+contain non-Unicode chars, this should become an element</comments></attrib>
+<attrib n="252" ident="pat" gi="fragmentPattern" class=""><current>text</current><datatype>tei.data.words</datatype><vals></vals><comments>really could just remain 'text', eh?</comments></attrib>
+<attrib n="256" ident="place" gi="add" class=""><current>text</current><datatype>tei.data.words</datatype><vals></vals><comments>I think a &lt; valList type="open"&gt; with "inline" |
+"supralinear" | "infralinear" | "left" | "right" | "top" | "bottom"
+| "opposite" | "verso" is a good idea.</comments></attrib>
+<attrib n="257" ident="place" gi="addSpan" class=""><current>text</current><datatype>tei.data.words</datatype><vals></vals><comments>I think a &lt; valList type="open"&gt; with "inline" |
+"supralinear" | "infralinear" | "left" | "right" | "top" | "bottom"
+| "opposite" | "verso" is a good idea.</comments></attrib>
+<attrib n="264" ident="real" gi="" class="tei.metrical"><current>datatype.Key</current><datatype>tei.data.words</datatype><vals></vals><comments>needs to match regexp expressed in pattern= of &lt;
+metDecl&gt;</comments></attrib>
+<attrib n="265" ident="reason" gi="gap" class=""><current>text</current><datatype>tei.data.words</datatype><vals></vals><comments></comments></attrib>
+<attrib n="266" ident="reason" gi="supplied" class=""><current>text</current><datatype>tei.data.words</datatype><vals></vals><comments></comments></attrib>
+<attrib n="267" ident="reason" gi="unclear" class=""><current>text</current><datatype>tei.data.words</datatype><vals></vals><comments></comments></attrib>
+<attrib n="276" ident="rend" gi="" class="tei.global"><current>text</current><datatype>tei.data.words</datatype><vals></vals><comments>unless we think whitespace is important, then it should be
+tei.data.string, instead</comments></attrib>
+<attrib n="300" ident="rhyme" gi="" class="tei.metrical"><current>datatype.Key</current><datatype>tei.data.words</datatype><vals></vals><comments></comments></attrib>
+<attrib n="335" ident="size" gi="personGrp" class=""><current>text</current><datatype>tei.data.words</datatype><vals></vals><comments>perhaps a child &lt; num&gt;?</comments></attrib>
+<attrib n="339" ident="source" gi="supplied" class=""><current>text</current><datatype>tei.data.words</datatype><vals></vals><comments></comments></attrib>
+<attrib n="215" ident="namespace" gi="schemaSpec" class=""><current>text</current><datatype>xsd:anyURI</datatype><vals></vals><comments>since anyURI gives us the right syntax, but tei.data.pointer
+gives us an incorrect semantic</comments></attrib>
+<attrib n="224" ident="ns" gi="elementSpec" class=""><current>text</current><datatype>xsd:anyURI</datatype><vals></vals><comments>since anyURI gives us the right syntax, but tei.data.pointer
+gives us an incorrect semantic</comments></attrib>
+<attrib n="62" ident="default" gi="" class="tei.declarable"><current>xsd:boolean</current><datatype>xsd:boolean</datatype><vals></vals><comments></comments></attrib>
+<attrib n="261" ident="predeclare" gi="" class="tei.identifiable"><current>xsd:boolean</current><datatype>xsd:boolean</datatype><vals></vals><comments></comments></attrib>
+<attrib n="375" ident="terminal" gi="metSym" class=""><current>xsd:boolean</current><datatype>xsd:boolean</datatype><vals></vals><comments></comments></attrib>
+<attrib n="386" ident="trunc" gi="numeric" class=""><current>xsd:boolean</current><datatype>xsd:boolean</datatype><vals></vals><comments>could be tei.data.truthValue, but that would require changing
+ISO spec</comments></attrib>
+<attrib n="496" ident="value" gi="binary" class=""><current>xsd:boolean</current><datatype>xsd:boolean</datatype><vals></vals><comments></comments></attrib>
+<attrib n="154" ident="interval" gi="timeline" class=""><current>text</current><datatype>xsd:float { minInclusive = "0" } | xsd:token
+"unknown"</datatype><vals></vals><comments>could consider making this tei.data.duration, and dropping
+unit=; problem is that permits negative durations</comments></attrib>
+<attrib n="155" ident="interval" gi="when" class=""><current>text</current><datatype>xsd:float { minInclusive = "0" } | xsd:token
+"unknown"</datatype><vals></vals><comments>could consider making this tei.data.duration, and dropping
+unit=; problem is that permits negative durations</comments></attrib>
+<attrib n="538" ident="xmlid" gi="" class="tei.global"><current>xsd:ID</current><datatype>xsd:ID</datatype><vals></vals><comments></comments></attrib>
+<attrib n="144" ident="hands" gi="handDesc" class=""><current>datatype.Key</current><datatype>xsd:nonNegativeInteger | "many"</datatype><vals></vals><comments></comments></attrib>
+<attrib n="514" ident="version" gi="TEI" class=""><current>xsd:decimal</current><datatype>xsd:token { pattern="[0-9]+(\.[0-9]+){0,2}[abdp]?"
+}</datatype><vals></vals><comments>or some such</comments></attrib>
+<attrib n="187" ident="level" gi="sense" class=""><current>text</current><datatype>xsd:unsignedShort</datatype><vals></vals><comments>there are no examples of this attriubte in the Guidelines at
+all; may be revised in DI revision process</comments></attrib>
+<attrib n="535" ident="wScale" gi="alt" class=""><current>"perc" | "real"</current><datatype>[should be dropped completely]</datatype><vals>see weights= of &lt;alt&gt;</vals><comments></comments></attrib>
+<attrib n="536" ident="wScale" gi="altGrp" class=""><current>"perc" | "real"</current><datatype>[should be dropped completely]</datatype><vals>see weights= of &lt;alt&gt;</vals><comments></comments></attrib>
+
+</attribList>

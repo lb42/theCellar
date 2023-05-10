@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI.2>
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>EDW 87: Naming Principles for TEI Classes</title>
+         </titleStmt>
+         <publicationStmt>
+	   <p>TEI Internal working paper</p>
+	 </publicationStmt>
+         <sourceDesc>
+            <p>following conversations between SR and LB.</p>
+         </sourceDesc>
+      </fileDesc>
+<revisionDesc><list>
+<item><date>4 Oct 05</date>LB: post-Council major revision</item>
+<item><date value="2005-10-04"/>SB: minor touch-up; mostly
+          just added "Endcap" suffix</item>
+<item><date>4 May 05</date>LB: post-Council revision</item>
+<item><date>28 Mar 05</date>SR: first draft</item></list>
+</revisionDesc>
+   </teiHeader>
+<text>
+<body>
+
+<p>In the TEI universe, an unadorned name such as <q>blort</q> is the
+name of a TEI element or attribute. During generation of TEI schema
+fragments, the patterns defining TEI names are given a prefix
+<code>_TEI</code> to allow these names to co-exist with names from
+other XML namespaces, but this prefix is not visible to the end user,
+and is not used in  TEI documentation.</p>
+<p>All named objects other than elements and attributes have one of
+the following prefixes, which indicate whether the object is a
+module, an attribute class, a model classes, a datatype, or a  macro:
+<table id="tableOverallNaming">
+<row role="label">
+<cell>Component</cell>
+<cell>Name</cell>
+<cell>Example</cell>
+</row>
+<row><cell>Modules</cell><cell>tei.*</cell><cell>tei.core</cell></row>
+<row><cell>Attribute Classes</cell><cell>att.*</cell><cell>att.global</cell></row>
+<row><cell>Model Classes</cell><cell>model.*</cell><cell>model.biblPart</cell></row>
+<row><cell>Macros</cell><cell>macro.*</cell><cell>macro.paraContent</cell></row>
+<row><cell>Datatypes</cell><cell>data.*</cell><cell>data.pointer</cell></row>
+<row><cell>Elements</cell><cell>*</cell><cell>biblFull</cell></row>
+<row><cell>Attributes</cell><cell>*</cell><cell>rend</cell></row>
+
+</table>
+</p>
+
+<p>Names (but not prefixes) use camelCase conventions throughout. </p>
+
+
+<div><head>Class usage principles</head>
+
+
+
+<list type="ordered">
+
+<item>All classes are defined globally in the TEI (though this is not
+a restriction of ODD per se), but some of them may be populated only when
+certain modules are selected.</item>
+
+<item> Content models of elements should be expressed in terms of TEI
+classes wherever reasonable</item>
+
+<item>Classes for attributes must be kept distinct from classes for
+use in content models Existing <q>mixed</q> classes must be separated out
+(there are rather few: tei.formPointers, tei.personPart,
+tei.temporalExpr, tei.seg, and tei.fragmentary).</item>
+
+</list>
+
+<p>The following rules apply to attribute classes:
+
+<list>
+
+<item>No attribute name should be used more than once 
+unless it has the same semantics.</item>
+
+<item>No attribute should use a name which is also
+provided by an attribute class of which the element concerned is a member.</item>
+
+<item>Attribute  classes should be preferred as a means of providing
+elements with attributes wherever two or more elements want the same
+attribute. However, a modification of TEI which wishes to apply an
+existing attribute not defined by a class to some other new element
+may choose to ignore (or be unable to apply) this principle.</item>
+
+<item>Attribute data models should reference TEI datatypes (which are
+derived from W3C datatypes) directly. For further discussion of
+datatypes, see <xref url="edw86.xml">EDW 86</xref>).</item>
+
+<item>Attribute classes must be named <code>att.$N</code>, where
+<code>$N</code> is typically an adjective describing a property common
+to the attributes which make up the class.</item>
+</list>
+</p>
+
+<p>The following rules apply to model classes:
+
+<list>
+<item>Model classes have names beginning <code>model.</code> followed
+by a <term>root name</term>, and
+zero or more  suffixes as described below.</item>
+
+<item>A root name may be the name of an element, for example the
+prototypical parent for elements which are members of the
+class.</item>
+
+<item>The first suffix should be <code>part</code>, if the class members are all
+children of the element named rootname; or <code>like</code>, if the
+class members are all siblings of the element named rootname. </item>
+
+<item>The first suffix may also be <code>global</code>, to indicate
+that class members are permitted anywhere in a TEI document.</item>
+
+<item>Additional suffixes may be added to distinguish subclasses,
+semantic or structural.</item>
+
+<item>Where classes form a hierarchy, elements should be added to the
+lowest level class wherever possible</item>
+
+
+
+</list>
+
+</p>
+
+
+
+
+<p>We list below
+<list>
+<item>all currently defined model classes, and their intended new
+names (<ptr target="table1"/>)</item>
+<item>all currently defined attribute classes, and their intended new
+names (<ptr target="table1a"/>)</item>
+<!--<item>attributes which
+appear multiple times but which are not currently  represented by an
+attribute class (<ptr target="table2"/>)</item>-->
+</list></p>
+<p>For a list of elements and their current content models, see <xref
+url="edw84.xml">EDW84</xref>; for tables of attribute names
+currently in use see EDW79 and EDW86.</p>
+
+
+<p>Currently defined model classes:
+
+<table id="table1">
+<row role="label">
+<cell>Name</cell>
+<cell>New name</cell>
+<cell>Comment</cell>
+</row>
+
+<row><cell>tei.Incl</cell><cell>model.global</cell><cell></cell></row>
+<row><cell>tei.addrPart</cell><cell>model.addrPart</cell><cell></cell></row>
+<row><cell>tei.agent</cell><cell>model.nameLike.agent</cell><cell></cell></row>
+<row><cell>tei.bibl</cell><cell>model.biblLike</cell><cell></cell></row>
+<row><cell>tei.biblPart</cell><cell>model.biblPart</cell><cell></cell></row>
+<row><cell>tei.categorize</cell><cell>model.catDescPart</cell><cell></cell></row>
+<row><cell>tei.chooseable</cell><cell>model.choicePart</cell><cell></cell></row>
+<row><cell>tei.chunk</cell><cell>model.pLike</cell><cell></cell></row> 
+<row><cell>tei.common</cell><cell>model.common</cell><cell><hi>not needed?</hi></cell></row>
+<row><cell>tei.comp.dictionaries</cell><cell>model.entryLike</cell><cell></cell></row>
+<row><cell>tei.comp.drama</cell><cell>model.divPart.stage</cell><cell></cell></row>
+<row><cell>tei.comp.spoken</cell><cell>model.divPart.spoken</cell><cell></cell></row>
+<row><cell>tei.comp.verse</cell><cell>model.divPart.verse</cell><cell>Members
+of this class have all been abolished</cell></row>
+<row><cell>tei.complexVal</cell><cell>model.complexVal</cell><cell>FS-specific?</cell></row>
+<row><cell>tei.data</cell><cell>model.pPart.data</cell><cell></cell></row>
+<row><cell>tei.date</cell><cell>model.dateLike</cell><cell></cell></row>
+<row><cell>tei.demographic</cell><cell>model.personPart</cell><cell></cell></row>
+<row><cell>tei.dictionaryParts</cell><cell>model.entryParts</cell><cell></cell></row>
+<row><cell>tei.dictionaryTopLevel</cell><cell>model.entryParts.top</cell><cell></cell></row>
+<row><cell>tei.divbot</cell><cell>model.divWrapper</cell><cell></cell></row>
+<row><cell>tei.divtop</cell><cell>model.divWrapper</cell><cell></cell></row>
+<row><cell>tei.dramafront</cell><cell>model.frontPart.drama</cell><cell></cell></row>
+<row><cell>tei.edit</cell><cell>model.pPart.edit</cell><cell></cell></row>
+<row><cell>tei.editIncl</cell><cell>model.global.edit</cell><cell></cell></row>
+<row><cell>tei.encoding</cell><cell>model.encodingPart</cell><cell></cell></row>
+<row><cell>tei.featureVal</cell><cell>model.featureVal</cell><cell>FS-specific</cell></row>
+<row><cell>tei.fmchunk</cell><cell>model.pLike.front</cell><cell></cell></row>
+<row><cell>tei.formInfo</cell><cell>model.formPart</cell><cell></cell></row>
+<row><cell>tei.formPointers</cell><cell>model.ptrLike.form</cell><cell></cell></row>
+<row><cell>tei.fragmentary</cell><cell>model.rdgPart</cell><cell></cell></row>
+<row><cell>tei.front</cell><cell>model.frontPart</cell><cell></cell></row>
+<row><cell>tei.gramInfo</cell><cell>model.gramPart</cell><cell></cell></row>
+<row><cell>tei.header</cell><cell>model.headerPart</cell><cell></cell></row>
+<row><cell>tei.hqinter</cell><cell>model.qLike</cell><cell></cell></row>
+<row><cell>tei.hqphrase</cell><cell>model.hiLike</cell><cell></cell></row>
+<row><cell>tei.inter</cell><cell>model.inter</cell><cell>???</cell></row>
+<row><cell>tei.lists</cell><cell>model.listLike</cell><cell></cell></row>
+<row><cell>tei.loc</cell><cell>model.ptrLike</cell><cell></cell></row>
+<row><cell>tei.metadata</cell><cell>model.global.meta</cell><cell></cell></row>
+<row><cell>tei.morphInfo</cell><cell>model.morphLike</cell><cell></cell></row>
+<row><cell>tei.msItemPart</cell><cell>model.msItemPart</cell><cell></cell></row>
+<row><cell>tei.notes</cell><cell>model.noteLike</cell><cell></cell></row>
+<row><cell>tei.oddDecl</cell><cell>model.oddDecl</cell><cell>ODD-specific</cell></row>
+<row><cell>tei.oddPhr</cell><cell>model.oddPhr</cell><cell>ODD-specific</cell></row>
+<row><cell>tei.oddRef</cell><cell>model.oddRef</cell><cell>ODD-specific</cell></row>
+<row><cell>tei.paragraph</cell><cell>model.pLike</cell><cell></cell></row>
+<row><cell>tei.personPart</cell><cell>model.persNamePart</cell><cell></cell></row>
+<row><cell>tei.personPart</cell><cell>att.personal</cell><cell></cell></row>
+<row><cell>tei.phrase.verse</cell><cell>model.lPart</cell><cell></cell></row>
+<row><cell>tei.phrase</cell><cell>model.phrase</cell><cell>special?</cell></row>
+<row><cell>tei.placePart</cell><cell>model.placeNamePart</cell><cell></cell></row>
+<row><cell>tei.policy</cell><cell>model.editorialDeclPart</cell><cell></cell></row>
+<row><cell>tei.profile</cell><cell>model.profileDescPart</cell><cell></cell></row>
+<row><cell>tei.refsys</cell><cell>model.milestoneLike</cell><cell></cell></row>
+<row><cell>tei.seg</cell><cell>model.segLike</cell><cell></cell></row>
+<row><cell>tei.segment</cell><cell>model.segment</cell><cell>Probably
+redundant once ab is moved</cell></row>
+<row><cell>tei.singleVal</cell><cell>model.singleVal</cell><cell>FS-specific</cell></row>
+<row><cell>tei.sourcedesc</cell><cell>model.sourceDescPart</cell><cell></cell></row>
+<row><cell>tei.stageDirection</cell><cell>model.stageLike</cell><cell></cell></row>
+<row><cell>tei.temporalExpr</cell><cell>model.datePart</cell><cell></cell></row>
+<row><cell>tei.tpParts</cell><cell>model.titlepagePart</cell><cell></cell></row>
+</table>
+</p>
+
+<p>Currently defined attribute classes:
+
+<table id="table1a">
+<row role="label">
+<cell>Name</cell>
+<cell>New name</cell>
+<cell>Comment</cell></row>
+<row><cell>tei.analysis</cell><cell>att.analytic</cell><cell></cell></row>
+<row><cell>tei.ascribed</cell><cell>att.ascribed</cell><cell></cell></row>
+<row><cell>tei.datable</cell><cell>att.datable</cell><cell></cell></row>
+<row><cell>tei.declarable</cell><cell>att.declarable</cell><cell></cell></row>
+<row><cell>tei.declaring</cell><cell>att.declaring</cell><cell></cell></row>
+<row><cell>tei.dictionaries</cell><cell>att.lexicographic</cell><cell></cell></row>
+<row><cell>tei.divn</cell><cell>att.divLike</cell><cell></cell></row>
+<row><cell>tei.enjamb</cell><cell>att.enjamb</cell><cell></cell></row>
+<row><cell>tei.entries</cell><cell>att.entryLike</cell><cell></cell></row>
+<row><cell>tei.formPointers</cell><cell>att.ptrLike.form</cell><cell></cell></row>
+<row><cell>tei.fragmentary</cell><cell>att.rdgPart</cell><cell></cell></row>
+<row><cell>tei.global</cell><cell>att.global</cell><cell></cell></row>
+<row><cell>tei.identifiable</cell><cell>att.identified</cell><cell>ODD-specific</cell></row>
+<row><cell>tei.interpret</cell><cell>att.interpLike</cell><cell>merge with intervention?</cell></row>
+<row><cell>tei.intervention</cell><cell>att.editLike</cell><cell>merge
+with interpret?</cell></row>
+<row><cell>tei.linking</cell><cell>att.global.linking</cell><cell></cell></row>
+<row><cell>tei.measured</cell><cell>att.measured</cell><cell></cell></row>
+<row><cell>tei.metrical</cell><cell>att.metrical</cell><cell></cell></row>
+<row><cell>tei.names</cell><cell>att.naming</cell><cell></cell></row>
+<row><cell>tei.pointer</cell><cell>att.pointing</cell><cell></cell></row>
+<row><cell>tei.pointerGroup</cell><cell>att.pointing.group</cell><cell>winita</cell></row>
+<row><cell>tei.readings</cell><cell>att.textCritical</cell><cell>winita</cell></row>
+<row><cell>tei.seg</cell><cell>att.segLike</cell><cell></cell></row>
+<row><cell>tei.timed</cell><cell>att.timed</cell><cell></cell></row>
+<row><cell>tei.typed</cell><cell>att.typed</cell><cell></cell></row>
+</table>
+</p>
+</div>
+</body>
+</text>
+</TEI.2>

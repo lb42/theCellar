@@ -1,0 +1,106 @@
+<?xml version="1.0"?> 
+<?xml-stylesheet type="text/css" href="/teixlite.css"?>
+<!--DOCTYPE TEI.2 PUBLIC "-//TEI//DTD TEI Lite XML ver. 1//EN"
+"http://www.tei-c.org/Lite/DTD/teixlite.dtd" []-->
+<TEI.2>
+ <teiHeader>
+  <fileDesc>
+   <titleStmt>
+    <title>Draft Charge for the Work Group on Character Encoding </title>
+   </titleStmt>
+   <publicationStmt>
+<p>For TEI website</p>
+   </publicationStmt>
+   <sourceDesc>
+<p>Original</p>
+   </sourceDesc>
+  </fileDesc>
+  <revisionDesc>
+   <!-- one of (change list) -->
+   <change>
+    <date>14 Apr 2002</date>
+    <respStmt>
+<name>Lou</name>
+    </respStmt>
+    <item>Revised</item>
+   </change>
+ <change>
+    <date>2 Jul 2001</date>
+    <respStmt>
+<name>Lou</name>
+    </respStmt>
+    <item>Drafted</item>
+   </change>
+  </revisionDesc>
+ </teiHeader>
+ <text>
+
+<front>
+<titlePage>
+<docTitle>
+<titlePart>Draft Charge for the Workgroup on Character Encoding</titlePart>
+<titlePart>TEI ED W72</titlePart>
+</docTitle>
+<docDate>14 April 2002</docDate>
+</titlePage>
+</front>
+<body>
+<div><head>Objectives</head>
+<list type="ordered">
+<item>Reformulate this list of objectives.</item>
+<item>Review thoroughly all aspects of the recommendations
+   currently presented in TEI P4 with respect to the encoding of
+   character-level information and of writing systems in general;</item>
+     <item>Make specific proposals for changes in the existing
+   recommendations which will better align the TEI Recommendations
+   with current needs and practices in the widest text enoding
+   community;</item> 
+<item>Draft new
+   recommendations in areas not at present addressed explicitly or adequately by the
+       Guidelines; such areas include (but are not limited to)
+<list>
+<item>mechanisms for the definition of character semantics in a Unicode context;</item>
+<item>assessment of input and display software for multilingual work;</item>
+<item>best practice in the standardized encoding of manuscript	materials;</item>
+      </list></item>
+<item>Respond to comments on the relevant portions of TEI P4
+    routed to this work group by the editors.</item>
+</list></div>
+<div>
+<head>Administrative</head>
+
+<p>The initial membership of this workgroup included the following:
+<list>
+<item>Christian Wittern, Kyoto University (wittern@kanji.zinbun.kyoto-u.ac.jp) : chair</item>
+<item>Deborah Anderson, Berkeley (dwanders@socrates.berkeley.edu) </item>
+<item>David Birnbaum, Pittsburgh University (djbpitt+@pitt.edu)</item>
+<item>Patrick Durusau, Emory University (pdurusau@emory.edu) </item>
+</list>
+The chair should specify current membership as soon as possible, for ratification by the
+     TEI Board at its next meeting. The TEI Editors are ex officio
+     members of all TEI Work Groups. Other constraints and procedures
+     applicable to all TEI Work Groups are described in document TEI
+     ED W54. </p>
+<p>The group has a budget of USD 8000 for the year ending 2003, during
+     which one meeting is authorized. </p>
+<p>The Work group is required to provide  progress reports on its work regularly
+to the TEI Technical Council, which has authority for approving
+all technical output from the work group. </p>
+</div>
+<div>
+<head>Deadlines</head>
+<p>(To be agreed with WG head):
+<list>
+<item>Reformulation of objectives and recruitment of work
+       group members should be completed by 1 May 2002, in time for the TEI Board meeting May 9th;</item>
+<item>A preliminary work plan should be prepared by 1 August 2002</item>
+<item>A first draft of recommendations for revisions and additions required to P4
+       should be prepared by 15 September 2002, for review by the TEI
+       Council meeting of 11 Oct 2002.</item>
+<item>The final reports from the Workgroup should be completed by 1
+       January 2003</item>
+     </list></p>
+   </div>
+</body>
+</text>
+</TEI.2>

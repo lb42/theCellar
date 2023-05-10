@@ -1,0 +1,150 @@
+<?xml version="1.0"?> 
+<?xml-stylesheet type="text/css" href="/teixlite.css"?>
+<!--DOCTYPE TEI.2 PUBLIC "-//TEI//DTD TEI Lite XML ver. 1//EN"
+"http://www.tei-c.org/Lite/DTD/teixlite.dtd" []-->
+<TEI.2>
+ <teiHeader>
+  <fileDesc>
+   <titleStmt>
+    <title>Draft Charge for the SGML/XML Conversion Work Group </title>
+   </titleStmt>
+   <publicationStmt>
+<p>For TEI website</p>
+   </publicationStmt>
+   <sourceDesc>
+<p>Original</p>
+   </sourceDesc>
+  </fileDesc>
+  <revisionDesc>
+ <change>
+    <date>15 Aug 2002</date>
+    <respStmt>
+<name>Lou</name>
+    </respStmt>
+    <item>Revised</item>
+   </change>
+ <change>
+    <date>12 Jul 2002</date>
+    <respStmt>
+<name>Lou</name>
+    </respStmt>
+    <item>Drafted</item>
+   </change>
+  </revisionDesc>
+ </teiHeader>
+ <text>
+
+<front>
+<titlePage>
+<docTitle>
+<titlePart>Draft Charge for the Workgroup on SGML/XML Conversion</titlePart>
+<titlePart>TEI ED W72</titlePart>
+</docTitle>
+<docDate>12 July 2002</docDate>
+</titlePage>
+</front>
+<body>
+<head>Status</head>
+<p>This Work Group has been specially chartered by the TEI Council
+  with funding from the NEH. It constitutes a Task Force to provide
+     recommendations on the process of conversion of TEI Legacy Data
+     from SGML to
+     XML.</p>
+
+<div><head>Objectives</head>
+<list type="ordered">
+<item>Reformulate this list of objectives.</item>
+<item>Survey  current practice in application of the TEI encoding
+       scheme, in particular with respect to the usage of SGML in
+       electronic repositories. </item>
+<item>Identify technical, organizational, or other challenges and
+       opportunities presented by the  conversion of this legacy data to P4 XML
+       format. </item>
+<item>Propose generic solutions where these can be identified; review
+       issues and suggest guidance where generic solutions are
+       inapplicable. </item>
+<item>Review current practice in migrating SGML to XML with a view
+       to recommending best practices</item>
+<item>Undertake a small number of case studies</item>
+<item>Draft reports on 
+<list>
+<item>Recommended migration strategies</item>
+<item>Recommended migration practices</item>
+       </list></item>
+</list></div>
+<div>
+<head>Administrative</head>
+
+<p>Chair of the workgroup is Chris Ruotolo (University of Virginia).</p>
+<p>Membership of the workgroup contains experts selected
+      primarily  either for their expertise in TEI/XML or for their
+      status as representatives of significant TEI SGML
+      repositories. These two classes of member are identified below
+      as either <term>technical export</term> or <term>repository
+      representative</term>.
+    </p>
+
+<list><head>technical experts</head>
+<item>Alejandro Bia</item>
+<item>Jessica Hekman</item>
+<item>Tobias Rischer</item>
+<item>Syun Tutiya</item>
+</list>
+
+<list><head>repository representatives</head>
+<item>Tomaz Erjavec</item>
+<item>Michael Popham</item>
+<item>Chris Powell</item>
+<item>Susan Schreibman</item>
+<item>Natasha Smith</item>
+<item>John Walsh</item>
+<item>Franz Wiering</item>
+    </list>
+
+<p>The Chair is responsible for determining the membership of the
+     group, subject to recommendations and suggestions from the TEI
+     Council. The TEI Editors are ex officio members of all TEI Work
+     Groups. Other constraints and procedures applicable to all TEI
+     Work Groups are described in document TEI ED W54. </p>
+
+<p>The budget, suggested work plan and meeting schedule envisaged for
+the Task Force in the funding application are as follows: <q>[In the
+task force] selected TEI experts and editors (8 people, total) work
+closely with representatives from projects with significant TEI SGML
+holdings (another 10 people) to diagnose and document the problems,
+methods, and tools necessary to design and effect a migration from
+SGML to XML, in TEI.  One start-up meeting with editors and experts
+only; one mid-term meeting with project representatives; one final
+meeting with editors and experts.  Participation from TEI technical
+writer for four months, participation of TEI editors and executive
+director for two months. Travel to two one-day meetings for 8 people,
+travel to one two-day meeting for 18 people.  [Total Budget]
+      $67533.33</q>
+</p>
+<p>The Chair may modify this workplan as necessary to meet the goals
+     of the funding proposal, subject to
+     approval of the TEI Council, and to the overall financial limits stated.</p>
+
+<p>The Work group is required to provide  progress reports on its work regularly
+to the TEI Technical Council, which has authority for approving
+all technical output from the work group. </p>
+</div>
+<div>
+<head>Deadlines</head>
+<p>(To be agreed with WG head):
+<list>
+<item>Reformulation of objectives and recruitment of work
+       group members should be completed by 28 October 2002, in time for the TEI
+       Council meeting, May 2003</item>
+<item>A preliminary work plan (derived from this document) should be prepared by 1 September 2002</item>
+<item>A preliminary draft showing the structure and coverage envisaged
+       for the reports should be prepared for review by the TEI
+       Council before 1 February 2003.</item>
+<item>Drafts of the final reports should be available for the TEI
+       Council meeting in May 2003, and should be completed by 1
+       July 2003</item>
+     </list></p>
+   </div>
+</body>
+</text>
+</TEI.2>

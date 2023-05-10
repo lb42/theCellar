@@ -1,0 +1,161 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+  
+  
+    
+
+Current state of P5
+<p><a name="id2283987"></a>This is a working document for the use of the TEI Council and
+Editors. It summarizes briefly the current state of play and intended
+future work with respect to each chapter of P5. For more detailed
+information, consult the working directory currently maintained in the
+CVS Repository at <tt>tei.sf.net</tt>; for strategic information about the overall goals of the
+P5 revision, and the version of it currently visible to the public, see <a class="link_xptr" href="http://www.tei-c.org/P5" target="_top"><span>http://www.tei-c.org/P5</span></a>. </p>
+<p><a name="id2284009"></a>This document lists the chapters of P5, with an indication of the current status of each</p>
+<p>Under the heading ‘prognosis’, we give our current assessment of the amount
+of work needed on each chapter, defined in the following broad terms:
+</p><p><dl><dt><strong>stet</strong></dt><dd>No action needed</dd><dt><strong>major surgery</strong></dt><dd>Complete rewrite needed</dd><dt><strong>minor surgery</strong></dt><dd>Basically sound, but new material
+needs to be added</dd><dt><strong>convalescent</strong></dt><dd>New material has been approved by
+Council and incorporated but editorial work is incomplete</dd><dt><strong>for checking</strong></dt><dd>No major changes anticipated but not
+yet checked for P5 consistency</dd><dt><strong>for deletion</strong></dt><dd>Proposed for removal at P5</dd><dt><strong>discharged</strong></dt><dd>No further work is proposed on this chapter</dd></dl></p><p>
+</p>
+<p><a name="id2284075"></a>All chapters and all validatable examples have been validated
+against the current P5 schemas. This validation procedure is now built
+in to the process of building a new release, so it should not need
+further attention. </p>
+
+<div class="teidiv"><h2><a name=""></a>State of the patient</h2>
+<p><a name="id2284086"></a>
+<div align="left"><table>
+<tr>
+<td valign="top"><strong>code</strong></td>
+<td valign="top"><strong>title</strong></td>
+<td valign="top"><strong>current state</strong></td>
+<td valign="top"><strong>prognosis</strong></td>
+</tr>
+<tr><td valign="top">DEDICATION</td><td valign="top">Dedication</td><td valign="top">Updated to
+refer to AZ</td><td valign="top">discharged</td></tr>
+<tr><td valign="top">FM1</td><td valign="top">Preface</td><td valign="top">Unchanged from
+P4</td><td valign="top">major surgery</td></tr>
+<tr><td valign="top">AB</td><td valign="top">About these Guidelines</td><td valign="top">Unchanged from
+P4</td><td valign="top">for checking</td></tr>
+<tr><td valign="top">SG</td><td valign="top">Gentle intro</td><td valign="top">Unchanged from
+P4</td><td valign="top">minor surgery started but incomplete</td></tr>
+<tr><td valign="top">ST</td><td valign="top">Structure of the TEI Document Type
+Definition</td><td valign="top">Largely unchanged from P4</td><td valign="top">major
+surgery</td></tr>
+<tr><td valign="top">CH</td><td valign="top">Languages and Character Sets</td><td valign="top">New
+draft from Workgroup</td><td valign="top">convalescent</td></tr>
+<tr><td valign="top">HD</td><td valign="top">The TEI Header</td><td valign="top">Partially revised</td><td valign="top">for checking; some new material included</td></tr>
+<tr><td valign="top">CO</td><td valign="top">Elements Available in All TEI
+Documents</td><td valign="top">Partially revised</td><td valign="top">minor surgery;
+some new material included</td></tr>
+<tr><td valign="top">DS</td><td valign="top">Default Text Structure</td><td valign="top">Unchanged from P4</td><td valign="top">for checking</td></tr>
+<tr><td valign="top">PR</td><td valign="top">Base Tag Set for Prose</td><td valign="top">Unchanged from P4</td><td valign="top">for checking/deletion</td></tr>
+<tr><td valign="top">VE</td><td valign="top">Base Tag Set for Verse</td><td valign="top">Unchanged from P4</td><td valign="top">for checking</td></tr>
+<tr><td valign="top">DR</td><td valign="top">Base Tag Set for Drama</td><td valign="top">Unchanged from P4</td><td valign="top">for checking</td></tr>
+<tr><td valign="top">TS</td><td valign="top">Transcriptions of Speech</td><td valign="top">Unchanged from P4</td><td valign="top">for checking</td></tr>
+<tr><td valign="top">DI</td><td valign="top">Print Dictionaries</td><td valign="top">Unchanged from
+P4</td><td valign="top">minor surgery started but incomplete</td></tr>
+<tr><td valign="top">TE</td><td valign="top">Terminological
+Databases</td><td valign="top">Deleted</td>
+<td valign="top">rewrite is needed</td></tr>
+<tr><td valign="top">MS</td><td valign="top">The Manuscript Description
+Element</td><td valign="top">New draft from Workgroup</td><td valign="top">convalescent</td></tr>
+<tr><td valign="top">SA</td><td valign="top">Linking, Segmentation, and
+Alignment</td><td valign="top">Partially rewritten with input from wg</td><td valign="top">convalescent</td></tr>
+<tr><td valign="top">AI</td><td valign="top">Simple Analytic Mechanisms</td><td valign="top">Unchanged from P4</td><td valign="top">for checking</td></tr>
+<tr><td valign="top">FS</td><td valign="top">Feature Structures</td><td valign="top">Revised for
+review as ISO DIS</td><td valign="top">discharged</td></tr>
+<tr><td valign="top">CE</td><td valign="top">Certainty and Responsibility</td><td valign="top">Unchanged from P4</td><td valign="top">for checking</td></tr>
+<tr><td valign="top">PH</td><td valign="top">Transcription of Primary
+Sources</td><td valign="top">Unchanged from P4</td>
+<td valign="top">minor surgery with input from PB workgroup</td></tr>
+<tr><td valign="top">TC</td><td valign="top">Critical Apparatus</td><td valign="top">Unchanged from P4</td><td valign="top">for checking</td></tr>
+<tr><td valign="top">ND</td><td valign="top">Names and Dates</td><td valign="top">Unchanged from
+P4</td><td valign="top">minor surgery to include material from ontology SIG</td></tr>
+<tr><td valign="top">GD</td><td valign="top">Graphs, Networks, and
+Trees</td><td valign="top">Unchanged from P4</td>
+<td valign="top">for checking</td></tr>
+<tr><td valign="top">FT</td><td valign="top">Tables, Formulae, and
+Graphics</td><td valign="top">Some new material</td><td valign="top">convalescent</td></tr>
+<tr><td valign="top">CC</td><td valign="top">Language Corpora</td><td valign="top">Unchanged from P4</td><td valign="top">for checking</td></tr>
+<tr><td valign="top">SH</td><td valign="top">The Independent Header</td><td valign="top">Some new
+material from WG</td><td valign="top">minor surgey started; for integration
+with HD</td></tr>
+<tr><td valign="top">WD</td><td valign="top">Writing System Declaration</td><td valign="top">New draft
+from WG</td><td valign="top">convalescent</td></tr>
+<tr><td valign="top">FD</td><td valign="top">Feature System
+Declaration</td><td valign="top">Checked for consistency with new FS</td><td valign="top">discharged</td></tr>
+<tr><td valign="top">TD</td><td valign="top">Documentation Elements</td><td valign="top">New chapter
+from Meta WG</td><td valign="top">discharged</td></tr>
+<tr><td valign="top">CF</td><td valign="top">Conformance</td><td valign="top">Unchanged from
+P4</td><td valign="top">minor surgery</td></tr>
+<tr><td valign="top">MD</td><td valign="top">Modifying and Customizing the TEI
+DTD</td><td valign="top">Unchanged from P4</td><td valign="top">major surgery</td></tr>
+<tr><td valign="top">IN</td><td valign="top">Rules for Interchange</td><td valign="top">Unchanged
+from P4</td>
+<td valign="top">minor surgery</td></tr>
+<tr><td valign="top">NH</td><td valign="top">Multiple Hierarchies</td><td valign="top">Unchanged from
+P4</td><td valign="top">minor surgery with input from WG</td></tr>
+<tr><td valign="top">CR</td><td valign="top">Algorithm for Recognizing Canonical
+References</td>
+<td valign="top">Rewritten by WG</td><td valign="top">convalescent; for merging with HD?</td></tr>
+<tr><td valign="top">DT</td><td valign="top">Obtaining the TEI DTD</td><td valign="top">Revision
+started</td><td valign="top">major surgery</td></tr>
+<tr><td valign="top">XW</td><td valign="top">Obtaining TEI WSDs</td><td valign="top">Deleted</td><td valign="top">discharged</td></tr>
+<tr><td valign="top">XT</td><td valign="top">Sample Tag Set Documentation</td>
+<td valign="top">Deleted</td><td valign="top">Discharged</td></tr>
+<tr><td valign="top">GR</td><td valign="top">Formal Grammar for the
+TEI-Interchange-Format Subset of SGML</td>
+<td valign="top">Deleted</td><td valign="top">Discharged</td></tr>
+<tr><td valign="top">BIB</td><td valign="top">Bibliography</td><td valign="top">Unchanged from
+P4</td><td valign="top">minor surgery</td></tr>
+<tr><td valign="top">PARTIND</td><td valign="top">Index</td><td valign="top">Unchanged from
+P4</td><td valign="top">major surgery</td></tr>
+<tr><td valign="top">PREFS</td><td valign="top">Old prefaces</td><td valign="top">Unchanged from
+P4</td><td valign="top">minor surgery</td></tr>
+<tr><td valign="top">COL</td><td valign="top">Colophon</td><td valign="top">Unchanged from
+P4</td><td valign="top">minor surgery</td></tr>
+</table></div></p></div>
+
+<div class="teidiv"><h2><a name=""></a>Tasklist</h2>
+
+<p>The following involve major work on a chapter. They are all urgent:
+</p><ol><li><a name="id2284660"></a>Expand discussion of customization features in TD using Lite as
+an example.</li><li><a name="id2284665"></a>Revise MD, CF, and IN in light of new customization features. 
+Document features for modification and i18n</li><li><a name="id2284670"></a>Expand SG to include discussion of RelaxNG and other schemas
+[urgent]: mostly needs prose tidy-up, and some relaxng schema
+examples: needed for Fabio's book: [SB by 31 Jul] </li><li><a name="id2284676"></a>Revise ST: in particular <ul><li><a name="id2284681"></a>overhaul discussion of class system</li><li><a name="id2284685"></a>add new material about  proposed new core modules</li></ul> </li><li><a name="id2284691"></a>Review HD and update its metadata discussion: consolidate and
+move discussion of other metadata schemes in current HD and IH; review
+other schemes not so far discussed; create new material about
+compatibility and mapping, to include (possibly) discussion about
+using namespaces, using existing MD methods, using generic metadata
+tags (if so proposed by teilib) </li><li><a name="id2284701"></a>Consider reorganization/modularization of Core </li><li><a name="id2284705"></a>Expand discussion of &lt;choice&gt; mechanism </li><li><a name="id2284709"></a>Add discussion of prosopographic issues to ND, moving it fron MS
+and CO: a draft proposal is needed</li><li><a name="id2284714"></a>Revise DI</li><li><a name="id2284717"></a>New version of  TE</li><li><a name="id2284721"></a>More examples for MS; act on suggestions on SF</li><li><a name="id2284725"></a>Expand and clarify discussion of linking in SA and CO,
+particularly discussion of syntax for extended pointers xpaths</li><li><a name="id2284730"></a>Add discussion of standoff annotation to NH (or SA?)</li></ol><p> 
+</p>
+
+<p>The following can be done at any time: for revised chapters, they
+will be done during revision; for others, they will be done during
+final sweep through (c. sept).
+</p><ol><li><a name="id2284746"></a>Check that none of the typos etc. lately fixed in P4 (as documented in
+<a class="link_xptr" href="edw77.xml" target="_top"><span>edw77.xml</span></a>) has survived into P5 [passim]</li><li><a name="id2284756"></a>Check and amend references to DTD language constructs [passim]</li><li><a name="id2284760"></a>Check and amend references to P4 structural architecture (eg
+base/additional tagsets) [passim]</li><li><a name="id2284765"></a>Revise base chapters to remove references to their status as
+bases</li></ol><p></p>
+
+<p>The following are either non-urgent or undecided:
+
+</p><ol><li><a name="id2284778"></a>Check conformity of CH language identification recs with eg
+Ethnolog practice [soon]</li><li><a name="id2284783"></a>Consider what to do about remaining CDATA attributes [passim]</li><li><a name="id2284787"></a>Merge CF and IN into new freestanding document on Conformance</li><li><a name="id2284792"></a>Decide whether or not to split up FT; bring it up to date</li><li><a name="id2284796"></a>Decide whether or not to split up CP; HD</li></ol><p>
+</p>
+
+<p>The following cannot be done until everything else is finished:
+</p><ol><li><a name="id2284810"></a>Draft new preface to reflect current state of affairs. [final]</li><li><a name="id2284814"></a>Rewrite AB to reflect current state of affairs. [final]</li><li><a name="id2284819"></a>Either update or remove BIB</li></ol><p>
+</p>
+
+</div>
+
+
+    
+

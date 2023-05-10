@@ -1,0 +1,649 @@
+<?xml version="1.0"?>
+<TEI.2>
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Summary of SF FRs</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>Unpublished; probably unpublishable, too</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>None, unless you count the spreadsheet I initially entered the data into.</p>
+      </sourceDesc>
+    </fileDesc>
+<revisionDesc>
+<change><date>2006-09-25</date>
+<respStmt>
+<resp>edit</resp>
+<name>Lou</name>
+</respStmt>
+<item>Changed root element, added links to SF items using tartup.xsl</item></change></revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <table>
+        <row role="head">
+          <cell>num</cell>
+          <cell>title</cell>
+          <cell>submitted</cell>
+          <cell>submitter</cell>
+          <cell>decision DD</cell>
+          <cell>work DD</cell>
+        </row>
+        <row>
+          <cell><xref url="https://sourceforge.net/tracker/?func=detail&amp;atid=644065&amp;aid=1561323&amp;group_id=106328">1561323</xref></cell>
+          <cell> explanation of &lt;extent&gt; </cell>
+          <cell>2006-09-19 06:01</cell>
+          <cell>schassan</cell>
+          <cell>3</cell>
+          <cell>1</cell>
+        </row>
+        <row>
+          <cell><xref url="https://sourceforge.net/tracker/?func=detail&amp;atid=644065&amp;aid=1551357&amp;group_id=106328">1551357</xref></cell>
+          <cell>Make &lt;app&gt; model less strict </cell>
+          <cell>2006-09-03 04:09 </cell>
+          <cell>gabrielbodard</cell>
+          <cell>6</cell>
+          <cell>3</cell>
+        </row>
+        <row>
+          <cell><xref url="https://sourceforge.net/tracker/?func=detail&amp;atid=644065&amp;aid=1550795&amp;group_id=106328">1550795</xref></cell>
+          <cell>replace &lt;catDesc&gt; with model.glossLike </cell>
+          <cell>2006-09-01 18:30 </cell>
+          <cell>sbauman</cell>
+          <cell>7</cell>
+          <cell>2</cell>
+        </row>
+        <row>
+          <cell><xref url="https://sourceforge.net/tracker/?func=detail&amp;atid=644065&amp;aid=1550537&amp;group_id=106328">1550537</xref></cell>
+          <cell>usage history </cell>
+          <cell>2006-09-01 09:41 </cell>
+          <cell>schassan</cell>
+          <cell>3</cell>
+          <cell>3</cell>
+        </row>
+        <row>
+          <cell><xref url="https://sourceforge.net/tracker/?func=detail&amp;atid=644065&amp;aid=1550436&amp;group_id=106328">1550436</xref></cell>
+          <cell>Changing conten models in drama tags </cell>
+          <cell>2006-09-01 06:18 </cell>
+          <cell>nobody</cell>
+          <cell>3</cell>
+          <cell>3</cell>
+        </row>
+        <row>
+          <cell><xref url="https://sourceforge.net/tracker/?func=detail&amp;atid=644065&amp;aid=1550229&amp;group_id=106328">1550229</xref></cell>
+          <cell>give &lt;catRef&gt; a type= attribute </cell>
+          <cell>2006-08-31 20:23 </cell>
+          <cell>sbauman</cell>
+          <cell>2</cell>
+          <cell>1</cell>
+        </row>
+        <row>
+          <cell><xref url="https://sourceforge.net/tracker/?func=detail&amp;atid=644065&amp;aid=1550082&amp;group_id=106328">1550082</xref></cell>
+          <cell>multiple translations </cell>
+          <cell>2006-08-31 16:30 </cell>
+          <cell>nobody</cell>
+          <cell>5</cell>
+          <cell>4</cell>
+        </row>
+        <row>
+          <cell><xref url="https://sourceforge.net/tracker/?func=detail&amp;atid=644065&amp;aid=1550077&amp;group_id=106328">1550077</xref></cell>
+          <cell>linkage to multimedia versions </cell>
+          <cell>2006-08-31 16:26 </cell>
+          <cell>nobody</cell>
+          <cell>4</cell>
+          <cell>4</cell>
+        </row>
+        <row>
+          <cell><xref url="https://sourceforge.net/tracker/?func=detail&amp;atid=644065&amp;aid=1550071&amp;group_id=106328">1550071</xref></cell>
+          <cell>new global attribute @coord </cell>
+          <cell>2006-08-31 16:21 </cell>
+          <cell>lmcantara</cell>
+          <cell>5</cell>
+          <cell>5</cell>
+        </row>
+        <row>
+          <cell><xref url="https://sourceforge.net/tracker/?func=detail&amp;atid=644065&amp;aid=1549974&amp;group_id=106328">1549974</xref></cell>
+          <cell>extend and generalise names and dates </cell>
+          <cell>2006-08-31 10:37 </cell>
+          <cell>richardlight</cell>
+          <cell>8</cell>
+          <cell>6</cell>
+        </row>
+        <row>
+          <cell><xref url="https://sourceforge.net/tracker/?func=detail&amp;atid=644065&amp;aid=1547904&amp;group_id=106328">1547904</xref></cell>
+          <cell>data.temporal </cell>
+          <cell>2006-08-28 08:58 </cell>
+          <cell>nobody</cell>
+          <cell>6</cell>
+          <cell>3</cell>
+        </row>
+        <row>
+          <cell><xref url="https://sourceforge.net/tracker/?func=detail&amp;atid=644065&amp;aid=1540221&amp;group_id=106328">1540221</xref></cell>
+          <cell>&lt;age&gt; </cell>
+          <cell>2006-08-14 17:10 </cell>
+          <cell>vcothey</cell>
+          <cell>3</cell>
+          <cell>3</cell>
+        </row>
+        <row>
+          <cell><xref url="https://sourceforge.net/tracker/?func=detail&amp;atid=644065&amp;aid=1536450&amp;group_id=106328">1536450</xref></cell>
+          <cell>create a new class to house rdg </cell>
+          <cell>2006-08-08 03:20 </cell>
+          <cell>cwittern</cell>
+          <cell>1</cell>
+          <cell>1</cell>
+        </row>
+        <row>
+          <cell><xref url="https://sourceforge.net/tracker/?func=detail&amp;atid=644065&amp;aid=1531700&amp;group_id=106328">1531700</xref></cell>
+          <cell>Element for indicating supplied letters for expansions </cell>
+          <cell>2006-07-31 08:09 </cell>
+          <cell>jcummings</cell>
+          <cell>6</cell>
+          <cell>3</cell>
+        </row>
+        <row>
+          <cell><xref url="https://sourceforge.net/tracker/?func=detail&amp;atid=644065&amp;aid=1524523&amp;group_id=106328">1524523</xref></cell>
+          <cell>listPlace, place, placeGrp </cell>
+          <cell>2006-07-18 09:22 </cell>
+          <cell>jcummings</cell>
+          <cell>6</cell>
+          <cell>6</cell>
+        </row>
+        <row>
+          <cell><xref url="https://sourceforge.net/tracker/?func=detail&amp;atid=644065&amp;aid=1524368&amp;group_id=106328">1524368</xref></cell>
+          <cell>content model of msIdentifer </cell>
+          <cell>2006-07-18 04:51 </cell>
+          <cell>rahtz</cell>
+          <cell>4</cell>
+          <cell>2</cell>
+        </row>
+        <row>
+          <cell><xref url="https://sourceforge.net/tracker/?func=detail&amp;atid=644065&amp;aid=1504844&amp;group_id=106328">1504844</xref></cell>
+          <cell>Elements for describing authoring/editing tools </cell>
+          <cell>2006-06-12 11:42 </cell>
+          <cell>martindholmes</cell>
+          <cell>6</cell>
+          <cell>4</cell>
+        </row>
+        <row>
+          <cell><xref url="https://sourceforge.net/tracker/?func=detail&amp;atid=644065&amp;aid=1502542&amp;group_id=106328">1502542</xref></cell>
+          <cell>creatorApp and related elements for authoring applications </cell>
+          <cell>2006-06-07 17:40 </cell>
+          <cell>martindholmes</cell>
+        </row>
+        <row>
+          <cell><xref url="https://sourceforge.net/tracker/?func=detail&amp;atid=644065&amp;aid=1488917&amp;group_id=106328">1488917</xref></cell>
+          <cell>improve datatype of &lt;hand&gt; attributes </cell>
+          <cell>2006-05-15 11:26 </cell>
+          <cell>julia_flanders</cell>
+          <cell>5</cell>
+          <cell>3</cell>
+        </row>
+        <row>
+          <cell><xref url="https://sourceforge.net/tracker/?func=detail&amp;atid=644065&amp;aid=1442353&amp;group_id=106328">1442353</xref></cell>
+          <cell>@type on listPerson </cell>
+          <cell>2006-03-03 04:53 </cell>
+          <cell>jcummings</cell>
+          <cell>1</cell>
+          <cell>1</cell>
+        </row>
+        <row>
+          <cell><xref url="https://sourceforge.net/tracker/?func=detail&amp;atid=644065&amp;aid=1427592&amp;group_id=106328">1427592</xref></cell>
+          <cell>idno in msIdentifier obligatory? </cell>
+          <cell>2006-02-08 09:52 </cell>
+          <cell>schassan</cell>
+          <cell>2</cell>
+          <cell>2</cell>
+        </row>
+        <row>
+          <cell><xref url="https://sourceforge.net/tracker/?func=detail&amp;atid=644065&amp;aid=1425986&amp;group_id=106328">1425986</xref></cell>
+          <cell>need to harmonize the datatypes of the attributes of layout </cell>
+          <cell>2006-02-07 05:36 </cell>
+          <cell>schassan</cell>
+          <cell>3</cell>
+          <cell>2</cell>
+        </row>
+        <row>
+          <cell><xref url="https://sourceforge.net/tracker/?func=detail&amp;atid=644065&amp;aid=1415410&amp;group_id=106328">1415410</xref></cell>
+          <cell>values of types of titles need to be harmonized </cell>
+          <cell>2006-01-26 08:31 </cell>
+          <cell>schassan</cell>
+        </row>
+        <row>
+          <cell><xref url="https://sourceforge.net/tracker/?func=detail&amp;atid=644065&amp;aid=1366189&amp;group_id=106328">1366189</xref></cell>
+          <cell>version attribute for teiCorpus </cell>
+          <cell>2005-11-25 05:30 </cell>
+          <cell>schassan</cell>
+        </row>
+        <row>
+          <cell><xref url="https://sourceforge.net/tracker/?func=detail&amp;atid=644065&amp;aid=1308688&amp;group_id=106328">1308688</xref></cell>
+          <cell>A new floating embedded text element </cell>
+          <cell>2005-09-29 14:38 </cell>
+          <cell>julia_flanders</cell>
+          <cell>3</cell>
+          <cell>5</cell>
+        </row>
+        <row>
+          <cell><xref url="https://sourceforge.net/tracker/?func=detail&amp;atid=644065&amp;aid=1274137&amp;group_id=106328">1274137</xref></cell>
+          <cell>Graphic / figure type attribute </cell>
+          <cell>2005-08-26 12:03 </cell>
+          <cell>nobody</cell>
+        </row>
+        <row>
+          <cell><xref url="https://sourceforge.net/tracker/?func=detail&amp;atid=644065&amp;aid=1226113&amp;group_id=106328">1226113</xref></cell>
+          <cell>element q with attribute defective </cell>
+          <cell>2005-06-23 04:53 </cell>
+          <cell>schassan</cell>
+        </row>
+        <row>
+          <cell><xref url="https://sourceforge.net/tracker/?func=detail&amp;atid=644065&amp;aid=1191803&amp;group_id=106328">1191803</xref></cell>
+          <cell>precision attribute on date/datestruct/daterange </cell>
+          <cell>2005-04-28 11:52 </cell>
+          <cell>jcummings</cell>
+          <cell>7</cell>
+          <cell>3</cell>
+        </row>
+        <row>
+          <cell><xref url="https://sourceforge.net/tracker/?func=detail&amp;atid=644065&amp;aid=1177698&amp;group_id=106328">1177698</xref></cell>
+          <cell>content model of macro.phrasegroup </cell>
+          <cell>2005-04-06 08:02 </cell>
+          <cell>schassan</cell>
+        </row>
+        <row>
+          <cell><xref url="https://sourceforge.net/tracker/?func=detail&amp;atid=644065&amp;aid=1177588&amp;group_id=106328">1177588</xref></cell>
+          <cell>&lt;term&gt; with attribute reg </cell>
+          <cell>2005-04-06 04:15 </cell>
+          <cell>schassan</cell>
+        </row>
+        <row>
+          <cell><xref url="https://sourceforge.net/tracker/?func=detail&amp;atid=644065&amp;aid=1174119&amp;group_id=106328">1174119</xref></cell>
+          <cell>persName, placeName, orgName with attr role </cell>
+          <cell>2005-03-31 09:23 </cell>
+          <cell>schassan</cell>
+        </row>
+        <row>
+          <cell><xref url="https://sourceforge.net/tracker/?func=detail&amp;atid=644065&amp;aid=1173968&amp;group_id=106328">1173968</xref></cell>
+          <cell>attribute resp as member of tei.global </cell>
+          <cell>2005-03-31 05:05 </cell>
+          <cell>schassan</cell>
+        </row>
+        <row>
+          <cell><xref url="https://sourceforge.net/tracker/?func=detail&amp;atid=644065&amp;aid=1160955&amp;group_id=106328">1160955</xref></cell>
+          <cell>&lt;del&gt;: change content model to macro.specialPara </cell>
+          <cell>2005-03-10 17:24 </cell>
+          <cell>johnwalsh</cell>
+        </row>
+        <row>
+          <cell><xref url="https://sourceforge.net/tracker/?func=detail&amp;atid=644065&amp;aid=1160569&amp;group_id=106328">1160569</xref></cell>
+          <cell>msDescription type required? </cell>
+          <cell>2005-03-10 05:57 </cell>
+          <cell>schassan</cell>
+        </row>
+        <row>
+          <cell><xref url="https://sourceforge.net/tracker/?func=detail&amp;atid=644065&amp;aid=1151865&amp;group_id=106328">1151865</xref></cell>
+          <cell>&lt;del&gt;/&lt;undel&gt; </cell>
+          <cell>2005-02-25 10:19 </cell>
+          <cell>jcummings</cell>
+          <cell>8</cell>
+          <cell>5</cell>
+        </row>
+        <row>
+          <cell><xref url="https://sourceforge.net/tracker/?func=detail&amp;atid=644065&amp;aid=1151853&amp;group_id=106328">1151853</xref></cell>
+          <cell>&lt;dateRange&gt; </cell>
+          <cell>2005-02-25 10:04 </cell>
+          <cell>jcummings</cell>
+        </row>
+        <row>
+          <cell><xref url="https://sourceforge.net/tracker/?func=detail&amp;atid=644065&amp;aid=1149875&amp;group_id=106328">1149875</xref></cell>
+          <cell>dimensions need mixed content </cell>
+          <cell>2005-02-23 10:08 </cell>
+          <cell>schassan</cell>
+        </row>
+        <row>
+          <cell><xref url="https://sourceforge.net/tracker/?func=detail&amp;atid=644065&amp;aid=1085834&amp;group_id=106328">1085834</xref></cell>
+          <cell>New span elements? </cell>
+          <cell>2004-12-15 09:44 </cell>
+          <cell>tone_merete</cell>
+          <cell>8</cell>
+          <cell>7</cell>
+        </row>
+        <row>
+          <cell><xref url="https://sourceforge.net/tracker/?func=detail&amp;atid=644065&amp;aid=1081391&amp;group_id=106328">1081391</xref></cell>
+          <cell>problems with integration of msDesc into P5 </cell>
+          <cell>2004-12-08 09:38 </cell>
+          <cell>schassan</cell>
+        </row>
+        <row>
+          <cell><xref url="https://sourceforge.net/tracker/?func=detail&amp;atid=644065&amp;aid=1079954&amp;group_id=106328">1079954</xref></cell>
+          <cell>On msItem Content Model for manuscript description module </cell>
+          <cell>2004-12-06 07:24 </cell>
+          <cell>nobody</cell>
+        </row>
+        <row>
+          <cell><xref url="https://sourceforge.net/tracker/?func=detail&amp;atid=644065&amp;aid=1074092&amp;group_id=106328">1074092</xref></cell>
+          <cell>Expand &lt;dateline&gt; content model? </cell>
+          <cell>2004-11-26 23:05 </cell>
+          <cell>dsew</cell>
+        </row>
+        <row>
+          <cell><xref url="https://sourceforge.net/tracker/?func=detail&amp;atid=644065&amp;aid=1072999&amp;group_id=106328">1072999</xref></cell>
+          <cell>msPart examples need update </cell>
+          <cell>2004-11-25 02:32 </cell>
+          <cell>schassan</cell>
+        </row>
+        <row>
+          <cell><xref url="https://sourceforge.net/tracker/?func=detail&amp;atid=644065&amp;aid=1058736&amp;group_id=106328">1058736</xref></cell>
+          <cell>phrase-level element stamp </cell>
+          <cell>2004-11-02 06:02 </cell>
+          <cell>schassan</cell>
+          <cell>4</cell>
+          <cell>3</cell>
+        </row>
+        <row>
+          <cell><xref url="https://sourceforge.net/tracker/?func=detail&amp;atid=644065&amp;aid=1056015&amp;group_id=106328">1056015</xref></cell>
+          <cell>contents of msItem less restricted </cell>
+          <cell>2004-10-28 07:04 </cell>
+          <cell>schassan</cell>
+        </row>
+        <row>
+          <cell><xref url="https://sourceforge.net/tracker/?func=detail&amp;atid=644065&amp;aid=1037635&amp;group_id=106328">1037635</xref></cell>
+          <cell>layoutDesc and layoutNote? </cell>
+          <cell>2004-09-30 06:19 </cell>
+          <cell>schassan</cell>
+        </row>
+        <row>
+          <cell><xref url="https://sourceforge.net/tracker/?func=detail&amp;atid=644065&amp;aid=1037624&amp;group_id=106328">1037624</xref></cell>
+          <cell>origDate without attributes tei.datable </cell>
+          <cell>2004-09-30 06:06 </cell>
+          <cell>schassan</cell>
+        </row>
+        <row>
+          <cell><xref url="https://sourceforge.net/tracker/?func=detail&amp;atid=644065&amp;aid=1033281&amp;group_id=106328">1033281</xref></cell>
+          <cell>msDesc: layout attributes elsewhere </cell>
+          <cell>2004-09-23 06:45 </cell>
+          <cell>schassan</cell>
+        </row>
+        <row>
+          <cell><xref url="https://sourceforge.net/tracker/?func=detail&amp;atid=644065&amp;aid=1033249&amp;group_id=106328">1033249</xref></cell>
+          <cell>msDesc: watermarks missing in formal definitions </cell>
+          <cell>2004-09-23 05:25 </cell>
+          <cell>schassan</cell>
+        </row>
+        <row>
+          <cell><xref url="https://sourceforge.net/tracker/?func=detail&amp;atid=644065&amp;aid=1031983&amp;group_id=106328">1031983</xref></cell>
+          <cell>mcDescription: head or p? </cell>
+          <cell>2004-09-21 11:31 </cell>
+          <cell>schassan</cell>
+        </row>
+        <row>
+          <cell><xref url="https://sourceforge.net/tracker/?func=detail&amp;atid=644065&amp;aid=1031940&amp;group_id=106328">1031940</xref></cell>
+          <cell>type= of &lt;add&gt;, &lt;del&gt;, &lt;addSpan&gt;,             &lt;delSpan&gt; </cell>
+          <cell>2004-09-21 10:44 </cell>
+          <cell>sbauman</cell>
+        </row>
+        <row>
+          <cell><xref url="https://sourceforge.net/tracker/?func=detail&amp;atid=644065&amp;aid=1029584&amp;group_id=106328">1029584</xref></cell>
+          <cell> Proposal for file tree layout of future TEI releases </cell>
+          <cell>2004-09-16 20:32 </cell>
+          <cell>cwittern</cell>
+        </row>
+        <row>
+          <cell><xref url="https://sourceforge.net/tracker/?func=detail&amp;atid=644065&amp;aid=1022701&amp;group_id=106328">1022701</xref></cell>
+          <cell>Permit &lt;email&gt; in &lt;address&gt; </cell>
+          <cell>2004-09-05 15:16 </cell>
+          <cell>sbauman</cell>
+          <cell>4</cell>
+          <cell>5</cell>
+        </row>
+        <row>
+          <cell><xref url="https://sourceforge.net/tracker/?func=detail&amp;atid=644065&amp;aid=1022699&amp;group_id=106328">1022699</xref></cell>
+          <cell>A place for out-of-line elements </cell>
+          <cell>2004-09-05 15:13 </cell>
+          <cell>sbauman</cell>
+          <cell>7</cell>
+          <cell>7</cell>
+        </row>
+        <row>
+          <cell><xref url="https://sourceforge.net/tracker/?func=detail&amp;atid=644065&amp;aid=1022607&amp;group_id=106328">1022607</xref></cell>
+          <cell>&lt;respStmt&gt; needs to be more restrictive. </cell>
+          <cell>2004-09-05 11:51 </cell>
+          <cell>sbauman</cell>
+        </row>
+        <row>
+          <cell><xref url="https://sourceforge.net/tracker/?func=detail&amp;atid=644065&amp;aid=1022539&amp;group_id=106328">1022539</xref></cell>
+          <cell>&lt;note&gt; needs to be permitted anywhere </cell>
+          <cell>2004-09-05 08:07 </cell>
+          <cell>sbauman</cell>
+          <cell>7</cell>
+          <cell>5</cell>
+        </row>
+        <row>
+          <cell><xref url="https://sourceforge.net/tracker/?func=detail&amp;atid=644065&amp;aid=1022536&amp;group_id=106328">1022536</xref></cell>
+          <cell>&lt;roleDesc&gt; should be allowed as child of             &lt;castGroup&gt; </cell>
+          <cell>2004-09-05 07:58 </cell>
+          <cell>sbauman</cell>
+        </row>
+        <row>
+          <cell><xref url="https://sourceforge.net/tracker/?func=detail&amp;atid=644065&amp;aid=1022116&amp;group_id=106328">1022116</xref></cell>
+          <cell>&lt;roleDesc&gt; should be allowed as child of             &lt;castGroup&gt; </cell>
+          <cell>2004-09-03 17:48 </cell>
+          <cell>sbauman</cell>
+          <cell>4</cell>
+          <cell>3</cell>
+        </row>
+        <row>
+          <cell><xref url="https://sourceforge.net/tracker/?func=detail&amp;atid=644065&amp;aid=1022109&amp;group_id=106328">1022109</xref></cell>
+          <cell>No rend= on header elements </cell>
+          <cell>2004-09-03 17:35 </cell>
+          <cell>sbauman</cell>
+        </row>
+        <row>
+          <cell><xref url="https://sourceforge.net/tracker/?func=detail&amp;atid=644065&amp;aid=1022100&amp;group_id=106328">1022100</xref></cell>
+          <cell>&lt;castList&gt;s need &lt;label&gt;s, too </cell>
+          <cell>2004-09-03 17:10 </cell>
+          <cell>sbauman</cell>
+          <cell>2</cell>
+          <cell>3</cell>
+        </row>
+        <row>
+          <cell><xref url="https://sourceforge.net/tracker/?func=detail&amp;atid=644065&amp;aid=1022081&amp;group_id=106328">1022081</xref></cell>
+          <cell>&lt;tagUsage&gt; should not be all or nothing </cell>
+          <cell>2004-09-03 16:30 </cell>
+          <cell>sbauman</cell>
+          <cell>3</cell>
+          <cell>1</cell>
+        </row>
+        <row>
+          <cell><xref url="https://sourceforge.net/tracker/?func=detail&amp;atid=644065&amp;aid=1022074&amp;group_id=106328">1022074</xref></cell>
+          <cell>No rend= on header elements </cell>
+          <cell>2004-09-03 16:15 </cell>
+          <cell>sbauman</cell>
+        </row>
+        <row>
+          <cell><xref url="https://sourceforge.net/tracker/?func=detail&amp;atid=644065&amp;aid=1022072&amp;group_id=106328">1022072</xref></cell>
+          <cell>rendition in rend= of &lt;render&gt;, not content </cell>
+          <cell>2004-09-03 16:12 </cell>
+          <cell>sbauman</cell>
+        </row>
+        <row>
+          <cell><xref url="https://sourceforge.net/tracker/?func=detail&amp;atid=644065&amp;aid=1022066&amp;group_id=106328">1022066</xref></cell>
+          <cell>default value of status= of &lt;teiHeader&gt; </cell>
+          <cell>2004-09-03 16:05 </cell>
+          <cell>sbauman</cell>
+        </row>
+        <row>
+          <cell><xref url="https://sourceforge.net/tracker/?func=detail&amp;atid=644065&amp;aid=1022052&amp;group_id=106328">1022052</xref></cell>
+          <cell>simplify encoding of chronological phrases </cell>
+          <cell>2004-09-03 15:38 </cell>
+          <cell>sbauman</cell>
+        </row>
+        <row>
+          <cell><xref url="https://sourceforge.net/tracker/?func=detail&amp;atid=644065&amp;aid=1021094&amp;group_id=106328">1021094</xref></cell>
+          <cell>Add namespace information to &lt;tagUsage&gt; </cell>
+          <cell>2004-09-02 07:23 </cell>
+          <cell>louburnard</cell>
+        </row>
+        <row>
+          <cell><xref url="https://sourceforge.net/tracker/?func=detail&amp;atid=644065&amp;aid=1020570&amp;group_id=106328">1020570</xref></cell>
+          <cell>New &lt;figure&gt; element and figContent class </cell>
+          <cell>2004-09-01 13:19 </cell>
+          <cell>louburnard</cell>
+        </row>
+        <row>
+          <cell><xref url="https://sourceforge.net/tracker/?func=detail&amp;atid=644065&amp;aid=1020438&amp;group_id=106328">1020438</xref></cell>
+          <cell>Create tei.glossy class </cell>
+          <cell>2004-09-01 10:10 </cell>
+          <cell>louburnard</cell>
+        </row>
+        <row>
+          <cell><xref url="https://sourceforge.net/tracker/?func=detail&amp;atid=644065&amp;aid=1019594&amp;group_id=106328">1019594</xref></cell>
+          <cell>Manuscript encoding </cell>
+          <cell>2004-08-31 07:34 </cell>
+          <cell>hildeboe</cell>
+          <cell>8</cell>
+          <cell>6</cell>
+        </row>
+        <row>
+          <cell><xref url="https://sourceforge.net/tracker/?func=detail&amp;atid=644065&amp;aid=1019592&amp;group_id=106328">1019592</xref></cell>
+          <cell>Metrical encoding in verse </cell>
+          <cell>2004-08-31 07:31 </cell>
+          <cell>hildeboe</cell>
+        </row>
+        <row>
+          <cell><xref url="https://sourceforge.net/tracker/?func=detail&amp;atid=644065&amp;aid=1012817&amp;group_id=106328">1012817</xref></cell>
+          <cell>&lt;extent&gt; </cell>
+          <cell>2004-08-20 06:12 </cell>
+          <cell>nolda</cell>
+          <cell>5</cell>
+          <cell>4</cell>
+        </row>
+        <row>
+          <cell><xref url="https://sourceforge.net/tracker/?func=detail&amp;atid=644065&amp;aid=1012815&amp;group_id=106328">1012815</xref></cell>
+          <cell>&lt;publisher&gt; children </cell>
+          <cell>2004-08-20 06:10 </cell>
+          <cell>nolda</cell>
+          <cell>5</cell>
+          <cell>3</cell>
+        </row>
+        <row>
+          <cell><xref url="https://sourceforge.net/tracker/?func=detail&amp;atid=644065&amp;aid=1012350&amp;group_id=106328">1012350</xref></cell>
+          <cell>Two new elements for bibliograhic entries </cell>
+          <cell>2004-08-19 13:24 </cell>
+          <cell>paultremblay</cell>
+        </row>
+        <row>
+          <cell><xref url="https://sourceforge.net/tracker/?func=detail&amp;atid=644065&amp;aid=1007370&amp;group_id=106328">1007370</xref></cell>
+          <cell>&lt;theorem&gt; </cell>
+          <cell>2004-08-11 11:29 </cell>
+          <cell>nolda</cell>
+          <cell>4</cell>
+          <cell>4</cell>
+        </row>
+        <row>
+          <cell><xref url="https://sourceforge.net/tracker/?func=detail&amp;atid=644065&amp;aid=1007369&amp;group_id=106328">1007369</xref></cell>
+          <cell>inline, displayed, and floating elements </cell>
+          <cell>2004-08-11 11:28 </cell>
+          <cell>nolda</cell>
+        </row>
+        <row>
+          <cell><xref url="https://sourceforge.net/tracker/?func=detail&amp;atid=644065&amp;aid=1007367&amp;group_id=106328">1007367</xref></cell>
+          <cell>"accept" attribute </cell>
+          <cell>2004-08-11 11:26 </cell>
+          <cell>nolda</cell>
+          <cell>6</cell>
+          <cell>5</cell>
+        </row>
+        <row>
+          <cell><xref url="https://sourceforge.net/tracker/?func=detail&amp;atid=644065&amp;aid=1007364&amp;group_id=106328">1007364</xref></cell>
+          <cell>&lt;mentioned&gt; </cell>
+          <cell>2004-08-11 11:24 </cell>
+          <cell>nolda</cell>
+        </row>
+        <row>
+          <cell><xref url="https://sourceforge.net/tracker/?func=detail&amp;atid=644065&amp;aid=1007361&amp;group_id=106328">1007361</xref></cell>
+          <cell>&lt;index&gt; </cell>
+          <cell>2004-08-11 11:23 </cell>
+          <cell>nolda</cell>
+        </row>
+        <row>
+          <cell><xref url="https://sourceforge.net/tracker/?func=detail&amp;atid=644065&amp;aid=1007359&amp;group_id=106328">1007359</xref></cell>
+          <cell>&lt;figBody&gt; </cell>
+          <cell>2004-08-11 11:21 </cell>
+          <cell>nolda</cell>
+        </row>
+        <row>
+          <cell><xref url="https://sourceforge.net/tracker/?func=detail&amp;atid=644065&amp;aid=1007355&amp;group_id=106328">1007355</xref></cell>
+          <cell>&lt;eTree&gt; etc. </cell>
+          <cell>2004-08-11 11:20 </cell>
+          <cell>nolda</cell>
+          <cell>5</cell>
+          <cell>3</cell>
+        </row>
+        <row>
+          <cell><xref url="https://sourceforge.net/tracker/?func=detail&amp;atid=644065&amp;aid=1007353&amp;group_id=106328">1007353</xref></cell>
+          <cell>&lt;interp&gt; </cell>
+          <cell>2004-08-11 11:18 </cell>
+          <cell>nolda</cell>
+        </row>
+        <row>
+          <cell><xref url="https://sourceforge.net/tracker/?func=detail&amp;atid=644065&amp;aid=1003646&amp;group_id=106328">1003646</xref></cell>
+          <cell>If transcribe, then &lt;pb/&gt; should allow wit </cell>
+          <cell>2004-08-04 19:33 </cell>
+          <cell>nobody</cell>
+        </row>
+        <row>
+          <cell><xref url="https://sourceforge.net/tracker/?func=detail&amp;atid=644065&amp;aid=998405&amp;group_id=106328">998405</xref></cell>
+          <cell>class attribute in &lt;biblStruct&gt; </cell>
+          <cell>2004-07-26 21:30 </cell>
+          <cell>paultremblay</cell>
+        </row>
+        <row>
+          <cell><xref url="https://sourceforge.net/tracker/?func=detail&amp;atid=644065&amp;aid=998403&amp;group_id=106328">998403</xref></cell>
+          <cell>allow &lt;ptr&gt; inside &lt;biblStruct&gt; </cell>
+          <cell>2004-07-26 21:27 </cell>
+          <cell>paultremblay</cell>
+        </row>
+        <row>
+          <cell><xref url="https://sourceforge.net/tracker/?func=detail&amp;atid=644065&amp;aid=994851&amp;group_id=106328">994851</xref></cell>
+          <cell>Allow the distributor element in imprint </cell>
+          <cell>2004-07-20 18:10 </cell>
+          <cell>paultremblay</cell>
+        </row>
+        <row>
+          <cell><xref url="https://sourceforge.net/tracker/?func=detail&amp;atid=644065&amp;aid=980854&amp;group_id=106328">980854</xref></cell>
+          <cell>measure should be typed? </cell>
+          <cell>2004-06-27 17:20 </cell>
+          <cell>johnwalsh</cell>
+        </row>
+        <row>
+          <cell><xref url="https://sourceforge.net/tracker/?func=detail&amp;atid=644065&amp;aid=958388&amp;group_id=106328">958388</xref></cell>
+          <cell>metadata element for header </cell>
+          <cell>2004-05-22 01:23 </cell>
+          <cell>tfinney</cell>
+        </row>
+        <row>
+          <cell><xref url="https://sourceforge.net/tracker/?func=detail&amp;atid=644065&amp;aid=957617&amp;group_id=106328">957617</xref></cell>
+          <cell>Letters/memos module </cell>
+          <cell>2004-05-20 15:39 </cell>
+          <cell>finkend</cell>
+          <cell>5</cell>
+          <cell>5</cell>
+        </row>
+        <row>
+          <cell><xref url="https://sourceforge.net/tracker/?func=detail&amp;atid=644065&amp;aid=957403&amp;group_id=106328">957403</xref></cell>
+          <cell>Need for tag documentation </cell>
+          <cell>2004-05-20 10:05 </cell>
+          <cell>nobody</cell>
+        </row>
+        <row>
+          <cell><xref url="https://sourceforge.net/tracker/?func=detail&amp;atid=644065&amp;aid=951125&amp;group_id=106328">951125</xref></cell>
+          <cell>Prosopography module </cell>
+          <cell>2004-05-10 05:27 </cell>
+          <cell>louburnard</cell>
+        </row>
+      </table>
+    </body>
+  </text>
+</TEI.2>

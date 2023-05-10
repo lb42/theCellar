@@ -1,0 +1,441 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en"><!--THIS FILE IS GENERATED FROM AN XML MASTER. 
+   DO NOT EDIT--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>TEI Lite from P4 to P5: Continuity and ChangeTEI ED W85</title><link rel="stylesheet" type="text/css" href="/Stylesheets/tei.css"><meta xmlns:tei="http://www.tei-c.org/P5/" xmlns:html="http://www.w3.org/1999/xhtml" name="DC.Title" content="TEI Lite from P4 to P5: Continuity and ChangeTEI ED W85"><meta xmlns:tei="http://www.tei-c.org/P5/" xmlns:html="http://www.w3.org/1999/xhtml" name="DC.Language" content="(SCHEME=iso639) en"><meta xmlns:tei="http://www.tei-c.org/P5/" xmlns:html="http://www.w3.org/1999/xhtml" name="DC.Creator" content="TEI,Oxford University Computing Services, 13 Banbury Road, Oxford OX2 6NN, United Kingdom"><meta xmlns:tei="http://www.tei-c.org/P5/" xmlns:html="http://www.w3.org/1999/xhtml" name="DC.Creator.Address" content="tei@oucs.ox.ac.uk"></head><body background="/Pictures/background.gif"><a name="TOP"></a><table class="header" width="100%"><tr><td rowspan="3"><img xmlns:tei="http://www.tei-c.org/P5/" xmlns:html="http://www.w3.org/1999/xhtml" src="/Pictures/jaco001d.gif" alt="" width="180"></td><td align="left"><h2 class="institution">Text Encoding Initiative</h2></td></tr><tr><td align="left"><h1 class="maintitle">TEI Lite from P4 to P5: Continuity and ChangeTEI ED W85</h1></td></tr></table><hr><table class="leftlinks"><tr><td width="20%" class="framemenu" valign="top"><hr><p class="frametoc"><a class="frametoc" href="#body.1_div.1">The Story So Far</a></p>
+<p class="frametoc"><a class="frametoc" href="#body.1_div.2">TEI Lite</a></p>
+<p class="frametoc"><a class="frametoc" href="#body.1_div.3">The next generation</a></p>
+<p class="frametoc"><a class="frametoc" href="#body.1_div.4">The next version of TEI Lite</a></p>
+<p class="frametoc"><a class="frametoc" href="#body.1_div.5">Open TEI</a></p>
+</td><td valign="top">
+
+TEI Lite from P4 to P5: Continuity and Change
+
+<div class="teidiv"><h2><a name="body.1_div.1"></a>The Story So Far</h2>
+
+<p><a name="id2284020"></a>In November 1987, representatives from forty or so academic
+institutions and projects converged on Vassar College in upstate New
+York. They shared a common vision: the transformation of substantial
+amounts of the world's literature into computer-readable form; but
+what had brought them together was the lack of agreed international
+standards in the production of what was at that time called
+‘machine-readable text’. Over two wintry days, they
+considered the cacophony of different practices emerging in the
+service of that common vision at institutions already existing across
+the US, across Europe, and in Japan, but scattered and fragmented in
+those pre-World Wide Web days. The Internet as a social phenomenon was
+approaching adolescence: it had not yet established itself outside the
+world of academic research, and the technical standards needed to move
+it forward were still only dimly perceived. </p>
+
+<p><a name="id2284042"></a>In the early nineties, the Text Encoding Initiative was formed as
+an international research project, with funding from the US National
+Endowment for the Humanities, the European Union, the Canadian Social
+Science Research Council, and the Andrew W Mellon Foundation. The TEI
+was jointly sponsored by three established international professional
+associations, which established a small management committee, and
+appointed two ‘editors’ to co-ordinate the
+enthusiastic participation of more than a hundred scholars
+worldwide. Its remit was to attempt a complete definition of current
+practice and to produce recommendations or Guidelines for the creation
+and usage of electronic texts in key linguistic and literary
+disciplines. The first research phases of the TEI came to an end in
+1994 with the publication of TEI P3, the ‘big green
+books’ which over the next few years were to become the
+reference standard for the building of the digital library.</p>
+
+<p><a name="id2284068"></a>At the start of the current century, the TEI re-established itself
+as a membership consortium<a class="notelink" href="#Note1"><sup>1</sup></a>,
+jointly hosted by two US and two European Universities, and sponsored
+a first major revision of the TEI Guidelines. This edition, known as
+TEI P4, was a ‘maintenance release’, bringing the
+Guidelines up to date with changes in the technical infrastructure — 
+most notably in the use of the W3C's Extensible Markup Language (XML)
+as its means of expression<a class="notelink" href="#Note2"><sup>2</sup></a> rather than the ISO standard SGML. TEI P4 was
+published in 2002, under the imprint of the University of Virginia
+Press, and forms the current reference standard for the TEI
+Guidelines.</p>
+
+<p><a name="id2284111"></a>However, nothing written in digital form is ever really
+finished. Since 2002, work has been proceeding on the next major
+revision of the TEI Guidelines, to be known as TEI P5, which will
+include far more substantive changes than were needed for P4. This
+preface sketches some of the changes anticipated in this new release
+and also how these will affect the TEI Lite subset described in the
+remainder of the present publication.</p>
+
+</div>
+
+<div class="teidiv"><h2><a name="body.1_div.2"></a>TEI Lite</h2>
+
+<p><a name="id2284128"></a>The goals of the TEI were to facilitate better interchange and
+integration of scholarly textual data, in all languages, and from all
+periods. As such the TEI had two inherently contradictory objectives:
+on the one hand, to deliver ‘guidance for the
+perplexed’ by suggesting <em>what</em> textual features
+should be encoded in a document; on the other, to provide assistance for
+the specialist by suggesting <em>how</em> any particular set of
+textual phenomena might be encoded. Its remit was thus to be both a
+user-driven codification of existing best practice, and also a loose
+framework into which unpredictable extensions might be fitted. Its
+recommendations thus cover both generic text structures and some
+highly specific areas based on (but not limited by) existing
+practice.</p>
+
+<p><a name="id2284154"></a>The original scope of the TEI was encyclopaedic, embracing not just
+the basic structural and functional components of running text but
+also diplomatic transcription of non-digital textual (and aural)
+sources, images, and annotation thereof; links, correspondence, and
+alignment of encoded objects; data-like objects such as dates, times,
+places, persons, events (what is now termed ‘named entity
+recognition’); meta-textual annotations (correction,
+deletion, etc); linguistic analysis of all kinds and at all levels;
+contextual metadata of all kind. No-one requires all of this, yet all
+of it is required by someone.  Considerable effort and ingenuity was
+therefore invested in ways of making it possible to derive multiple
+views (DTDs or schemas) from the enormous set of textual categories or
+distinctions identified by the Guidelines, which (as of TEI P4)
+documented 362 distinct XML elements, 95 attributes, and 88 classes,
+grouped into 24 distinct modules of various kinds.  To
+demonstrate that this polymorphic architecture actually worked, the
+TEI editors used it to produce TEI Lite, one specific customization
+which turned out to have a life of its own. </p>
+
+<p><a name="id2284180"></a>TEI Lite was intended to meet three goals. The first was to provide
+a subset of the TEI Recommendations which would be adequate to the
+needs of most likely users of the whole of the TEI most of the
+time. To decide on that subset, we began by looking at sample texts
+gathered together in the Oxford Text Archive and at other digital
+projects which had been represented at the Poughkeepsie conference. We
+then listed the textual features which these sample texts marked up,
+and selected the corresponding TEI elements for inclusion in TEI
+Lite. The second goal was to provide a subset of elements rich enough
+to support an authoring environment for the production of online
+documentation such as the Guidelines themselves. Here, we were guided
+simply by our own experience as editors of the hundreds of working
+papers, published articles, and reference materials that had gone into
+the production of TEI P1 to P3 inclusive. And finally TEI Lite was
+conceived of as a practical demonstration of the customization
+facilities of the TEI scheme — and therefore had to provide some
+features which were <em>not</em> otherwise included in it.</p>
+ 
+<p><a name="id2284224"></a>Despite the protestations of the TEI editors and others, however,
+TEI Lite was occasionally perceived as being <em>the</em>
+recommended introduction to the TEI scheme for all purposes. Widely
+translated, its manual came to form the basis of many introductory
+tutorials and workshops<a class="notelink" href="#Note3"><sup>3</sup></a>, as well as to define the
+practice of many major encoding projects, particularly in the digital
+library community. This was a mixed blessing: TEI Lite is (inevitably)
+lacking in elements some projects will consider essential, and (even
+more inevitably) over-supplied with elements other projects will never
+wish to use. Because the customization methods by which TEI Lite was
+constructed remain somewhat arcane to the non-SGML specialist, there
+was a tendency for projects to edit TEI Lite itself in nonstandard and
+unpredictable ways to produce ‘TEI Lite like’
+schemas, thus seriously compromising the interchangeability of their
+resources. More worryingly, it came to be perceived in some quarters
+as the TEI's final word on what ‘text’
+<em>really</em> is: though any careful reading of the TEI
+Guidelines proper would show the extent to which the TEI tries to
+problematize this notion, by emphasizing the relativity of the shared
+assumptions and priorities about the digital agenda which underly its
+suggestions. Those priorities, specifically the focus on content and
+function (rather than presentation), and the identification of generic
+solutions (rather than application-specific ones) have stood the test
+of time. But they are not necessarily universal.</p>
+</div>
+
+<div class="teidiv"><h2><a name="body.1_div.3"></a>The next generation</h2>
+
+<p><a name="id2284281"></a>When the production of TEI P5 was first announced, its goals were
+declared to be threefold: firstly, it was clear that an internal audit
+of some kind was long overdue; after a decade of use, some of its
+recommendations surely were in need of review. Secondly, it was
+equally clear that the TEI was no longer the only digital text game in
+town (if it ever had been) and that it needed to review its ability to
+fit into a joined-up wired world. And thirdly, some new application areas
+have emerged for digital technologies in the scholarly world to which
+the TEI was uniquely qualified to make an original contribution, such
+as the encoding and cataloguing of manuscript sources. </p>
+
+<p>As of this writing, TEI P5 is still a work in progress, but some
+general principles have become clear, as have some specifics. TEI P5
+schemas will continue to be expressible in both XML DTD syntax and the
+W3C Schema Language, but TEI P5 is primarily organized as an
+application of the ISO standard schema language RelaxNG. Many of the
+complexities in the original TEI architecture resulting from the use
+of SGML have been removed. Over the last two years, TEI Workgroups
+have made substantive recommendations on the following topics:
+</p><ul><li><a name="id2284309"></a>best practice in using the ISO 10646 standard, including the
+documentation of non-standard character and variant glyph usage,
+replacing the old recommendations on using SGML character entities and
+the Writing System Declaration;</li><li><a name="id2284317"></a>development of a completely new XML-based version of the TEI's
+original ‘literate programming’ system, which
+supports automatic generation of documentation and schemas from a
+single reference XML source, replacing the old ODD and tagdoc system;</li><li><a name="id2284328"></a>development of a new manuscript description module, building on
+and harmonizing work undertaken in a number of other research
+projects, notably the EU-funded MASTER project;</li><li><a name="id2284334"></a>revision and rationalisation of the recommendations on hypertext
+linking to take advantage of new W3C standards such as Xlink and
+Xpointer, replacing the old distinction between internal and external
+linking methods and the TEI Extended Pointer Syntax;</li><li><a name="id2284341"></a>revision and simplification of the recommendations for
+representation of linguistic analysis expressed as feature structures;
+this work has been done jointly with an ISO working group reporting
+to ISO TC 37/SC4 and is on track for international standardization
+as ISO CD 26410-1</li></ul><p></p>
+
+<p>In addition, and in response to a public call for  proposals for
+revision, a number of other minor modifications are anticipated. These
+include:
+</p><ul><li><a name="id2284357"></a>a major revision and rationalization of the TEI class
+system</li><li><a name="id2284362"></a>new meta-textual elements <tt>&lt;choice&gt;</tt> and <tt>&lt;combine&gt;</tt>
+(discussed below)</li><li><a name="id2284373"></a>revision and expansion of the prosopographic elements</li><li><a name="id2284378"></a>revision of the elements for structured bibliographic descriptions</li></ul><p>
+</p>
+
+<p><a name="id2284384"></a>Almost all of the proposed changes may be seen as motivated by the
+need to make the TEI scheme more interoperable with the new digital
+world which it has, in part, created.  Many other communities have
+worked in the areas first addressed by the TEI since 1987, and much of
+that work is of direct relevance and benefit to the TEI community. In
+addition to the W3C and ISO standards already mentioned, other
+complementary XML-based vocabularies such as MathML, SVG and Docbook
+have emerged in the last decade, which the TEI user community cannot
+afford to ignore, to say nothing of other conceptual models and
+metadata schemata. At the same time, there remains scope for the TEI
+to continue to innovate where necessary. In retrospect, much of what
+was experimental in TEI P4 has since become mainstream (a good example
+is the TEI Extended Pointer Syntax), but much has also simply remained
+experimental, or been overtaken by events. A major part of the TEI P5
+process has therefore been a focus on better tools for managing
+evolutionary change in the document and its derived schemas, which (it
+is hoped) will make the production of this and future versions both
+simpler and more transparent, as well as providing more user-friendly
+tools for customization.</p>
+
+<p>As noted above, the TEI Guidelines, its DTD, and its schema
+fragments, are all produced from a single XML resource containing:
+
+</p><ol><li><a name="id2284417"></a>a lot of descriptive prose</li><li><a name="id2284421"></a>many usage examples</li><li><a name="id2284425"></a>formal declarations for components of the TEI Abstract
+Model, specifically <ul><li><a name="id2284430"></a>modules</li><li><a name="id2284434"></a>elements and attributes</li><li><a name="id2284437"></a>classes and macros</li></ul></li></ol><p>
+</p>
+
+<p><a name="id2284444"></a>We call this resource an ODD (One Document Does it all) although it
+is actually instantiated as a large number of XML mini-documents.<a class="notelink" href="#Note4"><sup>4</sup></a>. Unlike
+previous versions of ODD, this version has no dependency on any
+particular schema language, and can thus generate customized schemas
+in DTD, RelaxNG, or W3C Schema Language. XSLT stylesheets and other
+tools have been developed to support the extraction of customized
+documentation from it, to support internationalization of the
+underlying modules, and even to provide mappings between its
+conceptual model and that of other conceptual ontologies.</p>
+
+<p><a name="id2284474"></a>Technical details are out of scope for this brief paper, but it is
+worth stressing the extent to which it has greatly simplified the
+customization layer of the TEI. To define a view of the TEI scheme,
+one now produces a simple XML document, using a vocabulary defined as
+an integral part of the Guidelines.  For example: 
+<pre class="eg">
+&lt;schemaSpec ident="myTEIlite"&gt;
+&lt;desc&gt;This is TEI Lite with simplified heads&lt;/desc&gt;
+  &lt;moduleRef name="teistructure"/&gt;
+  &lt;moduleRef name="linking"/&gt;
+  &lt;moduleRef name="core"/&gt;
+  &lt;moduleRef name="teiheader"/&gt;
+  &lt;elementSpec ident="head" mode="change"&gt;
+    &lt;content&gt;&lt;rng:text/&gt;&lt;/content&gt;
+  &lt;/elementSpec&gt;
+&lt;/schemaSpec&gt;
+</pre>
+is all that is necessary to produce a schema with the same elements
+and attributes as TEI Lite, with the
+slight change that the <tt>&lt;head&gt;</tt> element can contain only text.</p>
+
+<p><a name="id2284498"></a>As a further example, this ODD
+<pre class="eg">
+&lt;schemaSpec ident="testrdf"&gt;
+    &lt;moduleRef url="rdfxml.rng"/&gt;
+    &lt;moduleRef key="header"/&gt;
+    &lt;elementSpec ident="availability" mode="change"&gt;
+      &lt;content&gt;
+	&lt;rng:ref name="RDF"/&gt;
+      &lt;/content&gt;
+    &lt;/elementSpec&gt;
+&lt;/schemaSpec&gt;
+</pre>
+will produce a RelaxNG schema which can be used to validate TEI conformant
+headers in which the <tt>&lt;availability&gt;</tt> element may contain
+metadata expressed using RDF syntax. </p>
+
+<p><a name="id2284516"></a>ODD documents, like any other XML source, can be transformed using
+freely available TEI stylesheets or your own tools. The TEI provides a
+library of suitable stylesheets for the generation of XML DTDs or
+schemas and documentation, which it is hoped others will wish to
+contribute to.</p>
+
+</div>
+<div class="teidiv"><h2><a name="body.1_div.4"></a>The next version of TEI Lite</h2>
+
+<p>It is reasonable to ask how many of these changes will affect TEI
+Lite users, and what a TEI P5 compliant version of TEI Lite might look
+like. This is (and will remain) an easy question to answer, since the
+production of TEI Lite is used as a case study in the chapter of TEI
+P5 which addresses the question of schema customization. Here are some
+things that the current TEI Lite user will immediately notice when
+trying to validate P4-compliant documents in a P5 regime:
+
+</p><ol><li><a name="id2284544"></a><tt>&lt;TEI.2&gt;</tt> is now <tt>&lt;TEI&gt;</tt> and <tt>&lt;teiCorpus.2&gt;</tt> is now <tt>&lt;teiCorpus&gt;</tt></li><li><a name="id2284560"></a>all TEI elements are in the <tt>http://www.tei-c.org/ns/1.0</tt> namespace</li><li><a name="id2284567"></a>many attribute values seem to  have changed… <tt>Y|N</tt>,
+<tt>yes|no</tt> etc. are now uniformly
+<tt>true|false</tt></li><li><a name="id2284582"></a>some attributes have changed their names or disappeared 
+<ul><li><a name="id2284587"></a>text-valued attributes have become child elements</li><li><a name="id2284591"></a><tt>lang</tt> has become <tt>xml:lang</tt></li><li><a name="id2284601"></a><tt>id</tt> has become <tt>xml:id</tt></li><li><a name="id2284609"></a> all <tt>IDREF</tt> (target) values have been changed</li></ul></li><li><a name="id2284617"></a>the extended pointing  elements <tt>&lt;xptr&gt;</tt> and <tt>&lt;xref&gt;</tt> have disappeared!</li></ol><p>
+</p>
+
+<p><a name="id2284631"></a>Space precludes a discussion of the rationale for each of these
+changes, though none has been made lightly. For example, the removal
+of text-valued attributes (the <tt>&lt;sic&gt;</tt> and <tt>&lt;corr&gt;</tt>
+‘janus’ elements familiar to TEI Lite users) is
+partly necessitated by the observation that distinctions between
+variant forms of characters must in XML be made in element content and
+cannot therefore appear as attribute values. To take a familiar
+example, present in the current document:
+<pre class="eg">
+a &lt;corr resp="theobald" sic="table"&gt;babbl'd&lt;/corr&gt;</pre>
+becomes
+<pre class="eg">
+a &lt;choice resp="theobald"&gt;
+  &lt;sic&gt;table&lt;/sic&gt;
+  &lt;corr&gt;babbl'd&lt;/sic&gt;
+&lt;/choice&gt;
+</pre>
+in part to support the needs of an encoder who might wish to represent
+the particular glyphs used in their encoding, using the new <tt>&lt;g&gt;</tt>
+element.<a class="notelink" href="#Note5"><sup>5</sup></a>
+</p>
+
+<p><a name="id2284683"></a>Both the introduction of namespaces and the changes to global
+attributes <tt>lang</tt> and <tt>id</tt> are necessary
+consequences of the desire for
+interoperability with other XML vocabularies<a class="notelink" href="#Note6"><sup>6</sup></a>. It would seem strange
+indeed to retain both <strong>lang</strong> and <strong>xml:lang</strong>
+when the two have identical semantics, though a case
+might be made for permitting either. The changes in pointer mechanisms
+though pervasive and at first sight unnecessary also represent a major
+simplification. The simplicity of changing (for example)
+<pre class="eg">
+ &lt;ptr target="SEC14"/&gt; or &lt;ref target="SEC14"&gt;chapter 1.4&lt;/ref&gt;
+&lt;!-- ... --&gt;
+ &lt;div id="SEC14"&gt;&lt;head&gt;Concerning identifiers&lt;/head&gt;
+&lt;!-- ... --&gt;
+&lt;/div&gt;</pre>
+into
+<pre class="eg">
+ &lt;ptr target="#SEC14"/&gt; or &lt;ref target="#SEC14"&gt;chapter 1.4&lt;/ref&gt;
+&lt;!-- ... --&gt;
+ &lt;div xml:id="SEC14"&gt;&lt;head&gt;Concerning identifiers&lt;/head&gt;
+&lt;!-- ... --&gt;
+&lt;/div&gt;</pre>
+perhaps obscures the fact that it now becomes possible to reference
+the chapter ‘Concerning identifiers’ whether or not it is in the
+same document, and whether or not an XML parser is
+available to validate the reference. If the required section
+were actually a part of <tt>someDoc.xml</tt> rather than the
+same document as that containing
+by the referring element, the P4 pointer above would need to be
+completely modified (along with other things) as follows:
+<pre class="eg">
+ &lt;xptr doc="someDoc" from="id(SEC14)"/&gt;
+&lt;!-- ... --&gt;
+</pre>, whereas the P5 element needs to change only as follows:
+<pre class="eg">
+ &lt;ptr target="someDoc.xml#SEC14"/&gt;
+</pre>
+
+Another major difference in P5 is the replacement of the familiar
+ID/IDREF mechanism, which depends on the availability of a conformant
+XML parser and schema instance, with a more general link-resolution
+mechanism, which need not be present for all document processing
+purposes. Whether this will be regarded as a benefit or a nuisance
+perhaps depends as much on general attitudes to validation as anything
+else, but it is indisputably more in keeping with the way electronic
+documents are currently deployed and managed on the web.</p>
+
+</div>
+
+<div class="teidiv"><h2><a name="body.1_div.5"></a>Open TEI</h2>
+
+<p><a name="id2284785"></a>As this last point suggests, perhaps the most significant change
+which the TEI is currently undergoing is its reinvention as an Open
+standard. To date, all development of the TEI has been centralised and
+managed by a small ‘inner circle’ of researchers,
+altough always with the widest possible involvement from the larger
+research community. In 2004, however, the TEI consortium announced that the
+Guidelines would be released under a GNU Public license, and that from
+2005, all new development would take place in public on its site at
+Sourceforge (<a class="link_xptr" href="http://tei.sf.net" target="_top"><span>http://tei.sf.net</span></a>). Feature requests and
+bug tracking are already on the Sourceforge site, and the first
+complete draft of P5 is scheduled to follow shortly. Experimental releases of
+TEI components and tools are already available as Debian Linux
+packages. However, the name <em>TEI</em> will remain a
+trademark, and the direction of technical work will continue to be authorized by a TEI
+Technical Council, elected by members of the Consortium. </p>
+
+
+<p><a name="id2284816"></a>The TEI thus remains a community initiative, driven primarily by
+the needs of its members and users. It is hoped that moving towards an
+Open Source model will encourage a more sustainable and better
+devolved development process, complemented by the stability and
+maintenance afforded by the structure of a pro bono
+membership consortium. The importance of this
+rapprochment between the TEI and the Open Source
+movement should not be overlooked. </p>
+
+<p><a name="id2284833"></a>As we have seen, the TEI originally came into being as the result
+of a perception in many different parts of the academic research
+community that the rising tide of digitized media (largely known, in
+those distant days, as "electronic" or even "machine-readable" texts)
+threatened a war of competing formats and encoding
+systems. Scholarship has always thrived on serendipity and the ability
+to pass on our intellectual heritage for re-evaluation in a new
+context; many at that time suspected (and events have not yet proved
+them wrong) that longevity and re-usability were not high on the
+priority lists of software vendors and electronic publishers. Equally,
+and even before the World Wide Web, it was clear that one of the
+striking virtues of converting resources into a digital form was the
+consequent ability to integrate resources of different kinds and from
+different places into one. At the end of the eighties there was a real
+concern that the entrepreneurial forces which (then as now) drive
+information technology forward would impede such integration by the
+proliferation of mutually incompatible technical standards. In 2005,
+the struggle between those who would apply the methods and principles
+of monopoly capitalism to the business of information dissemination
+and preservation and those who believe information wants to be free
+shows no sign of having abated. It seems that the TEI is likely to
+continue to have a major role in that struggle.</p>
+<p align="left">Lou Burnard, European Editor TEI</p>
+Oxford, January 2005
+</div>
+<p><a name="Note1">1. </a>For details, see the TEI
+Consortium web site at <a class="link_xptr" href="http://www.tei-c.org" target="_top"><span>http://www.tei-c.org</span></a></p><p><a name="Note2">2. </a>This was particularly
+appropriate in that one of the editors of the XML standard, Michael
+Sperberg-McQueen, had also served as editor of the original TEI
+Guidelines.</p><p><a name="Note3">3. </a>See <a class="link_xptr" href="http://www.tei-c.org/Lite/" target="_top"><span>http://www.tei-c.org/Lite/</span></a></p><p><a name="Note4">4. </a>For technical detail see further <em>RelaxNG with Son
+of ODD</em>: paper presented at Extreme Markup Language
+Conferences, Montreal 2004; available from <a class="link_ptr" href="http://www.mulberrytech.com/Extreme/Proceedings/html/2004/Burnard01/EML2004Burnard01.pdf" target="_top"><span>http://www.mulberrytech.com/Extreme/Proceedings/html/2004/Burnard01/EML2004Burnard01.pdf</span></a></p><p><a name="Note5">5. </a>It is a pleasure to acknowledge here
+that the correction of <tt>gifford</tt> to <tt>theobald</tt>
+in this venerable example is due to Prof. Hans-Walter Gabler's keen
+observation.</p><p><a name="Note6">6. </a>For a
+paper discussing some of the possibilities afforded by such
+interoperability see 
+<a name="index-bibl-id2284701"></a>
+Sebastian Rahtz, Norman Walsh, and Lou Burnard ‘A
+unified model for text markup: TEI, Docbook, and beyond’ ,
+Available from <a class="link_xptr" href="http://www.idealliance.org/papers/dx_xmle04/papers/03-08-01/03-08-01.html" target="_top"><span>http://www.idealliance.org/papers/dx_xmle04/papers/03-08-01/03-08-01.html</span></a>.
+Paper presented at XML Europe, Amsterdam, April 2004.
+
+</p></td></tr></table><hr><div class="footer"><a class="plain" target="_top" href="http://www.tei-c.org/">TEI Home</a>
+  | <a class="plain" target="_top" href="http://search.ox.ac.uk/web/related/natproj/tei">Search</a>
+  | <a class="plain" target="_top" href="http://www.tei-c.org/Consortium/TEI-contact.html">Feedback</a></div><hr><address> December 2004
+  (revised 03/01/2005)   Lou Burnard
+ (revised : lou).
+    <br>Copyright TEI Consortium
+2004<!--
+      Generated  using an XSLT version 1.0 stylesheet
+      based on http://www.oucs.ox.ac.uk/stylesheets/teihtml.xsl
+      processed using libxslt
+      on 2005-01-04T23:09:11-05:00--></address></body></html>

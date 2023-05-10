@@ -1,0 +1,452 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en"><!--THIS FILE IS GENERATED FROM AN XML MASTER. 
+   DO NOT EDIT--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>CDATA attributes in P4</title><link rel="stylesheet" type="text/css" href="/Stylesheets/tei.css"><meta xmlns:tei="http://www.tei-c.org/P5/" xmlns:html="http://www.w3.org/1999/xhtml" name="DC.Title" content="CDATA attributes in P4"><meta xmlns:tei="http://www.tei-c.org/P5/" xmlns:html="http://www.w3.org/1999/xhtml" name="DC.Language" content="(SCHEME=iso639) en"><meta xmlns:tei="http://www.tei-c.org/P5/" xmlns:html="http://www.w3.org/1999/xhtml" name="DC.Creator" content="TEI,Oxford University Computing Services, 13 Banbury Road, Oxford OX2 6NN, United Kingdom"><meta xmlns:tei="http://www.tei-c.org/P5/" xmlns:html="http://www.w3.org/1999/xhtml" name="DC.Creator.Address" content="tei@oucs.ox.ac.uk"></head><body background="/Pictures/background.gif"><a name="TOP"></a><table class="header" width="100%"><tr><td rowspan="3"><img xmlns:tei="http://www.tei-c.org/P5/" xmlns:html="http://www.w3.org/1999/xhtml" src="/Pictures/jaco001d.gif" alt="" width="180"></td><td align="left"><h2 class="institution">Text Encoding Initiative</h2></td></tr><tr><td align="left"><h1 class="maintitle">CDATA attributes in P4</h1></td></tr></table><hr><table class="leftlinks"><tr><td width="20%" class="framemenu" valign="top"><hr><p class="frametoc"><a class="frametoc" href="#body.1_div.1">Content Textual attributes</a></p>
+<p class="frametoc"><a class="frametoc" href="#body.1_div.2">Textual attributes</a></p>
+<p class="frametoc"><a class="frametoc" href="#body.1_div.3">Non-textual attributes</a></p>
+<p class="frametoc"><a class="frametoc" href="#back.1_div.1">Appendix A Proposed Solutions for reg of
+        the various Name elements</a></p>
+</td><td valign="top">
+      CDATA attributes in P4
+      <p><a name="id49102"></a>The following tables list all the attributes defined in TEI
+        P4 as having a datatype of CDATA. For each attribute, it
+        supplies at a minimum the name of the element or attribute
+        class (attribute classes are distinguished by an initial
+        asterisk; determining which elements are members of those
+        classes is left as an exercise for the reader), and also any
+        text currently supplied in P4 as value description for this
+        attribute.</p>
+      <p><a name="id49116"></a>We have manually separated these 309 named attributes into
+        three categories, `content textual',
+        `textual', and
+        `non-textual'.</p>
+      <p><a name="id49141"></a>The first category contains attributes which, because they
+        may contain <em>content</em>, might include in their
+        value some non-Unicode characters. It is this category of
+        attributes that the Character Encoding Work Group believes
+        must be expressible as elements, for there is way to encode a
+        non-Unicode character within them as attributes. There are
+        twenty-five of these attributes.</p>
+      <p><a name="id49159"></a>The second category contains attributes for which, even
+        though it is not reasonable to expect that non-Unicode
+        characters would be needed in their values, it is reasonable
+        to expect for some other reason that it is advantageous to
+        express their information as child elements rather than as
+        attributes, usually in order to describe features about the
+        information, e.g. language. The Character Encoding Work Group
+        has recommended that these attributes be expressible as
+        elements precisely for this reason: so that this information
+        can have language, certainty, etc., associated with it. There
+        are two of these attributes.</p>
+      <p><a name="id49177"></a>For these first two categories, in addition to the attribute
+        name, the element or class, and the descriptive text from P4
+        (if any), the suggested disposition for this attribute in P5
+        is listed.</p>
+      <p><a name="id49187"></a>The third category contains attributes whose values are
+        intended to be, or at least might plausibly be, restricted to
+        symbolic values, i.e. which will only ever contain a single
+        Unicode name token, a string of such tokens, numeric values,
+        or boolean values. At a later revision of this document, this
+        category may be further subdivided, in line with the
+        recommendations of the TEI Meta work-group.</p>
+      <div class="teidiv"><h2><a name="body.1_div.1"></a>Content Textual attributes</h2>
+        
+        <p><a name="id49221"></a>
+<div align="left"><table rules="all" border="1">
+            <tr class="label">
+              <td valign="top" rowspan="" colspan="">attr</td>
+              <td valign="top" rowspan="" colspan="">element or class</td>
+              <td valign="top" rowspan="" colspan="">description</td>
+              <td valign="top" rowspan="" colspan="">in P5 becomes</td>
+            </tr>
+<tr><td valign="top" rowspan="" colspan="">abbr</td><td valign="top" rowspan="" colspan="">expan</td><td valign="top" rowspan="" colspan="">any string of characters</td><td valign="top" rowspan="" colspan="">Child of new <tt>&lt;choice&gt;</tt> element</td></tr>
+<tr><td valign="top" rowspan="" colspan="">baseform</td><td valign="top" rowspan="" colspan="">m</td><td valign="top" rowspan="" colspan="">a string of characters representing the spelling of the morpheme's base form.</td><td valign="top" rowspan="" colspan=""><i>pending DI revision</i></td></tr>
+<tr><td valign="top" rowspan="" colspan="">corr</td><td valign="top" rowspan="" colspan="">sic</td><td valign="top" rowspan="" colspan="">any string of characters</td><td valign="top" rowspan="" colspan="">Child of new <tt>&lt;choice&gt;</tt> element</td></tr>
+<tr><td valign="top" rowspan="" colspan="">expan</td><td valign="top" rowspan="" colspan="">abbr</td><td valign="top" rowspan="" colspan="">any string of characters</td><td valign="top" rowspan="" colspan="">Child of new <tt>&lt;choice&gt;</tt> element</td></tr>
+<tr><td valign="top" rowspan="" colspan="">expand</td><td valign="top" rowspan="" colspan="">*dictionaries</td><td valign="top" rowspan="" colspan="">any string of characters</td><td valign="top" rowspan="" colspan=""><i>pending DI revision</i></td></tr>
+<tr><td valign="top" rowspan="" colspan="">lemma</td><td valign="top" rowspan="" colspan="">w</td><td valign="top" rowspan="" colspan="">a string of characters representing the spelling of the word's dictionary entry form.</td><td valign="top" rowspan="" colspan=""><i>pending DI revision</i></td></tr>
+<tr><td valign="top" rowspan="" colspan="">level1</td><td valign="top" rowspan="" colspan="">index</td><td valign="top" rowspan="" colspan="">any string of characters.</td><td valign="top" rowspan="" colspan="">Child of <tt>&lt;index&gt;</tt></td></tr>
+<tr><td valign="top" rowspan="" colspan="">level2</td><td valign="top" rowspan="" colspan="">index</td><td valign="top" rowspan="" colspan="">any string of characters.</td><td valign="top" rowspan="" colspan="">Child of <tt>&lt;index&gt;</tt></td></tr>
+<tr><td valign="top" rowspan="" colspan="">level3</td><td valign="top" rowspan="" colspan="">index</td><td valign="top" rowspan="" colspan="">any string of characters.</td><td valign="top" rowspan="" colspan="">Child of <tt>&lt;index&gt;</tt></td></tr>
+<tr><td valign="top" rowspan="" colspan="">level4</td><td valign="top" rowspan="" colspan="">index</td><td valign="top" rowspan="" colspan="">any string of characters.</td><td valign="top" rowspan="" colspan="">Child of <tt>&lt;index&gt;</tt></td></tr>
+<tr><td valign="top" rowspan="" colspan="">norm</td><td valign="top" rowspan="" colspan="">*dictionaries</td><td valign="top" rowspan="" colspan="">any string of characters</td><td valign="top" rowspan="" colspan=""><i>pending DI revision</i></td></tr>
+<tr><td valign="top" rowspan="" colspan="">orig</td><td valign="top" rowspan="" colspan="">*dictionaries</td><td valign="top" rowspan="" colspan="">any string of characters</td><td valign="top" rowspan="" colspan=""><i>pending DI revision</i></td></tr>
+<tr><td valign="top" rowspan="" colspan="">orig</td><td valign="top" rowspan="" colspan="">reg</td><td valign="top" rowspan="" colspan="">any string of characters</td><td valign="top" rowspan="" colspan="">Child of new <tt>&lt;choice&gt;</tt> element</td></tr>
+<tr><td valign="top" rowspan="" colspan="">reg</td><td valign="top" rowspan="" colspan="">*names</td><td valign="top" rowspan="" colspan="">Any string of characters.</td><td valign="top" rowspan="" colspan="">Child of new <tt>&lt;choice&gt;</tt> element</td></tr>
+<tr><td valign="top" rowspan="" colspan="">reg</td><td valign="top" rowspan="" colspan="">*personPart</td><td valign="top" rowspan="" colspan="">Any string of characters.</td><td valign="top" rowspan="" colspan="">Child of new <tt>&lt;choice&gt;</tt> element</td></tr>
+<tr><td valign="top" rowspan="" colspan="">reg</td><td valign="top" rowspan="" colspan="">*placePart</td><td valign="top" rowspan="" colspan="">Any string of characters.</td><td valign="top" rowspan="" colspan="">Child of new <tt>&lt;choice&gt;</tt> element</td></tr>
+<tr><td valign="top" rowspan="" colspan="">reg</td><td valign="top" rowspan="" colspan="">*temporalExpr</td><td valign="top" rowspan="" colspan="">Any string of characters.</td><td valign="top" rowspan="" colspan="">Child of new <tt>&lt;choice&gt;</tt> element</td></tr>
+<tr><td valign="top" rowspan="" colspan="">reg</td><td valign="top" rowspan="" colspan="">orgDivn</td><td valign="top" rowspan="" colspan="">Any string of characters.</td><td valign="top" rowspan="" colspan="">Child of new <tt>&lt;choice&gt;</tt> element</td></tr>
+<tr><td valign="top" rowspan="" colspan="">reg</td><td valign="top" rowspan="" colspan="">orgName</td><td valign="top" rowspan="" colspan="">Any string of characters.</td><td valign="top" rowspan="" colspan="">Child of new <tt>&lt;choice&gt;</tt> element</td></tr>
+<tr><td valign="top" rowspan="" colspan="">reg</td><td valign="top" rowspan="" colspan="">orgTitle</td><td valign="top" rowspan="" colspan="">Any string of characters.</td><td valign="top" rowspan="" colspan="">Child of new <tt>&lt;choice&gt;</tt> element</td></tr>
+<tr><td valign="top" rowspan="" colspan="">reg</td><td valign="top" rowspan="" colspan="">orgType</td><td valign="top" rowspan="" colspan="">Any string of characters.</td><td valign="top" rowspan="" colspan="">Child of new <tt>&lt;choice&gt;</tt> element</td></tr>
+<tr><td valign="top" rowspan="" colspan="">reg</td><td valign="top" rowspan="" colspan="">orig</td><td valign="top" rowspan="" colspan="">any string of characters</td><td valign="top" rowspan="" colspan="">Child of new <tt>&lt;choice&gt;</tt> element</td></tr>
+<tr><td valign="top" rowspan="" colspan="">sic</td><td valign="top" rowspan="" colspan="">corr</td><td valign="top" rowspan="" colspan="">any string of characters</td><td valign="top" rowspan="" colspan="">Child of new <tt>&lt;choice&gt;</tt> element</td></tr>
+<tr><td valign="top" rowspan="" colspan="">split</td><td valign="top" rowspan="" colspan="">*dictionaries</td><td valign="top" rowspan="" colspan="">any string of characters</td><td valign="top" rowspan="" colspan=""><i>pending DI revision</i></td></tr>
+<tr><td valign="top" rowspan="" colspan="">string</td><td valign="top" rowspan="" colspan="">form</td><td valign="top" rowspan="" colspan="">any string of characters (often a single byte)</td><td valign="top" rowspan="" colspan="">this element will not exist in P5</td></tr>
+          </table></div>
+        </p>
+      </div>
+      <div class="teidiv"><h2><a name="body.1_div.2"></a>Textual attributes</h2>
+        
+        <p><a name="id68091"></a>
+          <div align="left"><table rules="all" border="1">
+            <tr class="label">
+              <td valign="top" rowspan="" colspan="">attr</td>
+              <td valign="top" rowspan="" colspan="">element or class</td>
+              <td valign="top" rowspan="" colspan="">description</td>
+              <td valign="top" rowspan="" colspan="">in P5 becomes</td>
+            </tr>
+<tr><td valign="top" rowspan="" colspan="">desc</td><td valign="top" rowspan="" colspan="">certainty</td><td valign="top" rowspan="" colspan="">a prose description of how and why the markup is uncertain.</td><td valign="top" rowspan="" colspan="">content (of <tt>&lt;certainty&gt;</tt>)</td></tr>
+<tr><td valign="top" rowspan="" colspan="">desc</td><td valign="top" rowspan="" colspan="">gap</td><td valign="top" rowspan="" colspan="">a prose description of the material omitted.</td><td valign="top" rowspan="" colspan="">content (of <tt>&lt;gap&gt;</tt>)</td></tr>
+<tr><td valign="top" rowspan="" colspan="">desc</td><td valign="top" rowspan="" colspan="">join</td><td valign="top" rowspan="" colspan="">any string of characters.</td><td valign="top" rowspan="" colspan="">content (of <tt>&lt;join&gt;</tt>)</td></tr>
+<tr><td valign="top" rowspan="" colspan="">desc</td><td valign="top" rowspan="" colspan="">joinGrp</td><td valign="top" rowspan="" colspan="">any string of characters.</td><td valign="top" rowspan="" colspan="">a <tt>&lt;desc&gt;</tt> child element (semantics of <tt>&lt;desc&gt;</tt> will need to be expanded slightly)</td></tr>
+<tr><td valign="top" rowspan="" colspan="">desc</td><td valign="top" rowspan="" colspan="">respons</td><td valign="top" rowspan="" colspan="">any string of characters, typically a phrase or sentence in a natural language.</td><td valign="top" rowspan="" colspan="">content (of <tt>&lt;respons&gt;</tt>)</td></tr>
+<tr><td valign="top" rowspan="" colspan="">desc</td><td valign="top" rowspan="" colspan="">restore</td><td valign="top" rowspan="" colspan="">Any word or phrase, such as stet or strike-down.</td><td valign="top" rowspan="" colspan="">‘A description of the restoration, such as ‘stet’ or ‘strike-down’ chosen from a semi-closed list’</td></tr>
+<tr><td valign="top" rowspan="" colspan="">given</td><td valign="top" rowspan="" colspan="">certainty</td><td valign="top" rowspan="" colspan="">a characterization of the conditions which are assumed in the assignment of a degree of confidence. This may be in prose.</td><td valign="top" rowspan="" colspan=""><span class="ident-class">tei.pointers</span> (i.e., a whitespace-separated series of one or more XPointers), in which case when a prose description is desired, this attribute would point to a <tt>&lt;p&gt;</tt> or similar element elsewhere.</td></tr>
+<tr><td valign="top" rowspan="" colspan="">label</td><td valign="top" rowspan="" colspan="">arc</td><td valign="top" rowspan="" colspan="">A character string.</td><td valign="top" rowspan="" colspan="">a <tt>&lt;label&gt;</tt> child element</td></tr>
+<tr><td valign="top" rowspan="" colspan="">label</td><td valign="top" rowspan="" colspan="">eLeaf</td><td valign="top" rowspan="" colspan="">A character string.</td><td valign="top" rowspan="" colspan="">a <tt>&lt;label&gt;</tt> child element</td></tr>
+<tr><td valign="top" rowspan="" colspan="">label</td><td valign="top" rowspan="" colspan="">eTree</td><td valign="top" rowspan="" colspan="">A character string.</td><td valign="top" rowspan="" colspan="">a <tt>&lt;label&gt;</tt> child element</td></tr>
+<tr><td valign="top" rowspan="" colspan="">label</td><td valign="top" rowspan="" colspan="">graph</td><td valign="top" rowspan="" colspan="">A character string.</td><td valign="top" rowspan="" colspan="">a <tt>&lt;label&gt;</tt> child element</td></tr>
+<tr><td valign="top" rowspan="" colspan="">label</td><td valign="top" rowspan="" colspan="">iNode</td><td valign="top" rowspan="" colspan="">A character string.</td><td valign="top" rowspan="" colspan="">a <tt>&lt;label&gt;</tt> child element</td></tr>
+<tr><td valign="top" rowspan="" colspan="">label</td><td valign="top" rowspan="" colspan="">leaf</td><td valign="top" rowspan="" colspan="">A character string.</td><td valign="top" rowspan="" colspan="">a <tt>&lt;label&gt;</tt> child element</td></tr>
+<tr><td valign="top" rowspan="" colspan="">label</td><td valign="top" rowspan="" colspan="">node</td><td valign="top" rowspan="" colspan="">A character string.</td><td valign="top" rowspan="" colspan="">a <tt>&lt;label&gt;</tt> child element</td></tr>
+<tr><td valign="top" rowspan="" colspan="">label</td><td valign="top" rowspan="" colspan="">root</td><td valign="top" rowspan="" colspan="">A character string.</td><td valign="top" rowspan="" colspan="">a <tt>&lt;label&gt;</tt> child element</td></tr>
+<tr><td valign="top" rowspan="" colspan="">label</td><td valign="top" rowspan="" colspan="">tree</td><td valign="top" rowspan="" colspan="">A character string.</td><td valign="top" rowspan="" colspan="">a <tt>&lt;label&gt;</tt> child element</td></tr>
+<tr><td valign="top" rowspan="" colspan="">label</td><td valign="top" rowspan="" colspan="">triangle</td><td valign="top" rowspan="" colspan="">A character string.</td><td valign="top" rowspan="" colspan="">a <tt>&lt;label&gt;</tt> child element</td></tr>
+<tr><td valign="top" rowspan="" colspan="">label2</td><td valign="top" rowspan="" colspan="">arc</td><td valign="top" rowspan="" colspan="">A character string.</td><td valign="top" rowspan="" colspan="">a second <tt>&lt;label&gt;</tt> child element</td></tr>
+<tr><td valign="top" rowspan="" colspan="">label2</td><td valign="top" rowspan="" colspan="">node</td><td valign="top" rowspan="" colspan="">A character string.</td><td valign="top" rowspan="" colspan="">a second <tt>&lt;label&gt;</tt> child element</td></tr>
+<tr><td valign="top" rowspan="" colspan="">value</td><td valign="top" rowspan="" colspan="">*dictionaries</td><td valign="top" rowspan="" colspan="">any string of characters</td><td valign="top" rowspan="" colspan=""><i>pending DI revision</i></td></tr>
+<tr><td valign="top" rowspan="" colspan="">value</td><td valign="top" rowspan="" colspan="">span</td><td valign="top" rowspan="" colspan="">Any string of characters.</td><td valign="top" rowspan="" colspan="">‘An identification of the phenomenon being annotated chosen from a semi-closed list’</td></tr>
+<tr><td valign="top" rowspan="" colspan="">value</td><td valign="top" rowspan="" colspan="">interp</td><td valign="top" rowspan="" colspan="">Any string of characters.</td><td valign="top" rowspan="" colspan="">content (of <tt>&lt;interp&gt;</tt>)</td></tr>
+          </table></div>
+        </p>
+      </div>
+      
+      <div class="teidiv"><h2><a name="body.1_div.3"></a>Non-textual attributes</h2>
+        
+        <p><a name="id69708"></a>
+          <div align="left"><table>
+            <tr class="label">
+              <td valign="top" rowspan="" colspan="">attr</td>
+              <td valign="top" rowspan="" colspan="">element or class</td>
+              <td valign="top" rowspan="" colspan="">description</td>
+            </tr>
+<tr><td valign="top" rowspan="" colspan="">absolute</td><td valign="top" rowspan="" colspan="">when</td><td valign="top" rowspan="" colspan="">Times may be given in standard form, as specified in the Encoding Declarations section of the header.</td></tr>
+<tr><td valign="top" rowspan="" colspan="">active </td><td valign="top" rowspan="" colspan="">interaction</td><td valign="top" rowspan="" colspan=""></td></tr>
+<tr><td valign="top" rowspan="" colspan="">age</td><td valign="top" rowspan="" colspan="">person</td><td valign="top" rowspan="" colspan="">suggested values are to be supplied</td></tr>
+<tr><td valign="top" rowspan="" colspan="">age</td><td valign="top" rowspan="" colspan="">personGrp</td><td valign="top" rowspan="" colspan="">suggested values are to be supplied</td></tr>
+<tr><td valign="top" rowspan="" colspan="">agent</td><td valign="top" rowspan="" colspan="">damage</td><td valign="top" rowspan="" colspan="">any prose description of the agency of damage.</td></tr>
+<tr><td valign="top" rowspan="" colspan="">agent</td><td valign="top" rowspan="" colspan="">gap</td><td valign="top" rowspan="" colspan="">any prose description of the agency of damage.</td></tr>
+<tr><td valign="top" rowspan="" colspan="">agent</td><td valign="top" rowspan="" colspan="">supplied</td><td valign="top" rowspan="" colspan="">any prose description of the agent.</td></tr>
+<tr><td valign="top" rowspan="" colspan="">agent</td><td valign="top" rowspan="" colspan="">unclear</td><td valign="top" rowspan="" colspan="">any prose description of the agent.</td></tr>
+<tr><td valign="top" rowspan="" colspan="">arity</td><td valign="top" rowspan="" colspan="">tree</td><td valign="top" rowspan="" colspan="">A nonnegative integer.</td></tr>
+<tr><td valign="top" rowspan="" colspan="">assertedValue</td><td valign="top" rowspan="" colspan="">certainty</td><td valign="top" rowspan="" colspan="">generic identifier, attribute value, location (e.g. indicated by a reference to an anchor element or to an xptr element), or other appropriate alternative value.</td></tr>
+<tr><td valign="top" rowspan="" colspan="">baseType</td><td valign="top" rowspan="" colspan="">fsDecl</td><td valign="top" rowspan="" colspan="">any convenient string for use as a name.</td></tr>
+<tr><td valign="top" rowspan="" colspan="">calendar</td><td valign="top" rowspan="" colspan="">date</td><td valign="top" rowspan="" colspan="">Recommended values include: Gregorian, Julian, Roman, Mosaic, Revolutionary, Islamic.</td></tr>
+<tr><td valign="top" rowspan="" colspan="">calendar</td><td valign="top" rowspan="" colspan="">dateRange</td><td valign="top" rowspan="" colspan="">Recommended values include: Gregorian, Julian, Roman, Mosaic, Revolutionary, Islamic.</td></tr>
+<tr><td valign="top" rowspan="" colspan="">calendar</td><td valign="top" rowspan="" colspan="">dateStruct</td><td valign="top" rowspan="" colspan="">Recommended values include: Gregorian, Julian, Roman, Mosaic, Revolutionary, Islamic.</td></tr>
+<tr><td valign="top" rowspan="" colspan="">cause</td><td valign="top" rowspan="" colspan="">*readings</td><td valign="top" rowspan="" colspan="">any word or phrase describing the cause: e.g. homeoteleuton, homeoarchy, paleographic confusion, haplography, dittography, false emendation.</td></tr>
+<tr><td valign="top" rowspan="" colspan="">cert</td><td valign="top" rowspan="" colspan="">*edit</td><td valign="top" rowspan="" colspan=""></td></tr>
+<tr><td valign="top" rowspan="" colspan="">cert</td><td valign="top" rowspan="" colspan="">abbr</td><td valign="top" rowspan="" colspan=""></td></tr>
+<tr><td valign="top" rowspan="" colspan="">cert</td><td valign="top" rowspan="" colspan="">add</td><td valign="top" rowspan="" colspan=""></td></tr>
+<tr><td valign="top" rowspan="" colspan="">cert</td><td valign="top" rowspan="" colspan="">addSpan</td><td valign="top" rowspan="" colspan=""></td></tr>
+<tr><td valign="top" rowspan="" colspan="">cert</td><td valign="top" rowspan="" colspan="">corr</td><td valign="top" rowspan="" colspan=""></td></tr>
+<tr><td valign="top" rowspan="" colspan="">cert</td><td valign="top" rowspan="" colspan="">del</td><td valign="top" rowspan="" colspan=""></td></tr>
+<tr><td valign="top" rowspan="" colspan="">cert</td><td valign="top" rowspan="" colspan="">delSpan</td><td valign="top" rowspan="" colspan=""></td></tr>
+<tr><td valign="top" rowspan="" colspan="">cert</td><td valign="top" rowspan="" colspan="">expan</td><td valign="top" rowspan="" colspan=""></td></tr>
+<tr><td valign="top" rowspan="" colspan="">cert</td><td valign="top" rowspan="" colspan="">restore</td><td valign="top" rowspan="" colspan=""></td></tr>
+<tr><td valign="top" rowspan="" colspan="">cert</td><td valign="top" rowspan="" colspan="">sic</td><td valign="top" rowspan="" colspan=""></td></tr>
+<tr><td valign="top" rowspan="" colspan="">cert</td><td valign="top" rowspan="" colspan="">unclear</td><td valign="top" rowspan="" colspan=""></td></tr>
+<tr><td valign="top" rowspan="" colspan="">certainty</td><td valign="top" rowspan="" colspan="">date</td><td valign="top" rowspan="" colspan="">Any appropriate value, e.g. ca., approx, after, before.</td></tr>
+<tr><td valign="top" rowspan="" colspan="">character</td><td valign="top" rowspan="" colspan="">hand</td><td valign="top" rowspan="" colspan="">shaky, thick, regular</td></tr>
+<tr><td valign="top" rowspan="" colspan="">character</td><td valign="top" rowspan="" colspan="">handShift</td><td valign="top" rowspan="" colspan="">shaky, thick, regular</td></tr>
+<tr><td valign="top" rowspan="" colspan="">chars</td><td valign="top" rowspan="" colspan="">direction</td><td valign="top" rowspan="" colspan=""></td></tr>
+<tr><td valign="top" rowspan="" colspan="">cols</td><td valign="top" rowspan="" colspan="">cell</td><td valign="top" rowspan="" colspan="">A number; a value greater than one indicates that this cell spans several columns.</td></tr>
+<tr><td valign="top" rowspan="" colspan="">cols</td><td valign="top" rowspan="" colspan="">table</td><td valign="top" rowspan="" colspan="">If no number is supplied, an application must calculate the number of columns.</td></tr>
+<tr><td valign="top" rowspan="" colspan="">crdate</td><td valign="top" rowspan="" colspan="">*pointer</td><td valign="top" rowspan="" colspan="">any string representing a date.</td></tr>
+<tr><td valign="top" rowspan="" colspan="">creator</td><td valign="top" rowspan="" colspan="">teiHeader</td><td valign="top" rowspan="" colspan="">The name or initials of the person or institution      responsible for creating this TEI header.</td></tr>
+<tr><td valign="top" rowspan="" colspan="">degree</td><td valign="top" rowspan="" colspan="">certainty</td><td valign="top" rowspan="" colspan="">Values of degree might be yes or no, the reals between 0 and 1, or traditional characterizations such as doubtful, circa, etc.  Generally we recommend decimal numbers between 0 and 1, where  larger  numbers denote a greater degree of confidence in the assertions; 0 representing certainly false and 1 representing certainly true.</td></tr>
+<tr><td valign="top" rowspan="" colspan="">degree</td><td valign="top" rowspan="" colspan="">damage</td><td valign="top" rowspan="" colspan="">an alphanumeric categorization of the degree of damage, as 40%.</td></tr>
+<tr><td valign="top" rowspan="" colspan="">degree</td><td valign="top" rowspan="" colspan="">node</td><td valign="top" rowspan="" colspan="">A non-negative integer.</td></tr>
+<tr><td valign="top" rowspan="" colspan="">delim</td><td valign="top" rowspan="" colspan="">state</td><td valign="top" rowspan="" colspan="">If a single space is used it is interpreted as           whitespace.</td></tr>
+<tr><td valign="top" rowspan="" colspan="">delim</td><td valign="top" rowspan="" colspan="">step</td><td valign="top" rowspan="" colspan="">If a single space is used it is interpreted as          whitespace</td></tr>
+<tr><td valign="top" rowspan="" colspan="">depend</td><td valign="top" rowspan="" colspan="">*terminology</td><td valign="top" rowspan="" colspan="">any string matching the n attribute value on the element to which the dependent element is attached.</td></tr>
+<tr><td valign="top" rowspan="" colspan="">desc</td><td valign="top" rowspan="" colspan="">event</td><td valign="top" rowspan="" colspan="">a description or representation of the phenomenon chosen from a semi-closed list</td></tr>
+<tr><td valign="top" rowspan="" colspan="">desc</td><td valign="top" rowspan="" colspan="">kinesic</td><td valign="top" rowspan="" colspan="">a description or representation of the phenomenon         chosen from a semi-closed list</td></tr>
+<tr><td valign="top" rowspan="" colspan="">desc</td><td valign="top" rowspan="" colspan="">relation</td><td valign="top" rowspan="" colspan="">an open list of application-dependent keywords</td></tr>
+<tr><td valign="top" rowspan="" colspan="">desc</td><td valign="top" rowspan="" colspan="">vocal</td><td valign="top" rowspan="" colspan="">a description or representation of the phenomenon chosen from a semi-closed list</td></tr>
+<tr><td valign="top" rowspan="" colspan="">doctype</td><td valign="top" rowspan="" colspan="">refsDecl</td><td valign="top" rowspan="" colspan="">must be the name of a document type</td></tr>
+<tr><td valign="top" rowspan="" colspan="">ed</td><td valign="top" rowspan="" colspan="">cb</td><td valign="top" rowspan="" colspan="">Any string of characters; usually a siglum conventionally used for the edition.</td></tr>
+<tr><td valign="top" rowspan="" colspan="">ed</td><td valign="top" rowspan="" colspan="">lb</td><td valign="top" rowspan="" colspan="">Any string of characters; usually a siglum conventionally used for the edition.</td></tr>
+<tr><td valign="top" rowspan="" colspan="">ed</td><td valign="top" rowspan="" colspan="">milestone</td><td valign="top" rowspan="" colspan="">Any string of characters; usually a siglum conventionally used for the edition.</td></tr>
+<tr><td valign="top" rowspan="" colspan="">ed</td><td valign="top" rowspan="" colspan="">pb</td><td valign="top" rowspan="" colspan="">Any string of characters; usually a siglum conventionally used for the edition.</td></tr>
+<tr><td valign="top" rowspan="" colspan="">ed</td><td valign="top" rowspan="" colspan="">state</td><td valign="top" rowspan="" colspan="">Any string of characters; usually a siglum conventionally used for the edition.</td></tr>
+<tr><td valign="top" rowspan="" colspan="">enjamb</td><td valign="top" rowspan="" colspan="">*enjamb</td><td valign="top" rowspan="" colspan=""></td></tr>
+<tr><td valign="top" rowspan="" colspan="">entity</td><td valign="top" rowspan="" colspan="">extFigure</td><td valign="top" rowspan="" colspan="">a valid name associated with the external entity by means of an ENTITY declaration in the document type declaration .</td></tr>
+<tr><td valign="top" rowspan="" colspan="">exact</td><td valign="top" rowspan="" colspan="">dateStruct</td><td valign="top" rowspan="" colspan="">Any appropriate value, e.g. ca., approx, after, before.</td></tr>
+<tr><td valign="top" rowspan="" colspan="">extent</td><td valign="top" rowspan="" colspan="">damage</td><td valign="top" rowspan="" colspan="">any measurement phrase, e.g. 25 letters, 2 × 3 inches.</td></tr>
+<tr><td valign="top" rowspan="" colspan="">extent</td><td valign="top" rowspan="" colspan="">gap</td><td valign="top" rowspan="" colspan="">any string of characters</td></tr>
+<tr><td valign="top" rowspan="" colspan="">extent</td><td valign="top" rowspan="" colspan="">orth</td><td valign="top" rowspan="" colspan=""></td></tr>
+<tr><td valign="top" rowspan="" colspan="">extent</td><td valign="top" rowspan="" colspan="">pron</td><td valign="top" rowspan="" colspan=""></td></tr>
+<tr><td valign="top" rowspan="" colspan="">extent</td><td valign="top" rowspan="" colspan="">space</td><td valign="top" rowspan="" colspan="">any measured quantity, e.g. 10 letters or 4 lines.</td></tr>
+<tr><td valign="top" rowspan="" colspan="">first</td><td valign="top" rowspan="" colspan="">hand</td><td valign="top" rowspan="" colspan="">YES, NO</td></tr>
+<tr><td valign="top" rowspan="" colspan="">from</td><td valign="top" rowspan="" colspan="">dateRange</td><td valign="top" rowspan="" colspan="">any date in a standard form; recommended form is yyyy-mm-dd.</td></tr>
+<tr><td valign="top" rowspan="" colspan="">from</td><td valign="top" rowspan="" colspan="">timeRange</td><td valign="top" rowspan="" colspan="">a string representing a time in standard format;recommended forms are the extended formats from ISO 8601.</td></tr>
+<tr><td valign="top" rowspan="" colspan="">function</td><td valign="top" rowspan="" colspan="">*seg</td><td valign="top" rowspan="" colspan="">For a cl, may take values such as coordinate, subject, adverbial etc. For a phr, such values as subject, predicate etc. may be more appropriate.</td></tr>
+<tr><td valign="top" rowspan="" colspan="">gi</td><td valign="top" rowspan="" colspan="">tagUsage</td><td valign="top" rowspan="" colspan="">the name of an element from the current dtd</td></tr>
+<tr><td valign="top" rowspan="" colspan="">group</td><td valign="top" rowspan="" colspan="">*terminology</td><td valign="top" rowspan="" colspan="">any string matching the n attribute value on the term element to which the group is attached.</td></tr>
+<tr><td valign="top" rowspan="" colspan="">ident</td><td valign="top" rowspan="" colspan="">tagUsage</td><td valign="top" rowspan="" colspan="">an integer number greater than zero</td></tr>
+<tr><td valign="top" rowspan="" colspan="">inDegree</td><td valign="top" rowspan="" colspan="">node</td><td valign="top" rowspan="" colspan="">A non-negative integer.</td></tr>
+<tr><td valign="top" rowspan="" colspan="">included</td><td valign="top" rowspan="" colspan="">witness</td><td valign="top" rowspan="" colspan="">a blank-delimited list of sigla.</td></tr>
+<tr><td valign="top" rowspan="" colspan="">index</td><td valign="top" rowspan="" colspan="">index</td><td valign="top" rowspan="" colspan="">any string of characters; valid values are application-dependent.</td></tr>
+<tr><td valign="top" rowspan="" colspan="">ink</td><td valign="top" rowspan="" colspan="">hand</td><td valign="top" rowspan="" colspan=""></td></tr>
+<tr><td valign="top" rowspan="" colspan="">ink</td><td valign="top" rowspan="" colspan="">handShift</td><td valign="top" rowspan="" colspan=""></td></tr>
+<tr><td valign="top" rowspan="" colspan="">interval</td><td valign="top" rowspan="" colspan="">timeline</td><td valign="top" rowspan="" colspan="">-1 or any nonnegative number</td></tr>
+<tr><td valign="top" rowspan="" colspan="">interval</td><td valign="top" rowspan="" colspan="">when</td><td valign="top" rowspan="" colspan="">-1 or any positive number</td></tr>
+<tr><td valign="top" rowspan="" colspan="">iso639</td><td valign="top" rowspan="" colspan="">language</td><td valign="top" rowspan="" colspan="">any two- or three-letter code  included in ISO 639; if the language is not included in the list in ISO 639, the value should be given as the empty string.</td></tr>
+<tr><td valign="top" rowspan="" colspan="">key</td><td valign="top" rowspan="" colspan="">*entries</td><td valign="top" rowspan="" colspan="">any sequence of characters which, when sorted with the other values, will produced the desired order; specifics of key construction are application-dependent.</td></tr>
+<tr><td valign="top" rowspan="" colspan="">key</td><td valign="top" rowspan="" colspan="">*names</td><td valign="top" rowspan="" colspan="">any string</td></tr>
+<tr><td valign="top" rowspan="" colspan="">key</td><td valign="top" rowspan="" colspan="">*personPart</td><td valign="top" rowspan="" colspan="">any string</td></tr>
+<tr><td valign="top" rowspan="" colspan="">key</td><td valign="top" rowspan="" colspan="">*placePart</td><td valign="top" rowspan="" colspan="">any string</td></tr>
+<tr><td valign="top" rowspan="" colspan="">key</td><td valign="top" rowspan="" colspan="">*temporalExpr</td><td valign="top" rowspan="" colspan="">any string</td></tr>
+<tr><td valign="top" rowspan="" colspan="">key</td><td valign="top" rowspan="" colspan="">orgName</td><td valign="top" rowspan="" colspan="">any string</td></tr>
+<tr><td valign="top" rowspan="" colspan="">lang</td><td valign="top" rowspan="" colspan="">*global</td><td valign="top" rowspan="" colspan="">Should be a language code from ISO 639.</td></tr>
+<tr><td valign="top" rowspan="" colspan="">length</td><td valign="top" rowspan="" colspan="">state</td><td valign="top" rowspan="" colspan="">Should be a positive integer; if no value is provided,     the length is unlimited and goes to the next delimiter or to the     end of the value.</td></tr>
+<tr><td valign="top" rowspan="" colspan="">length</td><td valign="top" rowspan="" colspan="">step</td><td valign="top" rowspan="" colspan="">Should be a positive integer; if no value is provided,     the length is unlimited and goes to the next delimiter or to the     end of the value.</td></tr>
+<tr><td valign="top" rowspan="" colspan="">level</td><td valign="top" rowspan="" colspan="">sense</td><td valign="top" rowspan="" colspan="">any string of digits</td></tr>
+<tr><td valign="top" rowspan="" colspan="">lines</td><td valign="top" rowspan="" colspan="">direction</td><td valign="top" rowspan="" colspan=""></td></tr>
+<tr><td valign="top" rowspan="" colspan="">loc</td><td valign="top" rowspan="" colspan="">app</td><td valign="top" rowspan="" colspan="">Any string containing a canonical reference for the passage to which the variation applies.</td></tr>
+<tr><td valign="top" rowspan="" colspan="">locus</td><td valign="top" rowspan="" colspan="">certainty</td><td valign="top" rowspan="" colspan=""></td></tr>
+<tr><td valign="top" rowspan="" colspan="">locus</td><td valign="top" rowspan="" colspan="">respons</td><td valign="top" rowspan="" colspan=""></td></tr>
+<tr><td valign="top" rowspan="" colspan="">mainLang</td><td valign="top" rowspan="" colspan="">hand</td><td valign="top" rowspan="" colspan="">Latin, English</td></tr>
+<tr><td valign="top" rowspan="" colspan="">met</td><td valign="top" rowspan="" colspan="">*metrical</td><td valign="top" rowspan="" colspan="">May contain either a standard term for the kind of metrical unit (e.g. hexameter) or an encoded representation for the metrical pattern (e.g. +--+-+-+-+-). In either case, the notation used should be documented by a metNotation element within the encodingDesc of the associated header.</td></tr>
+<tr><td valign="top" rowspan="" colspan="">n</td><td valign="top" rowspan="" colspan="">*global</td><td valign="top" rowspan="" colspan="">any string of characters; often, but not necessarily, numeric.</td></tr>
+<tr><td valign="top" rowspan="" colspan="">name</td><td valign="top" rowspan="" colspan="">*baseStandard</td><td valign="top" rowspan="" colspan="">For national and international standards, the value should be the normal citation form for the standard; for public entity sets, it should be the standard public entity text; for private character sets, WSDs, and entity sets, it is recommended that a formal public identifier  be used.</td></tr>
+<tr><td valign="top" rowspan="" colspan="">name</td><td valign="top" rowspan="" colspan="">part</td><td valign="top" rowspan="" colspan="">any string of characters</td></tr>
+<tr><td valign="top" rowspan="" colspan="">name</td><td valign="top" rowspan="" colspan="">writingSystemDeclaration</td><td valign="top" rowspan="" colspan="">any string of characters</td></tr>
+<tr><td valign="top" rowspan="" colspan="">names</td><td valign="top" rowspan="" colspan="">classes</td><td valign="top" rowspan="" colspan="">a list of class names separated by spaces or commas, and  optionally enclosed by parentheses; each name should be the class name  specified for some element class in the scheme being documented or  modified.  </td></tr>
+<tr><td valign="top" rowspan="" colspan="">names</td><td valign="top" rowspan="" colspan="">files</td><td valign="top" rowspan="" colspan="">a file identifier</td></tr>
+<tr><td valign="top" rowspan="" colspan="">new</td><td valign="top" rowspan="" colspan="">shift</td><td valign="top" rowspan="" colspan="">An open list (for an example of possible values, see       )</td></tr>
+<tr><td valign="top" rowspan="" colspan="">notation</td><td valign="top" rowspan="" colspan="">extFigure</td><td valign="top" rowspan="" colspan="">a valid name associated with a given notation by means of a NOTATION declaration in the document type definition.</td></tr>
+<tr><td valign="top" rowspan="" colspan="">notation</td><td valign="top" rowspan="" colspan="">figure</td><td valign="top" rowspan="" colspan="">a valid  name associated with a given notation by means of an NOTATION declaration in the document type definition.</td></tr>
+<tr><td valign="top" rowspan="" colspan="">notation</td><td valign="top" rowspan="" colspan="">pron</td><td valign="top" rowspan="" colspan="">Sample values:  IPA, Murray, ...     </td></tr>
+<tr><td valign="top" rowspan="" colspan="">occurs</td><td valign="top" rowspan="" colspan="">tagUsage</td><td valign="top" rowspan="" colspan="">an integer number greater than zero</td></tr>
+<tr><td valign="top" rowspan="" colspan="">order</td><td valign="top" rowspan="" colspan="">graph</td><td valign="top" rowspan="" colspan="">A positive integer.</td></tr>
+<tr><td valign="top" rowspan="" colspan="">order</td><td valign="top" rowspan="" colspan="">tree</td><td valign="top" rowspan="" colspan="">A nonnegative integer.</td></tr>
+<tr><td valign="top" rowspan="" colspan="">outDegree</td><td valign="top" rowspan="" colspan="">iNode</td><td valign="top" rowspan="" colspan="">A nonnegative integer.</td></tr>
+<tr><td valign="top" rowspan="" colspan="">outDegree</td><td valign="top" rowspan="" colspan="">node</td><td valign="top" rowspan="" colspan="">A non-negative integer.</td></tr>
+<tr><td valign="top" rowspan="" colspan="">outDegree</td><td valign="top" rowspan="" colspan="">root</td><td valign="top" rowspan="" colspan="">A nonnegative integer.</td></tr>
+<tr><td valign="top" rowspan="" colspan="">pattern</td><td valign="top" rowspan="" colspan="">metDecl</td><td valign="top" rowspan="" colspan="">the value must be a valid expression for the PATTERN keyword                 as defined in the TEI extended pointer notation                 (see section ).</td></tr>
+<tr><td valign="top" rowspan="" colspan="">per</td><td valign="top" rowspan="" colspan="">rate</td><td valign="top" rowspan="" colspan="">A string, e.g. second.</td></tr>
+<tr><td valign="top" rowspan="" colspan="">place</td><td valign="top" rowspan="" colspan="">add</td><td valign="top" rowspan="" colspan=""></td></tr>
+<tr><td valign="top" rowspan="" colspan="">place</td><td valign="top" rowspan="" colspan="">addSpan</td><td valign="top" rowspan="" colspan=""></td></tr>
+<tr><td valign="top" rowspan="" colspan="">place</td><td valign="top" rowspan="" colspan="">fw</td><td valign="top" rowspan="" colspan=""></td></tr>
+<tr><td valign="top" rowspan="" colspan="">place</td><td valign="top" rowspan="" colspan="">note</td><td valign="top" rowspan="" colspan=""></td></tr>
+<tr><td valign="top" rowspan="" colspan="">place</td><td valign="top" rowspan="" colspan="">witDetail</td><td valign="top" rowspan="" colspan="">As for the note element.</td></tr>
+<tr><td valign="top" rowspan="" colspan="">real</td><td valign="top" rowspan="" colspan="">*metrical</td><td valign="top" rowspan="" colspan="">May contain either a standard term for the kind of metrical unit (e.g. hexameter) or an encoded representation for the metrical pattern (e.g. +--+-+-+-+-). In either case, the notation used should be documented by a metNotation element within the encodingDesc of the associated header.</td></tr>
+<tr><td valign="top" rowspan="" colspan="">reason</td><td valign="top" rowspan="" colspan="">gap</td><td valign="top" rowspan="" colspan="">any short indication of the reason for the omission.</td></tr>
+<tr><td valign="top" rowspan="" colspan="">reason</td><td valign="top" rowspan="" colspan="">supplied</td><td valign="top" rowspan="" colspan="">any phrase describing the difficulty, e.g. overbinding, faded ink, lost folio, omitted in original.</td></tr>
+<tr><td valign="top" rowspan="" colspan="">reason</td><td valign="top" rowspan="" colspan="">unclear</td><td valign="top" rowspan="" colspan="">any phrase describing the difficulty, e.g. faded, ambient noise, passing truck, ill formed, eccentric ductus.</td></tr>
+<tr><td valign="top" rowspan="" colspan="">refunit</td><td valign="top" rowspan="" colspan="">step</td><td valign="top" rowspan="" colspan="">any string of characters; typically a word or phrase in some natural language.</td></tr>
+<tr><td valign="top" rowspan="" colspan="">rend</td><td valign="top" rowspan="" colspan="">*global</td><td valign="top" rowspan="" colspan="">any string of characters; if the typographic rendition of a text is to be systematically recorded, a systematic set of values for the rend attribute should be defined.</td></tr>
+<tr><td valign="top" rowspan="" colspan="">resp</td><td valign="top" rowspan="" colspan="">*interpret</td><td valign="top" rowspan="" colspan="">Any string of characters, such as the initials of the encoder.</td></tr>
+<tr><td valign="top" rowspan="" colspan="">resp</td><td valign="top" rowspan="" colspan="">*readings</td><td valign="top" rowspan="" colspan="">must be one of the identifiers declared in the document header, associated with a person asserted as responsible for some aspect of the text's creation, transcription, editing, or encoding (see chapter ).</td></tr>
+<tr><td valign="top" rowspan="" colspan="">resp</td><td valign="top" rowspan="" colspan="">admin</td><td valign="top" rowspan="" colspan="">any string of characters (usually the acronym of the agency or the initials of an individual).</td></tr>
+<tr><td valign="top" rowspan="" colspan="">resp</td><td valign="top" rowspan="" colspan="">corr</td><td valign="top" rowspan="" colspan="">must be one of the identifiers declared in the document header, associated with a person asserted as responsible for some aspect of the text's creation, transcription, editing, or encoding (see chapter ).</td></tr>
+<tr><td valign="top" rowspan="" colspan="">resp</td><td valign="top" rowspan="" colspan="">hand</td><td valign="top" rowspan="" colspan="">must be one of the identifiers declared in the document header, associated with a person asserted as responsible for some aspect of the text's creation, transcription, editing, or encoding (see chapter ).</td></tr>
+<tr><td valign="top" rowspan="" colspan="">resp</td><td valign="top" rowspan="" colspan="">note</td><td valign="top" rowspan="" colspan=""></td></tr>
+<tr><td valign="top" rowspan="" colspan="">resp</td><td valign="top" rowspan="" colspan="">orig</td><td valign="top" rowspan="" colspan="">any string of characters, typically the initials of the individual involved, or a role identifier like editor if not known by name.</td></tr>
+<tr><td valign="top" rowspan="" colspan="">resp</td><td valign="top" rowspan="" colspan="">reg</td><td valign="top" rowspan="" colspan="">any string of characters, typically the initials of the individual involved, or a role identifier like editor if not known by name.</td></tr>
+<tr><td valign="top" rowspan="" colspan="">resp</td><td valign="top" rowspan="" colspan="">respons</td><td valign="top" rowspan="" colspan="">any string of characters, typically the initials of an individual, the acronym of an agency, the name of a computer program, etc.</td></tr>
+<tr><td valign="top" rowspan="" colspan="">resp</td><td valign="top" rowspan="" colspan="">sic</td><td valign="top" rowspan="" colspan="">must be one of the identifiers declared in the document header, associated with a person asserted as responsible for some aspect of the text's creation, transcription, editing, or encoding (see chapter ).</td></tr>
+<tr><td valign="top" rowspan="" colspan="">resp</td><td valign="top" rowspan="" colspan="">space</td><td valign="top" rowspan="" colspan="">usually the initials of the responsible individual.</td></tr>
+<tr><td valign="top" rowspan="" colspan="">resp</td><td valign="top" rowspan="" colspan="">supplied</td><td valign="top" rowspan="" colspan="">must be one of the identifiers declared in the document header, associated with a person asserted as responsible for some aspect of the text's creation, transcription, editing, or encoding (see chapter ).</td></tr>
+<tr><td valign="top" rowspan="" colspan="">resp</td><td valign="top" rowspan="" colspan="">unclear</td><td valign="top" rowspan="" colspan="">must be one of the identifiers declared in the document header, associated with a person asserted as responsible for some aspect of the text's creation, transcription, editing, or encoding (see chapter ).</td></tr>
+<tr><td valign="top" rowspan="" colspan="">resp</td><td valign="top" rowspan="" colspan="">witDetail</td><td valign="top" rowspan="" colspan="">any string of characters, typically the initials of the individual involved, or a role identifier like editor if not known by name.</td></tr>
+<tr><td valign="top" rowspan="" colspan="">result</td><td valign="top" rowspan="" colspan="">join</td><td valign="top" rowspan="" colspan="">The generic identifier of an element in the current DTD.</td></tr>
+<tr><td valign="top" rowspan="" colspan="">result</td><td valign="top" rowspan="" colspan="">joinGrp</td><td valign="top" rowspan="" colspan="">where specified on a joinGrp element, it supplies the default value for the result on each join included within the group.</td></tr>
+<tr><td valign="top" rowspan="" colspan="">rhyme</td><td valign="top" rowspan="" colspan="">*metrical</td><td valign="top" rowspan="" colspan="">By default, the rhyme scheme is expressed as a string of alphabetic characters each corresponding with a rhyming line.  Any non-rhyming lines should be represented by a hyphen or an X.  Alternative notations may be defined as for met by use of the metNotation element in the TEI header.</td></tr>
+<tr><td valign="top" rowspan="" colspan="">role</td><td valign="top" rowspan="" colspan="">cell</td><td valign="top" rowspan="" colspan=""></td></tr>
+<tr><td valign="top" rowspan="" colspan="">role</td><td valign="top" rowspan="" colspan="">editor</td><td valign="top" rowspan="" colspan="">semi-open list (examples might include: translator, editor,         compiler, illustrator, etc.)</td></tr>
+<tr><td valign="top" rowspan="" colspan="">role</td><td valign="top" rowspan="" colspan="">person</td><td valign="top" rowspan="" colspan="">a set of keywords to be defined</td></tr>
+<tr><td valign="top" rowspan="" colspan="">role</td><td valign="top" rowspan="" colspan="">personGrp</td><td valign="top" rowspan="" colspan="">a set of keywords to be defined</td></tr>
+<tr><td valign="top" rowspan="" colspan="">role</td><td valign="top" rowspan="" colspan="">row</td><td valign="top" rowspan="" colspan=""></td></tr>
+<tr><td valign="top" rowspan="" colspan="">rows</td><td valign="top" rowspan="" colspan="">cell</td><td valign="top" rowspan="" colspan="">A number; a value greater than one indicates that this cell spans several rows.</td></tr>
+<tr><td valign="top" rowspan="" colspan="">rows</td><td valign="top" rowspan="" colspan="">table</td><td valign="top" rowspan="" colspan="">If no number is supplied, an application must calculate the number of rows.</td></tr>
+<tr><td valign="top" rowspan="" colspan="">scribe</td><td valign="top" rowspan="" colspan="">hand</td><td valign="top" rowspan="" colspan="">Any name, such as tremulous  hand, Hand B, Hoccleve,  used to identify a scribe</td></tr>
+<tr><td valign="top" rowspan="" colspan="">sigil</td><td valign="top" rowspan="" colspan="">witness</td><td valign="top" rowspan="" colspan="">the identifier to be used for this witness or witness group in the wit attribute of readings in the apparatus.</td></tr>
+<tr><td valign="top" rowspan="" colspan="">size</td><td valign="top" rowspan="" colspan="">graph</td><td valign="top" rowspan="" colspan="">A non-negative integer.</td></tr>
+<tr><td valign="top" rowspan="" colspan="">size</td><td valign="top" rowspan="" colspan="">personGrp</td><td valign="top" rowspan="" colspan="">may contain a number and an indication of accuracy, e.g. approx 200</td></tr>
+<tr><td valign="top" rowspan="" colspan="">social</td><td valign="top" rowspan="" colspan="">distinct</td><td valign="top" rowspan="" colspan="">a semi-open user-defined list</td></tr>
+<tr><td valign="top" rowspan="" colspan="">sort</td><td valign="top" rowspan="" colspan="">*personPart</td><td valign="top" rowspan="" colspan="">A positive number indicating the sort order.</td></tr>
+<tr><td valign="top" rowspan="" colspan="">source</td><td valign="top" rowspan="" colspan="">supplied</td><td valign="top" rowspan="" colspan="">any string of characters identifying the source of the supplied text.  This might be the sigil for a manuscript, or a particular edition, or the transcriber or editor's own initials, indicating it as their conjecture.</td></tr>
+<tr><td valign="top" rowspan="" colspan="">space</td><td valign="top" rowspan="" colspan="">distinct</td><td valign="top" rowspan="" colspan="">a semi-open user-defined list</td></tr>
+<tr><td valign="top" rowspan="" colspan="">status</td><td valign="top" rowspan="" colspan="">del</td><td valign="top" rowspan="" colspan="">any description of flaws in the marking of a deletion, e.g. excess left, excess right, short left, short right.</td></tr>
+<tr><td valign="top" rowspan="" colspan="">status</td><td valign="top" rowspan="" colspan="">delSpan</td><td valign="top" rowspan="" colspan=""></td></tr>
+<tr><td valign="top" rowspan="" colspan="">style</td><td valign="top" rowspan="" colspan="">hand</td><td valign="top" rowspan="" colspan="">Any descriptive name such as secretary, copperplate, Chancery, Italian, etc.</td></tr>
+<tr><td valign="top" rowspan="" colspan="">style</td><td valign="top" rowspan="" colspan="">handShift</td><td valign="top" rowspan="" colspan="">Any descriptive name such as secretary, copperplate, Chancery, Italian, etc.</td></tr>
+<tr><td valign="top" rowspan="" colspan="">subtype</td><td valign="top" rowspan="" colspan="">*typed</td><td valign="top" rowspan="" colspan="">any string of characters.</td></tr>
+<tr><td valign="top" rowspan="" colspan="">subtype</td><td valign="top" rowspan="" colspan="">seg</td><td valign="top" rowspan="" colspan="">any string of characters.</td></tr>
+<tr><td valign="top" rowspan="" colspan="">time</td><td valign="top" rowspan="" colspan="">distinct</td><td valign="top" rowspan="" colspan="">a semi-open user-defined list</td></tr>
+<tr><td valign="top" rowspan="" colspan="">to</td><td valign="top" rowspan="" colspan="">dateRange</td><td valign="top" rowspan="" colspan="">any date in a standard form; recommended form is yyyy-mm-dd.</td></tr>
+<tr><td valign="top" rowspan="" colspan="">to</td><td valign="top" rowspan="" colspan="">timeRange</td><td valign="top" rowspan="" colspan="">a string representing a time in standard format;        recommended forms are the extended formats from ISO 8601.</td></tr>
+<tr><td valign="top" rowspan="" colspan="">type</td><td valign="top" rowspan="" colspan="">*divn</td><td valign="top" rowspan="" colspan="">any string of characters</td></tr>
+<tr><td valign="top" rowspan="" colspan="">type</td><td valign="top" rowspan="" colspan="">*entries</td><td valign="top" rowspan="" colspan=""></td></tr>
+<tr><td valign="top" rowspan="" colspan="">type</td><td valign="top" rowspan="" colspan="">*interpret</td><td valign="top" rowspan="" colspan=""></td></tr>
+<tr><td valign="top" rowspan="" colspan="">type</td><td valign="top" rowspan="" colspan="">*personPart</td><td valign="top" rowspan="" colspan="">one of a set of codes defined for the application.</td></tr>
+<tr><td valign="top" rowspan="" colspan="">type</td><td valign="top" rowspan="" colspan="">*placePart</td><td valign="top" rowspan="" colspan="">one of a set of codes defined for the application.</td></tr>
+<tr><td valign="top" rowspan="" colspan="">type</td><td valign="top" rowspan="" colspan="">*readings</td><td valign="top" rowspan="" colspan=""></td></tr>
+<tr><td valign="top" rowspan="" colspan="">type</td><td valign="top" rowspan="" colspan="">*seg</td><td valign="top" rowspan="" colspan="">For a cl may take values such as finite, nonfinite, declarative, interrogative, relative etc. For a phr or w, values such as noun, verb, preposition, etc., may be used. For an m element, values such as clitic, prefix, stem will be more appropriate. For a c element, values such as letter, punctuation, digit may be used.</td></tr>
+<tr><td valign="top" rowspan="" colspan="">type</td><td valign="top" rowspan="" colspan="">*temporalExpr</td><td valign="top" rowspan="" colspan="">any string of characters. The range of permissible values is application  dependent.</td></tr>
+<tr><td valign="top" rowspan="" colspan="">type</td><td valign="top" rowspan="" colspan="">*typed</td><td valign="top" rowspan="" colspan="">any string of characters. The range of permissible values is application dependent.</td></tr>
+<tr><td valign="top" rowspan="" colspan="">type</td><td valign="top" rowspan="" colspan="">abbr</td><td valign="top" rowspan="" colspan=""></td></tr>
+<tr><td valign="top" rowspan="" colspan="">type</td><td valign="top" rowspan="" colspan="">addSpan</td><td valign="top" rowspan="" colspan="">Any string of characters.</td></tr>
+<tr><td valign="top" rowspan="" colspan="">type</td><td valign="top" rowspan="" colspan="">admin</td><td valign="top" rowspan="" colspan=""></td></tr>
+<tr><td valign="top" rowspan="" colspan="">type</td><td valign="top" rowspan="" colspan="">app</td><td valign="top" rowspan="" colspan="">Any convenient descriptive word or phrase, describing the extent of the variation (e.g.  word, phrase, punctuation, etc.) its text-critical significance (e.g. significant, accidental, unclear), or the nature of the variation or the principles required to understand it (e.g. lectio difficilior, usus auctoris, etc.)</td></tr>
+<tr><td valign="top" rowspan="" colspan="">type</td><td valign="top" rowspan="" colspan="">biblScope</td><td valign="top" rowspan="" colspan=""></td></tr>
+<tr><td valign="top" rowspan="" colspan="">type</td><td valign="top" rowspan="" colspan="">camera</td><td valign="top" rowspan="" colspan="">any string of characters</td></tr>
+<tr><td valign="top" rowspan="" colspan="">type</td><td valign="top" rowspan="" colspan="">colloc</td><td valign="top" rowspan="" colspan="">any string of characters, e.g. preposition.</td></tr>
+<tr><td valign="top" rowspan="" colspan="">type</td><td valign="top" rowspan="" colspan="">damage</td><td valign="top" rowspan="" colspan="">any phrase describing the damage, e.g. faded, overbound, water, charred with loss of paper.</td></tr>
+<tr><td valign="top" rowspan="" colspan="">type</td><td valign="top" rowspan="" colspan="">del</td><td valign="top" rowspan="" colspan="">any string identifying the class of deletion.</td></tr>
+<tr><td valign="top" rowspan="" colspan="">type</td><td valign="top" rowspan="" colspan="">delSpan</td><td valign="top" rowspan="" colspan=""></td></tr>
+<tr><td valign="top" rowspan="" colspan="">type</td><td valign="top" rowspan="" colspan="">descrip</td><td valign="top" rowspan="" colspan=""></td></tr>
+<tr><td valign="top" rowspan="" colspan="">type</td><td valign="top" rowspan="" colspan="">distinct</td><td valign="top" rowspan="" colspan="">a semi-open user-defined list</td></tr>
+<tr><td valign="top" rowspan="" colspan="">type</td><td valign="top" rowspan="" colspan="">divGen</td><td valign="top" rowspan="" colspan=""></td></tr>
+<tr><td valign="top" rowspan="" colspan="">type</td><td valign="top" rowspan="" colspan="">expan</td><td valign="top" rowspan="" colspan="">any useful classification name, e.g. suspension, contraction, brevigraph, title, organization, geographic, etc.</td></tr>
+<tr><td valign="top" rowspan="" colspan="">type</td><td valign="top" rowspan="" colspan="">fLib</td><td valign="top" rowspan="" colspan="">Character string, e.g. word features.</td></tr>
+<tr><td valign="top" rowspan="" colspan="">type</td><td valign="top" rowspan="" colspan="">forest</td><td valign="top" rowspan="" colspan="">A character string.</td></tr>
+<tr><td valign="top" rowspan="" colspan="">type</td><td valign="top" rowspan="" colspan="">forestGrp</td><td valign="top" rowspan="" colspan="">A character string.</td></tr>
+<tr><td valign="top" rowspan="" colspan="">type</td><td valign="top" rowspan="" colspan="">fs</td><td valign="top" rowspan="" colspan="">Character string, e.g. word structure.</td></tr>
+<tr><td valign="top" rowspan="" colspan="">type</td><td valign="top" rowspan="" colspan="">fsDecl</td><td valign="top" rowspan="" colspan="">any convenient string of characters.</td></tr>
+<tr><td valign="top" rowspan="" colspan="">type</td><td valign="top" rowspan="" colspan="">fsLib</td><td valign="top" rowspan="" colspan="">Character string, e.g. word structure library.</td></tr>
+<tr><td valign="top" rowspan="" colspan="">type</td><td valign="top" rowspan="" colspan="">fsdDecl</td><td valign="top" rowspan="" colspan="">any string of characters.</td></tr>
+<tr><td valign="top" rowspan="" colspan="">type</td><td valign="top" rowspan="" colspan="">fvLib</td><td valign="top" rowspan="" colspan="">Character string, e.g. symbolic values.</td></tr>
+<tr><td valign="top" rowspan="" colspan="">type</td><td valign="top" rowspan="" colspan="">fw</td><td valign="top" rowspan="" colspan=""></td></tr>
+<tr><td valign="top" rowspan="" colspan="">type</td><td valign="top" rowspan="" colspan="">geogName</td><td valign="top" rowspan="" colspan="">one of a set of codes defined for the application.</td></tr>
+<tr><td valign="top" rowspan="" colspan="">type</td><td valign="top" rowspan="" colspan="">gram</td><td valign="top" rowspan="" colspan=""></td></tr>
+<tr><td valign="top" rowspan="" colspan="">type</td><td valign="top" rowspan="" colspan="">graph</td><td valign="top" rowspan="" colspan=""></td></tr>
+<tr><td valign="top" rowspan="" colspan="">type</td><td valign="top" rowspan="" colspan="">head</td><td valign="top" rowspan="" colspan="">A set of user-defined keywords may be employed. Their             significance should be documented in the header.         </td></tr>
+<tr><td valign="top" rowspan="" colspan="">type</td><td valign="top" rowspan="" colspan="">itype</td><td valign="top" rowspan="" colspan=""></td></tr>
+<tr><td valign="top" rowspan="" colspan="">type</td><td valign="top" rowspan="" colspan="">lbl</td><td valign="top" rowspan="" colspan="">any string of characters, such as usage, sense restriction, etc.</td></tr>
+<tr><td valign="top" rowspan="" colspan="">type</td><td valign="top" rowspan="" colspan="">list</td><td valign="top" rowspan="" colspan=""></td></tr>
+<tr><td valign="top" rowspan="" colspan="">type</td><td valign="top" rowspan="" colspan="">measure</td><td valign="top" rowspan="" colspan=""></td></tr>
+<tr><td valign="top" rowspan="" colspan="">type</td><td valign="top" rowspan="" colspan="">metDecl</td><td valign="top" rowspan="" colspan="">One or more of the three attribute names met,           real, or rhyme, separated by whitespace.</td></tr>
+<tr><td valign="top" rowspan="" colspan="">type</td><td valign="top" rowspan="" colspan="">move</td><td valign="top" rowspan="" colspan=""></td></tr>
+<tr><td valign="top" rowspan="" colspan="">type</td><td valign="top" rowspan="" colspan="">name</td><td valign="top" rowspan="" colspan="">Values such as person, place, institution, product, acronym.</td></tr>
+<tr><td valign="top" rowspan="" colspan="">type</td><td valign="top" rowspan="" colspan="">node</td><td valign="top" rowspan="" colspan=""></td></tr>
+<tr><td valign="top" rowspan="" colspan="">type</td><td valign="top" rowspan="" colspan="">note</td><td valign="top" rowspan="" colspan="">Values can be taken from any convenient typology of annotation suitable to the work in hand;  e.g. annotation, gloss, citation, digression, preliminary, temporary</td></tr>
+<tr><td valign="top" rowspan="" colspan="">type</td><td valign="top" rowspan="" colspan="">num</td><td valign="top" rowspan="" colspan=""></td></tr>
+<tr><td valign="top" rowspan="" colspan="">type</td><td valign="top" rowspan="" colspan="">oRef</td><td valign="top" rowspan="" colspan=""></td></tr>
+<tr><td valign="top" rowspan="" colspan="">type</td><td valign="top" rowspan="" colspan="">oVar</td><td valign="top" rowspan="" colspan=""></td></tr>
+<tr><td valign="top" rowspan="" colspan="">type</td><td valign="top" rowspan="" colspan="">ofig</td><td valign="top" rowspan="" colspan="">any string identifying a class of ofig</td></tr>
+<tr><td valign="top" rowspan="" colspan="">type</td><td valign="top" rowspan="" colspan="">orgDivn</td><td valign="top" rowspan="" colspan="">any string of characters</td></tr>
+<tr><td valign="top" rowspan="" colspan="">type</td><td valign="top" rowspan="" colspan="">orgName</td><td valign="top" rowspan="" colspan=""></td></tr>
+<tr><td valign="top" rowspan="" colspan="">type</td><td valign="top" rowspan="" colspan="">orgTitle</td><td valign="top" rowspan="" colspan="">any string of characters</td></tr>
+<tr><td valign="top" rowspan="" colspan="">type</td><td valign="top" rowspan="" colspan="">orgType</td><td valign="top" rowspan="" colspan="">any string of characters</td></tr>
+<tr><td valign="top" rowspan="" colspan="">type</td><td valign="top" rowspan="" colspan="">orth</td><td valign="top" rowspan="" colspan="">Any convenient word or phrase, e.g. lat (latinate), std (standard), trans (transliterated), etc.</td></tr>
+<tr><td valign="top" rowspan="" colspan="">type</td><td valign="top" rowspan="" colspan="">otherForm</td><td valign="top" rowspan="" colspan="">any string of characters; for serious terminological work, values should be taken from the dictionary of data element types specified in ISO WD 12 620.</td></tr>
+<tr><td valign="top" rowspan="" colspan="">type</td><td valign="top" rowspan="" colspan="">part</td><td valign="top" rowspan="" colspan=""></td></tr>
+<tr><td valign="top" rowspan="" colspan="">type</td><td valign="top" rowspan="" colspan="">pause</td><td valign="top" rowspan="" colspan="">An open list</td></tr>
+<tr><td valign="top" rowspan="" colspan="">type</td><td valign="top" rowspan="" colspan="">persName</td><td valign="top" rowspan="" colspan="">Any string of characters.</td></tr>
+<tr><td valign="top" rowspan="" colspan="">type</td><td valign="top" rowspan="" colspan="">q</td><td valign="top" rowspan="" colspan=""></td></tr>
+<tr><td valign="top" rowspan="" colspan="">type</td><td valign="top" rowspan="" colspan="">re</td><td valign="top" rowspan="" colspan="">any string of characters</td></tr>
+<tr><td valign="top" rowspan="" colspan="">type</td><td valign="top" rowspan="" colspan="">relation</td><td valign="top" rowspan="" colspan=""></td></tr>
+<tr><td valign="top" rowspan="" colspan="">type</td><td valign="top" rowspan="" colspan="">restore</td><td valign="top" rowspan="" colspan=""></td></tr>
+<tr><td valign="top" rowspan="" colspan="">type</td><td valign="top" rowspan="" colspan="">rs</td><td valign="top" rowspan="" colspan="">Any string of characters.</td></tr>
+<tr><td valign="top" rowspan="" colspan="">type</td><td valign="top" rowspan="" colspan="">sound</td><td valign="top" rowspan="" colspan="">any string of characters</td></tr>
+<tr><td valign="top" rowspan="" colspan="">type</td><td valign="top" rowspan="" colspan="">stage</td><td valign="top" rowspan="" colspan=""></td></tr>
+<tr><td valign="top" rowspan="" colspan="">type</td><td valign="top" rowspan="" colspan="">teiHeader</td><td valign="top" rowspan="" colspan=""></td></tr>
+<tr><td valign="top" rowspan="" colspan="">type</td><td valign="top" rowspan="" colspan="">term</td><td valign="top" rowspan="" colspan="">any string of characters; for serious terminological work, values should be taken from the dictionary of data element types specified in ISO WD 12 620.</td></tr>
+<tr><td valign="top" rowspan="" colspan="">type</td><td valign="top" rowspan="" colspan="">termEntry</td><td valign="top" rowspan="" colspan="">any string of characters; for serious terminological work, values should be taken from the dictionary of data element types specified in ISO WD 12 620.</td></tr>
+<tr><td valign="top" rowspan="" colspan="">type</td><td valign="top" rowspan="" colspan="">termEntry</td><td valign="top" rowspan="" colspan="">any string of characters; for serious terminological work, values should be taken from the dictionary of data element types specified in ISO WD 12 620.</td></tr>
+<tr><td valign="top" rowspan="" colspan="">type</td><td valign="top" rowspan="" colspan="">tig</td><td valign="top" rowspan="" colspan="">any string of characters; for serious terminological work, values should be taken from the dictionary of data element types specified in ISO WD 12 620.</td></tr>
+<tr><td valign="top" rowspan="" colspan="">type</td><td valign="top" rowspan="" colspan="">title</td><td valign="top" rowspan="" colspan=""></td></tr>
+<tr><td valign="top" rowspan="" colspan="">type</td><td valign="top" rowspan="" colspan="">titlePage</td><td valign="top" rowspan="" colspan="">Any string, e.g. full, half, Series, etc.</td></tr>
+<tr><td valign="top" rowspan="" colspan="">type</td><td valign="top" rowspan="" colspan="">usg</td><td valign="top" rowspan="" colspan=""></td></tr>
+<tr><td valign="top" rowspan="" colspan="">type</td><td valign="top" rowspan="" colspan="">witDetail</td><td valign="top" rowspan="" colspan="">Values can be taken from any convenient typology of annotation suitable to the work in hand;  e.g. letter form, ornament, ...</td></tr>
+<tr><td valign="top" rowspan="" colspan="">type</td><td valign="top" rowspan="" colspan="">writing</td><td valign="top" rowspan="" colspan="">Open list</td></tr>
+<tr><td valign="top" rowspan="" colspan="">type</td><td valign="top" rowspan="" colspan="">xr</td><td valign="top" rowspan="" colspan=""></td></tr>
+<tr><td valign="top" rowspan="" colspan="">unit</td><td valign="top" rowspan="" colspan="">milestone</td><td valign="top" rowspan="" colspan=""></td></tr>
+<tr><td valign="top" rowspan="" colspan="">unit</td><td valign="top" rowspan="" colspan="">msr</td><td valign="top" rowspan="" colspan="">A string, e.g. meter.</td></tr>
+<tr><td valign="top" rowspan="" colspan="">unit</td><td valign="top" rowspan="" colspan="">rate</td><td valign="top" rowspan="" colspan="">A string, e.g. meter.</td></tr>
+<tr><td valign="top" rowspan="" colspan="">unit</td><td valign="top" rowspan="" colspan="">state</td><td valign="top" rowspan="" colspan=""></td></tr>
+<tr><td valign="top" rowspan="" colspan="">unit</td><td valign="top" rowspan="" colspan="">when</td><td valign="top" rowspan="" colspan="">a semi-closed list of recognized time units such as millisecond, second, minute</td></tr>
+<tr><td valign="top" rowspan="" colspan="">usage    </td><td valign="top" rowspan="" colspan="">language</td><td valign="top" rowspan="" colspan="">a whole number between 1 and 100</td></tr>
+<tr><td valign="top" rowspan="" colspan="">value</td><td valign="top" rowspan="" colspan="">*temporalExpr</td><td valign="top" rowspan="" colspan="">Any string representing a date in standard format;               recommended form is ISO 8601 extended format (yyyy-mm-dd                for dates, hh:mm:ss.sss for times).</td></tr>
+<tr><td valign="top" rowspan="" colspan="">value</td><td valign="top" rowspan="" colspan="">date</td><td valign="top" rowspan="" colspan="">Any string representing a date in standard format; recommended form is ISO 8601:2000 5.2.1.1 Complete representation, extended format (yyyy-mm-dd)</td></tr>
+<tr><td valign="top" rowspan="" colspan="">value</td><td valign="top" rowspan="" colspan="">msr</td><td valign="top" rowspan="" colspan="">A real number or integer.</td></tr>
+<tr><td valign="top" rowspan="" colspan="">value</td><td valign="top" rowspan="" colspan="">nbr</td><td valign="top" rowspan="" colspan="">A real number or integer.</td></tr>
+<tr><td valign="top" rowspan="" colspan="">value</td><td valign="top" rowspan="" colspan="">num</td><td valign="top" rowspan="" colspan="">any numeric value in the chosen standard form.</td></tr>
+<tr><td valign="top" rowspan="" colspan="">value</td><td valign="top" rowspan="" colspan="">rate</td><td valign="top" rowspan="" colspan="">A real number or integer.</td></tr>
+<tr><td valign="top" rowspan="" colspan="">value</td><td valign="top" rowspan="" colspan="">sym</td><td valign="top" rowspan="" colspan="">A string, e.g. feminine.</td></tr>
+<tr><td valign="top" rowspan="" colspan="">value</td><td valign="top" rowspan="" colspan="">symbol</td><td valign="top" rowspan="" colspan="">any available character or character sequence.</td></tr>
+<tr><td valign="top" rowspan="" colspan="">value</td><td valign="top" rowspan="" colspan="">time</td><td valign="top" rowspan="" colspan="">Any string representing a time in standard format;                recommended forms are the extended formats from ISO 8601:2000           (hh:mm, hh:mmZ, hh:mm±hh)</td></tr>
+<tr><td valign="top" rowspan="" colspan="">valueTo</td><td valign="top" rowspan="" colspan="">msr</td><td valign="top" rowspan="" colspan="">A real number or integer.</td></tr>
+<tr><td valign="top" rowspan="" colspan="">valueTo</td><td valign="top" rowspan="" colspan="">nbr</td><td valign="top" rowspan="" colspan="">A real number or integer.</td></tr>
+<tr><td valign="top" rowspan="" colspan="">valueTo</td><td valign="top" rowspan="" colspan="">rate</td><td valign="top" rowspan="" colspan="">A real number or integer.</td></tr>
+<tr><td valign="top" rowspan="" colspan="">varSeq</td><td valign="top" rowspan="" colspan="">*readings</td><td valign="top" rowspan="" colspan="">a positive integer</td></tr>
+<tr><td valign="top" rowspan="" colspan="">weights</td><td valign="top" rowspan="" colspan="">alt</td><td valign="top" rowspan="" colspan="">a list of numbers, in the range from 0 to 1 if           wScale is real, and in the range from 0 to 100 if               wScale is perc.</td></tr>
+<tr><td valign="top" rowspan="" colspan="">where</td><td valign="top" rowspan="" colspan="">move</td><td valign="top" rowspan="" colspan=""></td></tr>
+<tr><td valign="top" rowspan="" colspan="">who</td><td valign="top" rowspan="" colspan="">q</td><td valign="top" rowspan="" colspan="">may be an idref</td></tr>
+<tr><td valign="top" rowspan="" colspan="">wit</td><td valign="top" rowspan="" colspan="">*fragmentary</td><td valign="top" rowspan="" colspan="">A space-delimited series of sigla; each sigil should correspond to a witness or witness group and occur as the value of the sigil attribute on a witness element elsewhere in the document.</td></tr>
+<tr><td valign="top" rowspan="" colspan="">wit</td><td valign="top" rowspan="" colspan="">*readings</td><td valign="top" rowspan="" colspan="">A space-delimited series of sigla; each sigil should correspond to a witness or witness group and occur as the value of the sigil attribute on a witness element elsewhere in the document.</td></tr>
+<tr><td valign="top" rowspan="" colspan="">wit</td><td valign="top" rowspan="" colspan="">witDetail</td><td valign="top" rowspan="" colspan="">the identifier of the sigil or sigla.</td></tr>
+<tr><td valign="top" rowspan="" colspan="">zone</td><td valign="top" rowspan="" colspan="">time</td><td valign="top" rowspan="" colspan="">contains a word or phrase such as          GMT or Eastern Standard                   Time which might be helpful in evaluating the                 temporal expression.</td></tr>
+<tr><td valign="top" rowspan="" colspan="">zone</td><td valign="top" rowspan="" colspan="">timeStruct</td><td valign="top" rowspan="" colspan="">contains a word or phrase such as GMT or Eastern Standard  Time defining a time zone.</td></tr>
+     </table></div></p>
+   </div>
+  
+      <div class="teidiv"><h2><a name="back.1_div.1"></a>Appendix A Proposed Solutions for reg of
+        the various Name elements</h2>
+        
+        <p><a name="id81475"></a>The following possibilities may well be applicable to
+        several other content textual attributes, as well, but were
+          initially dreamed up for handling <span class="ident-att">reg</span> of <strong>*names</strong>,
+          <strong>*personPart</strong>, <strong>*placePart</strong>,
+          <strong>*temporalExpr</strong>, <tt>&lt;orgDivn&gt;</tt>, <tt>&lt;orgName&gt;</tt>,
+        <tt>&lt;orgTitle&gt;</tt>, and <tt>&lt;orgType&gt;</tt>.</p>
+        <p>
+          </p><ul><li><a name="id81564"></a>Move <span class="ident-att">reg</span> to be
+              <tt>&lt;reg&gt;</tt>, a child of whatever name element is being
+              used, as a sibling of the PCDATA.</li><li><a name="id81585"></a>Give each of these naming elements two children:
+              <tt>&lt;reg&gt;</tt> and a new element with the semantic
+              ‘unregularized’, which could be named
+              <tt>&lt;literal&gt;</tt>, <tt>&lt;asIs&gt;</tt>, <tt>&lt;diplomatic&gt;</tt>,
+              <tt>&lt;transcribed&gt;</tt> or some such.</li><li><a name="id81641"></a>Move <span class="ident-att">reg</span> to be
+              <tt>&lt;regularized&gt;</tt>, the second child of the new
+              <tt>&lt;choice&gt;</tt> element, where the first child is the
+              <tt>&lt;name&gt;</tt>, <tt>&lt;persName&gt;</tt>, <tt>&lt;placeName&gt;</tt>,
+              whathaveyou.</li><li><a name="id81694"></a>Change <span class="ident-att">reg</span> to be a pointer
+              type attribute (i.e., an XPointer). Provide, as a child of
+              <tt>&lt;encodingDesc&gt;</tt>, a place to put a set of
+              regularized names.</li></ul><p>
+        </p>
+        <p><a name="id81719"></a>The first, although perhaps the simplest to conceive and
+          easiest to execute, is quite distasteful for how it equates
+          something at the PCDATA level with a child element. The
+          second solves this problem, but leaves us with the problem
+          that TEI-aware software will need to know about processing
+          the children of each such naming element. The third solves
+          this problem by using the proposed <tt>&lt;choice&gt;</tt> element
+          as the `wrapper' for all such cases,
+          continuing its semantic for processing — use only one
+          of my children. The fourth removes the problem from the spot
+          of encoding the name in the instance entirely; while it has
+          the disadvantage of the confusion that is inevitable when a
+          level of indirection is added, it has the major advantage of
+          facilitating the use of a single `authority
+            list' of names that is external to the current
+          file.</p>
+      </div>
+    </td></tr></table><hr><div class="footer"><a class="plain" target="_top" href=""></a>
+| <a class="plain" target="_top" href="http://www.tei-c.org/">TEI Home</a>
+| <a class="plain" target="_top" href="http://search.ox.ac.uk/web/related/natproj/tei">Search</a>
+| <a class="plain" target="_top" href="http://www.tei-c.org/Consortium/TEI-contact.html">Feedback</a></div><hr><address> 
+  (revised Wed, 20 Oct 04)   
+ (revised Syd Bauman).
+ <br>Copyright TEI Consortium
+2004<!--
+Generated  using an XSLT version 1.0 stylesheet
+based on http://www.oucs.ox.ac.uk/stylesheets/teihtml.xsl
+processed using libxslt
+on 2004-10-26T11:33:31-04:00--></address></body></html>

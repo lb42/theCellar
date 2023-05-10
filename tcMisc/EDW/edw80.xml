@@ -1,0 +1,177 @@
+<?xml version="1.0"?> 
+<?xml-stylesheet type="text/css" href="../Stylesheets/teixlite.css"?>
+<!--DOCTYPE TEI.2 PUBLIC "-//TEI//DTD TEI Lite XML ver. 1//EN"
+                       "../Lite/DTD/teixlite.dtd" [
+   <!ATTLIST xptr url CDATA #IMPLIED >
+   <!ATTLIST xref url CDATA #IMPLIED >
+   ]-->
+<TEI.2>
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Version numbering of TEI Guidelines</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>Currently unpublished for TEI Council and editors' use.</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>This is the source.</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <head>Use of Version number of TEI Guidelines</head>
+      <p>During its conference call of <date value="2004-01-27">27 Jan
+          04</date> the TEI Council agreed that:
+        <list>
+          <item>conformant documents should specify the version of the
+            TEI to which they conform by means of an attribute named
+            <ident>version</ident></item>
+          <item>its value should follow the pattern
+            <hi>major.minor.micro</hi>, with numeric values. 
+          </item>
+          <item>guidelines on version numbering should be agreed by
+            the editors and documented ASAP</item>
+        </list><bibl><xptr
+            url="../Council/tcm09.html#id2633880"/></bibl> This
+        working paper proposes guidelines for version numbering of the
+        Guidelines.</p>
+      <div type="section">
+        <head>When</head>
+        <p>The version number should be updated whenever a
+          user-visible change is made to the content of the
+          Guidelines, whether that change is due to a change to the
+          source ODD files or to a change in the stylesheets that
+          produce the human-readable Guidelines or schemas.</p>
+        <p>But perhaps more useful than discussing when the version
+          number is updated is to mention when it is not updated. The
+          version number should not be updated when a change is made
+          to the stylesheets that produce the Guidelines or schema
+          from the source ODDs that changes only format, not content.
+          Furthermore changes to Roma or other software that assist
+          TEI users should not cause a change in the version number of
+          the Guidelines.</p>
+        <p>So the following changes should not result in an updated
+          version number:
+          <list>
+            <item>a change to the stylesheets that changed the
+              presentation of attribute values from fixed font to
+              bold;</item>
+            <item>a correction of a typo in the <gi>teiHeader</gi> of
+              the ODD source of the Guidelines.<note type="internal"
+                resp="sb" place="inline" anchored="yes">Lou — do
+                we like this corollary? — sb</note></item>
+            <item>a bug fix to Roma which corrected a problem that
+              caused incorrect DTD fragments to be generated if the
+              additional tag-set for names &amp; dates was
+              selected</item>
+          </list>
+        </p>
+      </div>
+      <div type="section">
+        <head>What</head>
+        <p>The version number will be a <soCalled>dotted
+            triad</soCalled> in the form <q>major.minor.micro</q>.
+          Each of <rs>major</rs>, <rs>minor</rs>, and <rs>micro</rs>
+          is an integer. (I.e., as is common with such version
+          numbering systems, leading zeroes may have to be inserted
+          before string comparison can usefully be performed.)</p>
+        <p>The three components are updated as follows.
+          <list>
+            <item><label>micro</label> gets incremented whenever there
+              is a user-visible content change that:
+              <list>
+                <item>does not alter the set of documents that conform
+                  to the Guidelines (i.e., makes no syntactic change
+                  to the constraints prescribed), <emph>or</emph></item>
+                <item>does not alter the <emph>intended</emph> set of
+                  documents that conform to the Guidelines, but rather
+                  only changes the set that actually do conform by
+                  correcting an error; and</item>
+                <item>does not significantly alter the semantics of
+                  conforming documents, <emph>or</emph></item>
+                <item>alters the semantics of conforming documents by
+                  correcting an error.</item>
+              </list>
+            </item>
+            <item><label>minor</label> gets incremented whenever there
+              is a user-visible change that is not a large enough
+              change to alter the existing chapter numbering, which
+              changes the syntax or semantics of conforming documents
+              other than minor error correction. When <rs>minor</rs>
+              is incremented, <rs>micro</rs> is set to zero.</item>
+            <item><label>major</label> gets incremented for major
+              revisions of the Guidelines. At such increments chapter
+              numbering, syntax specifications, etc. may change in
+              significant ways. <rs>Major</rs> changes are not
+              necessarily backwards compatible. When <rs>major</rs> is
+              incremented both <rs>minor</rs> and <rs>micro</rs> are
+              set to zero.</item>
+          </list>
+        </p>
+      </div>
+      <div type="section">
+        <head>Examples</head>
+        <p><table>
+            <row>
+              <cell>change to Guidelines or stylesheets</cell>
+              <cell>change to version number</cell>
+            </row>
+            <row>
+              <cell>Correct typo in <gi>teiHeader</gi></cell>
+              <cell>none</cell>
+            </row>
+            <row>
+              <cell>Correct typo in <gi>text</gi> of Guidelines</cell>
+              <cell>increment <rs>micro</rs></cell>
+            </row>
+            <row>
+              <cell>Change stylesheet so that section headings are
+                larger in the PDF version and centered in the HTML
+                version</cell>
+              <cell>none</cell>
+            </row>
+            <row>
+              <cell>Fix stylesheet so that the list of elements in the
+                <q>may occur within</q> listings in reference section
+                are sorted by class, not just alphabetically</cell>
+              <cell>increment <rs>micro</rs></cell>
+            </row>
+            <row>
+              <cell>Fix stylesheet so that a newline is inserted
+                between each set of elements in a given class in the
+                <q>may occur within</q> listings in reference section</cell>
+              <cell>none</cell>
+            </row>
+            <row>
+              <cell>Correct the name of the
+                <ident>referencesystem</ident> class to <ident>referenceSystem</ident></cell>
+              <cell>increment <rs>micro</rs></cell>
+            </row>
+            <row>
+              <cell>After much discussion on TEI-L, change the largest
+                <gi>divN</gi> from 7 to 9</cell>
+              <cell>increment <rs>minor</rs></cell>
+            </row>
+            <row>
+              <cell>Add a new section at the end of the feature
+                structure chapter with a few examples of using FSs to
+                encode meta information about dying languages</cell>
+              <cell>increment <rs>minor</rs></cell>
+            </row>
+            <row>
+              <cell>After receiving a complaint that a particular
+              example was offensive, change to a different example</cell>
+              <cell>increment <rs>micro</rs></cell>
+            </row>
+            <row>
+              <cell>Add a new chapter on the encoding of legal documents</cell>
+              <cell>increment <rs>major</rs></cell>
+            </row>
+          </table>
+        </p>
+      </div>
+    </body>
+  </text>
+</TEI.2>

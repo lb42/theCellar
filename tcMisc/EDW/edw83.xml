@@ -1,0 +1,111 @@
+<?xml version="1.0"?> 
+<TEI.2>
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Input for TEI P5: a summary</title>
+      </titleStmt>
+      <publicationStmt>
+        <distributor>TEI</distributor>
+      </publicationStmt>
+      <sourceDesc>
+        <p></p>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc>
+<change><date></date>
+        <respStmt><name>LB</name>
+        <resp>editor</resp></respStmt>
+        <item>Initial draft</item>
+        </change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <front>
+      <titlePage>
+        <docTitle>
+          <titlePart>Input for TEI P5: a summary</titlePart>
+          <titlePart>TEI ED W83</titlePart>
+        </docTitle>
+        <docDate>Sept 2004</docDate>
+      </titlePage>
+    </front>
+    <body>
+      <div type="section">
+	<head>Summary</head><p>This document lists all
+	materials for consideration as changes to TEI P5 submitted to the TEI Council as a result of the general consultancy
+	exercise launched with the announcement of TEI P5 in Spring
+	2004. It includes :
+<list>
+<item>specific (but not always
+	substantiated) feature change requests submitted to the TEI
+	SourceForge site, as of 31 Aug 2004</item>
+<item>drafts for complete or partial new chapters prepared by TEI Work
+Groups or other agencies</item>
+<item>proposals from TEI SIGs or other agencies made in postings to
+TEI discussion lists, etc.</item>
+</list>
+</p>
+<p>The following new material has now been reviewed and approved by
+the TEI Council, and is substantially complete:
+<list type="gloss">
+<label>Character encoding</label>
+<item><xptr url="../Activities/CE/FASC-ch.pdf"/> Replaces <xptr
+url="../P4X/CH.html"/></item>
+<label>Writing System Declaration</label>
+<item><xptr url="../Activities/CE/FASC-wd.pdf"/> Replaces <xptr
+url="../P4X/WD.html"/></item>
+<label>Feature Structures</label>
+<item><xptr url="../Activities/FS/FASC-fs.pdf"/> Replaces <xptr
+url="../P4X/FS.html"/></item>
+<label>Manuscript Description</label>
+<item><xptr url="../Activities/MS/FASC-ms.pdf"/> New material. </item>
+<label>Tagset Description</label>
+<item><xptr url="../Activities/META/FASC-td.pdf"/> Replaces <xptr
+url="../P4X/TD.html"/>. </item>
+</list>
+</p>
+<p>The following topics are slated for discussion at the next
+meeting of the TEI Council, and should be reflected in the drafts available by the time of the
+TEI Members Meeting:
+<list>
+
+<label>Adoption of xml:id and xpointer</label>
+<item>Working paper <xptr url="../Activities/SO/sow02.html"/> refers;
+chapters affected include <xptr url="../P4X/SA.html"/></item>
+
+<label>Introduction of choice mechanism</label>
+<item>Extensively discussed on tei-choice discussion list during
+July (see summary <xptr url="james-summary.txt"/>); revised draft at
+<xptr url="Choice/FASC-coed.pdf"/> replacing <xptr
+url="../P4X/CO.html#COED"/></item>
+
+<label>Changes to bibliographic structures</label>
+<item>Extensively discussed on
+<code>xml-biblio@lists.sourceforge.net</code> during July/August; a
+ <xref url="biblio-proposal.txt">proposal</xref> discussed on
+ TEI-L. Would significantly change <xptr url="../P4X/CO.html#COBI"/>
+</item>
+</list>
+</p>
+<p>The following items are known to be under active consideration by
+the cited person/s but not draft proposals have been received as yet.
+<list>
+  <item>Recommendations for physical bibliography (<xptr
+  url="../Activities/PB/"/></item>
+  <item>Recommendations for encoding of overlapping structures: a
+  revision of  <xptr url="../P4X/NH.html"/>, promised by Andreas
+  Witt et al</item>
+  <item>Revision of <title>Gentle Guide</title> to include discussion
+  of RelaxNG, initial draft with Stuart Brown</item>
+  <item>Revision of ST, with LB/SR</item>
+</list>
+</p>
+<p>The following Feature Requests have been received at Sourceforge:
+
+
+</p>
+      </div>
+    </body>
+  </text>
+</TEI.2>

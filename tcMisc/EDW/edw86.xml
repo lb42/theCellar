@@ -1,0 +1,1644 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI.2>
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>EDW 86: Rationalization of TEI Attributes</title>
+         </titleStmt>
+         <publicationStmt>
+	   <p>TEI Internal working paper</p>
+	 </publicationStmt>
+         <sourceDesc>
+            <p>Drafted using output from listAtts.xml, and overview in
+	    TEI EDW79.</p>
+         </sourceDesc>
+      </fileDesc>
+<revisionDesc><list>
+<item><date>4 Apr 05</date>LB: revised following council meeting</item>
+<item><date>22 Apr 05</date>LB: revised taking in Syd's comments of 20/4</item>
+<item><date>13 Feb 05</date>LB: first P5 draft</item></list>
+</revisionDesc>
+   </teiHeader>
+<text>
+<body>
+<head>Principles for rationalisation of TEI attributes in P5, in particular
+for the disposition of Text-valued attributes
+</head>
+
+
+<p>This note summarizes some general principles about the usage of
+attributes in TEI P5, specifically the need for a specific set of TEI
+datatypes; house rules for the usage of value lists; and the strategy
+to be adopted when transforming text-valued attributes into child
+elements.</p>
+
+<div><head>Introduction</head>
+<p>
+Before P5 there was an unstated principle that the element content
+of a TEI document  should represent all and only the <soCalled>unmarked up</soCalled>
+text: the idea of SGML/XML markup was new, and people needed to be
+reassured that their data was still there intact "underneath" the
+tags. With the introduction of <gi>choice</gi> we have turned our back on
+this rather naïve view of the scope of mark up, rightly or wrongly,
+but irrevocably. It makes sense therefore to see how far we can go
+in the direction of reversing the assumption that anything not
+actually there on the source page should be stuffed away in an
+attribute value.
+</p>
+
+<p>Before P5, the facilities available for constraining legal attribute
+values were limited to what the DTD language would
+support. Moreover, to use those facilities required a degree of
+sophisticated knowledge about how to modify the DTD. In P5, the new
+ODD mechanism makes it very much easier to do the job properly by
+writing a project-specific ODD containing explicitly documented
+valLists from which a project-specific schema can be generated.
+We can afford therefore to simplify and make  more explicit the
+constraints in the released schemas.
+</p>
+</div>
+<div><head>Data types</head>
+<p>It is  proposed that, as far as possible, all attribute values
+should be expressed as predefined  TEI datatypes. Each such
+datatype will be defined in ODD as a <gi>macroSpec</gi> (we may wish
+to review this element name) of type <code>dt</code> and with
+identifier in the form <code>datatype.xxxx</code>. Each 
+TEI datatype maps directly to a set of  XSD datatypes, or to a
+pattern.  The advantages of this additional
+TEI-specific layer is that it reduces the complexity of the system
+(because the TEI dataypes will be deliberately few in number), and
+also allows for us to document them in a way consistent with other
+parts of the scheme. </p>
+<p>The following datatypes are currently defined
+<list type="gloss">
+<label>datatype.certainty</label><item></item>
+<label>datatype.choice</label><item></item>
+<label>datatype.code</label><item></item>
+<label>datatype.key</label><item></item>
+<label>datatype.language</label><item></item>
+<label>datatype.regexp</label><item></item>
+<label>datatype.sex</label><item></item>
+<label>datatype.token</label><item></item>
+<label>datatype.uboolean</label><item></item>
+<label>datatype.urilist</label><item></item>
+<label>datatype.uri</label><item></item>
+</list>
+</p>
+<p>Some, but not all, of these could be generalised as (say)
+<code>tei.pattern</code>. The following list has been proposed:
+<list type="gloss">
+<item><label>tei.target</label> a single URI reference</item>
+<item><label>tei.targets</label> a whitespace delimited list of the foregoing </item> 
+<item><label>tei.token</label> any string of Unicode
+chars excluding whitespace <code>xsd:token { pattern = "^[^ ]+$" }</code> </item>
+<item><label>tei.tokens</label> a whitespace delimited list of the foregoing</item>
+<item><label>tei.numeric</label> any single quantitative indication (int,
+real, perc, etc.) <code>xsd:decimal | xsd:token { pattern = "-?[0-9]+\.?[0-9]*%" }</code></item>
+<item><label>tei.tempexp</label> any indication of time/date</item>
+<item><label>tei.uboolean</label> any indication of truth/falsity/uncertainty</item>
+<item><label>tei.lang</label> a token which corresponds with a
+standard language code (xsd:language)</item>
+</list>
+</p>
+<p>The datatype per se will often not give sufficient
+validation: for example while all possible values for an attribute
+"sex" are likely to be tei.token, they are few in number and
+should be constrained. In such cases a <gi>valList</gi> should be
+used: it would be redundant additionally to define something
+like <code>tei.enumerated</code> meaning <q>one of the tokens defined in
+an associated value list</q>. </p>
+
+<!--
+2. Those for which open or semi open value-lists are proposed should
+be given a datatype of tei.token 
+
+3. Those for which numeric values (of any kind) are proposed should be
+   given a datatype of tei.numeric
+
+4. Those for which semi-boolean  values of any kind are proposedd
+   shoiuld be given a datatyype of tei.uboolean (or some better name)
+
+5. Those for which a temporal expression (of any kind) is proposed
+   should be given a datatype of tei.temporalExpression
+
+-->
+
+</div>
+<div><head>Value lists and the <att>type</att> attribute</head>
+<p>Specification of possible list item values in the current ODDs varies
+greatly. Sometimes suggested values are given in a
+valDesc as "for example".  Where lists of values are supplied, they may be within a
+vallist of type="closed", "open", or "semi", but it's not always clear
+on what basis the distinction is to be made, and it certainly is not
+consistently applied. It relates to conformance which is a
+murky area anyway. Suggested correct practice should be
+<list>
+<item n="a"> sample values should not be given in the valDesc</item>
+<item n="b"> sample values and their meanings should always be given for
+attributes with datatypes tei.token or tei.tokens</item>
+<item n="c"> sample values should always be given in a <gi>valList</gi> with an
+appropriate value for its type attribute. Maybe "semi" should be
+renamed something else. </item>
+<!--<item n="d"> Open question: is a schema TEI-conformant if it disallows some
+of the existing values in a valList? is an application
+TEI-conformant if (when using a modified schema in which one of the
+existing values has been disallowed) it rejects such a value? My
+answers are respectively Yes and No, but I'm not sure.</item>-->
+</list></p>
+
+<p>The <att>type</att> attribute poses this problem in acute form. At present, we have a mixture of
+<list>
+<item>type is explicitly defined on an element but with CDATA content</item>
+<item>type is explicitly defined on an element with a suggested value list</item>
+<item>type is implied by membership of the element in tei.typed</item>
+</list>
+This variety simply reflects the fact that for some elements we have a fairly
+clear idea of what the likely values are, and for others we haven't
+the faintest idea. I <emph>think</emph> that the way to support this is as
+follows:
+<list><item n="a">anything that carries a <att>type</att> attribute is ipso facto a member of
+tei.typed</item>
+<item n="b">this gets you a  <att>type</att> attribute defined as
+tei.token (and also a <att>subtype</att>, if you care to use it)</item>
+<item n="c">elements where we want the Guidelines to make helpful suggestions
+for <att>type</att> values do so by  including a
+redefinition of <att>type</att> with more specific  valLists (typed as open or semi) for those
+elements in  their ODD</item>
+</list>
+</p>
+<p>Note that we have made it impossible for <att>type</att> to be
+tei.tokens, and we have also made it impossible for its values to
+include whitespace. I don't regard either of these as mistakes, though
+they may discombobulate some current TEI users.</p>
+</div>
+<div><head>Real text and where to put it</head>
+
+<p>Attributes which at P4 may genuinely contain  "real text" must become child
+elements. There are two tests for something being "real text":
+<list>
+<item n="a">it uses some specific natural language and would require
+translation (ergo its xml:lang  might be different)</item>
+<item n="b"> it might potentially contain such markup elements as <gi>g</gi> or
+<gi>graphic</gi></item>
+</list>
+</p>
+
+<p>EDW79 lists the attribute/element combinations which satisfy this
+definition and proposes in several cases how to address the requirement that attributes
+become elements. In general, the following
+ procedure is proposed: 
+<list>
+<item>Assuming an element E with textual attributes A1 ... An.</item>
+<item>If E is declared as an empty element, then we simply define its
+content model to permit new elements named A1 to An (some
+rationalisation of names may be possible)</item>
+<item>If E is not empty, we have identified three possible strategies:
+<list>
+<item> declare a new element E', whose
+content model will be the new elements named A1 to An, as in the empty
+element case, followed by the element E.</item>
+<item>redefine
+the content model of  E to be the new elements named A1 to An, as in the empty
+element case, followed by a new element <gi>content</gi> to wrap the
+element content</item>
+<item>provide a wrapper element for all the new elements A1 to An, and
+add it to the content model of E</item>
+</list></item></list>
+</p>
+
+<p>Some specific cases may help illustrate the pros and cons of these
+possible solutions better:
+</p>
+
+
+<p>EDW79 also proposes some exceptions to these general rules:
+<list>
+<item>There are several attributes for which the <gi>choice</gi>
+element seems a more natural solution</item>
+<item>The <att>reg</att> attribute used to provide regularised
+forms of several elements in the names class could be replaced by a
+pointer attribute, or a child element, possibly within a <gi>choice</gi> </item>
+<item>the <gi>index</gi> element needs special treatment.</item>
+<item>several elements in the dictionary module needs revision for
+consistency with practice elsewhere</item>
+</list>
+</p>
+
+
+
+
+</div>
+<div><head>Some open issues</head>
+
+<p>We have two attributes used to indicate some degree of certainty:
+cert (values for which are undefined but probably something like
+high/medium/low) and certainty (which seems to offer more
+precision). Do we need them both? does anyone use them?
+</p>
+
+
+<p>The suggested tei.numeric is a deliberately vague general class,
+intended to encompass a number of more precise datatypes (analogous
+therefore to tei.tempexp). For example, we might want to restrict some
+attribute values to a quantity which might be represented either as a
+real number in the range 0 to 1 or as a percentage; in other cases, it
+might make no sense to have any non-integral value, or to permit a
+negative value. We have nothing analogous to the valList to express
+these constraints on numeric values.
+</p>
+
+<p>We use <att>key</att> for sort keys, and also for database-lookup
+codes which appear variously on elements in the tei.names,
+tei.personPart, and tei.temporalExpr classes; and also for analogous
+purposes on elements in the ODD system itself. There is clearly some
+scope for rationalization here. Should we make it a URI-valued
+attribute and use it also for regularization purposes? </p>
+
+<p>We use <att>resp</att> more or less consistently to indicate a
+ responsibility: this should probably be a tei.token; should it be
+ treated in the same way as <att>key</att>?
+</p>
+
+<p>loc on app is presumably not a canonical ref as we understand the
+phrase elsewhere. The whole question of canonical refs needs further
+thought and I am still not convinced we need them.
+</p>
+
+<p>Several of the attributes defined in  tei.dictionaries need
+revision, e.g. if <att>norm</att> just another sort of  regularization
+shouldn't it be done with <att>reg</att>?
+
+</p>
+</div>
+<div><head>Summary</head>
+<p>The following table lists all text-valued attributes currently defined for P5
+in alphabetical order, indicating for each the intended course of
+action. The usage "xxx list e.g. yyy zzz" indicates that the ODD
+contains a valList of type xxx and gives some sample values. The usage
+"stet" means no change is proposed (i.e., for valListed items, it will
+be tei.token). The usage "child" indicates that the parent element
+gets tei.remarks as its child. Question marks indicate indecision.</p>
+
+          <table rend="rules">
+            <row>
+              <cell>active</cell>
+              <cell>interaction</cell>
+              <cell>semi list e.g. singular, plural...</cell>
+              <cell>stet</cell>
+            </row>
+            <row>
+              <cell>agent</cell>
+              <cell>damage</cell>
+              <cell>any prose description of the agency of damage.</cell>
+              <cell>child</cell>
+            </row>
+            <row>
+              <cell>agent</cell>
+              <cell>gap</cell>
+              <cell>any prose description of the agency of damage.</cell>
+              <cell>child</cell>
+            </row>
+            <row>
+              <cell>agent</cell>
+              <cell>supplied</cell>
+              <cell>any prose description of the agent.</cell>
+              <cell>child</cell>
+            </row>
+            <row>
+              <cell>agent</cell>
+              <cell>unclear</cell>
+              <cell>any prose description of the agent.</cell>
+              <cell>child</cell>
+            </row>
+            <row>
+              <cell>assertedValue</cell>
+              <cell>certainty</cell>
+              <cell>generic identifier, attribute value, location (e.g.
+indicated by a reference to an anchor element or to an
+ptr element), or other appropriate alternative
+value.</cell>
+              <cell>?stet</cell>
+            </row>
+            <row>
+              <cell>baseForm</cell>
+              <cell>m</cell>
+              <cell>a string of characters representing the spelling of the
+morpheme's base form.</cell>
+              <cell>?stet</cell>
+            </row>
+            <row>
+              <cell>baseType</cell>
+              <cell>fsDecl</cell>
+              <cell>any convenient string for use as a name.</cell>
+              <cell>stet</cell>
+            </row>
+            <row>
+              <cell>calendar</cell>
+              <cell>date</cell>
+              <cell>Recommended values include:
+      Gregorian,
+      Julian,
+      Roman,
+      Mosaic,
+      Revolutionary,
+      Islamic.</cell>
+              <cell>add valList</cell>
+            </row>
+            <row>
+              <cell>calendar</cell>
+              <cell>dateRange</cell>
+              <cell>Recommended values include:
+Gregorian,
+Julian,
+Roman,
+Mosaic,
+Revolutionary,
+Islamic.</cell>
+              <cell>add valList</cell>
+            </row>
+            <row>
+              <cell>calendar</cell>
+              <cell>dateStruct</cell>
+              <cell>Recommended values include:
+Gregorian,
+Julian,
+Roman,
+Mosaic,
+Revolutionary,
+Islamic.</cell>
+              <cell>add valList</cell>
+            </row>
+            <row>
+              <cell>cause</cell>
+              <cell>tei.readings</cell>
+              <cell>any word or phrase describing the cause: e.g.
+homeoteleuton,
+homeoarchy,
+paleographic confusion,
+haplography,
+dittography,
+false emendation.</cell>
+              <cell>add valList</cell>
+            </row>
+            <row>
+              <cell>cert</cell>
+              <cell>add</cell>
+              <cell>??</cell>
+              <cell>add valList (low/medium/high/unknown); create class</cell>
+            </row>
+            <row>
+              <cell>cert</cell>
+              <cell>addSpan</cell>
+              <cell>??</cell>
+              <cell>add valList (low/medium/high/unknown); create class</cell>
+            </row>
+            <row>
+              <cell>cert</cell>
+              <cell>corr</cell>
+              <cell>??</cell>
+              <cell>add valList (low/medium/high/unknown); create class</cell>
+            </row>
+            <row>
+              <cell>cert</cell>
+              <cell>del</cell>
+              <cell>??</cell>
+              <cell>add valList (low/medium/high/unknown); create class</cell>
+            </row>
+            <row>
+              <cell>cert</cell>
+              <cell>delSpan</cell>
+              <cell>??</cell>
+              <cell>add valList (low/medium/high/unknown); create class</cell>
+            </row>
+            <row>
+              <cell>cert</cell>
+              <cell>expan</cell>
+              <cell>??</cell>
+              <cell>add valList (low/medium/high/unknown); create class</cell>
+            </row>
+            <row>
+              <cell>cert</cell>
+              <cell>restore</cell>
+              <cell>??</cell>
+              <cell>add valList (low/medium/high/unknown); create class</cell>
+            </row>
+            <row>
+              <cell>cert</cell>
+              <cell>unclear</cell>
+              <cell>??</cell>
+              <cell>add valList (low/medium/high/unknown); create
+	      class?</cell>
+            </row>
+            <row>
+              <cell>certainty</cell>
+              <cell>date</cell>
+              <cell>Any appropriate value, e.g.
+      ca.,
+      approx,
+      after,
+      before.</cell>
+              <cell>? treat as cert? ?stet</cell>
+            </row>
+            <row>
+              <cell>certainty</cell>
+              <cell>tei.datable</cell>
+              <cell>open list e.g. high, medium...</cell>
+              <cell>? use cert?stet</cell>
+            </row>
+            <row>
+              <cell>character</cell>
+              <cell>hand</cell>
+              <cell>shaky, thick, regular</cell>
+              <cell>make valList</cell>
+            </row>
+            <row>
+              <cell>character</cell>
+              <cell>handShift</cell>
+              <cell>shaky, thick, regular</cell>
+              <cell>make valList</cell>
+            </row>
+            <row>
+              <cell>creator</cell>
+              <cell>teiHeader</cell>
+              <cell>The name or initials of the person or institution
+     responsible for creating this TEI header.</cell>
+              <cell>treat as resp</cell>
+            </row>
+            <row>
+              <cell>cref</cell>
+              <cell>gloss</cell>
+              <cell>the result of applying the algorithm for the resolution
+      of canonical references (described in section ) should be a valid URI reference that resolves
+      to a term element</cell>
+              <cell>? URI</cell>
+            </row>
+            <row>
+              <cell>cref</cell>
+              <cell>ptr</cell>
+              <cell>the result of applying the algorithm for the resolution
+      of canonical references (described in section ) should be a valid URI reference to the
+      intended target</cell>
+              <cell>? URI</cell>
+            </row>
+            <row>
+              <cell>cref</cell>
+              <cell>ref</cell>
+              <cell>the result of applying the algorithm for the resolution
+      of canonical references (described in section ) should be a valid URI reference to the
+      intended target</cell>
+              <cell>? URI</cell>
+            </row>
+            <row>
+              <cell>cref</cell>
+              <cell>term</cell>
+              <cell>the result of applying the algorithm for the resolution
+      of canonical references (described in section ) should be a valid URI reference that resolves
+      to a gloss element</cell>
+              <cell>? URI</cell>
+            </row>
+            <row>
+              <cell>degree</cell>
+              <cell>damage</cell>
+              <cell>an alphanumeric categorization of the degree of damage, as
+40%.</cell>
+              <cell>tei.numeric (can be real or perc)</cell>
+            </row>
+            <row>
+              <cell>delim</cell>
+              <cell>state</cell>
+              <cell>If a single space is used it is interpreted as
+          whitespace.</cell>
+              <cell>tei.char (? or can it be a token?)</cell>
+            </row>
+            <row>
+              <cell>desc</cell>
+              <cell>certainty</cell>
+              <cell>a prose description of how and why the markup is
+uncertain.</cell>
+              <cell>child</cell>
+            </row>
+            <row>
+              <cell>desc</cell>
+              <cell>gap</cell>
+              <cell>a prose description of the material omitted.</cell>
+              <cell>child</cell>
+            </row>
+            <row>
+              <cell>desc</cell>
+              <cell>join</cell>
+              <cell>any string of characters.</cell>
+              <cell>child</cell>
+            </row>
+            <row>
+              <cell>desc</cell>
+              <cell>joinGrp</cell>
+              <cell>any string of characters.</cell>
+              <cell>child</cell>
+            </row>
+            <row>
+              <cell>desc</cell>
+              <cell>respons</cell>
+              <cell>any string of characters, typically a phrase or sentence in a
+natural language.</cell>
+              <cell>child</cell>
+            </row>
+            <row>
+              <cell>desc</cell>
+              <cell>restore</cell>
+              <cell>Any word or phrase, such as stet or strike-down.</cell>
+              <cell>child</cell>
+            </row>
+            <row>
+              <cell>ed</cell>
+              <cell>cb</cell>
+              <cell>Any string of characters; usually a siglum conventionally used
+for the edition.</cell>
+              <cell>tei.token (cf resp?)</cell>
+            </row>
+            <row>
+              <cell>ed</cell>
+              <cell>lb</cell>
+              <cell>Any string of characters; usually a siglum conventionally used
+for the edition.</cell>
+              <cell>tei.token (cf resp?)</cell>
+            </row>
+            <row>
+              <cell>ed</cell>
+              <cell>milestone</cell>
+              <cell>Any string of characters; usually a siglum conventionally used
+for the edition.</cell>
+              <cell>tei.token (cf resp?)</cell>
+            </row>
+            <row>
+              <cell>ed</cell>
+              <cell>pb</cell>
+              <cell>Any string of characters; usually a siglum conventionally used
+for the edition.</cell>
+              <cell>tei.token (cf resp?)</cell>
+            </row>
+            <row>
+              <cell>ed</cell>
+              <cell>state</cell>
+              <cell>Any string of characters; usually a siglum conventionally used
+for the edition.</cell>
+              <cell>tei.token (cf resp?)</cell>
+            </row>
+            <row>
+              <cell>enjamb</cell>
+              <cell>tei.enjamb</cell>
+              <cell>open list e.g. no, yes...</cell>
+              <cell>tei.uboolean</cell>
+            </row>
+            <row>
+              <cell>evidence</cell>
+              <cell>tei.datable</cell>
+              <cell>open list e.g. internal, external...</cell>
+              <cell>make valList</cell>
+            </row>
+            <row>
+              <cell>exact</cell>
+              <cell>dateStruct</cell>
+              <cell>Any appropriate value, e.g.
+ca.,
+approx,
+after,
+before.</cell>
+              <cell>? treat as cert? ?stet</cell>
+            </row>
+            <row>
+              <cell>expand</cell>
+              <cell>tei.dictionaries</cell>
+              <cell>any string of characters</cell>
+              <cell>?stet child/choice?</cell>
+            </row>
+            <row>
+              <cell>extent</cell>
+              <cell>damage</cell>
+              <cell>any measurement phrase, e.g. 25 letters, 2 &#xD7; 3
+inches.</cell>
+              <cell>?stet: child measure?</cell>
+            </row>
+            <row>
+              <cell>extent</cell>
+              <cell>gap</cell>
+              <cell>any string of characters</cell>
+              <cell>?stet: child measure?</cell>
+            </row>
+            <row>
+              <cell>extent</cell>
+              <cell>orth</cell>
+              <cell>open list e.g. full, pref...</cell>
+              <cell>?stet needs new name?</cell>
+            </row>
+            <row>
+              <cell>extent</cell>
+              <cell>pron</cell>
+              <cell>open list e.g. full, pref...</cell>
+              <cell>?stet</cell>
+            </row>
+            <row>
+              <cell>extent</cell>
+              <cell>space</cell>
+              <cell>any measured quantity, e.g. 10 letters or 4
+lines.</cell>
+              <cell>?stet: child measure?</cell>
+            </row>
+            <row>
+              <cell>function</cell>
+              <cell>tei.seg</cell>
+              <cell>For a cl, may take values such as
+coordinate, subject, adverbial etc. For a phr, such values as
+subject, predicate etc. may be more appropriate.</cell>
+              <cell>tei.token ?valList</cell>
+            </row>
+            <row>
+              <cell>gi</cell>
+              <cell>tagUsage</cell>
+              <cell>the name of an element from the current dtd</cell>
+              <cell>tei.token</cell>
+            </row>
+            <row>
+              <cell>given</cell>
+              <cell>certainty</cell>
+              <cell>a characterization of the conditions which are assumed
+in the assignment of a degree of confidence.  This may be in
+prose.</cell>
+              <cell>child</cell>
+            </row>
+            <row>
+              <cell>hand</cell>
+              <cell>hand</cell>
+              <cell>??</cell>
+              <cell>?tei token? should be ident?</cell>
+            </row>
+            <row>
+              <cell>height</cell>
+              <cell>graphic</cell>
+              <cell>??</cell>
+              <cell>tei.numeric? or more specific?</cell>
+            </row>
+            <row>
+              <cell>included</cell>
+              <cell>witness</cell>
+              <cell>a blank-delimited list of sigla.</cell>
+              <cell>tei.tokens</cell>
+            </row>
+            <row>
+              <cell>indexName</cell>
+              <cell>index</cell>
+              <cell>an application-specific name, consisting of Unicode
+      characters only.</cell>
+              <cell>tei.token</cell>
+            </row>
+            <row>
+              <cell>ink</cell>
+              <cell>hand</cell>
+              <cell>??</cell>
+              <cell>tei.token</cell>
+            </row>
+            <row>
+              <cell>ink</cell>
+              <cell>handShift</cell>
+              <cell>??</cell>
+              <cell>tei.token</cell>
+            </row>
+            <row>
+              <cell>interval</cell>
+              <cell>timeline</cell>
+              <cell>-1 or any nonnegative number</cell>
+              <cell>tei.numeric</cell>
+            </row>
+            <row>
+              <cell>interval</cell>
+              <cell>when</cell>
+              <cell>-1 or any positive number</cell>
+              <cell>tei.numeric</cell>
+            </row>
+            <row>
+              <cell>key</cell>
+              <cell>orgName</cell>
+              <cell>any string</cell>
+              <cell>tei.token</cell>
+            </row>
+            <row>
+              <cell>key</cell>
+              <cell>tei.entries</cell>
+              <cell>any sequence of characters which, when sorted with the other values, will
+                produced the desired order; specifics of key construction are application-dependent.</cell>
+              <cell>tei.token</cell>
+            </row>
+            <row>
+              <cell>key</cell>
+              <cell>tei.names</cell>
+              <cell>any string</cell>
+              <cell>tei.token</cell>
+            </row>
+            <row>
+              <cell>key</cell>
+              <cell>tei.personPart</cell>
+              <cell>any string</cell>
+              <cell>tei.token</cell>
+            </row>
+            <row>
+              <cell>key</cell>
+              <cell>tei.temporalExpr</cell>
+              <cell>any string</cell>
+              <cell>?tei.token</cell>
+            </row>
+            <row>
+              <cell>label</cell>
+              <cell>arc</cell>
+              <cell>A character string.</cell>
+              <cell>child</cell>
+            </row>
+            <row>
+              <cell>label</cell>
+              <cell>eLeaf</cell>
+              <cell>A character string.</cell>
+              <cell>child</cell>
+            </row>
+            <row>
+              <cell>label</cell>
+              <cell>eTree</cell>
+              <cell>A character string.</cell>
+              <cell>child</cell>
+            </row>
+            <row>
+              <cell>label</cell>
+              <cell>graph</cell>
+              <cell>A character string.</cell>
+              <cell>child</cell>
+            </row>
+            <row>
+              <cell>label</cell>
+              <cell>iNode</cell>
+              <cell>A character string.</cell>
+              <cell>child</cell>
+            </row>
+            <row>
+              <cell>label</cell>
+              <cell>leaf</cell>
+              <cell>A character string.</cell>
+              <cell>child</cell>
+            </row>
+            <row>
+              <cell>label</cell>
+              <cell>node</cell>
+              <cell>A character string.</cell>
+              <cell>child</cell>
+            </row>
+            <row>
+              <cell>label</cell>
+              <cell>root</cell>
+              <cell>A character string.</cell>
+              <cell>child</cell>
+            </row>
+            <row>
+              <cell>label</cell>
+              <cell>tree</cell>
+              <cell>A character string.</cell>
+              <cell>child</cell>
+            </row>
+            <row>
+              <cell>label</cell>
+              <cell>triangle</cell>
+              <cell>A character string.</cell>
+              <cell>child</cell>
+            </row>
+            <row>
+              <cell>label2</cell>
+              <cell>arc</cell>
+              <cell>A character string.</cell>
+              <cell>child</cell>
+            </row>
+            <row>
+              <cell>label2</cell>
+              <cell>node</cell>
+              <cell>A character string.</cell>
+              <cell>child</cell>
+            </row>
+            <row>
+              <cell>lemma</cell>
+              <cell>w</cell>
+              <cell>a string of characters representing the spelling of the word's
+dictionary entry form.</cell>
+              <cell>tei.token</cell>
+            </row>
+            <row>
+              <cell>level</cell>
+              <cell>sense</cell>
+              <cell>any string of digits</cell>
+              <cell>tei.numeric</cell>
+            </row>
+            <row>
+              <cell>loc</cell>
+              <cell>app</cell>
+              <cell>Any string containing a canonical reference for the passage
+to which the variation applies.</cell>
+              <cell>stet</cell>
+            </row>
+            <row>
+              <cell>locus</cell>
+              <cell>certainty</cell>
+              <cell>semi list e.g. gi, startloc...</cell>
+              <cell>valList</cell>
+            </row>
+            <row>
+              <cell>locus</cell>
+              <cell>respons</cell>
+              <cell>semi list e.g. gi, location...</cell>
+              <cell>valList</cell>
+            </row>
+            <row>
+              <cell>mainLang</cell>
+              <cell>hand</cell>
+              <cell>Latin, English</cell>
+              <cell>valList</cell>
+            </row>
+            <row>
+              <cell>mode</cell>
+              <cell>tei.identifiable</cell>
+              <cell> list e.g. add, delete...</cell>
+              <cell>valList</cell>
+            </row>
+            <row>
+              <cell>n</cell>
+              <cell>tei.global</cell>
+              <cell>any string of characters; often, but not necessarily,
+      numeric.</cell>
+              <cell>tei.token</cell>
+            </row>
+            <row>
+              <cell>name</cell>
+              <cell>equiv</cell>
+              <cell>any name</cell>
+              <cell>tei.token</cell>
+            </row>
+            <row>
+              <cell>namespace</cell>
+              <cell>schemaSpec</cell>
+              <cell>??</cell>
+              <cell>tei.tokens</cell>
+            </row>
+            <row>
+              <cell>norm</cell>
+              <cell>tei.dictionaries</cell>
+              <cell>any string of characters</cell>
+              <cell>?tei.token</cell>
+            </row>
+            <row>
+              <cell>ns</cell>
+              <cell>elementSpec</cell>
+              <cell>??</cell>
+              <cell>tei.tokens</cell>
+            </row>
+            <row>
+              <cell>ord</cell>
+              <cell>tree</cell>
+              <cell>closed list e.g. true, partial...</cell>
+              <cell>valList</cell>
+            </row>
+            <row>
+              <cell>orig</cell>
+              <cell>tei.dictionaries</cell>
+              <cell>any string of characters</cell>
+              <cell>child!</cell>
+            </row>
+            <row>
+              <cell>passive</cell>
+              <cell>interaction</cell>
+              <cell>semi list e.g. self, single...</cell>
+              <cell>valList</cell>
+            </row>
+            <row>
+              <cell>pat</cell>
+              <cell>fragmentPattern</cell>
+              <cell>Should be the skeleton of a relative or absolute URI,
+      with references to groups in the re.</cell>
+              <cell>stet</cell>
+            </row>
+            <row>
+              <cell>place</cell>
+              <cell>add</cell>
+              <cell>semi list e.g. inline, supralinear...</cell>
+              <cell>stet</cell>
+            </row>
+            <row>
+              <cell>place</cell>
+              <cell>addSpan</cell>
+              <cell>semi list e.g. inline, supralinear...</cell>
+              <cell>stet</cell>
+            </row>
+            <row>
+              <cell>place</cell>
+              <cell>fw</cell>
+              <cell>semi list e.g. top, bot...</cell>
+              <cell>stet</cell>
+            </row>
+            <row>
+              <cell>place</cell>
+              <cell>note</cell>
+              <cell>open list e.g. foot, end...</cell>
+              <cell>stet</cell>
+            </row>
+            <row>
+              <cell>place</cell>
+              <cell>witDetail</cell>
+              <cell>As for the note element.</cell>
+              <cell>?stet</cell>
+            </row>
+            <row>
+              <cell>reason</cell>
+              <cell>gap</cell>
+              <cell>any short indication of the reason for the omission.</cell>
+              <cell>child</cell>
+            </row>
+            <row>
+              <cell>reason</cell>
+              <cell>supplied</cell>
+              <cell>any phrase describing the difficulty, e.g.
+overbinding, faded ink, lost folio, omitted
+in original.</cell>
+              <cell>child</cell>
+            </row>
+            <row>
+              <cell>reason</cell>
+              <cell>unclear</cell>
+              <cell>any phrase describing the difficulty, e.g. faded,
+ambient noise, passing truck, ill formed,
+eccentric ductus.</cell>
+              <cell>child</cell>
+            </row>
+            <row>
+              <cell>reg</cell>
+              <cell>orgDivn</cell>
+              <cell>Any string of characters.</cell>
+              <cell>child</cell>
+            </row>
+            <row>
+              <cell>reg</cell>
+              <cell>orgName</cell>
+              <cell>Any string of characters.</cell>
+              <cell>child</cell>
+            </row>
+            <row>
+              <cell>reg</cell>
+              <cell>orgTitle</cell>
+              <cell>Any string of characters.</cell>
+              <cell>child</cell>
+            </row>
+            <row>
+              <cell>reg</cell>
+              <cell>orgType</cell>
+              <cell>Any string of characters.</cell>
+              <cell>child</cell>
+            </row>
+            <row>
+              <cell>reg</cell>
+              <cell>tei.names</cell>
+              <cell>Any string of characters.</cell>
+              <cell>child</cell>
+            </row>
+            <row>
+              <cell>reg</cell>
+              <cell>tei.personPart</cell>
+              <cell>Any string of characters.</cell>
+              <cell>child</cell>
+            </row>
+            <row>
+              <cell>reg</cell>
+              <cell>tei.temporalExpr</cell>
+              <cell>Any string of characters.</cell>
+              <cell>child</cell>
+            </row>
+            <row>
+              <cell>resp</cell>
+              <cell>corr</cell>
+              <cell>must be one of the identifiers declared in the document
+header, associated with a person asserted as responsible for some
+aspect of the text's creation, transcription, editing, or encoding
+(see chapter ).</cell>
+              <cell>tei.token</cell>
+            </row>
+            <row>
+              <cell>resp</cell>
+              <cell>note</cell>
+              <cell>open list e.g. auth, ed...</cell>
+              <cell>stet</cell>
+            </row>
+            <row>
+              <cell>resp</cell>
+              <cell>respons</cell>
+              <cell>any string of characters, typically the initials of an
+individual, the acronym of an agency, the name of a computer program,
+etc.</cell>
+              <cell>tei.token</cell>
+            </row>
+            <row>
+              <cell>resp</cell>
+              <cell>tei.interpret</cell>
+              <cell>Any string of characters, such as the initials of the encoder.</cell>
+              <cell>tei.token</cell>
+            </row>
+            <row>
+              <cell>resp</cell>
+              <cell>tei.readings</cell>
+              <cell>must be one of the identifiers declared in the document
+header, associated with a person asserted as responsible for some
+aspect of the text's creation, transcription, editing, or encoding
+(see chapter ).</cell>
+              <cell>tei.token</cell>
+            </row>
+            <row>
+              <cell>result</cell>
+              <cell>join</cell>
+              <cell>The generic identifier of an element in the current DTD.</cell>
+              <cell>tei.token</cell>
+            </row>
+            <row>
+              <cell>role</cell>
+              <cell>cell</cell>
+              <cell>semi list e.g. label, data...</cell>
+              <cell>stet</cell>
+            </row>
+            <row>
+              <cell>role</cell>
+              <cell>row</cell>
+              <cell>semi list e.g. label, data...</cell>
+              <cell>stet</cell>
+            </row>
+            <row>
+              <cell>scale</cell>
+              <cell>graphic</cell>
+              <cell>??</cell>
+              <cell>tei.numeric</cell>
+            </row>
+            <row>
+              <cell>scheme</cell>
+              <cell>att</cell>
+              <cell>open list e.g. TEI, DBK...</cell>
+              <cell>stet</cell>
+            </row>
+            <row>
+              <cell>scheme</cell>
+              <cell>gi</cell>
+              <cell>open list e.g. TEI, DBK...</cell>
+              <cell>stet</cell>
+            </row>
+            <row>
+              <cell>scheme</cell>
+              <cell>tag</cell>
+              <cell>closed list e.g. TEI, DBK...</cell>
+              <cell>stet</cell>
+            </row>
+            <row>
+              <cell>scope</cell>
+              <cell>tei.measured</cell>
+              <cell>open list e.g. all, most...</cell>
+              <cell>stet</cell>
+            </row>
+            <row>
+              <cell>scribe</cell>
+              <cell>hand</cell>
+              <cell>Any name, such as tremulous
+ hand, Hand B, Hoccleve,
+ used to identify a scribe</cell>
+              <cell>tei.token? child?</cell>
+            </row>
+            <row>
+              <cell>size</cell>
+              <cell>personGrp</cell>
+              <cell>may contain a number and an indication of accuracy, e.g. approx 200</cell>
+              <cell>tei.numeric</cell>
+            </row>
+            <row>
+              <cell>source</cell>
+              <cell>normalization</cell>
+              <cell>Should really be a bibliographic reference of some kind
+   </cell>
+              <cell>?stet</cell>
+            </row>
+            <row>
+              <cell>source</cell>
+              <cell>supplied</cell>
+              <cell>any string of characters identifying the source of the
+supplied text.  This might be the sigil for a manuscript, or a
+particular edition, or the transcriber or editor's own initials,
+indicating it as their conjecture.</cell>
+              <cell>stet</cell>
+            </row>
+            <row>
+              <cell>split</cell>
+              <cell>tei.dictionaries</cell>
+              <cell>any string of characters</cell>
+              <cell>??stet</cell>
+            </row>
+            <row>
+              <cell>status</cell>
+              <cell>del</cell>
+              <cell>any description of flaws in the marking of a deletion, e.g.
+excess left, excess right, short left, short
+right.</cell>
+              <cell>valList as per delSpan</cell>
+            </row>
+            <row>
+              <cell>status</cell>
+              <cell>delSpan</cell>
+              <cell>open list e.g. excessStart, excessEnd...</cell>
+              <cell>stet</cell>
+            </row>
+            <row>
+              <cell>style</cell>
+              <cell>hand</cell>
+              <cell>Any
+descriptive name such as secretary,
+copperplate, Chancery, Italian, etc.</cell>
+              <cell>valList</cell>
+            </row>
+            <row>
+              <cell>style</cell>
+              <cell>handShift</cell>
+              <cell>Any
+descriptive name such as secretary,
+copperplate, Chancery, Italian, etc.</cell>
+              <cell>valList</cell>
+            </row>
+            <row>
+              <cell>subtype</cell>
+              <cell>seg</cell>
+              <cell>any string of characters.</cell>
+              <cell>tei.token</cell>
+            </row>
+            <row>
+              <cell>subtype</cell>
+              <cell>tei.typed</cell>
+              <cell>any string of characters.</cell>
+              <cell>tei.token</cell>
+            </row>
+            <row>
+              <cell>type</cell>
+              <cell>abbr</cell>
+              <cell>open list e.g. suspension, contraction...</cell>
+              <cell>valList? or add to tei.typed ?</cell>
+            </row>
+            <row>
+              <cell>type</cell>
+              <cell>addSpan</cell>
+              <cell>Any string of characters.</cell>
+              <cell>add to tei.typed</cell>
+            </row>
+            <row>
+              <cell>type</cell>
+              <cell>app</cell>
+              <cell>Any convenient descriptive word or phrase, describing the
+extent of the variation (e.g.  word, phrase,
+punctuation, etc.) its text-critical significance (e.g.
+significant, accidental, unclear), or the nature
+of the variation or the principles required to understand it (e.g.
+lectio difficilior, usus auctoris, etc.)</cell>
+              <cell>adsd to tei.typed</cell>
+            </row>
+            <row>
+              <cell>type</cell>
+              <cell>biblScope</cell>
+              <cell>semi list e.g. volume, issue...</cell>
+              <cell>stet ?or add to tei.typed</cell>
+            </row>
+            <row>
+              <cell>type</cell>
+              <cell>camera</cell>
+              <cell>any string of characters</cell>
+              <cell>add to tei.typed</cell>
+            </row>
+            <row>
+              <cell>type</cell>
+              <cell>code</cell>
+              <cell>??</cell>
+              <cell>add to tei.typed</cell>
+            </row>
+            <row>
+              <cell>type</cell>
+              <cell>colloc</cell>
+              <cell>any string of characters, e.g. preposition.</cell>
+              <cell>add to tei.typed</cell>
+            </row>
+            <row>
+              <cell>type</cell>
+              <cell>damage</cell>
+              <cell>any phrase describing the damage, e.g. faded,
+overbound, water, charred with loss of paper.</cell>
+              <cell>add to tei.typed; clarify that this is not desc</cell>
+            </row>
+            <row>
+              <cell>type</cell>
+              <cell>del</cell>
+              <cell>any string identifying the class of deletion.</cell>
+              <cell>add to tei.typed</cell>
+            </row>
+            <row>
+              <cell>type</cell>
+              <cell>delSpan</cell>
+              <cell>open list e.g. overstrike, erasure...</cell>
+              <cell>add to tei.typed</cell>
+            </row>
+            <row>
+              <cell>type</cell>
+              <cell>derivation</cell>
+              <cell>open list e.g. original, revision...</cell>
+              <cell>stet</cell>
+            </row>
+            <row>
+              <cell>type</cell>
+              <cell>divGen</cell>
+              <cell>open list e.g. index, toc...</cell>
+              <cell>stet? or add to tei.typed</cell>
+            </row>
+            <row>
+              <cell>type</cell>
+              <cell>domain</cell>
+              <cell>open list e.g. art, domestic...</cell>
+              <cell>?stet or add to tei.typed?</cell>
+            </row>
+            <row>
+              <cell>type</cell>
+              <cell>forest</cell>
+              <cell>A character string.</cell>
+              <cell>add to tei.typed</cell>
+            </row>
+            <row>
+              <cell>type</cell>
+              <cell>forestGrp</cell>
+              <cell>A character string.</cell>
+              <cell>add to tei.typed</cell>
+            </row>
+            <row>
+              <cell>type</cell>
+              <cell>form</cell>
+              <cell>semi list e.g. simple, lemma...</cell>
+              <cell>?stet or add to tei.typed?</cell>
+            </row>
+            <row>
+              <cell>type</cell>
+              <cell>fsDecl</cell>
+              <cell>any convenient string of characters.</cell>
+              <cell>add to tei.typed stet</cell>
+            </row>
+            <row>
+              <cell>type</cell>
+              <cell>fsdDecl</cell>
+              <cell>any string of characters.</cell>
+              <cell>add to tei.typed</cell>
+            </row>
+            <row>
+              <cell>type</cell>
+              <cell>fw</cell>
+              <cell>open list e.g. header, footer...</cell>
+              <cell>stet</cell>
+            </row>
+            <row>
+              <cell>type</cell>
+              <cell>gram</cell>
+              <cell>open list e.g. pos, gen...</cell>
+              <cell>stet</cell>
+            </row>
+            <row>
+              <cell>type</cell>
+              <cell>graph</cell>
+              <cell>semi list e.g. undirected, directed...</cell>
+              <cell>stet</cell>
+            </row>
+            <row>
+              <cell>type</cell>
+              <cell>idno</cell>
+              <cell>A name or abbreviation indicating what type of identifying
+         number is given (e.g. ISBN, LCCN).</cell>
+              <cell>stet</cell>
+            </row>
+            <row>
+              <cell>type</cell>
+              <cell>itype</cell>
+              <cell>open list e.g. abbrev, verbTable...</cell>
+              <cell>stet</cell>
+            </row>
+            <row>
+              <cell>type</cell>
+              <cell>lbl</cell>
+              <cell>any string of characters, such as usage,
+                    sense restriction, etc.</cell>
+              <cell>stet</cell>
+            </row>
+            <row>
+              <cell>type</cell>
+              <cell>list</cell>
+              <cell>semi list e.g. ordered, bulleted...</cell>
+              <cell>stet</cell>
+            </row>
+            <row>
+              <cell>type</cell>
+              <cell>measure</cell>
+              <cell>open list e.g. weight, mass...</cell>
+              <cell>stet</cell>
+            </row>
+            <row>
+              <cell>type</cell>
+              <cell>move</cell>
+              <cell>semi list e.g. entrance, exit...</cell>
+              <cell>stet</cell>
+            </row>
+            <row>
+              <cell>type</cell>
+              <cell>name</cell>
+              <cell>Values such as person, place, institution, product, acronym.</cell>
+              <cell>stet</cell>
+            </row>
+            <row>
+              <cell>type</cell>
+              <cell>node</cell>
+              <cell>semi list e.g. initial, final...</cell>
+              <cell>stet</cell>
+            </row>
+            <row>
+              <cell>type</cell>
+              <cell>num</cell>
+              <cell>semi list e.g. cardinal, ordinal...</cell>
+              <cell>stet</cell>
+            </row>
+            <row>
+              <cell>type</cell>
+              <cell>oRef</cell>
+              <cell>open list e.g. cap, nohyph...</cell>
+              <cell>stet</cell>
+            </row>
+            <row>
+              <cell>type</cell>
+              <cell>oVar</cell>
+              <cell>open list e.g. pt, pp...</cell>
+              <cell>stet</cell>
+            </row>
+            <row>
+              <cell>type</cell>
+              <cell>orgDivn</cell>
+              <cell>any string of characters</cell>
+              <cell>stet</cell>
+            </row>
+            <row>
+              <cell>type</cell>
+              <cell>orgName</cell>
+              <cell></cell>
+              <cell>stet</cell>
+            </row>
+            <row>
+              <cell>type</cell>
+              <cell>orgTitle</cell>
+              <cell>any string of characters</cell>
+              <cell>stet</cell>
+            </row>
+            <row>
+              <cell>type</cell>
+              <cell>orgType</cell>
+              <cell>any string of characters</cell>
+              <cell>stet</cell>
+            </row>
+            <row>
+              <cell>type</cell>
+              <cell>persName</cell>
+              <cell>Any string of characters.</cell>
+              <cell>stet</cell>
+            </row>
+            <row>
+              <cell>type</cell>
+              <cell>purpose</cell>
+              <cell>semi list e.g. persuade, express...</cell>
+              <cell>stet</cell>
+            </row>
+            <row>
+              <cell>type</cell>
+              <cell>re</cell>
+              <cell>any string of characters</cell>
+              <cell>stet</cell>
+            </row>
+            <row>
+              <cell>type</cell>
+              <cell>relation</cell>
+              <cell>semi list e.g. social, personal...</cell>
+              <cell>stet</cell>
+            </row>
+            <row>
+              <cell>type</cell>
+              <cell>restore</cell>
+              <cell></cell>
+              <cell>stet</cell>
+            </row>
+            <row>
+              <cell>type</cell>
+              <cell>rs</cell>
+              <cell>Any string of characters.</cell>
+              <cell>stet</cell>
+            </row>
+            <row>
+              <cell>type</cell>
+              <cell>schemaSpec</cell>
+              <cell>??</cell>
+              <cell>stet</cell>
+            </row>
+            <row>
+              <cell>type</cell>
+              <cell>sound</cell>
+              <cell>any string of characters</cell>
+              <cell>stet</cell>
+            </row>
+            <row>
+              <cell>type</cell>
+              <cell>stage</cell>
+              <cell>semi list e.g. setting, entrance...</cell>
+              <cell>stet</cell>
+            </row>
+            <row>
+              <cell>type</cell>
+              <cell>tei.entries</cell>
+              <cell>semi list e.g. main, hom...</cell>
+              <cell>stet</cell>
+            </row>
+            <row>
+              <cell>type</cell>
+              <cell>tei.interpret</cell>
+              <cell>open list e.g. image, character...</cell>
+              <cell>stet</cell>
+            </row>
+            <row>
+              <cell>type</cell>
+              <cell>tei.pointer</cell>
+              <cell>The type should indicate the intended function of the
+      pointer, or the rhetorical relationship between its source and
+      target.</cell>
+              <cell>stet</cell>
+            </row>
+            <row>
+              <cell>type</cell>
+              <cell>tei.readings</cell>
+              <cell>open list e.g. substantive, orthographic...</cell>
+              <cell>stet</cell>
+            </row>
+            <row>
+              <cell>type</cell>
+              <cell>tei.temporalExpr</cell>
+              <cell>any string of characters. The range of permissible values
+is application
+ dependent.</cell>
+              <cell>stet</cell>
+            </row>
+            <row>
+              <cell>type</cell>
+              <cell>tei.typed</cell>
+              <cell>any string of characters. The range of permissible values
+is application dependent.</cell>
+              <cell>stet</cell>
+            </row>
+            <row>
+              <cell>type</cell>
+              <cell>teiHeader</cell>
+              <cell>open list e.g. text, corpus...</cell>
+              <cell>stet</cell>
+            </row>
+            <row>
+              <cell>type</cell>
+              <cell>title</cell>
+              <cell>open list e.g. main, subordinate...</cell>
+              <cell>stet</cell>
+            </row>
+            <row>
+              <cell>type</cell>
+              <cell>titlePage</cell>
+              <cell>Any string, e.g. full, half, Series, etc.</cell>
+              <cell>stet</cell>
+            </row>
+            <row>
+              <cell>type</cell>
+              <cell>titlePart</cell>
+              <cell>semi list e.g. main, sub...</cell>
+              <cell>stet</cell>
+            </row>
+            <row>
+              <cell>type</cell>
+              <cell>usg</cell>
+              <cell>open list e.g. geo, time...</cell>
+              <cell>stet</cell>
+            </row>
+            <row>
+              <cell>type</cell>
+              <cell>xr</cell>
+              <cell>open list e.g. syn, etym...</cell>
+              <cell>stet</cell>
+            </row>
+            <row>
+              <cell>unit</cell>
+              <cell>milestone</cell>
+              <cell>semi list e.g. page, column...</cell>
+              <cell>stet</cell>
+            </row>
+            <row>
+              <cell>unit</cell>
+              <cell>state</cell>
+              <cell>semi list e.g. page, column...</cell>
+              <cell>stet</cell>
+            </row>
+            <row>
+              <cell>unit</cell>
+              <cell>when</cell>
+              <cell>a semi-closed list of recognized time units such as
+millisecond, second, minute</cell>
+              <cell>stet</cell>
+            </row>
+            <row>
+              <cell>units</cell>
+              <cell>tei.measured</cell>
+              <cell>Any string of characters.</cell>
+              <cell>stet</cell>
+            </row>
+            <row>
+              <cell>value</cell>
+              <cell>interp</cell>
+              <cell>Any string of characters.</cell>
+              <cell>child? add key?</cell>
+            </row>
+            <row>
+              <cell>value</cell>
+              <cell>metSym</cell>
+              <cell>any available character or character sequence.</cell>
+              <cell>tei.tokens</cell>
+            </row>
+            <row>
+              <cell>value</cell>
+              <cell>span</cell>
+              <cell>Any string of characters.</cell>
+              <cell>tei.token</cell>
+            </row>
+            <row>
+              <cell>value</cell>
+              <cell>tei.dictionaries</cell>
+              <cell>any string of characters</cell>
+              <cell>stet</cell>
+            </row>
+            <row>
+              <cell>version</cell>
+              <cell>unicodeName</cell>
+              <cell>a valid version number.</cell>
+              <cell>tei.numeric</cell>
+            </row>
+            <row>
+              <cell>weights</cell>
+              <cell>alt</cell>
+              <cell>a list of numbers, in the range from 0 to 1 if
+		wScale is real, and in the range from 0 to 100 if
+		wScale is perc.</cell>
+              <cell>tei.numeric</cell>
+            </row>
+            <row>
+              <cell>where</cell>
+              <cell>move</cell>
+              <cell>open list e.g. L, R...</cell>
+              <cell>stet</cell>
+            </row>
+            <row>
+              <cell>width</cell>
+              <cell>graphic</cell>
+              <cell>??</cell>
+              <cell>tei.numeric</cell>
+            </row>
+            <row>
+              <cell>xmlns</cell>
+              <cell>TEI</cell>
+              <cell>A valid XML namespace</cell>
+              <cell>tei.tokens</cell>
+            </row>
+            <row>
+              <cell>xmlns</cell>
+              <cell>teiCorpus</cell>
+              <cell>A valid XML namespace</cell>
+              <cell>tei.tokens</cell>
+            </row>
+            <row>
+              <cell>zone</cell>
+              <cell>time</cell>
+              <cell>contains a word or phrase such as
+		GMT or Eastern Standard
+		  Time which might be helpful in evaluating the
+		temporal expression.</cell>
+              <cell>make listVals (and make it a bit less vague)</cell>
+            </row>
+            <row>
+              <cell>zone</cell>
+              <cell>timeStruct</cell>
+              <cell>contains a word or phrase such as
+		GMT or Eastern Standard
+		  Time defining a time zone.</cell>
+              <cell>make listVals (and make it a bit less vague)</cell>
+            </row>
+          </table>
+
+
+
+</div>
+</body>
+</text>
+</TEI.2>

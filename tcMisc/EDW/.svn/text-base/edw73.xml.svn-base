@@ -1,0 +1,71 @@
+<?xml version="1.0"?> 
+<?xml-stylesheet type="text/css" href="/teixlite.css"?>
+<!--DOCTYPE TEI.2 PUBLIC "-//TEI//DTD TEI Lite XML ver. 1//EN"
+"http://www.tei-c.org/Lite/DTD/teixlite.dtd" []-->
+<TEI.2>
+ <teiHeader>
+  <fileDesc>
+   <titleStmt>
+    <title>Outstanding proposals for change in TEI P4</title>
+   </titleStmt>
+   <publicationStmt>
+<p>For TEI website</p>
+   </publicationStmt>
+   <sourceDesc>
+<p>Original</p>
+   </sourceDesc>
+  </fileDesc>
+  <revisionDesc>
+   <!-- one of (change list) -->
+   <change>
+    <date>12 Nov 2001</date>
+    <respStmt>
+<name>Lou</name>
+    </respStmt>
+    <item>Drafted</item>
+   </change>
+  </revisionDesc>
+ </teiHeader>
+ <text>
+<body>
+   <head>Introduction</head><p>This standing document contains a
+   numbered list of proposals for change in the recommendations of TEI
+   P4. The list is derived from a variety of sources, chiefly, but not
+   exclusively, email
+   to TEI-L and comments to the editors during the production of TEI P4.</p>
+    <p>This list will be kept up to date, as far as possible: new
+   items will be added and the disposition of old items noted during
+   the process of revising P4 towards P5. The current version of this
+   document will be available from the TEI Members only site (at <xptr
+   url="http://www.tei-c.org/Members/Drafts/edw73.xml"/>).</p>
+    <p> </p>
+   <div>
+<list>
+<item n="1"><label>1: date and dateRange</label>
+<q rend="verb"><![CDATA[
+The value attribute serves two distinct purposes:
+
+1.  regularize the content of DATE into a format which can easily be
+    searched, preferably one that can easily be parsed and searched.
+2.  normalize the content of DATE to a date along an agreed upon
+    timeline.
+It makes sense that these would be two separate attributes, as one
+may reasonably want different values for these purposes. For example,
+we like to regularize the *format* of our Julian dates, but would
+rather not be bothered trying to figure out what the Gregorian (i.e.,
+normalized) value would be, mostly because it is often hard to tell.
+
+	<docDate norm="1548-04-07" reg="28 March 1548">The.xxviii.day of
+	<name>Marche</name>
+	<lb>the yere of our lorde.
+	<lb>M.D.XLVIII.</docDate>
+
+]]>
+      </q></item>
+
+
+    </list><!-- one of (div divGen stage note listBibl list label q cit sp p lg l biblFull bibl eg) -->
+   </div>
+  </body>
+ </text>
+</TEI.2>

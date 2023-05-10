@@ -1,0 +1,17 @@
+open(D, "edw90table.xml") || die "Wot no edw90table?";
+
+while (<D>) {
+
+  if (/\<attrib/) {
+    $ident=$1 if (/ident\=\"(\w+)\=/);
+    $gi=$1 if (/\&lt\;(\w+)\&/);
+  } elsif (/<datatype>([^<]+)/) {
+    $d=$1;
+    print "$d : $gi\@$ident\n";
+    $ds{$d}++;
+  }
+}
+
+foreach $d (sort keys %ds) {
+   print "$ds{$d} $d \n";
+}

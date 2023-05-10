@@ -1,0 +1,15 @@
+1. visit http://dev.stg.brown.edu/staff/Syd_Bauman/edw90.php
+2. select show all columns
+3. save result as HTML file
+4. $tidy -asxml -cn edw90.php.htm > dump.xml
+5. MANUALLY remove xslt namespace declaration and DOCTYPE
+6. xsltproc attlist.xsl dump.xml > edw90table.xml
+   # edw90table.xml contains same data as php table but in xml format
+7  xsltproc dtList.xsl edw90table.xml > dtList.dat
+   # dtList.dat contains a list of element@att ident and target datatype for gis
+   # followed by same thing for classes
+8 dtConvert
+  # perl script which rewrites all element tagdocs, removing redundant blank
+  # lines and doing the datatype conversion specified by dtList.dat
+
+

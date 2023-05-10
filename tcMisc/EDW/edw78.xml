@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--DOCTYPE TEI.2 PUBLIC "-//TEI//DTD TEI Lite P4 XML 2002-05//EN" 
+"http://www.tei-c.org/Lite/DTD/teixlite.dtd"
+ []-->
+<!-- "/usr/local/lib/sgml/TEI/P4/teixlite.dtd" -->
+<TEI.2>
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+	<title>TEI ED W 78 (draft)</title>
+	<title>Public Comment and Update Procedure for TEI Proposals</title>
+	<author>Syd Bauman</author>
+	<author>Lou Burnard</author>
+      </titleStmt>
+      <publicationStmt>
+	<p>This draft is for use of the TEI Editors and Council, not
+	for public consumption. </p>
+      </publicationStmt>
+      <sourceDesc>
+	<p>None</p>
+      </sourceDesc>
+    </fileDesc>
+<revisionDesc>
+<list>
+<item><date>10 Feb 03</date>: LB further revisions </item>
+<item><date>24 Nov 02</date>: LB minor revisions </item>
+<item><date>22 Nov 02</date>: SB Drafted </item>
+   </list>
+  </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="section">
+	<head>Introduction</head>
+	<p>The Text Encoding Initiative Consortium (TEI-C) already has
+	  mechanisms in place 
+	  <list>
+	    <item>to effect major strategic technical changes to the
+	      <title>Guidelines</title>, (e.g. adding new chapters or
+	      overhauling existing ones, deciding on what
+	      metalanguage(s) will be used, specific major issues like
+	      character encoding etc). Such changes are the
+	      responsibility of the TEI Council, mostly by
+	      commissioning work groups</item>
+	    <item>to correct corrigible errors in the
+	      <title>Guidelines</title>; such changes are generally
+	      effected by the Editors on their own.</item>
+	  </list> But there does not exist any mechanism for
+	  considering and effecting changes that are in between:
+	      i.e. not arising from something demonstrably erroneous, but
+	  too minor to require a work group be commisioned. Examples
+	      might be to 
+	  eliminate the <gi>dateRange</gi>> and <gi>timeRange</gi>
+	      elements; to change the verse and drama tagsets to be
+	      additional instead of base; to provide a few extra
+	      elements  for encoding archival correspondence.</p>
+	<p>This document suggests a mechanism both for users of the
+	  TEI scheme to recommend such changes, and for the TEI-C to
+	  consider and implement them.</p>
+      </div>
+      <div type="section">
+	<head>Proposals for Amendments</head>
+	<p>Users can submit a proposal for an amendment at will via
+	  the web. The interface is yet to be determined, but it will
+	  probably involve a web-form or submission of an XML file,
+	conforming to a specification yet to be determined by the
+	editors.
+<!-- In either case the end result
+	  is a document conforming to a TEI DTD designed by the
+	  editors for this purpose.</p>
+	<note resp="sbauman.emt">Lou, there should be a section in the
+	  proposal format for whether or not there is a natural source
+	  of funding for work on this issue, no?</note> --></p>
+	<p>Proposals for Amendment do not have to be very technical or
+	  very detailed, but should be clear and coherent. They should
+	contain, at a minimum, the following information:
+<list>
+<item>A clear description of  the
+	  problems or shortcomings which need to be addressed</item>
+      <item>A clear summary of any proposed modification to the
+	  Guidelines which would address the stated problem</item>
+      <item>name and contact information of the proposer</item>
+      <item>name and contact information of someone willing to work on
+	  implementing the proposal (may be the same person as the proposer)</item>
+<item>An estimate of the likely consequences of implementing the
+	  proposal</item>
+<item>An estimate of the likely amount of work involved in implementing the proposal</item>
+     </list>
+    </p>
+<p>The editors will check all submitted proposals, and will jointly
+	  determine whether or not the proposal is complete and worthy
+	  of further
+	  consideration. This is the <soCalled>grand jury</soCalled> stage,
+	  which is intended to weed out complete crackpot or spam
+	  requests (e.g., that the TEI should devote a base tag set to
+	  the encoding of the recorded mating calls of extinct
+	  species). It doesn't take much to pass muster here, but
+	  those that don't are not even submitted to publicly
+	  available scrutiny.</p>
+    <p>On acceptance, the editors will register the Proposal for
+	  Change in a TEI standing document, using a format to be
+	  determined. </p>
+<!--
+	<p>The completed version is assigned a TEI document number
+	  (perhaps TEI LL NNNN, where LL is "PA" for "proposal for
+	  amendment" or "RC" for "request for consideration"?) and
+	  checked into a publicly accessible TEI document
+	  repository.</p>
+-->
+<p>It is the job of the Council to determine dispositionl of Proposals
+     for Change. At least twice a year, the Council will consider the
+     merits of all currently submitted proposals in a gathered field,
+     and determine their disposition. Likely outcomes for a proposal
+     are one of the following:
+<list type="ordered">
+      <item>it is inappropriate to proceed further with the proposal
+       because it is out of scope for the TEI Guidelines,  technically
+       flawed, or prohibitively complex or expensive</item>
+      <item>the proposal needs further technical work before it can be
+       integrated into or used to modify the current Guidelines</item>
+      <item>The proposal identifies a modification or other course of
+       action which can be integrated directly into the current
+       Guidelines</item>
+     </list> The Council may identify other kinds of disposition in
+     the light of experience, but these seem the most probable.</p>
+<p>The editors will record the Council's decision on each proposal in
+     its associated documentation, and these will be available as a
+     matter of public record from the TEI web site.  
+Taking each type of disposition in turn, <!-- The editors are not sure of the most effective way
+	of combining efficient disposal with accountability. Here is
+	one (fairly complex) procedure which might work: -->
+<list>
+	<item>In the case of a rejected proposal, the  Council will
+	  supply the editors with explanation of their grounds for the
+	  decision for inclusion in the documentation. No further
+	  action is taken.</item>
+	<item>In the case of a proposal needing further work, the
+	  Council will assign at least one of its members
+	  to work with the person indicated in the proposal and with the
+	  editors to carry out such further work. Once the work is
+	  completed, the proposal is resubmitted to the Council, in
+	  the same way as any other proposal.</item>
+        <item>In the case of a proposal not needing further work, the
+	  editors will proceed directly to implementation, without
+	  further reference to the Council.</item>
+<item>When a  proposal for change is implemented, its associated
+	  record will be integrated into the change list for the
+	  relevant edition of the Guidelines. </item>
+     </list>
+<!--
+	<item>These three to five people, without a budget, flesh out a
+	  proposed amendment (or draft amendment). This draft
+	  amendment should be as detailed as possible, perhaps even
+	  containing recommended rewording of the relevant sections of
+	  the <title>Guidelines</title>.</item>
+	<item>The draft amendment is posted publicly in the same
+	  repository as the proposal for amendment <note>Does it
+	    replace the proposal?</note>. The Council is reminded
+	  about or notified of it at least 2 weeks prior to one of
+	  their meetings (regular face-to-face meeting, regular
+	  conference call, or a special conference call initiated for
+	  the purpose of considering the proposed amendment.</item>
+	<item>Council votes on amendment, either accepting it as is,
+	rejecting it outright, or sending it back to the mini work
+	group for revision. The Council can suggest revisions, but
+	  generally shouldn't modify the draft itself <note>I'm not
+	sure of this procedure</note></item>
+	<item>Editors effect accepted changes. Proposal for amendment and
+	  proposed amendment document are moved off of main such
+	  repository into an archive.</item>
+     </list>
+    </p>
+<p>The Council is requested to consider whether this proposal is
+     appropriate or desirable.</p>
+-->
+    </p>      </div>
+    </body>
+  </text>
+</TEI.2>
+<!-- Keep this comment at the end of the file
+Local variables:
+mode: xml
+sgml-system-identifiers-are-preferred:t
+End:
+-->

@@ -1,0 +1,169 @@
+
+<listBibl xmlns:t="http://www.tei-c.org/ns/1.0"><!--Processing ... file:/home/lou/Public/TEI-Vault/Interregnum/edw70.xml--><bibl>
+      <title>
+EDW70: XMLification of the TEI Guidelines: preliminary work
+</title>
+      <author>
+Lou Burnard
+</author>
+      <date>20 May 01: LB : drafted</date>
+      <ref target="edw70.xml">
+TEI P4 XML source</ref>
+   </bibl>
+   <!--Processing ... file:/home/lou/Public/TEI-Vault/Interregnum/edw71.xml--><bibl>
+      <title>Revision of P4</title>
+      <date>3 Jul 2001</date>
+      <ref target="edw71.xml">
+TEI P4 XML source</ref>
+   </bibl>
+   <!--Processing ... file:/home/lou/Public/TEI-Vault/Interregnum/edw72.xml--><bibl>
+      <title>Charge to the Charset Issues Work Group</title>
+      <date>2 Jul 2001</date>
+      <ref target="edw72.xml">
+TEI P4 XML source</ref>
+   </bibl>
+   <!--Processing ... file:/home/lou/Public/TEI-Vault/Interregnum/edw73.xml--><bibl>
+      <title>Outstanding proposals for change in TEI P4</title>
+      <date>12 Nov 2001</date>
+      <ref target="edw73.xml">
+TEI P4 XML source</ref>
+   </bibl>
+   <!--Processing ... file:/home/lou/Public/TEI-Vault/Interregnum/edw74.xml--><bibl>
+      <title>Charge for the Workgroup on Stand-Off Markup, Xlink and
+     Xpointer</title>
+      <date>1 May 2002</date>
+      <ref target="edw74.xml">
+TEI P4 XML source</ref>
+   </bibl>
+   <!--Processing ... file:/home/lou/Public/TEI-Vault/Interregnum/edw75.xml--><bibl>
+      <title>Draft Charge for the Work Group on Character Encoding </title>
+      <date>14 Apr 2002</date>
+      <ref target="edw75.xml">
+TEI P4 XML source</ref>
+   </bibl>
+   <!--Processing ... file:/home/lou/Public/TEI-Vault/Interregnum/edw76.xml--><bibl>
+      <title>Draft Charge for the SGML/XML Conversion Work Group </title>
+      <date>15 Aug 2002</date>
+      <ref target="edw76.xml">
+TEI P4 XML source</ref>
+   </bibl>
+   <!--Processing ... file:/home/lou/Public/TEI-Vault/Interregnum/edw77.xml--><bibl>
+      <title>DTD Errors and Typographic Errors Reported in TEI P4
+          Along with Actions Taken</title>
+      <author>Syd Bauman Lou Burnard</author>
+      <date/>
+      <ref target="edw77.xml">
+TEI P4 XML source</ref>
+   </bibl>
+   <!--Processing ... file:/home/lou/Public/TEI-Vault/Interregnum/edw78.xml--><bibl>
+      <title>TEI ED W 78 (draft) Public Comment and Update Procedure for TEI Proposals</title>
+      <author>Syd Bauman Lou Burnard</author>
+      <date>10 Feb 03: LB further revisions </date>
+      <ref target="edw78.xml">
+TEI P4 XML source</ref>
+   </bibl>
+   <!--Processing ... file:/home/lou/Public/TEI-Vault/Interregnum/edw79.xml--><bibl>
+      <title>CDATA attributes in P4</title>
+      <date>Wed, 20 Oct 04</date>
+      <ref target="edw79.xml">
+TEI P4 XML source</ref>
+   </bibl>
+   <!--Processing ... file:/home/lou/Public/TEI-Vault/Interregnum/edw80.xml--><bibl>
+      <title>Version numbering of TEI Guidelines</title>
+      <date>No date found</date>
+      <ref target="edw80.xml">
+TEI P4 XML source</ref>
+   </bibl>
+   <!--Processing ... file:/home/lou/Public/TEI-Vault/Interregnum/edw81.xml--><bibl>
+      <title>P5 today: current state of play</title>
+      <date>26 Jan 05</date>
+      <ref target="edw81.xml">
+TEI P4 XML source</ref>
+   </bibl>
+   <!--Processing ... file:/home/lou/Public/TEI-Vault/Interregnum/edw82.xml--><bibl>
+      <title>Charge for the Work Group on Physical Bibliography</title>
+      <date>Sat, 08 May 04</date>
+      <ref target="edw82.xml">
+TEI P4 XML source</ref>
+   </bibl>
+   <!--Processing ... file:/home/lou/Public/TEI-Vault/Interregnum/edw83.xml--><bibl>
+      <title>Input for TEI P5: a summary</title>
+      <date/>
+      <ref target="edw83.xml">
+TEI P4 XML source</ref>
+   </bibl>
+   <!--Processing ... file:/home/lou/Public/TEI-Vault/Interregnum/edw84.xml--><bibl>
+      <title>TEI element catalogue</title>
+      <author>Sebastian Rahtz</author>
+      <date>No date found</date>
+      <ref target="edw84.xml">
+TEI P4 XML source</ref>
+   </bibl>
+   <!--Processing ... file:/home/lou/Public/TEI-Vault/Interregnum/edw85.xml--><bibl>
+      <title>TEI Lite from P4 to P5: Continuity and Change TEI ED W85</title>
+      <author>Lou Burnard</author>
+      <date>$Date: 2008-09-02 10:24:21 +0100 (Tue, 02 Sep 2008) $.</date>
+      <ref target="edw85.xml">
+TEI P4 XML source</ref>
+   </bibl>
+   <!--Processing ... file:/home/lou/Public/TEI-Vault/Interregnum/edw86.xml--><bibl>
+      <title>EDW 86: Rationalization of TEI Attributes</title>
+      <date>4 Apr 05LB: revised following council meeting</date>
+      <ref target="edw86.xml">
+TEI P4 XML source</ref>
+   </bibl>
+   <!--Processing ... file:/home/lou/Public/TEI-Vault/Interregnum/edw86old.xml--><bibl>
+      <title>EDW 86: Rationalization of TEI Attributes</title>
+      <date>22 Apr 05LB: revised taking in Syd's comments of 20/4</date>
+      <ref target="edw86old.xml">
+TEI P4 XML source</ref>
+   </bibl>
+   <!--Processing ... file:/home/lou/Public/TEI-Vault/Interregnum/edw87.xml--><bibl>
+      <title>EDW 87: Naming Principles for TEI Classes</title>
+      <date>4 Oct 05LB: post-Council major revision</date>
+      <ref target="edw87.xml">
+TEI P4 XML source</ref>
+   </bibl>
+   <!--Processing ... file:/home/lou/Public/TEI-Vault/Interregnum/edw88.xml--><bibl>
+      <title>EDW88: The TEI P5 ODD How To</title>
+      <author>Lou Burnard</author>
+      <date>8
+      Apr</date>
+      <ref target="edw88.xml">
+TEI P4 XML source</ref>
+   </bibl>
+   <!--Processing ... file:/home/lou/Public/TEI-Vault/Interregnum/edw89.xml--><bibl>
+      <title>Associating a Schema with an Instance</title>
+      <author>Syd Bauman</author>
+      <date>No date found</date>
+      <ref target="edw89.xml">
+TEI P4 XML source</ref>
+   </bibl>
+   <!--Processing ... file:/home/lou/Public/TEI-Vault/Interregnum/edw90.xml--><bibl>
+      <title>On Attributes and Datatypes</title>
+      <author>Syd Bauman</author>
+      <date/>
+      <ref target="edw90.xml">
+TEI P4 XML source</ref>
+   </bibl>
+   <!--Processing ... file:/home/lou/Public/TEI-Vault/Interregnum/edw90table.xml--><!--Processing ... file:/home/lou/Public/TEI-Vault/Interregnum/edw91.xml--><bibl>
+      <title>EDW91: Maintaining the TEI</title>
+      <author>Sebastian Rahtz</author>
+      <date>13 Mar 05</date>
+      <ref target="edw91.xml">
+TEI P4 XML source</ref>
+   </bibl>
+   <!--Processing ... file:/home/lou/Public/TEI-Vault/Interregnum/edw92.xml--><bibl>
+      <title>Classes Changes</title>
+      <author>Lou Burnard Sebastian Rahtz Syd Bauman</author>
+      <date>No date found</date>
+      <ref target="edw92.xml">
+TEI P4 XML source</ref>
+   </bibl>
+   <!--Processing ... file:/home/lou/Public/TEI-Vault/Interregnum/edw93.xml--><bibl>
+      <title>Summary of SF FRs</title>
+      <date>2006-09-25</date>
+      <ref target="edw93.xml">
+TEI P4 XML source</ref>
+   </bibl>
+</listBibl>

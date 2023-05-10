@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet type="text/css" href="../Stylesheets/teixlite.css"?>
+<!--DOCTYPE TEI.2 PUBLIC "-//TEI//DTD TEI Lite XML ver. 1//EN"
+                       "../Lite/DTD/teixlite.dtd" [
+   <!ATTLIST xptr url CDATA #IMPLIED >
+   <!ATTLIST xref url CDATA #IMPLIED >
+   ]-->
+<TEI.2>
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Associating a Schema with an Instance</title>
+        <author>Syd Bauman</author>
+      </titleStmt>
+      <publicationStmt>
+        <p>Currently unpublished for TEI Council and editors' use.</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>This TEI Lite (P4 XML) encoded digital file is the
+          original. It is largely based on the W3C recommendation
+          <xref
+            url="http://www.w3.org/1999/06/REC-xml-stylesheet-19990629">Associating 
+            Style Sheets with XML documents</xref>.</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <head>Introduction</head>
+        <p>This document is <emph>not</emph> a working paper of the
+          META work-group, although it might have been were that
+          work-group still technically in existence. Rather, while it
+          is based upon the work done by the META work-group, mostly
+          in <date value="2004-10">Oct 04</date> and some in <date
+            value="2005-04">Apr 05</date>, it is the work of the
+          author, to whom any blame for errors, omissions, or
+          ma's-representation should be assigned. This document has not
+          even been thoroughly reviewed by both editors. It should be
+          taken as a proposal by the author for the approval of his
+          co-editor and other interested TEIers.</p>
+      </div>
+      <div>
+        <head>The Problem</head>
+        <p>In SGML a document instance must, and in XML 1.0 (and 1.1)
+          a document instance may, declare the DTD against which it is
+          (supposedly) valid. While the requirement in SGML turned out
+          to be unnecessarily heavy-handed, many users of XML find the
+          capability to do so quite helpful. The W3C XML Schema
+          Language also provides the capability for an instance (or
+          most any child element in it) to provide a <q>hint</q> as to
+          what XML Schema should be used for validation.</p>
+        <p>While at first glance it does not seem that the <xref
+            url="http://www.w3.org/TR/xmlschema-1/">W3C XML Schema
+            specification</xref> requires that the schema that is
+          pointed to by the <ident
+            type="attrName">schemaLocation</ident> attribute must be a
+          W3C XML Schema language schema, there is also no indication
+          that it may be a schema in a different language.</p>
+        <p>RelaxNG does not provide this capability. In fact, one of
+          its creators is explicitly against the idea (see <xptr
+        url="http://www.thaiopensource.com/relaxng/design.html#section:17"/>)</p>
+        <p>Nonetheless, we believe that many users will find it quite
+          helpful to be able to specify in a document instance against
+          which RelaxNG grammar it is intended to match.</p>
+      </div>
+      <div>
+        <head>Requirements</head>
+        <p>A mechanism that permits an XML document instance to
+        declare, point to, or hint at a schema document against which
+          it is intended to be valid
+          <list>
+            <item>should be optional</item>
+            <item>should be ignorable — i.e., an application
+              should be permitted to process the document without any
+              schema validation if it so chooses</item>
+            <item>should be over-ridable — i.e. a user should be
+            able to instruct an application to use a different schema
+            than the one the instance refers to</item>
+            <item>should allow the instance to declare, point to, or
+            hint at multiple schemas, preferably with assigned priority</item>
+            <item>should not be TEI-specific — it is hoped that
+              at least DocBook, if not other OASIS and non-OASIS
+              encoding systems, will all adopt the same method</item>
+          </list>
+        </p>
+        <p>PIs provide a good mechanism for adding kinds of
+          declarations to XML. They are integrated into the existing
+          syntax and are extensible. It's very clear that applications
+          use such declarations at their option. It's clear that they
+          are not document content, but that they are attached to a
+          document, and might affect document processing if so
+          desired.</p>
+      </div>
+      <div>
+        <head>Method</head>
+        <p>The recommended method is to use an XML processing
+          instruction (hereafter <mentioned>PI</mentioned>) patterned
+          after the W3C <ident>xml-stylesheet</ident> PI. Like several
+          other PIs in the XML world, and like the XML declaration
+          itself, this PI will use
+          <soCalled>pseudo-attributes</soCalled> to carry
+          information.<note place="foot"><p>Pseudo-attributes look like
+        attributes in that they have a name followed by an equals sign
+        followed by a quoted value. However, they are not attributes,
+        because attributes occur in start-tags and are parsed by an
+        XML parser. These pseudo-attributes occur in PIs and are
+        parsed by whatever application is associated with the 
+            <term>PITarget</term>. Thus many of us are somewhat
+        uncomfortable with pseudo-attributes.</p>
+            <p>Tags
+     are permitted inside a PI (as is most other markup, just not PIs).
+     Thus I would prefer to see either
+<eg><![CDATA[<?xml-stylesheet mimeType:text/css; uri: ./foo.css; ?>]]></eg>
+     or
+<eg><![CDATA[<?xml-stylesheet <stylesheet mimeType="text/css" uri="./foo.css"/> ?>]]></eg>     
+      or, better yet
+<eg><![CDATA[<?xml-stylesheet <html:link rel="stylesheet"
+                            type="text/css"
+                            href="./foo.css"/> ?>]]></eg>      
+     The idea being to either avoid using XML constructs inside the
+     PI, or really use them in such a way that you could use an XML
+     parser.</p>
+          </note> The use of pseudo-attributes is well established in
+        the XML world.</p>
+        <p>The <term>PITarget</term> will be <ident>schema</ident>;
+        the pseudo-attributes will be
+          <list type="gloss">
+            <label>type</label>
+            <item>required; the MIME type of the schema language used by the
+              schema pointed to; for RelaxNG compact syntax the value
+              is <q>application/vnd.relax-ng.rnc</q></item>
+            <label>href</label>
+            <item>required; a URI that points to the desired schema file</item>
+            <label>alternate=yes</label>
+            <item>required for all but 1 occurrence of
+              <ident>schema</ident> PI; indicates that this schema as
+              not the preferred (i.e., default) one</item>
+            <label>title</label>
+            <item>required; specifies a name to associate with this schema</item>
+          </list>
+        </p>
+        <p>The <ident type="attrName">href</ident> pseudo-attribute
+          may be a relative or absolute URI, and may have a fragment
+          identifier; the resource pointed to by the URI should be a
+          schema in the language specified on the <ident
+            type="attrName">type</ident> pseudo-attribute.<note
+            place="foot">It is worth noting that an application may
+            choose to resolve these URIs via an XML catalog.</note>
+          (The consequence is that the <ident>schema</ident> PI allows
+          a document instance to refer to a schema that is embedded in
+          itself.)</p>
+        <p>The <ident type="attrName">alternate</ident>
+          pseudo-attribute has two possible values, <ident
+            type="attrVal">yes</ident> and <ident
+            type="attrVal">no</ident>; the latter is the default. At
+          most one <ident>schema</ident> PI in a document instance
+          should have <ident type="attrName">alternate</ident>
+          specified as or defaulted to <ident
+            type="attrVal">no</ident>. All others should have <ident
+            type="attrVal">yes</ident> specified.</p>
+        <p>The <ident type="attrName">title</ident> may be used to
+          assign convenient names to schemas. For compatibility with
+          the <ident>xml-stylesheet</ident> PI recommendation its use
+          is required here.<note place="foot">An
+            <ident>xml-stylesheet</ident> PI that does not have a
+            <ident type="attrName">title</ident> pseudo-attribute is
+            considered <soCalled>persistent</soCalled>, and can not be
+            over-ridden by a user.</note></p>
+      </div>
+      <div>
+        <head>Processing Semantics</head>
+        <p>Since no software currently exists that would know what to
+        do with this new PI, the current intent is to provide
+        information for humans. However, the format has been
+        deliberately chosen to facilitate processing without
+        interfering with the document structure.</p>
+          <p>A processor that comes across a single
+          <ident>schema</ident> PI in an XML document's prolog which
+          is not specified as an alternate should take the
+          target of the <ident type="attrName">href</ident>
+          pseudo-attribute to be the schema against which the XML
+          document should be valid, unless the user had specified an
+          over-ride. Over-rides would likely be expressed via a
+          command-line switch, an environment variable, or a setting
+          in the application's preferences.</p>
+        <div>
+          <head>Multiple <ident>schema</ident> PI Processing</head>
+          <p>Ideally a processor that comes across a set of 2 or more
+            <ident>schema</ident> PIs in the prolog all but 1 of
+            which are specified as alternates would either <list type="ordered">
+              <item>attempt to use the default (non-alternate) schema,
+                and if it cannot be found present the user with a list
+                of the alternates from which to choose, or</item>
+              <item>present the user with a list of the schemas from
+                which to choose, with the one that was not specified
+                as an alternate as the default</item>
+            </list>
+          </p>
+          <p>Ideally a processor that comes across a set of 1 or more
+            <ident>schema</ident> PIs in the prolog all of which are
+            specified as alternates would present the user with a list
+            of the alternates and perhaps its own default schema from
+            which to choose.</p>
+          <p>It is permissible, however, for the processor to simply
+            try to locate and use the schemas indicated by
+            <ident>schema</ident> PIs in the order they are specified,
+            stopping at the first URI that can be successfully
+            resolved to a schema that matches the specified MIME type.
+            The exception to this order-of-occurrence rule is that the
+            preferred <ident>schema</ident> PI (i.e., the one without
+            <ident type="attrName">alternate</ident> specified as
+            <ident type="attrVal">yes</ident>) is always tried
+            first, regardless of specification order.</p>
+        </div>
+      </div>
+      <div>
+        <head>Example</head>
+        <eg><![CDATA[ <?schema href="../schemas/project-doc.rnc"
+          type="application/vnd.relax-ng.rnc"
+          title="local authoring" ?>
+ <?schema href="http://www.tei-c.org/P5/schemas/Lite/teixlite.rnc"
+          type="application/vnd.relax-ng.rnc"
+          title="interchange"
+          alternate="yes" ?>]]></eg>
+      </div>
+    </body>
+ </text>
+</TEI.2>

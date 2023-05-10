@@ -1,0 +1,1143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TEI.2 SYSTEM "./errataList.dtd" [
+<!ENTITY SB "              <respStmt>
+                <name>Syd Bauman</name>
+                <resp>editor</resp>
+              </respStmt>">
+<!ENTITY LB "              <respStmt>
+                <name>Lou Burnard</name>
+                <resp>editor</resp>
+              </respStmt>">
+<!-- Some browsers don't read the DTD, and thus don't know about -->
+<!-- the character entity declarations it contains. Therefore, they -->
+<!-- are duplicated here in a nauseating hack. -->
+<!ENTITY hellip "&#x2026;"> <!-- HORIZONTAL ELLIPSIS -->
+<!ENTITY ccedil "&#x00E7;"> <!-- LATIN SMALL LETTER C WITH CEDILLA -->
+]>
+<TEI.2>
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>DTD Errors and Typographic Errors Reported in TEI P4
+          Along with Actions Taken</title>
+        <author>Syd Bauman</author>
+        <author>Lou Burnard</author>
+      </titleStmt>
+      <publicationStmt>
+        <idno>TEI ED W 77</idno>
+        <authority>Text Encoding Initiative Consortium</authority>
+      </publicationStmt>
+      <sourceDesc>
+        <p>No source; this electronic edition is the original.</p>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <p><att>n</att> of <gi>change</gi> may be used to indicate a
+        Perforce change number.</p>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language id="eng">English</language>
+      </langUsage>
+    </profileDesc>
+    <revisionDesc>
+<change><date value="2004-07-13"/>
+        <respStmt><name>Syd Bauman</name>
+        <resp>editor</resp></respStmt>
+        <item>Minor structural overhaul. Changed DTD, and thus this
+        instance, so that:
+          <list>
+            <item>sets of <gi>report</gi>, <gi>action</gi>, and
+              <gi>change</gi> are now grouped explicitly inside the
+              new <gi>erf</gi> (<expan>error report &amp; fix</expan>)
+              element. Thus we no longer need to use
+            <att>corresp</att> to indicate associations. (I had
+            originally wanted to use attributes on the theory that
+            there would be a snarly web of relationshops; in reality I
+            have found that there are both many-to-1 and 1-to-many
+            relationships, there are no many-to-many or cross-report
+            relationships, and we can still use attributes for those
+            if we want.)</item>
+            <item><att>value</att> of <gi>date</gi> is required, no
+            content allowed</item>
+            <item>content model of <gi>respStmt</gi> a little tighter</item>
+          </list>
+          Note that I quite quickly divided the current list up into
+          <gi>erf</gi>s, and may have misappropriated some entries.</item>
+        </change>
+<change><date value="2004-04-25"/>
+        <respStmt><name>Syd Bauman</name>
+        <resp>editor</resp></respStmt>
+        <item>Added NOTATION declaration, using one of the URIs I
+          found months ago (See <xref
+            url="http://listserv.brown.edu/archives/cgi-bin/wa?A2=ind0402&amp;L=tei-l&amp;P=R737">post 
+            to TEI-L</xref> on the subject); changed name of notation,
+          as XML is a reserved name. Added declaration for
+          <att>url</att> attribute of <gi>xref</gi>, as I'm too tired
+          and lazy now to update the DTD properly.</item>
+        </change>
+      <change>
+        <date value="2002-12-27"/>
+        <respStmt>
+          <name>Lou Burnard</name>
+          <resp>editor</resp>
+        </respStmt>
+        <item>added comments from SB; added <gi>revisionDesc</gi>;
+          wrote stylesheets</item>
+      </change>
+      <change>
+        <date value="2002-11-14"/>
+        <respStmt>
+          <name>Syd Bauman</name>
+          <resp>editor</resp>
+        </respStmt>
+        <item>added reports and actions</item>
+      </change>
+      <change>
+        <date value="2002-07-14"/>
+        <respStmt>
+          <name>Lou Burnard</name> 
+          <resp>editor</resp>
+        </respStmt>
+        <item>created file</item>
+      </change>
+    </revisionDesc>
+  </teiHeader>
+
+  <text>
+    <body>
+      <div>
+        <note>Note that this document does not have errors reported
+          about the website, nor about the packaging of P4 or the
+          DTDs, only about P4 or the DTDs themselves.</note>
+
+        <erfs>
+
+	  <erf>
+	    <change n="45066">
+	      <date value="2005-05-24"/>
+	      &SB;
+	      <item>Removed a single PCDATA character ("x") that
+		erroneously appeared at the end of an example. File
+		changed: //TEI/P4/Tags/quotn.tag#2</item>
+	    </change>
+	  </erf>
+
+	  <erf>
+	    <change n="44174">
+	      <date value="2004-09-04"/>
+	      &SB;
+	      <item>Changed a reference to the <att>occurs</att>
+		attribute of <gi>tagUsage</gi> from <q>usage</q> to
+	      <q>occurs</q> in //TEI/P4/Odds/p2hd5.odd#3. (Changed the
+	      ODD source file to P5, //TEI/P5/Source/HD/hd.odd, last
+	      night.) Note that the HTML has not been regenerated yet. 
+	      </item>
+	    </change>
+	  </erf>
+
+	  <erf>
+	    <change n="44041">
+	      <date value="2004-07-15"/>
+	      &SB;
+	      <item>Changed <q>Main DTD Driver File</q> to <q>Main
+		  Document Type</q>, finally. Files changed
+		//TEI/P4/Odds/p2dt.odd#2 and
+		//TEI/P4/Odds/p2md.odd#4</item>
+	    </change>
+	  </erf>
+	  
+          <erf>
+            <report corresp="c42" id="r42">
+              <date value="2004-06-26"/>
+              <respStmt>
+                <name>Karl Eichwalder</name>
+                <resp>user</resp>
+              </respStmt>
+              <item>In posting to TEI-L points out that name of entity
+                declared in example internal subset in FT.html#FTGRA is
+                <q>graphics</q> but should be <q>figures</q>.</item>
+            </report>
+            <change corresp="r42" id="c42" n="43993">
+              <date value="2004-06-26"/>
+              <respStmt>
+                <name>Syd Bauman</name>
+                <resp>editor</resp>
+              </respStmt>
+              <item>Fixed: s/TEI\.graphics/TEI.figures/ in p2ftgra.odd#2
+                and also in p2ftfor.odd#3.</item>
+            </change>
+          </erf>
+
+          <erf>
+            <report corresp="a41 c41" id="r41">
+              <date value="2003-10-26"/>
+              <respStmt>
+                <name>Paul Schaffner</name>
+                <resp>user</resp>
+              </respStmt>
+              <item>Sent e-mail <q>Re: HEADs in verse</q> to TEI-L dated
+                <date value="2003-10-26T18:36"/> indirectly painting
+                out that <gi>figure</gi> is not permitted before
+                <gi>head</gi> in a <gi>div</gi>.</item>
+            </report>
+            <action corresp="r41 c41" id="a41">
+              <date value="2004-05-14"/>
+              <respStmt>
+                <name>Natasha Smith</name>
+                <resp>council member</resp>
+              </respStmt>
+              <item>Reminded the editors of this issue. LB stated
+                solution was to put <gi>figure</gi> into
+                <m-class>Incl</m-class>.</item>
+            </action>
+            <change corresp="r41 a41" id="c41" n="43873">
+              <date value="2005-05-15"/>
+              <respStmt>
+                <name>Syd Bauman</name>
+                <resp>editor</resp>
+              </respStmt>
+              <item>Moved <gi>figure</gi> from <m-class>inter</m-class>,
+                <m-class>tpParts</m-class>, and
+                <m-class>common</m-class> classes into
+                <m-class>Incl</m-class>.</item>
+            </change>
+          </erf>
+
+          <erf>
+            <report corresp="c40" id="r40">
+              <date value="2003-11-01T13:35-0500"/>
+              <respStmt>
+                <name>Julia Flanders</name>
+                <resp>user</resp>
+              </respStmt>
+              <item>In e-mail to Syd reported that Chapter 19 <q>states
+                  <q>Any document containing <gi>app</gi> elements
+                    requires a <gi>variantEncoding</gi> declaration in
+                    the <gi>editorialDecl</gi> element of its TEI
+                    header</q>, and points to section 5.3.3, &hellip;
+                  [where] I find that the <gi>variantEncoding</gi>
+                  declaration is a sibling of the <gi>editorialDecl</gi>
+                  and is nested inside the
+                  <gi>encodingDesc</gi>.</q></item>
+            </report>
+            <change corresp="r40" id="c40" n="43820">
+              <date value="2004-05-09"/>
+              <respStmt>
+                <name>Syd Bauman</name>
+                <resp>editor</resp>
+              </respStmt>
+              <item>Changed wording in //TEI/P4/Odds/p2tc.odd#2 to make
+                it clear that <gi>variantEncoding</gi> is a child of
+                <gi>encodingDesc</gi>.</item>
+            </change>
+          </erf>
+
+          <erf>
+            <change id="c39" n="43818">
+              <date value="2004-05-09"/>
+              <respStmt>
+                <name>Syd Bauman</name>
+                <resp>editor</resp>
+              </respStmt>
+              <item>In file //TEI/P4/Tags/pointer.cla#2 changed the
+                description and attribute type of <att>crdate</att> of
+                <a-class>pointer</a-class> to be a real date, like that
+                of <att>date.created</att> of <gi>teiHeader</gi>.</item>
+            </change>
+            
+            <change id="c38" n="43817">
+              <date value="2004-05-09"/>
+              <respStmt>
+                <name>Syd Bauman</name>
+                <resp>editor</resp>
+              </respStmt>
+              <item>In several places the prose mentions
+                <gi>mileStone</gi> instead of <gi>milestone</gi>. Fixed.
+                (But not in P5 SA, which is scheduled for reversion.)
+                Files: //TEI/P4/Odds/p2hd5.odd#2,
+                //TEI/P4/Odds/p2sase.odd#3, and
+                //TEI/P5/Source/HD/hd.odd#13. Also, in p2sase.odd,
+                reworded the prose discussion of <gi>anchor</gi> a bit
+                to make it clear that <att>id</att> is required.</item>
+            </change>
+            
+            <change id="c37" n="43816">
+              <date value="2004-05-09"/>
+              <respStmt>
+                <name>Syd Bauman</name>
+                <resp>editor</resp>
+              </respStmt>
+              <item>Changed content model of <gi>lang</gi> from
+                <m-class>paraContent</m-class> to
+                <m-class>phrase.seq</m-class>. File:
+                //TEI/P4/Tags/lang.tag#2. Technically
+                non-corrigible.</item>
+            </change>
+            
+            <change id="c36" n="43813">
+              <date value="2004-05-08"/>
+              <respStmt>
+                <name>Syd Bauman</name>
+                <resp>editor</resp>
+              </respStmt>
+              <item>Changed a pair of P3 FPIs (for WSD) to P4 FPIs.
+                Changed prose discussing putting <att>lang</att> on an
+                outermost element so that it does not contradict the
+                examples. Files: //TEI/P4/Odds/p2md.odd#3 and edit
+                //TEI/P4/Odds/p2wd.odd#4</item>
+            </change>
+            
+            <change id="c35" n="43812">
+              <date value="2004-05-08"/>
+              <respStmt>
+                <name>Syd Bauman</name>
+                <resp>editor</resp>
+              </respStmt>
+              <item>In file //TEI/P4/Odds/p2saxr.odd#4, changed the
+                example SPACE keyword value from <q>2D</q> to <q>D2</q>,
+                as the value is supposed to be of NAME datatype.</item>
+            </change>
+            
+            <change id="c34" n="43810">
+              <date value="2004-05-08"/>
+              <respStmt>
+                <name>Syd Bauman</name>
+                <resp>editor</resp>
+              </respStmt>
+              <item>Changed <att>baseform</att> to <att>baseForm</att>.
+                Non-corrigible. Files: //TEI/P4/Odds/p2ailc.odd#2 &amp;
+                edit //TEI/P4/Tags/m.tag#2; also (for P5) edit
+                //TEI/P5/Source/AI/ai.odd#13 &amp; edit
+                //TEI/P5/Source/AI/m.odd#7.</item>
+            </change>
+            
+            <change id="c33" n="43808">
+              <date value="2004-05-08"/>
+              <respStmt>
+                <name>Syd Bauman</name>
+                <resp>editor</resp>
+              </respStmt>
+              <item>Changed the attribute types of the following from
+                <kw>CDATA</kw> to <kw>NMTOKEN</kw>. Note that some folks might
+                considerthis a non-corribible change because there might
+                exist values that were valid per the previous DTD but
+                not against this new one. However, some folks would say
+                it is still corribible, because any such values would
+                violate the prose of the Guidelines.
+                <list>
+                  <item><att>result</att> of <gi>join</gi> and <gi>joinGrp</gi></item>
+                  <item><att>usage</att> of <gi>language</gi></item>
+                  <item><att>sort</att> of <a-class>personPart</a-class></item>
+                  <item><att>rows</att> &amp; <att>cols</att> of <gi>table</gi></item>
+                  <item><att>chars</att> &amp; <att>lines</att> of <gi>direction</gi></item>
+                </list> Files: edit //TEI/P4/Tags/directn.tag#2,
+                //TEI/P4/Tags/join.tag#2, //TEI/P4/Tags/joingrp.tag#2,
+                //TEI/P4/Tags/language.tag#2,
+                //TEI/P4/Tags/perspart.cla#2, and //TEI/P4/Tags/table.tag#2
+              </item>
+            </change>
+            
+            <change id="c32" n="43763">
+              <date value="2004-05-06"/>
+              <respStmt>
+                <name>Syd Bauman</name>
+                <resp>editor</resp>
+              </respStmt>
+              <item>The <att>tei</att> attribute of <gi>gi</gi> and of
+                <gi>att</gi> is lower case, but the <att>TEI</att>
+                attribute of <gi>tag</gi> is all uppercase. Fixed by
+                changing the latter to lower case. Non-corrigible.
+                Files: //TEI/P4/Tags/tag.tag#2.</item>
+            </change>
+
+            <report corresp="c31" id="r31">
+              <date value="2004-03-25"/>
+              <respStmt>
+                <name>Patrick Durusau</name>
+                <resp>user</resp>
+              </respStmt>
+              <item>In e-mail to Lou &amp; me pointed out that on p. 872
+                of P4:2002 <q>kg</q> is incorrectly included as an
+                example of a measure of weight.<note>This error has been
+                  reported multiple times by various people over the
+                  years. This one is cited because it is the one that
+                  finally instigated the change!</note></item>
+            </report>
+            <change corresp="r31" id="c31" n="43762">
+              <date value="2004-05-06"/>
+              <respStmt>
+                <name>Syd Bauman</name>
+                <resp>editor</resp>
+              </respStmt>
+              <item>Fixed by adding a <q>mass</q> sample value. Also
+                added <q>mL</q> to example list for volume. Files:
+                //TEI/P4/Tags/measure.tag#2 (and
+                //TEI/P5/Source/CO/measure.odd#6).</item>
+            </change>
+            
+            <change id="c30" n="43740">
+              <date value="2004-05-04"/>
+              <respStmt>
+                <name>Syd Bauman</name>
+                <resp>editor</resp>
+              </respStmt>
+              <item>Changed references to <gi>metNotation</gi> to
+                <gi>metDecl</gi> in files //TEI/P4/Tags/metrical.cla#2,
+                edit //TEI/P4/Tags/symbol.tag#2, edit
+                //TEI/P5/Source/HD/metsym.odd#3, edit
+                //TEI/P5/Source/HD/symbol.odd#3, and edit
+                //TEI/P5/Source/VE/metrical.odd#4.</item>
+            </change>
+            
+            <change id="c29" n="43739">
+              <date value="2004-05-04"/>
+              <respStmt>
+                <name>Syd Bauman</name>
+                <resp>editor</resp>
+              </respStmt>
+              <item>Fixed format of citation of ISO standard in footnote
+                in file //TEI/P4/Odds/p2ch.odd#2.</item>
+            </change>
+            
+            <change id="c28" n="43728">
+              <date value="2004-05-04"/>
+              <respStmt>
+                <name>Syd Bauman</name>
+                <resp>editor</resp>
+              </respStmt>
+              <item>Removed blank after colon in ISO standard numbers,
+                BS standard numbers, and in P4 FPIs. Files:
+                //TEI/P4/Odds/p2bib.odd#2 //TEI/P4/Odds/p2hd8.odd#2
+                //TEI/P4/Odds/p2stpe.odd#2 //TEI/P4/Odds/p2wd.odd#3
+                //TEI/P4/Tags/basestd.cla#2
+                //TEI/P5/Source/BIB/bib.odd#3
+                //TEI/P5/Source/HD/hd.odd#10
+                //TEI/P5/Source/ST/st.odd#15</item>
+            </change>
+            
+            <change id="c27" n="43725">
+              <date value="2004-05-04"/>
+              <respStmt>
+                <name>Syd Bauman</name>
+                <resp>editor</resp>
+              </respStmt>
+              <item>Fixed a typo (<q>teiform</q> to <q>TEIform</q>).
+                File //TEI/P4/Odds/p2md.odd#2</item>
+            </change>
+            
+            <change id="c26" n="43724">
+              <date value="2004-05-04"/>
+              <respStmt>
+                <name>Syd Bauman</name>
+                <resp>editor</resp>
+              </respStmt>
+              <item>Fixed a typo (<q>a</q> to <q>an</q>). File
+                //TEI/P4/Odds/p2sapt.odd#2</item>
+            </change>
+            
+            <report corresp="c25" id="r25">
+              <date value="2004-02-03T11:49-05"/>
+              <respStmt>
+                <name>David Sewell</name>
+                <resp>user</resp>
+              </respStmt>
+              <item>Reported in post to TEI-L that the ENTITY
+                declaration for <ent>duncaid</ent> in 14.2.3 lacks the
+                <kw>NDATA</kw> part of the declaration</item>
+            </report>
+            <change id="c25" n="43686">
+              <date value="2004-04-25"/>
+              <respStmt>
+                <name>Syd Bauman</name>
+                <resp>editor</resp>
+              </respStmt>
+              <item>Added <code>NDATA TEI-XML</code> to example entity
+                declaration. Also changed notation name <q>XML</q> to
+                <q>w3cXML</q> in another example, as the name <q>XML</q>
+                is, of course, reserved. See <xref
+                  url="http://www.w3.org/TR/2000/REC-xml-20001006#dt-name">definition 
+                  of Name</xref>. Files changed were
+                //TEI/P4/Odds/p2saag.odd#2, //TEI/P4/Odds/p2saxr.odd#3,
+                and //TEI/P5/Source/SA/sa.odd#11</item>
+            </change>
+            
+            <change id="c24" n="43685">
+              <date value="2004-04-25"/>
+              <respStmt>
+                <name>Syd Bauman</name>
+                <resp>editor</resp>
+              </respStmt>
+              <item>Changed <q>separated by blanks</q> to <q>separated
+                  by whitespace</q> in description of <att>ucs-4</att>
+                attribute. Files changed were
+                //TEI/P4/Tags/wsdform.tag#3 and
+                //TEI/P4/Odds/p2wd.odd#2</item>
+            </change>
+            
+            <change id="c23" n="43684">
+              <date value="2004-04-24"/>
+              <respStmt>
+                <name>Syd Bauman</name>
+                <resp>editor</resp>
+              </respStmt>
+              <item>The description of the <att>ucs-4</att> attribute on
+                page 594 of P4:2002 had <q>two-digit</q> whereas the
+                prose that follows on the top of the next page makes it
+                clear that the hyphen is supposed to go between a pair
+                of four-digit hex numbers. I changed <q>two-</q> to
+                <q>four-</q>, but the whole description  still a bit
+                confusing. File changed was
+                //TEI/P4/Tags/wsdform.tag#2</item>
+            </change>
+            
+            <change id="c22" n="43683">
+              <date value="2004-04-24"/>
+              <respStmt>
+                <name>Syd Bauman</name>
+                <resp>editor</resp>
+              </respStmt>
+              <item>Changed <q>lists</q> to <q>list</q> in 14.2.2.19.
+                Files changed were //TEI/P4/Odds/p2saxr.odd#2 and
+                //TEI/P5/Source/SA/sa.odd#10</item>
+            </change>
+            
+            <change id="c21" n="43682">
+              <date value="2004-04-24"/>
+              <respStmt>
+                <name>Syd Bauman</name>
+                <resp>editor</resp>
+              </respStmt>
+              <item>Changed <q>anonb</q> to <q>ab</q> in SA (P4:2002 p.
+                369). Files changed were //TEI/P4/Odds/p2sase.odd#2 and
+                //TEI/P5/Source/SA/sa.odd#9.</item>
+            </change>
+            
+            <change id="c20" n="43681">
+              <date value="2004-04-24"/>
+              <respStmt>
+                <name>Syd Bauman</name>
+                <resp>editor</resp>
+              </respStmt>
+              <item>Changed <gi>tei</gi> to <gi>TEI.2</gi> in file
+                //TEI/P4/Odds/p2cf.odd#2 (P4:2002 p. 632).</item>
+            </change>
+
+            <report corresp="c19" id="r19">
+              <date value="2004-02-16T10:40-05"/>
+              <respStmt>
+                <name>Sebastian Rahtz</name>
+                <resp>META chair</resp>
+              </respStmt>
+              <item>During phone conversation with Syd pointed out that
+                on p. 403, first full example on the page, the
+                <val>MOMENT</val> value of <att>id</att> does not match
+                the case of the corresponding <kw>IDREF</kw>, the
+                <val>moment</val> value of <att>ana</att>.</item>
+            </report>
+            <change corresp="r19" id="c19" n="43680">
+              <date value="2004-04-24"/>
+              <respStmt>
+                <name>Syd Bauman</name>
+                <resp>editor</resp>
+              </respStmt>
+              <item>Changed MOMENT to moment in file
+                //TEI/P4/Odds/p2aisp.odd#2.</item>
+            </change>
+            
+            <report corresp="c18" id="r18">
+              <date value="2004-02-21"/>
+              <respStmt>
+                <name>Katrien Depuydt</name>
+                <resp>user</resp>
+              </respStmt>
+              <item><gi>gap</gi> not allowed as 1st child of
+                <gi>epigraph</gi>.</item>
+            </report>
+            <change corresp="r18" id="c18" n="43679">
+              <date value="2004-04-24"/>
+              <respStmt>
+                <name>Syd Bauman</name>
+                <resp>editor</resp>
+              </respStmt>
+              <item>Complicated fix. Changed the
+                content model of <pent>component.seq</pent> to <code>(
+                  (%m.Incl;)*, ( (%component;), (%m.Incl;)* )* )</code>. Correspingly
+                needed to then fix the content models of <gi>set</gi>
+                and <gi>argument</gi>, so they are now <code><![CDATA[  <!ELEMENT %n.set; %om.RR;  ( ((%m.Incl;)*, (%n.head;))?, %component.seq;)> 
+                  <!ELEMENT %n.argument; %om.RR;  (  ( (%m.Incl;)*, (%n.head;) )?, %component.seq;)> 
+                  ]]></code>. It may well be the case that the content of
+                <pent>component.seq</pent> could have been made
+                <code>((%m.Incl;)|(%component;))*</code>. Something for investigation at a
+                later date, perhaps.</item>
+            </change>
+            
+            <report corresp="c17" id="r17">
+              <date value="2004-04-09"/>
+              <respStmt>
+                <name>Edward Vanhoutte</name>
+                <resp>user</resp>
+              </respStmt>
+              <item>In e-mail to Syd &amp; Lou points out that <q>A note
+                  in the <gi>name</gi> documentation says <q>Proper
+                    nouns referring to people, places, and organizations
+                    may be tagged instead with <gi>person</gi>,
+                    <gi>place</gi>, or <gi>org</gi>.</q></q>. Obviously
+                should be <gi>persName</gi>, <gi>placeName</gi>,
+                <gi>orgName</gi>.</item>
+            </report>
+            <change corresp="r17" id="c17" n="43677">
+              <date value="2004-04-24"/>
+              <respStmt>
+                <name>Syd Bauman</name>
+                <resp>editor</resp>
+              </respStmt>
+              <item>Changed //TEI/P4/Tags/name.tag#2 accordingly.</item>
+            </change>
+          </erf>
+
+          <erf>
+            <report corresp="c16" id="r16">
+              <date value="2003-11-06T09:57+01"/>
+              <respStmt>
+                <name>Hilde B&#x00F8;e</name>
+                <resp>user</resp>
+              </respStmt>
+              <item>Reported discrepancy between prose and DTD fragment
+                with respect to list of values of <att>eol</att> of
+                <gi>hyphenation</gi> in e-mail to TEI-L.</item>
+            </report>
+            <change corresp="r16" id="c16" n="42953">
+              <date value="2003-11-18"/>
+              <respStmt>
+                <name>Syd Bauman</name>
+                <resp>editor</resp>
+              </respStmt>
+              <item>Inserted <code>hard |</code> into <gi>datatype</gi>
+                describing <att>eol</att> in both
+                //TEI/P4/Tags/hyphen.tag#1 and //TEI/P5/P4/hyphen.tag#1.</item>
+            </change>
+          </erf>
+
+          <erf>
+            <report corresp="c15a c15b a15" id="r15">
+              <date value="2003-03-21 12:56:30-06"/>
+              <respStmt>
+                <name>Peter C. Gorman</name>
+                <resp>user</resp>
+              </respStmt>
+              <item>Reported in e-mail to editors@tei-c.org that the web
+                version of the Guidelines had been updated to reflect
+                the move of <gi>fw</gi> from <m-class>phrase</m-class>
+                to <m-class>refsys</m-class>, but that the DTD files
+                themselves did not reflect this change.</item>
+            </report>
+            <change id="c15b" n="39399">
+              <date value="2003-07-15"/>
+              <respStmt>
+                <name>Sebatian Rahtz</name>
+                <resp>META chair</resp>
+              </respStmt>
+              <item>Re-generated DTDs so that <ref
+                  target="c15a">fix</ref> was propagated.</item>
+            </change>
+            <change id="c15a" n="21091">
+              <date value="2002-08-01"/>
+              <respStmt>
+                <name>Syd Bauman</name>
+                <resp>editor</resp>
+              </respStmt>
+              <item>Per discussion on TEI-L (during <date value="2002-07"/>
+                with subject field including <q>PS: Element class
+                  change</q>), change class of <gi>fw</gi> from
+                <m-class>phrase</m-class>
+                to <m-class>refsys</m-class>, thus making it available almost globally (as
+                with the <gi>pb</gi>s with which the <gi>fw</gi>s are
+                associated).</item>
+            </change>
+            <action id="a15">
+              <date value="2003-11-11"/>
+              <respStmt>
+                <name>Syd Bauman</name>
+                <resp>editor</resp>
+              </respStmt>
+              <item>Replied to user's e-mail informing him of change.</item>
+            </action>
+          </erf>
+
+          <erf>
+            <report corresp="c14" id="r14">
+              <date value="2003-04-25 14:33-04"/>
+              <respStmt>
+                <name>Greg Murray</name>
+                <resp>user</resp>
+              </respStmt>
+              <item>Reports in e-mail to editors@tei-c.org<list>
+                  <item>In ch. 27, Tag Set Documentation, the section
+                    on <gi>tagDoc</gi> (27.1) says: <q> As the content
+                      model for <gi>tagDoc</gi> makes clear, only the
+                      <gi>gi</gi>, <gi>desc</gi>, <gi>exemplum</gi>,
+                      <gi>dataDesc</gi>, <gi>parents</gi>,
+                      <gi>children</gi> and <gi>elemDecl</gi> elements
+                      are mandatory components.</q> But the declaration
+                    of <gi>tagDoc</gi> actually indicates that only
+                    <gi>gi</gi>, <gi>desc</gi>, and <gi>elemDecl</gi>
+                    are required.
+                  </item>
+                  <item>In ch. 38, Sample Tag Set Documentation, the
+                    example for class documentation in section 38.4 is
+                    incomplete; it cuts off abruptly mid-element.
+                  </item>
+                </list>
+              </item>
+            </report>
+            <change corresp="r14" id="c14" n="35237">
+              <date value="2003-04-26 01:55-04"/>
+              <respStmt>
+                <name>Syd Bauman</name>
+                <resp>editor</resp>
+              </respStmt>
+              <item>
+                <list>
+                  <item>Corrected description of <gi>tagDoc</gi> in
+                    27.1; file affected: //TEI/P4/Odds/p2td.odd#2</item>
+                  <item>Recopied complete example from p3xt.p3x into
+                    38.4, XMLifying it. File affected:
+                    //TEI/P4/Odds/p2td.odd#2</item>
+                </list>
+              </item>
+            </change>
+          </erf>
+
+          <erf>
+            <report corresp="c13" id="r13">
+              <date value="2003-02-23 09:16-05"/>
+              <respStmt>
+                <name>Fran&ccedil;ois Lachance</name>
+                <resp>user</resp>
+              </respStmt>
+              <item>In a long post to TEI-L user reported that <list>
+                  <item n="a">the specification of <att>targOrder</att>
+                    in two examples in 14.1.1 were reversed, and</item>
+                  <item n="b">the case of the IDs used in the examples
+                    no longer matches the case in the prose.</item>
+                </list>
+              </item>
+            </report>
+            <change id="c13" n="33268">
+              <date value="2003-03-16 10:35-05"/>
+              <respStmt>
+                <name>Syd Bauman</name>
+                <resp>editor</resp>
+              </respStmt>
+              <item>Moved the specification of <att>targOrder</att> back
+                from the second example to the third where it belongs;
+                changed case of identifiers in prose to lower case, and
+                encoded those that had been left bare as <tag>code
+                  type=value</tag>, as some had been. File changed is
+                p2sapt.odd#20.</item>
+            </change>
+          </erf>
+
+          <erf>
+            <report corresp="c12" id="r12">
+              <date value="2003-02-09"/>
+              <respStmt>
+                <name>Patrick Durusau</name>
+                <resp>user</resp>
+              </respStmt>
+              <item>PD reports by email that (a) the exclude attribute is
+                referred to erroneously as "excl"; (b) there is a faulty cross
+                reference to AI (should be to SA): see para beginning "Let us
+                assume..." near start of GD. </item>
+            </report>
+            <change corresp="r12" id="c12">
+              <date value="2003-03-11"/>
+              <respStmt>
+                <name>Lou Burnard</name>
+                <resp>editor</resp>
+              </respStmt>
+              <item>Changed two typos in source file for Graphs and Diagrams
+                chapter: file affected //TEI/XMLodds/Odds/p2gd2.odd</item>
+            </change>
+          </erf>
+
+          <erf>
+            <change id="c11" n="29138">
+              <date value="2003-01-11"/>
+              <respStmt>
+                <name>Syd Bauman</name>
+                <resp>editor</resp>
+              </respStmt>
+              <item>Changed <q>tei.2</q> to <q>TEI.2</q> in tag
+                documentation for <gi>teiCorpus.2</gi>. File affected:
+                //TEI/XMLodds/Tags/teicorp2.tag#12</item>
+            </change>
+          </erf>
+
+          <erf>
+            <report>
+              <date value="2002-12-20"/>
+              <respStmt>
+                <name>Stuart Brown</name>
+                <resp>user</resp>
+              </respStmt>
+              <item>classes, delSpan, fDecl, hom, m, performance, pVar, superEntry, termEntry 
+                (both versions) - dataDescs do not match content models</item>
+            </report>
+            <report>
+              <date value="2002-12-20"/>
+              <respStmt>
+                <name>Stuart Brown</name>
+                <resp>user</resp>
+              </respStmt>
+              <item>catRef - the word scheme has not been tagged &lt;att> in the
+                note</item>
+            </report>
+            <report>
+              <date value="2002-12-20"/>
+              <respStmt>
+                <name>Stuart Brown</name>
+                <resp>user</resp>
+              </respStmt>
+              <item>constitution - samplingDecl not tagged &lt;gi> in the
+                description</item>
+            </report>
+            <report>
+              <date value="2002-12-20"/>
+              <respStmt>
+                <name>Stuart Brown</name>
+                <resp>user</resp>
+              </respStmt>
+              <item>col, line, page - legacy SGML concurrent mark-up syntax in
+                examples</item>
+            </report>
+            <report>
+              <date value="2002-12-20"/>
+              <respStmt>
+                <name>Stuart Brown</name>
+                <resp>user</resp>
+              </respStmt>
+              <item>dictScrap - no expanded name</item>
+            </report>
+            <report>
+              <date value="2002-12-20"/>
+              <respStmt>
+                <name>Stuart Brown</name>
+                <resp>user</resp>
+              </respStmt>
+              <item>domain - the note should be directly associated with the
+                attribute</item>
+            </report>
+            <report>
+              <date value="2002-12-20"/>
+              <respStmt>
+                <name>Stuart Brown</name>
+                <resp>user</resp>
+              </respStmt>
+              <item>lbl - references 12.3.1 twice in see further</item>
+            </report>
+            <report>
+              <date value="2002-12-20"/>
+              <respStmt>
+                <name>Stuart Brown</name>
+                <resp>user</resp>
+              </respStmt>
+              <item>mood, number - no attribute value delimiters in notes</item>
+            </report>
+            <report>
+              <date value="2002-12-20"/>
+              <respStmt>
+                <name>Stuart Brown</name>
+                <resp>user</resp>
+              </respStmt>
+              <item>name - has "declared in file dummy" huh?</item>
+            </report>
+            <report>
+              <date value="2002-12-20"/>
+              <respStmt>
+                <name>Stuart Brown</name>
+                <resp>user</resp>
+              </respStmt>
+              <item>note - place attribute declaration default double
+                delimited</item>
+            </report>
+            <report>
+              <date value="2002-12-20"/>
+              <respStmt>
+                <name>Stuart Brown</name>
+                <resp>user</resp>
+              </respStmt>
+              <item>quotation - surplus x at end of exemplum</item>
+            </report>
+            <report>
+              <date value="2002-12-20"/>
+              <respStmt>
+                <name>Stuart Brown</name>
+                <resp>user</resp>
+              </respStmt>
+              <item>teiCorpus2 - dataDesc has tei.2, not TEI.2</item>
+            </report>
+            <report>
+              <date value="2002-12-20"/>
+              <respStmt>
+                <name>Stuart Brown</name>
+                <resp>user</resp>
+              </respStmt>
+              <item>declarable - undelimited attribute value</item>
+            </report>
+            <report>
+              <date value="2002-12-20"/>
+              <respStmt>
+                <name>Stuart Brown</name>
+                <resp>user</resp>
+              </respStmt>
+              <item>These are all petty little quibbles, but I've come across something which 
+                disturbs me more significantly. Cast a glance, if you will, at ref-EDITPH. 
+                This is ostensibly attribute declarations (resp and cert)for the edit class 
+                elements, used only when the transcription tag set is enabled. What concerns 
+                me is that the a.edit entity is not then referenced ANYWHERE else in the 
+                DTDs (and I've grepped away thoroughly at them); and those elements of the 
+                edit class (and that is not all of them) which do have resp and cert define 
+                it directly within themselves, leaving this class floating around and never 
+                implemented. Should it perhaps be removed, or am I missing something?
+              </item>
+            </report>
+          </erf>
+
+          <erf>
+            <report corresp="c10 a10" id="r10">
+              <date value="2002-11-13"/>
+              <respStmt>
+                <name>Stuart Brown</name>
+                <resp>user</resp>
+              </respStmt>
+              <item>Reported missing quotation marks around an attribute
+                value and mismatched open- and close- single quotes in
+                e-mail to Lou.</item>
+            </report>
+            <change corresp="r10" id="c10" n="26577">
+              <date value="2002-11-13"/>
+              <respStmt>
+                <name>Syd Bauman</name>
+                <resp>editor</resp>
+              </respStmt>
+              <item>Stuck in the missing quotation marks. File affected:
+                //TEI/XMLodds/Tags/case.tag#10</item>
+            </change>
+            <action corresp="r10" id="a10">
+              <date value="2002-11-13"/>
+              <respStmt>
+                <name>Syd Bauman</name>
+                <resp>editor</resp>
+              </respStmt>
+              <item>Sent mail to Stuart, Lou, and Sebastian indicating
+                that non-matching quotation marks problem is a
+                stylesheet problem (element used is
+                <gi>mentioned</gi>).</item>
+            </action>
+          </erf>
+
+          <erf>
+            <change id="c09" n="22969">
+              <date value="2002-09-08"/>
+              <respStmt>
+                <name>Syd Bauman</name>
+                <resp>editor</resp>
+              </respStmt>
+              <item>Inserted a missing close parenthesis in an example
+                of the CHILD location term keyword on <xref
+                  url='p2saxr.odd#xpointer(id("SAXR1CH")//eg[5]'>p.
+                  357</xref>. File affected:
+                //TEI/XMLodds/Odds/p2saxr.odd#32.</item>
+            </change>
+          </erf>
+
+          <erf>
+            <report corresp="c08" id="r08">
+              <date value="2002-08-13"/>
+              <respStmt>
+                <name>Jason Diamon</name>
+                <resp>user</resp>
+              </respStmt>
+              <item>Reported discrepancies about FPIs to use for XML
+                character entity sets in e-mail to tei-l dated <date
+                  value="2002-08-13"/>.</item>
+            </report>
+            <change corresp="r08" id="c08">
+              <date value="2002-08-15"/>
+              <respStmt>
+                <name>Lou Burnard</name>
+                <resp>editor</resp>
+              </respStmt>
+              <item>(a) Changed FPI for iso-lat1.ent in p2ch.odd to
+                match that in p2wd.odd (b) corrected typo in declaration
+                for XMLents in oddURLS.ent</item>
+            </change>
+          </erf>
+
+          <erf>
+            <report corresp="a05 c05" id="r05">
+              <date value="2002-05-13T15:54-04"/>
+              <respStmt>
+                <name>Tim Finney</name>
+                <resp>user</resp>
+              </respStmt>
+              <item>Reported, in e-mail to editors@tei-c.org, that in an
+                example in Chapter 5.3.5.3 a length=4 should probably be
+                length=3.</item>
+            </report>
+            <action corresp="r05 c05" id="a05">
+              <date value="2002-05-14T16:32-04"/>
+              <respStmt>
+                <name>Syd Bauman</name>
+                <resp>editor</resp>
+              </respStmt>
+              <item>Sent mail to user &amp; Lou claiming that, unless
+                Lou objected, I'd make the change.</item>
+            </action>
+            <change corresp="r05 a05" id="c05" n="21093">
+              <date value="2002-08-01"></date>
+              <respStmt>
+                <name>Syd Bauman</name>
+                <resp>editor</resp>
+              </respStmt>
+              <item>Changed length=4 to ength=3 in example in file
+                p2hd5.odd#28 within HD54M.</item>
+            </change>
+          </erf>
+
+          <erf>
+            <change n="21091">
+              <date value="2002-08-01"></date>
+              <respStmt>
+                <name>Syd Bauman</name>
+                <resp>editor</resp>
+              </respStmt>
+              <item>Changed <gi>fw</gi> from class <pent>m.phrase</pent>
+                to class <pent>m.refsys</pent> (in file fw.tag#11) per
+                discussion during <date value='2002-07'/>
+                on TEI-L (subject contains <q>PS: Element class
+                  change</q>).</item>
+            </change>
+          </erf>
+
+          <erf>
+            <report corresp="a06" id="r06">
+              <date value="2002-06-20T21:11-0400"></date>
+              <respStmt>
+                <name>Tim Finney</name>
+                <resp>user</resp>
+              </respStmt>
+              <item>Reported, in e-mail to editors@tei-c.org, that in
+                the last sentence of 23.1 (file p2ccdef.odd) there's an
+                extraneous <q>all</q>.</item>
+            </report>
+            <action corresp="r06" id="a06">
+              <date value="2002-06-21T11:55-04"></date>
+              <respStmt>
+                <name>Syd Bauman</name>
+                <resp>editor</resp>
+              </respStmt>
+              <item>Sent mail to user cc: Lou agreeing, and suggesting
+                whole sentence needs to be rewritten.</item>
+            </action>
+          </erf>
+
+          <erf>
+            <report corresp="c07" id="r07">
+              <date value="2002-06-26T14:58-04"/>
+              <respStmt>
+                <name>Tim Finney</name>
+                <resp>user</resp>
+              </respStmt>
+              <item>Reported, in e-mail to editors@tei-c.org, that 3.2.2
+                refers to the file teipros2.ent, which does not
+                exist.</item>
+            </report>
+            <change corresp="r07" id="c07" n="19109">
+              <date value="2002-06-27T15:08-04"/>
+              <respStmt>
+                <name>Syd Bauman</name>
+                <resp>editor</resp>
+              </respStmt>
+              <item>Changed text (in file p2stba.odd#12) from discussing
+                TEI.prose to TEI.verse, as it refers to files that
+                exist. Mail sent to user cc: Lou advising of
+                change.</item>
+            </change>
+          </erf>
+
+          <erf>
+            <report corresp="c04" id="r04">
+              <date value="2002-05-14T14:43-04"/>
+              <respStmt>
+                <name>Tim Finney</name>
+                <resp>user</resp>
+              </respStmt>
+              <item>Reported, in e-mail to editors@tei-c.org, that in
+                Chapter 5.3.3 <mentioned>underlie</mentioned> was
+                spelled <mentioned>underly</mentioned>.</item>
+            </report>
+            <change corresp="r04" id="c04" n="17514">
+              <date value="2002-05-14"/>
+              <respStmt>
+                <name>Syd Bauman</name>
+                <resp>editor</resp>
+              </respStmt>
+              <item>Corrected spelling in p2hd5.odd#27, sent mail to
+                user with cc: to Lou.</item>
+            </change>
+          </erf>
+
+          <erf>
+            <report id="r01">
+              <date value="2002-04-02T17:34-05"/>
+              <respStmt>
+                <name>Tim Finney</name>
+                <resp>user</resp>
+              </respStmt>
+              <item>Reported, in e-mail to editors@tei-c.org, that in
+                Chapter 2.10.2 the text says <q>Similarly, the
+                  declaration for x.data &hellip;</q>, but the example has
+                <q>x.phrase</q>.</item>
+            </report>
+            <change corresp="r01" n="15813">
+              <date value="2002-04-08"/>
+              <respStmt>
+                <name>Lou Burnard</name>
+                <resp>editor</resp>
+              </respStmt>
+              <item>Fixed. (File p2xml.odd#28.) E-mail sent to
+                reporter.</item>
+            </change>
+          </erf>
+
+          <erf>
+            <report corresp="c02" id="r02">
+              <date value="2002-04-08T17:01-05"/>
+              <respStmt>
+                <name>Claire Dougherty</name>
+                <resp>user</resp>
+              </respStmt>
+              <item>In mail to editorsei-c.org user reported a trailing
+                ' on line 18 (cdot) of
+                http://www.tei-c.org/Lite/DTD/iso-lat2.ent.</item>
+            </report>
+            <change corresp="r02" id="c02" n="15817">
+              <date value="2002-04-08"/>
+              <respStmt>
+                <name>Lou Burnard</name>
+                <resp>editor</resp>
+              </respStmt>
+              <item>Removed it. (Files //TEI/web/Lite/DTD/iso-lat2.ent#5
+                and //TEI/web/XML_Entities/iso-lat2.ent#3.) E-mail sent
+                to reporter.</item>
+            </change>
+          </erf>
+
+        </erfs>
+      </div>
+    </body>
+  </text>
+</TEI.2>

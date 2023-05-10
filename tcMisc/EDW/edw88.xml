@@ -1,0 +1,265 @@
+<TEI.2>
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>EDW88: The TEI P5 ODD How To</title>
+            <author>Lou Burnard</author>
+         </titleStmt>
+         <publicationStmt>
+	   <p>For TEI website</p>
+	 </publicationStmt>
+         <sourceDesc>
+            <p>none: this is the original</p>
+         </sourceDesc>
+      </fileDesc>
+      <revisionDesc><change><date>8
+      Apr</date><respStmt><resp>draft</resp><name>Lou</name></respStmt><item>add header to first draft</item></change></revisionDesc>
+   </teiHeader>
+<text>
+<body>
+<p>This tutorial document describes how to set up a TEI P5 editing
+environment, for people interested in experimenting with TEI P5. It
+assumes some basic knowledge of both working with XML documents, and the
+TEI. </p>
+
+<div><head>Getting started with P5</head>
+<p>Previous versions of the TEI supported only the traditional DTD
+language, in either SGML or XML flavours. Selection and combination of
+modules was implemented by means of parameter entity declarations in
+the DTD subset. It was also possible to nominate a "precompiled"
+complete DTD on the Doctype statement at the start of a file. A
+partial file (i.e. one with a  root element other than
+<gi>TEI.2</gi> could be validated by supplying the name of that
+element as the Doctype name. All of this was done by using the syntax
+inherited by XML from SGML, requiring some detailed understanding
+of that in addition to an understanding of the TEI XML language. </p>
+
+<p>At P5, there are additional possibilities for those using other schema
+languages, specifically RELAXNG or W3C Schema. The old
+methods are still available for those who wish to go on using the XML
+DTD language, but a new approach is now possible, and
+recommended. This enables you to create a customized TEI schema or DTD
+by simply creating a TEI-conformant document which uses elements from the new "Tag Documentation"
+module: for historical reasons, we call this an ODD ("One Document
+Does it all") specification.</p>
+<p> An ODD specification  is a simple TEI XML document, which defines a schema in
+terms of the modules it requires, together with any
+possible modifications, such as the desired root element. This
+specification can  then be transformed to output a schema or DTD
+in the required target language, as well as documentation for it . We provide a suite of XSLT
+stylesheets, collectively known as  "Roma" for this purpose. The suite
+can be invoked either from a Unix shell or via a simple web interface.
+</p>
+<p>The  Roma shell script is included in the
+standard release; it requires the XML utility
+programs  <code>xsltproc</code> and <code>trang</code> and also
+<code>perl</code>; once you have installed it, type 
+<code>roma --help</code> to see how to run it on your system.</p>
+
+<p>For those not running under Unix, the web-based front end  is
+available online at <xptr url="http://www.tei-c.org.uk/Roma/"/>.</p>
+
+<p>Roma produces a fully compiled (standalone) version
+of your schema in RELAXNG (either standard or compact syntax),
+W3C schemas and DTDs.</p>
+
+<p>If your ODD specification includes documentation as well as a
+schema specification, Roma can
+be used to produce a user manual from it. In case you have not already
+realised, the TEI Guidelines themselves are produced from a (rather
+large) ODD specification.</p>
+ 
+<div><head>A worked example</head>
+<p>In this example, we will try to validate a file containing a simple
+manuscript description (<ident>ms1.xml</ident>) against a P5
+schema. This schema is defined by an ODD file called
+<ident>ms.odd</ident>, with the following contents:
+<eg><![CDATA[
+    <schemaSpec ident="ms" start="TEI msDescription">
+      <moduleRef key="header"/>
+      <moduleRef key="core"/>
+      <moduleRef key="tei"/>
+      <moduleRef key="textstructure"/>
+      <moduleRef key="namesdates"/>
+      <moduleRef key="transcr"/>
+      <moduleRef key="msdescription"/>
+    </schemaSpec>
+]]></eg>
+</p>
+<p>The XML tagging used in the file is defined by the TEI module for
+Tagset Documentation (see the Guidelines at <xptr
+url="/P5/Guidelines/TD.html"/>); this simple
+example defines a schema called <ident>ms</ident>, which comprises all
+the elements defined by the standard TEI modules header, core, tei,
+textstructure, namesdates, transcr and msdescription. (You can find
+out what those modules contain by referring to the appropriate
+chapters of the Guidelines). The schema defined can be used to
+validate  documents whose root element is either <gi>TEI</gi> or
+<gi>msDescription</gi>. </p>
+<p>The ODD language allows you to do a lot more to customize your
+schema than this, of course. You can omit elements, change their
+names, add new elements or attributes, change the permitted values
+supplied for attributes and much more besides, as further described in
+the Guidelines.</p>
+</div>
+<div><head>Schema Generation</head>
+<p>First  we run Roma to produce schema files. </p>
+<p>If we have Roma installed
+locally (as well as xsltproc, trang, and perl) 
+we can do this at the command line:
+<eg><![CDATA[
+roma ms.odd mySchemas
+]]></eg>
+will run Roma to generate schemas in RELAXNG (RNG), RELAXNG Compact
+(RNC), W3C Schema (XSD), and DTD formats in a
+directory called <ident>mySchemas</ident>. The files will be called ms.rng, ms.rnc, ms.xsd, and ms.dtd
+unsurprisingly. By default, the TEI schema fragments to be used will
+be looked up on the web from an eXist XML database at
+<code>http://tei.oucs.ox.ac.uk/Query/</code>.</p>
+
+<p>Some elements in the current TEI schema have content models which cannot be
+expressed in all schema languages: warning messages will appear if
+your schema includes one such, but may safely be ignored.
+</p>
+<p>Alternatively, if you want to use the online version of Roma:
+<list type="ordered">
+<item>point your web browser at
+<xptr url="http://www.tei-c.org.uk/Roma/"/> </item>
+<item>Select the radio button  <code>Upload an existing
+customization</code></item>
+<item>Click the <code>Browse</code> button and navigate to your local copy of the
+file <ident>ms.odd</ident></item>
+<item>Press the <code>Submit</code> button</item>
+<item>You could now continue to modify your ODD specification (for example by
+removing elements you don't need, or defining new ones), but for the
+purposes of this tutorial, just press the <code>Schema</code>
+button.</item>
+<item>From the drop down menu select the format in which you would
+like to receive your schema and press the <code>Submit</code> button.</item>
+<item>Save your schema file locally</item>
+</list>
+</p>
+
+</div>
+
+<div><head>Validation</head>
+<p>The file "ms0.xml" contains an
+unrealistically simple
+manuscript description, like this:
+<eg><![CDATA[
+<msDescription status="uni" xml:lang="eng" xml:id="AM04-0795">
+<msIdentifier n="KK1927">
+<country reg="DK">Danmark</country>
+<settlement>K&oslash;benhavn</settlement>
+<repository>Det Arnamagn&aelig;anske Institut</repository>
+<idno>AM 795 4to</idno>
+</msIdentifier>
+
+<head>
+<title type="supplied">Apocalypse with Commentary</title>, Spain/Portugal, s. XIII; Latin.
+</head>
+
+<msContents>
+<msItem n="1" defective="no" class="bibl">
+<locus from="1r" to="24r">1r-24r</locus> 
+<title type="uniform" xml:lang="lat">Apocalypsis beati Ioannis Apostoli</title>
+<title type="uniform" xml:lang="eng">The Apocalypse of St John</title>
+<incipit>APOCALIPSIS <expan>ies</expan>u <expan>Christ</expan>i qua<expan>m</expan> dedit illi <lb/> d<expan>eu</expan>s pala<expan>m</expan> facere seruis suis, que opor <lb/> tet fieri cito</incipit>
+<textLang langKey="lat">Latin</textLang>
+</msItem>
+</msContents>
+</msDescription>
+]]></eg>
+</p>
+<p>How do you associate the schema file with this document instance and
+get a validator to check it out? ... is a Frequently Answered
+Question, the best answer to which is <q>It all depends...</q>,
+specifically on which validator and which schema language. We
+present below recipes for dealing with some commonly
+encountered scenarios.</p>
+
+<div><head>DTD language</head>
+
+<p>In DTD world, the usual way of associating a document with
+its DTD is by means of a DOCTYPE statement at the start of the
+document. You can do this in a number of different ways (see
+discussion at
+<xptr url="/P5/Guidelines/SG.html#SG18"/>). For example,
+you could simply edit every one of your test files to add a line such
+as
+<eg><![CDATA[
+<!DOCTYPE msDescription SYSTEM "testms.dtd" >
+]]></eg>
+at the start of it. A more flexible way (which would also make it
+easier to test your files in batches or in other environments without
+having to change them) would be to use 
+a driver file which references the required file or files. We have
+provided an example of this in the file <ident>driver.xml</ident> which
+contains the following:
+<eg><![CDATA[
+<!DOCTYPE TEI SYSTEM "testms.dtd" [
+<!ENTITY testFile SYSTEM "ms0.xml">
+]>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>A test harness for Ms Descriptions</title>
+         </titleStmt>
+         <publicationStmt>
+	   <p>Unpublished test file</p>
+	 </publicationStmt>
+         <sourceDesc>
+            <p>None: this document was born digital</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+<text>
+<body><head>A list of valid Ms Descriptions</head>
+<listBibl>
+&testFile;
+&testFile;
+</listBibl>
+</body>
+</text>
+</TEI>
+]]>
+</eg></p>
+<p>If you are using <ident>xmllint</ident>, a  cross platform XML
+validation tool, you could now validate your file by typing
+<eg>xmllint --noout --noent --valid driver.xml</eg>
+</p>
+<p>If you are using Emacs with nxml mode, open the file
+<ident>driver.xml</ident>, go into XML-mode (M-xml-mode) and then press
+    CTRL-V to invoke xmllint (note that you will need to add the
+    <code>--noent</code> parameter to the command line used)</p>
+<p>If you are using Oxygen, open the file <ident>driver.xml</ident>
+</p>
+
+</div>
+<div><head>RELAXNG language</head>
+
+<p>In the RELAXNG world, there are also several ways of associating a
+schema file with a document instance, but few of them require you to
+edit your existing XML files. There are also quite a few different
+validators to choose from. </p>
+<p>With <ident>rnv</ident>, you give the schema file on the command
+line:
+<eg>rnv testms.compiled.rnc ms0.xml</eg></p>
+<p>With tei-emacs, open <code>ms0.xml</code> and you will
+automatically be in nXML mode. Choose <code>Set Schema</code> from the
+<code>XML</code> menu. Options on the XML Menu allow you to associate schema and
+    instance files in a number of different ways, either on a file by
+    file basis, or for all files with a given root element. </p>
+<p>xmllint and jing can also be used to validate against a RELAXNG schema: 
+<eg>xmllint --relaxng testms.compiled.rng ms0.xml</eg>
+<eg>jing testms.compiled.rng ms0.xml</eg></p>
+<p>(Note that there is currently an oddity in the way jing validates
+xsd datatypes for language codes)</p>
+</div>
+
+</div>
+</div>
+</body>
+</text>
+</TEI.2>

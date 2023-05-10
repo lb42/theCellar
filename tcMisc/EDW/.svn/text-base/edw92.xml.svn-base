@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--DOCTYPE TEI.2 PUBLIC "-//TEI//DTD TEI Lite P4 XML 2002-05//EN"
+                       "../Lite/DTD/teixlite.dtd" [
+<!ATTLIST xref url CDATA #IMPLIED>
+<!ATTLIST xptr url CDATA #IMPLIED>
+]-->
+<TEI.2>
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Classes Changes</title>
+        <author>Lou Burnard</author>
+        <author>Sebastian Rahtz</author>
+	<author>Syd Bauman</author>
+      </titleStmt>
+      <publicationStmt>
+        <availability>
+          <p></p>
+        </availability>
+        <idno type="TEI">TC M 20</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Born digital</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+  <body>
+  <div>
+  <head>Specific changes</head>
+  <table>
+   <row>
+    <cell>1</cell>
+    <cell>move <gi>addrLine</gi> into <ident type="class">tei.addrPart</ident>, and change
+     <gi>address</gi> content model accordingly: <code>(
+      tei.Incl*, ( tei.addrPart, tei.Incl* )+ )</code></cell>
+    <cell>Done, 26 oct 05, LB</cell>
+   </row>
+   <row>
+    <cell>2</cell>
+    <cell>add the elements referenced by
+     <ident type="macro">macro.glossSeq</ident> into a new class
+     <ident type="class">tei.glossing</ident>; redefine
+     macro.glossSeq to reference this  class</cell>
+    <cell>added altIdent, equiv, gloss, desc, to new class
+    model.glossLike but didnt change macro.glossSeq pending discussion
+    about whether order should be relaxed or not (LB, 6 xi 05)</cell>
+   </row>
+   <row>
+    <cell>3</cell>
+    <cell>remove <gi>analytic</gi>,
+     <gi>monogr</gi>, and <gi>imprint</gi> from <ident type="class">tei.biblPart</ident></cell>
+	    <cell>Done, <date>2005-11-15</date>, Syd</cell>
+   </row>
+   <row>
+    <cell>4</cell>
+    <cell>new class <ident type="class">tei.resp</ident> to contain <gi>author</gi>,
+     <gi>editor</gi>, and <gi>respStmt</gi>, so that threesome
+     can be factored out of various places 
+     (<ident type="class">tei.biblPart</ident>, <gi>analytic</gi>,
+     <gi>monogr</gi> and  <gi>titleStmt</gi>)</cell>
+    <cell>defined model.respLike class as subclass of model.biblPart
+    and model.misItemPart; added author, editor, respStmt
+    to it, removing them from model.biblPart and msItemPart (LB 6 xi 05)</cell>
+   </row>
+   <row>
+    <cell>5</cell>
+    <cell>new class, <ident type="class">tei.biblPhrases</ident> containing those phrase
+     level elements which should be available within
+     <gi>bibl</gi> ( <gi>title</gi>, <gi>date</gi>,
+     <gi>dateRange</gi>): this new class should be a subclass of
+     <ident type="class">tei.biblPart</ident>. Content model of
+     bibl should reference only <ident type="class">tei.biblPart</ident>.
+    </cell>
+	    <cell>Done, <date>2005-11-15</date>, Syd</cell>
+   </row>
+  <row>
+    <cell>6</cell>
+    <cell>new class, <ident type="class">tei.biblBoxes</ident> with members
+     <gi>bibl{Struct,Item,Full}</gi>, many if not all references
+     to <gi>bibl</gi> should be to new class. &#x2014; but <ident type="class">tei.bibl</ident> already does
+     this.</cell>
+    <cell>already done: class is model.biblLike</cell>
+   </row>
+   <row>
+    <cell>7</cell> <cell>factor out repeating parts of the
+    <gi>fileDesc</gi> and <gi>biblFull</gi> content model to a macro
+    <ident type="macro">macro.fileDesc</ident>. I.e.,
+    <list><item><code>macro.fileDesc = titleStmt, editionStmt?,
+    extent?, publicationStmt, seriesStmt?, notesStmt?
+    </code></item><item><code>fileDesc.content = macro.fileDesc,
+    sourceDesc+ </code></item><item><code>biblFull.content =
+    macro.fileDesc, sourceDesc* </code></item></list>
+    </cell>
+	    <cell>Done, <date>2005-11-17</date>, Syd</cell>
+   </row>
+   <row>
+    <cell>8</cell> <cell>change name of <ident
+    type="class">tei.refsys</ident> to <ident
+    type="class">tei.refSys</ident>.</cell> 
+    <cell>Superceded by EDW87</cell>
+   </row>
+   <row>
+    <cell>9</cell>
+    <cell>new class, <ident type="class">tei.citable</ident> that currently contains only
+     <gi>quote</gi>, and is referred to instead of <code>q | quote</code> in content of
+     <gi>cit</gi>: <code>cit.content = ( tei.citable | tei.bibl | tei.loc | tei.Incl
+      )+</code></cell>
+    <cell>Done, <date>2005-11-17</date>, Syd</cell>
+   </row>
+   <row>
+    <cell>10</cell>
+    <cell>change the content model of all various non-empty members of <ident type="class">tei.edit</ident> except <gi>choice</gi>, to <ident type="macro">macro.paraContent</ident>. The list is <gi>add</gi>, <gi>app</gi>, <gi>corr</gi>,
+     <gi>damage</gi>, <gi>del</gi>, <gi>orig</gi>, <gi>reg</gi>, <gi>restore</gi>,
+     <gi>sic</gi>, <gi>supplied</gi>, and <gi>unclear</gi>.</cell>
+    <cell>changed (with some misgivings) add corr del sic from specialPara to
+    paraContent; changed orig, reg, and restore from phraseSeq to paraContent; left app
+    well alone as it doesnt belong in this list;
+    damage supplied and unclear already are paraContent   </cell>
+   </row>
+   <row>
+    <cell>11</cell>
+    <cell><ident type="class">tei.data</ident> should reference <ident type="class">tei.date</ident>, thus remove <gi>date</gi>, <gi>dateRange</gi>, and <gi>dateStruct</gi>
+     from it; i.e. <code>tei.data = ( abbr | address | tei.date | dimensions | eg | egXML |
+      expan | geogName | lang | measure | name | num | orgName | persName | placeName | rs |
+      time | timeRange | timeStruct )</code> (But note that more reductions should occur to
+     this class later.)</cell>
+    <cell>made class  tei.dateLike a member of model.pPart.data;
+    removed membership of model.pPart.data from date, dateRange, and
+    dateStruct: LB 2005-10-26 </cell>
+   </row>
+   <row>
+    <cell>12</cell>
+    <cell>move <gi>abbr</gi> and <gi>expan</gi> from <ident type="class">tei.data</ident> to
+     <ident type="class">tei.edit</ident></cell>
+    <cell>Done (LB, 06 xi 05 )</cell>
+   </row>
+   <row>
+    <cell>13</cell>
+    <cell>Moved <gi>gap</gi> into <ident type="class">tei.intervention</ident>, removing its
+     <ident type="attr">resp</ident></cell>
+    <cell>Done</cell>
+   </row>
+   <row>
+    <cell>14</cell>
+    <cell>make macro.glossSeq (or tei.glossing) the content for all those elements that
+     used to have <ident type="attr">desc</ident> (i.e., <gi>certainty</gi>, <gi>event</gi>,
+     <gi>gap</gi>, <gi>join</gi>, <gi>joinGrp</gi>, <gi>kinesic</gi>, <gi>relation</gi>,
+     <gi>respons</gi>, and <gi>restore</gi> and <gi>vocal</gi>)</cell>
+    <cell>added vocal to list; didnt change content model of restore (change @desc to
+    @means instead) nor of relation (changed @desc to @name instead)
+    LB </cell>
+   </row>
+   <row>
+    <cell>15</cell>
+    <cell>define new <ident type="class">tei.imprint</ident>
+     class for current
+     children of <gi>imprint</gi> (<code>pubPlace | publisher | date |
+      biblScope</code> );  factor them out of <gi>imprint</gi>, which becomes <code>(
+      tei.imprint, tei.Incl* )+</code> (note that this model
+     requires an element from <ident type="class">tei.imprint</ident>, which the previous did
+     not); remove  <gi>imprint</gi> from
+     <ident type="class">tei.biblPart</ident> and make the content model of <gi>bibl</gi>
+     reference <ident type="class">tei.imprint</ident></cell>
+    <cell>new class <ident type="class">model.imprintPart</ident>
+	      created, content model of <gi>imprint</gi> changed;
+	      <gi>imprint</gi> removed from content model of
+	      <gi>bibl</gi>, but reference to <ident
+		type="class">model.imprintPart</ident> not added, as
+	      all of its elements are already available inside
+	      <gi>bibl</gi> (and thus the reference would cause errors
+	      in DTDs) <date>2005-11-15</date>, Syd</cell>
+   </row>
+   <row>
+    <cell>16</cell> <cell>Removed <gi>indexTerm</gi> element,
+    replacing it by <gi>term</gi> within <gi>index</gi>; added <ident
+    type="attr">sortKey</ident> to <gi>term</gi>.</cell>
+    <cell>Done</cell>
+   </row>
+   <row>
+    <cell>17</cell>
+    <cell>move <gi>label</gi> from <ident type="class">tei.lists</ident> to <ident type="class">tei.inter</ident> and <ident type="class">tei.common</ident>.</cell>
+	    <cell>Done, <date>2005-11-17</date>, Syd</cell>
+   </row>
+   <row>
+    <cell>18</cell>
+    <cell>new class, <ident type="class">tei.metricalCompents</ident> &#x2026; we
+     did not decide whether this class contains only <gi>l</gi> or
+     both <gi>l</gi> and <gi>lg</gi>, or  references to two
+     other classes, one for potentially recursive
+     (e.g. <gi>lg</gi>) and one for 
+     non-recursive  components (e.g. <gi>l</gi>). This
+     class is referenced as the content model of <gi>lg</gi>; LR
+     argued that the potential recursion should not be hidden. </cell>
+    <cell>added model.lLike class; replaced occurrences of l in content
+    model of lg and sp with references to model.lLike</cell>
+   </row>
+   <row>
+    <cell>19</cell>
+    <cell>change content models of <gi>list</gi> and <gi>listBibl</gi> so that <gi>head</gi>
+     is replaced by <ident type="class">tei.divtop</ident>;
+     also add <ident type="class">tei.divbot</ident> at the end. E.g., <code>( tei.divtop | tei.Incl )*, ... (
+      tei.divbot | tei.Incl )*</code></cell>
+	    <cell>Done, <date>2005-11-17</date>, Syd</cell>
+   </row>
+   <row>
+    <cell>20</cell>
+    <cell>take <gi>measure</gi> out of <ident type="class">tei.names</ident>, remember to change
+     example in Guidelines <note place="inline">addendum
+      &#x2014; all examples with <ident type="attr">key</ident>
+      or <ident type="attr">reg</ident> are in <ident type="file">CO/co.odd</ident> or <ident type="file">CO/measure.odd</ident></note></cell>
+    <cell>revised discussion in co.odd; removed measure from all
+    classes except model.pPart.data (lb)</cell>
+   </row>
+   <row>
+    <cell>21</cell>
+    <cell>new attribute class <ident type="class">tei.measured</ident> to contain <ident type="attr">unit</ident>, <ident type="attr">quantity</ident>, <ident type="attr">commodity</ident> (A
+      different name is needed to avoid confusion with the
+      existing tei.measured class defined for manuscript
+      description)</cell>
+      <cell>Done, <date>2005-11-19</date>, Syd. However, see mail to
+      Council sent on same date.</cell>
+   </row>
+   <row>
+    <cell>22</cell>
+    <cell>factor <gi>persName</gi> and <gi>orgName</gi>, out of <ident type="class">tei.naming</ident> into <ident type="class">tei.agent</ident> (which becomes a subclass of
+     <ident type="class">tei.naming</ident>), and change content of <gi>respStmt</gi>
+     accordingly: <code>   (  ( tei.agent, resp ) | ( resp,  tei.agent ) ),
+      ( tei.agent |  resp )*</code>
+    </cell><!-- tei.naming is now model.nameLike, not to be confused
+    with att.naming-->
+    <cell>model.nameLike.agent already defined; made it a subclass of model.nameLike;
+    moved orgName from model.nameLike to model.nameLike.agent; removed
+    name from model.nameLike; changed content model of respStmt to
+    refer to model.nameLike.agent </cell>
+   </row>
+   <row>
+    <cell>23</cell>
+    <cell>factor <gi>p</gi> elements out passim in favour of reference to <ident type="class">tei.paragraph</ident>, always putting <ident type="class">tei.paragraph</ident> first in the content model</cell>
+    <cell>Done, <date>2005-11-20</date>, Syd</cell>
+   </row>
+   <row>
+    <cell>24</cell>
+    <cell>Class <ident type="class">tei.citable</ident> needs to be a
+     subclass of  <ident type="class">msItemPart</ident> (and
+     possibly other elements currently directly referencing
+     this class need similar treatment, e.g. making
+     <ident type="class">tei.bibl</ident>  )
+ </cell>
+    <cell>pending</cell>
+   </row>
+   <row>
+    <cell>25</cell>
+    <cell>make <gi>choice</gi> content model <code>( seg | choice | tei.chooseable )*</code>,
+     removing <gi>choice</gi> and <gi>seg</gi> from <ident type="class">tei.chooseable</ident>,
+     thus allowing it to be a pure subclass of <ident type="class">tei.edit</ident></cell>
+    <cell>not quite: in fact model.choicePart must NOT be a subclass
+    of model.pPart.edit as this introduces particle violations; it is
+    free standing semantic class. changed content model for choice OK
+    though</cell>
+   </row>
+   <row>
+    <cell>26</cell>
+    <cell>new class <ident type="class">tei.spComponent</ident> used only in <gi>sp</gi>, only
+     current member is <gi>stage</gi>; thus content of <gi>sp</gi> becomes <code>... ((
+      tei.paragraph | tei.metricalComponent | lg | tei.segment | tei.spComponent ),
+      tei.Incl* )+</code></cell>
+    <cell>added stage to existing model.stageLike class; changed content of sp to
+    reference it;  </cell>
+   </row>
+   <row>
+    <cell>27</cell>
+    <cell>move <gi>ab</gi> out of <ident type="class">tei.segment</ident> into <ident type="class">tei.paragraph</ident> </cell>
+    <cell>Done</cell>
+   </row>
+   <row>
+    <cell>28</cell>
+    <cell>add <gi>time</gi>, <gi>timeRange</gi> (if kept), and <gi>timeStruct</gi> to <ident type="class">tei.date</ident> (perhaps rename to <ident type="class">tei.temporal</ident>)</cell>
+    <cell>added time and timeRange to model.dateLike, removing them
+    from mode.pPart.data : removed some silly attributes from time
+    (LB, 6 xi.05)</cell>
+   </row>
+   <row>
+    <cell>29</cell>
+    <cell><gi>scriptStmt</gi>, <gi>sourceDesc</gi>, <gi>taxonomy</gi>, and <gi>broadcast</gi>
+     need to refer to <ident type="class">tei.bibl</ident> instead of directly to its elements</cell>
+    <cell>Done, <date>2005-11-20</date>, Syd</cell>
+   </row>
+   <row>
+    <cell>30</cell>
+    <cell>rename <ident type="class">tei.front</ident> to <ident type="class">tei.extraBodyDiv</ident> and <ident type="class">tei.fmchunk</ident> to <ident type="class">tei.extraBodyChunk</ident>, but with something
+     other than  <q>extraBody</q> to
+     indicate that this is stuff which can appear either at
+     the front or the back. The content of <gi>front</gi> and <gi>back</gi> should be
+     the same:  boiling down to something akin to <code>(
+      tei.extraBodyChunk | tei.chunk )*, ( tei.extraBodyDiv | div-stuff-here )+</code></cell>
+    <cell>changed &lt;back&gt; content model to reference model.divWrapper.bottom instead
+    of trailer and closer: the class names are still a mess but the changes
+    proposed here wont help much: see 32</cell>
+   </row>
+   <row>
+    <cell>31</cell>
+    <cell>transform the repetitive parts of 
+     <gi>body</gi> content model into macros </cell>
+     <cell>Done, <date>2005-11-21</date>, Syd</cell>
+   </row>
+   <row>
+    <cell>32</cell>
+    <cell>define new class <ident type="class">tei.bookends</ident> with members <code>byline | dateline | epigraph | salute | signed</code>
+     as content of <gi>closer</gi> and   <gi>opener</gi>; factor
+     these  out of <ident type="class">divtop</ident> and <ident type="class">divbot</ident></cell>
+    <cell>these elements are already members of model.divWrapper, divWrapper.bottom</cell>
+   </row>
+   <row>
+    <cell>33</cell>
+    <cell>put all the individual children of <gi>publicationStmt</gi>
+    into new class <ident
+    type="class">tei.publicationComponents</ident></cell>
+    <cell>Done, <date>2005-11-22</date>, Syd. New class is named
+    <ident type="class">model.recordingPart</ident>, and <ident
+    type="class">model.dateLike</ident> is a member, rather than
+    <gi>date</gi></cell>
+   </row>
+   <row>
+    <cell>34</cell>
+    <cell>define new content model for <gi>change</gi>: move <gi>date</gi> to a required
+     attribute, change <gi>item</gi> to <ident type="class">macro.specialPara</ident>, change
+     <gi>respStmt</gi> to required <ident type="attr">who</ident>, which points to a
+     <gi>person</gi> or <gi>personGrp</gi>, [schematron rule
+     ... pending work on prosopography]</cell>
+    <cell>redefined change element: added date attrib and added to
+    att.attributed class: fixed up examples in HD and test suite (LB 5.xi.05)</cell>
+   </row>
+   <row>
+    <cell>35</cell>
+    <cell>define new class <ident type="class">tei.recording</ident>
+     with members <code> respStmt | equipment | broadcast |
+      date </code>. Then change content model of
+     <gi>recording</gi> to use it: <code>p+ |
+      tei.recording+</code></cell>
+    <cell>Done, <date>2005-11-22</date>, Syd</cell>
+   </row>
+   <row>
+    <cell>36</cell>
+    <cell>define new macro, <ident type="class">macro.rendition</ident>
+     which contains <ident type="class">macro.paraContent</ident> and becomes the sole token in
+     the content of <gi>rendition</gi>; this makes it easier
+     to modify content of <gi>rendition</gi> eg to include an XML
+     vocabulary</cell>
+    <cell>started doing this; then decided it was not a sensible
+    idea. Why not just use ODD to redefine content of this element?
+    (LB, 6 xi 05)</cell>
+   </row>
+   <row>
+    <cell>37</cell>
+    <cell>try changing <gi>sourceDesc</gi> to have content <code>tei.paragraph+ | ( tei.bibl |
+      tei.sourceDesc )+</code></cell>
+    <cell>Done, <date>2005-11-22</date>, Syd</cell>
+   </row>
+   <row>
+    <cell>37</cell>
+    <cell>Removed <ident type="class">tei.teiHeader</ident> and
+     <ident type="class">tei.teiText</ident> classes, and
+    adjusted     content model of <gi>TEI</gi></cell>
+    <cell>Done</cell>
+   </row>
+   <row>
+    <cell>38</cell>
+    <cell>replace references to <gi>note</gi> with references to <ident type="class">tei.notes</ident> in classes and content models</cell>
+    <cell>Done: replace refs to "note" by refs in "model.noteLike" in biblStru, monogr, notstmt, admininfo, msitem,   msitemstruct char,glyph </cell>
+   </row>
+   <row>
+    <cell>39</cell>
+    <cell><gi>setting</gi> should reference new <ident type="class">tei.temporal</ident> class</cell>
+    <cell>Done, <date>2005-11-22</date>, Syd: it now references <ident
+    type="class">model.dateLike</ident> and <ident
+    type="class">model.nameLike</ident></cell>
+   </row>
+  </table>
+  
+ </div>
+  
+  <div>
+   <head>Decisions in Related Areas</head>
+   <p>In going through each element in the core, textstructure, and header modules looking for
+    improvements in the class system, we came across quite a few other areas where changes are
+    needed.</p>
+   <table>
+    <row><cell>1</cell><cell>remove <gi>p</gi> from content of <gi>langUsage</gi></cell><cell>Done</cell>
+    </row>
+    <row><cell>2</cell><cell>change content of <gi>foreign</gi> to
+      <ident type="macro">macro.phraseSeq</ident> instead of <ident type="macro">macro.paraContent</ident>.</cell><cell>Done</cell>
+    </row>
+    <row><cell>3</cell><cell>change model of <gi>teiCorpus</gi> to <code>teiHeader, ( TEI | teiCorpus )+</code></cell><cell>Done</cell>
+    </row>
+    <row><cell>4</cell><cell>remember to fix tagdoc of <gi>binaryObject</gi>: attributes need proper declarations</cell><cell>Done</cell>
+    </row>
+    <row><cell>5</cell><cell>add <ident type="attr">mimeType</ident> attribute to <gi>rendition</gi></cell><cell>Done</cell>
+    </row>
+    <row><cell>6</cell><cell>consider making <gi>encodingDesc</gi> and <gi>tagsDecl</gi> require at least one
+      child element</cell><cell>Done</cell>
+    </row>
+    <row><cell>7</cell><cell>removed <ident type="class">tei.Incl</ident> from <gi>monogr</gi>, <gi>biblFull</gi>,
+      and all of <gi>teiHeader</gi></cell>
+     <cell>Done</cell>
+    </row>
+    <row><cell>8</cell><cell>suggested changing name of <ident
+    type="class">tei.tpParts</ident> to <ident
+    type="class">tei.model.titlePageComponents</ident></cell><cell>Done: modeltitlepagePart</cell></row>
+    <row><cell>9</cell><cell>Replace <val>text</val> 
+     with complex model including <gi>g</gi>.
+     Only exception noticed so far is
+     <gi>binaryObject</gi> but there may be others.</cell><cell>Done</cell></row>
+
+  </table>
+  </div>
+ </body>
+ </text>
+</TEI.2>

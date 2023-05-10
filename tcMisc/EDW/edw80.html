@@ -1,0 +1,227 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns:tei="http://www.tei-c.org/ns/1.0" lang="en">
+<!--THIS FILE IS GENERATED FROM AN XML MASTER. 
+   DO NOT EDIT--><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Version numbering of TEI Guidelines</title>
+<link rel="stylesheet" type="text/css" href="Stylesheets/tei.css">
+<meta xmlns:html="http://www.w3.org/1999/xhtml" name="DC.Title" content="Version numbering of TEI Guidelines">
+<meta xmlns:html="http://www.w3.org/1999/xhtml" name="DC.Language" content="(SCHEME=iso639) en">
+<meta xmlns:html="http://www.w3.org/1999/xhtml" name="DC.Creator" content="TEI,Oxford University Computing Services, 13 Banbury Road, Oxford OX2 6NN, United Kingdom">
+<meta xmlns:html="http://www.w3.org/1999/xhtml" name="DC.Creator.Address" content="tei@oucs.ox.ac.uk">
+</head>
+<body background="/Pictures/background.gif">
+<a name="TOP"></a><table class="header" width="100%">
+<tr>
+<td rowspan="3"><img xmlns:html="http://www.w3.org/1999/xhtml" src="/Pictures/jaco001d.gif" alt="" width="180"></td>
+<td align="left"><h2 class="institution">Text Encoding Initiative</h2></td>
+</tr>
+<tr><td align="left"><h1 class="maintitle">Version numbering of TEI Guidelines</h1></td></tr>
+</table>
+<hr>
+<table class="leftlinks"><tr>
+<td width="20%" class="framemenu" valign="top">
+<hr>
+<p class="frametoc"><a class="frametoc" href="#body.1_div.1">1. When</a></p>
+<p class="frametoc"><a class="frametoc" href="#body.1_div.2">2. What</a></p>
+<p class="frametoc"><a class="frametoc" href="#body.1_div.3">3. Examples</a></p>
+</td>
+<td valign="top">
+      Use of Version number of TEI Guidelines
+      <p>During its conference call of 27 Jan
+          04 the TEI Council agreed that:
+        </p>
+<ul>
+<li>
+<a name="id51302"></a>conformant documents should specify the version of the
+            TEI to which they conform by means of an attribute named
+            <strong>version</strong>
+</li>
+<li>
+<a name="id51312"></a>its value should follow the pattern
+            <strong>major.minor.micro</strong>, with numeric values. 
+          </li>
+<li>
+<a name="id51325"></a>guidelines on version numbering should be agreed by
+            the editors and documented ASAP</li>
+</ul>
+<p><a name="index-bibl-id51332"></a><a href="../Council/tcm09.html#id2633880" class="quicklink" target="_top"><span>../Council/tcm09.html#id2633880</span></a> This
+        working paper proposes guidelines for version numbering of the
+        Guidelines.</p>
+      <div class="teidiv">
+<h2>
+<a name="body.1_div.1"></a>1. When</h2>
+        
+        <p><a name="id51373"></a>The version number should be updated whenever a
+          user-visible change is made to the content of the
+          Guidelines, whether that change is due to a change to the
+          source ODD files or to a change in the stylesheets that
+          produce the human-readable Guidelines or schemas.</p>
+        <p><a name="id51384"></a>But perhaps more useful than discussing when the version
+          number is updated is to mention when it is not updated. The
+          version number should not be updated when a change is made
+          to the stylesheets that produce the Guidelines or schema
+          from the source ODDs that changes only format, not content.
+          Furthermore changes to Roma or other software that assist
+          TEI users should not cause a change in the version number of
+          the Guidelines.</p>
+        <p>So the following changes should not result in an updated
+          version number:
+          </p>
+<ul>
+<li>
+<a name="id51411"></a>a change to the stylesheets that changed the
+              presentation of attribute values from fixed font to
+              bold;</li>
+<li>
+<a name="id51419"></a>a correction of a typo in the <tt>&lt;teiHeader&gt;</tt> of
+              the ODD source of the Guidelines. (Lou — do
+                we like this corollary? — sb)</li>
+<li>
+<a name="id51467"></a>a bug fix to Roma which corrected a problem that
+              caused incorrect DTD fragments to be generated if the
+              additional tag-set for names &amp; dates was
+              selected</li>
+</ul>
+<p>
+        </p>
+      </div>
+      <div class="teidiv">
+<h2>
+<a name="body.1_div.2"></a>2. What</h2>
+        
+        <p><a name="id47730"></a>The version number will be a `dotted
+            triad' in the form ‘major.minor.micro’.
+          Each of major, minor, and micro
+          is an integer. (I.e., as is common with such version
+          numbering systems, leading zeroes may have to be inserted
+          before string comparison can usefully be performed.)</p>
+        <p>The three components are updated as follows.
+          </p>
+<ul>
+<li>
+<a name="id47782"></a><strong>micro</strong> gets incremented whenever there
+              is a user-visible content change that:
+              <ul>
+<li>
+<a name="id47800"></a>does not alter the set of documents that conform
+                  to the Guidelines (i.e., makes no syntactic change
+                  to the constraints prescribed), <em>or</em>
+</li>
+<li>
+<a name="id47815"></a>does not alter the <em>intended</em> set of
+                  documents that conform to the Guidelines, but rather
+                  only changes the set that actually do conform by
+                  correcting an error; and</li>
+<li>
+<a name="id47864"></a>does not significantly alter the semantics of
+                  conforming documents, <em>or</em>
+</li>
+<li>
+<a name="id47876"></a>alters the semantics of conforming documents by
+                  correcting an error.</li>
+</ul>
+            </li>
+<li>
+<a name="id47886"></a><strong>minor</strong> gets incremented whenever there
+              is a user-visible change that is not a large enough
+              change to alter the existing chapter numbering, which
+              changes the syntax or semantics of conforming documents
+              other than minor error correction. When minor
+              is incremented, micro is set to zero.</li>
+<li>
+<a name="id47912"></a><strong>major</strong> gets incremented for major
+              revisions of the Guidelines. At such increments chapter
+              numbering, syntax specifications, etc. may change in
+              significant ways. Major changes are not
+              necessarily backwards compatible. When major is
+              incremented both minor and micro are
+              set to zero.</li>
+</ul>
+<p>
+        </p>
+      </div>
+      <div class="teidiv">
+<h2>
+<a name="body.1_div.3"></a>3. Examples</h2>
+        
+        <p><a name="id47973"></a><div align="left"><table>
+            <tr>
+              <td valign="top" colspan="1" rowspan="1">change to Guidelines or stylesheets</td>
+              <td valign="top" colspan="1" rowspan="1">change to version number</td>
+            </tr>
+            <tr>
+              <td valign="top" colspan="1" rowspan="1">Correct typo in <tt>&lt;teiHeader&gt;</tt>
+</td>
+              <td valign="top" colspan="1" rowspan="1">none</td>
+            </tr>
+            <tr>
+              <td valign="top" colspan="1" rowspan="1">Correct typo in <tt>&lt;text&gt;</tt> of Guidelines</td>
+              <td valign="top" colspan="1" rowspan="1">increment micro</td>
+            </tr>
+            <tr>
+              <td valign="top" colspan="1" rowspan="1">Change stylesheet so that section headings are
+                larger in the PDF version and centered in the HTML
+                version</td>
+              <td valign="top" colspan="1" rowspan="1">none</td>
+            </tr>
+            <tr>
+              <td valign="top" colspan="1" rowspan="1">Fix stylesheet so that the list of elements in the
+                ‘may occur within’ listings in reference section
+                are sorted by class, not just alphabetically</td>
+              <td valign="top" colspan="1" rowspan="1">increment micro</td>
+            </tr>
+            <tr>
+              <td valign="top" colspan="1" rowspan="1">Fix stylesheet so that a newline is inserted
+                between each set of elements in a given class in the
+                ‘may occur within’ listings in reference section</td>
+              <td valign="top" colspan="1" rowspan="1">none</td>
+            </tr>
+            <tr>
+              <td valign="top" colspan="1" rowspan="1">Correct the name of the
+                <strong>referencesystem</strong> class to <strong>referenceSystem</strong>
+</td>
+              <td valign="top" colspan="1" rowspan="1">increment micro</td>
+            </tr>
+            <tr>
+              <td valign="top" colspan="1" rowspan="1">After much discussion on TEI-L, change the largest
+                <tt>&lt;divN&gt;</tt> from 7 to 9</td>
+              <td valign="top" colspan="1" rowspan="1">increment minor</td>
+            </tr>
+            <tr>
+              <td valign="top" colspan="1" rowspan="1">Add a new section at the end of the feature
+                structure chapter with a few examples of using FSs to
+                encode meta information about dying languages</td>
+              <td valign="top" colspan="1" rowspan="1">increment minor</td>
+            </tr>
+            <tr>
+              <td valign="top" colspan="1" rowspan="1">After receiving a complaint that a particular
+              example was offensive, change to a different example</td>
+              <td valign="top" colspan="1" rowspan="1">increment micro</td>
+            </tr>
+            <tr>
+              <td valign="top" colspan="1" rowspan="1">Add a new chapter on the encoding of legal documents</td>
+              <td valign="top" colspan="1" rowspan="1">increment major</td>
+            </tr>
+          </table></div>
+        </p>
+      </div>
+    </td>
+</tr></table>
+<hr>
+<div class="footer">
+<a class="plain" target="_top" href=""></a>
+| <a class="plain" target="_top" href="http://www.tei-c.org/">TEI Home</a>
+| <a class="plain" target="_top" href="http://search.ox.ac.uk/web/related/natproj/tei">Search</a>
+| <a class="plain" target="_top" href="http://www.tei-c.org/Consortium/TEI-contact.html">Feedback</a>
+</div>
+<hr>
+<address>   .
+ <br>Copyright TEI Consortium 2004<!--
+Generated  using an XSLT version 1.0 stylesheet
+based on http://www.oucs.ox.ac.uk/stylesheets/teihtml.xsl
+processed using libxslt
+on 2004-05-08T18:36:26-04:00-->
+</address>
+</body>
+</html>

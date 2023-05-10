@@ -1,0 +1,179 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+  
+  
+    
+
+Current state of P5
+<p><a name="id2283058"></a>This is a working document for the use of the TEI Council and
+Editors. It summarizes briefly the current state of play and intended
+future work with respect to each chapter of P5. For more detailed
+information, consult the working directory currently maintained in the
+Perforce repository at <tt xmlns:tei="http://www.tei-c.org/ns/1.0">//TEI/P5/</tt> but which it is proposed
+to move to Sourceforge in the short to
+medium term. For strategic information about the overall goals of the
+P5 revision, and the version of it currently visible to the public, see <a href="http://www.tei-c.org/P5" class="quicklink" target="_top"><span>http://www.tei-c.org/P5</span></a>. </p>
+<p><a name="id2283082"></a>This document lists the chapters of P5, with an indication of the current status of each</p>
+<p xmlns:tei="http://www.tei-c.org/ns/1.0">Under the heading ‘prognosis’, we give our current assessment of the amount
+of work needed on each chapter, defined in the following broad terms:
+</p><p><dl><dt xmlns:tei="http://www.tei-c.org/ns/1.0"><strong>stet</strong></dt><dd xmlns:tei="http://www.tei-c.org/ns/1.0">No action needed</dd><dt xmlns:tei="http://www.tei-c.org/ns/1.0"><strong>major surgery</strong></dt><dd xmlns:tei="http://www.tei-c.org/ns/1.0">Complete rewrite needed</dd><dt xmlns:tei="http://www.tei-c.org/ns/1.0"><strong>minor surgery</strong></dt><dd xmlns:tei="http://www.tei-c.org/ns/1.0">Basically sound, but new material
+needs to be added</dd><dt xmlns:tei="http://www.tei-c.org/ns/1.0"><strong>for review</strong></dt><dd xmlns:tei="http://www.tei-c.org/ns/1.0">New material has been provided but not
+yet approved by the council</dd><dt xmlns:tei="http://www.tei-c.org/ns/1.0"><strong>for checking</strong></dt><dd xmlns:tei="http://www.tei-c.org/ns/1.0">No major changes anticipated but not
+yet checked for P5 consistency</dd><dt xmlns:tei="http://www.tei-c.org/ns/1.0"><strong>for deletion</strong></dt><dd xmlns:tei="http://www.tei-c.org/ns/1.0">Proposed for removal at P5</dd></dl></p><p xmlns:tei="http://www.tei-c.org/ns/1.0">
+</p>
+<p><a name="id2283140"></a>The process of ‘checking for P5 consistency’ will involve a
+number of minor editorial checks and changes which, although
+pervasive, cannot be done automatically. (Pervasive but automatable
+changes are applied across P5 as and when they are identified). This
+document also summarizes the tasks so far identified as necessary in this
+respect. </p>
+<p><a name="id2283153"></a>The status ‘Unchanged from P4’ is not strictly accurate: all
+chapters of P5 have gone through a number of global syntactic changes,
+and will go through more before we are done.</p>
+<p><a name="id2283162"></a>The prognoses given in the following table are highly provisional! In
+particular, we don't yet know what effect the promised user
+consultation exercise (see <a href="edw78.html" class="quicklink" target="_top"><span>edw78.html</span></a>) may have on
+them.</p>
+
+<div class="teidiv"><h2><a name=""></a>State of the patient</h2>
+<p><a name="id2283178"></a>
+<div xmlns:tei="http://www.tei-c.org/ns/1.0" align="left"><table>
+<tr class="">
+<td valign="top" class=""><strong>code</strong></td>
+<td valign="top" class=""><strong>title</strong></td>
+<td valign="top" class=""><strong>current state</strong></td>
+<td valign="top" class=""><strong>prognosis</strong></td>
+</tr>
+<tr class=""><td valign="top" class="">DEDICATION</td><td valign="top" class="">Dedication</td><td valign="top" class="">Unchanged from P4</td><td valign="top" class="">stet</td></tr>
+<tr class=""><td valign="top" class="">FM1</td><td valign="top" class="">Preface</td><td valign="top" class="">Unchanged from
+P4</td><td valign="top" class="">major surgery</td></tr>
+<tr class=""><td valign="top" class="">AB</td><td valign="top" class="">About these Guidelines</td><td valign="top" class="">Unchanged from
+P4</td><td valign="top" class="">for checking</td></tr>
+<tr class=""><td valign="top" class="">SG</td><td valign="top" class="">Gentle intro</td><td valign="top" class="">Unchanged from
+P4</td><td valign="top" class="">minor surgery</td></tr>
+<tr class=""><td valign="top" class="">ST</td><td valign="top" class="">Structure of the TEI Document Type
+Definition</td><td valign="top" class="">Largely unchanged from P4</td><td valign="top" class="">major
+surgery</td></tr>
+<tr class=""><td valign="top" class="">CH</td><td valign="top" class="">Languages and Character Sets</td><td valign="top" class="">New
+draft from Workgroup</td><td valign="top" class="">for review</td></tr>
+<tr class=""><td valign="top" class="">HD</td><td valign="top" class="">The TEI Header</td><td valign="top" class="">Unchanged from
+P4</td><td valign="top" class="">for checking</td></tr>
+<tr class=""><td valign="top" class="">CO</td><td valign="top" class="">Elements Available in All TEI
+Documents</td><td valign="top" class="">Unchanged from P4</td><td valign="top" class="">minor surgery</td></tr>
+<tr class=""><td valign="top" class="">DS</td><td valign="top" class="">Default Text Structure</td><td valign="top" class="">Unchanged from P4</td><td valign="top" class="">for checking</td></tr>
+<tr class=""><td valign="top" class="">PR</td><td valign="top" class="">Base Tag Set for Prose</td><td valign="top" class="">Unchanged from P4</td><td valign="top" class="">for checking/deletion</td></tr>
+<tr class=""><td valign="top" class="">VE</td><td valign="top" class="">Base Tag Set for Verse</td><td valign="top" class="">Unchanged from P4</td><td valign="top" class="">for checking</td></tr>
+<tr class=""><td valign="top" class="">DR</td><td valign="top" class="">Base Tag Set for Drama</td><td valign="top" class="">Unchanged from P4</td><td valign="top" class="">for checking</td></tr>
+<tr class=""><td valign="top" class="">TS</td><td valign="top" class="">Transcriptions of Speech</td><td valign="top" class="">Unchanged from P4</td><td valign="top" class="">for checking</td></tr>
+<tr class=""><td valign="top" class="">DI</td><td valign="top" class="">Print Dictionaries</td><td valign="top" class="">Unchanged from
+P4</td><td valign="top" class="">minor surgery</td></tr>
+<tr class=""><td valign="top" class="">TE</td><td valign="top" class="">Terminological Databases</td><td valign="top" class="">Unchanged
+from P4</td><td valign="top" class="">major surgery</td></tr>
+<tr class=""><td valign="top" class="">MS</td><td valign="top" class="">The Manuscript Description
+Element</td><td valign="top" class="">New draft from Workgroup</td><td valign="top" class="">for review</td></tr>
+<tr class=""><td valign="top" class="">SA</td><td valign="top" class="">Linking, Segmentation, and
+Alignment</td><td valign="top" class="">Unchanged from P4</td><td valign="top" class="">minor surgery</td></tr>
+<tr class=""><td valign="top" class="">AI</td><td valign="top" class="">Simple Analytic Mechanisms</td><td valign="top" class="">Unchanged from P4</td><td valign="top" class="">for checking</td></tr>
+<tr class=""><td valign="top" class="">FS</td><td valign="top" class="">Feature Structures</td><td valign="top" class="">Unchanged from P4</td><td valign="top" class="">for review</td></tr>
+<tr class=""><td valign="top" class="">CE</td><td valign="top" class="">Certainty and Responsibility</td><td valign="top" class="">Unchanged from P4</td><td valign="top" class="">for checking</td></tr>
+<tr class=""><td valign="top" class="">PH</td><td valign="top" class="">Transcription of Primary Sources</td><td valign="top" class="">Unchanged from P4</td><td valign="top" class="">for checking</td></tr>
+<tr class=""><td valign="top" class="">TC</td><td valign="top" class="">Critical Apparatus</td><td valign="top" class="">Unchanged from P4</td><td valign="top" class="">for checking</td></tr>
+<tr class=""><td valign="top" class="">ND</td><td valign="top" class="">Names and Dates</td><td valign="top" class="">Unchanged from P4</td><td valign="top" class="">for checking</td></tr>
+<tr class=""><td valign="top" class="">GD</td><td valign="top" class="">Graphs, Networks, and Trees</td><td valign="top" class="">Unchanged from P4</td><td valign="top" class="">for deletion?</td></tr>
+<tr class=""><td valign="top" class="">FT</td><td valign="top" class="">Tables, Formulae, and
+Graphics</td><td valign="top" class="">Unchanged from P4</td><td valign="top" class="">minor surgery</td></tr>
+<tr class=""><td valign="top" class="">CC</td><td valign="top" class="">Language Corpora</td><td valign="top" class="">Unchanged from P4</td><td valign="top" class="">for checking</td></tr>
+<tr class=""><td valign="top" class="">SH</td><td valign="top" class="">The Independent Header</td><td valign="top" class="">Unchanged from P4</td><td valign="top" class="">for deletion?</td></tr>
+<tr class=""><td valign="top" class="">WD</td><td valign="top" class="">Writing System Declaration</td><td valign="top" class="">New draft
+from WG</td><td valign="top" class="">for review</td></tr>
+<tr class=""><td valign="top" class="">FD</td><td valign="top" class="">Feature System Declaration</td><td valign="top" class="">Unchanged
+from P4</td><td valign="top" class="">major surgery</td></tr>
+<tr class=""><td valign="top" class="">TD</td><td valign="top" class="">Documentation Elements</td><td valign="top" class="">New chapter
+from Meta WG</td><td valign="top" class="">for review</td></tr>
+<tr class=""><td valign="top" class="">CF</td><td valign="top" class="">Conformance</td><td valign="top" class="">Unchanged from
+P4</td><td valign="top" class="">minor surgery</td></tr>
+<tr class=""><td valign="top" class="">MD</td><td valign="top" class="">Modifying and Customizing the TEI
+DTD</td><td valign="top" class="">Unchanged from P4</td><td valign="top" class="">major surgery</td></tr>
+<tr class=""><td valign="top" class="">IN</td><td valign="top" class="">Rules for Interchange</td><td valign="top" class="">Unchanged from P4</td><td valign="top" class="">for checking</td></tr>
+<tr class=""><td valign="top" class="">NH</td><td valign="top" class="">Multiple Hierarchies</td><td valign="top" class="">Unchanged from
+P4</td><td valign="top" class="">minor surgery</td></tr>
+<tr class=""><td valign="top" class="">CR</td><td valign="top" class="">Algorithm for Recognizing Canonical References</td><td valign="top" class="">Unchanged from P4</td><td valign="top" class="">for checking/deletion</td></tr>
+<tr class=""><td valign="top" class="">DT</td><td valign="top" class="">Obtaining the TEI DTD</td><td valign="top" class="">Unchanged from
+P4</td><td valign="top" class="">major surgery</td></tr>
+<tr class=""><td valign="top" class="">XW</td><td valign="top" class="">Obtaining TEI WSDs</td><td valign="top" class="">Unchanged from P4</td><td valign="top" class="">for deletion</td></tr>
+<tr class=""><td valign="top" class="">XT</td><td valign="top" class="">Sample Tag Set Documentation</td><td valign="top" class="">Unchanged from P4</td><td valign="top" class="">for deletion</td></tr>
+<tr class=""><td valign="top" class="">GR</td><td valign="top" class="">Formal Grammar for the TEI-Interchange-Format Subset of SGML</td><td valign="top" class="">Unchanged from P4</td><td valign="top" class="">for deletion</td></tr>
+<tr class=""><td valign="top" class="">BIB</td><td valign="top" class="">Bibliography</td><td valign="top" class="">Unchanged from
+P4</td><td valign="top" class="">minor surgery</td></tr>
+<tr class=""><td valign="top" class="">PARTIND</td><td valign="top" class="">Index</td><td valign="top" class="">Unchanged from
+P4</td><td valign="top" class="">major surgery</td></tr>
+<tr class=""><td valign="top" class="">PREFS</td><td valign="top" class="">Old prefaces</td><td valign="top" class="">Unchanged from
+P4</td><td valign="top" class="">minor surgery</td></tr>
+<tr class=""><td valign="top" class="">COL</td><td valign="top" class="">Colophon</td><td valign="top" class="">Unchanged from
+P4</td><td valign="top" class="">minor surgery</td></tr>
+</table></div></p></div>
+
+<div class="teidiv"><h2><a name=""></a>Provisional Workplan</h2>
+
+<p xmlns:tei="http://www.tei-c.org/ns/1.0">The following involve major work on a chapter. They are all urgent:
+</p><ol><li xmlns:tei="http://www.tei-c.org/ns/1.0"><a name="id2283741"></a>Expand discussion of customization features in TD and make sure it
+works: [LB by 31 Jul]</li><li xmlns:tei="http://www.tei-c.org/ns/1.0"><a name="id2283745"></a>Revise MD, CF, and IN in light of new customization features. Document features for modification and
+i18n [? after TD]</li><li xmlns:tei="http://www.tei-c.org/ns/1.0"><a name="id2283751"></a>Expand SG to include discussion of RelaxNG and other schemas
+[urgent]: mostly needs prose tidy-up, and some relaxng schema
+examples: needed for Fabio's book: [SB by 31 Jul] </li><li xmlns:tei="http://www.tei-c.org/ns/1.0"><a name="id2283757"></a>Revise ST: in particular <ul><li><a name="id2283762"></a>overhaul discussion of class system</li><li><a name="id2283766"></a>add new material about  proposed new core modules</li></ul> [LB by 31 Jul]</li><li xmlns:tei="http://www.tei-c.org/ns/1.0"><a name="id2283772"></a>Review HD and update its metadata discussion: consolidate and
+move discussion of other metadata schemes in current HD and IH; review
+other schemes not so far discussed; create new chapter about
+compatibility and mapping, to include (possibly) discussion about
+using namespaces, using existing MD methods, using generic metadata
+tags (if so proposed by teilib) </li><li xmlns:tei="http://www.tei-c.org/ns/1.0"><a name="id2283782"></a>Consider reorganization/modularization of Core [urgent]</li><li xmlns:tei="http://www.tei-c.org/ns/1.0"><a name="id2283786"></a>Write up implementn of &lt;choice&gt; mechanism [urgent]: 
+a draft proposal is needed to build on ideas from tei-choice </li><li xmlns:tei="http://www.tei-c.org/ns/1.0"><a name="id2283794"></a>Add discussion of prosopographic issues to ND, moving it fron MS
+and CO [urgent]: a draft proposal is needed</li><li xmlns:tei="http://www.tei-c.org/ns/1.0"><a name="id2283799"></a>Revise DI: waiting on LR, due end Jul</li><li xmlns:tei="http://www.tei-c.org/ns/1.0"><a name="id2283803"></a>Revise TE: waiting on LR, due end Jul</li><li xmlns:tei="http://www.tei-c.org/ns/1.0"><a name="id2283807"></a>Revise MS: waiting on MS-WG: due 15 jul, then to LB</li><li xmlns:tei="http://www.tei-c.org/ns/1.0"><a name="id2283811"></a>Review FD for compatibility with new FS, pending ISO revision:
+draft shd be ready for paris, end aug.</li><li xmlns:tei="http://www.tei-c.org/ns/1.0"><a name="id2283816"></a>Implement proposals from SA. Specifically:
+<ul><li><a name="id2283820"></a>Add UR[ILN] attribute to &lt;ptr&gt; and &lt;ref&gt;; remove xref and xptr</li><li><a name="id2283826"></a>Revise discussion of syntax for extended pointers xpaths</li><li><a name="id2283831"></a>Add discussion of standoff annotation to NH (or SA?)</li></ul> (SB by end Jul?)</li></ol><p xmlns:tei="http://www.tei-c.org/ns/1.0">
+</p>
+
+<p xmlns:tei="http://www.tei-c.org/ns/1.0">The following can be done at any time: for revised chapters, they
+will be done during revision; for others, they will be done during
+final sweep through (c. sept).
+</p><ol><li xmlns:tei="http://www.tei-c.org/ns/1.0"><a name="id2283848"></a>Check that none of the typos etc. lately fixed in P4 (as documented in
+<a href="edw77.xml" class="quicklink" target="_top"><span>edw77.xml</span></a>) has survived into P5 [passim]</li><li xmlns:tei="http://www.tei-c.org/ns/1.0"><a name="id2283858"></a>Check content model of all <tt>&lt;egXML&gt;</tt> elements still
+containing CDATA marked sections and remove same, if syntactically
+possible [passim]</li><li xmlns:tei="http://www.tei-c.org/ns/1.0"><a name="id2283867"></a>Check and amend references to DTD language constructs [passim]</li><li xmlns:tei="http://www.tei-c.org/ns/1.0"><a name="id2283871"></a>Check and amend references to P4 structural architecture (eg
+base/additional tagsets) [passim]</li><li xmlns:tei="http://www.tei-c.org/ns/1.0"><a name="id2283876"></a>Implement renaming of id to  xml:id [passim]</li><li xmlns:tei="http://www.tei-c.org/ns/1.0"><a name="id2283880"></a>Implement renaming of lang to  xml:lang [passim]</li><li xmlns:tei="http://www.tei-c.org/ns/1.0"><a name="id2283885"></a>Revise base chapters to remove references to their status as
+bases</li></ol><p xmlns:tei="http://www.tei-c.org/ns/1.0"></p>
+
+<p xmlns:tei="http://www.tei-c.org/ns/1.0">The following are either non-urgent or undecided:
+
+</p><ol><li xmlns:tei="http://www.tei-c.org/ns/1.0"><a name="id2283898"></a>Check conformity of CH language identification recs with eg
+Ethnolog practice [soon]</li><li xmlns:tei="http://www.tei-c.org/ns/1.0"><a name="id2283902"></a>Consider what to do about remaining CDATA attributes [passim]</li><li xmlns:tei="http://www.tei-c.org/ns/1.0"><a name="id2283907"></a>Merge CF and IN into new freestanding document on Conformance</li><li xmlns:tei="http://www.tei-c.org/ns/1.0"><a name="id2283911"></a>Decide whether or not to kill GD and do it </li><li xmlns:tei="http://www.tei-c.org/ns/1.0"><a name="id2283915"></a>Decide whether or not to split up FT; bring it up to date</li><li xmlns:tei="http://www.tei-c.org/ns/1.0"><a name="id2283919"></a>Decide what to do with CR and do it</li></ol><p xmlns:tei="http://www.tei-c.org/ns/1.0">
+</p>
+
+<p xmlns:tei="http://www.tei-c.org/ns/1.0">The following cannot be done until everything else is finished:
+</p><ol><li xmlns:tei="http://www.tei-c.org/ns/1.0"><a name="id2283933"></a>Draft new preface to reflect current state of affairs. [final]</li><li xmlns:tei="http://www.tei-c.org/ns/1.0"><a name="id2283938"></a>Rewrite AB to reflect current state of affairs. [final]</li><li xmlns:tei="http://www.tei-c.org/ns/1.0"><a name="id2283942"></a>Either update or remove BIB</li></ol><p xmlns:tei="http://www.tei-c.org/ns/1.0">
+</p>
+
+<p xmlns:tei="http://www.tei-c.org/ns/1.0">Drafts will go through the following stages:
+</p><ul><li xmlns:tei="http://www.tei-c.org/ns/1.0"><a name="id2283955"></a>an editor or a
+workgroup has produced the draft and it has been seen by the
+council</li><li xmlns:tei="http://www.tei-c.org/ns/1.0"><a name="id2283962"></a>both editors have worked on the chapter; council has
+approved its content</li><li xmlns:tei="http://www.tei-c.org/ns/1.0"><a name="id2283969"></a>the chapter has been available for public
+comment for at least a month</li></ul><p xmlns:tei="http://www.tei-c.org/ns/1.0">
+</p>
+<p><a name="id2283976"></a>Substantative changes to intellectual content should not be made
+once a chapter has become `stable'</p>
+
+</div>
+<div class="teidiv"><h2><a name=""></a>Milestones</h2>
+<p><dl><dt xmlns:tei="http://www.tei-c.org/ns/1.0"><strong>1 Aug</strong></dt><dd xmlns:tei="http://www.tei-c.org/ns/1.0">By this date we aim to have
+<ul><li><a name="id2284002"></a>stable drafts of TD, MD, CH, WD, FS</li><li><a name="id2284006"></a>review drafts of MS, SA, "Choice" </li><li><a name="id2284010"></a>preliminary drafts of SG, possibly ND</li></ul>
+Eds will meet at Xtreme to review progress.
+</dd><dt xmlns:tei="http://www.tei-c.org/ns/1.0"><strong>1 sept</strong></dt><dd xmlns:tei="http://www.tei-c.org/ns/1.0">By this date we aim to have
+<ul><li><a name="id2284025"></a>stable drafts of MS, SG, SA, Choice</li><li><a name="id2284029"></a>review drafts of ND IN</li><li><a name="id2284033"></a>preliminary drafts HD </li></ul>
+</dd><dt xmlns:tei="http://www.tei-c.org/ns/1.0"><strong>1 Oct</strong></dt><dd xmlns:tei="http://www.tei-c.org/ns/1.0">By this date we aim to have
+<ul><li><a name="id2284047"></a>stable drafts ND, IN, HD</li><li><a name="id2284051"></a>review drafts </li><li><a name="id2284054"></a>preliminary drafts</li></ul>
+</dd></dl></p>
+</div>
+
+
+    
+

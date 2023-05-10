@@ -1,0 +1,136 @@
+<?xml version="1.0"?> 
+<?xml-stylesheet type="text/css" href="/teixlite.css"?>
+<!--DOCTYPE TEI.2 PUBLIC "-//TEI//DTD TEI Lite XML ver. 1//EN"
+"http://www.tei-c.org/Lite/DTD/teixlite.dtd" []-->
+<TEI.2>
+ <teiHeader>
+  <fileDesc>
+   <titleStmt>
+    <title>Revision of P4</title>
+   </titleStmt>
+   <publicationStmt>
+    <p>Unpublished</p>
+    <!-- one of (publisher distributor authority pubPlace address idno availability date p) -->
+   </publicationStmt>
+   <sourceDesc>
+    <p>Drafted by LB</p>
+    <!-- one of (p bibl biblFull listBibl) -->
+   </sourceDesc>
+  </fileDesc>
+  <revisionDesc>
+   <!-- one of (change list) -->
+   <change>
+    <date>3 Jul 2001</date>
+    <respStmt>
+     <name>Lou</name>
+    </respStmt>
+    <item>First draft</item>
+   </change>
+  </revisionDesc>
+ </teiHeader>
+ <text>
+  <body>
+   <p>This document outlines the strategy proposed by the TEI Editors for the
+   next Revision of TEI P4, the new XML/SGML compatible version of the
+   TEI Guidelines. Our guiding principle in drawing this up has
+     been to avoid as far as possible any major revision of the
+     content of the
+     Guidelines &amp;mdash; not because we believe such revision to be
+     unnecessary but because we believe it should be carried out by
+     properly constituted and chartered workgroups. We believe the topics
+     listed here are all necessary and  non-controversial
+     modifications, motivated only by the desire to catch up on some
+     of the technical and infrastructural changes in the world since
+     1994. </p>
+<div><head>Current state of play</head>
+   <p>TEI P4 has been through a number of automatic and semi-automatic
+   procedures, most of them documented in TEI ED W69, and TEI ED
+   W70. At the conclusion of those processes, we have:
+<list>
+<item>New versions of all TEI ODD files which use XML syntax and which
+   conform with an XML DTD made from the original TEI ODD dtd;</item>
+      <item>XSL-T stylesheets which can be used to generate the DTD
+   fragments and/or readable text in HTML or PDF from the foregoing; </item>
+<item>a complete set of new TEI DTD fragments, which can be
+   parameterised for use in either SGML or XML;</item>
+      <item>a text of P4 in which the examples have been systematically checked
+    and converted to use XML syntax, and in which all explicit references to SGML have been
+    systematically reviewed and changed to reflect the new status of
+    the Guidelines.</item>
+</list>
+    </p>
+   </div>
+   <div><head>Work to be done</head>
+   <p>In the opinion of the editors, the following work remains to be
+    done before we will have a publishable version of the P4
+    Guidelines:
+<list type="ordered"><item>all of the text needs to be proof-read for inadvertently
+    introduced or long-lurking typos;</item>
+      <item>the <soCalled>gentle guide</soCalled> to SGML needs to be
+    rewritten to make clear which parts of it relate to XML and which
+    to SGML;</item>
+<item>the recommendations in chapters 4 and 25 about character encoding
+    issues need to be completely overhauled and rethought in the light
+    of Unicode;</item>
+      <item>the formal grammar of SGML needs to be removed,
+    or either supplemented or replaced by an equivalent formal grammar
+    for XML;</item>
+      <item>discussion of SDIF and other defunct standards needs to
+    be replaced or removed;</item>
+<item>discussion of at least some of the following is needed: XML Schema,
+    Unicode, Namespaces, XPath, Xpointer, Xlink, XInclude, RDF,
+    Fragment spec, MathML, Dublin Core, URLs vs. FPIs at various
+    places in the text;</item>
+      <item>the bibliography needs to be brought up to date.</item>
+     </list></p>
+
+    <p>Much of the above work is fairly easy and uncontentious. Other
+    parts are more problematic, requiring either larger investments of
+    time and effort than are readily available or requiring wider
+    consultation with the TEI community. In particular, it seems to us
+    that the character encoding recommendations (primarily chap 4 but
+    also 25, 37) have been largely overtaken by events, and are thus
+    overdue for review. We propose that a workgroup be chartered by
+    the Board to address this problem as soon as possible, in advance
+    of the existence of the TEI Council which should formally ratify
+    its work. A separate document (TEI EDW72) proposes a charge and
+    suggests an initial membership for this workgroup. The group will
+    be asked to produce a preliminary report in time for the first TEI
+    members meeting in mid October, by when it is hoped that a
+    significant proportion of the remainder of the workplan specified
+    in the next section will also be completed.
+    </p>
+
+   </div>
+   <div>
+<head>Editorial work plan</head>
+
+<p>We list below a very minimal workplan, subject to review and
+     reaction from the Board and from the panel of proof readers we
+     hope to recruit. 
+<list>
+<item>Redraft Gentle Guide to include XML: LB to do by mid-Sept</item>
+<item>Introduce discussion of Xlink and related standards into chapter
+       14 (linking and alignment): SDR to do by mid-Sept</item>
+<item>Recruit volunteer proof readers, allocate chapters to them, act
+       on their feedback: LB/SDR to complete by start October.</item>
+<item>Revise bibliography: volunteer needed</item>
+<item>Review  chapter 39 (formal grammar): volunteer needed</item>
+<item>Review chapter 28, 29, 30
+ (conformance, modification, interchange) for significant content
+       changes: volunteer needed</item>
+      <item>Propose new material on Dublin Core, RDF and other
+       relevant metadata standards for inclusion in chapters 5 and 24 (the
+       Header): volunteer needed; </item>
+      <item>Propose material on MathML (and namespaces?) for chapter
+       22 (Tables, formulae, and graphics): volunteer needed </item>
+      <item>Revise chap 27 (Tagset doc) to include specification of
+       the ODD system as used in P4 : LB to do, but not any time soon</item>
+      <item>Review discussion of CONCUR in chapter 31 </item>
+     </list>
+    </p>
+   </div>
+  </body>
+  <!-- one of (body group) -->
+ </text>
+</TEI.2>

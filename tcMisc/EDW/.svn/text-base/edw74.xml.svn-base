@@ -1,0 +1,142 @@
+<?xml version="1.0"?> 
+<?xml-stylesheet type="text/css" href="teixlite.css"?>
+<!-- DOCTYPE TEI.2 PUBLIC "-//TEI//DTD TEI Lite XML ver. 1//EN"-->
+<TEI.2>
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title>Charge for the Workgroup on Stand-Off Markup, Xlink and
+     Xpointer</title>
+</titleStmt>
+<publicationStmt>
+<distributor>TEI</distributor>
+</publicationStmt>
+<sourceDesc>
+<p>Loosely based on AI1P01</p>
+</sourceDesc>
+</fileDesc>
+<revisionDesc>
+<change>
+<date>1 May 2002</date>
+<respStmt>
+<name>David G. Durand</name>
+<resp>TEI Tagger</resp>
+</respStmt>
+<item>Minimal Update / Final draft</item>
+</change>
+<change>
+<date>14 Apr 2002</date>
+<respStmt>
+<name>Lou Burnard</name>
+<resp>TEI Tagger</resp>
+</respStmt>
+<item>First draft</item>
+</change>
+</revisionDesc>
+</teiHeader>
+<text>
+<front>
+<titlePage>
+<docTitle>
+<titlePart>Charge for the Workgroup on Stand-Off Markup, Xlink and
+     Xpointer</titlePart>
+<titlePart>TEI ED W74</titlePart>
+</docTitle>
+<docDate>1 May 2002</docDate>
+</titlePage>
+</front>
+<body>
+<div><head>Objectives</head>
+<list type="ordered">
+<item>Review the status of current TEI Recommendations for handling
+      stand-off or out-of-line markup. </item>
+<item>Review the TEI extended
+     pointer syntax with respect to current needs and practices.</item>
+<item>Review the TEI linking and hypertext recommendations with
+respect to current needs and practices.</item>
+<item>Review the needs and practices of those parts of the TEI user
+      community likely to use such facilities. In particular, the
+      needs and practices of the following communities should be considered:
+<list>
+<item>applied linguists representing multiple levels or layers of
+	analysis of a corpus; </item>
+       <item>social scientists, historians, descriptive linguists and
+	others creating and archiving
+	multimodal resources (oral history, video, transcripts, etc.) </item>
+<item>applied linguists attempting integrated analyses of multimodal
+	communication (involving speech, writing, gesture, movement etc.)</item>
+<item>philologists and interpretive critics recording multiple
+	interpretations  of a single written text;</item>
+<item>translators and others working with multilingual corpora;</item>
+<item>authors and encoders of documents that include cross-references, indexes,
+and other hypertextual features;</item>
+<item>encoders who need to represent existing hypertext documents in
+TEI format.</item>
+</list></item>
+     <item>Review the facilities provided in this area by standards
+      which have appeared since the publication of P3, in particular
+      applications based on the W3C Xlink and Xpointer standards, such as : <list>
+       <item>ISLE</item>
+       <item>MATE</item>
+       <item>Annotation Graphs</item>
+       <item>Talkbank</item>
+      </list></item>
+<item>Propose a detailed work plan (possibly involving further work
+	groups), to improve and extend upon the Recommendations provided
+    by TEI P4 in these areas.  The work plan will be determined
+by agreement of the working group but is expected to address at least
+	the following:
+<list>
+<item>convergence of the TEI Extended Pointer Syntax with current and
+	forthcoming W3C recommendations for XLink;</item>
+<item>case-studies and best practice recommendations for use of TEI
+	linkage and alignment procedures in the domains mentioned above;</item>
+<item>definition of cross-walk mappings, as needed, amongst other current
+	standards in this area, using TEI as an inter-language</item>
+<item>development of example code that performs appropriate TEI
+processing for the adjusted recommendations. This could include
+development of XSLT stylesheets, or the adaptation of other already existing
+tools, as determined by the working group.</item>
+</list></item>
+<item>Respond to comments on the relevant portions of TEI P4
+    routed to this work group by the editors.</item>
+</list></div>
+<div>
+<head>Administrative</head>
+<p>
+The head of the work group is David Durand, who should propose an
+     initial membership as soon as possible, for ratification by the
+     TEI Council at its next meeting. The TEI Editors are ex officio
+     members of all TEI Work Groups. Other constraints and procedures
+     applicable to all TEI Work Groups are described in document TEI
+     ED W54. </p>
+<p>The group has a budget of USD 8000 for the year ending 31 Dec 2002, during
+     which one meeting is authorized. </p>
+
+<p>The Work group is required to provide progress reports on its work
+regularly to the TEI Technical Council, which has authority for
+approving all technical output from the work group. </p>
+
+<p>The work group will meet regularly by conference call, and will communicate
+by mailing list. Part of the initial decision-making on the work plan will be
+a choice between two forms of face-to-face meeting; either as a kick-off to
+the work of the group, or as working meeting to make progress on difficult
+technical issues once the group is underway.</p>
+</div>
+<div>
+<head>Deadlines</head>
+<p><list>
+<item>Formulation of objectives  and recruitment of work
+       group members to be completed in time for the TEI Board meeting May 9th;</item>
+<item>A preliminary work plan to be prepared by 1 August 2002</item>
+<item>A first draft of recommendations for revision <!-- s required to -->
+<!-- P4 -->
+       to be prepared by 15 September 2002, for review by the TEI
+       Council meeting of 11 Oct 2002.</item>
+<item>The final reports from the Workgroup should be completed by 1
+       January 2003</item>
+     </list></p>
+   </div>
+</body>
+</text>
+</TEI.2>

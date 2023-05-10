@@ -1,0 +1,97 @@
+<?xml version="1.0"?> 
+<?xml-stylesheet type="text/css" href="/teixlite.css"?>
+<!--DOCTYPE TEI.2 PUBLIC "-//TEI//DTD TEI Lite XML ver. 1//EN"
+"http://www.tei-c.org/Lite/DTD/teixlite.dtd" []-->
+<TEI.2>
+ <teiHeader>
+  <fileDesc>
+   <titleStmt>
+    <title>Charge to the Charset Issues Work Group</title>
+   </titleStmt>
+   <publicationStmt>
+<p>For TEI website</p>
+   </publicationStmt>
+   <sourceDesc>
+<p>Original</p>
+   </sourceDesc>
+  </fileDesc>
+  <revisionDesc>
+   <!-- one of (change list) -->
+   <change>
+    <date>2 Jul 2001</date>
+    <respStmt>
+<name>Lou</name>
+    </respStmt>
+    <item>Drafted</item>
+   </change>
+  </revisionDesc>
+ </teiHeader>
+ <text>
+<body>
+<head>TEI Workgroup on Charset Issues : Charge</head>
+<p>As a part of the immediate revision of the TEI Guidelines, the
+    Board of Directors of the TEI Consortium has decided to set up a
+    special workgroup on character set encoding issues. This document
+    specifies the charter of that workgroup, and is formally binding
+    on the work group members.
+   </p>
+<p>The charge to the Workgroup is as follows:
+<list>
+<item>to review thoroughly all aspects of the recommendations
+   currently presented in TEI P4 with respect to the representation of
+   character sets and writing systems;</item>
+     <item>to identify recommendations which are no longer appropriate
+   because they have been superceded 
+   and to propose wording for alternative improved
+   recommendations;</item>
+     <item>to identify recommendations which might be improved upon in the
+   light of the experience and judgment of the workgroup, and to
+   suggest such improvements;</item>
+     <item>to identify and document new proposals for substantial
+   revisions to the recommendations, which may represent significant
+   departure from current TEI practice but would improve TEI's
+   alignment with respect to other current standards or procedures.</item>
+    </list>
+   </p>
+<p>Specific issues to be addressed by the Workgroup include (but are
+   not limited to) the proper use of Unicode, the structure and content of
+   the TEI Writing System Declaration, the usability of Unicode
+   private-use spaces, the LANG attribute and its relation to
+   xml:lang.</p>
+<p>The Workgroup should endeavour to ensure that adoption of its recommendations
+   will not invalidate existing TEI documents, as far as this is
+   possible, and to propose simple conversion paths where it is
+   not.</p>
+<p>The Workgroup's output should include specific
+   recommendations for rewordings or revisions to the current text of
+   TEI P4, which must be made available by the end of September
+   2001. The Workgroup may also choose to propose a more detailed
+   plan of subsequent work to be carried out by itself or by a
+   successor group, in the form of a discussion paper or draft set of
+   recommendations for debate. </p>
+<p>The proposed initial membership of the workgroup is as follows:
+<list>
+<item>Christian Wittern, Kyoto University (wittern@kanji.zinbun.kyoto-u.ac.jp) : chair</item>
+<item>Deborah Anderson, Berkeley (dwanders@socrates.berkeley.edu) </item>
+<item>David Birnbaum, Pitssburgh University (djbpitt+@pitt.edu)</item>
+<item>Patrick Durusau, Emory University (pdurusau@emory.edu) </item>
+<item>Durgesh Rao, NCST Mumbai </item>
+<item>Maria Gavrilidou </item>
+</list>
+   </p><p>The two TEI editors sit ex officio on all TEI
+   workgroups. Additional members may be invited to join the group at
+   the discretion of the Chair, and subject to approval by the Board. </p>
+
+   <p>The Workgroup should conduct its business as far as possible according to the
+   rules specified by TEI Document EDW 54, except where otherwise
+   directed by the Board or (when it is constituted) the TEI
+   Council. Because of tight time constraints, it is expected that this
+   Workgroup will conduct its business almost exclusively by electronic
+   means: a private mailing list and webspace will be provided for
+   that purpose.  </p>
+   
+
+   
+</body>
+ </text>
+</TEI.2>
