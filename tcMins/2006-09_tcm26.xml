@@ -136,16 +136,16 @@ from <ref target="http://tei.oucs.ox.ac.uk/Oxford/2006-09-methNet/Materials/cata
           <item>discussion deferred, see <ref target="#backCompat">below</ref></item>
           <label>Council: read PB document, post to list even if only "I read
             it, it's fine". </label>
-          <item>Not done. Discussion deferred, see <ref target="PB">below</ref>.</item>
+          <item>Not done. Discussion deferred, see <ref target="#PB">below</ref>.</item>
           <label>MD: Rewrite the examples MM provides in the PB
             document using a more generic mechanism</label>
           <item>discussion deferred, as MD not present</item>
           <label>DP: review her own manuscript description work to see
             if anything there would be helpful, and report back to
             list</label>
-          <item>Discussion deferred, see <ref target="PB">below</ref>.</item>
+          <item>Discussion deferred, see <ref target="#PB">below</ref>.</item>
           <label>MD &amp; DP</label>
-          <item>Discussion deferred, see <ref target="PB">below</ref>.</item>
+          <item>Discussion deferred, see <ref target="#PB">below</ref>.</item>
           <label>LB</label>
           <item>Discussion deferred. Note: this item was accomplished,
             DP &amp; MD are now on the <ref target="http://listserv.brown.edu/archives/tei-pb.html">PB
