@@ -1,0 +1,690 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/home/lou/Public/TEI/TEICSS/tei.css" type="text/css"
+ ?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:t="http://www.tei-c.org/ns/1.0" n="2023-05"><teiHeader><fileDesc><titleStmt><title>Minutes of the TEI Technical Council</title><meeting n="2023-05" from="2023-05-07" to="2023-05-09">TEI
+     Technical Council ftf meeting : <placeName>Guelph</placeName>, <date>7-9 May 2023</date></meeting></titleStmt><publicationStmt><distributor>TEI Website</distributor><idno>TCM166</idno></publicationStmt><sourceDesc><p>Retagged from a WordPress HTML file</p></sourceDesc></fileDesc><revisionDesc><change when="2023-06-08">Archival header confected</change><change>Extracted from Word Press article with id post-31620</change></revisionDesc></teiHeader><text><body><div type="h1"><head>Meeting Times</head><p> </p><table>
+
+<row>
+<cell><hi style="b">Date</hi></cell>
+<cell><hi style="b">Time</hi></cell>
+<cell><hi style="b">Meeting of</hi></cell>
+<cell><hi style="b">Location</hi></cell>
+</row>
+<row>
+<cell><hi style="b">Sunday, May 7</hi></cell>
+<cell><p>11am-13:00</p>
+<p>14:00-17:30</p></cell>
+<cell>Full Council meeting</cell>
+<cell>MacKinnon 132</cell>
+</row>
+<row>
+<cell/>
+<cell><hi style="i">Dinner</hi></cell>
+<cell/>
+</row>
+<row>
+<cell><hi style="b">Monday, May 8</hi></cell>
+<cell><p>09:30–11:00</p>
+<p>11:30–13:00</p>
+<p>14:30–16:00</p>
+<p>16:30–17:30</p></cell>
+<cell>Full Council meeting</cell>
+<cell>THINC Lab (second floor of Library. Take elevator or stairs behind and to the left of the desk. Turn left coming out of stairwell and take an immediate right.</cell>
+</row>
+<row>
+<cell>17:30–18:30</cell>
+<cell/>
+</row>
+<row>
+<cell>17:15</cell>
+<cell><hi style="i">Dinner</hi></cell>
+<cell><ref target="https://breadbar.ca/"><hi style="i">Bread Bar</hi></ref></cell>
+</row>
+<row>
+<cell><hi style="b">Tuesday, May 9</hi></cell>
+<cell>09:00–13:00</cell>
+<cell>Full Council meeting</cell>
+<cell>THINC Lab</cell>
+</row>
+
+</table><p> </p><div type="h2"><head>Present</head><list style="ul">
+<item>Syd Bauman (SB)</item>
+<item>Helena Bermúdez Sabel (HBS)</item>
+<item>Elisa Beshero-Bondar (EBB, Chair)</item>
+<item>Patricia O’Connor (TOC)</item>
+<item>Janelle Jenstad (JJ)</item>
+<item>Martina Scholger (MS)</item>
+<item>Sabine Seifert (SS)</item>
+<item>Joey Takeda (JT)</item>
+<item>Magdalena Turska (MT)</item>
+<item>Raff Viglianti (RV)</item>
+<item>James Cummings (non-voting guest)</item>
+</list></div><div type="h2"><head>Apologies/Not Present:</head><list style="ul">
+<item>Elli Bleeker (EB)</item>
+<item>Hugh Cayless (HC)</item>
+</list><p> </p></div><div type="h2"><head>Eating</head><p>Council thanks Michaela Rye for assistance in choosing a local restaurant for dinner Monday.</p></div><div type="h2"><head>Council Members involved in conferences/workshops</head><list style="ul">
+<item>Sunday 05-07, 09:00–10:15: TEI and Linked Data panel at <ref target="https://lincsproject.ca/events/making-links-2023/">LINCS conference </ref></item>
+</list><p> </p></div></div><div type="h1"><head>Sunday, May 7</head><div type="h2"><head>&gt;Morning session (11:00–13:00, break at ~11:45)</head><div type="h2"><head>&gt;&gt;Approval/Revision of the agenda and ticket triage</head><p>EBB leads “Assigned Ticket Triage” session. Each of us goes through our assigned Guidelines tickets and</p><list style="ul">
+<item>Add those for which we want input to the agenda, below: on <ref target="https://docs.google.com/document/d/1Gh7IkulpsNA5rOoTynwuEFdHE-00SHPk1LSt2iSzPto/edit#heading=h.i64z7qjgss59">Monday May 8 morning session</ref></item>
+<item>Highlight your ticket if it shows up in the <ref target="https://docs.google.com/document/d/1Gh7IkulpsNA5rOoTynwuEFdHE-00SHPk1LSt2iSzPto/edit#heading=h.kkeyj6o1sodc">Guidelines Triage Table</ref> below.</item>
+</list></div><div type="h2"><head>&gt;&gt;ATOP report — SB, ~2 mins</head><list style="ul">
+<item>SB is confident that before Members’ Meeting in September ATOP Task Force will have pruned localized ODD (PLODD) → RNG finished, and probably have → RNG + ISO Schematron finished.</item>
+<item>Chaining of ODDs → PLODD will probably be available in some pre-release “alpha” state by then</item>
+<item>Let’s prioritize #atop tickets to this end [Addendum by SB — We did not prioritize them at this F2F; I am hoping we can dedicate the entire monthly conference call in June or July to #atop issues.]</item>
+</list></div><div type="h2"><head>&gt;&gt;epub2 deprecation</head><list style="ul">
+<item>Ticket: <ref target="https://github.com/TEIC/Stylesheets/issues/576">#576</ref></item>
+<item>Rationale: epub3, which, unlike epub2, supports HTML 5 and SVG, has been around for more than a decade and there is plenty of multiplatform free software (and even browser-based applications) that will convert epub3 to older versions</item>
+<item>We have several epub2 issues to correct and we should consider if it’s really worth it</item>
+<item>Council greenlights for HBS to proceed:
+<list style="ul">
+<item>teitoepub → will perform epub3 processing</item>
+<item>teitoepub3 → will perform epub3 processing</item>
+<item>teitoepub2 → will issue “no longer maintained” message and then perform epub2 processing</item>
+<item>This will require the minor release number be incremented on release.</item>
+</list>
+</item>
+</list></div><div type="h2"><head>&gt;&gt;TEI Customizations and Processing Model</head><list style="ul">
+<item>Martin Mueller’s proposal (2023-04-19) to phase out teiSimplePrint and attach the Processing Model to a version of TEI Lite:
+<list style="ul">
+<item>Phase out the current TEI-SimplePrint customization.</item>
+<item>Merge its elements with those of TEI-Lite into TEI-Lite 2.0 (there is little difference between the tag sets of TEI-Lite and simplePrint).</item>
+<item>Attach the Processing Model to TEI Lite 2.0 and create an updated version of the venerable TEI customization that in the context of the 2020’s will realize the original goal of creating a subset of TEI that would “meet the needs of 90% of the users 90% of the time”.</item>
+</list>
+</item>
+<item>Martin Mueller’s follow-up: revise TEI Customization Page’s description of TEI Lite and simplePrint:
+<list style="ul">
+<item>dislikes that these customizations are described in terms of “what you cannot [or can] do with them”</item>
+<item>Seems to be a revival of <ref target="https://github.com/TEIC/TEI/issues/2035">closed #2035</ref></item>
+</list>
+</item>
+<item>Discussion:
+<list style="ul">
+<item>MT: The name simplePrint represents an unwanted compromise</item>
+<item>Which models should be prioritized?</item>
+<item>In TEI Publisher, MT has already done some merging of Lite and simplePrint
+<list style="ul">
+<item>Can we merge the TEI Publisher ODD with TEI Lite–to update it as a TEIC-approved customization?</item>
+<item>Alternative: a community customization like Epidoc</item>
+<item>Martin Mueller thinks more people will trust it if it’s endorsed by TEIC</item>
+</list>
+</item>
+<item>SB: There’s good reason to add the Processing Model to TEI Lite. Old projects will still use old Lite, but we’re not really taking that away.</item>
+<item>Lite 2.0</item>
+<item>Mostly new features aren’t there.</item>
+<item>Should Lite change with each new release? Every time we make a change to Guidelines, those changes should be reflected. But the use of inclusions makes that updating complicated.</item>
+<item>We should be updating the prose as well. Last updated in 2016?</item>
+<item>We could support Lite 1.0 and Lite 2.0</item>
+<item>What’s wrong with simplePrint anyway? Lots of us use this in projects and teaching. The objection is really the name–it seems to reduce the complexity of our projects</item>
+<item>JC notes that the simple is about printed texts that are straightforward, not about TEI complexity. This seems to be a misunderstanding of the person proposing this change.</item>
+<item>JJ: simplePrint’s documentation is excellent–we don’t want to lose that. Move it to community customizations</item>
+<item>JT: Consider calling it TEI Publisher
+<list style="ul">
+<item>MT: Maybe not: makes it seem too locked in to the publishing software, but it should have broader applicability</item>
+</list>
+</item>
+<item>Lite customizations commit a lot of tag abuse (sigh)</item>
+<item>Customization Page needs work: <ref target="https://tei-c.org/guidelines/customization/">https://tei-c.org/guidelines/customization/</ref>
+<list style="ul">
+<item>Historicity of the customizations needs to be taken into account now:
+<list style="ul">
+<item>Lite 1.0</item>
+<item>Lite 2.0</item>
+<item>simplePrint (~2016)</item>
+</list>
+</item>
+<item>We should remove language like Lite is “the most widely used”.</item>
+</list>
+</item>
+<item>What about calling simplePrint earlyPrint instead?</item>
+<item>RV: If we revive Lite, we also need to take responsibility for endorsing the kinds of documents that it’s able to encode as the starting point for TEI users.</item>
+<item>Shouldn’t the Customization page also include more specific customizations for distinctive kinds of texts?
+<list style="ul">
+<item>More customizations might be better optics for us</item>
+<item>oXygen gives users TEI-All as a starting point–so should that be changed?</item>
+</list>
+</item>
+</list>
+</item>
+<item>Work on Customization Page</item>
+<item>Move simplePrint to community customization area?
+<list style="ul">
+<item>Council doesn’t maintain these: Would the community maintain it like EpiDoc?
+<list style="ul">
+<item>Maybe that’s like getting rid of it</item>
+<item>We shouldn’t do this unless there’s actually a community group that agrees to support it.</item>
+</list>
+</item>
+<item>Better to move simplePrint’s documentation into Lite 2.0</item>
+<item>EBB suggestion: Could we make simplePrint a Legacy ODD and *also* fold it into Lite 2.0. A revised version of simplePrint’s documentation becomes the documentation for Lite 2.0
+<list style="ul">
+<item>JT: We’d need to pin Legacy simplePrint to 4.6.0 to keep it stable. RV: we’ve never done this before, so we need to work out a policy and groundwork for support.</item>
+<item>These customizations need to be versioned.</item>
+</list>
+</item>
+<item>TEI Lite absorbs simplePrint into its schema.
+<list style="ul">
+<item>RV: Don’t call it 2.0 b/c it conflicts conceptually with our other versioning system</item>
+<item>Original Lite should be renamed (something like what we did with Roma Antiqua)</item>
+<item>MT: Make it Lite 2.0 (SB points out that we’re using version numbers in the 4’s now)</item>
+<item>Lite Two Point Oh.</item>
+<item>Lite Two</item>
+<item>Lite2: Council moves for this without the space. That is NOT a typo.</item>
+<item>We find the phrasing of serving 90% of the needs of 90% of the community outdated and suggestive that most projects are alike.
+<list style="ul">
+<item>When this was proposed, it was meant to emphasize that no customization can serve 100% of the community!</item>
+<item>It is *necessary* to tweak it to get it to work for you.</item>
+<item>Lite2 should be more like an “on ramp” that doesn’t cover all cases but takes us quite far as common ground.</item>
+<item>JJ volunteers to get us started drafting a paragraph for the Customization page and the <ref target="https://tei-c.org/guidelines/customization/Lite/">TEI Lite</ref> page that Council can review this summer.</item>
+<item>Lite and other customisations also mentioned in Chapter 22 at: <ref target="https://tei-c.org/release/doc/tei-p5-doc/en/html/USE.html#MDlite">https://tei-c.org/release/doc/tei-p5-doc/en/html/USE.html#MDlite</ref></item>
+</list>
+</item>
+<item>For next Fall’s release?
+<list style="ul">
+<item>So we get started this summer.</item>
+</list>
+</item>
+</list>
+</item>
+</list>
+</item>
+<item>Blue Sky: What about peer reviewing project ODD customizations to be featured on the TEI website?</item>
+<item>Community models of ODDs
+<list style="ul">
+<item>JT: Could be part of an “Awesome TEI” list (i.e. list of TEI resources—possibly mentioned by RV in past Council meeting?)</item>
+</list>
+</item>
+<item>Would they need to be updated upon release where there have been backwards incompatible changes?</item>
+</list><p> </p></div></div><div type="h2"><head>&gt;Afternoon session (13:30–17:30, break at ~15:45, finish 17.15, leave 17.30)</head><p> </p><div type="h2"><head>&gt;&gt;Guidelines PRs:</head><list style="ul">
+<item>
+<list style="ul">
+<item>SB: <ref target="https://github.com/TEIC/TEI/pull/2423">#2423, changes the content model for msDesc, msPart, and msFrag</ref>
+<list style="ul">
+<item>Summary:
+When originally developed, it was presumed that order of semantic children of <gi>msDesc</gi> (and friends) was not important. So, in order to make it easy to have a DTD-compatible content model that limited each of those 4 elements to 0 or 1 occurrence each, the designers simply picked an order (<gi>msContents</gi>, <gi>physDesc</gi>, <gi>history</gi>, <gi>additional</gi>). TS has argued on the ticket (if not the list, too) that htis content model is too tight, i.e., there are people in the MS description world that really want to be able to use a different order.</item>
+<item>That is, the desired content model would allow 0 or 1 each of those 4 elements, in any order. SB notes that the XML DTD language has no mechanism for expressing that, but RelaxNG does (‘&amp;’ aka &lt;rng:interleave&gt;).</item>
+<item>SB question for msDesc users: Should msPart and msFrag be at the end? Is there any reason why that would be an issue for users of msDesc?
+<list style="ul">
+<item>JC: msPart in its original conception was for parts of a manuscript that were originally separate but now bound together as a single manuscript. Using it for other things is strange, but feasible.</item>
+<item>SB: Proposes that msPart and msFrag remain at the end of the content model (as long as it is not a problem for msDesc users). JC agrees that it makes sense for these elements to come near the end after the other elements.</item>
+</list>
+</item>
+<item>HBS notes that students find it challenging to have read about the elements that are allowed and then find that the element wasn’t allowed because they don’t have the order right.</item>
+<item>SB suggests 3 possible solutions (2 of which were already <ref target="https://github.com/TEIC/TEI/issues/2214#issuecomment-1532477940">mentioned on the ticket</ref>):
+<list style="ul">
+<item>Simply list the possible combinations in the content — This works very well for 2 elements, and is not bad for 3; it is somewhat cumbersome for 4, gets a bit out of control for 5–6, and is probably not reasonable much beyond that. SB has implemented this solution in <ref target="https://github.com/TEIC/TEI/blob/sydb_2214/P5/Source/Specs/macro.msDescPart.xml">a branch</ref>. SB asserts this would work very well unless the MS-SIG really wants <gi>msPart</gi> and <gi>msFrag</gi> in the same group of order-not-important elements.</item>
+<item>We drop support for DTD (and maybe XSD), and then use &lt;rng:interleave&gt; (or preserveOrder=”false” or its replacement ala <ref target="https://github.com/TEIC/TEI/issues/2154">#2154</ref> in PureODD).</item>
+<item>Loosen the content model to be ( msContents | history | history | additional )* [Addendum by SB: or, better yet, minOccurs=”0″, maxOccurs=”4″ of that same alternation.], and then use an added <gi>constraintSpec</gi> to enforce the “no more than 1 each of <gi>msContents</gi>, <gi>physDesc</gi>, <gi>history</gi>, and <gi>additional</gi>” constraint.</item>
+<item>Most everyone liked that last option the most. Furthermore, JT, who is strongly in favor, gave a very nice summary of it, so we are now calling the general-purpose approach — loosen the content model to something a DTD can handle and constrain further with Schematron — the Takeda Strategy.</item>
+</list>
+</item>
+<item>SB suggests that in order to implement Takeda Strategy it would be useful to make explicit our unwritten rule that Schematron validation is required, and that RNG validation happens before Schematron check. [Addendum by SB: In retrospect, it is not really clear to me that Schematron need occur after RNG.]</item>
+<item>XSD use: Lots of users</item>
+<item>Torsten wants multiple elements, but he erroneously suggests a content model that would only allow for one.</item>
+<item>JT: Processing question – If you were to use the `interleave` approach what is produced for DTD users?
+<list style="ul">
+<item>SB: fatal error message is generated</item>
+<item>[Addendum by SB: Depending on what JT meant by the question, answer was incorrect — it seems that the regular P5 build simply summarily ignored preserveOrder=false. No error, but the DTD requires order.]</item>
+</list>
+</item>
+<item>Reasons why we have not explicitly required Schematron and required RNG first in the past: 1) didn’t know at the time that you could make the stylesheets do something different, 2) afraid that the user might not have the Schematron.</item>
+</list>
+</item>
+<item><ref target="https://github.com/TEIC/TEI/issues/2154">https://github.com/TEIC/TEI/issues/2154 </ref> – Related to preserve order sequence
+<list style="ul">
+<item>An example of RNG Interleave being used for this issue.</item>
+<item>Sequence is not a good name for an unordered sequence, because it is not an order/ not a sequence</item>
+<item>JT happy with Interleave if it is the general consensus</item>
+<item>Status Go for creating Interleave element for ticket #2154 then return to <ref target="https://github.com/TEIC/TEI/issues/2214">ticket #2214</ref> to PR <ref target="https://github.com/TEIC/TEI/pull/2423">#2423</ref></item>
+<item>What needs to be done:
+<list style="ul">
+<item>Rename github issue to say we should create interleave element (as per #2154)</item>
+<item>Add a stylesheets issue for converting &lt;tei:interleave&gt; to &lt;rng:interleave&gt;</item>
+<item>Deprecate &lt;tei:sequence preserveOrder=”false”&gt;</item>
+<item>Allow any of msContents/physDesc/history/additional in any order any number of times, but then create a Schematron Warning to suggest any of these only used once.</item>
+</list>
+</item>
+<item>Need to reject Torsten’s PR (politely) to apply the changes required. SB will respond to the PR.</item>
+</list>
+</item>
+<item>SB: <ref target="https://github.com/TEIC/TEI/pull/2427">#2427, Proposal for event and eventName</ref>
+<list style="ul">
+<item>Created a new element `<gi>eventName</gi>` and ensured that it worked with the Guidelines</item>
+<item>Proposed change is reasonable to have this completed — i.e., ready for Council to review — within a week</item>
+<item>Lots of people want this newly created element which would replace the <gi>label</gi> element that is currently being used in the examples.</item>
+<item>The change is to make it applicable to “any other event”</item>
+<item>Problem of backwards compatibility if you remove <gi>label</gi> element from <gi>event</gi> entirely. Possible for users to stick with the older versions of TEI</item>
+<item>Should <gi>eventName</gi> become a member of `model.nameLike`?</item>
+<item>Needs to be a member of `att.canonical` so it gets `@ref`</item>
+<item>SB: volunteers to work on correcting the errors until this outputs correctly.</item>
+<item>JT: <gi>event</gi> in its current configuration it quite constrained, take this opportunity of reconfiguring the <gi>event</gi> content model to make this a more open and less arbitrarily constrained model. (Make sure that what we want for event is fully represented in the proposed change.)</item>
+<item>Checking <ref target="https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-place.html"><gi>place</gi></ref> and <ref target="https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-org.html"><gi>org</gi></ref> content models as comparisons, both get `model.headLike`</item>
+<item>JC: although <gi>event</gi> developed out of something happening in relation to people/place/orgs, its content model should be considered as a first order entity in its own right as an event can occur without people, places being connected.</item>
+<item>MT: Community PRs<gi>p</gi>sdfd&lt;/p&gt;</item>
+<item>               <gi>bibl</gi>&lt;/bibl&gt; should be prioritised</item>
+<item>EBB: Leaving a comment that expresses how impressed Council are by much work went into creating this proposal and that it will be incorporated into the next release and want to make sure that he gets exactly what he wants out of the proposed change. JT: To comment on the PR to make sure that the changes meet his expectations.</item>
+<item>MT: Comment to ask him if he would like to work further on this issue himself to incorporate it into dev or if he would like the Council to finish this on his behalf</item>
+<item>SB: We need write access to modify his branch and repo and he has also explicitly asked Council to make changes.</item>
+<item>EBB: We can suggest examples for him to demonstrate the functionality of <gi>elementName</gi></item>
+<item>JT: Agreed with JC to put his proposed changes into a new branch, a Council branch, that we can grant him write access to so it includes his original changes and enables Council to add the proposed examples (JC and JJ have examples to contribute). Advantages: This protects dev and prevents any potential breaks to the build.</item>
+<item>SB: Let people have access to the repo when they have made a great effort to contribute to the Guidelines</item>
+<item>James Cummings: We can also remove the write access after the changes have been made. JT: Having a fork is another option.</item>
+<item><hi style="b">Action</hi>: Make requester a contributor <hi style="b">after </hi>we have made a new branch for incorporating his changes and adding our contextual examples for <gi>eventName</gi>.</item>
+<item>James Cummings: Not many changes, so we could copy all his changes and then invite him to write to that branch.</item>
+</list>
+</item>
+</list>
+</item>
+</list><list style="ul">
+<item><ref target="https://github.com/TEIC/TEI/pull/1996">#1996</ref> – MT: Version numbering has nothing to do with the semantic numbering. Only realistic way to ensure it is to have prefixes on every commit. Need to have some means of keeping track
+<list style="ul">
+<item>HBS: Volunteers to work on this, RV you can express version in the way that you understand and the way that you need. HBS we need to update the description of version though to ensure that version is being used correctly, even if it is just specific to your requirements.</item>
+<item>HBS question about the fixing version to allow people to use it in any way that they want, so do we reject the pull request.</item>
+<item>SB: Reject the pull request but preserve the regex.</item>
+<item>JT: Keep it in the backpocket so it there is a need then we have it.</item>
+<item>EBB: Open a ticket to keep the regex? HBS there is a ticket already for Unicode (add ticket number here), so we can add the regex to a comment under that ticket.</item>
+<item>SB: version does not move but its definition needs to be changed</item>
+<item>JT: Have a paragraph in Default Text Structure (include link) in the Guidelines that clarifies how to use it but also that you can use it as you need to use it?</item>
+</list>
+</item>
+<item><ref target="https://github.com/TEIC/TEI/issues/2132">#2132</ref> kind of related: proposition to change version attribute to express range of versions for gaiji descriptions
+<list style="ul">
+<item>teidata.versionNumber: up to 3 possible</item>
+<item>JT: If we override it and just have a single version attribute that captures all instances of version use? Having a min version and a max version is overkill. Seems reasonable to have them using it as they need but to have good documentation to explain their usage of versionNumber</item>
+<item>EBB: Should  teidata.versionNumber be deprecated? What should we do with it, do we loosen it up for application?</item>
+<item>HBS: proposal in #2132 has option without constraints.</item>
+<item>SB: Is schema version allowed? That we make a single version and data types to allow users to use a variety of versions for different needs?</item>
+<item>RV: Problem with schema version is that Council have to change the code.</item>
+<item>JT and RV: Deprecation period is reasonable.</item>
+<item>EBB: Where have we been using teidata.versionNumber?</item>
+<item>SB: Just rename the attribute from `@schemaVersion` to `@version`. Council only need one ticket to clarify and connect all this.</item>
+<item><hi style="b">Action: JT</hi> volunteers to open a ticket to update the TEI Community on our proposal to rename version and to allow the outside community to offer further comments on renaming of the version attribute. Then, in September F2F, Council can discuss this again in relation to the original and new ticket opened by JT to see if there is more input from the wider TEI Community.</item>
+</list>
+</item>
+</list></div><div type="h2"><head>&gt;&gt;Council Discussion of Contributor Guidelines</head><list style="ul">
+<item>JT: We should draft Contributor Guidelines to know what to do for new contributors that do not have connections to people on Council</item>
+</list><list style="ul">
+<item>SB: MS gave a great talk on how to contribute to the Guidelines – possible base for a draft of the contribution guidelines</item>
+<item>James Cummings: Not everyone will want to contribute code, so our contributor guidelines need to allow for other ways of contributing.</item>
+<item>EBB: Can we make it mandatory to have at least two peer-reviewers prior to merging a branch from an outside contributor? Consensus seems to be that this is overkill.</item>
+<item>RV: we could <ref target="https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches">protect release and dev branches</ref>: “when you enable branch restrictions, only users, teams, or apps that have been given permission can push to the protected branch. You can view and edit the users, teams, or apps with push access to a protected branch in the protected branch’s settings.”</item>
+<item>MT: Example of a stipulation – only merge if you have had the branch peer-reviewed positively by two members of Council at least. EBB: You can create a branch but not merge into dev. SB and RV: Need to test this to be sure.</item>
+<item>EBB: We could also use the role function too to specify the limits of access for specific contributors.</item>
+<item>Council agrees to protect the release and dev branches and to update the roles. <hi style="b">Action on RV:</hi> volunteers to protect the dev and release branches.</item>
+<item>JT: We should make a ticket for TEI Documentation for documenting the contributor guidelines. JT and MT volunteer to work on the ticket, James Cummings creates the ticket on the Documentation repo. [Continuing discussion on Monday May 8: Try a Github repo in the organization.]</item>
+</list></div></div></div><div type="h1"><head>Monday, May 8</head><div type="h2"><head>&gt;Morning session THINC Lab Library (09:30–13:00, break at ~10:45)</head><list style="ul">
+<item>Council meets at <ref target="https://www.uoguelph.ca/arts/dhguelph/thinc">THINC Lab</ref> 2nd floor of the McLaughlin Library</item>
+</list><div type="h2"><head>&gt;&gt;Discussion of high priority Guidelines tickets</head><list style="ul">
+<item>EBB: <ref target="https://github.com/TEIC/TEI/issues/2389">#2389 rs should be datable</ref> Update to yesterday’s discussion of <gi>eventName</gi>. Referencing string <gi>rs</gi> <hi style="b">should</hi> be datable #2389 – EBB communication with Stefan <gi>rs</gi> is specifically not <gi>name</gi> but the set of attributes are identical to <gi>name</gi> so <gi>eventName</gi> should have the same set of attributes. Council agrees that all of these should be datable. EBB: If we’re going to leave one be datable then the others should be datable too. RV: Name of countries change too and can be datable ie. It was called X before a certain date and called something Y afterwards. HBS: <gi>country</gi> is datable.</item>
+</list><list style="ul">
+<item>RV:  <ref target="https://github.com/TEIC/TEI/issues/1744">#1744 Add contextually-variant content models to ODD</ref>
+<list style="ul">
+<item>Suggestion to add a set of co-occurence constraint capability to ODD language</item>
+<item>RV: JC put together 6 steps proposal, Council requested a more fleshed out technical proposal.</item>
+<item>MT: Declarative option is a good thing to have, even if informally enforced because this possibility may occur in the future</item>
+<item>SB: If Council votes yes today we have to implement it in this version but if we wait 6 months we can implement it with ATOP (using the Takeda Strategy to be able to use RelaxNG syntax while providing schematron fallbacks for XSD and DTD)</item>
+<item>EBB: Decision today to defer until we can implement with ATOP</item>
+<item>JC: How are you going to do this with ATOP? Need to have an actionable plan in place in order to ensure that we can implement this in ATOP.</item>
+<item>RV: Do we have to add the attributes to the right place? Best to decide on how to do this together now as well as deciding on the implementation plan. Sketch both out now so it is ready to go when we want to implement it.</item>
+<item>EBB: Need to note this decision on the ticket.</item>
+<item>RV: Volunteers to comment on the ticket.</item>
+<item>JT: Is this the path to P6? Having a really good version to justify P6.</item>
+<item>JT: Did we talk about val lists that are grouped by org or choice or group or alternate? It’s an existing co-occurence constraint so relevant to this discussion.</item>
+<item>EBB: Do we need to add more detail about the next steps in the comment to the ticket. RV: making sure that we have the attributes in the right place first in order to specify the co-occurence and then to do the modelling work on the Guidelines.</item>
+<item>MT: This should go ahead but the redefining / re-modeling of limited element classes throughout TEI Guidelines as a whole needs to be a P6 thing but this process paves the way to p6. We’ll look at our class system carefully–possibly redo it so it’s not so much like “club membership”. Remodeling is an opportunity to revise the class system.</item>
+<item>RV: P6 may possibly drop numbered <gi>div</gi>s and DTDs.</item>
+</list>
+</item>
+<item>RV: <ref target="https://github.com/TEIC/TEI/issues/1710">#1710 Review placement of classes, macros, and datatypes in modules</ref>
+<list style="ul">
+<item>Summary: Why are classes in strange places instead of where they belong</item>
+<item>SB: Classes are defined in the Guidelines, elements and model classes can declare what model classes they are members of. In RNG it reads all patterns and then processes it, order does not matter, but in DTDs the classes need to be in the right order or else it breaks. Lots of effort went into explaining the need for the order of classes in the Guidelines to avoid this issue in DTDs. Now, this is silly. A) Drop support for DTDs or B) It’s up to the software to put them into the correct order not the human. Have a rule that the software reads the classes and recognises the necessary order/hierarchy.</item>
+<item>JC: Is there a danger of the software making an impossible decision between the different classes?</item>
+<item>SB: List all the classes and its membership, write the rule to process the class and its membership in order to determine the correct order ie. having a rule to search if you have specified the necessary higher level classes have already been processed before a lower level class?</item>
+<item>HBS: Restructuring of the classes – ATOP resolves this, so why should we bother? RV: TEI shared module for globally available classes and other classes for specific modules that are not shared globally.</item>
+<item>RV: Need to offer users the leanest model of TEI instead of the fullest. We analyse where these classes go before adding them. It either goes in TEI or it goes into a different module. If that logical system is of no benefit to us, then it is probably not worth it. Classes that are not in use are still processed but discarded since they are not in use.</item>
+<item>EBB: The class system makes things difficult to determine where these attribute classes go.</item>
+<item>JT: When designing ODDs, JT looks at every single class and attribute included and deletes any that are not going to be used. Worried about backwards compatibility.</item>
+<item>RV: Where there is a lot of impact is when you call elementRef.</item>
+<item>EBB: Do the users understand the class system when writing ODD customisations? This could be the reason more people don’t write ODDs.</item>
+<item>RV: Historically Council did think it was fair to expect that users would understand the class system. Might not be the case now.</item>
+<item>JT: Does it have to be that an attribute class can be in only one module– can we imagine attribute classes in multiple modules?</item>
+<item>SB: Problem with the IDs. No one thought of using classRef to enable the inclusion of classes in multiple modules.</item>
+<item>RV: We should instead concentrate on reorganising our class system, we will be processing differently so then we won’t bump into all of the problems we have now</item>
+<item>RV: We will still have to offer support XSD so we will still encounter these problems even if we drop DTDs. Maybe we need a distinction between modules for elements and modules for classes? Classes are more abstract than elements.</item>
+<item>JC: Noted historical reason for putting classes into TEI rather than into a specialized class was the <hi style="i">suspicion</hi> that they might be used more generally in the future.</item>
+<item>EBB: Tendency now to lump new classes into TEI is a sign of the problem we need to solve.</item>
+<item>RV: Moving towards a final decision on this, the risk of classRef making things worse than what it already is if we do not fix the processing now. Maybe too much effort even though the idea is valid.</item>
+<item>SB: Defer ticket until we are reorganising everything together, as this is related to the other ticket.</item>
+<item>EBB: Update to Status: Blocked and keeping Status: Needs Discussion to make sure that we come back to this</item>
+<item>HBS: Add a cross reference to both related tickets #1710 and #<ref target="https://github.com/TEIC/TEI/issues/1744">1744</ref> to make sure that they are linked for the reorganisation.</item>
+</list>
+</item>
+</list></div></div><div type="h2"><head>&gt;Afternoon session (14:30–17:30, break at ~16:00)</head><div type="h2"><head>&gt;&gt;TEI Website and Documentation</head><list style="ul">
+<item>Emerging issue. JJ, MS, HC working on the question of Council’s representation to the community.</item>
+<item>Input from the Board, the Documentation subgroup, the community, the Internalisation group</item>
+<item>MS giving report and overview of work done by the Documentation subgroup:</item>
+<item><ref target="https://www.figma.com/file/9pBdvnNOoBZF0rEVMbreBN/TEI-Documentation?type=whiteboard&amp;node-id=0%3A1&amp;t=twkF6Fg8BIFlS2yB-1">Figma visualisation</ref> of documentation in the TEI Wiki, WordPress, GitHub Documentation Repo and the Google Docs.</item>
+<item>Red indicates information that should be deleted</item>
+<item>Pink indicates information that should be moved somewhere else</item>
+<item>Blue indicates information that needs to be deleted or updated/needs to be read</item>
+<item>Green indicates that he can be left where it is.</item>
+<item>Wiki mostly used by the special interest groups eg. LingSIG uses it</item>
+<item>Minutes from Board are still in the Wiki, most importantly there is a link to the FAQ which links to the Council FAQ which should be moved to the Documentation repo.</item>
+<item>Need people that know more about the Wiki to assist in moving documentation from the Wiki to the Documentation repo.</item>
+<item>Wiki should be obviously NOT Council-driven – should be community-driven</item>
+<item>Banner indicating that material is outdated</item>
+<item>JC: Recent changes suggest that two SIGs are using it actively. No page to register for the TEI Wiki.</item>
+<item>JJ: What belongs on the website, and what belongs on the Wiki. <hi style="b">Action:</hi> Proposes a new page to enable users to register to access the TEI Wiki</item>
+<item>JJ: MH and DJ and Board want to migrate from WordPress to a static site. Only put things on the website that is only the responsibility of the Board or Council.</item>
+<item>JJ website index card exercise – idea is to achieve a preliminary consensus on what information/content goes where. EBB: HC wants to work on this website but the Board encourages the Council’s input in order to help with this. Current issue is the inaccurate placement of menu items, ie. top level menus that ought to be lower level menu items, information duplication (the same information is in two different places on the website).
+<list style="ul">
+<item>Use the top-menu area judiciously. Put our best stuff first and top.</item>
+<item>Footer area is for important but boring stuff: E.g., Contact, Society</item>
+<item>News: MT: To have the feeling of being alive, you need someone to maintain the content, particularly for the featured material (a small selection of the most important current information, e.g. the latest release info or conference cfp announcement). This requires editing titles, leads and perhaps some visual imagery specifically for the front page position.</item>
+<item>JT: Suggests a GitHub feed as a source of constantly changing content.</item>
+<item>A Twitter feed? Facebook? A carousel</item>
+<item>What puts our best foot forward? Guidelines release announcements. Material from previous conference. Feature <hi style="i">jTEI</hi> articles. News (which no one sees right now).</item>
+<item>Lead with the most recent stuff.</item>
+<item>Image carousel from conferences and meetings</item>
+<item>Socials: Mastodon, Facebook, and Twitter (should have a third-party service that posts the same thing to all three services)</item>
+<item>Organize History by year: who was on Council and Board each year, minutes from each year, conference archive from that year, annual meeting report, releases from that year.
+<list style="ul">
+<item>Or organize by activity (Board, Council, Conference)?</item>
+</list>
+</item>
+</list>
+</item>
+<item>JJ and MT continued to work on the menu structure and captured the results in a Miro story (see <ref target="https://miro.com/app/board/uXjVMKjUk40=/?share_link_id=511256359246">Miro board</ref>).
+<list style="ul">
+<item>Playing with the idea of the following top menus:</item>
+</list>
+</item>
+</list><p><hi style="b">About   Guidelines   Activities   Learn  Records   Resources   Community</hi></p><list style="ul">
+<item><hi style="b">Records</hi> could go under <hi style="b">Resources</hi>. Could also go in Footer area. Will put a link from <hi style="b">Society</hi>.</item>
+<item><hi style="b">Learn</hi> could go under <hi style="b">Activities</hi></item>
+<item>In the footer area:</item>
+</list><p><hi style="b">Society   Code of Conduct   Socials  Contact</hi></p><list style="ul">
+<item>Suggest some usage of buttons and icons for GitHub, Join, Social, Donate, Guidelines</item>
+<item>Suggest that we commission a special icon for Guidelines or find a suitable icon that is the same scale/detail as the GitHub and Twitter icons.</item>
+<item>Ideas from <ref target="https://www.e-editiones.org/">https://www.e-editiones.org/</ref></item>
+<item>Next steps for a potential working group:
+<list style="ul">
+<item>Decide on a repository for content (probably GitHub)</item>
+<item>Decide on encoding language (if not TEI – MD is an obvious alternative)</item>
+<item>Decide on publication mechanism to replace WordPress with an Endings-compliant website (for example, <ref target="https://github.com/11ty/eleventy-base-blog">11ty</ref>)</item>
+<item>Finesse structure of the website (started in Miro)</item>
+<item>Decide on content to migrate/rewrite/write [BIG job]</item>
+<item>Set policies and practices for maintenance and updating.</item>
+</list>
+</item>
+</list></div></div></div><div type="h1"><head>Tuesday, May 9, 2023</head><div type="h2"><head>&gt;Morning session (09:00–13:00, break at ~10:45)</head><div type="h2"><head>&gt;&gt;Website task force discussion</head><list style="ul">
+<item>Should this proposal go to the Infrastructure group next?</item>
+<item>JJ: Yes, because we need to decide on a static website framework.</item>
+<item>MS: the infrastructure group may need to be re-formed / re-convened after a hiatus.</item>
+<item>EBB: If HC were here, he would likely say that he wants to work on the groundwork for a static website
+<list style="ul">
+<item>We need to have input on the technologies for the static site</item>
+</list>
+</item>
+<item>MT: Website redesign is a different job than the Infrastructure group does</item>
+<item>EBB points out there’s an obvious connection between the website and the infrastructure</item>
+<item>SB says the design work is different from the technology delivery of said website (infrastructure)</item>
+<item>JJ: Suggests we convene a Website Working Group with representation from the Board and the Council and that calls on the Infrastructure Group and other people with necessary expertise.</item>
+<item>JT: What does the new website need, how often updated? Does it need to support e.g. vending, etc.</item>
+<item>JT: Who decides in a Working Group
+<list style="ul">
+<item>We’re not making a working group but a Task Force</item>
+<item>(working group is a group of Council working on the Guidelines)</item>
+</list>
+</item>
+<item>Do we need a charge?</item>
+<item>JJ and EBB don’t want to see multiple groups duplicating efforts</item>
+<item>JJ: we could form a task force for the website, also good for early career scholars to put on their CV</item>
+<item><hi style="b">Action on EBB by 2023-05-16: </hi>Take this to Board and newly forming Infrastructure Group: Advise Board (via Diane) that we would like JJ to chair a new Task Force (and also talk to HC to advise him to wait and work with the group on the website.)
+<list style="ul">
+<item>Form the Task Force by June.</item>
+<item>Plan to get community input in Paderborn.</item>
+<item>Possibly via a poster session.</item>
+<item>Plan to rollout the new website within (roughly) a year.</item>
+<item>EBB to ask the Board: what is your view of the purpose of the website? Is one of the main goals of the website to promote and encourage membership?</item>
+<item>MS: Also ask Board: What is the Wiki for? (Share Council’s view that projects/educational resources not writ by Council or Board, move to the wiki. Ask the Board, do you agree?)</item>
+</list>
+</item>
+</list><list style="ul">
+<item>RV: Maybe the name isn’t important– maybe call this thing the website task force and re-cast it as infrastructure group at a later stage (since our other tech infrastructure is doing OK right now)</item>
+<item>MS: we turn next meeting of Infrastructure Group (with Doodle) into meeting for organizing Groups and organizing Group for Website</item>
+<item><hi style="b">Action on Council by 2023-05-18</hi> to read over and comment on the Miro board <ref target="https://miro.com/app/board/uXjVMKjUk40=/">minutes</ref> by JJ and MT on the website redesign. In relation to the feedback to the Miroboard,the comments should be broader, <hi style="b">N.B.</hi> if something big has been missed entirely in the redesign, or if there are other goals that the website is not representing clearly to the users.</item>
+<item>JJ: there could be a poster at the TEI conference in Paderborn with the menus to get feedback, sticky notes for ideas of people etc., also good to have a proposal for people to react to</item>
+<item>MT: Have a set of notes from ourselves to present to the website group for consideration.</item>
+<item>MT: request for EBB to bring to the Board the question of strategic goals for the website, e.g. should it aim to promote and encourage the TEI membership, or “pitch” the use of TEI to various audiences</item>
+<item><hi style="b">Action on JJ </hi>to turn the Miro board into a PDF that we can circulate and a JPEG that we can include in the Council minutes.</item>
+</list><list style="ul">
+<item>Help Wanted with Minute Review
+<list style="ul">
+<item>SB: Leave this document open for 10 days</item>
+<item><hi style="b">Action on Everyone by May 19 2023</hi>: Work on cleaning up, editing, fixing hierarchies. Editing directly is okay when you’re sure something is just incorrect. Move to Suggest mode only when uncertain.</item>
+<item>Those listed in Minute Review on table below for May 2023 then tidy this up for publication on the TEI website. This group works in Suggest Mode together. This may be the Scholger Protocol.</item>
+</list>
+</item>
+<item>Review of <ref target="https://docs.google.com/document/d/1Gh7IkulpsNA5rOoTynwuEFdHE-00SHPk1LSt2iSzPto/edit#heading=h.2sghzaho9b70">yesterday’s break-out groups working on Guidelines tickets</ref></item>
+<item>Leftover tickets of importance (if any)</item>
+<item>Features in next release?
+<list style="ul">
+<item>SB thinks that CMC will <hi style="i">not</hi> be ready; another meeting was postponed for over a month (due to illness, he thinks)</item>
+<item>Should we be pushing CMCers harder?</item>
+</list>
+</item>
+</list></div></div></div><div type="h1"><head>&gt;Ticket Triages</head><div type="h2"><head>&gt;&gt;Guidelines pull requests</head><div type="h3"><head>PR Triage Groups</head><p>Group A: TOC, JT, EBB, HC (JC on Sun)</p><p>Group B: HBS, SB, SS, JJ</p><p>Group C: MT, RV, MS</p><table>
+
+<row>
+<cell>No.</cell>
+<cell>Group</cell>
+<cell>Title</cell>
+<cell>Comment</cell>
+</row>
+<row>
+<cell>#1996</cell>
+<cell/>
+<cell><ref target="https://github.com/TEIC/TEI/pull/1996">align teidata.version with Semantic Versioning Specification, closes #1993</ref></cell>
+<cell><p>Discussion: MT: Version numbering has nothing to do with the semantic numbering. For SemVer: Only realistic way to ensure it is to have prefixes on every commit. Need to have some means of keeping track.</p>
+<p>JT: Automatic numbering generation for new versions.</p>
+<p>Issue ticket is <ref target="https://github.com/TEIC/TEI/issues/1993">#1993</ref></p>
+<p>EBB: To close #1993 do we need a solution to `@version` attribute?</p>
+<p>Update the branch and assign someone to write the documentation to explain that it is influence by semantic versioning.</p>
+<p>SB: Does it need a `@version` attribute? Idea of removing `@version` attribute is not feasible.The attribute is needed but does not need to be pointed to a schema?</p>
+<p>JC: The <ref target="https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-TEI.html">note </ref>on the version attribute of the <gi>TEI</gi> page means that the example is incorrect, meaning people have being using the version attribute incorrectly.</p>
+<p>RV: `@version` on TEI will die tomorrow unless someone wants to preserve it tomorrow morning.</p>
+<p>HBS and JT: Why kill it instead of leaving it alone? Let it live in peace. But change description to say that it’s a number you can use somewhat freely and maybe you shouldn’t use it.</p>
+<p>EBB: We should note that people should use SchemaRef instead. Agreed not to remove it.</p>
+<list style="ul">
+<item>JT to add ticket with HBS to propose harmonizing @version across</item>
+</list>
+</cell>
+</row>
+<row>
+<cell>#2143</cell>
+<cell>B</cell>
+<cell><ref target="https://github.com/TEIC/TEI/pull/2143">new langKnown example + bib ref</ref></cell>
+<cell>
+<list style="ul">
+<item>RV: will make small required fix and integrate — done.</item>
+</list>
+</cell>
+</row>
+<row>
+<cell>#2245</cell>
+<cell/>
+<cell><ref target="https://github.com/TEIC/TEI/pull/2245">Translation from CarmendeSantiago/TEI</ref></cell>
+<cell><p>HBS notes that some of these PRs are just tests and not meant to be pulled in. HBS to review and gently close, or repair.</p><p>Review by HBS finished: #2245 was closed with a comment, #2320 was merged, and #2321 was repaired and pulled in</p></cell>
+</row>
+<row>
+<cell>#2320</cell>
+<cell/>
+<cell><ref target="https://github.com/TEIC/TEI/pull/2320">Translation from dh-miami/TEI</ref></cell>
+</row>
+<row>
+<cell>#2321</cell>
+<cell/>
+<cell><ref target="https://github.com/TEIC/TEI/pull/2321">Translation from joloor2/TEI</ref></cell>
+</row>
+<row>
+<cell>#2384</cell>
+<cell>C</cell>
+<cell><ref target="https://github.com/TEIC/TEI/pull/2384">Update example and bibliographic item</ref></cell>
+<cell>merged</cell>
+</row>
+<row>
+<cell>#2393</cell>
+<cell>A</cell>
+<cell><ref target="https://github.com/TEIC/TEI/pull/2393">constrain att.translatable elements when used in the Guidelines</ref></cell>
+<cell><p>Subgroup A thinks this is ready to go. JT reviewed schematron changes and approves them.</p>
+<p>JT’s requests appear to be resolved now. JT should re-review and perhaps approve.</p>
+<p>We also approve HBS’s translations to English.
+Approve this PR. Then open a new ticket to revise the wording about pointing @who to <gi>role</gi> or <gi>person</gi>.</p></cell>
+</row>
+<row>
+<cell>#2409</cell>
+<cell>B</cell>
+<cell><ref target="https://github.com/TEIC/TEI/pull/2409">changed content model for content, #2381</ref></cell>
+<cell><p>Schematron has already been written; PR <ref target="https://github.com/TEIC/TEI/pull/2428">#2428 </ref>needs review &amp; merge, <ref target="https://github.com/TEIC/TEI/issues/2381">#2381</ref></p>
+<p>Leave open until next year because of the deprecation.</p></cell>
+</row>
+<row>
+<cell>#2416</cell>
+<cell>C</cell>
+<cell><ref target="https://github.com/TEIC/TEI/pull/2416">guidelines.xsl generation update</ref></cell>
+<cell><p>subgroup says JT should merge this</p>
+<p>JT merged PR.</p></cell>
+</row>
+<row>
+<cell>#2418</cell>
+<cell>C</cell>
+<cell><ref target="https://github.com/TEIC/TEI/pull/2418">(a) French version of tutorial (b) minor typos in release notes</ref></cell>
+<cell>Left some comments for Lou for some minor changes that are needed before we can merge.</cell>
+</row>
+<row>
+<cell>#2422</cell>
+<cell>A</cell>
+<cell><ref target="https://github.com/TEIC/TEI/pull/2422">add <gi>taxonomy</gi> and <gi>category</gi> to att.datcat (issue #2419 )</ref></cell>
+<cell><p>In response to issue <ref target="https://github.com/TEIC/TEI/issues/2419">#2419</ref>. PR isn’t finished, last update 2 weeks ago. Subgroup A decision: Leave PR open, work still in progress as noted on ticket.</p>
+<p>LingSIG fork needs to be updated to merge to TEI dev.</p>
+<p>Ticket #2419 assigned to HBS.</p>
+<p>HBS and MT assigned to review the PR.</p></cell>
+</row>
+<row>
+<cell>#2423</cell>
+<cell>B</cell>
+<cell><ref target="https://github.com/TEIC/TEI/pull/2423">changes the content model for msDesc, msPart, and msFrag</ref></cell>
+<cell>Talked about this ticket on Sunday.</cell>
+</row>
+<row>
+<cell>#2424</cell>
+<cell>C</cell>
+<cell><ref target="https://github.com/TEIC/TEI/pull/2424">Updated the title of 2.2.8 for #2415</ref></cell>
+<cell>subgroup says SB should merge this
+[done]</cell>
+</row>
+
+</table><p> </p></div></div><div type="h2"><head>&gt;&gt;Guidelines issues</head><div type="h3"><head>Priority Issues + Needs Discussion only</head></div><div type="h3"><head>Guidelines Issues Triage Groups:</head><p>Group A: TOC, JT, EBB,</p><p>Group B: HBS, SB, SS,</p><p>Group C: RV, MS, JC</p><p>MT and JJ are working on website plan</p><p> </p><p> </p><table>
+
+<row>
+<cell>No.</cell>
+<cell>Group</cell>
+<cell>Title</cell>
+<cell>Comment</cell>
+</row>
+<row>
+<cell>#672</cell>
+<cell>A</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/672">#672 video html to TEI </ref></cell>
+<cell><p>Subgroup: We should close this ancient ticket and open a new ticket on Stylesheets to review and see if things work the same way now.</p>
+<p>Discussion: MT’s suggestion on ticket to use <gi>choice</gi> isn’t good due to its limited placement. SB: Suggestion to use <gi>alt</gi> instead. JT: MH’s suggestion to let media nest is a good solution. RV: Meant to be in alternation. MT:<gi>noteGrp</gi> purpose of the element the notes that represent the same comment but expressed in different languages, JT also something in common but different formats or intending for different audiences. SB: Having a <gi>mediaGrp</gi> might be beneficial. Using nested <gi>media</gi> could be problematic–it might mean a composite of multiple medias. RV: Figures can be grouped, need to study what TEI already does for media and be sure what we proposes is consistent with the existing model. Possible solution to expand <gi>figure</gi> to incorporate <gi>media</gi> since it is already allowed in the <ref target="https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-figure.html"><gi>figure</gi></ref> spec page.</p>
+<p>Discussion about using <gi>altGroup</gi> but this approach would involve using StandOff and might be complicated. Also, you will need to target it to point to alternates since it is self-closing.</p>
+<p>EBB and SB: <gi>alt</gi> is too permissive.</p>
+<p><gi>figure</gi> is the most feasible option.</p>
+<p><hi style="b">Action on HBS and MT</hi>: Assigned to HBS and MT to reword the description of figure to incorporate graphic and figure&gt;. Update ticket status from Blocked to Status: Go and Status: Needs Discussion so we can revisit this ticket discussion in the Paderborn F2F.</p></cell>
+</row>
+<row>
+<cell>#2345</cell>
+<cell>B</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/2345">#2345, msIdentifier should be changed to allow only an idno or msName</ref></cell>
+<cell><p>MS SIG proposes to have just <gi>idno</gi> or <gi>msName</gi> as the minimal identification of a ms (this is the minimal content of <gi>msIdentifier</gi>).</p>
+<p>However, currently we consider that <gi>msName</gi>, <gi>repository</gi> or <gi>location</gi> are the minimal identification (see <ref target="https://github.com/TEIC/TEI/issues/2258">#2258</ref>)</p>
+<p>After some discussion, we agree that the minimal identification of <gi>msIdentifier</gi>:</p>
+<list style="ul">
+<item>msName (with something on it)</item>
+<item>idno + @type</item>
+<item>idno + repository | location | institution</item>
+</list>
+<p>Make a Schematron to accommodate the 2nd option. (3rd option is already covered.)</p>
+<p><hi style="b">Action on HBS and SB:</hi> Merge #2345 with <ref target="https://github.com/TEIC/TEI/issues/2258">#2258</ref> to correct the Schematron errors.</p></cell>
+</row>
+<row>
+<cell>#2285</cell>
+<cell>C</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/2285">#2285, just the question of <gi>altIdent</gi> in other stuff</ref></cell>
+<cell><p>SB and James realized that <gi>altIdent</gi> isn’t used or it’s used incorrectly in a number of elements and propose deprecating it. RV suggests keeping the element so that all the *Spec elements have a similar content model and feels that this would remove an instrument from future uses of ODD specs. Suggest to follow solution 2, but let’s discuss because solution 1 also seems rather reasonable.</p>
+<p>Discussion: Need to revisit the reason why we have <ref target="https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-altIdent.html"><gi>altIdent</gi></ref> in the first place and its definition. EBB: <gi>altIdent</gi> is more constrained than we were led to think. <gi>equiv</gi> inside classSpec can handle the use cases of pointing to related classes in other XML languages.</p>
+<p>JT: Why have only one <gi>altIdent</gi>?</p>
+<p>SB: Creating from scratch, just using <gi>id</gi>s and getting rid of <gi>altIdent</gi>.</p>
+<p>JT: For ATOP – Add responsive message that you have an <gi>altIdent</gi> that is not doing what you think it is.</p>
+<p><hi style="b">Action on SB:</hi> Comment Council’s decision on ticket, to keep <gi>altIdent</gi> and to add clarification on the usage of <gi>altIdent</gi> in p5 and update to Status: Go and remove Needs Discussion.</p></cell>
+</row>
+<row>
+<cell>#2279</cell>
+<cell>A</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/2279">#2279, Constrain translatable elements in TEI ODDs</ref></cell>
+<cell><p>Already discussed with related PR above. (leave open til branch is tidied).</p>
+<p><hi style="b">Action on SB:</hi> Leave open until branch is updated and tidied then close.</p></cell>
+</row>
+<row>
+<cell>#2214</cell>
+<cell>B</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/2214">#2214, sequence of top level elements within msDesc</ref></cell>
+<cell>already discussed</cell>
+</row>
+<row>
+<cell>#2420</cell>
+<cell>C</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/2420">#2420, On the content model of <gi>revisionDesc</gi></ref></cell>
+<cell><p>Subgroup agrees to point 1 (allow multiple listChange), but not point 2 (allow empty &lt;revisionDesc/&gt;) — kinda like you cannot do an empty commit in git, or like you must add something to a <gi>sourceDesc</gi></p>
+<p>Discussion: SB: The proposed content model to have a revisionDesc but have nothing in it, change the content model to use pluses instead of stars to require one of:</p>
+<p>element revisionDesc {</p>
+<p>( list+ | listChange+ | change+ )</p>
+<p>}</p>
+<p>This change encourages you to not leave it empty but allows you to leave it empty if you want to (you can capture your changes with @type).</p>
+<p><hi style="b">Action on SB and TOC:</hi> to update the ticket with the content model with pluses instead of stars and implement the change. TOC updated ticket status from Needs Discussion to Status Go.</p></cell>
+</row>
+<row>
+<cell>#2045</cell>
+<cell>A</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/2045">#2045. @calendar= should not be in att.datable</ref></cell>
+<cell><p>Subgroup notes that this seemed to be decided in Dec. 2021 but no one has acted on it. Need to set deprecation period and a milestone?</p><p>
+Question: Which elements should get @calendar? What would the new class be called (att.dated seems a bit off….att.dateLike or something?) Note the examples of @calendar on <gi>date</gi> in <ref target="https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-att.datable.html">att.datable spec</ref>page. We need more documentation of when and how @calendar is appropriate.Which elements contain date content other than <gi>date</gi>? (See MH’s comment with table: <ref target="https://github.com/TEIC/TEI/issues/2045#issuecomment-731271583">https://github.com/TEIC/TEI/issues/2045#issuecomment-731271583</ref>)<hi style="b">Discussion on calendar:</hi> JT: The attribute is currently badly named, not clear what its purpose is. Already have a datingMethod already and closely related to att.datable.Possible new attribute names for calendar: att.calendrical, att.calendarSystem, att.datingSystem, att.datingMethodAttribute datingMethod already there (in <ref target="https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-att.datable.custom.html">att.datable.custom</ref>). Vote for att.calendarSystem</p>
+<p>SB: Argument against deprecating calendar since it is a corrigble error, but Duncan argues that it needs to deprecated because the change will cause errors in the code.</p>
+<p>JT: Which elements do we deprecate calendar from?</p>
+<p>RV: Query regarding period attribute within att.datable, should it move with calendar into the new attribute class.</p>
+<p>JT: Evaluate the notes/remarks on the att.datable attributes to ensure that the usage of these attributes is clear for users.</p>
+<p><hi style="b">Action on calendar attribute ticket: </hi>EBB: added a comment on Council’s decision to the ticket. Keep calendar only for <gi>date</gi>, <gi>time</gi>, <gi>origDate</gi>, <gi>docdate</gi>, deprecate calendar from other elements with att.datable for a 18 month period and proceed to make the new class att.calendarSystem for calendar and link the attributes to it (to Nov 9ish, 2024). <hi style="b">Action on RV:</hi> to set up the deprecation using the validUntil mechanism to every attribute that it is being deprecated from. Need to update the table list of the elements that use calendar attribute currently. Incorporate following note from the att.datable page in the deprecation comment:</p>
+<p>“Note that the calendar attribute (unlike datingMethod defined in <ref target="https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-att.datable.custom.html">att.datable.custom</ref>) defines the calendar system of the date in the original material defined by the parent element, <hi style="i">not</hi> the calendar to which the date is normalized.”</p>
+<p><hi style="b">Action: EBB</hi> updated title of issue <ref target="https://github.com/TEIC/TEI/issues/2213">#2213</ref> from att.datablecustom to datingPoint.</p>
+<p><hi style="b">Action: JT</hi> is looking at documentation on dating and is opening an omnibus ticket to connect all the related calendaric/datable tickets we need to cope with.</p>
+<p><hi style="b">Related discussion on <gi>docDate</gi> ticket:</hi></p>
+<p>Why is docDate not in att.datable? JT has opened ticket <ref target="https://github.com/TEIC/TEI/issues/2432">#2432</ref>. RV and SB we want this for only one situation, intentionally more restrictive to be specialised otherwise you could use <gi>date</gi>, see<ref target="https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-docDate.html"> <gi>docDate</gi> spec page</ref>. EBB and JJ: Need calendar to be added to <gi>docDate</gi>. JT: We need more than just calendar under <gi>docDate</gi>.</p>
+<p>SB: Any examples where the context can not be converted to a single Gregorian date. <gi>docDate</gi> is insufficient to encode the dates.</p>
+<p>JJ: Has example title pages to add to the ticket. EBB: has added an example of an date on a title page that can not be expressed in a Gregorian date.</p>
+<p><hi style="b">Action on RV:</hi> Status Go on docDate ticket.</p></cell>
+</row>
+<row>
+<cell>#2370</cell>
+<cell>B</cell>
+<cell><ref target="https://github.com/TEIC/TEI/issues/2370">#2370</ref> Datatypes using ‘token’ permit whitespace even when they probably shouldn’t</cell>
+<cell><p>HBS and SB: asking Council which way to go — allow leading &amp; trailing whitespace or not?</p>
+<p>Discussion: EBB wrote to Hugh on the ticket if we should just revise the remarks on teidata.word.</p></cell>
+</row>
+<row>
+<cell><ref target="https://github.com/TEIC/TEI/issues/1744">#1744</ref></cell>
+<cell>C</cell>
+<cell>Add contextually-variant content models to ODD</cell>
+<cell>discussed this in the Monday morning session. Status is go for implementation.</cell>
+</row>
+
+</table></div></div></div></body><!-- #post-## --></text></TEI>
