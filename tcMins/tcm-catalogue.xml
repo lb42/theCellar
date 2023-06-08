@@ -93,6 +93,15 @@
     stored.</p>
    <listBibl>
     <head>2023</head>
+    <bibl xml:id="TCM166" n="2023-05_32620.xml"> <meeting n="2023-05" from="2023-05-07" to="2023-05-09">TEI
+     Technical Council online meeting : <date>7-9 May 2023</date></meeting> <listRef>
+     <ref target="2023-05_31620.html">TEI P5 </ref>
+     <ref target="https://raw.githubusercontent.com/lb42/theCellar/main/w023-05_31620.xml">Raw TEI
+      P5</ref>
+     <ref
+      target="https://tei-c.org/activities/council/meetings/tei-technical-council-teleconference-2023-04-14"
+      >[on TEI-C website]</ref>
+     </listRef> </bibl>
     <bibl xml:id="TCM165" n="2023-04_31583.xml"> <meeting n="2023-04" when="2023-04-14">TEI
      Technical Council online meeting : <date>14 April 2023</date></meeting> <listRef>
      <ref target="2023-04_31583.html">TEI P5 </ref>
