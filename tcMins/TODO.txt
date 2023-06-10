@@ -1,0 +1,2 @@
+1. Check structure and make consistent, e.g. all participant lists.
+2. Change relative URLs to absolute where possible (cf reflist.txt)
