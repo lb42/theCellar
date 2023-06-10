@@ -1,0 +1,51 @@
+$postNo=0;
+$minDate = $ARGV[0];
+$minDate=~ s/\.html//;
+print $minDate;
+while (<>) {
+
+# look for start of article
+
+if (/<article\s+id\=\"post\-(\d+)\"/) {
+
+# article found, initialise schlurping
+$postNo = $1;
+print " $postNo ";
+$outFile = $minDate ."_". $postNo;
+open (OUT,">$outFile.xml") || die "failed to open $outFile";
+#print OUT;
+$outStr = $_;
+
+} elsif( $postNo gt 0 ) {
+# now schlurping
+s/<hr>/<hr\/>/g;
+s/&nbsp;/ /g;
+#print OUT;
+
+$outStr .= $_;
+$tags{$1}++ while (s/<([a-zA-Z0-9]+)//);
+
+if(/<\/article/) {
+
+# found end of article 
+
+ $outStr =~ s/ title\=\"[^"]+"//g;
+# comment out vestigial teiHeader
+ $outStr =~ s/(<div\s+class\=\"teiheader\">.+?<\/div>)/<!-- $1 -->/s;
+# string after a div is probably a head
+ $outStr =~ s/<div([^>]*)>([^<]+)<\/p>/<div$1><head>$2<\/head>/g;
+ $outStr =~ s/<div([^<]+)<list/<div><head>$1<\/head><list/g;
+# try to deal with breaks within td
+ $outStr =~ s/<td>([^<]+)<\/p>/<td><p>$1<\/p>/g;
+ $outStr =~ s/<p>([^<]+)<\/td>/<p>$1<\/p><\/td>/g;
+# add gi tags where poss
+ $outStr =~ s/&lt;([a-zA-Z0-9]+)&gt;/<gi>$1<\/gi>/g;
+
+# report on tag usage
+ for $k (sort keys %tags) {
+   $str .= $k . " ";
+ } 
+ print " $str \n";
+ print OUT $outStr;
+exit();
+}}}
