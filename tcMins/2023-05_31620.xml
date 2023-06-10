@@ -257,8 +257,6 @@ When originally developed, it was presumed that order of semantic children of <g
 <item>JT: <gi>event</gi> in its current configuration it quite constrained, take this opportunity of reconfiguring the <gi>event</gi> content model to make this a more open and less arbitrarily constrained model. (Make sure that what we want for event is fully represented in the proposed change.)</item>
 <item>Checking <ref target="https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-place.html"><gi>place</gi></ref> and <ref target="https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-org.html"><gi>org</gi></ref> content models as comparisons, both get `model.headLike`</item>
 <item>JC: although <gi>event</gi> developed out of something happening in relation to people/place/orgs, its content model should be considered as a first order entity in its own right as an event can occur without people, places being connected.</item>
-<item>MT: Community PRs<gi>p</gi>sdfd&lt;/p&gt;</item>
-<item>               <gi>bibl</gi>&lt;/bibl&gt; should be prioritised</item>
 <item>EBB: Leaving a comment that expresses how impressed Council are by much work went into creating this proposal and that it will be incorporated into the next release and want to make sure that he gets exactly what he wants out of the proposed change. JT: To comment on the PR to make sure that the changes meet his expectations.</item>
 <item>MT: Comment to ask him if he would like to work further on this issue himself to incorporate it into dev or if he would like the Council to finish this on his behalf</item>
 <item>SB: We need write access to modify his branch and repo and he has also explicitly asked Council to make changes.</item>
@@ -299,6 +297,9 @@ When originally developed, it was presumed that order of semantic children of <g
 </list>
 </item>
 </list></div><div type="h2"><head>&gt;&gt;Council Discussion of Contributor Guidelines</head><list style="ul">
+    
+   <item> MT: Community PRs should be prioritised
+  </item>
 <item>JT: We should draft Contributor Guidelines to know what to do for new contributors that do not have connections to people on Council</item>
 </list><list style="ul">
 <item>SB: MS gave a great talk on how to contribute to the Guidelines – possible base for a draft of the contribution guidelines</item>
