@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet type="text/css" href="../Stylesheets/teixlite.css"?>
+<!DOCTYPE TEI.2 PUBLIC "-//TEI//DTD TEI Lite XML ver. 1//EN" "../Lite/DTD/teixlite.dtd"
+[
+  <!ATTLIST xptr url CDATA #IMPLIED >
+  <!ATTLIST xref url CDATA #IMPLIED >
+]>
+<TEI.2>
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Towards the  1.0 release of TEI P5</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>For discussion</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>All my own work</p>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc>
+<change><date value="2006-07-18">Tue, 18 Jul 06</date>
+	<respStmt><name>Syd Bauman</name>
+	<resp>editor</resp></respStmt>
+	<item>a couple of minor changes; added 1 comment-note to Lou</item>
+	</change>
+<change><date value="2006-07-18"/>
+	<respStmt><name>Lou</name>
+	<resp>editor</resp></respStmt>
+	<item>further revisions per syd's email</item>
+	</change>
+<change><date value="2006-07-17">Mon, 17 Jul 06</date>
+	<respStmt><name>Syd Bauman</name>
+	<resp>editor</resp></respStmt>
+	<item>buncha minor revisions</item>
+	</change>
+<change><date value="2006-07-16"/>
+	<respStmt><name>Lou</name>
+	<resp>editor</resp></respStmt> <item>First draft.</item>
+	</change>
+    </revisionDesc>
+  </teiHeader>
+
+  <text>
+    <body>
+      <head>Towards the 1.0 release of TEI P5</head>
+
+<p>At the Kyoto meeting, Council identified 21 items which would need
+to be in place as prerequisites for a Release 1.0. These items were further
+classified as <q>essential</q>, <q>desirable</q>, and <q>nice</q>, as follows:
+
+<list type="gloss">
+<label>essential</label>
+<item><list>
+<item>chapter review, including review of examples</item>
+<item>decision on module dependency architecture made, and if yes implemented</item>
+<item>remove instructions on how to invoke TEI DTD from each chapter</item>
+<item>New user needs to have an easy way to generate customization ODD and generate schemas</item>
+<item>text of prose matches specs</item>
+<item>*Specs frozen! :-)</item>
+<item>Dictionary rewrite completed</item>
+<item>Modification and Conformance chapters rewritten</item>
+</list></item>
+<label>desirable</label>
+<item><list>
+<item>resolve all feature requests</item>
+<item>inserting missing examples</item>
+<item>phys bib</item>
+<item>prosopography</item>
+<item>Text Critical rewrite completed</item>
+</list></item>
+<label>Nice</label>
+<item><list>
+<item>cookbook</item>
+<item>desktop java-based Roma</item>
+<item>mechanism for an instance indicating the schema(s) to which it should conform</item>
+<item>P4 to P5 migration report</item>
+<item>P4 to P5 migration tool</item>
+<item>PDF version of Guidelines</item>
+<item>	PDF version of reference doc (of customization)</item>
+<item>Terminology rewrite completed</item>
+</list>
+</item>
+</list>
+</p>
+<p>After discussion and review of this list, the TEI editors now
+wish to present a revised version for Council's consideration. Note
+that the Editors' primary objective is to ensure that a usable 1.0
+Release of TEI P5 is made available as soon as possible. We consider
+this to be of higher priority for the Council and editors than developing usability tools and
+tutorial guides, important those these are. With a stable release of
+TEI P5, production of such support materials is something that can,
+and will, be readily undertaken by many agencies. Without it, such
+tools can only ever be experimental.
+
+<list type="gloss">
+<label>Essential</label>
+<item><list>
+
+<item>Quick review of outstanding Class-actions. We need to check that
+the class changes initiated in the Oxford meeting over a year ago have
+been completed as far as this is possible.</item>
+
+
+<item>Chapter-by-chapter review of TEI P5. This has several
+aspects. Although determining the coverage and content of each chapter
+is something on which external reviewers may well have much to
+contribute, ultimately it is the editors' responsibility to ensure
+that P5 appears to be an integrated and well-edited whole, worthy of
+its predecessors. Questions to be considered during this review include:
+
+<list>
+
+<item>does each chapter generate functional schema and DTD fragments,
+at least as far as can be determined from the corresponding test file
+in the Test tree?</item>
+
+<item>are there sufficient examples in the chapter for a
+non-specialist reader to understand how the elements (etc.)
+illustrated should be used? are the examples all correct and
+valid?</item>
+
+<item>are the descriptions and other parts of the element
+specification documents referenced from each chapter consistent with
+the intended usage described in each chapter?</item>
+
+<item>has the prose of each chapter been read by both editors for
+house-style, consistency and clarity of expression, mid-Atlantic
+spelling, etc.?	See further <xref
+url="../Vault/ED/edw38.txt">EDW38</xref> which is probably in need of
+an update. 
+</item>
+
+</list>
+</item>
+<item><p>Survey of outstanding feature requests (on SourceForge and on TEI-L and
+elsewhere). Ensuring that all outstanding requests are properly signed off in
+some way is obviously desirable; however, at least simply taking stock of them we consider to be
+essential. We
+		  propose therefore to carry out an initial
+		  <soCalled>triage</soCalled> review of all current requests,
+categorising them as <q>satisfied</q> (i.e. we have implemented the
+proposal in 1.0),
+<q>inappropriate</q> (i.e. we have considered but on balance reject
+the proposal), <q>candidate</q> (i.e. we plan to incorporate the
+suggestion in 1.0, or the proposal needs more discussion), or <q>potential</q> (i.e. we plan to incorporate
+the suggestion in 1.1 or a subsequent release).
+
+A standing
+document listing  those in the last two categories will be produced, and
+will be used to provide input to the P5 implementation work plan. </p>
+<p>Note that some of the specific items listed below are already the
+subject of feature requests.</p></item>
+
+<item>Should P5 support the notion of module dependency? we have now
+introduced a way for a module to specify that it has a dependency on
+some other module (the <ident type="attrName">depends</ident> attribute on
+<gi>moduleSpec</gi>). It is less clear how this should be used, or
+whether its usage will have an impact on the rest of P5. Input from
+Council on how much priority we should give to this question would be
+useful. There seems to have been no follow up to Sebastian's posting
+on the topic: so far, we tend to agree with his view that there is no
+need for this feature. <!-- LB: what posting do you mean? there was lots -->
+<!-- of follow-up to the "module dependency" posting of 05-22 17:51 -->
+</item>
+<item>We think that any DTD-specific prose that occurs is within a
+		chapter slated for complete re-write anyway
+		(modification, conformance, or multiple hierarchies); checking that this is the case is a part of the
+chapter review.</item>
+<item>We believe that we have adequate tools for the authoring of
+usable ODDs and the generation of schemas from them. While it is clear
+		that better, even more user-friendly tools are an
+		important aspect of the future of TEI, better
+introductory software is not needed for the production of P5, and
+		therefore we do not think it should be part of our current brief.</item>
+<item>The point at which the specification documents are frozen is
+probably the defining moment for a 1.0 release of TEI P5. The licence
+we have given ourselves to break backwards compatibility will be
+revoked at that point. In other words, although we expect further
+development beyond 1.0, this will have to be done without breaking
+either existing documents or existing schemas. Obvious  exceptions
+to this general principal include fixes to egregious errors, and changes caused
+		by corresponding changes in an external specification. This and related issues
+need to be explored in the Conformance and Modification
+chapters. Revision of those chapters should therefore, in our view, be given a
+higher priority than it currently enjoys.</item>
+<item>Although further revision of the dictionary chapter is
+desirable, we believe its current state to be adequate for
+publication, subject to the chapter review process described
+above.</item>
+<item>Earlier this month, we learned that the original author of the
+Terminology chapter (Alan Melby) is keen to take on the task of
+revising it, which has been long in abeyance. This is, obviously, very
+desirable; however, as with the Physical Bibliography chapter, we do
+not feel that release 1.0 of P5 should be delayed waiting for it to
+happen.</item>
+</list></item>
+<label>Desirable</label>
+<item><list>
+<item>Feature Requests: as noted above, we consider a review of
+outstanding feature
+requests to be essential. It is also  desirable to confirm with all
+those who sent in such requests that they are aware of how we have
+resolved the issue concerned and are at least not very annoyed about it.</item>
+<item>By "missing examples" we understand the need to ensure that all
+chapters adequately illustrate the features documented. This is part
+of the Chapter review process. </item>
+<item>Inclusion of the new material on Physical Bibliography just received is
+classed here as desirable rather than essential, largely because we
+don't yet know how much work is entailed in making it compatible with
+the rest of the Guidelines. It seems likely that much of 
+it will be useful as providing (a) a specific illustration of how to do stand off
+markup (b) a specific illustration of how to define a radically
+different schema based on the physical rather than the logical
+organization of a codex. We are less sure about the very detailed
+proposals for analytic bibliographic description, partly because these
+ need to be
+reviewed more widely by experts in the field, partly because of the
+amount of effort involved in writing a very detailed new ODD
+specification. We would appreciate input from Council as to the
+priority we should assign this work. </item>
+<item>The deliverables from the Personography activity have now been
+integrated into P5, but will need a considerable amount of further work as a part
+of the Chapter review process. It has been suggested that it would
+ be desirable to expand the treatment of placenames in a similar way,
+ so that gazeteers and similar sources of geographical metadata could
+ be handled in a way analogous to the way that biographical data is
+ treated. Council's opinion on that would also be useful.</item>
+<item>In Kyoto, revision of the  chapter on Text Criticism was
+ regarded as desirable, but we are not aware of any activity currently
+aiming to produce such revisions, nor of what exactly needs changing. If Council wishes to sponsor or
+promote  such a revision, this will need to be set up very soon.
+</item>
+<item>Minor revision of some aspects of the Feature System Declaration
+chapter is likely to take place over the next couple of months as a
+result of the continuing ISO/TEI liaison.</item>
+<item>Completion of revision of the chapter on handling multiple
+hierarchies is also highly desirable: the material currently in P5 is
+very dated, and although new material has been received it has yet to
+be integrated with it.</item>
+</list></item>
+<label>Nice</label>
+<item>The items listed under this category in Kyoto are all in hand to
+a greater or lesser extent. As none of them (except terminology on
+which see above) is a strictly editorial matter, we do not consider
+them further here.
+</item></list>
+</p>
+
+      <!-- LB: I've toned the following down a bit, because I consider -->
+<!-- finishing the CLASS system work and tying up loose ends from the -->
+<!-- war on attributes, and perhaps even CF, MD, &amp; NH higher -->
+<!-- priority than feature requests -->
+<p>As noted above, an initial review of all
+feature requests is of very high priority. From this exercise we expect to derive a list of
+work items. However, it's already clear what some of those work items
+will be, irrespective of whether or not they have been specifically
+requested. In no particular order, here is a short list of major work
+items we think ought to be addressed. We have not yet decided which of
+these are essential for release 1.0, and which could be deferred to
+1.1 (or beyond).</p>
+
+<list type="ordered">
+	<item>The content model for <gi>body</gi> needs review with an
+	  eye towards
+better use of the class system. In particular, it would be desirable
+	  to be able to remove elements (including numbered <gi>divN</gi>s) without producing ambiguous content
+models</item>
+	<item>Should <gi>note</gi> be a global element? If so, how? Related to this,
+there is a need for a grouping element which can associate any of some
+identifiable number of metadata elements with an annotation or
+comment. We could do this by something like the <gi>assertion</gi>
+element proposed originally in the Personography exercise; 
+	  other possibilities include the introduction of a special mechanism to allow for
+	  <gi>xxxGroup</gi> elements for each <gi>xxx</gi>; a
+	  special-purpose pointer attribute; and a special-purpose
+	  <gi>link</gi> element. </item>
+<item>Application-specific Information needs a home in the
+header. There is a proposal in SF for this, but it is very specific to
+one type of application and needs to be generalised.
+</item>
+<item>Definition of an appropriate content model for "anorexic prose"
+in the header. See my (as yet uncommented on) note of 10 June to council with
+subject line "Reduced phrase proposals". </item>
+<item>Definition of a specific solution, or at least decisions as to
+best practice recommendations, for the inclusion of SVG in a TEI
+document. This may or may not be the same as that old chestnut about
+how to handle TEI documents which consist of page images, or how to
+align page images with page transcripts, or how to do detailed image
+annotation in TEI as per Victorian practice.
+</item>
+<item>How to handle regularisation of names, without recourse to
+persons.</item>
+<item>[Your nasty problem here]</item>
+</list>
+
+
+</body>
+  </text></TEI.2>

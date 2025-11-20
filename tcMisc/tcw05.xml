@@ -1,0 +1,213 @@
+<?xml version ="1.0" encoding="utf-8"?>
+<TEI.2>
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+	<title>TCW 05: TEI P5 Progress Report, Jan 2005</title>
+	<author>Lou Burnard and  Sebastian Rahtz</author>
+      </titleStmt>
+      <publicationStmt>
+	<p>sent to CW</p>
+      </publicationStmt>
+      <sourceDesc>
+	<p>created electronically</p>
+      </sourceDesc>
+    </fileDesc>
+      <revisionDesc>
+         <change>
+            <date>$Date: 2008-09-02 10:24:21 +0100 (Tue, 02 Sep 2008) $</date>
+            <respStmt>
+               <name>$Author: rahtz $</name>
+            </respStmt>
+            <item>Edited SPQR's draft.</item>
+         </change>
+      </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+	<head> TEI P5 Progress Report, 2005</head>
+ 
+
+<p>This report covers P5-related activities at Oxford between
+November 2004 and January 2005. We have found it hard or impossible
+to distinguish between work specifically charged to the Meta workgroup
+and work of an editorial nature in describing general progress towards
+P5. It seems more sensible simply to report to  the TEI Council what has
+happened.</p>
+
+<p>Following the Members' Meeting in November, at which the suggestion
+of a <soCalled>P4 compatibility</soCalled> mode was rejected, we
+focussed on preliminary work necessary to implement some global
+changes in P5 before moving the source files to SourceForge.  During
+November and December, a great deal of concentrated work was
+undertaken (Syd Bauman assisted greatly in this task) largely
+consequent on the decision to move to xml:lang and xml:id, and its
+implications for the validation of TEI P5 itself, as well as that of all its
+examples. The first open source release of TEI P5 was announced to
+TEI-L on January 18th.
+</p>
+<p>Council members will recall the decision made in Ghent to implement
+a complete change in the way cross-referencing and linking is
+done at P5. The Guidelines themselves contain several hundred
+cross-references and thus provide an excellent test for the practical
+implications of that decision. Using a combination of XSLT transforms,
+emacs macros, and hand editing, we converted all <att>id</att>
+attributes to <att>xml:id</att> and all <att>target</att> attributes
+and other cross-referencing systems (both internal and external) to a
+single XPointer mechanism using URIs. Changes had to be made in:
+<list type="ordered">
+<item>the ODD documents  defining schema content models for
+affected elements and classes</item>
+<item>the text of the Guidelines themselves (much of it manual)</item>
+<item>the embedded examples in the P5 Guidelines</item>
+<item>the test files</item>
+<item>the XSLT stylesheets which process the ODDs to generate TEI P5,
+and which also form part of the general TEI processing library</item>
+<item>the Roma application which creates schemas</item>
+</list>
+All these changes have been completed, but not all of their
+consequence have yet been thoroughly tested. In particular, we suspect
+that there may be more consequences yet to be discovered arising 
+from the now-pervasive use of XPointer references throughout the XSLT
+stylesheets. </p>
+<div>
+<head>Conversion to new identification and pointing scheme</head>
+<p>Converting the Guidelines themselves, after the (relatively simple)
+change had been made to content models, was largely
+automated. Conversion of embedded examples was more complex, as these
+were present in the text in two forms: as validatable embedded XML
+source, and as non-validatable CDATA marked sections. After some
+argument, we resolved to convert as many as possible of the latter to
+the former. Of over 1800 examples, only 68 were found to need to
+remain as unvalidatable CDATA (for example, because they were
+intended to demonstrate invalid XML).  Several thousand genuine
+markup errors were found as a result of this process. Though
+laborious, the process of hand-correcting them all means that  
+the entire TEI Guidelines text is now valid
+against a 3-pass validation process:
+<list type="ordered">
+<item>a check against a Relax NG schema (using three separate
+parser implementations: jing, rnv and xmllint), each of which
+validates  the main text 
+and checks that all the examples are well-formed</item>
+<item>a separate validation check with a full Relax NG schema for each of the  examples
+individually (this is managed using the Namespace Routing Language 
+implemented in jing)</item>
+<item>an XSLT script which checks class membership of elements; this
+is necesary because class membership is not implemented using
+xml:id, and consequently errors here would not otherwise be detected.</item>
+</list>
+Stage 2 caught many instances of duplicate IDs. It is a  feature of
+xml:id  that all values must  be unique across the whole document,
+whatever namespace is used. This means that 3 examples in a row which use
+<eg><![CDATA[<p id="foo">]]></eg> to make some point cause a
+validation error. Whether this is desirable, acceptable, or plain wrong caused
+a heated debate between LB, SB, and SR; but in the end all IDs were
+made unique by means of tedious hand-editing.
+</p>
+
+<p>Converting the XSLT stylesheets and Roma was mostly
+straightforward, with one notable exception. The problem is that W3C
+Schemas cannot declare elements or attributes in more than one
+namespace at a time. One schema has to import another if 
+validation of a multi-namespace schema is required. Unfortunately, the switch to using
+<att>xml:id</att>, <att>xml:lang</att>, and <att>xml:base</att> means
+that <emph>all</emph> TEI schemas will be mixed namespace, since they
+must import an external schema which defines <att>xml:id</att>,
+<att>xml:lang</att> etc. The concept of Roma, whereby everything is
+delivered in a single package file which can be carried around with an
+instance file, is therefore impossible to implement using W3C Schema.
+This is a considerable annoyance.
+
+</p>
+</div>
+
+<div>
+<head>Transition to Sourceforge</head>
+<p>As noted above, the first Open Source release of TEI P5 took place in mid January
+2005. The CVS repository  at tei.sf.net now holds the master version
+of:
+<list type="ordered">
+<item>The ODD sources of P5, the necessary tools for processing
+them, and test files</item>
+<item>The XSLT stylesheets which process P5 and other TEI P4 and P5
+documents</item>
+<item>The P5 internationalization data</item>
+<item>Roma</item>
+<item>TEI Emacs customizations</item>
+<item>Example TEI extensions</item>
+</list></p>
+<p>Derived from these, we also provide <soCalled>snapshot</soCalled>s
+of P5 for download as
+Sourceforge <emph>File Release</emph>s each comprising four packages: a) source, b)
+compiled schemas, c) compiled documentation (HTML); and d) test
+files. The same contents are provided as Debian packages from <xptr
+url="http://tei.oucs.ox.ac.uk/teideb/"/>.
+</p></div>
+
+<div>
+<head>Tools status</head>
+<p>Roma has been checked again, and updated to work with
+xml:id and xml:lang
+as needed, and a number of bugs fixed in the underlying XSLT stylesheets.
+</p>
+<!-- more needed here -->
+
+</div>
+<div>
+<head>Content changes in P5</head>
+<p>Some of the superceded chapters in TEI P5 have now either been removed
+from the source, or been marked with a strong <soCalled>health
+warning</soCalled>  indicating that they are likely to undergo major
+revision in the near future (much of this work was carried out by Syd
+Bauman).</p>
+<p>A small number of minor changes, some of them originating as SF
+feature requests were made in the text of P5 itself. Notable examples  include:
+<list>
+<item> implementation of a
+<gi>graphic</gi> element, separating reference to physical images
+from the concept of <gi>figure</gi> and generalization of the latter
+to include e.g. nested diagrams or figures</item>
+<item>introduction of the <gi>choice</gi> element as a replacement for
+<soCalled>janus</soCalled> style tagging</item>
+<!-- must be more but I cant think of any -->
+</list></p>
+<p>During this period, we received and integrated a first revision of the SH
+(independent header) chapter; further work on extending this is
+anticipated. This was the only substantive contribution to the new
+draft received from any TEI workgroup or affiliated body in the last 5 months.</p>
+</div>
+
+
+<div>
+<head>Future work on P5</head>
+<p>Although we now have a stable and self-consistent release of  TEI
+P5, work is very far from complete. We identify at least the following
+tasks remaining:
+<list>
+<item>Review class membership, and element content models, to
+rationalize and simplify</item>
+<item>Review  and re-implement where needed
+<soCalled>characterful</soCalled> attributes</item>
+<item>Review and dispose of outstanding feature requests from SF list</item>
+<item>Replace all remaining references to DTD-based modular system </item>
+<item>Completely rewrite ST to reflect new modular system</item>
+<item>Revise other chapters marked as needing revision in 
+<xref url="../Drafts/edw81.html">edw81</xref></item>
+<item>Reconsider gross organization of P5 (e.g. are CO and HD too long)</item>
+</list>
+</p>
+<p>We are concerned that this process is in danger of losing direction
+and motivation, as well as being unduly protracted. We need to find
+better ways of generating input for the revision from interested
+parties and more efficient ways of acting upon such input when it is
+received.</p>
+<p>We suggest that Council may wish to consider replacing the current Meta
+workgroup with a new <soCalled>P5 Editorial Committee</soCalled>,
+of four or five members, whose task will explicitly be to oversee production of a complete
+version of P5 during 2005. It will review and sign off proposals for
+change from wherever they come and monitor progress on their
+implementation. It will report to Council. It probably does  not need a budget,
+but it will need committment and technical knowledge.
+</p>
+</div></body></text></TEI.2>

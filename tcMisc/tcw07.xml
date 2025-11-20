@@ -1,0 +1,641 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI.2>
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Notes on the TEI Class System</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>For discussion</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>From TEI Council email March 2006</p>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc>
+<change><date value="2006-05-28">Sun, 28 May 06</date>
+	<respStmt><name>Syd Bauman</name>
+	<resp>editor</resp></respStmt> <item>Add section on
+	<gi>dateStruct</gi> and <gi>timeStruct</gi>.</item>
+	</change>
+<change><date value="2006-05-22"/>
+        <respStmt><name>Lou</name>
+        <resp>editor</resp></respStmt>
+        <item>Removed invalid type attribs; added some notes
+for dispositions agreed at Kyoto council meeting.</item>
+        </change>
+<change><date value="2006-04-23">Sun, 23 Apr 06</date>
+        <respStmt><name>Syd Bauman</name>
+        <resp>editor</resp></respStmt>
+        <item>Added phrase-level markup and a couple of notes.</item>
+        </change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <p>This is a summary of input received from TEI Council Members
+	on additional class related changes, together with <hi>quick
+	  comments by LB</hi> <note rend="italic" place="inline">and a
+	  few by SB.</note></p>
+      <div>
+
+        <head>Corpus</head>
+        <list>
+          <item><gi>textDesc</gi> and <gi>settingDesc</gi> and all
+            their children should remain part of this module. However,
+            <gi>particDesc</gi> and all their children
+            (person-related) should have their inclusion in this
+            module given serious reconsideration by the personography
+            taskforce. At very least <gi>particDesc</gi> and children
+            need to make sure that their descriptions are rephrased to
+            not say these elements only apply to those <q>in a
+              linguistic interaction</q>. <hi>Comment: for discussion
+              at the PTF: the proposed change in wording is easily
+              effected</hi>
+<note type="action">Reword  descriptions as needed</note>
+	  </item>
+<item>Where should prosopographic elements go: in CC, in ND, or in
+their own module? Is there to be  a single module for personography? module
+dependency issues: should modules have explicit dependencies?
+Council agreed: not to leave in limbo. Move it into ND:
+agreed by 10 votes.<note type="action">Move prosopographic material to ND</note>
+</item>
+
+<item>How should the dependency of msdescription on ND be resolved?
+Should we introduce mechanisms for supporting module dependency or
+should the class system do this job? Council agreed we should fix the
+ms-desc/ND dependency and see if there are any others. Provide a
+facility for indicating that one module should be used with
+others. Rethinking of meaning of TEI classes. 
+<note type="action">Revise discussion of classes in TD and test
+sequential classes with msDesc</note>
+
+</item>
+
+          <item>Around half a dozen of these elements have a content model of
+            "att.datable model.personPart". I can see people wanting to add
+            things that are like this. I guess it is best for them to add both,
+            but I point it out just in case it comes up elsewhere or a class
+            should be made. Obviously this depends on the outcome of the
+            personography taskforce. <hi>In general, we don't mix attribute and
+              model classes within a single class</hi></item>
+          <item>Similarly a number of elements all are members of
+            "att.declarable model.profileDescPart". I think all this really
+            is indicates that the class system is working properly. <hi>Phew!</hi></item>
+          <item>A large number of the elements in corpus have a content model of
+            <ident >macro.phraseSeq</ident>. I really think it is improbably that many of these
+            elements *really* need all/most of the possible content which
+            this enables for them. Of those which are <ident
+            >macro.phraseSeq</ident>, those which
+            I think could do with a much tighter content model would include:
+            <gi>affiliation</gi>, <gi>channel</gi>, <gi>constitution</gi>, <gi>derivation</gi>, <gi>education</gi>, <gi>factuality</gi>,
+            <gi>firstLang</gi>, <gi>langKnown</gi>, <gi>locale</gi>, <gi>nationality</gi>, <gi>occupation</gi>, <gi>preparedness</gi>,
+            <gi>purpose</gi>, <gi>residence</gi>, <gi>socecStatus</gi>. For most of these one only needs a
+            small bit of limited text without the various in-depth phrase markup
+            that <ident >macro.phraseSeq</ident> seems to give. I was less sure about wanting to
+            constrict the <ident >macro.phraseSeq</ident> content model for <gi>activity</gi> for some
+            reason. Similarly with <gi>domain</gi> and <gi>interaction</gi>, but there I vacillated
+            on whether they (as perhaps some of those above) could be made empty
+            or something more constrained (<ident >macro.glossSeq</ident> didn't seem right.) I
+            want to argue that <gi>birth</gi> and <gi>death</gi> (or however they are reformed by
+            the personography taskforce) should have a tighter content model as
+            well. <hi>This is probably true of several other things in the header
+              too: do we want to define a restricted subclass of phrase
+              elements?</hi><note rend="italic" resp="SB"
+            place="inline">yes, I
+            think so</note>
+
+<note  rend="italic" resp="LB"
+            place="inline">We can distinguish data-like things and text-like things, but what about things
+that can be either? how would we make their content
+context-dependent?</note>
+<note type="action">Implement reduced-phrase class proposed in <ptr target="#rPhrase"/></note>
+
+          </item>
+          <item>The most complex content models are in: <gi>listPerson</gi>, <gi>particDesc</gi>,
+            <gi>setting</gi>, and <gi>textDesc</gi>. <gi>textDesc</gi> does not use classes so possibly a
+            candidate for <ident>model.textDescPart</ident>. I can see someone wanting to add
+            something to <gi>textDesc</gi>. <hi>Agreed: we should implement
+              <ident>model.textDescPart</ident></hi>
+            Otherwise, <gi>setting</gi> is the only one I would
+            consider re-examining. Its content model is: 
+            <code>model.pLike+ | ( model.nameLike.agent | model.dateLike |
+              model.timeLike | activity  | locale  | rs )* </code>
+            I looked to see if: <code>model.nameLike.agent | model.dateLike |
+              model.timeLike</code> appears elsewhere as a group (it doesn't
+            really).
+            <hi>What's the proposal here? <ident>model.settingPart</ident>?</hi><note type="action"><list>
+<item>make model.settingPart as superclass of model.nameLike.agent,
+model.dateLike, model.timeLike, containing activity and locale and
+forget about rs</item>
+        </list></note></item>
+	</list></div>
+
+<div id="rPhrase"><head>Notes on Reduced Phrase Class</head>
+
+<eg><![CDATA[
+
+--------- what we have now ---------
+
+model.phrase =
+
+   model.graphicLike = binaryObject eg egXML formula graphic
+   model.hiLike = distinct emph foreign gloss hi mentioned soCalled term title
+   model.lPart = caesura rhyme
+   model.oddPhr = att code gi ident specDesc specList tag val
+   model.pPart.data = address
+      model.dateLike = date dateRange dateStruct
+      model.measureLike = measure num
+      model.nameLike = geogName lang placeName rs
+          model.nameLike.agent = name orgName persName
+      model.timeLike = time timeRange timeStruct
+   model.pPart.edit = abbr add app choice corr damage del expan orig
+      reg restore sic space supplied unclear
+   model.pPart.msdesc = catchwords dimensions handShift heraldry locus
+      material origDate origPlace secFol signatures watermark
+   model.ptrLike = ptr ref
+   model.ptrLike.form = oRef oVar pRef pVar
+   model.segLike = c cl m phr s seg w
+
+--------- some possible changes ---------
+
+   model.pPart.edit = abbr add app choice corr damage del expan orig
+      reg restore sic space supplied unclear
+
+becomes:
+
+   model.pPart.edit =
+      model.pPart.edit.??? = abbr choice expan
+      model.pPart.edit.transcribe = add app corr damage del orig reg restore sic space supplied unclear
+
+---------
+
+   model.hiLike = distinct emph foreign gloss hi mentioned soCalled term title
+
+becomes:
+
+   model.hilighted =
+      model.hiLike = hi
+      model.emphLike = distinct emph foreign gloss mentioned soCalled term title
+
+---------
+
+   model.oddPhr = att code gi ident specDesc specList tag val
+
+becomes:
+
+   model.specDescLike = specDesc specList
+   model.xmlPhrase = att code gi ident  tag val
+
+arguably <code> and <ident> should be in model.emphLike instead.
+
+---------
+summary of possible changes:
+
+model.headerPhrase = 
+   model.graphicLike [1]
+   model.xmlPhrase
+   model.pPart.data
+   model.pPart.msdesc
+   model.ptrLike
+   model.emphLike
+   model.pPart.???
+
+I.e., model.headerPhrase does *not* have
+   hi [2]
+   model.lPart
+   add app corr damage del orig reg restore sic space supplied unclear [3]
+   model.ptrLike.form
+   model.segLike
+
+
+Notes
+-----
+[1] An argument could be made to divide model.graphicLike so that
+    <binaryObject> and perhaps <formula> and <graphic> were not in
+    model.headerPhrase. 
+[2] And perhaps not distinct, either?
+[3] And perhaps not reg, either?
+
+]]></eg>
+
+</div>
+      <div><head>Gaiji</head>
+        <list type="ordered">
+          <item> <gi>char</gi> and <gi>glyph</gi> have <gi>desc</gi> and
+            <gi>gloss</gi> children. These should be replaced by
+            <ident >macro.glossSeq</ident>,
+            which adds <gi>equiv</gi>, and makes these elements behave like *Spec
+            in the TD chapter. The <gi>equiv</gi> will be useful one
+            day. <hi>Agreed: done</hi></item>
+          <item> <gi>char</gi> and <gi>glyph</gi> refer to <gi>graphic</gi>
+            explicitly. This should be replaced by <code>(model.graphicLike)*</code>, to allow
+            for <gi>binaryObject</gi> and whatever else comes up in future (eg
+            sound recordings? video clips?). Whatever it takes to represent the
+            character. <hi>Agreed: done</hi></item>
+          <item><gi>mapping</gi> has <code>(text | g)*</code>. This
+            should be <ident >macro.xtext</ident>,
+            like <gi>value</gi> <hi>Agreed: done</hi></item>
+        </list>
+      </div>
+      <div><head>Figures/Tables/Graphics:</head>
+        <list><item>the <ident>role</ident>, <ident
+	     >rows</ident>, and <ident
+	     >cols</ident> attributes of <gi>cell</gi>
+	    and <gi>row</gi> should be managed via an attribute class,
+	    att.tableDecoration, allowing for future development.
+	    <hi>Agreed: done</hi></item>
+          <item><gi>figure</gi> refers to <gi>graphic</gi> and
+            <gi>binaryObject</gi> explicitly. This should be replaced by
+            <code>(model.graphicLike)*</code> <hi>Agreed: done</hi></item>
+        </list>
+      </div>
+      <div><head>Nets</head>
+        <p>[no change]</p>
+      </div>
+      <div>
+        <head>Spoken</head>
+        <list type="ordered">
+          <item>The elements <gi>event</gi>, <gi>kinesic</gi>,
+            <gi>pause</gi>, <gi>vocal</gi>, and <gi>u</gi> are all members of
+            <ident>att.ascribed</ident>, <ident
+           >att.timed</ident>, and <ident>model.divPart.spoken</ident>. Is there any
+            benefit in making a class which provides all of these in case someone
+            wanted to add a similar spoken element? <hi>Not a good idea to mix
+              attribute and model classes in a single class</hi></item>
+          <item>Should <gi>event</gi> <gi>kinesic</gi> get <ident
+           >att.typed</ident>? <hi>Possibly. What values
+              would you suggest?  </hi>
+<note type="action">add event and kinesic to att.typed</note>
+</item>
+          <item>A number of elements in the spoken module have <ident
+            >macro.glossSeq</ident> as
+            their content model, but this seems sufficient for them <hi>Is there a
+              "not" missing here? If so, in what ways? If not, what's the recommendation?</hi>
+LR says we should define new class model.descLike containing desc to replace some
+occurrences of macro.glossSeq with it 
+          </item><item>The only element with a more complex content
+	    model is <gi>u</gi> which contains <code>( text |
+	      model.gLike | model.phrase | model.divPart.spoken |
+	      model.global )*</code> I was wondering if it needs
+	    <ident>model.phrase</ident> or should be
+	    <ident>model.pLike</ident>, but that is just
+	    because of the way I think about it. <hi>I think <ident
+		>model.phrase</ident> was included to
+	      permit <ident>model.pPart.edit</ident> or
+	      <ident>model.choicePart</ident> members:
+	      certainly there's scope for simplification here</hi>
+	    <note rend="italic" resp="SB" place="inline">We should
+	      certainly re-examine whether or not <ident
+		>model.phrase</ident> or something else
+	      belongs in there, but I'm not sure <ident
+		>model.pPart</ident> would be a good idea
+	      &#x2014; at the very least it requires some serious
+	      thought. <gi>u</gi> elements are somewhat
+	      <soCalled>pLike</soCalled> themselves already. I.e.,
+	      although they are not part of <ident
+		>model.pLike</ident>, they are siblings of
+	      <gi>p</gi> inside <gi>div</gi>. (They are not
+	      <soCalled>pLike</soCalled> because a <gi>u</gi> can go
+	      inside a <gi>u</gi>.) The implications of putting <ident
+		>model.pLike</ident> as part of the
+	      content of <gi>u</gi> includes having <gi>p</gi>
+	      elements next to <gi>u</gi> elements that have
+	      <gi>p</gi> elements inside.</note>
+
+</item>
+        </list>
+      </div>
+      <div>
+        <head>Manuscript Description</head>
+        <p>Overall, this is a module which makes use of the class system fairly well.</p>
+        <list type="ordered">
+          <item>Content models: We're concerned that many elements'
+	    contents are <ident
+	      >macro.specialPara;</ident> this really
+	    isn't necessary in all cases. Why, in <gi>support</gi> for
+	    example do you need: another <gi>msDescription</gi>,
+	    <gi>address</gi>, <gi>app</gi>, <gi>caesura</gi>,
+	    <gi>castList</gi>, <gi>cit</gi>, <gi>eTree</gi>,
+	    <gi>classSpec</gi>, <gi>elementSpec</gi>, <gi>gap</gi>,
+	    <gi>eg</gi>, <gi>egXML</gi>, <gi>rhyme</gi>, etc. etc.
+	    <hi>This is a general problem, of course. Would the more
+	      limited set of elements proposed here be the same as
+	      that needed for header/corpus elements?</hi> 
+<note type="action">Use  reduced phrase class as for other header elements</note>
+</item>
+          <item>
+            <p>There are many elements whose content model contains sets of
+              elements which might be more usefully expressed as a class: <list>
+                <item><gi>msIdentifier</gi> has a similar content model to
+                  <gi>altIdentifier</gi>. Create new <gi>msIdentifierPart</gi>? <hi>A class wouldn't help
+                    here, since order is important. There's a case for
+		    a macro though</hi>
+<note>Define a macro: no they are insufficiently similar </note>
+</item>
+                <item>Other elements with possibilities for new content model classes include:
+                  <gi>adminInfo</gi> (<ident>adminInfoPart</ident>) <hi>Or maybe add <gi>recordHist</gi>,
+                    <gi>availabity</gi>, <gi>custodialHist</gi> to
+                    <ident>model.Notelike</ident> and
+              change content to <code>model.Notelike+</code>?</hi> 
+<note type="action">Use new class mechanism</note></item>
+
+                <item><gi>dimensions</gi> (<ident>dimensionsPart</ident>) <hi>What other possible members of
+                    the class can you suggest? where else might the class be used?</hi></item>
+                <item><gi>history</gi> (<ident
+             >historyPart</ident>) <hi>If you don't use
+              <ident>model.pLike</ident>, the
+                    child elements here are intended to be supplied in the order given,
+                    and it's hard for me at least to see how you'd extend their number</hi></item>
+                <item><gi>msItemStruct</gi>
+              (<ident>msItemStructPart</ident>) <hi>Again, order is significant
+                    here</hi>
+                </item>
+                <item><gi>msPart</gi> (<ident>msPartPart</ident> (!) )<hi>Again, order is significant
+                    here</hi></item>
+                <item><gi>physDesc</gi> (<ident
+                   >physDescPart</ident>) <hi>Agreed: the components here should
+                    definitely be expandable, and the order is completely arbitrary</hi></item>
+                <item><gi>supportDesc</gi> (<ident>supportDescPart</ident>) <hi>I'm less sure about this one,
+                    but sounds plausible...</hi>
+<note type="action">Define non-repeatable  model class</note>
+
+
+</item>
+              </list></p></item>
+          <item>Attributes: Possible new classes:
+            <list>
+              <item><gi>msContents</gi>, <gi>msItem</gi>,
+                <gi>msItemStruct</gi> all have <ident
+                 >class</ident> and <ident
+                 >defective</ident> <hi>Agreed: I
+                  suggest <ident>att.classified</ident> (for <ident
+                   >class</ident>) and <ident
+               >att.state</ident> (for
+                  <ident>defective</ident>) could be
+                  useful elsewhere</hi></item>
+              <item><gi>explicit</gi> and <gi>incipit</gi> have <ident>defective</ident></item>
+              <item><gi>binding</gi> and <gi>seal</gi> have <ident>contemporary</ident> <hi>should this be a part 
+                  of <ident>att.state</ident>?</hi><note
+		  type="action">No action agreed</note></item>
+            </list></item></list></div>
+      <div>
+        <head>Transcription</head>
+        <p>Susan and I have continued our discussion on the attribute classes
+          in <ident >transcr</ident>, specifically looking at the attributes for <gi>add</gi>, <gi>addSpan</gi>,
+          <gi>del</gi> and <gi>delSpan.</gi> As they stand, these elements all have slightly
+          different attributes assigned to them, but the editors may want to
+          consider adding attributes currently defined for <gi>del</gi> and <gi>delSpan</gi> to
+          <gi>add</gi> and <gi>addSpan</gi> and creating new classes.
+          <hi>Yes, there is definitely scope for improvement here! </hi>
+        </p>
+
+        <p>Is there such thing as a "faulty addition" - an addition that
+          contains too little or too much text (as a result of eyeskip, for
+          example)? If so then we may want to define <ident>status</ident> on <gi>add</gi> and
+          <gi>addSpan</gi>. <ident>type</ident> could be useful on <gi>add</gi> as it is for
+          <gi>del</gi> (primary and secondary additions, for
+          example). <hi>Agreed: <ident>type</ident> is needed on addSpan</hi></p>
+        <p>There are still two differences amongst the attributes for
+          these four elements: <gi>addSpan</gi> and <gi>delSpan</gi>
+          share <ident>to</ident>, and <gi>add</gi>
+          and <gi>addSpan</gi> share <ident
+           >place</ident>. We really don't think
+          <ident>place</ident> makes any sense for
+          <gi>del</gi>. So, we can consider either new attribute
+          classes for:</p>
+        <p><gi>addSpan</gi>, <gi>delSpan</gi> (<ident
+           >hand</ident>, <ident
+           >type</ident>, <ident
+           >status</ident>, <ident
+         >to</ident>, with <ident
+         >place</ident> separate on <gi>addSpan</gi>)
+          and <gi>add</gi>,<gi>del</gi> (<ident
+           >hand</ident>, <ident
+         >type</ident>, <ident>status</ident>, with <ident>place</ident> separate on <gi>add</gi>)</p>
+        <p>OR for</p>
+        <p><gi>addSpan</gi>,<gi>add</gi> (<ident
+           >place</ident>, <ident
+           >hand</ident>, <ident
+           >type</ident>, <ident
+         >status</ident>, with <ident
+         >to</ident> separate on <gi>addSpan</gi>) and
+          <gi>delSpan</gi>,<gi>del</gi> (<ident
+           >hand</ident>, <ident
+         >type</ident>, <ident>status</ident>, with <ident>to</ident> separate on <gi>delSpan</gi>.</p>
+        <p>Or an attribute class with <ident
+           >hand</ident>, <ident
+           >type</ident>, <ident
+         >status</ident>, and declare <ident>place</ident> separate for the <gi>add</gi>s and <ident>to</ident> separate for the <gi>span</gi>s.</p>
+        <p><hi>Can we distinguish the functions of <ident
+         >resp</ident> (from <ident>att.editLike</ident>) and
+            that of <ident>hand</ident>? What is <ident>status</ident> for -- how does it differ from <ident>type</ident>?
+            We should probably add these elements to the <ident
+         >att.spanning</ident> class so
+            that they all get the same "horse-like" treatment.</hi>
+        </p>
+	<note rend="italic" resp="SB" place="inline">While I don't
+	  like how <ident>att.spanning</ident> works
+	  (mostly because it is not "horse-like" enough), I agree
+	  completely that <gi>addSpan</gi> and <gi>delSpan</gi> belong
+	  in that class. I like Dot &amp; Susan's third suggestion:
+	  <ident>hand</ident>, <ident
+	   >type</ident>, <ident
+	   >status</ident> in new class <ident
+	   >att.subEditStuff</ident> of which all 4 are
+	  members;  <ident>place</ident> in new class
+	  <ident>att.placement</ident> of which
+	  <gi>add</gi> and <gi>addSpan</gi> are members (and can
+	  <gi>note</gi> be a member of this class, too?); and
+	  <gi>addSpan</gi> and <gi>delSpan</gi> get added to the
+	  already existing <ident
+	   >att.spanning</ident>.</note>
+<note type="action">Implement Syd's proposal</note>
+      </div>
+      <div>
+        <head>Linking</head>
+        <p>This module seemed pretty well classified already. As far
+          as I can see, applying the procedure which Christian gave,
+          there are no changes required.</p>
+        <p>I saw a mention in edw87 of the <gi>ab</gi> element being removed -
+          is this still on the cards? <hi>It says <q>moved</q> not <q>removed</q>! and it
+            has been...</hi></p>
+      </div>
+      <div><head>Linking and Analysis</head>
+        <p>
+          <xptr
+          url="http://tei.oucs.ox.ac.uk/Query/tag.xq?name=join"/> has
+          an example which mentions the attribute <ident
+         >targOrder</ident>, but there seemed to be no definition of this attribute. I guess the revision of the examples is another item on a future agenda :-) <hi>Done</hi></p>
+        <list>
+          <item>character: 
+            <code>element c { att.global.attributes, text }</code>
+            should include <ident>model.gLike</ident>?
+            <code>element c { att.global.attributes, text | model.gLike }</code>
+            <hi>Yes: should be <ident >macro.xtext</ident></hi>
+	  </item>
+          <item> morpheme: There's a commonality between <gi>m</gi> (morpheme)
+            and <gi>w</gi> (word): 
+            <code>element m {att.global.attributes, attribute baseForm { data.word }?,
+            ( text | model.gLike | model.blockLike | c | model.global )*</code>  = model.mPart
+            }</item>
+          <item> word:
+            <code>element w { att.global.attributes, attribute lemma { data.word }?,
+            ( text | model.gLike | model.blockLike | w | m | c | model.global )* 
+            (model.mPart | w | m)*}</code></item>
+          <item>I suggest defining <gi>m</gi>'s content model as <ident
+             >model.mPart</ident>, and <gi>w</gi>'s
+            content would then be: <code>(model.mPart | w | m)*</code>
+            <hi>Though this commonality exists, I'm not sure that introducing an
+              additional superclass would simplify things particularly. Where else
+              might it be used?</hi> <note rend="italic" resp="SB"
+            place="inline">Isn't this one commonality sufficient
+            excuse for a new class?</note>
+
+<note type="action">make common class of elements shared by w and m ; proposals as  per syd</note>
+          </item>
+          <item>Finally, the element <gi>span</gi> has attributes <ident>from</ident> and <ident>to</ident>
+            (<ident>data.pointer</ident> type) which might be worth grouping into an attribute
+            class. I thought these might be usable by elements in other modules
+            which attach some metadata to a span of text, though I couldn't find
+            any such elements myself. <hi>Yes, we need to do a thorough overhaul
+              of the way stand-off markup is implemented, and some new classes will
+              be needed for this purpose: see comment above about the
+            <ident>att.spanning</ident> class</hi>.<note
+	    type="action">Ask standoff SIG to consider the options and
+	    propose  something!</note>
+</item>
+        </list>
+      </div>
+
+<div><head>textcrit</head>
+<list>
+<item>Content models: <gi>rdg</gi> and <gi>lem</gi> share the same content model;
+ perhaps create a new class.</item>
+ <item>Attributes: Only two elements in this module have explicit
+ attributes, and there is not enough overlap to justify a new class.</item>
+<item>Class Memberships: no suggestions</item>
+<item><gi>witness</gi>, <gi>wit</gi>, and <gi>witDetail</gi> all contain macro.paraContent.
+ This seems very liberal, and the editors might want to consider a more
+ specific class.
+<note type="action">Use reduced phrase class</note>
+</item>
+</list>
+</div>
+<div><head>transcription</head>
+<list>
+<item>
+ 1. Content models: Content models for all transcr elements are by 
+ model class.
+</item>
+<item>Attributes: <gi>hand</gi> and <gi>handList</gi> share @style, @ink, @writing,
+ @resp. New class? (handPart)
+<hi>It is a semi-open question as to whether we should go on
+supporting both <gi>hand</gi> and <gi>handDesc</gi></hi>
+ It is probably not worthwhile to make attribute classes of one, but 
+ anyway:
+<eg><![CDATA[
+ addSpan, damage, delSpan, restore, supplied: @hand
+ damage, delSpan, fw, restore: @type
+ damage, supplied: @agent
+]]></eg>
+</item>
+<item>Class membership: Should <gi>fw</gi> be a member of model.milestoneLike? It
+ is not empty. <hi>I would say not, though there is scope for making
+ it the (sole) member of a class of elements for page decoration</hi>
+</item>
+</list>
+</div>
+<div><head>Dictionary Module</head>
+<p> Element content models with possible class issues:
+<list>
+<item> <gi>dicteg</gi>  "q | quote | cit" should be replaced by
+model.qLike ("agree" - LR)  <hi>Ok</hi>
+</item>
+<item> <gi>entry</gi>: 
+ "hom | sense" are referenced directly in the content model. Are they
+ likely to be extended with similarly behaving elements? If so, then
+ they may be candidates for a class. ("No. They have to be explicitly
+ stated as part of <gi>entry</gi>. Leave as-is." LR) 
+</item>
+<item> <gi>etym</gi>: 
+ Lots of individual elements in content model: "usg | lbl | def |
+ trans | tr | dicteg | xr". These are a subset of model.entryParts.
+ Are they likely to be extended with similarly behaving elements? If
+ so, then they may be candidates for a class. ("Yes. Make a class out
+ of those elements." LR)  <hi>OK</hi>
+</item>
+
+<item> <gi>hom</gi>
+ "sense" is referenced directly in the content model. It is also
+referenced in <gi>re</gi>. If similar-behaving elements are likely as
+extensions, perhaps it should be in a class of one.("cf. above. Leave
+as-is". - LR)
+</item>
+<item><gi>re</gi>: 
+ "sense" is referenced directly in the content model. It is also
+ referenced in <gi>hom</gi>>. If similar-behaving elments are likely as
+ extensions, perhaps it should be in a class of one. ("idem." LR)
+</item>
+
+<item><gi>xr</gi>
+<gi>usg</gi> and <gi>lbl</gi> are referenced directly in the content model. Are
+they likely to be extended with similarly behaving elements? If so,
+then they may be candidates for a class. ("Yes." LR)  <hi>OK</hi>
+</item>
+</list>
+</p></div>
+<div><head>Drama</head>
+<p>Element content models with possible class issues:
+<list>
+<item><gi>castGroup</gi>: 
+References ( castItem | castGroup ), which are also referenced in  
+<gi>castList</gi>. Perhaps they should become a class.
+<hi>I think that something within a castList is either an item or a
+group of items: I can't imagine wanting to add anything else. So I am
+less inclined to agree that a class is appropriate here</hi>
+</item><item>
+<gi>castItem</gi>: 
+"role | roleDesc | actor" are part of the content model. They should  
+be grouped together as a class for easy extension and addition of  
+similarly behaved elements. <hi>Agreed</hi>
+</item>
+<item><gi>castList</gi>: 
+References ( castItem | castGroup ). See <gi>castGroup</gi> above.
+</item>
+</list></p>
+</div>
+
+      <div>
+	<head>Names and Dates</head>
+	<list>
+	  <item><p>Is <gi>dateStruct</gi> necessary?
+	    <eg><![CDATA[ 	<dateStruct> has ( text | model.gLike | model.datePart | model.global )*
+	<date>		 has ( text | model.gLike | model.phrase   | model.global )*]]></eg>
+	    (<gi>date</gi>'s model is via macro.phraseSeq).
+	    But if we instead give <gi>date</gi> the union of these two content models:
+	    <code>( text | model.gLike | model.phrase | model.datePart | model.global )*</code>
+	    Couldn't we consolidate by getting rid of <gi>dateStruct</gi>? Note that the "Struct"
+	    in <gi>dateStruct</gi> does not mean "no PCDATA", unlike other *Struct elements.</p>
+	    <p>Council voted to implement this change. The content
+	      models have been merged, the <gi>dateStruct</gi> and
+	    <gi>timeStruct</gi> elements have been deleted;
+	      furthermore <gi>time</gi> was added to class <ident
+		type="class">att.editLike</ident>, and both
+	      <gi>date</gi> and <gi>time</gi> were added to <ident
+		type="class">att.datePart</ident>.</p><p>That last
+	      change (using <ident type="class">att.datePart</ident>)
+	      changes the datatype of <att>value</att> from <ident
+	    type="datatype">data.temporal</ident> to either <ident
+		type="datatype">data.temporal</ident> <emph>or</emph> <ident
+	    type="datatype">data.duration</ident>, and it has not been
+	    decided that this is a good thing.</p>
+	    <p>The <att>full</att> and <att>zone</att> attributes are under
+	    consideration for removal.</p></item>
+	</list>
+      </div>
+
+    </body>
+  </text>
+</TEI.2>
+

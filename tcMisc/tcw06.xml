@@ -1,0 +1,586 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI.2>
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Using the TEI Sourceforge Repository</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>A README file for the Text Encoding Initiative CVS modules.</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Born Digital.</p>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc>
+      <change>
+        <date>$Date: 2008-09-02 10:24:21 +0100 (Tue, 02 Sep 2008) $</date>
+        <respStmt>
+          <name>$Author: rahtz $</name>
+        </respStmt>
+        <item>Initial composition of file.</item>
+      </change>
+      <change>
+        <date>$Date: 2008-09-02 10:24:21 +0100 (Tue, 02 Sep 2008) $</date>
+        <respStmt>
+          <name>$Author: rahtz $</name>
+        </respStmt>
+        <item>Update to reflect current TEI SVN structure and
+        makefiles</item>
+      </change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <head>Using the TEI Sourceforge Repository</head>
+        <div>
+          <head>Introduction</head>
+          <p> The TEI makes its development files openly available on <xref
+              url="http://tei.sourceforge.net/"
+            >http://tei.sourceforge.net</xref> so that users can try out
+            the latest developments and provide feedback about how they
+            think the TEI should develop. This document aims to give a
+            brief introduction to using these files directly from the TEI
+            Sourceforge Subversion Repository in which they are kept. If you simply
+            want to use the most stable versions of the various products of
+            the TEI, then investing time and effort in learning to use the
+            Repository is probably not what you want to.</p>
+        </div>
+        <div>
+          <head>About Version Control</head>
+          <p>The Repository uses a Version Control System known as
+            Subversion (svn for short). This tool, like its predecessor CVS
+            (Concurrent Versions System), is a content versioning tool used
+            by many software developers to keep track of changes within
+            their source code tree. Subversion provides the means to store
+            not only the current version of a file, but a record of all
+            changes (and who made those changes) that have occurred to that
+            file. Use of Subversion is particularly common on projects
+            whose development is being undertaken by those in disparate
+            geographical locations, or with multiple developers, since it
+            ensures that changes made by one person are not accidentally
+            removed when another person posts their changes to the source
+            tree. </p>
+          <p>The Sourceforge site provides more detailed <xref
+              url="http://sourceforge.net/svn/?group_id=106328">information
+              about Subversion</xref> and how to use it.</p>
+        </div>
+        <div>
+          <head>Checking files out of the Repository</head>
+
+          <p>To check out the contents of the TEI Sourceforge Repository
+            with a simple Unix subversion client, enter a command like
+            this: 
+            <code>svn co  https://tei.svn.sourceforge.net/svnroot/tei/trunk ./TEI</code></p>
+          <p>This will copy all files from the TEI repository into the
+            directory ./TEI. The repository contains several modules, all
+            of which will be obtained with this command. If however you
+            only want one (say the P5 module), you can do so by including
+            the module name: 
+            <code> svn co https://tei.svn.sourceforge.net/svnroot/tei/trunk/P5 ./TEI</code></p>
+          <p> You can also browse the whole Repository using
+            sourceforge&apos;s <xref
+              url="http://tei.svn.sourceforge.net/viewvc/tei/trunk/"
+              >web-based Repository viewer</xref>.</p>
+
+        </div>
+        <div>
+          <head>TEI Packages</head>
+
+          <p> The TEI sf Repository contains files which are grouped into a
+            small number of discrete packages for release. The following
+            packages are currently maintained: <list type="gloss">
+              <label>
+                <ref target="Extensions">Extensions</ref>
+              </label>
+              <item>Extensions and Customisations Development</item>
+              <label>
+                <ref target="I18N">I18N</ref>
+              </label>
+              <item>Internationalisation Development </item>
+              <label>
+                <ref target="P5">P5</ref>
+              </label>
+              <item>TEI P5 Guidelines and Schema </item>
+              <label>
+                <ref target="Roma">Roma</ref>
+              </label>
+              <item>TEI-Conformant Validator (DTD, Relax NG or W3C Schema)
+                Creator Development</item>
+              <label>
+                <ref target="Stylesheets">Stylesheets</ref>
+              </label>
+              <item>TEI XSLT Stylesheets Development Module</item>
+              <label>
+                <ref target="tei-emacs">tei-emacs</ref>
+              </label>
+              <item>TEI Customisation of Emacs Development Module</item>
+              <label>
+                <ref target="TEIOO">TEIOO</ref>
+              </label>
+              <item>TEI OpenOffice (and similar) SaveAs TEI XML Filter
+                Development Module</item>
+              </list>
+          </p>
+        </div>
+        <div>
+          <head>Prerequisites for use of TEI Modules</head>
+          <p>These packages and their associated Makefiles and scripts are
+            all developed and tested on a Debian Linux system. While they
+            should work (possibly with customisation) on other Linux
+            systems, they are not designed to work on Microsoft Windows. </p>
+          <p>If you want to use the scripts provided with these packages,
+            we recommend you to install the following additional software
+            packages:</p>
+          <list type="unordered">
+            <item>jing</item>
+            <item>perl</item>
+            <item>saxon</item>
+            <item>trang</item>
+            <item>xmllint</item>
+            <item>xsltproc</item>
+          </list>
+        </div>
+
+      </div>
+      <div id="Extensions">
+        <head>Extensions and Customisations Development Module</head>
+        <p> The Extensions and Customisations Development Module provides a
+          location for dissemination of well-known Extensions and
+          Customisations to the TEI DTD.
+          <!--
+	  At time of
+	writing this includes customisations, usually in ODD format,
+	for: <list type="gloss">
+	<label>BNC</label>
+	<item>The British National Corpus Extensions</item>
+	<label>Lampeter</label>
+	<item>The Lampeter Corpus of Early Modern English Tracts Extensions </item>
+	<label>Lite</label>
+	<item>TEI Lite Customisation</item>
+	<label>Menota</label>
+	<item>The Medieval Nordic Text Archive Extensions</item>
+	<label>ProtestantCemetery</label>
+	<item>The Protestant Cemetery of Rome Customisations</item>
+      </list>
+	    -->
+        </p>
+        <p>None of the customisations or extensions to the TEI should be
+          assumed to reflect the current state of the projects, but are
+          provided as examples of how others have customised the TEI schema
+          in the past. </p>
+      </div>
+      
+      
+      <div id="I18N">
+        <head>Internationalisation Development Package</head>
+        <p> This package produces a location for the dissemination,
+          experimentation, and development of TEI&apos;s
+          internationalisation movements. Primarily, this consists of the
+          translation of elements, attributes, and their descriptions into
+          other languages. This allows projects to employ coders using
+          their native language to do markup but have it easily translated
+          back to international &apos;English&apos; TEI. Current
+          languages under development include: English, French, German and
+          Spanish. However, others are planned, if you want to help out,
+          ask about doing so on the TEI-L mailing list. </p>
+      </div>
+      <div id="P5">
+        <head>P5 Guidelines and Schema Development Package</head>
+        <p> This package contains the source files for the development
+          version of the TEI Guidelines and associated schemas.  Inside the
+          P5 subversion the sources of the English chapters of the Guidelines are in
+          <code>Source/Guidelines/en/</code>.  To allow for
+          internationalization, if translations of the
+          Guidelines are made available they will be located in the same
+          place but under their ISO two-letter language code.  The source
+          files of the Guidelines also reference separate specifications of
+          elements, attributes and classes which are maintained in a
+          separate directory <code>Source/Specs/</code> with
+          internationlization handled internally.  Each of these files are
+          in the TEI ODD (One Document Does it all)
+          format. This is a TEI format specifically intended for writing
+          guidelines about encoding, from which schemas and reference
+          documentation can be automatically extracted.</p>
+
+        <p>As part of the P5 subversion module, a Makefile is provided to
+          help generate HTML versions of the TEI
+          Guidelines, create compiled schemas and DTDs, amongst various other
+          possibilities. There are a number of variables that one can
+          change at the beginning of the Makefile. Some of the more
+          important of these are: <list
+            type="gloss">
+            <label>TEISERVER</label>
+            <item> This is the eXist server storing TEI files used by the
+                <name rend="quoted" type="target">fascicule</name> target.
+              Either internet access or a locally served TEI eXist database
+              is needed to use this target. By default this is: <xref
+                url="http://tei.oucs.ox.ac.uk/Query/"
+                >http://tei.oucs.ox.ac.uk/Query/</xref>
+            </item>
+            <label id="P5-PFX">PREFIX</label>
+            <item> This is the default location under which you wish to
+              install files locally if you use the
+              &apos;install&apos; target. By default this is:<rs
+                type="path"> /usr</rs>
+            </item>
+            <label>XSL</label>
+            <item> This is the location of the XSLT stylesheets required
+              for the transformation of ODD files. By default this points
+              to the location of the stylesheets as installed by the TEI
+              Debian Packages: <rs type="path"
+                >/usr/share/xml/tei/stylesheet</rs> however, if you want to
+              use a remote copy of the stylesheets you may wish to change
+              this. One option is to use the stylesheets on the TEI
+              website: <xref
+                url="http://www.tei-c.org/release/xml/tei/stylesheet/"
+                >http://www.tei-c.org/release/xml/tei/stylesheet/</xref> as
+              the value of this variable. </item>
+            <label>ROMAOPTS</label>
+            <item>This variable is used to pass options to Roma such as the
+              local source file for the TEI Guidelines. By default this is
+              "<code>--localsource=${DRIVER}.xml</code>" </item>
+            <label>DRIVER</label>
+            <item>This points to the available local source file for the
+              TEI Guidelines. By default this is
+              "<code>${LANGTREE}/guidelines-${LANGUAGE}.xml</code>", and changing
+              LANGTREE and LANGUAGE would allow the generation of the
+              guidelines in different languages if the source files for
+              those languages exist.</item>
+          </list></p>
+        <p> The makefile has a number of requirements, these include
+          internet access (or a local copy of the stylesheets), and
+          up-to-date versions of the perl, jing, trang, xmllint and
+          xsltproc programs. If you do not have these installed then many
+          of the make targets will not work. Fortunately, there is a target
+          which will check to make sure you have these installed:
+            <code>make check</code>. Some of the more important targets are
+          listed below:</p>
+        <list type="gloss">
+          <head>Makefile Targets</head>
+          <item>
+            <label>check</label>
+            <gloss>Usage: <code>make check</code></gloss>
+            <p> This target checks to see whether you have perl, jing,
+              trang, xmllint, and xsltproc installed. </p>
+          </item>
+          <item>
+            <label>default</label>
+            <gloss>Usage: <code>make</code></gloss>
+            <p> This is the default target and creates the TEI P5 schemas
+              in RelaxNG &amp; DTD and the HTML version of the
+              Guidelines. </p>
+          </item>
+          <item>
+            <label>convert</label>
+            <gloss>Usage: <code>make convert</code></gloss>
+            <p> This target creates the TEI P5 schemas in RelaxNG
+              &amp; DTD. </p>
+          </item>
+          <item>
+            <label>dtds</label>
+            <gloss>Usage: <code>make dtds</code></gloss>
+            <p> This target creates DTDs for TEI P5 in the DTD/ directory.
+            </p>
+          </item>
+          <item>
+            <label>schemas</label>
+            <gloss>Usage: <code>make schemas</code></gloss>
+            <p> This target creates RelaxNG Schemas for TEI P5 in the
+              Schema/ directory. </p>
+          </item>
+          <item>
+            <label>html</label>
+            <gloss>Usage: <code>make html</code></gloss>
+            <p> This target creates an HTML version of the TEI Guidelines
+              in the Guidelines/ directory. </p>
+          </item>
+          <item>
+            <label>xml</label>
+            <gloss>Usage: <code>make xml</code></gloss>
+            <p> This target creates a TEI Lite (P5) XML version of the
+              Guidelines as Guidelines.xml in the current directory (i.e.,
+              P5/) as well as also making the exemplars listed further
+              below.</p>
+          </item>
+          <item>
+            <label>split</label>
+            <gloss>Usage: <code>make split</code></gloss>
+            <p> This target creates a set of TEI P5 ODD files, with entities
+              resolved, that are a version of the Guidelines split into
+              chapters, in the split/ directory. </p>
+          </item>
+          <!--	  <item>
+	    <label>exist</label>
+	    <gloss>Usage: <code>make exist</code></gloss>
+	    <p> This target updates a locally running copy of the eXist XML database with the TEI
+	    files. The files are added via the SOAP interface and the database is assumed to be
+	    running at: <xref
+	    url="http://localhost:8080/exist">http://localhost:8080/exist</xref>
+	    </p>
+	  </item>
+-->
+          <item>
+            <label>clean</label>
+            <gloss>Usage: <code>make clean</code></gloss>
+            <p> This target removes most of the files created by the other
+              targets. </p>
+          </item>
+          <item>
+            <label>install</label>
+            <gloss>Usage: <code>make install</code></gloss>
+            <p> This target installs a separate local copy of the DTDs,
+              Schema, and HTML version of the guidelines under the file
+              path given by the PREFIX variable (see <ptr target="P5-PFX"
+              />, above) . </p>
+          </item>
+          <item>
+            <label>exemplars</label>
+            <gloss>Usage: <code>make exemplars</code></gloss>
+            <p> This target uses Roma to create the DTDs and Schemas from a
+              number of exemplary ODD files in the <code>Exemplars</code>
+              directory.   The exemplars target will create DTDs, XML Schemas,
+              and both compact and xml versions of RelaxNG Schemas for the
+              customizations based on the following ODD files:</p>
+            <list type="unordered">
+              <item>
+                <label>tei_all.odd</label>
+                <gloss>TEI with maximal setup</gloss>
+                <p>The full TEI setup with almost everything you could possibly
+                  want included.</p>
+              </item>
+              <item>
+                <label>tei_corpus.odd</label>
+                <gloss>TEI with corpus</gloss>
+                <p>An example setup for basic copora using TEI or
+                  teiCorpus as the starting element.</p>
+              </item>
+              <item>
+                <label>tei_dictionaries.odd</label>
+                <gloss>TEI customization for dictionaries</gloss>
+                <p>An experimental customization of the TEI for
+                  Dictionaries, this ODD includes a detailed example of
+                  the addition of an element.</p>
+              </item>
+              <item>
+                <label>tei_drama.odd</label>
+                <gloss>TEI with drama</gloss>
+                <p>An example setup which includes drama and linking
+                  modules.</p>
+              </item>
+              <item>
+                <label>tei_examples.odd</label>
+                <gloss>TEI for TEI examples</gloss>
+                <p>This ODD demonstrates the creation of <gi>egXML</gi>
+                  with the inclusion of MathML and RelaxNG as
+                  possibilities.</p>
+              </item>
+              <item>
+                <label>teilite.odd</label>
+                <gloss>The TEI Lite customization</gloss>
+                <p>This is the ODD for the popular example customization
+                  TEI Lite.  It is entitled "Encoding for Interchange: an
+                  introduction to the TEI".
+                </p>
+              </item>
+              <item>
+                <label>tei_minimal.odd</label>
+                <gloss>TEI with minimal setup</gloss>
+                <p> A very minimal TEI customization, with only the
+                  header, core, tei and textstructure modules.  If you
+                  only want to use elements that appear in the core
+                  modules, then this is the customization for you!
+                </p>
+              </item>
+              <item>
+                <label>tei_ms.odd</label>
+                <gloss>TEI for manuscript description</gloss>
+                <p>This example customization for manuscript description
+                  includes, in addition to the basic modules, those for
+                  names and dates, transcription, and manuscript
+                  description.</p>
+              </item>
+              <item>
+                <label>tei_odd.odd</label>
+                <gloss>TEI with ODD elements</gloss>
+                <p>This customization adds the ODD (One Document Does
+                  it all) tagset documentation module and changes the
+                  content of egXML. </p>
+              </item>
+              <item>
+                <label>tei_oucs.odd</label>
+                <gloss>TEI with OUCS setup</gloss>
+                <p>This complex customization is given as an example of
+                  how the Oxford University Computing Services use the
+                  TEI for authoring its website.  See <xref
+                    url="http://www.oucs.ox.ac.uk/">http://www.oucs.ox.ac.uk/</xref>
+                  to see documents validated against schemas generated from this ODD.</p>
+              </item>
+            </list>
+          </item>
+        </list>
+      </div>
+      <div id="Roma">
+        <head>Roma: TEI-Conformant Validator (DTD, Relax NG or W3C Schema)
+          Creator Development </head>
+
+        <p> The Roma tool allows creation of TEI-Conformant Validators in
+          the form of DTD, Relax NG or W3C Schemas. This can be used to
+          customise the TEI Schema by adding, removing, renaming elements
+          and/or attributes. This can also be used to generate specialised
+          documentation for this customisation containing only the elements
+          specified, or can be output in foreign languages if available. Roma uses TEI
+          P5 and (in addition to its command-line version available in the
+          Roma subversion module) there is also a web
+          interface at <xref url="http://www.tei-c.org.uk/Roma/"
+            >http://www.tei-c.org/Roma/</xref> which allows an easy
+          form-filling method of generating the schemas and documentation.
+          Roma uses the ODD format as its base and so any customisations
+          can be saved in this form for later re-use or refinement. </p>
+      </div>
+      <div id="Stylesheets">
+        <head>TEI XSL Stylesheets Package </head>
+        <p> This package provides a location for the dissemination and
+          development of XSLT stylesheets produced by the TEI. The <xref
+            url="http://www.tei-c.org.uk/wiki/">TEI Wiki</xref> provides a
+          location for stylesheets produced by others for TEI documents.</p>
+
+        <p> The TEI XSL Stylesheets enable one to transform XML documents
+          to HTML, to LaTeX, and to XSL Formatting Objects. The latter two
+          of these are frequently used to transform TEI XML into PDF
+          format. The XSL FO style sheets were developed for use with
+          PassiveTeX (<xptr url="http://www.tei-c.org/Software/passivetex/"
+          />, a system using XSL formatting objects to render XML to PDF
+          via LaTeX, and have also been tested with Render X and Antenna
+          House implementations.</p>
+
+        <p> Significantly more detailed information is available concerning
+          the TEI XSL Stylesheets on the TEI website <xref
+            url="http://www.tei-c.org/Stylesheets/teic/"
+            >http://www.tei-c.org/Stylesheets/teic/</xref> and advice is
+          available via the TEI-L mailing list. </p>
+        <p> The Makefile provided with the TEI XSL Stylesheets has no
+          default make target. The most usable two make targets are: <list
+            type="gloss">
+            <label>install</label>
+            <item>Installs the P4 and P5 xsl stylesheets in <rs type="path"
+                >/usr</rs> or wherever you have set the
+              &apos;PREFIX&apos; variable at the beginning of the
+              Makefile.</item>
+            <label>dist</label>
+            <item>This creates a release subdirectory of both P4 and P5
+              sets of files.</item>
+          </list>
+        </p>
+        <p> For the more technically interested, the stylesheets have
+          internal documentation, using <xref
+            url="http://www.pnp-software.com/">P&amp;P
+            Software&apos;s</xref> XSLTdoc system; the results can be
+          browsed in the <xref
+            url="http://www.tei-c.org/Stylesheets/teic/xsltdoc/">on the
+            technical documetation section of the TEI Stylesheets
+          website</xref>. </p>
+      </div>
+      <div id="tei-emacs">
+        <head>TEI Customisation of Emacs</head>
+        <p>This package is a setup for the widely used open source GNU
+          Emacs editor to provide a single all-singing all-dancing TEI
+          Editing Environment. The files included are Elisp packages; a
+          Debian package is available for installation on Linux, where it
+          will interact with existing TEI and Emacs setups. For MS-Windows
+          a complete self-contained package of Emacs and all the TEI
+          stylesheets and setup is available (<xptr
+            url="http://www.tei-c.org/Software/tei-emacs/"/>).</p>
+        <p>TEI Emacs is maintained by Sebastian Rahtz (Oxford) and
+          Christian Wittern (Kyoto). Its main intention is to provide a
+          good basic editing environment for TEI files. It uses NXML mode
+          to provide continual incremental schema-based validation. For
+          more information on installation and use of tei-emacs see <xref
+            url="http://www.tei-c.org/Software/tei-emacs/"
+            >http://www.tei-c.org/Software/tei-emacs/</xref>.</p>
+      </div>
+      <div id="TEIOO">
+        <head>TEI OpenOffice (and similar) SaveAs TEI XML Filter
+          Development Package</head>
+        <p> This package brings together various filters for saving
+          word-processing documents as TEI XML. There are currently filters
+          to and from OpenOffice and TEI Lite, but there are plans for some
+          filters for Microsoft Word. For more information on installation of the TEI -
+          OpenOffice filters see <xptr
+            url="http://www.tei-c.org.uk/Software/teioo/"/>
+        </p>
+      </div>
+
+      <div id="example">
+        <head>Example: Installation of Stylesheets, P5, and Roma packages</head>
+
+        <p> This is a step-by-step example of installation of the
+          Stylesheets, P5, and Roma packages. This should give most people
+          a working copy of the main TEI deliverables. These steps assume a
+          linux system and command-line svn client, and installs everything
+          in the "/tmp/tei/" directory. You should modify this to reflect
+          where you want to put things on your particular system. </p>
+
+        <list type="ordered">
+          <item>
+            <label>Create and move into a directory for your TEI files</label>
+            <lb/>
+            <code>mkdir /tmp/tei ; cd /tmp/tei </code>
+          </item>
+          <item>
+            <label>Check out a copy of Stylesheets package</label>
+            <lb/>
+            <code>svn co https://tei.svn.sourceforge.net/svnroot/tei/trunk/Stylesheets ./Stylesheets</code>
+          </item>
+          <item>
+            <label>Check out a copy of P5 package</label>
+            <lb/>
+            <code>svn co https://tei.svn.sourceforge.net/svnroot/tei/trunk/P5 ./P5</code>
+          </item>
+          <item>
+            <label>Check out a copy of Roma package</label>
+            <lb/>
+            
+            <code>svn co https://tei.svn.sourceforge.net/svnroot/tei/trunk/Roma ./Roma </code>
+          </item>
+          <item>
+            <label>Go into Stylesheets directory and install the
+              stylesheets</label>
+            <lb/>
+            <code>cd Stylesheets ; make PREFIX=/tmp/tei install ; cd ..
+            </code>
+          </item>
+          <item>
+            <label>Go into Roma directory and install Roma</label>
+            <lb/>
+            <code>cd Roma ; make PREFIX=/tmp/tei install ; cd .. </code>
+          </item>
+          <item>
+            <label>Go into P5 directory and install the TEI Guidelines and Schemas</label>
+            <lb/>
+            <code>cd P5 ; make PREFIX=/tmp/tei XSL=/tmp/tei/share/xml/tei/stylesheet install ; cd .. </code>
+          </item>
+          <item>
+            <label>Go into P5 directory and create the exemplar DTDs and
+              Schemas</label><lb/>
+            <code>cd P5; make exemplars; cd ..</code>
+          </item>
+        </list>
+        <p>This should provide you with a working TEI hierarchy in
+          /tmp/tei/ (or whatever you changed that to on each command) with
+          the TEI P5 Guidelines and Schemas, the TEI XSL Stylesheets, and a
+          copy of Roma.  It should also leave you a copy of the schemas for
+          the most popular TEI customizations in
+          <code>P5/Exemplars/</code>.  More information on using these deliverables is
+          available from the TEI website. </p>
+        <p><emph>Note</emph>: It is also possible to
+          retrieve all of the modules from the TEI subversion repository
+          with:  
+          <code>svn co https://tei.svn.sourceforge.net/svnroot/tei/trunk ./TEI</code> 
+        </p>
+
+      </div>
+    </body>
+  </text>
+</TEI.2>
